@@ -2,6 +2,7 @@ version: "3"
 services:
   strapi:
     build: ./etv-backend
+    command: yarn strapi develop
     container_name: strapi
     restart: always
     environment:
