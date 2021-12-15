@@ -1,0 +1,1 @@
+(self.webpackChunketv_backend=self.webpackChunketv_backend||[]).push([[9605],{63147:e=>{"use strict";e.exports=JSON.parse('{"plugin.description.long":"Adds GraphQL endpoint with default API methods.","plugin.description.short":"Adds GraphQL endpoint with default API methods."}')}}]);
