@@ -6,3 +6,30 @@
   src: url(/fonts/MuseoSans-100.woff2) format("woff2"),
     url(/fonts/MuseoSans-100.oft) format("otf");
 }
+
+@font-face {
+  font-family: "Museo-Sans";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url(/fonts/MuseoSans-300.woff2) format("woff2"),
+    url(/fonts/MuseoSans-300.oft) format("otf");
+}
+
+@font-face {
+  font-family: "Museo-Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(/fonts/MuseoSans-700.woff2) format("woff2"),
+    url(/fonts/MuseoSans-700.oft) format("otf");
+}
+
+@font-face {
+  font-family: "Museo-Sans";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url(/fonts/MuseoSans-900.woff2) format("woff2"),
+    url(/fonts/MuseoSans-900.oft) format("otf");
+}
