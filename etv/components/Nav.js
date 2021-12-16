@@ -3,10 +3,11 @@ import Link from "next/link";
 
 const Nav = () => {
   return (
-    <>
+    <div>
+      <h1>Navbar</h1>
       <ul>
         <li>
-          <Link href="/">
+          <Link href="/homepage">
             <a>Home</a>
           </Link>
         </li>
@@ -40,7 +41,7 @@ const Nav = () => {
           </select>
         </li> */}
       </ul>
-    </>
+    </div>
   );
 };
 export default Nav;
