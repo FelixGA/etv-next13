@@ -1,21 +1,23 @@
+import Link from "next/link";
 import React from "react";
 
 const Slider = () => {
   return (
-    <div>
-      <div className="slider">
-        <div className="slider__item">
-          <img src="#" alt=""></img>
-
-          <div className="slider__item-text">
-            <h1>Lorem ipsum dolor</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quidem.
-            </p>
-            <button>Read More</button>
-          </div>
+    <div className="slider">
+      <div className="slider__item">
+        <h3>überschrift</h3>
+        <div className="slider__item-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            euismod, nisi vel consectetur euismod, nisi nisl euismod nisi, vel
+            consectetur nisi nisl euismod.
+          </p>
         </div>
+
+        <img src="./public/images/de.png" />
+        <Link href="#">
+          <a>mehr erfahren </a>
+        </Link>
       </div>
     </div>
   );
