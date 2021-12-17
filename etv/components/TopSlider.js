@@ -3,7 +3,7 @@ import Slider from "./Slider";
 const TopSlider = () => {
   return (
     <div class="top-slider-container">
-      <h2>top slider</h2>
+      <h2>Beste Testberichte</h2>
       <Slider />
     </div>
   );

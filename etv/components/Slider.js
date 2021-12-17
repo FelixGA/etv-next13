@@ -5,12 +5,11 @@ const Slider = () => {
   return (
     <div className="slider">
       <div className="slider__item">
-        <h3>überschrift</h3>
+        <h3>Überschrift</h3>
         <div className="slider__item-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            euismod, nisi vel consectetur euismod, nisi nisl euismod nisi, vel
-            consectetur nisi nisl euismod.
+            Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen
+            werden.
           </p>
         </div>
 

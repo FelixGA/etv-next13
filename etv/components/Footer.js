@@ -35,10 +35,8 @@ const Footer = () => {
         <i>logo ,img or ...</i> <p> text</p>
       </div>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam sint
-        earum amet sunt cupiditate quasi aut voluptatibus reiciendis
-        perspiciatis, omnis sed voluptatem facilis. Odit ratione nam earum
-        exercitationem reprehenderit odio?
+        Hier könnte noch etwas stehen, was Leute davon überzeugt, dass Ihr
+        richtig gut seid!
       </p>
 
       <StickyContainer />

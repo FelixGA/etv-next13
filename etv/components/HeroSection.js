@@ -16,13 +16,13 @@ const HeroSection = () => {
         </div>
       </div>
       <div class="comparison-container">
-        <h2>jetzt vergleichen</h2>
+        <h2>Jetzt vergleichen</h2>
 
         <div class="comaprison-input-container">
-          <div class="distance">distance</div>
-          <div class="price">price</div>
-          <div class="weight">weight</div>
-          <button>jetzt vergleichen</button>
+          <div class="distance">Reichweite</div>
+          <div class="price">Preis</div>
+          <div class="weight">Nutzlast</div>
+          <button>Jetzt vergleichen</button>
         </div>
       </div>
       <div class="icons-container">
