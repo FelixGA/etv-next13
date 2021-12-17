@@ -1,5 +1,5 @@
 import React from "react";
-const Newsletter = () => {
+const NewsLetter = () => {
   return (
     <div class="newsletter-container">
       <h2> Zum Newsletter anmelden</h2>
@@ -15,4 +15,4 @@ const Newsletter = () => {
     </div>
   );
 };
-export default Newsletter;
+export default NewsLetter;

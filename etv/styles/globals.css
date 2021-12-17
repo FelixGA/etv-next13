@@ -1,5 +1,9 @@
 @tailwind base;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @layer base {
   html,
   body {
@@ -51,11 +55,6 @@
 }
 
 /* css for reference  */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 header {
   background-color: #2a3c80;
