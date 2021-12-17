@@ -16,4 +16,20 @@ module.exports = withPWA({
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/:path((?!ie11_fallback.html$).*)",
+        has: [
+          {
+            type: "header",
+            key: "user-agent",
+            value: "(.*Trident.*)",
+          },
+        ],
+        permanent: false,
+        destination: "/ie11_fallback.html",
+      },
+    ];
+  },
 });
