@@ -1,5 +1,5 @@
 import React from "react";
-const TopSlider = () => {
+const BottomSlider = () => {
   return (
     <div class="bottom-slider-container">
       <h2>Beliebte Kategorien</h2>
@@ -9,4 +9,4 @@ const TopSlider = () => {
     </div>
   );
 };
-export default TopSlider;
+export default BottomSlider;

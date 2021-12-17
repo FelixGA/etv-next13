@@ -5,10 +5,9 @@ import Footer from "../components/Footer.js";
 export default function Layout(props) {
   return (
     <>
-      <div>
-        <Header />
-        <main>{props.children}</main>
-      </div>
+      <Header />
+      <main>{props.children}</main>
+
       <Footer />
     </>
   );

@@ -1,8 +1,17 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import BlogArticles from "../components/BlogArticles";
+import HeroSection from "../components/HeroSection";
+import TopSlider from "../components/TopSlider";
+import BottomSlider from "../components/BottomSlider";
 
 function homepage() {
-  return <div>im homepage</div>;
+  return (
+    <div>
+      <HeroSection />
+      <TopSlider />
+      <BlogArticles />
+      <BottomSlider />
+    </div>
+  );
 }
 
 export default homepage;
