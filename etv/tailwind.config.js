@@ -5,6 +5,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "radial-green": "radial-gradient(circle, #00774c 0%, #004225 100%)",
+        "horizontal-green": "linear-gradient(135deg, #004225 0%, #417538 100%)",
+        "radial-green-invert":
+          "radial-gradient(circle, #00774c 0%, #004225 100%)",
+        "horizontal-green-invert":
+          "linear-gradient(135deg, #417538 0%, #004225 100%)",
+        "vertical-grey": "linear-gradient(180deg, #fafafa 0%, #d9d9d9 100%)",
+        "center-grey":
+          "linear-gradient(180deg, #ffffff 0%, #e6e6e6 65.11%, #ffffff 100%)",
+      },
       borderWidth: {
         6: "6px",
       },
@@ -25,7 +36,7 @@ module.exports = {
           lightest: "#F2F2F2",
           lighter: "",
           light: "#CCCCCC",
-          dark: "#004225",
+          dark: "#6e6e6e",
           darker: "#4e4e4e",
           darkest: "#212121",
         },

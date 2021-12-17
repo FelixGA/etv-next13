@@ -1,25 +1,51 @@
 @tailwind base;
+
+@layer base {
+  html,
+  body {
+    font-family: "Museo-Sans";
+    color: #666666;
+    height: 100%;
+  }
+
+  h1 {
+    @apply text-green-dark text-2xl md:text-3xl;
+  }
+
+  h2 {
+    @apply text-green-dark text-xl md:text-2xl;
+  }
+
+  h3 {
+    @apply text-green-dark text-lg md:text-xl;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 @tailwind components;
+
 @tailwind utilities;
 
-html,
-body {
-  font-family: "Museo-Sans";
-  color: #666666;
-  height: 100%;
-  background-color: #fff;
-}
+@layer utilities {
+  .markdown ul {
+    @apply px-4 py-1;
+    list-style-type: disc;
+  }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+  .markdown ol {
+    padding: 1rem;
+    list-style-type: decimal;
+  }
 
-h1 {
-  @apply text-green-dark;
-  font-size: 26px;
+  .markdown a {
+    @apply text-green-dark font-bold;
+  }
 
-  @screen md {
-    font-size: 32px;
+  .ais-Hits-list {
+    @apply grid grid-cols-4 gap-8;
   }
 }
