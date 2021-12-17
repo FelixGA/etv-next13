@@ -3,8 +3,10 @@ import Link from "next/link";
 
 const Nav = () => {
   return (
-    <div>
-      <h1>Navbar</h1>
+    <nav>
+      <div class="logo-container">
+        <img src="./public/images/de.png" />
+      </div>
       <ul>
         <li>
           <Link href="/homepage">
@@ -41,7 +43,10 @@ const Nav = () => {
           </select>
         </li> */}
       </ul>
-    </div>
+
+      <button>Kaufberater</button>
+      <div class="ham-menu-container">ham menu</div>
+    </nav>
   );
 };
 export default Nav;
