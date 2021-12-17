@@ -16,11 +16,14 @@
     "next-pwa": "^5.4.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "tailwindcss": "^3.0.2"
+    "tailwindcss": "^3.0.5"
   },
   "devDependencies": {
     "eslint": "8.4.1",
     "eslint-config-next": "12.0.7",
     "next-sitemap": "^1.6.203"
-  }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
 }

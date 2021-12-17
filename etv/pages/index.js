@@ -13,9 +13,7 @@ export default function Home() {
         <link rel="manifest" href="./manifest.json" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Link href="/homepage">
-        <a>Home</a>
-      </Link>
+      im home
     </div>
   );
 }
