@@ -4,7 +4,7 @@ import React from "react";
 
 const Slider = () => {
   return (
-    <div className="slider">
+    <div className="container">
       <div className="w-493px">
         <h3 className="w-4">Überschrift</h3>
         <div className="slider__item-text">
