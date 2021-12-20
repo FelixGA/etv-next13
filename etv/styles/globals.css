@@ -13,7 +13,7 @@
   }
 
   h1 {
-    @apply text-green-dark text-2xl md:text-3xl;
+    @apply text-blue-dark text-3xl md:text-3xl font-bold;
   }
 
   h2 {
@@ -69,10 +69,11 @@ footer {
 
 nav {
   width: 100%;
-  height: 60px;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .logo-container img {
   width: 50px;
@@ -100,14 +101,22 @@ li {
   flex-direction: row;
   justify-content: space-between;
 }
-
-.comparison-container {
-  /*  background-color: ; */
+.main-heading-container img {
+  margin: 1px;
 }
-
 .hero-section-container {
-  background-color: rgb(195, 255, 0);
-  border: 1px solid red;
+  margin: 10px;
+}
+.comparison-container {
+  background-color: rgb(255, 209, 102);
+}
+.comparison-container div h2 {
+  margin: 10px;
+}
+.together {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .top-slider-container {
   background-color: rgb(167, 167, 241);

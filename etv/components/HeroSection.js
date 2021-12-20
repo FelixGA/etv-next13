@@ -2,30 +2,38 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div class="hero-section-container">
-      <div class="main-heading-container">
+    <div className="hero-section-container">
+      <div className="main-heading-container">
         <div>
-          <img src="./public/images/de.png" />
+          <img src="/images/medal.png" />
         </div>
-        <div class="main-heading-text">
-          <h1>elektrotransporter</h1>
-          <p>
-            Hier finden Sie den passenden Elektrotransporter, genau für Ihre
-            Ansprüche
+        <div className="main-heading-text ">
+          <h1 className="text-2xl ">Elektrotransporter-Vergleich</h1>
+          <p className="text-grey-darker text-base">
+            Hier finden Sie den{" "}
+            <b className="text-grey-darkest font-bold">
+              passenden Elektrotransporter,
+            </b>
+            genau für Ihre Ansprüche
           </p>
         </div>
       </div>
-      <div class="comparison-container">
-        <h2>Jetzt vergleichen</h2>
+      <div className="comparison-container">
+        <h2 className="text-blue-dark font-bold">Jetzt vergleichen</h2>
 
-        <div class="comaprison-input-container">
-          <div class="distance">Reichweite</div>
-          <div class="price">Preis</div>
-          <div class="weight">Nutzlast</div>
-          <button>Jetzt vergleichen</button>
+        <div className="comaprison-input-container">
+          <div className="distance">Reichweite</div>
+          <div className="price">Preis</div>
+
+          <span className="together">
+            <div className="weight">Nutzlast</div>
+            <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-4 mb-5 mr-5 rounded-lg">
+              Jetzt vergleichen
+            </button>
+          </span>
         </div>
       </div>
-      <div class="icons-container">
+      <div className="icons-container">
         <i>1</i>
         <i>2</i>
         <i>3</i>

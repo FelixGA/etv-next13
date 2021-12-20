@@ -2,7 +2,7 @@ import React from "react";
 const BlogArticles = () => {
   return (
     <>
-      <div class="blog-article-one">
+      <div className="blog-article-one">
         <div>jetzt neu</div>
         <h2>Elektrotransporter Kaufberater</h2>
         <p>
@@ -13,7 +13,7 @@ const BlogArticles = () => {
         <button>Zum Kaufberater</button>
       </div>
 
-      <div class="blog-article-two">
+      <div className="blog-article-two">
         <img src="./public/images/de.png" />
         <h2>Förderungen für Elektrotransporter</h2>
         <p>

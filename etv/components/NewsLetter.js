@@ -1,7 +1,7 @@
 import React from "react";
 const NewsLetter = () => {
   return (
-    <div class="newsletter-container">
+    <div className="newsletter-container">
       <h2> Zum Newsletter anmelden</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod,

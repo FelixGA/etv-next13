@@ -1,7 +1,7 @@
 import React from "react";
 const BottomSlider = () => {
   return (
-    <div class="bottom-slider-container">
+    <div className="bottom-slider-container">
       <h2>Beliebte Kategorien</h2>
       <img src="./public/images/de.png" />
 

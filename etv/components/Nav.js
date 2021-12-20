@@ -4,7 +4,7 @@ import Link from "next/link";
 const Nav = () => {
   return (
     <nav>
-      <div class="logo-container">
+      <div className="logo-container">
         <img src="./public/images/de.png" />
       </div>
       <ul>
@@ -45,7 +45,7 @@ const Nav = () => {
       </ul>
 
       <button>Kaufberater</button>
-      <div class="ham-menu-container">ham menu</div>
+      <div className="ham-menu-container">ham menu</div>
     </nav>
   );
 };

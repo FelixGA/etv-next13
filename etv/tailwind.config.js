@@ -40,13 +40,14 @@ module.exports = {
           darker: "#4e4e4e",
           darkest: "#212121",
         },
-        green: {
+
+        blue: {
           lightest: "",
           lighter: "",
-          light: "#85BA4B",
-          dark: "#004225",
-          darker: "#1F2624",
-          darkest: "#202624",
+          light: "#356aa6",
+          dark: "#243280",
+          darker: "#1F1E80",
+          darkest: "",
         },
       },
       maxWidth: {
@@ -65,5 +66,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
+  // plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
 };

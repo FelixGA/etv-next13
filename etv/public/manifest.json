@@ -9,8 +9,8 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "images/de.png",
-      "sizes": "192x192",
+      "src": "images/medal.png",
+      "sizes": "116.33x116",
       "type": "image/png"
     }
   ]
