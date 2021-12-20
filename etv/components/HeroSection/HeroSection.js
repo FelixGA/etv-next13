@@ -23,15 +23,13 @@ const HeroSection = () => {
         <h2 className="text-blue-dark font-bold m-4">Jetzt vergleichen</h2>
 
         <div className="comaprison-input-container m-4 ">
-          {/* <div className="distance m-3">Reichweite</div> */}
-          {/* <div className="price m-3">Preis</div> */}
           <div className=" m-1 text-sm bg-white">
             <label className="px-2 text-left" for="standard-select">
               Reichweite
             </label>
             <div className="m-3" class="select">
               <select className="text-sm" id="standard-select">
-                <option value="Option 1">3000-9000</option>
+                <option value="Option 1">3000-9000 ▼</option>
                 <option value="Option 2">Option 2</option>
                 <option value="Option 3">Option 3</option>
                 <option value="Option 4">Option 4</option>
@@ -48,7 +46,7 @@ const HeroSection = () => {
             </label>
             <div className="m-3" class="select">
               <select className="text-sm" id="standard-select">
-                <option value="Option 1">3000-9000</option>
+                <option value="Option 1">3000-9000 ▼</option>
                 <option value="Option 2">Option 2</option>
                 <option value="Option 3">Option 3</option>
                 <option value="Option 4">Option 4</option>
@@ -60,14 +58,14 @@ const HeroSection = () => {
             </div>
           </div>
           <span className="flex flex-row justify-between flex-wrap">
-            {/* <div className="weight m-3">Nutzlast</div> */}
             <div className="weight ml-1 mb-6 w-[25vw] text-sm bg-white">
               <label className="px-2" for="standard-select">
                 Nutzlast
               </label>
               <div className="mt-3 px-2" class="select">
                 <select className="text-sm" id="standard-select">
-                  <option value="Option 1">ab:500kg </option>
+                  <option value="Option 1">ab:500kg ▼ </option>
+
                   <option value="Option 2">Option 2 </option>
                   <option value="Option 3">Option 3</option>
                   <option value="Option 4">Option 4</option>

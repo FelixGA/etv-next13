@@ -131,10 +131,10 @@ select {
 }
 .select::after {
   content: "";
-  width: 0.8em;
-  height: 0.5em;
+  width: 0.6em;
+  height: 0.25em;
   background-color: gray;
-  color: gray;
+
   clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
 
