@@ -1,9 +1,10 @@
 import React from "react";
+import Image from "next/image";
 const BottomSlider = () => {
   return (
-    <div class="bottom-slider-container">
+    <div className="bottom-slider-container">
       <h2>Beliebte Kategorien</h2>
-      <img src="./public/images/de.png" />
+      <Image src="/images/de.png" alt="picture" width={50} height={50} />
 
       <button>Alle Transporter anzeigen</button>
     </div>

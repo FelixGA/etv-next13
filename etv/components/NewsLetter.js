@@ -1,7 +1,7 @@
 import React from "react";
 const Newsletter = () => {
   return (
-    <div class="newsletter-container">
+    <div className="newsletter-container">
       <h2> Zum Newsletter anmelden</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod,
@@ -9,7 +9,7 @@ const Newsletter = () => {
         nisi nisl euismod.
       </p>
       <div>
-        <label for="email">email</label>
+        <label forHtml="email">email</label>
         <input type="email" placeholder="e-mail" /> <button>anmelden</button>
       </div>
     </div>

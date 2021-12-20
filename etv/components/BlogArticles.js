@@ -1,8 +1,9 @@
 import React from "react";
+import Image from "next/image";
 const BlogArticles = () => {
   return (
     <>
-      <div class="blog-article-one">
+      <div className="blog-article-one">
         <div>jetzt neu</div>
         <h2>Elektrotransporter Kaufberater</h2>
         <p>
@@ -13,8 +14,8 @@ const BlogArticles = () => {
         <button>Zum Kaufberater</button>
       </div>
 
-      <div class="blog-article-two">
-        <img src="./public/images/de.png" />
+      <div className="blog-article-two">
+        <Image src="/images/de.png" alt="picture" width={50} height={50} />
         <h2>Förderungen für Elektrotransporter</h2>
         <p>
           Im Rah­men der angestrebten En­ergiewende ist seit 2016 eine

@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 const Nav = () => {
   return (
     <nav>
-      <div class="logo-container">
-        <img src="./public/images/de.png" />
+      <div className="text-xl w-54">
+        <Image src="/images/de.png" alt="picture" width={50} height={50} />
       </div>
       <ul>
         <li>
@@ -27,9 +27,10 @@ const Nav = () => {
           <Link href="/somethingelse">
             <a>somethingelse</a>
           </Link>
-        </li>
+        </li>{" "}
+        h2
         {/* 
-        <li className={navStyles.navItem}>
+        <li NameName={navStyles.navItem}>
           <select className="border py-2 px-3 text-black ">
             <option value="option1" selected>
               option1
@@ -45,7 +46,7 @@ const Nav = () => {
       </ul>
 
       <button>Kaufberater</button>
-      <div class="ham-menu-container">ham menu</div>
+      <div className="ham-menu-container">ham menu</div>
     </nav>
   );
 };

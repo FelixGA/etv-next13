@@ -12,6 +12,11 @@
       "src": "images/de.png",
       "sizes": "192x192",
       "type": "image/png"
+    },
+    {
+      "src": "images/bush-cars.de",
+      "sizes": "192x192",
+      "type": "image/png"
     }
   ]
 }

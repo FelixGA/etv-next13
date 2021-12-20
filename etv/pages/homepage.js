@@ -5,12 +5,12 @@ import BottomSlider from "../components/BottomSlider";
 
 function homepage() {
   return (
-    <div>
+    <>
       <HeroSection />
       <TopSlider />
       <BlogArticles />
       <BottomSlider />
-    </div>
+    </>
   );
 }
 

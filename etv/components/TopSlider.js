@@ -2,9 +2,9 @@ import React from "react";
 import Slider from "./Slider";
 const TopSlider = () => {
   return (
-    <div class="top-slider-container">
+    <div className="top-slider-container">
       <h2>Beste Testberichte</h2>
-      <h2>JFSDFKSDJFKJSDHFJKSDHFKJSDH</h2>
+
       <Slider />
     </div>
   );
