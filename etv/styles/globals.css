@@ -11,7 +11,8 @@
   h1 {
     @apply text-blue-dark text-3xl md:text-3xl font-bold;
   }
-  blue h2 {
+
+  h2 {
     @apply text-blue-dark text-xl md:text-2xl;
   }
 
@@ -47,4 +48,28 @@
   .ais-Hits-list {
     @apply grid grid-cols-4 gap-8;
   }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+select,
+.select:after {
+  grid-area: select;
+}
+.select:after {
+  justify-self: end;
+}
+ul {
+  list-style-type: none;
+}
+/* FROM HERE WE GIVE css for reference  */
+
+header {
+  background-color: #2a3c80;
+}
+main {
+  /*   background-color: aquamarine; */
 }

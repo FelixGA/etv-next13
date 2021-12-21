@@ -1,45 +1,62 @@
 import React from "react";
-import StickyContainer from "./StickyContainer";
+import Image from "next/image";
 const Footer = () => {
   return (
-    <footer>
-      <nav>
-        <ul>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 3</li>
-          <li>item 4</li>
-          <li>item 5</li>
-        </ul>
-        <ul>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 3</li>
-          <li>item 4</li>
-          <li>item 5</li>
-        </ul>
-        <ul>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 3</li>
-          <li>item 4</li>
-          <li>item 5</li>
-        </ul>
-        <ul>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 3</li>
-        </ul>
+    <footer className="py-5">
+      <nav className="flex flex-row justify-between flex-wrap my-10">
+        <div className="flex w-48  flex-col justify-start flex-wrap  px-4">
+          <h5 className=" text-sm font-bold">FIRST CATEGORY</h5>
+          <ul className=" flex flex-col justify-between flex-wrap  m-4  text-black">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+          </ul>
+        </div>
+        <div className="flex w-48 flex-col justify-start flex-wrap  px-4">
+          <h5 className=" text-sm font-bold">SECOND CATEGORY</h5>
+          <ul className=" flex flex-col justify-between flex-wrap  m-4  text-black">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+          </ul>
+        </div>
+        <div className="flex w-48 flex-col justify-start flex-wrap  px-4">
+          <h5 className=" text-sm font-bold">THIRD CATEGORY</h5>
+          <ul className=" flex flex-col justify-between flex-wrap  m-4  text-black">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+          </ul>
+        </div>
+        <div className="flex w-48 flex-col justify-start flex-wrap  px-4">
+          <h5 className=" text-sm  font-bold">FORTH CATEGORY</h5>
+          <ul className=" flex flex-col justify-start flex-wrap ml-2 mt-4 text-black">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+          </ul>
+        </div>
       </nav>
-      <div className="logo-container">
-        <i>logo ,img or ...</i> <p> text</p>
+      <div className="flex flex-row justify-start w-full flex-wrap">
+        <Image src="/images/etv-logo-final.png" width={60} height={40} />
+        <p className="text-blue-dark text-base font-bold leading-4">
+          {" "}
+          Elektrotransporter
+          <br />
+          Vergleich
+        </p>
       </div>
-      <p>
+      <p className="p-3">
         Hier könnte noch etwas stehen, was Leute davon überzeugt, dass Ihr
         richtig gut seid!
       </p>
-
-      <StickyContainer />
     </footer>
   );
 };

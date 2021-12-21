@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import StickyContainer from "./StickyContainer";
+
 const Nav = () => {
   return (
     <nav>
@@ -47,6 +48,7 @@ const Nav = () => {
 
       <button>Kaufberater</button>
       <div className="ham-menu-container">ham menu</div>
+      {/* <StickyContainer /> */}
     </nav>
   );
 };
