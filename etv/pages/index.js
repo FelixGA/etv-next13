@@ -1,8 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -14,6 +10,7 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
           rel="stylesheet"
         />
+
         <link rel="manifest" href="./manifest.json" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
