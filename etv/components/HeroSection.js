@@ -6,24 +6,32 @@ const HeroSection = () => {
     <div className="hero-section-container">
       <div className="main-heading-container">
         <div>
-          <Image src="/images/de.png" alt="picture" width={50} height={50} />
+          <Image src="/images/medal.png" alt="picture" width={50} height={50} />
         </div>
-        <div className="main-heading-text">
-          <h1>elektrotransporter</h1>
-          <p>
-            Hier finden Sie den passenden Elektrotransporter, genau für Ihre
-            Ansprüche
+        <div className="main-heading-text ">
+          <h1 className="text-2xl ">Elektrotransporter-Vergleich</h1>
+          <p className="text-grey-darker text-base">
+            Hier finden Sie den{" "}
+            <b className="text-grey-darkest font-bold">
+              passenden Elektrotransporter,
+            </b>
+            genau für Ihre Ansprüche
           </p>
         </div>
       </div>
       <div className="comparison-container">
-        <h2>Jetzt vergleichen</h2>
+        <h2 className="text-blue-dark font-bold">Jetzt vergleichen</h2>
 
         <div className="comaprison-input-container">
           <div className="distance">Reichweite</div>
           <div className="price">Preis</div>
-          <div className="weight">Nutzlast</div>
-          <button>Jetzt vergleichen</button>
+
+          <span className="together">
+            <div className="weight">Nutzlast</div>
+            <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-4 mb-5 mr-5 rounded-lg">
+              Jetzt vergleichen
+            </button>
+          </span>
         </div>
       </div>
       <div className="icons-container">

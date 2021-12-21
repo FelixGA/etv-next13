@@ -3,21 +3,20 @@
 @layer base {
   html,
   body {
-    font-family: "Museo-Sans";
+    font-family: "Inter";
     color: #666666;
     height: 100%;
   }
 
   h1 {
-    @apply text-green-dark text-2xl md:text-3xl;
+    @apply text-blue-dark text-3xl md:text-3xl font-bold;
   }
-
-  h2 {
-    @apply text-green-dark text-xl md:text-2xl;
+  blue h2 {
+    @apply text-blue-dark text-xl md:text-2xl;
   }
 
   h3 {
-    @apply text-green-dark text-lg md:text-xl;
+    @apply text-blue-dark text-lg md:text-xl;
   }
 
   img {
@@ -48,68 +47,4 @@
   .ais-Hits-list {
     @apply grid grid-cols-4 gap-8;
   }
-}
-
-/* css for reference  */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header {
-  background-color: #2a3c80;
-}
-main {
-  /*   background-color: aquamarine; */
-}
-
-footer {
-  background-color: burlywood;
-}
-
-nav {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.logo-container img {
-  width: 50px;
-  height: 40px;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-li {
-  color: rgb(255, 255, 255);
-  margin: 5px;
-}
-
-.main-heading-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.main-heading-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.comparison-container {
-  /*  background-color: ; */
-}
-
-.hero-section-container {
-  background-color: rgb(195, 255, 0);
-  border: 1px solid red;
-}
-.top-slider-container {
-  background-color: rgb(167, 167, 241);
 }

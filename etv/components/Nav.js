@@ -4,7 +4,7 @@ import Image from "next/image";
 const Nav = () => {
   return (
     <nav>
-      <div className="text-xl w-54">
+      <div className="logo-container">
         <Image src="/images/de.png" alt="picture" width={50} height={50} />
       </div>
       <ul>
