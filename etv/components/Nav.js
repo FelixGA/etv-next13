@@ -60,7 +60,10 @@ const Nav = () => {
           Kaufberater
         </button>
         <OnMobile>
-          <div className="ham-menu-container pr-6 p-1">
+          <div
+            onClick={() => console.log("clicked")}
+            className="ham-menu-container pr-6 p-1"
+          >
             <div class="menu">
               <div class="line"></div>
               <div class="line"></div>
