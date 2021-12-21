@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="py-5">
       <nav className="flex flex-row justify-between flex-wrap my-10">
-        <div className="flex flex-col justify-start flex-wrap  px-4">
+        <div className="flex w-48  flex-col justify-start flex-wrap  px-4">
           <h5 className=" text-sm font-bold">FIRST CATEGORY</h5>
           <ul className=" flex flex-col justify-between flex-wrap  m-4  text-black">
             <li>item 1</li>
@@ -14,7 +14,7 @@ const Footer = () => {
             <li>item 5</li>
           </ul>
         </div>
-        <div className="flex flex-col justify-start flex-wrap  px-4">
+        <div className="flex w-48 flex-col justify-start flex-wrap  px-4">
           <h5 className=" text-sm font-bold">SECOND CATEGORY</h5>
           <ul className=" flex flex-col justify-between flex-wrap  m-4  text-black">
             <li>item 1</li>
@@ -24,7 +24,7 @@ const Footer = () => {
             <li>item 5</li>
           </ul>
         </div>
-        <div className="flex flex-col justify-start flex-wrap  px-4">
+        <div className="flex w-48 flex-col justify-start flex-wrap  px-4">
           <h5 className=" text-sm font-bold">THIRD CATEGORY</h5>
           <ul className=" flex flex-col justify-between flex-wrap  m-4  text-black">
             <li>item 1</li>
@@ -34,9 +34,9 @@ const Footer = () => {
             <li>item 5</li>
           </ul>
         </div>
-        <div className="flex flex-col justify-start flex-wrap  px-4">
-          <h5 className=" text-sm font-bold">FORTH CATEGORY</h5>
-          <ul className=" flex flex-col justify-start flex-wrap  m-4 text-black">
+        <div className="flex w-48 flex-col justify-start flex-wrap  px-4">
+          <h5 className=" text-sm  font-bold">FORTH CATEGORY</h5>
+          <ul className=" flex flex-col justify-start flex-wrap ml-2 mt-4 text-black">
             <li>item 1</li>
             <li>item 2</li>
             <li>item 3</li>
