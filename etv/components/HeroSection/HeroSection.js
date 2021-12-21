@@ -9,8 +9,8 @@ const HeroSection = () => {
       category: "Price",
       options: [
         {
-          name: "3000-9000 ▼",
-          value: "3000-9000 ▼",
+          name: "3000-9000 ",
+          value: "3000-9000 ",
         },
         {
           name: "9000-15000",
@@ -27,8 +27,8 @@ const HeroSection = () => {
       category: "Reichweite",
       options: [
         {
-          name: "ab 150km ▼",
-          value: "ab 150km ▼",
+          name: "ab 150km ",
+          value: "ab 150km ",
         },
         {
           name: "ab 200km",
@@ -44,8 +44,8 @@ const HeroSection = () => {
       category: "Nutzlast",
       options: [
         {
-          name: "ab:500kg ▼",
-          value: "ab:500kg ▼",
+          name: "ab:500kg",
+          value: "ab:500kg ",
         },
         {
           name: "ab:1000kg",
@@ -66,8 +66,8 @@ const HeroSection = () => {
           <img className="m-[1px]" src="/images/medal.png" />
         </div>
         <div className="main-heading-text ">
-          <h1 className="text-2xl ">Elektrotransporter-Vergleich</h1>
-          <p className="text-grey-darker text-base">
+          <h1 className="text-2xl pl-3 ">Elektrotransporter-Vergleich</h1>
+          <p className="text-grey-darker text-base pl-3">
             Hier finden Sie den{" "}
             <b className="text-grey-darkest font-bold">
               passenden Elektrotransporter,
@@ -76,17 +76,20 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
-      <div className="comparison-container bg-yellow-light">
+      <div className="comparison-container  bg-yellow-light">
         <h2 className="text-blue-dark font-bold m-4">Jetzt vergleichen</h2>
 
         <div className="comaprison-input-container m-4 ">
-          <div className=" m-1 text-sm bg-white">
-            <label className="px-2 text-left" for="standard-select">
-              Reichweite
+          <div className=" mx-2 pt-2 gmsou text-base bg-white max-w-2xl	">
+            <label
+              className="px-2 text-left flex flex-row justify-between px-2 text-left"
+              for="standard-select"
+            >
+              Reichweite <div className=" relative top-6">▼</div>
             </label>
-            <div className=" m-3">
+            <div className=" m-1">
               <select
-                className="text-sm text-blue-dark appearance-none bg-white border-none pr-1 m-0 w-full"
+                className="text-base font-bold text-blue-dark appearance-none bg-white border-none pl-1 m-0 w-full"
                 id="standard-select"
               >
                 {details[1].options.map((option) => (
@@ -95,13 +98,16 @@ const HeroSection = () => {
               </select>
             </div>
           </div>
-          <div className=" m-1 text-sm bg-white">
-            <label className="px-2 text-left" for="standard-select">
-              Preis
+          <div className=" my-4 mx-2 pt-2 gmsou text-base bg-white  max-w-2xl">
+            <label
+              className="flex flex-row justify-between px-2 text-left"
+              for="standard-select"
+            >
+              Preis <div className=" relative top-6">▼</div>
             </label>
-            <div className=" m-3">
+            <div className=" m-1">
               <select
-                className="text-sm appearance-none bg-white border-none pr-1 m-0 w-full text-blue-dark"
+                className="text-base font-bold appearance-none bg-white border-none pl-1 m-0 w-full text-blue-dark"
                 id="standard-select"
               >
                 {details[0].options.map((option) => (
@@ -110,14 +116,17 @@ const HeroSection = () => {
               </select>
             </div>
           </div>
-          <span className="flex flex-row justify-between flex-wrap">
-            <div className="weight ml-1 mb-6 w-[25vw] text-sm bg-white">
-              <label className="px-2" for="standard-select">
-                Nutzlast
+          <span className="flex flex-row justify-around flex-wrap">
+            <div className="my-4 pt-2 gmsou ml-1 mb-6 w-[25vw] text-base bg-white">
+              <label
+                className="px-2 flex flex-row justify-between px-2 text-left"
+                for="standard-select"
+              >
+                Nutzlast <div className=" relative top-6">▼</div>
               </label>
-              <div className=" mt-3 px-1">
+              <div className=" mt-1 px-1">
                 <select
-                  className="text-sm appearance-none bg-white border-none pr-1 m-0 w-full text-blue-dark"
+                  className="text-base font-bold appearance-none bg-white border-none pl-1 m-0 w-full text-blue-dark"
                   id="standard-select"
                 >
                   {details[2].options.map((option) => (
@@ -126,7 +135,7 @@ const HeroSection = () => {
                 </select>
               </div>
             </div>
-            <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-3 px-3 mb-5 my-3 text-sm rounded-lg">
+            <button className="bg-blue-dark hover:bg-blue-light text-white font-bold  px-3 mb-5 my-3 text-sm rounded-lg">
               Jetzt vergleichen
             </button>
           </span>
