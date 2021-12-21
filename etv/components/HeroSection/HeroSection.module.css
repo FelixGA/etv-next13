@@ -1,9 +1,8 @@
 .select {
-  @apply rounded-lg  bg-white text-base cursor-pointer w-full grid items-center;
-  min-width: 15ch;
-  max-width: 20ch;
-  padding: 0.25em 0.5em;
-  line-height: 1.1;
+  @apply rounded-lg  bg-white text-base cursor-pointer  items-center;
+  /* min-width: 15ch;
+  max-width: 20ch; */
+  display: grid;
   background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
   grid-template-areas: "select";
 }
