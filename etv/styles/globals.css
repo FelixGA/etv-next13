@@ -53,89 +53,10 @@
     @apply grid grid-cols-4 gap-8;
   }
 }
-
-/* FROM HERE WE GIVE css for reference  */
-
-header {
-  background-color: #2a3c80;
-}
-main {
-  /*   background-color: aquamarine; */
-}
-
-footer {
-  background-color: burlywood;
-}
-
-nav {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.logo-container img {
-  width: 50px;
-  height: 40px;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-li {
-  color: rgb(255, 255, 255);
-  margin: 5px;
-}
-
-.top-slider-container {
-  background-color: rgb(167, 167, 241);
-}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-select {
-  appearance: none;
-  background-color: #ffffff;
-  border: none;
-  padding: 0 1em 0 0;
-  margin: 0;
-  width: 100%;
-  font-family: inherit;
-
-  color: blue;
-  cursor: inherit;
-  line-height: inherit;
-}
-
-.select {
-  width: 100%;
-  min-width: 15ch;
-  max-width: 20ch;
-
-  border-radius: 0.25em;
-  padding: 0.25em 0.5em;
-  font-size: 1rem;
-  cursor: pointer;
-  line-height: 1.1;
-  background-color: #fff;
-  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
-  display: grid;
-  grid-template-areas: "select";
-  align-items: center;
-}
-.select::after {
-  content: "";
-  width: 0.6em;
-  height: 0.25em;
-  background-color: gray;
-
-  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
 
 select,
@@ -144,4 +65,15 @@ select,
 }
 .select:after {
   justify-self: end;
+}
+ul {
+  list-style-type: none;
+}
+/* FROM HERE WE GIVE css for reference  */
+
+header {
+  background-color: #2a3c80;
+}
+main {
+  /*   background-color: aquamarine; */
 }
