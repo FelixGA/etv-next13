@@ -57,7 +57,7 @@ const Slider = () => {
           <Link href="#">
             <a className="text-xs text-center text-blue-darker ">
               Mehr erfahren{"          "}
-              <span className="text-blue-darkest text-base">-></span>
+              <span className="text-blue-darkest text-base">-&gt;</span>
             </a>
           </Link>
         </div>

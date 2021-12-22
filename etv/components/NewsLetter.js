@@ -9,7 +9,7 @@ const NewsLetter = () => {
         nisi nisl euismod.
       </p>
       <div>
-        <label forHtml="email">email</label>
+        {/* <label forHtml="email">email</label> */}
         <input type="email" placeholder="e-mail" /> <button>anmelden</button>
       </div>
     </div>
