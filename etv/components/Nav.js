@@ -1,21 +1,9 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Link from "next/link";
 import StickyContainer from "./StickyContainer";
 import { layoutGenerator } from "react-break";
 import Image from "next/image";
 const Nav = () => {
-  const layout = layoutGenerator({
-    mobile: 0,
-
-    tablet: 768,
-    desktop: 992,
-  });
-  //npm install react-break --save
-  const OnMobile = layout.isAtMost("mobile");
-  const OnAtLeastTablet = layout.isAtLeast("tablet");
-
-  const OnDesktop = layout.is("desktop");
-
   const navMenu = (
     <ul>
       <li>
@@ -51,15 +39,15 @@ const Nav = () => {
           className="logo"
         />
       </div>
-
+      {/* 
       <OnAtLeastTablet>{navMenu}</OnAtLeastTablet>
 
-      <OnDesktop> {navMenu}</OnDesktop>
+      <OnDesktop> {navMenu}</OnDesktop> */}
       <div className="flex flex-row justify-between items-center">
         <button className="bg-yellow-dark hover:bg-yellow-light text-grey-darker font-bold p-2 mb-3 m-4 text-sm rounded-lg">
           Kaufberater
         </button>
-        <OnMobile>
+        {/* <OnMobile>
           <div
             onClick={() => console.log("clicked")}
             className="ham-menu-container pr-6 p-1"
@@ -70,7 +58,7 @@ const Nav = () => {
               <div class="line"></div>
             </div>
           </div>
-        </OnMobile>
+        </OnMobile> */}
       </div>
 
       {/* <StickyContainer /> */}

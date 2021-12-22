@@ -20,6 +20,18 @@ const HeroSection = () => {
           name: "15000-20000",
           value: "15000-20000",
         },
+        {
+          name: "20000-25000",
+          value: "20000-25000",
+        },
+        {
+          name: "25000-30000",
+          value: "25000-30000",
+        },
+        {
+          name: "30000-35000",
+          value: "30000-35000",
+        },
       ],
     },
 
@@ -76,20 +88,23 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
-      <div className="comparison-container  bg-yellow-light">
-        <h2 className="text-blue-dark font-bold m-4">Jetzt vergleichen</h2>
+      <div className="comparison-container laptop:flex laptop:flex-row bg-yellow-light">
+        <h2 className="text-blue-dark font-bold m-4 laptop:hidden ">
+          Jetzt vergleichen
+        </h2>
 
-        <div className="comaprison-input-container m-4 ">
-          <div className=" mx-2 pt-2 gmsou text-base bg-white max-w-2xl	">
+        <div className="comaprison-input-container m-4 laptop:flex laptop:flex-row laptop:justify-between ">
+          <div className="h-14 mx-2 pt-2 gmsou text-base bg-white	galaxyfold:w-[70vw] tablet:w-[80vw] laptop:w-[18vw] ">
             <label
-              className="px-2 text-left flex flex-row justify-between px-2 text-left"
+              className="px-2 flex flex-row justify-between px-2 text-left"
               for="standard-select"
             >
               Reichweite <div className=" relative top-6">▼</div>
             </label>
             <div className=" m-1">
               <select
-                className="text-base font-bold text-blue-dark appearance-none bg-white border-none pl-1 m-0 w-full"
+                className=" p-4 relative bottom-6
+               text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 w-full"
                 id="standard-select"
               >
                 {details[1].options.map((option) => (
@@ -98,16 +113,17 @@ const HeroSection = () => {
               </select>
             </div>
           </div>
-          <div className=" my-4 mx-2 pt-2 gmsou text-base bg-white  max-w-2xl">
+          <div className="h-14 mx-2 my-4 pt-2 gmsou text-base bg-white galaxyfold:w-[70vw] tablet:w-[80vw] laptop:w-[18vw]	">
             <label
-              className="flex flex-row justify-between px-2 text-left"
+              className="px-2 flex flex-row justify-between px-2 text-left"
               for="standard-select"
             >
               Preis <div className=" relative top-6">▼</div>
             </label>
             <div className=" m-1">
               <select
-                className="text-base font-bold appearance-none bg-white border-none pl-1 m-0 w-full text-blue-dark"
+                className=" p-4 relative bottom-6
+               text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 w-full"
                 id="standard-select"
               >
                 {details[0].options.map((option) => (
@@ -116,17 +132,17 @@ const HeroSection = () => {
               </select>
             </div>
           </div>
-          <span className="flex flex-row justify-around flex-wrap">
-            <div className="my-4 pt-2 gmsou ml-1 mb-6 w-[25vw] text-base bg-white">
+          <span className="flex galaxyfold:flex-col tablet:flex-row  justify-around flex-wrap">
+            <div className=" h-14 my-4 pt-2 gmsou ml-1 mb-6 galaxyfold:w-[70vw] tablet:w-[40vw] laptop:w-[18vw] text-base bg-white">
               <label
                 className="px-2 flex flex-row justify-between px-2 text-left"
                 for="standard-select"
               >
-                Nutzlast <div className=" relative top-6">▼</div>
+                Nutzlast <div className=" relative right-0 top-6">▼</div>
               </label>
               <div className=" mt-1 px-1">
                 <select
-                  className="text-base font-bold appearance-none bg-white border-none pl-1 m-0 w-full text-blue-dark"
+                  className=" p-4 relative bottom-6 text-base font-bold appearance-none bg-transparent border-none pl-1 m-0 w-full text-blue-dark"
                   id="standard-select"
                 >
                   {details[2].options.map((option) => (
@@ -135,7 +151,7 @@ const HeroSection = () => {
                 </select>
               </div>
             </div>
-            <button className="bg-blue-dark hover:bg-blue-light text-white font-bold  px-3 mb-5 my-3 text-sm rounded-lg">
+            <button className="bg-blue-dark hover:bg-blue-light text-white font-bold  px-2 mb-5 my-3 text-sm rounded-lg">
               Jetzt vergleichen
             </button>
           </span>

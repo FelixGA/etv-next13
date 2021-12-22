@@ -5,6 +5,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        galaxyfold: "280px",
+        // => @media (min-width: 576px) { ... }
+
+        tablet: "340px",
+        // => @media (min-width: 960px) { ... }
+
+        laptop: "960px",
+        // => @media (min-width: 1440px) { ... }
+      },
       backgroundImage: {
         "radial-green": "radial-gradient(circle, #00774c 0%, #004225 100%)",
         "horizontal-green": "linear-gradient(135deg, #004225 0%, #417538 100%)",
@@ -73,5 +83,6 @@ module.exports = {
   variants: {
     extend: {},
   },
+
   // plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
 };
