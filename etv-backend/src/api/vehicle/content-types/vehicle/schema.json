@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicles",
+  "info": {
+    "singularName": "vehicle",
+    "pluralName": "vehicles",
+    "displayName": "Vehicles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "quitefar": {
+      "type": "biginteger",
+      "required": true
+    },
+    "weight": {
+      "type": "biginteger",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "title-of-car",
+      "unique": true
+    },
+    "photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "default": "here the description"
+    }
+  }
+}

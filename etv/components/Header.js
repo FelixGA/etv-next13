@@ -4,7 +4,8 @@ const Header = () => {
   return (
     <div>
       <Nav></Nav>
-      <h1>Header</h1>
+      {/* later */}
+      {/* <NavDesktop/> */}
     </div>
   );
 };

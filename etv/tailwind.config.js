@@ -5,6 +5,30 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        galaxyfold: "280px",
+        // => @media (min-width: 576px) { ... }
+
+        tablet: "340px",
+        // => @media (min-width: 960px) { ... }
+
+        laptop: "960px",
+        // => @media (min-width: 1440px) { ... }
+      },
+      animation: {
+        slideL: "slideL 500ms linear",
+        slideR: "slideR 500ms linear",
+      },
+      keyframes: {
+        slideL: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        slideR: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
       backgroundImage: {
         "radial-green": "radial-gradient(circle, #00774c 0%, #004225 100%)",
         "horizontal-green": "linear-gradient(135deg, #004225 0%, #417538 100%)",
@@ -18,6 +42,9 @@ module.exports = {
       },
       borderWidth: {
         6: "6px",
+      },
+      fontSize: {
+        xxs: "10px",
       },
       boxShadow: (theme) => ({
         card: "2px 4px 20px -4px rgba(0,0,0,0.75)",
@@ -40,16 +67,43 @@ module.exports = {
           darker: "#4e4e4e",
           darkest: "#212121",
         },
-        green: {
+        yellow: {
           lightest: "",
           lighter: "",
-          light: "#85BA4B",
-          dark: "#004225",
-          darker: "#1F2624",
-          darkest: "#202624",
+          light: "#ffd166",
+          dark: "#FFAB00",
+          darker: "",
+          darkest: "",
+        },
+        blue: {
+          lightest: "",
+          lighter: "#6F89A5",
+          light: "#356aa6",
+          dark: "#243280",
+          darker: "#1F1E80",
+          darkest: "#5A3DF5",
+        },
+        black: {
+          lightest: "",
+          lighter: "",
+          light: "#356aa6",
+          dark: "#2c3f53",
+          darker: "#1F1E80",
+          darkest: "",
+        },
+        orange: {
+          lightest: "",
+          lighter: "",
+          light: "",
+          dark: "#EF5424",
+          darker: "",
+          darkest: "",
         },
       },
       maxWidth: {
+        card: "300px",
+      },
+      minWidth: {
         card: "300px",
       },
       spacing: {
@@ -65,5 +119,6 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
+
+  // plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
 };
