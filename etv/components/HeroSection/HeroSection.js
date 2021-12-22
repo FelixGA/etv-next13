@@ -75,7 +75,12 @@ const HeroSection = () => {
     <div className="hero-section-container m-4 laptop:w-3/4 ">
       <div className="main-heading-container flex flex-row justify-between ">
         <div>
-          <img className="m-[1px]" src="/images/medal.png" />
+          <Image
+            className="m-[1px]"
+            src="/images/medal.png"
+            width={166}
+            height={166}
+          />
         </div>
         <div className="main-heading-text ">
           <h1 className="text-2xl pl-3 ">Elektrotransporter-Vergleich</h1>
