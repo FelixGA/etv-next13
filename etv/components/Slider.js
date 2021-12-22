@@ -8,8 +8,7 @@ import image2 from "../public/images/2.png";
 import image3 from "../public/images/3.png";
 import image4 from "../public/images/4.png";
 import image5 from "../public/images/5.png";
-const Slider = (props) => {
-  console.log(props.index);
+const Slider = () => {
   /*  const images = [image1, image2, image3, image4, image5]; */
   return (
     <div className=" min-w-64 mr-10">

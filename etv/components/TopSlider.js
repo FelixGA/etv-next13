@@ -10,8 +10,11 @@ const TopSlider = (props) => {
 
   const [transL, setTransL] = useState(false);
   const [transR, setTransR] = useState(false);
+  const [shownCarsAmount, setShownCarsAmount] = useState();
+  const [showCount, setShowCount] = useState(1);
+  const [shownCars, setShownCars] = useState([props.cars[0]]);
 
-  useEffect(() => {
+  /*  useEffect(() => {
     if (transR) {
       setTimeout(() => {
         setTransR(false);
@@ -24,7 +27,7 @@ const TopSlider = (props) => {
         setIndex1((index1 + 1) % images.length);
       }, 800);
     }
-  }, [transL, transR]);
+  }, [transL, transR]); */
 
   const handlePrev = () => {
     setTransR(true);
@@ -47,6 +50,10 @@ const TopSlider = (props) => {
   };
 
   const handleNext = () => {
+    setShownCars([
+      ...props.cars?.slice(shownCarsAmount, shownCarsAmount + showCount),
+    ]);
+    console.log(shownCars, showCount);
     setTransL(true);
     setTransR(false);
 
@@ -66,7 +73,7 @@ const TopSlider = (props) => {
           >
             {"<"}
           </button>
-          {props.cars.map((car, index) => (
+          {shownCars.map((car, index) => (
             <Slider car={car} index={index} key={index} />
           ))}
 
