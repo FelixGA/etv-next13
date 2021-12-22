@@ -1,13 +1,9 @@
 @tailwind base;
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 @layer base {
   html,
   body {
-    font-family: "Museo-Sans";
+    font-family: "Inter";
     color: #666666;
     height: 100%;
   }

@@ -72,8 +72,8 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="hero-section-container m-4">
-      <div className="main-heading-container flex flex-row justify-between">
+    <div className="hero-section-container m-4 laptop:w-3/4 ">
+      <div className="main-heading-container flex flex-row justify-between ">
         <div>
           <img className="m-[1px]" src="/images/medal.png" />
         </div>
@@ -88,12 +88,12 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
-      <div className="comparison-container laptop:flex laptop:flex-row bg-yellow-light">
+      <div className="laptop:flex laptop:justify-between laptop: items-center bg-yellow-light h-24">
         <h2 className="text-blue-dark font-bold m-4 laptop:hidden ">
           Jetzt vergleichen
         </h2>
 
-        <div className="comaprison-input-container m-4 laptop:flex laptop:flex-row laptop:justify-between ">
+        <div className="comaprison-input-container m-4  items-center laptop:flex laptop:flex-row laptop:justify-between flex-1 ">
           <div className="h-14 mx-2 pt-2 gmsou text-base bg-white	galaxyfold:w-[70vw] tablet:w-[80vw] laptop:w-[18vw] ">
             <label
               className="px-2 flex flex-row justify-between px-2 text-left"
@@ -104,7 +104,7 @@ const HeroSection = () => {
             <div className=" m-1">
               <select
                 className=" p-4 relative bottom-6
-               text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 w-full"
+               text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
                 id="standard-select"
               >
                 {details[1].options.map((option) => (
@@ -123,7 +123,7 @@ const HeroSection = () => {
             <div className=" m-1">
               <select
                 className=" p-4 relative bottom-6
-               text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 w-full"
+               text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
                 id="standard-select"
               >
                 {details[0].options.map((option) => (
@@ -142,7 +142,7 @@ const HeroSection = () => {
               </label>
               <div className=" mt-1 px-1">
                 <select
-                  className=" p-4 relative bottom-6 text-base font-bold appearance-none bg-transparent border-none pl-1 m-0 w-full text-blue-dark"
+                  className=" p-4 relative bottom-6 text-base font-bold appearance-none bg-transparent border-none pl-1 m-0  text-blue-dark"
                   id="standard-select"
                 >
                   {details[2].options.map((option) => (

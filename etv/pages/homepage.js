@@ -5,15 +5,39 @@ import BottomSlider from "../components/BottomSlider";
 import NewsLetter from "../components/NewsLetter";
 
 function homepage() {
+  const cars = [
+    { name: "mdnf,s", img: "ndscnhdskcn" },
+    { name: "mdnf,fergffer", img: "111111111" },
+  ];
   return (
-    <div>
+    <>
       <HeroSection />
-      <TopSlider />
+      <TopSlider cars={cars} />
       <BlogArticles />
       <BottomSlider />
       <NewsLetter />
-    </div>
+    </>
   );
 }
+
+/* export async function getStaticProps(context) {
+  const path = "/agb";
+  const pageData = await fetch(queries(path).pageQuery);
+  let page = pageData.pages?.length > 0 ? pageData.pages[0] : null;
+
+  if (!page) {
+    return {
+      notFound: true,
+    };
+  }
+
+  page = await parseMarkdown(page);
+
+  return {
+    props: {
+      page,
+    },
+  };
+} */
 
 export default homepage;
