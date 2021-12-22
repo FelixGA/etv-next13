@@ -82,7 +82,7 @@ const HeroSection = () => {
         <div className="comaprison-input-container m-4 ">
           <div className=" m-1 text-sm bg-white">
             <label className="px-2 text-left" for="standard-select">
-              Reichweite
+              Reichweite.
             </label>
             <div className=" m-3">
               <select

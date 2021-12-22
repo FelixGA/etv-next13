@@ -2,7 +2,15 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import image from "../public/images/de.png";
-const Slider = () => {
+
+import image1 from "../public/images/1.png";
+import image2 from "../public/images/2.png";
+import image3 from "../public/images/3.png";
+import image4 from "../public/images/4.png";
+import image5 from "../public/images/5.png";
+const Slider = (props) => {
+  console.log(props.index);
+  /*  const images = [image1, image2, image3, image4, image5]; */
   return (
     <div className=" min-w-64 mr-10">
       <div className=" border-2 w-72  ">
@@ -39,7 +47,6 @@ const Slider = () => {
               </div>
               <div className="pb-2">
                 <span className="text-xxs font-black pl-3 tracking-widest ">
-                  {" "}
                   SEHR GUT
                 </span>
               </div>

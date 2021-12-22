@@ -1,7 +1,57 @@
 import React from "react";
 import Slider from "./Slider";
+import { useState, useEffect } from "react";
+import images from "./Slider";
+
 // import Script from "next/script";
-const TopSlider = () => {
+const TopSlider = (props) => {
+  const [index, setIndex] = useState(0);
+  const [index1, setIndex1] = useState(1);
+
+  const [transL, setTransL] = useState(false);
+  const [transR, setTransR] = useState(false);
+
+  useEffect(() => {
+    if (transR) {
+      setTimeout(() => {
+        setTransR(false);
+      }, 800);
+    }
+    if (transL) {
+      setTimeout(() => {
+        setTransL(false);
+        setIndex((index + 1) % images.length);
+        setIndex1((index1 + 1) % images.length);
+      }, 800);
+    }
+  }, [transL, transR]);
+
+  const handlePrev = () => {
+    setTransR(true);
+    setTransL(false);
+
+    const nextIndex = index - 1;
+    const nextIndex1 = index1 - 1;
+
+    if (nextIndex < 0) {
+      setIndex(images.length - 1);
+    } else {
+      setIndex(nextIndex);
+    }
+
+    if (nextIndex1 < 0) {
+      setIndex1(images.length - 1);
+    } else {
+      setIndex1(nextIndex1);
+    }
+  };
+
+  const handleNext = () => {
+    setTransL(true);
+    setTransR(false);
+
+    console.log("you clicked");
+  };
   return (
     <>
       <div className="  flex flex-col ">
@@ -10,10 +60,22 @@ const TopSlider = () => {
         </h2>
         <div className="  flex flex-row overflow-scroll">
           {/*  <Script src="/path/to/flickity.pkgd.min.js" /> */}
-          <Slider />
-          <Slider />
-          <Slider />
-          <Slider />
+          <button
+            className="h-auto w-10 bg-yellow-800 font-extrabold text-3xl"
+            onClick={handlePrev}
+          >
+            {"<"}
+          </button>
+          {props.cars.map((car, index) => (
+            <Slider car={car} index={index} key={index} />
+          ))}
+
+          <button
+            className="h-auto w-10 bg-yellow-800 font-extrabold text-3xl"
+            onClick={handleNext}
+          >
+            {">"}
+          </button>
         </div>
       </div>
     </>

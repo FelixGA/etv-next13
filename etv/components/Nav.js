@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import StickyContainer from "./StickyContainer";
-
+import Image from "next/image";
 const Nav = () => {
   return (
     <nav>
