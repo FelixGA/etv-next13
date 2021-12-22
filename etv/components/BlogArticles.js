@@ -22,7 +22,7 @@ const BlogArticles = () => {
           src="/images/schwein.png"
           width={300}
           height={300}
-          layout="responsive"
+          // layout="responsive"
           className="blog-article-two-image"
         />
         <h2 className="text-grey-darkest text-3xl font-bold py-5">

@@ -5,6 +5,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        galaxyfold: "280px",
+        // => @media (min-width: 576px) { ... }
+
+        tablet: "340px",
+        // => @media (min-width: 960px) { ... }
+
+        laptop: "960px",
+        // => @media (min-width: 1440px) { ... }
+      },
       animation: {
         slideL: "slideL 500ms linear",
         slideR: "slideR 500ms linear",
@@ -58,8 +68,12 @@ module.exports = {
           darkest: "#212121",
         },
         yellow: {
+          lightest: "",
+          lighter: "",
           light: "#ffd166",
-          dark: "D49528",
+          dark: "#FFAB00",
+          darker: "",
+          darkest: "",
         },
         blue: {
           lightest: "",
@@ -105,5 +119,6 @@ module.exports = {
   variants: {
     extend: {},
   },
+
   // plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
 };
