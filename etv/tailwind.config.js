@@ -94,7 +94,7 @@ module.exports = {
         orange: {
           lightest: "",
           lighter: "",
-          light: "",
+          light: "#f35625",
           dark: "#EF5424",
           darker: "",
           darkest: "",

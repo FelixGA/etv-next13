@@ -1,5 +1,4 @@
 import React from "react";
-import heroSectionStyles from "../HeroSection/HeroSection.module.css";
 import logos from "./logos.json";
 import Image from "next/image";
 
@@ -72,38 +71,42 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="hero-section-container m-4 laptop:w-3/4 ">
-      <div className="main-heading-container flex flex-row justify-between ">
-        <div>
-          <Image
-            className="m-[1px]"
-            src="/images/medal.png"
-            width={166}
-            height={166}
-          />
+    <div className="hero-section-container m-4 laptop:w-3/4 laptop:m-auto laptop:mt-16">
+      <div className="main-heading-container flex flex-row justify-start laptop:w-full">
+        <div className="m-[10px] laptop:mr-14">
+          <Image src="/images/medal.png" width={166} height={166} />
         </div>
-        <div className="main-heading-text ">
+        <div className="main-heading-text laptop:flex laptop:flex-col laptop:justify-between  ">
           <h1 className="text-2xl pl-3 ">Elektrotransporter-Vergleich</h1>
           <p className="text-grey-darker text-base pl-3">
             Hier finden Sie den{" "}
             <b className="text-grey-darkest font-bold">
               passenden Elektrotransporter,
             </b>
+            <br></br>
             genau für Ihre Ansprüche
+          </p>
+          <p className="py-4 hidden laptop:flex laptop:flex-row laptop:justify-between ">
+            <span>
+              <b className="text-blue-light">&#10004;</b> unabhängig
+            </span>
+            <span>
+              <b className="text-blue-light">&#10004;</b> schnell
+            </span>
+            <span>
+              <b className="text-blue-light">&#10004;</b> immer aktuell
+            </span>
           </p>
         </div>
       </div>
-      <div className="laptop:flex laptop:justify-between laptop: items-center bg-yellow-light h-24">
+      <div className="laptop:flex laptop:justify-between laptop:items-center  bg-yellow-light laptop:h-24">
         <h2 className="text-blue-dark font-bold m-4 laptop:hidden ">
           Jetzt vergleichen
         </h2>
 
-        <div className="comaprison-input-container m-4  items-center laptop:flex laptop:flex-row laptop:justify-between flex-1 ">
+        <div className="comaprison-input-container m-4  laptop:items-center laptop:flex laptop:flex-row laptop:justify-between laptop:flex-1 ">
           <div className="h-14 mx-2 pt-2 gmsou text-base bg-white	galaxyfold:w-[70vw] tablet:w-[80vw] laptop:w-[18vw] ">
-            <label
-              className="px-2 flex flex-row justify-between px-2 text-left"
-              for="standard-select"
-            >
+            <label className="px-2 flex flex-row justify-between px-2 text-left">
               Reichweite <div className=" relative top-6">▼</div>
             </label>
             <div className=" m-1">
@@ -119,10 +122,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="h-14 mx-2 my-4 pt-2 gmsou text-base bg-white galaxyfold:w-[70vw] tablet:w-[80vw] laptop:w-[18vw]	">
-            <label
-              className="px-2 flex flex-row justify-between px-2 text-left"
-              for="standard-select"
-            >
+            <label className="px-2 flex flex-row justify-between px-2 text-left">
               Preis <div className=" relative top-6">▼</div>
             </label>
             <div className=" m-1">
@@ -139,10 +139,7 @@ const HeroSection = () => {
           </div>
           <span className="flex galaxyfold:flex-col tablet:flex-row  justify-around flex-wrap">
             <div className=" h-14 my-4 pt-2 gmsou ml-1 mb-6 galaxyfold:w-[70vw] tablet:w-[40vw] laptop:w-[18vw] text-base bg-white">
-              <label
-                className="px-2 flex flex-row justify-between px-2 text-left"
-                for="standard-select"
-              >
+              <label className="px-2 flex flex-row justify-between px-2 text-left">
                 Nutzlast <div className=" relative right-0 top-6">▼</div>
               </label>
               <div className=" mt-1 px-1">
@@ -164,7 +161,7 @@ const HeroSection = () => {
       </div>
       <div className="icons-container flex flex-row justify-around flex-wrap">
         {logos.map((logo, index) => (
-          <i className="m-2">
+          <i className="m-2 laptop:my-20 laptop:scale-125">
             <Image
               src={logo.src}
               alt={logo.alt}
