@@ -5,60 +5,70 @@ import React from "react";
 const images = [
   {
     index: 1,
-    title: "Users",
+    title: "ARI 458",
     image: require("../public/images/VW-e-Crafter-Front-300x225.jpg"),
+    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
   },
   {
     index: 2,
-    title: "Clients",
+    title: "ARI 145",
     image: require("../public/images/Stama-Maestro-Front-300x200.jpg"),
+    desc: "Das Lastenmoped verfügt über zwei stabile Gepäckträger. Die Nutzlast beträgt 105 kg.",
   },
   {
     index: 3,
-    title: "Admin",
+    title: "ARI 802",
     image: require("../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg"),
+    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
   },
   {
     index: 4,
-    title: "Admin",
+    title: "ARI 901",
     image: require("../public/images/Addax-MT-Laubgitter-Wiki-300x200.jpg"),
+    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
   },
   {
     index: 5,
-    title: "Admin",
+    title: "ARI 345",
     image: require("../public/images/ARI-458-Kipper-L-Heck-300x199.jpg"),
+    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
   },
   {
     index: 6,
-    title: "Users",
+    title: "ARI 802",
     image: require("../public/images/VW-e-Crafter-Front-300x225.jpg"),
+    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
   },
   {
     index: 7,
-    title: "Clients",
+    title: "ARI 901",
     image: require("../public/images/Stama-Maestro-Front-300x200.jpg"),
+    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
   },
   {
     index: 8,
-    title: "Admin",
+    title: "ARI 345",
     image: require("../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg"),
+    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
   },
   {
     index: 9,
-    title: "Admin",
+    title: "ARI 802",
     image: require("../public/images/Addax-MT-Laubgitter-Wiki-300x200.jpg"),
+    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
   },
   {
     index: 10,
-    title: "Admin",
+    title: "ARI 345",
     image: require("../public/images/ARI-458-Kipper-L-Heck-300x199.jpg"),
+    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
   },
 ];
 
 const Slider = () => {
   return images.map((item, index) => (
-    <div className=" min-w-64 mr-10" key={index}>
-      <div className="  w-72  ">
+    <div className=" min-w-64 mr-2 pl-6" key={index}>
+      <div className="w-72">
         <Image
           src={item.image}
           alt="picture"
@@ -69,12 +79,11 @@ const Slider = () => {
         />
 
         <h3 className="text-center text-xl font-black text-black-dark mt-8 mb-4	tracking-wide">
-          Überschrift
+          {item.title}
         </h3>
         <div className="slider__item-text">
           <p className="text-sm text-center font-Inter text-blue-lighter	">
-            Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen
-            werden.
+            {item.desc}
           </p>
         </div>
 
@@ -104,8 +113,14 @@ const Slider = () => {
         <div className="w-full text-center mt-8">
           <Link href="#">
             <a className="text-xs text-center text-blue-darker ">
-              Mehr erfahren{"          "}
-              <span className="text-blue-darkest text-base">-&gt;</span>
+              Mehr erfahren
+              <span className="text-blue-lightest font-thin text-2xl pl-4 relative top-1">
+                ➔
+                {/*  <img
+                  src={require("/public/images/Arrow-right-512.png")}
+                  alt="ᗒ"
+                /> */}
+              </span>
             </a>
           </Link>
         </div>

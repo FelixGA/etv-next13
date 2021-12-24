@@ -5,7 +5,6 @@ import images from "./Slider";
 
 // import Script from "next/script";
 const TopSlider = (props) => {
-  console.log(props);
   const [index, setIndex] = useState(0);
   const [index1, setIndex1] = useState(1);
 
@@ -64,27 +63,27 @@ const TopSlider = (props) => {
   return (
     <>
       <div className="  flex flex-col ">
-        <h2 className="text-3xl font-black text-black-dark text-left mt-8 mb-8 tracking-wide">
+        <h2 className="text-3xl font-black text-black-dark text-left mt-10 mb-10 tracking-wide pl-6">
           Beste Testberichte
         </h2>
-        <div className="  flex flex-row overflow-x-auto scrollbar-hide">
-          <button
+        <div className="  flex flex-row overflow-x-auto scrollbar-hide ">
+          {/*  <button
             className="h-auto w-10  font-extrabold text-3xl"
             onClick={handlePrev}
           >
             {"<"}
-          </button>
+          </button> */}
           {/*   {shownCars.map((car, index) => (
             <Slider car={car} index={index} key={index} />
           ))} */}
           <Slider />
 
-          <button
+          {/*  <button
             className="h-auto w-10  font-extrabold text-3xl"
             onClick={handleNext}
           >
             {">"}
-          </button>
+          </button> */}
         </div>
       </div>
     </>
