@@ -1,20 +1,66 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import image from "../public/images/de.png";
+/* import image from "../public/images/VW-e-Crafter-Front-300x225.jpg"; */
+const images = [
+  {
+    index: 1,
+    title: "Users",
+    image: require("../public/images/VW-e-Crafter-Front-300x225.jpg"),
+  },
+  {
+    index: 2,
+    title: "Clients",
+    image: require("../public/images/Stama-Maestro-Front-300x200.jpg"),
+  },
+  {
+    index: 3,
+    title: "Admin",
+    image: require("../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg"),
+  },
+  {
+    index: 4,
+    title: "Admin",
+    image: require("../public/images/Addax-MT-Laubgitter-Wiki-300x200.jpg"),
+  },
+  {
+    index: 5,
+    title: "Admin",
+    image: require("../public/images/ARI-458-Kipper-L-Heck-300x199.jpg"),
+  },
+  {
+    index: 6,
+    title: "Users",
+    image: require("../public/images/VW-e-Crafter-Front-300x225.jpg"),
+  },
+  {
+    index: 7,
+    title: "Clients",
+    image: require("../public/images/Stama-Maestro-Front-300x200.jpg"),
+  },
+  {
+    index: 8,
+    title: "Admin",
+    image: require("../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg"),
+  },
+  {
+    index: 9,
+    title: "Admin",
+    image: require("../public/images/Addax-MT-Laubgitter-Wiki-300x200.jpg"),
+  },
+  {
+    index: 10,
+    title: "Admin",
+    image: require("../public/images/ARI-458-Kipper-L-Heck-300x199.jpg"),
+  },
+];
 
-import image1 from "../public/images/1.png";
-import image2 from "../public/images/2.png";
-import image3 from "../public/images/3.png";
-import image4 from "../public/images/4.png";
-import image5 from "../public/images/5.png";
 const Slider = () => {
-  /*  const images = [image1, image2, image3, image4, image5]; */
-  return (
-    <div className=" min-w-64 mr-10">
-      <div className=" border-2 w-72  ">
+  return images.map((item, index) => (
+    <div className=" min-w-64 mr-10" key={index}>
+      <div className="  w-72  ">
         <Image
-          src={image}
+          src={item.image}
           alt="picture"
           objectFit="cover"
           width={264}
@@ -33,19 +79,21 @@ const Slider = () => {
         </div>
 
         <div className="flex  w-48 h-12 border border-blue-lighter m-auto mt-8">
-          <div className="text-xs w-12 h-full bg-orange-dark text-white flex items-center justify-center">
+          <div className="text-xs w-16 h-full bg-orange-dark text-white flex items-center justify-center">
             <span className="font-bold"> TEST</span>
           </div>
-          <div className="flex flex-col justify-evenly ">
+          <div className=" flex flex-col justify-center w-full">
             <div className="pt-10 ">
               <span className="text-xxs tracking-widest pl-2.5">ERGEBNIS</span>
             </div>
             <div className="flex flex-row pb-8">
               <div className="">
-                <span className="pl-2.5 font-black text-m ">1,4</span>
+                <span className="relative bottom-1 pl-2.5  font-black text-m ">
+                  1,4
+                </span>
               </div>
               <div className="pb-2">
-                <span className="text-xxs font-black pl-3 tracking-widest ">
+                <span className="relative bottom-1 text-xxs font-black pl-3  tracking-widest ">
                   SEHR GUT
                 </span>
               </div>
@@ -63,6 +111,6 @@ const Slider = () => {
         </div>
       </div>
     </div>
-  );
+  ));
 };
 export default Slider;
