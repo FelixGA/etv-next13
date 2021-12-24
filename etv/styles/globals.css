@@ -89,3 +89,6 @@ select:focus {
 .logo {
   filter: contrast(900%);
 }
+a:visited {
+  color: white;
+}

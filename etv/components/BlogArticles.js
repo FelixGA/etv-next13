@@ -2,17 +2,17 @@ import Image from "next/image";
 const BlogArticles = () => {
   return (
     <div className="laptop:justify-between laptop:items-center laptop:flex laptop:flex-col">
-      <div className="blog-article-one laptop:py-28 flex laptop:flex-row justify-center w-3/4 items-center">
-        <div className="">
+      <div className="blog-article-one p-10 laptop:py-28 flex laptop:flex-row justify-center w-3/4 items-center">
+        <div>
           <span>
-            <div className="h-8 w-24 flex items-center justify-center bg-orange-light text-white font-bold rounded">
+            <div className="h-8 w-24 flex items-center flex-wrap justify-center bg-orange-light text-white font-bold rounded">
               jetzt neu
             </div>
             <h2 className="text-grey-darkest text-3xl font-bold py-5">
               Elektrotransporter Kaufberater
             </h2>
           </span>
-          <p className="tracking-wide font-bold text-grey-dark pb-6">
+          <p className="tracking-wide font-bold text-grey-dark pb-6 pr-3">
             Hier steht ein Text der Lust macht den Kauf­ber­ater (= euer
             nor­maler Fun­nel) zu be­nutzen. Hier kön­nten so Dinge ste­hen wie:
             In weni­gen schrit­ten zum per­fek­ten E-Trans­porter für Ihre
