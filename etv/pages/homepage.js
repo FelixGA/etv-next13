@@ -5,17 +5,17 @@ import BottomSlider from "../components/BottomSlider";
 import NewsLetter from "../components/NewsLetter";
 
 function homepage() {
-  const cars = [
+  /*  const cars = [
     { name: "mdnf,s", img: "ndscnhdskcn" },
     { name: "mdnf,fergffer", img: "111111111" },
     { name: "mdnf,fergffer", img: "111111111" },
     { name: "mdnf,fergffer", img: "111111111" },
     { name: "mdnf,fergffer", img: "111111111" },
-  ];
+  ]; */
   return (
     <>
       <HeroSection />
-      <TopSlider cars={cars} />
+      <TopSlider /* cars={cars} */ />
       <BlogArticles />
       <BottomSlider />
       <NewsLetter />

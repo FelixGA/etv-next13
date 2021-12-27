@@ -1,18 +1,18 @@
 import React from "react";
-import Slider from "./Slider";
+import TopSliderCard from "./TopSliderCard";
 import { useState, useEffect } from "react";
-import images from "./Slider";
+import images from "./TopSliderCard";
 
 // import Script from "next/script";
 const TopSlider = (props) => {
-  const [index, setIndex] = useState(0);
-  const [index1, setIndex1] = useState(1);
+  // const [index, setIndex] = useState(0);
+  // const [index1, setIndex1] = useState(1);
 
-  const [transL, setTransL] = useState(false);
-  const [transR, setTransR] = useState(false);
-  const [shownCarsAmount, setShownCarsAmount] = useState();
-  const [showCount, setShowCount] = useState(1);
-  const [shownCars, setShownCars] = useState([props.cars[0]]);
+  // const [transL, setTransL] = useState(false);
+  // const [transR, setTransR] = useState(false);
+  // const [shownCarsAmount, setShownCarsAmount] = useState();
+  // const [showCount, setShowCount] = useState(1);
+  // const [shownCars, setShownCars] = useState([props.cars[0]]);
 
   /*  useEffect(() => {
     if (transR) {
@@ -29,7 +29,7 @@ const TopSlider = (props) => {
     }
   }, [transL, transR]); */
 
-  const handlePrev = () => {
+  /* const handlePrev = () => {
     setTransR(true);
     setTransL(false);
 
@@ -47,46 +47,44 @@ const TopSlider = (props) => {
     } else {
       setIndex1(nextIndex1);
     }
-  };
+  }; */
 
-  const handleNext = () => {
-    setShownCars([
-      props.cars,
-      /* ...props.cars?.slice(shownCarsAmount, shownCarsAmount + showCount), */
-    ]);
-    console.log(shownCars, showCount);
-    setTransL(true);
-    setTransR(false);
+  // const handleNext = () => {
+  //   setShownCars([
+  //     props.cars,
+  //     /* ...props.cars?.slice(shownCarsAmount, shownCarsAmount + showCount), */
+  //   ]);
+  //   console.log(shownCars, showCount);
+  //   setTransL(true);
+  //   setTransR(false);
 
-    console.log("you clicked");
-  };
+  //   console.log("you clicked");
+  // };
   return (
-    <>
-      <div className="  flex flex-col ">
-        <h2 className="text-3xl font-black text-black-dark text-left mt-10 mb-10 tracking-wide pl-6">
-          Beste Testberichte
-        </h2>
-        <div className="  flex flex-row overflow-x-auto scrollbar-hide ">
-          {/*  <button
+    <div className="  flex flex-col ">
+      <h2 className="text-3xl font-black text-black-dark text-left mt-10 mb-10 tracking-wide pl-6">
+        Beste Testberichte
+      </h2>
+      <div className="flex flex-row overflow-x-auto scrollbar-hide ">
+        <TopSliderCard />
+        {/*  <button
             className="h-auto w-10  font-extrabold text-3xl"
             onClick={handlePrev}
           >
             {"<"}
           </button> */}
-          {/*   {shownCars.map((car, index) => (
+        {/*   {shownCars.map((car, index) => (
             <Slider car={car} index={index} key={index} />
           ))} */}
-          <Slider />
 
-          {/*  <button
+        {/*  <button
             className="h-auto w-10  font-extrabold text-3xl"
             onClick={handleNext}
           >
             {">"}
           </button> */}
-        </div>
       </div>
-    </>
+    </div>
   );
 };
 export default TopSlider;
