@@ -86,6 +86,7 @@ const HeroSection = () => {
             <br></br>
             genau für Ihre Ansprüche
           </p>
+
           <p className="py-4 hidden lg:flex lg:flex-row lg:justify-between ">
             <span>
               <b className="text-blue-light">&#10004;</b> unabhängig
