@@ -67,7 +67,7 @@ const images = [
 
 const Slider = () => {
   return images.map((item, index) => (
-    <div className=" min-w-64 mr-2 pl-6" key={index}>
+    <div className="min-w-64 mr-2 pl-6" key={index}>
       <div className="w-72">
         <Image
           src={item.image}
@@ -97,12 +97,12 @@ const Slider = () => {
             </div>
             <div className="flex flex-row pb-8">
               <div className="">
-                <span className="relative bottom-1 pl-2.5  font-black text-m ">
+                <span className="relative bottom-1 pl-2.5 font-black text-m ">
                   1,4
                 </span>
               </div>
               <div className="pb-2">
-                <span className="relative bottom-1 text-xxs font-black pl-3  tracking-widest ">
+                <span className="relative bottom-1 text-xxs font-black pl-3 tracking-widest ">
                   SEHR GUT
                 </span>
               </div>
