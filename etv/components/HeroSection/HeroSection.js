@@ -112,7 +112,7 @@ const HeroSection = () => {
             </label>
             <div className=" m-1">
               <select
-                className=" p-4 relative bottom-6
+                className=" p-4 relative bottom-6 w-full
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
                 id="standard-select"
               >
@@ -128,7 +128,7 @@ const HeroSection = () => {
             </label>
             <div className=" m-1">
               <select
-                className=" p-4 relative bottom-6
+                className=" p-4 relative bottom-6 w-full
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
                 id="standard-select"
               >
@@ -145,7 +145,7 @@ const HeroSection = () => {
               </label>
               <div className=" mt-1 px-1">
                 <select
-                  className=" p-4 relative bottom-6 text-base font-bold appearance-none bg-transparent border-none pl-1 m-0  text-blue-dark"
+                  className=" p-4 relative bottom-6 w-full text-base font-bold appearance-none bg-transparent border-none pl-1 m-0  text-blue-dark"
                   id="standard-select"
                 >
                   {details[2].options.map((option) => (
