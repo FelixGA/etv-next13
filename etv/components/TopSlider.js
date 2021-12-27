@@ -51,7 +51,8 @@ const TopSlider = (props) => {
 
   const handleNext = () => {
     setShownCars([
-      ...props.cars?.slice(shownCarsAmount, shownCarsAmount + showCount),
+      props.cars,
+      /* ...props.cars?.slice(shownCarsAmount, shownCarsAmount + showCount), */
     ]);
     console.log(shownCars, showCount);
     setTransL(true);
@@ -62,27 +63,27 @@ const TopSlider = (props) => {
   return (
     <>
       <div className="  flex flex-col ">
-        <h2 className="text-3xl font-black text-black-dark text-left mt-8 mb-8 tracking-wide">
+        <h2 className="text-3xl font-black text-black-dark text-left mt-10 mb-10 tracking-wide pl-6">
           Beste Testberichte
         </h2>
-        <div className="  flex flex-row overflow-scroll">
-          {/*  <Script src="/path/to/flickity.pkgd.min.js" /> */}
-          <button
-            className="h-auto w-10 bg-yellow-800 font-extrabold text-3xl"
+        <div className="  flex flex-row overflow-x-auto scrollbar-hide ">
+          {/*  <button
+            className="h-auto w-10  font-extrabold text-3xl"
             onClick={handlePrev}
           >
             {"<"}
-          </button>
-          {shownCars.map((car, index) => (
+          </button> */}
+          {/*   {shownCars.map((car, index) => (
             <Slider car={car} index={index} key={index} />
-          ))}
+          ))} */}
+          <Slider />
 
-          <button
-            className="h-auto w-10 bg-yellow-800 font-extrabold text-3xl"
+          {/*  <button
+            className="h-auto w-10  font-extrabold text-3xl"
             onClick={handleNext}
           >
             {">"}
-          </button>
+          </button> */}
         </div>
       </div>
     </>

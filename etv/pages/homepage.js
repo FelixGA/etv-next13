@@ -8,6 +8,9 @@ function homepage() {
   const cars = [
     { name: "mdnf,s", img: "ndscnhdskcn" },
     { name: "mdnf,fergffer", img: "111111111" },
+    { name: "mdnf,fergffer", img: "111111111" },
+    { name: "mdnf,fergffer", img: "111111111" },
+    { name: "mdnf,fergffer", img: "111111111" },
   ];
   return (
     <>
