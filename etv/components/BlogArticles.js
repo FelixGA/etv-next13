@@ -1,14 +1,14 @@
 import Image from "next/image";
 const BlogArticles = () => {
   return (
-    <div className="laptop:justify-between laptop:items-center laptop:flex laptop:flex-col">
-      <div className="blog-article-one p-10 laptop:py-28 flex laptop:flex-row justify-center w-3/4 items-center">
+    <div className="xl:justify-between xl:items-center xl:flex xl:flex-col">
+      <div className="blog-article-one p-10 xl:py-28 flex xl:flex-row justify-center w-3/4 items-center">
         <div>
           <span>
             <div className="h-8 w-24 flex items-center flex-wrap justify-center bg-orange-light text-white font-bold rounded">
               jetzt neu
             </div>
-            <h2 className="text-grey-darkest text-3xl font-bold py-5">
+            <h2 className="text-grey-darkest text-2xl font-bold py-5">
               Elektrotransporter Kaufberater
             </h2>
           </span>
@@ -22,7 +22,7 @@ const BlogArticles = () => {
             Zum Kaufberater
           </button>{" "}
         </div>
-        <div className="hidden laptop:flex laptop:w-full laptop:scale-125 ">
+        <div className="hidden xl:flex xl:w-full xl:scale-125 ">
           <Image
             src="/images/berater.png"
             width={400}
@@ -32,8 +32,8 @@ const BlogArticles = () => {
         </div>
       </div>
 
-      <div className="blog-article-two p-10 laptop:py-28 laptop:flex laptop:flex-row laptop:justify-center laptop:w-3/4  bg-grey-lightest laptop:items-center">
-        <div className="bg-white laptop:w-full laptop:scale-125 laptop:mr-16">
+      <div className="blog-article-two p-10 xl:py-28 xl:flex xl:flex-row xl:justify-center xl:w-3/4  bg-grey-lightest xl:items-center">
+        <div className="bg-white xl:w-full xl:scale-125 xl:mr-16">
           <Image
             src="/images/schwein.png"
             width={300}
@@ -42,7 +42,7 @@ const BlogArticles = () => {
           />
         </div>
         <span>
-          <h2 className="text-grey-darkest text-3xl font-bold py-5">
+          <h2 className="text-grey-darkest text-2xl font-bold py-5">
             Förderungen für Elektrotransporter
           </h2>
           <p className="tracking-wide font-bold text-grey-dark pb-6 ">

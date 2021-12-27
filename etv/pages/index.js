@@ -13,6 +13,12 @@ export default function Home() {
 
         <link rel="manifest" href="./manifest.json" />
         <link rel="icon" href="/favicon.ico" />
+        <script defer src="/your-path-to-fontawesome/js/brands.js"></script>
+        <script defer src="/your-path-to-fontawesome/js/solid.js"></script>
+        <script
+          defer
+          src="/your-path-to-fontawesome/js/fontawesome.js"
+        ></script>
       </Head>
     </div>
   );

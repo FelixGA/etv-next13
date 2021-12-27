@@ -4,8 +4,16 @@ import StickyContainer from "./StickyContainer";
 
 import Image from "next/image";
 const Nav = () => {
+  const [isMobile, setIsMobile] = useState(false);
   const navMenu = (
-    <ul className="flex flex-row justify-around w-full text-grey-dark ">
+    // <ul className="flex flex-col lg:flex-row justify-around w-full text-grey-dark ">
+    <ul
+      className={
+        isMobile
+          ? "flex flex-col lg:flex-row justify-around items-center w-full h-1/2 text-grey-dark "
+          : "flex flex-col lg:flex-row justify-around w-full text-green-dark "
+      }
+    >
       <li>
         <Link href="/homepage">
           <a>Start</a>
@@ -33,7 +41,7 @@ const Nav = () => {
     <nav className="bg-blue-dark flex flex-row justify-between items-center w-[100vw]">
       <span className="flex flex-row justify-between items-center">
         {" "}
-        <div className="logo-container mt-2">
+        <div className="logo-container mt-2 ">
           <Image
             src="/images/etv-logo-final-white.png"
             width={80}
@@ -41,14 +49,20 @@ const Nav = () => {
             className="logo"
           />
         </div>
-        <p className="text-white text-xs">
+        <p className="text-white text-xs hidden lg:flex">
           ELEKTROTRANSPORTER
           <br />
           VERGLEICH
         </p>
       </span>
 
-      <div className=" hidden laptop:flex laptop:flex-row laptop:justify-between items-center  w-[70vw]">
+      <div
+        className={
+          isMobile
+            ? `absolute lg:hidden text-3xl top-18 z-50 animation-slideL bg-blue-dark box flex flex-col justify-between items-start h-full w-full`
+            : " hidden lg:flex lg:flex-row lg:justify-between animation-slideR items-center box w-[70vw]"
+        }
+      >
         {navMenu}
       </div>
       <div className="flex flex-row justify-between items-center">
@@ -57,8 +71,8 @@ const Nav = () => {
         </button>
 
         <div
-          onClick={() => console.log("clicked")}
-          className="ham-menu-container pr-6 p-1 laptop:invisible"
+          onClick={() => setIsMobile(!isMobile)}
+          className="ham-menu-container xs:pr-6 p-1 lg:invisible"
         >
           <div class="menu">
             <div class="line"></div>

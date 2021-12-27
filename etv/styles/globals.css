@@ -76,7 +76,9 @@ header {
   grid-template-areas: "select";
 }
 select:active,
-select:focus {
+select:focus,
+input:active,
+input:focus {
   outline: none;
 }
 
@@ -91,4 +93,7 @@ select:focus {
 }
 a:visited {
   color: white;
+}
+.custom-text {
+  text-align: center;
 }

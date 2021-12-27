@@ -6,14 +6,22 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        galaxyfold: "280px",
-        // => @media (min-width: 576px) { ... }
+        xs: "410px",
+        // => @media (min-width: 320px) { ... }
+        sm: "640px",
+        // => @media (min-width: 640px) { ... }
 
-        tablet: "340px",
-        // => @media (min-width: 960px) { ... }
+        md: "768px",
+        // => @media (min-width: 768px) { ... }
 
-        laptop: "960px",
-        // => @media (min-width: 1440px) { ... }
+        lg: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        xl: "1280px",
+        // => @media (min-width: 1280px) { ... }
+
+        "2xl": "1536px",
+        // => @media (min-width: 1536px) { ... }
       },
       animation: {
         slideL: "slideL 500ms linear",
@@ -76,7 +84,7 @@ module.exports = {
           darkest: "",
         },
         blue: {
-          lightest: "",
+          lightest: "#727CF5",
           lighter: "#6F89A5",
           light: "#356aa6",
           dark: "#243280",
@@ -119,6 +127,6 @@ module.exports = {
   variants: {
     extend: {},
   },
-
+  plugins: [require("tailwind-scrollbar-hide")],
   // plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
 };
