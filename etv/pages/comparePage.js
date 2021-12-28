@@ -1,4 +1,5 @@
-import FilterBlock from "../components/FilterBlock";
+import FilterBlock from "../components/ResultList/FilterBlock";
+import ResultList from "../components/ResultList/ResultList";
 
 export default function comparePage() {
   return (

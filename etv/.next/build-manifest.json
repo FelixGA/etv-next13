@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/homepage": [
+    "/comparePage": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/homepage.js"
+      "static/chunks/pages/comparePage.js"
     ]
   },
   "ampFirstPages": []
