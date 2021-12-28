@@ -18,7 +18,7 @@ const BlogArticles = () => {
             In weni­gen schrit­ten zum per­fek­ten E-Trans­porter für Ihre
             Ansprüche.
           </p>
-          <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-3 mb-5 my-3 text-sm rounded-lg">
+          <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 my-3 text-sm rounded-lg">
             Zum Kaufberater
           </button>{" "}
         </div>
@@ -33,7 +33,7 @@ const BlogArticles = () => {
       </div>
 
       <div className="blog-article-two p-10 xl:py-28 xl:flex xl:flex-row xl:justify-center xl:w-3/4  bg-grey-lightest xl:items-center">
-        <div className="bg-white xl:w-full xl:scale-125 xl:mr-16">
+        <div className="bg-white xl:w-full xl:scale-125 xl:mx-16">
           <Image
             src="/images/schwein.png"
             width={300}
@@ -42,17 +42,17 @@ const BlogArticles = () => {
           />
         </div>
         <span>
-          <h2 className="text-grey-darkest text-2xl font-bold py-5">
+          <h2 className="text-grey-darkest text-2xl font-bold px-3 py-5">
             Förderungen für Elektrotransporter
           </h2>
-          <p className="tracking-wide font-bold text-grey-dark pb-6 ">
+          <p className="tracking-wide font-bold text-grey-dark pb-6 px-3">
             Im Rah­men der angestrebten En­ergiewende ist seit 2016 eine
             bun­desweite Förderung der Elek­tro­mo­bil­ität durch die
             so­ge­nan­nte “Umwelt­prämie” möglich, welche den Kauf rein
             elek­trischer Fahrzeuge fi­nanziell un­ter­stützt.
           </p>
-          <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-3 mb-5 my-3 text-sm rounded-lg">
-            Zum Kaufberater
+          <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 my-6 text-sm rounded-lg">
+            Mehr erfahren
           </button>
         </span>
       </div>
