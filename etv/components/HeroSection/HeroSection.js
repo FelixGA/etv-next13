@@ -8,26 +8,32 @@ const HeroSection = () => {
       category: "Price",
       options: [
         {
+          id: "1",
           name: "3000-9000 ",
           value: "3000-9000 ",
         },
         {
+          id: "2",
           name: "9000-15000",
           value: "9000-15000",
         },
         {
+          id: "3",
           name: "15000-20000",
           value: "15000-20000",
         },
         {
+          id: "4",
           name: "20000-25000",
           value: "20000-25000",
         },
         {
+          id: "5",
           name: "25000-30000",
           value: "25000-30000",
         },
         {
+          id: "6",
           name: "30000-35000",
           value: "30000-35000",
         },
@@ -38,14 +44,17 @@ const HeroSection = () => {
       category: "Reichweite",
       options: [
         {
+          id: "1",
           name: "ab 150km ",
           value: "ab 150km ",
         },
         {
+          id: "2",
           name: "ab 200km",
           value: "ab 200km",
         },
         {
+          id: "3",
           name: "ab 250km",
           value: "ab 250km",
         },
@@ -55,14 +64,17 @@ const HeroSection = () => {
       category: "Nutzlast",
       options: [
         {
+          id: "1",
           name: "ab:500kg",
           value: "ab:500kg ",
         },
         {
+          id: "2",
           name: "ab:1000kg",
           value: "ab:1000kg",
         },
         {
+          id: "3",
           name: "ab:1500kg",
           value: "ab:1500kg",
         },
@@ -117,8 +129,8 @@ const HeroSection = () => {
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
                   id="standard-select"
                 >
-                  {details[1].options.map((option, index) => (
-                    <option key={index} value={option.value}>
+                  {details[1].options.map((option) => (
+                    <option key={option.id} value={option.value}>
                       {option.name}
                     </option>
                   ))}
@@ -135,8 +147,8 @@ const HeroSection = () => {
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
                   id="standard-select"
                 >
-                  {details[0].options.map((option, index) => (
-                    <option key={index} value={option.value}>
+                  {details[0].options.map((option) => (
+                    <option key={option.id} value={option.value}>
                       {option.name}
                     </option>
                   ))}
@@ -154,8 +166,8 @@ const HeroSection = () => {
                   className=" p-4 relative bottom-6 w-full text-base font-bold appearance-none bg-transparent border-none pl-1 m-0  text-blue-dark"
                   id="standard-select"
                 >
-                  {details[2].options.map((option, index) => (
-                    <option key={index} value={option.value}>
+                  {details[2].options.map((option) => (
+                    <option key={option.id} value={option.value}>
                       {option.name}
                     </option>
                   ))}
