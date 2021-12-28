@@ -1,5 +1,5 @@
 import React from "react";
-import TopSliderCard from "./TopSliderCard";
+import TopSliderCard from "../Sliders/TopSliderCard";
 import { useState, useEffect } from "react";
 import images from "./TopSliderCard";
 

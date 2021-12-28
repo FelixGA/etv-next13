@@ -1,5 +1,5 @@
 import React from "react";
-import BottomSliderCard from "./BottomSliderCard";
+import BottomSliderCard from "../Sliders/BottomSliderCard";
 
 export default function BottomSlider() {
   return (

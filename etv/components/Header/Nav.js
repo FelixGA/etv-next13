@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
 import Link from "next/link";
-import StickyContainer from "./StickyContainer";
 
 import Image from "next/image";
 const Nav = () => {
