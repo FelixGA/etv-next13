@@ -117,8 +117,10 @@ const HeroSection = () => {
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
                   id="standard-select"
                 >
-                  {details[1].options.map((option) => (
-                    <option value={option.value}>{option.name}</option>
+                  {details[1].options.map((option, index) => (
+                    <option key={index} value={option.value}>
+                      {option.name}
+                    </option>
                   ))}
                 </select>
               </div>
@@ -133,8 +135,10 @@ const HeroSection = () => {
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
                   id="standard-select"
                 >
-                  {details[0].options.map((option) => (
-                    <option value={option.value}>{option.name}</option>
+                  {details[0].options.map((option, index) => (
+                    <option key={index} value={option.value}>
+                      {option.name}
+                    </option>
                   ))}
                 </select>
               </div>
@@ -150,8 +154,10 @@ const HeroSection = () => {
                   className=" p-4 relative bottom-6 w-full text-base font-bold appearance-none bg-transparent border-none pl-1 m-0  text-blue-dark"
                   id="standard-select"
                 >
-                  {details[2].options.map((option) => (
-                    <option value={option.value}>{option.name}</option>
+                  {details[2].options.map((option, index) => (
+                    <option key={index} value={option.value}>
+                      {option.name}
+                    </option>
                   ))}
                 </select>
               </div>

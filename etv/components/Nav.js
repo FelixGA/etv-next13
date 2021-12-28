@@ -74,10 +74,10 @@ const Nav = () => {
           onClick={() => setIsMobile(!isMobile)}
           className="ham-menu-container xs:pr-6 p-1 lg:invisible"
         >
-          <div class="menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+          <div className="menu">
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
           </div>
         </div>
       </div>

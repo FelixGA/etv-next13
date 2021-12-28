@@ -88,10 +88,3 @@ const TopSlider = (props) => {
   );
 };
 export default TopSlider;
-
-{
-  /* <div
-  class="main-gallery js-flickity"
-  data-flickity-options='{ "cellAlign": "left", "contain": true }'
-></div>; */
-}
