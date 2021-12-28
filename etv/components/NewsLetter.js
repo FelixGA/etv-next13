@@ -1,8 +1,8 @@
 import React from "react";
 const NewsLetter = () => {
   return (
-    <div className="newsletter-container flex flex-col justify-center items-center mx-2 py-10 bg-grey-lightest">
-      <h2 className="text-grey-darkest text-2xl font-bold py-2">
+    <div className="newsletter-container flex flex-col justify-center flex-wrap items-center p-10 bg-grey-lightest">
+      <h2 className="text-grey-darkest text-2xl tracking-wider font-bold py-2">
         {" "}
         Zum Newsletter anmelden
       </h2>
@@ -14,7 +14,7 @@ const NewsLetter = () => {
       <span>
         <p className="w-full align-left text-grey-dark">Email</p>
         <div className="flex flex-col xs:flex-row">
-          <input type="email" placeholder="" className="h-14 text-lg" />
+          <input type="email" placeholder="" className="h-14 text-lg w-3/4" />
           <button className="bg-blue-dark  hover:bg-blue-light text-white font-bold px-6 text-sm rounded-r-lg h-14">
             anmelden
           </button>

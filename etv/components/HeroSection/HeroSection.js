@@ -106,40 +106,42 @@ const HeroSection = () => {
         </h2>
 
         <div className="comaprison-input-container m-2 lg:items-center lg:flex lg:flex-row lg:justify-between lg:flex-1">
-          <div className="h-14 w-68 pt-2 gmsou text-base rounded-lg bg-white	lg:w-[14vw]">
-            <label className=" flex flex-row justify-between px-2 text-left">
-              Reichweite <div className=" relative top-6">▼</div>
-            </label>
-            <div className=" m-1">
-              <select
-                className=" p-4 relative bottom-6 w-full
+          <div className="flex lg:flex-row flex-col lg:w-1/2 justify-around items-start lg:items-center flex-wrap">
+            <div className="h-14 lg:w-68  w-full pt-2 gmsou text-base rounded-lg bg-white lg:w-[14vw]">
+              <label className=" flex flex-row justify-between px-2 text-left">
+                Reichweite <div className=" relative top-6">▼</div>
+              </label>
+              <div className=" m-1">
+                <select
+                  className=" p-4 relative bottom-6 w-full
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
-                id="standard-select"
-              >
-                {details[1].options.map((option) => (
-                  <option value={option.value}>{option.name}</option>
-                ))}
-              </select>
+                  id="standard-select"
+                >
+                  {details[1].options.map((option) => (
+                    <option value={option.value}>{option.name}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
+            <div className="h-14 lg:w-68  w-full  my-4 pt-2 gmsou text-base rounded-lg bg-white lg:w-[14vw]	">
+              <label className="px-2 flex flex-row justify-between text-left">
+                Preis <div className=" relative top-6">▼</div>
+              </label>
+              <div className=" m-1">
+                <select
+                  className=" p-4 relative bottom-6 w-full
+               text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
+                  id="standard-select"
+                >
+                  {details[0].options.map((option) => (
+                    <option value={option.value}>{option.name}</option>
+                  ))}
+                </select>
+              </div>
             </div>
           </div>
-          <div className="h-14 w-68 my-4 pt-2 gmsou text-base rounded-lg bg-white lg:w-[14vw]	">
-            <label className="px-2 flex flex-row justify-between text-left">
-              Preis <div className=" relative top-6">▼</div>
-            </label>
-            <div className=" m-1">
-              <select
-                className=" p-4 relative bottom-6 w-full
-               text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
-                id="standard-select"
-              >
-                {details[0].options.map((option) => (
-                  <option value={option.value}>{option.name}</option>
-                ))}
-              </select>
-            </div>
-          </div>
-          <span className="flex w-68 flex-row justify-between items-start lg:items-center flex-wrap">
-            <div className="w-40 h-14  pt-2 gmsou  ml-1 mb-6 lg:mb-0 lg:w-[14vw] text-base rounded-lg bg-white">
+          <span className="flex w-full lg:w-1/2  flex-row lg:justify-around justify-between items-start lg:items-center flex-wrap">
+            <div className="w-1/3 h-14  pt-2 gmsou mb-6 lg:mb-0 lg:w-[14vw] text-base rounded-lg bg-white">
               <label className="px-2 flex flex-row justify-between text-left">
                 Nutzlast <div className=" relative right-0 top-6">▼</div>
               </label>
@@ -154,7 +156,7 @@ const HeroSection = () => {
                 </select>
               </div>
             </div>
-            <button className="bg-blue-dark w-40 hover:bg-blue-light text-white font-bold lg:ml-12 px-2 text-sm rounded-lg lg:w-[14vw] h-14">
+            <button className="bg-blue-dark w-1/3 hover:bg-blue-light text-white font-bold px-2 text-sm rounded-lg lg:w-[14vw] h-14 ">
               Jetzt vergleichen
             </button>
           </span>
