@@ -99,3 +99,6 @@ a:visited {
 .custom-text {
   text-align: center;
 }
+.borderbtn {
+  border: 1px solid black;
+}
