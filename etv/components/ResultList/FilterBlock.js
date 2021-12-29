@@ -3,18 +3,33 @@ import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
+import filterImage from "../../public/images/filter-icon.png";
+import TruncateFilter from "./TruncateFilter";
 function FilterBlock() {
   return (
     <div className="bg-grey-extra shadow-dropdown">
       <div className="h-10 shadow-dropdown flex flex-row justify-between align-middle">
-        <span className="ml-6 font-bold  my-auto text-sm text-blue-darker">
-          <span className="mr-2"> Ⴤ </span>Alle Filter anzeigen
-        </span>
+        <div className="w-full  flex flex-row ">
+          <div className="w-3.5 my-auto ml-8">
+            <Image
+              src={filterImage}
+              alt="filter icon"
+              objectFit="cover"
+              width={8}
+              height={8}
+              layout="responsive"
+            />
+          </div>{" "}
+          <span className="ml-2 font-bold  my-auto text-sm text-blue-darker">
+            Alle Filter anzeigen
+          </span>
+        </div>
         <span>{"   "}</span>
         <span className="font-bold	mr-6 my-auto text-sm text-blue-darker">
           ˅
         </span>
       </div>
+      <TruncateFilter />
       <div className="flex flex-row justify-center w-full mt-4">
         <div className="flex flex-col ml-2">
           <div className="w-44 h-9 bg-grey-lighter mt-2 flex flex-row justify-between">

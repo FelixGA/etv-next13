@@ -59,6 +59,9 @@ module.exports = {
       blur: {
         xs: "2px",
       },
+      /*  filter: {
+
+      } */
       colors: {
         // white: {
         //   lightest: "",
