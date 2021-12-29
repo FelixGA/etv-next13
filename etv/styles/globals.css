@@ -95,6 +95,7 @@ select:focus {
 }
 a:visited {
   color: white;
+  background-color: #2c3f53;
 }
 .custom-text {
   text-align: center;

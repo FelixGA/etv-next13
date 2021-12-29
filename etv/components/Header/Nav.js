@@ -65,7 +65,7 @@ const Nav = () => {
         {navMenu}
       </div>
       <div className="flex flex-row justify-between items-center">
-        <button className="bg-yellow-dark hover:bg-yellow-light text-grey-darker font-bold p-2 mb-3 m-4 text-sm rounded-lg">
+        <button className="bg-yellow-dark hover:bg-yellow-light text-grey-darker font-bold p-2 mb-3 m-4 text-sm rounded">
           Kaufberater
         </button>
 

@@ -1,5 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import image from "../../public/images/reichweite@2x.png";
+import image2 from "../../public/images/zuladung@2x.png";
+import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
+import image4 from "../../public/images/reichweitecopy@2x.png";
 function CarCardDetailsMobile(props) {
   return (
     <div className=" w-full flex flex-col">
@@ -10,7 +14,7 @@ function CarCardDetailsMobile(props) {
           <div className="hidden ">
             <Image
               className="hidden"
-              src={props.caritem.image}
+              src={image2}
               alt="Gewicht-logo"
               width={36}
               height={36}
@@ -25,7 +29,7 @@ function CarCardDetailsMobile(props) {
           <div className="hidden ">
             <Image
               className="hidden"
-              src={props.caritem.image}
+              src={image3}
               alt="Max Geschwindigkeit-logo"
               width={36}
               height={36}
@@ -39,12 +43,7 @@ function CarCardDetailsMobile(props) {
         </div>
         <div className="flex flex-row w-1/2 p-2">
           <div className="hidden ">
-            <Image
-              src={props.caritem.image}
-              alt="Reichweite-logo"
-              width={36}
-              height={36}
-            />
+            <Image src={image4} alt="Reichweite-logo" width={36} height={36} />
           </div>
           <span className="text-blue-dark font-bold">
             <span className="text-grey-dark">Reichweite: </span>
@@ -55,7 +54,7 @@ function CarCardDetailsMobile(props) {
           <div className="hidden ">
             <Image
               className="hidden"
-              src={props.caritem.image}
+              src={image}
               alt="Ladezeit-logo"
               width={36}
               height={36}
