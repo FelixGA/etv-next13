@@ -60,13 +60,22 @@ module.exports = {
         xs: "2px",
       },
       colors: {
+        // white: {
+        //   lightest: "",
+        //   lighter: "",
+        //   light: "#F2F9FF",
+        //   dark: "",
+        //   darker: "",
+        //   darkest: "",
+        // },
         grey: {
           lightest: "#F2F2F2",
-          lighter: "",
+          lighter: "#E7EDF3",
           light: "#CCCCCC",
           dark: "#6e6e6e",
           darker: "#4e4e4e",
           darkest: "#212121",
+          extra: "#F2F9FF",
         },
         yellow: {
           lightest: "",
