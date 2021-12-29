@@ -6,9 +6,6 @@ export default function comparePage() {
   return (
     <div>
       <FilterBlock />
-      {/*  <FontAwesomeIcon icon={IconLookup} /> */}
-
-      {/*  <FontAwesomeIcon icon="fa-solid fa-mug-hot" /> */}
     </div>
   );
 }
