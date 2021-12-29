@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState } from "react";
 import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
@@ -6,6 +7,7 @@ import image4 from "../../public/images/reichweitecopy@2x.png";
 import filterImage from "../../public/images/filter-icon.png";
 import TruncateFilter from "./TruncateFilter";
 function FilterBlock() {
+  const [truncate, setTruncate] = useState(true);
   return (
     <div className="bg-grey-extra shadow-dropdown">
       <div className="h-10 shadow-dropdown flex flex-row justify-between align-middle">
@@ -25,11 +27,20 @@ function FilterBlock() {
           </span>
         </div>
         <span>{"   "}</span>
-        <span className="font-bold	mr-6 my-auto text-sm text-blue-darker">
+        <span
+          className="font-bold	mr-6 my-auto text-sm text-blue-darker"
+          onClick={() => setTruncate(!truncate)}
+        >
           ˅
         </span>
       </div>
-      <TruncateFilter />
+      <div
+        className={
+          truncate ? "font-bold	mr-6 my-auto text-sm text-blue-darker" : "hidden"
+        }
+      >
+        <TruncateFilter />
+      </div>
       <div className="flex flex-row justify-center w-full mt-4">
         <div className="flex flex-col ml-2">
           <div className="w-44 h-9 bg-grey-lighter mt-2 flex flex-row justify-between">
