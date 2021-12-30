@@ -9,7 +9,7 @@ function CarCardDetailsMobile(props) {
     <div className=" w-full flex flex-col">
       <span className="py-2 flex flex-col xxs:flex-row flex-wrap">
         <h3 className="hidden lg:block">{props.caritem.title}</h3>
-        <span className="flex flex-col-reverse w-1/2 p-2">
+        <span className="flex flex-col-reverse w-full xxs:w-1/2 p-2">
           <div className="flex flex-row w-full ">
             <div className="hidden ">
               <Image src={image2} alt="zuladung-logo" width={36} height={36} />
@@ -40,7 +40,7 @@ function CarCardDetailsMobile(props) {
             </div>
           </div>
         </span>
-        <span className="flex flex-col w-1/2 p-2">
+        <span className="flex flex-col w-full xxs:w-1/2 p-2">
           <div className="flex flex-row w-full ">
             <div className="hidden ">
               <Image
@@ -67,7 +67,7 @@ function CarCardDetailsMobile(props) {
                 height={36}
               />
             </div>
-            <div className="flex flex-row w-full justify-center">
+            <div className="flex flex-row w-full justify-between">
               <div className="text-grey-dark font-bold w-1/2">Ladezeit: </div>
               <div className="text-blue-dark font-bold w-1/2">
                 {" "}

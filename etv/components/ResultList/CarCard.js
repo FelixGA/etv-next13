@@ -27,7 +27,7 @@ function CarCard(props) {
           <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
             {props.caritem.title}
           </h3>
-          <div className="container-product-basics-image w-full">
+          <div className="container-product-basics-image w-full sm:max-w-xs">
             <Image
               src={props.caritem.image}
               alt="car"
