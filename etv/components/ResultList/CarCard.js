@@ -4,7 +4,7 @@ import CarCardDetailsMobile from "./CarCardDetailsMobile";
 function CarCard(props) {
   const [showDetails, setShowDetails] = useState(false);
   return (
-    <div className="container-product flex flex-col py-6 shadow-lg">
+    <div className="container-product flex flex-col py-6 px-2 shadow-lg">
       <span className="container-product flex flex-row">
         <div className="container-product-basics w-1/2 ">
           <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
