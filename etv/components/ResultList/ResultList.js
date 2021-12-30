@@ -17,7 +17,7 @@ const ResultList = () => {
     {
       id: 2,
       title: "Renault  Z.E",
-      price: "19.000",
+      price: "29.000",
       image: require("../../public/images/Addax-MT-Laubgitter-Wiki-300x200.jpg"),
       description: "RGdrtgF",
       quitefar: "160",
@@ -30,7 +30,7 @@ const ResultList = () => {
     {
       id: 3,
       title: " Kangoo Z.E",
-      price: "19.000",
+      price: "59.000",
       image: require("../../public/images/VW-e-Crafter-Front-300x225.jpg"),
       description: "RGF",
       quitefar: "1600",
@@ -43,7 +43,7 @@ const ResultList = () => {
     {
       id: 4,
       title: " srgdrg Z.E",
-      price: "29.000",
+      price: "12.000",
       image: require("../../public/images/Stama-Maestro-Front-300x200.jpg"),
       description: "RGF",
       quitefar: "100",
@@ -56,7 +56,7 @@ const ResultList = () => {
     {
       id: 5,
       title: " Kandrgf Z.E",
-      price: "99.000",
+      price: "199.000",
       image: require("../../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg"),
       description: "RGF",
       quitefar: "1000",
@@ -82,7 +82,7 @@ const ResultList = () => {
     );
   });
   return (
-    <div className="flex flex-col w-full lg:w-4/5  bg-grey-lightest">
+    <div className="flex flex-col w-full lg:w-4/5  bg-grey-extra lg:bg-white">
       {getCaritems}
     </div>
   );
