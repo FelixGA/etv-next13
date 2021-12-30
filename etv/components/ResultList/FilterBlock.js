@@ -5,6 +5,7 @@ import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
 import filterImage from "../../public/images/filter-icon.png";
+import arrowDown from "../../public/images/Chevron_down.png";
 import TruncateFilter from "./TruncateFilter";
 function FilterBlock() {
   const [truncate, setTruncate] = useState(true);
@@ -12,7 +13,10 @@ function FilterBlock() {
     <div className="bg-grey-extra shadow-dropdown">
       <div className="h-10 shadow-dropdown flex flex-row justify-between align-middle">
         <div className="w-full  flex flex-row ">
-          <div className="w-3.5 my-auto ml-8">
+          <div
+            className="w-3.5 my-auto ml-6
+          "
+          >
             <Image
               src={filterImage}
               alt="filter icon"
@@ -27,16 +31,29 @@ function FilterBlock() {
           </span>
         </div>
         <span>{"   "}</span>
-        <span
+        <div
+          className="w-4 mr-4 my-auto"
+          onClick={() => setTruncate(!truncate)}
+        >
+          <Image
+            src={arrowDown}
+            alt="filter icon"
+            objectFit="cover"
+            width={50}
+            height={50}
+            layout="responsive"
+          />
+        </div>
+        {/* <span
           className="font-bold	mr-6 my-auto text-sm text-blue-darker"
           onClick={() => setTruncate(!truncate)}
         >
           ˅
-        </span>
+        </span> */}
       </div>
       <div
         className={
-          truncate ? "font-bold	mr-6 my-auto text-sm text-blue-darker" : "hidden"
+          truncate ? "font-bold	 my-auto text-sm text-blue-darker" : "hidden"
         }
       >
         <TruncateFilter />
