@@ -6,6 +6,7 @@ import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
 import filterImage from "../../public/images/filter-icon.png";
 import arrowDown from "../../public/images/Chevron_down.png";
+import X from "../../public/images/X.png";
 import TruncateFilter from "./TruncateFilter";
 function FilterBlock() {
   const [truncate, setTruncate] = useState(true);
@@ -44,12 +45,6 @@ function FilterBlock() {
             layout="responsive"
           />
         </div>
-        {/* <span
-          className="font-bold	mr-6 my-auto text-sm text-blue-darker"
-          onClick={() => setTruncate(!truncate)}
-        >
-          ˅
-        </span> */}
       </div>
       <div
         className={
@@ -75,8 +70,15 @@ function FilterBlock() {
               <span className="text-sm my-auto pl-2">3000-9000 €</span>
             </div>
 
-            <div className="mr-3 my-auto">
-              <span className="text-3xl  ">×</span>
+            <div className="w-3.5 my-auto mr-3 ">
+              <Image
+                src={X}
+                alt="picture"
+                objectFit="cover"
+                width={24}
+                height={28}
+                layout="responsive"
+              />{" "}
             </div>
           </div>
           <div className="w-44 h-9 bg-grey-lighter mt-2 flex flex-row justify-between">
@@ -94,8 +96,15 @@ function FilterBlock() {
               <span className="text-sm my-auto pl-2">bis 80km/h</span>
             </div>
 
-            <div className="mr-3 my-auto">
-              <span className="text-3xl  ">×</span>
+            <div className="w-3.5 my-auto mr-3 ">
+              <Image
+                src={X}
+                alt="picture"
+                objectFit="cover"
+                width={24}
+                height={28}
+                layout="responsive"
+              />{" "}
             </div>
           </div>
         </div>
@@ -115,8 +124,15 @@ function FilterBlock() {
               <span className="text-sm my-auto pl-2">Bis 100 km</span>
             </div>
 
-            <div className="mr-3 my-auto">
-              <span className="text-3xl  ">×</span>
+            <div className="w-3.5 my-auto mr-3 ">
+              <Image
+                src={X}
+                alt="picture"
+                objectFit="cover"
+                width={24}
+                height={28}
+                layout="responsive"
+              />{" "}
             </div>
           </div>
           <div className="w-44 h-9 bg-grey-lighter mt-2 flex flex-row justify-between">
@@ -134,8 +150,15 @@ function FilterBlock() {
               <span className="text-sm my-auto pl-2">bis 100 kg</span>
             </div>
 
-            <div className="mr-3 my-auto">
-              <span className="text-3xl  ">×</span>
+            <div className="w-3.5 my-auto mr-3 ">
+              <Image
+                src={X}
+                alt="picture"
+                objectFit="cover"
+                width={24}
+                height={28}
+                layout="responsive"
+              />{" "}
             </div>
           </div>
         </div>
