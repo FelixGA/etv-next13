@@ -6,14 +6,23 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        galaxyfold: "280px",
-        // => @media (min-width: 576px) { ... }
+        xxs: "345px",
+        xs: "410px",
+        // => @media (min-width: 320px) { ... }
+        sm: "640px",
+        // => @media (min-width: 640px) { ... }
 
-        tablet: "340px",
-        // => @media (min-width: 960px) { ... }
+        md: "768px",
+        // => @media (min-width: 768px) { ... }
 
-        laptop: "960px",
-        // => @media (min-width: 1440px) { ... }
+        lg: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        xl: "1280px",
+        // => @media (min-width: 1280px) { ... }
+
+        "2xl": "1536px",
+        // => @media (min-width: 1536px) { ... }
       },
       animation: {
         slideL: "slideL 500ms linear",
@@ -107,7 +116,7 @@ module.exports = {
         orange: {
           lightest: "",
           lighter: "",
-          light: "",
+          light: "#f35625",
           dark: "#EF5424",
           darker: "",
           darkest: "",

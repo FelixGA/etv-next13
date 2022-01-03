@@ -1,11 +1,18 @@
 import FilterBlock from "../components/ResultList/FilterBlock";
-/* import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconLookup } from "../node_modules/@fortawesome/fontawesome-svg-core"; */
+import ResultList from "../components/ResultList/ResultList";
+import TruncateFilterDesktop from "../components/ResultList/TruncateFilterDesktop";
 
 export default function comparePage() {
   return (
-    <div>
+    <div className=" mx-32">
       <FilterBlock />
+      <div className="flex flex-row ">
+        <div className="hidden md:flex w-1/4">
+          <TruncateFilterDesktop />
+        </div>
+
+        <ResultList />
+      </div>
     </div>
   );
 }
