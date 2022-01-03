@@ -6,7 +6,7 @@ import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
 function CarCardDetailsMobile(props) {
   return (
-    <div className=" w-full flex flex-col">
+    <div className=" w-full flex flex-col lg:hidden">
       <span className="py-2 flex flex-col xxs:flex-row flex-wrap">
         <h3 className="hidden lg:block">{props.caritem.title}</h3>
         <span className="flex flex-col-reverse w-full xxs:w-1/2 p-2">

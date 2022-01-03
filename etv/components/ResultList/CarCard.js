@@ -21,13 +21,13 @@ function CarCard(props) {
   );
 
   return (
-    <div className="container-product flex flex-col mb-4 py-4 px-4 shadow-lg bg-white">
+    <div className="container-product flex flex-col mb-4 py-4 lg:py-0 px-4 lg:px-0 lg:pr-4  shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
       <span className="container-product flex flex-row">
         <div className="container-product-basics w-3/5 lg:w-2/6 ">
           <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
             {props.caritem.title}
           </h3>
-          <div className="container-product-basics-image w-full sm:max-w-xs w-100">
+          <div className=" w-full sm:max-w-xs w-100 ">
             <Image
               src={props.caritem.image}
               alt="car"
@@ -38,7 +38,7 @@ function CarCard(props) {
             />
           </div>
         </div>
-        <div className=" hidden lg:block lg:w-3/6">
+        <div className=" hidden lg:flex lg:my-auto lg:w-3/6">
           <CarCardDetailsDesktop caritem={props.caritem} />
         </div>
         <div className="container-product-info w-2/5 lg:w-1/6 flex flex-col justify-start items-end ">
@@ -69,9 +69,7 @@ function CarCard(props) {
       </span>
 
       <div
-        className={
-          showDetails ? "container-product-details w-screen" : "hidden"
-        }
+        className={showDetails ? "container-product-details w-full" : "hidden"}
       >
         <CarCardDetailsMobile caritem={props.caritem} />
       </div>

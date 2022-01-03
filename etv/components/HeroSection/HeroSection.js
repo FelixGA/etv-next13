@@ -82,14 +82,21 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="hero-section-container m-4 lg:w-3/4 lg:m-auto lg:mt-16">
-      <div className="main-heading-container flex flex-row justify-start lg:w-full">
+    <div className="hero-section-container m-4 lg:w-3/4 lg:m-auto lg:mt-36">
+      <div className="main-heading-container flex flex-row justify-start lg:text-xl lg:w-full">
         <div className="m-[10px] lg:mr-14">
-          <Image src="/images/medal.png" width={166} height={166} />
+          <Image
+            src="/images/medal.png"
+            width={166}
+            height={166}
+            responsive={true}
+          />
         </div>
         <div className="main-heading-text lg:flex lg:flex-col lg:justify-between ">
-          <h1 className="text-2xl pl-3 ">Elektrotransporter-Vergleich</h1>
-          <p className="text-grey-darker text-base pl-3">
+          <h1 className="text-2xl lg:text-4xl pl-3 ">
+            Elektrotransporter-Vergleich
+          </h1>
+          <p className="text-grey-darker text-base lg:text-2xl pl-3">
             Hier finden Sie den{" "}
             <b className="text-grey-darkest font-bold">
               passenden Elektrotransporter,

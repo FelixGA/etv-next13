@@ -75,6 +75,7 @@ const ResultList = () => {
           //LATER for the individuAL product
           // onClick={() => {
           //   history.push(`/en/detail/${caritem._id}`);
+          key={caritems.id}
           // }}
         ></div>
         <CarCard caritem={caritem} />
