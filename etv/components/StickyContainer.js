@@ -1,5 +1,3 @@
-import React from "react";
-
 const StickyContainer = () => {
   return (
     <div className="sticky-container">
