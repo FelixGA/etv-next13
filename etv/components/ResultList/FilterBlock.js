@@ -7,12 +7,13 @@ import image4 from "../../public/images/reichweitecopy@2x.png";
 import filterImage from "../../public/images/filter-icon.png";
 import arrowDown from "../../public/images/Chevron_down.png";
 import X from "../../public/images/X.png";
-import TruncateFilter from "./TruncateFilter";
+import TruncateFilterMobile from "./TruncateFilterMobile";
+import TruncateFilterDesktop from "./TruncateFilterDesktop";
 function FilterBlock() {
   const [truncate, setTruncate] = useState(false);
   return (
     <div>
-      <div className="bg-grey-extra shadow-dropdown xl:hidden">
+      <div className=" bg-grey-extra shadow-dropdown md:hidden">
         <div className="h-10 shadow-dropdown flex flex-row justify-between align-middle">
           <div
             className="w-full  flex flex-row "
@@ -50,20 +51,22 @@ function FilterBlock() {
             />
           </div>
         </div>
-        <div className="xl:bg-red-500">
+        <div className="">
           <div
             className={
               truncate ? "font-bold	 my-auto text-sm text-blue-darker" : "hidden"
             }
           >
-            <TruncateFilter />
+            <div>
+              <TruncateFilterMobile />
+            </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-center w-full mt-4   xl:justify-end">
-        <div className="flex flex-col ml-2  md:flex-row ">
-          <div className="w-44 h-9 bg-grey-lighter mt-2  flex flex-row justify-between xl:mr-1">
-            <div className="w-full  flex flex-row">
+      <div className="flex flex-row justify-center w-full mt-4 lg:w-3/4 lg:ml-auto   lg:justify-start">
+        <div className="flex flex-col ml-2  md:flex-row  ">
+          <div className="w-44 h-9 bg-grey-lighter mt-2  flex flex-row justify-between ">
+            <div className="  flex flex-row">
               <div className="w-6 my-auto ml-2">
                 <Image
                   src={image4}
@@ -88,8 +91,8 @@ function FilterBlock() {
               />{" "}
             </div>
           </div>
-          <div className="w-44 h-9 bg-grey-lighter mt-2 flex flex-row justify-between xl:ml-1">
-            <div className="w-full  flex flex-row">
+          <div className="w-44 h-9 bg-grey-lighter mt-2 flex flex-row justify-between xl:ml-1 ">
+            <div className="  flex flex-row">
               <div className="w-6 my-auto ml-2">
                 <Image
                   src={image3}
@@ -172,7 +175,7 @@ function FilterBlock() {
           <span className="text-sm pl-4">alle Filter loschen</span>
         </div>
       </div>
-      <div className="mt-8 pb-2">
+      <div className="mt-8 pb-2 w-full lg:w-3/4  lg:ml-auto">
         <h1 className="text-xl text-black-dark pl-8">
           Die besten E-Transporter nach Ihrer Auswahl
         </h1>

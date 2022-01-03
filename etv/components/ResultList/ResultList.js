@@ -75,6 +75,7 @@ const ResultList = () => {
           //LATER for the individuAL product
           // onClick={() => {
           //   history.push(`/en/detail/${caritem._id}`);
+          key={caritems.id}
           // }}
         ></div>
         <CarCard caritem={caritem} />
@@ -82,7 +83,7 @@ const ResultList = () => {
     );
   });
   return (
-    <div className="flex flex-col w-full md:w-3/4 md:m-auto lg:w-4/5 lg:m-2 bg-grey-extra lg:bg-white">
+    <div className="flex flex-col w-full md:w-3/4 md:m-auto lg:w-3/4 lg:m-2 bg-grey-extra lg:bg-white">
       {getCaritems}
     </div>
   );
