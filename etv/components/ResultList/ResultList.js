@@ -82,7 +82,7 @@ const ResultList = () => {
     );
   });
   return (
-    <div className="flex flex-col w-full md:w-3/4 md:m-auto lg:w-4/5 lg:m-2 bg-grey-extra lg:bg-white">
+    <div className="flex flex-col w-full md:w-3/4 md:m-auto lg:w-3/4 lg:m-2 bg-grey-extra lg:bg-white">
       {getCaritems}
     </div>
   );

@@ -3,7 +3,7 @@ import ResultList from "../components/ResultList/ResultList";
 
 export default function comparePage() {
   return (
-    <div>
+    <div className="mx-2 md:mx-32">
       <FilterBlock />
 
       <ResultList />
