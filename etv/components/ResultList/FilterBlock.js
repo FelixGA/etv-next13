@@ -9,14 +9,17 @@ import arrowDown from "../../public/images/Chevron_down.png";
 import X from "../../public/images/X.png";
 import TruncateFilter from "./TruncateFilter";
 function FilterBlock() {
-  const [truncate, setTruncate] = useState(true);
+  const [truncate, setTruncate] = useState(false);
   return (
     <div>
       <div className="bg-grey-extra shadow-dropdown xl:hidden">
         <div className="h-10 shadow-dropdown flex flex-row justify-between align-middle">
-          <div className="w-full  flex flex-row ">
+          <div
+            className="w-full  flex flex-row "
+            onClick={() => setTruncate(!truncate)}
+          >
             <div
-              className="w-3.5 my-auto ml-6
+              className="w-3.5 my-auto ml-6 
           "
             >
               <Image
@@ -27,7 +30,7 @@ function FilterBlock() {
                 height={8}
                 layout="responsive"
               />
-            </div>{" "}
+            </div>
             <span className="ml-2 font-black  my-auto text-sm text-blue-darker">
               Alle Filter anzeigen
             </span>
@@ -57,8 +60,8 @@ function FilterBlock() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-center w-full mt-4 md:bg-red-500 xl:bg-green-500 xl:justify-end">
-        <div className="flex flex-col ml-2 md:bg-blue-500 md:flex-row xl:bg-orange-500">
+      <div className="flex flex-row justify-center w-full mt-4   xl:justify-end">
+        <div className="flex flex-col ml-2  md:flex-row ">
           <div className="w-44 h-9 bg-grey-lighter mt-2  flex flex-row justify-between xl:mr-1">
             <div className="w-full  flex flex-row">
               <div className="w-6 my-auto ml-2">
@@ -111,7 +114,7 @@ function FilterBlock() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col ml-2 md:bg-red-500 md:flex-row">
+        <div className="flex flex-col ml-2  md:flex-row">
           <div className="w-44 h-9 bg-grey-lighter mt-2  flex flex-row justify-between xl:mr-1">
             <div className="w-full  flex flex-row">
               <div className="w-6 my-auto ml-2">
@@ -165,7 +168,7 @@ function FilterBlock() {
             </div>
           </div>
         </div>
-        <div className="hidden xl:w-48 h-auto xl:flex xl:bg-yellow-500 xl:items-end">
+        <div className="hidden xl:w-48 h-auto xl:flex xl:items-end">
           <span className="text-sm pl-4">alle Filter loschen</span>
         </div>
       </div>
