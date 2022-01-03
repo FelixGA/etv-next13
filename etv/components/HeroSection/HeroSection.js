@@ -1,4 +1,3 @@
-import React from "react";
 import logos from "./logos.json";
 import Image from "next/image";
 

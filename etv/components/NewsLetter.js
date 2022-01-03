@@ -1,4 +1,3 @@
-import React from "react";
 const NewsLetter = () => {
   return (
     <div className="newsletter-container flex flex-col justify-center flex-wrap items-center p-10 bg-grey-lightest">

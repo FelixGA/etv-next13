@@ -21,36 +21,37 @@ function CarCard(props) {
   );
 
   return (
-    <div className="container-product flex flex-col mb-4 py-4 px-2 shadow-lg bg-white">
+    <div className="container-product flex flex-col mb-4 py-4 px-4 shadow-lg bg-white">
       <span className="container-product flex flex-row">
         <div className="container-product-basics w-3/5 lg:w-2/6 ">
           <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
             {props.caritem.title}
           </h3>
-          <div className="container-product-basics-image w-full sm:max-w-xs">
+          <div className="container-product-basics-image w-full sm:max-w-xs w-100">
             <Image
               src={props.caritem.image}
               alt="car"
-              width={210}
-              height={126}
+              width={195}
+              height={140}
               layout="responsive"
+              objectFit="cover"
             />
           </div>
         </div>
         <div className=" hidden lg:block lg:w-3/6">
           <CarCardDetailsDesktop caritem={props.caritem} />
         </div>
-        <div className="container-product-info w-2/5 lg:w-1/6 flex flex-col justify-start items-end pr-4">
+        <div className="container-product-info w-2/5 lg:w-1/6 flex flex-col justify-start items-end ">
           <p className="text-green-700 text-xl font-bold pb-2 ">
             ab {props.caritem.price} €
           </p>
 
           <span className="lg:hidden">{mobileRatingBox}</span>
 
-          <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xxs tracking-wider rounded w-5/6 xxs:h-7 ">
+          <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xxs tracking-wider rounded w-5/6 h-7 xxs:h-9 ">
             Jetzt anfragen
           </button>
-          <button className="bg-blue-dark  hover:bg-blue-light text-white mb-2 px-2 pt-1 text-xxs tracking-wider rounded  flex justify-center items-center w-5/6 h-7 ">
+          <button className="bg-blue-dark  hover:bg-blue-light text-white mb-2 px-2 pt-1 text-xxs tracking-wider rounded  flex justify-center items-center w-5/6 h-7 xxs:h-9 ">
             <span className="text-blue-dark w-4 h-4 hidden xxs:flex items-center justify-center font-bold rounded-full text-l mb-1 mr-2 bg-white">
               &nbsp;+&nbsp;
             </span>
