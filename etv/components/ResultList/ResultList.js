@@ -69,13 +69,13 @@ const ResultList = () => {
   ];
   const getCaritems = caritems.map((caritem) => {
     return (
-      <div className="container-product">
+      <div className="container-product" key={caritems.id}>
         <div
           className="product-icon"
           //LATER for the individuAL product
           // onClick={() => {
           //   history.push(`/en/detail/${caritem._id}`);
-          key={caritems.id}
+
           // }}
         ></div>
         <CarCard caritem={caritem} />

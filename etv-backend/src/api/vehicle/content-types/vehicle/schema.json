@@ -16,14 +16,6 @@
       "type": "biginteger",
       "required": true
     },
-    "quitefar": {
-      "type": "biginteger",
-      "required": true
-    },
-    "weight": {
-      "type": "biginteger",
-      "required": true
-    },
     "title": {
       "type": "string",
       "required": true,
@@ -31,18 +23,78 @@
       "unique": true
     },
     "photo": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true
+      ]
     },
     "description": {
       "type": "richtext",
       "default": "here the description"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "categorie": {
+      "type": "enumeration",
+      "enum": [
+        "Pritsche",
+        "Kipper",
+        "Koffer",
+        "Kasten",
+        "beliebigerFahrzeugtyp"
+      ],
+      "required": true
+    },
+    "range": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "weight": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range",
+      "required": false
+    },
+    "maxSpeed": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "chargingTime": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "electricWindows": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "ABS": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "airBags": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "airConditioning": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "extras": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
     }
   }
 }
