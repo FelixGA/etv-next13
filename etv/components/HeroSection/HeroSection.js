@@ -101,7 +101,7 @@ const HeroSection = () => {
         <div className="main-heading-container flex flex-row justify-start lg:text-xl lg:w-full lg:mt-20">
           <div className="m-[10px] lg:mr-14">
             <Image
-              src="/images/medal.png"
+              src="/images/siegel2.png"
               width={166}
               height={166}
               responsive={true}
