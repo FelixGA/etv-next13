@@ -104,4 +104,5 @@ a:visited {
 }
 .forz {
   z-index: -99;
+  background: linear-gradient(0.25turn, #f2f9ff, #daedff, #daedff);
 }
