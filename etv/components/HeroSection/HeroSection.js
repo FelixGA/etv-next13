@@ -1,7 +1,9 @@
 import logos from "./logos.json";
 import Image from "next/image";
-
+import { useStore } from "../../components/store";
 const HeroSection = () => {
+  // const { state, dispatch } = useStore();
+  // console.log(state);
   const details = [
     {
       category: "Price",

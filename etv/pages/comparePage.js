@@ -102,9 +102,9 @@ export default function comparePage() {
   // dispatch({ type: "cars", data: false });
 
   const { state, dispatch } = useStore();
-  console.log(state);
+
   useEffect(() => {
-    dispatch({ type: "cars", data: getCars });
+    dispatch({ type: "setCars", data: "test" });
   }, []);
 
   return (

@@ -37,7 +37,7 @@ const Nav = () => {
   );
 
   return (
-    <nav className="bg-blue-dark flex flex-row justify-between items-center w-[100vw]">
+    <nav className="bg-blue-dark flex flex-row justify-between items-center w-full">
       <span className="flex flex-row justify-between items-center">
         {" "}
         <div className="logo-container mt-2 ">
@@ -58,7 +58,7 @@ const Nav = () => {
       <div
         className={
           isMobile
-            ? `absolute lg:hidden text-3xl top-18 z-50 animation-slideL bg-blue-dark box flex flex-col justify-between items-start h-full w-full`
+            ? `absolute lg:hidden text-3xl top-18 z-50 animation-slideL bg-blue-dark box flex flex-col justify-between items-start h-full w-full sm:w-1/2 sm:right-0 `
             : " hidden lg:flex lg:flex-row lg:justify-between animation-slideR items-center box w-[70vw]"
         }
       >

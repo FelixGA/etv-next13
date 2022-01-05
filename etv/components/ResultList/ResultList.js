@@ -1,5 +1,10 @@
 import CarCard from "../../components/ResultList/CarCard";
+import { useStore } from "../store";
 const ResultList = () => {
+  const { state, dispatch } = useStore();
+  const { cars } = state;
+  console.log(cars);
+
   const caritems = [
     {
       id: 1,

@@ -2,8 +2,8 @@ import { createContext, useReducer, useContext } from "react";
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case "cars":
-      return { ...state, locale: action.data };
+    case "setCars":
+      return { ...state, cars: action.data };
     // case "setTranslations":
     //   return { ...state, translations: action.data };
     // case "menuHidden":
