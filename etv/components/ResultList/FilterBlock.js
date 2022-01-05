@@ -63,9 +63,9 @@ function FilterBlock() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-center w-full sm:mt-0 md:mt-12 lg:w-fit lg:justify-start ">
+      <div className="flex flex-row justify-center w-full sm:mt-2 md:mt-12 lg:w-fit lg:justify-start ">
         <div className="flex flex-col ml-2 xl:flex-row ">
-          <div className=" sm:w-38 lg:w-44 h-9 bg-grey-lighter mt-4  flex flex-row justify-between ">
+          <div className=" sm:w-38 lg:w-44 h-9 bg-grey-lighter sm:mt-4 md:mt-2   flex flex-row justify-between ">
             <div className="  flex flex-row">
               <div className="w-6 my-auto ml-2">
                 <Image
@@ -118,7 +118,7 @@ function FilterBlock() {
           </div>
         </div>
         <div className="flex flex-col ml-2 xl:flex-row ">
-          <div className="sm:w-40 lg:w-44 h-9 bg-grey-lighter mt-4   flex flex-row justify-between xl:mr-1">
+          <div className="sm:w-40 lg:w-44 h-9 bg-grey-lighter sm:mt-4 md:mt-2   flex flex-row justify-between xl:mr-1">
             <div className="w-full  flex flex-row">
               <div className="w-6 my-auto ml-2">
                 <Image
