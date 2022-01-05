@@ -86,13 +86,13 @@ const HeroSection = () => {
   return (
     <div className="relative ">
       <div className="hidden lg:flex w-full h-80 absolute justify-end forz bottom-[264px]  border-black-darkest">
-        <div className="w-[460px] relative bottom-10  bg-red-700 object-left-top	">
+        <div className="w-[460px] relative bottom-10 opacity-40 object-left-top	">
           <Image
-            src="/images/kleintransporter-hintergrundbasic.jpeg"
+            src="/images/kleintransporter-hintergrund.png"
             width={400}
             height={320}
             alt="Kleintransporter"
-            objectFit="leftTop"
+            objectFit="cover"
             layout="responsive"
           />
         </div>
