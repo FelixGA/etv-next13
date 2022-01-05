@@ -1,5 +1,5 @@
 import BlogArticles from "../components/BlogArticles";
-// import HeroSection from "../components/HeroSection/HeroSection";
+import HeroSection from "../components/HeroSection/HeroSection";
 import TopSlider from "../components/Sliders/TopSlider";
 import BottomSlider from "../components/Sliders/BottomSlider";
 import NewsLetter from "../components/NewsLetter";
@@ -14,7 +14,7 @@ function homepage() {
   ]; */
   return (
     <>
-      {/* <HeroSection /> */}
+      <HeroSection />
       <TopSlider /* cars={cars} */ />
       <BlogArticles />
       <BottomSlider />

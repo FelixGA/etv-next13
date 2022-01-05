@@ -8,12 +8,12 @@ import filterImage from "../../public/images/filter-icon.png";
 import arrowDown from "../../public/images/Chevron_down.png";
 import X from "../../public/images/X.png";
 import TruncateFilterMobile from "./TruncateFilterMobile";
-import TruncateFilterDesktop from "./TruncateFilterDesktop";
+
 function FilterBlock() {
   const [truncate, setTruncate] = useState(false);
   return (
-    <div>
-      <div className=" bg-grey-extra shadow-dropdown md:hidden">
+    <div className=" w-full min-w-fit ">
+      <div className="bg-[#Fff]  shadow-dropdown md:hidden">
         <div className="h-10 shadow-dropdown flex flex-row justify-between align-middle">
           <div
             className="w-full  flex flex-row "
@@ -63,9 +63,9 @@ function FilterBlock() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-center w-full mt-4 lg:w-3/4 lg:ml-auto   lg:justify-start">
-        <div className="flex flex-col ml-2  md:flex-row  ">
-          <div className="w-44 h-9 bg-grey-lighter mt-2  flex flex-row justify-between ">
+      <div className="flex flex-row justify-center w-full sm:mt-0 md:mt-12 lg:w-fit lg:justify-start ">
+        <div className="flex flex-col ml-2 xl:flex-row ">
+          <div className=" sm:w-38 lg:w-44 h-9 bg-grey-lighter mt-4  flex flex-row justify-between ">
             <div className="  flex flex-row">
               <div className="w-6 my-auto ml-2">
                 <Image
@@ -77,7 +77,7 @@ function FilterBlock() {
                   layout="responsive"
                 />
               </div>
-              <span className="text-sm my-auto pl-2">3000-9000 €</span>
+              <span className="text-sm my-auto pl-2 ">3000-9000 €</span>
             </div>
 
             <div className="w-3.5 my-auto mr-3 ">
@@ -91,7 +91,7 @@ function FilterBlock() {
               />{" "}
             </div>
           </div>
-          <div className="w-44 h-9 bg-grey-lighter mt-2 flex flex-row justify-between xl:ml-1 ">
+          <div className="sm:w-40 lg:w-44 h-9 bg-grey-lighter mt-2 flex flex-row justify-between xl:ml-1 ">
             <div className="  flex flex-row">
               <div className="w-6 my-auto ml-2">
                 <Image
@@ -117,8 +117,8 @@ function FilterBlock() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col ml-2  md:flex-row">
-          <div className="w-44 h-9 bg-grey-lighter mt-2  flex flex-row justify-between xl:mr-1">
+        <div className="flex flex-col ml-2 xl:flex-row ">
+          <div className="sm:w-40 lg:w-44 h-9 bg-grey-lighter mt-4   flex flex-row justify-between xl:mr-1">
             <div className="w-full  flex flex-row">
               <div className="w-6 my-auto ml-2">
                 <Image
@@ -144,7 +144,7 @@ function FilterBlock() {
               />{" "}
             </div>
           </div>
-          <div className="w-44 h-9 bg-grey-lighter mt-2 flex flex-row justify-between xl:ml-1">
+          <div className="sm:w-40 lg:w-44 h-9 bg-grey-lighter mt-2 flex flex-row justify-between xl:ml-1">
             <div className="w-full  flex flex-row">
               <div className="w-6 my-auto ml-2">
                 <Image
@@ -171,14 +171,29 @@ function FilterBlock() {
             </div>
           </div>
         </div>
-        <div className="hidden xl:w-48 h-auto xl:flex xl:items-end">
+        <div className="hidden xl:w-30 h-auto xl:flex xl:items-end">
           <span className="text-sm pl-4">alle Filter loschen</span>
         </div>
       </div>
-      <div className="mt-8 pb-2 w-full lg:w-3/4  lg:ml-auto">
-        <h1 className="text-xl text-black-dark pl-8">
-          Die besten E-Transporter nach Ihrer Auswahl
-        </h1>
+      <div className="flex flex-row justify-between  ">
+        <div className="mt-8 pb-2 ">
+          <h1 className="text-2xl text-black-dark pl-4">
+            Die besten E-Transporter nach Ihrer Auswahl
+          </h1>
+        </div>
+        <div className=" w-fit flex flex-row justify-end items-center mt-8 pb-2 ">
+          <h4 className="pr-4 ">Sortieren nach: Preis </h4>
+          <div className="w-4 h-4 relative right-2">
+            <Image
+              src={arrowDown}
+              alt="filter icon"
+              objectFit="cover"
+              width={50}
+              height={50}
+              layout="responsive"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

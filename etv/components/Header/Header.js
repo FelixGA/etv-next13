@@ -1,7 +1,7 @@
 import Nav from "../Header/Nav";
 const Header = () => {
   return (
-    <div>
+    <div className="w-[100vw]">
       <Nav></Nav>
       {/* later */}
       {/* <NavDesktop/> */}

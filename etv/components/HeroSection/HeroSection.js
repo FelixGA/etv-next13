@@ -181,14 +181,8 @@ const HeroSection = () => {
       </div>
       <div className="icons-container flex flex-row justify-around flex-wrap">
         {logos.map((logo, index) => (
-          <i className="m-2 lg:my-20 lg:scale-125">
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              key={index}
-              width={48}
-              height={48}
-            />
+          <i className="m-2 lg:my-20 lg:scale-125" key={index}>
+            <Image src={logo.src} alt="pic" width={48} height={48} />
           </i>
         ))}
       </div>
