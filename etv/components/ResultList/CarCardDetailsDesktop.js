@@ -6,7 +6,7 @@ import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/ladezeit@2x.png";
 function CarCardDetailsDesktop(props) {
   const desktopRatingBox = (
-    <div className="borderbtn flex flex-col w-20">
+    <div className="borderbtn flex flex-col w-15 text-sm xl:w-20">
       <p className=" flex flex-col justify-center ">
         <span className="px-1 bg-orange-dark text-white font-bold text-xs flex justify-center ">
           TEST
@@ -23,18 +23,18 @@ function CarCardDetailsDesktop(props) {
     </div>
   );
   return (
-    <div className=" w-full flex flex-col justify-between">
-      <h3 className=" pl-4 text-black-darkest font-bold mb-4">
+    <div className=" w-full flex flex-col justify-center">
+      <h3 className=" pl-4 text-black-darkest font-bold mb-2">
         {props.caritem.title}
       </h3>
-      <span className="flex flex-row w-full flex-wrap pr-4 border-r-2">
-        <section className="py-2 pl-4 flex flex-row w-3/4 flex-wrap">
+      <span className="flex flex-row w-full flex-wrap xl:pr-4 border-r-2">
+        <section className="py-2 xl:pl-4 flex flex-row w-3/4 flex-wrap">
           <span className="flex flex-col w-1/2 ">
             <div className="flex flex-row w-full ">
               <div className="bg-grey-lighter rounded-full m-2">
                 <Image src={image} alt="Reichweite" width={36} height={36} />
               </div>
-              <div className="flex flex-col w-full justify-center">
+              <div className="flex flex-col w-full justify-center text-sm">
                 <div className="text-blue-dark font-bold ">
                   {" "}
                   {props.caritem.distance} km
@@ -46,7 +46,7 @@ function CarCardDetailsDesktop(props) {
               <div className="bg-grey-lighter rounded-full m-2">
                 <Image src={image3} alt="v-max-logo" width={36} height={36} />
               </div>
-              <div className="flex flex-col w-full justify-center">
+              <div className="flex flex-col w-full justify-center text-sm">
                 <div className="text-blue-dark font-bold ">
                   {" "}
                   {props.caritem.vmax} km/h
@@ -65,7 +65,7 @@ function CarCardDetailsDesktop(props) {
                   height={36}
                 />
               </div>
-              <div className="flex flex-col w-full justify-center">
+              <div className="flex flex-col w-full justify-center text-sm">
                 <div className="text-blue-dark font-bold ">
                   {" "}
                   {props.caritem.weight} kg
@@ -74,10 +74,10 @@ function CarCardDetailsDesktop(props) {
               </div>
             </div>
             <div className="flex flex-row w-full ">
-              <div className="bg-grey-lighter rounded-full m-2">
+              <div className="bg-grey-lighter rounded-full m-2 ">
                 <Image src={image4} alt="v-max-logo" width={36} height={36} />
               </div>
-              <div className="flex flex-col w-full justify-center">
+              <div className="flex flex-col w-full justify-center text-sm ">
                 <div className="text-blue-dark font-bold ">
                   {" "}
                   {props.caritem.loadingtime}h

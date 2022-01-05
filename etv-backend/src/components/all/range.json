@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_all_ranges",
+  "info": {
+    "displayName": "entry",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

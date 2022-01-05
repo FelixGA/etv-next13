@@ -102,3 +102,6 @@ a:visited {
 .borderbtn {
   border: 2px solid black;
 }
+.forz {
+  z-index: -99;
+}

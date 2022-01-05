@@ -4,7 +4,7 @@ import { ApolloProvider } from "@apollo/client";
 import client from "../apollo-client";
 import ErrorBoundary from "../components/ErrorBoundary";
 import Head from "next/head";
-
+import { StoreProvider } from "/components/store";
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -33,9 +33,11 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ErrorBoundary>
         <ApolloProvider client={client}>
-          <Layout {...pageProps}>
-            <Component {...pageProps} />
-          </Layout>
+          <StoreProvider>
+            <Layout {...pageProps}>
+              <Component {...pageProps} />
+            </Layout>
+          </StoreProvider>
         </ApolloProvider>
       </ErrorBoundary>
     </>
