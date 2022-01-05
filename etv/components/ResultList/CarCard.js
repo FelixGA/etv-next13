@@ -41,23 +41,23 @@ function CarCard(props) {
         <div className=" hidden lg:flex lg:my-auto lg:w-3/6">
           <CarCardDetailsDesktop caritem={props.caritem} />
         </div>
-        <div className="container-product-info w-2/5 lg:w-1/6 flex flex-col justify-start items-end ">
-          <p className="text-green-700 xl:text-xl font-bold pb-2 ">
+        <div className="container-product-info w-2/5 lg:w-1/6 flex flex-col lg:flex-col justify-center items-end ">
+          <p className="text-green-700 xl:text-xl font-bold mb-4 ">
             ab {props.caritem.price} €
           </p>
 
           <span className="lg:hidden">{mobileRatingBox}</span>
-
-          <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xxs xl:tracking-wider rounded w-5/6 h-7 xxs:h-9 ">
-            Jetzt anfragen
-          </button>
-          <button className="bg-blue-dark  hover:bg-blue-light text-white mb-2 px-2 text-xxs xl:tracking-wider rounded  flex justify-center items-center w-5/6 h-7 xxs:h-9 ">
-            <span className="text-blue-dark hidden xxs:flex  lg:w-0 xl:w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
-              &nbsp;+&nbsp;
-            </span>
-            <span className="my-auto">Vergleichen</span>
-          </button>
-
+          <div className="w-full flex flex-col lg:flex-col-reverse items-end">
+            <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xxs xl:tracking-wider rounded w-5/6 h-7 xxs:h-9 ">
+              Jetzt anfragen
+            </button>
+            <button className="bg-blue-dark  hover:bg-blue-light text-white mb-2 px-2 text-xxs xl:tracking-wider rounded  flex justify-center items-center w-5/6 h-7 xxs:h-9 ">
+              <span className="text-blue-dark hidden xxs:flex  lg:w-0 xl:w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
+                &nbsp;+&nbsp;
+              </span>
+              <span className="my-auto">Vergleichen</span>
+            </button>
+          </div>
           <div
             onClick={() => setShowDetails(!showDetails)}
             className="text-blue-dark font-bold text-xs cursor-pointer lg:hidden"

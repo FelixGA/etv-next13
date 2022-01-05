@@ -23,8 +23,8 @@ function CarCardDetailsDesktop(props) {
     </div>
   );
   return (
-    <div className=" w-full flex flex-col justify-between">
-      <h3 className=" pl-4 text-black-darkest font-bold mb-4">
+    <div className=" w-full flex flex-col justify-center">
+      <h3 className=" pl-4 text-black-darkest font-bold mb-2">
         {props.caritem.title}
       </h3>
       <span className="flex flex-row w-full flex-wrap xl:pr-4 border-r-2">
