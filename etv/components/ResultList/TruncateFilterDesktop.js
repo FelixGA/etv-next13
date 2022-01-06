@@ -54,7 +54,7 @@ function TruncateFilterDesktop() {
       </div>
     );
   });
-  console.log(filtersData);
+
   return (
     <div className="w-full relative bottom-4 mr-8 ">
       {/* Preis */}

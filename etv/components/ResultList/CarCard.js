@@ -15,11 +15,15 @@ function CarCard(props) {
         </span>
       </p>
       <p className="px-1 text-xs font-bold text-grey-darkest custom-text">
-        <b className="text-sm">{props.caritem.ergebnis} </b> SEHR GUT
+        <b className="text-sm">{props.caritem.rating.value} </b>{" "}
+        {props.caritem.rating.key}
       </p>
     </div>
   );
-
+  // get first pic console.log(props.caritem.photo.data[0].attributes.url);
+  const myLoader = ({ src }) => {
+    return `http://localhost:1337${props.caritem.photo.data[0].attributes.url}`;
+  };
   return (
     <div className="container-product flex flex-col mb-4 py-4 lg:py-0 px-4 lg:px-0 lg:pr-4  shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
       <span className="container-product flex flex-row">
@@ -29,8 +33,9 @@ function CarCard(props) {
           </h3>
           <div className=" w-full sm:max-w-xs w-100 ">
             <Image
-              src={props.caritem.image}
-              alt="car"
+              loader={myLoader}
+              src={`http://localhost:1337${props.caritem.photo.data[0].attributes.url}`}
+              alt={props.caritem.photo.data[0].attributes.alternativeText}
               width={195}
               height={140}
               layout="responsive"
