@@ -15,10 +15,11 @@ function CarCardDetailsMobile(props) {
               <Image src={image2} alt="zuladung-logo" width={36} height={36} />
             </div>
             <div className="flex flex-row w-full justify-center">
-              <div className="text-grey-dark font-bold w-1/2">Zuladung: </div>
+              <div className="text-grey-dark font-bold w-1/2">
+                {props.caritem.weight.key}:
+              </div>
               <div className="text-blue-dark font-bold w-1/2">
-                {" "}
-                {props.caritem.weight}kg
+                {props.caritem.weight.value} kg
               </div>
             </div>
           </div>
@@ -32,10 +33,11 @@ function CarCardDetailsMobile(props) {
               />
             </div>
             <div className="flex flex-row w-full justify-center">
-              <div className="text-grey-dark font-bold w-1/2">V-Max: </div>
+              <div className="text-grey-dark font-bold w-1/2">
+                {props.caritem.maxSpeed.key}:
+              </div>
               <div className="text-blue-dark font-bold w-1/2">
-                {" "}
-                {props.caritem.vmax}km/h
+                {props.caritem.maxSpeed.value}km/h
               </div>
             </div>
           </div>
@@ -51,10 +53,11 @@ function CarCardDetailsMobile(props) {
               />
             </div>
             <div className="flex flex-row w-full justify-center">
-              <div className="text-grey-dark font-bold w-1/2">Reichweite: </div>
+              <div className="text-grey-dark font-bold w-1/2">
+                {props.caritem.range.key}:{" "}
+              </div>
               <div className="text-blue-dark font-bold w-1/2">
-                {" "}
-                {props.caritem.distance}km
+                {props.caritem.range.value}km
               </div>
             </div>
           </div>
@@ -68,10 +71,11 @@ function CarCardDetailsMobile(props) {
               />
             </div>
             <div className="flex flex-row w-full justify-between">
-              <div className="text-grey-dark font-bold w-1/2">Ladezeit: </div>
+              <div className="text-grey-dark font-bold w-1/2">
+                {props.caritem.chargingTime.key}:
+              </div>
               <div className="text-blue-dark font-bold w-1/2">
-                {" "}
-                {props.caritem.loadingtime}h
+                {props.caritem.chargingTime.value}h
               </div>
             </div>
           </div>
@@ -89,7 +93,7 @@ function CarCardDetailsMobile(props) {
 }
 export default CarCardDetailsMobile;
 //  <>
-//    {props.caritem.title},{props.caritem.description}, {props.caritem.price},{" "}
-//    {props.caritem.weight}, {props.caritem.distance}, {props.caritem.vmax},{" "}
+//    {props.caritem.title},{props.caritem.description}, {props.caritem.price},
+//    {props.caritem.weight}, {props.caritem.distance}, {props.caritem.vmax},
 //    {props.caritem.loadingtime}, {props.caritem.vmax}
 //  </>;

@@ -14,7 +14,10 @@ export default function comparePage() {
             title
             price
             description
-            rating
+            rating {
+              key
+              value
+            }
             categorie
             range {
               key

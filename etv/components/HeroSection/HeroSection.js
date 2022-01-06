@@ -82,27 +82,26 @@ const HeroSection = () => {
       ],
     },
   ];
-  const backroundpic = (
-    <div className="hidden lg:flex w-full h-96 bg-red-400 absolute justify-end forz">
-      <div className="w-auto h-96">
-        <Image
-          src="/images/kleintransporter-hintergrund1.jpeg"
-          width={600}
-          height={300}
-          alt="Kleintransporter"
-          objectFit="contain"
-        />
-      </div>
-    </div>
-  );
+
   return (
-    <div className="relative">
-      {backroundpic}
+    <div className="relative ">
+      <div className="hidden lg:flex w-full h-80 absolute justify-end forz bottom-[264px]  border-black-darkest">
+        <div className="w-[460px] relative bottom-10 opacity-40 object-left-top	">
+          <Image
+            src="/images/kleintransporter-hintergrund.png"
+            width={400}
+            height={320}
+            alt="Kleintransporter"
+            objectFit="cover"
+            layout="responsive"
+          />
+        </div>
+      </div>
       <div className="hero-section-container m-4 lg:w-3/4 lg:m-auto ">
-        <div className="main-heading-container flex flex-row justify-start lg:text-xl lg:w-full lg:mt-36">
+        <div className="main-heading-container flex flex-row justify-start lg:text-xl lg:w-full lg:mt-20">
           <div className="m-[10px] lg:mr-14">
             <Image
-              src="/images/medal.png"
+              src="/images/siegel2.png"
               width={166}
               height={166}
               responsive={true}
@@ -209,13 +208,6 @@ const HeroSection = () => {
             </i>
           ))}
         </div>
-      </div>
-      <div className="icons-container flex flex-row justify-around flex-wrap">
-        {logos.map((logo, index) => (
-          <i className="m-2 lg:my-20 lg:scale-125" key={index}>
-            <Image src={logo.src} alt="pic" width={48} height={48} />
-          </i>
-        ))}
       </div>
     </div>
   );

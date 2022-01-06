@@ -16,9 +16,9 @@ function CarCardDetailsDesktop(props) {
         </span>
       </p>
       <p className="px-1 text-s font-bold text-grey-darkest custom-text">
-        <b className="text-2xl">{props.caritem.ergebnis}</b>
+        <b className="text-2xl">{props.caritem.rating.value}</b>
         <br />
-        sehr gut
+        {props.caritem.rating.key}
       </p>
     </div>
   );
@@ -37,9 +37,11 @@ function CarCardDetailsDesktop(props) {
               <div className="flex flex-col w-full justify-center text-sm">
                 <div className="text-blue-dark font-bold ">
                   {" "}
-                  {props.caritem.distance} km
+                  {props.caritem.range.value} km
                 </div>
-                <div className="text-grey-dark font-bold ">Reichweite </div>
+                <div className="text-grey-dark font-bold ">
+                  {props.caritem.range.key}{" "}
+                </div>
               </div>
             </div>
             <div className="flex flex-row w-full ">
@@ -49,9 +51,11 @@ function CarCardDetailsDesktop(props) {
               <div className="flex flex-col w-full justify-center text-sm">
                 <div className="text-blue-dark font-bold ">
                   {" "}
-                  {props.caritem.vmax} km/h
+                  {props.caritem.maxSpeed.value} km/h
                 </div>
-                <div className="text-grey-dark font-bold ">V-Max </div>
+                <div className="text-grey-dark font-bold ">
+                  {props.caritem.maxSpeed.key}{" "}
+                </div>
               </div>
             </div>
           </span>
@@ -68,9 +72,11 @@ function CarCardDetailsDesktop(props) {
               <div className="flex flex-col w-full justify-center text-sm">
                 <div className="text-blue-dark font-bold ">
                   {" "}
-                  {props.caritem.weight} kg
+                  {props.caritem.weight.value} kg
                 </div>
-                <div className="text-grey-dark font-bold ">Zuladung </div>
+                <div className="text-grey-dark font-bold ">
+                  {props.caritem.weight.key}{" "}
+                </div>
               </div>
             </div>
             <div className="flex flex-row w-full ">
@@ -80,9 +86,11 @@ function CarCardDetailsDesktop(props) {
               <div className="flex flex-col w-full justify-center text-sm ">
                 <div className="text-blue-dark font-bold ">
                   {" "}
-                  {props.caritem.loadingtime}h
+                  {props.caritem.chargingTime.value}h
                 </div>
-                <div className="text-grey-dark font-bold ">Ladezeit </div>
+                <div className="text-grey-dark font-bold ">
+                  {props.caritem.chargingTime.key}{" "}
+                </div>
               </div>
             </div>
           </span>
