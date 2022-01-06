@@ -3,16 +3,58 @@ import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
-import FilterItem from "./FilterItem";
+import FilterItemDesktop from "./FilterItemDesktop";
 import Image from "next/image";
 import { useState } from "react";
 
 function TruncateFilterDesktop() {
   const [truncPrice, setTruncPrice] = useState(false);
-  // const [truncDistance, setTruncDistance] = useState(false);
-  // const [truncLoad, setTruncLoad] = useState(false);
-  // const [truncSpeed, setTruncSpeed] = useState(false);
-  // const [truncMoreFilters, setTruncMoreFilters] = useState(false);
+  const filtersData = [
+    {
+      id: 1,
+      title: "Reichweite",
+      firstRange: "bis 100km",
+      secondRange: "bis 250km",
+      thirdRange: "bis 500km",
+      forthRange: "mind. 12400km",
+      image: image,
+    },
+    {
+      id: 2,
+      title: "Zuladung",
+      firstRange: "bis 100kg",
+      secondRange: "bis 250kg",
+      thirdRange: "bis 500kg",
+      forthRange: "mind. 12400kg",
+      image: image2,
+    },
+    {
+      id: 3,
+      title: "Höchstgeschwindigkeit",
+      firstRange: "bis 80km/h",
+      secondRange: "bis 120km/h",
+      thirdRange: "bis 300km/h",
+      forthRange: "mind. Mach 5",
+      image: image3,
+    },
+    {
+      id: 4,
+      title: "Weitere Filter",
+      firstRange: "Anschluss Typ2",
+      secondRange: "Anschluss Schuko",
+      thirdRange: "Anschluss Typ2",
+      forthRange: "Anschluss Schuko",
+      image: image3,
+    },
+  ];
+  const getFiltersData = filtersData.map((item, index) => {
+    return (
+      <div key={index}>
+        <FilterItemDesktop item={item} />
+      </div>
+    );
+  });
+  console.log(filtersData);
   return (
     <div className="w-full relative bottom-4 mr-8 ">
       {/* Preis */}
@@ -114,13 +156,11 @@ function TruncateFilterDesktop() {
           </div>
         </div>
       </div>
+      {getFiltersData}
       {/* Reichweite */}
 
-      <FilterItem />
       {/* Zuladung */}
-
       {/* Höchstgeschwindigkeit */}
-
       {/* Weitere Filter */}
     </div>
   );

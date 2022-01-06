@@ -14,13 +14,13 @@ function FilterBlock() {
   return (
     <div className=" w-full min-w-fit ">
       <div className="bg-[#Fff]  shadow-dropdown md:hidden">
-        <div className="h-10 shadow-dropdown flex flex-row justify-between align-middle">
+        <div className="h-10 shadow-dropdown flex flex-row justify-between align-middle ">
           <div
             className="w-full  flex flex-row "
             onClick={() => setTruncate(!truncate)}
           >
             <div
-              className="w-3.5 my-auto ml-6 
+              className="w-3.5 my-auto ml-6  
           "
             >
               <Image
@@ -38,7 +38,7 @@ function FilterBlock() {
           </div>
           <span>{"   "}</span>
           <div
-            className="w-4 mr-4 my-auto"
+            className="w-4 mr-4 my-auto "
             onClick={() => setTruncate(!truncate)}
           >
             <Image
@@ -63,10 +63,10 @@ function FilterBlock() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-center w-full sm:mt-2 md:mt-12 lg:w-fit lg:justify-start ">
-        <div className="flex flex-col ml-2 xl:flex-row ">
-          <div className=" sm:w-38 lg:w-44 h-9 bg-grey-lighter sm:mt-4 md:mt-2   flex flex-row justify-between ">
-            <div className="  flex flex-row">
+      <div className="flex flex-row justify-center w-full sm:mt-2 md:mt-12 xs:justify-around md:justify-start ">
+        <div className="flex flex-col ml-2 xl:flex-row  flex-grow">
+          <div className=" h-9 bg-grey-lighter  mt-2  flex-grow flex flex-row justify-between ">
+            <div className="  flex flex-row ">
               <div className="w-6 my-auto ml-2">
                 <Image
                   src={image4}
@@ -91,8 +91,8 @@ function FilterBlock() {
               />{" "}
             </div>
           </div>
-          <div className="sm:w-40 lg:w-44 h-9 bg-grey-lighter mt-2 flex flex-row justify-between xl:ml-1 ">
-            <div className="  flex flex-row">
+          <div className=" h-9 bg-grey-lighter  mt-2 flex-grow  flex flex-row justify-between ">
+            <div className="  flex flex-row flex-grow ">
               <div className="w-6 my-auto ml-2">
                 <Image
                   src={image3}
@@ -117,8 +117,8 @@ function FilterBlock() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col ml-2 xl:flex-row ">
-          <div className="sm:w-40 lg:w-44 h-9 bg-grey-lighter sm:mt-4 md:mt-2   flex flex-row justify-between xl:mr-1">
+        <div className="flex flex-col ml-2 xl:flex-row flex-grow ">
+          <div className="h-9 bg-grey-lighter  mt-2 flex-grow  flex flex-row justify-between ">
             <div className="w-full  flex flex-row">
               <div className="w-6 my-auto ml-2">
                 <Image
@@ -144,7 +144,7 @@ function FilterBlock() {
               />{" "}
             </div>
           </div>
-          <div className="sm:w-40 lg:w-44 h-9 bg-grey-lighter mt-2 flex flex-row justify-between xl:ml-1">
+          <div className=" h-9 bg-grey-lighter  mt-2 flex-grow  flex flex-row justify-between ">
             <div className="w-full  flex flex-row">
               <div className="w-6 my-auto ml-2">
                 <Image
