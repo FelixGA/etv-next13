@@ -77,47 +77,42 @@ export default function comparePage() {
   const getKasten = getCars?.filter((item) => item.categorie === "Kasten");
   // get all categories from the data
   const getCategories = [...new Set(getCars?.map((item) => item.categorie))];
-  console.log(getCategories);
+
   // cars price filter
-  const getCarslowest = getCars?.sort((a, b) => b.price - a.price);
+  const getCarslowestPrice = getCars?.sort((a, b) => b.price - a.price);
 
-  const getCarshighest = getCars?.sort((a, b) => a.price - b.price);
-  // get the cheapest price
-  const getCheapest = getCarslowest?.slice(0, 1);
-  // get the highest price
-  const getHighest = getCarshighest?.slice(0, 1);
-  console.log(getHighest?.map((item) => item.title));
-  console.log(getCheapest?.map((item) => item.title));
-
+  const getCarshighestPrice = getCars?.sort((a, b) => a.price - b.price);
+  // get the cheapest auto
+  // const getCheapest = getCarslowestPrice?.slice(0, 1);
+  // get the highest auto
+  // const getHighest = getCarshighestPrice?.slice(0, 1);
   // // cars weight filter
-  // const getCarslightest = getCars?.sort(
-  //   (a, b) => a.weight.value - b.weight.value
-  // );
-  // const getCarsheaviest = getCars?.sort(
-  //   (a, b) => b.weight.value - a.weight.value
-  // );
-  // // cars range filter
-  // const getCarslongest = getCars?.sort((a, b) => a.range.value - b.range.value);
-  // const getCarsshortest = getCars?.sort(
-  //   (a, b) => b.range.value - a.range.value
-  // );
+  const getCarslightest = getCars?.sort(
+    (a, b) => b.weight.value - a.weight.value
+  );
+  const getCarsheaviest = getCars?.sort(
+    (a, b) => b.weight.value - a.weight.value
+  );
+  // cars range filter
+  const getCarslongest = getCars?.sort((a, b) => a.range.value - b.range.value);
+  const getCarsshortest = getCars?.sort(
+    (a, b) => b.range.value - a.range.value
+  );
+  const { state, dispatch } = useStore();
+  console.log(state.prices);
+  console.log(state.weights);
+  console.log(state.ranges);
+  //initial value
+  let sendCars = getCarshighestPrice;
+
   // // cars charging time filter
   // const getCarsfastest = getCars?.sort(
   //   (a, b) => a.chargingTime.value - b.chargingTime.value
-  // );
-  // const getCarsslowest = getCars?.sort(
-  //   (a, b) => b.chargingTime.value - a.chargingTime.value
   // );
 
   // console.log(state);
 
   // dispatch({ type: "cars", data: false });
-
-  const { state, dispatch } = useStore();
-
-  useEffect(() => {
-    dispatch({ type: "setCars", data: "test" });
-  }, []);
 
   return (
     <div className=" md:mx-32 bg-[#F2F9FF] md:bg-white ">
@@ -128,7 +123,7 @@ export default function comparePage() {
           </div>
           <div className="flex flex-col md:w-3/4 w-full ">
             <FilterBlock />
-            <ResultList getCarslowest={getCarslowest} />
+            <ResultList getCars={getCars} />
           </div>
         </div>
       </div>

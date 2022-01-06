@@ -1,10 +1,10 @@
 import CarCard from "../../components/ResultList/CarCard";
 import { useStore } from "../store";
+
 const ResultList = (props) => {
   const { state, dispatch } = useStore();
   const { cars } = state;
-
-  const displayedCars = props.getCarslowest;
+  const displayedCars = props.getCars;
 
   const getdisplayedCars = displayedCars?.map((caritem) => {
     return (
