@@ -59,7 +59,7 @@ export default function comparePage() {
               data {
                 attributes {
                   alternativeText
-                  previewUrl
+                  url
                 }
               }
             }
@@ -68,8 +68,12 @@ export default function comparePage() {
       }
     }
   `;
+
   const { data } = useQuery(getAllCarsData);
+
   const getCars = data?.vehicles?.data.map((item) => item.attributes);
+
+  console.log(getCars);
   //get results upon category
   const getPritsche = getCars?.filter((item) => item.categorie === "Pritsche");
   const getKipper = getCars?.filter((item) => item.categorie === "Kipper");
@@ -111,7 +115,7 @@ export default function comparePage() {
   }, []);
 
   return (
-    <div className=" lg:mx-32 bg-[#F2F9FF] md:bg-white ">
+    <div className=" xl:mx-32 bg-[#F2F9FF] md:bg-white ">
       <div className="flex flex-row ">
         <div className="  w-full flex flex-row">
           <div className="hidden md:block md:w-1/4 md:min-w-fit  md:mt-14 md:pr-4 ">
@@ -119,7 +123,7 @@ export default function comparePage() {
           </div>
           <div className="flex flex-col md:w-3/4 w-full ">
             <FilterBlock />
-            <ResultList />
+            <ResultList getCars={getCars} />
           </div>
         </div>
       </div>

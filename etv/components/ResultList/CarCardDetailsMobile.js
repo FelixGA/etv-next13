@@ -95,5 +95,5 @@ export default CarCardDetailsMobile;
 //  <>
 //    {props.caritem.title},{props.caritem.description}, {props.caritem.price},
 //    {props.caritem.weight}, {props.caritem.distance}, {props.caritem.vmax},
-//    {props.caritem.loadingtime}, {props.caritem.vmax}
+//    {props.caritem.loadingtime}, {props.caritem.vmaxcomparePage}
 //  </>;
