@@ -103,5 +103,8 @@ a:visited {
   border: 2px solid black;
 }
 .forz {
-  z-index: -99;
+  z-index: -98;
+  background: linear-gradient(0.25turn, #f2f9ff, #dbe0e4, #dbe0e4);
+  filter: hue-rotate(260deg);
+  filter: saturate(3.5);
 }
