@@ -1,5 +1,9 @@
 import arrowDown from "../../public/images/Chevron_down.png";
 import Image from "next/image";
+import image from "../../public/images/reichweite@2x.png";
+import image2 from "../../public/images/zuladung@2x.png";
+import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
+import image4 from "../../public/images/reichweitecopy@2x.png";
 import { useState } from "react";
 function TruncateFilter() {
   const [truncPrice, setTruncPrice] = useState(false);
@@ -9,15 +13,32 @@ function TruncateFilter() {
   const [truncMoreFilters, setTruncMoreFilters] = useState(false);
 
   return (
-    <div>
+    <div className="bg-[#Fff]">
       <div className="flex flex-col mt-2 ">
         {/* Preis */}
-        <div className="my-1" onClick={() => setTruncPrice(!truncPrice)}>
-          <div className="w-full flex flex-row justify-between  shadow-dropdown  ">
-            <div className="pl-4 my-auto">
-              <h4 className="py-1">Preis</h4>
+        <div
+          className="my-1 cursor-pointer "
+          onClick={() => setTruncPrice(!truncPrice)}
+        >
+          <div className="flex flex-row justify-between border-b ">
+            <div className="flex flex-row ">
+              <div className="w-6 my-auto ml-4  ">
+                <Image
+                  src={image4}
+                  alt="picture"
+                  objectFit="cover"
+                  width={24}
+                  height={28}
+                  layout="responsive"
+                />
+              </div>
+              <div className="pl-4 my-auto mt-2">
+                <h4 className="py-3 font-bold text-blue-dark text-base">
+                  Preis
+                </h4>
+              </div>
             </div>
-            <div className="w-3 mr-4 my-auto">
+            <div className="w-3 mr-4 mt-7">
               <Image
                 src={arrowDown}
                 alt="filter icon"
@@ -30,42 +51,98 @@ function TruncateFilter() {
           </div>
         </div>
       </div>
-      <div className={truncPrice ? "flex flex-col ml-4 mt-2" : "hidden"}>
-        <div className="mt-1 relative">
+      <div className={truncPrice ? " flex flex-col ml-4 mt-2" : "hidden"}>
+        <div className="mt-1 flex flex-row py-2 ">
           <input
-            className="absolute opacity-0 cursor-pointer w-0 h-0"
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg"
+          >
+            3000-9000 €
+          </label>
+        </div>
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
             id="preis"
             name="preis"
             defaultChecked
           ></input>
-          <label forhtml="preis" className="pl-6 font-normal ">
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg"
+          >
             3000-9000 €
           </label>
-          <span className="absolute w-3.5 h-3.5 top-0 left-0 bg-blue-dark rounded"></span>
         </div>
-        <div className="mt-1">
-          <input type="checkbox" id="preis2" name="preis2"></input>
-          <label forhtml="preis2" className="pl-2 font-normal">
-            9001-13000 €
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
-          <input type="checkbox" id="preis3" name="preis3"></input>
-          <label forhtml="preis3" className="pl-2 font-normal">
-            13001-20000 €
-          </label>
+        {/* min max buttons */}
+        <div className="wrapper py-4 flex flex-row justify-start">
+          <div className="flex py-2 mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="min €"
+              className="pl-4 w-18"
+            />
+          </div>
+          <div className="flex py-2  mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="max €"
+              className="pl-4 w-18"
+            />
+          </div>
         </div>
       </div>
 
       {/* Reichweite */}
 
-      <div className="my-1 " onClick={() => setTruncDistance(!truncDistance)}>
-        <div className="flex flex-row justify-between  shadow-dropdown">
-          <div className="pl-4 my-auto">
-            <h4 className="py-1">Reichweite</h4>
+      <div
+        className="my-1 cursor-pointer"
+        onClick={() => setTruncDistance(!truncDistance)}
+      >
+        <div className="flex flex-row justify-between border-b ">
+          <div className="flex flex-row">
+            <div className="w-6  ml-4 mt-4">
+              <Image
+                src={image3}
+                alt="picture"
+                objectFit="cover"
+                width={24}
+                height={28}
+                layout="responsive"
+              />
+            </div>
+            <div className="pl-4 my-auto mt-2">
+              <h4 className="py-3 font-bold text-blue-dark text-base">
+                Reichweite
+              </h4>
+            </div>
           </div>
-          <div className="w-3 mr-4 my-auto">
+          <div className="w-3 mr-4 mt-7">
             <Image
               src={arrowDown}
               alt="filter icon"
@@ -78,45 +155,89 @@ function TruncateFilter() {
         </div>
       </div>
       <div className={truncDistance ? "flex flex-col ml-4 mt-2" : "hidden"}>
-        <div className="mt-1">
+        <div className="mt-1 flex flex-row py-2 ">
           <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
-            id="reichweite"
-            name="reichweite"
-            defaultChecked
+            id="preis"
+            name="preis"
           ></input>
-          <label forhtml="reichweite" className="pl-2 font-normal">
-            bis 100km
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
-          <input type="checkbox" id="reichweite2" name="reichweite2"></input>
-          <label forhtml="reichweite2" className="pl-2 font-normal">
-            bis 250km
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
-          <input type="checkbox" id="reichweite3" name="reichweite3"></input>
-          <label forhtml="reichweite3" className="pl-2 font-normal">
-            bis 500km
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
-          <input type="checkbox" id="reichweite4" name="reichweite4"></input>
-          <label forhtml="reichweite4" className="pl-2 font-normal">
-            mind. 12400km
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
       </div>
 
       {/* Zuladung */}
 
-      <div className="my-1" onClick={() => setTruncLoad(!truncLoad)}>
-        <div className="flex flex-row justify-between  shadow-dropdown">
-          <div className="pl-4 my-auto">
-            <h4 className="py-1">Zuladung</h4>
+      <div
+        className="my-1 cursor-pointer"
+        onClick={() => setTruncLoad(!truncLoad)}
+      >
+        <div className="flex flex-row justify-between border-b">
+          <div className="flex flex-row">
+            <div className="w-6  ml-4 mt-4">
+              <Image
+                src={image}
+                alt="picture"
+                objectFit="cover"
+                width={24}
+                height={28}
+                layout="responsive"
+              />
+            </div>
+            <div className="pl-4 my-auto mt-2">
+              <h4 className="py-3 font-bold text-blue-dark text-base">
+                Zuladung
+              </h4>
+            </div>
           </div>
-          <div className="w-3 mr-4 my-auto">
+          <div className="w-3 mr-4 mt-7">
             <Image
               src={arrowDown}
               alt="filter icon"
@@ -129,45 +250,89 @@ function TruncateFilter() {
         </div>
       </div>
       <div className={truncLoad ? "flex flex-col ml-4 mt-2" : "hidden"}>
-        <div className="mt-1">
+        <div className="mt-1 flex flex-row py-2 ">
           <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
-            id="zuladung"
-            name="zuladung"
-            defaultChecked
+            id="preis"
+            name="preis"
           ></input>
-          <label forhtml="zuladung" className="pl-2 font-normal">
-            bis 100kg
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
-          <input type="checkbox" id="zuladung2" name="zuladung2"></input>
-          <label forhtml="zuladung2" className="pl-2 font-normal">
-            bis 250kg
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
-          <input type="checkbox" id="zuladung3" name="zuladung3"></input>
-          <label forhtml="zuladung3" className="pl-2 font-normal">
-            bis 500kg
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
-          <input type="checkbox" id="zuladung4" name="zuladung4"></input>
-          <label forhtml="zuladung4" className="pl-2 font-normal">
-            mind. 12400kg
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
       </div>
 
       {/* Höchstgeschwindigkeit */}
 
-      <div className="my-1" onClick={() => setTruncSpeed(!truncSpeed)}>
-        <div className="flex flex-row justify-between  shadow-dropdown">
-          <div className="pl-4 my-auto">
-            <h4 className="py-1">Höchstgeschwindigkeit</h4>
+      <div
+        className="my-1 cursor-pointer"
+        onClick={() => setTruncSpeed(!truncSpeed)}
+      >
+        <div className="flex flex-row justify-between  border-b">
+          <div className="flex flex-row">
+            <div className="w-6  ml-4 mt-4">
+              <Image
+                src={image2}
+                alt="picture"
+                objectFit="cover"
+                width={24}
+                height={28}
+                layout="responsive"
+              />
+            </div>
+            <div className="pl-4 my-auto mt-2">
+              <h4 className="py-3 font-bold mr-6 text-blue-dark text-base">
+                Höchstgeschwindigkeit
+              </h4>
+            </div>
           </div>
-          <div className="w-3 mr-4 my-auto">
+          <div className="w-3 mr-4 mt-7">
             <Image
               src={arrowDown}
               alt="filter icon"
@@ -181,45 +346,60 @@ function TruncateFilter() {
       </div>
 
       <div className={truncSpeed ? "flex flex-col ml-4 mt-2" : "hidden"}>
-        <div className="mt-1">
+        <div className="mt-1 flex flex-row py-2 ">
           <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
-            id="höchstgeschwindigkeit"
-            name="höchstgeschwindigkeit"
-            defaultChecked
+            id="preis"
+            name="preis"
           ></input>
-          <label forhtml="höchstgeschwindigkeit" className="pl-2 font-normal">
-            bis 80km/h
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
+        <div className="mt-1 flex flex-row py-2 ">
           <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
-            id="höchstgeschwindigkeit2"
-            name="höchstgeschwindigkeit2"
+            id="preis"
+            name="preis"
           ></input>
-          <label forhtml="höchstgeschwindigkeit2" className="pl-2 font-normal">
-            bis 120km/h
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
+        <div className="mt-1 flex flex-row py-2 ">
           <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
-            id="höchstgeschwindigkeit3"
-            name="höchstgeschwindigkeit3"
+            id="preis"
+            name="preis"
           ></input>
-          <label forhtml="höchstgeschwindigkeit3" className="pl-2 font-normal">
-            bis 300km/h
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
+        <div className="mt-1 flex flex-row py-2 ">
           <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
-            id="höchstgeschwindigkeit4"
-            name="höchstgeschwindigkeit4"
+            id="preis"
+            name="preis"
           ></input>
-          <label forhtml="höchstgeschwindigkeit4" className="pl-2 font-normal">
-            mind. Mach 5
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
       </div>
@@ -227,14 +407,16 @@ function TruncateFilter() {
       {/* Weitere Filter */}
 
       <div
-        className="my-1"
+        className="my-1 cursor-pointer"
         onClick={() => setTruncMoreFilters(!truncMoreFilters)}
       >
-        <div className="flex flex-row justify-between  shadow-dropdown">
-          <div className="pl-4 my-auto">
-            <h4 className="py-1">Weitere Filter</h4>
+        <div className="flex flex-row justify-between  border-b">
+          <div className="pl-14 my-auto mt-2">
+            <h4 className="py-3 font-bold text-blue-dark text-base">
+              Weitere Filter
+            </h4>
           </div>
-          <div className="w-3 mr-4 my-auto">
+          <div className="w-3 mr-4 mt-7">
             <Image
               src={arrowDown}
               alt="filter icon"
@@ -247,45 +429,60 @@ function TruncateFilter() {
         </div>
       </div>
       <div className={truncMoreFilters ? "flex flex-col ml-4 mt-2" : "hidden"}>
-        <div className="mt-1">
+        <div className="mt-1 flex flex-row py-2 ">
           <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
-            id="weitereFilter"
-            name="weitereFilter"
-            defaultChecked
+            id="preis"
+            name="preis"
           ></input>
-          <label forhtml="weitereFilter" className="pl-2 font-normal">
-            bis 80km/h
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
+        <div className="mt-1 flex flex-row py-2 ">
           <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
-            id="weitereFilter2"
-            name="weitereFilter2"
+            id="preis"
+            name="preis"
           ></input>
-          <label forhtml="weitereFilter2" className="pl-2 font-normal">
-            bis 120km/h
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
+        <div className="mt-1 flex flex-row py-2 ">
           <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
-            id="weitereFilter3"
-            name="weitereFilter3"
+            id="preis"
+            name="preis"
           ></input>
-          <label forhtml="weitereFilter3" className="pl-2 font-normal">
-            bis 300km/h
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
-        <div className="mt-1">
+        <div className="mt-1 flex flex-row py-2 ">
           <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
-            id="weitereFilter4"
-            name="weitereFilter4"
+            id="preis"
+            name="preis"
           ></input>
-          <label forhtml="weitereFilter4" className="pl-2 font-normal">
-            mind. Mach 5
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5"
+          >
+            3000-9000 €
           </label>
         </div>
       </div>

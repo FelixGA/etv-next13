@@ -15,22 +15,27 @@ function CarCard(props) {
         </span>
       </p>
       <p className="px-1 text-xs font-bold text-grey-darkest custom-text">
-        <b className="text-sm">{props.caritem.ergebnis} </b> SEHR GUT
+        <b className="text-sm">{props.caritem.rating.value} </b>{" "}
+        {props.caritem.rating.key}
       </p>
     </div>
   );
-
+  // get first pic console.log(props.caritem.photo.data[0].attributes.url);
+  const myLoader = ({ src }) => {
+    return `http://localhost:1337${props.caritem.photo.data[0].attributes.url}`;
+  };
   return (
-    <div className="container-product flex flex-col mb-4 py-4 px-4 shadow-lg bg-white">
+    <div className="container-product flex flex-col mb-4 py-4 lg:py-0 px-4 lg:px-0 lg:pr-4  shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
       <span className="container-product flex flex-row">
         <div className="container-product-basics w-3/5 lg:w-2/6 ">
           <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
             {props.caritem.title}
           </h3>
-          <div className="container-product-basics-image w-full sm:max-w-xs w-100">
+          <div className=" w-full sm:max-w-xs w-100 ">
             <Image
-              src={props.caritem.image}
-              alt="car"
+              loader={myLoader}
+              src={`http://localhost:1337${props.caritem.photo.data[0].attributes.url}`}
+              alt={props.caritem.photo.data[0].attributes.alternativeText}
               width={195}
               height={140}
               layout="responsive"
@@ -38,26 +43,26 @@ function CarCard(props) {
             />
           </div>
         </div>
-        <div className=" hidden lg:block lg:w-3/6">
+        <div className=" hidden lg:flex lg:my-auto lg:w-3/6">
           <CarCardDetailsDesktop caritem={props.caritem} />
         </div>
-        <div className="container-product-info w-2/5 lg:w-1/6 flex flex-col justify-start items-end ">
-          <p className="text-green-700 text-xl font-bold pb-2 ">
+        <div className="container-product-info w-2/5 lg:w-1/6 flex flex-col lg:flex-col justify-center items-end ">
+          <p className="text-green-700 xl:text-xl font-bold mb-4 ">
             ab {props.caritem.price} €
           </p>
 
           <span className="lg:hidden">{mobileRatingBox}</span>
-
-          <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xxs tracking-wider rounded w-5/6 h-7 xxs:h-9 ">
-            Jetzt anfragen
-          </button>
-          <button className="bg-blue-dark  hover:bg-blue-light text-white mb-2 px-2 pt-1 text-xxs tracking-wider rounded  flex justify-center items-center w-5/6 h-7 xxs:h-9 ">
-            <span className="text-blue-dark w-4 h-4 hidden xxs:flex items-center justify-center font-bold rounded-full text-l mb-1 mr-2 bg-white">
-              &nbsp;+&nbsp;
-            </span>
-            Vergleichen
-          </button>
-
+          <div className="w-full flex flex-col lg:flex-col-reverse items-end">
+            <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xxs xl:tracking-wider rounded w-5/6 h-7 xxs:h-9 ">
+              Jetzt anfragen
+            </button>
+            <button className="bg-blue-dark  hover:bg-blue-light text-white mb-2 px-2 text-xxs xl:tracking-wider rounded  flex justify-center items-center w-5/6 h-7 xxs:h-9 ">
+              <span className="text-blue-dark hidden xxs:flex  lg:w-0 xl:w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
+                &nbsp;+&nbsp;
+              </span>
+              <span className="my-auto">Vergleichen</span>
+            </button>
+          </div>
           <div
             onClick={() => setShowDetails(!showDetails)}
             className="text-blue-dark font-bold text-xs cursor-pointer lg:hidden"
@@ -69,9 +74,7 @@ function CarCard(props) {
       </span>
 
       <div
-        className={
-          showDetails ? "container-product-details w-screen" : "hidden"
-        }
+        className={showDetails ? "container-product-details w-full" : "hidden"}
       >
         <CarCardDetailsMobile caritem={props.caritem} />
       </div>
