@@ -50,19 +50,11 @@ function TruncateFilterDesktop() {
   const getFiltersData = filtersData.map((item, index) => {
     return (
       <div key={index}>
-<<<<<<< HEAD
         <FilterItemDesktop item={item} />
       </div>
     );
   });
-  // console.log(filtersData);
-=======
-        <FilterItem item={item} />
-      </div>
-    );
-  });
 
->>>>>>> 79f8b63f504ac1d9ed938b7517745ff0970e2106
   return (
     <div className="w-full relative bottom-4 mr-8 ">
       {/* Preis */}
