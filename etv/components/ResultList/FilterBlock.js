@@ -9,6 +9,7 @@ import arrowDown from "../../public/images/Chevron_down.png";
 import X from "../../public/images/X.png";
 import TruncateFilterMobile from "./TruncateFilterMobile";
 import Sort from "./Sort";
+import SortDesktop from "./SortDesktop";
 
 function FilterBlock() {
   const [truncate, setTruncate] = useState(false);
@@ -198,8 +199,8 @@ function FilterBlock() {
           onClick={() => SetClicked(!clicked)}
         >
           <h4 className="pr-4 ">Sortieren nach: Preis </h4>
-          <div className={clicked ? "hidden" : "flex w-48 h-48"}>
-            <Sort />
+          <div className={clicked ? "hidden" : "flex w-full h-48 border-2"}>
+            <SortDesktop />
           </div>
           <div className="w-4 h-4 relative right-2">
             <Image
