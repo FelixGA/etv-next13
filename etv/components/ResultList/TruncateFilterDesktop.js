@@ -3,7 +3,7 @@ import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
-import FilterItem from "./FilterItem";
+import FilterItemDesktop from "./FilterItemDesktop";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -50,7 +50,7 @@ function TruncateFilterDesktop() {
   const getFiltersData = filtersData.map((item, index) => {
     return (
       <div key={index}>
-        <FilterItem item={item} />
+        <FilterItemDesktop item={item} />
       </div>
     );
   });
