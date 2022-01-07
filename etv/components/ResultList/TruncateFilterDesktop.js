@@ -3,7 +3,7 @@ import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
-import FilterItem from "./FilterItem";
+import FilterItemDesktop from "./FilterItemDesktop";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -50,11 +50,19 @@ function TruncateFilterDesktop() {
   const getFiltersData = filtersData.map((item, index) => {
     return (
       <div key={index}>
+<<<<<<< HEAD
+        <FilterItemDesktop item={item} />
+      </div>
+    );
+  });
+  // console.log(filtersData);
+=======
         <FilterItem item={item} />
       </div>
     );
   });
 
+>>>>>>> 79f8b63f504ac1d9ed938b7517745ff0970e2106
   return (
     <div className="w-full relative bottom-4 mr-8 ">
       {/* Preis */}

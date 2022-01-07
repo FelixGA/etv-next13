@@ -120,7 +120,7 @@ export default function comparePage() {
   }, []);
 
   return (
-    <div className=" md:mx-32 bg-[#F2F9FF] md:bg-white ">
+    <div className=" xl:mx-32 bg-[#F2F9FF] md:bg-white ">
       <div className="flex flex-row ">
         <div className="  w-full flex flex-row">
           <div className="hidden md:block md:w-1/4 md:min-w-fit  md:mt-14 md:pr-4 ">
@@ -128,7 +128,7 @@ export default function comparePage() {
           </div>
           <div className="flex flex-col md:w-3/4 w-full ">
             <FilterBlock />
-            <ResultList getCarslowest={getCarslowest} />
+            <ResultList getCars={getCars} />
           </div>
         </div>
       </div>
