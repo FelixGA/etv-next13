@@ -59,7 +59,7 @@ function TruncateFilter() {
     <div className="bg-[#Fff]">
       <div className="flex flex-col mt-2 ">
         <div>
-          <Sort filtersData={filtersData} />
+          <Sort />
         </div>
         {/* Preis */}
         <div
