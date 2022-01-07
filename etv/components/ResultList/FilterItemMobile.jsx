@@ -54,7 +54,7 @@ function FilterItemMobile(props) {
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
             {props.item.firstRange}
           </label>
@@ -68,7 +68,7 @@ function FilterItemMobile(props) {
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
             {props.item.secondRange}
           </label>
@@ -82,7 +82,7 @@ function FilterItemMobile(props) {
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
             {props.item.thirdRange}
           </label>
@@ -96,7 +96,7 @@ function FilterItemMobile(props) {
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
             {props.item.forthRange}
           </label>

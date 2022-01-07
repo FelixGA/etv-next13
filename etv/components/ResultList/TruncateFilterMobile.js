@@ -107,7 +107,7 @@ function TruncateFilter() {
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5 text-lg"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
             3000-9000 €
           </label>
@@ -122,7 +122,7 @@ function TruncateFilter() {
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5 text-lg"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
             3000-9000 €
           </label>
@@ -136,7 +136,7 @@ function TruncateFilter() {
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5 text-lg"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
             3000-9000 €
           </label>

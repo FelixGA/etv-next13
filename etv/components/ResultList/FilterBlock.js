@@ -177,7 +177,7 @@ function FilterBlock() {
         {/* REMOVE ALL FILTERS */}
         <div className="hidden xl:w-30 h-auto xl:flex xl:items-end">
           <span
-            className="text-sm pl-4"
+            className="text-sm pl-4 cursor-pointer"
             onClick={() => console.log("you clicked all filters removal")}
           >
             alle Filter loschen
@@ -191,7 +191,7 @@ function FilterBlock() {
             Die besten E-Transporter nach Ihrer Auswahl
           </h1>
         </div>
-        <div className="xs:hidden flex  w-fit  flex-row justify-end items-center mt-8 pb-2 ">
+        <div className="hidden md:flex  w-fit  flex-row justify-end items-center mt-8 pb-2 ">
           <h4 className="pr-4 ">Sortieren nach: Preis </h4>
           <div className="w-4 h-4 relative right-2">
             <Image

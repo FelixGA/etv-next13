@@ -9,7 +9,7 @@ import { useState } from "react";
 function Sort() {
   const sortBy = {
     id: 1,
-    title: "Sortieren nach:",
+    title: "Sortieren nach",
     firstRange: "Empfohlen",
     secondRange: "Niedrigster Preis",
     thirdRange: "Höchster Preis",
@@ -62,7 +62,7 @@ function Sort() {
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] text-lg font-thin"
           >
             {sortBy.firstRange}
           </label>
@@ -76,7 +76,7 @@ function Sort() {
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
             {sortBy.secondRange}
           </label>
@@ -90,7 +90,7 @@ function Sort() {
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
             {sortBy.thirdRange}
           </label>
@@ -104,7 +104,7 @@ function Sort() {
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
           >
             {sortBy.forthRange}
           </label>
