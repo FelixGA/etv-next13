@@ -3,7 +3,6 @@ import ResultList from "../components/ResultList/ResultList";
 import TruncateFilterDesktop from "../components/ResultList/TruncateFilterDesktop";
 import { gql, useQuery } from "@apollo/client";
 import { useStore } from "../components/store";
-import { useEffect } from "react";
 
 export default function comparePage() {
   const getAllCarsData = gql`
@@ -68,6 +67,7 @@ export default function comparePage() {
       }
     }
   `;
+  /* QUERY */
   const { data } = useQuery(getAllCarsData);
   const getCars = data?.vehicles?.data.map((item) => item.attributes);
   /* ɢᴇᴛ ʀᴇsᴜʟᴛs ᴜᴘᴏɴ ᴄᴀᴛᴇɢᴏʀʏ */
@@ -78,6 +78,7 @@ export default function comparePage() {
   /* ɢᴇᴛ ᴀʟʟ ᴄᴀᴛᴇɢᴏʀɪᴇs ғʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀ */
   const getCategories = [...new Set(getCars?.map((item) => item.categorie))];
 
+  /* PRICE SORTING */
   const getCarslowestPrice = getCars
     ?.sort((a, b) => parseFloat(a.price) * 1 - parseFloat(b.price) * 1)
     .map((item) => item);
@@ -117,13 +118,15 @@ export default function comparePage() {
   // console.log(state.prices);
   // console.log(state.weights);
   // console.log(state.ranges);
+  /* initial value */
+  let sendCars = getCars;
 
-  /* INITIAL STATE*/
-  let sendCars = getCarslowestPrice;
-  if (state.highest) {
+  if (state.highests) {
     sendCars = getCarshighestPrice;
   }
-  // console.log(state);
+  if (!state.lowests) {
+    sendCars = getCarslowestPrice;
+  }
 
   // dispatch({ type: "cars", data: false });
 

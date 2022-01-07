@@ -8,9 +8,11 @@ import filterImage from "../../public/images/filter-icon.png";
 import arrowDown from "../../public/images/Chevron_down.png";
 import X from "../../public/images/X.png";
 import TruncateFilterMobile from "./TruncateFilterMobile";
+import Sort from "./Sort";
 
 function FilterBlock() {
   const [truncate, setTruncate] = useState(false);
+  const [clicked, SetClicked] = useState(true);
   return (
     <div className=" w-full min-w-fit ">
       <div className="bg-[#Fff]  shadow-dropdown md:hidden ">
@@ -191,8 +193,14 @@ function FilterBlock() {
             Die besten E-Transporter nach Ihrer Auswahl
           </h1>
         </div>
-        <div className="hidden md:flex  w-fit  flex-row justify-end items-center mt-8 pb-2 ">
+        <div
+          className="hidden md:flex  w-fit  flex-row justify-end items-center mt-8 pb-2 "
+          onClick={() => SetClicked(!clicked)}
+        >
           <h4 className="pr-4 ">Sortieren nach: Preis </h4>
+          <div className={clicked ? "hidden" : "flex w-48 h-48"}>
+            <Sort />
+          </div>
           <div className="w-4 h-4 relative right-2">
             <Image
               src={arrowDown}

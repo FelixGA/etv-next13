@@ -128,7 +128,7 @@ const HeroSection = () => {
               genau für Ihre Ansprüche
             </p>
 
-            <p className="py-4 hidden lg:flex lg:flex-row lg:justify-between ">
+            <p className="pb-4 hidden lg:flex lg:flex-row lg:justify-between ">
               <span>
                 <b className="text-blue-light">&#10004;</b> unabhängig
               </span>
@@ -212,25 +212,25 @@ const HeroSection = () => {
                   </select>
                 </div>
               </div>
-              <Link href="/comparePage">
-                <a
-                  onClick={() => {
-                    dispatch({ type: "price", data: choosePrice });
-                    dispatch({ type: "range", data: chooseRange });
-                    dispatch({ type: "weight", data: chooseWeight });
-                    console.log("onclickSTATE", state);
-                    console.log(
-                      "onclickLOCALHOOK",
-                      choosePrice,
-                      chooseRange,
-                      chooseWeight
-                    );
-                  }}
-                  className="bg-blue-dark w-1/3 hover:bg-blue-light text-white font-bold px-2 text-sm rounded-lg lg:w-[14vw] h-14 "
-                >
-                  Jetzt vergleichen
-                </a>
-              </Link>
+              <button
+                className="bg-blue-dark w-1/3 hover:bg-blue-light text-white font-bold px-2 text-sm rounded-lg lg:w-[14vw] h-14 "
+                onClick={() => {
+                  dispatch({ type: "price", data: choosePrice });
+                  dispatch({ type: "range", data: chooseRange });
+                  dispatch({ type: "weight", data: chooseWeight });
+                  console.log("onclickSTATE", state);
+                  console.log(
+                    "onclickLOCALHOOK",
+                    choosePrice,
+                    chooseRange,
+                    chooseWeight
+                  );
+                }}
+              >
+                <Link href="/comparePage">
+                  <a className="py-14">Jetzt vergleichen</a>
+                </Link>
+              </button>
             </span>
           </div>
         </div>

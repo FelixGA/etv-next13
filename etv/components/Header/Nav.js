@@ -65,8 +65,9 @@ const Nav = () => {
         {navMenu}
       </div>
       <div className="flex flex-row justify-between items-center">
-        <button className="bg-yellow-dark hover:bg-yellow-light text-grey-darker font-bold p-2 mb-3 m-4 text-sm rounded">
-          Kaufberater
+        <button className="bg-yellow-light hover:bg-yellow-dark text-grey-darker font-bold py-2 flex px-4 mb-3 m-4 text-sm rounded">
+          <Image src="/images/iconStyle2x.png" width={18} height={18} />
+          <span className="px-2">Kaufberater</span>
         </button>
 
         <div
