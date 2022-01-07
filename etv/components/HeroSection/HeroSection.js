@@ -1,9 +1,15 @@
 import logos from "./logos.json";
 import Image from "next/image";
+import { useState } from "react";
 import { useStore } from "../../components/store";
+import Link from "next/link";
 const HeroSection = () => {
-  // const { state, dispatch } = useStore();
-  // console.log(state);
+  const [choosePrice, setChoosePrice] = useState(0);
+  const [chooseRange, setChooseRange] = useState(0);
+  const [chooseWeight, setChooseWeight] = useState(0);
+
+  const { state, dispatch } = useStore();
+
   const details = [
     {
       category: "Price",
@@ -83,6 +89,8 @@ const HeroSection = () => {
     },
   ];
 
+  //dispatch({ type: "price", data: choosePrice });
+
   return (
     <div className="relative ">
       <div className="hidden lg:flex w-full h-80 absolute justify-end forz bottom-[264px]  border-black-darkest">
@@ -148,7 +156,10 @@ const HeroSection = () => {
                   <select
                     className=" p-4 relative bottom-6 w-full
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
-                    id="standard-select"
+                    id="range"
+                    onChange={(e) => {
+                      setChooseRange(e.target.value);
+                    }}
                   >
                     {details[1].options.map((option) => (
                       <option key={option.id} value={option.value}>
@@ -166,11 +177,14 @@ const HeroSection = () => {
                   <select
                     className=" p-4 relative bottom-6 w-full
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
-                    id="standard-select"
+                    id="price"
+                    onChange={(e) => {
+                      setChoosePrice(e.target.value);
+                    }}
                   >
                     {details[0].options.map((option) => (
                       <option key={option.id} value={option.value}>
-                        {option.name}
+                        {option.name} €
                       </option>
                     ))}
                   </select>
@@ -185,7 +199,10 @@ const HeroSection = () => {
                 <div className=" mt-1 px-1">
                   <select
                     className=" p-4 relative bottom-6 w-full text-base font-bold appearance-none bg-transparent border-none pl-1 m-0  text-blue-dark"
-                    id="standard-select"
+                    id="weight"
+                    onChange={(e) => {
+                      setChooseWeight(e.target.value);
+                    }}
                   >
                     {details[2].options.map((option) => (
                       <option key={option.id} value={option.value}>
@@ -195,9 +212,25 @@ const HeroSection = () => {
                   </select>
                 </div>
               </div>
-              <button className="bg-blue-dark w-1/3 hover:bg-blue-light text-white font-bold px-2 text-sm rounded-lg lg:w-[14vw] h-14 ">
-                Jetzt vergleichen
-              </button>
+              <Link href="/comparePage">
+                <a
+                  onClick={() => {
+                    dispatch({ type: "price", data: choosePrice });
+                    dispatch({ type: "range", data: chooseRange });
+                    dispatch({ type: "weight", data: chooseWeight });
+                    console.log("onclickSTATE", state);
+                    console.log(
+                      "onclickLOCALHOOK",
+                      choosePrice,
+                      chooseRange,
+                      chooseWeight
+                    );
+                  }}
+                  className="bg-blue-dark w-1/3 hover:bg-blue-light text-white font-bold px-2 text-sm rounded-lg lg:w-[14vw] h-14 "
+                >
+                  Jetzt vergleichen
+                </a>
+              </Link>
             </span>
           </div>
         </div>
