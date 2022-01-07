@@ -6,7 +6,7 @@ import image4 from "../../public/images/reichweitecopy@2x.png";
 import Image from "next/image";
 import { useState } from "react";
 import FilterItemMobile from "./FilterItemMobile";
-
+import Sort from "./Sort";
 function TruncateFilter() {
   const [truncPrice, setTruncPrice] = useState(false);
   const filtersData = [
@@ -58,7 +58,9 @@ function TruncateFilter() {
   return (
     <div className="bg-[#Fff]">
       <div className="flex flex-col mt-2 ">
-        <div></div>
+        <div>
+          <Sort filtersData={filtersData} />
+        </div>
         {/* Preis */}
         <div
           className="my-1 cursor-pointer "
