@@ -82,7 +82,7 @@ export default function comparePage() {
     ?.sort((a, b) => parseFloat(a.price) * 1 - parseFloat(b.price) * 1)
     .map((item) => item);
 
-  console.log(getCarslowestPrice);
+  // console.log(getCarslowestPrice);
   // const convertPriceToNumber = (price) => {
   //   return parseFloat(price.replace(/[^0-9.-]+/g, ""));
   // };
