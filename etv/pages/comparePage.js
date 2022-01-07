@@ -68,21 +68,26 @@ export default function comparePage() {
       }
     }
   `;
-
   const { data } = useQuery(getAllCarsData);
-
   const getCars = data?.vehicles?.data.map((item) => item.attributes);
-
-  console.log(getCars);
   //get results upon category
   const getPritsche = getCars?.filter((item) => item.categorie === "Pritsche");
   const getKipper = getCars?.filter((item) => item.categorie === "Kipper");
   const getKoffer = getCars?.filter((item) => item.categorie === "Koffer");
   const getKasten = getCars?.filter((item) => item.categorie === "Kasten");
-
+  // get all categories from the data
+  const getCategories = [...new Set(getCars?.map((item) => item.categorie))];
+  console.log(getCategories);
   // cars price filter
-  const getCarslowest = getCars?.sort((a, b) => a.price - b.price);
-  // const getCarshighest = getCars?.sort((a, b) => b.price - a.price);
+  const getCarslowest = getCars?.sort((a, b) => b.price - a.price);
+
+  const getCarshighest = getCars?.sort((a, b) => a.price - b.price);
+  // get the cheapest price
+  const getCheapest = getCarslowest?.slice(0, 1);
+  // get the highest price
+  const getHighest = getCarshighest?.slice(0, 1);
+  console.log(getHighest?.map((item) => item.title));
+  console.log(getCheapest?.map((item) => item.title));
 
   // // cars weight filter
   // const getCarslightest = getCars?.sort(
