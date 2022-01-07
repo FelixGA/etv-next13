@@ -8,8 +8,8 @@ const reducer = (state, action) => {
       return { ...state, ranges: action.data };
     case "weight":
       return { ...state, weights: action.data };
-    // case "menuHidden":
-    //   return { ...state, menuHidden: action.data };
+    case "highest":
+      return { ...state, menuHidden: action.data };
     // case "exitPopupOpened":
     //   return { ...state, exitPopupOpened: action.data };
     // case "shopModel":
@@ -25,6 +25,7 @@ const initialState = {
   prices: 0,
   ranges: 0,
   weights: 0,
+  highest: false,
 
   //   translations: [],
   //   menuHidden: false,
