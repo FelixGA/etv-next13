@@ -2,10 +2,12 @@ import { createContext, useReducer, useContext } from "react";
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case "setCars":
-      return { ...state, cars: action.data };
-    // case "setTranslations":
-    //   return { ...state, translations: action.data };
+    case "price":
+      return { ...state, prices: action.data };
+    case "range":
+      return { ...state, ranges: action.data };
+    case "weight":
+      return { ...state, weights: action.data };
     // case "menuHidden":
     //   return { ...state, menuHidden: action.data };
     // case "exitPopupOpened":
@@ -20,7 +22,10 @@ const reducer = (state, action) => {
 };
 
 const initialState = {
-  cars: [],
+  prices: 0,
+  ranges: 0,
+  weights: 0,
+
   //   translations: [],
   //   menuHidden: false,
   //   exitPopupOpened: false,

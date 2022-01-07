@@ -4,9 +4,7 @@ import { useStore } from "../store";
 const ResultList = (props) => {
   const { state, dispatch } = useStore();
   const { cars } = state;
-  console.log(props);
-
-  const displayedCars = props.getCars;
+  const displayedCars = props.sendCars;
 
   const getdisplayedCars = displayedCars?.map((caritem) => {
     return (
