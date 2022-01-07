@@ -82,13 +82,12 @@ export default function comparePage() {
     ?.sort((a, b) => parseFloat(a.price) * 1 - parseFloat(b.price) * 1)
     .map((item) => item);
 
-  console.log(getCarslowestPrice);
   // const convertPriceToNumber = (price) => {
   //   return parseFloat(price.replace(/[^0-9.-]+/g, ""));
   // };
 
   const getCarshighestPrice = getCars
-    ?.sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
+    ?.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
     .map((item) => item);
 
   // get the cheapest auto
@@ -97,7 +96,7 @@ export default function comparePage() {
   // const getHighest = getCarshighestPrice?.slice(0, 1);
   // // cars weight filter
   const getCarslightest = getCars
-    ?.sort((a, b) => b.weight.value - a.weight.value)
+    ?.sort((a, b) => a.weight.value - b.weight.value)
     .map((item) => item);
   const getCarsheaviest = getCars
     ?.sort((a, b) => b.weight.value - a.weight.value)
@@ -119,8 +118,10 @@ export default function comparePage() {
   // console.log(state.weights);
   // console.log(state.ranges);
   //initial value
-  let sendCars = getCarshighestPrice;
-
+  let sendCars = getCarslowestPrice;
+  if (state.highest) {
+    sendCars = getCarshighestPrice;
+  }
   // console.log(state);
 
   // dispatch({ type: "cars", data: false });
