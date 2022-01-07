@@ -124,7 +124,7 @@ function TruncateFilter() {
             forhtml="preis"
             className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
-            3000-9000 €
+            9001-13000 €
           </label>
         </div>
         <div className="mt-1 flex flex-row py-2 ">
@@ -138,7 +138,7 @@ function TruncateFilter() {
             forhtml="preis"
             className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
-            3000-9000 €
+            13001-20000 €
           </label>
         </div>
         {/* min max buttons */}
