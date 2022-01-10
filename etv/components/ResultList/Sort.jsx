@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
-
+import { BsSortDown } from "react-icons/bs";
 import arrowDown from "../../public/images/Chevron_down.png";
 import { useState } from "react";
 import { useStore } from "../store";
@@ -23,23 +23,24 @@ function Sort() {
   return (
     <div className="block md:hidden">
       <div
-        className="my-1 cursor-pointer"
+        className="mb-1 cursor-pointer"
         onClick={() => setTruncate(!truncate)}
       >
         <div className="flex flex-row justify-between border-b ">
-          <div className="flex flex-row">
-            <div className="w-6  ml-4 mt-4">
-              <Image
+          <div className="flex flex-row ">
+            <div className="  ml-5 mt-6 ">
+              {/* <Image
                 src={image3}
                 alt="picture"
                 objectFit="cover"
                 width={24}
                 height={28}
                 layout="responsive"
-              />
+              /> */}
+              <BsSortDown size={20} />
             </div>
             <div className="pl-4 my-auto mt-2">
-              <h4 className="py-3 font-bold text-blue-dark text-base">
+              <h4 className="py-3  font-bold text-blue-dark text-base">
                 {sortBy.title}
               </h4>
             </div>

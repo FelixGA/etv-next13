@@ -1,9 +1,5 @@
 import React from "react";
-import Image from "next/image";
 
-import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
-
-import arrowDown from "../../public/images/Chevron_down.png";
 import { useState } from "react";
 import { useStore } from "../store";
 
@@ -19,9 +15,9 @@ function SortDesktop() {
     forthRange: "Bestseller",
   };
   const [truncate, setTruncate] = useState(false);
-  console.log(state.highests);
+  // console.log(state.highests);
   return (
-    <div className="block ">
+    <div className="block">
       <div
         className="my-1 cursor-pointer"
         onClick={() => setTruncate(!truncate)}
