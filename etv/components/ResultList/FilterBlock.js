@@ -199,7 +199,7 @@ function FilterBlock() {
           onClick={() => SetClicked(!clicked)}
         >
           <h4 className="pr-4 ">Sortieren nach: Preis </h4>
-          <div className={clicked ? "hidden" : "flex w-full h-48 border-2"}>
+          <div className={clicked ? "hidden" : "flex w-full h-48 border-2 "}>
             <SortDesktop />
           </div>
           <div className="w-4 h-4 relative right-2">
