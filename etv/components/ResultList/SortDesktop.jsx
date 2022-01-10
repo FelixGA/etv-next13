@@ -1,13 +1,9 @@
 import React from "react";
-import Image from "next/image";
 
-import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
-import { BsSortDown } from "react-icons/bs";
-import arrowDown from "../../public/images/Chevron_down.png";
 import { useState } from "react";
 import { useStore } from "../store";
 
-function Sort() {
+function SortDesktop() {
   const { state, dispatch } = useStore();
 
   const sortBy = {
@@ -19,43 +15,14 @@ function Sort() {
     forthRange: "Bestseller",
   };
   const [truncate, setTruncate] = useState(false);
-  console.log(state.highests);
+  // console.log(state.highests);
   return (
-    <div className="block md:hidden">
+    <div className="block">
       <div
-        className="mb-1 cursor-pointer"
+        className="my-1 cursor-pointer"
         onClick={() => setTruncate(!truncate)}
       >
-        <div className="flex flex-row justify-between border-b ">
-          <div className="flex flex-row ">
-            <div className="  ml-5 mt-6 ">
-              {/* <Image
-                src={image3}
-                alt="picture"
-                objectFit="cover"
-                width={24}
-                height={28}
-                layout="responsive"
-              /> */}
-              <BsSortDown size={20} />
-            </div>
-            <div className="pl-4 my-auto mt-2">
-              <h4 className="py-3  font-bold text-blue-dark text-base">
-                {sortBy.title}
-              </h4>
-            </div>
-          </div>
-          <div className="w-3 mr-4 mt-7">
-            <Image
-              src={arrowDown}
-              alt="filter icon"
-              objectFit="cover"
-              width={50}
-              height={50}
-              layout="responsive"
-            />
-          </div>
-        </div>
+        <div className="flex flex-row justify-between border-b "></div>
       </div>
       <div className={truncate ? "flex flex-col ml-4 mt-2" : "hidden"}>
         <div className="mt-1 flex flex-row py-2 ">
@@ -127,4 +94,4 @@ function Sort() {
   );
 }
 
-export default Sort;
+export default SortDesktop;

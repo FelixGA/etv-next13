@@ -3,6 +3,7 @@ import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
+import image5 from "../../public/images/icon-for-more-22.jpg";
 import Image from "next/image";
 import { useState } from "react";
 import FilterItemMobile from "./FilterItemMobile";
@@ -44,7 +45,7 @@ function TruncateFilter() {
       secondRange: "Anschluss Schuko",
       thirdRange: "Anschluss Typ2",
       forthRange: "Anschluss Schuko",
-      image: image3,
+      image: image5,
     },
   ];
   const getFiltersData = filtersData.map((item, index) => {
@@ -59,7 +60,7 @@ function TruncateFilter() {
     <div className="bg-[#Fff]">
       <div className="flex flex-col mt-2 ">
         <div>
-          <Sort filtersData={filtersData} />
+          <Sort />
         </div>
         {/* Preis */}
         <div

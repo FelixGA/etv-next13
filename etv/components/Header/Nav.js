@@ -15,22 +15,47 @@ const Nav = () => {
     >
       <li>
         <Link href="/homepage">
-          <a>Start</a>
+          <a
+            onClick={() => {
+              setIsMobile(false);
+            }}
+          >
+            Start
+          </a>
         </Link>
       </li>
       <li>
         <Link href="/Leichttransporter">
-          <a>Leichttransporter</a>
+          <a
+            onClick={() => {
+              setIsMobile(false);
+            }}
+          >
+            Leichttransporter
+          </a>
         </Link>
       </li>
       <li>
         <Link href="/Transporter">
-          <a> Transporter</a>
+          <a
+            onClick={() => {
+              setIsMobile(false);
+            }}
+          >
+            {" "}
+            Transporter
+          </a>
         </Link>
       </li>
       <li>
         <Link href="/Magazin">
-          <a>Magazin</a>
+          <a
+            onClick={() => {
+              setIsMobile(false);
+            }}
+          >
+            Magazin
+          </a>
         </Link>
       </li>
     </ul>

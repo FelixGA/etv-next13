@@ -124,7 +124,7 @@ export default function comparePage() {
   if (state.highests) {
     sendCars = getCarshighestPrice;
   }
-  if (!state.lowests) {
+  if (state.lowests) {
     sendCars = getCarslowestPrice;
   }
 

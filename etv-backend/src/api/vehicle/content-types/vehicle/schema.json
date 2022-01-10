@@ -97,6 +97,11 @@
       "type": "component",
       "repeatable": false,
       "component": "all.range"
+    },
+    "seats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "all.range"
     }
   }
 }
