@@ -16,33 +16,23 @@ const HeroSection = () => {
       options: [
         {
           id: "1",
-          name: "3000-9000 ",
-          value: "3000-9000 ",
+          name: "0-20000 ",
+          value: "0-20000 ",
         },
         {
           id: "2",
-          name: "9000-15000",
-          value: "9000-15000",
+          name: "20001-40000",
+          value: "20001-40000",
         },
         {
           id: "3",
-          name: "15000-20000",
-          value: "15000-20000",
+          name: "40001-60000",
+          value: "40001-60000",
         },
         {
           id: "4",
-          name: "20000-25000",
-          value: "20000-25000",
-        },
-        {
-          id: "5",
-          name: "25000-30000",
-          value: "25000-30000",
-        },
-        {
-          id: "6",
-          name: "30000-35000",
-          value: "30000-35000",
+          name: "60001-80000",
+          value: "60001-80000",
         },
       ],
     },
@@ -73,17 +63,17 @@ const HeroSection = () => {
         {
           id: "1",
           name: "ab:500kg",
-          value: "ab:500kg ",
+          value: "500",
         },
         {
           id: "2",
           name: "ab:1000kg",
-          value: "ab:1000kg",
+          value: "1000",
         },
         {
           id: "3",
           name: "ab:1500kg",
-          value: "ab:1500kg",
+          value: "1500",
         },
       ],
     },
@@ -215,9 +205,34 @@ const HeroSection = () => {
               <button
                 className="bg-blue-dark w-1/3 hover:bg-blue-light text-white font-bold px-2 text-sm rounded-lg lg:w-[14vw] h-14 "
                 onClick={() => {
-                  dispatch({ type: "price", data: choosePrice });
-                  dispatch({ type: "range", data: chooseRange });
-                  dispatch({ type: "weight", data: chooseWeight });
+                  dispatch({
+                    type: "price",
+                    data: [
+                      {
+                        ...state?.prices,
+                        min: Number(choosePrice.split("-")[0]),
+                        max: Number(choosePrice.split("-")[1]),
+                      },
+                    ],
+                  });
+                  // dispatch({
+                  //   type: "range",
+                  //   data: {
+                  //     ...state?.ranges,
+                  //     min: chooseRange.split(" ")[0],
+                  //     max: chooseRange.split(" ")[1],
+                  //   },
+                  // });
+                  dispatch({
+                    type: "weight",
+                    data: [
+                      ...state?.weights,
+                      {
+                        min: Number(chooseWeight),
+                        max: Number(chooseWeight) + 500,
+                      },
+                    ],
+                  });
                   console.log("onclickSTATE", state);
                   console.log(
                     "onclickLOCALHOOK",

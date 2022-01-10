@@ -4,10 +4,13 @@ const reducer = (state, action) => {
   switch (action.type) {
     case "price":
       return { ...state, prices: action.data };
+
     case "range":
       return { ...state, ranges: action.data };
     case "weight":
       return { ...state, weights: action.data };
+    case "maxSpeed":
+      return { ...state, maxSpeeds: action.data };
     case "highest":
       return { ...state, highests: action.data };
     case "lowest":
@@ -24,11 +27,13 @@ const reducer = (state, action) => {
 };
 
 const initialState = {
-  prices: 0,
-  ranges: 0,
-  weights: 0,
+  prices: [],
+
+  ranges: [],
+  weights: [],
   highests: false,
   lowests: true,
+  maxSpeeds: 0,
 
   //   translations: [],
   //   menuHidden: false,
