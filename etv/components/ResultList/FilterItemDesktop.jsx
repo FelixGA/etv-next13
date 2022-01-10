@@ -1,50 +1,10 @@
-import arrowDown from "../../public/images/Chevron_down.png";
-
+import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
 import { useState } from "react";
 
 function FilterItem(props) {
   const [truncDistance, setTruncDistance] = useState(false);
 
-  // const filtersData = [
-  //   {
-  //     id: 1,
-  //     title: "Reichweite",
-  //     firstRange: "bis 100km",
-  //     secondRange: "bis 250km",
-  //     thirdRange: "bis 500km",
-  //     forthRange: "mind. 12400km",
-  //     image: image,
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Zuladung",
-  //     firstRange: "bis 100kg",
-  //     secondRange: "bis 250kg",
-  //     thirdRange: "bis 500kg",
-  //     forthRange: "mind. 12400kg",
-  //     image: image2,
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Höchstgeschwindigkeit",
-  //     firstRange: "bis 80km/h",
-  //     secondRange: "bis 120km/h",
-  //     thirdRange: "bis 300km/h",
-  //     forthRange: "mind. Mach 5",
-  //     image: image3,
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Weitere Filter",
-  //     firstRange: "Anschluss Typ2",
-  //     secondRange: "Anschluss Schuko",
-  //     thirdRange: "Anschluss Typ2",
-  //     forthRange: "Anschluss Schuko",
-  //     image: image3,
-  //   },
-  // ];
-  // console.log(filtersData);
   return (
     <div>
       <div
@@ -69,15 +29,8 @@ function FilterItem(props) {
               </h4>
             </div>
           </div>
-          <div className="w-3 mr-4 mt-11">
-            <Image
-              src={arrowDown}
-              alt="filter icon"
-              objectFit="cover"
-              width={50}
-              height={50}
-              layout="responsive"
-            />
+          <div className="w-4  mr-4 mt-9">
+            <MdKeyboardArrowDown size={25} />
           </div>
         </div>
       </div>

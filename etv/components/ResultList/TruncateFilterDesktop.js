@@ -1,10 +1,10 @@
-import arrowDown from "../../public/images/Chevron_down.png";
 import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
 import FilterItemDesktop from "./FilterItemDesktop";
 import Image from "next/image";
+import { MdKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
 
 function TruncateFilterDesktop() {
@@ -78,15 +78,8 @@ function TruncateFilterDesktop() {
               <h4 className="py-3 font-bold text-blue-dark">Preis</h4>
             </div>
           </div>
-          <div className="w-3 mr-4 my-auto">
-            <Image
-              src={arrowDown}
-              alt="filter icon"
-              objectFit="cover"
-              width={50}
-              height={50}
-              layout="responsive"
-            />
+          <div className="w-3 mr-5 my-auto">
+            <MdKeyboardArrowDown size={25} />
           </div>
         </div>
       </div>
@@ -102,7 +95,21 @@ function TruncateFilterDesktop() {
             forhtml="preis"
             className="inline-flex items-center cursor-pointer pl-5 text-lg"
           >
-            3000-9000 €
+            0-20000 €
+          </label>
+        </div>
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg"
+          >
+            20001-40000 €
           </label>
         </div>
         <div className="mt-1 flex flex-row py-2 ">
@@ -117,7 +124,7 @@ function TruncateFilterDesktop() {
             forhtml="preis"
             className="inline-flex items-center cursor-pointer pl-5 text-lg"
           >
-            3000-9000 €
+            40001-60000 €
           </label>
         </div>
         <div className="mt-1 flex flex-row py-2 ">
@@ -131,7 +138,7 @@ function TruncateFilterDesktop() {
             forhtml="preis"
             className="inline-flex items-center cursor-pointer pl-5 text-lg"
           >
-            3000-9000 €
+            60001-80000 €
           </label>
         </div>
         {/* min max buttons */}
