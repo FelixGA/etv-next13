@@ -1,4 +1,3 @@
-import arrowDown from "../../public/images/Chevron_down.png";
 import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
@@ -8,6 +7,7 @@ import Image from "next/image";
 import { useState } from "react";
 import FilterItemMobile from "./FilterItemMobile";
 import Sort from "./Sort";
+import { MdKeyboardArrowDown } from "react-icons/md";
 function TruncateFilter() {
   const [truncPrice, setTruncPrice] = useState(false);
   const filtersData = [
@@ -18,7 +18,7 @@ function TruncateFilter() {
       secondRange: "bis 250km",
       thirdRange: "bis 500km",
       forthRange: "mind. 12400km",
-      image: image,
+      image: require("../../public/images/reichweite.svg"),
     },
     {
       id: 2,
@@ -85,15 +85,8 @@ function TruncateFilter() {
                 </h4>
               </div>
             </div>
-            <div className="w-3 mr-4 mt-7">
-              <Image
-                src={arrowDown}
-                alt="filter icon"
-                objectFit="cover"
-                width={50}
-                height={50}
-                layout="responsive"
-              />
+            <div className="w-3 mr-6 mt-6">
+              <MdKeyboardArrowDown size={25} />
             </div>
           </div>
         </div>

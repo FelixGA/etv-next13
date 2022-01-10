@@ -2,7 +2,7 @@ import arrowDown from "../../public/images/Chevron_down.png";
 
 import Image from "next/image";
 import { useState } from "react";
-
+import { MdKeyboardArrowDown } from "react-icons/md";
 import React from "react";
 
 function FilterItemMobile(props) {
@@ -32,15 +32,8 @@ function FilterItemMobile(props) {
               </h4>
             </div>
           </div>
-          <div className="w-3 mr-4 mt-7">
-            <Image
-              src={arrowDown}
-              alt="filter icon"
-              objectFit="cover"
-              width={50}
-              height={50}
-              layout="responsive"
-            />
+          <div className="w-3 mr-6 mt-5">
+            <MdKeyboardArrowDown size={25} />
           </div>
         </div>
       </div>

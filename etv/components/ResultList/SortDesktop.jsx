@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useState } from "react";
 import { useStore } from "../store";
 
@@ -17,7 +16,7 @@ function SortDesktop() {
   const [truncate, setTruncate] = useState(false);
   // console.log(state.highests);
   return (
-    <div className="block">
+    <div className="flex">
       <div
         className="my-1 cursor-pointer"
         onClick={() => setTruncate(!truncate)}

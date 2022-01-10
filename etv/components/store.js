@@ -8,6 +8,8 @@ const reducer = (state, action) => {
       return { ...state, ranges: action.data };
     case "weight":
       return { ...state, weights: action.data };
+    case "maxSpeed":
+      return { ...state, maxSpeeds: action.data };
     case "highest":
       return { ...state, highests: action.data };
     case "lowest":
@@ -29,6 +31,7 @@ const initialState = {
   weights: 0,
   highests: false,
   lowests: true,
+  maxSpeeds: 0,
 
   //   translations: [],
   //   menuHidden: false,

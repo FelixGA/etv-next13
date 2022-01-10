@@ -1,9 +1,8 @@
 import React from "react";
-import Image from "next/image";
-
+import { MdKeyboardArrowDown } from "react-icons/md";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import { BsSortDown } from "react-icons/bs";
-import arrowDown from "../../public/images/Chevron_down.png";
+
 import { useState } from "react";
 import { useStore } from "../store";
 
@@ -29,14 +28,6 @@ function Sort() {
         <div className="flex flex-row justify-between border-b ">
           <div className="flex flex-row ">
             <div className="  ml-5 mt-6 ">
-              {/* <Image
-                src={image3}
-                alt="picture"
-                objectFit="cover"
-                width={24}
-                height={28}
-                layout="responsive"
-              /> */}
               <BsSortDown size={20} />
             </div>
             <div className="pl-4 my-auto mt-2">
@@ -45,15 +36,8 @@ function Sort() {
               </h4>
             </div>
           </div>
-          <div className="w-3 mr-4 mt-7">
-            <Image
-              src={arrowDown}
-              alt="filter icon"
-              objectFit="cover"
-              width={50}
-              height={50}
-              layout="responsive"
-            />
+          <div className="w-3 mr-6 mt-6">
+            <MdKeyboardArrowDown size={25} />
           </div>
         </div>
       </div>
