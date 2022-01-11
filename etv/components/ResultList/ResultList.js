@@ -1,12 +1,42 @@
 import CarCard from "../../components/ResultList/CarCard";
 import { useStore } from "../store";
+import { useState, useEffect } from "react";
 
 const ResultList = (props) => {
   const { state, dispatch } = useStore();
-  const { cars } = state;
   const displayedCars = props.sendCars;
+  const [autos, setAutos] = useState();
+  // filter cars
+  useEffect(() => {
+    if (!state?.prices || displayedCars?.length === 0) return;
+    let filteredCars = displayedCars?.filter((car) => {
+      if (
+        state?.prices?.length > 0 &&
+        state?.prices?.some(
+          (entry) => entry.min < car.price && entry.max > car.price
+        )
+      ) {
+        return car;
+      }
+      console.log("true PASSED", car);
 
-  const getdisplayedCars = displayedCars?.map((caritem) => {
+      return;
+      // if (
+      //   state.filter.weight?.length > 0 &&
+      //   state.filter.weight.every(
+      //     (entry) => entry.min > car.weight || entry.max < car.weight
+      //   )
+      // )
+      //   return;
+    });
+
+    // filteredCars ? setAutos(filteredCars) : setAutos(displayedCars);
+    // console.log("WHAT WE FILTERED", filteredCars);
+    // setAutos(filteredCars);
+  }, [state.prices]);
+
+  //state.filter, sendCars
+  const getdisplayedCars = autos?.map((caritem) => {
     return (
       <div className="container-product" key={caritem.id}>
         <div

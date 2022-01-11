@@ -234,12 +234,6 @@ const HeroSection = () => {
                     ],
                   });
                   console.log("onclickSTATE", state);
-                  console.log(
-                    "onclickLOCALHOOK",
-                    choosePrice,
-                    chooseRange,
-                    chooseWeight
-                  );
                 }}
               >
                 <Link href="/comparePage">

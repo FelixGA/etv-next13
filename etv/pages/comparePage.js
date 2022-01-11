@@ -129,31 +129,6 @@ export default function comparePage() {
     sendCars = getCarslowestPrice;
   }
 
-  // dispatch({ type: "cars", data: false });
-  const [cars, setCars] = useState([]);
-
-  // filter cars
-  useEffect(() => {
-    if (!state?.prices || sendCars?.length === 0) return;
-    const filteredCars = sendCars?.filter((car) => {
-      console.log("example", state);
-      if (
-        state?.prices?.length > 0 &&
-        !state?.prices?.some((entry) => entry.value === car.prices)
-      )
-        return;
-      // if (
-      //   state.filter.weight?.length > 0 &&
-      //   state.filter.weight.every(
-      //     (entry) => entry.min > car.weight || entry.max < car.weight
-      //   )
-      // )
-      //   return;
-    });
-
-    setCars(filteredCars);
-  }, []);
-  //state.filter, sendCars
   return (
     <div className=" xl:mx-32 bg-[#F2F9FF] md:bg-white ">
       <div className="flex flex-row ">
