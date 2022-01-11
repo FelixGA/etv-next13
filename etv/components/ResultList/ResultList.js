@@ -6,11 +6,9 @@ const ResultList = (props) => {
   const { state, dispatch } = useStore();
   //const displayedCars = props.sendCars;
   const [autos, setAutos] = useState(props.sendCars);
-
+  console.log(state.weights);
   // filter cars
   useEffect(() => {
-    console.log("INITIAL STATE EXISTS", autos);
-    console.log("PRICE STATE", state.prices);
     if (!state?.prices || props.sendCars?.length === 0) return;
     let filteredCars = props.sendCars?.filter((car) => {
       if (
@@ -22,20 +20,21 @@ const ResultList = (props) => {
         console.log(props.sendCars);
         return car;
       }
-      console.log("true PASSED", car);
 
+      if (
+        state?.weights?.length > 0 &&
+        state?.weights?.some(
+          (entry) => entry.min < car.weight && entry.max > car.weight
+        )
+      ) {
+        console.log(props.sendCars);
+        return car;
+      }
       return;
-      // if (
-      //   state.filter.weight?.length > 0 &&
-      //   state.filter.weight.every(
-      //     (entry) => entry.min > car.weight || entry.max < car.weight
-      //   )
-      // )
-      //   return;
     });
     state.prices.length ? setAutos(filteredCars) : autos;
   }, [state.prices, props.sendCars]);
-  console.log("WHAT WE GET AS INITIAL", autos);
+
   //state.filter, sendCars
   const getdisplayedCars = autos?.map((caritem) => {
     return (

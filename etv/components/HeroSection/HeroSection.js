@@ -4,10 +4,6 @@ import { useState } from "react";
 import { useStore } from "../../components/store";
 import Link from "next/link";
 const HeroSection = () => {
-  const [choosePrice, setChoosePrice] = useState(0);
-  const [chooseRange, setChooseRange] = useState(0);
-  const [chooseWeight, setChooseWeight] = useState(0);
-
   const { state, dispatch } = useStore();
 
   const details = [
@@ -78,7 +74,9 @@ const HeroSection = () => {
       ],
     },
   ];
-
+  const [choosePrice, setChoosePrice] = useState(details[0].options[0].value);
+  const [chooseRange, setChooseRange] = useState(details[1].options[0].value);
+  const [chooseWeight, setChooseWeight] = useState(details[2].options[0].value);
   //dispatch({ type: "price", data: choosePrice });
 
   return (
@@ -215,14 +213,14 @@ const HeroSection = () => {
                       },
                     ],
                   });
-                  // dispatch({
-                  //   type: "range",
-                  //   data: {
-                  //     ...state?.ranges,
-                  //     min: chooseRange.split(" ")[0],
-                  //     max: chooseRange.split(" ")[1],
-                  //   },
-                  // });
+                  dispatch({
+                    type: "range",
+                    data: {
+                      ...state?.ranges,
+                      min: Number(chooseRange.split(" ")[0]),
+                      max: Number(chooseRange.split(" ")[1]),
+                    },
+                  });
                   dispatch({
                     type: "weight",
                     data: [
@@ -233,7 +231,6 @@ const HeroSection = () => {
                       },
                     ],
                   });
-                  console.log("onclickSTATE", state);
                 }}
               >
                 <Link href="/comparePage">
