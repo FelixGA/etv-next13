@@ -16,15 +16,9 @@ function SortDesktop() {
   const [truncate, setTruncate] = useState(false);
   // console.log(state.highests);
   return (
-    <div className="flex">
-      <div
-        className="my-1 cursor-pointer"
-        onClick={() => setTruncate(!truncate)}
-      >
-        <div className="flex flex-row justify-between border-b "></div>
-      </div>
-      <div className={truncate ? "flex flex-col ml-4 mt-2" : "hidden"}>
-        <div className="mt-1 flex flex-row py-2 ">
+    <div className="sm:hidden md:flex items-center bg-white border ">
+      <div className="flex flex-col ml-4 mt-2 items-start">
+        <div className="mt-1 flex flex-row py-2  ">
           <input
             className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
@@ -38,7 +32,7 @@ function SortDesktop() {
             {sortBy.firstRange}
           </label>
         </div>
-        <div className="mt-1 flex flex-row py-2 ">
+        <div className="mt-1 flex flex-row py-2  mr-4">
           <input
             className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {

@@ -18,7 +18,7 @@ function Sort() {
     forthRange: "Bestseller",
   };
   const [truncate, setTruncate] = useState(false);
-  console.log(state.highests);
+
   return (
     <div className="block md:hidden">
       <div
