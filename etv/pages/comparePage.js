@@ -3,6 +3,7 @@ import ResultList from "../components/ResultList/ResultList";
 import TruncateFilterDesktop from "../components/ResultList/TruncateFilterDesktop";
 import { gql, useQuery } from "@apollo/client";
 import { useStore } from "../components/store";
+import { useState, useEffect } from "react";
 
 export default function comparePage() {
   const getAllCarsData = gql`
@@ -70,12 +71,12 @@ export default function comparePage() {
   /* QUERY */
   const { data } = useQuery(getAllCarsData);
   const getCars = data?.vehicles?.data.map((item) => item.attributes);
-  //get results upon category
+  /* ɢᴇᴛ ʀᴇsᴜʟᴛs ᴜᴘᴏɴ ᴄᴀᴛᴇɢᴏʀʏ */
   const getPritsche = getCars?.filter((item) => item.categorie === "Pritsche");
   const getKipper = getCars?.filter((item) => item.categorie === "Kipper");
   const getKoffer = getCars?.filter((item) => item.categorie === "Koffer");
   const getKasten = getCars?.filter((item) => item.categorie === "Kasten");
-  // get all categories from the data
+  /* ɢᴇᴛ ᴀʟʟ ᴄᴀᴛᴇɢᴏʀɪᴇs ғʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀ */
   const getCategories = [...new Set(getCars?.map((item) => item.categorie))];
 
   /* PRICE SORTING */
@@ -95,23 +96,21 @@ export default function comparePage() {
   // const getCheapest = getCarslowestPrice?.slice(0, 1);
   // get the highest auto
   // const getHighest = getCarshighestPrice?.slice(0, 1);
-
-  /* cars weight filter */
-
+  /* cᴀʀs ᴡᴇɪɢʜᴛ ғɪʟᴛᴇʀ */
   const getCarslightest = getCars
     ?.sort((a, b) => a.weight.value - b.weight.value)
     .map((item) => item);
   const getCarsheaviest = getCars
     ?.sort((a, b) => b.weight.value - a.weight.value)
     .map((item) => item);
-  // cars range filter
+  /* ᴄᴀʀs ʀᴀɴɢᴇ ғɪʟᴛᴇʀ */
   const getCarslongest = getCars
     ?.sort((a, b) => a.range.value - b.range.value)
     .map((item) => item);
   const getCarsshortest = getCars
     ?.sort((a, b) => b.range.value - a.range.value)
     .map((item) => item);
-  // cars charging time filter
+  /* ᴄᴀʀs ᴄʜᴀʀɢɪɴɢ ᴛɪᴍᴇ ғɪʟᴛᴇʀ */
   const getCarsfastest = getCars
     ?.sort((a, b) => a.chargingTime.value - b.chargingTime.value)
     .map((item) => item);
@@ -126,11 +125,9 @@ export default function comparePage() {
   if (state.highests) {
     sendCars = getCarshighestPrice;
   }
-  if (!state.lowests) {
+  if (state.lowests) {
     sendCars = getCarslowestPrice;
   }
-
-  // dispatch({ type: "cars", data: false });
 
   return (
     <div className=" xl:mx-32 bg-[#F2F9FF] md:bg-white ">

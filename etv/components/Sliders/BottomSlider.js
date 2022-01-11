@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import BottomSliderCard from "../Sliders/BottomSliderCard";
 
@@ -12,7 +13,11 @@ export default function BottomSlider() {
       </div>
       <div className="w-full my-8 flex justify-center">
         <button className="h-12 w-80 border rounded-md border-blue-darker text-blue-darker font-bold">
-          Alle Transporter anzeigen
+          <Link href="/comparePage">
+            <a className="visited:text-blue-darker">
+              Alle Transporter anzeigen
+            </a>
+          </Link>
         </button>
       </div>
     </div>
