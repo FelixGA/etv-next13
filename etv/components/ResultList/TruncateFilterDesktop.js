@@ -6,8 +6,13 @@ import FilterItemDesktop from "./FilterItemDesktop";
 import Image from "next/image";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
+import { useStore } from "../store";
 
 function TruncateFilterDesktop() {
+  const { state, dispatch } = useStore();
+  console.log(state.prices);
+  const [minprice, SetMinprice] = useState(0);
+  const [maxprice, SetMaxprice] = useState(0);
   const [truncPrice, setTruncPrice] = useState(false);
   const filtersData = [
     {
