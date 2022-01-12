@@ -7,7 +7,7 @@ function CarCard(props) {
   const mobileRatingBox = (
     <div className="borderbtn flex flex-col w-22">
       <p className=" flex flex-row justify-center ">
-        <span className="px-1 bg-orange-dark text-white font-bold text-xxs border-black-dark border-b-2 ">
+        <span className="px-1 bg-orange-dark text-white font-bold text-xs border-black-dark border-b-2 ">
           TEST
         </span>
         <span className="px-1 text-grey-dark text-xxs font-bold bg-grey-lighter border-black-dark border-b-2">
@@ -53,11 +53,11 @@ function CarCard(props) {
 
           <span className="lg:hidden">{mobileRatingBox}</span>
           <div className="w-full flex flex-col lg:flex-col-reverse items-end">
-            <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xxs xl:tracking-wider rounded w-5/6 h-7 xxs:h-9 ">
+            <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xs xl:tracking-wider rounded w-5/6 h-7 xxs:h-9 ">
               Jetzt anfragen
             </button>
-            <button className="bg-blue-dark  hover:bg-blue-light text-white mb-2 px-2 text-xxs xl:tracking-wider rounded  flex justify-center items-center w-5/6 h-7 xxs:h-9 ">
-              <span className="text-blue-dark hidden xxs:flex  lg:w-0 xl:w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
+            <button className="bg-blue-dark  hover:bg-blue-light text-white mb-2 px-2 text-xs xl:tracking-wider rounded  flex justify-center items-center w-5/6 h-7 xxs:h-9 ">
+              <span className="text-blue-dark hidden xs:flex  lg:w-0 xl:w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
                 &nbsp;+&nbsp;
               </span>
               <span className="my-auto">Vergleichen</span>
