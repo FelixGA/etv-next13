@@ -2,18 +2,18 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
 import { useState } from "react";
 
-function FilterItem(props) {
+function FilterItemDesktop(props) {
   const [truncDistance, setTruncDistance] = useState(false);
 
   return (
-    <div>
+    <div className="">
       <div
-        className="my-1 cursor-pointer"
+        className=" cursor-pointer"
         onClick={() => setTruncDistance(!truncDistance)}
       >
-        <div className="flex flex-row justify-between border-b ">
+        <div className="flex flex-row justify-between border-b py-4  w-full ">
           <div className="flex flex-row ">
-            <div className="w-6 mt-8 ml-4 ">
+            <div className="w-6 h-6 ml-4 ">
               <Image
                 src={props.item.image}
                 alt="picture"
@@ -23,28 +23,26 @@ function FilterItem(props) {
                 layout="responsive"
               />
             </div>
-            <div className="pl-4 my-auto mt-6">
-              <h4 className="py-3 font-bold text-blue-dark">
-                {props.item.title}
-              </h4>
+            <div className="pl-4 my-auto ">
+              <h4 className=" font-bold text-blue-dark">{props.item.title}</h4>
             </div>
           </div>
-          <div className="w-4  mr-4 mt-9">
+          <div className="w-4  mr-4 ">
             <MdKeyboardArrowDown size={25} />
           </div>
         </div>
       </div>
-      <div className={truncDistance ? "flex flex-col ml-4 mt-2" : "hidden"}>
-        <div className="mt-1 flex flex-row py-2 ">
+      <div className={truncDistance ? "flex flex-col ml-4 " : "hidden"}>
+        <div className=" flex flex-row  pt-4">
           <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            className=" appearance-none   w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
             id="preis"
             name="preis"
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5 text-lg"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg "
           >
             {props.item.firstRange}
           </label>
@@ -96,4 +94,4 @@ function FilterItem(props) {
   );
 }
 
-export default FilterItem;
+export default FilterItemDesktop;

@@ -1,7 +1,7 @@
-import image from "../../public/images/reichweite@2x.png";
-import image2 from "../../public/images/zuladung@2x.png";
-import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
-import image4 from "../../public/images/reichweitecopy@2x.png";
+import image from "../../public/images/reichweite.png";
+import image2 from "../../public/images/zuladung.png";
+import image3 from "../../public/images/hoechstgeschwindigkeit.png";
+import image4 from "../../public/images/preis.png";
 import FilterItemDesktop from "./FilterItemDesktop";
 import Image from "next/image";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -9,10 +9,10 @@ import { useState } from "react";
 import { useStore } from "../store";
 
 function TruncateFilterDesktop() {
-  const { state, dispatch } = useStore();
-  console.log(state.prices);
-  const [minprice, SetMinprice] = useState(0);
-  const [maxprice, SetMaxprice] = useState(0);
+  // const { state, dispatch } = useStore();
+  // console.log(state.prices);
+  // const [minprice, SetMinprice] = useState(0);
+  // const [maxprice, SetMaxprice] = useState(0);
   const [truncPrice, setTruncPrice] = useState(false);
   const filtersData = [
     {
@@ -54,21 +54,21 @@ function TruncateFilterDesktop() {
   ];
   const getFiltersData = filtersData.map((item, index) => {
     return (
-      <div key={index}>
+      <div className=" " key={index}>
         <FilterItemDesktop item={item} />
       </div>
     );
   });
 
   return (
-    <div className="w-full relative bottom-4 mr-8 ">
+    <div className="hidden md:block py-2 ">
       {/* Preis */}
       <div
-        className="my-1 cursor-pointer "
+        className="cursor-pointer w-full"
         onClick={() => setTruncPrice(!truncPrice)}
       >
-        <div className="flex flex-row justify-between border-b">
-          <div className="flex flex-row">
+        <div className="flex  justify-between border-b">
+          <div className="flex ">
             <div className="w-6 my-auto ml-4 ">
               <Image
                 src={image4}

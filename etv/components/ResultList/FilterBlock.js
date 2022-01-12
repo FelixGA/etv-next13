@@ -59,17 +59,8 @@ function FilterBlock() {
         </div>
       </div>
       {/* ACTIVE FILTERS */}
-      <div className="flex  justify-between w-full">
+      <div className="flex flex-grow justify-between md:pt-16">
         <ActiveFilterEntry />
-        {/* REMOVE ALL FILTERS */}
-        <div className="hidden w-fit md:flex items-end">
-          <span
-            className="text-sm  cursor-pointer"
-            onClick={() => console.log("you clicked all filters removal")}
-          >
-            alle Filter loschen
-          </span>
-        </div>
       </div>
 
       {/* HEADING + SORTING */}
@@ -80,7 +71,7 @@ function FilterBlock() {
           </h1>
         </div>
         <div
-          className="hidden md:flex flex-row justify-end items-center mt-8 pb-2 mr-2"
+          className="hidden md:flex flex-row justify-end items-center mt-8 pb-2 mr-2 cursor-pointer"
           onClick={() => SetClicked(!clicked)}
         >
           <h4 className="pr-4 ">Sortieren nach </h4>
@@ -90,7 +81,7 @@ function FilterBlock() {
           </div>
         </div>
         {/* SORT DESKTOP */}
-        <div className={clicked ? "hidden" : "flex  absolute top-60 right-0 "}>
+        <div className={clicked ? "hidden" : "flex  absolute top-40 right-0 "}>
           <SortDesktop />
         </div>
       </div>
