@@ -28,36 +28,15 @@
 
 @tailwind components;
 
+@layer components {
+  .filter-grid {
+    grid-template-columns: repeat(auto-fill, minmax(184px, 230px));
+  }
+}
+
 @tailwind utilities;
 
-@layer utilities {
-  .markdown ul {
-    @apply px-4 py-1;
-    list-style-type: disc;
-  }
-
-  .markdown ol {
-    padding: 1rem;
-    list-style-type: decimal;
-  }
-
-  .markdown a {
-    @apply text-green-dark font-bold;
-  }
-
-  .ais-Hits-list {
-    @apply grid grid-cols-4 gap-8;
-  }
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-ul {
-  list-style-type: none;
-}
+/* FROM HERE WE GIVE css for reference  */
 
 header {
   background-color: #2a3c80;

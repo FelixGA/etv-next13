@@ -1,9 +1,6 @@
-import arrowDown from "../../public/images/Chevron_down.png";
-
 import Image from "next/image";
 import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import React from "react";
 
 function FilterItemMobile(props) {
   const [truncate, setTruncate] = useState(false);

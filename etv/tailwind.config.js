@@ -8,20 +8,6 @@ module.exports = {
       screens: {
         xs: "410px",
       },
-      animation: {
-        slideL: "slideL 500ms linear",
-        slideR: "slideR 500ms linear",
-      },
-      keyframes: {
-        slideL: {
-          "0%": { transform: "translateX(-100%)" },
-          "100%": { transform: "translateX(0)" },
-        },
-        slideR: {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0)" },
-        },
-      },
       backgroundImage: {
         "radial-green": "radial-gradient(circle, #00774c 0%, #004225 100%)",
         "horizontal-green": "linear-gradient(135deg, #004225 0%, #417538 100%)",

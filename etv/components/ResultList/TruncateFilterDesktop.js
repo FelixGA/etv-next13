@@ -1,15 +1,15 @@
-import image from "../../public/images/reichweite@2x.png";
-import image2 from "../../public/images/zuladung@2x.png";
-import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
-import image4 from "../../public/images/reichweitecopy@2x.png";
+import image from "../../public/images/reichweite.png";
+import image2 from "../../public/images/zuladung.png";
+import image3 from "../../public/images/hoechstgeschwindigkeit.png";
+import image4 from "../../public/images/preis.png";
 import FilterItemDesktop from "./FilterItemDesktop";
 import Image from "next/image";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
-import { useStore } from "../store";
+
+import FilterOption from "./FilterOption";
 
 function TruncateFilterDesktop() {
-  const { state, dispatch } = useStore();
   const [minprice, SetMinprice] = useState(0);
   const [maxprice, SetMaxprice] = useState(0);
   const [truncPrice, setTruncPrice] = useState(false);
@@ -53,21 +53,21 @@ function TruncateFilterDesktop() {
   ];
   const getFiltersData = filtersData.map((item, index) => {
     return (
-      <div key={index}>
+      <div className=" " key={index}>
         <FilterItemDesktop item={item} />
       </div>
     );
   });
 
   return (
-    <div className="w-full relative bottom-4 mr-8 ">
+    <div className="hidden md:block py-2 ">
       {/* Preis */}
       <div
-        className="my-1 cursor-pointer "
+        className="cursor-pointer w-full"
         onClick={() => setTruncPrice(!truncPrice)}
       >
-        <div className="flex flex-row justify-between border-b">
-          <div className="flex flex-row">
+        <div className="flex  justify-between border-b">
+          <div className="flex ">
             <div className="w-6 my-auto ml-4 ">
               <Image
                 src={image4}
@@ -87,65 +87,13 @@ function TruncateFilterDesktop() {
           </div>
         </div>
       </div>
+
       <div className={truncPrice ? " flex flex-col ml-4 mt-2" : "hidden"}>
-        <div className="mt-1 flex flex-row py-2 ">
-          <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
-            type="checkbox"
-            id="preis"
-            name="preis"
-          ></input>
-          <label
-            forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5 text-lg"
-          >
-            0-20000 €
-          </label>
+        <div className="">
+          <FilterOption />
         </div>
-        <div className="mt-1 flex flex-row py-2 ">
-          <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
-            type="checkbox"
-            id="preis"
-            name="preis"
-          ></input>
-          <label
-            forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5 text-lg"
-          >
-            20001-40000 €
-          </label>
-        </div>
-        <div className="mt-1 flex flex-row py-2 ">
-          <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
-            type="checkbox"
-            id="preis"
-            name="preis"
-            defaultChecked
-          ></input>
-          <label
-            forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5 text-lg"
-          >
-            40001-60000 €
-          </label>
-        </div>
-        <div className="mt-1 flex flex-row py-2 ">
-          <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
-            type="checkbox"
-            id="preis"
-            name="preis"
-          ></input>
-          <label
-            forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5 text-lg"
-          >
-            60001-80000 €
-          </label>
-        </div>
-        {/* min max buttons */}
+
+        {/* MIN MAX PRICE INPUT */}
         <div className="wrapper py-4 flex flex-row justify-start">
           <div className="flex py-2 mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
             <input
