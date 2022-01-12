@@ -6,34 +6,30 @@ const ResultList = (props) => {
   const { state, dispatch } = useStore();
   //const displayedCars = props.sendCars;
   const [autos, setAutos] = useState(props.sendCars);
-  console.log(state.weights);
+  console.log("STATES", state);
   // filter cars
   useEffect(() => {
-    if (!state?.prices || props.sendCars?.length === 0) return;
+    if (!state?.prices || !state?.weights || props.sendCars?.length === 0)
+      return;
     let filteredCars = props.sendCars?.filter((car) => {
       if (
         state?.prices?.length > 0 &&
         state?.prices?.some(
           (entry) => entry.min < car.price && entry.max > car.price
         )
-      ) {
-        console.log(props.sendCars);
-        return car;
-      }
-
-      if (
-        state?.weights?.length > 0 &&
-        state?.weights?.some(
-          (entry) => entry.min < car.weight && entry.max > car.weight
+      )
+        if (
+          state?.weights?.length > 0 &&
+          state?.weights?.some(
+            (entry) =>
+              car.weight.value > entry.min && car.weight.value < entry.max
+          )
         )
-      ) {
-        console.log(props.sendCars);
-        return car;
-      }
-      return;
+          return car;
     });
-    state.prices.length ? setAutos(filteredCars) : autos;
-  }, [state.prices, props.sendCars]);
+    console.log(filteredCars);
+    state.prices.length || state.weights.length ? setAutos(filteredCars) : null;
+  }, [state.prices, state.weights, props.sendCars]);
 
   //state.filter, sendCars
   const getdisplayedCars = autos?.map((caritem) => {

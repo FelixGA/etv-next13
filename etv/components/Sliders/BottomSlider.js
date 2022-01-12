@@ -14,7 +14,14 @@ export default function BottomSlider() {
       <div className="w-full my-8 flex justify-center">
         <button className="h-12 w-80 border rounded-md border-blue-darker text-blue-darker font-bold">
           <Link href="/comparePage">
-            <a className="visited:text-blue-darker">
+            <a
+              onClick={() => {
+                state.prices = [];
+                state.weights = [];
+                state.ranges = [];
+              }}
+              className="visited:text-blue-darker"
+            >
               Alle Transporter anzeigen
             </a>
           </Link>
