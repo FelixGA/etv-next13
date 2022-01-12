@@ -2,6 +2,7 @@ import { createContext, useReducer, useContext } from "react";
 
 const reducer = (state, action) => {
   switch (action.type) {
+    //filter
     case "price":
       return { ...state, prices: action.data };
 
@@ -9,23 +10,27 @@ const reducer = (state, action) => {
       return { ...state, ranges: action.data };
     case "weight":
       return { ...state, weights: action.data };
+
     case "maxSpeed":
       return { ...state, maxSpeeds: action.data };
+    case "chargingTime":
+      return { ...state, chargingTimes: action.data };
+    //sorting
     case "highest":
       return { ...state, highests: action.data };
     case "lowest":
       return { ...state, lowests: action.data };
-    case "lowest":
-      return { ...state, lowests: action.data };
-    case "lowest":
-      return { ...state, lowests: action.data };
-    
-    // case "exitPopupOpened":
-    //   return { ...state, exitPopupOpened: action.data };
-    // case "shopModel":
-    //   return { ...state, shopModel: action.data };
-    // case "currencyRates":
-    //   return { ...state, currencyRates: action.data };
+    case "highestRange":
+      return { ...state, highestRanges: action.data };
+    case "highestVmax":
+      return { ...state, highestVmaxs: action.data };
+    case "highestWeight":
+      return { ...state, highestWeights: action.data };
+    case "sortChargingTime":
+      return { ...state, sortChargingTimes: action.data };
+    case "highestRating":
+      return { ...state, highestRatings: action.data };
+
     default:
       return;
   }
@@ -33,11 +38,16 @@ const reducer = (state, action) => {
 
 const initialState = {
   prices: [],
-ranges: [],
+  ranges: [],
   weights: [],
+  maxSpeeds: [],
+
   highests: false,
   lowests: false,
-  maxSpeeds: 0,
+  highestRanges: false,
+  highestVmaxs: false,
+  highestWeights: false,
+  sortChargingTimes: false,
 
   //   translations: [],
   //   menuHidden: false,

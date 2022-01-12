@@ -5,7 +5,7 @@ import CarCardDetailsMobile from "./CarCardDetailsMobile";
 function CarCard(props) {
   const [showDetails, setShowDetails] = useState(false);
   const mobileRatingBox = (
-    <div className="border-2 border-black-darkest flex flex-col w-22">
+    <div className="border-2 border-black-darkest flex flex-col w-22 ">
       <p className=" flex flex-row justify-center ">
         <span className="px-1 bg-orange-dark text-white font-bold text-xs border-black-dark border-b-2 ">
           TEST
