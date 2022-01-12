@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+
 import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";

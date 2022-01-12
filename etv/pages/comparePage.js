@@ -3,7 +3,6 @@ import ResultList from "../components/ResultList/ResultList";
 import TruncateFilterDesktop from "../components/ResultList/TruncateFilterDesktop";
 import { gql, useQuery } from "@apollo/client";
 import { useStore } from "../components/store";
-import { useState, useEffect } from "react";
 
 export default function comparePage() {
   const getAllCarsData = gql`
@@ -116,11 +115,9 @@ export default function comparePage() {
     .map((item) => item);
 
   const { state, dispatch } = useStore();
-  // console.log(state.prices);
-  // console.log(state.weights);
-  // console.log(state.ranges);
+
   /* initial value */
-  let sendCars = getCars;
+  let sendCars = getCarslowestPrice;
 
   if (state.highests) {
     sendCars = getCarshighestPrice;

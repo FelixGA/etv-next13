@@ -11,6 +11,7 @@ import SortDesktop from "./SortDesktop";
 import ActiveFilterEntry from "./ActiveFilterEntry";
 
 function FilterBlock() {
+  const { state, dispatch } = useStore();
   const [truncate, setTruncate] = useState(false);
   const [clicked, SetClicked] = useState(true);
   return (
@@ -65,7 +66,22 @@ function FilterBlock() {
         <div className="hidden w-fit md:flex items-end">
           <span
             className="text-sm  cursor-pointer"
-            onClick={() => console.log("you clicked all filters removal")}
+            onClick={() => {
+              window.location.reload(false);
+
+              dispatch({
+                type: "range",
+                data: [],
+              });
+              dispatch({
+                type: "weight",
+                data: [],
+              });
+              dispatch({
+                type: "price",
+                data: [],
+              });
+            }}
           >
             alle Filter loschen
           </span>
