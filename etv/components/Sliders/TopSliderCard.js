@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { HiOutlineArrowRight } from "react-icons/hi";
 
 /* import image from "../public/images/VW-e-Crafter-Front-300x225.jpg"; */
 const images = [
@@ -110,19 +111,16 @@ const TopSliderCard = () => {
           </div>
         </div>
 
-        <div className="w-full text-center mt-8">
+        <div className="w-full text-center mt-8 flex  justify-center items-center ">
           <Link href="#">
-            <a className="text-xs text-center text-blue-darker ">
+            <a className="text-xs text-center text-blue-darker pr-4">
               Mehr erfahren
-              <span className="text-blue-lightest font-thin text-2xl pl-4 relative top-1">
-                ➔
-                {/*  <img
-                  src={require("/public/images/Arrow-right-512.png")}
-                  alt="ᗒ"
-                /> */}
-              </span>
             </a>
           </Link>
+
+          <div className="">
+            <HiOutlineArrowRight color="blue" size={20} />
+          </div>
         </div>
       </div>
     </div>
