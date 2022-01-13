@@ -14,6 +14,7 @@ function FilterBlock() {
   const { state, dispatch } = useStore();
   const [truncate, setTruncate] = useState(false);
   const [clicked, SetClicked] = useState(true);
+
   return (
     <div className=" w-full min-w-fit relative">
       <div className="bg-[#Fff]  shadow-dropdown md:hidden ">
@@ -65,7 +66,7 @@ function FilterBlock() {
       </div>
 
       {/* HEADING + SORTING */}
-      <div className="flex flex-row flex-1 justify-between">
+      <div className="flex flex-row flex-1 justify-between relative">
         <div className="mt-8 pb-2 w-fit ">
           <h1 className="pl-2 text-2xl text-black-dark ">
             Die besten E-Transporter nach Ihrer Auswahl
@@ -75,14 +76,17 @@ function FilterBlock() {
           className="hidden md:flex flex-row justify-end items-center mt-8 pb-2 mr-2 cursor-pointer"
           onClick={() => SetClicked(!clicked)}
         >
-          <h4 className="pr-4 ">Sortieren nach </h4>
+          <h4 className="pr-4 ">
+            {" "}
+            {`Sortieren nach: ${state.activeSortValues}`}{" "}
+          </h4>
 
           <div className="w-4 h-4 relative right-4 mb-2">
             <MdKeyboardArrowDown size={28} />
           </div>
         </div>
         {/* SORT DESKTOP */}
-        <div className={clicked ? "hidden" : "flex  absolute top-40 right-0 "}>
+        <div className={clicked ? "hidden" : "flex  absolute top-16 right-0 "}>
           <SortDesktop />
         </div>
       </div>

@@ -7,13 +7,10 @@ function FilterItemMobile(props) {
 
   return (
     <div>
-      <div
-        className="my-1 cursor-pointer"
-        onClick={() => setTruncate(!truncate)}
-      >
-        <div className="flex flex-row justify-between border-b ">
-          <div className="flex flex-row">
-            <div className="w-6  ml-4 mt-4">
+      <div className=" cursor-pointer " onClick={() => setTruncate(!truncate)}>
+        <div className="flex flex-row justify-between border-b py-4  w-full  ">
+          <div className="flex flex-row  ">
+            <div className="w-6 h-6 ml-4 ">
               <Image
                 src={props.item.image}
                 alt="picture"
@@ -23,13 +20,11 @@ function FilterItemMobile(props) {
                 layout="responsive"
               />
             </div>
-            <div className="pl-4 my-auto mt-2">
-              <h4 className="py-3 font-bold text-blue-dark text-base">
-                {props.item.title}
-              </h4>
+            <div className="pl-4 my-auto ">
+              <h4 className=" font-bold text-[#1F1E80]">{props.item.title}</h4>
             </div>
           </div>
-          <div className="w-3 mr-6 mt-5">
+          <div className="w-4  mr-7 ">
             <MdKeyboardArrowDown size={25} />
           </div>
         </div>
@@ -37,14 +32,14 @@ function FilterItemMobile(props) {
       <div className={truncate ? "flex flex-col ml-4 mt-2" : "hidden"}>
         <div className="mt-1 flex flex-row py-2 ">
           <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            className=" appearance-none w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5  "
             type="checkbox"
             id="preis"
             name="preis"
           ></input>
           <label
             forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
+            className="inline-flex items-center cursor-pointer pl-5 # font-thin text-lg text-[#2C3F53]"
           >
             {props.item.firstRange}
           </label>
