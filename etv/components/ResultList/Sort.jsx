@@ -1,8 +1,6 @@
 import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import { BsSortDown } from "react-icons/bs";
-
 import { useState } from "react";
 import { useStore } from "../store";
 
@@ -20,31 +18,38 @@ function Sort() {
   const [truncate, setTruncate] = useState(false);
 
   return (
-    <div className="block md:hidden">
+    <div className="block md:hidden ">
       <div
-        className="mb-1 cursor-pointer"
+        className="py-2 cursor-pointer"
         onClick={() => setTruncate(!truncate)}
       >
         <div className="flex flex-row justify-between border-b ">
           <div className="flex flex-row ">
-            <div className="  ml-5 mt-6 ">
+            <div className="  ml-5 my-auto">
               <BsSortDown size={20} />
             </div>
-            <div className="pl-4 my-auto mt-2">
-              <h4 className="py-3  font-bold text-blue-dark text-base">
+            <div className="pl-4 my-auto ">
+              <h4 className="py-3  font-bold text-blue-dark text-md">
                 {sortBy.title}
               </h4>
             </div>
           </div>
-          <div className="w-3 mr-6 mt-6">
+          <div className="w-3 mr-8 my-auto">
             <MdKeyboardArrowDown size={25} />
           </div>
         </div>
       </div>
       <div className={truncate ? "flex flex-col ml-4 mt-2" : "hidden"}>
-        <div className="mt-1 flex flex-row py-2 ">
+        <div className=" flex flex-row my-2">
           <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            className=" appearance-none   w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            onChange={() => {
+              /*  dispatch({ type: "NOT READU", data: NOT READU }); */
+              dispatch({
+                type: "activeSortValue",
+                data: sortBy.firstRange,
+              });
+            }}
             type="checkbox"
             id="preis"
             name="preis"
@@ -56,11 +61,12 @@ function Sort() {
             {sortBy.firstRange}
           </label>
         </div>
-        <div className="mt-1 flex flex-row py-2 ">
+        <div className="mt-1 flex flex-row py-2  mr-4">
           <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            className=" appearance-none   w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {
               dispatch({ type: "lowest", data: !state.lowests });
+              dispatch({ type: "activeSortValue", data: sortBy.secondRange });
             }}
             type="checkbox"
             id="preis"
@@ -75,9 +81,13 @@ function Sort() {
         </div>
         <div className="mt-1 flex flex-row py-2 ">
           <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            className=" appearance-none   w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {
               dispatch({ type: "highest", data: !state.highests });
+              dispatch({
+                type: "activeSortValue",
+                data: sortBy.thirdRange,
+              });
             }}
             /*  */
 
@@ -94,7 +104,14 @@ function Sort() {
         </div>
         <div className="mt-1 flex flex-row py-2 ">
           <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            className=" appearance-none   w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            onChange={() => {
+              /*  dispatch({ type: "NOT READU", data: NOT READU }); */
+              dispatch({
+                type: "activeSortValue",
+                data: sortBy.forthRange,
+              });
+            }}
             type="checkbox"
             id="preis"
             name="preis"

@@ -33,10 +33,10 @@ function ActiveFilterEntry() {
     },
   ];
   return (
-    <div className="grid gap-2 w-full grid-cols-1 sm:grid-cols-2  lg:grid-cols-4  xl:filter-grid  pl-2 ">
+    <div className="grid gap-2 w-full grid-cols-1 mt-4 md:mt-0 sm:grid-cols-2  lg:grid-cols-4  xl:filter-grid  px-2">
       {activeFilterData.map((item) => (
         <div
-          className="  w-full h-10 py-2  bg-grey-lighter  flex justify-between items-center"
+          className="  w-full h-10 py-2  bg-grey-lighter  flex justify-between items-center "
           key={item.id}
         >
           <div className="imageWrapper w-6 ml-2">
