@@ -30,7 +30,10 @@ const reducer = (state, action) => {
       return { ...state, sortChargingTimes: action.data };
     case "highestRating":
       return { ...state, highestRatings: action.data };
-
+    case "sticky":
+      return { ...state, stickys: action.data };
+    case "autoForComparison":
+      return { ...state, autoForComparisons: action.data };
     default:
       return;
   }
@@ -41,7 +44,8 @@ const initialState = {
   ranges: [],
   weights: [],
   maxSpeeds: [],
-
+  autoForComparisons: [],
+  stickys: false,
   highests: false,
   lowests: false,
   highestRanges: false,

@@ -33,7 +33,7 @@ const ResultList = (props) => {
           )
             return car;
     });
-    console.log(filteredCars);
+
     state.prices.length || state.weights.length ? setAutos(filteredCars) : null;
   }, [state.prices, state.weights, props.sendCars]);
   /* ɢᴇᴛ pop up for not meeting criteria */

@@ -76,7 +76,7 @@ module.exports = {
           darkest: "#5A3DF5",
         },
         black: {
-          lightest: "",
+          lightest: "#415264",
           lighter: "",
           light: "#356aa6",
           dark: "#2c3f53",

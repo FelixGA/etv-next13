@@ -2,8 +2,20 @@ import Image from "next/image";
 import { useState } from "react";
 import CarCardDetailsDesktop from "./CarCardDetailsDesktop";
 import CarCardDetailsMobile from "./CarCardDetailsMobile";
+import { useStore } from "../store";
 function CarCard(props) {
+  const { state, dispatch } = useStore();
   const [showDetails, setShowDetails] = useState(false);
+  const [disabled, setDisabled] = useState(false);
+  const [disabledAsMaximun, setDisabledAsMaximun] = useState(false);
+  const buttonInput = (
+    <>
+      <span className="text-blue-dark hidden xs:flex  lg:w-0 xl:w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
+        &nbsp;+&nbsp;
+      </span>
+      <span className="my-auto">Vergleichen</span>
+    </>
+  );
   const mobileRatingBox = (
     <div className="border-2 border-black-darkest flex flex-col w-22 ">
       <p className=" flex flex-row justify-center ">
@@ -56,12 +68,36 @@ function CarCard(props) {
             <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xs xl:tracking-wider rounded w-5/6 h-7 xxs:h-9 ">
               Jetzt anfragen
             </button>
-            <button className="bg-blue-dark  hover:bg-blue-light text-white mb-2 px-2 text-xs xl:tracking-wider rounded  flex justify-center items-center w-5/6 h-7 xxs:h-9 ">
-              <span className="text-blue-dark hidden xs:flex  lg:w-0 xl:w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
-                &nbsp;+&nbsp;
-              </span>
-              <span className="my-auto">Vergleichen</span>
+            <button
+              disabled={disabled}
+              onClick={() => {
+                if (state?.autoForComparisons?.length < 3) {
+                  dispatch({
+                    type: "sticky",
+                    data: true,
+                  });
+                  dispatch({
+                    type: "autoForComparison",
+                    data: [
+                      ...state.autoForComparisons,
+                      {
+                        pic: props.caritem.photo.data[0].attributes.url,
+                        title: props.caritem.title,
+                        price: props.caritem.price,
+                      },
+                    ],
+                  });
+                  setDisabled(true);
+                } else {
+                  setDisabledAsMaximun(true);
+                }
+              }}
+              className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 px-2 text-xs xl:tracking-wider rounded  flex justify-center items-center w-5/6 h-7 xxs:h-9 "
+            >
+              {" "}
+              {disabled ? "Zum Vergleich" : buttonInput}
             </button>
+            <p>{disabledAsMaximun ? "Maximal 3 Fahrzeuge" : null}</p>
           </div>
           <div
             onClick={() => setShowDetails(!showDetails)}
