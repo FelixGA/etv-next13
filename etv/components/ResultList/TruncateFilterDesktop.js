@@ -11,10 +11,8 @@ import { useStore } from "../store";
 import FilterOption from "./FilterOptionPrice";
 
 function TruncateFilterDesktop() {
-  // const { state, dispatch } = useStore();
-  // console.log(state.prices);
-  // const [minprice, SetMinprice] = useState(0);
-  // const [maxprice, SetMaxprice] = useState(0);
+  const [minprice, SetMinprice] = useState(0);
+  const [maxprice, SetMaxprice] = useState(0);
   const [truncPrice, setTruncPrice] = useState(false);
   const filtersData = [
     {

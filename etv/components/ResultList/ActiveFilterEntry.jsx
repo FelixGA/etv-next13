@@ -4,7 +4,9 @@ import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
 import { AiOutlineClose } from "react-icons/ai";
+import { useStore } from "../store";
 function ActiveFilterEntry() {
+  const { state, dispatch } = useStore();
   const activeFilterData = [
     {
       id: 1,
@@ -58,8 +60,23 @@ function ActiveFilterEntry() {
       {/* REMOVE ALL FILTERS */}
       <div className="w-fit flex items-end">
         <span
-          className="text-md  cursor-pointer w-fit"
-          onClick={() => console.log("you clicked all filters removal")}
+          className="text-sm  cursor-pointer"
+          onClick={() => {
+            window.location.reload(false);
+
+            dispatch({
+              type: "range",
+              data: [],
+            });
+            dispatch({
+              type: "weight",
+              data: [],
+            });
+            dispatch({
+              type: "price",
+              data: [],
+            });
+          }}
         >
           alle Filter loschen
         </span>

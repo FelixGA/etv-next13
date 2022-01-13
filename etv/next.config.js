@@ -2,7 +2,7 @@ const withPWA = require("next-pwa");
 const runtimeCaching = require("next-pwa/cache");
 module.exports = {
   images: {
-    domains: ["http://localhost:1337"],
+    domains: ["localhost:1337"],
   },
 };
 module.exports = withPWA({

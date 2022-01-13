@@ -1,12 +1,12 @@
 import Image from "next/image";
-import Link from "next/link";
+
 import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/ladezeit@2x.png";
 function CarCardDetailsDesktop(props) {
   const desktopRatingBox = (
-    <div className="borderbtn flex flex-col w-15 text-sm xl:w-20">
+    <div className="border-2 border-black-darkest flex flex-col w-15 text-sm xl:w-20">
       <p className=" flex flex-col justify-center ">
         <span className="px-1 bg-orange-dark text-white font-bold text-xs flex justify-center ">
           TEST

@@ -27,8 +27,8 @@ const HeroSection = () => {
         },
         {
           id: "4",
-          name: "60001-80000",
-          value: "60001-80000",
+          name: "60001-90000",
+          value: "60001-90000",
         },
       ],
     },
@@ -39,17 +39,17 @@ const HeroSection = () => {
         {
           id: "1",
           name: "ab 150km ",
-          value: "ab 150km ",
+          value: "150 ",
         },
         {
           id: "2",
           name: "ab 200km",
-          value: "ab 200km",
+          value: "200",
         },
         {
           id: "3",
           name: "ab 250km",
-          value: "ab 250km",
+          value: "250",
         },
       ],
     },
@@ -207,7 +207,6 @@ const HeroSection = () => {
                     type: "price",
                     data: [
                       {
-                        ...state?.prices,
                         min: Number(choosePrice.split("-")[0]),
                         max: Number(choosePrice.split("-")[1]),
                       },
@@ -215,16 +214,16 @@ const HeroSection = () => {
                   });
                   dispatch({
                     type: "range",
-                    data: {
-                      ...state?.ranges,
-                      min: Number(chooseRange.split(" ")[0]),
-                      max: Number(chooseRange.split(" ")[1]),
-                    },
+                    data: [
+                      {
+                        min: Number(chooseRange),
+                        max: Number(chooseRange) + 9999,
+                      },
+                    ],
                   });
                   dispatch({
                     type: "weight",
                     data: [
-                      ...state?.weights,
                       {
                         min: Number(chooseWeight),
                         max: Number(chooseWeight) + 500,

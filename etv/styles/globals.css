@@ -41,10 +41,10 @@
 header {
   background-color: #2a3c80;
 }
-
-.gmsou {
-  box-shadow: 0 0 0 1px #243280;
+a:visited {
+  color: white;
 }
+
 .select {
   @apply rounded-lg  bg-white text-base cursor-pointer  items-center;
   /* min-width: 15ch;
@@ -62,6 +62,7 @@ input:focus {
 select:focus {
   padding-bottom: 0px;
 }
+/* CUSTOM CSS THAT ARE NOT FOR TAILWIND */
 .line {
   width: 20px;
   height: 2px;
@@ -71,14 +72,11 @@ select:focus {
 .logo {
   filter: contrast(900%);
 }
-a:visited {
-  color: white;
+.gmsou {
+  box-shadow: 0 0 0 1px #243280;
 }
 .custom-text {
   text-align: center;
-}
-.borderbtn {
-  border: 2px solid black;
 }
 .forz {
   z-index: -98;

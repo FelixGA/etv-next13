@@ -12,11 +12,9 @@ import ActiveFilterEntry from "./ActiveFilterEntry";
 
 function FilterBlock() {
   const { state, dispatch } = useStore();
-
   const [truncate, setTruncate] = useState(false);
   const [clicked, SetClicked] = useState(true);
-  const [activeFilter, setActiveFilter] = useState("Preis");
-  console.log(state.activeSortValues);
+
   return (
     <div className=" w-full min-w-fit relative">
       <div className="bg-[#Fff]  shadow-dropdown md:hidden ">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import BottomSliderCard from "../Sliders/BottomSliderCard";
+import ButtonForAlleTransporter from "./ButtonForAlleTransporter";
 
 export default function BottomSlider() {
   return (
@@ -11,15 +12,23 @@ export default function BottomSlider() {
       <div className="flex flex-row overflow-x-auto scrollbar-hide rounded-md">
         <BottomSliderCard />
       </div>
-      <div className="w-full my-8 flex justify-center">
+      {/* <div className="w-full my-8 flex justify-center">
         <button className="h-12 w-80 border rounded-md border-blue-darker text-blue-darker font-bold">
           <Link href="/comparePage">
-            <a className="visited:text-blue-darker">
+            <a
+              onClick={() => {
+                state.prices = [];
+                state.weights = [];
+                state.ranges = [];
+              }}
+              className="visited:text-blue-darker"
+            >
               Alle Transporter anzeigen
             </a>
           </Link>
         </button>
-      </div>
+      </div> */}
+      <ButtonForAlleTransporter />
     </div>
   );
 }

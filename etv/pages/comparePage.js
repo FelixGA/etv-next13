@@ -3,7 +3,7 @@ import ResultList from "../components/ResultList/ResultList";
 import TruncateFilterDesktop from "../components/ResultList/TruncateFilterDesktop";
 import { gql, useQuery } from "@apollo/client";
 import { useStore } from "../components/store";
-import { useState, useEffect } from "react";
+import StickyPopUpForComparison from "../components/ResultList/StickyPopUpForComparison";
 
 export default function comparePage() {
   const getAllCarsData = gql`
@@ -116,11 +116,9 @@ export default function comparePage() {
     .map((item) => item);
 
   const { state, dispatch } = useStore();
-  // console.log(state.prices);
-  // console.log(state.weights);
-  // console.log(state.ranges);
+
   /* initial value */
-  let sendCars = getCars;
+  let sendCars = getCarslowestPrice;
 
   if (state.highests) {
     sendCars = getCarshighestPrice;
@@ -130,16 +128,19 @@ export default function comparePage() {
   }
 
   return (
-    <div className=" xl:mx-32 bg-[#F2F9FF] md:bg-white ">
-      <div className="flex ">
-        <div className="flex-1 hidden md:block  md:mt-14 md:pr-4 ">
-          <TruncateFilterDesktop />
-        </div>
-        <div className="flex flex-col md:w-3/4 w-full ">
-          <FilterBlock />
-          <ResultList sendCars={sendCars} />
+    <>
+      <div className=" xl:mx-32 bg-[#F2F9FF] md:bg-white ">
+        <div className="flex ">
+          <div className="flex-1 hidden md:block  md:mt-14 md:pr-4 ">
+            <TruncateFilterDesktop />
+          </div>
+          <div className="flex flex-col md:w-3/4 w-full ">
+            <FilterBlock />
+            <ResultList sendCars={sendCars} />
+          </div>
         </div>
       </div>
-    </div>
+      <StickyPopUpForComparison />
+    </>
   );
 }
