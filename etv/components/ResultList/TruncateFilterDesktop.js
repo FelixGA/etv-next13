@@ -2,12 +2,13 @@ import image from "../../public/images/reichweite.png";
 import image2 from "../../public/images/zuladung.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit.png";
 import image4 from "../../public/images/preis.png";
+import image5 from "../../public/images/more-svgrepo-com.png";
 import FilterItemDesktop from "./FilterItemDesktop";
 import Image from "next/image";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
 import { useStore } from "../store";
-import FilterOption from "./FilterOption";
+import FilterOption from "./FilterOptionPrice";
 
 function TruncateFilterDesktop() {
   // const { state, dispatch } = useStore();
@@ -50,7 +51,7 @@ function TruncateFilterDesktop() {
       secondRange: "Anschluss Schuko",
       thirdRange: "Anschluss Typ2",
       forthRange: "Anschluss Schuko",
-      image: image3,
+      image: image5,
     },
   ];
   const getFiltersData = filtersData.map((item, index) => {
@@ -69,7 +70,7 @@ function TruncateFilterDesktop() {
         onClick={() => setTruncPrice(!truncPrice)}
       >
         <div className="flex  justify-between border-b">
-          <div className="flex ">
+          <div className="flex pl-4">
             <div className="w-6 my-auto ml-4 ">
               <Image
                 src={image4}
@@ -84,7 +85,7 @@ function TruncateFilterDesktop() {
               <h4 className="py-3 font-bold text-blue-dark">Preis</h4>
             </div>
           </div>
-          <div className="w-3 mr-5 my-auto">
+          <div className="w-3 mr-8 my-auto">
             <MdKeyboardArrowDown size={25} />
           </div>
         </div>

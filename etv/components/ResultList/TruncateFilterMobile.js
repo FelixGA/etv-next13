@@ -8,7 +8,8 @@ import { useState } from "react";
 import FilterItemMobile from "./FilterItemMobile";
 import Sort from "./Sort";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { CgDetailsMore } from "react-icons/cg";
+
+import FilterOptionPrice from "./FilterOptionPrice";
 function TruncateFilter() {
   const [truncPrice, setTruncPrice] = useState(false);
   const filtersData = [
@@ -59,18 +60,18 @@ function TruncateFilter() {
 
   return (
     <div className="bg-[#Fff]">
-      <div className="flex flex-col mt-2 ">
+      <div className="flex flex-col mt-2  ">
         <div>
           <Sort />
         </div>
         {/* Preis */}
         <div
-          className="my-1 cursor-pointer "
+          className="cursor-pointer w-full  "
           onClick={() => setTruncPrice(!truncPrice)}
         >
-          <div className="flex flex-row justify-between border-b ">
-            <div className="flex flex-row ">
-              <div className="w-6 my-auto ml-4  ">
+          <div className="flex py-1 justify-between border-b">
+            <div className="flex">
+              <div className="w-6 my-auto ml-4 ">
                 <Image
                   src={image4}
                   alt="picture"
@@ -80,62 +81,21 @@ function TruncateFilter() {
                   layout="responsive"
                 />
               </div>
-              <div className="pl-4 my-auto mt-2">
-                <h4 className="py-3 font-bold text-blue-dark text-base">
-                  Preis
-                </h4>
+              <div className="my-auto pl-4">
+                <h4 className="py-3 font-bold text-blue-dark">Preis</h4>
               </div>
             </div>
-            <div className="w-3 mr-6 mt-6">
+            <div className="w-3 mr-8 my-auto">
               <MdKeyboardArrowDown size={25} />
             </div>
           </div>
         </div>
       </div>
       <div className={truncPrice ? " flex flex-col ml-4 mt-2" : "hidden"}>
-        <div className="mt-1 flex flex-row py-2 ">
-          <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
-            type="checkbox"
-            id="preis"
-            name="preis"
-          ></input>
-          <label
-            forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
-          >
-            3000-9000 €
-          </label>
+        <div className="">
+          <FilterOptionPrice />
         </div>
-        <div className="mt-1 flex flex-row py-2 ">
-          <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
-            type="checkbox"
-            id="preis"
-            name="preis"
-            defaultChecked
-          ></input>
-          <label
-            forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
-          >
-            9001-13000 €
-          </label>
-        </div>
-        <div className="mt-1 flex flex-row py-2 ">
-          <input
-            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
-            type="checkbox"
-            id="preis"
-            name="preis"
-          ></input>
-          <label
-            forhtml="preis"
-            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
-          >
-            13001-20000 €
-          </label>
-        </div>
+
         {/* min max buttons */}
         <div className="wrapper py-4 flex flex-row justify-start">
           <div className="flex py-2 mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
@@ -156,16 +116,15 @@ function TruncateFilter() {
               className="pl-4 w-18"
             />
           </div>
+          <span
+            className="pl-2  my-auto cursor-pointer"
+            onClick={() => console.log("you clicked los on mobile")}
+          >
+            Los
+          </span>
         </div>
       </div>
       {getFiltersData}
-      {/* Reichweite */}
-
-      {/* Zuladung */}
-
-      {/* Höchstgeschwindigkeit */}
-
-      {/* Weitere Filter */}
 
       {/*  */}
     </div>
