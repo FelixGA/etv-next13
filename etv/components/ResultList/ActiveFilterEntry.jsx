@@ -62,7 +62,7 @@ function ActiveFilterEntry() {
         <span
           className="text-sm  cursor-pointer"
           onClick={() => {
-            window.location.reload(false);
+            /*   window.location.reload(false); */
 
             dispatch({
               type: "range",
@@ -76,6 +76,13 @@ function ActiveFilterEntry() {
               type: "price",
               data: [],
             });
+
+            console.log(
+              "DISPATCHED STATES here",
+              state.prices,
+              state.weights,
+              state.removeFilters
+            );
           }}
         >
           alle Filter loschen
