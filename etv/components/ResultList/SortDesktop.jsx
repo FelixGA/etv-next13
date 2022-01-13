@@ -20,6 +20,13 @@ function SortDesktop() {
         <div className=" flex flex-row my-2">
           <input
             className=" appearance-none w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            onChange={() => {
+              /*  dispatch({ type: "NOT READU", data: NOT READU }); */
+              dispatch({
+                type: "activeSortValue",
+                data: sortBy.firstRange,
+              });
+            }}
             type="checkbox"
             id="preis"
             name="preis"
@@ -36,6 +43,7 @@ function SortDesktop() {
             className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {
               dispatch({ type: "lowest", data: !state.lowests });
+              dispatch({ type: "activeSortValue", data: sortBy.secondRange });
             }}
             type="checkbox"
             id="preis"
@@ -53,6 +61,10 @@ function SortDesktop() {
             className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {
               dispatch({ type: "highest", data: !state.highests });
+              dispatch({
+                type: "activeSortValue",
+                data: sortBy.thirdRange,
+              });
             }}
             /*  */
 
@@ -70,6 +82,13 @@ function SortDesktop() {
         <div className="mt-1 flex flex-row py-2 ">
           <input
             className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            onChange={() => {
+              /*  dispatch({ type: "NOT READU", data: NOT READU }); */
+              dispatch({
+                type: "activeSortValue",
+                data: sortBy.forthRange,
+              });
+            }}
             type="checkbox"
             id="preis"
             name="preis"

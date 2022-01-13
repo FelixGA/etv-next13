@@ -11,8 +11,12 @@ import SortDesktop from "./SortDesktop";
 import ActiveFilterEntry from "./ActiveFilterEntry";
 
 function FilterBlock() {
+  const { state, dispatch } = useStore();
+
   const [truncate, setTruncate] = useState(false);
   const [clicked, SetClicked] = useState(true);
+  const [activeFilter, setActiveFilter] = useState("Preis");
+  console.log(state.activeSortValues);
   return (
     <div className=" w-full min-w-fit relative">
       <div className="bg-[#Fff]  shadow-dropdown md:hidden ">
@@ -74,7 +78,10 @@ function FilterBlock() {
           className="hidden md:flex flex-row justify-end items-center mt-8 pb-2 mr-2 cursor-pointer"
           onClick={() => SetClicked(!clicked)}
         >
-          <h4 className="pr-4 ">Sortieren nach </h4>
+          <h4 className="pr-4 ">
+            {" "}
+            {`Sortieren nach: ${state.activeSortValues}`}{" "}
+          </h4>
 
           <div className="w-4 h-4 relative right-4 mb-2">
             <MdKeyboardArrowDown size={28} />
