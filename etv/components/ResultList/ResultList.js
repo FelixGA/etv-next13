@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import ButtonForAlleTransporter from "../../components/Sliders/ButtonForAlleTransporter";
 const ResultList = (props) => {
   const { state, dispatch } = useStore();
-  const [autos, setAutos] = useState(props.sendCars);
+  const [shownCars, setShownCars] = useState([]);
   console.log("STATES", state);
   /* useEffect to apply the filters */
   useEffect(() => {
@@ -34,10 +34,10 @@ const ResultList = (props) => {
             return car;
     });
 
-    state.prices.length || state.weights.length ? setAutos(filteredCars) : null;
+    setShownCars(filteredCars);
   }, [state.prices, state.weights, props.sendCars]);
   /* ɢᴇᴛ pop up for not meeting criteria */
-  const popup = (
+  const showMoreMessage = (
     <div className="mx-auto">
       <p className="text-base md:text-xl text-black-darkest">
         Ist ihr gesuchter Transporter nicht dabei?
@@ -48,7 +48,7 @@ const ResultList = (props) => {
     </div>
   );
   /* ɢᴇᴛ the cars upon filters */
-  const getdisplayedCars = autos?.map((caritem) => {
+  const getdisplayedCars = shownCars?.map((caritem) => {
     return (
       <div className="container-product" key={caritem.id}>
         <div
@@ -81,9 +81,9 @@ const ResultList = (props) => {
 
   return (
     <div className="flex flex-col w-full  md:m-auto lg:w-full lg:m-2 bg-grey-extra lg:bg-white">
-      {autos
-        ? autos?.length === 0
-          ? popup
+      {shownCars && !state.prices.length == 0 && !state.weights.length == 0
+        ? shownCars?.length === 0
+          ? showMoreMessage
           : getdisplayedCars
         : getdisplayedCarsAsInitial}
     </div>

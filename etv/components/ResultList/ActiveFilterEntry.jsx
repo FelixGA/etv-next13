@@ -62,7 +62,7 @@ function ActiveFilterEntry() {
         <span
           className="text-sm  cursor-pointer"
           onClick={() => {
-            window.location.reload(false);
+            // window.location.reload(false);
 
             dispatch({
               type: "range",
