@@ -8,34 +8,39 @@ const ResultList = (props) => {
   console.log("STATES", state);
   /* useEffect to apply the filters */
   useEffect(() => {
+    console.log(props.sendCars);
     if (!state?.prices || !state?.weights || props.sendCars?.length === 0)
       return;
     let filteredCars = props.sendCars?.filter((car) => {
       if (
         state?.prices?.length > 0 &&
-        state?.prices?.some(
-          (entry) => entry.min < car.price && entry.max > car.price
+        state?.prices?.every(
+          (entry) => entry.min > car.price || entry.max < car.price
         )
       )
-        if (
-          state?.weights?.length > 0 &&
-          state?.weights?.some(
-            (entry) =>
-              car.weight.value > entry.min && car.weight.value < entry.max
-          )
+        return false;
+
+      if (
+        state?.weights?.length > 0 &&
+        state?.weights?.every(
+          (entry) =>
+            entry.min > car.weight.value || entry.max < car.weight.value
         )
-          if (
-            state?.ranges?.length > 0 &&
-            state?.ranges?.some(
-              (entry) =>
-                car.range.value > entry.min && car.range.value < entry.max
-            )
-          )
-            return car;
+      )
+        return false;
+      if (
+        state?.ranges?.length > 0 &&
+        state?.ranges?.every(
+          (entry) => entry.min > car.range.value || entry.max < car.range.value
+        )
+      )
+        return false;
+
+      return true;
     });
 
     setShownCars(filteredCars);
-  }, [state.prices, state.weights, props.sendCars]);
+  }, [state.prices, state.weights, state.ranges, props.sendCars]);
   /* ɢᴇᴛ pop up for not meeting criteria */
   const showMoreMessage = (
     <div className="mx-auto">
@@ -63,29 +68,10 @@ const ResultList = (props) => {
       </div>
     );
   });
-  /* ɢᴇᴛ the cars WITHOUT filters */
-  const getdisplayedCarsAsInitial = props.sendCars?.map((caritem) => {
-    return (
-      <div className="container-product" key={caritem.id}>
-        <div
-          className="product-icon"
-          //LATER for the individuAL product
-          // onClick={() => {
-          //   history.push(`/en/detail/${caritem._id}`);
-          // }}
-        ></div>
-        <CarCard caritem={caritem} />
-      </div>
-    );
-  });
 
   return (
     <div className="flex flex-col w-full  md:m-auto lg:w-full lg:m-2 bg-grey-extra lg:bg-white">
-      {shownCars && !state.prices.length == 0 && !state.weights.length == 0
-        ? shownCars?.length === 0
-          ? showMoreMessage
-          : getdisplayedCars
-        : getdisplayedCarsAsInitial}
+      {shownCars?.length === 0 ? showMoreMessage : getdisplayedCars}
     </div>
   );
 };
