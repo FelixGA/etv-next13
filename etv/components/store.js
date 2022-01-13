@@ -15,6 +15,9 @@ const reducer = (state, action) => {
       return { ...state, highests: action.data };
     case "lowest":
       return { ...state, lowests: action.data };
+    case "activeSortValue":
+      return { ...state, activeSortValues: action.data };
+
     // case "exitPopupOpened":
     //   return { ...state, exitPopupOpened: action.data };
     // case "shopModel":
@@ -34,6 +37,8 @@ const initialState = {
   highests: false,
   lowests: true,
   maxSpeeds: 0,
+
+  activeSortValues: "Niedrigster Preis",
 
   //   translations: [],
   //   menuHidden: false,
