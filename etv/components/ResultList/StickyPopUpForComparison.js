@@ -4,8 +4,6 @@ import Image from "next/image";
 const StickyPopUpForComparison = () => {
   const { state, dispatch } = useStore();
 
-  console.log("STATES ", state.stickys, state.autoForComparisons);
-
   const myLoader = ({ src }) => {
     // return state?.autoForComparisons.map(
     //   (el) => `http://localhost:1337${el.pic}`

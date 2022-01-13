@@ -15,6 +15,8 @@ const reducer = (state, action) => {
       return { ...state, maxSpeeds: action.data };
     case "chargingTime":
       return { ...state, chargingTimes: action.data };
+    case "removeFilter":
+      return { ...state, removeFilters: action.data };
     //sorting
     case "highest":
       return { ...state, highests: action.data };
@@ -54,6 +56,7 @@ const initialState = {
   weights: [],
   maxSpeeds: [],
   autoForComparisons: [],
+  removeFilters: false,
   stickys: false,
   highests: false,
   lowests: false,
