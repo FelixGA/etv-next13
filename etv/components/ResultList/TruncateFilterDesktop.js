@@ -100,8 +100,8 @@ function TruncateFilterDesktop() {
           <div className="flex py-2 mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
             <input
               type="text"
-              id="lname"
-              name="lname"
+              id="min"
+              name="min"
               placeholder="min €"
               className="pl-4 w-18"
             />
@@ -109,20 +109,21 @@ function TruncateFilterDesktop() {
           <div className="flex py-2  mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
             <input
               type="text"
-              id="lname"
-              name="lname"
+              id="max"
+              name="max"
               placeholder="max €"
               className="pl-4 w-18"
             />
           </div>
+          <span
+            className="pl-2  my-auto cursor-pointer"
+            onClick={() => console.log("you clicked los")}
+          >
+            Los
+          </span>
         </div>
       </div>
       {getFiltersData}
-      {/* Reichweite */}
-
-      {/* Zuladung */}
-      {/* Höchstgeschwindigkeit */}
-      {/* Weitere Filter */}
     </div>
   );
 }
