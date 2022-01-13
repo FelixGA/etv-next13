@@ -17,7 +17,7 @@ const ResultList = (props) => {
           (entry) => entry.min < car.price && entry.max > car.price
         )
       ) {
-        console.log(props.sendCars);
+        // console.log(props.sendCars);
         return car;
       }
 

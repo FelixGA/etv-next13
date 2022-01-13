@@ -64,7 +64,7 @@ function FilterBlock() {
       </div>
 
       {/* HEADING + SORTING */}
-      <div className="flex flex-row flex-1 justify-between">
+      <div className="flex flex-row flex-1 justify-between relative">
         <div className="mt-8 pb-2 w-fit ">
           <h1 className="pl-2 text-2xl text-black-dark ">
             Die besten E-Transporter nach Ihrer Auswahl
@@ -81,7 +81,7 @@ function FilterBlock() {
           </div>
         </div>
         {/* SORT DESKTOP */}
-        <div className={clicked ? "hidden" : "flex  absolute top-40 right-0 "}>
+        <div className={clicked ? "hidden" : "flex  absolute top-16 right-0 "}>
           <SortDesktop />
         </div>
       </div>

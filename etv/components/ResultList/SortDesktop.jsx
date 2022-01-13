@@ -13,12 +13,11 @@ function SortDesktop() {
     thirdRange: "Höchster Preis",
     forthRange: "Bestseller",
   };
-  const [truncate, setTruncate] = useState(false);
-  // console.log(state.highests);
+
   return (
-    <div className="sm:hidden md:flex items-center bg-white border ">
+    <div className="sm:hidden md:flex items-center bg-white border rounded-md">
       <div className="flex flex-col ml-4 mt-2 items-start">
-        <div className="mt-1 flex flex-row py-2">
+        <div className=" flex flex-row my-2">
           <input
             className=" appearance-none w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
