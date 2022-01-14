@@ -1,38 +1,22 @@
 import { useStore } from "../store";
-import Image from "next/image";
+import Link from "next/link";
+import CarCardforPopUp from "./CarCardforPopUp";
 
 const StickyPopUpForComparison = () => {
   const { state, dispatch } = useStore();
-
-  const myLoader = ({ src }) => {
-    // return state?.autoForComparisons.map(
-    //   (el) => `http://localhost:1337${el.pic}`
-    // );
-
-    return src;
-  };
-  const popupSliderComponent = state?.autoForComparisons?.map((el) => {
-    return (
-      <div className="container">
-        <div className=" w-full sm:max-w-xs w-100 ">
-          <Image
-            loader={myLoader}
-            src={`http://localhost:1337${el.pic}`}
-            alt="picture"
-            width={90}
-            height={90}
-            // layout="responsive"
-            objectFit="cover"
-          />
-          <h4 className="text-l font-bold text-grey-lightest pb-2">
-            {el.title}
-          </h4>
+  /* GET CAR-CARDS-LIST */
+  const getCarCardForPopup = state?.autoForComparisons?.map(
+    (selectedCar, index) => {
+      return (
+        <div className="flex w-1/4" key={index}>
+          <CarCardforPopUp selectedCar={selectedCar} />
         </div>
-      </div>
-    );
-  });
+      );
+    }
+  );
 
   return (
+    /* please keep the styles on this className */
     <div
       className={
         state.stickys
@@ -40,11 +24,14 @@ const StickyPopUpForComparison = () => {
           : "hidden"
       }
     >
-      {state?.autoForComparisons?.length
-        ? //   &&
-          // state?.autoForComparisons?.length <= 3
-          popupSliderComponent
-        : null}
+      <h4 className="hidden lg:flex text-2xl px-2">Ihr Vergleich</h4>
+      {/* conditions and mapping */}
+      {state?.autoForComparisons?.length ? getCarCardForPopup : null}
+      <Link href="/en" as="/en">
+        <a>
+          <p className="bg-grey-light ">Vergleich</p>
+        </a>
+      </Link>
     </div>
   );
 };

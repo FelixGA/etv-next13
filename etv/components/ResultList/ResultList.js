@@ -5,13 +5,12 @@ import ButtonForAlleTransporter from "../../components/Sliders/ButtonForAlleTran
 const ResultList = (props) => {
   const { state, dispatch } = useStore();
   const [shownCars, setShownCars] = useState([]);
-  console.log("STATES", state);
+
   /* useEffect to apply the filters */
   useEffect(() => {
-    console.log(props.sendCars);
-    if (!state?.prices || !state?.weights || props.sendCars?.length === 0)
+    if (!state?.prices || !state?.weights || props.sortedCars?.length === 0)
       return;
-    let filteredCars = props.sendCars?.filter((car) => {
+    let filteredCars = props.sortedCars?.filter((car) => {
       if (
         state?.prices?.length > 0 &&
         state?.prices?.every(
@@ -40,16 +39,15 @@ const ResultList = (props) => {
     });
 
     setShownCars(filteredCars);
-  }, [state.prices, state.weights, state.ranges, props.sendCars]);
+  }, [state.prices, state.weights, state.ranges, props.sortedCars]);
   /* ɢᴇᴛ pop up for not meeting criteria */
   const showMoreMessage = (
     <div className="mx-auto">
       <p className="text-base md:text-xl text-black-darkest">
         Ist ihr gesuchter Transporter nicht dabei?
       </p>
-      <span onClick={() => window.location.reload(false)}>
-        <ButtonForAlleTransporter />
-      </span>
+
+      <ButtonForAlleTransporter />
     </div>
   );
   /* ɢᴇᴛ the cars upon filters */
