@@ -5,8 +5,23 @@ import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
 import { AiOutlineClose } from "react-icons/ai";
 import { useStore } from "../store";
+import { useState, useEffect } from "react";
 function ActiveFilterEntry() {
   const { state, dispatch } = useStore();
+
+  const [show, setShow] = useState(true);
+  useEffect(() => {
+    if (state.prices.length) {
+      setShow(false);
+    }
+  }, [
+    state.prices,
+    state.ranges,
+    state.maxspeeds,
+    state.weights,
+    state.chargingtimes,
+  ]);
+
   const activeFilterData = [
     {
       id: 1,
@@ -35,7 +50,13 @@ function ActiveFilterEntry() {
     },
   ];
   return (
-    <div className="grid gap-2 w-full grid-cols-1 mt-4 md:mt-0 sm:grid-cols-2  lg:grid-cols-4  xl:filter-grid  px-2">
+    <div
+      className={
+        show
+          ? "grid gap-2 w-full grid-cols-1 mt-4 md:mt-0 sm:grid-cols-2  lg:grid-cols-4  xl:filter-grid  px-2"
+          : "hidden"
+      }
+    >
       {activeFilterData.map((item) => (
         <div
           className="  w-full h-10 py-2  bg-grey-lighter  flex justify-between items-center "
@@ -62,8 +83,7 @@ function ActiveFilterEntry() {
         <span
           className="text-sm  cursor-pointer"
           onClick={() => {
-            /*   window.location.reload(false); */
-
+            setShow(!show);
             dispatch({
               type: "range",
               data: [],
@@ -76,13 +96,6 @@ function ActiveFilterEntry() {
               type: "price",
               data: [],
             });
-
-            console.log(
-              "DISPATCHED STATES here",
-              state.prices,
-              state.weights,
-              state.removeFilters
-            );
           }}
         >
           alle Filter loschen

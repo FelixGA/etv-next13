@@ -47,6 +47,7 @@ function CarCard(props) {
               height={140}
               layout="responsive"
               objectFit="cover"
+              className="rounded-l-lg"
             />
           </div>
         </div>
@@ -60,7 +61,7 @@ function CarCard(props) {
 
           <span className="lg:hidden">{mobileRatingBox}</span>
           <div className="w-full flex flex-col lg:flex-col-reverse items-end">
-            <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xs xl:tracking-wider rounded w-5/6 h-7 xxs:h-9 ">
+            <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xs xl:tracking-wide rounded w-5/6 h-7 xxs:h-9  ">
               Jetzt anfragen
             </button>
             <ButtonCompare carItem={carItem} />
