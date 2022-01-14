@@ -10,12 +10,13 @@ const Nav = () => {
       className={
         isMobile
           ? "flex flex-col lg:flex-row justify-around items-center w-full h-1/2 text-grey-dark "
-          : "flex flex-col lg:flex-row justify-around w-full text-green-dark "
+          : "flex flex-col lg:flex-row justify-around w-full text-[#93A3B7] "
       }
     >
       <li>
         <Link href="/homepage">
           <a
+            className="text-[#E7E8EC]"
             onClick={() => {
               setIsMobile(false);
             }}

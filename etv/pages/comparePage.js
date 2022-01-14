@@ -118,13 +118,13 @@ export default function comparePage() {
   const { state, dispatch } = useStore();
 
   /* initial value */
-  let sendCars = getCarslowestPrice;
+  let sortedCars = getCarslowestPrice;
 
   if (state.highests) {
-    sendCars = getCarshighestPrice;
+    sortedCars = getCarshighestPrice;
   }
   if (state.lowests) {
-    sendCars = getCarslowestPrice;
+    sortedCars = getCarslowestPrice;
   }
 
   return (
@@ -136,7 +136,7 @@ export default function comparePage() {
           </div>
           <div className="flex flex-col md:w-3/4 w-full ">
             <FilterBlock />
-            <ResultList sendCars={sendCars} />
+            <ResultList sortedCars={sortedCars} />
           </div>
         </div>
       </div>
