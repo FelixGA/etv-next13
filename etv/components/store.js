@@ -52,6 +52,7 @@ const initialState = {
   ranges: [],
   weights: [],
   maxSpeeds: [],
+  chargingTimes: [],
   autoForComparisons: [],
   removeFilters: false,
   stickys: false,
