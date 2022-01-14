@@ -65,13 +65,17 @@ const images = [
     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
   },
 ];
+const TopSliderCard = (props) => {
+  const myLoader = ({ src }) => {
+    return src;
+  };
 
-const TopSliderCard = () => {
-  return images.map((item, index) => (
+  const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
     <div className="min-w-64 mr-2 pl-6" key={index}>
       <div className="w-72">
         <Image
-          src={item.image}
+          loader={myLoader}
+          src={`http://localhost:1337${caritem.photo.data[0].attributes.url}`}
           alt="picture"
           objectFit="cover"
           width={264}
@@ -80,11 +84,11 @@ const TopSliderCard = () => {
         />
 
         <h3 className="text-center text-xl font-black text-black-dark mt-8 mb-4	tracking-wide">
-          {item.title}
+          {caritem.title}
         </h3>
         <div className="slider__item-text">
           <p className="text-sm text-center font-Inter text-blue-lighter	">
-            {item.desc}
+            {caritem.desc}
           </p>
         </div>
 
@@ -99,12 +103,12 @@ const TopSliderCard = () => {
             <div className="flex flex-row pb-8">
               <div className="">
                 <span className="relative bottom-1 pl-2.5 font-black text-m ">
-                  1,4
+                  {caritem.rating.value}
                 </span>
               </div>
               <div className="pb-2">
                 <span className="relative bottom-1 text-xxs font-black pl-3 tracking-widest ">
-                  SEHR GUT
+                  {caritem.rating.key}
                 </span>
               </div>
             </div>
@@ -113,7 +117,7 @@ const TopSliderCard = () => {
 
         <div className="w-full text-center mt-8 flex  justify-center items-center ">
           <Link href="#">
-            <a className="text-xs text-center text-blue-darker pr-4">
+            <a className="text-xs text-center visited:text-blue-darker text-blue-darker pr-4">
               Mehr erfahren
             </a>
           </Link>
@@ -125,5 +129,7 @@ const TopSliderCard = () => {
       </div>
     </div>
   ));
+
+  return getDisplayedCars ? getDisplayedCars : null;
 };
 export default TopSliderCard;

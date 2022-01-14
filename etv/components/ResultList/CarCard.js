@@ -1,21 +1,16 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CarCardDetailsDesktop from "./CarCardDetailsDesktop";
 import CarCardDetailsMobile from "./CarCardDetailsMobile";
 import { useStore } from "../store";
+import ButtonCompare from "./ButtonCompare";
 function CarCard(props) {
+  /* HOOKS */
   const { state, dispatch } = useStore();
   const [showDetails, setShowDetails] = useState(false);
-  const [disabled, setDisabled] = useState(false);
-  const [disabledAsMaximun, setDisabledAsMaximun] = useState(false);
-  const buttonInput = (
-    <>
-      <span className="text-blue-dark hidden xs:flex  lg:w-0 xl:w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
-        &nbsp;+&nbsp;
-      </span>
-      <span className="my-auto">Vergleichen</span>
-    </>
-  );
+
+  const carItem = props.caritem;
+
   const mobileRatingBox = (
     <div className="border-2 border-black-darkest flex flex-col w-22 ">
       <p className=" flex flex-row justify-center ">
@@ -34,7 +29,7 @@ function CarCard(props) {
   );
   // get first pic console.log(props.caritem.photo.data[0].attributes.url);
   const myLoader = ({ src }) => {
-    return `http://localhost:1337${props.caritem.photo.data[0].attributes.url}`;
+    return src;
   };
   return (
     <div className="container-product flex flex-col mb-4 py-4 lg:py-0 px-4 lg:px-0 lg:pr-4  shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
@@ -52,6 +47,7 @@ function CarCard(props) {
               height={140}
               layout="responsive"
               objectFit="cover"
+              className="rounded-l-lg"
             />
           </div>
         </div>
@@ -65,39 +61,10 @@ function CarCard(props) {
 
           <span className="lg:hidden">{mobileRatingBox}</span>
           <div className="w-full flex flex-col lg:flex-col-reverse items-end">
-            <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xs xl:tracking-wider rounded w-5/6 h-7 xxs:h-9 ">
+            <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xs xl:tracking-wide rounded w-5/6 h-7 xxs:h-9  ">
               Jetzt anfragen
             </button>
-            <button
-              disabled={disabled}
-              onClick={() => {
-                if (state?.autoForComparisons?.length < 3) {
-                  dispatch({
-                    type: "sticky",
-                    data: true,
-                  });
-                  dispatch({
-                    type: "autoForComparison",
-                    data: [
-                      ...state.autoForComparisons,
-                      {
-                        pic: props.caritem.photo.data[0].attributes.url,
-                        title: props.caritem.title,
-                        price: props.caritem.price,
-                      },
-                    ],
-                  });
-                  setDisabled(true);
-                } else {
-                  setDisabledAsMaximun(true);
-                }
-              }}
-              className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 px-2 text-xs xl:tracking-wider rounded  flex justify-center items-center w-5/6 h-7 xxs:h-9 "
-            >
-              {" "}
-              {disabled ? "Zum Vergleich" : buttonInput}
-            </button>
-            <p>{disabledAsMaximun ? "Maximal 3 Fahrzeuge" : null}</p>
+            <ButtonCompare carItem={carItem} />
           </div>
           <div
             onClick={() => setShowDetails(!showDetails)}

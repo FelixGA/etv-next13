@@ -3,19 +3,78 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import TopSlider from "../components/Sliders/TopSlider";
 import BottomSlider from "../components/Sliders/BottomSlider";
 import NewsLetter from "../components/NewsLetter";
+import { gql, useQuery } from "@apollo/client";
 
 function homepage() {
-  /*  const cars = [
-    { name: "mdnf,s", img: "ndscnhdskcn" },
-    { name: "mdnf,fergffer", img: "111111111" },
-    { name: "mdnf,fergffer", img: "111111111" },
-    { name: "mdnf,fergffer", img: "111111111" },
-    { name: "mdnf,fergffer", img: "111111111" },
-  ]; */
+  const getAllCarsData = gql`
+    query {
+      vehicles {
+        data {
+          attributes {
+            title
+            price
+            description
+            rating {
+              key
+              value
+            }
+            categorie
+            range {
+              key
+              value
+            }
+            weight {
+              key
+              value
+            }
+            maxSpeed {
+              key
+              value
+            }
+            chargingTime {
+              key
+              value
+            }
+            electricWindows {
+              key
+              value
+            }
+            ABS {
+              key
+              value
+            }
+            airBags {
+              key
+              value
+            }
+            airConditioning {
+              key
+              value
+            }
+            extras {
+              key
+              value
+            }
+            photo {
+              data {
+                attributes {
+                  alternativeText
+                  url
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+  /* QUERY */
+  const { data } = useQuery(getAllCarsData);
+  const getCars = data?.vehicles?.data.map((item) => item.attributes);
   return (
     <>
       <HeroSection />
-      <TopSlider /* cars={cars} */ />
+      <TopSlider getCars={getCars} />
       <BlogArticles />
       <BottomSlider />
       <NewsLetter />

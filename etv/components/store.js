@@ -32,19 +32,16 @@ const reducer = (state, action) => {
       return { ...state, sortChargingTimes: action.data };
     case "highestRating":
       return { ...state, highestRatings: action.data };
+    //for the comparison popup
     case "sticky":
       return { ...state, stickys: action.data };
     case "autoForComparison":
       return { ...state, autoForComparisons: action.data };
     case "activeSortValue":
       return { ...state, activeSortValues: action.data };
+    case "disabledButton":
+      return { ...state, disabledButtons: action.data };
 
-    // case "exitPopupOpened":
-    //   return { ...state, exitPopupOpened: action.data };
-    // case "shopModel":
-    //   return { ...state, shopModel: action.data };
-    // case "currencyRates":
-    //   return { ...state, currencyRates: action.data };
     default:
       return;
   }
@@ -55,6 +52,7 @@ const initialState = {
   ranges: [],
   weights: [],
   maxSpeeds: [],
+  chargingTimes: [],
   autoForComparisons: [],
   removeFilters: false,
   stickys: false,
@@ -64,7 +62,7 @@ const initialState = {
   highestVmaxs: false,
   highestWeights: false,
   sortChargingTimes: false,
-
+  disabledButtons: "",
   activeSortValues: "Niedrigster Preis",
 
   //   translations: [],
