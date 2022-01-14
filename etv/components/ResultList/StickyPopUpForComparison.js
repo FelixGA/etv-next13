@@ -22,7 +22,7 @@ const StickyPopUpForComparison = () => {
     <div
       className={
         state.stickys
-          ? "flex justify-center items-center h-32 lg:h-40 w-full bottom-0 fixed z-10 bg-black-lightest"
+          ? "flex justify-center items-center h-32 lg:h-40 w-full bottom-0 sticky z-10 bg-black-lightest"
           : "hidden"
       }
     >

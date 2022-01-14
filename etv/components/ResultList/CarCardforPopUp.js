@@ -12,7 +12,7 @@ function CarCardforPopUp(props) {
   return (
     <div className="min-w-36 w-full relative ">
       <Image
-        className="rounded-sm"
+        className="rounded-md brightness-50"
         loader={myLoader}
         src={`http://localhost:1337${props.selectedCar.pic}`}
         alt="picture"
