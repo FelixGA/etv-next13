@@ -14,6 +14,10 @@ function CarCardforPopUp(props) {
         <button
           onClick={() => {
             dispatch({
+              type: "disabledButton",
+              data: props.selectedCar.title,
+            });
+            dispatch({
               type: "autoForComparison",
               data: state.autoForComparisons.filter(
                 (el) => el !== props.selectedCar
