@@ -98,16 +98,14 @@ export default function comparePage() {
   // const getHighest = getCarshighestPrice?.slice(0, 1);
   /* cᴀʀs ᴡᴇɪɢʜᴛ ғɪʟᴛᴇʀ */
   const getCarslightest = getCars
-    ?.sort((a, b) => a.weight.value - b.weight.value)
-    .map((item) => item);
-  const getCarsheaviest = getCars
     ?.sort((a, b) => b.weight.value - a.weight.value)
     .map((item) => item);
-  /* ᴄᴀʀs ʀᴀɴɢᴇ ғɪʟᴛᴇʀ */
-  const getCarslongest = getCars
-    ?.sort((a, b) => a.range.value - b.range.value)
+  const getCarsBymaxSpeed = getCars
+    ?.sort((a, b) => b.maxSpeed.value - a.maxSpeed.value)
     .map((item) => item);
-  const getCarsshortest = getCars
+  /* ᴄᴀʀs ʀᴀɴɢᴇ ғɪʟᴛᴇʀ */
+
+  const getCarsByRange = getCars
     ?.sort((a, b) => b.range.value - a.range.value)
     .map((item) => item);
   /* ᴄᴀʀs ᴄʜᴀʀɢɪɴɢ ᴛɪᴍᴇ ғɪʟᴛᴇʀ */
@@ -125,6 +123,18 @@ export default function comparePage() {
   }
   if (state.lowests) {
     sortedCars = getCarslowestPrice;
+  }
+  if (state.highestRanges) {
+    sortedCars = getCarsByRange;
+  }
+  if (state.sortChargingTimes) {
+    sortedCars = getCarsfastest;
+  }
+  if (state.highestWeights) {
+    sortedCars = getCarslightest;
+  }
+  if (state.highestVmaxs) {
+    sortedCars = getCarsBymaxSpeed;
   }
 
   return (

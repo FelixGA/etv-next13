@@ -12,6 +12,10 @@ function SortDesktop() {
     secondRange: "Niedrigster Preis",
     thirdRange: "Höchster Preis",
     forthRange: "Bestseller",
+    fifthRange: "Beste Ladenzeit",
+    sixthRange: "Höchste Zuladung",
+    seventhRange: "Höchste Reichweite",
+    eighthRange: "Höchste Vmax",
   };
 
   return (
@@ -98,6 +102,103 @@ function SortDesktop() {
             className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
           >
             {sortBy.forthRange}
+          </label>
+        </div>
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            onChange={() => {
+              dispatch({
+                type: "sortChargingTime",
+                data: !state.sortChargingTimes,
+              });
+              dispatch({
+                type: "activeSortValue",
+                data: sortBy.fifthRange,
+              });
+            }}
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
+          >
+            {sortBy.fifthRange}
+          </label>
+        </div>
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            onChange={() => {
+              dispatch({
+                type: "highestWeight",
+                data: !state.highestWeights,
+              });
+              dispatch({
+                type: "activeSortValue",
+                data: sortBy.sixthRange,
+              });
+            }}
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
+          >
+            {sortBy.sixthRange}
+          </label>
+        </div>
+
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            onChange={() => {
+              dispatch({
+                type: "highestRange",
+                data: !state.highestRanges,
+              });
+              dispatch({
+                type: "activeSortValue",
+                data: sortBy.seventhRange,
+              });
+            }}
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
+          >
+            {sortBy.seventhRange}
+          </label>
+        </div>
+        <div className="mt-1 flex flex-row py-2 ">
+          <input
+            className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+            onChange={() => {
+              dispatch({
+                type: "highestVmax",
+                data: !state.highestVmaxs,
+              });
+              dispatch({
+                type: "activeSortValue",
+                data: sortBy.eighthRange,
+              });
+            }}
+            type="checkbox"
+            id="preis"
+            name="preis"
+          ></input>
+          <label
+            forhtml="preis"
+            className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
+          >
+            {sortBy.eighthRange}
           </label>
         </div>
       </div>
