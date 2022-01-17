@@ -17,7 +17,7 @@ function SortDesktop() {
     seventhRange: "Höchste Reichweite",
     eighthRange: "Höchste Vmax",
   };
-
+  const [isChecked, setIsChecked] = useState("");
   return (
     <div className="sm:hidden md:flex items-center bg-white border rounded-md">
       <div className="flex flex-col ml-4 mt-2 items-start">
@@ -25,18 +25,21 @@ function SortDesktop() {
           <input
             className=" appearance-none w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {
+              setIsChecked("recommended");
+              isChecked;
               /*  dispatch({ type: "NOT READU", data: NOT READU }); */
               dispatch({
                 type: "activeSortValue",
                 data: sortBy.firstRange,
               });
             }}
+            checked={isChecked == "recommended" ? true : false}
             type="checkbox"
-            id="preis"
-            name="preis"
+            id="recommended"
+            name="recommended"
           ></input>
           <label
-            forhtml="preis"
+            forhtml="recommended"
             className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] text-lg font-thin"
           >
             {sortBy.firstRange}
@@ -46,15 +49,18 @@ function SortDesktop() {
           <input
             className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {
-              dispatch({ type: "lowest", data: !state.lowests });
+              setIsChecked("lowest");
+              isChecked;
+              dispatch({ type: "lowest", data: sortBy.secondRange });
               dispatch({ type: "activeSortValue", data: sortBy.secondRange });
             }}
+            checked={isChecked == "lowest" ? true : false}
             type="checkbox"
-            id="preis"
-            name="preis"
+            id="lowest"
+            name="lowest"
           ></input>
           <label
-            forhtml="preis"
+            forhtml="lowest"
             className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
             {sortBy.secondRange}
@@ -64,7 +70,9 @@ function SortDesktop() {
           <input
             className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {
-              dispatch({ type: "highest", data: !state.highests });
+              setIsChecked("highest");
+              isChecked;
+              dispatch({ type: "highest", data: !sortBy.thirdRange });
               dispatch({
                 type: "activeSortValue",
                 data: sortBy.thirdRange,
@@ -72,12 +80,13 @@ function SortDesktop() {
             }}
             /*  */
 
+            checked={isChecked == "highest" ? true : false}
             type="checkbox"
-            id="preis"
-            name="preis"
+            id="highest"
+            name="highest"
           ></input>
           <label
-            forhtml="preis"
+            forhtml="highest"
             className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
           >
             {sortBy.thirdRange}
@@ -87,18 +96,21 @@ function SortDesktop() {
           <input
             className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {
+              setIsChecked("best");
+              isChecked;
               /*  dispatch({ type: "NOT READU", data: NOT READU }); */
               dispatch({
                 type: "activeSortValue",
                 data: sortBy.forthRange,
               });
             }}
+            checked={isChecked == "best" ? true : false}
             type="checkbox"
-            id="preis"
-            name="preis"
+            id="best"
+            name="best"
           ></input>
           <label
-            forhtml="preis"
+            forhtml="best"
             className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
           >
             {sortBy.forthRange}
@@ -108,21 +120,24 @@ function SortDesktop() {
           <input
             className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {
+              setIsChecked("ChargingTime");
+              isChecked;
               dispatch({
                 type: "sortChargingTime",
-                data: !state.sortChargingTimes,
+                data: sortBy.fifthRange,
               });
               dispatch({
                 type: "activeSortValue",
                 data: sortBy.fifthRange,
               });
             }}
+            checked={isChecked == "ChargingTime" ? true : false}
             type="checkbox"
-            id="preis"
-            name="preis"
+            id="ChargingTime"
+            name="ChargingTime"
           ></input>
           <label
-            forhtml="preis"
+            forhtml="ChargingTime"
             className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
           >
             {sortBy.fifthRange}
@@ -132,6 +147,8 @@ function SortDesktop() {
           <input
             className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {
+              setIsChecked("highestWeight");
+              isChecked;
               dispatch({
                 type: "highestWeight",
                 data: !state.highestWeights,
@@ -141,12 +158,13 @@ function SortDesktop() {
                 data: sortBy.sixthRange,
               });
             }}
+            checked={isChecked == "highestWeight" ? true : false}
             type="checkbox"
-            id="preis"
-            name="preis"
+            id="highestWeight"
+            name="highestWeight"
           ></input>
           <label
-            forhtml="preis"
+            forhtml="highestWeight"
             className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
           >
             {sortBy.sixthRange}
@@ -157,6 +175,8 @@ function SortDesktop() {
           <input
             className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {
+              setIsChecked("highestRange");
+              isChecked;
               dispatch({
                 type: "highestRange",
                 data: !state.highestRanges,
@@ -166,12 +186,13 @@ function SortDesktop() {
                 data: sortBy.seventhRange,
               });
             }}
+            checked={isChecked == "highestRange" ? true : false}
             type="checkbox"
-            id="preis"
-            name="preis"
+            id="highestRange"
+            name="highestRange"
           ></input>
           <label
-            forhtml="preis"
+            forhtml="highestRange"
             className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
           >
             {sortBy.seventhRange}
@@ -181,6 +202,8 @@ function SortDesktop() {
           <input
             className=" appearance-none   w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             onChange={() => {
+              setIsChecked("highestVmax");
+              isChecked;
               dispatch({
                 type: "highestVmax",
                 data: !state.highestVmaxs,
@@ -190,12 +213,13 @@ function SortDesktop() {
                 data: sortBy.eighthRange,
               });
             }}
+            checked={isChecked == "highestVmax" ? true : false}
             type="checkbox"
-            id="preis"
-            name="preis"
+            id="highestVmax"
+            name="highestVmax"
           ></input>
           <label
-            forhtml="preis"
+            forhtml="highestVmax"
             className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
           >
             {sortBy.eighthRange}

@@ -56,20 +56,14 @@ const initialState = {
   autoForComparisons: [],
   removeFilters: false,
   stickys: false,
-  highests: false,
-  lowests: false,
-  highestRanges: false,
-  highestVmaxs: false,
-  highestWeights: false,
-  sortChargingTimes: false,
+  highests: "",
+  // lowests: false,
+  // highestRanges: false,
+  // highestVmaxs: false,
+  // highestWeights: false,
+  // sortChargingTimes: false,
   disabledButtons: "",
   activeSortValues: "Niedrigster Preis",
-
-  //   translations: [],
-  //   menuHidden: false,
-  //   exitPopupOpened: false,
-  //   shopModel: "",
-  //   currencyRates: null,
 };
 
 const StoreContext = createContext(initialState);

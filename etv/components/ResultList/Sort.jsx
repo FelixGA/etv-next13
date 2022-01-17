@@ -16,7 +16,7 @@ function Sort() {
     forthRange: "Bestseller",
   };
   const [truncate, setTruncate] = useState(false);
-
+ const [isChecked, setIsChecked] = useState("");
   return (
     <div className="block md:hidden ">
       <div

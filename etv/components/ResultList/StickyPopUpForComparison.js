@@ -26,27 +26,39 @@ const StickyPopUpForComparison = () => {
           : "hidden"
       }
     >
-      <h3 className="hidden lg:flex text-3xl pr-20 text-white font-bold">
+      <h3 className="hidden lg:flex text-3xl pr-20 pl-4 text-white font-bold">
         Ihr Vergleich
       </h3>
       {/* conditions and mapping */}
 
       {state?.autoForComparisons?.length ? getCarCardForPopup : null}
-      <div className="flex flex-col-reverse justify-between pl-4 relative  h-full">
+      <div className="hidden lg:flex flex-col-reverse justify-between pl-4 relative  h-full">
         <div className="mb-7">
           <Link href="/en" as="/en">
-            <a>
+            <a className="pr-4">
               <button className="bg-grey-light w-36 h-8 text-[#1F1E80]">
                 Vergleich
               </button>
             </a>
           </Link>
         </div>
-        <div className="absolute top-5 right-0">
+        <div className="absolute top-5 right-0 pr-4">
           <span className="text-white text-sm  cursor-pointer ">
             alle löschen
           </span>
         </div>
+      </div>
+      <Link href="/en" as="/en">
+        <a className="flex  lg:hidden">
+          <button className="bg-grey-light w-20 h-8 text-[#1F1E80]">
+            Vergleich
+          </button>
+        </a>
+      </Link>
+      <div className="flex lg:hidden absolute top-5 right-0">
+        <span className="text-white text-sm  cursor-pointer ">
+          alle löschen
+        </span>
       </div>
     </div>
   );

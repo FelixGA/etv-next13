@@ -4,6 +4,7 @@ import TruncateFilterDesktop from "../components/ResultList/TruncateFilterDeskto
 import { gql, useQuery } from "@apollo/client";
 import { useStore } from "../components/store";
 import StickyPopUpForComparison from "../components/ResultList/StickyPopUpForComparison";
+import { useEffect } from "react";
 
 export default function comparePage() {
   const getAllCarsData = gql`
@@ -94,7 +95,7 @@ export default function comparePage() {
 
   // get the cheapest auto
   // const getCheapest = getCarslowestPrice?.slice(0, 1);
-  // get the highest auto
+  // get the most expensive auto
   // const getHighest = getCarshighestPrice?.slice(0, 1);
   /* cᴀʀs ᴡᴇɪɢʜᴛ ғɪʟᴛᴇʀ */
   const getCarslightest = getCars
@@ -118,23 +119,25 @@ export default function comparePage() {
   /* initial value */
   let sortedCars = getCarslowestPrice;
 
-  if (state.highests) {
+  /* ɢᴇᴛ ʀᴇsᴜʟᴛs from sorting */
+  if (state?.activeSortValues === "Höchster Preis") {
     sortedCars = getCarshighestPrice;
   }
-  if (state.lowests) {
+
+  if (state?.activeSortValues === "Niedrigster Preis") {
     sortedCars = getCarslowestPrice;
   }
-  if (state.highestRanges) {
-    sortedCars = getCarsByRange;
-  }
-  if (state.sortChargingTimes) {
-    sortedCars = getCarsfastest;
-  }
-  if (state.highestWeights) {
+  if (state?.activeSortValues === "Höchste Zuladung") {
     sortedCars = getCarslightest;
   }
-  if (state.highestVmaxs) {
+  if (state?.activeSortValues === "Höchste Reichweite") {
+    sortedCars = getCarsByRange;
+  }
+  if (state?.activeSortValues === "Höchste Vmax") {
     sortedCars = getCarsBymaxSpeed;
+  }
+  if (state?.activeSortValues === "Beste Ladenzeit") {
+    sortedCars = getCarsfastest;
   }
 
   return (
