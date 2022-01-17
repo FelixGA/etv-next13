@@ -96,7 +96,7 @@ const Nav = () => {
             src="/images/iconStyle2x.png"
             width={18}
             height={18}
-            responsive={true}
+            layout="responsive"
           />
           <span className="px-2">Kaufberater</span>
         </button>

@@ -10,24 +10,31 @@ function CarCardforPopUp(props) {
   };
 
   return (
-    <div className="min-w-36 w-full relative ">
-      <Image
-        className="rounded-md brightness-50"
-        loader={myLoader}
-        src={`http://localhost:1337${props.selectedCar.pic}`}
-        alt="picture"
-        objectFit="cover"
-        width={228.97}
-        height={111}
-        layout="responsive"
-      />
+    <div className="w-[80%] lg:w-full relative ">
+      <div className="w-16 lg:min-w-36 lg:w-full">
+        <Image
+          className=" lg:rounded-md brightness-50"
+          loader={myLoader}
+          src={`http://localhost:1337${props.selectedCar.pic}`}
+          alt="picture"
+          objectFit="cover"
+          width={228.97}
+          height={111}
+          layout="responsive"
+        />
+      </div>
+      <div className="flex  w-full lg:hidden">
+        <p className="text-white text-center	pt-2">
+          Das kann nen langen Namen haben X153
+        </p>
+      </div>
 
-      <div className="absolute bottom-20 left-2">
+      <div className="absolute hidden lg:flex bottom-20 left-2">
         <h4 className="mt-10 text-lg font-black text-white ">
           {props.selectedCar.title}
         </h4>
       </div>
-      <div className="absolute top-20 right-2 ">
+      <div className="absolute hidden lg:flex top-20 right-2 ">
         <p className="text-white font-black text-lg">
           {`ab ${props.selectedCar.price} €`}
         </p>

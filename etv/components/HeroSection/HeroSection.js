@@ -100,7 +100,7 @@ const HeroSection = () => {
               src="/images/siegel2.png"
               width={166}
               height={166}
-              responsive={true}
+              layout="responsive"
             />
           </div>
           <div className="main-heading-text lg:flex lg:flex-col lg:justify-between ">

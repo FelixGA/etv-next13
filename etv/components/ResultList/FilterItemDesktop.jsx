@@ -3,14 +3,19 @@ import Image from "next/image";
 import { useState } from "react";
 
 function FilterItemDesktop(props) {
-  const [truncDistance, setTruncDistance] = useState(false);
+  const [trunc, setTrunc] = useState(false);
+  const [rangeIsChecked, setRangeIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
+  /*  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(false); */
+
+  /* const handleOnChange = () => {
+    setIsChecked(!isChecked);
+  }; */
   return (
     <div className="">
-      <div
-        className=" cursor-pointer"
-        onClick={() => setTruncDistance(!truncDistance)}
-      >
+      <div className=" cursor-pointer" onClick={() => setTrunc(!trunc)}>
         <div className="flex flex-row justify-between border-b py-4  w-full  ">
           <div className="flex flex-row pl-4 ">
             <div className="w-6 h-6 ml-4 ">
@@ -32,19 +37,18 @@ function FilterItemDesktop(props) {
           </div>
         </div>
       </div>
-      <div className={truncDistance ? "flex flex-col ml-8 " : "hidden"}>
+      <div className={trunc ? "flex flex-col ml-8 " : "hidden"}>
         <div className="mt-4 flex  py-2 ">
           <input
             className=" appearance-none   w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
             type="checkbox"
             id="preis"
-            name="preis"
           ></input>
           <label
             forhtml="preis"
             className="inline-flex items-center cursor-pointer pl-5 text-lg text-[#2C3F53] "
           >
-            {props.item.firstRange}
+            {props.item.firstRange.firstRangeInner}
           </label>
         </div>
         <div className="mt-1 flex  py-2 ">
@@ -53,6 +57,7 @@ function FilterItemDesktop(props) {
             type="checkbox"
             id="preis"
             name="preis"
+            onClick={() => setIsChecked(!isChecked)}
           ></input>
           <label
             forhtml="preis"
@@ -67,6 +72,7 @@ function FilterItemDesktop(props) {
             type="checkbox"
             id="preis"
             name="preis"
+            onClick={() => setIsChecked(!isChecked)}
           ></input>
           <label
             forhtml="preis"
@@ -81,6 +87,7 @@ function FilterItemDesktop(props) {
             type="checkbox"
             id="preis"
             name="preis"
+            onClick={() => setIsChecked(!isChecked)}
           ></input>
           <label
             forhtml="preis"
