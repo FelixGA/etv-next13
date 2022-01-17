@@ -18,6 +18,7 @@ function TruncateFilterDesktop() {
     {
       id: 1,
       title: "Reichweite",
+
       firstRange: "bis 100km",
       secondRange: "bis 250km",
       thirdRange: "bis 500km",
