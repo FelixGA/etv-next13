@@ -8,9 +8,12 @@ function ButtonCompare(props) {
   /* control to enable again the button */
   useEffect(() => {
     if (state?.autoForComparisons?.length < 3) setDisabledAsMaximun(false);
-    if (state?.disabledButtons === props.carItem.title) setDisabled(false);
-    if (state?.removeAllCarsForComparisons) setDisabled(false);
-  }, [state?.disabledButtons, state?.removeAllCarsForComparisons]);
+    if (!state?.autoForComparisons?.length) setDisabled(false);
+    if (state?.disabledButtons === props.carItem.title) {
+      console.log("single button State from ", props.carItem.title, disabled);
+      setDisabled(false);
+    }
+  }, [state?.disabledButtons, state?.autoForComparisons]);
   /* VERGLEICHEN BUTTON INPUT */
 
   const buttonInput = (
@@ -36,6 +39,7 @@ function ButtonCompare(props) {
               type: "disabledButton",
               data: true,
             });
+            console.log(`disabled to ${disabled} on Zum Vergleich `);
             dispatch({
               type: "autoForComparison",
               data: [

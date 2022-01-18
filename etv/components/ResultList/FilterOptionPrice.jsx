@@ -52,7 +52,7 @@ function FilterOptionPrice() {
               dispatch({ type: "price", data: [{ min: 60001, max: 90000 }] });
             }
           }}
-          checked={isChecked == item.id ? true : false}
+          checked={isChecked == item.id && state.prices.length ? true : false}
         ></input>
 
         <label

@@ -21,7 +21,6 @@ const StickyPopUpForComparison = () => {
     /* please keep the styles on this className */
     <div
       className={
-        // state.stickys &&
         state?.autoForComparisons?.length > 0
           ? "flex justify-center items-center h-32 lg:h-40 w-full bottom-0 sticky z-10 bg-black-lightest"
           : "hidden"
@@ -49,12 +48,12 @@ const StickyPopUpForComparison = () => {
             onClick={() => {
               return (
                 dispatch({
-                  type: "removeAllCarsForComparison",
-                  data: true,
-                }),
-                dispatch({
                   type: "autoForComparison",
                   data: [],
+                }),
+                dispatch({
+                  type: "disabledButton",
+                  data: "",
                 })
               );
             }}
@@ -79,6 +78,7 @@ const StickyPopUpForComparison = () => {
                 type: "removeAllCarsForComparison",
                 data: true,
               }),
+              console.log("removeAllCarsForComparisons etted to true"),
               dispatch({
                 type: "autoForComparison",
                 data: [],
