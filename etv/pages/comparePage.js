@@ -4,7 +4,6 @@ import TruncateFilterDesktop from "../components/ResultList/TruncateFilterDeskto
 import { gql, useQuery } from "@apollo/client";
 import { useStore } from "../components/store";
 import StickyPopUpForComparison from "../components/ResultList/StickyPopUpForComparison";
-import { useEffect } from "react";
 
 export default function comparePage() {
   const getAllCarsData = gql`

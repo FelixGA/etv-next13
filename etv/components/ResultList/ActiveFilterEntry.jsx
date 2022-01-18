@@ -10,9 +10,6 @@ import { useState, useEffect } from "react";
 function ActiveFilterEntry() {
   const { state, dispatch } = useStore();
   const [showAll, setShowAll] = useState(true);
-  const [showPricesBox, setShowPricesBox] = useState(true);
-  const [showRangesBox, setShowRangesBox] = useState(false);
-  const [showWeightsBox, setShowWeightsBox] = useState(false);
 
   useEffect(() => {
     if (

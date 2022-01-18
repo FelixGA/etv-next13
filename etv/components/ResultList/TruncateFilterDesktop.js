@@ -11,9 +11,11 @@ import { useStore } from "../store";
 import FilterOption from "./FilterOptionPrice";
 
 function TruncateFilterDesktop() {
-  const [minprice, SetMinprice] = useState(0);
-  const [maxprice, SetMaxprice] = useState(0);
+  /* UseStates */
+  const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
+  const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
   const [truncPrice, setTruncPrice] = useState(false);
+  /* filter list */
   const filtersData = [
     {
       id: 1,
@@ -60,7 +62,14 @@ function TruncateFilterDesktop() {
       </div>
     );
   });
-
+  /* handling the min and max input  */
+  const changeHandleMin = (e) => {
+    SetUserInputMinPrice(e.target.value);
+  };
+  const changeHandleMax = (e) => {
+    SetUserInputMaxPrice(e.target.value);
+  };
+  const { state, dispatch } = useStore();
   return (
     <div className="hidden md:block py-2 ">
       {/* Preis */}
@@ -99,8 +108,9 @@ function TruncateFilterDesktop() {
         <div className="wrapper py-4 flex flex-row justify-start">
           <div className="flex py-2 mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
             <input
-              type="text"
+              type="number"
               id="min"
+              onChange={changeHandleMin}
               name="min"
               placeholder="min €"
               className="pl-4 w-18"
@@ -108,8 +118,9 @@ function TruncateFilterDesktop() {
           </div>
           <div className="flex py-2  mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
             <input
-              type="text"
+              type="number"
               id="max"
+              onChange={changeHandleMax}
               name="max"
               placeholder="max €"
               className="pl-4 w-18"
@@ -117,9 +128,21 @@ function TruncateFilterDesktop() {
           </div>
           <span
             className="pl-2  my-auto cursor-pointer"
-            onClick={() => console.log("you clicked los")}
+            onClick={() =>
+              dispatch({
+                type: "price",
+                data: [
+                  {
+                    min: Number(userInputMinPrice),
+                    max: Number(userInputMaxPrice),
+                  },
+                ],
+              })
+            }
           >
             Los
+            {/* just for testing */}
+            {/* {userInputMinPrice} - {userInputMaxPrice} */}
           </span>
         </div>
       </div>

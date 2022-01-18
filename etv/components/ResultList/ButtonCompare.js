@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useStore } from "../store";
 function ButtonCompare(props) {
@@ -8,6 +7,7 @@ function ButtonCompare(props) {
   const [disabledAsMaximun, setDisabledAsMaximun] = useState(false);
   /* control to enable again the button */
   useEffect(() => {
+    if (state?.autoForComparisons?.length < 3) setDisabledAsMaximun(false);
     if (state?.disabledButtons === props.carItem.title) setDisabled(false);
   }, [state?.disabledButtons]);
   /* VERGLEICHEN BUTTON INPUT */
