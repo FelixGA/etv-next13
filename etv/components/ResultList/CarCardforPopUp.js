@@ -10,8 +10,8 @@ function CarCardforPopUp(props) {
   };
 
   return (
-    <div className=" flex flex-1 bg-gray-700 ">
-      <div className="w-36">
+    <div className="w-[80%] lg:w-full relative ">
+      <div className="w-16 lg:min-w-36 lg:w-full">
         <Image
           className=" lg:rounded-md brightness-50"
           loader={myLoader}
@@ -23,17 +23,21 @@ function CarCardforPopUp(props) {
           layout="responsive"
         />
       </div>
-      <div className="bg-red-500 flex flex-col">
-        <div className="">
-          <h4 className=" text-lg font-black text-white ">
-            {props.selectedCar.title}
-          </h4>
-        </div>
-        <div className=" hidden lg:flex  ">
-          <p className="text-white font-black text-lg">
-            {`ab ${props.selectedCar.price} €`}
-          </p>
-        </div>
+      <div className="flex  w-full lg:hidden">
+        <p className="text-white text-center	pt-2">
+          Das kann nen langen Namen haben X153
+        </p>
+      </div>
+
+      <div className="absolute hidden lg:flex bottom-20 left-2">
+        <h4 className="mt-10 text-lg font-black text-white ">
+          {props.selectedCar.title}
+        </h4>
+      </div>
+      <div className="absolute hidden lg:flex top-20 right-2 ">
+        <p className="text-white font-black text-lg">
+          {`ab ${props.selectedCar.price} €`}
+        </p>
       </div>
       <div
         className="absolute top-1 right-1 cursor-pointer"

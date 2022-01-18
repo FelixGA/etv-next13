@@ -2,7 +2,6 @@ import TopSliderCard from "../Sliders/TopSliderCard";
 
 // import Script from "next/script";
 const TopSlider = (props) => {
-  console.log("TopSlider", props.getCars);
   const displayedCars = props.getCars;
   return (
     <div className="  flex flex-col ">

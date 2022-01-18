@@ -1,6 +1,7 @@
 import { useStore } from "../store";
 import Link from "next/link";
 import CarCardforPopUp from "./CarCardforPopUp";
+import CarCardForPopUpMobile from "./CarCardForPopUpMobile";
 import testImage from "../../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg";
 import Image from "next/image";
 
@@ -10,8 +11,16 @@ const StickyPopUpForComparison = () => {
   const getCarCardForPopup = state?.autoForComparisons?.map(
     (selectedCar, index) => {
       return (
-        <div className="hidden w-56 mx-4 lg:flex" key={index}>
-          <CarCardforPopUp selectedCar={selectedCar} />
+        <div>
+          <div
+            className="hidden lg:flex lg:flex-row  w-56 h-28 mx-4"
+            key={index}
+          >
+            <CarCardforPopUp selectedCar={selectedCar} />
+          </div>
+          <div className="flex lg:hidden">
+            <CarCardForPopUpMobile selectedCar={selectedCar} />
+          </div>
         </div>
       );
     }
@@ -21,8 +30,9 @@ const StickyPopUpForComparison = () => {
     /* please keep the styles on this className */
     <div
       className={
-        state.stickys
-          ? "flex justify-center items-center h-32 lg:h-40 w-full bottom-0 sticky z-10 bg-black-lightest"
+        // state.stickys &&
+        state?.autoForComparisons?.length > 0
+          ? "flex lg:flex-row h-32 bottom-0 sticky z-10 bg-black-lightest lg:justify-center lg:items-center  lg:h-40 lg:w-full  "
           : "hidden"
       }
     >
@@ -32,12 +42,10 @@ const StickyPopUpForComparison = () => {
       {/* conditions and mapping */}
 
       {state?.autoForComparisons?.length ? getCarCardForPopup : null}
-
-      {/* DESKTOP */}
       <div className="hidden lg:flex flex-col-reverse justify-between pl-4 relative  h-full">
-        <div className="mb-7">
+        <div className="mb-7 ">
           <Link href="/en" as="/en">
-            <a className="pr-4">
+            <a className="pr-4 ">
               <button className="bg-grey-light w-36 h-8 text-[#1F1E80]">
                 Vergleich
               </button>
@@ -45,24 +53,53 @@ const StickyPopUpForComparison = () => {
           </Link>
         </div>
         <div className="absolute top-5 right-0 pr-4">
-          <span className="text-white text-sm  cursor-pointer ">
+          <span
+            className="text-white text-sm  cursor-pointer "
+            onClick={() => {
+              return (
+                dispatch({
+                  type: "removeAllCarsForComparison",
+                  data: true,
+                }),
+                dispatch({
+                  type: "autoForComparison",
+                  data: [],
+                })
+              );
+            }}
+          >
             alle löschen
           </span>
         </div>
       </div>
-
-      {/* MOBILE */}
-      <Link href="/en" as="/en">
-        <a className="flex  lg:hidden">
-          <button className="bg-grey-light w-20 h-8 text-[#1F1E80]">
-            Vergleich
-          </button>
-        </a>
-      </Link>
-      <div className="flex lg:hidden absolute top-5 right-0">
-        <span className="text-white text-sm  cursor-pointer ">
-          alle löschen
-        </span>
+      {/* Mobile view */}
+      <div className="bg-red-500">
+        <Link href="/en" as="/en">
+          <a className="flex  lg:hidden">
+            <button className="bg-grey-light w-20 h-8 text-[#1F1E80]">
+              Vergleich
+            </button>
+          </a>
+        </Link>
+        <div className="">
+          <span
+            className="text-white text-sm  cursor-pointer lg:hidden"
+            onClick={() => {
+              return (
+                dispatch({
+                  type: "removeAllCarsForComparison",
+                  data: true,
+                }),
+                dispatch({
+                  type: "autoForComparison",
+                  data: [],
+                })
+              );
+            }}
+          >
+            alle löschen
+          </span>
+        </div>
       </div>
     </div>
   );

@@ -94,20 +94,18 @@ export default function comparePage() {
 
   // get the cheapest auto
   // const getCheapest = getCarslowestPrice?.slice(0, 1);
-  // get the highest auto
+  // get the most expensive auto
   // const getHighest = getCarshighestPrice?.slice(0, 1);
   /* cᴀʀs ᴡᴇɪɢʜᴛ ғɪʟᴛᴇʀ */
   const getCarslightest = getCars
-    ?.sort((a, b) => a.weight.value - b.weight.value)
-    .map((item) => item);
-  const getCarsheaviest = getCars
     ?.sort((a, b) => b.weight.value - a.weight.value)
     .map((item) => item);
-  /* ᴄᴀʀs ʀᴀɴɢᴇ ғɪʟᴛᴇʀ */
-  const getCarslongest = getCars
-    ?.sort((a, b) => a.range.value - b.range.value)
+  const getCarsBymaxSpeed = getCars
+    ?.sort((a, b) => b.maxSpeed.value - a.maxSpeed.value)
     .map((item) => item);
-  const getCarsshortest = getCars
+  /* ᴄᴀʀs ʀᴀɴɢᴇ ғɪʟᴛᴇʀ */
+
+  const getCarsByRange = getCars
     ?.sort((a, b) => b.range.value - a.range.value)
     .map((item) => item);
   /* ᴄᴀʀs ᴄʜᴀʀɢɪɴɢ ᴛɪᴍᴇ ғɪʟᴛᴇʀ */
@@ -120,11 +118,25 @@ export default function comparePage() {
   /* initial value */
   let sortedCars = getCarslowestPrice;
 
-  if (state.highests) {
+  /* ɢᴇᴛ ʀᴇsᴜʟᴛs from sorting */
+  if (state?.activeSortValues === "Höchster Preis") {
     sortedCars = getCarshighestPrice;
   }
-  if (state.lowests) {
+
+  if (state?.activeSortValues === "Niedrigster Preis") {
     sortedCars = getCarslowestPrice;
+  }
+  if (state?.activeSortValues === "Höchste Zuladung") {
+    sortedCars = getCarslightest;
+  }
+  if (state?.activeSortValues === "Höchste Reichweite") {
+    sortedCars = getCarsByRange;
+  }
+  if (state?.activeSortValues === "Höchste Vmax") {
+    sortedCars = getCarsBymaxSpeed;
+  }
+  if (state?.activeSortValues === "Beste Ladenzeit") {
+    sortedCars = getCarsfastest;
   }
 
   return (

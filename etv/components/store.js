@@ -33,8 +33,8 @@ const reducer = (state, action) => {
     case "highestRating":
       return { ...state, highestRatings: action.data };
     //for the comparison popup
-    case "sticky":
-      return { ...state, stickys: action.data };
+    case "removeAllCarsForComparison":
+      return { ...state, removeAllCarsForComparisons: action.data };
     case "autoForComparison":
       return { ...state, autoForComparisons: action.data };
     case "activeSortValue":
@@ -55,21 +55,10 @@ const initialState = {
   chargingTimes: [],
   autoForComparisons: [],
   removeFilters: false,
-  stickys: false,
-  highests: false,
-  lowests: false,
-  highestRanges: false,
-  highestVmaxs: false,
-  highestWeights: false,
-  sortChargingTimes: false,
+  removeAllCarsForComparisons: false,
+  highests: "",
   disabledButtons: "",
   activeSortValues: "Niedrigster Preis",
-
-  //   translations: [],
-  //   menuHidden: false,
-  //   exitPopupOpened: false,
-  //   shopModel: "",
-  //   currencyRates: null,
 };
 
 const StoreContext = createContext(initialState);

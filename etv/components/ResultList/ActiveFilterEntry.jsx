@@ -33,7 +33,7 @@ function ActiveFilterEntry() {
   const activeFilterData = [
     {
       id: 1,
-      value: state?.prices
+      value: state?.prices.length
         ? state?.prices.map((el) => el.min + "-" + el.max).join("") + "€"
         : null,
 
@@ -41,29 +41,32 @@ function ActiveFilterEntry() {
     },
     {
       id: 2,
-      value: state?.ranges
+      value: state?.ranges.length
         ? state?.ranges.map((el) => "ab " + el.min).join("") + " km"
         : null,
       image: image,
     },
     {
       id: 3,
-      value: state?.weights
+      value: state?.weights.length
         ? state?.weights.map((el) => el.min + "-" + el.max).join("") + " kg"
         : null,
       image: image2,
     },
     {
       id: 4,
-      value: "bis 80km/h",
+      value: state?.maxSpeeds.length
+        ? state?.maxSpeeds.map((el) => el.min + "-" + el.max).join("") + " km/h"
+        : null,
       image: image3,
     },
-    {
-      id: 5,
-      value: "Weitere Filter",
-      image: image5,
-    },
+    // {
+    //   id: 5,
+    //   value: "Weitere Filter",
+    //   image: image5,
+    // },
   ];
+
   return (
     <div
       className={
@@ -72,9 +75,13 @@ function ActiveFilterEntry() {
           : "hidden"
       }
     >
-      {activeFilterData?.map((item) => (
+      {activeFilterData?.map((item, index) => (
         <div
-          className="  w-full h-10 py-2  bg-grey-lighter  flex justify-between items-center "
+          className={
+            item.value !== null
+              ? " w-full h-10 py-2  bg-grey-lighter  flex justify-between items-center "
+              : "hidden"
+          }
           key={item.id}
         >
           <div className="imageWrapper w-6 ml-2">
@@ -88,7 +95,15 @@ function ActiveFilterEntry() {
             />
           </div>
           <div className="text-md">{item.value}</div>
-          <div className={"w-3.5 my-auto mr-4 cursor-pointer"}>
+          <div
+            onClick={() => {
+              if (item.id === 1) dispatch({ type: "price", data: [] });
+              if (item.id === 2) dispatch({ type: "range", data: [] });
+              if (item.id === 3) dispatch({ type: "weight", data: [] });
+              if (item.id === 4) dispatch({ type: "maxSpeed", data: [] });
+            }}
+            className={"w-3.5 my-auto mr-4 cursor-pointer"}
+          >
             <AiOutlineClose size={20} />
           </div>
         </div>
