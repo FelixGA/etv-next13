@@ -9,7 +9,8 @@ function ButtonCompare(props) {
   useEffect(() => {
     if (state?.autoForComparisons?.length < 3) setDisabledAsMaximun(false);
     if (state?.disabledButtons === props.carItem.title) setDisabled(false);
-  }, [state?.disabledButtons]);
+    if (state?.removeAllCarsForComparisons) setDisabled(false);
+  }, [state?.disabledButtons, state?.removeAllCarsForComparisons]);
   /* VERGLEICHEN BUTTON INPUT */
 
   const buttonInput = (
@@ -27,10 +28,10 @@ function ButtonCompare(props) {
         disabled={disabled}
         onClick={() => {
           if (state?.autoForComparisons?.length < 3) {
-            dispatch({
-              type: "sticky",
-              data: true,
-            });
+            // dispatch({
+            //   type: "sticky",
+            //   data: true,
+            // });
             dispatch({
               type: "disabledButton",
               data: true,
