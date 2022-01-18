@@ -18,38 +18,87 @@ function TruncateFilterDesktop() {
     {
       id: 1,
       title: "Reichweite",
+      firstRange: {
+        value: "bis 100km",
+        checked: false,
+      },
+      secondRange: {
+        value: "bis 250km",
+        checked: false,
+      },
+      thirdRange: {
+        value: "bis 500km",
+        checked: false,
+      },
+      forthRange: {
+        value: "mind. 12400km",
+        checked: false,
+      },
 
-      firstRange: "bis 100km",
-      secondRange: "bis 250km",
-      thirdRange: "bis 500km",
-      forthRange: "mind. 12400km",
       image: image,
     },
     {
       id: 2,
       title: "Zuladung",
-      firstRange: "bis 100kg",
-      secondRange: "bis 250kg",
-      thirdRange: "bis 500kg",
-      forthRange: "mind. 12400kg",
+      firstRange: {
+        value: "bis 100kg",
+        checked: false,
+      },
+      secondRange: {
+        value: "bis 250kg",
+        checked: false,
+      },
+      thirdRange: {
+        value: "bis 500kg",
+        checked: false,
+      },
+      forthRange: {
+        value: "mind. 12400kg",
+        checked: false,
+      },
       image: image2,
     },
     {
       id: 3,
       title: "Höchstgeschwindigkeit",
-      firstRange: "bis 80km/h",
-      secondRange: "bis 120km/h",
-      thirdRange: "bis 300km/h",
-      forthRange: "mind. Mach 5",
+      firstRange: {
+        value: "bis 80km/h",
+        checked: false,
+      },
+      secondRange: {
+        value: "bis 120km/h",
+        checked: false,
+      },
+      thirdRange: {
+        value: "bis 300km/h",
+        checked: false,
+      },
+      forthRange: {
+        value: "mind. Mach 5",
+        checked: false,
+      },
       image: image3,
     },
     {
       id: 4,
       title: "Weitere Filter",
-      firstRange: "Anschluss Typ2",
-      secondRange: "Anschluss Schuko",
-      thirdRange: "Anschluss Typ2",
-      forthRange: "Anschluss Schuko",
+      checked: false,
+      firstRange: {
+        value: "Anschluss Typ2",
+        checked: false,
+      },
+      secondRange: {
+        value: "Anschluss Schuko",
+        checked: false,
+      },
+      thirdRange: {
+        value: "Anschluss Typ2",
+        checked: false,
+      },
+      forthRange: {
+        value: "Anschluss Schuko",
+        checked: false,
+      },
       image: image5,
     },
   ];
