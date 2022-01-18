@@ -9,10 +9,10 @@ function CarCardForPopUpMobile(props) {
     return src;
   };
   return (
-    <div className="flex flex-row w-full bg-green-500">
-      <div className="w-12 ">
+    <div className="grid grid-cols-3  ">
+      <div className=" w-20 sm:w-28 mx-2">
         <Image
-          className=" lg:rounded-md brightness-50"
+          className=" md:rounded-md brightness-50"
           loader={myLoader}
           src={`http://localhost:1337${props.selectedCar.pic}`}
           alt="picture"
@@ -20,7 +20,10 @@ function CarCardForPopUpMobile(props) {
           width={228.97}
           height={111}
           layout="responsive"
-        />{" "}
+        />
+        <p className="text-sm text-white text-center">
+          {props.selectedCar.title}
+        </p>
       </div>
     </div>
   );

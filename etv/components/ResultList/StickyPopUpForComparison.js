@@ -13,12 +13,12 @@ const StickyPopUpForComparison = () => {
       return (
         <div>
           <div
-            className="hidden lg:flex lg:flex-row  w-56 h-28 mx-4"
+            className="hidden md:flex md:flex-row  w-44 lg:w-52 h-28 mx-2"
             key={index}
           >
             <CarCardforPopUp selectedCar={selectedCar} />
           </div>
-          <div className="flex lg:hidden">
+          <div className="flex  md:hidden ">
             <CarCardForPopUpMobile selectedCar={selectedCar} />
           </div>
         </div>
@@ -32,21 +32,23 @@ const StickyPopUpForComparison = () => {
       className={
         // state.stickys &&
         state?.autoForComparisons?.length > 0
-          ? "flex lg:flex-row h-32 bottom-0 sticky z-10 bg-black-lightest lg:justify-center lg:items-center  lg:h-40 lg:w-full  "
+          ? "flex flex-col md:flex-row h-32 bottom-0 sticky z-10 bg-black-lightest md:justify-center md:items-center  md:h-40 md:w-full  "
           : "hidden"
       }
     >
-      <h3 className="hidden lg:flex text-3xl pr-20 pl-4 text-white font-bold">
+      <h3 className="hidden xl:flex text-3xl  xl:pr-20 xl:pl-4 text-white font-bold">
         Ihr Vergleich
       </h3>
       {/* conditions and mapping */}
 
-      {state?.autoForComparisons?.length ? getCarCardForPopup : null}
-      <div className="hidden lg:flex flex-col-reverse justify-between pl-4 relative  h-full">
-        <div className="mb-7 ">
+      <div className="flex flex-row w-full h-2/3 md:w-auto">
+        {state?.autoForComparisons?.length ? getCarCardForPopup : null}
+      </div>
+      <div className="hidden md:flex flex-col-reverse justify-between  ml-4 xl:pl-4 relative  h-full">
+        <div className="mb-12 lg:mb-8 ">
           <Link href="/en" as="/en">
             <a className="pr-4 ">
-              <button className="bg-grey-light w-36 h-8 text-[#1F1E80]">
+              <button className="bg-grey-light w-32 lg:w-36 h-8 text-[#1F1E80]">
                 Vergleich
               </button>
             </a>
@@ -73,7 +75,7 @@ const StickyPopUpForComparison = () => {
         </div>
       </div>
       {/* Mobile view */}
-      <div className="bg-red-500">
+      <div className=" md:hidden flex flex-row w-full h-1/3 items-center justify-around">
         <Link href="/en" as="/en">
           <a className="flex  lg:hidden">
             <button className="bg-grey-light w-20 h-8 text-[#1F1E80]">
