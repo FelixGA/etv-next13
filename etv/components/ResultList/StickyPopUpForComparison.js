@@ -10,7 +10,7 @@ const StickyPopUpForComparison = () => {
   const getCarCardForPopup = state?.autoForComparisons?.map(
     (selectedCar, index) => {
       return (
-        <div className="flex  w-56 h-28 mx-4" key={index}>
+        <div className="hidden w-56 mx-4 lg:flex" key={index}>
           <CarCardforPopUp selectedCar={selectedCar} />
         </div>
       );
@@ -32,6 +32,8 @@ const StickyPopUpForComparison = () => {
       {/* conditions and mapping */}
 
       {state?.autoForComparisons?.length ? getCarCardForPopup : null}
+
+      {/* DESKTOP */}
       <div className="hidden lg:flex flex-col-reverse justify-between pl-4 relative  h-full">
         <div className="mb-7">
           <Link href="/en" as="/en">
@@ -48,6 +50,8 @@ const StickyPopUpForComparison = () => {
           </span>
         </div>
       </div>
+
+      {/* MOBILE */}
       <Link href="/en" as="/en">
         <a className="flex  lg:hidden">
           <button className="bg-grey-light w-20 h-8 text-[#1F1E80]">
