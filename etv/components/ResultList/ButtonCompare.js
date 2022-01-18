@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useStore } from "../store";
 function ButtonCompare(props) {
@@ -8,8 +7,10 @@ function ButtonCompare(props) {
   const [disabledAsMaximun, setDisabledAsMaximun] = useState(false);
   /* control to enable again the button */
   useEffect(() => {
+    if (state?.autoForComparisons?.length < 3) setDisabledAsMaximun(false);
     if (state?.disabledButtons === props.carItem.title) setDisabled(false);
-  }, [state?.disabledButtons]);
+    if (state?.removeAllCarsForComparisons) setDisabled(false);
+  }, [state?.disabledButtons, state?.removeAllCarsForComparisons]);
   /* VERGLEICHEN BUTTON INPUT */
 
   const buttonInput = (
@@ -27,10 +28,10 @@ function ButtonCompare(props) {
         disabled={disabled}
         onClick={() => {
           if (state?.autoForComparisons?.length < 3) {
-            dispatch({
-              type: "sticky",
-              data: true,
-            });
+            // dispatch({
+            //   type: "sticky",
+            //   data: true,
+            // });
             dispatch({
               type: "disabledButton",
               data: true,

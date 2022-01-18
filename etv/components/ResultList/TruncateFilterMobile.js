@@ -8,10 +8,15 @@ import { useState } from "react";
 import FilterItemMobile from "./FilterItemMobile";
 import Sort from "./Sort";
 import { MdKeyboardArrowDown } from "react-icons/md";
-
+import { useStore } from "../store";
 import FilterOptionPrice from "./FilterOptionPrice";
 function TruncateFilter() {
+  /* UseStates */
+  const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
+  const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
   const [truncPrice, setTruncPrice] = useState(false);
+  const { state, dispatch } = useStore();
+  /* filter list */
   const filtersData = [
     {
       id: 1,
@@ -57,7 +62,13 @@ function TruncateFilter() {
       </div>
     );
   });
-
+  /* handling the min and max input  */
+  const changeHandleMin = (e) => {
+    SetUserInputMinPrice(e.target.value);
+  };
+  const changeHandleMax = (e) => {
+    SetUserInputMaxPrice(e.target.value);
+  };
   return (
     <div className="bg-[#Fff]">
       <div className="flex flex-col mt-2  ">
@@ -100,25 +111,37 @@ function TruncateFilter() {
         <div className="wrapper py-4 flex flex-row justify-start">
           <div className="flex py-2 mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
             <input
-              type="text"
-              id="lname"
-              name="lname"
+              type="number"
+              id="min"
+              onChange={changeHandleMin}
+              name="min"
               placeholder="min €"
               className="pl-4 w-18"
             />
           </div>
           <div className="flex py-2  mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
             <input
-              type="text"
-              id="lname"
-              name="lname"
+              type="number"
+              id="max"
+              onChange={changeHandleMax}
+              name="max"
               placeholder="max €"
               className="pl-4 w-18"
             />
           </div>
           <span
             className="pl-2  my-auto cursor-pointer"
-            onClick={() => console.log("you clicked los on mobile")}
+            onClick={() =>
+              dispatch({
+                type: "price",
+                data: [
+                  {
+                    min: Number(userInputMinPrice),
+                    max: Number(userInputMaxPrice),
+                  },
+                ],
+              })
+            }
           >
             Los
           </span>

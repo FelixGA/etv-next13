@@ -21,7 +21,8 @@ const StickyPopUpForComparison = () => {
     /* please keep the styles on this className */
     <div
       className={
-        state.stickys
+        // state.stickys &&
+        state?.autoForComparisons?.length > 0
           ? "flex justify-center items-center h-32 lg:h-40 w-full bottom-0 sticky z-10 bg-black-lightest"
           : "hidden"
       }
@@ -43,7 +44,21 @@ const StickyPopUpForComparison = () => {
           </Link>
         </div>
         <div className="absolute top-5 right-0 pr-4">
-          <span className="text-white text-sm  cursor-pointer ">
+          <span
+            className="text-white text-sm  cursor-pointer "
+            onClick={() => {
+              return (
+                dispatch({
+                  type: "removeAllCarsForComparison",
+                  data: true,
+                }),
+                dispatch({
+                  type: "autoForComparison",
+                  data: [],
+                })
+              );
+            }}
+          >
             alle löschen
           </span>
         </div>
@@ -56,7 +71,21 @@ const StickyPopUpForComparison = () => {
         </a>
       </Link>
       <div className="flex lg:hidden absolute top-5 right-0">
-        <span className="text-white text-sm  cursor-pointer ">
+        <span
+          className="text-white text-sm  cursor-pointer "
+          onClick={() => {
+            return (
+              dispatch({
+                type: "removeAllCarsForComparison",
+                data: true,
+              }),
+              dispatch({
+                type: "autoForComparison",
+                data: [],
+              })
+            );
+          }}
+        >
           alle löschen
         </span>
       </div>
