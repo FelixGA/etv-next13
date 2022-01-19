@@ -8,7 +8,7 @@ import Image from "next/image";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
 import { useStore } from "../store";
-import FilterOption from "./FilterOptionPrice";
+import FilterOptionPrice from "./FilterOptionPrice";
 
 function TruncateFilterDesktop() {
   /* UseStates */
@@ -18,23 +18,27 @@ function TruncateFilterDesktop() {
   /* filter list */
   const filtersData = [
     {
-      id: 1,
+      id: "one",
       title: "Reichweite",
       firstRange: {
-        value: "bis 100km",
-        checked: false,
+        valueforRanges: 150,
+        name: "ab 150km ",
+        id: 1,
       },
       secondRange: {
-        value: "bis 250km",
-        checked: false,
+        id: 2,
+        name: "ab 200km",
+        valueforRanges: 200,
       },
       thirdRange: {
-        value: "bis 500km",
-        checked: false,
+        id: 3,
+        name: "ab 250km",
+        valueforRanges: 250,
       },
       forthRange: {
-        value: "mind. 12400km",
-        checked: false,
+        id: 4,
+        name: "ab 500km",
+        valueforRanges: 500,
       },
 
       image: image,
@@ -43,20 +47,24 @@ function TruncateFilterDesktop() {
       id: 2,
       title: "Zuladung",
       firstRange: {
-        value: "bis 100kg",
-        checked: false,
+        id: 1,
+        name: "ab:500kg",
+        valueforWeights: 500,
       },
       secondRange: {
-        value: "bis 250kg",
-        checked: false,
+        id: 2,
+        name: "ab:1000kg",
+        valueforWeights: 1000,
       },
       thirdRange: {
-        value: "bis 500kg",
-        checked: false,
+        id: 3,
+        name: "ab:1500kg",
+        valueforWeights: 1500,
       },
       forthRange: {
-        value: "mind. 12400kg",
-        checked: false,
+        id: 4,
+        name: "ab:2500kg",
+        valueforWeights: 2500,
       },
       image: image2,
     },
@@ -64,42 +72,50 @@ function TruncateFilterDesktop() {
       id: 3,
       title: "Höchstgeschwindigkeit",
       firstRange: {
-        value: "bis 80km/h",
-        checked: false,
+        id: 1,
+        name: "bis 200km/h",
+        valueforVmax: 200,
       },
       secondRange: {
-        value: "bis 120km/h",
-        checked: false,
+        id: 2,
+        name: "bis 600km/h",
+        valueforVmax: 600,
       },
       thirdRange: {
-        value: "bis 300km/h",
-        checked: false,
+        id: 3,
+        name: "bis 900km/h",
+        valueforVmax: 900,
       },
       forthRange: {
-        value: "mind. Mach 5",
-        checked: false,
+        id: 4,
+        name: "bis 1000km/h",
+        valueforVmax: 1000,
       },
       image: image3,
     },
     {
       id: 4,
       title: "Weitere Filter",
-      checked: false,
+
       firstRange: {
         value: "Anschluss Typ2",
-        checked: false,
+        name: false,
+        id: 1,
       },
       secondRange: {
         value: "Anschluss Schuko",
-        checked: false,
+        name: false,
+        id: 2,
       },
       thirdRange: {
         value: "Anschluss Typ2",
-        checked: false,
+        name: false,
+        id: 3,
       },
       forthRange: {
         value: "Anschluss Schuko",
-        checked: false,
+        name: false,
+        id: 4,
       },
       image: image5,
     },
@@ -150,7 +166,7 @@ function TruncateFilterDesktop() {
 
       <div className={truncPrice ? " flex flex-col ml-4 mt-2" : "hidden"}>
         <div className="">
-          <FilterOption />
+          <FilterOptionPrice />
         </div>
 
         {/* MIN MAX PRICE INPUT */}
