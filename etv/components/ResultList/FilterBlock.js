@@ -17,7 +17,7 @@ function FilterBlock() {
 
   return (
     <div className=" w-full min-w-fit relative">
-      <div className="bg-[#Fff]  shadow-dropdown md:hidden ">
+      <div className="bg-[#Fff]  shadow-dropdown md:hidden  w-full z-40">
         <div className="h-10 shadow-dropdown flex flex-row justify-between align-middle ">
           <div
             className="w-full  flex flex-row "
@@ -36,7 +36,7 @@ function FilterBlock() {
                 layout="responsive"
               />
             </div>
-            <span className="ml-2 font-black  my-auto text-sm text-blue-darker">
+            <span className="ml-2 font-black   my-auto text-sm text-blue-darker">
               Alle Filter anzeigen
             </span>
           </div>
@@ -54,7 +54,7 @@ function FilterBlock() {
               truncate ? "font-bold	 my-auto text-sm text-blue-darker" : "hidden"
             }
           >
-            <div>
+            <div className="relative ">
               <TruncateFilterMobile />
             </div>
           </div>
