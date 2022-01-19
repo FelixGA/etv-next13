@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useStore } from "../store";
+
 function FilterOptionPrice() {
   const filterOptionPriceData = [
     {
@@ -29,6 +30,17 @@ function FilterOptionPrice() {
   ];
   const [isChecked, setIsChecked] = useState("");
   const { state, dispatch } = useStore();
+  /* to check the right checkbox from the homepage states */
+
+  useEffect(() => {
+    let minPrice = state?.prices.map((el) => el.min).join(" ");
+    let maxPrice = state?.prices.map((el) => el.max).join(" ");
+    if (minPrice >= 0 && maxPrice <= 20000) setIsChecked("1");
+    if (minPrice > 20000 && maxPrice <= 40000) setIsChecked("2");
+    if (minPrice > 40000 && maxPrice <= 60000) setIsChecked("3");
+    if (minPrice > 60000 && maxPrice <= 90000) setIsChecked("4");
+  }, [state?.prices]);
+
   return filterOptionPriceData?.map((item) => {
     return (
       <div className="mt-1 flex flex-row py-2 " key={item.id}>

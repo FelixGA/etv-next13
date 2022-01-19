@@ -4,6 +4,9 @@ import Image from "next/image";
 import ActiveCompareCard from "../components/ActiveCompare/ActiveCompareCard";
 
 function activecompare() {
+  const { state, dispatch } = useStore();
+  let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
+  console.log(comparedCars);
   return (
     <div className="container">
       <div className="">
