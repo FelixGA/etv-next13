@@ -48,6 +48,7 @@ function ButtonCompare(props) {
                   pic: props.carItem.photo.data[0].attributes.url,
                   title: props.carItem.title,
                   price: props.carItem.price,
+                  auto: props.carItem,
                 },
               ],
             });
