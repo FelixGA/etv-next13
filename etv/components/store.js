@@ -5,12 +5,10 @@ const reducer = (state, action) => {
     //filter
     case "price":
       return { ...state, prices: action.data };
-
     case "range":
       return { ...state, ranges: action.data };
     case "weight":
       return { ...state, weights: action.data };
-
     case "maxSpeed":
       return { ...state, maxSpeeds: action.data };
     case "chargingTime":

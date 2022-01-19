@@ -15,10 +15,9 @@ function ActiveFilterEntry() {
     if (
       state?.prices.length ||
       state?.ranges.length ||
-      state?.weights.length
-      // ||
-      // state?.maxSpeeds.length ||
-      // state?.chargingTimes.length
+      state?.weights.length ||
+      state?.maxSpeeds.length ||
+      state?.chargingTimes.length
     ) {
       setShowAll(true);
     }
@@ -109,7 +108,17 @@ function ActiveFilterEntry() {
         </div>
       ))}
       {/* REMOVE ALL FILTERS */}
-      <div className="w-fit flex items-end">
+      <div
+        className={
+          state.ranges.length ||
+          state.prices.length ||
+          state.weights.length ||
+          state.maxSpeeds.length ||
+          state.chargingTimes.length
+            ? "w-fit flex items-end"
+            : "hidden"
+        }
+      >
         <span
           className="text-sm  cursor-pointer"
           onClick={() => {

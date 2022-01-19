@@ -30,7 +30,6 @@ const StickyPopUpForComparison = () => {
     /* please keep the styles on this className */
     <div
       className={
-        // state.stickys &&
         state?.autoForComparisons?.length > 0
           ? "flex flex-col md:flex-row h-32 bottom-0 sticky z-10 bg-black-lightest md:justify-center md:items-center  md:h-40 md:w-full  "
           : "hidden"
@@ -60,12 +59,12 @@ const StickyPopUpForComparison = () => {
             onClick={() => {
               return (
                 dispatch({
-                  type: "removeAllCarsForComparison",
-                  data: true,
-                }),
-                dispatch({
                   type: "autoForComparison",
                   data: [],
+                }),
+                dispatch({
+                  type: "disabledButton",
+                  data: "",
                 })
               );
             }}
@@ -74,6 +73,7 @@ const StickyPopUpForComparison = () => {
           </span>
         </div>
       </div>
+
       {/* Mobile view */}
       <div className=" md:hidden flex flex-row w-full h-1/3 items-center justify-around">
         <Link href="/en" as="/en">
@@ -102,6 +102,7 @@ const StickyPopUpForComparison = () => {
             alle löschen
           </span>
         </div>
+
       </div>
     </div>
   );

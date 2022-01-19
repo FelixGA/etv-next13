@@ -5,9 +5,7 @@ import { useState } from "react";
 function FilterItemDesktop(props) {
   /*  const { id, image, title, firstRange, secondRange, thirdRange, forthRange } =
     item; */
-  console.log("====================================");
-  console.log(props.item);
-  console.log("====================================");
+
   const [trunc, setTrunc] = useState(false);
 
   const [isChecked, setIsChecked] = useState(false);
