@@ -70,7 +70,7 @@ function TruncateFilter() {
     SetUserInputMaxPrice(e.target.value);
   };
   return (
-    <div className="bg-[#Fff]">
+    <div className="absolute z-10 bg-white w-full ">
       <div className="flex flex-col mt-2  ">
         <div>
           <Sort />
