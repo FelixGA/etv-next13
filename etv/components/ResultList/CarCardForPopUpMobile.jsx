@@ -10,7 +10,7 @@ function CarCardForPopUpMobile(props) {
   };
   return (
     <div className="grid grid-cols-3  ">
-      <div className=" w-20 sm:w-28 mx-2">
+      <div className="relative w-20 sm:w-28 mx-2">
         <Image
           className=" md:rounded-md brightness-50"
           loader={myLoader}
@@ -24,6 +24,23 @@ function CarCardForPopUpMobile(props) {
         <p className="text-sm text-white text-center">
           {props.selectedCar.title}
         </p>
+        <div
+          className="absolute top-0 right-0 cursor-pointer"
+          onClick={() => {
+            dispatch({
+              type: "disabledButton",
+              data: props.selectedCar.title,
+            });
+            dispatch({
+              type: "autoForComparison",
+              data: state.autoForComparisons.filter(
+                (el) => el !== props.selectedCar
+              ),
+            });
+          }}
+        >
+          <AiOutlineClose size={20} color="white" />
+        </div>
       </div>
     </div>
   );

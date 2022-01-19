@@ -5,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        "auto-fit": "repeat(auto-fit, minmax(150px, 1fr))",
+        "auto-fill": "repeat(auto-fill, minmax(200px, 1fr))",
+      },
+      gridTemplateRows: {
+        "auto-fit": "repeat(auto-fit, minmax(0, 1fr))",
+        "auto-fill": "repeat(auto-fill, minmax(0, 1fr))",
+      },
       screens: {
         xs: "410px",
       },
@@ -92,12 +100,7 @@ module.exports = {
           darkest: "",
         },
       },
-      maxWidth: {
-        card: "300px",
-      },
-      minWidth: {
-        card: "300px",
-      },
+
       spacing: {
         18: "4.5rem",
       },
