@@ -25,7 +25,7 @@ function ActiveFilterEntry() {
     state?.prices,
     state?.ranges,
     state?.weights,
-    // state?.maxspeeds,
+    state?.maxSpeeds,
     // state?.chargingTimes,
   ]);
 
@@ -48,14 +48,14 @@ function ActiveFilterEntry() {
     {
       id: 3,
       value: state?.weights.length
-        ? state?.weights.map((el) => el.min + "-" + el.max).join("") + " kg"
+        ? state?.weights.map((el) => "ab " + el.min).join("") + " kg"
         : null,
       image: image2,
     },
     {
       id: 4,
       value: state?.maxSpeeds.length
-        ? state?.maxSpeeds.map((el) => el.min + "-" + el.max).join("") + " km/h"
+        ? state?.maxSpeeds.map((el) => "ab " + el.min).join("") + " km/h"
         : null,
       image: image3,
     },
@@ -110,11 +110,11 @@ function ActiveFilterEntry() {
       {/* REMOVE ALL FILTERS */}
       <div
         className={
-          state.ranges.length ||
-          state.prices.length ||
-          state.weights.length ||
-          state.maxSpeeds.length ||
-          state.chargingTimes.length
+          state?.ranges.length ||
+          state?.prices.length ||
+          state?.weights.length ||
+          state?.maxSpeeds.length ||
+          state?.chargingTimes.length
             ? "w-fit flex items-end"
             : "hidden"
         }
@@ -133,6 +133,10 @@ function ActiveFilterEntry() {
             });
             dispatch({
               type: "price",
+              data: [],
+            });
+            dispatch({
+              type: "maxSpeeds",
               data: [],
             });
           }}

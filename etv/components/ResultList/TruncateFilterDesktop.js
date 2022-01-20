@@ -18,111 +18,133 @@ function TruncateFilterDesktop() {
   /* filter list */
   const filtersData = [
     {
-      id: "one",
-      title: "Reichweite",
-      firstRange: {
-        valueforRanges: 150,
-        name: "ab 150km ",
-        id: 1,
-      },
-      secondRange: {
-        id: 2,
-        name: "ab 200km",
-        valueforRanges: 200,
-      },
-      thirdRange: {
-        id: 3,
-        name: "ab 250km",
-        valueforRanges: 250,
-      },
-      forthRange: {
-        id: 4,
-        name: "ab 500km",
-        valueforRanges: 500,
-      },
-
+      id: 1,
+      category: "Reichweite",
       image: image,
+      options: [
+        {
+          value: 150,
+          name: "ab 150 km",
+          id: 1,
+          categoryName: "range",
+        },
+        {
+          id: 2,
+          name: "ab 200 km",
+          value: 200,
+          categoryName: "range",
+        },
+        {
+          id: 3,
+          name: "ab 250 km",
+          value: 250,
+          categoryName: "range",
+        },
+        {
+          id: 4,
+          name: "ab 500 km",
+          value: 500,
+          categoryName: "range",
+        },
+      ],
     },
     {
       id: 2,
-      title: "Zuladung",
-      firstRange: {
-        id: 1,
-        name: "ab:500kg",
-        valueforWeights: 500,
-      },
-      secondRange: {
-        id: 2,
-        name: "ab:1000kg",
-        valueforWeights: 1000,
-      },
-      thirdRange: {
-        id: 3,
-        name: "ab:1500kg",
-        valueforWeights: 1500,
-      },
-      forthRange: {
-        id: 4,
-        name: "ab:2500kg",
-        valueforWeights: 2500,
-      },
+      category: "Zuladung",
       image: image2,
+      options: [
+        {
+          id: 1,
+          name: "ab 500 kg",
+          value: 500,
+          categoryName: "weight",
+        },
+        {
+          id: 2,
+          name: "ab 1000 kg",
+          value: 1000,
+          categoryName: "weight",
+        },
+        {
+          id: 3,
+          name: "ab 1500 kg",
+          value: 1500,
+          categoryName: "weight",
+        },
+        {
+          id: 4,
+          name: "ab 2500 kg",
+          value: 2500,
+          categoryName: "weight",
+        },
+      ],
     },
     {
       id: 3,
-      title: "Höchstgeschwindigkeit",
-      firstRange: {
-        id: 1,
-        name: "bis 200km/h",
-        valueforVmax: 200,
-      },
-      secondRange: {
-        id: 2,
-        name: "bis 600km/h",
-        valueforVmax: 600,
-      },
-      thirdRange: {
-        id: 3,
-        name: "bis 900km/h",
-        valueforVmax: 900,
-      },
-      forthRange: {
-        id: 4,
-        name: "bis 1000km/h",
-        valueforVmax: 1000,
-      },
+      category: "Höchstgeschwindigkeit",
       image: image3,
+      options: [
+        {
+          id: 1,
+          name: "ab 10km/h",
+          value: 10,
+          categoryName: "maxSpeed",
+        },
+        {
+          id: 2,
+          name: "ab 200km/h",
+          value: 200,
+          categoryName: "maxSpeed",
+        },
+        {
+          id: 3,
+          name: "ab 400km/h",
+          value: 400,
+          categoryName: "maxSpeed",
+        },
+        {
+          id: 4,
+          name: "ab 600km/h",
+          value: 600,
+          categoryName: "maxSpeed",
+        },
+      ],
     },
     {
       id: 4,
-      title: "Weitere Filter",
-
-      firstRange: {
-        value: "Anschluss Typ2",
-        name: false,
-        id: 1,
-      },
-      secondRange: {
-        value: "Anschluss Schuko",
-        name: false,
-        id: 2,
-      },
-      thirdRange: {
-        value: "Anschluss Typ2",
-        name: false,
-        id: 3,
-      },
-      forthRange: {
-        value: "Anschluss Schuko",
-        name: false,
-        id: 4,
-      },
+      category: "Weitere Filter",
       image: image5,
+      options: [
+        {
+          name: "Anschluss Typ2",
+          value: false,
+          id: 1,
+          categoryName: "something",
+        },
+        {
+          name: "Anschluss Typ2",
+          value: false,
+          id: 2,
+          categoryName: "something",
+        },
+        {
+          name: "Anschluss Typ2",
+          value: false,
+          id: 3,
+          categoryName: "something",
+        },
+        {
+          name: "Anschluss Schuko",
+          value: false,
+          id: 4,
+          categoryName: "something",
+        },
+      ],
     },
   ];
-  const getFiltersData = filtersData.map((item, index) => {
+  const getFiltersData = filtersData.map((item) => {
     return (
-      <div className=" " key={index}>
+      <div className=" " key={item.id}>
         <FilterItemDesktop item={item} />
       </div>
     );

@@ -71,7 +71,7 @@ const TopSliderCard = (props) => {
   };
 
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
-    <div className="min-w-64 mr-2 pl-6" key={index}>
+    <div className="min-w-64 mr-2 pl-6" key={caritem.index}>
       <div className="w-72">
         <Image
           loader={myLoader}

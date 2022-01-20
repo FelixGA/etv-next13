@@ -80,7 +80,7 @@ const StickyPopUpForComparison = () => {
           <a className="flex  lg:hidden">
             <button
               className="bg-grey-light w-20 h-8 text-[#1F1E80] disabled:bg-grey-light disabled:text-white"
-              disabled={state?.autoForComparisons.length > 1 ? false : true}
+              disabled={state?.autoForComparisons?.length > 1 ? false : true}
             >
               Vergleich
             </button>

@@ -57,7 +57,7 @@ function TruncateFilter() {
   ];
   const getFiltersData = filtersData.map((item, index) => {
     return (
-      <div key={index}>
+      <div key={item.id}>
         <FilterItemMobile item={item} />
       </div>
     );

@@ -34,7 +34,7 @@ const images = [
 ];
 export default function BottomSliderCard() {
   return images.map((item, index) => (
-    <div className="  mr-2 ml-6 " key={index}>
+    <div className="  mr-2 ml-6 " key={item.index}>
       <div className="w-80 ">
         <Image
           src={item.image}

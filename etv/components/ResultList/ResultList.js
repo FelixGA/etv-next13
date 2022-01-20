@@ -34,12 +34,29 @@ const ResultList = (props) => {
         )
       )
         return false;
+      if (
+        state?.maxSpeeds?.length > 0 &&
+        state?.maxSpeeds?.every(
+          (entry) =>
+            entry.min > car.maxSpeed.value || entry.max < car.maxSpeed.value
+        )
+      )
+        return false;
+      if (
+        state?.chargingTimes?.length > 0 &&
+        state?.chargingTimes?.every(
+          (entry) =>
+            entry.min > car.chargingTime.value ||
+            entry.max < car.chargingTime.value
+        )
+      )
+        return false;
 
       return true;
     });
 
     setShownCars(filteredCars);
-  }, [state.prices, state.weights, state.ranges, props.sortedCars]);
+  }, [state?.prices, state?.weights, state?.ranges, props.sortedCars]);
   /* ɢᴇᴛ pop up for not meeting criteria */
   const showMoreMessage = (
     <div className="mx-auto">
