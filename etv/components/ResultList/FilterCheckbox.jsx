@@ -35,7 +35,7 @@ function FilterCheckbox(props) {
     <>
       <input
         className=" appearance-none   w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
-        type="radio"
+        type="checkbox"
         id={props.checkbox.id}
         name={props.checkbox.categoryName}
         value={props.checkbox.value}
