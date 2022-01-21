@@ -63,7 +63,7 @@ const Nav = () => {
   );
 
   return (
-    <nav className="bg-blue-dark flex flex-row justify-between items-center h-18 w-full">
+    <nav className="bg-blue-dark flex flex-row justify-between items-center h-18 w-full ">
       <span className="flex flex-row justify-between items-center">
         {" "}
         <div className="logo-container mt-2 ">
