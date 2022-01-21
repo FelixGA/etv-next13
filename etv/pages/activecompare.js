@@ -23,7 +23,7 @@ function activecompare() {
         </button>
       </div>
       {/* LEFT SIDE BAR + ACTIVE COMPARE SECTION (UP TO 3 AUTOS) */}
-      <div className="grid grid-cols-auto-fit grid-flow-col  overflow-x-scroll scrollbar-hide w-[100vw] xl:w-[90vw] xl:mx-auto">
+      <div className="grid grid-cols-[200px_minmax(200px,_1fr)] grid-flow-col  overflow-x-scroll scrollbar-hide w-[100vw] xl:w-[90vw] xl:mx-auto">
         {/* LEFT SIDE BAR */}
         <div className="flex flex-col shadow-2xl border-r w-full relative ">
           {/* FIRST SECTION */}
@@ -77,7 +77,7 @@ function activecompare() {
         </div>
         {/* ACTIVE COMPARE SECTION (UP TO 3 AUTOS) */}
 
-        <div className="  w-full   pt-12">
+        <div className=" flex w-full   pt-12">
           <ActiveCompareCard comparedCars={comparedCars} />
         </div>
       </div>
