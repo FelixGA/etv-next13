@@ -17,6 +17,132 @@ function TruncateFilter() {
   const [truncPrice, setTruncPrice] = useState(false);
   const { state, dispatch } = useStore();
   /* filter list */
+  const filtersData2 = [
+    {
+      id: 1,
+      category: "Reichweite",
+      image: image,
+      options: [
+        {
+          value: 150,
+          name: "ab 150 km",
+          id: 1,
+          categoryName: "range",
+        },
+        {
+          id: 2,
+          name: "ab 200 km",
+          value: 200,
+          categoryName: "range",
+        },
+        {
+          id: 3,
+          name: "ab 250 km",
+          value: 250,
+          categoryName: "range",
+        },
+        {
+          id: 4,
+          name: "ab 500 km",
+          value: 500,
+          categoryName: "range",
+        },
+      ],
+    },
+    {
+      id: 2,
+      category: "Zuladung",
+      image: image2,
+      options: [
+        {
+          id: 1,
+          name: "ab 500 kg",
+          value: 500,
+          categoryName: "weight",
+        },
+        {
+          id: 2,
+          name: "ab 1000 kg",
+          value: 1000,
+          categoryName: "weight",
+        },
+        {
+          id: 3,
+          name: "ab 1500 kg",
+          value: 1500,
+          categoryName: "weight",
+        },
+        {
+          id: 4,
+          name: "ab 2500 kg",
+          value: 2500,
+          categoryName: "weight",
+        },
+      ],
+    },
+    {
+      id: 3,
+      category: "Höchstgeschwindigkeit",
+      image: image3,
+      options: [
+        {
+          id: 1,
+          name: "ab 10km/h",
+          value: 10,
+          categoryName: "maxSpeed",
+        },
+        {
+          id: 2,
+          name: "ab 200km/h",
+          value: 200,
+          categoryName: "maxSpeed",
+        },
+        {
+          id: 3,
+          name: "ab 400km/h",
+          value: 400,
+          categoryName: "maxSpeed",
+        },
+        {
+          id: 4,
+          name: "ab 600km/h",
+          value: 600,
+          categoryName: "maxSpeed",
+        },
+      ],
+    },
+    {
+      id: 4,
+      category: "Weitere Filter",
+      image: image5,
+      options: [
+        {
+          name: "Anschluss Typ2",
+          value: false,
+          id: 1,
+          categoryName: "something",
+        },
+        {
+          name: "Anschluss Typ2",
+          value: false,
+          id: 2,
+          categoryName: "something",
+        },
+        {
+          name: "Anschluss Typ2",
+          value: false,
+          id: 3,
+          categoryName: "something",
+        },
+        {
+          name: "Anschluss Schuko",
+          value: false,
+          id: 4,
+          categoryName: "something",
+        },
+      ],
+    },
+  ];
   const filtersData = [
     {
       id: 1,
@@ -55,7 +181,7 @@ function TruncateFilter() {
       image: image5,
     },
   ];
-  const getFiltersData = filtersData.map((item, index) => {
+  const getFiltersData = filtersData2.map((item, index) => {
     return (
       <div key={item.id}>
         <FilterItemMobile item={item} />

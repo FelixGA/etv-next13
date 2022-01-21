@@ -30,7 +30,7 @@ function FilterItemDesktop(props) {
           <div className="flex flex-row pl-4 ">
             <div className="w-6 h-6 ml-4 ">
               <Image
-                src={props.item.image}
+                src={item.image}
                 alt="picture"
                 objectFit="cover"
                 width={24}

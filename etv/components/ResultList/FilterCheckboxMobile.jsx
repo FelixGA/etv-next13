@@ -1,9 +1,7 @@
-import { MdKeyboardArrowDown } from "react-icons/md";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useStore } from "../store";
 
-function FilterCheckbox(props) {
+function FilterCheckboxMobile(props) {
   const { state, dispatch } = useStore();
   const [isChecked, setIsChecked] = useState("");
   useEffect(() => {
@@ -14,7 +12,6 @@ function FilterCheckbox(props) {
       minRange >= 250 ? setIsChecked("ab 250 km") : null;
       minRange >= 500 ? setIsChecked("ab 500 km") : null;
     }
-
     let minWeight = state?.weights.map((el) => el.min).join(" ");
     if (props.checkbox.categoryName == "weight") {
       minWeight >= 500 ? setIsChecked("ab 500 kg") : null;
@@ -34,8 +31,8 @@ function FilterCheckbox(props) {
   return (
     <>
       <input
-        className=" appearance-none   w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
-        type="radio"
+        className=" appearance-none w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5  "
+        type="checkbox"
         id={props.checkbox.id}
         name={props.checkbox.categoryName}
         value={props.checkbox.value}
@@ -59,4 +56,4 @@ function FilterCheckbox(props) {
   );
 }
 
-export default FilterCheckbox;
+export default FilterCheckboxMobile;

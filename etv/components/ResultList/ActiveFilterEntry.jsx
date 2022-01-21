@@ -54,9 +54,10 @@ function ActiveFilterEntry() {
     },
     {
       id: 4,
-      value: state?.maxSpeeds.length
-        ? state?.maxSpeeds.map((el) => "ab " + el.min).join("") + " km/h"
-        : null,
+      value:
+        state?.maxSpeeds.length || state?.maxSpeeds.length == undefined
+          ? state?.maxSpeeds.map((el) => "ab " + el.min).join("") + " km/h"
+          : null,
       image: image3,
     },
     // {
@@ -136,7 +137,7 @@ function ActiveFilterEntry() {
               data: [],
             });
             dispatch({
-              type: "maxSpeeds",
+              type: "maxSpeed",
               data: [],
             });
           }}
