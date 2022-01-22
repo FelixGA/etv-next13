@@ -24,14 +24,17 @@ function ActiveCompareCard(props) {
       </div>
 
       <div className="pl-5 pb-[3px]">
-        <h3 className="font-bold text-xs text-[#2C3F53] h-9 pt-2">
+        <h3 className="font-bold text-sm text-[#2C3F53] h-9 pt-2">
           {caritem?.title}
         </h3>
       </div>
       <div className="flex flex-col pt-1 w-full ">
         {/* FIRST SECTION */}
         <div className="flex items-center w-full h-10 pl-5 xl:mt-10">
-          <h2 className="text-sm font-bold xl:hidden">Testnote 1,2</h2>
+          <h2 className="text-sm font-bold text-[#F45625] xl:hidden">
+            Testnote{" "}
+            <span className="text-[#0B8E78]">{caritem.rating.value}</span>
+          </h2>
           <div className="hidden xl:flex  w-48 h-12 border border-blue-lighter mb-8 ">
             <div className="text-xs  w-16 h-full bg-orange-dark text-white flex items-center justify-center">
               <span className="font-bold"> TEST</span>
@@ -45,12 +48,12 @@ function ActiveCompareCard(props) {
               <div className="flex flex-row pb-8">
                 <div className="">
                   <span className="relative bottom-1 pl-2.5 font-black text-m ">
-                    1.5
+                    {caritem.rating.value}
                   </span>
                 </div>
                 <div className="pb-2">
-                  <span className="relative bottom-1 text-xxs font-black pl-3 tracking-widest ">
-                    GUT
+                  <span className="relative bottom-1 text-xs font-black pl-3 tracking-widest ">
+                    {caritem.rating.key}
                   </span>
                 </div>
               </div>
@@ -61,10 +64,10 @@ function ActiveCompareCard(props) {
           <h3 className="text-sm font-medium text-[#2C3F53] ">150km</h3>
         </div>
         <div className="flex items-center pl-5 h-10  ">
-          <h3 className="text-sm font-medium ">754kg</h3>
+          <h3 className="text-sm font-medium ">{caritem.weight.value} kg</h3>
         </div>
         <div className="flex items-center pl-5 h-10  bg-[#F2F5F8]">
-          <h3 className="text-sm font-medium ">6h (Schuko), 2h (Typ 2)</h3>
+          <h3 className="text-sm font-medium ">{caritem.chargingTime.value}</h3>
         </div>
         <div className="flex items-center pl-5 h-10  ">
           <h3 className="text-sm font-medium ">Warp 4</h3>
@@ -73,7 +76,7 @@ function ActiveCompareCard(props) {
           <h3 className="text-sm font-medium ">12€/kg</h3>
         </div>
         <div className="flex items-center pl-5 h-10  ">
-          <h3 className="text-sm font-medium ">9647,- €</h3>
+          <h3 className="text-sm font-medium ">{caritem.price},- €</h3>
         </div>
         {/* SECOND SECTION */}
         <div className="md:pt-16">
@@ -84,13 +87,15 @@ function ActiveCompareCard(props) {
             <h3 className="text-sm font-medium ">ja</h3>
           </div>
           <div className="flex items-center pl-5 h-10  bg-[#F2F5F8] lg:bg-white">
-            <h3 className="text-sm font-medium ">ja</h3>
+            <h3 className="text-sm font-medium ">{caritem.ABS.value}</h3>
           </div>
           <div className="flex items-center pl-5 h-10 bg-white lg:bg-[#F2F5F8] ">
-            <h3 className="text-sm font-medium ">2x Fahrer, Beifahrer</h3>
+            <h3 className="text-sm font-medium ">{caritem.airBags.value}</h3>
           </div>
           <div className="flex items-center pl-5 h-10  bg-[#F2F5F8] lg:bg-white">
-            <h3 className="text-sm font-medium ">Serienmäßig</h3>
+            <h3 className="text-sm font-medium ">
+              {caritem.airConditioning.value}
+            </h3>
           </div>
 
           <div className="flex items-center pl-5 h-10 bg-white lg:bg-[#F2F5F8] ">
