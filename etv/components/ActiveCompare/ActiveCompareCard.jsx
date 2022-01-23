@@ -64,19 +64,25 @@ function ActiveCompareCard(props) {
           <h3 className="text-sm font-medium text-[#2C3F53] ">150km</h3>
         </div>
         <div className="flex items-center pl-5 h-10  ">
-          <h3 className="text-sm font-medium ">{caritem.weight.value} kg</h3>
+          <h3 className="text-sm font-medium text-[#2C3F53]">
+            {caritem.weight.value} kg
+          </h3>
         </div>
         <div className="flex items-center pl-5 h-10  bg-[#F2F5F8]">
-          <h3 className="text-sm font-medium ">{caritem.chargingTime.value}</h3>
+          <h3 className="text-sm font-medium text-[#2C3F53]">
+            {caritem.chargingTime.value}
+          </h3>
         </div>
         <div className="flex items-center pl-5 h-10  ">
-          <h3 className="text-sm font-medium ">Warp 4</h3>
+          <h3 className="text-sm font-medium text-[#2C3F53]">Warp 4</h3>
         </div>
         <div className="flex items-center pl-5 h-10  bg-[#F2F5F8]">
-          <h3 className="text-sm font-medium ">12€/kg</h3>
+          <h3 className="text-sm font-medium text-[#2C3F53]">12€/kg</h3>
         </div>
         <div className="flex items-center pl-5 h-10  ">
-          <h3 className="text-sm font-medium ">{caritem.price},- €</h3>
+          <h3 className="text-sm font-medium text-[#2C3F53]">
+            {caritem.price},- €
+          </h3>
         </div>
         {/* SECOND SECTION */}
         <div className="md:pt-16">
@@ -84,16 +90,20 @@ function ActiveCompareCard(props) {
             <h2 className="text-sm font-bold"></h2>
           </div>
           <div className="flex items-center pl-5 h-10 bg-white lg:bg-[#F2F5F8] ">
-            <h3 className="text-sm font-medium ">ja</h3>
+            <h3 className="text-sm font-medium text-[#2C3F53]">ja</h3>
           </div>
           <div className="flex items-center pl-5 h-10  bg-[#F2F5F8] lg:bg-white">
-            <h3 className="text-sm font-medium ">{caritem.ABS.value}</h3>
+            <h3 className="text-sm font-medium text-[#2C3F53]">
+              {caritem.ABS.value}
+            </h3>
           </div>
           <div className="flex items-center pl-5 h-10 bg-white lg:bg-[#F2F5F8] ">
-            <h3 className="text-sm font-medium ">{caritem.airBags.value}</h3>
+            <h3 className="text-sm font-medium text-[#2C3F53]">
+              {caritem.airBags.value}
+            </h3>
           </div>
           <div className="flex items-center pl-5 h-10  bg-[#F2F5F8] lg:bg-white">
-            <h3 className="text-sm font-medium ">
+            <h3 className="text-sm font-medium text-[#2C3F53]">
               {caritem.airConditioning.value}
             </h3>
           </div>
@@ -110,7 +120,9 @@ function ActiveCompareCard(props) {
       </div>
     </div>
   ));
-
+  console.log("====================================");
+  console.log(test.length, test);
+  console.log("====================================");
   return <>{test}</>;
 }
 
