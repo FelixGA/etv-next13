@@ -25,13 +25,13 @@ function activecompare() {
         </div>
       </div>
       {/* BUTTON AND IMAGES <>VISIBLE IN DESKTOP VIEW<> */}
-      <div className="btn+img w-full h-80 bg-[#E7EDF3] hidden xl:grid grid-cols-[1/4_minmax(180px,_1fr)] grid-flow-col   scrollbar-hide justify-center gap-8 items-center">
-        <div className="w-56 lg:w-full bg-red-500 xl:w-88 2xl:w-96">
-          <button className="mb-36 2xl:mb-48  bg-white w-56 h-10 rounded-md text-[#1F1E80]">
+      <div className="btn+img w-full h-60 bg-[#E7EDF3] hidden xl:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col   scrollbar-hide justify-center gap-8 items-center">
+        <div className="w-56 lg:w-full  xl:w-88 2xl:w-[287px]">
+          <button className="mb-32 2xl:mb-36 text-sm bg-white w-52 h-10 rounded-md text-[#1F1E80]">
             « zurück zur Ergebnisliste
           </button>
         </div>
-        <div className="lg:w-64 xl:w-88 2xl:w-96">
+        <div className="lg:w-64 xl:w-88 2xl:w-[287px]">
           <Image
             className="rounded-md md:rounded-lg brightness-50 "
             loader={myLoader}
@@ -45,7 +45,7 @@ function activecompare() {
             layout="responsive"
           />
         </div>
-        <div className="lg:w-64 xl:w-88 2xl:w-96">
+        <div className="lg:w-64 xl:w-88 2xl:w-[287px]">
           <Image
             className="rounded-md md:rounded-lg brightness-50 "
             loader={myLoader}
@@ -59,7 +59,7 @@ function activecompare() {
             layout="responsive"
           />
         </div>
-        <div className="lg:w-64 xl:w-88 2xl:w-96">
+        <div className="lg:w-64 xl:w-88 2xl:w-[287px]">
           <Image
             className="rounded-md md:rounded-lg brightness-50 "
             loader={myLoader}
@@ -75,7 +75,7 @@ function activecompare() {
         </div>
       </div>
       {/* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN MOBILE VIEW<> */}
-      <div className="data-content-wrapper grid grid-flow-col grid-cols-[1/4_minmax(200px,_1fr)] w-full bg-red-500 border-2">
+      <div className="data-content-wrapper grid grid-flow-col grid-cols-[1/4_minmax(200px,_1fr)] w-full bg-red-500 border-2 xl:hidden">
         <div className="data-content-categories bg-blue-500">
           <div className="placeholder-image-clone  h-16 bg-yellow-400"></div>
           <div className="first-category">
@@ -120,7 +120,52 @@ function activecompare() {
         </div>
         <div className="data-content-values w-fit">some values</div>
       </div>
-
+      {/* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN DESKTOP VIEW<> */}
+      <div className="data-content-wrapper  h-60   xl:w-88 2xl:w-[287px] hidden xl:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col   scrollbar-hide justify-center gap-8 items-center">
+        <div className="data-content-categories bg-blue-500  w-56 lg:w-full">
+          <div className="placeholder-image-clone  h-16 bg-yellow-400"></div>
+          <div className="first-category">
+            <h3 className="first-category-title">Grundlagen</h3>
+          </div>
+          <div className="second-category">
+            <h3 className="second-category-title">Reichweite</h3>
+          </div>
+          <div className="third-category">
+            <h3 className="third-category-title">Zuladung</h3>
+          </div>
+          <div className="forth-category">
+            <h3 className="forth-category-title">Ladezeit</h3>
+          </div>
+          <div className="fifth-category">
+            <h3 className="fifth-category-title">Höchst- geschwindigkeit</h3>
+          </div>
+          <div className="sixth-category">
+            <h3 className="sixth-category-title">Nutzlastpreis</h3>
+          </div>
+          <div className="seventh-category">
+            <h3 className="seventh-category-title">Kaufpreis</h3>
+          </div>
+          <div className="eigth-category">
+            <h3 className="eigth-category-title">Ausstattung</h3>
+          </div>
+          <div className="ninth-category">
+            <h3 className="ninth-category-title">Elektrische Fensterheber</h3>
+          </div>
+          <div className="ten-category">
+            <h3 className="ten-category-title">ABS</h3>
+          </div>
+          <div className="eleven-category">
+            <h3 className="eleven-category-title">Airbags</h3>
+          </div>
+          <div className="twelwe-category">
+            <h3 className="twelwe-category-title">Klimaanlage</h3>
+          </div>
+          <div className="thirtine-category">
+            <h3 className="thirtine-category-title">Goldene Wasserhähne</h3>
+          </div>
+        </div>
+        <div className="data-content-values w-fit">some values</div>
+      </div>
       <div>second compare section</div>
       <div>CTA button</div>
     </div>
