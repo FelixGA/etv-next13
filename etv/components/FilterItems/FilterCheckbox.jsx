@@ -6,6 +6,7 @@ import { useStore } from "../store";
 function FilterCheckbox(props) {
   const { state, dispatch } = useStore();
   const [isChecked, setIsChecked] = useState("");
+  /* CHECKING WHICH CHECKBOX IS ACTIVE UPON THE RANGE */
   useEffect(() => {
     let minRange = state?.ranges.map((el) => el.min).join(" ");
     if (props.checkbox.categoryName == "range") {
@@ -31,7 +32,7 @@ function FilterCheckbox(props) {
     }
 
     let minChargingTime = state?.chargingTimes.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "maxSpeed") {
+    if (props.checkbox.categoryName == "chargingTime") {
       minChargingTime >= 1 ? setIsChecked("ab 1 Stunde") : null;
       minChargingTime >= 10 ? setIsChecked("ab 10 Stunde") : null;
       minChargingTime >= 20 ? setIsChecked("ab 20 Stunde") : null;
@@ -56,7 +57,7 @@ function FilterCheckbox(props) {
             ? true
             : false
         }
-        onClick={() => {
+        onChange={() => {
           // console.log("name", props.checkbox.name);
           // console.log("usestate", isChecked);
 

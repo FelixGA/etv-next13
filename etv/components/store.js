@@ -15,22 +15,7 @@ const reducer = (state, action) => {
       return { ...state, chargingTimes: action.data };
     case "removeFilter":
       return { ...state, removeFilters: action.data };
-    //sorting
-    case "highest":
-      return { ...state, highests: action.data };
-    case "lowest":
-      return { ...state, lowests: action.data };
-    case "highestRange":
-      return { ...state, highestRanges: action.data };
-    case "highestVmax":
-      return { ...state, highestVmaxs: action.data };
-    case "highestWeight":
-      return { ...state, highestWeights: action.data };
-    case "sortChargingTime":
-      return { ...state, sortChargingTimes: action.data };
-    case "highestRating":
-      return { ...state, highestRatings: action.data };
-    //for the comparison popup
+
     case "removeAllCarsForComparison":
       return { ...state, removeAllCarsForComparisons: action.data };
     case "autoForComparison":
@@ -39,7 +24,8 @@ const reducer = (state, action) => {
       return { ...state, activeSortValues: action.data };
     case "disabledButton":
       return { ...state, disabledButtons: action.data };
-
+    // case "detailedCar":
+    //   return { ...state, detailedCars: action.data };
     default:
       return;
   }
@@ -54,6 +40,7 @@ const initialState = {
   autoForComparisons: [],
   removeFilters: false,
   removeAllCarsForComparisons: false,
+  // detailedCar: [],
   highests: "",
   disabledButtons: "",
   activeSortValues: "Niedrigster Preis",

@@ -8,7 +8,6 @@ function Sort() {
   const { state, dispatch } = useStore();
 
   const sortBy2 = [
-    { title: "Sortieren nach" },
     {
       sortCategory: "Empfohlen",
       sortType: 1,
@@ -59,7 +58,7 @@ function Sort() {
             </div>
             <div className="pl-4 my-auto ">
               <h4 className="py-3  font-bold text-blue-dark text-md">
-                {sortBy2[0].title}
+                Sortieren nach: {state?.activeSortValues}
               </h4>
             </div>
           </div>

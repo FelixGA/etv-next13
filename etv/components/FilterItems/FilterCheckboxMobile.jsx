@@ -27,7 +27,7 @@ function FilterCheckboxMobile(props) {
       minvmax >= 600 ? setIsChecked("ab 600km/h") : null;
     }
     let minChargingTime = state?.chargingTimes.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "maxSpeed") {
+    if (props.checkbox.categoryName == "chargingTimes") {
       minChargingTime >= 1 ? setIsChecked("ab 1 Stunde") : null;
       minChargingTime >= 10 ? setIsChecked("ab 10 Stunde") : null;
       minChargingTime >= 20 ? setIsChecked("ab 20 Stunde") : null;
@@ -52,7 +52,7 @@ function FilterCheckboxMobile(props) {
             ? true
             : false
         }
-        onClick={() => {
+        onChange={() => {
           console.log("name", props.checkbox.name);
           console.log("usestate", isChecked);
 

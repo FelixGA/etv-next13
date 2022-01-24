@@ -17,7 +17,7 @@ function TruncateFilter() {
   const [truncPrice, setTruncPrice] = useState(false);
   const { state, dispatch } = useStore();
   /* filter list */
-  const filtersData2 = [
+  const filtersData = [
     {
       id: 1,
       category: "Reichweite",
@@ -143,45 +143,8 @@ function TruncateFilter() {
       ],
     },
   ];
-  const filtersData = [
-    {
-      id: 1,
-      title: "Reichweite",
-      firstRange: "bis 100km",
-      secondRange: "bis 250km",
-      thirdRange: "bis 500km",
-      forthRange: "mind. 12400km",
-      image: image,
-    },
-    {
-      id: 2,
-      title: "Zuladung",
-      firstRange: "bis 100kg",
-      secondRange: "bis 250kg",
-      thirdRange: "bis 500kg",
-      forthRange: "mind. 12400kg",
-      image: image2,
-    },
-    {
-      id: 3,
-      title: "Höchstgeschwindigkeit",
-      firstRange: "bis 80km/h",
-      secondRange: "bis 120km/h",
-      thirdRange: "bis 300km/h",
-      forthRange: "mind. Mach 5",
-      image: image3,
-    },
-    {
-      id: 4,
-      title: "Weitere Filter",
-      firstRange: "Anschluss Typ2",
-      secondRange: "Anschluss Schuko",
-      thirdRange: "Anschluss Typ2",
-      forthRange: "Anschluss Schuko",
-      image: image5,
-    },
-  ];
-  const getFiltersData = filtersData2.map((item, index) => {
+
+  const getFiltersData = filtersData.map((item, index) => {
     return (
       <div key={item.id}>
         <FilterItemMobile item={item} />

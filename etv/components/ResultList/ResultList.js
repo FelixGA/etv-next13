@@ -71,14 +71,7 @@ const ResultList = (props) => {
   const getdisplayedCars = shownCars?.map((caritem) => {
     return (
       <div className="container-product" key={caritem.id}>
-        <div
-          className="product-icon"
-          //LATER for the individuAL product
-          // onClick={() => {
-          //   history.push(`/en/detail/${caritem._id}`);
-
-          // }}
-        ></div>
+        <div className="product-icon"></div>
         <CarCard caritem={caritem} />
       </div>
     );

@@ -4,6 +4,7 @@ import CarCardDetailsDesktop from "./CarCardDetailsDesktop";
 import CarCardDetailsMobile from "./CarCardDetailsMobile";
 import { useStore } from "../store";
 import ButtonCompare from "./ButtonCompare";
+import Link from "next/link";
 function CarCard(props) {
   /* HOOKS */
   const { state, dispatch } = useStore();
@@ -31,24 +32,48 @@ function CarCard(props) {
   const myLoader = ({ src }) => {
     return src;
   };
+
   return (
     <div className="container-product flex flex-col mb-4 py-4 lg:py-0 px-4 lg:px-0 lg:pr-4  shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
       <span className="container-product flex flex-row">
         <div className="container-product-basics w-3/5 lg:w-2/6 ">
-          <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
-            {props.caritem.title}
-          </h3>
+          <Link href={`/details/${props.caritem.title}`}>
+            <a
+            // onClick={() =>
+            //   dispatch({
+            //     type: "detailedCar",
+            //     data: carItem,
+            //   })
+            // }
+            >
+              <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
+                {props.caritem.title}
+              </h3>
+            </a>
+          </Link>
+
           <div className=" w-full sm:max-w-xs w-100 ">
-            <Image
-              loader={myLoader}
-              src={`http://localhost:1337${props.caritem.photo.data[0].attributes.url}`}
-              alt={props.caritem.photo.data[0].attributes.alternativeText}
-              width={195}
-              height={140}
-              layout="responsive"
-              objectFit="cover"
-              className="rounded-l-lg"
-            />
+            <Link href={`/details/${props.caritem.title}`} passHref>
+              <a
+              // onClick={() =>
+              //   dispatch({
+              //     type: "detailedCar",
+              //     data: carItem,
+              //   })
+              // }
+              >
+                <Image
+                  loader={myLoader}
+                  src={`http://localhost:1337${props.caritem.photo.data[0].attributes.url}`}
+                  alt={props.caritem.photo.data[0].attributes.alternativeText}
+                  width={195}
+                  height={140}
+                  layout="responsive"
+                  objectFit="cover"
+                  className="rounded-l-lg"
+                />
+              </a>
+            </Link>
           </div>
         </div>
         <div className=" hidden lg:flex lg:my-auto lg:w-3/6">

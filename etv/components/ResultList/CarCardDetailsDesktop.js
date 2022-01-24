@@ -4,6 +4,7 @@ import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/ladezeit@2x.png";
+import Link from "next/link";
 function CarCardDetailsDesktop(props) {
   const desktopRatingBox = (
     <div className="border-2 border-black-darkest flex flex-col w-15 text-sm xl:w-20">
@@ -16,17 +17,22 @@ function CarCardDetailsDesktop(props) {
         </span>
       </p>
       <p className="px-1 text-s font-bold text-grey-darkest custom-text">
-        <b className="text-2xl">{props.caritem.rating.value}</b>
+        <b className="text-2xl">{props.caritem?.rating.value}</b>
         <br />
-        {props.caritem.rating.key}
+        {props.caritem?.rating.key}
       </p>
     </div>
   );
   return (
     <div className=" w-full flex flex-col justify-center">
-      <h3 className=" pl-4 text-black-darkest font-bold mb-2">
-        {props.caritem.title}
-      </h3>
+      {" "}
+      <Link href={`/details/${props.caritem?.title}`}>
+        <a>
+          <h3 className=" pl-4 text-black-darkest font-bold mb-2">
+            {props.caritem?.title}
+          </h3>
+        </a>
+      </Link>
       <span className="flex flex-row w-full flex-wrap xl:pr-4 border-r-2">
         <section className="py-2 xl:pl-4 flex flex-row w-3/4 flex-wrap">
           <span className="flex flex-col w-1/2 ">
@@ -37,10 +43,10 @@ function CarCardDetailsDesktop(props) {
               <div className="flex flex-col w-full justify-center text-sm">
                 <div className="text-blue-dark font-bold ">
                   {" "}
-                  {props.caritem.range.value} km
+                  {props.caritem?.range.value} km
                 </div>
                 <div className="text-grey-dark font-bold ">
-                  {props.caritem.range.key}{" "}
+                  {props.caritem?.range.key}{" "}
                 </div>
               </div>
             </div>
@@ -51,10 +57,10 @@ function CarCardDetailsDesktop(props) {
               <div className="flex flex-col w-full justify-center text-sm">
                 <div className="text-blue-dark font-bold ">
                   {" "}
-                  {props.caritem.maxSpeed.value} km/h
+                  {props.caritem?.maxSpeed.value} km/h
                 </div>
                 <div className="text-grey-dark font-bold ">
-                  {props.caritem.maxSpeed.key}{" "}
+                  {props.caritem?.maxSpeed.key}{" "}
                 </div>
               </div>
             </div>
@@ -72,10 +78,10 @@ function CarCardDetailsDesktop(props) {
               <div className="flex flex-col w-full justify-center text-sm">
                 <div className="text-blue-dark font-bold ">
                   {" "}
-                  {props.caritem.weight.value} kg
+                  {props.caritem?.weight.value} kg
                 </div>
                 <div className="text-grey-dark font-bold ">
-                  {props.caritem.weight.key}{" "}
+                  {props.caritem?.weight.key}{" "}
                 </div>
               </div>
             </div>
@@ -86,10 +92,10 @@ function CarCardDetailsDesktop(props) {
               <div className="flex flex-col w-full justify-center text-sm ">
                 <div className="text-blue-dark font-bold ">
                   {" "}
-                  {props.caritem.chargingTime.value}h
+                  {props.caritem?.chargingTime.value}h
                 </div>
                 <div className="text-grey-dark font-bold ">
-                  {props.caritem.chargingTime.key}{" "}
+                  {props.caritem?.chargingTime.key}{" "}
                 </div>
               </div>
             </div>
@@ -104,7 +110,7 @@ function CarCardDetailsDesktop(props) {
 }
 export default CarCardDetailsDesktop;
 //  <>
-//    {props.caritem.title},{props.caritem.description}, {props.caritem.price},{" "}
+//    {props.caritem?.title},{props.caritem.description}, {props.caritem.price},{" "}
 //    {props.caritem.weight}, {props.caritem.distance}, {props.caritem.vmax},{" "}
 //    {props.caritem.loadingtime}, {props.caritem.vmax}
 //  </>;
