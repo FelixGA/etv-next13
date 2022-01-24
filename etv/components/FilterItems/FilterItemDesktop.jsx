@@ -1,6 +1,6 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useStore } from "../store";
 import FilterCheckbox from "./FilterCheckbox";
 

@@ -29,7 +29,15 @@ function FilterCheckbox(props) {
       minvmax >= 400 ? setIsChecked("ab 400km/h") : null;
       minvmax >= 600 ? setIsChecked("ab 600km/h") : null;
     }
-  }, [state?.ranges, state?.weights, state?.maxSpeeds]);
+
+    let minChargingTime = state?.chargingTimes.map((el) => el.min).join(" ");
+    if (props.checkbox.categoryName == "maxSpeed") {
+      minChargingTime >= 1 ? setIsChecked("ab 1 Stunde") : null;
+      minChargingTime >= 10 ? setIsChecked("ab 10 Stunde") : null;
+      minChargingTime >= 20 ? setIsChecked("ab 20 Stunde") : null;
+      minChargingTime >= 40 ? setIsChecked("ab 40 Stunde") : null;
+    }
+  }, [state?.ranges, state?.weights, state?.maxSpeeds, state?.chargingTimes]);
 
   return (
     <>
@@ -41,13 +49,16 @@ function FilterCheckbox(props) {
         value={props.checkbox.value}
         checked={
           isChecked == props.checkbox.name &&
-          (state?.ranges || state?.weights || state?.maxSpeeds)
+          (state?.ranges ||
+            state?.weights ||
+            state?.maxSpeeds ||
+            state?.chargingTimes)
             ? true
             : false
         }
         onClick={() => {
-          console.log("name", props.checkbox.name);
-          console.log("usestate", isChecked);
+          // console.log("name", props.checkbox.name);
+          // console.log("usestate", isChecked);
 
           dispatch({
             type: props.checkbox.categoryName,

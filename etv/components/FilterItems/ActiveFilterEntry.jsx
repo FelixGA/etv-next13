@@ -3,7 +3,8 @@ import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
-import image5 from "../../public/images/more-svgrepo-com.png";
+import image5 from "../../public/images/ladezeit@2x.png";
+
 import { AiOutlineClose } from "react-icons/ai";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";
@@ -26,7 +27,7 @@ function ActiveFilterEntry() {
     state?.ranges,
     state?.weights,
     state?.maxSpeeds,
-    // state?.chargingTimes,
+    state?.chargingTimes,
   ]);
 
   const activeFilterData = [
@@ -60,11 +61,14 @@ function ActiveFilterEntry() {
           : null,
       image: image3,
     },
-    // {
-    //   id: 5,
-    //   value: "Weitere Filter",
-    //   image: image5,
-    // },
+    {
+      id: 5,
+      value:
+        state?.chargingTimes.length || state?.chargingTimes.length == undefined
+          ? state?.chargingTimes.map((el) => "ab " + el.min).join("") + " h"
+          : null,
+      image: image5,
+    },
   ];
 
   return (
@@ -101,6 +105,7 @@ function ActiveFilterEntry() {
               if (item.id === 2) dispatch({ type: "range", data: [] });
               if (item.id === 3) dispatch({ type: "weight", data: [] });
               if (item.id === 4) dispatch({ type: "maxSpeed", data: [] });
+              if (item.id === 5) dispatch({ type: "chargingTime", data: [] });
             }}
             className={"w-3.5 my-auto mr-4 cursor-pointer"}
           >
@@ -138,6 +143,10 @@ function ActiveFilterEntry() {
             });
             dispatch({
               type: "maxSpeed",
+              data: [],
+            });
+            dispatch({
+              type: "chargingTime",
               data: [],
             });
           }}

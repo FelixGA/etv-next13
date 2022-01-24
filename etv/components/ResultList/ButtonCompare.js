@@ -31,10 +31,6 @@ function ButtonCompare(props) {
         disabled={disabled}
         onClick={() => {
           if (state?.autoForComparisons?.length < 3) {
-            // dispatch({
-            //   type: "sticky",
-            //   data: true,
-            // });
             dispatch({
               type: "disabledButton",
               data: true,

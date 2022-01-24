@@ -4,7 +4,7 @@ import filterImage from "../../public/images/filter-icon.png";
 import TruncateFilterMobile from "./TruncateFilterMobile";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useStore } from "../store";
-import SortDesktop from "./SortDesktop";
+import SortDesktop from "../SortItems/SortDesktop";
 import ActiveFilterEntry from "./ActiveFilterEntry";
 
 function FilterBlock() {

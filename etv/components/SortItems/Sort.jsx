@@ -19,6 +19,20 @@ function Sort() {
     seventhRange: "Höchste Reichweite",
     eighthRange: "Höchste Vmax",
   };
+  const sortBy2 = [
+    { title: "Sortieren nach" },
+    {
+      sortCategory: "Empfohlen",
+      id: 1,
+    },
+    { sortCategory: "Niedrigster Preis", id: 2 },
+    { sortCategory: "Höchster Preis", id: 3 },
+    { sortCategory: "Bestseller", id: 4 },
+    { sortCategory: "Beste Ladenzeit", id: 5 },
+    { sortCategory: "Höchste Zuladung", id: 6 },
+    { sortCategory: "Höchste Reichweite", id: 7 },
+    { sortCategory: "Höchste Vmax", id: 8 },
+  ];
   const [truncate, setTruncate] = useState(false);
   const [isChecked, setIsChecked] = useState("");
   return (

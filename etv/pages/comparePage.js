@@ -1,6 +1,6 @@
-import FilterBlock from "../components/ResultList/FilterBlock";
+import FilterBlock from "../components/FilterItems/FilterBlock";
 import ResultList from "../components/ResultList/ResultList";
-import TruncateFilterDesktop from "../components/ResultList/TruncateFilterDesktop";
+import TruncateFilterDesktop from "../components/FilterItems/TruncateFilterDesktop";
 import { gql, useQuery } from "@apollo/client";
 import { useStore } from "../components/store";
 import StickyPopUpForComparison from "../components/ResultList/StickyPopUpForComparison";
