@@ -24,8 +24,7 @@ const reducer = (state, action) => {
       return { ...state, activeSortValues: action.data };
     case "disabledButton":
       return { ...state, disabledButtons: action.data };
-    // case "detailedCar":
-    //   return { ...state, detailedCars: action.data };
+
     default:
       return;
   }
@@ -40,7 +39,7 @@ const initialState = {
   autoForComparisons: [],
   removeFilters: false,
   removeAllCarsForComparisons: false,
-  // detailedCar: [],
+
   highests: "",
   disabledButtons: "",
   activeSortValues: "Niedrigster Preis",

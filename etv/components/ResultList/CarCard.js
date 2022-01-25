@@ -4,7 +4,9 @@ import CarCardDetailsDesktop from "./CarCardDetailsDesktop";
 import CarCardDetailsMobile from "./CarCardDetailsMobile";
 import { useStore } from "../store";
 import ButtonCompare from "./ButtonCompare";
+import ButtonAnfragen from "./ButtonAnfragen";
 import Link from "next/link";
+
 function CarCard(props) {
   /* HOOKS */
   const { state, dispatch } = useStore();
@@ -23,8 +25,7 @@ function CarCard(props) {
         </span>
       </p>
       <p className="px-1 text-xs font-bold text-grey-darkest custom-text">
-        <b className="text-sm">{props.caritem.rating.value} </b>{" "}
-        {props.caritem.rating.key}
+        <b className="text-sm">{carItem.rating.value} </b> {carItem.rating.key}
       </p>
     </div>
   );
@@ -38,14 +39,7 @@ function CarCard(props) {
       <span className="container-product flex flex-row">
         <div className="container-product-basics w-3/5 lg:w-2/6 ">
           <Link href={`/details/${props.caritem.title}`}>
-            <a
-            // onClick={() =>
-            //   dispatch({
-            //     type: "detailedCar",
-            //     data: carItem,
-            //   })
-            // }
-            >
+            <a>
               <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
                 {props.caritem.title}
               </h3>
@@ -54,14 +48,7 @@ function CarCard(props) {
 
           <div className=" w-full sm:max-w-xs w-100 ">
             <Link href={`/details/${props.caritem.title}`} passHref>
-              <a
-              // onClick={() =>
-              //   dispatch({
-              //     type: "detailedCar",
-              //     data: carItem,
-              //   })
-              // }
-              >
+              <a>
                 <Image
                   loader={myLoader}
                   src={`http://localhost:1337${props.caritem.photo.data[0].attributes.url}`}
@@ -77,7 +64,7 @@ function CarCard(props) {
           </div>
         </div>
         <div className=" hidden lg:flex lg:my-auto lg:w-3/6">
-          <CarCardDetailsDesktop caritem={props.caritem} />
+          <CarCardDetailsDesktop carItem={carItem} />
         </div>
         <div className="container-product-info w-2/5 lg:w-1/6 flex flex-col lg:flex-col justify-center items-end ">
           <p className="text-green-700 xl:text-xl font-bold mb-4 ">
@@ -86,9 +73,7 @@ function CarCard(props) {
 
           <span className="lg:hidden">{mobileRatingBox}</span>
           <div className="w-full flex flex-col lg:flex-col-reverse items-end">
-            <button className="bg-yellow-dark  hover:bg-yellow-light text-blue-dark my-3 px-2 font-bold text-xs xl:tracking-wide rounded w-5/6 h-7 xxs:h-9  ">
-              Jetzt anfragen
-            </button>
+            <ButtonAnfragen />
             <ButtonCompare carItem={carItem} />
           </div>
           <div
@@ -104,7 +89,7 @@ function CarCard(props) {
       <div
         className={showDetails ? "container-product-details w-full" : "hidden"}
       >
-        <CarCardDetailsMobile caritem={props.caritem} />
+        <CarCardDetailsMobile carItem={carItem} />
       </div>
     </div>
   );

@@ -37,7 +37,7 @@ const Nav = () => {
         </Link>
       </li>
       <li>
-        <Link href="/Transporter">
+        <Link href="/comparePage">
           <a
             onClick={() => {
               setIsMobile(false);
