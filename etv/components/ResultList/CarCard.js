@@ -78,7 +78,7 @@ function CarCard(props) {
           </div>
           <div
             onClick={() => setShowDetails(!showDetails)}
-            className="text-blue-dark font-bold text-xs cursor-pointer lg:hidden"
+            className="text-blue-dark font-bold  text-xxs cursor-pointer lg:hidden"
           >
             <span className="font-bold mr-2 text-base text-blue-darker">˅</span>{" "}
             {showDetails ? "weniger" : "mehr"} Details

@@ -7,19 +7,19 @@ function CarCardDetailsMobile(props) {
 
   return (
     <div className=" w-full flex flex-col lg:hidden">
-      <span className="py-2 flex flex-col xxs:flex-row flex-wrap">
-        <span className="flex flex-col-reverse w-full xxs:w-1/2 p-2">
-          <div className="flex flex-row w-full ">
-            <div className="flex flex-row w-full justify-center">
+      <span className=" py-2 flex flex-col justify-between  xs:flex-row ">
+        <span className="flex flex-col w-full xm:w-1/2  justify-between text-sm ">
+          <div className="flex flex-row w-full py-1">
+            <div className="flex flex-row w-full justify-between">
               <div className="text-grey-dark font-bold w-1/2">
-                {props.carItem.weight.key}:
+                {props.carItem?.weight.key}:
               </div>
-              <div className="text-blue-dark font-bold w-1/2">
-                {props.carItem.weight.value} kg
+              <div className="text-blue-dark font-bold w-1/2 ">
+                {props.carItem?.weight.value} kg
               </div>
             </div>
           </div>
-          <div className="flex flex-row w-full  ">
+          <div className="flex flex-row w-full  py-1">
             <div className="flex flex-row w-full justify-center">
               <div className="text-grey-dark font-bold w-1/2">
                 {props.carItem.maxSpeed.key}:
@@ -30,9 +30,9 @@ function CarCardDetailsMobile(props) {
             </div>
           </div>
         </span>
-        <span className="flex flex-col w-full xxs:w-1/2 p-2">
-          <div className="flex flex-row w-full ">
-            <div className="flex flex-row w-full justify-center">
+        <span className="flex flex-col w-full xm:w-1/2 justify-between text-sm ">
+          <div className="flex flex-row w-full py-1">
+            <div className="flex flex-row w-full justify-between">
               <div className="text-grey-dark font-bold w-1/2">
                 {props.carItem.range.key}:{" "}
               </div>
@@ -41,13 +41,13 @@ function CarCardDetailsMobile(props) {
               </div>
             </div>
           </div>
-          <div className="flex flex-row w-full  ">
+          <div className="flex flex-row w-full py-1 ">
             <div className="flex flex-row w-full justify-between">
               <div className="text-grey-dark font-bold w-1/2">
-                {props.carItem.chargingTime.key}:
+                {props.carItem?.chargingTime.key}:
               </div>
               <div className="text-blue-dark font-bold w-1/2">
-                {props.carItem.chargingTime.value}h
+                {props.carItem?.chargingTime.value}h
               </div>
             </div>
           </div>

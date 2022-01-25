@@ -18,7 +18,7 @@ function ButtonCompare(props) {
 
   const buttonInput = (
     <>
-      <span className="text-blue-dark hidden xs:flex  lg:w-0 xl:w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
+      <span className="text-blue-dark hidden  px-2 md:flex w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
         &nbsp;+&nbsp;
       </span>
       <span className="my-auto">Vergleichen</span>
@@ -54,7 +54,7 @@ function ButtonCompare(props) {
             setDisabledAsMaximun(true);
           }
         }}
-        className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 px-2 text-xs xl:tracking-wider rounded  flex justify-center items-center w-5/6 h-7 xxs:h-9 "
+        className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 px-2 text-xs xl:tracking-wider rounded h-7 flex justify-center items-center w-5/6 text-xxs md:text-xs "
       >
         {disabled ? "Zum Vergleich" : buttonInput}
       </button>
