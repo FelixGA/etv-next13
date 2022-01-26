@@ -137,20 +137,40 @@ const Details = () => {
           <div>
             <h4>Grundlagen</h4>
             <div>
-              <p></p> <p></p>
+              <p>{carItem.range.key}</p> <p>{carItem.range.value}</p>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+
+            <div>
+              <p>{carItem.weight.key}</p> <p>{carItem.weight.value}</p>
+            </div>
+            <div>
+              <p>{carItem.chargingTime.key}</p>{" "}
+              <p>{carItem.chargingTime.value}</p>
+            </div>
+            <div>
+              <p>{carItem.maxSpeed.key}</p> <p>{carItem.maxSpeed.value}</p>
+            </div>
+            <div>
+              <p>Nutzlastpreis</p> <p>12e/kg</p>
+            </div>
           </div>
           <div>
             <h4>Ausstattung</h4>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+              <p>{carItem.range.key}</p> <p>{carItem.range.value}</p>
+            </div>
+            <div>
+              <p>{carItem.range.key}</p> <p>{carItem.range.value}</p>
+            </div>
+            <div>
+              <p>{carItem.range.key}</p> <p>{carItem.range.value}</p>
+            </div>
+            <div>
+              <p>{carItem.range.key}</p> <p>{carItem.range.value}</p>
+            </div>
+            <div>
+              <p>{carItem.range.key}</p> <p>{carItem.range.value}</p>
+            </div>
           </div>
         </section>
       </div>
