@@ -39,7 +39,7 @@ function ActiveCompareItem(props) {
         </div>
         <div className="second-category h-10 bg-[#F2F5F8] w-full flex items-center">
           <h3 className="second-category-title text-md font-medium text-[#2C3F53] pl-4">
-            Reichweite
+            {item.range.value} km
           </h3>
         </div>
         <div className="third-category h-10">
@@ -54,7 +54,7 @@ function ActiveCompareItem(props) {
         </div>
         <div className="fifth-category h-10">
           <h3 className="fifth-category-title h-10 pl-4 w-full text-[#2C3F53] flex items-center">
-            Höchst- geschwindigkeit
+            {item.maxSpeed.value} km/h
           </h3>
         </div>
         <div className="sixth-category h-10">
@@ -72,7 +72,7 @@ function ActiveCompareItem(props) {
         </div>
         <div className="ninth-category h-10">
           <h3 className="ninth-category-title h-10 pl-4 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
-            Elektrische Fensterheber
+            {item.electricWindows.value}
           </h3>
         </div>
         <div className="ten-category h-10">
