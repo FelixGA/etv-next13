@@ -5,6 +5,7 @@ import Image from "next/image";
 import ActiveCompareCard from "../components/ActiveCompare/ActiveCompareCard";
 import ActiveCompareItem from "../components/ActiveCompare/ActiveCompareItem";
 import ActiveCompareImage from "../components/ActiveCompare/ActiveCompareImage";
+import Link from "next/link";
 
 function activecompare() {
   const { state, dispatch } = useStore();
@@ -17,26 +18,34 @@ function activecompare() {
           Ihre Auswahl im Detailvergleich
         </h1>
         {/* BUTTON VISIBLE ONLY ON MOBILE */}
-        <div className="w-fit xl:hidden mt-4">
+        <div className="w-fit lg:hidden mt-4">
           <button className="   bg-[#E7EDF3] w-56 h-10 rounded-md text-[#1F1E80] font-medium">
-            « zurück zur Ergebnisliste
+            <Link href="/comparePage">
+              <a className="visited:text-blue-darker">
+                « zurück zur Ergebnisliste
+              </a>
+            </Link>
           </button>
         </div>
       </div>
       {/* BUTTON AND IMAGES <>VISIBLE IN DESKTOP VIEW<> */}
-      <div className="btn+img w-full h-80 bg-[#E7EDF3] hidden xl:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col   scrollbar-hide justify-center  items-center">
-        <div className="lg:w-64 xl:w-88 2xl:w-[380px]">
-          <button className="mb-32 2xl:mb-36 text-sm bg-white w-52 h-10  rounded-md text-[#1F1E80]">
-            « zurück zur Ergebnisliste
+      <div className="btn+img w-full h-52 2xl:h-80 bg-[#E7EDF3] hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col   scrollbar-hide justify-center  items-center">
+        <div className="lg:w-64 xl:w-88 2xl:w-[380px] pl-4">
+          <button className="mb-32 2xl:mb-36 text-sm bg-white w-52 h-10  rounded-md text-[#1F1E80] ">
+            <Link href="/comparePage">
+              <a className="visited:text-blue-darker">
+                « zurück zur Ergebnisliste
+              </a>
+            </Link>
           </button>
         </div>
 
         <ActiveCompareImage comparedCars={comparedCars} />
       </div>
       {/* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN MOBILE VIEW<> */}
-      <div className="data-content-wrapper grid grid-flow-col grid-cols-[1/4_minmax(200px,_1fr)] w-full bg-red-500 border-2 xl:hidden">
+      <div className="data-content-wrapper grid grid-flow-col grid-cols-[1/4_minmax(200px,_1fr)] w-full bg-red-500 border-2 lg:hidden">
         <div className="data-content-categories bg-blue-500">
-          <div className="placeholder-image-clone  h-16 bg-yellow-400"></div>
+          <div className="placeholder-image-clone  h-16 "></div>
           <div className="first-category">
             <h3 className="first-category-title pl-4">Grundlagen</h3>
           </div>
@@ -80,9 +89,9 @@ function activecompare() {
         <div className="data-content-values w-fit">some values</div>
       </div>
       {/* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN DESKTOP VIEW<> */}
-      <div className="data-content-wrapper w-full  hidden xl:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center pt-12">
+      <div className="data-content-wrapper w-full  hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center pt-12">
         <div className="data-content-categories   lg:w-64 xl:w-88 2xl:w-[380px]">
-          <div className="placeholder-image-clone flex xl:hidden h-16 bg-yellow-400 w-56 lg:w-full xl:w-88 2xl:w-[380px]"></div>
+          <div className="placeholder-image-clone flex lg:hidden h-16  w-56 lg:w-full xl:w-88 2xl:w-[380px]"></div>
           <div className="first-category lg:w-full xl:w-88 2xl:w-[380px] h-10">
             <h3 className="first-category-title pl-4 text-2xl xl:text-md font-bold text-[#2C3F53]">
               Grundlagen
@@ -153,19 +162,21 @@ function activecompare() {
         <ActiveCompareItem comparedCars={comparedCars} />
       </div>
       {/* BUTTONS */}
-      <div className="CTA-btn w-full h-24 hidden xl:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center bg-[#E7EDF3] mt-24">
-        <div className="placeholder lg:w-64 xl:w-88 2xl:w-[380px] p-4 h-8 border"></div>
-        <div className=" border lg:w-64 xl:w-88 2xl:w-[380px] p-4">
+      <div className="CTA-btn w-full h-24 hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center bg-[#E7EDF3] mt-24">
+        <div className="placeholder lg:w-64 xl:w-88 2xl:w-[380px] p-4 h-8 "></div>
+        <div className="  lg:w-64 xl:w-88 2xl:w-[380px] p-4">
           <button className="h-8 w-full  bg-[#FFAB00] rounded-[5px]">
-            Weiter
+            <Link href="/comparePage">
+              <a className="visited:text-blue-darker">Weiter</a>
+            </Link>
           </button>
         </div>
-        <div className=" border lg:w-64 xl:w-88 2xl:w-[380px] p-4">
+        <div className="  lg:w-64 xl:w-88 2xl:w-[380px] p-4">
           <button className="h-8 w-full  bg-[#FFAB00] rounded-[5px]">
             Weiter
           </button>
         </div>{" "}
-        <div className=" border lg:w-64 xl:w-88 2xl:w-[380px] p-4">
+        <div className="  lg:w-64 xl:w-88 2xl:w-[380px] p-4">
           <button className="h-8 w-full  bg-[#FFAB00] rounded-[5px]">
             Weiter
           </button>
