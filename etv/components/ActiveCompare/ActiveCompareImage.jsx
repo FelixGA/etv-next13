@@ -20,7 +20,7 @@ function ActiveCompareImage(props) {
           layout="responsive"
         />
         <div className="relative">
-          <p className="absolute bottom-48 left-6 text-xl text-white font-bold">
+          <p className="absolute bottom-28 2xl:bottom-48 left-4 2xl:left-6 text-lg 2xl:text-xl text-white font-bold">
             Renault Kangoo Z.E.
           </p>
         </div>

@@ -7,12 +7,12 @@ function ActiveCompareItem(props) {
         className="data-content-categories   lg:w-64 xl:w-88 2xl:w-[380px] "
         key={index}
       >
-        <div className="placeholder-image-clone flex xl:hidden h-16 bg-yellow-400 w-56 lg:w-full xl:w-88 2xl:w-[380px]"></div>
+        <div className="placeholder-image-clone flex lg:hidden h-16  w-56 lg:w-full xl:w-88 2xl:w-[380px]"></div>
         <div className="flex items-center w-full h-10 pl-4">
-          <h2 className="text-sm font-bold text-[#F45625] xl:hidden">
+          <h2 className="text-sm font-bold text-[#F45625] lg:hidden">
             Testnote <span className="text-[#0B8E78]">{item.rating.value}</span>
           </h2>
-          <div className="hidden xl:flex  w-48 h-12 border border-blue-lighter mb-8 ">
+          <div className="hidden lg:flex  w-48 h-12 border border-blue-lighter mb-8 ">
             <div className="text-xs  w-16 h-full bg-orange-dark text-white flex items-center justify-center">
               <span className="font-bold"> TEST</span>
             </div>
@@ -68,9 +68,7 @@ function ActiveCompareItem(props) {
           </h3>
         </div>
         <div className="eigth-category h-10 mt-20">
-          <h3 className="eigth-category-title text-2xl pl-4 xl:text-md font-bold text-[#2C3F53]">
-            Ausstattung
-          </h3>
+          <h3 className="eigth-category-title text-2xl pl-4 xl:text-md font-bold text-[#2C3F53]"></h3>
         </div>
         <div className="ninth-category h-10">
           <h3 className="ninth-category-title h-10 pl-4 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
@@ -97,6 +95,11 @@ function ActiveCompareItem(props) {
             Goldene Wasserhähne
           </h3>
         </div>
+        {/* <div className="  lg:w-64 xl:w-88 2xl:w-[380px] p-4">
+          <button className="h-8 w-full  bg-[#FFAB00] rounded-[5px]">
+            Weiter
+          </button>
+        </div> */}
       </div>
     </>
   ));
