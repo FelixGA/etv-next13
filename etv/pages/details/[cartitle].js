@@ -7,6 +7,8 @@ import CarCardDetailsMobile from "../../components/ResultList/CarCardDetailsMobi
 import RatingBox from "../../components/ResultList/RatingBox";
 import ButtonAnfragen from "../../components/ResultList/ButtonAnfragen";
 import ButtonCompare from "../../components/ResultList/ButtonCompare";
+// import ActiveCompareItem from "../../components/ActiveCompare/ActiveCompareItem";
+// import ActiveCompareCard from "../../components/ActiveCompare/ActiveCompareCard";
 const Details = () => {
   const router = useRouter();
   console.log("query from details", router.query);
@@ -82,7 +84,7 @@ const Details = () => {
   console.log(carItem);
   /* for the slider  */
   let getCars = data?.vehicles?.data.map((item) => item.attributes).slice(0, 4);
-
+  let comparedCars = [carItem];
   const myLoader = ({ src }) => {
     return src;
   };
@@ -99,6 +101,7 @@ const Details = () => {
             layout="responsive"
             objectFit="cover"
             className="rounded-l-lg"
+            unoptimized={true}
           />
         </div>
         <div className="flex flex-col lg:w-1/2 ">
@@ -133,46 +136,9 @@ const Details = () => {
       </div>
       <div className="w-full flex flex-col justify-center items-start pt-12  p-4  px-24">
         <h3>Technische Daten</h3>
-        <section>
-          <div>
-            <h4>Grundlagen</h4>
-            <div>
-              <p>{carItem.range.key}</p> <p>{carItem.range.value}</p>
-            </div>
 
-            <div>
-              <p>{carItem.weight.key}</p> <p>{carItem.weight.value}</p>
-            </div>
-            <div>
-              <p>{carItem.chargingTime.key}</p>{" "}
-              <p>{carItem.chargingTime.value}</p>
-            </div>
-            <div>
-              <p>{carItem.maxSpeed.key}</p> <p>{carItem.maxSpeed.value}</p>
-            </div>
-            <div>
-              <p>Nutzlastpreis</p> <p>12e/kg</p>
-            </div>
-          </div>
-          <div>
-            <h4>Ausstattung</h4>
-            <div>
-              <p>{carItem.range.key}</p> <p>{carItem.range.value}</p>
-            </div>
-            <div>
-              <p>{carItem.range.key}</p> <p>{carItem.range.value}</p>
-            </div>
-            <div>
-              <p>{carItem.range.key}</p> <p>{carItem.range.value}</p>
-            </div>
-            <div>
-              <p>{carItem.range.key}</p> <p>{carItem.range.value}</p>
-            </div>
-            <div>
-              <p>{carItem.range.key}</p> <p>{carItem.range.value}</p>
-            </div>
-          </div>
-        </section>
+        <p>im getting that from igal</p>
+        {/* <ActiveCompareCard comparedCars={comparedCars} /> */}
       </div>
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
         <div className=" lg:w-1/3 w-full m-auto relative  ">
@@ -185,6 +151,7 @@ const Details = () => {
             layout="responsive"
             objectFit="cover"
             className="rounded-l-lg"
+            unoptimized={true}
           />
           <div className="ml-auto w-full flex flex-row-reverse absolute  bottom-0 p-2  md:p-4 ">
             <RatingBox carItem={carItem} />
@@ -211,6 +178,7 @@ const Details = () => {
             layout="responsive"
             objectFit="cover"
             className="rounded-l-lg"
+            unoptimized={true}
           />
         </div>
         <div className="w-full p-2 lg:w-1/2 flex flex-col flex-wrap">
@@ -229,6 +197,7 @@ const Details = () => {
             layout="responsive"
             objectFit="cover"
             className="rounded-l-lg"
+            unoptimized={true}
           />
         </div>
         <div className="w-full p-2 lg:w-1/2 flex flex-col flex-wrap">

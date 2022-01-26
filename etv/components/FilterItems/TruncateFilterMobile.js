@@ -179,6 +179,7 @@ function TruncateFilter() {
                   width={24}
                   height={28}
                   layout="responsive"
+                  unoptimized={true}
                 />
               </div>
               <div className="my-auto pl-4">

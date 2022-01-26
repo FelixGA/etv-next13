@@ -12,7 +12,7 @@ function RatingBox(props) {
       <p className="px-1 text-s font-bold text-grey-darkest custom-text">
         <b className="text-2xl">{props.carItem?.rating.value}</b>
         <br />
-        <p className="pb-2">{props.carItem?.rating.key}</p>
+        <span className="pb-2">{props.carItem?.rating.key}</span>
       </p>
     </div>
   );

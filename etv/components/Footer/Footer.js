@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-
 import Link from "next/link";
 
 const Footer = () => {
@@ -49,7 +48,12 @@ const Footer = () => {
       </nav>
       <span className="lg:w-1/4 lg:pt-14">
         <div className="flex flex-row justify-start items-center w-full flex-wrap">
-          <Image src="/images/etv-logo-final.png" width={60} height={40} />
+          <Image
+            src="/images/etv-logo-final.png"
+            width={60}
+            height={40}
+            unoptimized={true}
+          />
           <p className="text-blue-dark text-base font-bold leading-4">
             {" "}
             Elektrotransporter

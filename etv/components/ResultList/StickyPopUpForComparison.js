@@ -45,9 +45,18 @@ const StickyPopUpForComparison = () => {
       </div>
       <div className="hidden md:flex flex-col-reverse justify-between  ml-4 xl:pl-4 relative  h-full">
         <div className="mb-12 lg:mb-8 ">
-          <Link href="/activecompare" as="/activecompare">
+          <Link
+            href={state?.autoForComparisons.length > 1 ? "/activecompare" : "#"}
+            as="/activecompare"
+          >
             <a className="pr-4 ">
-              <button className="bg-grey-light w-32 lg:w-36 h-8 text-[#a8a7ec]">
+              <button
+                className={
+                  state?.autoForComparisons.length > 1
+                    ? "bg-grey-light text-[#1F1E80] w-32 lg:w-36 h-8 "
+                    : "bg-grey-light text-grey-light w-32 lg:w-36 h-8"
+                }
+              >
                 Vergleich
               </button>
             </a>
@@ -80,7 +89,7 @@ const StickyPopUpForComparison = () => {
           <a className="flex  lg:hidden">
             <button
               className="bg-grey-light w-20 h-8 text-[#1F1E80] disabled:bg-grey-light disabled:text-white"
-              disabled={state?.autoForComparisons?.length > 1 ? false : true}
+              disabled={state?.autoForComparisons.length > 1 ? true : false}
             >
               Vergleich
             </button>

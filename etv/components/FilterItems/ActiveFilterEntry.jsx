@@ -96,6 +96,7 @@ function ActiveFilterEntry() {
               width={24}
               height={28}
               layout="responsive"
+              unoptimized={true}
             />
           </div>
           <div className="text-md">{item.value}</div>

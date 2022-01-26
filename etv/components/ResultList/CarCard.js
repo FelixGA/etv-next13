@@ -58,6 +58,7 @@ function CarCard(props) {
                   layout="responsive"
                   objectFit="cover"
                   className="rounded-l-lg"
+                  unoptimized={true}
                 />
               </a>
             </Link>

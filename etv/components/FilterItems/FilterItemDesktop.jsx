@@ -10,8 +10,8 @@ function FilterItemDesktop(props) {
   const [trunc, setTrunc] = useState(false);
 
   /* to render the four ranges */
-  const rangesForCheckboxes = item.options.map((checkbox) => (
-    <div className="mt-4 flex  py-2 ">
+  const rangesForCheckboxes = item.options.map((checkbox, index) => (
+    <div key={index} className="mt-4 flex  py-2 ">
       <FilterCheckbox checkbox={checkbox} />
 
       <label
@@ -35,6 +35,7 @@ function FilterItemDesktop(props) {
                 width={24}
                 height={28}
                 layout="responsive"
+                unoptimized={true}
               />
             </div>
             <div className="pl-4 my-auto ">

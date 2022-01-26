@@ -11,8 +11,8 @@ function FilterItemMobile(props) {
   const [truncate, setTruncate] = useState(false);
   const { state, dispatch } = useStore();
   /* to render the four ranges */
-  const rangesForCheckboxesmMobile = item.options.map((checkbox) => (
-    <div className="mt-1 flex flex-row py-2 ">
+  const rangesForCheckboxesmMobile = item.options.map((checkbox, index) => (
+    <div key={index.toString()} className="mt-1 flex flex-row py-2 ">
       <FilterCheckboxMobile checkbox={checkbox} />
 
       <label
@@ -36,6 +36,7 @@ function FilterItemMobile(props) {
                 width={24}
                 height={28}
                 layout="responsive"
+                unoptimized={true}
               />
             </div>
             <div className="pl-4 my-auto ">

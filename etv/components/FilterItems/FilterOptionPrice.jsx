@@ -46,7 +46,7 @@ function FilterOptionPrice() {
           id={item.id}
           value={item.value}
           name={item.name}
-          onClick={() => {
+          onChange={() => {
             setIsChecked(item.id);
             isChecked;
             if (item.id === "1") {

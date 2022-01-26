@@ -33,7 +33,13 @@ function CarCardDetailsDesktop(props) {
           <span className="flex flex-col w-1/2 ">
             <div className="flex flex-row w-full ">
               <div className="bg-grey-lighter rounded-full m-2">
-                <Image src={image} alt="Reichweite" width={36} height={36} />
+                <Image
+                  src={image}
+                  alt="Reichweite"
+                  width={36}
+                  height={36}
+                  unoptimized={true}
+                />
               </div>
               <div className="flex flex-col w-full justify-center text-sm">
                 <div className="text-blue-dark font-bold ">
@@ -47,7 +53,13 @@ function CarCardDetailsDesktop(props) {
             </div>
             <div className="flex flex-row w-full ">
               <div className="bg-grey-lighter rounded-full m-2">
-                <Image src={image3} alt="v-max-logo" width={36} height={36} />
+                <Image
+                  src={image3}
+                  alt="v-max-logo"
+                  width={36}
+                  height={36}
+                  unoptimized={true}
+                />
               </div>
               <div className="flex flex-col w-full justify-center text-sm">
                 <div className="text-blue-dark font-bold ">
@@ -68,6 +80,7 @@ function CarCardDetailsDesktop(props) {
                   alt="zuladung-logo"
                   width={36}
                   height={36}
+                  unoptimized={true}
                 />
               </div>
               <div className="flex flex-col w-full justify-center text-sm">
@@ -82,7 +95,13 @@ function CarCardDetailsDesktop(props) {
             </div>
             <div className="flex flex-row w-full ">
               <div className="bg-grey-lighter rounded-full m-2 ">
-                <Image src={image4} alt="v-max-logo" width={36} height={36} />
+                <Image
+                  src={image4}
+                  alt="v-max-logo"
+                  width={36}
+                  height={36}
+                  unoptimized={true}
+                />
               </div>
               <div className="flex flex-col w-full justify-center text-sm ">
                 <div className="text-blue-dark font-bold ">

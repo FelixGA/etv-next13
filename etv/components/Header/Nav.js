@@ -72,6 +72,7 @@ const Nav = () => {
             width={80}
             height={60}
             className="logo"
+            unoptimized={true}
           />
         </div>
         <p className="text-white text-xs hidden lg:flex">
@@ -92,12 +93,15 @@ const Nav = () => {
       </div>
       <div className="flex flex-row justify-between items-center">
         <button className="bg-yellow-light hover:bg-yellow-dark text-grey-darker font-bold py-2 flex px-4 mb-3 m-4 text-sm rounded">
-          <Image
-            src="/images/iconStyle2x.png"
-            width={18}
-            height={18}
-            layout="responsive"
-          />
+          <div>
+            <Image
+              src="/images/iconStyle2x.png"
+              width={18}
+              height={18}
+              layout="responsive"
+              unoptimized={true}
+            />
+          </div>
           <span className="px-2">Kaufberater</span>
         </button>
 

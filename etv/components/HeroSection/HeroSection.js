@@ -98,6 +98,7 @@ const HeroSection = () => {
             alt="Kleintransporter"
             objectFit="cover"
             layout="responsive"
+            unoptimized={true}
           />
         </div>
       </div>
@@ -109,6 +110,7 @@ const HeroSection = () => {
               width={166}
               height={166}
               // layout="responsive"
+              unoptimized={true}
             />
           </div>
           <div className="main-heading-text lg:flex lg:flex-col lg:justify-between ">
@@ -250,7 +252,13 @@ const HeroSection = () => {
         <div className="icons-container flex flex-row justify-around flex-wrap">
           {logos.map((logo, index) => (
             <i className="m-2 lg:my-20 lg:scale-125" key={index}>
-              <Image src={logo.src} alt={logo.alt} width={48} height={48} />
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={48}
+                height={48}
+                unoptimized={true}
+              />
             </i>
           ))}
         </div>
