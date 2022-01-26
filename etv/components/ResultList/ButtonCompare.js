@@ -54,7 +54,7 @@ function ButtonCompare(props) {
             setDisabledAsMaximun(true);
           }
         }}
-        className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 px-2 text-xs xl:tracking-wider rounded h-7 flex justify-center items-center w-5/6 text-xxs md:text-xs "
+        className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2  text-xs xl:tracking-wider rounded h-7 px-4 flex justify-center items-center w-5/6 text-xxs md:text-xs "
       >
         {disabled ? "Zum Vergleich" : buttonInput}
       </button>

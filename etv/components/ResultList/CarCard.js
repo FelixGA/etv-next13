@@ -66,13 +66,13 @@ function CarCard(props) {
         <div className=" hidden lg:flex lg:my-auto lg:w-3/6">
           <CarCardDetailsDesktop carItem={carItem} />
         </div>
-        <div className="container-product-info w-2/5 lg:w-1/6 flex flex-col lg:flex-col justify-center items-end ">
+        <div className="container-product-info w-2/5 lg:w-1/6 flex flex-col lg:flex-col justify-center items-end  ">
           <p className="text-green-700 xl:text-xl font-bold mb-4 ">
             ab {props.caritem.price} €
           </p>
 
           <span className="lg:hidden">{mobileRatingBox}</span>
-          <div className="w-full flex flex-col lg:flex-col-reverse items-end">
+          <div className="w-full flex flex-col lg:flex-col-reverse items-end border-l-2">
             <ButtonAnfragen />
             <ButtonCompare carItem={carItem} />
           </div>

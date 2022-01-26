@@ -155,7 +155,7 @@ const Details = () => {
         </section>
       </div>
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
-        <div className=" lg:w-1/3 w-full m-auto">
+        <div className=" lg:w-1/3 w-full m-auto relative  ">
           <Image
             loader={myLoader}
             src={`http://localhost:1337${carItem?.photo.data[1].attributes.url}`}
@@ -166,6 +166,9 @@ const Details = () => {
             objectFit="cover"
             className="rounded-l-lg"
           />
+          <div className="ml-auto w-full flex flex-row-reverse absolute  bottom-0 p-2  md:p-4 ">
+            <RatingBox carItem={carItem} />
+          </div>
         </div>
         <div className=" lg:w-2/3 flex flex-col flex-wrap lg:px-6">
           <h3 className="w-full py-4 text-black-darkest text-2xl font-bold ">
@@ -215,29 +218,39 @@ const Details = () => {
       </div>
 
       <TopSlider getCars={getCars} />
-      <div className="sticky w-full h-12 lg:h-24 bg-grey-light flex justify-between items-center">
+      <div className="sticky w-full lg:h-24 bg-grey-light flex justify-between items-center">
         <div
-          className="hidden lg:block lg:w-2/4 lg:ml-16
+          className="hidden lg:block lg:w-3/5 bg-red-600
 "
         >
           .
         </div>{" "}
-        <div className="px-2 w-1/5 lg:w-1/4 justify-center items-center">
-          <button className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white px-4 text-xs xl:tracking-wider rounded flex justify-center items-center h-7 ">
-            Drucken
-          </button>
-        </div>
-        <div className="px-2 w-1/5 lg:w-1/4 justify-center items-center mt-2 ">
-          <ButtonCompare carItem={carItem} />
-        </div>
-        <div className=" w-3/5 lg:w-1/4  flex flex-row-reverse lg:flex-col items-center justify-center">
-          <p className="text-green-700 w-1/2 text-sm xl:text-xl font-bold ">
-            ab {carItem?.price} €
-          </p>{" "}
-          <div className=" w-2/3">
-            <ButtonAnfragen />
+        <span
+          id="BLUE-BUTTONS-SECTION"
+          className="xs:px-2 md:flex-row w-1/2 xs:w-1/3 lg:w-auto  flex flex-col justify-start items-start"
+        >
+          <div className="px-2  justify-center items-center">
+            <button className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white px-4 text-xs xl:tracking-wider rounded flex justify-center items-center h-7 my-1 md:my-0 w-18">
+              Drucken
+            </button>
           </div>
-        </div>
+          <div className="px-2 h-7 justify-center items-center  ">
+            <ButtonCompare carItem={carItem} />
+          </div>
+        </span>
+        <span
+          id="PRICE-ANFRAGEN-BUTTONS-SECTION"
+          className="xs:px-2 xs:flex-row w-1/2 xs:w-2/3 lg:w-auto flex flex-col justify-center items-center"
+        >
+          <div className=" flex flex-row-reverse lg:flex-col items-center justify-center">
+            <p className="text-green-700 w-1/2 xs:w-1/2 text-sm xl:text-xl font-bold ">
+              ab {carItem?.price} €
+            </p>{" "}
+            <div className=" xs:w-40">
+              <ButtonAnfragen />
+            </div>
+          </div>
+        </span>
       </div>
     </>
   );

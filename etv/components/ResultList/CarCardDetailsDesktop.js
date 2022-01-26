@@ -28,7 +28,7 @@ function CarCardDetailsDesktop(props) {
           </h3>
         </a>
       </Link>
-      <span className="flex flex-row w-full flex-wrap xl:pr-4 border-r-2">
+      <span className="flex flex-row w-full flex-wrap xl:pr-4 ">
         <section className="py-2 xl:pl-4 flex flex-row w-3/4 flex-wrap">
           <span className="flex flex-col w-1/2 ">
             <div className="flex flex-row w-full ">
