@@ -218,37 +218,35 @@ const Details = () => {
       </div>
 
       <TopSlider getCars={getCars} />
-      <div className="sticky w-full lg:h-24 bg-grey-light flex justify-between items-center">
+      <div className="sticky w-full h-18 lg:h-32 bg-grey-light flex justify-between items-center">
         <div
-          className="hidden lg:block lg:w-3/5 bg-red-600
+          className="hidden lg:block md:w-3/6 
 "
         >
           .
         </div>{" "}
         <span
           id="BLUE-BUTTONS-SECTION"
-          className="xs:px-2 md:flex-row w-1/2 xs:w-1/3 lg:w-auto  flex flex-col justify-start items-start"
+          className=" xs:flex-row flex-wrap w-1/2 md:w-3/12 flex flex-col justify-center items-start"
         >
-          <div className="px-2  justify-center items-center">
-            <button className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white px-4 text-xs xl:tracking-wider rounded flex justify-center items-center h-7 my-1 md:my-0 w-18">
+          <div className=" xs:mx-2 justify-center items-center">
+            <button className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white px-4 text-xs xl:tracking-wider rounded flex justify-center items-center h-7 my-1 xs:my-0 md:mr-4 w-18">
               Drucken
             </button>
           </div>
-          <div className="px-2 h-7 justify-center items-center  ">
+          <div className=" h-7 justify-center items-center  ">
             <ButtonCompare carItem={carItem} />
           </div>
         </span>
         <span
           id="PRICE-ANFRAGEN-BUTTONS-SECTION"
-          className="xs:px-2 xs:flex-row w-1/2 xs:w-2/3 lg:w-auto flex flex-col justify-center items-center"
+          className="md:mt-4 xs:px-1 h-7 flex-row-reverse w-2/3 md:w-3/12 flex lg:flex-col justify-end items-center"
         >
-          <div className=" flex flex-row-reverse lg:flex-col items-center justify-center">
-            <p className="text-green-700 w-1/2 xs:w-1/2 text-sm xl:text-xl font-bold ">
-              ab {carItem?.price} €
-            </p>{" "}
-            <div className=" xs:w-40">
-              <ButtonAnfragen />
-            </div>
+          <p className="text-green-700  text-sm xl:text-xl font-bold ">
+            ab {carItem?.price} €
+          </p>{" "}
+          <div className="w-28 xs:w-40 ">
+            <ButtonAnfragen />
           </div>
         </span>
       </div>
