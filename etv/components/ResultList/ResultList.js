@@ -56,7 +56,14 @@ const ResultList = (props) => {
     });
 
     setShownCars(filteredCars);
-  }, [state?.prices, state?.weights, state?.ranges, props.sortedCars]);
+  }, [
+    state?.prices,
+    state?.weights,
+    state?.ranges,
+    state?.maxSpeeds,
+    state?.chargingTimes,
+    props.sortedCars,
+  ]);
   /* ɢᴇᴛ pop up for not meeting criteria */
   const showMoreMessage = (
     <div className="mx-auto">

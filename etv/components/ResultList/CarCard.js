@@ -29,7 +29,7 @@ function CarCard(props) {
       </p>
     </div>
   );
-  // get first pic console.log(props.caritem.photo.data[0].attributes.url);
+  // get first pic console.log(carItem.photo.data[0].attributes.url);
   const myLoader = ({ src }) => {
     return src;
   };
@@ -38,21 +38,21 @@ function CarCard(props) {
     <div className="container-product flex flex-col mb-4 py-4 lg:py-0 px-4 lg:px-0 lg:pr-4  shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
       <span className="container-product flex flex-row">
         <div className="container-product-basics w-3/5 lg:w-2/6 ">
-          <Link href={`/details/${props.caritem.title}`}>
+          <Link href={`/details/${carItem.title}`}>
             <a>
               <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
-                {props.caritem.title}
+                {carItem.title}
               </h3>
             </a>
           </Link>
 
           <div className=" w-full sm:max-w-xs w-100 ">
-            <Link href={`/details/${props.caritem.title}`} passHref>
+            <Link href={`/details/${carItem.title}`} passHref>
               <a>
                 <Image
                   loader={myLoader}
-                  src={`http://localhost:1337${props.caritem.photo.data[0].attributes.url}`}
-                  alt={props.caritem.photo.data[0].attributes.alternativeText}
+                  src={`http://localhost:1337${carItem.photo.data[0].attributes.url}`}
+                  alt={carItem.photo.data[0].attributes.alternativeText}
                   width={195}
                   height={140}
                   layout="responsive"
@@ -69,7 +69,7 @@ function CarCard(props) {
         </div>
         <div className="container-product-info w-2/5 lg:w-1/6 flex flex-col lg:flex-col justify-center items-end  ">
           <p className="text-green-700 xl:text-xl font-bold mb-4 ">
-            ab {props.caritem.price} €
+            ab {carItem.price} €
           </p>
 
           <span className="lg:hidden">{mobileRatingBox}</span>

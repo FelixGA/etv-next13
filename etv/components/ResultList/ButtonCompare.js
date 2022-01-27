@@ -7,12 +7,28 @@ function ButtonCompare(props) {
   const [disabledAsMaximun, setDisabledAsMaximun] = useState(false);
   /* control to enable again the button */
   useEffect(() => {
+    /* to keep disabled the button */
+    state?.autoForComparisons.find((item) => item.title === props.carItem.title)
+      ? setDisabled(true)
+      : setDisabled(false);
+
+    /* for max 3 cars restriction message */
     if (state?.autoForComparisons?.length < 3) setDisabledAsMaximun(false);
+    /* for enabling all buttons*/
     if (!state?.autoForComparisons?.length) {
       setDisabled(false);
     }
-    if (state?.disabledButtons === props.carItem.title) setDisabled(false);
-  }, [state?.disabledButtons, state?.autoForComparisons]);
+    /* for enabling one individual button*/
+    if (state?.disabledButtons === props.carItem.title) {
+      console.log("disabled", state?.disabledButtons);
+      setDisabled(false);
+    }
+  }, [
+    state?.disabledButtons,
+    state?.autoForComparisons,
+    props.carItem,
+    state?.activeSortValues,
+  ]);
   /* VERGLEICHEN BUTTON INPUT */
 
   const buttonInput = (
