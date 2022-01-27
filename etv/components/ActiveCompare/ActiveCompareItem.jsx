@@ -1,13 +1,16 @@
 import React from "react";
+import Image from "next/image";
+import ActiveCompareImage from "./ActiveCompareImage";
 
 function ActiveCompareItem(props) {
-  const carsData = props.comparedCars.map((item, index) => (
+  const carsData = props.comparedCars?.map((item, index) => (
     <>
       <div
         className="data-content-categories   lg:w-64 xl:w-88 2xl:w-[380px] "
         key={index}
       >
-        <div className="placeholder-image-clone flex lg:hidden h-16  w-56 lg:w-full xl:w-88 2xl:w-[380px]"></div>
+        <div className="placeholder-image-clone flex lg:hidden h-36  w-56 lg:w-full xl:w-88 2xl:w-[380px] bg-yellow-400"></div>
+
         <div className="flex items-center w-full h-10 pl-4">
           <h2 className="text-sm font-bold text-[#F45625] lg:hidden">
             Testnote <span className="text-[#0B8E78]">{item.rating.value}</span>
@@ -38,60 +41,60 @@ function ActiveCompareItem(props) {
           </div>
         </div>
         <div className="second-category h-10 bg-[#F2F5F8] w-full flex items-center">
-          <h3 className="second-category-title text-md font-medium text-[#2C3F53] pl-4">
+          <h3 className="second-category-title text-sm lg:text-md font-medium text-[#2C3F53] pl-4">
             {item.range.value} km
           </h3>
         </div>
         <div className="third-category h-10">
-          <h3 className="third-category-title h-10 pl-4 w-full flex items-center text-[#2C3F53]">
+          <h3 className="third-category-title text-sm lg:text-md h-10 pl-4 w-full flex items-center text-[#2C3F53]">
             {item.weight.value} kg
           </h3>
         </div>
         <div className="forth-category h-10">
-          <h3 className="forth-category-title h-10 pl-4 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
+          <h3 className="forth-category-title text-sm lg:text-md h-10 pl-4 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
             {item.chargingTime.value}
           </h3>
         </div>
         <div className="fifth-category h-10">
-          <h3 className="fifth-category-title h-10 pl-4 w-full text-[#2C3F53] flex items-center">
+          <h3 className="fifth-category-title text-sm lg:text-md h-10 pl-4 w-full text-[#2C3F53] flex items-center">
             {item.maxSpeed.value} km/h
           </h3>
         </div>
         <div className="sixth-category h-10">
-          <h3 className="sixth-category-title h-10 pl-4 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
+          <h3 className="sixth-category-title text-sm lg:text-md h-10 pl-4 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
             Nutzlastpreis
           </h3>
         </div>
         <div className="seventh-category h-10">
-          <h3 className="seventh-category-title h-10 pl-4 w-full text-[#2C3F53] flex items-center">
+          <h3 className="seventh-category-title text-sm lg:text-md h-10 pl-4 w-full text-[#2C3F53] flex items-center">
             {item.price},- €
           </h3>
         </div>
-        <div className="eigth-category h-10 mt-20">
-          <h3 className="eigth-category-title text-2xl pl-4 xl:text-md font-bold text-[#2C3F53]"></h3>
+        <div className="eigth-category h-10 lg:mt-20 bg-[#E7EDF3] lg:bg-white">
+          <h3 className="eigth-category-title text-sm lg:text-2xl pl-4 xl:text-md font-bold text-[#2C3F53] "></h3>
         </div>
         <div className="ninth-category h-10">
-          <h3 className="ninth-category-title h-10 pl-4 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
+          <h3 className="ninth-category-title text-sm lg:text-md h-10 pl-4 bg-white lg:bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
             {item.electricWindows.value}
           </h3>
         </div>
-        <div className="ten-category h-10">
-          <h3 className="ten-category-title h-10 pl-4 w-full text-[#2C3F53] flex items-center">
+        <div className="ten-category h-10 bg-[#E7EDF3] lg:bg-white">
+          <h3 className="ten-category-title text-sm lg:text-md h-10 pl-4 w-full text-[#2C3F53] flex items-center ">
             {item.ABS.value}
           </h3>
         </div>
         <div className="eleven-category h-10">
-          <h3 className="eleven-category-title h-10 pl-4 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
+          <h3 className="eleven-category-title text-sm lg:text-md h-10 pl-4 bg-white lg:bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
             {item.airBags.value}
           </h3>
         </div>
-        <div className="twelwe-category h-10">
-          <h3 className="twelwe-category-title h-10 pl-4 w-full text-[#2C3F53] flex items-center">
+        <div className="twelwe-category h-10 bg-[#E7EDF3] lg:bg-white">
+          <h3 className="twelwe-category-title text-sm lg:text-md h-10 pl-4 w-full text-[#2C3F53] flex items-center">
             {item.airConditioning.value}
           </h3>
         </div>
         <div className="thirtine-category h-10">
-          <h3 className="thirtine-category-title h-10 pl-4 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
+          <h3 className="thirtine-category-title text-sm lg:text-md h-10 pl-4 bg-white lg:bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
             Goldene Wasserhähne
           </h3>
         </div>

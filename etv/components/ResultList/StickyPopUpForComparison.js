@@ -85,11 +85,14 @@ const StickyPopUpForComparison = () => {
 
       {/* Mobile view */}
       <div className=" md:hidden flex flex-row w-full h-1/3 items-center justify-around">
-        <Link href="/activecompare" as="/activecompare">
+        <Link
+          href={state?.autoForComparisons.length > 1 ? "/activecompare" : "#"}
+          as="/activecompare"
+        >
           <a className="flex  lg:hidden">
             <button
               className="bg-grey-light w-20 h-8 text-[#1F1E80] disabled:bg-grey-light disabled:text-white"
-              disabled={state?.autoForComparisons.length > 1 ? true : false}
+              disabled={state?.autoForComparisons.length > 1 ? false : true}
             >
               Vergleich
             </button>

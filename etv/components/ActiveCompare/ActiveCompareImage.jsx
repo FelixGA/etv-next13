@@ -6,7 +6,7 @@ function ActiveCompareImage(props) {
     return src;
   };
 
-  const carsData2 = props.comparedCars.map((item, index) => (
+  const carsData2 = props.comparedCars?.map((item, index) => (
     <div key={index}>
       <div className="lg:w-64 xl:w-88 2xl:w-[380px] p-4">
         <Image
