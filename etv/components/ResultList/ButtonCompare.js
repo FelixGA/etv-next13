@@ -4,21 +4,38 @@ function ButtonCompare(props) {
   /* HOOKS */
   const { state, dispatch } = useStore();
   const [disabled, setDisabled] = useState(false);
-  const [disabledAsMaximun, setDisabledAsMaximun] = useState(false);
-  /* control to enable again the button */
+
+  /* control to disable/enable  the button */
   useEffect(() => {
-    if (state?.autoForComparisons?.length < 3) setDisabledAsMaximun(false);
-    if (!state?.autoForComparisons?.length) setDisabled(false);
-    if (state?.disabledButtons === props.carItem.title) {
-      console.log("single button State from ", props.carItem.title, disabled);
+    /* to keep disabled the button */
+    state?.autoForComparisons.find((item) => item.title === props.carItem.title)
+      ? setDisabled(true)
+      : setDisabled(false);
+
+    /* for max 3 cars restriction message */
+    if (state?.autoForComparisons?.length < 3) {
+      dispatch({ type: "maximalThree", data: "" });
+    }
+    /* for enabling all buttons*/
+    if (!state?.autoForComparisons?.length) {
       setDisabled(false);
     }
-  }, [state?.disabledButtons, state?.autoForComparisons]);
+    /* for enabling one individual button*/
+    if (state?.disabledButtons === props.carItem.title) {
+      console.log("disabled", state?.disabledButtons);
+      setDisabled(false);
+    }
+  }, [
+    state?.disabledButtons,
+    state?.autoForComparisons,
+    props.carItem,
+    state?.activeSortValues,
+  ]);
   /* VERGLEICHEN BUTTON INPUT */
 
   const buttonInput = (
     <>
-      <span className="text-blue-dark hidden xs:flex  lg:w-0 xl:w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
+      <span className="text-blue-dark hidden  px-2 md:flex w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
         &nbsp;+&nbsp;
       </span>
       <span className="my-auto">Vergleichen</span>
@@ -31,15 +48,11 @@ function ButtonCompare(props) {
         disabled={disabled}
         onClick={() => {
           if (state?.autoForComparisons?.length < 3) {
-            // dispatch({
-            //   type: "sticky",
-            //   data: true,
-            // });
             dispatch({
               type: "disabledButton",
               data: true,
             });
-            console.log(`disabled to ${disabled} on Zum Vergleich `);
+
             dispatch({
               type: "autoForComparison",
               data: [
@@ -55,14 +68,18 @@ function ButtonCompare(props) {
 
             setDisabled(true);
           } else {
-            setDisabledAsMaximun(true);
+            dispatch({ type: "maximalThree", data: props.carItem.title });
           }
         }}
-        className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 px-2 text-xs xl:tracking-wider rounded  flex justify-center items-center w-5/6 h-7 xxs:h-9 "
+        className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2  text-xs xl:tracking-wider rounded h-7 px-4 flex justify-center items-center w-5/6 text-xxs md:text-xs "
       >
         {disabled ? "Zum Vergleich" : buttonInput}
       </button>
-      <p>{disabledAsMaximun ? "Maximal 3 Fahrzeuge" : null}</p>
+      <p className="text-xs">
+        {state?.maximalThrees === props.carItem.title
+          ? "Maximal 3 Fahrzeuge"
+          : null}
+      </p>
     </>
   );
 }

@@ -3,7 +3,8 @@ import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
-import image5 from "../../public/images/more-svgrepo-com.png";
+import image5 from "../../public/images/ladezeit@2x.png";
+
 import { AiOutlineClose } from "react-icons/ai";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";
@@ -25,8 +26,8 @@ function ActiveFilterEntry() {
     state?.prices,
     state?.ranges,
     state?.weights,
-    // state?.maxspeeds,
-    // state?.chargingTimes,
+    state?.maxSpeeds,
+    state?.chargingTimes,
   ]);
 
   const activeFilterData = [
@@ -48,22 +49,26 @@ function ActiveFilterEntry() {
     {
       id: 3,
       value: state?.weights.length
-        ? state?.weights.map((el) => el.min + "-" + el.max).join("") + " kg"
+        ? state?.weights.map((el) => "ab " + el.min).join("") + " kg"
         : null,
       image: image2,
     },
     {
       id: 4,
-      value: state?.maxSpeeds.length
-        ? state?.maxSpeeds.map((el) => el.min + "-" + el.max).join("") + " km/h"
-        : null,
+      value:
+        state?.maxSpeeds.length || state?.maxSpeeds.length == undefined
+          ? state?.maxSpeeds.map((el) => "ab " + el.min).join("") + " km/h"
+          : null,
       image: image3,
     },
-    // {
-    //   id: 5,
-    //   value: "Weitere Filter",
-    //   image: image5,
-    // },
+    {
+      id: 5,
+      value:
+        state?.chargingTimes.length || state?.chargingTimes.length == undefined
+          ? state?.chargingTimes.map((el) => "ab " + el.min).join("") + " h"
+          : null,
+      image: image5,
+    },
   ];
 
   return (
@@ -91,6 +96,7 @@ function ActiveFilterEntry() {
               width={24}
               height={28}
               layout="responsive"
+              unoptimized={true}
             />
           </div>
           <div className="text-md">{item.value}</div>
@@ -100,6 +106,7 @@ function ActiveFilterEntry() {
               if (item.id === 2) dispatch({ type: "range", data: [] });
               if (item.id === 3) dispatch({ type: "weight", data: [] });
               if (item.id === 4) dispatch({ type: "maxSpeed", data: [] });
+              if (item.id === 5) dispatch({ type: "chargingTime", data: [] });
             }}
             className={"w-3.5 my-auto mr-4 cursor-pointer"}
           >
@@ -110,11 +117,11 @@ function ActiveFilterEntry() {
       {/* REMOVE ALL FILTERS */}
       <div
         className={
-          state.ranges.length ||
-          state.prices.length ||
-          state.weights.length ||
-          state.maxSpeeds.length ||
-          state.chargingTimes.length
+          state?.ranges.length ||
+          state?.prices.length ||
+          state?.weights.length ||
+          state?.maxSpeeds.length ||
+          state?.chargingTimes.length
             ? "w-fit flex items-end"
             : "hidden"
         }
@@ -133,6 +140,14 @@ function ActiveFilterEntry() {
             });
             dispatch({
               type: "price",
+              data: [],
+            });
+            dispatch({
+              type: "maxSpeed",
+              data: [],
+            });
+            dispatch({
+              type: "chargingTime",
               data: [],
             });
           }}

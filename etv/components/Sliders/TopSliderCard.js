@@ -3,89 +3,97 @@ import Image from "next/image";
 import { HiOutlineArrowRight } from "react-icons/hi";
 
 /* import image from "../public/images/VW-e-Crafter-Front-300x225.jpg"; */
-const images = [
-  {
-    index: 1,
-    title: "ARI 458",
-    image: require("../../public/images/VW-e-Crafter-Front-300x225.jpg"),
-    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-  },
-  {
-    index: 2,
-    title: "ARI 145",
-    image: require("../../public/images/Stama-Maestro-Front-300x200.jpg"),
-    desc: "Das Lastenmoped verfügt über zwei stabile Gepäckträger. Die Nutzlast beträgt 105 kg.",
-  },
-  {
-    index: 3,
-    title: "ARI 802",
-    image: require("../../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg"),
-    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-  },
-  {
-    index: 4,
-    title: "ARI 901",
-    image: require("../../public/images/Addax-MT-Laubgitter-Wiki-300x200.jpg"),
-    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-  },
-  {
-    index: 5,
-    title: "ARI 345",
-    image: require("../../public/images/ARI-458-Kipper-L-Heck-300x199.jpg"),
-    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-  },
-  {
-    index: 6,
-    title: "ARI 802",
-    image: require("../../public/images/VW-e-Crafter-Front-300x225.jpg"),
-    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-  },
-  {
-    index: 7,
-    title: "ARI 901",
-    image: require("../../public/images/Stama-Maestro-Front-300x200.jpg"),
-    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-  },
-  {
-    index: 8,
-    title: "ARI 345",
-    image: require("../../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg"),
-    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-  },
-  {
-    index: 9,
-    title: "ARI 802",
-    image: require("../../public/images/Addax-MT-Laubgitter-Wiki-300x200.jpg"),
-    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-  },
-  {
-    index: 10,
-    title: "ARI 345",
-    image: require("../../public/images/ARI-458-Kipper-L-Heck-300x199.jpg"),
-    desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-  },
-];
+// const images = [
+//   {
+//     index: 1,
+//     title: "ARI 458",
+//     image: require("../../public/images/VW-e-Crafter-Front-300x225.jpg"),
+//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
+//   },
+//   {
+//     index: 2,
+//     title: "ARI 145",
+//     image: require("../../public/images/Stama-Maestro-Front-300x200.jpg"),
+//     desc: "Das Lastenmoped verfügt über zwei stabile Gepäckträger. Die Nutzlast beträgt 105 kg.",
+//   },
+//   {
+//     index: 3,
+//     title: "ARI 802",
+//     image: require("../../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg"),
+//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
+//   },
+//   {
+//     index: 4,
+//     title: "ARI 901",
+//     image: require("../../public/images/Addax-MT-Laubgitter-Wiki-300x200.jpg"),
+//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
+//   },
+//   {
+//     index: 5,
+//     title: "ARI 345",
+//     image: require("../../public/images/ARI-458-Kipper-L-Heck-300x199.jpg"),
+//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
+//   },
+//   {
+//     index: 6,
+//     title: "ARI 802",
+//     image: require("../../public/images/VW-e-Crafter-Front-300x225.jpg"),
+//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
+//   },
+//   {
+//     index: 7,
+//     title: "ARI 901",
+//     image: require("../../public/images/Stama-Maestro-Front-300x200.jpg"),
+//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
+//   },
+//   {
+//     index: 8,
+//     title: "ARI 345",
+//     image: require("../../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg"),
+//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
+//   },
+//   {
+//     index: 9,
+//     title: "ARI 802",
+//     image: require("../../public/images/Addax-MT-Laubgitter-Wiki-300x200.jpg"),
+//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
+//   },
+//   {
+//     index: 10,
+//     title: "ARI 345",
+//     image: require("../../public/images/ARI-458-Kipper-L-Heck-300x199.jpg"),
+//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
+//   },
+// ];
 const TopSliderCard = (props) => {
   const myLoader = ({ src }) => {
     return src;
   };
 
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
-    <div className="min-w-64 mr-2 pl-6" key={index}>
+    <div className="min-w-64 mr-2 pl-6" key={caritem.index}>
       <div className="w-72">
-        <Image
-          loader={myLoader}
-          src={`http://localhost:1337${caritem.photo.data[0].attributes.url}`}
-          alt="picture"
-          objectFit="cover"
-          width={264}
-          height={244}
-          layout="responsive"
-        />
-
-        <h3 className="text-center text-xl font-black text-black-dark mt-8 mb-4	tracking-wide">
-          {caritem.title}
-        </h3>
+        <Link href={`/details/${caritem.title}`} passHref>
+          <a>
+            <Image
+              loader={myLoader}
+              src={`http://localhost:1337${caritem.photo.data[0].attributes.url}`}
+              alt="picture"
+              objectFit="cover"
+              width={264}
+              height={244}
+              layout="responsive"
+              unoptimized={true}
+            />
+          </a>
+        </Link>
+        <Link href={`/details/${caritem.title}`}>
+          <a>
+            <h3 className="text-center text-xl font-black text-black-dark mt-8 mb-4	tracking-wide">
+              {caritem.title}
+            </h3>
+          </a>
+        </Link>
         <div className="slider__item-text">
           <p className="text-sm text-center font-Inter text-blue-lighter	">
             {caritem.desc}
@@ -116,7 +124,7 @@ const TopSliderCard = (props) => {
         </div>
 
         <div className="w-full text-center mt-8 flex  justify-center items-center ">
-          <Link href="#">
+          <Link href={`/details/${caritem.title}`}>
             <a className="text-xs text-center visited:text-blue-darker text-blue-darker pr-4">
               Mehr erfahren
             </a>

@@ -4,7 +4,7 @@ import filterImage from "../../public/images/filter-icon.png";
 import TruncateFilterMobile from "./TruncateFilterMobile";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useStore } from "../store";
-import SortDesktop from "./SortDesktop";
+import SortDesktop from "../SortItems/SortDesktop";
 import ActiveFilterEntry from "./ActiveFilterEntry";
 
 function FilterBlock() {
@@ -31,6 +31,7 @@ function FilterBlock() {
                 width={8}
                 height={8}
                 layout="responsive"
+                unoptimized={true}
               />
             </div>
             <span className="ml-2 font-black   my-auto text-sm text-blue-darker">
@@ -75,7 +76,7 @@ function FilterBlock() {
         >
           <h4 className="pr-4 ">
             {" "}
-            {`Sortieren nach: ${state.activeSortValues}`}{" "}
+            {`Sortieren nach: ${state?.activeSortValues}`}{" "}
           </h4>
 
           <div className="w-4 h-4 relative right-4 mb-2">
