@@ -12,6 +12,9 @@
     },
     "value": {
       "type": "string"
+    },
+    "baseUnit": {
+      "type": "string"
     }
   }
 }

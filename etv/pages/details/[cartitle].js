@@ -7,8 +7,8 @@ import CarCardDetailsMobile from "../../components/ResultList/CarCardDetailsMobi
 import RatingBox from "../../components/ResultList/RatingBox";
 import ButtonAnfragen from "../../components/ResultList/ButtonAnfragen";
 import ButtonCompare from "../../components/ResultList/ButtonCompare";
-// import ActiveCompareItem from "../../components/ActiveCompare/ActiveCompareItem";
-// import ActiveCompareCard from "../../components/ActiveCompare/ActiveCompareCard";
+import ActiveCompareItem from "../../components/ActiveCompare/ActiveCompareItem";
+import ActiveCompareCard from "../../components/ActiveCompare/ActiveCompareCard";
 const Details = () => {
   const router = useRouter();
   console.log("query from details", router.query);
@@ -24,24 +24,29 @@ const Details = () => {
             description
             rating {
               key
+              baseUnit
               value
             }
             categorie
             range {
               key
               value
+              baseUnit
             }
             weight {
               key
               value
+              baseUnit
             }
             maxSpeed {
               key
               value
+              baseUnit
             }
             chargingTime {
               key
               value
+              baseUnit
             }
             electricWindows {
               key
@@ -84,12 +89,30 @@ const Details = () => {
   console.log(carItem);
   /* for the slider  */
   let getCars = data?.vehicles?.data.map((item) => item.attributes).slice(0, 4);
-  let comparedCars = [carItem];
+
   const myLoader = ({ src }) => {
     return src;
   };
+  /* get two subsets of the car properties to map them */
+  const grundlagen = (({ range, weight, maxSpeed, chargingTime }) => [
+    range,
+    weight,
+    chargingTime,
+    maxSpeed,
+  ])(carItem);
+  const ausstattung = (({
+    electricWindows,
+    ABS,
+    airBags,
+    airConditioning,
+    extras,
+  }) => [electricWindows, ABS, airBags, airConditioning, extras])(carItem);
+
+  console.log(grundlagen);
+
   return (
     <>
+      {/* image and rating section */}
       <div className="w-full flex flex-col lg:flex-row lg:pt-12  p-4  lg:px-24">
         <div className=" w-full lg:w-1/2 ">
           <Image
@@ -134,12 +157,49 @@ const Details = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col justify-center items-start pt-12  p-4  px-24">
-        <h3>Technische Daten</h3>
-
-        <p>im getting that from igal</p>
-        {/* <ActiveCompareCard comparedCars={comparedCars} /> */}
+      {/* technical details section */}
+      <div className="w-full flex flex-col justify-center items-start lg:pt-12  p-4 lg:px-24">
+        <h3 className="text-black-darkest font-bold py-2">Technische Daten</h3>
+        <div className="flex flex-col w-full lg:flex-row">
+          <section className="w-full lg:w-1/2 lg:px-2">
+            <h3 className="text-black-darkest font-bold py-2">Grundlagen</h3>
+            <div className="flex flex-col w-full text-[#2C3F53] font-bold ">
+              {grundlagen?.map((item, index) => (
+                <div
+                  className={
+                    index % 2 == 0
+                      ? "flex flex-row w-full bg-[#F2F5F8] "
+                      : "flex flex-row w-full "
+                  }
+                >
+                  <p className="w-1/2 py-1">{item.key}</p>
+                  <p className="w-1/2 py-1">
+                    {item.value} {item.baseUnit}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+          <section className="w-full lg:w-1/2 lg:px-2">
+            <h3 className="text-black-darkest font-bold py-2">Ausstattung</h3>
+            <div className="flex flex-col w-full text-[#2C3F53] font-bold">
+              {ausstattung?.map((item, index) => (
+                <div
+                  className={
+                    index % 2 == 0
+                      ? "flex flex-row w-full bg-[#F2F5F8] "
+                      : "flex flex-row w-full "
+                  }
+                >
+                  <p className="w-1/2 py-1">{item.key}</p>
+                  <p className="w-1/2 py-1">{item.value}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
+      {/* description section */}
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
         <div className=" lg:w-1/3 w-full m-auto relative  ">
           <Image
@@ -167,6 +227,7 @@ const Details = () => {
           </button>
         </div>
       </div>
+      {/* other articles section */}
       <div className=" flex lg:flex-row-reverse flex-col w-full lg:p-18 justify-center items-center  p-4 ">
         <div className="w-full p-4 lg:w-1/2 lg:p-12">
           <Image
@@ -205,8 +266,9 @@ const Details = () => {
           <p>{carItem?.description}</p>
         </div>
       </div>
-
+      {/* slider  */}
       <TopSlider getCars={getCars} />
+      {/*sticky popup  */}
       <div className="sticky w-full h-18 lg:h-32 bg-grey-light flex justify-between items-center">
         <div
           className="hidden lg:block md:w-3/6 
