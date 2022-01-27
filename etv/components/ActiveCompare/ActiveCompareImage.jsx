@@ -18,6 +18,7 @@ function ActiveCompareImage(props) {
           width={100.35}
           height={66.9}
           layout="responsive"
+          unoptimized={true}
         />
         <div className="relative">
           <p className="absolute bottom-28 2xl:bottom-48 left-4 2xl:left-6 text-lg 2xl:text-xl text-white font-bold">

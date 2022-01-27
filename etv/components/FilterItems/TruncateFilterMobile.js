@@ -6,7 +6,7 @@ import image5 from "../../public/images/more-svgrepo-com.png";
 import Image from "next/image";
 import { useState } from "react";
 import FilterItemMobile from "./FilterItemMobile";
-import Sort from "./Sort";
+import Sort from "../SortItems/Sort";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useStore } from "../store";
 import FilterOptionPrice from "./FilterOptionPrice";
@@ -20,44 +20,133 @@ function TruncateFilter() {
   const filtersData = [
     {
       id: 1,
-      title: "Reichweite",
-      firstRange: "bis 100km",
-      secondRange: "bis 250km",
-      thirdRange: "bis 500km",
-      forthRange: "mind. 12400km",
+      category: "Reichweite",
       image: image,
+      options: [
+        {
+          value: 150,
+          name: "ab 150 km",
+          id: 1,
+          categoryName: "range",
+        },
+        {
+          id: 2,
+          name: "ab 200 km",
+          value: 200,
+          categoryName: "range",
+        },
+        {
+          id: 3,
+          name: "ab 250 km",
+          value: 250,
+          categoryName: "range",
+        },
+        {
+          id: 4,
+          name: "ab 500 km",
+          value: 500,
+          categoryName: "range",
+        },
+      ],
     },
     {
       id: 2,
-      title: "Zuladung",
-      firstRange: "bis 100kg",
-      secondRange: "bis 250kg",
-      thirdRange: "bis 500kg",
-      forthRange: "mind. 12400kg",
+      category: "Zuladung",
       image: image2,
+      options: [
+        {
+          id: 1,
+          name: "ab 500 kg",
+          value: 500,
+          categoryName: "weight",
+        },
+        {
+          id: 2,
+          name: "ab 1000 kg",
+          value: 1000,
+          categoryName: "weight",
+        },
+        {
+          id: 3,
+          name: "ab 1500 kg",
+          value: 1500,
+          categoryName: "weight",
+        },
+        {
+          id: 4,
+          name: "ab 2500 kg",
+          value: 2500,
+          categoryName: "weight",
+        },
+      ],
     },
     {
       id: 3,
-      title: "Höchstgeschwindigkeit",
-      firstRange: "bis 80km/h",
-      secondRange: "bis 120km/h",
-      thirdRange: "bis 300km/h",
-      forthRange: "mind. Mach 5",
+      category: "Höchstgeschwindigkeit",
       image: image3,
+      options: [
+        {
+          id: 1,
+          name: "ab 10km/h",
+          value: 10,
+          categoryName: "maxSpeed",
+        },
+        {
+          id: 2,
+          name: "ab 200km/h",
+          value: 200,
+          categoryName: "maxSpeed",
+        },
+        {
+          id: 3,
+          name: "ab 400km/h",
+          value: 400,
+          categoryName: "maxSpeed",
+        },
+        {
+          id: 4,
+          name: "ab 600km/h",
+          value: 600,
+          categoryName: "maxSpeed",
+        },
+      ],
     },
     {
       id: 4,
-      title: "Weitere Filter",
-      firstRange: "Anschluss Typ2",
-      secondRange: "Anschluss Schuko",
-      thirdRange: "Anschluss Typ2",
-      forthRange: "Anschluss Schuko",
+      category: "Weitere Filter",
       image: image5,
+      options: [
+        {
+          name: "Anschluss Typ2",
+          value: false,
+          id: 1,
+          categoryName: "something",
+        },
+        {
+          name: "Anschluss Typ2",
+          value: false,
+          id: 2,
+          categoryName: "something",
+        },
+        {
+          name: "Anschluss Typ2",
+          value: false,
+          id: 3,
+          categoryName: "something",
+        },
+        {
+          name: "Anschluss Schuko",
+          value: false,
+          id: 4,
+          categoryName: "something",
+        },
+      ],
     },
   ];
+
   const getFiltersData = filtersData.map((item, index) => {
     return (
-      <div key={index}>
+      <div key={item.id}>
         <FilterItemMobile item={item} />
       </div>
     );
@@ -90,6 +179,7 @@ function TruncateFilter() {
                   width={24}
                   height={28}
                   layout="responsive"
+                  unoptimized={true}
                 />
               </div>
               <div className="my-auto pl-4">

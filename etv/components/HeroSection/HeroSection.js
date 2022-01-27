@@ -3,6 +3,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { useStore } from "../../components/store";
 import Link from "next/link";
+//import filtersData from "../filtersData.json";
+
 const HeroSection = () => {
   const { state, dispatch } = useStore();
 
@@ -51,8 +53,14 @@ const HeroSection = () => {
           name: "ab 250km",
           value: "250",
         },
+        {
+          id: "4",
+          name: "ab 500km",
+          value: "500",
+        },
       ],
     },
+
     {
       category: "Nutzlast",
       options: [
@@ -90,6 +98,7 @@ const HeroSection = () => {
             alt="Kleintransporter"
             objectFit="cover"
             layout="responsive"
+            unoptimized={true}
           />
         </div>
       </div>
@@ -100,7 +109,8 @@ const HeroSection = () => {
               src="/images/siegel2.png"
               width={166}
               height={166}
-              layout="responsive"
+              // layout="responsive"
+              unoptimized={true}
             />
           </div>
           <div className="main-heading-text lg:flex lg:flex-col lg:justify-between ">
@@ -226,7 +236,7 @@ const HeroSection = () => {
                     data: [
                       {
                         min: Number(chooseWeight),
-                        max: Number(chooseWeight) + 500,
+                        max: 999999,
                       },
                     ],
                   });
@@ -242,7 +252,13 @@ const HeroSection = () => {
         <div className="icons-container flex flex-row justify-around flex-wrap">
           {logos.map((logo, index) => (
             <i className="m-2 lg:my-20 lg:scale-125" key={index}>
-              <Image src={logo.src} alt={logo.alt} width={48} height={48} />
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={48}
+                height={48}
+                unoptimized={true}
+              />
             </i>
           ))}
         </div>

@@ -7,25 +7,21 @@ function FilterOptionPrice() {
       id: "1",
       value: "0-20000€",
       name: "preis",
-      checked: false,
     },
     {
       id: "2",
       value: "20001-40000€",
       name: "preis",
-      checked: false,
     },
     {
       id: "3",
       value: "40001-60000€",
       name: "preis",
-      checked: false,
     },
     {
       id: "4",
       value: "60001-90000€",
       name: "preis",
-      checked: false,
     },
   ];
   const [isChecked, setIsChecked] = useState("");
@@ -47,8 +43,10 @@ function FilterOptionPrice() {
         <input
           className=" appearance-none  w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
           type="checkbox"
+          id={item.id}
+          value={item.value}
           name={item.name}
-          onClick={() => {
+          onChange={() => {
             setIsChecked(item.id);
             isChecked;
             if (item.id === "1") {
@@ -64,7 +62,7 @@ function FilterOptionPrice() {
               dispatch({ type: "price", data: [{ min: 60001, max: 90000 }] });
             }
           }}
-          checked={isChecked == item.id && state.prices.length ? true : false}
+          checked={isChecked == item.id && state?.prices.length ? true : false}
         ></input>
 
         <label
