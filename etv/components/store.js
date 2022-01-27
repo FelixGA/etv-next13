@@ -40,7 +40,7 @@ const initialState = {
   weights: [],
   maxSpeeds: [],
   chargingTimes: [],
-  removeFilters: false,
+  removeFilters: "",
   /*  states for comparison popup */
   autoForComparisons: [],
   removeAllCarsForComparisons: false,

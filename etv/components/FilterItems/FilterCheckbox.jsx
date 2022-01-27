@@ -1,5 +1,3 @@
-import { MdKeyboardArrowDown } from "react-icons/md";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useStore } from "../store";
 
@@ -9,7 +7,7 @@ function FilterCheckbox(props) {
   /* CHECKING WHICH CHECKBOX IS ACTIVE UPON THE RANGE */
   useEffect(() => {
     let minRange = state?.ranges.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "range") {
+    if (props.checkbox.categoryName == "range" && state?.ranges.length) {
       minRange >= 150 ? setIsChecked("ab 150 km") : null;
       minRange >= 200 ? setIsChecked("ab 200 km") : null;
       minRange >= 250 ? setIsChecked("ab 250 km") : null;
@@ -50,10 +48,10 @@ function FilterCheckbox(props) {
         value={props.checkbox.value}
         checked={
           isChecked == props.checkbox.name &&
-          (state?.ranges ||
-            state?.weights ||
-            state?.maxSpeeds ||
-            state?.chargingTimes)
+          (state?.ranges.length ||
+            state?.weights.length ||
+            state?.maxSpeeds.length ||
+            state?.chargingTimes.length)
             ? true
             : false
         }

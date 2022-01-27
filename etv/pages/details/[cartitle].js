@@ -7,11 +7,10 @@ import CarCardDetailsMobile from "../../components/ResultList/CarCardDetailsMobi
 import RatingBox from "../../components/ResultList/RatingBox";
 import ButtonAnfragen from "../../components/ResultList/ButtonAnfragen";
 import ButtonCompare from "../../components/ResultList/ButtonCompare";
-import ActiveCompareItem from "../../components/ActiveCompare/ActiveCompareItem";
-import ActiveCompareCard from "../../components/ActiveCompare/ActiveCompareCard";
+
 const Details = () => {
   const router = useRouter();
-  console.log("query from details", router.query);
+
   const { cartitle } = router.query;
 
   const getAllCarsData = gql`
@@ -108,8 +107,6 @@ const Details = () => {
     extras,
   }) => [electricWindows, ABS, airBags, airConditioning, extras])(carItem);
 
-  console.log(grundlagen);
-
   return (
     <>
       {/* image and rating section */}
@@ -130,7 +127,7 @@ const Details = () => {
         <div className="flex flex-col lg:w-1/2 ">
           {/* DESKTOP VERSION FOR DETAILS TABLE*/}
           <div className="hidden lg:flex justify-center flex-col w-4/5 px-8 pb-6 ">
-            <h2 className="hidden lg:block text-4xl text-black-darkest pl-2 ">
+            <h2 className="hidden lg:block text-5xl text-black-darkest pl-2 ">
               {cartitle}
             </h2>
             <CarCardDetailsDesktop carItem={carItem} />
@@ -159,7 +156,9 @@ const Details = () => {
       </div>
       {/* technical details section */}
       <div className="w-full flex flex-col justify-center items-start lg:pt-12  p-4 lg:px-24">
-        <h3 className="text-black-darkest font-bold py-2">Technische Daten</h3>
+        <h3 className="text-black-darkest font-bold py-2 lg:text-3xl">
+          Technische Daten
+        </h3>
         <div className="flex flex-col w-full lg:flex-row">
           <section className="w-full lg:w-1/2 lg:px-2">
             <h3 className="text-black-darkest font-bold py-2">Grundlagen</h3>
