@@ -268,13 +268,8 @@ const Details = () => {
       {/* slider  */}
       <TopSlider getCars={getCars} />
       {/*sticky popup  */}
-      <div className="sticky w-full h-18 lg:h-32 bg-grey-light flex justify-between items-center">
-        <div
-          className="hidden lg:block md:w-3/6 
-"
-        >
-          .
-        </div>{" "}
+      <div className="sticky z-10 bottom-0 w-full h-18 lg:h-32 bg-grey-light flex justify-between items-center">
+        <div className="hidden lg:block md:w-3/6">.</div>
         <span
           id="BLUE-BUTTONS-SECTION"
           className=" xs:flex-row flex-wrap w-1/2 md:w-3/12 flex flex-col justify-center items-start"
