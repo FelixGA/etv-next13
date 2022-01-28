@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 function ActiveCompareImage(props) {
@@ -6,7 +5,7 @@ function ActiveCompareImage(props) {
     return src;
   };
 
-  const carsData2 = props.comparedCars?.map((item, index) => (
+  const activeCompareImages = props.comparedCars?.map((item, index) => (
     <div key={index}>
       <div className="lg:w-64 xl:w-88 2xl:w-[380px] p-4">
         <Image
@@ -22,13 +21,13 @@ function ActiveCompareImage(props) {
         />
         <div className="relative">
           <p className="absolute bottom-28 2xl:bottom-48 left-4 2xl:left-6 text-lg 2xl:text-xl text-white font-bold">
-            Renault Kangoo Z.E.
+            {item.title}
           </p>
         </div>
       </div>
     </div>
   ));
-  return carsData2;
+  return activeCompareImages;
 }
 
 export default ActiveCompareImage;
