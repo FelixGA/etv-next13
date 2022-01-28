@@ -5,11 +5,14 @@ import Image from "next/image";
 import { gql, useQuery } from "@apollo/client";
 import CarCardDetailsMobile from "../../components/ResultList/CarCardDetailsMobile";
 import RatingBox from "../../components/ResultList/RatingBox";
-import ButtonAnfragen from "../../components/ResultList/ButtonAnfragen";
-import ButtonCompare from "../../components/ResultList/ButtonCompare";
+import { useState } from "react";
+import Articles from "../../components/DetailsPage/Articles";
+import PrintPopUp from "../../components/DetailsPage/PrintPopUp";
+import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
 
 const Details = () => {
   const router = useRouter();
+  const [descriptionSize, SetDescriptionSize] = useState(true);
 
   const { cartitle } = router.query;
 
@@ -85,7 +88,7 @@ const Details = () => {
   const carItem = data?.vehicles?.data
     .map((item) => item.attributes)
     .find((el) => el.title === cartitle);
-  console.log(carItem);
+
   /* for the slider  */
   let getCars = data?.vehicles?.data.map((item) => item.attributes).slice(0, 4);
 
@@ -146,58 +149,35 @@ const Details = () => {
               </div>
             </div>
           </div>
+          {/* description */}
           <div className="w-full text-black-darkest flex flex-col lg:px-8">
             <h3 className="w-full text-black-darkest font-bold pb-4">
               Über das Fahrzeug
             </h3>
-            <p>{carItem?.description}</p>
+            <p
+              className={
+                !descriptionSize
+                  ? "h-auto"
+                  : `text-ellipsis overflow-hidden h-48`
+              }
+            >
+              {carItem?.description}
+            </p>
+            <span
+              className={descriptionSize ? "text-sm text-blue-dark" : "hidden"}
+              onClick={() => {
+                SetDescriptionSize(false);
+              }}
+            >
+              {" "}
+              Alle Daten anzeigen
+            </span>
           </div>
         </div>
       </div>
       {/* technical details section */}
-      <div className="w-full flex flex-col justify-center items-start lg:pt-12  p-4 lg:px-24">
-        <h3 className="text-black-darkest font-bold py-2 lg:text-3xl">
-          Technische Daten
-        </h3>
-        <div className="flex flex-col w-full lg:flex-row">
-          <section className="w-full lg:w-1/2 lg:px-2">
-            <h3 className="text-black-darkest font-bold py-2">Grundlagen</h3>
-            <div className="flex flex-col w-full text-[#2C3F53] font-bold ">
-              {grundlagen?.map((item, index) => (
-                <div
-                  className={
-                    index % 2 == 0
-                      ? "flex flex-row w-full bg-[#F2F5F8] "
-                      : "flex flex-row w-full "
-                  }
-                >
-                  <p className="w-1/2 py-1">{item.key}</p>
-                  <p className="w-1/2 py-1">
-                    {item.value} {item.baseUnit}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-          <section className="w-full lg:w-1/2 lg:px-2">
-            <h3 className="text-black-darkest font-bold py-2">Ausstattung</h3>
-            <div className="flex flex-col w-full text-[#2C3F53] font-bold">
-              {ausstattung?.map((item, index) => (
-                <div
-                  className={
-                    index % 2 == 0
-                      ? "flex flex-row w-full bg-[#F2F5F8] "
-                      : "flex flex-row w-full "
-                  }
-                >
-                  <p className="w-1/2 py-1">{item.key}</p>
-                  <p className="w-1/2 py-1">{item.value}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        </div>
-      </div>
+
+      <TechnicalDetails carItem={carItem} />
       {/* description section */}
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
         <div className=" lg:w-1/3 w-full m-auto relative  ">
@@ -227,74 +207,13 @@ const Details = () => {
         </div>
       </div>
       {/* other articles section */}
-      <div className=" flex lg:flex-row-reverse flex-col w-full lg:p-18 justify-center items-center  p-4 ">
-        <div className="w-full p-4 lg:w-1/2 lg:p-12">
-          <Image
-            loader={myLoader}
-            src={`http://localhost:1337${carItem?.photo.data[1].attributes.url}`}
-            alt={carItem?.photo.data[0].attributes.alternativeText}
-            width={195}
-            height={140}
-            layout="responsive"
-            objectFit="cover"
-            className="rounded-l-lg"
-            unoptimized={true}
-          />
-        </div>
-        <div className="w-full p-2 lg:w-1/2 flex flex-col flex-wrap">
-          <h3>Text-Bild-Element mit Text links</h3>
-          <p>{carItem?.description}</p>
-        </div>
-      </div>
-      <div className=" flex lg:flex-row flex-col w-full lg:p-18 justify-center items-center  p-4 ">
-        <div className="w-full p-4 lg:w-1/2 lg:p-12">
-          <Image
-            loader={myLoader}
-            src={`http://localhost:1337${carItem?.photo.data[1].attributes.url}`}
-            alt={carItem?.photo.data[0].attributes.alternativeText}
-            width={195}
-            height={140}
-            layout="responsive"
-            objectFit="cover"
-            className="rounded-l-lg"
-            unoptimized={true}
-          />
-        </div>
-        <div className="w-full p-2 lg:w-1/2 flex flex-col flex-wrap">
-          <h3>Text-Bild-Element mit Text links</h3>
-          <p>{carItem?.description}</p>
-        </div>
-      </div>
+
+      <Articles carItem={carItem} />
       {/* slider  */}
+
       <TopSlider getCars={getCars} />
       {/*sticky popup  */}
-      <div className="sticky z-10 bottom-0 w-full h-18 lg:h-32 bg-grey-light flex justify-between items-center">
-        <div className="hidden lg:block md:w-3/6">.</div>
-        <span
-          id="BLUE-BUTTONS-SECTION"
-          className=" xs:flex-row flex-wrap w-1/2 md:w-3/12 flex flex-col justify-center items-start"
-        >
-          <div className=" xs:mx-2 justify-center items-center">
-            <button className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white px-4 text-xs xl:tracking-wider rounded flex justify-center items-center h-7 my-1 xs:my-0 md:mr-4 w-18">
-              Drucken
-            </button>
-          </div>
-          <div className=" h-7 justify-center items-center  ">
-            <ButtonCompare carItem={carItem} />
-          </div>
-        </span>
-        <span
-          id="PRICE-ANFRAGEN-BUTTONS-SECTION"
-          className="md:mt-4 xs:px-1 h-7 flex-row-reverse w-2/3 md:w-3/12 flex lg:flex-col justify-end items-center"
-        >
-          <p className="text-green-700  text-sm xl:text-xl font-bold ">
-            ab {carItem?.price} €
-          </p>{" "}
-          <div className="w-28 xs:w-40 ">
-            <ButtonAnfragen />
-          </div>
-        </span>
-      </div>
+      <PrintPopUp carItem={carItem} />
     </>
   );
 };

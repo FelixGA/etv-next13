@@ -1,11 +1,11 @@
 import React from "react";
-
+import { v4 as uuidv4 } from "uuid";
 function ActiveCompareItem(props) {
   const carsData = props.comparedCars.map((item, index) => (
     <>
       <div
         className="data-content-categories   lg:w-64 xl:w-88 2xl:w-[380px] "
-        key={index}
+        key={uuidv4()}
       >
         <div className="placeholder-image-clone flex lg:hidden h-16  w-56 lg:w-full xl:w-88 2xl:w-[380px]"></div>
         <div className="flex items-center w-full h-10 pl-4">
