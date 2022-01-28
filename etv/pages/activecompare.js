@@ -113,6 +113,7 @@ function activecompare() {
               Goldene Wasserhähne
             </h3>
           </div>
+          <div className="w-[105%] bg-[#D0DDEA] h-20"></div>
         </div>
         <div className="flex flex-row">
           <ActiveCompareItem comparedCars={comparedCars} />
@@ -192,7 +193,7 @@ function activecompare() {
         <ActiveCompareItem comparedCars={comparedCars} />
       </div>
       {/* BUTTONS */}
-      <div className="CTA-btn w-full h-24 hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center bg-[#E7EDF3] mt-24">
+      <div className="CTA-btn w-full h-24 hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center bg-[#D0DDEA] mt-24">
         <div className="placeholder lg:w-64 xl:w-88 2xl:w-[380px] p-4 h-8 "></div>
         <ActiveCompareButton comparedCars={comparedCars} />
       </div>
