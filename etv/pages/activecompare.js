@@ -45,7 +45,7 @@ function activecompare() {
       </div>
       {/* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN MOBILE VIEW<> */}
       <div className="data-content-wrapper  grid grid-flow-col grid-cols-[1/4_minmax(130px,_1fr)] w-full scrollbar-hide overflow-x-scroll lg:hidden">
-        <div className="data-content-categories  w-full border-r-2 ">
+        <div className="data-content-categories  w-full border-r-2 shadow-xl ">
           {/* sticky left-0 z-10*/}
           <div className="placeholder-image-clone bg-[#F2F5F8] h-36 "></div>
           <div className="first-category flex items-center h-10 w-full bg-white">

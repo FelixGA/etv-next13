@@ -60,61 +60,61 @@ function ActiveCompareItem(props) {
           </div>
         </div>
       </div>
-      <div className="second-category h-10 bg-[#E7EDF3] w-full flex items-center">
-        <h3 className="second-category-title text-sm lg:text-md font-medium text-[#2C3F53] pl-8">
+      <div className="second-category h-10 bg-[#F2F5F8] w-full flex items-center">
+        <h3 className="second-category-title text-sm lg:text-lg font-medium text-[#2C3F53] pl-8">
           {item.range.value} km
         </h3>
       </div>
       <div className="third-category h-10">
-        <h3 className="third-category-title text-sm lg:text-md h-10 pl-8 w-full flex items-center text-[#2C3F53]">
+        <h3 className="third-category-title text-sm lg:text-lg h-10 pl-8 w-full flex items-center text-[#2C3F53]">
           {item.weight.value} kg
         </h3>
       </div>
       <div className="forth-category h-10">
-        <h3 className="forth-category-title text-sm lg:text-md h-10 pl-8 bg-[#E7EDF3] w-full text-[#2C3F53] flex items-center">
+        <h3 className="forth-category-title text-sm lg:text-lg h-10 pl-8 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
           {item.chargingTime.value}
         </h3>
       </div>
       <div className="fifth-category h-10">
-        <h3 className="fifth-category-title text-sm lg:text-md h-10 pl-8 w-full text-[#2C3F53] flex items-center">
+        <h3 className="fifth-category-title text-sm lg:text-lg h-10 pl-8 w-full text-[#2C3F53] flex items-center">
           {item.maxSpeed.value} km/h
         </h3>
       </div>
       <div className="sixth-category h-10">
-        <h3 className="sixth-category-title text-sm lg:text-md h-10 pl-8 bg-[#E7EDF3] w-full text-[#2C3F53] flex items-center">
+        <h3 className="sixth-category-title text-sm lg:text-lg h-10 pl-8 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
           Nutzlastpreis
         </h3>
       </div>
       <div className="seventh-category h-10">
-        <h3 className="seventh-category-title text-sm lg:text-md h-10 pl-8 w-full text-[#2C3F53] flex items-center">
+        <h3 className="seventh-category-title text-sm lg:text-lg h-10 pl-8 w-full text-[#2C3F53] flex items-center">
           {item.price},- €
         </h3>
       </div>
-      <div className="eigth-category h-10 lg:mt-20 bg-[#E7EDF3] lg:bg-white">
+      <div className="eigth-category h-10 lg:mt-20 bg-[#F2F5F8] lg:bg-white">
         <h3 className="eigth-category-title text-sm lg:text-2xl pl-8 xl:text-md font-bold text-[#2C3F53] "></h3>
       </div>
       <div className="ninth-category h-10">
-        <h3 className="ninth-category-title text-sm lg:text-md h-10 pl-8 bg-white lg:bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
+        <h3 className="ninth-category-title text-sm lg:text-lg h-10 pl-8 bg-white lg:bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
           {item.electricWindows.value}
         </h3>
       </div>
-      <div className="ten-category h-10 bg-[#E7EDF3] lg:bg-white">
-        <h3 className="ten-category-title text-sm lg:text-md h-10 pl-8 w-full text-[#2C3F53] flex items-center ">
+      <div className="ten-category h-10 bg-[#F2F5F8] lg:bg-white">
+        <h3 className="ten-category-title text-sm lg:text-lg h-10 pl-8 w-full text-[#2C3F53] flex items-center ">
           {item.ABS.value}
         </h3>
       </div>
       <div className="eleven-category h-10">
-        <h3 className="eleven-category-title text-sm lg:text-md h-10 pl-8 bg-white lg:bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
+        <h3 className="eleven-category-title text-sm lg:text-lg h-10 pl-8 bg-white lg:bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
           {item.airBags.value}
         </h3>
       </div>
-      <div className="twelwe-category h-10 bg-[#E7EDF3] lg:bg-white">
-        <h3 className="twelwe-category-title text-sm lg:text-md h-10 pl-8 w-full text-[#2C3F53] flex items-center">
+      <div className="twelwe-category h-10 bg-[#F2F5F8] lg:bg-white">
+        <h3 className="twelwe-category-title text-sm lg:text-lg h-10 pl-8 w-full text-[#2C3F53] flex items-center">
           {item.airConditioning.value}
         </h3>
       </div>
       <div className="thirtine-category h-10">
-        <h3 className="thirtine-category-title text-sm lg:text-md h-10 pl-8 bg-white lg:bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
+        <h3 className="thirtine-category-title text-sm lg:text-lg h-10 pl-8 bg-white lg:bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
           Goldene Wasserhähne
         </h3>
       </div>
