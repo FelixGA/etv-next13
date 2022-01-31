@@ -9,6 +9,7 @@ import { useState } from "react";
 import Articles from "../../components/DetailsPage/Articles";
 import PrintPopUp from "../../components/DetailsPage/PrintPopUp";
 import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
+import Link from "next/link";
 
 const Details = () => {
   const router = useRouter();
@@ -89,13 +90,17 @@ const Details = () => {
     .map((item) => item.attributes)
     .find((el) => el.title === cartitle);
 
-  /* for the slider  */
-  let getCars = data?.vehicles?.data.map((item) => item.attributes).slice(0, 4);
+  /* for the slider to recommend cars from the same category */
+  let getCars = data?.vehicles?.data
+    .map((item) => item.attributes)
+    .filter((item) => item?.categorie === carItem?.categorie)
+    .slice(0, 4);
 
   const myLoader = ({ src }) => {
     return src;
   };
   /* get two subsets of the car properties to map them */
+
   const grundlagen = (({ range, weight, maxSpeed, chargingTime }) => [
     range,
     weight,
@@ -115,6 +120,15 @@ const Details = () => {
       {/* image and rating section */}
       <div className="w-full flex flex-col lg:flex-row lg:pt-12  p-4  lg:px-24">
         <div className=" w-full lg:w-1/2 ">
+          <div className="lg:w-64  ">
+            <button className="text-sm bg-white w-48 h-10   text-[#1F1E80] ">
+              <Link href="/comparePage">
+                <a className="visited:text-blue-darker">
+                  « zurück zur Ergebnisliste
+                </a>
+              </Link>
+            </button>
+          </div>
           <Image
             loader={myLoader}
             src={`http://localhost:1337${carItem?.photo.data[0].attributes.url}`}
@@ -133,8 +147,10 @@ const Details = () => {
             <h2 className="hidden lg:block text-5xl text-black-darkest pl-2 ">
               {cartitle}
             </h2>
+
             <CarCardDetailsDesktop carItem={carItem} />
           </div>
+
           {/* MOBILE VERSION DETAILS TABLE */}
           <div className="flex flex-col w-full lg:hidden my-4">
             <div className="flex flex-row w-full 	lg:hidden flex-wrap">

@@ -4,7 +4,7 @@ import ButtonCompare from "../ResultList/ButtonCompare";
 const PrintPopUp = (props) => {
   let carItem = props.carItem;
   return (
-    <div className="sticky lg:z-10 lg:bottom-0 w-full h-18 lg:h-32 bg-grey-light flex justify-between items-center">
+    <div className="sticky md:mt-20 lg:z-10 lg:bottom-0 w-full h-18 lg:h-32 bg-grey-light flex justify-between items-center">
       <div className="hidden lg:block md:w-3/6">.</div>
       <span
         id="BLUE-BUTTONS-SECTION"
