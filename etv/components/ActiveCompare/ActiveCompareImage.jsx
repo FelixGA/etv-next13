@@ -1,11 +1,11 @@
 import Image from "next/image";
-
+/* import { v4 as uuidv4 } from "uuid"; */
 function ActiveCompareImage(props) {
   const myLoader = ({ src }) => {
     return src;
   };
 
-  const activeCompareImages = props.comparedCars?.map((item, index) => (
+  const carsData2 = props.comparedCars.map((item, index) => (
     <div key={index}>
       <div className="lg:w-64 xl:w-88 2xl:w-[380px] p-4">
         <Image
@@ -27,7 +27,7 @@ function ActiveCompareImage(props) {
       </div>
     </div>
   ));
-  return activeCompareImages;
+  return carsData2;
 }
 
 export default ActiveCompareImage;

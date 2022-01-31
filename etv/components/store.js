@@ -14,8 +14,8 @@ const reducer = (state, action) => {
     case "chargingTime":
       return { ...state, chargingTimes: action.data };
 
-    case "removeFilter":
-      return { ...state, removeFilters: action.data };
+    case "category":
+      return { ...state, categorys: action.data };
     /* sorting state */
     case "activeSortValue":
       return { ...state, activeSortValues: action.data };
@@ -40,7 +40,7 @@ const initialState = {
   weights: [],
   maxSpeeds: [],
   chargingTimes: [],
-  removeFilters: false,
+  categorys: [],
   /*  states for comparison popup */
   autoForComparisons: [],
   removeAllCarsForComparisons: false,

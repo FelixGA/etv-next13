@@ -1,15 +1,10 @@
 import Image from "next/image";
-import image from "../../public/images/ari_458_pritsche_frontansicht_6e125d42d4.jpg";
 
 function ActiveCompareItem(props) {
-  console.log("====================================");
-  console.log(props, "this is another props");
-  console.log("====================================");
   const myLoader = ({ src }) => {
     return src;
   };
-
-  const carsData = props.comparedCars?.map((item, index) => (
+  const carsData = props.comparedCars.map((item, index) => (
     <div
       className="data-content-categories w-full  lg:w-64 xl:w-88 2xl:w-[380px] "
       key={index}
@@ -32,7 +27,6 @@ function ActiveCompareItem(props) {
           </h3>
         </div>
       </div>
-
       <div className="flex items-center w-full h-10 pl-8">
         <h2 className="text-sm font-bold text-[#F45625] lg:hidden">
           Testnote <span className="text-[#0B8E78]">{item.rating.value}</span>

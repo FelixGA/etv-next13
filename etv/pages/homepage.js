@@ -16,24 +16,29 @@ function homepage() {
             description
             rating {
               key
+              baseUnit
               value
             }
             categorie
             range {
               key
               value
+              baseUnit
             }
             weight {
               key
               value
+              baseUnit
             }
             maxSpeed {
               key
               value
+              baseUnit
             }
             chargingTime {
               key
               value
+              baseUnit
             }
             electricWindows {
               key

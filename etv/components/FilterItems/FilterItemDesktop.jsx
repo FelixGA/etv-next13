@@ -1,7 +1,7 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
 import { useState } from "react";
-
+import { v4 as uuidv4 } from "uuid";
 import FilterCheckbox from "./FilterCheckbox";
 
 function FilterItemDesktop(props) {
@@ -11,7 +11,7 @@ function FilterItemDesktop(props) {
 
   /* to render the four ranges */
   const rangesForCheckboxes = item.options.map((checkbox, index) => (
-    <div key={index} className="mt-4 flex  py-2 ">
+    <div key={uuidv4()} className="mt-4 flex  py-2 ">
       <FilterCheckbox checkbox={checkbox} />
 
       <label

@@ -33,7 +33,20 @@ function FilterCheckboxMobile(props) {
       minChargingTime >= 20 ? setIsChecked("ab 20 Stunde") : null;
       minChargingTime >= 40 ? setIsChecked("ab 40 Stunde") : null;
     }
-  }, [state?.ranges, state?.weights, state?.maxSpeeds, state?.chargingTimes]);
+    let categories = state?.categorys.map((el) => el.min).join(" ");
+    if (props.checkbox.categoryName == "category") {
+      categories == "Pritsche" ? setIsChecked("Pritsche") : null;
+      categories == "Kipper" ? setIsChecked("Kipper") : null;
+      categories == "Koffer" ? setIsChecked("Koffer") : null;
+      categories == "Kasten" ? setIsChecked("Kasten") : null;
+    }
+  }, [
+    state?.ranges,
+    state?.weights,
+    state?.maxSpeeds,
+    state?.chargingTimes,
+    state?.categorys,
+  ]);
 
   return (
     <>
@@ -43,19 +56,8 @@ function FilterCheckboxMobile(props) {
         id={props.checkbox.id}
         name={props.checkbox.categoryName}
         value={props.checkbox.value}
-        checked={
-          isChecked == props.checkbox.name &&
-          (state?.ranges ||
-            state?.weights ||
-            state?.maxSpeeds ||
-            state?.chargingTimes)
-            ? true
-            : false
-        }
+        checked={isChecked == props.checkbox.name ? true : false}
         onChange={() => {
-          console.log("name", props.checkbox.name);
-          console.log("usestate", isChecked);
-
           dispatch({
             type: props.checkbox.categoryName,
             data: [{ min: props.checkbox.value, max: 99999 }],

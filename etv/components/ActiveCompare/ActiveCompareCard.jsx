@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+/* import { v4 as uuidv4 } from "uuid"; */
 function ActiveCompareCard(props) {
   const myLoader = ({ src }) => {
     return src;

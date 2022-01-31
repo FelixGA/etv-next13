@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useStore } from "../../components/store";
 import Link from "next/link";
+import { v4 as uuidv4 } from "uuid";
 //import filtersData from "../filtersData.json";
 
 const HeroSection = () => {
@@ -251,7 +252,7 @@ const HeroSection = () => {
         </div>
         <div className="icons-container flex flex-row justify-around flex-wrap">
           {logos.map((logo, index) => (
-            <i className="m-2 lg:my-20 lg:scale-125" key={index}>
+            <i className="m-2 lg:my-20 lg:scale-125" key={uuidv4()}>
               <Image
                 src={logo.src}
                 alt={logo.alt}

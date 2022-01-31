@@ -2,8 +2,6 @@ import { useStore } from "../store";
 import Link from "next/link";
 import CarCardforPopUp from "./CarCardforPopUp";
 import CarCardForPopUpMobile from "./CarCardForPopUpMobile";
-import testImage from "../../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg";
-import Image from "next/image";
 
 const StickyPopUpForComparison = () => {
   const { state, dispatch } = useStore();
@@ -47,7 +45,6 @@ const StickyPopUpForComparison = () => {
         <div className="mb-12 lg:mb-8 ">
           <Link
             href={state?.autoForComparisons.length > 1 ? "/activecompare" : "#"}
-            as="/activecompare"
           >
             <a className="pr-4 ">
               <button
@@ -87,12 +84,16 @@ const StickyPopUpForComparison = () => {
       <div className=" md:hidden flex flex-row w-full h-1/3 items-center justify-around">
         <Link
           href={state?.autoForComparisons.length > 1 ? "/activecompare" : "#"}
-          as="/activecompare"
+
         >
           <a className="flex  lg:hidden">
             <button
-              className="bg-grey-light w-20 h-8 text-[#1F1E80] disabled:bg-grey-light disabled:text-white"
-              disabled={state?.autoForComparisons.length > 1 ? false : true}
+              className={
+                state?.autoForComparisons.length > 1
+                  ? "bg-grey-light w-20 h-8 text-[#1F1E80] "
+                  : "bg-grey-light w-20 h-8 text-grey-light "
+              }
+
             >
               Vergleich
             </button>
