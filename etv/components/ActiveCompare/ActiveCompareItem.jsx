@@ -1,22 +1,43 @@
+import Image from "next/image";
 
-import React from "react";
-import { v4 as uuidv4 } from "uuid";
 function ActiveCompareItem(props) {
+  const myLoader = ({ src }) => {
+    return src;
+  };
   const carsData = props.comparedCars.map((item, index) => (
-    <>
-      <div
-        className="data-content-categories   lg:w-64 xl:w-88 2xl:w-[380px] "
-        key={uuidv4()}
-      >
-        <div className="placeholder-image-clone flex lg:hidden h-16  w-56 lg:w-full xl:w-88 2xl:w-[380px]"></div>
-        <div className="flex items-center w-full h-10 pl-4">
-          <h2 className="text-sm font-bold text-[#F45625] lg:hidden">
-            Testnote <span className="text-[#0B8E78]">{item.rating.value}</span>
-          </h2>
-          <div className="hidden lg:flex  w-48 h-12 border border-blue-lighter mb-8 ">
-            <div className="text-xs  w-16 h-full bg-orange-dark text-white flex items-center justify-center">
-              <span className="font-bold"> TEST</span>
-
+    <div
+      className="data-content-categories w-full  lg:w-64 xl:w-88 2xl:w-[380px] "
+      key={index}
+    >
+      <div className="w-48 h-36 lg:hidden pl-8">
+        <Image
+          className="rounded-md md:rounded-lg brightness-50 "
+          src={`http://localhost:1337${item.photo.data[0].attributes.url}`}
+          loader={myLoader}
+          alt="picture"
+          objectFit="cover"
+          width={100.35}
+          height={66.9}
+          layout="responsive"
+        ></Image>
+        <div className="">
+          <h3 className="text-[#2C3F53] pt-2 font-bold text-sm">
+            {" "}
+            {item.title}
+          </h3>
+        </div>
+      </div>
+      <div className="flex items-center w-full h-10 pl-8">
+        <h2 className="text-sm font-bold text-[#F45625] lg:hidden">
+          Testnote <span className="text-[#0B8E78]">{item.rating.value}</span>
+        </h2>
+        <div className="hidden lg:flex  w-48 h-12 border border-blue-lighter mb-8 ">
+          <div className="text-xs  w-16 h-full bg-orange-dark text-white flex items-center justify-center">
+            <span className="font-bold"> TEST</span>
+          </div>
+          <div className=" flex flex-col justify-center w-full">
+            <div className="pt-10 ">
+              <span className="text-xxs tracking-widest pl-2.5">ERGEBNIS</span>
             </div>
             <div className="flex flex-row pb-8">
               <div className="">
