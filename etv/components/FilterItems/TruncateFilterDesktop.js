@@ -7,7 +7,7 @@ import image6 from "../../public/images/ladezeit@2x.png";
 import FilterItemDesktop from "./FilterItemDesktop";
 import Image from "next/image";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useStore } from "../store";
 import FilterOptionPrice from "./FilterOptionPrice";
 
@@ -16,6 +16,9 @@ function TruncateFilterDesktop() {
   const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
   const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
   const [truncPrice, setTruncPrice] = useState(false);
+
+  const [rotateIt, setRotateIt] = useState(false);
+
   /* filter list */
   const filtersData = [
     {
@@ -194,7 +197,10 @@ function TruncateFilterDesktop() {
       {/* Preis */}
       <div
         className="cursor-pointer w-full"
-        onClick={() => setTruncPrice(!truncPrice)}
+        onClick={() => {
+          setTruncPrice(!truncPrice);
+          setRotateIt(!rotateIt);
+        }}
       >
         <div className="flex  justify-between border-b">
           <div className="flex pl-4">
@@ -213,7 +219,13 @@ function TruncateFilterDesktop() {
               <h4 className="py-3 font-bold text-blue-dark">Preis</h4>
             </div>
           </div>
-          <div className="w-3 mr-8 my-auto">
+          <div
+            className={
+              rotateIt
+                ? "flex items-center w-6 mr-5 my-auto transition transform rotate-180 origin-center	"
+                : "flex items-center w-6 mr-5 my-auto transition transform rotate-0 origin-center	 "
+            }
+          >
             <MdKeyboardArrowDown size={25} />
           </div>
         </div>
@@ -248,7 +260,7 @@ function TruncateFilterDesktop() {
           </div>
           <span
             className="pl-2  my-auto cursor-pointer"
-            onClick={() =>
+            onClick={() => {
               dispatch({
                 type: "price",
                 data: [
@@ -257,8 +269,8 @@ function TruncateFilterDesktop() {
                     max: Number(userInputMaxPrice),
                   },
                 ],
-              })
-            }
+              });
+            }}
           >
             Los
           </span>

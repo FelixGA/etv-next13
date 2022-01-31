@@ -58,7 +58,7 @@ function Sort() {
             </div>
             <div className="pl-4 my-auto ">
               <h4 className="py-3  font-bold text-blue-dark text-md">
-                Sortieren nach: {state?.activeSortValues}
+                Sortieren nach {state?.activeSortValues}
               </h4>
             </div>
           </div>

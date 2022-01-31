@@ -11,15 +11,23 @@ function FilterBlock() {
   const { state, dispatch } = useStore();
   const [truncate, setTruncate] = useState(false);
   const [clicked, SetClicked] = useState(true);
+  const [rotateIt, setRotateIt] = useState(false);
 
   return (
     <div className=" w-full min-w-fit relative">
       <div className="bg-[#Fff]  shadow-dropdown md:hidden  w-full z-40">
-        <div className="h-10 shadow-dropdown flex flex-row justify-between align-middle ">
-          <div
-            className="w-full  flex flex-row "
-            onClick={() => setTruncate(!truncate)}
-          >
+        <div
+          className={
+            truncate
+              ? "h-10 shadow-dropdown flex flex-row justify-between align-middle border-b"
+              : "h-10 shadow-dropdown flex flex-row justify-between align-middle "
+          }
+          onClick={() => {
+            setTruncate(!truncate);
+            setRotateIt(!rotateIt);
+          }}
+        >
+          <div className="w-full  flex flex-row">
             <div
               className="w-3.5 my-auto ml-6  
           "
@@ -40,8 +48,11 @@ function FilterBlock() {
           </div>
 
           <div
-            className="w-4 mr-6 my-auto "
-            onClick={() => setTruncate(!truncate)}
+            className={
+              rotateIt
+                ? "flex items-center w-8 mr-5 my-auto transition transform rotate-180 origin-center	"
+                : "flex items-center w-8 mr-5 my-auto transition transform rotate-0 origin-center	 "
+            }
           >
             <MdKeyboardArrowDown size={28} />
           </div>

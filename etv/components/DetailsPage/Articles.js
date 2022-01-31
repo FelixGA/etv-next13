@@ -10,7 +10,7 @@ const Articles = (props) => {
         <div className="w-full p-4 lg:w-1/2 lg:p-12">
           <Image
             loader={myLoader}
-            src={`http://localhost:1337${props.carItem?.photo.data[1].attributes.url}`}
+            src={`http://localhost:1337${props.carItem?.photo?.data[1]?.attributes.url}`}
             alt={props.carItem?.photo.data[0].attributes.alternativeText}
             width={195}
             height={140}
@@ -29,7 +29,7 @@ const Articles = (props) => {
         <div className="w-full p-4 lg:w-1/2 lg:p-12">
           <Image
             loader={myLoader}
-            src={`http://localhost:1337${props.carItem?.photo.data[1].attributes.url}`}
+            src={`http://localhost:1337${props.carItem?.photo?.data[1]?.attributes.url}`}
             alt={props.carItem?.photo.data[0].attributes.alternativeText}
             width={195}
             height={140}
