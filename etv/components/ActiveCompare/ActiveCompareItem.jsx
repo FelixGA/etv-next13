@@ -1,9 +1,8 @@
-
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 function ActiveCompareItem(props) {
   const carsData = props.comparedCars.map((item, index) => (
-    <>
+    <div>
       <div
         className="data-content-categories   lg:w-64 xl:w-88 2xl:w-[380px] "
         key={uuidv4()}
@@ -16,7 +15,6 @@ function ActiveCompareItem(props) {
           <div className="hidden lg:flex  w-48 h-12 border border-blue-lighter mb-8 ">
             <div className="text-xs  w-16 h-full bg-orange-dark text-white flex items-center justify-center">
               <span className="font-bold"> TEST</span>
-
             </div>
             <div className="flex flex-row pb-8">
               <div className="">
@@ -55,7 +53,7 @@ function ActiveCompareItem(props) {
       </div>
       <div className="sixth-category h-10">
         <h3 className="sixth-category-title text-sm lg:text-lg h-10 pl-8 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
-          Nutzlastpreis
+          {item.price / item.weight.value} €/kg
         </h3>
       </div>
       <div className="seventh-category h-10">

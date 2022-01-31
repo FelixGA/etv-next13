@@ -57,18 +57,18 @@ function FilterCheckbox(props) {
   return (
     <>
       <input
-        className=" appearance-none   w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+        className=" appearance-none   w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 border-solid "
         type="checkbox"
         id={props.checkbox.id}
         name={props.checkbox.categoryName}
         value={props.checkbox.value}
         checked={isChecked == props.checkbox.name ? true : false}
-        onChange={() => {
-          dispatch({
-            type: props.checkbox.categoryName,
-            data: [{ min: props.checkbox.value, max: 99999 }],
-          });
-        }}
+        // onChange={() => {
+        //   dispatch({
+        //     type: props.checkbox.categoryName,
+        //     data: [{ min: props.checkbox.value, max: 99999 }],
+        //   });
+        // }}
       ></input>
     </>
   );

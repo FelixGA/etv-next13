@@ -3,20 +3,29 @@ import Image from "next/image";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import FilterCheckbox from "./FilterCheckbox";
-
+import { useStore } from "../store";
 function FilterItemDesktop(props) {
   const item = props.item;
-
+  const { state, dispatch } = useStore();
   const [trunc, setTrunc] = useState(false);
 
   /* to render the four ranges */
   const rangesForCheckboxes = item.options.map((checkbox, index) => (
-    <div key={uuidv4()} className="mt-4 flex  py-2 ">
+    <div
+      onClick={() => {
+        dispatch({
+          type: checkbox.categoryName,
+          data: [{ min: checkbox.value, max: 99999 }],
+        });
+      }}
+      key={uuidv4()}
+      className="mt-4 flex cursor-pointer py-2  "
+    >
       <FilterCheckbox checkbox={checkbox} />
 
       <label
-        forhtml="firstRange"
-        className="inline-flex items-center cursor-pointer pl-5 text-lg text-[#2C3F53] "
+        forhtml={checkbox.name}
+        className="inline-flex items-center  pl-5 text-lg text-[#2C3F53] "
       >
         {checkbox.name}
       </label>

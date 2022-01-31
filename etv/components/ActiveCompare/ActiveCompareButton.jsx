@@ -11,7 +11,7 @@ function ActiveCompareButton(props) {
     <div key={index}>
       <div className="  lg:w-64 xl:w-88 2xl:w-[380px] p-4">
         <button className="h-8 w-full  bg-[#FFAB00] rounded-[5px]">
-          <Link href={`/details/${item?.title}`}>
+          <Link href={`/vehicles/${item?.title}`}>
             <a className="visited:text-blue-darker">Weiter</a>
           </Link>
         </button>

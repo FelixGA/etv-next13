@@ -5,10 +5,8 @@ function ActiveCompareImage(props) {
     return src;
   };
 
-
   const carsData2 = props.comparedCars.map((item, index) => (
     <div key={uuidv4()}>
-
       <div className="lg:w-64 xl:w-88 2xl:w-[380px] p-4">
         <Image
           className="rounded-md md:rounded-lg brightness-[75%] "
@@ -29,7 +27,7 @@ function ActiveCompareImage(props) {
       </div>
     </div>
   ));
-  return activeCompareImages;
+  return carsData2;
 }
 
 export default ActiveCompareImage;
