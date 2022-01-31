@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import { v4 as uuidv4 } from "uuid";
 function ActiveCompareCard(props) {
   const myLoader = ({ src }) => {
     return src;
@@ -8,7 +8,7 @@ function ActiveCompareCard(props) {
   /*  const test = props.comparedCars; */
 
   const test = props?.comparedCars?.map((caritem, index) => (
-    <div className="container  flex flex-col " key={index}>
+    <div className="container  flex flex-col " key={uuidv4()}>
       {/* <div className="invisible xl:visible xl:flex xl:bg-red-700 xl:w-full xl:h-72 xl:items-center"></div> */}
       <div className="w-28 sm:w-36 md:w-48 lg:w-56 xl:w-80 pl-5 xl:pr-3">
         <Image

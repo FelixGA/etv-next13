@@ -1,5 +1,3 @@
-import { MdKeyboardArrowDown } from "react-icons/md";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useStore } from "../store";
 
@@ -9,11 +7,14 @@ function FilterCheckbox(props) {
   /* CHECKING WHICH CHECKBOX IS ACTIVE UPON THE RANGE */
   useEffect(() => {
     let minRange = state?.ranges.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "range") {
+    if (props.checkbox.categoryName == "range" && state?.ranges.length) {
       minRange >= 150 ? setIsChecked("ab 150 km") : null;
       minRange >= 200 ? setIsChecked("ab 200 km") : null;
       minRange >= 250 ? setIsChecked("ab 250 km") : null;
       minRange >= 500 ? setIsChecked("ab 500 km") : null;
+    } else {
+      /* unchecking the box */
+      setIsChecked(props.checkbox.categoryName);
     }
 
     let minWeight = state?.weights.map((el) => el.min).join(" ");
@@ -38,7 +39,20 @@ function FilterCheckbox(props) {
       minChargingTime >= 20 ? setIsChecked("ab 20 Stunde") : null;
       minChargingTime >= 40 ? setIsChecked("ab 40 Stunde") : null;
     }
-  }, [state?.ranges, state?.weights, state?.maxSpeeds, state?.chargingTimes]);
+    let categories = state?.categorys.map((el) => el.min).join(" ");
+    if (props.checkbox.categoryName == "category") {
+      categories == "Pritsche" ? setIsChecked("Pritsche") : null;
+      categories == "Kipper" ? setIsChecked("Kipper") : null;
+      categories == "Koffer" ? setIsChecked("Koffer") : null;
+      categories == "Kasten" ? setIsChecked("Kasten") : null;
+    }
+  }, [
+    state?.ranges,
+    state?.weights,
+    state?.maxSpeeds,
+    state?.chargingTimes,
+    state?.categorys,
+  ]);
 
   return (
     <>
@@ -48,19 +62,8 @@ function FilterCheckbox(props) {
         id={props.checkbox.id}
         name={props.checkbox.categoryName}
         value={props.checkbox.value}
-        checked={
-          isChecked == props.checkbox.name &&
-          (state?.ranges ||
-            state?.weights ||
-            state?.maxSpeeds ||
-            state?.chargingTimes)
-            ? true
-            : false
-        }
+        checked={isChecked == props.checkbox.name ? true : false}
         onChange={() => {
-          // console.log("name", props.checkbox.name);
-          // console.log("usestate", isChecked);
-
           dispatch({
             type: props.checkbox.categoryName,
             data: [{ min: props.checkbox.value, max: 99999 }],

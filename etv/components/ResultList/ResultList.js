@@ -51,6 +51,11 @@ const ResultList = (props) => {
         )
       )
         return false;
+      if (
+        state?.categorys?.length > 0 &&
+        !state?.categorys?.some((entry) => entry.min == car.categorie)
+      )
+        return false;
 
       return true;
     });
@@ -62,6 +67,7 @@ const ResultList = (props) => {
     state?.ranges,
     state?.maxSpeeds,
     state?.chargingTimes,
+    state?.categorys,
     props.sortedCars,
   ]);
   /* ɢᴇᴛ pop up for not meeting criteria */

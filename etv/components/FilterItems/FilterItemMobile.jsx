@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
-
+import { v4 as uuidv4 } from "uuid";
 import { useState, useEffect } from "react";
 import { useStore } from "../store";
 import FilterCheckbox from "./FilterCheckbox";
@@ -12,7 +12,7 @@ function FilterItemMobile(props) {
   const { state, dispatch } = useStore();
   /* to render the four ranges */
   const rangesForCheckboxesmMobile = item.options.map((checkbox, index) => (
-    <div key={index.toString()} className="mt-1 flex flex-row py-2 ">
+    <div key={uuidv4()} className="mt-1 flex flex-row py-2 ">
       <FilterCheckboxMobile checkbox={checkbox} />
 
       <label
