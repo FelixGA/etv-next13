@@ -6,6 +6,7 @@ import ActiveCompareCard from "../components/ActiveCompare/ActiveCompareCard";
 import ActiveCompareItem from "../components/ActiveCompare/ActiveCompareItem";
 import ActiveCompareImage from "../components/ActiveCompare/ActiveCompareImage";
 import Link from "next/link";
+import ActiveCompareButton from "../components/ActiveCompare/ActiveCompareButton";
 
 function activecompare() {
   const { state, dispatch } = useStore();
@@ -43,50 +44,80 @@ function activecompare() {
         <ActiveCompareImage comparedCars={comparedCars} />
       </div>
       {/* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN MOBILE VIEW<> */}
-      <div className="data-content-wrapper grid grid-flow-col grid-cols-[1/4_minmax(200px,_1fr)] w-full bg-red-500 border-2 lg:hidden">
-        <div className="data-content-categories bg-blue-500">
-          <div className="placeholder-image-clone  h-16 "></div>
-          <div className="first-category">
-            <h3 className="first-category-title pl-4">Grundlagen</h3>
+      <div className="data-content-wrapper  grid grid-flow-col grid-cols-[1/4_minmax(130px,_1fr)] w-full scrollbar-hide overflow-x-scroll lg:hidden">
+        <div className="data-content-categories  w-full border-r-2 shadow-xl ">
+          {/* sticky left-0 z-10*/}
+          <div className="placeholder-image-clone bg-[#F2F5F8] h-36 "></div>
+          <div className="first-category flex items-center h-10 w-full bg-white">
+            <h3 className="first-category-title p-4 text-[#2C3F53] text-xl">
+              Grundlagen
+            </h3>
           </div>
-          <div className="second-category">
-            <h3 className="second-category-title">Reichweite</h3>
+          <div className="second-category flex items-center h-10 w-full bg-[#F2F5F8]">
+            <h3 className="second-category-title p-4 text-[#2C3F53] text-sm">
+              Reichweite
+            </h3>
           </div>
-          <div className="third-category">
-            <h3 className="third-category-title">Zuladung</h3>
+          <div className="third-category flex items-center h-10 w-full">
+            <h3 className="third-category-title p-4 text-[#2C3F53] text-sm ">
+              Zuladung
+            </h3>
           </div>
-          <div className="forth-category">
-            <h3 className="forth-category-title">Ladezeit</h3>
+          <div className="forth-category flex items-center h-10 w-full bg-[#F2F5F8]">
+            <h3 className="forth-category-title p-4 text-[#2C3F53] text-sm">
+              Ladezeit
+            </h3>
           </div>
-          <div className="fifth-category">
-            <h3 className="fifth-category-title">Höchst- geschwindigkeit</h3>
+          <div className="fifth-category flex items-center h-10 w-full">
+            <h3 className="fifth-category-title p-4 text-[#2C3F53] text-sm">
+              Höchst- geschwindigkeit
+            </h3>
           </div>
-          <div className="sixth-category">
-            <h3 className="sixth-category-title">Nutzlastpreis</h3>
+          <div className="sixth-category flex items-center h-10 w-full bg-[#F2F5F8]">
+            <h3 className="sixth-category-title p-4 text-[#2C3F53] text-sm">
+              Nutzlastpreis
+            </h3>
           </div>
-          <div className="seventh-category">
-            <h3 className="seventh-category-title">Kaufpreis</h3>
+          <div className="seventh-category flex items-center h-10 w-full">
+            <h3 className="seventh-category-title p-4 text-[#2C3F53] text-sm">
+              Kaufpreis
+            </h3>
           </div>
-          <div className="eigth-category">
-            <h3 className="eigth-category-title">Ausstattung</h3>
+          <div className="eigth-category flex items-center h-10 w-full bg-[#F2F5F8]">
+            <h3 className="eigth-category-title p-4 text-[#2C3F53] text-md">
+              Ausstattung
+            </h3>
           </div>
-          <div className="ninth-category">
-            <h3 className="ninth-category-title">Elektrische Fensterheber</h3>
+          <div className="ninth-category flex items-center h-10 w-full">
+            <h3 className="ninth-category-title p-4 text-[#2C3F53] text-sm">
+              Elektrische Fensterheber
+            </h3>
           </div>
-          <div className="ten-category">
-            <h3 className="ten-category-title">ABS</h3>
+          <div className="ten-category flex items-center h-10 w-full bg-[#F2F5F8]">
+            <h3 className="ten-category-title p-4 text-[#2C3F53] text-sm">
+              ABS
+            </h3>
           </div>
-          <div className="eleven-category">
-            <h3 className="eleven-category-title">Airbags</h3>
+          <div className="eleven-category flex items-center h-10 w-full">
+            <h3 className="eleven-category-title p-4 text-[#2C3F53] text-sm">
+              Airbags
+            </h3>
           </div>
-          <div className="twelwe-category">
-            <h3 className="twelwe-category-title">Klimaanlage</h3>
+          <div className="twelwe-category flex items-center h-10 w-full bg-[#F2F5F8]">
+            <h3 className="twelwe-category-title p-4 text-[#2C3F53] text-sm">
+              Klimaanlage
+            </h3>
           </div>
-          <div className="thirtine-category">
-            <h3 className="thirtine-category-title">Goldene Wasserhähne</h3>
+          <div className="thirtine-category flex items-center h-10 w-full">
+            <h3 className="thirtine-category-title p-4 text-[#2C3F53] text-sm">
+              Goldene Wasserhähne
+            </h3>
           </div>
+          <div className="w-[105%] bg-[#D0DDEA] h-20"></div>
         </div>
-        <div className="data-content-values w-fit">some values</div>
+        <div className="flex flex-row">
+          <ActiveCompareItem comparedCars={comparedCars} />
+        </div>
       </div>
       {/* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN DESKTOP VIEW<> */}
       <div className="data-content-wrapper w-full  hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center pt-12">
@@ -158,29 +189,13 @@ function activecompare() {
             </h3>
           </div>
         </div>
-        {/*  */}
+
         <ActiveCompareItem comparedCars={comparedCars} />
       </div>
       {/* BUTTONS */}
-      <div className="CTA-btn w-full h-24 hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center bg-[#E7EDF3] mt-24">
+      <div className="CTA-btn w-full h-24 hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center bg-[#D0DDEA] mt-24">
         <div className="placeholder lg:w-64 xl:w-88 2xl:w-[380px] p-4 h-8 "></div>
-        <div className="  lg:w-64 xl:w-88 2xl:w-[380px] p-4">
-          <button className="h-8 w-full  bg-[#FFAB00] rounded-[5px]">
-            <Link href="/comparePage">
-              <a className="visited:text-blue-darker">Weiter</a>
-            </Link>
-          </button>
-        </div>
-        <div className="  lg:w-64 xl:w-88 2xl:w-[380px] p-4">
-          <button className="h-8 w-full  bg-[#FFAB00] rounded-[5px]">
-            Weiter
-          </button>
-        </div>{" "}
-        <div className="  lg:w-64 xl:w-88 2xl:w-[380px] p-4">
-          <button className="h-8 w-full  bg-[#FFAB00] rounded-[5px]">
-            Weiter
-          </button>
-        </div>
+        <ActiveCompareButton comparedCars={comparedCars} />
       </div>
     </div>
 

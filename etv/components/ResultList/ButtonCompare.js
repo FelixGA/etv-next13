@@ -76,7 +76,7 @@ function ButtonCompare(props) {
         {disabled ? "Zum Vergleich" : buttonInput}
       </button>
       <p className="text-xs">
-        {state?.maximalThrees === props.carItem.title
+        {state?.maximalThrees === props.carItem?.title
           ? "Maximal 3 Fahrzeuge"
           : null}
       </p>

@@ -30,8 +30,8 @@ function CarCardforPopUp(props) {
         </p>
       </div> */}
 
-      <div className="absolute hidden md:flex bottom-20 left-2">
-        <h4 className="mt-10 text-lg font-black text-white ">
+      <div className="absolute hidden md:flex bottom-[85px] lg:bottom-20 left-2 items-center justify-center">
+        <h4 className="mt-4 lg:mt-10 text-md lg:text-lg font-black text-white  ">
           {props.selectedCar.title}
         </h4>
       </div>
