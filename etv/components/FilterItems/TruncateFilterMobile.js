@@ -3,6 +3,7 @@ import image2 from "../../public/images/zuladung.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit.png";
 import image4 from "../../public/images/preis.png";
 import image5 from "../../public/images/more-svgrepo-com.png";
+
 import Image from "next/image";
 import { useState } from "react";
 import FilterItemMobile from "./FilterItemMobile";
@@ -147,7 +148,7 @@ function TruncateFilter() {
 
   const getFiltersData = filtersData.map((item, index) => {
     return (
-      <div key={item.id}>
+      <div key={item.id} className="">
         <FilterItemMobile item={item} />
       </div>
     );

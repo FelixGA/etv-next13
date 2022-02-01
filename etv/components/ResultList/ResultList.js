@@ -91,7 +91,7 @@ const ResultList = (props) => {
   });
 
   return (
-    <div className="flex flex-col w-full  md:m-auto lg:w-full lg:m-2 bg-grey-extra lg:bg-white">
+    <div className="flex flex-col w-full   lg:w-full lg:m-2 bg-grey-extra lg:bg-white">
       {shownCars?.length === 0 ? showMoreMessage : getdisplayedCars}
     </div>
   );
