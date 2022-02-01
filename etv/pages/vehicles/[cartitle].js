@@ -199,7 +199,7 @@ const Details = () => {
         <div className=" lg:w-1/3 w-full m-auto relative  ">
           <Image
             loader={myLoader}
-            src={`http://localhost:1337${carItem?.photo.data[1].attributes.url}`}
+            src={`http://localhost:1337${carItem?.photo?.data[1]?.attributes.url}`}
             alt={carItem?.photo.data[0].attributes.alternativeText}
             width={195}
             height={140}

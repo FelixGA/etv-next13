@@ -16,6 +16,8 @@ const reducer = (state, action) => {
 
     case "category":
       return { ...state, categorys: action.data };
+    case "truncate":
+      return { ...state, truncates: action.data };
     /* sorting state */
     case "activeSortValue":
       return { ...state, activeSortValues: action.data };
@@ -41,6 +43,7 @@ const initialState = {
   maxSpeeds: [],
   chargingTimes: [],
   categorys: [],
+  truncates: "",
   /*  states for comparison popup */
   autoForComparisons: [],
   removeAllCarsForComparisons: false,

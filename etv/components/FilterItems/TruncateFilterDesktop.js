@@ -2,12 +2,12 @@ import image from "../../public/images/reichweite.png";
 import image2 from "../../public/images/zuladung.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit.png";
 import image4 from "../../public/images/preis.png";
-import image5 from "../../public/images/more-svgrepo-com.png";
+import image5 from "../../public/images/aufbautype.png";
 import image6 from "../../public/images/ladezeit@2x.png";
 import FilterItemDesktop from "./FilterItemDesktop";
 import Image from "next/image";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useStore } from "../store";
 import FilterOptionPrice from "./FilterOptionPrice";
 
@@ -16,11 +16,15 @@ function TruncateFilterDesktop() {
   const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
   const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
   const [truncPrice, setTruncPrice] = useState(false);
+
+  const [rotateIt, setRotateIt] = useState(false);
+
   /* filter list */
   const filtersData = [
     {
       id: 1,
-      category: "Reichweite",
+      category: "ranges",
+      title: "Reichweite",
       image: image,
       options: [
         {
@@ -51,7 +55,9 @@ function TruncateFilterDesktop() {
     },
     {
       id: 2,
-      category: "Zuladung",
+      category: "weights",
+      title: "Zuladung",
+
       image: image2,
       options: [
         {
@@ -82,7 +88,9 @@ function TruncateFilterDesktop() {
     },
     {
       id: 3,
-      category: "Höchstgeschwindigkeit",
+      title: "V-Max",
+
+      category: "maxSpeeds",
       image: image3,
       options: [
         {
@@ -113,7 +121,8 @@ function TruncateFilterDesktop() {
     },
     {
       id: 5,
-      category: "Ladenzeit",
+      title: "Ladenzeit",
+      category: "chargingTimes",
       image: image6,
       options: [
         {
@@ -144,7 +153,8 @@ function TruncateFilterDesktop() {
     },
     {
       id: 4,
-      category: "Aufbautyp",
+      title: "Aufbautyp",
+      category: "categorys",
       image: image5,
       options: [
         {
@@ -194,7 +204,10 @@ function TruncateFilterDesktop() {
       {/* Preis */}
       <div
         className="cursor-pointer w-full"
-        onClick={() => setTruncPrice(!truncPrice)}
+        onClick={() => {
+          setTruncPrice(!truncPrice);
+          setRotateIt(!rotateIt);
+        }}
       >
         <div className="flex  justify-between border-b">
           <div className="flex pl-4">
@@ -213,7 +226,13 @@ function TruncateFilterDesktop() {
               <h4 className="py-3 font-bold text-blue-dark">Preis</h4>
             </div>
           </div>
-          <div className="w-3 mr-8 my-auto">
+          <div
+            className={
+              rotateIt
+                ? "flex items-center w-6 mr-5 my-auto transition transform rotate-180 origin-center	"
+                : "flex items-center w-6 mr-5 my-auto transition transform rotate-0 origin-center	 "
+            }
+          >
             <MdKeyboardArrowDown size={25} />
           </div>
         </div>
@@ -248,7 +267,7 @@ function TruncateFilterDesktop() {
           </div>
           <span
             className="pl-2  my-auto cursor-pointer"
-            onClick={() =>
+            onClick={() => {
               dispatch({
                 type: "price",
                 data: [
@@ -257,8 +276,8 @@ function TruncateFilterDesktop() {
                     max: Number(userInputMaxPrice),
                   },
                 ],
-              })
-            }
+              });
+            }}
           >
             Los
           </span>

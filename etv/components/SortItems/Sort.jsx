@@ -22,6 +22,7 @@ function Sort() {
   ];
   const [truncate, setTruncate] = useState(false);
   const [isChecked, setIsChecked] = useState("");
+  const [rotateIt, setRotateIt] = useState(false);
   const getAllSortings = sortBy2.map((rank) => {
     return (
       <div key={rank.sortCategory} className="mt-1 flex flex-row py-2  mr-4">
@@ -49,7 +50,10 @@ function Sort() {
     <div className="block md:hidden ">
       <div
         className="py-2 cursor-pointer"
-        onClick={() => setTruncate(!truncate)}
+        onClick={() => {
+          setTruncate(!truncate);
+          setRotateIt(!rotateIt);
+        }}
       >
         <div className="flex flex-row justify-between border-b ">
           <div className="flex flex-row ">
@@ -58,11 +62,17 @@ function Sort() {
             </div>
             <div className="pl-4 my-auto ">
               <h4 className="py-3  font-bold text-blue-dark text-md">
-                Sortieren nach: {state?.activeSortValues}
+                Sortieren nach {state?.activeSortValues}
               </h4>
             </div>
           </div>
-          <div className="w-3 mr-8 my-auto">
+          <div
+            className={
+              rotateIt
+                ? "flex items-center w-6 mr-6 my-auto transition transform rotate-180 origin-center	"
+                : "flex items-center w-6 mr-6 my-auto transition transform rotate-0 origin-center	 "
+            }
+          >
             <MdKeyboardArrowDown size={25} />
           </div>
         </div>

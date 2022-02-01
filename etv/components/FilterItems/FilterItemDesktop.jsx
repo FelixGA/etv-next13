@@ -7,8 +7,7 @@ import { useStore } from "../store";
 function FilterItemDesktop(props) {
   const item = props.item;
   const { state, dispatch } = useStore();
-  const [trunc, setTrunc] = useState(false);
-
+  console.log(state[item.category]);
   /* to render the four ranges */
   const rangesForCheckboxes = item.options.map((checkbox, index) => (
     <div
@@ -19,10 +18,9 @@ function FilterItemDesktop(props) {
         });
       }}
       key={uuidv4()}
-      className="mt-4 flex cursor-pointer py-2  "
+      className="mt-4 flex cursor-pointer py-2 "
     >
       <FilterCheckbox checkbox={checkbox} />
-
       <label
         forhtml={checkbox.name}
         className="inline-flex items-center  pl-5 text-lg text-[#2C3F53] "
@@ -33,7 +31,15 @@ function FilterItemDesktop(props) {
   ));
   return (
     <>
-      <div className=" cursor-pointer" onClick={() => setTrunc(!trunc)}>
+      <div
+        className=" cursor-pointer "
+        onClick={() => {
+          dispatch({
+            type: "truncate",
+            data: state?.truncates !== item.title ? item.title : "",
+          });
+        }}
+      >
         <div className="flex flex-row justify-between border-b py-4  w-full  ">
           <div className="flex flex-row pl-4 ">
             <div className="w-6 h-6 ml-4 ">
@@ -48,15 +54,34 @@ function FilterItemDesktop(props) {
               />
             </div>
             <div className="pl-4 my-auto ">
-              <h4 className=" font-bold text-[#1F1E80]">{item.category}</h4>
-            </div>
+              <h4 className=" font-bold text-[#1F1E80]">{item.title}</h4>{" "}
+            </div>{" "}
           </div>
-          <div className="w-4  mr-7 ">
+          <span
+            className={
+              state[item.category].length > 0
+                ? "flex text-green-700 text-xl"
+                : "hidden"
+            }
+          >
+            ✓
+          </span>
+          <div
+            className={
+              state?.truncates == item.title
+                ? "flex items-center w-6 mr-5 my-auto transition transform rotate-180 origin-center	"
+                : "flex items-center w-6 mr-5 my-auto transition transform rotate-0 origin-center	 "
+            }
+          >
             <MdKeyboardArrowDown size={25} />
           </div>
         </div>
       </div>
-      <div className={trunc ? "flex flex-col ml-8 " : "hidden"}>
+      <div
+        className={
+          state?.truncates == item.title ? "flex flex-col ml-8 " : "hidden"
+        }
+      >
         {/* RENDERING THE FOUR RANGES */}
         {rangesForCheckboxes}
       </div>
