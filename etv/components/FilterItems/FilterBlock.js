@@ -10,7 +10,7 @@ import ActiveFilterEntry from "./ActiveFilterEntry";
 function FilterBlock() {
   const { state, dispatch } = useStore();
   const [truncate, setTruncate] = useState(false);
-  const [clicked, SetClicked] = useState(true);
+  const [clicked, setClicked] = useState(true);
   const [rotateIt, setRotateIt] = useState(false);
 
   return (
@@ -82,15 +82,24 @@ function FilterBlock() {
           </h1>
         </div>
         <div
-          className="hidden md:flex flex-row justify-end items-center mt-8 pb-2 mr-2 cursor-pointer"
-          onClick={() => SetClicked(!clicked)}
+          className="hidden md:flex flex-row items-center mt-8   cursor-pointer "
+          onClick={() => {
+            setClicked(!clicked);
+            setRotateIt(!rotateIt);
+          }}
         >
-          <h4 className="pr-4 ">
+          <h4 className=" ">
             {" "}
             {`Sortieren nach: ${state?.activeSortValues}`}{" "}
           </h4>
 
-          <div className="w-4 h-4 relative right-4 mb-2">
+          <div
+            className={
+              rotateIt
+                ? "flex items-center justify-center w-6 h-4   transition transform rotate-180 origin-center	"
+                : "flex items-center justify-center w-6 h-4   transition transform rotate-0 origin-center	 "
+            }
+          >
             <MdKeyboardArrowDown size={28} />
           </div>
         </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { useStore } from "../store";
 
@@ -35,7 +34,7 @@ function SortDesktop() {
         ></input>
         <label
           forhtml={rank?.sortCategory}
-          className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] text-lg font-thin"
+          className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
         >
           {rank?.sortCategory}
         </label>
@@ -43,7 +42,7 @@ function SortDesktop() {
     );
   });
   return (
-    <div className="sm:hidden md:flex items-center bg-white border rounded-md">
+    <div className="sm:hidden md:flex items-center bg-white border rounded-md mt-4">
       <div className="flex flex-col ml-4 mt-2 items-start">
         {getAllSortings}
       </div>
