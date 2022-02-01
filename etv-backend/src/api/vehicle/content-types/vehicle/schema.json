@@ -1,0 +1,107 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicles",
+  "info": {
+    "singularName": "vehicle",
+    "pluralName": "vehicles",
+    "displayName": "Vehicles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "title-of-car",
+      "unique": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "description": {
+      "type": "richtext",
+      "default": "here the description"
+    },
+    "categorie": {
+      "type": "enumeration",
+      "enum": [
+        "Pritsche",
+        "Kipper",
+        "Koffer",
+        "Kasten",
+        "beliebigerFahrzeugtyp"
+      ],
+      "required": true
+    },
+    "range": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "weight": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range",
+      "required": false
+    },
+    "maxSpeed": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "chargingTime": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "electricWindows": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "ABS": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "airBags": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "airConditioning": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "extras": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "rating": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "seats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "all.range"
+    }
+  }
+}

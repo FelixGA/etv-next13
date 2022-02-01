@@ -5,6 +5,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        "auto-fit": "repeat(auto-fit, minmax(130px, 1fr))",
+        "auto-fill": "repeat(auto-fill, minmax(200px, 1fr))",
+      },
+      gridTemplateRows: {
+        "auto-fit": "repeat(auto-fit, minmax(0, 1fr))",
+        "auto-fill": "repeat(auto-fill, minmax(0, 1fr))",
+      },
+      screens: {
+        xs: "410px",
+      },
       backgroundImage: {
         "radial-green": "radial-gradient(circle, #00774c 0%, #004225 100%)",
         "horizontal-green": "linear-gradient(135deg, #004225 0%, #417538 100%)",
@@ -19,6 +30,9 @@ module.exports = {
       borderWidth: {
         6: "6px",
       },
+      fontSize: {
+        xxs: "10px",
+      },
       boxShadow: (theme) => ({
         card: "2px 4px 20px -4px rgba(0,0,0,0.75)",
         "product-card": "2px 2px 10px 3px rgba(0,0,0,0.5)",
@@ -27,31 +41,66 @@ module.exports = {
           "colors.green.light"
         )}`,
         header: "0 2px 24px 0 rgba(0,0,0,0.5)",
+        dropdown: "0 2px 6px 0 rgba(44,63,83,0.25)",
       }),
       blur: {
         xs: "2px",
       },
+      /*  filter: {
+
+      } */
       colors: {
+        // white: {
+        //   lightest: "",
+        //   lighter: "",
+        //   light: "#F2F9FF",
+        //   dark: "",
+        //   darker: "",
+        //   darkest: "",
+        // },
         grey: {
           lightest: "#F2F2F2",
-          lighter: "",
+          lighter: "#E7EDF3",
           light: "#CCCCCC",
           dark: "#6e6e6e",
           darker: "#4e4e4e",
           darkest: "#212121",
+          extra: "#F2F9FF",
         },
-        green: {
+        yellow: {
           lightest: "",
           lighter: "",
-          light: "#85BA4B",
-          dark: "#004225",
-          darker: "#1F2624",
-          darkest: "#202624",
+          light: "#ffd166",
+          dark: "#FFAB00",
+          darker: "",
+          darkest: "",
+        },
+        blue: {
+          lightest: "#727CF5",
+          lighter: "#6F89A5",
+          light: "#356aa6",
+          dark: "#243280",
+          darker: "#1F1E80",
+          darkest: "#5A3DF5",
+        },
+        black: {
+          lightest: "#415264",
+          lighter: "",
+          light: "#356aa6",
+          dark: "#2c3f53",
+          darker: "#1F1E80",
+          darkest: "#000000",
+        },
+        orange: {
+          lightest: "",
+          lighter: "",
+          light: "#f35625",
+          dark: "#EF5424",
+          darker: "",
+          darkest: "",
         },
       },
-      maxWidth: {
-        card: "300px",
-      },
+
       spacing: {
         18: "4.5rem",
       },
@@ -65,5 +114,6 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
+  plugins: [require("tailwind-scrollbar-hide")],
+  // plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
 };

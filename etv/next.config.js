@@ -1,6 +1,10 @@
 const withPWA = require("next-pwa");
 const runtimeCaching = require("next-pwa/cache");
-
+module.exports = {
+  images: {
+    domains: ["localhost:1337"],
+  },
+};
 module.exports = withPWA({
   pwa: {
     dest: "public",
@@ -15,5 +19,21 @@ module.exports = withPWA({
         defaultLocale: "de",
       },
     ],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/:path((?!ie11_fallback.html$).*)",
+        has: [
+          {
+            type: "header",
+            key: "user-agent",
+            value: "(.*Trident.*)",
+          },
+        ],
+        permanent: false,
+        destination: "/ie11_fallback.html",
+      },
+    ];
   },
 });
