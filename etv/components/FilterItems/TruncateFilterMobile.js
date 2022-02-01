@@ -15,6 +15,7 @@ function TruncateFilter() {
   const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
   const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
   const [truncPrice, setTruncPrice] = useState(false);
+  const [rotateIt, setRotateIt] = useState(false);
   const { state, dispatch } = useStore();
   /* filter list */
   const filtersData = [
@@ -166,8 +167,11 @@ function TruncateFilter() {
         </div>
         {/* Preis */}
         <div
-          className="cursor-pointer w-full  "
-          onClick={() => setTruncPrice(!truncPrice)}
+          className="cursor-pointer w-full "
+          onClick={() => {
+            setTruncPrice(!truncPrice);
+            setRotateIt(!rotateIt);
+          }}
         >
           <div className="flex py-1 justify-between border-b">
             <div className="flex">
@@ -186,7 +190,13 @@ function TruncateFilter() {
                 <h4 className="py-3 font-bold text-blue-dark">Preis</h4>
               </div>
             </div>
-            <div className="w-3 mr-8 my-auto">
+            <div
+              className={
+                rotateIt
+                  ? "flex items-center w-6 mr-6 my-auto transition transform rotate-180"
+                  : "flex items-center w-6 mr-6 my-auto transition transform rotate-0"
+              }
+            >
               <MdKeyboardArrowDown size={25} />
             </div>
           </div>

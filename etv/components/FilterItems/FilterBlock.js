@@ -10,16 +10,24 @@ import ActiveFilterEntry from "./ActiveFilterEntry";
 function FilterBlock() {
   const { state, dispatch } = useStore();
   const [truncate, setTruncate] = useState(false);
-  const [clicked, SetClicked] = useState(true);
+  const [clicked, setClicked] = useState(true);
+  const [rotateIt, setRotateIt] = useState(false);
 
   return (
     <div className=" w-full min-w-fit relative">
       <div className="bg-[#Fff]  shadow-dropdown md:hidden  w-full z-40">
-        <div className="h-10 shadow-dropdown flex flex-row justify-between align-middle ">
-          <div
-            className="w-full  flex flex-row "
-            onClick={() => setTruncate(!truncate)}
-          >
+        <div
+          className={
+            truncate
+              ? "h-10 shadow-dropdown flex flex-row justify-between align-middle border-b"
+              : "h-10 shadow-dropdown flex flex-row justify-between align-middle "
+          }
+          onClick={() => {
+            setTruncate(!truncate);
+            setRotateIt(!rotateIt);
+          }}
+        >
+          <div className="w-full  flex flex-row">
             <div
               className="w-3.5 my-auto ml-6  
           "
@@ -40,8 +48,11 @@ function FilterBlock() {
           </div>
 
           <div
-            className="w-4 mr-6 my-auto "
-            onClick={() => setTruncate(!truncate)}
+            className={
+              rotateIt
+                ? "flex items-center w-8 mr-5 my-auto transition transform rotate-180 origin-center	"
+                : "flex items-center w-8 mr-5 my-auto transition transform rotate-0 origin-center	 "
+            }
           >
             <MdKeyboardArrowDown size={28} />
           </div>
@@ -71,15 +82,24 @@ function FilterBlock() {
           </h1>
         </div>
         <div
-          className="hidden md:flex flex-row justify-end items-center mt-8 pb-2 mr-2 cursor-pointer"
-          onClick={() => SetClicked(!clicked)}
+          className="hidden md:flex flex-row items-center mt-8   cursor-pointer "
+          onClick={() => {
+            setClicked(!clicked);
+            setRotateIt(!rotateIt);
+          }}
         >
-          <h4 className="pr-4 ">
+          <h4 className=" ">
             {" "}
             {`Sortieren nach: ${state?.activeSortValues}`}{" "}
           </h4>
 
-          <div className="w-4 h-4 relative right-4 mb-2">
+          <div
+            className={
+              rotateIt
+                ? "flex items-center justify-center w-6 h-4   transition transform rotate-180 origin-center	"
+                : "flex items-center justify-center w-6 h-4   transition transform rotate-0 origin-center	 "
+            }
+          >
             <MdKeyboardArrowDown size={28} />
           </div>
         </div>
