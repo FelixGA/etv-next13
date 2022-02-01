@@ -46,7 +46,7 @@ function CarCard(props) {
             </a>
           </Link>
 
-          <div className=" w-full sm:max-w-xs w-100 ">
+          <div className=" xs:w-full w-32 ">
             <Link href={`/vehicles/${carItem.title}`} passHref>
               <a>
                 <Image
@@ -73,7 +73,7 @@ function CarCard(props) {
           </p>
 
           <span className="lg:hidden">{mobileRatingBox}</span>
-          <div className="w-full flex flex-col lg:flex-col-reverse items-end border-l-2">
+          <div className="w-full flex flex-col lg:flex-col-reverse items-end lg:border-l-2">
             <ButtonAnfragen />
             <ButtonCompare carItem={carItem} />
           </div>
