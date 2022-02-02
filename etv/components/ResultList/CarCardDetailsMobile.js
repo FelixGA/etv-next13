@@ -59,7 +59,7 @@ function CarCardDetailsMobile(props) {
           router.query.cartitle ? "hidden" : "flex flex-wrap justify-end "
         }
       >
-        <Link href={`/details/${props.carItem?.title}`}>
+        <Link href={`/vehicles/${props.carItem?.title}`}>
           <a className="border-2 border-black-darkest text-blue-dark m-4 rounded visited:text-grey-dark px-4 py-2">
             Zur Productseite
           </a>

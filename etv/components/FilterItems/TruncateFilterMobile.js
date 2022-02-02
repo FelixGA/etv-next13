@@ -4,6 +4,9 @@ import image3 from "../../public/images/hoechstgeschwindigkeit.png";
 import image4 from "../../public/images/preis.png";
 import image5 from "../../public/images/more-svgrepo-com.png";
 
+import image6 from "../../public/images/ladezeit@2x.png";
+
+
 import Image from "next/image";
 import { useState } from "react";
 import FilterItemMobile from "./FilterItemMobile";
@@ -22,7 +25,8 @@ function TruncateFilter() {
   const filtersData = [
     {
       id: 1,
-      category: "Reichweite",
+      category: "ranges",
+      title: "Reichweite",
       image: image,
       options: [
         {
@@ -53,7 +57,9 @@ function TruncateFilter() {
     },
     {
       id: 2,
-      category: "Zuladung",
+      category: "weights",
+      title: "Zuladung",
+
       image: image2,
       options: [
         {
@@ -84,7 +90,9 @@ function TruncateFilter() {
     },
     {
       id: 3,
-      category: "Höchstgeschwindigkeit",
+      title: "V-Max",
+
+      category: "maxSpeeds",
       image: image3,
       options: [
         {
@@ -114,8 +122,41 @@ function TruncateFilter() {
       ],
     },
     {
+      id: 5,
+      title: "Ladenzeit",
+      category: "chargingTimes",
+      image: image6,
+      options: [
+        {
+          name: "ab 1 Stunde",
+          value: 1,
+          id: 1,
+          categoryName: "chargingTime",
+        },
+        {
+          name: "ab 10 Stunde",
+          value: 10,
+          id: 2,
+          categoryName: "chargingTime",
+        },
+        {
+          name: "ab 20 Stunde",
+          value: 20,
+          id: 3,
+          categoryName: "chargingTime",
+        },
+        {
+          name: "ab 40 Stunde",
+          value: 40,
+          id: 4,
+          categoryName: "chargingTime",
+        },
+      ],
+    },
+    {
       id: 4,
-      category: "Aufbautyp",
+      title: "Aufbautyp",
+      category: "categorys",
       image: image5,
       options: [
         {
@@ -170,8 +211,10 @@ function TruncateFilter() {
         <div
           className="cursor-pointer w-full "
           onClick={() => {
-            setTruncPrice(!truncPrice);
-            setRotateIt(!rotateIt);
+            dispatch({
+              type: "truncate",
+              data: state?.truncates !== "price" ? "price" : "",
+            });
           }}
         >
           <div className="flex py-1 justify-between border-b">
@@ -191,19 +234,34 @@ function TruncateFilter() {
                 <h4 className="py-3 font-bold text-blue-dark">Preis</h4>
               </div>
             </div>
-            <div
-              className={
-                rotateIt
-                  ? "flex items-center w-6 mr-6 my-auto transition transform rotate-180"
-                  : "flex items-center w-6 mr-6 my-auto transition transform rotate-0"
-              }
-            >
-              <MdKeyboardArrowDown size={25} />
+            <div className="flex flex-row items-center">
+              <span
+                className={
+                  state?.prices.length > 0
+                    ? "flex text-green-700 text-xl "
+                    : "hidden"
+                }
+              >
+                ✓
+              </span>
+              <div
+                className={
+                  state?.truncates == "price"
+                    ? "flex items-center w-6 mr-6 my-auto transition transform rotate-180"
+                    : "flex items-center w-6 mr-6 my-auto transition transform rotate-0"
+                }
+              >
+                <MdKeyboardArrowDown size={25} />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className={truncPrice ? " flex flex-col ml-4 mt-2" : "hidden"}>
+      <div
+        className={
+          state?.truncates == "price" ? " flex flex-col ml-4 mt-2" : "hidden"
+        }
+      >
         <div className="">
           <FilterOptionPrice />
         </div>

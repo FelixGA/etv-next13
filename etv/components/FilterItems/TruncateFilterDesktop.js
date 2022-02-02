@@ -2,7 +2,7 @@ import image from "../../public/images/reichweite.png";
 import image2 from "../../public/images/zuladung.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit.png";
 import image4 from "../../public/images/preis.png";
-import image5 from "../../public/images/more-svgrepo-com.png";
+import image5 from "../../public/images/aufbautype.png";
 import image6 from "../../public/images/ladezeit@2x.png";
 import FilterItemDesktop from "./FilterItemDesktop";
 import Image from "next/image";
@@ -15,15 +15,12 @@ function TruncateFilterDesktop() {
   /* UseStates */
   const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
   const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
-  const [truncPrice, setTruncPrice] = useState(false);
-
-  const [rotateIt, setRotateIt] = useState(false);
-
   /* filter list */
   const filtersData = [
     {
       id: 1,
-      category: "Reichweite",
+      category: "ranges",
+      title: "Reichweite",
       image: image,
       options: [
         {
@@ -54,7 +51,9 @@ function TruncateFilterDesktop() {
     },
     {
       id: 2,
-      category: "Zuladung",
+      category: "weights",
+      title: "Zuladung",
+
       image: image2,
       options: [
         {
@@ -85,7 +84,9 @@ function TruncateFilterDesktop() {
     },
     {
       id: 3,
-      category: "Höchstgeschwindigkeit",
+      title: "V-Max",
+
+      category: "maxSpeeds",
       image: image3,
       options: [
         {
@@ -116,7 +117,8 @@ function TruncateFilterDesktop() {
     },
     {
       id: 5,
-      category: "Ladenzeit",
+      title: "Ladenzeit",
+      category: "chargingTimes",
       image: image6,
       options: [
         {
@@ -147,7 +149,8 @@ function TruncateFilterDesktop() {
     },
     {
       id: 4,
-      category: "Aufbautyp",
+      title: "Aufbautyp",
+      category: "categorys",
       image: image5,
       options: [
         {
@@ -198,8 +201,10 @@ function TruncateFilterDesktop() {
       <div
         className="cursor-pointer w-full transition-all duration-500	 bg-green-500"
         onClick={() => {
-          setTruncPrice(!truncPrice);
-          setRotateIt(!rotateIt);
+          dispatch({
+            type: "truncate",
+            data: state?.truncates !== "price" ? "price" : "",
+          });
         }}
       >
         <div className="flex bg-red-500 justify-between border-b ">
@@ -219,23 +224,35 @@ function TruncateFilterDesktop() {
               <h4 className="py-3 font-bold text-blue-dark">Preis</h4>
             </div>
           </div>
-          <div
-            className={
-              rotateIt
-                ? "flex items-center w-6 mr-5 my-auto transition transform rotate-180 origin-center	"
-                : "flex items-center w-6 mr-5 my-auto transition transform rotate-0 origin-center	 "
-            }
-          >
-            <MdKeyboardArrowDown size={25} />
+          <div className="flex flex-row items-center">
+            <span
+              className={
+                state?.prices.length > 0
+                  ? "flex text-green-700 text-xl "
+                  : "hidden"
+              }
+            >
+              ✓
+            </span>
+            <div
+              className={
+                state?.truncates == "price"
+                  ? "flex items-center w-6 mr-5 my-auto transition transform rotate-180 origin-center	"
+                  : "flex items-center w-6 mr-5 my-auto transition transform rotate-0 origin-center	 "
+              }
+            >
+              <MdKeyboardArrowDown size={25} />
+            </div>
           </div>
         </div>
       </div>
 
       <div
         className={
-          truncPrice
-            ? " flex flex-col ml-4 mt-2 translate-y-0 transition-all delay-75 duration-500 opacity-100"
-            : "translate-y-[-150%] transition-all  delay-75 duration-500 opacity-0 "
+
+          state?.truncates == "price" ? " flex flex-col ml-4 mt-2 translate-y-0 transition-all delay-75 duration-500 opacity-100" : "translate-y-[-150%] transition-all  delay-75 duration-500 opacity-0 "
+
+          
         }
       >
         <div className="">

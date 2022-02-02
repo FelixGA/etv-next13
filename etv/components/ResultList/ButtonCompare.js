@@ -71,7 +71,7 @@ function ButtonCompare(props) {
             dispatch({ type: "maximalThree", data: props.carItem.title });
           }
         }}
-        className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2  text-xs xl:tracking-wider rounded h-7 px-4 flex justify-center items-center w-5/6 text-xxs md:text-xs "
+        className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 text-xs xl:tracking-wider rounded  px-4 flex justify-center items-center h-7 w-28  "
       >
         {disabled ? "Zum Vergleich" : buttonInput}
       </button>

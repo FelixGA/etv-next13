@@ -13,7 +13,16 @@ function FilterItemMobile(props) {
   const { state, dispatch } = useStore();
   /* to render the four ranges */
   const rangesForCheckboxesmMobile = item.options.map((checkbox, index) => (
-    <div key={uuidv4()} className="mt-1 flex flex-row py-2 ">
+    <div
+      onClick={() => {
+        dispatch({
+          type: checkbox.categoryName,
+          data: [{ min: checkbox.value, max: 99999 }],
+        });
+      }}
+      key={uuidv4()}
+      className="mt-1 flex flex-row py-2 "
+    >
       <FilterCheckboxMobile checkbox={checkbox} />
 
       <label
@@ -29,8 +38,10 @@ function FilterItemMobile(props) {
       <div
         className=" cursor-pointer "
         onClick={() => {
-          setTruncate(!truncate);
-          setRotateIt(!rotateIt);
+          dispatch({
+            type: "truncate",
+            data: state?.truncates !== item.title ? item.title : "",
+          });
         }}
       >
         <div className="flex flex-row justify-between border-b py-4  w-full  ">
@@ -47,21 +58,36 @@ function FilterItemMobile(props) {
               />
             </div>
             <div className="pl-4 my-auto ">
-              <h4 className=" font-bold text-[#1F1E80]">{item.category}</h4>
+              <h4 className=" font-bold text-[#1F1E80]">{item.title}</h4>
             </div>
           </div>
-          <div
-            className={
-              rotateIt
-                ? "flex items-center w-6 mr-6 my-auto transition transform rotate-180 origin-center	"
-                : "flex items-center w-6 mr-6 my-auto transition transform rotate-0 origin-center	 "
-            }
-          >
-            <MdKeyboardArrowDown size={25} />
+          <div className="flex flex-row  ">
+            <span
+              className={
+                state[item.category].length > 0
+                  ? "flex text-green-700 text-xl pr-2 "
+                  : "hidden"
+              }
+            >
+              ✓
+            </span>
+            <div
+              className={
+                state?.truncates == item.title
+                  ? "flex items-center w-6 mr-6 my-auto transition transform rotate-180 origin-center	"
+                  : "flex items-center w-6 mr-6 my-auto transition transform rotate-0 origin-center	 "
+              }
+            >
+              <MdKeyboardArrowDown size={25} />
+            </div>
           </div>
         </div>
       </div>
-      <div className={truncate ? "flex flex-col ml-4 mt-2" : "hidden"}>
+      <div
+        className={
+          state?.truncates == item.title ? "flex flex-col ml-4 mt-2" : "hidden"
+        }
+      >
         {/* RENDERING THE FOUR RANGES */}
         {rangesForCheckboxesmMobile}
       </div>

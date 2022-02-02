@@ -33,9 +33,9 @@ const BlogArticles = () => {
       </div>
 
       <div className="blog-article-two p-10 xl:py-28 xl:flex xl:flex-row xl:justify-center xl:w-3/4  bg-grey-lightest xl:items-center">
-        <div className="bg-white xl:w-full xl:scale-125 xl:mx-16">
+        <div className=" xl:w-full xl:scale-125 xl:mx-16">
           <Image
-            src="/images/schwein.png"
+            src="/images/schweinFull.jpeg"
             width={300}
             height={300}
             className="blog-article-two-image"

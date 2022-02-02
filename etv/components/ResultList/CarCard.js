@@ -38,7 +38,7 @@ function CarCard(props) {
     <div className="container-product flex flex-col mb-4 py-4 lg:py-0 px-4 lg:px-0 lg:pr-4  shadow-lg lg:shadow-none md:border-t lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
       <span className="container-product flex flex-row">
         <div className="container-product-basics w-3/5 lg:w-2/6 ">
-          <Link href={`/details/${carItem.title}`}>
+          <Link href={`/vehicles/${carItem.title}`}>
             <a>
               <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
                 {carItem.title}
@@ -46,8 +46,8 @@ function CarCard(props) {
             </a>
           </Link>
 
-          <div className=" w-full sm:max-w-xs w-100 ">
-            <Link href={`/details/${carItem.title}`} passHref>
+          <div className=" xs:w-full w-32 ">
+            <Link href={`/vehicles/${carItem.title}`} passHref>
               <a>
                 <Image
                   loader={myLoader}
@@ -73,7 +73,7 @@ function CarCard(props) {
           </p>
 
           <span className="lg:hidden">{mobileRatingBox}</span>
-          <div className="w-full flex flex-col lg:flex-col-reverse items-end border-l-2">
+          <div className="w-full flex flex-col lg:flex-col-reverse items-end lg:border-l-2">
             <ButtonAnfragen />
             <ButtonCompare carItem={carItem} />
           </div>

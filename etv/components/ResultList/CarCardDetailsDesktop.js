@@ -15,7 +15,7 @@ function CarCardDetailsDesktop(props) {
   return (
     <div className=" w-full flex flex-col justify-center">
       {" "}
-      <Link href={`/details/${carItem?.title}`}>
+      <Link href={`/vehicles/${carItem?.title}`}>
         <a>
           <h3
             className={
