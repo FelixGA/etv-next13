@@ -15,6 +15,9 @@
     },
     "baseUnit": {
       "type": "string"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }

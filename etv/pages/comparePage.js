@@ -40,26 +40,72 @@ export default function comparePage() {
               value
               baseUnit
             }
-            electricWindows {
+            availability {
               key
               value
             }
-            ABS {
+            batteryCapacity {
+              key
+              value
+              baseUnit
+            }
+            seats {
               key
               value
             }
-            airBags {
+            height {
               key
               value
+              baseUnit
             }
-            airConditioning {
+            totalWidth {
               key
               value
+              baseUnit
             }
-            extras {
+            length {
               key
               value
+              baseUnit
             }
+            wheelbase {
+              key
+              value
+              baseUnit
+            }
+            curbWeight {
+              key
+              value
+              baseUnit
+            }
+            loadingHeight {
+              key
+              value
+              baseUnit
+            }
+            loadingVolume {
+              key
+              value
+              baseUnit
+            }
+            truckBed {
+              key
+              value
+              baseUnit
+            }
+            fastChargingTime {
+              key
+              value
+              baseUnit
+            }
+            guarantee {
+              key
+              value
+              baseUnit
+            }
+            class
+            batteryInc
+
             photo {
               data {
                 attributes {
