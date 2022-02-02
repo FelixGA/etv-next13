@@ -63,7 +63,8 @@ function FilterBlock() {
               truncate ? "font-bold	 my-auto text-sm text-blue-darker" : "hidden"
             }
           >
-            <div className="relative ">
+            {/* FILTERS ON MOBILE VIEW */}
+            <div className="relative  bg-red-500 z-20">
               <TruncateFilterMobile />
             </div>
           </div>
@@ -75,36 +76,33 @@ function FilterBlock() {
       </div>
 
       {/* HEADING + SORTING */}
-      <div className="flex flex-row flex-1 justify-between relative">
-        <div className="mt-8 pb-2 w-fit ">
-          <h1 className="pl-2 text-2xl text-black-dark ">
+      <div className="flex flex-row flex-1 justify-between relative ">
+        <div className="mt-10 relative bottom-2 md:bottom-10 2xl:bottom-2  w-fit ">
+          <h1 className="pl-3 text-2xl text-black-dark ">
             Die besten E-Transporter nach Ihrer Auswahl
           </h1>
         </div>
         <div
-          className="hidden md:flex flex-row items-center mt-8   cursor-pointer "
+          className="hidden md:flex flex-row items-start mt-10 absolute right-2 w-fit   cursor-pointer "
           onClick={() => {
             setClicked(!clicked);
             setRotateIt(!rotateIt);
           }}
         >
-          <h4 className=" ">
-            {" "}
-            {`Sortieren nach: ${state?.activeSortValues}`}{" "}
-          </h4>
+          <h4 className=" ">{`Sortieren nach: ${state?.activeSortValues}`} </h4>
 
           <div
             className={
               rotateIt
-                ? "flex items-center justify-center w-6 h-4   transition transform rotate-180 origin-center	"
-                : "flex items-center justify-center w-6 h-4   transition transform rotate-0 origin-center	 "
+                ? "flex items-center justify-center w-6 h-4 mt-1  transition transform rotate-180 origin-center	"
+                : "flex items-center justify-center w-6 h-4  mt-1 transition transform rotate-0 origin-center	 "
             }
           >
             <MdKeyboardArrowDown size={28} />
           </div>
         </div>
         {/* SORT DESKTOP */}
-        <div className={clicked ? "hidden" : "flex  absolute top-16 right-0 "}>
+        <div className={clicked ? "hidden" : "flex  absolute top-16 right-4 "}>
           <SortDesktop />
         </div>
       </div>
