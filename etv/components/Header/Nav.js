@@ -9,7 +9,7 @@ const Nav = () => {
     <ul
       className={
         isMobile
-          ? "flex flex-col lg:flex-row justify-around items-center w-full h-1/2 text-grey-dark "
+          ? "flex flex-col items-center sm:items-start sm:pl-12 lg:flex-row justify-evenly  pt-6 w-full h-1/2 text-grey-dark  "
           : "flex flex-col lg:flex-row justify-around w-full text-[#93A3B7] "
       }
     >
@@ -56,6 +56,17 @@ const Nav = () => {
             }}
           >
             Magazin
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/Kontakt">
+          <a
+            onClick={() => {
+              setIsMobile(false);
+            }}
+          >
+            Kontakt
           </a>
         </Link>
       </li>

@@ -199,7 +199,7 @@ function TruncateFilterDesktop() {
     <div className="hidden md:block py-2 ">
       {/* Preis */}
       <div
-        className="cursor-pointer w-full"
+        className="cursor-pointer w-full transition-all duration-500	 bg-green-500"
         onClick={() => {
           dispatch({
             type: "truncate",
@@ -207,8 +207,8 @@ function TruncateFilterDesktop() {
           });
         }}
       >
-        <div className="flex  justify-between border-b">
-          <div className="flex pl-4">
+        <div className="flex bg-red-500 justify-between border-b ">
+          <div className="flex pl-4  ">
             <div className="w-6 my-auto ml-4 ">
               <Image
                 src={image4}
@@ -249,7 +249,10 @@ function TruncateFilterDesktop() {
 
       <div
         className={
-          state?.truncates == "price" ? " flex flex-col ml-4 mt-2" : "hidden"
+
+          state?.truncates == "price" ? " flex flex-col ml-4 mt-2 translate-y-0 transition-all delay-75 duration-500 opacity-100" : "translate-y-[-150%] transition-all  delay-75 duration-500 opacity-0 "
+
+          
         }
       >
         <div className="">
