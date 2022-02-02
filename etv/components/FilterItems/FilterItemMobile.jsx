@@ -40,9 +40,8 @@ function FilterItemMobile(props) {
         onClick={() => {
           dispatch({
             type: "truncate",
-            data: state?.truncates !== item.category ? item.category : "",
+            data: state?.truncates !== item.title ? item.title : "",
           });
-          setRotateIt(!rotateIt);
         }}
       >
         <div className="flex flex-row justify-between border-b py-4  w-full  ">
@@ -59,25 +58,34 @@ function FilterItemMobile(props) {
               />
             </div>
             <div className="pl-4 my-auto ">
-              <h4 className=" font-bold text-[#1F1E80]">{item.category}</h4>
+              <h4 className=" font-bold text-[#1F1E80]">{item.title}</h4>
             </div>
           </div>
-          <div
-            className={
-              state?.truncates == item.category
-                ? "flex items-center w-6 mr-6 my-auto transition transform rotate-180 origin-center	"
-                : "flex items-center w-6 mr-6 my-auto transition transform rotate-0 origin-center	 "
-            }
-          >
-            <MdKeyboardArrowDown size={25} />
+          <div className="flex flex-row  ">
+            <span
+              className={
+                state[item.category].length > 0
+                  ? "flex text-green-700 text-xl pr-2 "
+                  : "hidden"
+              }
+            >
+              ✓
+            </span>
+            <div
+              className={
+                state?.truncates == item.title
+                  ? "flex items-center w-6 mr-6 my-auto transition transform rotate-180 origin-center	"
+                  : "flex items-center w-6 mr-6 my-auto transition transform rotate-0 origin-center	 "
+              }
+            >
+              <MdKeyboardArrowDown size={25} />
+            </div>
           </div>
         </div>
       </div>
       <div
         className={
-          state?.truncates == item.category
-            ? "flex flex-col ml-4 mt-2"
-            : "hidden"
+          state?.truncates == item.title ? "flex flex-col ml-4 mt-2" : "hidden"
         }
       >
         {/* RENDERING THE FOUR RANGES */}

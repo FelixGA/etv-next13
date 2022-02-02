@@ -1,13 +1,12 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
-import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import FilterCheckbox from "./FilterCheckbox";
 import { useStore } from "../store";
 function FilterItemDesktop(props) {
   const item = props.item;
   const { state, dispatch } = useStore();
-  console.log(state[item.category]);
+
   /* to render the four ranges */
   const rangesForCheckboxes = item.options.map((checkbox, index) => (
     <div
@@ -40,7 +39,7 @@ function FilterItemDesktop(props) {
           });
         }}
       >
-        <div className="flex flex-row justify-between border-b py-4  w-full  ">
+        <div className="flex flex-row justify-between border-b py-4  w-full ">
           <div className="flex flex-row pl-4 ">
             <div className="w-6 h-6 ml-4 ">
               <Image
@@ -57,23 +56,25 @@ function FilterItemDesktop(props) {
               <h4 className=" font-bold text-[#1F1E80]">{item.title}</h4>{" "}
             </div>{" "}
           </div>
-          <span
-            className={
-              state[item.category].length > 0
-                ? "flex text-green-700 text-xl"
-                : "hidden"
-            }
-          >
-            ✓
-          </span>
-          <div
-            className={
-              state?.truncates == item.title
-                ? "flex items-center w-6 mr-5 my-auto transition transform rotate-180 origin-center	"
-                : "flex items-center w-6 mr-5 my-auto transition transform rotate-0 origin-center	 "
-            }
-          >
-            <MdKeyboardArrowDown size={25} />
+          <div className="flex flex-row  ">
+            <span
+              className={
+                state[item.category].length > 0
+                  ? "flex text-green-700 text-xl "
+                  : "hidden"
+              }
+            >
+              ✓
+            </span>
+            <div
+              className={
+                state?.truncates == item.title
+                  ? "flex items-center w-6 mr-5 my-auto transition transform rotate-180 origin-center	"
+                  : "flex items-center w-6 mr-5 my-auto transition transform rotate-0 origin-center	 "
+              }
+            >
+              <MdKeyboardArrowDown size={25} />
+            </div>
           </div>
         </div>
       </div>

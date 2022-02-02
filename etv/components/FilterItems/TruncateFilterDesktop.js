@@ -15,10 +15,6 @@ function TruncateFilterDesktop() {
   /* UseStates */
   const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
   const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
-  const [truncPrice, setTruncPrice] = useState(false);
-
-  const [rotateIt, setRotateIt] = useState(false);
-
   /* filter list */
   const filtersData = [
     {
@@ -205,8 +201,10 @@ function TruncateFilterDesktop() {
       <div
         className="cursor-pointer w-full"
         onClick={() => {
-          setTruncPrice(!truncPrice);
-          setRotateIt(!rotateIt);
+          dispatch({
+            type: "truncate",
+            data: state?.truncates !== "price" ? "price" : "",
+          });
         }}
       >
         <div className="flex  justify-between border-b">
@@ -226,19 +224,34 @@ function TruncateFilterDesktop() {
               <h4 className="py-3 font-bold text-blue-dark">Preis</h4>
             </div>
           </div>
-          <div
-            className={
-              rotateIt
-                ? "flex items-center w-6 mr-5 my-auto transition transform rotate-180 origin-center	"
-                : "flex items-center w-6 mr-5 my-auto transition transform rotate-0 origin-center	 "
-            }
-          >
-            <MdKeyboardArrowDown size={25} />
+          <div className="flex flex-row items-center">
+            <span
+              className={
+                state?.prices.length > 0
+                  ? "flex text-green-700 text-xl "
+                  : "hidden"
+              }
+            >
+              ✓
+            </span>
+            <div
+              className={
+                state?.truncates == "price"
+                  ? "flex items-center w-6 mr-5 my-auto transition transform rotate-180 origin-center	"
+                  : "flex items-center w-6 mr-5 my-auto transition transform rotate-0 origin-center	 "
+              }
+            >
+              <MdKeyboardArrowDown size={25} />
+            </div>
           </div>
         </div>
       </div>
 
-      <div className={truncPrice ? " flex flex-col ml-4 mt-2" : "hidden"}>
+      <div
+        className={
+          state?.truncates == "price" ? " flex flex-col ml-4 mt-2" : "hidden"
+        }
+      >
         <div className="">
           <FilterOptionPrice />
         </div>

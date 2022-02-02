@@ -6,7 +6,7 @@ const ButtonForAlleTransporter = () => {
   const { state, dispatch } = useStore();
   return (
     <div className="w-full my-8 flex justify-center">
-      <button className="h-12 w-80 border rounded-md border-blue-darker text-blue-darker font-bold">
+      <button className="h-12 px-6 border rounded-md border-blue-darker text-blue-darker font-bold">
         <Link href="/comparePage">
           <a
             onClick={() => {
@@ -20,6 +20,18 @@ const ButtonForAlleTransporter = () => {
               });
               dispatch({
                 type: "price",
+                data: [],
+              });
+              dispatch({
+                type: "maxSpeed",
+                data: [],
+              });
+              dispatch({
+                type: "category",
+                data: [],
+              });
+              dispatch({
+                type: "chargingTime",
                 data: [],
               });
             }}
