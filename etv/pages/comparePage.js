@@ -146,7 +146,7 @@ export default function comparePage() {
 
   return (
     <>
-      <div className=" xl:mx-32 bg-[#F2F9FF] md:bg-white z-90">
+      <div className=" xl:mx-32 bg-[bg-blue-extralight] md:bg-white z-90">
         <div className="flex ">
           <div className="flex-1 hidden md:block  md:mt-14 md:pr-4 ">
             <TruncateFilterDesktop />

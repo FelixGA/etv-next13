@@ -58,7 +58,7 @@ function FilterItemMobile(props) {
               />
             </div>
             <div className="pl-4 my-auto ">
-              <h4 className=" font-bold text-[#1F1E80]">{item.title}</h4>
+              <h4 className=" font-bold text-[bg-blue-darker]">{item.title}</h4>
             </div>
           </div>
           <div className="flex flex-row  ">

@@ -9,6 +9,7 @@ import Image from "next/image";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useState, useEffect } from "react";
 import { useStore } from "../store";
+import { motion, AnimatePresence } from "framer-motion";
 import FilterOptionPrice from "./FilterOptionPrice";
 
 function TruncateFilterDesktop() {
@@ -199,7 +200,7 @@ function TruncateFilterDesktop() {
     <div className="hidden md:block py-2 ">
       {/* Preis */}
       <div
-        className="cursor-pointer w-full transition-all duration-500	 bg-green-500"
+        className="cursor-pointer w-full transition-all duration-500	 "
         onClick={() => {
           dispatch({
             type: "truncate",
@@ -207,7 +208,7 @@ function TruncateFilterDesktop() {
           });
         }}
       >
-        <div className="flex bg-red-500 justify-between border-b ">
+        <div className="flex  justify-between border-b ">
           <div className="flex pl-4  ">
             <div className="w-6 my-auto ml-4 ">
               <Image
@@ -246,59 +247,57 @@ function TruncateFilterDesktop() {
           </div>
         </div>
       </div>
-
-      <div
-        className={
-
-          state?.truncates == "price" ? " flex flex-col ml-4 mt-2 translate-y-0 transition-all delay-75 duration-500 opacity-100" : "translate-y-[-150%] transition-all  delay-75 duration-500 opacity-0 "
-
-          
-        }
-      >
-        <div className="">
-          <FilterOptionPrice />
-        </div>
-
-        {/* MIN MAX PRICE INPUT */}
-        <div className="wrapper py-4 flex flex-row justify-start">
-          <div className="flex py-2 mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
-            <input
-              type="number"
-              id="min"
-              onChange={changeHandleMin}
-              name="min"
-              placeholder="min €"
-              className="pl-4 w-18"
-            />
+      <AnimatePresence initial={false} exitBeforeEnter>
+        <div
+          className={
+            state?.truncates == "price" ? " flex flex-col ml-8 mt-2 " : "hidden"
+          }
+        >
+          <div className="">
+            <FilterOptionPrice />
           </div>
-          <div className="flex py-2  mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
-            <input
-              type="number"
-              id="max"
-              onChange={changeHandleMax}
-              name="max"
-              placeholder="max €"
-              className="pl-4 w-18"
-            />
+
+          {/* MIN MAX PRICE INPUT */}
+          <div className="wrapper py-4 flex flex-row justify-start">
+            <div className="flex py-2 mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
+              <input
+                type="number"
+                id="min"
+                onChange={changeHandleMin}
+                name="min"
+                placeholder="min €"
+                className="pl-4 w-18"
+              />
+            </div>
+            <div className="flex py-2  mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
+              <input
+                type="number"
+                id="max"
+                onChange={changeHandleMax}
+                name="max"
+                placeholder="max €"
+                className="pl-4 w-18"
+              />
+            </div>
+            <span
+              className="pl-2  my-auto cursor-pointer"
+              onClick={() => {
+                dispatch({
+                  type: "price",
+                  data: [
+                    {
+                      min: Number(userInputMinPrice),
+                      max: Number(userInputMaxPrice),
+                    },
+                  ],
+                });
+              }}
+            >
+              Los
+            </span>
           </div>
-          <span
-            className="pl-2  my-auto cursor-pointer"
-            onClick={() => {
-              dispatch({
-                type: "price",
-                data: [
-                  {
-                    min: Number(userInputMinPrice),
-                    max: Number(userInputMaxPrice),
-                  },
-                ],
-              });
-            }}
-          >
-            Los
-          </span>
         </div>
-      </div>
+      </AnimatePresence>
       {getFiltersData}
     </div>
   );

@@ -28,37 +28,38 @@ function CarCardDetailsDesktop(props) {
           </h3>
         </a>
       </Link>
-      <span className="flex flex-row w-full flex-wrap xl:pr-4 ">
-        <section className="py-2 xl:pl-4 flex flex-row w-3/4 flex-wrap">
-          <span className="flex flex-col w-1/2 ">
-            <div className="flex flex-row w-full ">
-              <div className="bg-grey-lighter rounded-full m-2">
+      <div className="flex  w-full flex-wrap xl:pr-4 bg-red-500">
+        <section className="py-2 xl:pl-4 flex  w-3/4 flex-wrap ">
+          <div className="flex flex-col w-1/2  bg-yellow-500">
+            <div className="flex    h-1/2 items-center ">
+              <div className="hidde ">
                 <Image
+                  className=" rounded-full"
                   src={image}
                   alt="Reichweite"
-                  width={36}
-                  height={36}
-                  unoptimized={true}
+                  width={150}
+                  height={150}
+                  objectFit="cover"
                 />
               </div>
-              <div className="flex flex-col w-full justify-center text-sm">
+              <div className="flex flex-col w-full justify-center text-sm pl-4">
                 <div className="text-blue-dark font-bold ">
-                  {" "}
                   {carItem?.range.value} km
                 </div>
                 <div className="text-grey-dark font-bold ">
-                  {carItem?.range.key}{" "}
+                  {carItem?.range.key}
                 </div>
               </div>
             </div>
-            <div className="flex flex-row w-full ">
-              <div className="bg-grey-lighter rounded-full m-2">
+            <div className="flex flex-row w-full h-16 items-center">
+              <div className=" ">
                 <Image
+                  className="rounded-full "
                   src={image3}
                   alt="v-max-logo"
-                  width={36}
-                  height={36}
-                  unoptimized={true}
+                  width={150}
+                  height={150}
+                  objectFit="contain"
                 />
               </div>
               <div className="flex flex-col w-full justify-center text-sm">
@@ -71,16 +72,17 @@ function CarCardDetailsDesktop(props) {
                 </div>
               </div>
             </div>
-          </span>
-          <span className="flex flex-col w-1/2 ">
-            <div className="flex flex-row w-full ">
-              <div className="bg-grey-lighter rounded-full m-2">
+          </div>
+          <div className="flex flex-col w-1/2 ">
+            <div className="flex flex-row w-full h-16 items-center">
+              <div className="bg-grey-lighter  rounded-full ">
                 <Image
+                  className="rounded-full "
                   src={image2}
                   alt="zuladung-logo"
-                  width={36}
-                  height={36}
-                  unoptimized={true}
+                  width={24}
+                  height={24}
+                  objectFit="cover"
                 />
               </div>
               <div className="flex flex-col w-full justify-center text-sm">
@@ -93,14 +95,15 @@ function CarCardDetailsDesktop(props) {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row w-full ">
-              <div className="bg-grey-lighter rounded-full m-2 ">
+            <div className="flex flex-row w-full h-16 items-center">
+              <div className="bg-grey-lighter  rounded-full  ">
                 <Image
+                  className="rounded-full "
                   src={image4}
                   alt="v-max-logo"
-                  width={36}
-                  height={36}
-                  unoptimized={true}
+                  width={24}
+                  height={24}
+                  objectFit="contain"
                 />
               </div>
               <div className="flex flex-col w-full justify-center text-sm ">
@@ -113,14 +116,14 @@ function CarCardDetailsDesktop(props) {
                 </div>
               </div>
             </div>
-          </span>
+          </div>
         </section>
         <div className="flex flex-wrap items-center justify-center w-1/4 ">
-          <span className="">
+          <div className="">
             <RatingBox carItem={carItem} />
-          </span>
+          </div>
         </div>
-      </span>
+      </div>
     </div>
   );
 }
