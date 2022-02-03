@@ -46,8 +46,8 @@ const ResultList = (props) => {
         state?.chargingTimes?.length > 0 &&
         state?.chargingTimes?.every(
           (entry) =>
-            entry.min > car.chargingTime.value ||
-            entry.max < car.chargingTime.value
+            entry.min > car.chargingTime[0].value ||
+            entry.max < car.chargingTime[0].value
         )
       )
         return false;

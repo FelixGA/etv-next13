@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_all_entry_numbers",
+  "info": {
+    "displayName": "entry-numbers",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "value": {
+      "type": "decimal"
+    },
+    "baseUnit": {
+      "type": "string"
+    }
+  }
+}

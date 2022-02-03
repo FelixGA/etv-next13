@@ -88,7 +88,7 @@
       "repeatable": false,
       "component": "all.range"
     },
-    "class": {
+    "typeClass": {
       "type": "enumeration",
       "enum": [
         "L7E",
@@ -104,7 +104,7 @@
       "repeatable": false,
       "component": "all.range"
     },
-    "totalWidth": {
+    "width": {
       "type": "component",
       "repeatable": false,
       "component": "all.range"
@@ -134,7 +134,7 @@
       "repeatable": false,
       "component": "all.range"
     },
-    "truckBed": {
+    "loadArea": {
       "type": "component",
       "repeatable": false,
       "component": "all.range"
@@ -151,6 +151,12 @@
     },
     "batteryInc": {
       "type": "boolean"
+    },
+    "subsidies": {
+      "displayName": "entry-numbers",
+      "type": "component",
+      "repeatable": false,
+      "component": "all.entry-numbers"
     }
   }
 }

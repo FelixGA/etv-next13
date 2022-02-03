@@ -25,12 +25,16 @@ const Details = () => {
             title
             price
             description
+            typeClass
+            batteryInc
+            categorie
+
             rating {
               key
               baseUnit
               value
             }
-            categorie
+
             range {
               key
               value
@@ -46,31 +50,78 @@ const Details = () => {
               value
               baseUnit
             }
+
             chargingTime {
               key
               value
               baseUnit
             }
-            electricWindows {
+            availability {
               key
               value
             }
-            ABS {
+            batteryCapacity {
+              key
+              value
+              baseUnit
+            }
+            seats {
               key
               value
             }
-            airBags {
+            height {
               key
               value
+              baseUnit
             }
-            airConditioning {
+            width {
               key
               value
+              baseUnit
             }
-            extras {
+            length {
               key
               value
+              baseUnit
             }
+            wheelbase {
+              key
+              value
+              baseUnit
+            }
+            loadArea {
+              key
+              value
+              baseUnit
+            }
+            curbWeight {
+              key
+              value
+              baseUnit
+            }
+            loadingHeight {
+              key
+              value
+              baseUnit
+            }
+            loadingVolume {
+              key
+              value
+              baseUnit
+            }
+
+            guarantee {
+              key
+              value
+              baseUnit
+            }
+
+            subsidies {
+              key
+              value
+              baseUnit
+            }
+
             photo {
               data {
                 attributes {
@@ -89,7 +140,7 @@ const Details = () => {
   const carItem = data?.vehicles?.data
     .map((item) => item.attributes)
     .find((el) => el.title === cartitle);
-
+  console.log(carItem);
   /* for the slider to recommend cars from the same category */
   let getCars = data?.vehicles?.data
     .map((item) => item.attributes)
@@ -99,21 +150,6 @@ const Details = () => {
   const myLoader = ({ src }) => {
     return src;
   };
-  /* get two subsets of the car properties to map them */
-
-  const grundlagen = (({ range, weight, maxSpeed, chargingTime }) => [
-    range,
-    weight,
-    chargingTime,
-    maxSpeed,
-  ])(carItem);
-  const ausstattung = (({
-    electricWindows,
-    ABS,
-    airBags,
-    airConditioning,
-    extras,
-  }) => [electricWindows, ABS, airBags, airConditioning, extras])(carItem);
 
   return (
     <>

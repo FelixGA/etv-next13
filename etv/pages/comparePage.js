@@ -35,6 +35,7 @@ export default function comparePage() {
               value
               baseUnit
             }
+
             chargingTime {
               key
               value
@@ -58,7 +59,7 @@ export default function comparePage() {
               value
               baseUnit
             }
-            totalWidth {
+            width {
               key
               value
               baseUnit
@@ -69,6 +70,11 @@ export default function comparePage() {
               baseUnit
             }
             wheelbase {
+              key
+              value
+              baseUnit
+            }
+            loadArea {
               key
               value
               baseUnit
@@ -88,11 +94,7 @@ export default function comparePage() {
               value
               baseUnit
             }
-            truckBed {
-              key
-              value
-              baseUnit
-            }
+
             fastChargingTime {
               key
               value
@@ -103,8 +105,13 @@ export default function comparePage() {
               value
               baseUnit
             }
-            class
+            typeClass
             batteryInc
+            subsidies {
+              key
+              value
+              baseUnit
+            }
 
             photo {
               data {
@@ -161,7 +168,7 @@ export default function comparePage() {
     .map((item) => item);
   /* ᴄᴀʀs ᴄʜᴀʀɢɪɴɢ ᴛɪᴍᴇ ғɪʟᴛᴇʀ */
   const getCarsfastest = getCars
-    ?.sort((a, b) => a.chargingTime.value - b.chargingTime.value)
+    ?.sort((a, b) => a.chargingTime[0].value - b.chargingTime[0].value)
     .map((item) => item);
 
   const { state, dispatch } = useStore();

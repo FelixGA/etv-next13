@@ -15,7 +15,7 @@ function CarCardDetailsDesktop(props) {
   return (
     <div className=" w-full flex flex-col justify-center">
       {" "}
-      <Link href={`/vehicles/${carItem?.title}`}>
+      <Link href={`/transporter/${carItem?.title}`}>
         <a>
           <h3
             className={
@@ -106,10 +106,10 @@ function CarCardDetailsDesktop(props) {
               <div className="flex flex-col w-full justify-center text-sm ">
                 <div className="text-blue-dark font-bold ">
                   {" "}
-                  {carItem?.chargingTime.value}h
+                  {carItem?.chargingTime[0].value}h
                 </div>
                 <div className="text-grey-dark font-bold ">
-                  {carItem?.chargingTime.key}{" "}
+                  {carItem?.chargingTime[0].key}{" "}
                 </div>
               </div>
             </div>

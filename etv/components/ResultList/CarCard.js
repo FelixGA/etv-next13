@@ -38,7 +38,7 @@ function CarCard(props) {
     <div className="container-product flex flex-col mb-4 py-4 lg:py-0 px-4 lg:px-0 lg:pr-4  shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
       <span className="container-product flex flex-row">
         <div className="container-product-basics w-3/5 lg:w-2/6 ">
-          <Link href={`/vehicles/${carItem.title}`}>
+          <Link href={`/transporter/${carItem.title}`}>
             <a>
               <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
                 {carItem.title}
@@ -47,7 +47,7 @@ function CarCard(props) {
           </Link>
 
           <div className=" xs:w-full w-32 ">
-            <Link href={`/vehicles/${carItem.title}`} passHref>
+            <Link href={`/transporter/${carItem.title}`} passHref>
               <a>
                 <Image
                   loader={myLoader}

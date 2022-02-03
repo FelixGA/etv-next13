@@ -73,7 +73,7 @@ const TopSliderCard = (props) => {
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
     <div className="min-w-64 mr-2 pl-6" key={caritem.index}>
       <div className="w-72">
-        <Link href={`/vehicles/${caritem.title}`} passHref>
+        <Link href={`/transporter/${caritem.title}`} passHref>
           <a>
             <Image
               loader={myLoader}
@@ -87,7 +87,7 @@ const TopSliderCard = (props) => {
             />
           </a>
         </Link>
-        <Link href={`/vehicles/${caritem.title}`}>
+        <Link href={`/transporter/${caritem.title}`}>
           <a>
             <h3 className="text-center text-xl font-black text-black-dark mt-8 mb-4	tracking-wide">
               {caritem.title}
@@ -124,7 +124,7 @@ const TopSliderCard = (props) => {
         </div>
 
         <div className="w-full text-center mt-8 flex  justify-center items-center ">
-          <Link href={`/vehicles/${caritem.title}`}>
+          <Link href={`/transporter/${caritem.title}`}>
             <a className="text-xs text-center visited:text-blue-darker text-blue-darker pr-4">
               Mehr erfahren
             </a>

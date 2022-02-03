@@ -35,6 +35,7 @@ function homepage() {
               value
               baseUnit
             }
+
             chargingTime {
               key
               value
@@ -58,7 +59,7 @@ function homepage() {
               value
               baseUnit
             }
-            totalWidth {
+            width {
               key
               value
               baseUnit
@@ -69,6 +70,11 @@ function homepage() {
               baseUnit
             }
             wheelbase {
+              key
+              value
+              baseUnit
+            }
+            loadArea {
               key
               value
               baseUnit
@@ -88,11 +94,7 @@ function homepage() {
               value
               baseUnit
             }
-            truckBed {
-              key
-              value
-              baseUnit
-            }
+
             fastChargingTime {
               key
               value
@@ -103,8 +105,13 @@ function homepage() {
               value
               baseUnit
             }
-            class
+            typeClass
             batteryInc
+            subsidies {
+              key
+              value
+              baseUnit
+            }
 
             photo {
               data {
