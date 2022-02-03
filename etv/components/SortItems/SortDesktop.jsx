@@ -20,7 +20,7 @@ function SortDesktop() {
   const [isChecked, setIsChecked] = useState("");
   const getAllSortings = sortBy2.map((rank) => {
     return (
-      <div key={rank.sortType} className="mt-1 flex flex-row py-2  mr-4">
+      <div key={rank.sortType} className="mt-1 flex flex-row py-2  mr-4 ">
         <input
           className=" appearance-none w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
           onChange={() => {
@@ -42,7 +42,7 @@ function SortDesktop() {
     );
   });
   return (
-    <div className="sm:hidden md:flex items-center bg-white border rounded-md mt-4">
+    <div className="hidden md:flex items-center bg-white border rounded-md mt-2 z-10 w-64">
       <div className="flex flex-col ml-4 mt-2 items-start">
         {getAllSortings}
       </div>
