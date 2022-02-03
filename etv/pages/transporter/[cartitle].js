@@ -26,7 +26,13 @@ const Details = () => {
             price
             description
             typeClass
-            batteryInc
+            batteryGarantie {
+              key
+              baseUnit
+              value
+              type
+            }
+
             categorie
 
             rating {
@@ -140,7 +146,7 @@ const Details = () => {
   const carItem = data?.vehicles?.data
     .map((item) => item.attributes)
     .find((el) => el.title === cartitle);
-  console.log(carItem);
+
   /* for the slider to recommend cars from the same category */
   let getCars = data?.vehicles?.data
     .map((item) => item.attributes)
@@ -180,7 +186,7 @@ const Details = () => {
         <div className="flex flex-col lg:w-1/2 ">
           {/* DESKTOP VERSION FOR DETAILS TABLE*/}
           <div className="hidden lg:flex justify-center flex-col w-4/5 px-8 pb-6 ">
-            <h2 className="hidden lg:block text-5xl text-black-darkest pl-2 ">
+            <h2 className="hidden lg:block text-4xl text-black-darkest pl-2 ">
               {cartitle}
             </h2>
 

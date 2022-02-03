@@ -106,7 +106,12 @@ export default function comparePage() {
               baseUnit
             }
             typeClass
-            batteryInc
+            batteryGarantie {
+              key
+              baseUnit
+              value
+              type
+            }
             subsidies {
               key
               value

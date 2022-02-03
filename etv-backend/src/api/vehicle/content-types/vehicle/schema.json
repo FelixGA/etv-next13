@@ -149,14 +149,16 @@
       "repeatable": false,
       "component": "all.range"
     },
-    "batteryInc": {
-      "type": "boolean"
-    },
     "subsidies": {
       "displayName": "entry-numbers",
       "type": "component",
       "repeatable": false,
       "component": "all.entry-numbers"
+    },
+    "batteryGarantie": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
     }
   }
 }

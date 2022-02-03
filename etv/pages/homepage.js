@@ -106,7 +106,12 @@ function homepage() {
               baseUnit
             }
             typeClass
-            batteryInc
+            batteryGarantie {
+              key
+              baseUnit
+              value
+              type
+            }
             subsidies {
               key
               value
