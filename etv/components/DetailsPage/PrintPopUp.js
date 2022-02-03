@@ -12,7 +12,7 @@ const PrintPopUp = (props) => {
       >
         <div className=" xs:mx-2 my-2 justify-center items-center">
           <button
-            onClick={() => console.log("window.print doesnt work")}
+            onClick={() => window.print()}
             className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white text-xs xl:tracking-wider rounded flex justify-center items-center h-7  w-28"
           >
             Drucken
