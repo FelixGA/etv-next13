@@ -45,7 +45,7 @@ export default function BottomSliderCard() {
           layout="responsive"
           unoptimized={true}
         />
-        <div className="w-full h-14 bg-black-dark flex flex-col justify-center ">
+        <div className="w-full h-14 bg-blue-extra flex flex-col justify-center ">
           <h3 className="text-white text-2xl  text-center">{item.desc}</h3>
         </div>
       </div>

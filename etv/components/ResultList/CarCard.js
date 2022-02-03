@@ -68,7 +68,7 @@ function CarCard(props) {
           <CarCardDetailsDesktop carItem={carItem} />
         </div>
         <div className="container-product-info w-2/5 lg:w-1/6 flex flex-col lg:flex-col justify-center items-end  ">
-          <p className="text-green-700 xl:text-xl font-bold mb-4 ">
+          <p className="text-green-light xl:text-xl font-bold mb-4 ">
             ab {carItem.price} €
           </p>
 

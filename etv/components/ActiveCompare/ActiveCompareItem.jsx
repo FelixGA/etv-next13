@@ -29,7 +29,8 @@ function ActiveCompareItem(props) {
       </div>
       <div className="flex items-center w-full h-10 pl-8">
         <h2 className="text-sm font-bold text-[#F45625] lg:hidden">
-          Testnote <span className="text-[#0B8E78]">{item.rating.value}</span>
+          Testnote{" "}
+          <span className="text-[bg-green-light]">{item.rating.value}</span>
         </h2>
         <div className="hidden lg:flex  w-48 h-12 border border-blue-lighter mb-8 ">
           <div className="text-xs  w-16 h-full bg-orange-dark text-white flex items-center justify-center">
@@ -114,7 +115,7 @@ function ActiveCompareItem(props) {
       </div>
 
       <div className=" w-full lg:hidden pl-8 bg-[#D0DDEA] h-20 flex items-center">
-        <button className="h-8 w-3/4  bg-[#FFAB00] rounded-[5px] font-bold text-[#1F1E80]">
+        <button className="h-8 w-3/4  bg-[bg-orange-lighter] rounded-[5px] font-bold text-[bg-blue-darker]">
           Weiter
         </button>
       </div>
