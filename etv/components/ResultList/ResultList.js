@@ -1,6 +1,8 @@
 import CarCard from "../../components/ResultList/CarCard";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
+
 import ButtonForAlleTransporter from "../../components/Sliders/ButtonForAlleTransporter";
 const ResultList = (props) => {
   const { state, dispatch } = useStore();
@@ -81,9 +83,9 @@ const ResultList = (props) => {
     </div>
   );
   /* ɢᴇᴛ the cars upon filters */
-  const getdisplayedCars = shownCars?.map((caritem) => {
+  const getdisplayedCars = shownCars?.map((caritem, index) => {
     return (
-      <div className="container-product" key={caritem.id}>
+      <div className="container-product" key={index}>
         <div className="product-icon"></div>
         <CarCard caritem={caritem} />
       </div>

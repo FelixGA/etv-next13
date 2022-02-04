@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="p-10 lg:flex lg:flex-row-reverse lg:flex-wrap lg:justify-around">
-      <nav className="flex flex-row justify-between flex-wrap my-10">
+    <footer className="p-10 lg:flex lg:flex-row-reverse lg:flex-wrap lg:justify-around print:hidden ">
+      <nav className="flex flex-row justify-between flex-wrap my-10 ">
         <div className="flex lg:w-48 w-1/2  flex-col justify-start flex-wrap ">
           <h5 className=" text-xs font-bold">FIRST CATEGORY</h5>
           <ul className=" flex flex-col justify-between items-start flex-wrap  my-4  text-black">

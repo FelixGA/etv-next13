@@ -4,7 +4,7 @@ import TopSliderCard from "../Sliders/TopSliderCard";
 const TopSlider = (props) => {
   const displayedCars = props.getCars;
   return (
-    <div className="  flex flex-col ">
+    <div className="print:hidden  flex flex-col ">
       <h2 className="text-3xl font-black text-black-dark text-left mt-10 mb-10 tracking-wide pl-6">
         Beste Testberichte
       </h2>

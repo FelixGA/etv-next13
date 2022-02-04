@@ -1,4 +1,5 @@
 import { useStore } from "../store";
+import { v4 as uuidv4 } from "uuid";
 import Link from "next/link";
 import CarCardforPopUp from "./CarCardforPopUp";
 import CarCardForPopUpMobile from "./CarCardForPopUpMobile";
@@ -12,7 +13,7 @@ const StickyPopUpForComparison = () => {
         <div>
           <div
             className="hidden md:flex md:flex-row  w-44 lg:w-52 h-28 mx-2"
-            key={index}
+            key={uuidv4()}
           >
             <CarCardforPopUp selectedCar={selectedCar} />
           </div>

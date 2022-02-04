@@ -163,7 +163,7 @@ const Details = () => {
       <div className="w-full flex flex-col lg:flex-row lg:pt-12  p-4  lg:px-24">
         <div className=" w-full lg:w-1/2 ">
           <div className="lg:w-64  ">
-            <button className="text-sm bg-white w-48 h-10   text-[bg-blue-darker] ">
+            <button className="text-sm bg-white w-48 h-10 print:hidden  text-[bg-blue-darker] ">
               <Link href="/comparePage">
                 <a className="visited:text-blue-darker">
                   « zurück zur Ergebnisliste
@@ -259,7 +259,7 @@ const Details = () => {
             Testbericht{"\n"} {cartitle}
           </h3>
           <p>{carItem?.description}</p>
-          <button className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white">
+          <button className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden">
             Testbericht lesen
           </button>
         </div>

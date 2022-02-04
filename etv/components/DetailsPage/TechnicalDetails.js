@@ -35,8 +35,8 @@ const TechnicalDetails = ({ carItem }) => {
   }, [carItem]);
 
   return (
-    <div className="w-full flex flex-col justify-center items-start lg:pt-12  px-4 py-8 lg:px-24">
-      <h3 className="text-black-darkest font-bold py-2 lg:text-3xl">
+    <div className="w-full flex flex-col justify-center items-start lg:pt-12  px-4 py-8 lg:px-24  ">
+      <h3 className="text-black-darkest font-bold py-2 lg:text-3xl for-print	">
         Technische Daten
       </h3>
       <div className="flex flex-col w-full lg:flex-row">
