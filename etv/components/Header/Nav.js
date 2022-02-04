@@ -67,7 +67,7 @@ const Nav = () => {
     </ul>
   ); */
   return (
-    <div className=" w-full">
+    <div className=" w-full ">
       <nav className=" ">
         <ul className="flex flex-row justify-around items-center w-full  text-grey-dark text-lg font-bold">
           <li>

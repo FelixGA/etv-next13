@@ -35,31 +35,89 @@ export default function comparePage() {
               value
               baseUnit
             }
+
             chargingTime {
               key
               value
               baseUnit
             }
-            electricWindows {
+            availability {
               key
               value
             }
-            ABS {
+            batteryCapacity {
+              key
+              value
+              baseUnit
+            }
+            seats {
               key
               value
             }
-            airBags {
+            height {
               key
               value
+              baseUnit
             }
-            airConditioning {
+            width {
               key
               value
+              baseUnit
             }
-            extras {
+            length {
               key
               value
+              baseUnit
             }
+            wheelbase {
+              key
+              value
+              baseUnit
+            }
+            loadArea {
+              key
+              value
+              baseUnit
+            }
+            curbWeight {
+              key
+              value
+              baseUnit
+            }
+            loadingHeight {
+              key
+              value
+              baseUnit
+            }
+            loadingVolume {
+              key
+              value
+              baseUnit
+            }
+
+            fastChargingTime {
+              key
+              value
+              baseUnit
+            }
+            guarantee {
+              key
+              value
+              baseUnit
+            }
+            typeClass
+            batteryGarantie {
+              key
+              baseUnit
+              value
+              type
+            }
+            subsidies {
+              key
+              value
+              baseUnit
+            }
+
             photo {
               data {
                 attributes {
@@ -115,7 +173,7 @@ export default function comparePage() {
     .map((item) => item);
   /* ᴄᴀʀs ᴄʜᴀʀɢɪɴɢ ᴛɪᴍᴇ ғɪʟᴛᴇʀ */
   const getCarsfastest = getCars
-    ?.sort((a, b) => a.chargingTime.value - b.chargingTime.value)
+    ?.sort((a, b) => a.chargingTime[0].value - b.chargingTime[0].value)
     .map((item) => item);
 
   const { state, dispatch } = useStore();

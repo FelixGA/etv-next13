@@ -65,30 +65,15 @@
     },
     "chargingTime": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "all.range"
     },
-    "electricWindows": {
+    "availability": {
       "type": "component",
       "repeatable": false,
       "component": "all.range"
     },
-    "ABS": {
-      "type": "component",
-      "repeatable": false,
-      "component": "all.range"
-    },
-    "airBags": {
-      "type": "component",
-      "repeatable": false,
-      "component": "all.range"
-    },
-    "airConditioning": {
-      "type": "component",
-      "repeatable": false,
-      "component": "all.range"
-    },
-    "extras": {
+    "batteryCapacity": {
       "type": "component",
       "repeatable": false,
       "component": "all.range"
@@ -100,7 +85,79 @@
     },
     "seats": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "typeClass": {
+      "type": "enumeration",
+      "enum": [
+        "L7E",
+        "L6E",
+        "N1",
+        "N1N2",
+        "N2"
+      ],
+      "required": false
+    },
+    "height": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "width": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "length": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "wheelbase": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "curbWeight": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "loadingHeight": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "loadingVolume": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "loadArea": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "fastChargingTime": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "guarantee": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all.range"
+    },
+    "subsidies": {
+      "displayName": "entry-numbers",
+      "type": "component",
+      "repeatable": false,
+      "component": "all.entry-numbers"
+    },
+    "batteryGarantie": {
+      "type": "component",
+      "repeatable": false,
       "component": "all.range"
     }
   }

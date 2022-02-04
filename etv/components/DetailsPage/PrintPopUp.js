@@ -4,7 +4,7 @@ import ButtonCompare from "../ResultList/ButtonCompare";
 const PrintPopUp = (props) => {
   let carItem = props.carItem;
   return (
-    <div className="sticky md:mt-20 lg:z-10 lg:bottom-0 w-full h-18 lg:h-32 bg-grey-light flex justify-between items-center">
+    <div className="sticky md:mt-20 lg:z-10 lg:bottom-0 w-full h-18 lg:h-32 bg-grey-light flex justify-between items-center print:hidden">
       <div className="hidden md:block md:w-3/6">.</div>
       <span
         id="BLUE-BUTTONS-SECTION"
@@ -12,7 +12,7 @@ const PrintPopUp = (props) => {
       >
         <div className=" xs:mx-2 my-2 justify-center items-center">
           <button
-            onClick={() => console.log("window.print doesnt work")}
+            onClick={() => window.print()}
             className="bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white text-xs xl:tracking-wider rounded flex justify-center items-center h-7  w-28"
           >
             Drucken

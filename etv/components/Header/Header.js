@@ -21,7 +21,7 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative print:hidden">
       <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-18 w-[100vw] ">
         <div className="flex flex-row pl-0 sm:pl-4 xl:pl-32">
           <div className="logo-container mt-2 w-20">

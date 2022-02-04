@@ -31,7 +31,10 @@ function CarCardDetailsDesktop(props) {
   console.log(carItem?.range); */
   return (
     <div className=" w-full flex flex-col justify-center">
-      <Link href={`/vehicles/${carItem?.title}`}>
+
+      {" "}
+      <Link href={`/transporter/${carItem?.title}`}>
+
         <a>
           <h3
             className={
@@ -47,11 +50,13 @@ function CarCardDetailsDesktop(props) {
       <div className="flex  w-full flex-wrap xl:pr-4 bg-red-500">
         <section className="py-2 xl:pl-4 flex  w-3/4 flex-wrap ">
           <div className="flex flex-col w-1/2  bg-yellow-500">
+
             {carItems?.map((prop, index) => {
               return (
                 <div key={index}> {/*  <CarCardProps prop={prop} /> */} hi</div>
               );
             })}
+
           </div>
         </section>
         <div className="flex flex-wrap items-center justify-center w-1/4 ">
@@ -65,8 +70,4 @@ function CarCardDetailsDesktop(props) {
   );
 }
 export default CarCardDetailsDesktop;
-//  <>
-//    {props.caritem?.title},{props.caritem.description}, {props.caritem.price},{" "}
-//    {props.caritem.weight}, {props.caritem.distance}, {props.caritem.vmax},{" "}
-//    {props.caritem.loadingtime}, {props.caritem.vmax}
-//  </>;
+

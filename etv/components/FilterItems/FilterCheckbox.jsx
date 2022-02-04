@@ -62,13 +62,11 @@ function FilterCheckbox(props) {
         id={props.checkbox.id}
         name={props.checkbox.categoryName}
         value={props.checkbox.value}
+        // defaultChecked={false}
         checked={isChecked == props.checkbox.name ? true : false}
-        // onChange={() => {
-        //   dispatch({
-        //     type: props.checkbox.categoryName,
-        //     data: [{ min: props.checkbox.value, max: 99999 }],
-        //   });
-        // }}
+        onChange={() => {
+          return null;
+        }}
       ></input>
     </>
   );

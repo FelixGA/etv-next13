@@ -35,31 +35,89 @@ function homepage() {
               value
               baseUnit
             }
+
             chargingTime {
               key
               value
               baseUnit
             }
-            electricWindows {
+            availability {
               key
               value
             }
-            ABS {
+            batteryCapacity {
+              key
+              value
+              baseUnit
+            }
+            seats {
               key
               value
             }
-            airBags {
+            height {
               key
               value
+              baseUnit
             }
-            airConditioning {
+            width {
               key
               value
+              baseUnit
             }
-            extras {
+            length {
               key
               value
+              baseUnit
             }
+            wheelbase {
+              key
+              value
+              baseUnit
+            }
+            loadArea {
+              key
+              value
+              baseUnit
+            }
+            curbWeight {
+              key
+              value
+              baseUnit
+            }
+            loadingHeight {
+              key
+              value
+              baseUnit
+            }
+            loadingVolume {
+              key
+              value
+              baseUnit
+            }
+
+            fastChargingTime {
+              key
+              value
+              baseUnit
+            }
+            guarantee {
+              key
+              value
+              baseUnit
+            }
+            typeClass
+            batteryGarantie {
+              key
+              baseUnit
+              value
+              type
+            }
+            subsidies {
+              key
+              value
+              baseUnit
+            }
+
             photo {
               data {
                 attributes {

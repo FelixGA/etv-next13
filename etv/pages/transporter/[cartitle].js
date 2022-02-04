@@ -25,12 +25,22 @@ const Details = () => {
             title
             price
             description
+            typeClass
+            batteryGarantie {
+              key
+              baseUnit
+              value
+              type
+            }
+
+            categorie
+
             rating {
               key
               baseUnit
               value
             }
-            categorie
+
             range {
               key
               value
@@ -46,31 +56,78 @@ const Details = () => {
               value
               baseUnit
             }
+
             chargingTime {
               key
               value
               baseUnit
             }
-            electricWindows {
+            availability {
               key
               value
             }
-            ABS {
+            batteryCapacity {
+              key
+              value
+              baseUnit
+            }
+            seats {
               key
               value
             }
-            airBags {
+            height {
               key
               value
+              baseUnit
             }
-            airConditioning {
+            width {
               key
               value
+              baseUnit
             }
-            extras {
+            length {
               key
               value
+              baseUnit
             }
+            wheelbase {
+              key
+              value
+              baseUnit
+            }
+            loadArea {
+              key
+              value
+              baseUnit
+            }
+            curbWeight {
+              key
+              value
+              baseUnit
+            }
+            loadingHeight {
+              key
+              value
+              baseUnit
+            }
+            loadingVolume {
+              key
+              value
+              baseUnit
+            }
+
+            guarantee {
+              key
+              value
+              baseUnit
+            }
+
+            subsidies {
+              key
+              value
+              baseUnit
+            }
+
             photo {
               data {
                 attributes {
@@ -99,21 +156,6 @@ const Details = () => {
   const myLoader = ({ src }) => {
     return src;
   };
-  /* get two subsets of the car properties to map them */
-
-  const grundlagen = (({ range, weight, maxSpeed, chargingTime }) => [
-    range,
-    weight,
-    chargingTime,
-    maxSpeed,
-  ])(carItem);
-  const ausstattung = (({
-    electricWindows,
-    ABS,
-    airBags,
-    airConditioning,
-    extras,
-  }) => [electricWindows, ABS, airBags, airConditioning, extras])(carItem);
 
   return (
     <>
@@ -121,7 +163,7 @@ const Details = () => {
       <div className="w-full flex flex-col lg:flex-row lg:pt-12  p-4  lg:px-24">
         <div className=" w-full lg:w-1/2 ">
           <div className="lg:w-64  ">
-            <button className="text-sm bg-white w-48 h-10   text-[bg-blue-darker] ">
+            <button className="text-sm bg-white w-48 h-10 print:hidden  text-[bg-blue-darker] ">
               <Link href="/comparePage">
                 <a className="visited:text-blue-darker">
                   « zurück zur Ergebnisliste
@@ -144,7 +186,7 @@ const Details = () => {
         <div className="flex flex-col lg:w-1/2 ">
           {/* DESKTOP VERSION FOR DETAILS TABLE*/}
           <div className="hidden lg:flex justify-center flex-col w-4/5 px-8 pb-6 ">
-            <h2 className="hidden lg:block text-5xl text-black-darkest pl-2 ">
+            <h2 className="hidden lg:block text-4xl text-black-darkest pl-2 ">
               {cartitle}
             </h2>
 
@@ -217,7 +259,7 @@ const Details = () => {
             Testbericht{"\n"} {cartitle}
           </h3>
           <p>{carItem?.description}</p>
-          <button className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white">
+          <button className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden">
             Testbericht lesen
           </button>
         </div>
