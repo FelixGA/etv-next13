@@ -9,37 +9,39 @@ import { useRouter } from "next/router";
 import CarCardProps from "./CarCardProps";
 
 function CarCardDetailsDesktop(props) {
+  let carItem = props.carItem;
   const router = useRouter();
 
   return (
     <div className=" w-full flex flex-col justify-center">
-      <Link href={`/transporter/${props.carItem?.title}`}>
+      <Link href={`/transporter/${carItem?.title}`}>
         <a>
           <h3
             className={
               router.query.cartitle
                 ? "hidden"
-                : " pl-4 text-black-darkest font-bold mb-2"
+                : " pl-8 text-blue-extra font-bold pt-4 pb-4"
             }
           >
             {props.carItem?.title}
           </h3>
         </a>
       </Link>
-      <div className="flex  w-full flex-wrap xl:pr-4 bg-red-500">
-        <section className="py-2 xl:pl-4 flex  w-3/4 flex-wrap ">
-          <div className="flex flex-col w-1/2  bg-yellow-500">
-            <CarCardProps details={props.carItem?.range} image={image} />
-            <CarCardProps details={props.carItem?.weight} image={image2} />
-            <CarCardProps
-              details={props.carItem?.chargingTime[0]}
-              image={image4}
-            />
-            <CarCardProps details={props.carItem?.maxSpeed} image={image3} />
-          </div>
-        </section>
-        <div className="flex flex-wrap items-center justify-center w-1/4 ">
-          <div className="">
+      <div className="w-full grid grid-cols-3  h-40">
+        <div className="  flex flex-col justify-between ">
+          <CarCardProps details={props.carItem?.range} image={image} />
+          <CarCardProps details={props.carItem?.weight} image={image2} />
+        </div>
+        <div>
+          <CarCardProps
+            details={props.carItem?.chargingTime[0]}
+            image={image4}
+          />
+          <CarCardProps details={props.carItem?.maxSpeed} image={image3} />
+        </div>
+
+        <div className=" w-full flex justify-center items-center ">
+          <div className="w-24">
             <RatingBox carItem={props.carItem} />
           </div>
         </div>
