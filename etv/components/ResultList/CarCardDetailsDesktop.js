@@ -5,17 +5,36 @@ import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/ladezeit@2x.png";
 import Link from "next/link";
 import RatingBox from "./RatingBox";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import CarCardProps from "./CarCardProps";
 
 function CarCardDetailsDesktop(props) {
   const router = useRouter();
+  const [carItems, setCarItems] = useState([]);
 
-  let carItem = props.carItem;
+  let carItem = { ...props.carItem };
 
+  useEffect(() => {
+    /*  let carItem = { ...props.carItem }; */
+    /* carItem.range.img = image; */
+    const carItemProps = [
+      carItem.range,
+      carItem.maxSpeed,
+      carItem.chargingTime,
+      carItem.weight,
+    ];
+    setCarItems(carItemProps);
+  }, []);
+
+  /*  carItemProps.carItem.range.pic = image;
+  console.log(carItem?.range); */
   return (
     <div className=" w-full flex flex-col justify-center">
+
       {" "}
       <Link href={`/transporter/${carItem?.title}`}>
+
         <a>
           <h3
             className={
@@ -31,95 +50,18 @@ function CarCardDetailsDesktop(props) {
       <div className="flex  w-full flex-wrap xl:pr-4 bg-red-500">
         <section className="py-2 xl:pl-4 flex  w-3/4 flex-wrap ">
           <div className="flex flex-col w-1/2  bg-yellow-500">
-            <div className="flex    h-1/2 items-center ">
-              <div className="hidde ">
-                <Image
-                  className=" rounded-full"
-                  src={image}
-                  alt="Reichweite"
-                  width={150}
-                  height={150}
-                  objectFit="cover"
-                />
-              </div>
-              <div className="flex flex-col w-full justify-center text-sm pl-4">
-                <div className="text-blue-dark font-bold ">
-                  {carItem?.range.value} km
-                </div>
-                <div className="text-grey-dark font-bold ">
-                  {carItem?.range.key}
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-row w-full h-16 items-center">
-              <div className=" ">
-                <Image
-                  className="rounded-full "
-                  src={image3}
-                  alt="v-max-logo"
-                  width={150}
-                  height={150}
-                  objectFit="contain"
-                />
-              </div>
-              <div className="flex flex-col w-full justify-center text-sm">
-                <div className="text-blue-dark font-bold ">
-                  {" "}
-                  {carItem?.maxSpeed.value} km/h
-                </div>
-                <div className="text-grey-dark font-bold ">
-                  {carItem?.maxSpeed.key}{" "}
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col w-1/2 ">
-            <div className="flex flex-row w-full h-16 items-center">
-              <div className="bg-grey-lighter  rounded-full ">
-                <Image
-                  className="rounded-full "
-                  src={image2}
-                  alt="zuladung-logo"
-                  width={24}
-                  height={24}
-                  objectFit="cover"
-                />
-              </div>
-              <div className="flex flex-col w-full justify-center text-sm">
-                <div className="text-blue-dark font-bold ">
-                  {" "}
-                  {carItem?.weight.value} kg
-                </div>
-                <div className="text-grey-dark font-bold ">
-                  {carItem?.weight.key}{" "}
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-row w-full h-16 items-center">
-              <div className="bg-grey-lighter  rounded-full  ">
-                <Image
-                  className="rounded-full "
-                  src={image4}
-                  alt="v-max-logo"
-                  width={24}
-                  height={24}
-                  objectFit="contain"
-                />
-              </div>
-              <div className="flex flex-col w-full justify-center text-sm ">
-                <div className="text-blue-dark font-bold ">
-                  {" "}
-                  {carItem?.chargingTime[0].value}h
-                </div>
-                <div className="text-grey-dark font-bold ">
-                  {carItem?.chargingTime[0].key}{" "}
-                </div>
-              </div>
-            </div>
+
+            {carItems?.map((prop, index) => {
+              return (
+                <div key={index}> {/*  <CarCardProps prop={prop} /> */} hi</div>
+              );
+            })}
+
           </div>
         </section>
         <div className="flex flex-wrap items-center justify-center w-1/4 ">
           <div className="">
+            {" "}
             <RatingBox carItem={carItem} />
           </div>
         </div>
@@ -128,8 +70,4 @@ function CarCardDetailsDesktop(props) {
   );
 }
 export default CarCardDetailsDesktop;
-//  <>
-//    {props.caritem?.title},{props.caritem.description}, {props.caritem.price},{" "}
-//    {props.caritem.weight}, {props.caritem.distance}, {props.caritem.vmax},{" "}
-//    {props.caritem.loadingtime}, {props.caritem.vmax}
-//  </>;
+
