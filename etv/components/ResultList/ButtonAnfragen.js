@@ -10,7 +10,7 @@ function ButtonAnfragen() {
       onClick={() => {
         setDisabled(true);
       }}
-      className="bg-orange-lighter  hover:bg-yellow-light text-blue-dark my-2 px-2 font-bold text-xs  xl:tracking-wide rounded w-28 h-7 disabled:bg-grey-light "
+      className="bg-orange-lighter  hover:bg-yellow-light text-blue-dark my-2 px-2 font-bold text-xs  xl:tracking-wide rounded w-32 h-8 disabled:bg-grey-light "
     >
       {" "}
       {disabled ? "Angefragt" : "Jetzt anfragen"}

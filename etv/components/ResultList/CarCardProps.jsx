@@ -6,22 +6,23 @@ import image4 from "../../public/images/ladezeit@2x.png";
 
 function CarCardProps(props) {
   /*   let imagesForProp = [image, image2, image3, image4]; */
+  console.log(props.details);
   return (
-    <div className="flex  bg-green-500  h-1/2 items-center ">
+    <div className=" pl-8 flex h-20 items-center  ">
       <div className=" ">
         <Image
           className=" rounded-full"
-          src={image}
-          alt="Reichweite"
-          width={150}
-          height={150}
-          objectFit="cover"
+          src={props.image}
+          alt={props.details?.key}
+          width={40}
+          height={40}
+          objectFit="contain"
         />
       </div>
-      <div className="flex flex-col w-full justify-center text-sm pl-4">
-        <div className="text-blue-dark font-bold ">{props.prop?.key}</div>
+      <div className="flex flex-col flex-1 justify-center text-sm pl-4 ">
+        <div className="text-blue-dark font-bold ">{props.details?.key}</div>
         <div className="text-grey-dark font-bold ">
-          {props.prop?.value} {props.prop?.type}kg/h
+          {props.details?.value} {props.details?.type} kg
         </div>
       </div>
     </div>
