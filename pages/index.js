@@ -1,6 +1,11 @@
 import Head from "next/head";
 import getContent from "/utils/getContent";
 import { MDXRemote } from "next-mdx-remote";
+import BlogArticles from "../components/BlogArticles";
+import HeroSection from "../components/HeroSection/HeroSection";
+import TopSlider from "../components/Sliders/TopSlider";
+import BottomSlider from "../components/Sliders/BottomSlider";
+import NewsLetter from "../components/NewsLetter";
 
 const components = {
   img: (image) => <Image src={image.src} alt={image.alt} objectFit="contain" />,
@@ -13,6 +18,7 @@ const components = {
 };
 
 export default function Home(props) {
+  console.log(props.page.sources.main)
   return (
     <>
       <Head>
@@ -22,9 +28,13 @@ export default function Home(props) {
         <link rel="manifest" href="./manifest.json" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="font-black max-w-xl lg:mr-16 ">
+      
         <MDXRemote {...props.page.sources.main} components={components} />
-      </div>
+       <HeroSection />
+      {/* <TopSlider getCars={getCars} /> */}
+      <BlogArticles />
+      <BottomSlider />
+      <NewsLetter />
     </>
   );
 }

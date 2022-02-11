@@ -7,7 +7,7 @@ function MobileNav(props) {
     <div className="relative bg-blue-dark w-full  h-screen  block pt-20">
       <ul className="flex flex-col items-center w-full   h-2/3 justify-between text-grey-dark text-3xl ">
         <li className="pt-4">
-          <Link href="/homepage">
+          <Link href="/">
             <a
               className="text-[#E7E8EC]"
               onClick={() => {

@@ -20,7 +20,7 @@ const Details = () => {
   // /* for the slider to recommend cars from the same category */
   // let getCars = data?.vehicles?.data
   //   .map((item) => item.attributes)
-  //   .filter((item) => item?.categorie === carItem?.categorie)
+  //   .filter((item) => item?.category=== carItem?.categorie)
   //   .slice(0, 4);
 
   // const myLoader = ({ src }) => {
