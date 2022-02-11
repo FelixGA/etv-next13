@@ -1,0 +1,90 @@
+@tailwind base;
+
+@layer base {
+  html,
+  body {
+    font-family: "Inter";
+    color: #666666;
+    height: 100%;
+  }
+
+  h1 {
+    @apply text-blue-dark text-3xl md:text-3xl font-bold;
+  }
+
+  h2 {
+    @apply text-blue-dark text-xl md:text-2xl;
+  }
+
+  h3 {
+    @apply text-blue-dark text-lg md:text-xl;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* for print */
+@page {
+  size: auto; /* auto is the initial value */
+  margin: 0; /* this affects the margin in the printer settings */
+}
+@tailwind components;
+
+@layer components {
+  .filter-grid {
+    grid-template-columns: repeat(auto-fill, minmax(184px, 230px));
+  }
+}
+
+@tailwind utilities;
+
+/* FROM HERE WE GIVE css for reference  */
+
+header {
+  background-color: #2a3c80;
+}
+a:visited {
+  color: white;
+}
+
+.select {
+  @apply rounded-lg  bg-white text-base cursor-pointer  items-center;
+  /* min-width: 15ch;
+  max-width: 20ch; */
+  display: grid;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  grid-template-areas: "select";
+}
+select:active,
+select:focus,
+input:active,
+input:focus {
+  outline: none;
+}
+select:focus {
+  padding-bottom: 0px;
+}
+/* CUSTOM CSS THAT ARE NOT FOR TAILWIND */
+.line {
+  width: 20px;
+  height: 2px;
+  background: white;
+  margin: 5px;
+}
+.logo {
+  filter: contrast(900%);
+}
+.gmsou {
+  box-shadow: 0 0 0 1px #243280;
+}
+.custom-text {
+  text-align: center;
+}
+.forz {
+  z-index: -98;
+  background: linear-gradient(0.25turn, #f2f9ff, #dbe0e4, #dbe0e4);
+  filter: hue-rotate(260deg);
+  filter: saturate(3.5);
+}

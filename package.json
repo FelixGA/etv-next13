@@ -1,5 +1,36 @@
 {
+  "name": "etv",
+  "version": "1.0.0",
+  "private": true,
+  "license": "The Unlicense",
+  "scripts": {
+    "dev": "npx netlify-cms-proxy-server & next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
+  },
   "dependencies": {
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "@sergeymyssak/nextjs-sitemap": "^2.0.3",
+    "framer-motion": "^6.2.3",
+    "gray-matter": "^4.0.3",
+    "next": "12.0.7",
+    "next-images": "^1.8.4",
+    "next-mdx-remote": "^3.0.8",
+    "next-pwa": "^5.4.4",
+    "react": "17.0.2",
+    "react-break": "^1.3.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss": "^3.0.7",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "eslint": "8.5.0",
+    "eslint-config-next": "12.0.7",
+    "next-sitemap": "^1.6.203",
+    "postcss": "^8.4.5"
   }
 }
