@@ -1,8 +1,6 @@
 import "../styles/globals.css";
 import App from "next/app";
 import Layout from "../components/Layout";
-import { ApolloProvider } from "@apollo/client";
-import client from "../apollo-client";
 import ErrorBoundary from "../components/ErrorBoundary";
 import Head from "next/head";
 import { StoreProvider } from "/components/store";
@@ -33,13 +31,11 @@ function MyApp({ Component, pageProps }) {
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"></link>
       </Head>
       <ErrorBoundary>
-        <ApolloProvider client={client}>
-          <StoreProvider>
-            <Layout {...pageProps}>
-              <Component {...pageProps} />
-            </Layout>
-          </StoreProvider>
-        </ApolloProvider>
+        <StoreProvider>
+          <Layout {...pageProps}>
+            <Component {...pageProps} />
+          </Layout>
+        </StoreProvider>
       </ErrorBoundary>
     </>
   );

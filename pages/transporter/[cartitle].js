@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import CarCardDetailsDesktop from "../../components/ResultList/CarCardDetailsDesktop";
 import TopSlider from "../../components/Sliders/TopSlider";
 import Image from "next/image";
-import { gql, useQuery } from "@apollo/client";
 import CarCardDetailsMobile from "../../components/ResultList/CarCardDetailsMobile";
 import RatingBox from "../../components/ResultList/RatingBox";
 import { useState } from "react";
@@ -12,150 +11,21 @@ import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
 import Link from "next/link";
 
 const Details = () => {
-  const router = useRouter();
   const [descriptionSize, SetDescriptionSize] = useState(true);
 
-  const { cartitle } = router.query;
+  // const carItem = data?.vehicles?.data
+  //   .map((item) => item.attributes)
+  //   .find((el) => el.title === cartitle);
 
-  const getAllCarsData = gql`
-    query {
-      vehicles {
-        data {
-          attributes {
-            title
-            price
-            description
-            typeClass
-            batteryGarantie {
-              key
-              baseUnit
-              value
-              type
-            }
+  // /* for the slider to recommend cars from the same category */
+  // let getCars = data?.vehicles?.data
+  //   .map((item) => item.attributes)
+  //   .filter((item) => item?.categorie === carItem?.categorie)
+  //   .slice(0, 4);
 
-            categorie
-
-            rating {
-              key
-              baseUnit
-              value
-            }
-
-            range {
-              key
-              value
-              baseUnit
-            }
-            weight {
-              key
-              value
-              baseUnit
-            }
-            maxSpeed {
-              key
-              value
-              baseUnit
-            }
-
-            chargingTime {
-              key
-              value
-              baseUnit
-            }
-            availability {
-              key
-              value
-            }
-            batteryCapacity {
-              key
-              value
-              baseUnit
-            }
-            seats {
-              key
-              value
-            }
-            height {
-              key
-              value
-              baseUnit
-            }
-            width {
-              key
-              value
-              baseUnit
-            }
-            length {
-              key
-              value
-              baseUnit
-            }
-            wheelbase {
-              key
-              value
-              baseUnit
-            }
-            loadArea {
-              key
-              value
-              baseUnit
-            }
-            curbWeight {
-              key
-              value
-              baseUnit
-            }
-            loadingHeight {
-              key
-              value
-              baseUnit
-            }
-            loadingVolume {
-              key
-              value
-              baseUnit
-            }
-
-            guarantee {
-              key
-              value
-              baseUnit
-            }
-
-            subsidies {
-              key
-              value
-              baseUnit
-            }
-
-            photo {
-              data {
-                attributes {
-                  alternativeText
-                  url
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `;
-  /* QUERY */
-  const { data } = useQuery(getAllCarsData);
-  const carItem = data?.vehicles?.data
-    .map((item) => item.attributes)
-    .find((el) => el.title === cartitle);
-
-  /* for the slider to recommend cars from the same category */
-  let getCars = data?.vehicles?.data
-    .map((item) => item.attributes)
-    .filter((item) => item?.categorie === carItem?.categorie)
-    .slice(0, 4);
-
-  const myLoader = ({ src }) => {
-    return src;
-  };
+  // const myLoader = ({ src }) => {
+  //   return src;
+  // };
 
   return (
     <>

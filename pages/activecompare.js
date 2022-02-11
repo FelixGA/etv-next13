@@ -1,4 +1,3 @@
-import { gql, useQuery } from "@apollo/client";
 import { useStore } from "../components/store";
 import ActiveCompareItem from "../components/ActiveCompare/ActiveCompareItem";
 import ActiveCompareImage from "../components/ActiveCompare/ActiveCompareImage";

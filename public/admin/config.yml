@@ -1,0 +1,62 @@
+backend:
+  name: github
+  repo: ari-motors-team/elektrotransporter-vergleich
+  branch: dev
+  # auth_type: pkce
+  # app_id: aac348df96d3bb0a9253a7124cbe6af595c462fcfcdc36a09b0d0616c81eebe0
+
+media_folder: public/images
+public_folder: /images
+local_backend: true
+
+i18n:
+  structure: multiple_folders
+  locales: [en, de]
+  default_locale: en
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    identifier_field: path
+    folder: "content/pages"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Path", name: "path", widget: "string", i18n: duplicate }
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        i18n: true
+      - { label: Image, name: src, widget: image, i18n: duplicate }
+      - label: "Content"
+        name: "content"
+        widget: "list"
+        summary: "{{fields.name}}"
+        i18n: true
+        required: false
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Markdown", name: "markdown", widget: "markdown" }
+
+  - label: "Blog"
+    name: "blog"
+    folder: "content/posts"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Slug", name: "slug", widget: "string", i18n: duplicate }
+      - label: "Published at"
+        name: "publishedAt"
+        widget: "date"
+        default: ""
+        format: "MM/DD/YYYY"
+        i18n: true
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        i18n: true
+      - { label: Image, name: src, widget: image, i18n: duplicate }
+      - { label: "Preview", name: "preview", widget: "text", i18n: true }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
