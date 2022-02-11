@@ -8,7 +8,7 @@ function homepage() {
   return (
     <>
       <HeroSection />
-      <TopSlider getCars={getCars} />
+      <TopSlider />
       <BlogArticles />
       <BottomSlider />
       <NewsLetter />
