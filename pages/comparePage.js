@@ -5,6 +5,7 @@ import { useStore } from "../components/store";
 import StickyPopUpForComparison from "../components/ResultList/StickyPopUpForComparison";
 import getContent from "/utils/getContent";
 import { MDXRemote } from "next-mdx-remote";
+import { useState,useEffect } from  "react";
 const components = {
   img: (image) => <Image src={image.src} alt={image.alt} objectFit="contain" />,
   a: (link) => (
@@ -16,7 +17,12 @@ const components = {
 };
 
 export default function comparePage(props) {
-
+  const [getCars, SetGetCars] = useState([]); 
+  useEffect(() => {
+    SetGetCars(props.vehicles);
+  }, [props.vehicles]);
+   
+    console.log(getCars)
   // /* ɢᴇᴛ ʀᴇsᴜʟᴛs ᴜᴘᴏɴ ᴄᴀᴛᴇɢᴏʀʏ */
   // const getPritsche = getCars?.filter((item) => item.category=== "Pritsche");
   // const getKipper = getCars?.filter((item) => item.category=== "Kipper");

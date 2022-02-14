@@ -73,7 +73,7 @@ const TopSliderCard = (props) => {
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
     <div className="min-w-64 mr-2 pl-6" key={caritem.index}>
       <div className="w-72">
-        <Link href={`/transporter/${caritem.title}`} passHref>
+       {/*  <Link href={`/transporter/${caritem.title}`} passHref>
           <a>
             <Image
               loader={myLoader}
@@ -86,7 +86,7 @@ const TopSliderCard = (props) => {
               unoptimized={true}
             />
           </a>
-        </Link>
+        </Link> */}
         <Link href={`/transporter/${caritem.title}`}>
           <a>
             <h3 className="text-center text-xl font-black text-black-dark mt-8 mb-4	tracking-wide">
@@ -111,12 +111,12 @@ const TopSliderCard = (props) => {
             <div className="flex flex-row pb-8">
               <div className="">
                 <span className="relative bottom-1 pl-2.5 font-black text-m ">
-                  {caritem.rating.value}
+                  {caritem.rating.key}
                 </span>
               </div>
               <div className="pb-2">
                 <span className="relative bottom-1 text-xxs font-black pl-3 tracking-widest ">
-                  {caritem.rating.key}
+                  {caritem.rating.value}
                 </span>
               </div>
             </div>
