@@ -10,7 +10,7 @@ const ResultList = (props) => {
 
   /* useEffect to apply the filters */
   useEffect(() => {
-    if (!state?.prices || !state?.loadingWeights || props.sortedCars?.length === 0)
+    if (!state?.prices || !state?.loadingWeights || !state?.Range230Vs || !state?.maxSpeeds || !state?.chargingTime230Vs || props.sortedCars?.length === 0)
       return;
     let filteredCars = props.sortedCars?.filter((car) => {
       if (
@@ -48,14 +48,14 @@ const ResultList = (props) => {
         state?.chargingTime230Vs?.length > 0 &&
         state?.chargingTime230Vs?.every(
           (entry) =>
-            entry.min > car.chargingTime230V[0].value ||
-            entry.max < car.chargingTime230V[0].value
+            entry.min > car.chargingTime230V.value ||
+            entry.max < car.chargingTime230V.value
         )
       )
         return false;
       if (
         state?.categorys?.length > 0 &&
-        !state?.categorys?.some((entry) => entry.min == car.categorie)
+        !state?.categorys?.some((entry) => entry.min == car.category)
       )
         return false;
 
@@ -83,6 +83,7 @@ const ResultList = (props) => {
     </div>
   );
   /* ɢᴇᴛ the cars upon filters */
+  
   const getdisplayedCars = shownCars?.map((caritem, index) => {
     return (
       <div className="container-product" key={index}>

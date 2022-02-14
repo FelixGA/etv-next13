@@ -20,7 +20,7 @@ const components = {
 export default function Home(props) {
 const [getCars, SetGetCars] = useState(props.vehicles); 
 
-  console.log(getCars)
+
   return (
     <>
       <Head>

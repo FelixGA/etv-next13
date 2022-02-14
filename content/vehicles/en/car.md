@@ -7,33 +7,33 @@ preview: qergwetgetg
 category: Kipper
 typeClass: N2
 loadingWeight:
-  key: ergerg
-  value: 23423
-  baseUnit: qwergqreg
+  key: Nutylast
+  value: 2346
+  baseUnit: kg
 maxSpeed:
   key: wefwef
-  baseUnit: wefwefwe
-  value: 12342134
+  baseUnit: klm/h
+  value: 1234
 Range230V:
-  key: qwefw
-  value: 1234213
-  baseUnit: 41234wqefqwe
+  key: Reiichweite
+  value: 123
+  baseUnit: klm
 RangeLithium:
   key: qwef
   value: 23423
   baseUnit: 42qwefqwef134
 chargingTime230V:
-  key: qwefwqef23423
-  baseUnit: qwefqwe
+  key: Ladenzeit
+  baseUnit: St
   value: 340
 chargingTimeLithium:
   key: wfeqwefwqe
   baseUnit: qwefwef
   value: 2343
 chargingTimeFast:
-  key: qwefqwef
-  value: 32423
-  baseUnit: wefqwef
+  key: vmax
+  value: 324
+  baseUnit: klm
 batteryCapacity:
   key: 234wefwaef
   value: 234134

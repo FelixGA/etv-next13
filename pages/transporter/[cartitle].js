@@ -1,4 +1,6 @@
 import { useRouter } from "next/router";
+import getContent from "/utils/getContent";
+import { MDXRemote } from "next-mdx-remote";
 import CarCardDetailsDesktop from "../../components/ResultList/CarCardDetailsDesktop";
 import TopSlider from "../../components/Sliders/TopSlider";
 import Image from "next/image";
@@ -10,7 +12,16 @@ import PrintPopUp from "../../components/DetailsPage/PrintPopUp";
 import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
 import Link from "next/link";
 
-const Details = () => {
+const components = {
+  img: (image) => <Image src={image.src} alt={image.alt} objectFit="contain" />,
+  a: (link) => (
+    <Link href={link.href}>
+      <a>{link.children}</a>
+    </Link>
+  ),
+  h2: (heading) => <h2 className="mb-8 font-black">{heading.children}</h2>,
+};
+export default function Details(props) {
   const [descriptionSize, SetDescriptionSize] = useState(true);
 
   // const carItem = data?.vehicles?.data
@@ -23,9 +34,9 @@ const Details = () => {
   //   .filter((item) => item?.category=== carItem?.categorie)
   //   .slice(0, 4);
 
-  // const myLoader = ({ src }) => {
-  //   return src;
-  // };
+  const myLoader = ({ src }) => {
+    return src;
+  };
 
   return (
     <>
@@ -43,8 +54,8 @@ const Details = () => {
           </div>
           <Image
             loader={myLoader}
-            src={`http://localhost:1337${carItem?.photo.data[0].attributes.url}`}
-            alt={carItem?.photo.data[0].attributes.alternativeText}
+            src={`http://localhost:3000/${carItem?.src}`}
+            alt={carItem?.title}
             width={195}
             height={140}
             layout="responsive"
@@ -111,7 +122,7 @@ const Details = () => {
         <div className=" lg:w-1/3 w-full m-auto relative  ">
           <Image
             loader={myLoader}
-            src={`http://localhost:1337${carItem?.photo?.data[1]?.attributes.url}`}
+            src={`http://localhost:3000/${carItem?.photo?.data[1]?.attributes.url}`}
             alt={carItem?.photo.data[0].attributes.alternativeText}
             width={195}
             height={140}
@@ -146,4 +157,31 @@ const Details = () => {
   );
 };
 
-export default Details;
+export async function getStaticProps(context) {
+  const pages = await getContent("pages", context.locale);
+  const posts = await getContent("posts", context.locale);
+  let vehicles = await getContent("vehicles", context.locale);
+const page = pages.find((page) => page.path === "/compare-page");
+
+  if (!pages) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      vehicles,
+      posts,
+      
+    },
+  };
+}
+export async function getStaticPaths(context) {
+  let vehicles = await getContent("vehicles", context.locale);
+  return {
+    paths: vehicles?.map((destination) => ({ params: {title: destination.title.toString()},
+})),
+    fallback: true,
+  }
+}

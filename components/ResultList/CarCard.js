@@ -51,8 +51,8 @@ function CarCard(props) {
               <a className=" flex flex-1">
                 <Image
                   loader={myLoader}
-                  src={`http://localhost:1337${carItem.photo.data[0].attributes.url}`}
-                  alt={carItem.photo.data[0].attributes.alternativeText}
+                  src={`http://localhost:3000/${carItem.src}`}
+                  alt={carItem.title}
                   width={350}
                   height={240}
                   objectFit="cover"
@@ -91,7 +91,7 @@ function CarCard(props) {
       <div
         className={showDetails ? "container-product-details w-full" : "hidden"}
       >
-        <CarCardDetailsMobile carItem={carItem} />
+        {/* <CarCardDetailsMobile carItem={carItem} /> */}
       </div>
     </div>
   );

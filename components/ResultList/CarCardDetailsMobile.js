@@ -44,10 +44,10 @@ function CarCardDetailsMobile(props) {
           <div className="flex flex-row w-full py-1 ">
             <div className="flex flex-row w-full justify-between">
               <div className="text-grey-dark font-bold w-1/2">
-                {props.carItem?.chargingTime230V[0].key}:
+                {props.carItem?.chargingTime230V.key}:
               </div>
               <div className="text-blue-dark font-bold w-1/2">
-                {props.carItem?.chargingTime230V[0].value}h
+                {props.carItem?.chargingTime230V.value}h
               </div>
             </div>
           </div>

@@ -58,11 +58,11 @@ export default function comparePage(props) {
    .map((item) => item);
   // /* ᴄᴀʀs ʀᴀɴɢᴇ ғɪʟᴛᴇʀ */
 
-  const getCarsByRange = props.vehicles?.sort((a, b) => b.Range230V230V.value - a.Range230V230V.value)
+  const getCarsByRange = props.vehicles?.sort((a, b) => b.Range230V.value - a.Range230V.value)
     .map((item) => item);
   // /* ᴄᴀʀs ᴄʜᴀʀɢɪɴɢ ᴛɪᴍᴇ ғɪʟᴛᴇʀ */
   const getCarsfastest = props.vehicles
-    ?.sort((a, b) => a.chargingTime230V230V.value - b.chargingTime230V230V.value)
+    ?.sort((a, b) => a.chargingTime230V.value - b.chargingTime230V.value)
     .map((item) => item);
 
   
@@ -90,7 +90,7 @@ export default function comparePage(props) {
   if (state?.activeSortValues === "Beste Ladenzeit") {
     SetSortedCars(getCarsfastest);
   }
-}, [props.vehicles]);
+}, [props.vehicles, state.activeSortValues]);
   return (
     <>
     {/* <MDXRemote {...props.page.sources.main} components={components} /> */}
@@ -102,7 +102,7 @@ export default function comparePage(props) {
           </div>
           <div className="flex flex-col md:w-3/4 w-full ">
             <FilterBlock />
-            {/* <ResultList sortedCars={sortedCars} /> */}
+            <ResultList sortedCars={sortedCars} />
           </div>
         </div>
       </div>
