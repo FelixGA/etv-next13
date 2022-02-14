@@ -33,7 +33,7 @@ const Details = () => {
       <div className="w-full flex flex-col lg:flex-row lg:pt-12  p-4  lg:px-24">
         <div className=" w-full lg:w-1/2 ">
           <div className="lg:w-64  ">
-            <button className="text-sm bg-white w-48 h-10 print:hidden  text-[bg-blue-darker] ">
+            <button className="text-sm bg-white w-48 h-10 print:hidden  text-blue-darker ">
               <Link href="/comparePage">
                 <a className="visited:text-blue-darker">
                   « zurück zur Ergebnisliste

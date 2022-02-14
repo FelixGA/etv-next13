@@ -51,7 +51,7 @@ const StickyPopUpForComparison = () => {
               <button
                 className={
                   state?.autoForComparisons.length > 1
-                    ? "bg-grey-light text-[bg-blue-darker] w-32 lg:w-36 h-8 "
+                    ? "bg-grey-light text-blue-darker w-32 lg:w-36 h-8 "
                     : "bg-grey-light text-grey w-32 lg:w-36 h-8"
                 }
               >
@@ -90,7 +90,7 @@ const StickyPopUpForComparison = () => {
             <button
               className={
                 state?.autoForComparisons.length > 1
-                  ? "bg-grey-light w-20 h-8 text-[bg-blue-darker] font-bold"
+                  ? "bg-grey-light w-20 h-8 text-blue-darker font-bold"
                   : "bg-grey-light w-20 h-8 text-grey "
               }
             >

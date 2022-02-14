@@ -14,7 +14,7 @@ import Sort from "../SortItems/Sort";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useStore } from "../store";
 import FilterOptionPrice from "./FilterOptionPrice";
-function TruncateFilter() {
+function TruncateFilterMobile() {
   /* UseStates */
   const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
   const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
@@ -90,7 +90,7 @@ function TruncateFilter() {
     },
     {
       id: 3,
-      title: "V-Max",
+      title: "Km/h",
 
       category: "maxSpeeds",
       image: image3,
@@ -203,7 +203,7 @@ function TruncateFilter() {
   };
   return (
     <div className="absolute z-10 bg-white w-full ">
-      <div className="flex flex-col mt-2  ">
+      <div className="flex flex-col   ">
         <div>
           <Sort />
         </div>
@@ -313,4 +313,4 @@ function TruncateFilter() {
   );
 }
 
-export default TruncateFilter;
+export default TruncateFilterMobile;

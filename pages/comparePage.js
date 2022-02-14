@@ -1,10 +1,12 @@
-import FilterBlock from "../components/FilterItems/FilterBlock";
+import FilterBlock from "../components/FilterItems/ActiveFilterBlock";
 import ResultList from "../components/ResultList/ResultList";
-import TruncateFilterDesktop from "../components/FilterItems/TruncateFilterDesktop";
+import FiltersDesktop from "../components/FilterItems/FiltersDesktop";
 import { useStore } from "../components/store";
 import StickyPopUpForComparison from "../components/ResultList/StickyPopUpForComparison";
+import { useState } from "react";
 
 export default function comparePage() {
+  const [open, setOpen] = useState(false)
   /* ɢᴇᴛ ʀᴇsᴜʟᴛs ᴜᴘᴏɴ ᴄᴀᴛᴇɢᴏʀʏ */
   
   /* ɢᴇᴛ ᴀʟʟ ᴄᴀᴛᴇɢᴏʀɪᴇs ғʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀ */
@@ -41,10 +43,10 @@ export default function comparePage() {
 
   return (
     <>
-      <div className=" xl:mx-32 bg-[bg-blue-extralight] md:bg-white z-90">
+      <div className=" xl:mx-32 bg-white z-90">
         <div className="flex ">
-          <div className="flex-1 hidden md:block  md:mt-14 md:pr-4 ">
-            <TruncateFilterDesktop />
+          <div className="flex-1 hidden md:block  md:mt-14 md:pr-4  ">
+            <FiltersDesktop />
           </div>
           <div className="flex flex-col md:w-3/4 w-full ">
             <FilterBlock />

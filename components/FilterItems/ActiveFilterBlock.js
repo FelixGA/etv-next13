@@ -7,24 +7,23 @@ import { useStore } from "../store";
 import SortDesktop from "../SortItems/SortDesktop";
 import ActiveFilterEntry from "./ActiveFilterEntry";
 
-function FilterBlock() {
+function ActiveFilterBlock() {
   const { state, dispatch } = useStore();
-  const [truncate, setTruncate] = useState(false);
   const [clicked, setClicked] = useState(true);
-  const [rotateIt, setRotateIt] = useState(false);
+
 
   return (
-    <div className=" w-full min-w-fit relative">
-      <div className="bg-[#Fff]  shadow-dropdown md:hidden  w-full z-40">
+    <div className=" w-full min-w-fit relative ">
+      <div className="bg-white  shadow-dropdown md:hidden  w-full z-40">
         <div
           className={
-            truncate
+            clicked
               ? "h-10 shadow-dropdown flex flex-row justify-between align-middle border-b"
               : "h-10 shadow-dropdown flex flex-row justify-between align-middle "
           }
           onClick={() => {
-            setTruncate(!truncate);
-            setRotateIt(!rotateIt);
+            
+            setClicked(!clicked);
           }}
         >
           <div className="w-full  flex flex-row">
@@ -38,8 +37,9 @@ function FilterBlock() {
                 objectFit="cover"
                 width={8}
                 height={8}
+                
                 layout="responsive"
-                unoptimized={true}
+                
               />
             </div>
             <span className="ml-2 font-black   my-auto text-sm text-blue-darker">
@@ -49,7 +49,7 @@ function FilterBlock() {
 
           <div
             className={
-              rotateIt
+              clicked
                 ? "flex items-center w-8 mr-5 my-auto transition transform rotate-180 origin-center	"
                 : "flex items-center w-8 mr-5 my-auto transition transform rotate-0 origin-center	 "
             }
@@ -60,12 +60,12 @@ function FilterBlock() {
         <div className="">
           <div
             className={
-              truncate ? "font-bold	 my-auto text-sm text-blue-darker" : "hidden"
+              clicked ? "font-bold	 my-auto text-sm text-blue-darker" : "hidden"
             }
           >
             {/* FILTERS ON MOBILE VIEW */}
             <div className="relative  bg-red-500 z-20">
-              <TruncateFilterMobile />
+              {/* <TruncateFilterMobile /> */}
             </div>
           </div>
         </div>
@@ -86,16 +86,16 @@ function FilterBlock() {
           className="hidden md:flex flex-row items-start mt-10 absolute right-2 w-fit   cursor-pointer "
           onClick={() => {
             setClicked(!clicked);
-            setRotateIt(!rotateIt);
+            
           }}
         >
           <h4 className=" ">{`Sortieren nach: ${state?.activeSortValues}`} </h4>
 
           <div
             className={
-              rotateIt
-                ? "flex items-center justify-center w-6 h-4 mt-1  transition transform rotate-180 origin-center	"
-                : "flex items-center justify-center w-6 h-4  mt-1 transition transform rotate-0 origin-center	 "
+              clicked
+                ? "flex items-center justify-center w-6 h-4 mt-1  transition transform rotate-0 origin-center	"
+                : "flex items-center justify-center w-6 h-4  mt-1 transition transform rotate-180 origin-center	 "
             }
           >
             <MdKeyboardArrowDown size={28} />
@@ -110,4 +110,4 @@ function FilterBlock() {
   );
 }
 
-export default FilterBlock;
+export default ActiveFilterBlock;

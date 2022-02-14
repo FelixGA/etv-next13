@@ -108,6 +108,7 @@ function ActiveFilterEntry() {
             />
           </div>
           <div className="text-md">{item.value}</div>
+          
           <div
             onClick={() => {
               if (item.id === 1) dispatch({ type: "price", data: [] });
@@ -120,6 +121,7 @@ function ActiveFilterEntry() {
             className={"w-3.5 my-auto mr-4 cursor-pointer"}
           >
             <AiOutlineClose size={20} />
+            
           </div>
         </div>
       ))}
@@ -136,6 +138,7 @@ function ActiveFilterEntry() {
             : "hidden"
         }
       >
+       
         <span
           className="text-sm  cursor-pointer"
           onClick={() => {
