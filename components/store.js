@@ -5,14 +5,14 @@ const reducer = (state, action) => {
     /* filter */
     case "price":
       return { ...state, prices: action.data };
-    case "range":
-      return { ...state, ranges: action.data };
-    case "weight":
-      return { ...state, weights: action.data };
+    case "Range230V":
+      return { ...state, Range230Vs: action.data };
+    case "loadingWeight":
+      return { ...state, loadingWeights: action.data };
     case "maxSpeed":
       return { ...state, maxSpeeds: action.data };
-    case "chargingTime":
-      return { ...state, chargingTimes: action.data };
+    case "chargingTime230V":
+      return { ...state, chargingTime230Vs: action.data };
 
     case "category":
       return { ...state, categorys: action.data };
@@ -38,10 +38,10 @@ const reducer = (state, action) => {
 
 const initialState = {
   prices: [],
-  ranges: [],
-  weights: [],
+  Range230Vs: [],
+  loadingWeights: [],
   maxSpeeds: [],
-  chargingTimes: [],
+  chargingTime230Vs: [],
   categorys: [],
   truncates: "",
   /*  states for comparison popup */

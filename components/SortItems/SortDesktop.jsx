@@ -12,7 +12,7 @@ function SortDesktop() {
     { sortCategory: "Niedrigster Preis", sortType: "lowest" },
     { sortCategory: "Höchster Preis", sortType: "highest" },
     { sortCategory: "Bestseller", sortType: "bestseller" },
-    { sortCategory: "Beste Ladenzeit", sortType: "ChargingTime" },
+    { sortCategory: "Beste Ladenzeit", sortType: "chargingTime230V" },
     { sortCategory: "Höchste Zuladung", sortType: "highestWeight" },
     { sortCategory: "Höchste Reichweite", sortType: "highestRange" },
     { sortCategory: "Höchste Vmax", sortType: "highestVmax" },

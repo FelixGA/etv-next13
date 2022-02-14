@@ -17,80 +17,80 @@ const components = {
 };
 
 export default function comparePage(props) {
-  const [getCars, SetGetCars] = useState([]); 
+  const [sortedCars, SetSortedCars] = useState([]); 
+  const { state, dispatch } = useStore();
   useEffect(() => {
-    SetGetCars(props.vehicles);
-  }, [props.vehicles]);
+    
+    SetSortedCars(props.vehicles);
    
-    console.log(getCars)
-  // /* ɢᴇᴛ ʀᴇsᴜʟᴛs ᴜᴘᴏɴ ᴄᴀᴛᴇɢᴏʀʏ */
-  // const getPritsche = getCars?.filter((item) => item.category=== "Pritsche");
-  // const getKipper = getCars?.filter((item) => item.category=== "Kipper");
-  // const getKoffer = getCars?.filter((item) => item.category=== "Koffer");
-  // const getKasten = getCars?.filter((item) => item.category=== "Kasten");
-  // /* ɢᴇᴛ ᴀʟʟ ᴄᴀᴛᴇɢᴏʀɪᴇs ғʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀ */
-  // const getCategories = [...new Set(getCars?.map((item) => item.categorie))];
+    console.log(props.vehicles)
+  /* ɢᴇᴛ ʀᴇsᴜʟᴛs ᴜᴘᴏɴ ᴄᴀᴛᴇɢᴏʀʏ */
+   const getPritsche = props.vehicles?.filter((item) => item.category=== "Pritsche");
+   const getKipper = props.vehicles?.filter((item) => item.category=== "Kipper");
+   const getKoffer = props.vehicles?.filter((item) => item.category=== "Koffer");
+   const getKasten = props.vehicles?.filter((item) => item.category=== "Kasten");
+   /* ɢᴇᴛ ᴀʟʟ ᴄᴀᴛᴇɢᴏʀɪᴇs ғʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀ */
+   const getCategories = [...new Set(props.vehicles?.map((item) => item.category))];
 
-  // /* PRICE SORTING */
-  // const getCarslowestPrice = getCars
-  //   ?.sort((a, b) => parseFloat(a.price) * 1 - parseFloat(b.price) * 1)
-  //   .map((item) => item);
+   /* PRICE SORTING */
+   const getCarslowestPrice = props.vehicles
+     ?.sort((a, b) => parseFloat(a.price) * 1 - parseFloat(b.price) * 1)
+     .map((item) => item);
 
-  // // const convertPriceToNumber = (price) => {
-  // //   return parseFloat(price.replace(/[^0-9.-]+/g, ""));
-  // // };
+  // const convertPriceToNumber = (price) => {
+  //   return parseFloat(price.replace(/[^0-9.-]+/g, ""));
+  // };
 
-  // const getCarshighestPrice = getCars
-  //   ?.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
-  //   .map((item) => item);
+  const getCarshighestPrice = props.vehicles
+    ?.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
+    .map((item) => item);
 
-  // // get the cheapest auto
-  // // const getCheapest = getCarslowestPrice?.slice(0, 1);
-  // // get the most expensive auto
-  // // const getHighest = getCarshighestPrice?.slice(0, 1);
+  // get the cheapest auto
+  // const getCheapest = getCarslowestPrice?.slice(0, 1);
+  // get the most expensive auto
+  // const getHighest = getCarshighestPrice?.slice(0, 1);
   // /* cᴀʀs ᴡᴇɪɢʜᴛ ғɪʟᴛᴇʀ */
-  // const getCarslightest = getCars
-  //   ?.sort((a, b) => b.weight.value - a.weight.value)
-  //   .map((item) => item);
-  // const getCarsBymaxSpeed = getCars
-  //   ?.sort((a, b) => b.maxSpeed.value - a.maxSpeed.value)
-  //   .map((item) => item);
+  const getCarslightest = props.vehicles
+    ?.sort((a, b) => b.loadingWeight.value - a.loadingWeight.value)
+    .map((item) => item);
+  const getCarsBymaxSpeed = props.vehicles
+    ?.sort((a, b) => b.maxSpeed.value - a.maxSpeed.value)
+   .map((item) => item);
   // /* ᴄᴀʀs ʀᴀɴɢᴇ ғɪʟᴛᴇʀ */
 
-  // const getCarsByRange = getCars
-  //   ?.sort((a, b) => b.range.value - a.range.value)
-  //   .map((item) => item);
+  const getCarsByRange = props.vehicles?.sort((a, b) => b.Range230V230V.value - a.Range230V230V.value)
+    .map((item) => item);
   // /* ᴄᴀʀs ᴄʜᴀʀɢɪɴɢ ᴛɪᴍᴇ ғɪʟᴛᴇʀ */
-  // const getCarsfastest = getCars
-  //   ?.sort((a, b) => a.chargingTime[0].value - b.chargingTime[0].value)
-  //   .map((item) => item);
+  const getCarsfastest = props.vehicles
+    ?.sort((a, b) => a.chargingTime230V230V.value - b.chargingTime230V230V.value)
+    .map((item) => item);
 
-  // const { state, dispatch } = useStore();
+  
 
-  // /* initial value */
+  /* initial value */
   // let sortedCars = getCarslowestPrice;
 
   // /* ɢᴇᴛ ʀᴇsᴜʟᴛs from sorting */
-  // if (state?.activeSortValues === "Höchster Preis") {
-  //   sortedCars = getCarshighestPrice;
-  // }
+  if (state?.activeSortValues === "Höchster Preis") {
+    SetSortedCars(getCarshighestPrice);
+  }
 
-  // if (state?.activeSortValues === "Niedrigster Preis") {
-  //   sortedCars = getCarslowestPrice;
-  // }
-  // if (state?.activeSortValues === "Höchste Zuladung") {
-  //   sortedCars = getCarslightest;
-  // }
-  // if (state?.activeSortValues === "Höchste Reichweite") {
-  //   sortedCars = getCarsByRange;
-  // }
-  // if (state?.activeSortValues === "Höchste Vmax") {
-  //   sortedCars = getCarsBymaxSpeed;
-  // }
-  // if (state?.activeSortValues === "Beste Ladenzeit") {
-  //   sortedCars = getCarsfastest;
-  // }
-  console.log(props.vehicles)
+  if (state?.activeSortValues === "Niedrigster Preis") {
+    SetSortedCars(getCarslowestPrice);
+  }
+  if (state?.activeSortValues === "Höchste Zuladung") {
+    SetSortedCars(getCarslightest);
+  }
+  if (state?.activeSortValues === "Höchste Reichweite") {
+    SetSortedCars(getCarsByRange);
+  }
+  if (state?.activeSortValues === "Höchste Vmax") {
+    SetSortedCars(getCarsBymaxSpeed);
+  }
+  if (state?.activeSortValues === "Beste Ladenzeit") {
+    SetSortedCars(getCarsfastest);
+  }
+}, [props.vehicles]);
   return (
     <>
     {/* <MDXRemote {...props.page.sources.main} components={components} /> */}

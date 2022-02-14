@@ -12,10 +12,10 @@ function CarCardDetailsMobile(props) {
           <div className="flex flex-row w-full py-1">
             <div className="flex flex-row w-full justify-between">
               <div className="text-grey-dark font-bold w-1/2">
-                {props.carItem?.weight.key}:
+                {props.carItem?.loadingWeight.key}:
               </div>
               <div className="text-blue-dark font-bold w-1/2 ">
-                {props.carItem?.weight.value} kg
+                {props.carItem?.loadingWeight.value} kg
               </div>
             </div>
           </div>
@@ -34,20 +34,20 @@ function CarCardDetailsMobile(props) {
           <div className="flex flex-row w-full py-1">
             <div className="flex flex-row w-full justify-between">
               <div className="text-grey-dark font-bold w-1/2">
-                {props.carItem?.range.key}:{" "}
+                {props.carItem?.Range230V.key}:{" "}
               </div>
               <div className="text-blue-dark font-bold w-1/2">
-                {props.carItem?.range.value}km
+                {props.carItem?.Range230V.value}km
               </div>
             </div>
           </div>
           <div className="flex flex-row w-full py-1 ">
             <div className="flex flex-row w-full justify-between">
               <div className="text-grey-dark font-bold w-1/2">
-                {props.carItem?.chargingTime[0].key}:
+                {props.carItem?.chargingTime230V[0].key}:
               </div>
               <div className="text-blue-dark font-bold w-1/2">
-                {props.carItem?.chargingTime[0].value}h
+                {props.carItem?.chargingTime230V[0].value}h
               </div>
             </div>
           </div>

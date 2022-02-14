@@ -29,12 +29,12 @@ function CarCardDetailsDesktop(props) {
       </Link>
       <div className="w-full grid grid-cols-3  h-40">
         <div className="  flex flex-col justify-between ">
-          <CarCardProps details={props.carItem?.range} image={image} />
-          <CarCardProps details={props.carItem?.weight} image={image2} />
+          <CarCardProps details={props.carItem?.Range230V} image={image} />
+          <CarCardProps details={props.carItem?.loadingWeight} image={image2} />
         </div>
         <div>
           <CarCardProps
-            details={props.carItem?.chargingTime[0]}
+            details={props.carItem?.chargingTime230V[0]}
             image={image4}
           />
           <CarCardProps details={props.carItem?.maxSpeed} image={image3} />

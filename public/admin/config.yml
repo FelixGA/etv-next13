@@ -57,7 +57,14 @@ collections:
         name: "description"
         widget: "text"
         i18n: true
-      - { label: Image, name: src, widget: image, i18n: duplicate }
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: true
+        # default: "/uploads/chocolate-dogecoin.jpg"
+        media_library:
+          config:
+            multiple: true
       - { label: "Preview", name: "preview", widget: "text", i18n: true }
       - { label: "Body", name: "body", widget: "markdown", i18n: true }
       
@@ -92,7 +99,7 @@ collections:
         name: "typeClass"
         widget: "select"
         multiple: false
-        options: ["L7E", "L6E", "N1", "N2", "N2"]
+        options: ["L7E", "L6E", "N1", "N1N2", "N2"]
         # default: ["Design"]
       - label: "Loadingweight"
         name: "loadingWeight"
