@@ -74,7 +74,7 @@ const TopSliderCard = (props) => {
         <Link href={`/transporter/${caritem.title}`} passHref>
           <a>
             <Image
-              loader={myLoader}
+             
               src={caritem.src}
               alt="picture"
               objectFit="cover"
