@@ -66,9 +66,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 //   },
 // ];
 const TopSliderCard = (props) => {
-  const myLoader = ({ src }) => {
-    return src;
-  };
+ 
 
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
     <div className="min-w-64 mr-2 pl-6" key={caritem.index}>
@@ -76,8 +74,8 @@ const TopSliderCard = (props) => {
         <Link href={`/transporter/${caritem.title}`} passHref>
           <a>
             <Image
-              loader={myLoader}
-              src={`http://localhost:3000/${caritem.src}`}
+             
+              src={caritem.src}
               alt="picture"
               objectFit="cover"
               width={264}
