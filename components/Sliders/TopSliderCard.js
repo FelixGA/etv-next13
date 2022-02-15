@@ -81,7 +81,7 @@ const TopSliderCard = (props) => {
               width={264}
               height={244}
               layout="responsive"
-              unoptimized={true}
+               
             />
           </a>
         </Link>

@@ -17,7 +17,7 @@ function CarCardforPopUp(props) {
           width={228.97}
           height={111}
           layout="responsive"
-          unoptimized={true}
+           
         />
       </div>
       {/* <div className="flex  w-full md:hidden">

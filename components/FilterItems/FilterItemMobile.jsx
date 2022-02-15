@@ -54,7 +54,7 @@ function FilterItemMobile(props) {
                 width={24}
                 height={28}
                 layout="responsive"
-                unoptimized={true}
+                 
               />
             </div>
             <div className="pl-4 my-auto ">

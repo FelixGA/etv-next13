@@ -99,7 +99,7 @@ const HeroSection = () => {
             alt="Kleintransporter"
             objectFit="cover"
             layout="responsive"
-            unoptimized={true}
+             
           />
         </div>
       </div>
@@ -111,7 +111,7 @@ const HeroSection = () => {
               width={166}
               height={166}
               // layout="responsive"
-              unoptimized={true}
+               
             />
           </div>
           <div className="main-heading-text lg:flex lg:flex-col lg:justify-between ">
@@ -258,7 +258,7 @@ const HeroSection = () => {
                 alt={logo.alt}
                 width={48}
                 height={48}
-                unoptimized={true}
+                 
               />
             </i>
           ))}

@@ -3,32 +3,38 @@ import { useState, useEffect } from "react";
 const TechnicalDetails = ({ carItem }) => {
   const [basics, SetBasics] = useState([]);
   const [vehichleDimentions, SetVehichleDimentions] = useState([]);
-
+  const [details, SetDetails] = useState([]);
+//console.log(carItem)
   /* to get the new data in case they are updated */
   /* get two subsets of the car properties to map them */
   useEffect(() => {
     const basics = [
       carItem.Range230V,
+      carItem.RangeLithium,
       carItem.loadingWeight,
       carItem.maxSpeed,
-      carItem.chargingTime230V[0],
-      carItem.subsidies,
-      carItem.chargingTime230V[2],
-      carItem.batteryGarantie,
-      carItem.guarantee,
+      carItem.chargingTime230V,
+      carItem.chargingTimeLithium,
+      carItem.chargingTimeFast,
+  
+
     ];
 
     SetBasics(basics);
+
+    const details = [
+      carItem.subsidies,
+      carItem.batteryGuarantee,
+      carItem.guarantee,
+      carItem.availability,
+   
+    ];
+   SetDetails(details);
+
     const vehichleDimentions = [
-      carItem.loadingHeight,
       carItem.loadingVolume,
-      carItem.seats,
-      carItem.height,
-      carItem.width,
-      carItem.length,
-      carItem.wheelbase,
-      carItem.loadArea,
-      carItem.curbWeight,
+      carItem.carSizes,
+   
     ];
 
     SetVehichleDimentions(vehichleDimentions);
@@ -61,10 +67,11 @@ const TechnicalDetails = ({ carItem }) => {
               >
                 <p className="w-1/2 py-1">{item.key}</p>
                 <p className="w-1/2 py-1">
-                  {item.value} {item.baseUnit} {item.type}
+                  {item.value} {item.baseUnit} 
                 </p>
               </div>
             ))}
+            
           </div>
         </section>
         <section className="w-full lg:w-1/2 lg:px-2 lg:pl-6 ">
@@ -87,10 +94,28 @@ const TechnicalDetails = ({ carItem }) => {
                 </p>
               </div>
             ))}
+            <h3 className="text-black-darkest font-bold pt-8 pb-4">
+            Details
+          </h3>
+            {details?.map((item, index) => (
+              <div
+                key={uuidv4()}
+                className={
+                  index % 2 == 0
+                    ? "flex flex-row w-full bg-[#F2F5F8] "
+                    : "flex flex-row w-full "
+                }
+              >
+                <p className="w-1/2 py-1">{item.key}</p>
+                <p className="w-1/2 py-1">
+                  {item.value} {item.baseUnit}
+                </p>
+              </div>
+            ))}
           </div>
         </section>
       </div>
     </div>
-  );
+ );
 };
 export default TechnicalDetails;
