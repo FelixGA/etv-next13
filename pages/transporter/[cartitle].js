@@ -116,14 +116,14 @@ export default function Details(props) {
       </div>
       {/* technical details section */}
 
-      <TechnicalDetails carItem={carItem} />
+      {/* <TechnicalDetails carItem={carItem} /> */}
       {/* description section */}
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
         <div className=" lg:w-1/3 w-full m-auto relative  ">
           <Image
             loader={myLoader}
-            src={`http://localhost:3000/${carItem?.photo?.data[1]?.attributes.url}`}
-            alt={carItem?.photo.data[0].attributes.alternativeText}
+            src={`http://localhost:3000/${carItem?.src}`}
+            alt={carItem?.title}
             width={195}
             height={140}
             layout="responsive"
@@ -150,42 +150,48 @@ export default function Details(props) {
       <Articles carItem={carItem} />
       {/* slider  */}
 
-      <TopSlider getCars={getCars} />
+      {/* <TopSlider getCars={getCars} /> */}
       {/*sticky popup  */}
       <PrintPopUp carItem={carItem} />
     </>
   );
 };
 
-export async function getStaticProps(context) {
+// export async function getStaticProps(context) {
+//   const pages = await getContent("pages", context.locale);
+//   const posts = await getContent("posts", context.locale);
+//   let vehicles = await getContent("vehicles", context.locale);
+// const page = pages.map((page) => page.path === "/compare-page");
+
+//   if (!pages) {
+//     return {
+//       notFound: true,
+//     };
+//   }
+
+//   return {
+//     props: {
+//       vehicles,
+//       posts,
+      
+//     },
+//   };
+// }
+// get static Paths
+export async function getStaticPaths(context) {
   const pages = await getContent("pages", context.locale);
   const posts = await getContent("posts", context.locale);
-  let vehicles = await getContent("vehicles", context.locale);
-const page = pages.find((page) => page.path === "/compare-page");
-
-  if (!pages) {
+  const vehicles = await getContent("vehicles", context.locale);
+  const paths = pages.map((page) => {
     return {
-      notFound: true,
+      params: {
+        slug: page.slug,
+      },
     };
-  }
-
+  });
   return {
-    props: {
-      vehicles,
-      posts,
-      
-    },
+    paths,
+    fallback: false,
   };
-}
-export async function getStaticPaths() {
-  return {
-    paths: [
-      // String variant:
-      '/transporter/cartitle',
-      // Object variant:
-      { params: { slug: 'cartitle' } },
-    ],
-    fallback: true,
-  }
 }
 
