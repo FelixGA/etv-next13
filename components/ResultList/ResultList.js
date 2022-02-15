@@ -10,7 +10,7 @@ const ResultList = (props) => {
 
   /* useEffect to apply the filters */
   useEffect(() => {
-    if (!state?.prices || !state?.weights || props.sortedCars?.length === 0)
+    if (!state?.prices || !state?.loadingWeights || !state?.Range230Vs || !state?.maxSpeeds || !state?.chargingTime230Vs || props.sortedCars?.length === 0)
       return;
     let filteredCars = props.sortedCars?.filter((car) => {
       if (
@@ -22,17 +22,17 @@ const ResultList = (props) => {
         return false;
 
       if (
-        state?.weights?.length > 0 &&
-        state?.weights?.every(
+        state?.loadingWeights?.length > 0 &&
+        state?.loadingWeights?.every(
           (entry) =>
-            entry.min > car.weight.value || entry.max < car.weight.value
+            entry.min > car.loadingWeight.value || entry.max < car.loadingWeight.value
         )
       )
         return false;
       if (
-        state?.ranges?.length > 0 &&
-        state?.ranges?.every(
-          (entry) => entry.min > car.range.value || entry.max < car.range.value
+        state?.Range230Vs?.length > 0 &&
+        state?.Range230Vs?.every(
+          (entry) => entry.min > car.Range230V.value || entry.max < car.Range230V.value
         )
       )
         return false;
@@ -45,17 +45,17 @@ const ResultList = (props) => {
       )
         return false;
       if (
-        state?.chargingTimes?.length > 0 &&
-        state?.chargingTimes?.every(
+        state?.chargingTime230Vs?.length > 0 &&
+        state?.chargingTime230Vs?.every(
           (entry) =>
-            entry.min > car.chargingTime[0].value ||
-            entry.max < car.chargingTime[0].value
+            entry.min > car.chargingTime230V.value ||
+            entry.max < car.chargingTime230V.value
         )
       )
         return false;
       if (
         state?.categorys?.length > 0 &&
-        !state?.categorys?.some((entry) => entry.min == car.categorie)
+        !state?.categorys?.some((entry) => entry.min == car.category)
       )
         return false;
 
@@ -65,10 +65,10 @@ const ResultList = (props) => {
     setShownCars(filteredCars);
   }, [
     state?.prices,
-    state?.weights,
-    state?.ranges,
+    state?.loadingWeights,
+    state?.Range230Vs,
     state?.maxSpeeds,
-    state?.chargingTimes,
+    state?.chargingTime230Vs,
     state?.categorys,
     props.sortedCars,
   ]);
@@ -83,6 +83,7 @@ const ResultList = (props) => {
     </div>
   );
   /* ɢᴇᴛ the cars upon filters */
+  
   const getdisplayedCars = shownCars?.map((caritem, index) => {
     return (
       <div className="container-product" key={index}>

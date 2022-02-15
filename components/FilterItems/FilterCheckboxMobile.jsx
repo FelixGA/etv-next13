@@ -5,15 +5,15 @@ function FilterCheckboxMobile(props) {
   const { state, dispatch } = useStore();
   const [isChecked, setIsChecked] = useState("");
   useEffect(() => {
-    let minRange = state?.ranges.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "range") {
+    let minRange = state?.Range230Vs.map((el) => el.min).join(" ");
+    if (props.checkbox.categoryName == "Range230V") {
       minRange >= 150 ? setIsChecked("ab 150 km") : null;
       minRange >= 200 ? setIsChecked("ab 200 km") : null;
       minRange >= 250 ? setIsChecked("ab 250 km") : null;
       minRange >= 500 ? setIsChecked("ab 500 km") : null;
     }
-    let minWeight = state?.weights.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "weight") {
+    let minWeight = state?.loadingWeights.map((el) => el.min).join(" ");
+    if (props.checkbox.categoryName == "loadingWeight") {
       minWeight >= 500 ? setIsChecked("ab 500 kg") : null;
       minWeight >= 1000 ? setIsChecked("ab 1000 kg") : null;
       minWeight >= 1500 ? setIsChecked("ab 1500 kg") : null;
@@ -26,8 +26,8 @@ function FilterCheckboxMobile(props) {
       minvmax >= 400 ? setIsChecked("ab 400km/h") : null;
       minvmax >= 600 ? setIsChecked("ab 600km/h") : null;
     }
-    let minChargingTime = state?.chargingTimes.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "chargingTimes") {
+    let minChargingTime = state?.chargingTime230Vs.map((el) => el.min).join(" ");
+    if (props.checkbox.categoryName == "chargingTime230Vs") {
       minChargingTime >= 1 ? setIsChecked("ab 1 Stunde") : null;
       minChargingTime >= 10 ? setIsChecked("ab 10 Stunde") : null;
       minChargingTime >= 20 ? setIsChecked("ab 20 Stunde") : null;
@@ -41,10 +41,10 @@ function FilterCheckboxMobile(props) {
       categories == "Kasten" ? setIsChecked("Kasten") : null;
     }
   }, [
-    state?.ranges,
-    state?.weights,
+    state?.Range230Vs,
+    state?.loadingWeights,
     state?.maxSpeeds,
-    state?.chargingTimes,
+    state?.chargingTime230Vs,
     state?.categorys,
   ]);
 

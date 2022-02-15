@@ -30,7 +30,7 @@ collections:
         name: "description"
         widget: "text"
         i18n: true
-      - { label: Image, name: src, widget: image, i18n: duplicate }
+      - { label: Image, name: src, widget: image, i18n: duplicate, choose_url: true, }
       - label: "Content"
         name: "content"
         widget: "list"
@@ -59,6 +59,191 @@ collections:
         name: "description"
         widget: "text"
         i18n: true
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: true
+        # default: "/uploads/chocolate-dogecoin.jpg"
+        media_library:
+          config:
+            multiple: true
+      - { label: "Preview", name: "preview", widget: "text", i18n: true }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+      
+  - label: "Add Vehicles"
+    name: "vehicles"
+    folder: "content/vehicles"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+
+      - { label: "Price", name: "price", widget: "number", i18n: duplicate }
+      # - label: "Published at"
+      #   name: "publishedAt"
+      #   widget: "date"
+      #   default: ""
+      #   format: "MM/DD/YYYY"
+      #   i18n: true
+      - label: "Description"
+        name: "description"
+        widget: "markdown"
+        i18n: true
       - { label: Image, name: src, widget: image, i18n: duplicate }
       - { label: "Preview", name: "preview", widget: "text", i18n: true }
       - { label: "Body", name: "body", widget: "markdown", i18n: true }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        multiple: false
+        options: ["Pritsche", "Kipper", "Kasten", "Koffer"]
+      - label: "Type-Class"
+        name: "typeClass"
+        widget: "select"
+        multiple: false
+        options: ["L7E", "L6E", "N1", "N1N2", "N2"]
+        # default: ["Design"]
+      - label: "Loadingweight"
+        name: "loadingWeight"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Value", name: "value", widget: "number" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+      - label: "maxSpeed"
+        name: "maxSpeed"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Value", name: "value", widget: "number" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+      - label: "Range-230V"
+        name: "Range230V"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Value", name: "value", widget: "number" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+      - label: "Range-Lithium"
+        name: "RangeLithium"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Value", name: "value", widget: "number" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+      - label: "chargingTime-230V"
+        name: "chargingTime230V"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Value", name: "value", widget: "number" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+      - label: "chargingTime-Lithium"
+        name: "chargingTimeLithium"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Value", name: "value", widget: "number" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+      - label: "chargingTime-Fast"
+        name: "chargingTimeFast"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Value", name: "value", widget: "number" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+      - label: "battery-Capacity"
+        name: "batteryCapacity"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Value", name: "value", widget: "number" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+      - label: "Seats"
+        name: "seats"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Value", name: "value", widget: "number" }
+
+      - label: "rating"
+        name: "rating"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Result", name: "key", widget: "string" }
+          - { label: "Note", name: "value", widget: "number" }
+      - label: "guarantee"
+        name: "guarantee"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Value", name: "value", widget: "number" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+      - label: "availability"
+        name: "availability"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "From-When", name: "value", widget: "string" }
+          
+      - label: "subsidies"
+        name: "subsidies"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Value", name: "value", widget: "number" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+      - label: "battery-guarantee"
+        name: "batteryGuarantee"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Value", name: "value", widget: "number" }
+          - { label: "Weeks", name: "baseUnit", widget: "string" }
+      - label: "Car-Sizes"
+        name: "carSizes"
+        widget: "object"
+        summary: "{{fields.height}}: {{fields.width}}: {{fields.length}}"
+        fields:
+          - { label: "Key", name: "Key", widget: "string" }
+          - { label: "height", name: "height", widget: "string" }
+          - { label: "height-Value", name: "valueheight", widget: "number" }
+
+          - { label: "width", name: "width", widget: "string" }
+          - { label: "width-Value", name: "valuewidth", widget: "number" }
+
+          - { label: "length", name: "length", widget: "string" }
+          - { label: "length-Value", name: "valuelength", widget: "number" }
+          - { label: "wheelbase", name: "wheelbase", widget: "string" }
+          - { label: "wheelbase-Value", name: "valuewheelbase", widget: "number" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+      - label: "loadingVolume"
+        name: "loadingVolume"
+        widget: "object"
+        summary: "{{fields.height}}: {{fields.width}}: {{fields.length}}"
+        fields:
+          - { label: "Key", name: "Key", widget: "string" }
+          - { label: "height", name: "height", widget: "string" }
+          - { label: "height-Value", name: "valueheight", widget: "number" }
+
+          - { label: "width", name: "width", widget: "string" }
+          - { label: "width-Value", name: "valuewidth", widget: "number" }
+
+          - { label: "length", name: "length", widget: "string" }
+          - { label: "length-Value", name: "valuelength", widget: "number" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+      

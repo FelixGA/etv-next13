@@ -15,19 +15,19 @@ function ActiveFilterEntry() {
   useEffect(() => {
     if (
       state?.prices.length ||
-      state?.ranges.length ||
-      state?.weights.length ||
+      state?.Range230Vs.length ||
+      state?.loadingWeights.length ||
       state?.maxSpeeds.length ||
-      state?.chargingTimes.length
+      state?.chargingTime230Vs.length
     ) {
       setShowAll(true);
     }
   }, [
     state?.prices,
-    state?.ranges,
-    state?.weights,
+    state?.Range230Vs,
+    state?.loadingWeights,
     state?.maxSpeeds,
-    state?.chargingTimes,
+    state?.chargingTime230Vs,
   ]);
 
   const activeFilterData = [
@@ -41,15 +41,15 @@ function ActiveFilterEntry() {
     },
     {
       id: 2,
-      value: state?.ranges.length
-        ? state?.ranges.map((el) => "ab " + el.min).join("") + " km"
+      value: state?.Range230Vs.length
+        ? state?.Range230Vs.map((el) => "ab " + el.min).join("") + " km"
         : null,
       image: image,
     },
     {
       id: 3,
-      value: state?.weights.length
-        ? state?.weights.map((el) => "ab " + el.min).join("") + " kg"
+      value: state?.loadingWeights.length
+        ? state?.loadingWeights.map((el) => "ab " + el.min).join("") + " kg"
         : null,
       image: image2,
     },
@@ -64,8 +64,8 @@ function ActiveFilterEntry() {
     {
       id: 5,
       value:
-        state?.chargingTimes.length || state?.chargingTimes.length == undefined
-          ? state?.chargingTimes.map((el) => "ab " + el.min).join("") + " h"
+        state?.chargingTime230Vs.length || state?.chargingTime230Vs.length == undefined
+          ? state?.chargingTime230Vs.map((el) => "ab " + el.min).join("") + " h"
           : null,
       image: image5,
     },
@@ -111,10 +111,10 @@ function ActiveFilterEntry() {
           <div
             onClick={() => {
               if (item.id === 1) dispatch({ type: "price", data: [] });
-              if (item.id === 2) dispatch({ type: "range", data: [] });
-              if (item.id === 3) dispatch({ type: "weight", data: [] });
+              if (item.id === 2) dispatch({ type: "Range230V", data: [] });
+              if (item.id === 3) dispatch({ type: "loadingWeight", data: [] });
               if (item.id === 4) dispatch({ type: "maxSpeed", data: [] });
-              if (item.id === 5) dispatch({ type: "chargingTime", data: [] });
+              if (item.id === 5) dispatch({ type: "chargingTime230V", data: [] });
               if (item.id === 6) dispatch({ type: "category", data: [] });
             }}
             className={"w-3.5 my-auto mr-4 cursor-pointer"}
@@ -126,11 +126,11 @@ function ActiveFilterEntry() {
       {/* REMOVE ALL FILTERS */}
       <div
         className={
-          state?.ranges.length ||
+          state?.Range230Vs.length ||
           state?.prices.length ||
-          state?.weights.length ||
+          state?.loadingWeights.length ||
           state?.maxSpeeds.length ||
-          state?.chargingTimes.length ||
+          state?.chargingTime230Vs.length ||
           state?.categorys.length
             ? "w-fit flex items-end"
             : "hidden"
@@ -141,11 +141,11 @@ function ActiveFilterEntry() {
           onClick={() => {
             setShowAll(!showAll);
             dispatch({
-              type: "range",
+              type: "Range230V",
               data: [],
             });
             dispatch({
-              type: "weight",
+              type: "loadingWeight",
               data: [],
             });
             dispatch({
@@ -157,7 +157,7 @@ function ActiveFilterEntry() {
               data: [],
             });
             dispatch({
-              type: "chargingTime",
+              type: "chargingTime230V",
               data: [],
             });
             dispatch({

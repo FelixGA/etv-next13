@@ -58,7 +58,7 @@ function ButtonCompare(props) {
               data: [
                 ...state.autoForComparisons,
                 {
-                  pic: props.carItem.photo.data[0].attributes.url,
+                  pic: props.carItem.src,
                   title: props.carItem.title,
                   price: props.carItem.price,
                   auto: props.carItem,

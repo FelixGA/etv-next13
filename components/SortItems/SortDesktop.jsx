@@ -12,7 +12,7 @@ function SortDesktop() {
     { sortCategory: "Niedrigster Preis", sortType: "lowest" },
     { sortCategory: "Höchster Preis", sortType: "highest" },
     { sortCategory: "Bestseller", sortType: "bestseller" },
-    { sortCategory: "Beste Ladenzeit", sortType: "ChargingTime" },
+    { sortCategory: "Beste Ladenzeit", sortType: "chargingTime230V" },
     { sortCategory: "Höchste Zuladung", sortType: "highestWeight" },
     { sortCategory: "Höchste Reichweite", sortType: "highestRange" },
     { sortCategory: "Höchste Vmax", sortType: "highestVmax" },
@@ -20,12 +20,15 @@ function SortDesktop() {
   const [isChecked, setIsChecked] = useState("");
   const getAllSortings = sortBy2.map((rank) => {
     return (
-      <div key={rank.sortType} className="mt-1 flex flex-row py-2  mr-4 ">
+      <div onClick={() => {
+        setIsChecked(rank?.sortType);
+        dispatch({ type: "activeSortValue", data: rank?.sortCategory });
+      }}
+      key={rank.sortType} className="mt-1 flex flex-row py-2  mr-4 ">
         <input
           className=" appearance-none w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
           onChange={() => {
-            setIsChecked(rank?.sortType);
-            dispatch({ type: "activeSortValue", data: rank?.sortCategory });
+            return null
           }}
           checked={isChecked == rank?.sortType ? true : false}
           type="checkbox"
