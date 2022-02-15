@@ -182,7 +182,7 @@ export async function getStaticPaths(context) {
   const pages = await getContent("pages", context.locale);
   const posts = await getContent("posts", context.locale);
   const vehicles = await getContent("vehicles", context.locale);
-  const paths = pages.map((page) => {
+  const paths = vehicles.map((page) => {
     return {
       params: {
         slug: page.slug,
