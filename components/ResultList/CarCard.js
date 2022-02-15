@@ -53,7 +53,7 @@ function CarCard(props) {
               <a className=" flex flex-1">
                 <Image
                   loader={myLoader}
-                  src={`http://localhost:3000/${carItem.src}`}
+                  src={carItem.src}
                   alt={carItem.title}
                   width={350}
                   height={255}

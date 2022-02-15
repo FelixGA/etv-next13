@@ -12,8 +12,8 @@ function ActiveCompareItem(props) {
       <div className="w-48 h-36 lg:hidden pl-8">
         <Image
           className="rounded-md md:rounded-lg brightness-50 "
-          src={`http://localhost:1337${item.photo.data[0].attributes.url}`}
-          loader={myLoader}
+          src={item.src}
+         
           alt="picture"
           objectFit="cover"
           width={100.35}

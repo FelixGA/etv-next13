@@ -34,7 +34,7 @@ function FiltersDesktop() {
   const filtersData = [
     {
       id: 1,
-      category: "ranges",
+      category: "Range230Vs",
       title: "Reichweite",
       image: image,
       options: [
@@ -42,31 +42,31 @@ function FiltersDesktop() {
           value: 150,
           name: "ab 150 km",
           id: 1,
-          categoryName: "range",
+          categoryName: "Range230V",
         },
         {
           id: 2,
           name: "ab 200 km",
           value: 200,
-          categoryName: "range",
+          categoryName: "Range230V",
         },
         {
           id: 3,
           name: "ab 250 km",
           value: 250,
-          categoryName: "range",
+          categoryName: "Range230V",
         },
         {
           id: 4,
           name: "ab 500 km",
           value: 500,
-          categoryName: "range",
+          categoryName: "Range230V",
         },
       ],
     },
     {
       id: 2,
-      category: "weights",
+      category: "loadingWeights",
       title: "Zuladung",
 
       image: image2,
@@ -75,31 +75,31 @@ function FiltersDesktop() {
           id: 1,
           name: "ab 500 kg",
           value: 500,
-          categoryName: "weight",
+          categoryName: "loadingWeight",
         },
         {
           id: 2,
           name: "ab 1000 kg",
           value: 1000,
-          categoryName: "weight",
+          categoryName: "loadingWeight",
         },
         {
           id: 3,
           name: "ab 1500 kg",
           value: 1500,
-          categoryName: "weight",
+          categoryName: "loadingWeight",
         },
         {
           id: 4,
           name: "ab 2500 kg",
           value: 2500,
-          categoryName: "weight",
+          categoryName: "loadingWeight",
         },
       ],
     },
     {
       id: 3,
-      title: "Km/h",
+      title: "V-Max",
 
       category: "maxSpeeds",
       image: image3,
@@ -133,32 +133,32 @@ function FiltersDesktop() {
     {
       id: 5,
       title: "Ladenzeit",
-      category: "chargingTimes",
+      category: "chargingTime230Vs",
       image: image6,
       options: [
         {
           name: "ab 1 Stunde",
           value: 1,
           id: 1,
-          categoryName: "chargingTime",
+          categoryName: "chargingTime230V",
         },
         {
           name: "ab 10 Stunde",
           value: 10,
           id: 2,
-          categoryName: "chargingTime",
+          categoryName: "chargingTime230V",
         },
         {
           name: "ab 20 Stunde",
           value: 20,
           id: 3,
-          categoryName: "chargingTime",
+          categoryName: "chargingTime230V",
         },
         {
           name: "ab 40 Stunde",
           value: 40,
           id: 4,
-          categoryName: "chargingTime",
+          categoryName: "chargingTime230V",
         },
       ],
     },
@@ -273,61 +273,3 @@ function FiltersDesktop() {
   );
 }
 export default FiltersDesktop;
-//     <div className="hidden md:block py-2  ">
-//       {/* Preis */}
-
-//       <div
-//         className="cursor-pointer w-full bg-red-500"
-//         // onClick={() => {
-//         //   dispatch({
-//         //     type: "truncate",
-//         //     data: state?.truncates !== "price" ? "price" : "",
-//         //   });
-//         // }}
-//       >
-//         <div className="flex  justify-between border-b ">
-//           <div className="flex pl-4  ">
-//             <div className="w-6 my-auto ml-4 ">
-//               <Image
-//                 src={image4}
-//                 alt="picture"
-//                 objectFit="cover"
-//                 width={24}
-//                 height={28}
-//                 layout="responsive"
-//                 unoptimized={true}
-//               />
-//             </div>
-//             <div className="my-auto pl-4">
-//               <h4 className="py-3 font-bold text-blue-dark">Preis</h4>
-//             </div>
-//           </div>
-//           <div className="flex flex-row items-center">
-//             <span
-//               className={state?.prices.length > 0 ? "flex  text-xl " : "hidden"}
-//             >
-//               ✓
-//             </span>
-//             <div
-//               className={
-//                 isActive
-//                   ? "flex items-center w-6 mr-5 my-auto transition transform rotate-180 origin-center	"
-//                   : "flex items-center w-6 mr-5 my-auto transition transform rotate-0 origin-center	 "
-//               }
-//             >
-//               <MdKeyboardArrowDown size={25} />
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//       <div className={isActive ? " flex flex-col ml-8 mt-2 " : "hidden"}>
-//         <div className="">
-//           <FilterOptionPrice />
-//         </div>
-
-//    </div>
-
-//     </div>
-//   );
-// }

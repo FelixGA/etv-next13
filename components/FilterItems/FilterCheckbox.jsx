@@ -21,19 +21,19 @@ function FilterCheckbox(props) {
      
     }
     
-    let minRange = state?.ranges.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "range" && state?.ranges.length) {
+    let minRange = state?.Range230Vs.map((el) => el.min).join(" ");
+    if (props.checkbox.categoryName == "Range230V" && state?.Range230Vs.length) {
       minRange >= 150 ? setIsChecked("ab 150 km") : null;
       minRange >= 200 ? setIsChecked("ab 200 km") : null;
       minRange >= 250 ? setIsChecked("ab 250 km") : null;
       minRange >= 500 ? setIsChecked("ab 500 km") : null;
-          } else {
+    } else {
       /* unchecking the box */
       setIsChecked(props.checkbox.categoryName);
     }
 
-    let minWeight = state?.weights.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "weight") {
+    let minWeight = state?.loadingWeights.map((el) => el.min).join(" ");
+    if (props.checkbox.categoryName == "loadingWeight") {
       minWeight >= 500 ? setIsChecked("ab 500 kg") : null;
       minWeight >= 1000 ? setIsChecked("ab 1000 kg") : null;
       minWeight >= 1500 ? setIsChecked("ab 1500 kg") : null;
@@ -47,8 +47,8 @@ function FilterCheckbox(props) {
       minvmax >= 600 ? setIsChecked("ab 600km/h") : null;
     }
 
-    let minChargingTime = state?.chargingTimes.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "chargingTime") {
+    let minChargingTime = state?.chargingTime230Vs.map((el) => el.min).join(" ");
+    if (props.checkbox.categoryName == "chargingTime230V") {
       minChargingTime >= 1 ? setIsChecked("ab 1 Stunde") : null;
       minChargingTime >= 10 ? setIsChecked("ab 10 Stunde") : null;
       minChargingTime >= 20 ? setIsChecked("ab 20 Stunde") : null;
@@ -62,14 +62,12 @@ function FilterCheckbox(props) {
       categories == "Kasten" ? setIsChecked("Kasten") : null;
     }
   }, [
-    state?.prices,
-    state?.ranges,
-    state?.weights,
+    state?.Range230Vs,
+    state?.loadingWeights,
     state?.maxSpeeds,
-    state?.chargingTimes,
+    state?.chargingTime230Vs,
     state?.categorys,
   ]);
-
   return (
     <>
       <input

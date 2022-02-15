@@ -14,17 +14,17 @@ function ActiveFilterBlock() {
 
 
   return (
-    <div className=" w-full min-w-fit relative">
+    <div className=" w-full  relative ">
      
       {/* ACTIVE FILTERS */}
-      <div className="flex flex-grow justify-between md:pt-16 bg-green-500 flex-1">
+      <div className="flex flex-grow justify-between md:pt-[68px] pt-0  flex-1">
         <ActiveFilterEntry />
       </div>
 
       {/* HEADING + SORTING */}
-      <div className="flex flex-row flex-1 justify-between relative ">
+      <div className="flex flex-row flex-1 justify-between relative">
         <div className="mt-10 relative bottom-2 md:bottom-10 2xl:bottom-2  w-full ">
-          <h1 className="pl-3 text-2xl text-black-dark bg-red-500">
+          <h1 className="pl-3 text-2xl md:text-3xl text-blue-extra ">
             Die besten E-Transporter nach Ihrer Auswahl
           </h1>
         </div>
