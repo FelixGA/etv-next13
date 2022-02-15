@@ -33,25 +33,25 @@
         "value": 150,
         "name": "ab 150 km",
         "id": 1,
-        "categoryName": "range"
+        "categoryName": "Range230V"
       },
       {
         "id": 2,
         "name": "ab 200 km",
         "value": 200,
-        "categoryName": "range"
+        "categoryName": "Range230V"
       },
       {
         "id": 3,
         "name": "ab 250 km",
         "value": 250,
-        "categoryName": "range"
+        "categoryName": "Range230V"
       },
       {
         "id": 4,
         "name": "ab 500 km",
         "value": 500,
-        "categoryName": "range"
+        "categoryName": "Range230V"
       }
     ]
   },
@@ -64,25 +64,25 @@
         "id": 1,
         "name": "ab 500 kg",
         "value": 500,
-        "categoryName": "weight"
+        "categoryName": "loadingWeight"
       },
       {
         "id": 2,
         "name": "ab 1000 kg",
         "value": 1000,
-        "categoryName": "weight"
+        "categoryName": "loadingWeight"
       },
       {
         "id": 3,
         "name": "ab 1500 kg",
         "value": 1500,
-        "categoryName": "weight"
+        "categoryName": "loadingWeight"
       },
       {
         "id": 4,
         "name": "ab 2500 kg",
         "value": 2500,
-        "categoryName": "weight"
+        "categoryName": "loadingWeight"
       }
     ]
   },

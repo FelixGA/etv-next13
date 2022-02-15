@@ -6,6 +6,7 @@ import { useStore } from "../store";
 import ButtonCompare from "./ButtonCompare";
 import ButtonAnfragen from "./ButtonAnfragen";
 import Link from "next/link";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 function CarCard(props) {
   /* HOOKS */
@@ -15,17 +16,18 @@ function CarCard(props) {
   const carItem = props.caritem;
 
   const mobileRatingBox = (
-    <div className="border-2 border-black-darkest flex flex-col w-22 ">
-      <p className=" flex flex-row justify-center ">
-        <span className="px-1 bg-orange-dark text-white font-bold text-xs border-black-dark border-b-2 ">
+    <div className="border border-black-dark flex flex-col flex-1 h-10 sm:h-11 ">
+      <p className=" flex flex-row justify-center items-center">
+        <span className="flex flex-1 justify-center bg-orange-dark text-white font-bold text-xs border-black-dark border-b ">
           TEST
         </span>
-        <span className="px-1 text-grey-dark text-xxs font-bold bg-grey-lighter border-black-dark border-b-2">
+        <span className="flex flex-1 justify-center text-grey-dark text-xxs font-bold bg-grey-lighter border-black-dark border-b border-l">
           ERGEBNIS
         </span>
       </p>
-      <p className="px-1 text-xs font-bold text-grey-darkest custom-text">
-        <b className="text-sm">{carItem.rating.value} </b> {carItem.rating.key}
+      <p className="text-sm font-bold text-grey-darkest flex items-center justify-center pt-0.5 sm:pt-1 ">
+        <b className="text-sm pr-1">{carItem.rating.value} </b>{" "}
+        {carItem.rating.key}
       </p>
     </div>
   );
@@ -36,9 +38,9 @@ function CarCard(props) {
 
   return (
     <div className="container-product flex flex-col mb-4 py-4 lg:py-0 px-4 lg:px-0 lg:pr-4  shadow-lg lg:shadow-none md:border-t lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
-      <div className="container-product flex flex-row">
-        <div className="container-product-basics w-3/5 lg:w-fit ">
-          <Link href={`/transporter/${carItem.title}`}>
+    <div className="container-product flex flex-row">
+      <div className="container-product-basics w-3/5 lg:w-fit ">
+        <Link href={`/transporter/${carItem.title}`}>
             <a>
               <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
                 {carItem.title}
@@ -51,10 +53,10 @@ function CarCard(props) {
               <a className=" flex flex-1">
                 <Image
                   loader={myLoader}
-                  src={`http://localhost:1337${carItem.photo.data[0].attributes.url}`}
-                  alt={carItem.photo.data[0].attributes.alternativeText}
+                  src={`http://localhost:3000/${carItem.src}`}
+                  alt={carItem.title}
                   width={350}
-                  height={240}
+                  height={255}
                   objectFit="cover"
                   className="rounded-l-lg"
                 />
@@ -65,25 +67,42 @@ function CarCard(props) {
         <div className=" hidden lg:flex lg:my-auto lg:w-3/6">
           <CarCardDetailsDesktop carItem={carItem} />
         </div>
-        {/* DIVIDER start*/}
-        <div className=" hidden lg:block w-[1px] h-32 mt-20 bg-grey-border"></div>
+         {/* DIVIDER start*/}
+         <div className=" hidden 2xl:block w-[1px] h-32 mt-20 bg-grey-border mr-4"></div>
         {/* DIVIDER end */}
-        <div className="container-product-info  flex flex-col lg:flex-col justify-center flex-1 items-center  ">
-          <p className="text-green-light xl:text-2xl font-bold pt-16 ">
+        <div className="container-product-info flex flex-col  justify-center lg:justify-between  flex-1 items-end md:pr-4 xl:pr-0 xl:items-center  ">
+          <p className="text-green-light text-xl sm:text-2xl font-black lg:mt-6  ">
             ab {carItem.price} €
           </p>
-
-          <span className="lg:hidden">{mobileRatingBox}</span>
-          <div className="flex-1 flex justify-center  lg:flex-col-reverse pb-4 ">
+          {/* MOBILE RATING BOX start*/}
+          <div className="lg:hidden w-24 sm:w-28 pt-2 ">{mobileRatingBox}</div>
+          {/* MOBILE RATING BOX end*/}
+          {/* BUTTONS start */}
+          <div className="flex-1 flex justify-center  flex-col  ">
             <ButtonAnfragen />
             <ButtonCompare carItem={carItem} />
           </div>
+          {/* BUTTONS end */}
           <div
-            onClick={() => setShowDetails(!showDetails)}
-            className="text-blue-dark font-bold  text-xxs cursor-pointer lg:hidden"
+          
+            onClick={() => {
+              setShowDetails(!showDetails);
+            
+            }}
+            className="text-blue-dark font-bold  text-xs cursor-pointer flex items-center pt-2  lg:hidden "
           >
-            <span className="font-bold mr-2 text-base text-blue-darker">˅</span>{" "}
-            {showDetails ? "weniger" : "mehr"} Details
+            {showDetails ? "weniger" : "mehr"}
+            <p className="pl-1">Details</p>
+           
+            <div
+              className={
+                showDetails
+                  ? "flex items-center  transition transform rotate-180 origin-center	"
+                  : "flex items-center  transition transform rotate-0 origin-center	 "
+              }
+            >
+              <MdKeyboardArrowDown size={24} />
+            </div>
           </div>
         </div>
       </div>
@@ -97,3 +116,15 @@ function CarCard(props) {
   );
 }
 export default CarCard;
+
+
+
+
+
+
+
+
+
+
+
+
