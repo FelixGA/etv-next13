@@ -13,13 +13,13 @@ import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
 import Link from "next/link";
 
 const components = {
-  img: (image) => <Image src={image.src} alt={image.alt} objectFit="contain" />,
-  a: (link) => (
-    <Link href={link.href}>
-      <a>{link.children}</a>
-    </Link>
-  ),
-  h2: (heading) => <h2 className="mb-8 font-black">{heading.children}</h2>,
+  // img: (image) => <Image src={image.src} alt={image.alt} objectFit="contain" />,
+  // a: (link) => (
+  //   <Link href={link.href}>
+  //     <a>{link.children}</a>
+  //   </Link>
+  // ),
+  // h2: (heading) => <h2 className="mb-8 font-black">{heading.children}</h2>,
 };
 export default function Details(props) {
   const [descriptionSize, SetDescriptionSize] = useState(true);
@@ -177,11 +177,15 @@ const page = pages.find((page) => page.path === "/compare-page");
     },
   };
 }
-export async function getStaticPaths(context) {
-  let vehicles = await getContent("vehicles", context.locale);
+export async function getStaticPaths() {
   return {
-    paths: vehicles?.map((destination) => ({ params: {title: destination.title.toString()},
-})),
+    paths: [
+      // String variant:
+      '/transporter/cartitle',
+      // Object variant:
+      { params: { slug: 'cartitle' } },
+    ],
     fallback: true,
   }
 }
+

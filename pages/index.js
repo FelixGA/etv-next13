@@ -8,12 +8,12 @@ import BottomSlider from "../components/Sliders/BottomSlider";
 import NewsLetter from "../components/NewsLetter";
 import { useState,useEffect } from  "react";
 const components = {
-  img: (image) => <Image src={image.src} alt={image.alt} objectFit="contain" />,
-  a: (link) => (
-    <Link href={link.href}>
-      <a>{link.children}</a>
-    </Link>
-  ),
+  // img: (image) => <Image src={image.src} alt={image.alt} objectFit="contain" />,
+  // a: (link) => (
+  //   <Link href={link.href}>
+  //     <a>{link.children}</a>
+  //   </Link>
+  // ),
  /*  h2: (heading) => <h2 className="mb-8 font-black">{heading.children}</h2>, */
 };
 

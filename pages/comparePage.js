@@ -7,23 +7,24 @@ import getContent from "/utils/getContent";
 import { MDXRemote } from "next-mdx-remote";
 import { useState,useEffect } from  "react";
 const components = {
-  img: (image) => <Image src={image.src} alt={image.alt} objectFit="contain" />,
-  a: (link) => (
-    <Link href={link.href}>
-      <a>{link.children}</a>
-    </Link>
-  ),
-  h2: (heading) => <h2 className="mb-8 font-black">{heading.children}</h2>,
+  // img: (image) => <Image src={image.src} alt={image.alt} objectFit="contain" />,
+  // a: (link) => (
+  //   <Link href={link.href}>
+  //     <a>{link.children}</a>
+  //   </Link>
+  // ),
+  // h2: (heading) => <h2 className="mb-8 font-black">{heading.children}</h2>,
 };
 
 export default function comparePage(props) {
+ 
   const [sortedCars, SetSortedCars] = useState([]); 
   const { state, dispatch } = useStore();
   useEffect(() => {
     
     SetSortedCars(props.vehicles);
    
-    console.log(props.vehicles)
+    
   /* ɢᴇᴛ ʀᴇsᴜʟᴛs ᴜᴘᴏɴ ᴄᴀᴛᴇɢᴏʀʏ */
    const getPritsche = props.vehicles?.filter((item) => item.category=== "Pritsche");
    const getKipper = props.vehicles?.filter((item) => item.category=== "Kipper");

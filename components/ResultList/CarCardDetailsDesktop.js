@@ -14,7 +14,7 @@ function CarCardDetailsDesktop({carItem}) {
 
   return (
     <div className=" w-full flex flex-col justify-center">
-      {/* <Link href={`/transporter/${carItem?.title}`}>
+      <Link href={`/transporter/${carItem?.title}`}>
         <a>
           <h3
             className={
@@ -23,11 +23,11 @@ function CarCardDetailsDesktop({carItem}) {
                 : " pl-8 text-blue-extra font-bold pt-4 pb-4"
             }
           >
-            {props.carItem?.title}
+            {carItem?.title}
           </h3>
         </a>
-      </Link> */}
-      <div className="w-full grid grid-cols-3  h-40">
+      </Link>
+      <div className="w-full grid grid-cols-2 2xl:grid-cols-3  h-40">
         <div className="  flex flex-col justify-between ">
           <CarCardProps details={carItem?.Range230V} image={image} />
           <CarCardProps details={carItem?.loadingWeight} image={image2} />
@@ -40,7 +40,7 @@ function CarCardDetailsDesktop({carItem}) {
           <CarCardProps details={carItem?.maxSpeed} image={image3} />
         </div>
 
-        <div className=" w-full flex justify-center items-center ">
+        <div className=" flex-1  hidden 2xl:flex justify-center items-center ">
           <div className="w-24">
             <RatingBox carItem={carItem} />
           </div>

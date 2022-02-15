@@ -1,42 +1,42 @@
 ---
 title: car2
-price: 324234234
+price: 20000
 description: dsfbsgbwdcw
 src: /images/ARI_802_Personenfahrzeug_Frontansicht_Garage_56dad4380e.jpg
 preview: qergwetgetgwdvwrv
 category: Kasten
 typeClass: N1
 loadingWeight:
-  key: ergergwdv
-  value: 23423
-  baseUnit: qwergqreg
+  key: Nutzlast
+  value: 333
+  baseUnit: kg
 maxSpeed:
-  key: wefwef
-  baseUnit: wefwefwe
-  value: 12342134
+  key: vmax
+  baseUnit: km/h
+  value: 333
 Range230V:
-  key: qwefw
-  value: 1234213
-  baseUnit: 41234wqefqwe
+  key: Reichweite
+  value: 333
+  baseUnit: km
 RangeLithium:
   key: qwef
   value: 23423
   baseUnit: 42qwefqwef134
 chargingTime230V:
-  key: qwefwqef23423
+  key: Ladenzeit
   baseUnit: qwefqwe
-  value: 340
+  value: 333
 chargingTimeLithium:
   key: wfeqwefwqe
   baseUnit: qwefwef
   value: 2343
 chargingTimeFast:
   key: qwefqwef
-  value: 32423
+  value: 333
   baseUnit: wefqwef
 batteryCapacity:
   key: 234wefwaef
-  value: 234134
+  value: 234132
   baseUnit: qwefwef
 seats:
   key: wefwerf

@@ -25,12 +25,15 @@ function Sort() {
   const [rotateIt, setRotateIt] = useState(false);
   const getAllSortings = sortBy2.map((rank) => {
     return (
-      <div key={rank.sortCategory} className="mt-1 flex flex-row py-2  mr-4">
+      <div onClick={() => {
+        setIsChecked(rank?.sortType);
+        dispatch({ type: "activeSortValue", data: rank?.sortCategory });
+      }} 
+      key={rank.sortCategory} className="mt-1 flex flex-row py-2  mr-4">
         <input
           className=" appearance-none   w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
           onChange={() => {
-            setIsChecked(rank?.sortType);
-            dispatch({ type: "activeSortValue", data: rank?.sortCategory });
+           return null
           }}
           checked={isChecked == rank?.sortType ? true : false}
           type="checkbox"

@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 function MobileNav(props) {
   return (
-    <div className="relative bg-blue-dark w-full  h-screen  block pt-20">
-      <ul className="flex flex-col items-center w-full   h-2/3 justify-between text-grey-dark text-3xl ">
-        <li className="pt-4">
+    <div className="relative bg-blue-darker w-full  h-screen   ">
+      <ul className="flex flex-col items-center sm:items-start sm:pl-16  w-full   h-3/4 justify-evenly text-grey-dark text-3xl pt-8">
+        <li className="">
           <Link href="/">
             <a
               className="text-[#E7E8EC]"
@@ -18,7 +18,7 @@ function MobileNav(props) {
             </a>
           </Link>
         </li>
-        <li className="pt-4">
+        <li className="">
           <Link href="/Leichttransporter">
             <a
               onClick={() => {
@@ -29,7 +29,7 @@ function MobileNav(props) {
             </a>
           </Link>
         </li>
-        <li className="pt-4">
+        <li className="">
           <Link href="/comparePage">
             <a
               onClick={() => {
@@ -41,7 +41,7 @@ function MobileNav(props) {
             </a>
           </Link>
         </li>
-        <li className="pt-4">
+        <li className="">
           <Link href="/Magazin">
             <a
               onClick={() => {
@@ -52,7 +52,7 @@ function MobileNav(props) {
             </a>
           </Link>
         </li>
-        <li className="pt-4">
+        <li className="">
           <Link href="/Kontakt">
             <a
               onClick={() => {
