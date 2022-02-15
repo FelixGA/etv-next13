@@ -18,8 +18,8 @@ export default function BottomSlider() {
             <a
               onClick={() => {
                 state.prices = [];
-                state.weights = [];
-                state.ranges = [];
+                state.loadingWeights = [];
+                state.Range230Vs = [];
               }}
               className="visited:text-blue-darker"
             >

@@ -1,8 +1,8 @@
 function RatingBox(props) {
   return (
-    <div className="border-2 border-black-darkest flex flex-col text-sm  h-28 justify-between items-center ">
-      <p className=" flex flex-col justify-center w-full">
-        <span className=" flex  bg-orange-dark text-white font-bold text-xs justify-center items-center h-6 ">
+    <div className="border-2 border-black-darkest flex flex-col  text-sm  h-28 justify-between items-center ">
+      <p className=" flex flex-col justify-center  w-full">
+        <span className=" flex flex-1 bg-orange-dark text-white font-bold text-xs justify-center items-center h-6 ">
           TEST
         </span>
         <span className="flex justify-center text-grey-dark text-xs font-bold pt-2">

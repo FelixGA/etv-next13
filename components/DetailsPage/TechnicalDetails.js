@@ -8,12 +8,12 @@ const TechnicalDetails = ({ carItem }) => {
   /* get two subsets of the car properties to map them */
   useEffect(() => {
     const basics = [
-      carItem.range,
-      carItem.weight,
+      carItem.Range230V,
+      carItem.loadingWeight,
       carItem.maxSpeed,
-      carItem.chargingTime[0],
+      carItem.chargingTime230V[0],
       carItem.subsidies,
-      carItem.chargingTime[2],
+      carItem.chargingTime230V[2],
       carItem.batteryGarantie,
       carItem.guarantee,
     ];

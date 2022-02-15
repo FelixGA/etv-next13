@@ -77,7 +77,7 @@ const TopSliderCard = (props) => {
           <a>
             <Image
               loader={myLoader}
-              src={`http://localhost:1337${caritem.photo.data[0].attributes.url}`}
+              src={`http://localhost:3000/${caritem.src}`}
               alt="picture"
               objectFit="cover"
               width={264}
@@ -111,12 +111,12 @@ const TopSliderCard = (props) => {
             <div className="flex flex-row pb-8">
               <div className="">
                 <span className="relative bottom-1 pl-2.5 font-black text-m ">
-                  {caritem.rating.value}
+                  {caritem.rating.key}
                 </span>
               </div>
               <div className="pb-2">
                 <span className="relative bottom-1 text-xxs font-black pl-3 tracking-widest ">
-                  {caritem.rating.key}
+                  {caritem.rating.value}
                 </span>
               </div>
             </div>

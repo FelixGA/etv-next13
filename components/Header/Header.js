@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <div className="relative print:hidden">
-      <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-18 w-[100vw] ">
+      <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-18 w-[100%] ">
         <div className="flex flex-row pl-0 sm:pl-4 xl:pl-32">
           <div className="logo-container mt-2 w-20">
             <Image
@@ -49,7 +49,7 @@ const Header = () => {
         <AnimatePresence initial={false}>
           {isActive && (
             <motion.div
-              className=" lg:hidden w-full sm:w-96 absolute right-0 top-18 block "
+              className=" lg:hidden w-full sm:w-96 absolute right-0 top-18  "
               variants={variants}
               initial="enter"
               animate="center"
@@ -90,8 +90,6 @@ const Header = () => {
         </div>
       </div>
     </div>
-
-   
-  );
-};
+      );
+    };
 export default Header;

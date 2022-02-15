@@ -7,7 +7,7 @@ import ActiveCompareButton from "../components/ActiveCompare/ActiveCompareButton
 function activecompare() {
   const { state, dispatch } = useStore();
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
-  console.log(comparedCars);
+  
   return (
     <div className="wrapper">
       <div className="heading+btn  pt-8 pb-12 pl-[5vw]">
