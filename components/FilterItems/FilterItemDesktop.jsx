@@ -51,7 +51,7 @@ function FilterItemDesktop(props) {
   return (
     <>
       <div
-        className=" cursor-pointer relative z-50 "
+        className=" cursor-pointer relative z-50 bg-white w-full "
         onClick={() => {
           dispatch({
             type: "truncate",
@@ -59,8 +59,8 @@ function FilterItemDesktop(props) {
           });
         }}
       >
-        <div className="flex flex-row justify-between border-b py-4 flex-1  ">
-          <div className="flex flex-row pl-4 ">
+        <div className="flex flex-row justify-between border-b py-4 flex-1 bg-white  ">
+          <div className="flex flex-row pl-4  ">
             <div className="w-6 h-6 ml-4 ">
               <Image
                 src={item.image}

@@ -5,7 +5,7 @@ import image4 from "../../public/images/preis.png";
 import image5 from "../../public/images/more-svgrepo-com.png";
 
 import image6 from "../../public/images/ladezeit@2x.png";
-
+import filterImage from "../../public/images/filter-icon.png";
 
 import Image from "next/image";
 import { useState } from "react";
@@ -14,14 +14,70 @@ import Sort from "../SortItems/Sort";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useStore } from "../store";
 import FilterOptionPrice from "./FilterOptionPrice";
-function TruncateFilterMobile() {
+import { motion, AnimatePresence } from "framer-motion";
+import PriceInputs from "./PriceInputs";
+
+const variants = {
+    enter: {
+     y: -1000,
+      opacity: 0,
+    },
+    center: {
+     y: 0,
+      opacity: 1,
+    },
+    exit: {
+      y: -1000,
+      opacity: 0,
+    },
+  };
+
+
+function FiltersMobile() {
   /* UseStates */
   const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
   const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
-  const [truncPrice, setTruncPrice] = useState(false);
-  const [rotateIt, setRotateIt] = useState(false);
   const { state, dispatch } = useStore();
+  const [clicked, setClicked] = useState(true);
   /* filter list */
+  const priceFilterData = [
+    {
+      id: 1,
+      category: "prices",
+      title: "Price",
+      image: image4,
+      options: [
+        {
+          value: 0,
+          max: 20000,
+          name: "0-20000€",
+          id: 1,
+          categoryName: "price",
+        },
+        {
+          id: 2,
+          name: "20001-40000€",
+          value: 20001,
+          max: 40000,
+          categoryName: "price",
+        },
+        {
+          id: 3,
+          name: "40001-60000€",
+          value: 40001,
+          max: 60000,
+          categoryName: "price",
+        },
+        {
+          id: 4,
+          name: "60001-90000€",
+          value: 60001,
+          max: 90000,
+          categoryName: "price",
+        },
+      ],
+    },
+  ];
   const filtersData = [
     {
       id: 1,
@@ -187,6 +243,31 @@ function TruncateFilterMobile() {
     },
   ];
 
+ 
+
+  const getPriceFilterData = priceFilterData.map((item) => {
+    return (
+      <div className="relative  bg-white" key={item.id}>
+        <FilterItemMobile item={item} />
+        <AnimatePresence initial={false}>
+          {state?.truncates == item.title && (<motion.div
+            variants={variants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ type: "tween", duration: 0.2 }}
+            className=
+              "flex flex-col ml-8 relative   "
+            
+          >
+            <PriceInputs />
+          </motion.div>)}
+          
+        </AnimatePresence>
+      </div>
+    );
+  });
+
   const getFiltersData = filtersData.map((item, index) => {
     return (
       <div key={item.id} className="">
@@ -194,6 +275,7 @@ function TruncateFilterMobile() {
       </div>
     );
   });
+
   /* handling the min and max input  */
   const changeHandleMin = (e) => {
     SetUserInputMinPrice(e.target.value);
@@ -204,11 +286,65 @@ function TruncateFilterMobile() {
   return (
     <div className="absolute z-10 bg-white w-full ">
       <div className="flex flex-col   ">
-        <div>
-          <Sort />
-        </div>
-        {/* Preis */}
+        
+        <div className="bg-white  shadow-dropdown md:hidden  w-full z-40">
         <div
+          className={
+            clicked
+              ? "h-10 shadow-dropdown flex flex-row justify-between align-middle border-b"
+              : "h-10 shadow-dropdown flex flex-row justify-between align-middle "
+          }
+          onClick={() => {
+            
+            setClicked(!clicked);
+          }}
+        >
+          <div className="flex-1  flex flex-row">
+            <div
+              className="w-3.5 my-auto ml-6  
+          "
+            >
+              <Image
+                src={filterImage}
+                alt="filter icon"
+                objectFit="cover"
+                width={8}
+                height={8}
+                
+                layout="responsive"
+                
+              />
+            </div>
+            <span className="ml-2 font-black   my-auto text-sm text-blue-darker">
+              Alle Filter anzeigen
+            </span>
+          </div>
+
+          <div
+            className={
+              clicked
+                ? "flex items-center w-8 mr-5 my-auto transition transform rotate-180 origin-center	"
+                : "flex items-center w-8 mr-5 my-auto transition transform rotate-0 origin-center	 "
+            }
+          >
+            <MdKeyboardArrowDown size={28} />
+          </div>
+        </div>
+        <div className="">
+          <div
+            className={
+              clicked ? "font-bold	 my-auto text-sm text-blue-darker" : "hidden"
+            }
+          >
+            
+            {/* <div className="relative   z-20">
+              <FiltersMobile />
+            </div> */}
+          </div>
+        </div>
+      </div>
+        {/* Preis */}
+       {/*  <div
           className="cursor-pointer w-full "
           onClick={() => {
             dispatch({
@@ -264,10 +400,10 @@ function TruncateFilterMobile() {
       >
         <div className="">
           <FilterOptionPrice />
-        </div>
+        </div> */}
 
         {/* min max buttons */}
-        <div className="wrapper py-4 flex flex-row justify-start">
+        {/* <div className="wrapper py-4 flex flex-row justify-start">
           <div className="flex py-2 mx-2 w-20 h-9 bg-transparent border rounded-lg border-blue-dark">
             <input
               type="number"
@@ -304,13 +440,15 @@ function TruncateFilterMobile() {
           >
             Los
           </span>
-        </div>
+        </div> */}
       </div>
+      {getPriceFilterData}
       {getFiltersData}
+      
 
       {/*  */}
     </div>
   );
 }
 
-export default TruncateFilterMobile;
+export default FiltersMobile;

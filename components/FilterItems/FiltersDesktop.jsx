@@ -237,7 +237,7 @@ function FiltersDesktop() {
 
   const getPriceFilterData = priceFilterData.map((item) => {
     return (
-      <div className="relative z-10 bg-white" key={item.id}>
+      <div className="relative  bg-white" key={item.id}>
         <FilterItemDesktop item={item} />
         <AnimatePresence initial={false}>
           {state?.truncates == item.title && (<motion.div
@@ -259,7 +259,7 @@ function FiltersDesktop() {
   });
   const getFiltersData = filtersData.map((item) => {
     return (
-      <div className=" " key={item.id}>
+      <div className="bg-white " key={item.id}>
         <FilterItemDesktop item={item} />
       </div>
     );
