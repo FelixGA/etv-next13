@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import { useState } from "react";
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
 import CarCardDetailsDesktop from "../../components/ResultList/CarCardDetailsDesktop";
@@ -19,7 +18,7 @@ export default function Details(props) {
 
   /* carItem hook for the ONE car that it is displayed */
   const [carItem, SetCarItem] = useState(props.vehicle);
-/* for the view more hook */
+  /* for the view more hook */
   const [descriptionSize, SetDescriptionSize] = useState(true);
   return (
     <>
@@ -35,7 +34,6 @@ export default function Details(props) {
               </Link>
             </button>
           </div>
-          {/* {carItem?.src && ( */}
           <Image
             src={carItem?.src}
             alt={carItem?.title}
@@ -45,7 +43,6 @@ export default function Details(props) {
             objectFit="cover"
             className="rounded-l-lg"
           />
-          {/* )} */}
         </div>
         <div className="flex flex-col lg:w-1/2 ">
           {/* DESKTOP VERSION FOR DETAILS TABLE*/}
@@ -146,19 +143,21 @@ export async function getStaticProps(context) {
   );
   let vehicles = await getContent("vehicles", context.locale);
   /*  get thw first 4 from this category for the slider */
-  vehicles =Object.entries(vehicles).map(([key, value]) => {
+  vehicles = Object.entries(vehicles).map(([key, value]) => {
     return value;
   });
-  vehicles = vehicles.filter((item, index) =>  item.category === vehicle.category);
+  vehicles = vehicles.filter(
+    (item, index) => item.category === vehicle.category
+  );
   // .filter(([key, value]) =>
   //  value.category === vehicle.category ? value : null
   // )
-  
+
   // .slice(0, 4);
   // vehicles.shift();
-  console.log("cars",vehicles);
-  
-  if (!vehicle) {
+  console.log("cars", vehicles);
+
+  if (!vehicle || vehicles?.length === 0) {
     return {
       notFound: true,
     };
