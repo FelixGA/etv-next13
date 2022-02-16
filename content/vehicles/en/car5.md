@@ -1,6 +1,6 @@
 ---
-title: car3
-src: /images/VW-e-Crafter-Front-300x225.jpg
+title: car5
+src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
 preview: "qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv "
@@ -12,12 +12,12 @@ Range230V:
   key: Reichweite
   value: 333
   baseUnit: km
-price: 30000
+price: 10000
 description: dsfbsgbwdcw qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv
-category: Kasten
+category: Koffer
 typeClass: N1
 loadingWeight:
   key: Nutzlast

@@ -155,7 +155,7 @@ const HeroSection = () => {
                   <select
                     className=" p-4 relative bottom-6 w-full
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
-                    id="Range230V"
+                    id="range230Vs"
                     onChange={(e) => {
                       setChooseRange(e.target.value);
                     }}
@@ -224,7 +224,7 @@ const HeroSection = () => {
                     ],
                   });
                   dispatch({
-                    type: "Range230V",
+                    type: "range230Vs",
                     data: [
                       {
                         min: Number(chooseRange),
