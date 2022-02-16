@@ -1,8 +1,8 @@
-// import "../styles/globals.css";
 import Layout from "../components/Layout";
 import ErrorBoundary from "../components/ErrorBoundary";
 import Head from "next/head";
 import { StoreProvider } from "/components/store";
+import "/styles/globals.css";
 
 export default function MyApp({ Component, pageProps }) {
   return (
