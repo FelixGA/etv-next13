@@ -153,7 +153,7 @@ collections:
               i18n: duplicate,
             }
       - label: "Range-230V"
-        name: "range230Vs"
+        name: "range230V"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         i18n: true
@@ -316,12 +316,7 @@ collections:
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
-          - {
-              label: "height",
-              name: "height",
-              widget: "string",
-              i18n: true,
-            }
+          - { label: "height", name: "height", widget: "string", i18n: true }
           - {
               label: "height-Value",
               name: "valueheight",

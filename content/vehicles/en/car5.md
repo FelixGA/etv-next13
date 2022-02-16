@@ -1,9 +1,20 @@
 ---
-title: car6
+title: car5
+price: 10000
+description: dsfbsgbwdcw qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv
 src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
 preview: "qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv "
+category: Koffer
+typeClass: N1
+loadingWeight:
+  key: Nutzlast
+  value: 333
+  baseUnit: kg
 maxSpeed:
   key: vmax
   baseUnit: km/h
@@ -12,25 +23,14 @@ Range230V:
   key: Reichweite
   value: 333
   baseUnit: km
-price: 10000
-description: dsfbsgbwdcw qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
-  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
-  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
-  qergwetgetgwdvwrv qergwetgetgwdvwrv
-category: Koffer
-typeClass: N1
-loadingWeight:
-  key: Nutzlast
-  value: 333
-  baseUnit: kg
 curbweight:
   key: leergewicht
   value: 1233
   baseUnit: kg
-range230Vs:
-  key: reichweite
-  value: 233
-  baseUnit: km
+range230V:
+  key: d
+  value: 2
+  baseUnit: d
 rangeLithium:
   key: reichweite2
   value: 100
@@ -65,6 +65,10 @@ subsidies:
   key: Foerderung
   value: 12312
   baseUnit: euro
+range230Vs:
+  key: reichweite
+  value: 233
+  baseUnit: km
 RangeLithium:
   key: qwef
   value: 23423

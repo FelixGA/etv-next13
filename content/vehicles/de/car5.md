@@ -21,10 +21,10 @@ maxSpeed:
   key: vmax
   baseUnit: km/h
   value: 333
-range230Vs:
-  key: reichweite
-  value: 233
-  baseUnit: km
+range230V:
+  value: 2
+  baseUnit: d
+  key: d
 rangeLithium:
   key: reichweite2
   value: 100
@@ -55,13 +55,17 @@ guarantee:
   key: Guarantee
   value: 11
   baseUnit: Woche
-availability:
-  key: Verfugbarkeit
-  value: nicht verfugbar
 subsidies:
   key: Foerderung
   value: 12312
   baseUnit: euro
+range230Vs:
+  key: reichweite
+  value: 233
+  baseUnit: km
+availability:
+  key: Verfugbarkeit
+  value: nicht verfugbar
 batteryGuarantee:
   key: akku guarantee
   value: 1233
