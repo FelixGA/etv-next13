@@ -124,6 +124,20 @@ collections:
               widget: "string",
               i18n: duplicate,
             }
+      - label: "Curb Weight"
+        name: "curbweight"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        i18n: true
+        fields:
+          - { label: "key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              widget: "string",
+              i18n: true,
+            }
       - label: "maxSpeed"
         name: "maxSpeed"
         widget: "object"
