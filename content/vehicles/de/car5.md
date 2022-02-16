@@ -1,85 +1,92 @@
 ---
-title: "10000"
+title: car5
 price: 10000
-description: "10000"
+description: dsfbsgbwdcw qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv
 src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
-preview: "10000"
+preview: "qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv "
 loadingWeight:
-  key: "10000"
+  key: Nutzlast
   value: 333
   baseUnit: kg
 curbweight:
-  key: "10000"
+  key: leergewicht
   value: 1233
-  baseUnit: "10000"
+  baseUnit: kg
 maxSpeed:
-  key: "10000"
-  value: 333
+  key: vmax
   baseUnit: km/h
+  value: 333
 range230Vs:
-  key: "10000"
+  key: reichweite
   value: 233
   baseUnit: km
 rangeLithium:
-  key: "10000"
+  key: reichweite2
   value: 100
   baseUnit: km
 chargingTime230V:
-  key: "10000"
-  value: 333
+  key: Ladenzeit
   baseUnit: qwefqwe
+  value: 333
 chargingTimeLithium:
-  key: "10000"
-  value: 23
+  key: Ladenzeit Lithium
   baseUnit: h
+  value: 23
 chargingTimeFast:
-  key: "10000"
+  key: Ladenzeit Schnell
   value: 3
   baseUnit: h
 batteryCapacity:
-  key: "10000"
+  key: Kapazitaet
   value: 43232
   baseUnit: kw
 seats:
-  key: "10000"
+  key: Sitzplatze
   value: 3
 rating:
-  key: "10000"
+  key: gut
   value: 3
 guarantee:
-  key: "10000"
+  key: Guarantee
   value: 11
   baseUnit: Woche
 availability:
-  key: "10000"
+  key: Verfugbarkeit
   value: nicht verfugbar
 subsidies:
-  key: "10000"
+  key: Foerderung
+  value: 12312
   baseUnit: euro
-  value: 10000
 batteryGuarantee:
-  key: "10000"
+  key: akku guarantee
   value: 1233
   baseUnit: Wochen
 carSizes:
-  width: "10000"
-  length: "10000"
+  width: Breite
+  length: Lange
   height: hohe
-  wheelbase: "10000"
-  valuewidth: 10000
-  baseUnit: "10000"
-  valuelength: 10000
+  wheelbase: Radstand
+  valuewidth: 1210
+  baseUnit: cm
+  valuelength: 1230
   valueheight: 123
-  valuewheelbase: 10000
-  Key: "10000"
+  valuewheelbase: 831
+  Key: Farzeug Masse
+  key: "Fahrzeug Maße "
 loadingVolume:
-  Key: "10000"
-  height: "10000"
-  valueheight: 10000
-  width: "10000"
-  valuewidth: 10000
-  length: "10000"
-  valuelength: 10000
-  baseUnit: "10000"
+  width: Breite
+  length: Lange
+  height: hohe
+  valuewidth: 131
+  baseUnit: cm
+  valuelength: 123
+  valueheight: 321
+  Key: LadenVolumen
+  key: Laderaum Maße
 ---
-10000
+qergerge2rgwvwdv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
