@@ -1,7 +1,7 @@
 import CarCard from "../../components/ResultList/CarCard";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";
-import { v4 as uuidv4 } from "uuid";
+ 
 
 import ButtonForAlleTransporter from "../../components/Sliders/ButtonForAlleTransporter";
 const ResultList = (props) => {

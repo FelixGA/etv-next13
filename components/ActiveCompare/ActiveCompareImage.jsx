@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { v4 as uuidv4 } from "uuid";
+ 
 function ActiveCompareImage(props) {
   const myLoader = ({ src }) => {
     return src;
   };
 
   const carsData2 = props.comparedCars.map((item, index) => (
-    <div key={uuidv4()}>
+    <div  key={index}>
       <div className="lg:w-64 xl:w-88 2xl:w-[380px] p-4">
         <Image
           className="rounded-md md:rounded-lg brightness-[75%] "
@@ -17,7 +17,7 @@ function ActiveCompareImage(props) {
           width={100.35}
           height={66.9}
           layout="responsive"
-          unoptimized={true}
+           
         />
         <div className="relative">
           <p className="absolute bottom-28 2xl:bottom-48 left-4 2xl:left-6 text-lg 2xl:text-xl text-white font-bold">

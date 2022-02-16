@@ -35,7 +35,7 @@ const Articles = (props) => {
             layout="responsive"
             objectFit="cover"
             className="rounded-l-lg"
-            unoptimized={true}
+             
           />
         </div>
         <div className="w-full p-2 lg:w-1/2 flex flex-col flex-wrap">

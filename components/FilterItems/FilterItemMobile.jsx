@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { v4 as uuidv4 } from "uuid";
+ 
 import { useState, useEffect } from "react";
 import { useStore } from "../store";
 import FilterCheckboxMobile from "./FilterCheckboxMobile";
@@ -20,7 +20,7 @@ function FilterItemMobile(props) {
           data: [{ min: checkbox.value, max: 99999 }],
         });
       }}
-      key={uuidv4()}
+       key={index}
       className="mt-1 flex flex-row py-2 "
     >
       <FilterCheckboxMobile checkbox={checkbox} />
@@ -54,7 +54,7 @@ function FilterItemMobile(props) {
                 width={24}
                 height={28}
                 layout="responsive"
-                unoptimized={true}
+                 
               />
             </div>
             <div className="pl-4 my-auto ">

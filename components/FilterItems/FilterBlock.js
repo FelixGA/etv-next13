@@ -39,7 +39,7 @@ function FilterBlock() {
                 width={8}
                 height={8}
                 layout="responsive"
-                unoptimized={true}
+                 
               />
             </div>
             <span className="ml-2 font-black   my-auto text-sm text-blue-darker">

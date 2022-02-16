@@ -218,7 +218,7 @@ function TruncateFilterDesktop() {
                 width={24}
                 height={28}
                 layout="responsive"
-                unoptimized={true}
+                 
               />
             </div>
             <div className="my-auto pl-4">
