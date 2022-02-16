@@ -37,7 +37,7 @@ function CarCard(props) {
   };
 
   return (
-    <div className="container-product flex flex-col mb-4 py-4 lg:py-0 px-4 lg:px-0 lg:pr-4  shadow-lg lg:shadow-none md:border-t lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
+    <div className="container-product flex flex-col mb-4 py-4 lg:py-0 px-4 lg:px-0  shadow-lg lg:shadow-none border-t lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
     <div className="container-product flex flex-row">
       <div className="container-product-basics w-3/5 lg:w-fit ">
         <Link href={`/transporter/${carItem.title}`}>

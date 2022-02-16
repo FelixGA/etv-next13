@@ -62,7 +62,7 @@ const Header = () => {
         </AnimatePresence>
         {/* BUTTON */}
         <div className="pr-20 lg:pr-8 xl:pr-32 ">
-          <div className="bg-yellow-light hover:bg-orange-lighter text-grey-darker font-bold flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded ">
+          <div className="bg-yellow-light hover:bg-orange-lighter text-grey-darker font-bold flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer">
             <div className="w-8 pl-2 ">
               <Image
                 src="/images/iconStyle2x.png"

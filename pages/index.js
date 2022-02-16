@@ -17,10 +17,9 @@ const components = {
  /*  h2: (heading) => <h2 className="mb-8 font-black">{heading.children}</h2>, */
 };
 
-export default function Home(props) {
+ export default function Home(props) {
 const [getCars, SetGetCars] = useState(props.vehicles); 
-
-
+console.log(props.vehicles)
   return (
     <>
       <Head>
@@ -46,7 +45,7 @@ export async function getStaticProps(context) {
   const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   const page = pages.find((page) => page.path === "/homepage");
-
+console.log(vehicles);
   if (!page) {
     return {
       notFound: true,

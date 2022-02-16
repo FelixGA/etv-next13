@@ -16,7 +16,7 @@ function activecompare() {
         </h1>
         {/* BUTTON VISIBLE ONLY ON MOBILE */}
         <div className="w-fit lg:hidden mt-4">
-          <button className="   bg-[bg-grey-lighter] w-56 h-10 rounded-md text-[bg-blue-darker] font-medium">
+          <button className="   bg-grey-lighter w-56 h-10 rounded-md text-blue-darker font-medium">
             <Link href="/comparePage">
               <a className="visited:text-blue-darker">
                 « zurück zur Ergebnisliste
@@ -26,9 +26,9 @@ function activecompare() {
         </div>
       </div>
       {/* BUTTON AND IMAGES <>VISIBLE IN DESKTOP VIEW<> */}
-      <div className="btn+img w-full h-52 2xl:h-80 bg-[bg-grey-lighter] hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col   scrollbar-hide justify-center  items-center">
+      <div className="btn+img w-full h-52 2xl:h-80 bg-grey-lighter hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col   scrollbar-hide justify-center  items-center">
         <div className="lg:w-64 xl:w-88 2xl:w-[380px] pl-4">
-          <button className="mb-32 2xl:mb-36 text-sm bg-white w-52 h-10  rounded-md text-[bg-blue-darker] ">
+          <button className="mb-32 2xl:mb-36 text-sm bg-white w-52 h-10  rounded-md text-blue-darker ">
             <Link href="/comparePage">
               <a className="visited:text-blue-darker">
                 « zurück zur Ergebnisliste

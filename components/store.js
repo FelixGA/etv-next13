@@ -5,7 +5,7 @@ const reducer = (state, action) => {
     /* filter */
     case "price":
       return { ...state, prices: action.data };
-    case "range230Vs":
+    case "range230V":
       return { ...state, range230Vs: action.data };
     case "loadingWeight":
       return { ...state, loadingWeights: action.data };

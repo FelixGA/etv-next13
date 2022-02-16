@@ -33,25 +33,25 @@ function TruncateFilter() {
           value: 150,
           name: "ab 150 km",
           id: 1,
-          categoryName: "range230Vs",
+          categoryName: "range230V",
         },
         {
           id: 2,
           name: "ab 200 km",
           value: 200,
-          categoryName: "range230Vs",
+          categoryName: "range230V",
         },
         {
           id: 3,
           name: "ab 250 km",
           value: 250,
-          categoryName: "range230Vs",
+          categoryName: "range230V",
         },
         {
           id: 4,
           name: "ab 500 km",
           value: 500,
-          categoryName: "range230Vs",
+          categoryName: "range230V",
         },
       ],
     },
@@ -156,7 +156,7 @@ function TruncateFilter() {
     {
       id: 4,
       title: "Aufbautyp",
-      category: "categorys",
+      category: "category",
       image: image5,
       options: [
         {

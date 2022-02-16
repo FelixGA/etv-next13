@@ -8,9 +8,9 @@ import image6 from "../../public/images/more-svgrepo-com.png";
 import { AiOutlineClose } from "react-icons/ai";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";
-function ActiveFilterEntry() {
+function ActiveFilterEntry(props) {
   const { state, dispatch } = useStore();
-  const [showAll, setShowAll] = useState(true);
+  // const [showAll, setShowAll] = useState(true);
 
   useEffect(() => {
     if (
@@ -20,7 +20,7 @@ function ActiveFilterEntry() {
       state?.maxSpeeds.length ||
       state?.chargingTime230Vs.length
     ) {
-      setShowAll(true);
+      props.setShowAll(true);
     }
   }, [
     state?.prices,
@@ -29,7 +29,6 @@ function ActiveFilterEntry() {
     state?.maxSpeeds,
     state?.chargingTime230Vs,
   ]);
-
   const activeFilterData = [
     {
       id: 1,
@@ -79,11 +78,12 @@ function ActiveFilterEntry() {
     },
   ];
 
+
   return (
     <div
       className={
-        showAll
-          ? "grid gap-2 w-full grid-cols-1 mt-4 md:mt-0 sm:grid-cols-2  lg:grid-cols-4  xl:filter-grid  px-2"
+        props.showAll
+          ? "grid gap-2 w-full grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 bg-red-500 xl:filter-grid  px-2 items-end pt-12 md:pt-2 "
           : "hidden"
       }
     >
@@ -91,7 +91,7 @@ function ActiveFilterEntry() {
         <div
           className={
             item.value !== null
-              ? " w-full h-10 py-2  bg-grey-lighter  flex justify-between items-center "
+              ? " flex-1 h-10 py-2  bg-grey-lighter flex justify-between items-center "
               : "hidden"
           }
           key={item.id}
@@ -108,10 +108,11 @@ function ActiveFilterEntry() {
             />
           </div>
           <div className="text-md">{item.value}</div>
+          
           <div
             onClick={() => {
               if (item.id === 1) dispatch({ type: "price", data: [] });
-              if (item.id === 2) dispatch({ type: "range230Vs", data: [] });
+              if (item.id === 2) dispatch({ type: "range230V", data: [] });
               if (item.id === 3) dispatch({ type: "loadingWeight", data: [] });
               if (item.id === 4) dispatch({ type: "maxSpeed", data: [] });
               if (item.id === 5) dispatch({ type: "chargingTime230V", data: [] });
@@ -120,6 +121,7 @@ function ActiveFilterEntry() {
             className={"w-3.5 my-auto mr-4 cursor-pointer"}
           >
             <AiOutlineClose size={20} />
+            
           </div>
         </div>
       ))}
@@ -132,16 +134,17 @@ function ActiveFilterEntry() {
           state?.maxSpeeds.length ||
           state?.chargingTime230Vs.length ||
           state?.categorys.length
-            ? "w-fit flex items-end"
+            ? " flex items-end "
             : "hidden"
         }
       >
+       
         <span
           className="text-sm  cursor-pointer"
           onClick={() => {
-            setShowAll(!showAll);
+            props.setShowAll(!props.showAll);
             dispatch({
-              type: "range230Vs",
+              type: "range230V",
               data: [],
             });
             dispatch({

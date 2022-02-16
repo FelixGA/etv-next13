@@ -52,13 +52,13 @@ function Sort() {
   return (
     <div className="block md:hidden ">
       <div
-        className="py-2 cursor-pointer"
+        className="  cursor-pointer"
         onClick={() => {
           setTruncate(!truncate);
           setRotateIt(!rotateIt);
         }}
       >
-        <div className="flex flex-row justify-between border-b ">
+        <div className="flex flex-row justify-between border-b  py-1 ">
           <div className="flex flex-row ">
             <div className="  ml-5 my-auto">
               <BsSortDown size={20} />

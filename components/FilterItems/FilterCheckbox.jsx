@@ -6,8 +6,23 @@ function FilterCheckbox(props) {
   const [isChecked, setIsChecked] = useState("");
   /* CHECKING WHICH CHECKBOX IS ACTIVE UPON THE RANGE */
   useEffect(() => {
+    let minPrice = state?.prices.map((el) => el.min).join(" ");
+    if (props.checkbox.categoryName == "price" && state?.prices.length) {
+      
+      minPrice >= 0 ? setIsChecked("0-20000€") : null;
+      minPrice >= 20001 ? setIsChecked("20001-40000€") : null;
+      minPrice >= 40001 ? setIsChecked("40001-60000€") : null;
+      minPrice >= 60001 ? setIsChecked("60001-90000€") : null;
+      
+
+    } else {
+      /* unchecking the box */
+      setIsChecked(props.checkbox.categoryName);
+     
+    }
+    
     let minRange = state?.range230Vs.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "range230Vs" && state?.range230Vs.length) {
+    if (props.checkbox.categoryName == "range230V" && state?.range230Vs.length) {
       minRange >= 150 ? setIsChecked("ab 150 km") : null;
       minRange >= 200 ? setIsChecked("ab 200 km") : null;
       minRange >= 250 ? setIsChecked("ab 250 km") : null;
@@ -53,7 +68,6 @@ function FilterCheckbox(props) {
     state?.chargingTime230Vs,
     state?.categorys,
   ]);
-
   return (
     <>
       <input

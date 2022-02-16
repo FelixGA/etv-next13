@@ -3,8 +3,8 @@ import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai";
 import { useStore } from "../store";
 function CarCardforPopUp(props) {
+ 
   const { state, dispatch } = useStore();
-
   return (
     <div className="w-[80%] md:w-full relative ">
       <div className="w-16 md:min-w-36 md:w-full">
