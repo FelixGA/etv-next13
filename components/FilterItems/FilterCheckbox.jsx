@@ -6,8 +6,8 @@ function FilterCheckbox(props) {
   const [isChecked, setIsChecked] = useState("");
   /* CHECKING WHICH CHECKBOX IS ACTIVE UPON THE RANGE */
   useEffect(() => {
-    let minRange = state?.Range230Vs.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "Range230V" && state?.Range230Vs.length) {
+    let minRange = state?.range230Vs.map((el) => el.min).join(" ");
+    if (props.checkbox.categoryName == "range230Vs" && state?.range230Vs.length) {
       minRange >= 150 ? setIsChecked("ab 150 km") : null;
       minRange >= 200 ? setIsChecked("ab 200 km") : null;
       minRange >= 250 ? setIsChecked("ab 250 km") : null;
@@ -47,7 +47,7 @@ function FilterCheckbox(props) {
       categories == "Kasten" ? setIsChecked("Kasten") : null;
     }
   }, [
-    state?.Range230Vs,
+    state?.range230Vs,
     state?.loadingWeights,
     state?.maxSpeeds,
     state?.chargingTime230Vs,

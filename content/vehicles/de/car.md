@@ -1,4 +1,3 @@
 ---
-price: 60000
-src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
+src: /images/Stama-Maestro-Front-300x200.jpg
 ---

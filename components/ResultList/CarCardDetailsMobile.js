@@ -34,10 +34,10 @@ function CarCardDetailsMobile(props) {
           <div className="flex flex-row flex-1 py-1">
             <div className="flex flex-row flex-1 justify-between">
               <div className="text-grey-dark font-bold w-full xs:w-2/5">
-              {props.carItem?.Range230V.key}:
+              {props.carItem?.range230V.key}:
               </div>
               <div className="text-blue-dark font-bold w-full xs:w-3/5">
-              {props.carItem?.Range230V.value}km
+              {props.carItem?.range230V.value}km
               </div>
             </div>
           </div>

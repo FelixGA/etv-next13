@@ -1,83 +1,102 @@
 ---
 title: car
-price: 60000
-description: dsfbsgb
-src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
-preview: qergwetgetg
-category: Kipper
-typeClass: N2
-loadingWeight:
-  key: Nutylast
-  value: 2346
-  baseUnit: kg
+src: /images/Stama-Maestro-Front-300x200.jpg
+preview: "qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv "
 maxSpeed:
-  key: wefwef
-  baseUnit: klm/h
-  value: 1234
+  key: vmax
+  baseUnit: km/h
+  value: 333
 Range230V:
-  key: Reiichweite
-  value: 123
-  baseUnit: klm
+  key: Reichweite
+  value: 333
+  baseUnit: km
+price: 60000
+description: dsfbsgbwdcw qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv
+category: Kipper
+typeClass: N1
+loadingWeight:
+  key: Nutzlast
+  value: 333
+  baseUnit: kg
+curbweight:
+  key: leergewicht
+  value: 1233
+  baseUnit: kg
+range230Vs:
+  key: reichweite
+  value: 233
+  baseUnit: km
+rangeLithium:
+  key: reichweite2
+  value: 100
+  baseUnit: km
+chargingTime230V:
+  key: Ladenzeit
+  baseUnit: qwefqwe
+  value: 333
+chargingTimeLithium:
+  key: Ladenzeit Lithium
+  baseUnit: h
+  value: 23
+chargingTimeFast:
+  key: Ladenzeit Schnell
+  value: 3
+  baseUnit: h
+batteryCapacity:
+  key: Kapazitaet
+  value: 43232
+  baseUnit: kw
+seats:
+  key: Sitzplatze
+  value: 3
+rating:
+  key: gut
+  value: 3
+guarantee:
+  key: Guarantee
+  value: 11
+  baseUnit: Woche
+subsidies:
+  key: Foerderung
+  value: 12312
+  baseUnit: euro
 RangeLithium:
   key: qwef
   value: 23423
   baseUnit: 42qwefqwef134
-chargingTime230V:
-  key: Ladenzeit
-  baseUnit: St
-  value: 340
-chargingTimeLithium:
-  key: wfeqwefwqe
-  baseUnit: qwefwef
-  value: 2343
-chargingTimeFast:
-  key: vmax
-  value: 324
-  baseUnit: klm
-batteryCapacity:
-  key: 234wefwaef
-  value: 234134
-  baseUnit: qwefwef
-seats:
-  key: wefwerf
-  value: 1242
-rating:
-  key: qwrfwf
-  value: 123
-guarantee:
-  key: awerfwef
-  value: 23123
-  baseUnit: wefwef
 availability:
-  key: dwfwef
-  value: "123"
-subsidies:
-  key: dfwfwef
-  value: 12312
-  baseUnit: qerwer
+  key: Verfugbarkeit
+  value: nicht verfugbar
 batteryGuarantee:
-  key: 13ddede
-  value: 123312
-  baseUnit: eqfef
+  key: akku guarantee
+  value: 1233
+  baseUnit: Wochen
 carSizes:
-  width: qwer
-  length: qwewqe
-  height: qwdqwfq
-  wheelbase: qrqwr
-  valuewidth: 121
-  baseUnit: werqwrqer
-  valuelength: 123
+  width: Breite
+  length: Lange
+  height: hohe
+  wheelbase: Radstand
+  valuewidth: 1210
+  baseUnit: cm
+  valuelength: 1230
   valueheight: 123
-  valuewheelbase: 12318
-  Key: "12312"
+  valuewheelbase: 831
+  Key: Farzeug Masse
+  key: "Fahrzeug Maße "
 loadingVolume:
-  Key: qwqwf
-  height: wdfwf
-  valueheight: 321312
-  width: wefwef
-  valuewidth: 13120
-  length: efwefwef
-  valuelength: 123123
-  baseUnit: eewqfeqwf
+  width: Breite
+  length: Lange
+  height: hohe
+  valuewidth: 131
+  baseUnit: cm
+  valuelength: 123
+  valueheight: 321
+  Key: LadenVolumen
+  key: Laderaum Maße
 ---
-qergerge2rg
+qergerge2rgwvwdv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv

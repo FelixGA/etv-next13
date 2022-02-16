@@ -8,8 +8,8 @@ const TechnicalDetails = ({ carItem }) => {
   /* get two subsets of the car properties to map them */
   useEffect(() => {
     const basics = [
-      carItem.Range230V,
-      carItem.RangeLithium,
+      carItem.range230V,
+      carItem.rangeLithium,
       carItem.loadingWeight,
       carItem.maxSpeed,
       carItem.chargingTime230V,
@@ -83,14 +83,32 @@ console.log(vehichleDimentions)
               >
                 <p className="w-1/2 py-1">{item.Key}</p>
                 <p className="w-1/2 py-1">
-                  {item.value} {item.baseUnit}
+                  {item.height}:  {item.valueheight}  {item.baseUnit}
                 </p>
                 <p className="w-1/2 py-1">
-                  {item.value} {item.baseUnit}
+                  {item.width}:  {item.valuewidth}  {item.baseUnit}
                 </p>
+                <p className="w-1/2 py-1">
+                  {item.length}:  {item.valuelength}  {item.baseUnit}
+                </p>
+                
                
               </div>
-            ))}
+            ))} <div
+            className="
+               flex flex-row w-full bg-[#F2F5F8] "
+          >
+            <p className="w-1/2 py-1 ">{carItem.carSizes.wheelbase}:</p>
+            <p className="w-1/2 py-1">{carItem.carSizes.valuewheelbase} cm</p>
+          </div>
+          <div
+              className="
+                 flex flex-row w-full bg-[#F2F5F8] "
+            >
+              <p className="w-1/2 py-1 ">Class:</p>
+              <p className="w-1/2 py-1">{carItem.typeClass}</p>
+            </div>
+
             <h3 className="text-black-darkest font-bold pt-8 pb-4">
             Details
           </h3>

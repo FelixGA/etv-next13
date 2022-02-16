@@ -59,7 +59,7 @@ export default function comparePage(props) {
    .map((item) => item);
   // /* ᴄᴀʀs ʀᴀɴɢᴇ ғɪʟᴛᴇʀ */
 
-  const getCarsByRange = props.vehicles?.sort((a, b) => b.Range230V.value - a.Range230V.value)
+  const getCarsByRange = props.vehicles?.sort((a, b) => b.range230V.value - a.range230V.value)
     .map((item) => item);
   // /* ᴄᴀʀs ᴄʜᴀʀɢɪɴɢ ᴛɪᴍᴇ ғɪʟᴛᴇʀ */
   const getCarsfastest = props.vehicles

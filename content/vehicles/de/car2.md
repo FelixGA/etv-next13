@@ -1,4 +1,4 @@
 ---
-price: 20000
-src: /images/ARI_802_Personenfahrzeug_Frontansicht_Garage_56dad4380e.jpg
+price: 60000
+src: /images/Maxus-eDeliver-3-Front-2-300x200.jpg
 ---

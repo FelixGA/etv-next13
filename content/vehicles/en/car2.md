@@ -1,15 +1,9 @@
 ---
 title: car2
-price: 20000
-description: dsfbsgbwdcw
-src: /images/ARI_802_Personenfahrzeug_Frontansicht_Garage_56dad4380e.jpg
-preview: qergwetgetgwdvwrv
-category: Kasten
-typeClass: N1
-loadingWeight:
-  key: Nutzlast
-  value: 333
-  baseUnit: kg
+src: /images/Maxus-eDeliver-3-Front-2-300x200.jpg
+preview: "qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv "
 maxSpeed:
   key: vmax
   baseUnit: km/h
@@ -18,47 +12,70 @@ Range230V:
   key: Reichweite
   value: 333
   baseUnit: km
-RangeLithium:
-  key: qwef
-  value: 23423
-  baseUnit: 42qwefqwef134
+price: 60000
+description: dsfbsgbwdcw qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+  qergwetgetgwdvwrv qergwetgetgwdvwrv
+category: Kasten
+typeClass: N1
+loadingWeight:
+  key: Nutzlast
+  value: 333
+  baseUnit: kg
+curbweight:
+  key: leergewicht
+  value: 1233
+  baseUnit: kg
+range230Vs:
+  key: reichweite
+  value: 233
+  baseUnit: km
+rangeLithium:
+  key: reichweite2
+  value: 100
+  baseUnit: km
 chargingTime230V:
   key: Ladenzeit
   baseUnit: qwefqwe
   value: 333
 chargingTimeLithium:
-  key: wfeqwefwqe
-  baseUnit: qwefwef
-  value: 2343
+  key: Ladenzeit Lithium
+  baseUnit: h
+  value: 23
 chargingTimeFast:
-  key: qwefqwef
-  value: 333
-  baseUnit: wefqwef
+  key: Ladenzeit Schnell
+  value: 3
+  baseUnit: h
 batteryCapacity:
-  key: 234wefwaef
-  value: 234132
-  baseUnit: qwefwef
+  key: Kapazitaet
+  value: 43232
+  baseUnit: kw
 seats:
-  key: wefwerf
-  value: 1242
+  key: Sitzplatze
+  value: 3
 rating:
-  key: qwrfwf
-  value: 123
+  key: gut
+  value: 3
 guarantee:
-  key: awerfwef
-  value: 23123
-  baseUnit: wefwef
-availability:
-  key: dwfwef
-  value: "123"
+  key: Guarantee
+  value: 11
+  baseUnit: Woche
 subsidies:
-  key: dfwfwef
+  key: Foerderung
   value: 12312
-  baseUnit: qerwer
+  baseUnit: euro
+RangeLithium:
+  key: qwef
+  value: 23423
+  baseUnit: 42qwefqwef134
+availability:
+  key: Verfugbarkeit
+  value: nicht verfugbar
 batteryGuarantee:
-  key: 13ddede
-  value: 123312
-  baseUnit: eqfef
+  key: akku guarantee
+  value: 1233
+  baseUnit: Wochen
 carSizes:
   width: Breite
   length: Lange
@@ -70,14 +87,16 @@ carSizes:
   valueheight: 123
   valuewheelbase: 831
   Key: Farzeug Masse
+  key: "Fahrzeug Maße "
 loadingVolume:
-  Key: qwqwf
-  height: hohe
-  valueheight: 321
   width: Breite
-  valuewidth: 131
   length: Lange
-  valuelength: 123
+  height: hohe
+  valuewidth: 131
   baseUnit: cm
+  valuelength: 123
+  valueheight: 321
+  Key: LadenVolumen
+  key: Laderaum Maße
 ---
-qergerge2rgwvwdv
+qergerge2rgwvwdv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv

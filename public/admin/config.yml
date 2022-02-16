@@ -44,7 +44,7 @@ collections:
         i18n: true
         required: false
         fields:
-          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Name", name: "name", widget: "string", i18n: true }
           - { label: "Markdown", name: "markdown", widget: "markdown" }
 
   - label: "Blog"
@@ -114,145 +114,154 @@ collections:
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Value", name: "value", widget: "number" }
-          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
+      - label: "Curb Weight"
+        name: "curbweight"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}}"
+        fields:
+          - { label: "key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
+          
       - label: "maxSpeed"
         name: "maxSpeed"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Value", name: "value", widget: "number" }
-          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
       - label: "Range-230V"
-        name: "Range230V"
+        name: "range230Vs"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Value", name: "value", widget: "number" }
-          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
       - label: "Range-Lithium"
-        name: "RangeLithium"
+        name: "rangeLithium"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Value", name: "value", widget: "number" }
-          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
       - label: "chargingTime-230V"
         name: "chargingTime230V"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Value", name: "value", widget: "number" }
-          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
       - label: "chargingTime-Lithium"
         name: "chargingTimeLithium"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Value", name: "value", widget: "number" }
-          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
       - label: "chargingTime-Fast"
         name: "chargingTimeFast"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Value", name: "value", widget: "number" }
-          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
       - label: "battery-Capacity"
         name: "batteryCapacity"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Value", name: "value", widget: "number" }
-          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
       - label: "Seats"
         name: "seats"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Value", name: "value", widget: "number" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
 
       - label: "rating"
         name: "rating"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Result", name: "key", widget: "string" }
-          - { label: "Note", name: "value", widget: "number" }
+          - { label: "Result", name: "key", widget: "string", i18n: true }
+          - { label: "Note", name: "value", widget: "number", i18n: duplicate }
       - label: "guarantee"
         name: "guarantee"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Value", name: "value", widget: "number" }
-          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
       - label: "availability"
         name: "availability"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "From-When", name: "value", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "From-When", name: "value", widget: "string", i18n: true }
 
       - label: "subsidies"
         name: "subsidies"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Value", name: "value", widget: "number" }
-          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
       - label: "battery-guarantee"
         name: "batteryGuarantee"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Value", name: "value", widget: "number" }
-          - { label: "Weeks", name: "baseUnit", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "Weeks", name: "baseUnit", widget: "string", i18n: true }
       - label: "Car-Sizes"
         name: "carSizes"
         widget: "object"
         summary: "{{fields.height}}: {{fields.width}}: {{fields.length}}"
         fields:
-          - { label: "Key", name: "Key", widget: "string" }
-          - { label: "height", name: "height", widget: "string" }
-          - { label: "height-Value", name: "valueheight", widget: "number" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "height", name: "height", widget: "string", i18n: true }
+          - { label: "height-Value", name: "valueheight", widget: "number", i18n: duplicate }
 
-          - { label: "width", name: "width", widget: "string" }
-          - { label: "width-Value", name: "valuewidth", widget: "number" }
+          - { label: "width", name: "width", widget: "string", i18n: true }
+          - { label: "width-Value", name: "valuewidth", widget: "number", i18n: duplicate }
 
-          - { label: "length", name: "length", widget: "string" }
-          - { label: "length-Value", name: "valuelength", widget: "number" }
-          - { label: "wheelbase", name: "wheelbase", widget: "string" }
+          - { label: "length", name: "length", widget: "string", i18n: true }
+          - { label: "length-Value", name: "valuelength", widget: "number", i18n: duplicate }
+          - { label: "wheelbase", name: "wheelbase", widget: "string", i18n: true }
           - {
               label: "wheelbase-Value",
               name: "valuewheelbase",
               widget: "number",
             }
-          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
       - label: "loadingVolume"
         name: "loadingVolume"
         widget: "object"
         summary: "{{fields.height}}: {{fields.width}}: {{fields.length}}"
         fields:
-          - { label: "Key", name: "Key", widget: "string" }
-          - { label: "height", name: "height", widget: "string" }
-          - { label: "height-Value", name: "valueheight", widget: "number" }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "height", name: "height", widget: "string", i18n: true }
+          - { label: "height-Value", name: "valueheight", widget: "number", i18n: duplicate }
 
-          - { label: "width", name: "width", widget: "string" }
-          - { label: "width-Value", name: "valuewidth", widget: "number" }
+          - { label: "width", name: "width", widget: "string", i18n: true }
+          - { label: "width-Value", name: "valuewidth", widget: "number", i18n: duplicate }
 
-          - { label: "length", name: "length", widget: "string" }
-          - { label: "length-Value", name: "valuelength", widget: "number" }
-          - { label: "baseUnit", name: "baseUnit", widget: "string" }
+          - { label: "length", name: "length", widget: "string", i18n: true }
+          - { label: "length-Value", name: "valuelength", widget: "number", i18n: duplicate }
+          - { label: "baseUnit", name: "baseUnit", widget: "string", i18n: true }
