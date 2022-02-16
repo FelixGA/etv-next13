@@ -10,7 +10,7 @@ import { useState } from "react";
 
 export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
-  console.log(props.vehicles);
+  
   return (
     <>
       <Head>
