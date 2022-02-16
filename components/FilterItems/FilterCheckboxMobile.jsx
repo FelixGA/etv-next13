@@ -12,6 +12,7 @@ function FilterCheckboxMobile(props) {
       minRange >= 250 ? setIsChecked("ab 250 km") : null;
       minRange >= 500 ? setIsChecked("ab 500 km") : null;
     }
+
     let minWeight = state?.loadingWeights.map((el) => el.min).join(" ");
     if (props.checkbox.categoryName == "loadingWeight") {
       minWeight >= 500 ? setIsChecked("ab 500 kg") : null;
@@ -26,7 +27,9 @@ function FilterCheckboxMobile(props) {
       minvmax >= 400 ? setIsChecked("ab 400km/h") : null;
       minvmax >= 600 ? setIsChecked("ab 600km/h") : null;
     }
-    let minChargingTime = state?.chargingTime230Vs.map((el) => el.min).join(" ");
+    let minChargingTime = state?.chargingTime230Vs
+      .map((el) => el.min)
+      .join(" ");
     if (props.checkbox.categoryName == "chargingTime230Vs") {
       minChargingTime >= 1 ? setIsChecked("ab 1 Stunde") : null;
       minChargingTime >= 10 ? setIsChecked("ab 10 Stunde") : null;
