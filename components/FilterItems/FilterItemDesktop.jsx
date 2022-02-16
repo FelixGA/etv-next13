@@ -3,17 +3,38 @@ import Image from "next/image";
  
 import FilterCheckbox from "./FilterCheckbox";
 import { useStore } from "../store";
+import { motion, AnimatePresence } from "framer-motion";
+
+const variants = {
+  enter: {
+    y: -1000,
+    opacity: 0,
+  },
+  center: {
+    y: 0,
+    opacity: 1,
+  },
+  exit: {
+    y: -1000,
+    opacity: 0,
+  },
+};
+
 function FilterItemDesktop(props) {
   const item = props.item;
   const { state, dispatch } = useStore();
-
+  
+ 
   /* to render the four ranges */
   const rangesForCheckboxes = item.options.map((checkbox, index) => (
     <div
       onClick={() => {
         dispatch({
           type: checkbox.categoryName,
-          data: [{ min: checkbox.value, max: 99999 }],
+          data:
+            checkbox.categoryName == "price"
+              ? [{ min: checkbox.value, max: checkbox.max }]
+              : [{ min: checkbox.value, max: 99999 }],
         });
       }}
        key={index}
@@ -31,7 +52,7 @@ function FilterItemDesktop(props) {
   return (
     <>
       <div
-        className=" cursor-pointer "
+        className=" cursor-pointer relative z-50 bg-white w-full "
         onClick={() => {
           dispatch({
             type: "truncate",
@@ -39,8 +60,8 @@ function FilterItemDesktop(props) {
           });
         }}
       >
-        <div className="flex flex-row justify-between border-b py-4  w-full ">
-          <div className="flex flex-row pl-4 ">
+        <div className="flex flex-row justify-between border-b py-4 flex-1 bg-white  ">
+          <div className="flex flex-row pl-4  ">
             <div className="w-6 h-6 ml-4 ">
               <Image
                 src={item.image}
@@ -53,8 +74,8 @@ function FilterItemDesktop(props) {
               />
             </div>
             <div className="pl-4 my-auto ">
-              <h4 className=" font-bold text-[bg-blue-darker]">{item.title}</h4>{" "}
-            </div>{" "}
+              <h4 className=" font-bold text-blue-darker">{item.title}</h4>
+            </div>
           </div>
           <div className="flex flex-row  ">
             <span
@@ -73,19 +94,28 @@ function FilterItemDesktop(props) {
                   : "flex items-center w-6 mr-5 my-auto transition transform rotate-0 origin-center	 "
               }
             >
-              <MdKeyboardArrowDown size={25} />
+              <MdKeyboardArrowDown size={25} fill="#030F1C" />
             </div>
           </div>
         </div>
       </div>
-      <div
-        className={
-          state?.truncates == item.title ? "flex flex-col ml-8 " : "hidden"
-        }
-      >
-        {/* RENDERING THE FOUR RANGES */}
-        {rangesForCheckboxes}
-      </div>
+      <AnimatePresence initial={false}>
+        {state?.truncates == item.title &&(<motion.div
+        // key="modal"
+        variants={variants}
+        initial="enter"
+        animate="center"
+        exit="exit"
+        transition={{ type: "tween",duration: 0.2 }}
+        // transition={{  }}
+          className="flex flex-col ml-8 " 
+          
+        >
+          {/* RENDERING THE FOUR RANGES */}
+          {rangesForCheckboxes}
+        </motion.div>)}
+        
+      </AnimatePresence>
     </>
   );
 }

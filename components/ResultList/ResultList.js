@@ -86,16 +86,17 @@ const ResultList = (props) => {
   
   const getdisplayedCars = shownCars?.map((caritem, index) => {
     return (
-      <div className="container-product" key={index}>
-        <div className="product-icon"></div>
+      <div className="container-product w-full" key={index}>
+        {/* <div className="product-icon"></div> */}
         <CarCard caritem={caritem} />
       </div>
     );
   });
 
   return (
-    <div className="flex flex-col w-full   lg:w-full lg:m-2 bg-grey-extra lg:bg-white">
+    <div className="flex flex-col w-full   lg:w-full lg:m-2  lg:bg-white">
       {shownCars?.length === 0 ? showMoreMessage : getdisplayedCars}
+     
     </div>
   );
 };

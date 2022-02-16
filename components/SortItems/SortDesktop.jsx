@@ -45,8 +45,8 @@ function SortDesktop() {
     );
   });
   return (
-    <div className="hidden md:flex items-center bg-white border rounded-md mt-2 z-10 w-64">
-      <div className="flex flex-col ml-4 mt-2 items-start">
+    <div className=" hidden md:flex items-center bg-white border rounded-md mt-4 z-10 w-64 ">
+      <div className="flex flex-col ml-4  items-start">
         {getAllSortings}
       </div>
     </div>
