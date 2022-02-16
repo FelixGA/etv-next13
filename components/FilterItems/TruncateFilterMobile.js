@@ -25,7 +25,7 @@ function TruncateFilter() {
   const filtersData = [
     {
       id: 1,
-      category: "range230V",
+      category: "range230Vs",
       title: "Reichweite",
       image: image,
       options: [
@@ -156,7 +156,7 @@ function TruncateFilter() {
     {
       id: 4,
       title: "Aufbautyp",
-      category: "categorys",
+      category: "category",
       image: image5,
       options: [
         {

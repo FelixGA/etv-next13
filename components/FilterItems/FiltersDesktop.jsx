@@ -34,7 +34,7 @@ function FiltersDesktop() {
   const filtersData = [
     {
       id: 1,
-      category: "range230V",
+      category: "range230Vs",
       title: "Reichweite",
       image: image,
       options: [

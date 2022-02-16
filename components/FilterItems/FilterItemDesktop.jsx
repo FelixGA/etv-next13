@@ -23,7 +23,8 @@ const variants = {
 function FilterItemDesktop(props) {
   const item = props.item;
   const { state, dispatch } = useStore();
-
+  
+ 
   /* to render the four ranges */
   const rangesForCheckboxes = item.options.map((checkbox, index) => (
     <div
