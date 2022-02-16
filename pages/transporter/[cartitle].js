@@ -18,7 +18,7 @@ export default function Details(props) {
 
   /* carItem hook for the ONE car that it is displayed */
   const [carItem, SetCarItem] = useState(props.vehicle);
-/* for the view more hook */
+  /* for the view more hook */
   const [descriptionSize, SetDescriptionSize] = useState(true);
   return (
     <>
@@ -34,7 +34,6 @@ export default function Details(props) {
               </Link>
             </button>
           </div>
-          {/* {carItem?.src && ( */}
           <Image
             src={carItem?.src}
             alt={carItem?.title}
@@ -44,7 +43,6 @@ export default function Details(props) {
             objectFit="cover"
             className="rounded-l-lg"
           />
-          {/* )} */}
         </div>
         <div className="flex flex-col lg:w-1/2 ">
           {/* DESKTOP VERSION FOR DETAILS TABLE*/}

@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap"
+    "postbuild": "node next-sitemap"
   },
   "dependencies": {
     "@sergeymyssak/nextjs-sitemap": "^2.0.3",
@@ -21,6 +21,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
+    "simple-oauth2": "^4.3.0",
     "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss": "^3.0.22",
     "uuid": "^8.3.2",
