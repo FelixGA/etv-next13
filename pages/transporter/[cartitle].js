@@ -34,17 +34,17 @@ export default function Details(props) {
               </Link>
             </button>
           </div>
-          {carItem?.src && (
-            <Image
-              src={carItem?.src}
-              alt={carItem?.title}
-              width={195}
-              height={140}
-              layout="responsive"
-              objectFit="cover"
-              className="rounded-l-lg"
-            />
-          )}
+          {/* {carItem?.src && ( */}
+          <Image
+            src={carItem?.src}
+            alt={carItem?.title}
+            width={195}
+            height={140}
+            layout="responsive"
+            objectFit="cover"
+            className="rounded-l-lg"
+          />
+          {/* )} */}
         </div>
         <div className="flex flex-col lg:w-1/2 ">
           {/* DESKTOP VERSION FOR DETAILS TABLE*/}

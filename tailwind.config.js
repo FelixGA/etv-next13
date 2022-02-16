@@ -46,18 +46,7 @@ module.exports = {
       blur: {
         xs: "2px",
       },
-      /*  filter: {
-
-      } */
       colors: {
-        // white: {
-        //   lightest: "",
-        //   lighter: "",
-        //   light: "#F2F9FF",
-        //   dark: "",
-        //   darker: "",
-        //   darkest: "",
-        // },
         grey: {
           lightest: "#F2F2F2",
           lighter: "#E7EDF3",
@@ -125,5 +114,4 @@ module.exports = {
     extend: {},
   },
   plugins: [require("tailwind-scrollbar-hide")],
-  // plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
 };
