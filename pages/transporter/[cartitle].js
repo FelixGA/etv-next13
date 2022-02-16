@@ -146,10 +146,17 @@ export async function getStaticProps(context) {
   );
   let vehicles = await getContent("vehicles", context.locale);
   /*  get thw first 4 from this category for the slider */
-  vehicles =Object.entries(vehicles).filter(([key, value]) =>
-   value.category === vehicle.category ? value : null
-  ).slice(0, 4)[0];
-  vehicles.shift();
+  vehicles =Object.entries(vehicles).map(([key, value]) => {
+    return value;
+  });
+  vehicles = vehicles.filter((item, index) =>  item.category === vehicle.category);
+  // .filter(([key, value]) =>
+  //  value.category === vehicle.category ? value : null
+  // )
+  
+  // .slice(0, 4);
+  // vehicles.shift();
+  console.log("cars",vehicles);
   
   if (!vehicle) {
     return {

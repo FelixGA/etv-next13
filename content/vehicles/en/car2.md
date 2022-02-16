@@ -60,24 +60,24 @@ batteryGuarantee:
   value: 123312
   baseUnit: eqfef
 carSizes:
-  width: qwer
-  length: qwewqe
-  height: qwdqwfq
-  wheelbase: qrqwr
-  valuewidth: 121
-  baseUnit: werqwrqer
-  valuelength: 123
+  width: Breite
+  length: Lange
+  height: hohe
+  wheelbase: Radstand
+  valuewidth: 1210
+  baseUnit: cm
+  valuelength: 1230
   valueheight: 123
-  valuewheelbase: 12318
-  Key: "12312"
+  valuewheelbase: 831
+  Key: Farzeug Masse
 loadingVolume:
   Key: qwqwf
-  height: wdfwf
-  valueheight: 321312
-  width: wefwef
-  valuewidth: 13120
-  length: efwefwef
-  valuelength: 123123
-  baseUnit: eewqfeqwf
+  height: hohe
+  valueheight: 321
+  width: Breite
+  valuewidth: 131
+  length: Lange
+  valuelength: 123
+  baseUnit: cm
 ---
 qergerge2rgwvwdv

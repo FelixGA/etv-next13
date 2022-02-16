@@ -1,6 +1,6 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
-import { v4 as uuidv4 } from "uuid";
+ 
 import FilterCheckbox from "./FilterCheckbox";
 import { useStore } from "../store";
 function FilterItemDesktop(props) {
@@ -16,7 +16,7 @@ function FilterItemDesktop(props) {
           data: [{ min: checkbox.value, max: 99999 }],
         });
       }}
-      key={uuidv4()}
+       key={index}
       className="mt-4 flex cursor-pointer py-2 "
     >
       <FilterCheckbox checkbox={checkbox} />

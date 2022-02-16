@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from "uuid";
+ 
 import { useState, useEffect } from "react";
 const TechnicalDetails = ({ carItem }) => {
   const [basics, SetBasics] = useState([]);
@@ -16,30 +16,24 @@ const TechnicalDetails = ({ carItem }) => {
       carItem.chargingTime230V,
       carItem.chargingTimeLithium,
       carItem.chargingTimeFast,
-  
-
-    ];
-
-    SetBasics(basics);
-
-    const details = [
+  ];
+  SetBasics(basics);
+  const details = [
       carItem.subsidies,
       carItem.batteryGuarantee,
       carItem.guarantee,
       carItem.availability,
-   
     ];
    SetDetails(details);
-
-    const vehichleDimentions = [
+  const vehichleDimentions = [
       carItem.loadingVolume,
       carItem.carSizes,
-   
-    ];
+     
+  ];
 
     SetVehichleDimentions(vehichleDimentions);
   }, [carItem]);
-
+console.log(vehichleDimentions)
   return (
     <div className="w-full flex flex-col justify-center items-start lg:pt-12  px-4 py-8 lg:px-24  ">
       <h3 className="text-black-darkest font-bold py-2 lg:text-3xl for-print	">
@@ -81,17 +75,21 @@ const TechnicalDetails = ({ carItem }) => {
           <div className="flex flex-col w-full text-[#2C3F53] ">
             {vehichleDimentions?.map((item, index) => (
               <div
-                key={uuidv4()}
+                 key={index}
                 className={
                   index % 2 == 0
                     ? "flex flex-row w-full bg-[#F2F5F8] "
                     : "flex flex-row w-full "
                 }
               >
-                <p className="w-1/2 py-1">{item.key}</p>
+                <p className="w-1/2 py-1">{item.Key}</p>
                 <p className="w-1/2 py-1">
                   {item.value} {item.baseUnit}
                 </p>
+                <p className="w-1/2 py-1">
+                  {item.value} {item.baseUnit}
+                </p>
+               
               </div>
             ))}
             <h3 className="text-black-darkest font-bold pt-8 pb-4">
@@ -99,7 +97,7 @@ const TechnicalDetails = ({ carItem }) => {
           </h3>
             {details?.map((item, index) => (
               <div
-                key={uuidv4()}
+                 key={index}
                 className={
                   index % 2 == 0
                     ? "flex flex-row w-full bg-[#F2F5F8] "

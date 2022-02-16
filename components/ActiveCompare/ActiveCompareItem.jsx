@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { v4 as uuidv4 } from "uuid";
+ 
 function ActiveCompareItem(props) {
   const myLoader = ({ src }) => {
     return src;
@@ -7,7 +7,7 @@ function ActiveCompareItem(props) {
   const carsData = props.comparedCars.map((item, index) => (
     <div
       className="data-content-categories w-full  lg:w-64 xl:w-88 2xl:w-[380px] "
-      key={uuidv4()}
+       key={index}
     >
       <div className="w-48 h-36 lg:hidden pl-8">
         <Image
