@@ -2,6 +2,7 @@ backend:
   name: github
   repo: ari-motors-team/elektrotransporter-vergleich
   branch: dev
+  api_root: https://preview-elektrotransporter-vergleich.vercel.app/api
   # base_url: https://preview-elektrotransporter-vergleich.vercel.app
   # auth_endpoint: api/auth
   # auth_type: pkce
