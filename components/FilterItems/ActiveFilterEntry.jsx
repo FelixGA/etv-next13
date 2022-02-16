@@ -8,9 +8,9 @@ import image6 from "../../public/images/more-svgrepo-com.png";
 import { AiOutlineClose } from "react-icons/ai";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";
-function ActiveFilterEntry() {
+function ActiveFilterEntry(props) {
   const { state, dispatch } = useStore();
-  const [showAll, setShowAll] = useState(true);
+  // const [showAll, setShowAll] = useState(true);
 
   useEffect(() => {
     if (
@@ -20,7 +20,7 @@ function ActiveFilterEntry() {
       state?.maxSpeeds.length ||
       state?.chargingTime230Vs.length
     ) {
-      setShowAll(true);
+      props.setShowAll(true);
     }
   }, [
     state?.prices,
@@ -82,8 +82,8 @@ function ActiveFilterEntry() {
   return (
     <div
       className={
-        showAll
-          ? "grid gap-2 w-full grid-cols-1 sm:grid-cols-2  lg:grid-cols-4  xl:filter-grid  px-2 items-end"
+        props.showAll
+          ? "grid gap-2 w-full grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 bg-red-500 xl:filter-grid  px-2 items-end pt-12 md:pt-2 "
           : "hidden"
       }
     >
@@ -134,7 +134,7 @@ function ActiveFilterEntry() {
           state?.maxSpeeds.length ||
           state?.chargingTime230Vs.length ||
           state?.categorys.length
-            ? " flex items-end bg-green-500"
+            ? " flex items-end "
             : "hidden"
         }
       >
@@ -142,7 +142,7 @@ function ActiveFilterEntry() {
         <span
           className="text-sm  cursor-pointer"
           onClick={() => {
-            setShowAll(!showAll);
+            props.setShowAll(!props.showAll);
             dispatch({
               type: "Range230V",
               data: [],

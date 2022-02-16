@@ -8,23 +8,24 @@ import ActiveFilterEntry from "./ActiveFilterEntry";
 function ActiveFilterBlock() {
   const { state, dispatch } = useStore();
   const [clicked, setClicked] = useState(true);
+  const [showAll, setShowAll] = useState(false);
 
   return (
     <div className="w-full relative">
       {/* ACTIVE FILTERS */}
-      <div className="flex flex-grow justify-between h-[144px] flex-1 bg-red-500">
-        <ActiveFilterEntry />
+      <div className={showAll? "flex flex-grow justify-between h-[141px] flex-1 ": "hidden"}>
+        <ActiveFilterEntry showAll={showAll} setShowAll={setShowAll}/>
       </div>
 
       {/* HEADING + SORTING */}
       <div className="flex flex-row flex-1 justify-between relative">
-        <div className=" relative   w-full ">
-          <h1 className="pl-3 py-8 text-2xl md:text-3xl text-blue-extra ">
+        <div className={showAll?"w-full ":"flex items-end flex-1 h-32 bg-red-500"}>
+          <h1 className="pl-3  text-2xl md:text-3xl text-blue-extra ">
             Die besten E-Transporter nach Ihrer Auswahl
           </h1>
         </div>
         <div
-          className="hidden md:flex flex-row  md:mt-20 absolute right-2 w-fit cursor-pointer bg-yellow-500"
+          className="hidden md:flex flex-row  md:mt-24 absolute right-2 w-fit cursor-pointer "
           onClick={() => {
             setClicked(!clicked);
           }}
@@ -44,7 +45,7 @@ function ActiveFilterBlock() {
           </div>
         </div>
         {/* SORT DESKTOP */}
-        <div className={clicked ? "hidden" : "flex  absolute top-16 right-4 "}>
+        <div className={clicked ? "hidden" : "flex  absolute mt-28 right-0 "}>
           <SortDesktop />
         </div>
       </div>

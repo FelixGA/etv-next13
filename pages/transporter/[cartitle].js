@@ -94,7 +94,7 @@ export default function Details(props) {
       </div>
       {/* technical details section */}
 
-      {/* <TechnicalDetails carItem={carItem} /> */}
+      <TechnicalDetails carItem={carItem} />
       {/* description section */}
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
         <div className=" lg:w-1/3 w-full m-auto relative  ">
@@ -113,7 +113,7 @@ export default function Details(props) {
         </div>
         <div className=" lg:w-2/3 flex flex-col flex-wrap lg:px-6">
           <h3 className="w-full py-4 text-black-darkest text-2xl font-bold ">
-            {/* Testbericht{"\n"} {cartitle} */}
+            Testbericht{"\n"} {cartitle}
           </h3>
           <p>{carItem?.description}</p>
           <button className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden">
@@ -126,7 +126,7 @@ export default function Details(props) {
       <Articles carItem={carItem} />
       {/* slider  */}
 
-      {/* <TopSlider getCars={getCars} /> */}
+      <TopSlider getCars={getCars} />
       {/*sticky popup  */}
       <PrintPopUp carItem={carItem} />
     </>
