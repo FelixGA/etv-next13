@@ -4,10 +4,10 @@ import ActiveCompareImage from "../components/ActiveCompare/ActiveCompareImage";
 import Link from "next/link";
 import ActiveCompareButton from "../components/ActiveCompare/ActiveCompareButton";
 
-function activecompare() {
+export default function Activecompare(props) {
   const { state, dispatch } = useStore();
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
-  
+
   return (
     <div className="wrapper">
       <div className="heading+btn  pt-8 pb-12 pl-[5vw]">
@@ -196,5 +196,3 @@ function activecompare() {
     </div>
   );
 }
-
-export default activecompare;

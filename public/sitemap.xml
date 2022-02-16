@@ -9,16 +9,6 @@
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/activecompare" />
     </url>
     <url>
-        <loc>https://www.elektrotransporter-vergleich.com/api/auth</loc>
-        <lastmod>2022-02-16</lastmod>
-		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/api/auth" />
-    </url>
-    <url>
-        <loc>https://www.elektrotransporter-vergleich.com/api/callback</loc>
-        <lastmod>2022-02-16</lastmod>
-		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/api/callback" />
-    </url>
-    <url>
         <loc>https://www.elektrotransporter-vergleich.com/comparePage</loc>
         <lastmod>2022-02-16</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/comparePage" />
