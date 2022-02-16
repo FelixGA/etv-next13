@@ -136,7 +136,7 @@ collections:
               label: "baseUnit",
               name: "baseUnit",
               widget: "string",
-              i18n: true,
+              i18n: duplicate,
             }
       - label: "maxSpeed"
         name: "maxSpeed"
@@ -320,7 +320,7 @@ collections:
               label: "height",
               name: "height",
               widget: "string",
-              i18n: duplicate,
+              i18n: true,
             }
           - {
               label: "height-Value",
@@ -334,7 +334,7 @@ collections:
               label: "width-Value",
               name: "valuewidth",
               widget: "number",
-              i18n: true,
+              i18n: duplicate,
             }
 
           - { label: "length", name: "length", widget: "string", i18n: true }
@@ -342,7 +342,7 @@ collections:
               label: "length-Value",
               name: "valuelength",
               widget: "number",
-              i18n: true,
+              i18n: duplicate,
             }
           - {
               label: "wheelbase",
@@ -354,13 +354,13 @@ collections:
               label: "wheelbase-Value",
               name: "valuewheelbase",
               widget: "number",
-              i18n: true,
+              i18n: duplicate,
             }
           - {
               label: "baseUnit",
               name: "baseUnit",
               widget: "string",
-              i18n: true,
+              i18n: duplicate,
             }
       - label: "loadingVolume"
         name: "loadingVolume"
@@ -374,7 +374,7 @@ collections:
               label: "height-Value",
               name: "valueheight",
               widget: "number",
-              i18n: true,
+              i18n: duplicate,
             }
 
           - { label: "width", name: "width", widget: "string", i18n: true }
@@ -382,7 +382,7 @@ collections:
               label: "width-Value",
               name: "valuewidth",
               widget: "number",
-              i18n: true,
+              i18n: duplicate,
             }
 
           - { label: "length", name: "length", widget: "string", i18n: true }
@@ -390,11 +390,11 @@ collections:
               label: "length-Value",
               name: "valuelength",
               widget: "number",
-              i18n: true,
+              i18n: duplicate,
             }
           - {
               label: "baseUnit",
               name: "baseUnit",
               widget: "string",
-              i18n: true,
+              i18n: duplicate,
             }
