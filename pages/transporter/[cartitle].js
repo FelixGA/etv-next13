@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import { useState} from "react";
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
 import CarCardDetailsDesktop from "../../components/ResultList/CarCardDetailsDesktop";
@@ -145,19 +144,12 @@ export async function getStaticProps(context) {
     context.locale
   );
   let vehicles = await getContent("vehicles", context.locale);
-  /*  get thw first 4 from this category for the slider */
+  /*  get the first 4 from this category for the slider */
   vehicles =Object.entries(vehicles).map(([key, value]) => {
     return value;
   });
-  vehicles = vehicles.filter((item, index) =>  item.category === vehicle.category);
-  // .filter(([key, value]) =>
-  //  value.category === vehicle.category ? value : null
-  // )
-  
-  // .slice(0, 4);
-  // vehicles.shift();
-  console.log("cars",vehicles);
-  
+  vehicles = vehicles.filter((item, index) =>  item.category === vehicle.category).slice(0, 4);
+ 
   if (!vehicle) {
     return {
       notFound: true,

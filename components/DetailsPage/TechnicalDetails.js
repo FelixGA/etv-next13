@@ -1,4 +1,3 @@
- 
 import { useState, useEffect } from "react";
 const TechnicalDetails = ({ carItem }) => {
   const [basics, SetBasics] = useState([]);
