@@ -83,7 +83,7 @@ function ActiveFilterEntry() {
     <div
       className={
         showAll
-          ? "grid gap-2 w-full grid-cols-1 mt-12 md:mt-0 sm:grid-cols-2  lg:grid-cols-4  xl:filter-grid  px-2"
+          ? "grid gap-2 w-full grid-cols-1 sm:grid-cols-2  lg:grid-cols-4  xl:filter-grid  px-2 items-end"
           : "hidden"
       }
     >
@@ -91,7 +91,7 @@ function ActiveFilterEntry() {
         <div
           className={
             item.value !== null
-              ? " w-full h-10 py-2  bg-grey-lighter  flex justify-between items-center "
+              ? " flex-1 h-10 py-2  bg-grey-lighter flex justify-between items-center "
               : "hidden"
           }
           key={item.id}
@@ -134,7 +134,7 @@ function ActiveFilterEntry() {
           state?.maxSpeeds.length ||
           state?.chargingTime230Vs.length ||
           state?.categorys.length
-            ? "w-fit flex items-end"
+            ? " flex items-end bg-green-500"
             : "hidden"
         }
       >

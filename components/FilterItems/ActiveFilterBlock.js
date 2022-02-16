@@ -1,41 +1,37 @@
-import Image from "next/image";
 import { useState } from "react";
-import filterImage from "../../public/images/filter-icon.png";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useStore } from "../store";
 import SortDesktop from "../SortItems/SortDesktop";
 import ActiveFilterEntry from "./ActiveFilterEntry";
-import FiltersMobile from "./FiltersMobile";
 
 function ActiveFilterBlock() {
   const { state, dispatch } = useStore();
   const [clicked, setClicked] = useState(true);
 
-
   return (
-    <div className=" w-full  relative ">
-     
+    <div className="w-full relative">
       {/* ACTIVE FILTERS */}
-      <div className="flex flex-grow justify-between md:pt-[68px] pt-0  flex-1">
+      <div className="flex flex-grow justify-between h-[144px] flex-1 bg-red-500">
         <ActiveFilterEntry />
       </div>
 
       {/* HEADING + SORTING */}
       <div className="flex flex-row flex-1 justify-between relative">
-        <div className="mt-10 relative bottom-2 md:bottom-10 2xl:bottom-2  w-full ">
-          <h1 className="pl-3 text-2xl md:text-3xl text-blue-extra ">
+        <div className=" relative   w-full ">
+          <h1 className="pl-3 py-8 text-2xl md:text-3xl text-blue-extra ">
             Die besten E-Transporter nach Ihrer Auswahl
           </h1>
         </div>
         <div
-          className="hidden md:flex flex-row items-start mt-10 absolute right-2 w-fit   cursor-pointer "
+          className="hidden md:flex flex-row  md:mt-20 absolute right-2 w-fit cursor-pointer bg-yellow-500"
           onClick={() => {
             setClicked(!clicked);
-            
           }}
         >
-          <h4 className=" ">{`Sortieren nach: ${state?.activeSortValues}`} </h4>
+          <h4 className="sort-heading ">
+            {`Sortieren nach: ${state?.activeSortValues}`}{" "}
+          </h4>
 
           <div
             className={
