@@ -25,7 +25,7 @@ function TruncateFilter() {
   const filtersData = [
     {
       id: 1,
-      category: "Range230Vs",
+      category: "range230Vs",
       title: "Reichweite",
       image: image,
       options: [
@@ -33,25 +33,25 @@ function TruncateFilter() {
           value: 150,
           name: "ab 150 km",
           id: 1,
-          categoryName: "Range230V",
+          categoryName: "range230Vs",
         },
         {
           id: 2,
           name: "ab 200 km",
           value: 200,
-          categoryName: "Range230V",
+          categoryName: "range230Vs",
         },
         {
           id: 3,
           name: "ab 250 km",
           value: 250,
-          categoryName: "Range230V",
+          categoryName: "range230Vs",
         },
         {
           id: 4,
           name: "ab 500 km",
           value: 500,
-          categoryName: "Range230V",
+          categoryName: "range230Vs",
         },
       ],
     },

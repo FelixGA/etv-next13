@@ -1,8 +1,4 @@
 ---
-title: car
-price: 60000
-description: dsfbsgb
-src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
-preview: qergwetgetg
+src: /images/Stama-Maestro-Front-300x200.jpg
 ---
 qergerge2rg

@@ -10,7 +10,7 @@ const ResultList = (props) => {
 
   /* useEffect to apply the filters */
   useEffect(() => {
-    if (!state?.prices || !state?.loadingWeights || !state?.Range230Vs || !state?.maxSpeeds || !state?.chargingTime230Vs || props.sortedCars?.length === 0)
+    if (!state?.prices || !state?.loadingWeights || !state?.range230Vs || !state?.maxSpeeds || !state?.chargingTime230Vs || props.sortedCars?.length === 0)
       return;
     let filteredCars = props.sortedCars?.filter((car) => {
       if (
@@ -30,9 +30,9 @@ const ResultList = (props) => {
       )
         return false;
       if (
-        state?.Range230Vs?.length > 0 &&
-        state?.Range230Vs?.every(
-          (entry) => entry.min > car.Range230V.value || entry.max < car.Range230V.value
+        state?.range230Vs?.length > 0 &&
+        state?.range230Vs?.every(
+          (entry) => entry.min > car.range230V.value || entry.max < car.range230V.value
         )
       )
         return false;
@@ -66,7 +66,7 @@ const ResultList = (props) => {
   }, [
     state?.prices,
     state?.loadingWeights,
-    state?.Range230Vs,
+    state?.range230Vs,
     state?.maxSpeeds,
     state?.chargingTime230Vs,
     state?.categorys,

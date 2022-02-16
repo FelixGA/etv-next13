@@ -5,8 +5,8 @@ const reducer = (state, action) => {
     /* filter */
     case "price":
       return { ...state, prices: action.data };
-    case "Range230V":
-      return { ...state, Range230Vs: action.data };
+    case "range230Vs":
+      return { ...state, range230Vs: action.data };
     case "loadingWeight":
       return { ...state, loadingWeights: action.data };
     case "maxSpeed":
@@ -38,7 +38,7 @@ const reducer = (state, action) => {
 
 const initialState = {
   prices: [],
-  Range230Vs: [],
+  range230Vs: [],
   loadingWeights: [],
   maxSpeeds: [],
   chargingTime230Vs: [],

@@ -44,7 +44,7 @@ collections:
         i18n: true
         required: false
         fields:
-          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Name", name: "name", widget: "string", i18n: true }
           - { label: "Markdown", name: "markdown", widget: "markdown" }
 
   - label: "Blog"
@@ -139,7 +139,7 @@ collections:
               i18n: duplicate,
             }
       - label: "Range-230V"
-        name: "Range230V"
+        name: "range230Vs"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         i18n: true
@@ -153,7 +153,7 @@ collections:
               i18n: duplicate,
             }
       - label: "Range-Lithium"
-        name: "RangeLithium"
+        name: "rangeLithium"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}}"
         i18n: true

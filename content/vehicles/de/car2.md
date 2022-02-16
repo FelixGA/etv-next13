@@ -1,8 +1,5 @@
 ---
-title: car2
-price: 20000
-description: dsfbsgbwdcw
-src: /images/ARI_802_Personenfahrzeug_Frontansicht_Garage_56dad4380e.jpg
-preview: qergwetgetgwdvwrv
+price: 60000
+src: /images/Maxus-eDeliver-3-Front-2-300x200.jpg
 ---
 qergerge2rgwvwdv

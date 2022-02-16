@@ -5,8 +5,8 @@ function FilterCheckboxMobile(props) {
   const { state, dispatch } = useStore();
   const [isChecked, setIsChecked] = useState("");
   useEffect(() => {
-    let minRange = state?.Range230Vs.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "Range230V") {
+    let minRange = state?.range230Vs.map((el) => el.min).join(" ");
+    if (props.checkbox.categoryName == "range230Vs") {
       minRange >= 150 ? setIsChecked("ab 150 km") : null;
       minRange >= 200 ? setIsChecked("ab 200 km") : null;
       minRange >= 250 ? setIsChecked("ab 250 km") : null;
@@ -41,7 +41,7 @@ function FilterCheckboxMobile(props) {
       categories == "Kasten" ? setIsChecked("Kasten") : null;
     }
   }, [
-    state?.Range230Vs,
+    state?.range230Vs,
     state?.loadingWeights,
     state?.maxSpeeds,
     state?.chargingTime230Vs,

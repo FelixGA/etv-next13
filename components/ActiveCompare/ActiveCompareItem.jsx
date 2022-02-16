@@ -57,14 +57,14 @@ function ActiveCompareItem(props) {
       </div>
       <div className="second-category h-10 bg-[#F2F5F8] w-full flex items-center">
         <h3 className="second-category-title text-sm lg:text-lg font-medium text-[#2C3F53] pl-8">
-          {item.Range230V.value} km
+          {item.range230V.value} km
         </h3>
       </div>
       <div className="third-category h-10">
         <h3 className="third-category-title text-sm lg:text-lg h-10 pl-8 w-full flex items-center text-[#2C3F53]">
           {item.loadingWeight.value} kg
         </h3>
-      </div>
+      </div>P{}
       <div className="forth-category h-10">
         <h3 className="forth-category-title text-sm lg:text-lg h-10 pl-8 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center">
           {item.chargingTime230V.value}
