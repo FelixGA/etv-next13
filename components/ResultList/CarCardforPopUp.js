@@ -5,18 +5,19 @@ import { useStore } from "../store";
 function CarCardforPopUp(props) {
  
   const { state, dispatch } = useStore();
-  
   return (
     <div className="w-[80%] md:w-full relative ">
       <div className="w-16 md:min-w-36 md:w-full">
         <Image
           className=" md:rounded-md brightness-50"
+         
           src={props.selectedCar.pic}
           alt="picture"
           objectFit="cover"
           width={228.97}
           height={111}
           layout="responsive"
+           
         />
       </div>
       {/* <div className="flex  w-full md:hidden">

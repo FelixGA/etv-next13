@@ -15,7 +15,7 @@ function ActiveFilterEntry(props) {
   useEffect(() => {
     if (
       state?.prices.length ||
-      state?.Range230Vs.length ||
+      state?.range230Vs.length ||
       state?.loadingWeights.length ||
       state?.maxSpeeds.length ||
       state?.chargingTime230Vs.length
@@ -24,7 +24,7 @@ function ActiveFilterEntry(props) {
     }
   }, [
     state?.prices,
-    state?.Range230Vs,
+    state?.range230Vs,
     state?.loadingWeights,
     state?.maxSpeeds,
     state?.chargingTime230Vs,
@@ -40,8 +40,8 @@ function ActiveFilterEntry(props) {
     },
     {
       id: 2,
-      value: state?.Range230Vs.length
-        ? state?.Range230Vs.map((el) => "ab " + el.min).join("") + " km"
+      value: state?.range230Vs.length
+        ? state?.range230Vs.map((el) => "ab " + el.min).join("") + " km"
         : null,
       image: image,
     },
@@ -104,7 +104,7 @@ function ActiveFilterEntry(props) {
               width={24}
               height={28}
               layout="responsive"
-              unoptimized={true}
+               
             />
           </div>
           <div className="text-md">{item.value}</div>
@@ -112,7 +112,7 @@ function ActiveFilterEntry(props) {
           <div
             onClick={() => {
               if (item.id === 1) dispatch({ type: "price", data: [] });
-              if (item.id === 2) dispatch({ type: "Range230V", data: [] });
+              if (item.id === 2) dispatch({ type: "range230Vs", data: [] });
               if (item.id === 3) dispatch({ type: "loadingWeight", data: [] });
               if (item.id === 4) dispatch({ type: "maxSpeed", data: [] });
               if (item.id === 5) dispatch({ type: "chargingTime230V", data: [] });
@@ -128,7 +128,7 @@ function ActiveFilterEntry(props) {
       {/* REMOVE ALL FILTERS */}
       <div
         className={
-          state?.Range230Vs.length ||
+          state?.range230Vs.length ||
           state?.prices.length ||
           state?.loadingWeights.length ||
           state?.maxSpeeds.length ||
@@ -144,7 +144,7 @@ function ActiveFilterEntry(props) {
           onClick={() => {
             props.setShowAll(!props.showAll);
             dispatch({
-              type: "Range230V",
+              type: "range230Vs",
               data: [],
             });
             dispatch({

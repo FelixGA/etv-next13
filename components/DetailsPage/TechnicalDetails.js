@@ -1,39 +1,38 @@
-import { v4 as uuidv4 } from "uuid";
 import { useState, useEffect } from "react";
 const TechnicalDetails = ({ carItem }) => {
   const [basics, SetBasics] = useState([]);
   const [vehichleDimentions, SetVehichleDimentions] = useState([]);
-
+  const [details, SetDetails] = useState([]);
+//console.log(carItem)
   /* to get the new data in case they are updated */
   /* get two subsets of the car properties to map them */
   useEffect(() => {
     const basics = [
-      carItem.Range230V,
+      carItem.range230V,
+      carItem.rangeLithium,
       carItem.loadingWeight,
       carItem.maxSpeed,
-      carItem.chargingTime230V[0],
+      carItem.chargingTime230V,
+      carItem.chargingTimeLithium,
+      carItem.chargingTimeFast,
+  ];
+  SetBasics(basics);
+  const details = [
       carItem.subsidies,
-      carItem.chargingTime230V[2],
-      carItem.batteryGarantie,
+      carItem.batteryGuarantee,
       carItem.guarantee,
+      carItem.availability,
     ];
-
-    SetBasics(basics);
-    const vehichleDimentions = [
-      carItem.loadingHeight,
+   SetDetails(details);
+  const vehichleDimentions = [
       carItem.loadingVolume,
-      carItem.seats,
-      carItem.height,
-      carItem.width,
-      carItem.length,
-      carItem.wheelbase,
-      carItem.loadArea,
-      carItem.curbWeight,
-    ];
+      carItem.carSizes,
+     
+  ];
 
     SetVehichleDimentions(vehichleDimentions);
   }, [carItem]);
-
+console.log(vehichleDimentions)
   return (
     <div className="w-full flex flex-col justify-center items-start lg:pt-12  px-4 py-8 lg:px-24  ">
       <h3 className="text-black-darkest font-bold py-2 lg:text-3xl for-print	">
@@ -61,10 +60,11 @@ const TechnicalDetails = ({ carItem }) => {
               >
                 <p className="w-1/2 py-1">{item.key}</p>
                 <p className="w-1/2 py-1">
-                  {item.value} {item.baseUnit} {item.type}
+                  {item.value} {item.baseUnit} 
                 </p>
               </div>
             ))}
+            
           </div>
         </section>
         <section className="w-full lg:w-1/2 lg:px-2 lg:pl-6 ">
@@ -74,7 +74,47 @@ const TechnicalDetails = ({ carItem }) => {
           <div className="flex flex-col w-full text-[#2C3F53] ">
             {vehichleDimentions?.map((item, index) => (
               <div
-                key={uuidv4()}
+                 key={index}
+                className={
+                  index % 2 == 0
+                    ? "flex flex-row w-full bg-[#F2F5F8] "
+                    : "flex flex-row w-full "
+                }
+              >
+                <p className="w-1/2 py-1">{item.Key}</p>
+                <p className="w-1/2 py-1">
+                  {item.height}:  {item.valueheight}  {item.baseUnit}
+                </p>
+                <p className="w-1/2 py-1">
+                  {item.width}:  {item.valuewidth}  {item.baseUnit}
+                </p>
+                <p className="w-1/2 py-1">
+                  {item.length}:  {item.valuelength}  {item.baseUnit}
+                </p>
+                
+               
+              </div>
+            ))} <div
+            className="
+               flex flex-row w-full bg-[#F2F5F8] "
+          >
+            <p className="w-1/2 py-1 ">{carItem.carSizes.wheelbase}:</p>
+            <p className="w-1/2 py-1">{carItem.carSizes.valuewheelbase} cm</p>
+          </div>
+          <div
+              className="
+                 flex flex-row w-full bg-[#F2F5F8] "
+            >
+              <p className="w-1/2 py-1 ">Class:</p>
+              <p className="w-1/2 py-1">{carItem.typeClass}</p>
+            </div>
+
+            <h3 className="text-black-darkest font-bold pt-8 pb-4">
+            Details
+          </h3>
+            {details?.map((item, index) => (
+              <div
+                 key={index}
                 className={
                   index % 2 == 0
                     ? "flex flex-row w-full bg-[#F2F5F8] "
@@ -91,6 +131,6 @@ const TechnicalDetails = ({ carItem }) => {
         </section>
       </div>
     </div>
-  );
+ );
 };
 export default TechnicalDetails;

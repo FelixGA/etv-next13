@@ -1,10 +1,10 @@
-import "../styles/globals.css";
-import App from "next/app";
 import Layout from "../components/Layout";
 import ErrorBoundary from "../components/ErrorBoundary";
 import Head from "next/head";
 import { StoreProvider } from "/components/store";
-function MyApp({ Component, pageProps }) {
+import "/styles/globals.css";
+
+export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -40,10 +40,3 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
-MyApp.getInitialProps = async (appContext) => {
-  // calls page's `getInitialProps` and fills `appProps.pageProps`
-  const appProps = await App.getInitialProps(appContext);
-
-  return { ...appProps };
-};
-export default MyApp;

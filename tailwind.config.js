@@ -46,25 +46,16 @@ module.exports = {
       blur: {
         xs: "2px",
       },
-      /*  filter: {
-
-      } */
       colors: {
-        // white: {
-        //   lightest: "",
-        //   lighter: "",
-        //   light: "#F2F9FF",
-        //   dark: "",
-        //   darker: "",
-        //   darkest: "",
-        // },
         grey: {
           lightest: "#F2F2F2",
           lighter: "#E7EDF3",
           light: "#CCCCCC",
           dark: "#6e6e6e",
           darker: "#4e4e4e",
+          moredark: "#415264",
           darkest: "#212121",
+          superdark: "#030F1C",
           border: "#D0DDEA",
         },
         yellow: {
@@ -85,14 +76,6 @@ module.exports = {
           darkest: "#5A3DF5",
           extra: "#2c3f53",
         },
-        black: {
-          lightest: "#415264",
-          lighter: "",
-          light: "",
-          dark: "#030F1C",
-          darker: "",
-          darkest: "",
-        },
         orange: {
           lightest: "",
           lighter: "#FFAB00",
@@ -110,20 +93,14 @@ module.exports = {
           darkest: "",
         },
       },
-
       spacing: {
         18: "4.5rem",
       },
-      zIndex: {},
       zIndex: {
         "-20": "-20",
         "-10": "-10",
       },
     },
   },
-  variants: {
-    extend: {},
-  },
   plugins: [require("tailwind-scrollbar-hide")],
-  // plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
 };

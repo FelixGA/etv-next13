@@ -52,7 +52,7 @@ const Footer = () => {
             src="/images/etv-logo-final.png"
             width={60}
             height={40}
-            unoptimized={true}
+             
           />
           <p className="text-blue-dark text-base font-bold leading-4">
             {" "}

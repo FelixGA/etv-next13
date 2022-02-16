@@ -51,15 +51,15 @@ function CarCard(props) {
           <div className=" xs:w-full  ">
             <Link href={`/transporter/${carItem.title}`} passHref>
               <a className=" flex flex-1">
-                <Image
-                  loader={myLoader}
+              {carItem?.src && (  <Image
+                  
                   src={carItem.src}
                   alt={carItem.title}
                   width={350}
                   height={255}
                   objectFit="cover"
                   className="rounded-l-lg"
-                />
+                />)}
               </a>
             </Link>
           </div>

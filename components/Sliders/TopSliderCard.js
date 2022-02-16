@@ -66,7 +66,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 //   },
 // ];
 const TopSliderCard = (props) => {
-  
+ 
 
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
     <div className="min-w-64 mr-2 pl-6" key={caritem.index}>
@@ -81,7 +81,7 @@ const TopSliderCard = (props) => {
               width={264}
               height={244}
               layout="responsive"
-              unoptimized={true}
+               
             />
           </a>
         </Link>

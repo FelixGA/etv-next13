@@ -30,7 +30,7 @@ const Header = () => {
               width={80}
               height={60}
               className="logo"
-              unoptimized={true}
+               
               objectFit="cover"
               layout="responsive"
             />
@@ -69,7 +69,7 @@ const Header = () => {
                 width={18}
                 height={18}
                 layout="responsive"
-                unoptimized={true}
+                 
                 objectFit="cover"
               />
             </div>

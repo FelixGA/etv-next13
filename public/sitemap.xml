@@ -1,9 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>undefined</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-14T14:25:26.021Z</lastmod></url>
-<url><loc>undefined/activecompare</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-14T14:25:26.055Z</lastmod></url>
-<url><loc>undefined/comparePage</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-14T14:25:26.055Z</lastmod></url>
-<url><loc>undefined/homepage</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-14T14:25:26.055Z</lastmod></url>
-<url><loc>undefined/de</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-14T14:25:26.055Z</lastmod></url>
-<url><loc>undefined/en</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-02-14T14:25:26.055Z</lastmod></url>
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://www.elektrotransporter-vergleich.com/activecompare</loc>
+        <lastmod>2022-02-16</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/activecompare" />
+    </url>
+    <url>
+        <loc>https://www.elektrotransporter-vergleich.com/api/auth</loc>
+        <lastmod>2022-02-16</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/api/auth" />
+    </url>
+    <url>
+        <loc>https://www.elektrotransporter-vergleich.com/api/callback</loc>
+        <lastmod>2022-02-16</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/api/callback" />
+    </url>
+    <url>
+        <loc>https://www.elektrotransporter-vergleich.com/comparePage</loc>
+        <lastmod>2022-02-16</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/comparePage" />
+    </url>
+    <url>
+        <loc>https://www.elektrotransporter-vergleich.com</loc>
+        <lastmod>2022-02-16</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com" />
+    </url>
+    <url>
+        <loc>https://www.elektrotransporter-vergleich.com/transporter/[cartitle]</loc>
+        <lastmod>2022-02-16</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/transporter/[cartitle]" />
+    </url>
 </urlset>

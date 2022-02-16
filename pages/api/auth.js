@@ -1,3 +1,23 @@
-import { createVercelBeginHandler } from "netlify-cms-oauth-provider-node";
+import { AuthorizationCode } from "simple-oauth2";
+import { randomBytes } from "crypto";
+import { config, scopes } from "/utils/vercel-auth-config";
 
-module.exports = createVercelBeginHandler({}, { useEnv: true });
+export const randomString = () => randomBytes(4).toString("hex");
+
+export default async (req, res) => {
+  const { host } = req.headers;
+  const url = new URL(`https://${host}/${req.url}`);
+  const urlParams = url.searchParams;
+  const provider = urlParams.get("provider");
+
+  const client = new AuthorizationCode(config(provider));
+
+  const authorizationUri = client.authorizeURL({
+    redirect_uri: `https://${host}/callback?provider=${provider}`,
+    scope: scopes[provider],
+    state: randomString(),
+  });
+
+  res.writeHead(301, { Location: authorizationUri });
+  res.end();
+};

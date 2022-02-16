@@ -61,7 +61,7 @@ function FilterCheckboxMobile(props) {
       categories == "Kasten" ? setIsChecked("Kasten") : null;
     }
   }, [
-    state?.Range230Vs,
+    state?.range230Vs,
     state?.loadingWeights,
     state?.maxSpeeds,
     state?.chargingTime230Vs,

@@ -1,6 +1,6 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
-import { v4 as uuidv4 } from "uuid";
+ 
 import FilterCheckbox from "./FilterCheckbox";
 import { useStore } from "../store";
 import { motion, AnimatePresence } from "framer-motion";
@@ -36,8 +36,8 @@ function FilterItemDesktop(props) {
               : [{ min: checkbox.value, max: 99999 }],
         });
       }}
-      key={uuidv4()}
-      className="mt-2 flex cursor-pointer py-2"
+       key={index}
+      className="mt-4 flex cursor-pointer py-2 "
     >
       <FilterCheckbox checkbox={checkbox} />
       <label
@@ -69,7 +69,7 @@ function FilterItemDesktop(props) {
                 width={24}
                 height={28}
                 layout="responsive"
-                unoptimized={true}
+                 
               />
             </div>
             <div className="pl-4 my-auto ">

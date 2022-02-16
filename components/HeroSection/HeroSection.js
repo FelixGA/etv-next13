@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useStore } from "../../components/store";
 import Link from "next/link";
-import { v4 as uuidv4 } from "uuid";
+ 
 //import filtersData from "../filtersData.json";
 
 const HeroSection = () => {
@@ -99,7 +99,7 @@ const HeroSection = () => {
             alt="Kleintransporter"
             objectFit="cover"
             layout="responsive"
-            unoptimized={true}
+             
           />
         </div>
       </div>
@@ -111,7 +111,7 @@ const HeroSection = () => {
               width={166}
               height={166}
               // layout="responsive"
-              unoptimized={true}
+               
             />
           </div>
           <div className="main-heading-text lg:flex lg:flex-col lg:justify-between ">
@@ -155,7 +155,7 @@ const HeroSection = () => {
                   <select
                     className=" p-4 relative bottom-6 w-full
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
-                    id="Range230V"
+                    id="range230Vs"
                     onChange={(e) => {
                       setChooseRange(e.target.value);
                     }}
@@ -224,7 +224,7 @@ const HeroSection = () => {
                     ],
                   });
                   dispatch({
-                    type: "Range230V",
+                    type: "range230Vs",
                     data: [
                       {
                         min: Number(chooseRange),
@@ -252,13 +252,13 @@ const HeroSection = () => {
         </div>
         <div className="icons-container flex flex-row justify-around flex-wrap">
           {logos.map((logo, index) => (
-            <i className="m-2 lg:my-20 lg:scale-125" key={uuidv4()}>
+            <i className="m-2 lg:my-20 lg:scale-125"  key={index}>
               <Image
                 src={logo.src}
                 alt={logo.alt}
                 width={48}
                 height={48}
-                unoptimized={true}
+                 
               />
             </i>
           ))}
