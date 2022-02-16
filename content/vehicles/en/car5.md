@@ -19,7 +19,7 @@ maxSpeed:
   key: vmax
   baseUnit: km/h
   value: 333
-Range230V:
+"range230V":
   key: Reichweite
   value: 333
   baseUnit: km
@@ -27,7 +27,7 @@ curbweight:
   key: leergewicht
   value: 1233
   baseUnit: kg
-range230V:
+"range230V":
   key: d
   value: 2
   baseUnit: d
@@ -65,7 +65,7 @@ subsidies:
   key: Foerderung
   value: 12312
   baseUnit: euro
-range230Vs:
+"range230V"s:
   key: reichweite
   value: 233
   baseUnit: km

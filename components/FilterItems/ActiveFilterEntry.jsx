@@ -112,7 +112,7 @@ function ActiveFilterEntry(props) {
           <div
             onClick={() => {
               if (item.id === 1) dispatch({ type: "price", data: [] });
-              if (item.id === 2) dispatch({ type: "range230Vs", data: [] });
+              if (item.id === 2) dispatch({ type: "range230V", data: [] });
               if (item.id === 3) dispatch({ type: "loadingWeight", data: [] });
               if (item.id === 4) dispatch({ type: "maxSpeed", data: [] });
               if (item.id === 5) dispatch({ type: "chargingTime230V", data: [] });
@@ -144,7 +144,7 @@ function ActiveFilterEntry(props) {
           onClick={() => {
             props.setShowAll(!props.showAll);
             dispatch({
-              type: "range230Vs",
+              type: "range230V",
               data: [],
             });
             dispatch({

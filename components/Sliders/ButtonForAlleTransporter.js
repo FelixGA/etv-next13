@@ -11,7 +11,7 @@ const ButtonForAlleTransporter = () => {
           <a
             onClick={() => {
               dispatch({
-                type: "range230Vs",
+                type: "range230V",
                 data: [],
               });
               dispatch({

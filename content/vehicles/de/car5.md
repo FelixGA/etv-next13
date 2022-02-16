@@ -21,7 +21,7 @@ maxSpeed:
   key: vmax
   baseUnit: km/h
   value: 333
-range230V:
+"range230V":
   value: 2
   baseUnit: d
   key: d
@@ -59,7 +59,7 @@ subsidies:
   key: Foerderung
   value: 12312
   baseUnit: euro
-range230Vs:
+"range230V"s:
   key: reichweite
   value: 233
   baseUnit: km
