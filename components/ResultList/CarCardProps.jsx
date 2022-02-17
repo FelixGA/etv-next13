@@ -4,9 +4,9 @@ function CarCardProps(props) {
   /*   let imagesForProp = [image, image2, image3, image4]; */
 
   return (
-    <div className=" pl-8 flex h-20 items-center ">
+    <div className="pl-2 xl:pl-4 flex h-20 items-center ">
       <div className="rounded-full bg-[#E7EEF2] ">
-        <div className="p-2 rounded-full w-12 h-12 ">
+        <div className="p-2 rounded-full w-12 h-12">
           <Image
             src={props.image}
             alt={props.details?.key}
@@ -17,7 +17,7 @@ function CarCardProps(props) {
           />
         </div>
       </div>
-      <div className="flex flex-col flex-1 justify-center text-sm pl-4 ">
+      <div className="flex flex-col flex-1 justify-center text-sm lg:pl-2 ">
         <div className="text-blue-dark font-bold ">{props.details?.key}</div>
         <div className="text-grey-dark font-bold ">
           {props.details?.value}

@@ -35,7 +35,7 @@ function ButtonCompare(props) {
 
   const buttonInput = (
     <>
-      <span className="text-blue-dark hidden  px-2 md:flex w-4 justify-center font-bold rounded-full my-auto mr-2 bg-white">
+      <span className="text-blue-dark hidden px-2 md:flex w-4 h-4 justify-center items-center font-bold rounded-full my-auto mr-2 bg-white">
         &nbsp;+&nbsp;
       </span>
       <span className="my-auto">Vergleichen</span>
@@ -73,8 +73,8 @@ function ButtonCompare(props) {
         }}
         className={
           disabled
-            ? "bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 text-xxs xl:tracking-wider rounded  px-4 flex justify-center items-center h-8 w-32  "
-            : "bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 text-xs xl:tracking-wider rounded  px-4 flex justify-center items-center h-8 w-32 "
+            ? "bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 text-sm xl:tracking-wider rounded  px-4 flex justify-center items-center h-8 sm:h-10 w-28 sm:w-36 xl:w-40  "
+            : "bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 text-sm xl:tracking-wider rounded  px-4 flex justify-center items-center h-8 sm:h-10 w-28 sm:w-36 xl:w-40 "
         }
       >
         {disabled ? "Zum Vergleich" : buttonInput}

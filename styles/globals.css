@@ -42,12 +42,9 @@
 
 /* FROM HERE WE GIVE css for reference  */
 
-header {
-  background-color: #2a3c80;
-}
-a:visited {
+/* a:visited {
   color: white;
-}
+} */
 
 .select {
   @apply rounded-lg  bg-white text-base cursor-pointer  items-center;
