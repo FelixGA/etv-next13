@@ -38,6 +38,7 @@ function ActiveFilterBlock() {
             <h4 className="sort-heading w-fit ">
               {`Sortieren nach: ${state?.activeSortValues}`}{" "}
             </h4>
+            {/* SORT DESKTOP */}
             <div
               className={clicked ? "hidden" : "flex absolute top-4 right-0 "}
             >
@@ -54,7 +55,6 @@ function ActiveFilterBlock() {
             </div>
           </div>
         </div>
-        {/* SORT DESKTOP */}
       </div>
     </div>
   );

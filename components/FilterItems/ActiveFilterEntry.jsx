@@ -40,7 +40,7 @@ function ActiveFilterEntry(props) {
     state?.chargingTime230Vs,
     state?.categorys,
   ]);
-  console.log(props.showAll);
+
   const activeFilterData = [
     {
       id: 1,

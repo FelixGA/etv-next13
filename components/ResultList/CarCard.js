@@ -37,10 +37,10 @@ function CarCard(props) {
   };
 
   return (
-    <div className="container-product flex flex-col mb-4 py-4 lg:py-0 px-4 lg:px-0  shadow-lg lg:shadow-none border-t lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
-    <div className="container-product flex flex-row">
-      <div className="container-product-basics w-3/5 lg:w-fit ">
-        <Link href={`/transporter/${carItem.title}`}>
+    <div className="container-product flex flex-col mb-4 py-0 sm:py-4 lg:py-0 px-0 sm:px-4 lg:px-0  shadow-lg lg:shadow-none border-t lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
+      <div className="container-product flex flex-row ">
+        <div className="container-product-basics w-3/5 lg:w-fit ">
+          <Link href={`/transporter/${carItem.title}`}>
             <a>
               <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
                 {carItem.title}
@@ -48,18 +48,19 @@ function CarCard(props) {
             </a>
           </Link>
 
-          <div className=" xs:w-full  ">
+          <div className=" xs:w-full ">
             <Link href={`/transporter/${carItem.title}`} passHref>
-              <a className=" flex flex-1">
-              {carItem?.src && (  <Image
-                  
-                  src={carItem.src}
-                  alt={carItem.title}
-                  width={350}
-                  height={255}
-                  objectFit="cover"
-                  className="rounded-l-lg"
-                />)}
+              <a className=" flex flex-1 ">
+                {carItem?.src && (
+                  <Image
+                    src={carItem.src}
+                    alt={carItem.title}
+                    width={350}
+                    height={255}
+                    objectFit="cover"
+                    className="rounded-l-lg"
+                  />
+                )}
               </a>
             </Link>
           </div>
@@ -67,33 +68,38 @@ function CarCard(props) {
         <div className=" hidden lg:flex lg:my-auto lg:w-3/6">
           <CarCardDetailsDesktop carItem={carItem} />
         </div>
-         {/* DIVIDER start*/}
-         <div className=" hidden 2xl:block w-[1px] h-32 mt-20 bg-grey-border mr-4"></div>
+        {/* DIVIDER start*/}
+        <div className=" hidden 2xl:block w-[1px] h-32 mt-24 bg-grey-border mr-4"></div>
         {/* DIVIDER end */}
-        <div className="container-product-info flex flex-col  justify-center lg:justify-between  flex-1 items-end md:pr-4 xl:pr-0 xl:items-center  ">
-          <p className="text-green-light text-xl sm:text-2xl font-black lg:mt-6  ">
-            ab {carItem.price} €
-          </p>
+        {/* CONTAINER FOR PRICE AND BUTTONS start */}
+        <div className="container-product-info flex flex-col justify-center lg:justify-between flex-1 items-end pl-2 md:pr-4 xl:pr-0 xl:items-center">
+          {/* PRICE start */}
+          <div className="">
+            <p className="text-green-light text-xl sm:text-2xl font-black lg:mt-6 lg:pr-4 ">
+              ab {carItem.price} €
+            </p>
+          </div>
+          {/* PRICE end */}
           {/* MOBILE RATING BOX start*/}
-          <div className="lg:hidden w-24 sm:w-28 pt-2 ">{mobileRatingBox}</div>
+          <div className="lg:hidden w-24 sm:w-28 pt-0 sm:pt-2 pb-2 sm:pb-0 ">
+            {mobileRatingBox}
+          </div>
           {/* MOBILE RATING BOX end*/}
           {/* BUTTONS start */}
-          <div className="flex-1 flex justify-center  flex-col  ">
+          <div className="flex-1 flex justify-center pr-0 sm:pr-2 xl:pr-4 flex-col">
             <ButtonAnfragen />
             <ButtonCompare carItem={carItem} />
           </div>
           {/* BUTTONS end */}
           <div
-          
             onClick={() => {
               setShowDetails(!showDetails);
-            
             }}
             className="text-blue-dark font-bold  text-xs cursor-pointer flex items-center pt-2  lg:hidden "
           >
             {showDetails ? "weniger" : "mehr"}
             <p className="pl-1">Details</p>
-           
+
             <div
               className={
                 showDetails
@@ -105,6 +111,7 @@ function CarCard(props) {
             </div>
           </div>
         </div>
+        {/* CONTAINER FOR PRICE AND BUTTONS end */}
       </div>
 
       <div
@@ -116,15 +123,3 @@ function CarCard(props) {
   );
 }
 export default CarCard;
-
-
-
-
-
-
-
-
-
-
-
-
