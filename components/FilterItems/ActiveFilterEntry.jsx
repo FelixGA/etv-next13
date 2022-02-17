@@ -7,10 +7,9 @@ import image5 from "../../public/images/ladezeit@2x.png";
 import image6 from "../../public/images/more-svgrepo-com.png";
 import { AiOutlineClose } from "react-icons/ai";
 import { useStore } from "../store";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 function ActiveFilterEntry(props) {
   const { state, dispatch } = useStore();
-  // const [showAll, setShowAll] = useState(true);
 
   useEffect(() => {
     if (
@@ -18,9 +17,20 @@ function ActiveFilterEntry(props) {
       state?.range230Vs.length ||
       state?.loadingWeights.length ||
       state?.maxSpeeds.length ||
-      state?.chargingTime230Vs.length
+      state?.chargingTime230Vs.length ||
+      state?.categorys.length
     ) {
       props.setShowAll(true);
+    }
+    if (
+      !state?.prices.length &&
+      !state?.range230Vs.length &&
+      !state?.loadingWeights.length &&
+      !state?.maxSpeeds.length &&
+      !state?.chargingTime230Vs.length &&
+      !state?.categorys.length
+    ) {
+      props.setShowAll(false);
     }
   }, [
     state?.prices,
@@ -28,7 +38,9 @@ function ActiveFilterEntry(props) {
     state?.loadingWeights,
     state?.maxSpeeds,
     state?.chargingTime230Vs,
+    state?.categorys,
   ]);
+  console.log(props.showAll);
   const activeFilterData = [
     {
       id: 1,
@@ -63,7 +75,8 @@ function ActiveFilterEntry(props) {
     {
       id: 5,
       value:
-        state?.chargingTime230Vs.length || state?.chargingTime230Vs.length == undefined
+        state?.chargingTime230Vs.length ||
+        state?.chargingTime230Vs.length == undefined
           ? state?.chargingTime230Vs.map((el) => "ab " + el.min).join("") + " h"
           : null,
       image: image5,
@@ -78,12 +91,11 @@ function ActiveFilterEntry(props) {
     },
   ];
 
-
   return (
     <div
       className={
         props.showAll
-          ? "grid gap-2 w-full grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 bg-red-500 xl:filter-grid  px-2 items-end pt-12 md:pt-2 "
+          ? "grid gap-2 w-full grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 xl:filter-grid  px-2 items-start  mt-5"
           : "hidden"
       }
     >
@@ -104,24 +116,23 @@ function ActiveFilterEntry(props) {
               width={24}
               height={28}
               layout="responsive"
-               
             />
           </div>
           <div className="text-md">{item.value}</div>
-          
+
           <div
             onClick={() => {
               if (item.id === 1) dispatch({ type: "price", data: [] });
               if (item.id === 2) dispatch({ type: "range230V", data: [] });
               if (item.id === 3) dispatch({ type: "loadingWeight", data: [] });
               if (item.id === 4) dispatch({ type: "maxSpeed", data: [] });
-              if (item.id === 5) dispatch({ type: "chargingTime230V", data: [] });
+              if (item.id === 5)
+                dispatch({ type: "chargingTime230V", data: [] });
               if (item.id === 6) dispatch({ type: "category", data: [] });
             }}
             className={"w-3.5 my-auto mr-4 cursor-pointer"}
           >
             <AiOutlineClose size={20} />
-            
           </div>
         </div>
       ))}
@@ -134,12 +145,11 @@ function ActiveFilterEntry(props) {
           state?.maxSpeeds.length ||
           state?.chargingTime230Vs.length ||
           state?.categorys.length
-            ? " flex items-end "
+            ? " flex items-end h-10 "
             : "hidden"
         }
       >
-       
-        <span
+        <div
           className="text-sm  cursor-pointer"
           onClick={() => {
             props.setShowAll(!props.showAll);
@@ -170,7 +180,7 @@ function ActiveFilterEntry(props) {
           }}
         >
           alle Filter loschen
-        </span>
+        </div>
       </div>
     </div>
   );

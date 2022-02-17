@@ -1,7 +1,6 @@
 import CarCard from "../../components/ResultList/CarCard";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";
- 
 
 import ButtonForAlleTransporter from "../../components/Sliders/ButtonForAlleTransporter";
 const ResultList = (props) => {
@@ -10,7 +9,14 @@ const ResultList = (props) => {
 
   /* useEffect to apply the filters */
   useEffect(() => {
-    if (!state?.prices || !state?.loadingWeights || !state?.range230Vs || !state?.maxSpeeds || !state?.chargingTime230Vs || props.sortedCars?.length === 0)
+    if (
+      !state?.prices ||
+      !state?.loadingWeights ||
+      !state?.range230Vs ||
+      !state?.maxSpeeds ||
+      !state?.chargingTime230Vs ||
+      props.sortedCars?.length === 0
+    )
       return;
     let filteredCars = props.sortedCars?.filter((car) => {
       if (
@@ -25,14 +31,16 @@ const ResultList = (props) => {
         state?.loadingWeights?.length > 0 &&
         state?.loadingWeights?.every(
           (entry) =>
-            entry.min > car.loadingWeight.value || entry.max < car.loadingWeight.value
+            entry.min > car.loadingWeight.value ||
+            entry.max < car.loadingWeight.value
         )
       )
         return false;
       if (
         state?.range230Vs?.length > 0 &&
         state?.range230Vs?.every(
-          (entry) => entry.min > car.range230V.value || entry.max < car.range230V.value
+          (entry) =>
+            entry.min > car.range230V.value || entry.max < car.range230V.value
         )
       )
         return false;
@@ -75,7 +83,7 @@ const ResultList = (props) => {
   /* ɢᴇᴛ pop up for not meeting criteria */
   const showMoreMessage = (
     <div className="mx-auto">
-      <p className="text-base md:text-xl text-black-darkest">
+      <p className=" md:text-xl text-black-darkest pt-4">
         Ist ihr gesuchter Transporter nicht dabei?
       </p>
 
@@ -83,7 +91,7 @@ const ResultList = (props) => {
     </div>
   );
   /* ɢᴇᴛ the cars upon filters */
-  
+
   const getdisplayedCars = shownCars?.map((caritem, index) => {
     return (
       <div className="container-product w-full" key={index}>
@@ -96,7 +104,6 @@ const ResultList = (props) => {
   return (
     <div className="flex flex-col w-full   lg:w-full lg:m-2  lg:bg-white">
       {shownCars?.length === 0 ? showMoreMessage : getdisplayedCars}
-     
     </div>
   );
 };
