@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <div className="relative print:hidden">
-      <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-18 w-[100%] ">
+      <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-18 w-screen ">
         <div className="flex flex-row pl-0 sm:pl-4 xl:pl-32">
           <div className="logo-container mt-2 w-20">
             <Image
@@ -30,7 +30,6 @@ const Header = () => {
               width={80}
               height={60}
               className="logo"
-               
               objectFit="cover"
               layout="responsive"
             />
@@ -69,7 +68,6 @@ const Header = () => {
                 width={18}
                 height={18}
                 layout="responsive"
-                 
                 objectFit="cover"
               />
             </div>
@@ -90,6 +88,6 @@ const Header = () => {
         </div>
       </div>
     </div>
-      );
-    };
+  );
+};
 export default Header;

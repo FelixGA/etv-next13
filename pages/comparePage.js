@@ -91,7 +91,7 @@ export default function comparePage(props) {
     }
   }, [props.vehicles, state.activeSortValues]);
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white z-50 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white z-50">
       <div className="xl:ml-32  hidden md:block bg-white mt-24 ">
         <FiltersDesktop />
       </div>

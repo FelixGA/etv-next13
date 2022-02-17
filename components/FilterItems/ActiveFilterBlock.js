@@ -15,18 +15,16 @@ function ActiveFilterBlock() {
       {/* ACTIVE FILTERS */}
       <div
         className={
-          showAll
-            ? "flex flex-grow justify-between h-[141px] flex-1 "
-            : "hidden"
+          showAll ? "flex flex-grow justify-between flex-1 " : "hidden"
         }
       >
         <ActiveFilterEntry showAll={showAll} setShowAll={setShowAll} />
       </div>
 
       {/* HEADING + SORTING */}
-      <div className="flex  justify-between  mt-48 sm:mt-20 md:mt-12">
+      <div className="flex justify-between">
         <div className={showAll ? "w-full " : "flex items-center flex-1 "}>
-          <h1 className="pl-4 text-2xl md:text-3xl text-blue-extra py-2 md:py-0">
+          <h1 className="pl-4 text-2xl md:text-3xl text-blue-extra py-4">
             Die besten E-Transporter nach Ihrer Auswahl
           </h1>
         </div>
@@ -37,7 +35,7 @@ function ActiveFilterBlock() {
           }}
         >
           <div className="relative flex justify-center items-center">
-            <h4 className="sort-heading w-72 ">
+            <h4 className="sort-heading w-fit ">
               {`Sortieren nach: ${state?.activeSortValues}`}{" "}
             </h4>
             <div
