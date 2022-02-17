@@ -37,9 +37,9 @@ function CarCard(props) {
   };
 
   return (
-    <div className="container-product flex flex-col mb-4 py-0 sm:py-4 lg:py-0 px-0 sm:px-4 lg:px-0  shadow-lg lg:shadow-none border-t lg:border-2 lg:border-grey-lighter  lg:rounded-xl bg-white">
-      <div className="container-product flex flex-row ">
-        <div className="container-product-basics w-3/5 lg:w-fit ">
+    <div className="py-0 sm:py-4 lg:py-0 px-0 sm:px-4 lg:px-0 shadow-lg mb-4 lg:shadow-none border-t lg:border-2 lg:border-grey-lighter  lg:rounded-xl overflow-hidden">
+      <div className="flex">
+        <div className="flex-1  ">
           <Link href={`/transporter/${carItem.title}`}>
             <a>
               <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
@@ -48,23 +48,21 @@ function CarCard(props) {
             </a>
           </Link>
 
-          <div className=" xs:w-full ">
-            <Link href={`/transporter/${carItem.title}`} passHref>
-              <a className=" flex flex-1 ">
-                {carItem?.src && (
-                  <Image
-                    src={carItem.src}
-                    alt={carItem.title}
-                    width={350}
-                    height={255}
-                    objectFit="cover"
-                    className="rounded-l-lg"
-                  />
-                )}
-              </a>
-            </Link>
-          </div>
+          <Link href={`/transporter/${carItem.title}`} passHref>
+            <a className="block w-32 xs:w-72 h-56">
+              {carItem?.src && (
+                <Image
+                  src={carItem.src}
+                  alt={carItem.title}
+                  width={450}
+                  height={350}
+                  objectFit="cover"
+                />
+              )}
+            </a>
+          </Link>
         </div>
+
         <div className=" hidden lg:flex lg:my-auto lg:w-3/6">
           <CarCardDetailsDesktop carItem={carItem} />
         </div>
