@@ -1,5 +1,5 @@
 ---
-title: asdf
+title: ARI 458
 price: 2000
 description: asdf
 src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
