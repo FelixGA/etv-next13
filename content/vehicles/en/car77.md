@@ -3,7 +3,7 @@ title: car77
 price: 534524
 description: 43523efvf
 src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
-preview: aergeth
+body: aergeth
 category: Pritsche
 typeClass: L6E
 loadingWeight:
@@ -84,4 +84,5 @@ loadingVolume:
   valuelength: 345345
   baseUnit: "345345"
 ---
+
 etheth

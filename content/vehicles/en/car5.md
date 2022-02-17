@@ -6,7 +6,7 @@ description: dsfbsgbwdcw qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv
 src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
-preview: "qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
+body: "qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv "
 category: Koffer
@@ -19,20 +19,16 @@ maxSpeed:
   key: vmax
   baseUnit: km/h
   value: 333
-Range230V:
-  key: Reichweite
-  value: 333
-  baseUnit: km
 curbweight:
   key: leergewicht
   value: 1233
   baseUnit: kg
 range230V:
-  key: d
+  key: Reichweite SLA-Blei
   value: 2
   baseUnit: d
 rangeLithium:
-  key: reichweite2
+  key: Reichweite Lithium
   value: 100
   baseUnit: km
 chargingTime230V:
@@ -95,7 +91,7 @@ carSizes:
 loadingVolume:
   width: Breite
   length: Lange
-  height: hohe
+  height: hoehe
   valuewidth: 131
   baseUnit: cm
   valuelength: 123
