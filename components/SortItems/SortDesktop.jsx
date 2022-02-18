@@ -20,15 +20,18 @@ function SortDesktop() {
   const [isChecked, setIsChecked] = useState("");
   const getAllSortings = sortBy2.map((rank) => {
     return (
-      <div onClick={() => {
-        setIsChecked(rank?.sortType);
-        dispatch({ type: "activeSortValue", data: rank?.sortCategory });
-      }}
-      key={rank.sortType} className="mt-1 flex flex-row py-2  mr-4 ">
+      <div
+        onClick={() => {
+          setIsChecked(rank?.sortType);
+          dispatch({ type: "activeSortValue", data: rank?.sortCategory });
+        }}
+        key={rank.sortType}
+        className="mt-1 flex flex-row py-2  mr-4 "
+      >
         <input
           className=" appearance-none w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
           onChange={() => {
-            return null
+            return null;
           }}
           checked={isChecked == rank?.sortType ? true : false}
           type="checkbox"
@@ -45,10 +48,8 @@ function SortDesktop() {
     );
   });
   return (
-    <div className=" hidden md:flex items-center bg-white border rounded-md mt-4 z-10 w-64 ">
-      <div className="flex flex-col ml-4  items-start">
-        {getAllSortings}
-      </div>
+    <div className="hidden md:flex items-center bg-white border rounded-md mt-4 z-10 w-64 sm:mr-8 xl:mr-0">
+      <div className="flex flex-col pl-4  items-start">{getAllSortings}</div>
     </div>
   );
 }

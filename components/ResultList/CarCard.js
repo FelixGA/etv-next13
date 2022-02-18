@@ -16,7 +16,7 @@ function CarCard(props) {
   const carItem = props.caritem;
 
   const mobileRatingBox = (
-    <div className="border border-black-dark flex flex-col flex-1 h-10 sm:h-11 ">
+    <div className="border border-black-dark flex flex-col flex-1 h-10 sm:h-11">
       <p className=" flex flex-row justify-center items-center">
         <span className="flex flex-1 justify-center bg-orange-dark text-white font-bold text-xs border-black-dark border-b ">
           TEST
@@ -33,21 +33,22 @@ function CarCard(props) {
   );
 
   return (
-    <div className="py-0 sm:py-4 lg:py-0 px-0 sm:px-4 lg:px-0 shadow-lg mb-4 lg:shadow-none border-t lg:border-2 lg:border-grey-lighter  lg:rounded-xl overflow-hidden">
+    <div className="py-0 shadow-lg mb-4 lg:shadow-none border-t lg:border-2 lg:border-grey-lighter  lg:rounded-xl overflow-hidden">
       <div className="flex">
         <div className="flex-1  ">
           <Link href={`/transporter/${carItem.title}`}>
             <a>
-              <h3 className="title text-xl font-bold text-black-darkest pb-2 lg:hidden">
+              <h3 className="title text-xl font-bold text-black-darkest py-2 lg:hidden pl-2">
                 {carItem.title}
               </h3>
             </a>
           </Link>
 
           <Link href={`/transporter/${carItem.title}`} passHref>
-            <a className="block w-32 xs:w-72 h-56">
+            <a className="block w-36 sm:w-64 md:w-72 h-52">
               {carItem?.src && (
                 <Image
+                  className=""
                   src={carItem.src}
                   alt={carItem.title}
                   width={450}
@@ -59,17 +60,17 @@ function CarCard(props) {
           </Link>
         </div>
 
-        <div className=" hidden lg:flex lg:my-auto lg:w-3/6">
+        <div className=" hidden lg:flex lg:my-auto lg:w-1/2">
           <CarCardDetailsDesktop carItem={carItem} />
         </div>
         {/* DIVIDER start*/}
-        <div className=" hidden 2xl:block w-[1px] h-32 mt-24 bg-grey-border mr-4"></div>
+        <div className=" hidden 2xl:block w-[1px] h-32 mt-16 bg-grey-border mr-4"></div>
         {/* DIVIDER end */}
         {/* CONTAINER FOR PRICE AND BUTTONS start */}
-        <div className="container-product-info flex flex-col justify-center lg:justify-between flex-1 items-end pl-2 md:pr-4 xl:pr-0 xl:items-center">
+        <div className="flex flex-col justify-center lg:justify-between flex-1 items-end px-2 xl:items-center py-4">
           {/* PRICE start */}
           <div className="">
-            <p className="text-green-light text-xl sm:text-2xl font-black lg:mt-6 lg:pr-4 ">
+            <p className="text-green-light text-xl xl:text-2xl font-black pr-2">
               ab {carItem.price} €
             </p>
           </div>
@@ -80,7 +81,7 @@ function CarCard(props) {
           </div>
           {/* MOBILE RATING BOX end*/}
           {/* BUTTONS start */}
-          <div className="flex-1 flex justify-center pr-0 sm:pr-2 xl:pr-4 flex-col">
+          <div className="flex-1 flex justify-center flex-col">
             <ButtonAnfragen />
             <ButtonCompare carItem={carItem} />
           </div>
