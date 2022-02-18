@@ -18,6 +18,7 @@ const TechnicalDetails = ({ carItem }) => {
       carItem.chargingTime230V,
       carItem.chargingTimeLithium,
       carItem.chargingTimeFast,
+      carItem.power,
       carItem.loadingWeight,
       carItem.curbweight,
     ];
