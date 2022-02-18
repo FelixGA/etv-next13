@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function CarCardProps(props) {
   /*   let imagesForProp = [image, image2, image3, image4]; */
-  // console.log(props.details);
+
   return (
     <div className="pl-2 xl:pl-4 flex h-20 items-center ">
       <div className="rounded-full bg-[#E7EEF2] ">

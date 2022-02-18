@@ -10,7 +10,8 @@ import { useState } from "react";
 
 export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
-  console.log(props.vehicles);
+  const [getContent, SetGetContent] = useState(props.page);
+
   return (
     <>
       <Head>
@@ -22,11 +23,11 @@ export default function Home(props) {
       </Head>
 
       {/* <MDXRemote {...props.page.sources.main} components={components} /> */}
-      <HeroSection />
+      <HeroSection getContent={getContent} />
       <TopSlider getCars={getCars} />
-      <BlogArticles />
-      <BottomSlider />
-      <NewsLetter />
+      <BlogArticles getContent={getContent} />
+      <BottomSlider getContent={getContent} />
+      <NewsLetter getContent={getContent} />
     </>
   );
 }

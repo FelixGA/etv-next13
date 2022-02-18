@@ -31,10 +31,6 @@ function CarCard(props) {
       </p>
     </div>
   );
-  // get first pic console.log(carItem.photo.data[0].attributes.url);
-  const myLoader = ({ src }) => {
-    return src;
-  };
 
   return (
     <div className="py-0 sm:py-4 lg:py-0 px-0 sm:px-4 lg:px-0 shadow-lg mb-4 lg:shadow-none border-t lg:border-2 lg:border-grey-lighter  lg:rounded-xl overflow-hidden">

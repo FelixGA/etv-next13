@@ -70,8 +70,7 @@ collections:
         media_library:
           config:
             multiple: true
-      - { label: "Preview", name: "preview", widget: "text", i18n: true }
-      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+      - { label: "Preview", name: "body", widget: "markdown", i18n: true }
 
   - label: "Add Vehicles"
     name: "vehicles"
@@ -111,7 +110,7 @@ collections:
       - label: "Loadingweight"
         name: "loadingWeight"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
@@ -125,7 +124,7 @@ collections:
       - label: "Curb Weight"
         name: "curbweight"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "key", name: "key", widget: "string", i18n: true }
@@ -139,7 +138,7 @@ collections:
       - label: "maxSpeed"
         name: "maxSpeed"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
@@ -153,7 +152,7 @@ collections:
       - label: "Range-230V"
         name: "range230V"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
@@ -167,7 +166,7 @@ collections:
       - label: "Range-Lithium"
         name: "rangeLithium"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
@@ -181,7 +180,7 @@ collections:
       - label: "chargingTime-230V"
         name: "chargingTime230V"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
@@ -195,7 +194,7 @@ collections:
       - label: "chargingTime-Lithium"
         name: "chargingTimeLithium"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
@@ -209,7 +208,7 @@ collections:
       - label: "chargingTime-Fast"
         name: "chargingTimeFast"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
@@ -223,7 +222,21 @@ collections:
       - label: "battery-Capacity"
         name: "batteryCapacity"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "power"
+        name: "power"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
@@ -237,7 +250,7 @@ collections:
       - label: "Seats"
         name: "seats"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
@@ -246,7 +259,7 @@ collections:
       - label: "rating"
         name: "rating"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Result", name: "key", widget: "string", i18n: true }
@@ -254,7 +267,7 @@ collections:
       - label: "guarantee"
         name: "guarantee"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
@@ -268,7 +281,7 @@ collections:
       - label: "availability"
         name: "availability"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
@@ -282,7 +295,7 @@ collections:
       - label: "subsidies"
         name: "subsidies"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
@@ -296,7 +309,7 @@ collections:
       - label: "battery-guarantee"
         name: "batteryGuarantee"
         widget: "object"
-        summary: "{{fields.key}}: {{fields.value}}"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
