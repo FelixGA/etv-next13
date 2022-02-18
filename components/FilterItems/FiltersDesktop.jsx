@@ -1,3 +1,5 @@
+import { useStore } from "../store";
+import { motion, AnimatePresence } from "framer-motion";
 import image from "../../public/images/reichweite.png";
 import image2 from "../../public/images/zuladung.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit.png";
@@ -5,12 +7,6 @@ import image4 from "../../public/images/preis.png";
 import image5 from "../../public/images/aufbautype.png";
 import image6 from "../../public/images/ladezeit@2x.png";
 import FilterItemDesktop from "./FilterItemDesktop";
-import Image from "next/image";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { useState, useEffect } from "react";
-import { useStore } from "../store";
-import { motion, AnimatePresence } from "framer-motion";
-import FilterOptionPrice from "./FilterOptionPrice";
 import PriceInputs from "./PriceInputs";
 
 const variants = {

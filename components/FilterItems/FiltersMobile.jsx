@@ -1,20 +1,20 @@
+import Image from "next/image";
+import { useState } from "react";
+import { MdKeyboardArrowDown } from "react-icons/md";
+
+import { motion, AnimatePresence } from "framer-motion";
+import { useStore } from "../store";
+
 import image from "../../public/images/reichweite.png";
 import image2 from "../../public/images/zuladung.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit.png";
 import image4 from "../../public/images/preis.png";
-import image5 from "../../public/images/more-svgrepo-com.png";
-
+import image5 from "../../public/images/aufbautype.png";
 import image6 from "../../public/images/ladezeit@2x.png";
 import filterImage from "../../public/images/filter-icon.png";
 
-import Image from "next/image";
-import { useState } from "react";
 import FilterItemMobile from "./FilterItemMobile";
 import Sort from "../SortItems/Sort";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { useStore } from "../store";
-import FilterOptionPrice from "./FilterOptionPrice";
-import { motion, AnimatePresence } from "framer-motion";
 import PriceInputs from "./PriceInputs";
 
 const variants = {
@@ -31,6 +31,7 @@ const variants = {
     opacity: 0,
   },
 };
+
 /* filter list */
 const priceFilterData = [
   {
@@ -242,7 +243,6 @@ function FiltersMobile() {
   const { state, dispatch } = useStore();
   const [clicked, setClicked] = useState(false);
 
-  
   /* handling the min and max input  */
   const changeHandleMin = (e) => {
     SetUserInputMinPrice(e.target.value);
@@ -252,19 +252,19 @@ function FiltersMobile() {
   };
   return (
     <div className="absolute z-10 bg-white w-full ">
-      <div className="flex flex-col  bg-white ">
-        <div className="  shadow-dropdown  w-full z-40">
+      <div className="flex flex-col bg-white ">
+        <div className="shadow-dropdown w-full z-40">
           <div
             className={
               clicked
-                ? "h-10 shadow-dropdown flex flex-row justify-between align-middle border-b"
-                : "h-10 shadow-dropdown flex flex-row justify-between align-middle "
+                ? "h-10 shadow-dropdown flex justify-between align-middle border-b"
+                : "h-10 shadow-dropdown flex justify-between align-middle "
             }
             onClick={() => {
               setClicked(!clicked);
             }}
           >
-            <div className="flex-1  flex flex-row">
+            <div className="flex-1 flex">
               <div
                 className="w-3.5 my-auto ml-6  
           "
@@ -303,38 +303,33 @@ function FiltersMobile() {
             ></div>
           </div>
         </div>
-        
       </div>
-      <div className={
-                clicked
-                  ? "block"
-                  : "hidden"
-              }>
-      {priceFilterData.map((item) => (
-        <div className="relative  " key={item.id}>
-          <FilterItemMobile item={item} />
-          <AnimatePresence initial={false}>
-            {state?.truncates == item.title && (
-              <motion.div
-                variants={variants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{ type: "tween", duration: 0.2 }}
-                className="flex flex-col ml-8 relative   "
-              >
-                <PriceInputs />
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-      ))}
-      {filtersData.map((item, index) => (
-        <div key={item.id} className="">
-          <FilterItemMobile item={item} />
-        </div>
-        
-      ))}
+      <div className={clicked ? "block" : "hidden"}>
+        {priceFilterData.map((item) => (
+          <div className="relative  " key={item.id}>
+            <Sort />
+            <FilterItemMobile item={item} />
+            <AnimatePresence initial={false}>
+              {state?.truncates == item.title && (
+                <motion.div
+                  variants={variants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  transition={{ type: "tween", duration: 0.2 }}
+                  className="flex flex-col ml-8 relative   "
+                >
+                  <PriceInputs />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        ))}
+        {filtersData.map((item, index) => (
+          <div key={item.id} className="">
+            <FilterItemMobile item={item} />
+          </div>
+        ))}
       </div>
     </div>
   );
