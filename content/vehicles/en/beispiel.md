@@ -12,7 +12,7 @@ description: >-
 
   Technisch gibt es den Addax MT in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und als MT15 mit  72 Volt-Motor angetrieben. Beide Versionen sind mit Lithium-Ionen-Akkus zur Energiespeicherung ausgestattet, die eine Kapazität von 10,2 kWh bzw. 14,4 kWh besitzen. Der Addax MT besitzt eine EU-Typengenehmigung und kann somit in allen EU-Staaten auf öffentlichen Straßen bewegt werden.
 src: /images/addax-mt-laubgitter-wiki.jpg
-preview: >-
+body: >-
   Addax ist ein belgischer Hersteller, der sich auf Nutzfahrzeuge für
   Unternehmen und Gemeinden spezialisiert hat. Der Addax MT ist mit einer
   offenen sowie einer geschlossenen Frachtbox verfügbar, welche entweder mit
