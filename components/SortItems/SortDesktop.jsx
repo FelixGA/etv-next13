@@ -48,8 +48,8 @@ function SortDesktop() {
     );
   });
   return (
-    <div className="hidden md:flex items-center bg-white border rounded-md mt-4 z-10 w-64 sm:mr-8 xl:mr-0">
-      <div className="flex flex-col pl-4  items-start">{getAllSortings}</div>
+    <div className="hidden md:flex items-center bg-white border rounded-md mt-2 z-10 w-64 xl:mr-0">
+      <div className="flex flex-col pl-4 items-start">{getAllSortings}</div>
     </div>
   );
 }
