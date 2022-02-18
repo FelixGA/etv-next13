@@ -19,11 +19,6 @@
   h3 {
     @apply text-blue-dark text-lg md:text-xl;
   }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 }
 /* for print */
 @page {

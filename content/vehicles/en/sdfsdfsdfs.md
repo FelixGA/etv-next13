@@ -1,6 +1,6 @@
 ---
-title: Addax MT4 fdg
-price: 55000
+title: sdfsdfsdfs
+price: 25000
 description: >-
   Addax ist ein beglischer Hersteller, der sich auf Nutzfahrzeuge für
   Unternehmen und Gemeinden spezialisiert hat. Der Addax MT ist mit einer

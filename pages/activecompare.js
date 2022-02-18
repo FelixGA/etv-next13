@@ -11,10 +11,9 @@ export default function Activecompare(props) {
   const { state, dispatch } = useStore();
   const [getCars, SetGetCars] = useState(props.vehicles);
   // get all cars as props
-  console.log(getCars);
+  //console.log(getCars);
   /*  get the 3 from the state for comparison */
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
-
   console.log(comparedCars);
 
   return (
