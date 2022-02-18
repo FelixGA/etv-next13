@@ -1,5 +1,5 @@
 import { useStore } from "../store";
- 
+
 import Link from "next/link";
 import CarCardforPopUp from "./CarCardforPopUp";
 import CarCardForPopUpMobile from "./CarCardForPopUpMobile";
@@ -12,8 +12,8 @@ const StickyPopUpForComparison = () => {
       return (
         <div>
           <div
-            className="hidden md:flex md:flex-row  w-44 lg:w-52 h-28 mx-2"
-             key={index}
+            className="hidden md:flex md:flex-row  w-44 lg:w-52 h-28 mx-2 "
+            key={index}
           >
             <CarCardforPopUp selectedCar={selectedCar} />
           </div>
@@ -30,7 +30,7 @@ const StickyPopUpForComparison = () => {
     <div
       className={
         state?.autoForComparisons?.length > 0
-          ? "flex flex-col md:flex-row h-32 bottom-0 sticky z-10 bg-black-lightest md:justify-center md:items-center  md:h-40 md:w-full  "
+          ? "flex flex-col md:flex-row h-32 bottom-0 sticky z-10 md:justify-center md:items-center md:h-40 md:w-full bg-grey-moredark "
           : "hidden"
       }
     >
@@ -86,7 +86,7 @@ const StickyPopUpForComparison = () => {
         <Link
           href={state?.autoForComparisons.length > 1 ? "/activecompare" : "#"}
         >
-          <a className="flex  lg:hidden">
+          <a className="flex lg:hidden">
             <button
               className={
                 state?.autoForComparisons.length > 1

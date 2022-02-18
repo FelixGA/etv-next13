@@ -106,7 +106,7 @@ export default function comparePage(props) {
           <ResultList sortedCars={sortedCars} />
         </div>
       </div>
-      <div className="">
+      <div className="col-span-full ">
         <StickyPopUpForComparison />
       </div>
     </div>
