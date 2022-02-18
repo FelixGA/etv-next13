@@ -46,61 +46,72 @@ rangeLithium:
   key: Reichweite Lithium-Akku
 chargingTime230V:
   value: 50
-  baseUnit: h
+  baseUnit: St.
   key: 230-V-Ladezeit
 chargingTimeLithium:
   value: 40
-  baseUnit: h
+  baseUnit: St.
   key: Ladezeit Lithium-Akku
 chargingTimeFast:
   value: 30
-  baseUnit: h
+  baseUnit: St.
   key: Schnell-Ladezeit
 batteryCapacity:
-  value: 55
+  value: 55345345346
   baseUnit: kwh
   key: Batterie-Kapazität
+batteryIncluded:
+  value: ja
+  key: akku incl
+secondHand:
+  key: verbraucht
+  value: jaa
 power:
   value: 2323
   baseUnit: kw
+  key: Leistung
 seats:
   value: 4
   key: Sitzplätze
 rating:
   value: 1
-  key: Bewertung
+  key: gut
 guarantee:
   value: 2
-  baseUnit: y
+  baseUnit: jahren
   key: Garantie
 availability:
-  value: 12.10.2022
+  value: 12.10.2099
   key: Verfügbarkeit
 subsidies:
-  baseUnit: Euro (?)
+  baseUnit: euro
   key: Förderhöhe
   value: 5
 batteryGuarantee:
   value: 5
-  baseUnit: "1"
+  baseUnit: jahren
   key: Garantie Akku
+loadingHeight:
+  value: 233
+  baseUnit: dff
+  key: ladehoeche
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
   valuewidth: 52
-  baseUnit: cm ?
+  baseUnit: "cm "
   valuelength: 45
   valueheight: 55
   valuewheelbase: 5
-  key: Fahrzeugmaße
+  key: Fahrzeug Maße
 loadingVolume:
   valueheight: 55
   valuewidth: 63
   valuelength: 12
-  baseUnit: cm?
-  key: Laderaum-Maße (?)
+  baseUnit: cm
+  key: "Laderaum-Maße "
   height: Höhe
   width: Breite
   length: Länge
