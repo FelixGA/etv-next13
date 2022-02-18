@@ -1,15 +1,29 @@
 import Image from "next/image";
-
-import { MdKeyboardArrowDown } from "react-icons/md";
- 
-import { useState, useEffect } from "react";
 import { useStore } from "../store";
+import { MdKeyboardArrowDown } from "react-icons/md";
+
+import { motion, AnimatePresence } from "framer-motion";
+
 import FilterCheckboxMobile from "./FilterCheckboxMobile";
+
+const variants = {
+  enter: {
+    y: -1000,
+    opacity: 0,
+  },
+  center: {
+    y: 0,
+    opacity: 1,
+  },
+  exit: {
+    y: -1000,
+    opacity: 0,
+  },
+};
 
 function FilterItemMobile(props) {
   const item = props.item;
-  const [truncate, setTruncate] = useState(false);
-  const [rotateIt, setRotateIt] = useState(false);
+
   const { state, dispatch } = useStore();
   /* to render the four ranges */
   const rangesForCheckboxesmMobile = item.options.map((checkbox, index) => (
@@ -20,7 +34,7 @@ function FilterItemMobile(props) {
           data: [{ min: checkbox.value, max: 99999 }],
         });
       }}
-       key={index}
+      key={index}
       className="mt-1 flex flex-row py-2 "
     >
       <FilterCheckboxMobile checkbox={checkbox} />
@@ -44,7 +58,7 @@ function FilterItemMobile(props) {
           });
         }}
       >
-        <div className="flex flex-row justify-between border-b py-4  w-full  ">
+        <div className="flex flex-row justify-between border-b py-4 flex-1">
           <div className="flex flex-row  ">
             <div className="w-6 h-6 ml-4 ">
               <Image
@@ -54,7 +68,6 @@ function FilterItemMobile(props) {
                 width={24}
                 height={28}
                 layout="responsive"
-                 
               />
             </div>
             <div className="pl-4 my-auto ">

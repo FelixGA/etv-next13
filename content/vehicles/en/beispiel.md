@@ -21,6 +21,15 @@ body: >-
   kippbarer Container erhältlich.
 
 src: /images/addax-mt-laubgitter-wiki.jpg
+
+body: >-
+  Addax ist ein belgischer Hersteller, der sich auf Nutzfahrzeuge für
+  Unternehmen und Gemeinden spezialisiert hat. Der Addax MT ist mit einer
+  offenen sowie einer geschlossenen Frachtbox verfügbar, welche entweder mit
+  klappbaren Seitenwänden oder mit einem hohen Gitteraufbau versehen ist. Des
+  Weiteren sind auch Aufbauten wie Pritsche, Kipper, Koffer, Kühlkoffer sowie
+  kippbarer Container erhältlich.
+
 category: flatbed truck
 typeClass: N1
 loadingWeight:
