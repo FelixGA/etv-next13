@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function MobileNav(props) {
   return (
     <div className="relative bg-blue-darker w-full  h-screen   ">
-      <ul className="flex flex-col items-center sm:items-start sm:pl-16  w-full   h-3/4 justify-evenly text-grey-dark text-3xl pt-8">
+      <ul className="flex flex-col items-center sm:items-start sm:pl-16 flex-1 h-3/4 justify-evenly text-grey-dark text-3xl ">
         <li className="">
           <Link href="/">
             <a
