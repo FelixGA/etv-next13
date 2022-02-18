@@ -103,7 +103,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="hero-section-container m-4 lg:w-3/4 lg:m-auto ">
-        <div className="main-heading-container flex flex-row justify-start lg:text-xl lg:w-full lg:mt-20">
+        <div className="main-heading-container flex justify-start lg:text-xl lg:flex-1 lg:mt-20 pb-2 md:pb-0">
           <div className="m-[10px] lg:mr-14">
             <Image
               src="/images/siegel2.png"
@@ -125,14 +125,14 @@ const HeroSection = () => {
               genau für Ihre Ansprüche
             </p>
 
-            <p className="pb-4 hidden lg:flex lg:flex-row lg:justify-between ">
-              <span className="text-blue-extra">
+            <p className="pb-4 hidden lg:flex justify-between ">
+              <span className="text-blue-extra font-bold">
                 <b className="text-blue-extrablue">&#10004;</b> unabhängig
               </span>
-              <span className="text-blue-extra">
+              <span className="text-blue-extra font-bold">
                 <b className="text-blue-extrablue">&#10004;</b> schnell
               </span>
-              <span className="text-blue-extra">
+              <span className="text-blue-extra font-bold">
                 <b className="text-blue-extrablue">&#10004;</b> immer aktuell
               </span>
             </p>
@@ -166,14 +166,13 @@ const HeroSection = () => {
                   </select>
                 </div>
               </div>
-              <div className="h-14 lg:w-68  w-full  my-4 pt-2 gmsou text-base rounded-lg bg-white lg:w-[14vw]	">
+              <div className="h-14 lg:w-68 w-full my-4 pt-2 gmsou text-base rounded-lg bg-white lg:w-[14vw]	">
                 <label className="px-2 flex flex-row justify-between text-left">
                   Preis <div className=" relative top-6">▼</div>
                 </label>
                 <div className=" m-1">
                   <select
-                    className=" p-4 relative bottom-6 w-full
-               text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
+                    className=" p-4 relative bottom-6 w-full text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
                     id="price"
                     onChange={(e) => {
                       setChoosePrice(e.target.value);
@@ -188,8 +187,8 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            <span className="flex w-full lg:w-1/2  flex-row lg:justify-around justify-between items-start lg:items-center flex-wrap">
-              <div className="w-1/3 h-14  pt-2 gmsou mb-6 lg:mb-0 lg:w-[14vw] text-base rounded-lg bg-white">
+            <span className="flex flex-1 lg:w-1/2 lg:justify-around justify-between items-start lg:items-center flex-wrap ">
+              <div className="w-2/5 h-14 pt-2 gmsou mb-6 lg:mb-0 lg:w-[14vw] text-base rounded-lg bg-white">
                 <label className="px-2 flex flex-row justify-between text-left">
                   Nutzlast <div className=" relative right-0 top-6">▼</div>
                 </label>
@@ -210,7 +209,7 @@ const HeroSection = () => {
                 </div>
               </div>
               <button
-                className="bg-blue-dark w-1/3 hover:bg-blue-light text-white font-bold px-2 text-sm rounded-lg lg:w-[14vw] h-14 "
+                className="bg-blue-dark w-2/5 hover:bg-blue-light text-white font-bold px-2 text-sm rounded-lg lg:w-[14vw] h-14 "
                 onClick={() => {
                   dispatch({
                     type: "price",
@@ -248,7 +247,7 @@ const HeroSection = () => {
             </span>
           </div>
         </div>
-        <div className="icons-container flex flex-row justify-around flex-wrap">
+        <div className="icons-container flex justify-around flex-wrap pt-2">
           {logos.map((logo, index) => (
             <i className="m-2 lg:my-20 lg:scale-125" key={index}>
               <Image src={logo.src} alt={logo.alt} width={48} height={48} />
