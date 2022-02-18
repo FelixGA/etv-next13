@@ -34,7 +34,7 @@ function ActiveFilterBlock() {
             setClicked(!clicked);
           }}
         >
-          <div className="relative flex justify-center items-center">
+          <div className="relative flex justify-center items-center sm:pr-8 xl:pr-0">
             <h4 className="sort-heading w-fit ">
               {`Sortieren nach: ${state?.activeSortValues}`}{" "}
             </h4>

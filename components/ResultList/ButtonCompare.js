@@ -73,8 +73,8 @@ function ButtonCompare(props) {
         }}
         className={
           disabled
-            ? "bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 text-sm xl:tracking-wider rounded  px-4 flex justify-center items-center h-8 sm:h-10 w-28 sm:w-36 xl:w-40  "
-            : "bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 text-sm xl:tracking-wider rounded  px-4 flex justify-center items-center h-8 sm:h-10 w-28 sm:w-36 xl:w-40 "
+            ? "bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 text-sm xl:tracking-wider rounded  px-4 flex justify-center items-center h-8 sm:h-10 w-32 xl:w-40  "
+            : "bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white mb-2 text-sm xl:tracking-wider rounded  px-4 flex justify-center items-center h-8 sm:h-10 w-32 xl:w-40 "
         }
       >
         {disabled ? "Zum Vergleich" : buttonInput}
