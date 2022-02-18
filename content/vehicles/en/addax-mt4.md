@@ -1,5 +1,5 @@
 ---
-title: Addax MT4
+title: Addax MT4 fdg
 price: 55000
 description: >-
   Addax ist ein beglischer Hersteller, der sich auf Nutzfahrzeuge für
