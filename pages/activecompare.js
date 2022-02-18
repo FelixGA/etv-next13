@@ -1,12 +1,21 @@
 import { useStore } from "../components/store";
+import { useState } from "react";
 import ActiveCompareItem from "../components/ActiveCompare/ActiveCompareItem";
 import ActiveCompareImage from "../components/ActiveCompare/ActiveCompareImage";
 import Link from "next/link";
 import ActiveCompareButton from "../components/ActiveCompare/ActiveCompareButton";
+import getContent from "/utils/getContent";
+import { MDXRemote } from "next-mdx-remote";
 
 export default function Activecompare(props) {
   const { state, dispatch } = useStore();
+  const [getCars, SetGetCars] = useState(props.vehicles);
+  // get all cars as props
+  console.log(getCars);
+  /*  get the 3 from the state for comparison */
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
+
+  console.log(comparedCars);
 
   return (
     <div className="wrapper">
@@ -37,7 +46,7 @@ export default function Activecompare(props) {
           </button>
         </div>
 
-        <ActiveCompareImage comparedCars={comparedCars} />
+        {/* <ActiveCompareImage comparedCars={comparedCars} /> */}
       </div>
       {/* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN MOBILE VIEW<> */}
       <div className="data-content-wrapper  grid grid-flow-col grid-cols-[1/4_minmax(130px,_1fr)] w-full scrollbar-hide overflow-x-scroll lg:hidden">
@@ -112,7 +121,7 @@ export default function Activecompare(props) {
           <div className="w-[105%] bg-[#D0DDEA] h-20"></div>
         </div>
         <div className="flex flex-row">
-          <ActiveCompareItem comparedCars={comparedCars} />
+          {/* <ActiveCompareItem comparedCars={comparedCars} /> */}
         </div>
       </div>
       {/* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN DESKTOP VIEW<> */}
@@ -186,13 +195,32 @@ export default function Activecompare(props) {
           </div>
         </div>
 
-        <ActiveCompareItem comparedCars={comparedCars} />
+        {/* <ActiveCompareItem comparedCars={comparedCars} /> */}
       </div>
       {/* BUTTONS */}
       <div className="CTA-btn w-full h-24 hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center bg-[#D0DDEA] mt-24">
         <div className="placeholder lg:w-64 xl:w-88 2xl:w-[380px] p-4 h-8 "></div>
-        <ActiveCompareButton comparedCars={comparedCars} />
+        {/* <ActiveCompareButton comparedCars={comparedCars} /> */}
       </div>
     </div>
   );
+}
+export async function getStaticProps(context) {
+  const pages = await getContent("pages", context.locale);
+  const posts = await getContent("posts", context.locale);
+  let vehicles = await getContent("vehicles", context.locale);
+  const page = pages.find((page) => page.path === "/activecompare");
+
+  if (!pages) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      vehicles,
+      posts,
+    },
+  };
 }

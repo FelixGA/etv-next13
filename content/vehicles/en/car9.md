@@ -1,12 +1,12 @@
 ---
-title: car9
+title: car10
 price: 10000
 description: dsfbsgbwdcw qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv
-src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
-preview: rtrth
+src: /images/Maxus-eDeliver-3-Front-2-300x200.jpg
+preview: etgwetgwetg
 category: Koffer
 typeClass: N1
 loadingWeight:
@@ -47,7 +47,7 @@ batteryCapacity:
   baseUnit: kw
 power:
   key: Leistung
-  value: 23434
+  value: 234234
   baseUnit: kw
 seats:
   key: Sitzplatze

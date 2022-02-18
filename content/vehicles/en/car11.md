@@ -1,11 +1,11 @@
 ---
-title: car9
+title: car11
 price: 10000
 description: dsfbsgbwdcw qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv qergwetgetgwdvwrv
   qergwetgetgwdvwrv qergwetgetgwdvwrv
-src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
+src: /images/addax-mt-laubgitter-wiki.jpg
 preview: rtrth
 category: Koffer
 typeClass: N1
