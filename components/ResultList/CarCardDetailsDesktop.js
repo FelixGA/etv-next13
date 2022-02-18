@@ -8,7 +8,7 @@ import RatingBox from "./RatingBox";
 import { useRouter } from "next/router";
 import CarCardProps from "./CarCardProps";
 
-function CarCardDetailsDesktop({carItem}) {
+function CarCardDetailsDesktop({ carItem }) {
   // let carItem = props.carItem;
   const router = useRouter();
 
@@ -20,7 +20,7 @@ function CarCardDetailsDesktop({carItem}) {
             className={
               router.query.cartitle
                 ? "hidden"
-                : " pl-8 text-blue-extra font-bold pt-4 pb-4"
+                : " pl-8 text-blue-extra font-bold"
             }
           >
             {carItem?.title}
@@ -33,10 +33,7 @@ function CarCardDetailsDesktop({carItem}) {
           <CarCardProps details={carItem?.loadingWeight} image={image2} />
         </div>
         <div>
-          <CarCardProps
-            details={carItem?.chargingTime230V}
-            image={image4}
-          />
+          <CarCardProps details={carItem?.chargingTime230V} image={image4} />
           <CarCardProps details={carItem?.maxSpeed} image={image3} />
         </div>
 

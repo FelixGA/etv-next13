@@ -15,11 +15,11 @@ import PriceInputs from "./PriceInputs";
 
 const variants = {
   enter: {
-   y: -1000,
+    y: -1000,
     opacity: 0,
   },
   center: {
-   y: 0,
+    y: 0,
     opacity: 1,
   },
   exit: {
@@ -237,22 +237,21 @@ function FiltersDesktop() {
 
   const getPriceFilterData = priceFilterData.map((item) => {
     return (
-      <div className="relative  bg-white" key={item.id}>
+      <div className="relative bg-white" key={item.id}>
         <FilterItemDesktop item={item} />
         <AnimatePresence initial={false}>
-          {state?.truncates == item.title && (<motion.div
-            variants={variants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{ type: "tween", duration: 0.2 }}
-            className=
-              "flex flex-col ml-8 relative   "
-            
-          >
-            <PriceInputs />
-          </motion.div>)}
-          
+          {state?.truncates == item.title && (
+            <motion.div
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{ type: "tween", duration: 0.2 }}
+              className="flex flex-col ml-8 relative "
+            >
+              <PriceInputs />
+            </motion.div>
+          )}
         </AnimatePresence>
       </div>
     );

@@ -35,7 +35,7 @@ curbweight:
 maxSpeed:
   value: 70
   baseUnit: km/h
-  key: V-max
+  key: V-max Höchstgeschwindigkeit
 range230V:
   value: 131
   baseUnit: km
@@ -59,6 +59,7 @@ chargingTimeFast:
 batteryCapacity:
   value: 55345345346
   baseUnit: kwh
+
   key: Batterie-Kapazität
 batteryIncluded:
   value: ja
@@ -70,6 +71,7 @@ power:
   value: 2323
   baseUnit: kw
   key: Leistung
+
 seats:
   value: 4
   key: Sitzplätze
@@ -78,8 +80,10 @@ rating:
   key: gut
 guarantee:
   value: 2
+
   baseUnit: jahren
   key: Garantie
+
 availability:
   value: 12.10.2099
   key: Verfügbarkeit

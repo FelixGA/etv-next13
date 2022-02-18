@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useStore } from "../../components/store";
 import Link from "next/link";
- 
+
 //import filtersData from "../filtersData.json";
 
 const HeroSection = () => {
@@ -99,7 +99,6 @@ const HeroSection = () => {
             alt="Kleintransporter"
             objectFit="cover"
             layout="responsive"
-             
           />
         </div>
       </div>
@@ -111,7 +110,6 @@ const HeroSection = () => {
               width={166}
               height={166}
               // layout="responsive"
-               
             />
           </div>
           <div className="main-heading-text lg:flex lg:flex-col lg:justify-between ">
@@ -128,20 +126,20 @@ const HeroSection = () => {
             </p>
 
             <p className="pb-4 hidden lg:flex lg:flex-row lg:justify-between ">
-              <span>
-                <b className="text-blue-light">&#10004;</b> unabhängig
+              <span className="text-blue-extra">
+                <b className="text-blue-extrablue">&#10004;</b> unabhängig
               </span>
-              <span>
-                <b className="text-blue-light">&#10004;</b> schnell
+              <span className="text-blue-extra">
+                <b className="text-blue-extrablue">&#10004;</b> schnell
               </span>
-              <span>
-                <b className="text-blue-light">&#10004;</b> immer aktuell
+              <span className="text-blue-extra">
+                <b className="text-blue-extrablue">&#10004;</b> immer aktuell
               </span>
             </p>
           </div>
         </div>
-        <div className="lg:flex lg:justify-between lg:items-center  bg-yellow-light lg:h-24">
-          <h2 className="text-blue-dark font-bold m-4 lg:hidden ">
+        <div className="lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-24 border border-blue-dark">
+          <h2 className="text-blue-dark font-bold pt-2 pl-2 lg:hidden ">
             Jetzt vergleichen
           </h2>
 
@@ -252,14 +250,8 @@ const HeroSection = () => {
         </div>
         <div className="icons-container flex flex-row justify-around flex-wrap">
           {logos.map((logo, index) => (
-            <i className="m-2 lg:my-20 lg:scale-125"  key={index}>
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                width={48}
-                height={48}
-                 
-              />
+            <i className="m-2 lg:my-20 lg:scale-125" key={index}>
+              <Image src={logo.src} alt={logo.alt} width={48} height={48} />
             </i>
           ))}
         </div>
