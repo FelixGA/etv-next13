@@ -1,6 +1,5 @@
 ---
-title: Addax MT
-price: 35000
+title: beispiel
 description: >-
   Addax ist ein belgischer Hersteller, der sich auf Nutzfahrzeuge für
   Unternehmen und Gemeinden spezialisiert hat. Der Addax MT ist mit einer
@@ -11,7 +10,6 @@ description: >-
 
 
   Technisch gibt es den Addax MT in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und als MT15 mit  72 Volt-Motor angetrieben. Beide Versionen sind mit Lithium-Ionen-Akkus zur Energiespeicherung ausgestattet, die eine Kapazität von 10,2 kWh bzw. 14,4 kWh besitzen. Der Addax MT besitzt eine EU-Typengenehmigung und kann somit in allen EU-Staaten auf öffentlichen Straßen bewegt werden.
-src: /images/addax-mt-laubgitter-wiki.jpg
 preview: >-
   Addax ist ein belgischer Hersteller, der sich auf Nutzfahrzeuge für
   Unternehmen und Gemeinden spezialisiert hat. Der Addax MT ist mit einer
@@ -23,84 +21,92 @@ preview: >-
 
   Technisch gibt es den Addax MT in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und als MT15 mit  72 Volt-Motor angetrieben. Beide Versionen sind mit Lithium-Ionen-Akkus zur Energiespeicherung ausgestattet, die eine Kapazität von 10,2 kWh bzw. 14,4 kWh besitzen. Der Addax MT besitzt eine EU-Typengenehmigung und kann somit in allen EU-Staaten auf öffentlichen Straßen bewegt werden.
 category: Pritsche
-typeClass: N1
 loadingWeight:
+  key: "3425"
   value: 1024
-  key: Loading Weight
   baseUnit: kg
 curbweight:
-  key: Curb Weight
+  key: "234534"
   value: 499
   baseUnit: kg
 maxSpeed:
+  key: "3245"
   value: 70
-  key: V-max
   baseUnit: km/h
 range230V:
-  key: Range SLA-Battery
+  key: "2345"
   value: 131
   baseUnit: km
 rangeLithium:
-  key: Range Lithium-Battery
+  key: "235"
   value: 150
   baseUnit: km
 chargingTime230V:
-  key: Charging time 230 V
+  key: "2345"
   value: 50
-  baseUnit: h
 chargingTimeLithium:
-  key: Charging Time Lithium-Battery
+  baseUnit: "2345"
   value: 40
-  baseUnit: h
+  key: "2345"
 chargingTimeFast:
-  key: Charging Time Fast
+  key: "2354"
   value: 30
-  baseUnit: h
-batteryCapacity:
-  key: BATTERY-CAPACITY
-  value: 55
-  baseUnit: kwh
+  baseUnit: "2354"
+batteryIncluded:
+  key: "2345"
+  value: "2345"
+secondHand:
+  key: qwef
+  value: "2345"
+power:
+  key: "2345"
+  value: 2323
+  baseUnit: kw
 seats:
-  key: SEATS
+  key: "2345"
   value: 4
 rating:
-  key: Result
+  key: "2345"
   value: 1
 guarantee:
-  key: Guarantee
-  value: 2
-  baseUnit: y
+  key: "2345"
+  value: 2345
+  baseUnit: "2345"
 availability:
-  key: AVAILABILITY
-  value: 12.10.2022
+  key: "2345"
+  value: "2345"
 subsidies:
-  key: SUBSIDIES
-  value: 5
-  baseUnit: Euro (?)
+  baseUnit: "2345"
+  value: 2345
+  key: "3245"
 batteryGuarantee:
-  key: BATTERY-GUARANTEE
-  value: 5
-  baseUnit: "1"
+  key: "2345"
+  value: 2345
+  baseUnit: "2345"
+loadingHeight:
+  key: "235"
+  value: 233
+  baseUnit: dff
 carSizes:
-  width: WIDTH
-  length: LENGTH
-  height: HEIGHT
-  wheelbase: WHEELBASE
+  width: "2345"
+  length: "2345"
+  height: "2345"
+  wheelbase: "2345"
   valuewidth: 52
-  baseUnit: cm ?
+  baseUnit: "cm "
   valuelength: 45
   valueheight: 55
   valuewheelbase: 5
-  key: CAR-SIZES
+  key: "2345"
 loadingVolume:
-  key: LOADINGVOLUME?
-  height: HEIGHT
+  key: "2345"
   valueheight: 55
-  width: WIDTH
-  length: LENGTH
-  valuelength: 12
   valuewidth: 63
-  baseUnit: cm?
+  valuelength: 12
+  baseUnit: cm
+  height: "2345"
+  width: "2345"
+  length: "2345"
 ---
 Addax ist ein belgischer Hersteller, der sich auf Nutzfahrzeuge für Unternehmen und Gemeinden spezialisiert hat. Der Addax MT ist mit einer offenen sowie einer geschlossenen Frachtbox verfügbar, welche entweder mit klappbaren Seitenwänden oder mit einem hohen Gitteraufbau versehen ist. Des Weiteren sind auch Aufbauten wie Pritsche, Kipper, Koffer, Kühlkoffer sowie kippbarer Container erhältlich.
 
