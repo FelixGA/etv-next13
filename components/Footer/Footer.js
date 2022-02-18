@@ -13,11 +13,11 @@ const Footer = () => {
             </Link>
           </h5>
           <ul className=" flex flex-col justify-between items-start flex-wrap  my-4  text-black">
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-            <li>item 5</li>
+            <li>article 1</li>
+            <li>article 2</li>
+            <li>article 3</li>
+            <li>article 4</li>
+            <li>article 5</li>
           </ul>
         </div>
         <div className="flex lg:w-48 w-1/2 flex-col justify-start flex-wrap ">
@@ -27,11 +27,11 @@ const Footer = () => {
             </Link>
           </h5>
           <ul className=" flex flex-col justify-between items-start flex-wrap  my-4  text-black">
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-            <li>item 5</li>
+            <li>article 1</li>
+            <li>article 2</li>
+            <li>article 3</li>
+            <li>article 4</li>
+            <li>article 5</li>
           </ul>
         </div>
         <div className="flex lg:w-48 w-1/2 flex-col justify-start flex-wrap ">
@@ -41,11 +41,11 @@ const Footer = () => {
             </Link>
           </h5>
           <ul className=" flex flex-col justify-between items-start flex-wrap  my-4  text-black">
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-            <li>item 5</li>
+            <li>article 1</li>
+            <li>article 2</li>
+            <li>article 3</li>
+            <li>article 4</li>
+            <li>article 5</li>
           </ul>
         </div>
         <div className="flex lg:w-48 w-1/2 flex-col justify-start flex-wrap ">
@@ -56,10 +56,10 @@ const Footer = () => {
             </Link>
           </h5>
           <ul className=" flex flex-col justify-between items-start flex-wrap mly-2 mt-4 text-black">
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
+            <li>article 1</li>
+            <li>article 2</li>
+            <li>article 3</li>
+            <li>article 4</li>
           </ul>
         </div>
       </nav>

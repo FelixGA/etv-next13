@@ -62,15 +62,7 @@ const BasicInfo = ({ carItem, descriptionSize }) => {
           >
             {carItem?.body}
           </p>
-          <span
-            className={descriptionSize ? "text-sm text-blue-dark" : "hidden"}
-            onClick={() => {
-              SetDescriptionSize(false);
-            }}
-          >
-            {" "}
-            Alle Daten anzeigen
-          </span>
+          <span className="text-sm text-blue-dark">Alle Daten anzeigen</span>
         </div>
       </div>
     </div>

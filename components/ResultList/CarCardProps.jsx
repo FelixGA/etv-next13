@@ -22,7 +22,7 @@ function CarCardProps(props) {
         <div className="text-grey-dark font-bold ">
           {props.details?.value}
           {/* {props.details?.type}  */}
-          kg
+          {props.details?.baseUnit}
         </div>
       </div>
     </div>

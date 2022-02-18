@@ -12,20 +12,22 @@ function CarCardDetailsMobile(props) {
           <div className="flex flex-row flex-1 py-1  ">
             <div className="flex flex-row flex-1 justify-between ">
               <div className="text-grey-dark font-bold w-full xs:w-2/5">
-              {props.carItem?.loadingWeight.key}:
+                {props.carItem?.loadingWeight.key}:
               </div>
               <div className="text-blue-dark font-bold w-full xs:w-3/5 ">
-              {props.carItem?.loadingWeight.value} kg
+                {props.carItem?.loadingWeight.value}{" "}
+                {props.carItem?.loadingWeight.baseUnit}
               </div>
             </div>
           </div>
           <div className="flex flex-row flex-1  py-1">
             <div className="flex flex-row flex-1 justify-center">
               <div className="text-grey-dark font-bold w-full xs:w-2/5">
-              {props.carItem?.maxSpeed.key}:
+                {props.carItem?.maxSpeed.key}:
               </div>
               <div className="text-blue-dark font-bold w-full xs:w-3/5">
-              {props.carItem?.maxSpeed.value}km/h
+                {props.carItem?.maxSpeed.value}
+                {props.carItem?.maxSpeed.baseUnit}
               </div>
             </div>
           </div>
@@ -34,20 +36,22 @@ function CarCardDetailsMobile(props) {
           <div className="flex flex-row flex-1 py-1">
             <div className="flex flex-row flex-1 justify-between">
               <div className="text-grey-dark font-bold w-full xs:w-2/5">
-              {props.carItem?.range230V.key}:
+                {props.carItem?.range230V.key}:
               </div>
               <div className="text-blue-dark font-bold w-full xs:w-3/5">
-              {props.carItem?.range230V.value}km
+                {props.carItem?.range230V.value}
+                {props.carItem?.range230V.baseUnit}
               </div>
             </div>
           </div>
           <div className="flex flex-row flex-1 py-1 ">
             <div className="flex flex-row flex-1 justify-between">
               <div className="text-grey-dark font-bold w-full xs:w-2/5">
-              {props.carItem?.chargingTime230V.key}:
+                {props.carItem?.chargingTime230V.key}:
               </div>
               <div className="text-blue-dark font-bold w-full xs:w-3/5">
-              {props.carItem?.chargingTime230V.value}h
+                {props.carItem?.chargingTime230V.value}
+                {props.carItem?.chargingTime230V.baseUnit}
               </div>
             </div>
           </div>
