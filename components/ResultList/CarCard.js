@@ -45,7 +45,7 @@ function CarCard(props) {
           </Link>
 
           <Link href={`/transporter/${carItem.title}`} passHref>
-            <a className="block w-36 sm:w-64 md:w-72 h-52">
+            <a className="block w-36 sm:w-64 md:w-80 h-52">
               {carItem?.src && (
                 <Image
                   className=""
