@@ -90,8 +90,8 @@ const HeroSection = () => {
 
   return (
     <div className="relative ">
-      <div className="hidden lg:flex w-full h-80 absolute justify-end forz bottom-[264px]  border-black-darkest">
-        <div className="w-[460px] relative bottom-10 opacity-40 object-left-top	">
+      <div className="hidden lg:flex w-full h-96 absolute justify-end forz  border-black-darkest">
+        <div className="w-[520px] relative bottom-0 opacity-30 object-left-top	">
           <Image
             src="/images/kleintransporter-hintergrund.png"
             width={400}
@@ -102,22 +102,22 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      <div className="hero-section-container m-4 lg:w-3/4 lg:m-auto ">
-        <div className="main-heading-container flex justify-start lg:text-xl lg:flex-1 lg:mt-20 pb-2 md:pb-0">
-          <div className="m-[10px] lg:mr-14">
+      <div className="hero-section-container m-4 lg:w-3/4 lg:m-auto">
+        <div className="main-heading-container flex justify-evenly lg:text-xl flex-1 pb-2 md:pb-0">
+          <div className="my-10 w-64">
             <Image
               src="/images/siegel2.png"
               width={166}
               height={166}
-              // layout="responsive"
+              layout="responsive"
             />
           </div>
-          <div className="main-heading-text lg:flex lg:flex-col lg:justify-between ">
-            <h1 className="text-2xl lg:text-4xl pl-3 ">
+          <div className="main-heading-text lg:flex lg:flex-col lg:justify-evenly">
+            <h1 className="text-2xl lg:text-3xl pl-3 md:pt-8">
               Elektrotransporter-Vergleich
             </h1>
-            <p className="text-grey-darker text-base lg:text-2xl pl-3">
-              Hier finden Sie den{" "}
+            <p className="text-grey-darker text-2xl lg:text-3xl pl-3">
+              Hier finden Sie den
               <b className="text-grey-darkest font-bold">
                 passenden Elektrotransporter,
               </b>
@@ -125,14 +125,14 @@ const HeroSection = () => {
               genau für Ihre Ansprüche
             </p>
 
-            <p className="pb-4 hidden lg:flex justify-between ">
-              <span className="text-blue-extra font-bold">
+            <p className="hidden lg:flex justify-between">
+              <span className="text-blue-extra font-bold pl-3 text-xl xl:text-2xl">
                 <b className="text-blue-extrablue">&#10004;</b> unabhängig
               </span>
-              <span className="text-blue-extra font-bold">
+              <span className="text-blue-extra font-bold text-xl xl:text-2xl">
                 <b className="text-blue-extrablue">&#10004;</b> schnell
               </span>
-              <span className="text-blue-extra font-bold">
+              <span className="text-blue-extra font-bold text-xl xl:text-2xl">
                 <b className="text-blue-extrablue">&#10004;</b> immer aktuell
               </span>
             </p>
