@@ -3,7 +3,8 @@ import MobileNav from "./MobileNav";
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import styles from './Header.module.css'
+import styles from "./Header.module.css";
+import Link from "next/link";
 const variants = {
   enter: {
     x: 1000,
@@ -24,25 +25,27 @@ const Header = () => {
   return (
     <div className="relative print:hidden">
       <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-18 w-screen ">
-        <div className="flex flex-row pl-0 sm:pl-4 xl:pl-32">
-          <div className="logo-container mt-2 w-20">
-            <Image
-              src="/images/etv-logo-final-white.png"
-              width={80}
-              height={60}
-              className="logo"
-              objectFit="cover"
-              layout="responsive"
-            />
+        <Link href={`/`} passHref>
+          <div className="flex flex-row pl-0 sm:pl-4 xl:pl-32 ">
+            <div className="logo-container mt-2 w-20 ">
+              <Image
+                src="/images/etv-logo-final-white.png"
+                width={80}
+                height={60}
+                className="logo"
+                objectFit="cover"
+                layout="responsive"
+              />
+            </div>
+            <div className=" items-center hidden sm:flex">
+              <p className="text-white text-xs ">
+                ELEKTROTRANSPORTER
+                <br />
+                VERGLEICH
+              </p>
+            </div>
           </div>
-          <div className=" items-center hidden sm:flex">
-            <p className="text-white text-xs ">
-              ELEKTROTRANSPORTER
-              <br />
-              VERGLEICH
-            </p>
-          </div>
-        </div>
+        </Link>
         <div className="hidden lg:block w-[50%]">
           <Nav />
         </div>

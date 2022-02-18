@@ -58,6 +58,9 @@ batteryCapacity:
   key: BATTERY-CAPACITY
   value: 55
   baseUnit: ??
+power:
+  value: 5455
+  baseUnit: kw
 seats:
   key: SEATS
   value: 4

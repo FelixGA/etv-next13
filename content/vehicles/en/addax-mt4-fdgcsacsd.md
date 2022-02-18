@@ -1,5 +1,5 @@
 ---
-title: Addax MT4 fdgcsacsd
+title: "Addax MT4 "
 price: 55000
 description: >-
   Addax ist ein beglischer Hersteller, der sich auf Nutzfahrzeuge für
@@ -60,11 +60,15 @@ batteryCapacity:
   key: BATTERY-CAPACITY
   value: 55
   baseUnit: ??
+power:
+  key: Leistung
+  value: 42342
+  baseUnit: kw
 seats:
   key: SEATS
   value: 4
 rating:
-  key: ERGEBNIS
+  key: gut
   value: 1
 guarantee:
   key: GUARANTEE
