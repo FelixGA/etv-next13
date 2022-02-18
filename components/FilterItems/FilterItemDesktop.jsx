@@ -1,6 +1,6 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
- 
+
 import FilterCheckbox from "./FilterCheckbox";
 import { useStore } from "../store";
 import { motion, AnimatePresence } from "framer-motion";
@@ -23,8 +23,7 @@ const variants = {
 function FilterItemDesktop(props) {
   const item = props.item;
   const { state, dispatch } = useStore();
-  
- 
+
   /* to render the four ranges */
   const rangesForCheckboxes = item.options.map((checkbox, index) => (
     <div
@@ -37,7 +36,7 @@ function FilterItemDesktop(props) {
               : [{ min: checkbox.value, max: 99999 }],
         });
       }}
-       key={index}
+      key={index}
       className="mt-4 flex cursor-pointer py-2 "
     >
       <FilterCheckbox checkbox={checkbox} />
@@ -70,7 +69,6 @@ function FilterItemDesktop(props) {
                 width={24}
                 height={28}
                 layout="responsive"
-                 
               />
             </div>
             <div className="pl-4 my-auto ">
@@ -100,21 +98,19 @@ function FilterItemDesktop(props) {
         </div>
       </div>
       <AnimatePresence initial={false}>
-        {state?.truncates == item.title &&(<motion.div
-        // key="modal"
-        variants={variants}
-        initial="enter"
-        animate="center"
-        exit="exit"
-        transition={{ type: "tween",duration: 0.2 }}
-        // transition={{  }}
-          className="flex flex-col ml-8 " 
-          
-        >
-          {/* RENDERING THE FOUR RANGES */}
-          {rangesForCheckboxes}
-        </motion.div>)}
-        
+        {state?.truncates == item.title && (
+          <motion.div
+            variants={variants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ type: "tween", duration: 0.2 }}
+            className="flex flex-col ml-8 -z-50"
+          >
+            {/* RENDERING THE FOUR RANGES */}
+            {rangesForCheckboxes}
+          </motion.div>
+        )}
       </AnimatePresence>
     </>
   );
