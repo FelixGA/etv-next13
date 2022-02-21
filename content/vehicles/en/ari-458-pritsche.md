@@ -57,7 +57,7 @@ power:
   baseUnit: kw
   key: power
 seats:
-  value: 1
+  value: 2
   key: seats
 rating:
   value: 4,0 Sterne

@@ -59,7 +59,7 @@ power:
   baseUnit: kw
 seats:
   key: Sitzplätze
-  value: 1
+  value: 2
 rating:
   key: gut
   value: 4,0 Sterne
