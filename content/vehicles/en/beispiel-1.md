@@ -1,5 +1,6 @@
 ---
 title: beispiel2
+price: 44978
 description: jhjkhkhkkkkjkh
 src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
 category: Pritsche

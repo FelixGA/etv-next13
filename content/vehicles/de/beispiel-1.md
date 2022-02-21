@@ -11,7 +11,7 @@ secondHand:
   key: consumption
   value: ja
 title: beispiel2
-price: 45000
+price: 44978
 description: jsdnvksdkvjnkvnyx.d fsifjslf
 src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
 category: Pritsche
