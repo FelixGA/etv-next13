@@ -3,7 +3,6 @@ import MobileNav from "./MobileNav";
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import styles from "./Header.module.css";
 import Link from "next/link";
 const variants = {
   enter: {

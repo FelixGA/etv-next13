@@ -7,6 +7,9 @@ module.exports = withPWA({
     // runtimeCaching,
     disable: process.env.NODE_ENV === "development",
   },
+  images: {
+    domains: ["elektrotransporter-vergleich.de"],
+  },
   i18n: {
     locales: ["de", "en"],
     defaultLocale: "de",
