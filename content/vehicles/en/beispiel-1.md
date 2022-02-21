@@ -1,9 +1,10 @@
 ---
-title: beispiel2
-price: 44978
+title: Axiam-Pro e-Truck-Pritsche
+price: 19290
 description: jhjkhkhkkkkjkh
-src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
+src: https://elektrotransporter-vergleich.de/wp-content/uploads/2020/05/Axiam-Pro-Van-Front.jpg
 category: Pritsche
+typeClass: L6E
 loadingWeight:
   key: fwefwe
   value: 1024

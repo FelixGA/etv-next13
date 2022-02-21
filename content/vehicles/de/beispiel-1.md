@@ -10,12 +10,12 @@ loadingHeight:
 secondHand:
   key: consumption
   value: ja
-title: beispiel2
-price: 44978
-description: jsdnvksdkvjnkvnyx.d fsifjslf
-src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
+title: "Axiam-Pro e-Truck-Pritsche "
+price: 19290
+description: Aixam Pro e-Truck Pritsche
+src: https://elektrotransporter-vergleich.de/wp-content/uploads/2020/05/Axiam-Pro-Van-Front.jpg
 category: Pritsche
-typeClass: N1
+typeClass: L6E
 loadingWeight:
   value: 1024
   key: Zuladung
@@ -102,7 +102,6 @@ loadingVolume:
   valuewidth: 63
   baseUnit: cm
 ---
+Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen” mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein leichtes Nutzfahrzeug im Programm, welches mit Dieselmotoren (“D-Truck”) sowie Elektroantrieb (“e-Truck”) erhältlich ist. Die hier vorgestellte Elektro-Version gehört zur EG-Fahrzeugkategorie L6e, welche Leichtfahrzeuge bis zu einem Leergewicht von 425 Kilogramm (ohne Akkus) bezeichnet. 
 
-Addax ist ein belgischer Hersteller, der sich auf Nutzfahrzeuge für Unternehmen und Gemeinden spezialisiert hat. Der Addax MT ist mit einer offenen sowie einer geschlossenen Frachtbox verfügbar, welche entweder mit klappbaren Seitenwänden oder mit einem hohen Gitteraufbau versehen ist. Des Weiteren sind auch Aufbauten wie Pritsche, Kipper, Koffer, Kühlkoffer sowie kippbarer Container erhältlich.
-
-Technisch gibt es den Addax MT in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und als MT15 mit  72 Volt-Motor angetrieben. Beide Versionen sind mit Lithium-Ionen-Akkus zur Energiespeicherung ausgestattet, die eine Kapazität von 10,2 kWh bzw. 14,4 kWh besitzen. Der Addax MT besitzt eine EU-Typengenehmigung und kann somit in allen EU-Staaten auf öffentlichen Straßen bewegt werden.
+Der Elektrotransporter  in zwei Aufbautypen verfügbar: als Pritsche sowie mit Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem Gelände konzipiert.
