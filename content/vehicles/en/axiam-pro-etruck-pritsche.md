@@ -59,7 +59,7 @@ seats:
   value: 2
   key: seats
 rating:
-  value: 3,0 Sterne
+  value: 3,0
   key: satisfactory
 guarantee:
   key: guarantee
