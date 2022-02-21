@@ -2,7 +2,7 @@
 title: Evum-aCar-flatbed truck
 price: 33080
 description: mlmkljb bkl
-src: https://elektrotransporter-vergleich.de/wp-content/uploads/2020/08/Evum-Acar-Front-1024x683.jpg
+src: /images/evum-acar-front-1024x683.jpg
 category: flatbed truck
 loadingWeight:
   value: 1200
