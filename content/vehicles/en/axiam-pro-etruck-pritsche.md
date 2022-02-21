@@ -2,7 +2,7 @@
 title: Axiam-Pro eTruck-flatbed truck
 price: 19290
 description: bhkvmnxyfgdfl.h
-src: https://aixam.de/wp-content/uploads/2019/01/aixam-pro-pritsche.jpg
+src: /images/aixam-pro-pritsche.jpg
 category: flatbed truck
 loadingWeight:
   value: 327

@@ -3,7 +3,7 @@ title: Evum-aCar-Pritsche
 price: 33080
 description: Das Evum aCar ist ein Elektrotransporter der Kategorie N1  mit bis
   zu 1200kg Nutzlast.
-src: https://elektrotransporter-vergleich.de/wp-content/uploads/2020/08/Evum-Acar-Front-1024x683.jpg
+src: /images/evum-acar-front-1024x683.jpg
 category: Pritsche
 typeClass: L7E
 loadingWeight:
