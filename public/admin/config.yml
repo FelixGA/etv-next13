@@ -230,7 +230,7 @@ collections:
               i18n: true,
             }
       - label: "battery-Capacity-Blei"
-        name: "batteryCapacity"
+        name: "batteryCapacityBlei"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
@@ -244,7 +244,7 @@ collections:
               i18n: duplicate,
             }
       - label: "battery-Capacity-Lithium"
-        name: "batteryCapacity"
+        name: "batteryCapacityLithium"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
