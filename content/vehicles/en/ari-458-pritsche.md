@@ -1,5 +1,5 @@
 ---
-title: ARI458flatbedtruck
+title: ARI-458-Pritsche
 price: 13700
 description: mwqowöqDÄQMDÄQ
 src: /images/ari_458_pritsche_vorne_links_acb13085b0.jpg
