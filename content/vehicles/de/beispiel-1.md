@@ -1,6 +1,6 @@
 ---
 maxSpeed:
-  value: 70
+  value: 45
   key: V-max
   baseUnit: km/h
 loadingHeight:
@@ -13,40 +13,40 @@ secondHand:
 title: "Axiam-Pro e-Truck-Pritsche "
 price: 19290
 description: Aixam Pro e-Truck Pritsche
-src: https://elektrotransporter-vergleich.de/wp-content/uploads/2020/05/Axiam-Pro-Van-Front.jpg
+src: https://aixam.de/wp-content/uploads/2019/01/aixam-pro-pritsche.jpg
 category: Pritsche
 typeClass: L6E
 loadingWeight:
-  value: 1024
+  value: 327
   key: Zuladung
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 499
+  value: 440
   baseUnit: kg
 range230V:
   key: Reichweite SLA-Battery
-  value: 131
-  baseUnit: km
+  value: 0
+  baseUnit: nicht verfügbar
 rangeLithium:
   key: Reichweite Lithium-Battery
-  value: 150
+  value: 95
   baseUnit: km
 chargingTime230V:
   key: Ladenzeit 230 V
-  value: 50
-  baseUnit: St
+  value: 0
+  baseUnit: keine Angabe
 chargingTimeLithium:
-  key: Ladenzeit Lithium-Battery
-  value: 40
-  baseUnit: St
+  key: Ladenzeit Typ-2
+  value: 0
+  baseUnit: keine Angabe
 chargingTimeFast:
-  key: Ladenzeit Schnell
-  value: 30
-  baseUnit: St.
+  key: Ladezeit Schnellladung
+  value: 0
+  baseUnit: keine Angabe
 batteryCapacity:
   key: Kapazitaet
-  value: 55345345346
+  value: 1970
   baseUnit: kwh
 batteryIncluded:
   key: "Akku inkl:"
@@ -57,11 +57,11 @@ consumption:
   key: Verbrauch
 power:
   key: Leistung
-  value: 2323
+  value: 23/23
   baseUnit: kw
 seats:
   key: Sitzplätze
-  value: 4
+  value: 2
 rating:
   key: gut
   value: 1
@@ -72,7 +72,7 @@ guarantee:
 preview: et235t235235
 availability:
   key: Verfugbaerkeit
-  value: 12.10.2022
+  value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 500
@@ -95,12 +95,12 @@ carSizes:
 loadingVolume:
   key: Laderaum Maße
   height: Höhe
-  valueheight: 55
+  valueheight: 9099
   width: Breite
   length: Länge
   valuelength: 12
   valuewidth: 63
-  baseUnit: cm
+  baseUnit: mm
 ---
 Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen” mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein leichtes Nutzfahrzeug im Programm, welches mit Dieselmotoren (“D-Truck”) sowie Elektroantrieb (“e-Truck”) erhältlich ist. Die hier vorgestellte Elektro-Version gehört zur EG-Fahrzeugkategorie L6e, welche Leichtfahrzeuge bis zu einem Leergewicht von 425 Kilogramm (ohne Akkus) bezeichnet. 
 

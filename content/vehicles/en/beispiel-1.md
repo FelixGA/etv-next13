@@ -2,44 +2,44 @@
 title: Axiam-Pro e-Truck-Pritsche
 price: 19290
 description: jhjkhkhkkkkjkh
-src: https://elektrotransporter-vergleich.de/wp-content/uploads/2020/05/Axiam-Pro-Van-Front.jpg
+src: https://aixam.de/wp-content/uploads/2019/01/aixam-pro-pritsche.jpg
 category: Pritsche
 typeClass: L6E
 loadingWeight:
   key: fwefwe
-  value: 1024
+  value: 327
   baseUnit: kg
 curbweight:
   key: vsrgrdsg
-  value: 499
+  value: 440
   baseUnit: kg
 maxSpeed:
   key: scafdafsdgf
-  value: 70
+  value: 45
   baseUnit: km/h
 range230V:
   key: rgre
-  value: 131
-  baseUnit: km
+  value: 0
+  baseUnit: nicht verfügbar
 rangeLithium:
   key: vfdsgvdg
-  value: 150
+  value: 95
   baseUnit: km
 chargingTime230V:
   key: rtretrete
-  value: 50
+  value: 0
   baseUnit: kg
 chargingTimeLithium:
   key: cafcsadf
-  value: 40
+  value: 0
   baseUnit: kg
 chargingTimeFast:
   key: dmfksmf
-  value: 30
+  value: 0
   baseUnit: kg
 batteryCapacity:
   key: mdfklsdmf
-  value: 55345345346
+  value: 1970
   baseUnit: kwh
 batteryIncluded:
   key: mmnldsadf
@@ -49,11 +49,11 @@ consumption:
   baseUnit: kwh
 power:
   key: efrete
-  value: 2323
+  value: 23/23
   baseUnit: kw
 seats:
   key: gerzrtz
-  value: 4
+  value: 2
 rating:
   key: Sehr Gut
   value: 1
@@ -80,10 +80,10 @@ carSizes:
   key: vxcvxc
 loadingVolume:
   key: fsmdfnsd,mf
-  valueheight: 55
+  valueheight: 9099
   valuewidth: 63
   valuelength: 12
-  baseUnit: cm
+  baseUnit: mm
   height: "254"
   width: "254"
   length: "54"
