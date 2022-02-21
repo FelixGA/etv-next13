@@ -1,5 +1,5 @@
 ---
-title: beispiel
+title: beispiel2
 description: jhjkhkhkkkkjkh
 category: Pritsche
 loadingWeight:
