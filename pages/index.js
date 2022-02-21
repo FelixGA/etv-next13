@@ -24,7 +24,7 @@ export default function Home(props) {
 
       {/* <MDXRemote {...props.page.sources.main} components={components} /> */}
       <HeroSection getContent={getContent} />
-      <TopSlider getCars={getCars} />
+      {/* <TopSlider getCars={getCars} /> */}
       <BlogArticles getContent={getContent} />
       <BottomSlider getContent={getContent} />
       <NewsLetter getContent={getContent} />

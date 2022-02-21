@@ -66,22 +66,18 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 //   },
 // ];
 const TopSliderCard = (props) => {
- 
-
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
     <div className="min-w-64 mr-2 pl-6" key={caritem.index}>
       <div className="w-72">
         <Link href={`/transporter/${caritem.title}`} passHref>
           <a>
             <Image
-             
               src={caritem.src}
               alt="picture"
               objectFit="cover"
               width={264}
               height={244}
               layout="responsive"
-               
             />
           </a>
         </Link>
@@ -109,12 +105,12 @@ const TopSliderCard = (props) => {
             <div className="flex flex-row pb-8">
               <div className="">
                 <span className="relative bottom-1 pl-2.5 font-black text-m ">
-                  {caritem.rating.key}
+                  {/* {caritem.rating.key} */} dd
                 </span>
               </div>
               <div className="pb-2">
                 <span className="relative bottom-1 text-xxs font-black pl-3 tracking-widest ">
-                  {caritem.rating.value}
+                  {/* {caritem.rating.value} */} 25
                 </span>
               </div>
             </div>
