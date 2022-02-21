@@ -30,12 +30,12 @@ chargingTime230V:
   baseUnit: h
 chargingTimeLithium:
   value: 6
-  baseUnit: h
-  key: ct type 2
+  baseUnit: h (type 2)
+  key: charging time
 chargingTimeFast:
   value: 0
-  key: ct fast
-  baseUnit: h
+  key: " fast charging time"
+  baseUnit: not available
 batteryCapacityBlei:
   key: capacitiy sla
   value: "0"

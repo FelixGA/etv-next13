@@ -44,7 +44,7 @@ function CarCard(props) {
             </a>
           </Link>
 
-          {/* <Link href={`/transporter/${carItem.title}`} passHref>
+          <Link href={`/transporter/${carItem.title}`} passHref>
             <a className="block w-36 sm:w-64 md:w-80 h-52">
               {carItem?.src && (
                 <Image
@@ -57,7 +57,7 @@ function CarCard(props) {
                 />
               )}
             </a>
-          </Link> */}
+          </Link>
         </div>
 
         <div className=" hidden lg:flex lg:my-auto lg:w-1/2">
