@@ -3,7 +3,7 @@ title: Axiam-Pro eTruck-Pritsche
 price: 19290
 description: Der Axiam Pro eTruck ist ein Elektrotransporter mit 80 Kilometer
   Reichweite und 45 km/h Höchstgeschwindigkeit.
-src: https://aixam.de/wp-content/uploads/2019/01/aixam-pro-pritsche.jpg
+src: /images/aixam-pro-pritsche.jpg
 category: Pritsche
 typeClass: L7E
 loadingWeight:
