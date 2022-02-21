@@ -8,7 +8,7 @@ module.exports = withPWA({
     disable: process.env.NODE_ENV === "development",
   },
   i18n: {
-    locales: ["en", "de"],
+    locales: ["de", "en"],
     defaultLocale: "de",
     domains: [
       {

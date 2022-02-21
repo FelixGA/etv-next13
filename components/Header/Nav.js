@@ -71,7 +71,7 @@ const Nav = () => {
       <nav className=" ">
         <ul className="flex flex-row justify-around items-center w-full  text-grey-dark text-lg font-bold">
           <li>
-            <Link href="/">
+            <Link href="/homepage">
               <a
                 className="text-[#E7E8EC]"
                 onClick={() => {
