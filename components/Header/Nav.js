@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Nav = () => {
   const [isActive, setIsActive] = useState(false);
-
+  //
   /* const navMenuMobile = (
     // <ul className="flex flex-col lg:flex-row justify-around w-full text-grey-dark ">
     <ul className="flex flex-col lg:hidden lg:flex-row justify-around items-center w-full h-1/2 text-grey-dark ">
