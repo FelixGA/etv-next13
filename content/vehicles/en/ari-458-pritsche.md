@@ -2,7 +2,7 @@
 title: ARI-458-flatbed truck
 price: 13700
 description: mwqowöqDÄQMDÄQ
-src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
+src: https://www.ari-motors.com/_next/image?url=https%3A%2F%2Fari-motors-v2-uploads.s3.eu-central-1.amazonaws.com%2Fari_458_pritsche_vorne_links_acb13085b0.jpg&w=1080&q=75
 category: flatbed truck
 typeClass: L7E
 loadingWeight:
