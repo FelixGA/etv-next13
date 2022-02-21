@@ -33,7 +33,7 @@ function CarCard(props) {
   );
 
   return (
-    <div className="py-0 shadow-lg mb-4 lg:shadow-none border-t lg:border-2 lg:border-grey-lighter  lg:rounded-xl overflow-hidden">
+    <div className="shadow-lg mb-4 lg:shadow-none border-t lg:border-2 lg:border-grey-lighter lg:rounded-xl overflow-hidden">
       <div className="flex">
         <div className="flex-1  ">
           <Link href={`/transporter/${carItem.title}`}>
@@ -67,7 +67,7 @@ function CarCard(props) {
         <div className=" hidden 2xl:block w-[1px] h-32 mt-16 bg-grey-border mr-4"></div>
         {/* DIVIDER end */}
         {/* CONTAINER FOR PRICE AND BUTTONS start */}
-        <div className="flex flex-col justify-center lg:justify-between flex-1 items-end px-2 xl:items-center py-4">
+        <div className="flex flex-col justify-center lg:justify-between flex-1 items-end pr-2 xl:items-center my-4 ">
           {/* PRICE start */}
           <div className="">
             <p className="text-green-light text-xl xl:text-2xl font-black pr-2">

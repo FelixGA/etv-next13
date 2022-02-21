@@ -251,9 +251,9 @@ function FiltersMobile() {
     SetUserInputMaxPrice(e.target.value);
   };
   return (
-    <div className="absolute z-10 bg-white w-full ">
+    <div className="absolute bg-white w-full ">
       <div className="flex flex-col bg-white ">
-        <div className="shadow-dropdown w-full z-40">
+        <div className="shadow-dropdown w-full">
           <div
             className={
               clicked
@@ -297,7 +297,7 @@ function FiltersMobile() {
             <div
               className={
                 clicked
-                  ? "font-bold	 my-auto text-sm text-blue-darker"
+                  ? "font-bold my-auto text-sm text-blue-darker"
                   : "hidden"
               }
             ></div>
@@ -308,7 +308,10 @@ function FiltersMobile() {
         {priceFilterData.map((item) => (
           <div className="relative  " key={item.id}>
             <Sort />
-            <FilterItemMobile item={item} />
+            <div className="">
+              <FilterItemMobile item={item} />
+            </div>
+
             <AnimatePresence initial={false}>
               {state?.truncates == item.title && (
                 <motion.div

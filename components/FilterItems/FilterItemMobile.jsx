@@ -8,7 +8,7 @@ import FilterCheckboxMobile from "./FilterCheckboxMobile";
 
 const variants = {
   enter: {
-    y: -1000,
+    y: -500,
     opacity: 0,
   },
   center: {
@@ -16,7 +16,7 @@ const variants = {
     opacity: 1,
   },
   exit: {
-    y: -1000,
+    y: -500,
     opacity: 0,
   },
 };
@@ -48,9 +48,9 @@ function FilterItemMobile(props) {
     </div>
   ));
   return (
-    <div>
+    <div className="bg-white ">
       <div
-        className=" cursor-pointer "
+        className=" cursor-pointer bg-white"
         onClick={() => {
           dispatch({
             type: "truncate",
@@ -58,7 +58,7 @@ function FilterItemMobile(props) {
           });
         }}
       >
-        <div className="flex flex-row justify-between border-b py-4 flex-1">
+        <div className="flex flex-row justify-between border-b py-4 flex-1 bg-white">
           <div className="flex flex-row  ">
             <div className="w-6 h-6 ml-4 ">
               <Image
@@ -102,7 +102,20 @@ function FilterItemMobile(props) {
         }
       >
         {/* RENDERING THE FOUR RANGES */}
-        {rangesForCheckboxesmMobile}
+        <AnimatePresence initial={false}>
+          {state?.truncates == item.title && (
+            <motion.div
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{ type: "Inertia", duration: 0.2 }}
+            >
+              {rangesForCheckboxesmMobile}
+            </motion.div>
+          )}
+        </AnimatePresence>
+        {/* <div className="bg-blue-500">{rangesForCheckboxesmMobile}</div> */}
       </div>
     </div>
   );

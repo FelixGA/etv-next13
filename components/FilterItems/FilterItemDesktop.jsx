@@ -51,7 +51,7 @@ function FilterItemDesktop(props) {
   return (
     <>
       <div
-        className=" cursor-pointer relative z-50 bg-white w-full "
+        className=" cursor-pointer relative  bg-white w-full "
         onClick={() => {
           dispatch({
             type: "truncate",

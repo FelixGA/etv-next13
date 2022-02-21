@@ -26,7 +26,7 @@ const Header = () => {
     <div className="relative print:hidden">
       <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-18 w-screen ">
         <Link href={`/`} passHref>
-          <div className="flex flex-row pl-0 sm:pl-4 xl:pl-32 ">
+          <div className="flex flex-row pl-0 sm:pl-4 xl:ml-40 cursor-pointer">
             <div className="logo-container mt-2 w-20 ">
               <Image
                 src="/images/etv-logo-final-white.png"
@@ -64,7 +64,7 @@ const Header = () => {
           )}
         </AnimatePresence>
         {/* BUTTON */}
-        <div className="pr-20 lg:pr-8 xl:pr-32 ">
+        <div className="mr-20 lg:mr-8 xl:mr-40 ">
           <div className="bg-yellow-light hover:bg-orange-lighter text-grey-darker font-bold flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer">
             <div className="w-6 xs:w-8 pl-2 ">
               <Image
