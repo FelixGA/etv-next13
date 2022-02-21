@@ -10,10 +10,10 @@ loadingHeight:
 secondHand:
   key: consumption
   value: ja
-title: beispiel
+title: beispiel2
 price: 45000
 description: jsdnvksdkvjnkvnyx.d fsifjslf
-src: /images/addax-mt-laubgitter-wiki.jpg
+src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
 category: Pritsche
 typeClass: N1
 loadingWeight:
