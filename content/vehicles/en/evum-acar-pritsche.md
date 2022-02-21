@@ -60,7 +60,7 @@ seats:
   key: seats
 rating:
   key: good
-  value: 4,0 Sterne
+  value: 4,0
 guarantee:
   key: guarantee
   value: 0
