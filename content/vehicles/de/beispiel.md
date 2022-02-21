@@ -1,39 +1,33 @@
 ---
 maxSpeed:
-  value: 70
+  value: 80
   key: V-max
   baseUnit: km/h
 loadingHeight:
   key: Ladehöhe
-  value: 233
-  baseUnit: dff
+  value: 680
+  baseUnit: mm
 secondHand:
   key: consumption
   value: ja
-title: beispiel
-price: 45000
-body: >-
-  Addax ist ein belgischer Hersteller, der sich auf Nutzfahrzeuge für
-  Unternehmen und Gemeinden spezialisiert hat. Der Addax MT ist mit einer
-  offenen sowie einer geschlossenen Frachtbox verfügbar, welche entweder mit
-  klappbaren Seitenwänden oder mit einem hohen Gitteraufbau versehen ist. Des
-  Weiteren sind auch Aufbauten wie Pritsche, Kipper, Koffer, Kühlkoffer sowie
-  kippbarer Container erhältlich.
-
-src: /images/addax-mt-laubgitter-wiki.jpg
+title: ARI-458-Pritsche
+price: 13700
+description: Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e
+  mit einer zulässigen Höchstgeschwindigkeit von 80 km/h.
+src: https://www.ari-motors.com/_next/image?url=https%3A%2F%2Fari-motors-v2-uploads.s3.eu-central-1.amazonaws.com%2Fari_458_pritsche_vorne_links_acb13085b0.jpg&w=2048&q=75
 category: Pritsche
-typeClass: N1
+typeClass: L7E
 loadingWeight:
-  value: 1024
+  value: 531
   key: Zuladung
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 499
+  value: 604
   baseUnit: kg
 range230V:
   key: Reichweite SLA-Battery
-  value: 131
+  value: 120
   baseUnit: km
 rangeLithium:
   key: Reichweite Lithium-Battery
@@ -41,75 +35,72 @@ rangeLithium:
   baseUnit: km
 chargingTime230V:
   key: Ladenzeit 230 V
-  value: 50
-  baseUnit: St
+  value: 5
+  baseUnit: Stunden
 chargingTimeLithium:
-  key: Ladenzeit Lithium-Battery
-  value: 40
-  baseUnit: St
+  key: Ladenzeit Typ-2
+  value: 5
+  baseUnit: Stunden
 chargingTimeFast:
   key: Ladenzeit Schnell
-  value: 30
-  baseUnit: St.
+  value: 5
+  baseUnit: Stunden
 batteryCapacity:
-  key: Kapazitaet
-  value: 55345345346
+  key: Kapazität
+  value: 10
   baseUnit: kwh
 batteryIncluded:
   key: "Akku inkl:"
   value: Ja
 consumption:
   baseUnit: kwh
-  value: "3.5"
+  value: "7.5"
   key: Verbrauch
 power:
   key: Leistung
-  value: 2323
+  value: 7.5/7.5
   baseUnit: kw
 seats:
   key: Sitzplätze
-  value: 4
+  value: 2
 rating:
   key: gut
-  value: 1
+  value: 4
 guarantee:
-  key: Guarantee
-  value: 2
-  baseUnit: years
+  key: Garantie
+  value: 6
+  baseUnit: Monate
 preview: et235t235235
 availability:
   key: Verfugbaerkeit
-  value: 12.10.2022
+  value: keine Angabe
 subsidies:
   key: Förderhöhe
-  value: 500
-  baseUnit: eu
+  value: 0
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: akku guarantee
-  value: 5
-  baseUnit: Monate
+  key: Akku Garantie
+  value: 4
+  baseUnit: Jahre
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 52
-  baseUnit: "cm "
-  valuelength: 45
-  valueheight: 55
-  valuewheelbase: 5
+  valuewidth: 1300
+  baseUnit: mm
+  valuelength: 3150
+  valueheight: 1600
+  valuewheelbase: 1686
   key: Fahrzeug Maße
 loadingVolume:
   key: Laderaum Maße
   height: Höhe
-  valueheight: 55
+  valueheight: 250
   width: Breite
   length: Länge
-  valuelength: 12
-  valuewidth: 63
-  baseUnit: cm
+  valuelength: 1320
+  valuewidth: 1160
+  baseUnit: mm
 ---
-
-Addax ist ein belgischer Hersteller, der sich auf Nutzfahrzeuge für Unternehmen und Gemeinden spezialisiert hat. Der Addax MT ist mit einer offenen sowie einer geschlossenen Frachtbox verfügbar, welche entweder mit klappbaren Seitenwänden oder mit einem hohen Gitteraufbau versehen ist. Des Weiteren sind auch Aufbauten wie Pritsche, Kipper, Koffer, Kühlkoffer sowie kippbarer Container erhältlich.
-
-Technisch gibt es den Addax MT in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und als MT15 mit  72 Volt-Motor angetrieben. Beide Versionen sind mit Lithium-Ionen-Akkus zur Energiespeicherung ausgestattet, die eine Kapazität von 10,2 kWh bzw. 14,4 kWh besitzen. Der Addax MT besitzt eine EU-Typengenehmigung und kann somit in allen EU-Staaten auf öffentlichen Straßen bewegt werden.
+Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.

@@ -1,40 +1,32 @@
 ---
 maxSpeed:
-  value: 70
+  value: 80
   key: V-max
   baseUnit: km/h
 loadingHeight:
   key: loading height
-  value: 233
-  baseUnit: dff
+  value: 680
+  baseUnit: mm
 secondHand:
   key: Verbrauch
   value: yes
-title: beispiel
-price: 45000
-body: >-
-  Addax ist ein belgischer Hersteller, der sich auf Nutzfahrzeuge für
-  Unternehmen und Gemeinden spezialisiert hat. Der Addax MT ist mit einer
-  offenen sowie einer geschlossenen Frachtbox verfügbar, welche entweder mit
-  klappbaren Seitenwänden oder mit einem hohen Gitteraufbau versehen ist. Des
-  Weiteren sind auch Aufbauten wie Pritsche, Kipper, Koffer, Kühlkoffer sowie
-  kippbarer Container erhältlich.
-
-src: /images/addax-mt-laubgitter-wiki.jpg
-
+title: ARI-458-Pritsche
+price: 13700
+description: ihihjmnl
+src: https://www.ari-motors.com/_next/image?url=https%3A%2F%2Fari-motors-v2-uploads.s3.eu-central-1.amazonaws.com%2Fari_458_pritsche_vorne_links_acb13085b0.jpg&w=2048&q=75
 category: flatbed truck
-typeClass: N1
+typeClass: L7E
 loadingWeight:
-  value: 1024
+  value: 531
   key: Loading Weight
   baseUnit: kg
 curbweight:
   key: Curb Weight
-  value: 499
+  value: 604
   baseUnit: kg
 range230V:
   key: Range SLA-Battery
-  value: 131
+  value: 120
   baseUnit: km
 rangeLithium:
   key: Range Lithium-Battery
@@ -42,19 +34,19 @@ rangeLithium:
   baseUnit: km
 chargingTime230V:
   key: Charging time 230 V
-  value: 50
+  value: 5
   baseUnit: h
 chargingTimeLithium:
   key: Charging Time Lithium-Battery
-  value: 40
+  value: 5
   baseUnit: h
 chargingTimeFast:
   key: Charging Time Fast
-  value: 30
+  value: 5
   baseUnit: h
 batteryCapacity:
   key: battery capacity
-  value: 55345345346
+  value: 10
   baseUnit: kwh
 batteryIncluded:
   key: "battery Included:"
@@ -65,14 +57,14 @@ consumption:
   value: "3.7"
 power:
   key: power
-  value: 2323
+  value: 7.5/7.5
   baseUnit: kw
 seats:
   key: SEATS
-  value: 4
+  value: 2
 rating:
   key: good
-  value: 1
+  value: 4
 guarantee:
   key: Guarantee
   value: 2
@@ -94,23 +86,20 @@ carSizes:
   length: LENGTH
   height: HEIGHT
   wheelbase: WHEELBASE
-  valuewidth: 52
-  baseUnit: "cm "
-  valuelength: 45
-  valueheight: 55
-  valuewheelbase: 5
+  valuewidth: 1300
+  baseUnit: mm
+  valuelength: 3150
+  valueheight: 1600
+  valuewheelbase: 1686
   key: CAR-SIZES
 loadingVolume:
   key: LOADING VOLUME
   height: HEIGHT
-  valueheight: 55
+  valueheight: 250
   width: WIDTH
   length: LENGTH
-  valuelength: 12
-  valuewidth: 63
-  baseUnit: cm
+  valuelength: 1320
+  valuewidth: 1160
+  baseUnit: mm
 ---
-
-Addax ist ein belgischer Hersteller, der sich auf Nutzfahrzeuge für Unternehmen und Gemeinden spezialisiert hat. Der Addax MT ist mit einer offenen sowie einer geschlossenen Frachtbox verfügbar, welche entweder mit klappbaren Seitenwänden oder mit einem hohen Gitteraufbau versehen ist. Des Weiteren sind auch Aufbauten wie Pritsche, Kipper, Koffer, Kühlkoffer sowie kippbarer Container erhältlich.
-
-Technisch gibt es den Addax MT in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und als MT15 mit  72 Volt-Motor angetrieben. Beide Versionen sind mit Lithium-Ionen-Akkus zur Energiespeicherung ausgestattet, die eine Kapazität von 10,2 kWh bzw. 14,4 kWh besitzen. Der Addax MT besitzt eine EU-Typengenehmigung und kann somit in allen EU-Staaten auf öffentlichen Straßen bewegt werden.
+Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.

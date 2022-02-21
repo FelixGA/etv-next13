@@ -11,7 +11,7 @@ local_backend: true
 
 i18n:
   structure: multiple_folders
-  locales: [en, de]
+  locales: [de, en]
   default_locale: de
 
 collections:
@@ -159,7 +159,7 @@ collections:
               widget: "string",
               i18n: duplicate,
             }
-      - label: "Range-230V"
+      - label: "Range-SLA"
         name: "range230V"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
@@ -201,7 +201,7 @@ collections:
               widget: "string",
               i18n: true,
             }
-      - label: "chargingTime-Lithium"
+      - label: "chargingTime-Typ2"
         name: "chargingTimeLithium"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
@@ -229,14 +229,28 @@ collections:
               widget: "string",
               i18n: true,
             }
-      - label: "battery-Capacity"
-        name: "batteryCapacity"
+      - label: "battery-Capacity-Blei"
+        name: "batteryCapacityBlei"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "battery-Capacity-Lithium"
+        name: "batteryCapacityLithium"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
           - {
               label: "baseUnit",
               name: "baseUnit",
@@ -302,7 +316,7 @@ collections:
         i18n: true
         fields:
           - { label: "Result", name: "key", widget: "string", i18n: true }
-          - { label: "Note", name: "value", widget: "number", i18n: duplicate }
+          - { label: "Note", name: "value", widget: "string", i18n: duplicate }
       - label: "guarantee"
         name: "guarantee"
         widget: "object"
