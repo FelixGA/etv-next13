@@ -8,21 +8,20 @@ function FilterCheckbox(props) {
   useEffect(() => {
     let minPrice = state?.prices.map((el) => el.min).join(" ");
     if (props.checkbox.categoryName == "price" && state?.prices.length) {
-      
       minPrice >= 0 ? setIsChecked("0-20000€") : null;
       minPrice >= 20001 ? setIsChecked("20001-40000€") : null;
       minPrice >= 40001 ? setIsChecked("40001-60000€") : null;
       minPrice >= 60001 ? setIsChecked("60001-90000€") : null;
-      
-
     } else {
       /* unchecking the box */
       setIsChecked(props.checkbox.categoryName);
-     
     }
-    
-    let minRange = state?.range230Vs.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "range230V" && state?.range230Vs.length) {
+
+    let minRange = state?.rangeLithiums.map((el) => el.min).join(" ");
+    if (
+      props.checkbox.categoryName == "rangeLithium" &&
+      state?.rangeLithiums.length
+    ) {
       minRange >= 150 ? setIsChecked("ab 150 km") : null;
       minRange >= 200 ? setIsChecked("ab 200 km") : null;
       minRange >= 250 ? setIsChecked("ab 250 km") : null;
@@ -47,8 +46,10 @@ function FilterCheckbox(props) {
       minvmax >= 600 ? setIsChecked("ab 600km/h") : null;
     }
 
-    let minChargingTime = state?.chargingTime230Vs.map((el) => el.min).join(" ");
-    if (props.checkbox.categoryName == "chargingTime230V") {
+    let minChargingTime = state?.chargingTimeLithiums
+      .map((el) => el.min)
+      .join(" ");
+    if (props.checkbox.categoryName == "chargingTimeLithium") {
       minChargingTime >= 1 ? setIsChecked("ab 1 Stunde") : null;
       minChargingTime >= 10 ? setIsChecked("ab 10 Stunde") : null;
       minChargingTime >= 20 ? setIsChecked("ab 20 Stunde") : null;
@@ -62,10 +63,10 @@ function FilterCheckbox(props) {
       categories == "Kasten" ? setIsChecked("Kasten") : null;
     }
   }, [
-    state?.range230Vs,
+    state?.rangeLithiums,
     state?.loadingWeights,
     state?.maxSpeeds,
-    state?.chargingTime230Vs,
+    state?.chargingTimeLithiums,
     state?.categorys,
   ]);
   return (

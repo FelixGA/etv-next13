@@ -60,7 +60,7 @@ const BasicInfo = ({ carItem, descriptionSize }) => {
               !descriptionSize ? "h-auto" : `text-ellipsis overflow-hidden h-48`
             }
           >
-            {carItem?.body}
+            {carItem?.description}
           </p>
           <span className="text-sm text-blue-dark">Alle Daten anzeigen</span>
         </div>

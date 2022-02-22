@@ -1,5 +1,6 @@
 ---
 title: Axiam-Pro eTruck-flatbed truck
+name: axiam-pro-etruck-pritsche
 price: 19290
 description: bhkvmnxyfgdfl.h
 src: /images/aixam-pro-pritsche.jpg
@@ -7,7 +8,7 @@ category: flatbed truck
 loadingWeight:
   value: 327
   baseUnit: kg
-  key: loading weight
+  key: payload
 curbweight:
   value: 440
   baseUnit: kg
@@ -26,8 +27,8 @@ rangeLithium:
   key: Range Lithium
 chargingTime230V:
   value: 0
-  key: "CT 230V "
-  baseUnit: h
+  key: charging time
+  baseUnit: no info
 chargingTimeLithium:
   value: 0
   baseUnit: h
@@ -52,7 +53,7 @@ consumption:
   key: consumption
   value: "0"
 power:
-  value: 6/6
+  value: min-6/max-6
   baseUnit: kw
   key: power
 seats:
@@ -101,4 +102,5 @@ loadingVolume:
   width: width
   length: length
 ---
+
 devgfy

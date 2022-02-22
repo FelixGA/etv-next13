@@ -12,9 +12,9 @@ const ResultList = (props) => {
     if (
       !state?.prices ||
       !state?.loadingWeights ||
-      !state?.range230Vs ||
+      !state?.rangeLithiums ||
       !state?.maxSpeeds ||
-      !state?.chargingTime230Vs ||
+      !state?.chargingTimeLithiums ||
       props.sortedCars?.length === 0
     )
       return;
@@ -37,10 +37,11 @@ const ResultList = (props) => {
       )
         return false;
       if (
-        state?.range230Vs?.length > 0 &&
-        state?.range230Vs?.every(
+        state?.rangeLithiums?.length > 0 &&
+        state?.rangeLithiums?.every(
           (entry) =>
-            entry.min > car.range230V.value || entry.max < car.range230V.value
+            entry.min > car.rangeLithium.value ||
+            entry.max < car.rangeLithium.value
         )
       )
         return false;
@@ -53,11 +54,11 @@ const ResultList = (props) => {
       )
         return false;
       if (
-        state?.chargingTime230Vs?.length > 0 &&
-        state?.chargingTime230Vs?.every(
+        state?.chargingTimeLithiums?.length > 0 &&
+        state?.chargingTimeLithiums?.every(
           (entry) =>
-            entry.min > car.chargingTime230V.value ||
-            entry.max < car.chargingTime230V.value
+            entry.min > car.chargingTimeLithium.value ||
+            entry.max < car.chargingTimeLithium.value
         )
       )
         return false;
@@ -74,9 +75,9 @@ const ResultList = (props) => {
   }, [
     state?.prices,
     state?.loadingWeights,
-    state?.range230Vs,
+    state?.rangeLithiums,
     state?.maxSpeeds,
-    state?.chargingTime230Vs,
+    state?.chargingTimeLithiums,
     state?.categorys,
     props.sortedCars,
   ]);

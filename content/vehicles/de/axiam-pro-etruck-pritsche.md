@@ -1,8 +1,17 @@
 ---
-title: Axiam-Pro eTruck-Pritsche
+title: Axiam-pro-Etruck-pritsche
+name: axiam-pro-etruck-pritsche
 price: 19290
-description: Der Axiam Pro eTruck ist ein Elektrotransporter mit 80 Kilometer
-  Reichweite und 45 km/h Höchstgeschwindigkeit.
+description: >-
+  Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen”
+  mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein
+  leichtes Nutzfahrzeug im Programm, welches mit Dieselmotoren (“D Truck”) sowie
+  Elektroantrieb (“e-Truck”) erhältlich ist. Die hier vorgestellte
+  Elektro-Version gehört zur EG-Fahrzeugkategorie L6e, welche Leichtfahrzeuge
+  bis zu einem Leergewicht von 425 Kilogramm (ohne Akkus) bezeichnet.
+
+
+  Der Elektrotransporter  in zwei Aufbautypen verfügbar: als Pritsche sowie mit Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem Gelände konzipiert.
 src: /images/aixam-pro-pritsche.jpg
 category: Pritsche
 typeClass: L7E
@@ -15,7 +24,7 @@ curbweight:
   value: 440
   baseUnit: kg
 maxSpeed:
-  key: Höchstgeschwindigkeit
+  key: km/h
   value: 45
   baseUnit: km/h
 range230V:
@@ -31,11 +40,11 @@ chargingTime230V:
   value: 0
   baseUnit: keine Angabe
 chargingTimeLithium:
-  key: Ladezeit
+  key: Ladezeit typ2
   value: 0
   baseUnit: keine Angabe
 chargingTimeFast:
-  key: Ladezeit
+  key: Schnellladung
   value: 0
   baseUnit: keine Angabe
 batteryCapacityBlei:
@@ -55,7 +64,7 @@ consumption:
   baseUnit: keine Angabe
 power:
   key: Leistung
-  value: 6/6
+  value: min-6/max-6
   baseUnit: kw
 seats:
   key: Sitzplätze
@@ -103,6 +112,4 @@ loadingVolume:
   length: Länge
   baseUnit: mm
 ---
-Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen” mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein leichtes Nutzfahrzeug im Programm, welches mit Dieselmotoren (“D-Truck”) sowie Elektroantrieb (“e-Truck”) erhältlich ist. Die hier vorgestellte Elektro-Version gehört zur EG-Fahrzeugkategorie L6e, welche Leichtfahrzeuge bis zu einem Leergewicht von 425 Kilogramm (ohne Akkus) bezeichnet. 
-
-Der Elektrotransporter  in zwei Aufbautypen verfügbar: als Pritsche sowie mit Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem Gelände konzipiert.
+Der Axiam-Pro eTruck ist ein Elektrotransporter mit 80 Kilometer Reichweite und 45 km/h Höchstgeschwindigkeit.
