@@ -35,13 +35,13 @@ function FilterItemMobile(props) {
         });
       }}
       key={index}
-      className="mt-1 flex flex-row py-2 "
+      className="mt-1 flex flex-row py-2"
     >
       <FilterCheckboxMobile checkbox={checkbox} />
 
       <label
         forhtml="categories"
-        className="inline-flex items-center cursor-pointer pl-5 # font-thin text-lg text-[#2C3F53]"
+        className="inline-flex items-center cursor-pointer pl-5 # font-thin text-lg text-[#2C3F53] "
       >
         {checkbox.name}
       </label>

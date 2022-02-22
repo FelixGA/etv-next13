@@ -233,7 +233,7 @@ function FiltersDesktop() {
 
   const getPriceFilterData = priceFilterData.map((item) => {
     return (
-      <div className="relative bg-white z-90" key={item.id}>
+      <div className="relative bg-white" key={item.id}>
         <FilterItemDesktop item={item} />
         <AnimatePresence initial={false}>
           {state?.truncates == item.title && (

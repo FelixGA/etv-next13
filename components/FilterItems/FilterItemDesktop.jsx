@@ -51,7 +51,7 @@ function FilterItemDesktop(props) {
   return (
     <>
       <div
-        className=" cursor-pointer relative  bg-white w-full "
+        className=" cursor-pointer relative z-50  bg-white w-full "
         onClick={() => {
           dispatch({
             type: "truncate",
@@ -105,7 +105,7 @@ function FilterItemDesktop(props) {
             animate="center"
             exit="exit"
             transition={{ type: "tween", duration: 0.2 }}
-            className="flex flex-col ml-8 -z-50"
+            className="flex flex-col ml-8 "
           >
             {/* RENDERING THE FOUR RANGES */}
             {rangesForCheckboxes}

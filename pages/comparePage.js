@@ -96,7 +96,7 @@ export default function comparePage(props) {
         {/* <div className="relative bg-blue-500 h-24  w-80 z-90"></div> */}
         <FiltersDesktop />
       </div>
-      <div className="flex md:hidden">
+      <div className="flex md:hidden bg-red-500">
         <FiltersMobile />
       </div>
       <div className="heading+sorting+content xl:mr-40 mt-10 md:mt-24  ">

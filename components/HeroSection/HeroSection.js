@@ -117,7 +117,7 @@ const HeroSection = () => {
               Elektrotransporter-Vergleich
             </h1>
             <p className="text-grey-darker text-2xl lg:text-3xl pl-3">
-              Hier finden Sie den
+              Hier finden Sie den{" "}
               <b className="text-grey-darkest font-bold">
                 passenden Elektrotransporter,
               </b>
@@ -138,20 +138,20 @@ const HeroSection = () => {
             </p>
           </div>
         </div>
-        <div className="lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-24 border border-blue-dark">
+        <div className="lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border border-blue-dark">
           <h2 className="text-blue-dark font-bold pt-2 pl-2 lg:hidden ">
             Jetzt vergleichen
           </h2>
 
           <div className="comaprison-input-container m-2 lg:items-center lg:flex lg:flex-row lg:justify-between lg:flex-1">
             <div className="flex lg:flex-row flex-col lg:w-1/2 justify-around items-start lg:items-center flex-wrap">
-              <div className="h-14 lg:w-68  w-full pt-2 gmsou text-base rounded-lg bg-white lg:w-[14vw]">
-                <label className=" flex flex-row justify-between px-2 text-left">
+              <div className="h-14 lg:w-68 w-full pt-2 gmsou text-base rounded-sm bg-white lg:w-[14vw]">
+                <label className="tracking-wide flex justify-between px-2 text-left">
                   Reichweite <div className=" relative top-6">▼</div>
                 </label>
                 <div className=" m-1">
                   <select
-                    className=" p-4 relative bottom-6 w-full
+                    className="tracking-wider p-4 relative bottom-6 w-full
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
                     id="range230V"
                     onChange={(e) => {
@@ -166,13 +166,13 @@ const HeroSection = () => {
                   </select>
                 </div>
               </div>
-              <div className="h-14 lg:w-68 w-full my-4 pt-2 gmsou text-base rounded-lg bg-white lg:w-[14vw]	">
+              <div className="h-14 lg:w-68 w-full my-4 pt-2 gmsou text-base rounded-sm bg-white lg:w-[14vw]	tracking-wide">
                 <label className="px-2 flex flex-row justify-between text-left">
                   Preis <div className=" relative top-6">▼</div>
                 </label>
                 <div className=" m-1">
                   <select
-                    className=" p-4 relative bottom-6 w-full text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
+                    className="tracking-wider p-4 relative bottom-6 w-full text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
                     id="price"
                     onChange={(e) => {
                       setChoosePrice(e.target.value);
@@ -188,13 +188,13 @@ const HeroSection = () => {
               </div>
             </div>
             <span className="flex flex-1 lg:w-1/2 lg:justify-around justify-between items-start lg:items-center flex-wrap ">
-              <div className="w-2/5 h-14 pt-2 gmsou mb-6 lg:mb-0 lg:w-[14vw] text-base rounded-lg bg-white">
+              <div className="w-2/5 h-14 pt-2 gmsou mb-6 lg:mb-0 lg:w-[14vw] text-base rounded-sm bg-white tracking-wide">
                 <label className="px-2 flex flex-row justify-between text-left">
                   Nutzlast <div className=" relative right-0 top-6">▼</div>
                 </label>
                 <div className=" mt-1 px-1">
                   <select
-                    className=" p-4 relative bottom-6 w-full text-base font-bold appearance-none bg-transparent border-none pl-1 m-0  text-blue-dark"
+                    className="tracking-wider p-4 relative bottom-6 w-full text-base font-bold appearance-none bg-transparent border-none pl-1 m-0  text-blue-dark"
                     id="loadingWeight"
                     onChange={(e) => {
                       setChooseWeight(e.target.value);

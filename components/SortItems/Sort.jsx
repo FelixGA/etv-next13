@@ -1,8 +1,23 @@
-import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { BsSortDown } from "react-icons/bs";
 import { useState } from "react";
 import { useStore } from "../store";
+import { motion, AnimatePresence } from "framer-motion";
+
+const variants = {
+  enter: {
+    y: -1000,
+    opacity: 0,
+  },
+  center: {
+    y: 0,
+    opacity: 1,
+  },
+  exit: {
+    y: -1000,
+    opacity: 0,
+  },
+};
 
 function Sort() {
   const { state, dispatch } = useStore();
@@ -22,7 +37,7 @@ function Sort() {
   ];
   const [truncate, setTruncate] = useState(false);
   const [isChecked, setIsChecked] = useState("");
-  const [rotateIt, setRotateIt] = useState(false);
+
   const getAllSortings = sortBy2.map((rank) => {
     return (
       <div
@@ -58,7 +73,6 @@ function Sort() {
         className="  cursor-pointer"
         onClick={() => {
           setTruncate(!truncate);
-          setRotateIt(!rotateIt);
         }}
       >
         <div className="flex justify-between border-b  py-1 ">
@@ -74,7 +88,7 @@ function Sort() {
           </div>
           <div
             className={
-              rotateIt
+              truncate
                 ? "flex items-center w-6 mr-6 my-auto transition transform rotate-180 origin-center	"
                 : "flex items-center w-6 mr-6 my-auto transition transform rotate-0 origin-center	 "
             }
@@ -83,9 +97,20 @@ function Sort() {
           </div>
         </div>
       </div>
-      <div className={truncate ? "flex flex-col ml-4 mt-2" : "hidden"}>
-        {getAllSortings}
-      </div>
+      <AnimatePresence initial={false}>
+        {truncate && (
+          <motion.div
+            className={truncate ? "flex flex-col ml-4 mt-2 " : "hidden"}
+            variants={variants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ type: "tween", duration: 0.2 }}
+          >
+            {getAllSortings}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

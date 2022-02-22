@@ -49,7 +49,9 @@ function CarCard(props) {
               {carItem?.src && (
                 <Image
                   className=""
-                  src={carItem.src}
+                  src={
+                    carItem.src
+                  } /* "https://aixam.de/wp-content/uploads/2019/01/aixam-pro-pritsche.jpg" */
                   alt={carItem.title}
                   width={450}
                   height={350}

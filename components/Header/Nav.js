@@ -8,7 +8,7 @@ const Nav = () => {
       <nav className=" ">
         <ul className="flex justify-around items-center flex-1  text-blue-lighter text-lg font-bold">
           <li>
-            <Link href="/homepage">
+            <Link href="/">
               <a
                 className="text-[#E7E8EC]"
                 onClick={() => {

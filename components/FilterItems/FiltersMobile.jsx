@@ -71,6 +71,7 @@ const priceFilterData = [
     ],
   },
 ];
+
 const filtersData = [
   {
     id: 1,
@@ -235,13 +236,17 @@ const filtersData = [
     ],
   },
 ];
+console.log(
+  "🚀 ~ file: FiltersMobile.jsx ~ line 239 ~ filtersData",
+  filtersData
+);
 
 function FiltersMobile() {
   /* UseStates */
   const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
   const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
   const { state, dispatch } = useStore();
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState(true);
 
   /* handling the min and max input  */
   const changeHandleMin = (e) => {
@@ -251,13 +256,13 @@ function FiltersMobile() {
     SetUserInputMaxPrice(e.target.value);
   };
   return (
-    <div className="absolute bg-white w-full ">
+    <div className="absolute z-10 bg-white w-full">
       <div className="flex flex-col bg-white ">
-        <div className="shadow-dropdown w-full">
+        <div className="shadow-dropdown w-full ">
           <div
             className={
               clicked
-                ? "h-10 shadow-dropdown flex justify-between align-middle border-b"
+                ? "h-10 shadow-dropdown flex justify-between align-middle border-b "
                 : "h-10 shadow-dropdown flex justify-between align-middle "
             }
             onClick={() => {
@@ -265,10 +270,7 @@ function FiltersMobile() {
             }}
           >
             <div className="flex-1 flex">
-              <div
-                className="w-3.5 my-auto ml-6  
-          "
-              >
+              <div className="w-3.5 my-auto ml-6">
                 <Image
                   src={filterImage}
                   alt="filter icon"
@@ -293,47 +295,47 @@ function FiltersMobile() {
               <MdKeyboardArrowDown size={28} />
             </div>
           </div>
-          <div className="">
-            <div
-              className={
-                clicked
-                  ? "font-bold my-auto text-sm text-blue-darker"
-                  : "hidden"
-              }
-            ></div>
-          </div>
         </div>
       </div>
-      <div className={clicked ? "block" : "hidden"}>
-        {priceFilterData.map((item) => (
-          <div className="relative  " key={item.id}>
-            <Sort />
-            <div className="">
-              <FilterItemMobile item={item} />
-            </div>
+      <AnimatePresence initial={false}>
+        {clicked && (
+          <motion.div
+            variants={variants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ type: "tween", duration: 0.2 }}
+            className={clicked ? "block " : "hidden"}
+          >
+            {priceFilterData.map((item) => (
+              <div className="relative  " key={item.id}>
+                <Sort />
+                <FilterItemMobile item={item} />
+                <AnimatePresence initial={false}>
+                  {state?.truncates == item.title && (
+                    <motion.div
+                      variants={variants}
+                      initial="enter"
+                      animate="center"
+                      exit="exit"
+                      transition={{ type: "tween", duration: 0.2 }}
+                      className="flex flex-col ml-8 relative   "
+                    >
+                      <PriceInputs />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
 
-            <AnimatePresence initial={false}>
-              {state?.truncates == item.title && (
-                <motion.div
-                  variants={variants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                  transition={{ type: "tween", duration: 0.2 }}
-                  className="flex flex-col ml-8 relative   "
-                >
-                  <PriceInputs />
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-        ))}
-        {filtersData.map((item, index) => (
-          <div key={item.id} className="">
-            <FilterItemMobile item={item} />
-          </div>
-        ))}
-      </div>
+            {filtersData.map((item, index) => (
+              <div key={item.id} className="">
+                <FilterItemMobile item={item} />
+              </div>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
