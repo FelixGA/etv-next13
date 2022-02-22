@@ -1,8 +1,10 @@
 ---
 title: ARI-458-Pritsche
+name: ARI-458-Pritsche
 price: 13700
-description: Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e
-  mit einer zulässigen Höchstgeschwindigkeit von 80 km/h
+description: Der ARI-458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e
+  mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen
+  Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.
 src: /images/ari_458_pritsche_vorne_links_acb13085b0.jpg
 category: Pritsche
 typeClass: L7E
@@ -15,7 +17,7 @@ curbweight:
   value: 604
   baseUnit: kg
 maxSpeed:
-  key: Höchstgeschwindigkeit
+  key: km/h
   value: 80
   baseUnit: km/h
 range230V:
@@ -29,15 +31,15 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit
   value: 5
-  baseUnit: Stunden
+  baseUnit: St.
 chargingTimeLithium:
   key: Ladezeit typ2
   value: 5
-  baseUnit: "Stunden "
+  baseUnit: St.
 chargingTimeFast:
-  key: "Schnellladung "
+  key: Schnellladung
   value: 2
-  baseUnit: Stunden
+  baseUnit: St.
 batteryCapacityBlei:
   key: Kapazität
   value: "0"
@@ -55,7 +57,7 @@ consumption:
   baseUnit: kWh
 power:
   key: Leistung
-  value: 7,5/7,5
+  value: " min-7,5/max-7,5"
   baseUnit: kw
 seats:
   key: Sitzplätze
@@ -103,4 +105,4 @@ loadingVolume:
   length: Länge
   baseUnit: mm
 ---
-Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.
+Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer zulässigen Höchstgeschwindigkeit von 80 km/h
