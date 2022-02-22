@@ -31,11 +31,11 @@ chargingTime230V:
   value: 0
   baseUnit: keine Angabe
 chargingTimeLithium:
-  key: Ladezeit
+  key: Ladezeit typ2
   value: 0
   baseUnit: keine Angabe
 chargingTimeFast:
-  key: Ladezeit
+  key: Schnellladung
   value: 0
   baseUnit: keine Angabe
 batteryCapacityBlei:
