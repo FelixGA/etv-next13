@@ -31,11 +31,11 @@ chargingTime230V:
   value: 5
   baseUnit: Stunden
 chargingTimeLithium:
-  key: Ladezeit
+  key: Ladezeit typ2
   value: 5
   baseUnit: "Stunden "
 chargingTimeFast:
-  key: Ladezeit
+  key: "Schnellladung "
   value: 2
   baseUnit: Stunden
 batteryCapacityBlei:
