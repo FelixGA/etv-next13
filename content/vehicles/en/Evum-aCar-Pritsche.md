@@ -31,13 +31,13 @@ rangeLithium:
   value: 110
   baseUnit: km
 chargingTime230V:
-  key: Ladezeit
+  key: sfgsfdgdf
   value: 0
   baseUnit: keine Angabe
 chargingTimeLithium:
   key: charging time
   value: 6
-  baseUnit: "Stunden "
+  baseUnit: St.
 chargingTimeFast:
   key: charging time fast
   value: 0
