@@ -263,6 +263,7 @@ function FiltersDesktop() {
   return (
     <div className="">
       <div className="">{getPriceFilterData}</div>
+
       {getFiltersData}
     </div>
   );

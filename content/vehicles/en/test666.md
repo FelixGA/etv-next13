@@ -4,6 +4,7 @@ price: 66666
 description: fdsfsdfsdfsdfsdf
 src: /images/Addax-MT-Laubgitter-Wiki-300x200.jpg
 category: Koffer
+typeClass: N1N2
 loadingWeight:
   key: referf
   baseUnit: fref

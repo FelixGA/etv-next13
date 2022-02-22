@@ -4,9 +4,9 @@ price: 66666
 description: fdsfsdfsdfsdfsdf
 src: /images/Addax-MT-Laubgitter-Wiki-300x200.jpg
 category: Koffer
-typeClass: L6E
+typeClass: N1N2
 loadingWeight:
-  key: referf
+  key: german
   baseUnit: fref
   value: 55
 curbweight:

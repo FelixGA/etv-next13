@@ -6,7 +6,7 @@ src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
 category: Koffer
 typeClass: L6E
 loadingWeight:
-  key: referf
+  key: german
   baseUnit: fref
   value: 55
 curbweight:
