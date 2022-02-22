@@ -14,7 +14,7 @@ function CarCardDetailsDesktop({ carItem }) {
 
   return (
     <div className=" w-full flex flex-col justify-center">
-      <Link href={`/transporter/${carItem?.title}`}>
+      <Link href={`/transporter/${carItem?.name}`}>
         <a>
           <h3
             className={
@@ -29,11 +29,11 @@ function CarCardDetailsDesktop({ carItem }) {
       </Link>
       <div className="w-full grid grid-cols-2 2xl:grid-cols-3  h-40">
         <div className="  flex flex-col justify-between ">
-          <CarCardProps details={carItem?.range230V} image={image} />
+          <CarCardProps details={carItem?.rangeLithium} image={image} />
           <CarCardProps details={carItem?.loadingWeight} image={image2} />
         </div>
         <div>
-          <CarCardProps details={carItem?.chargingTime230V} image={image4} />
+          <CarCardProps details={carItem?.chargingTimeLithium} image={image4} />
           <CarCardProps details={carItem?.maxSpeed} image={image3} />
         </div>
 

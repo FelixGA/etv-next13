@@ -11,7 +11,7 @@ import { useState } from "react";
 export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
-  // srf
+
   console.log(getCars);
   return (
     <>
@@ -37,7 +37,7 @@ export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
-  const page = pages.find((page) => page.path === "/homepage");
+  const page = pages.find((page) => page.path === "/");
 
   if (!page) {
     return {

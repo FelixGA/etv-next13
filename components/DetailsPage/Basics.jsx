@@ -21,7 +21,7 @@ const Basics = ({ basics, carItem }) => {
           >
             <p className="w-1/2 py-1">{item.key}</p>
             <p className="w-1/2 py-1">
-              {item.value} {item.baseUnit}
+              {item.value ? item.value : "-"} {item.baseUnit}
             </p>
           </div>
         ))}

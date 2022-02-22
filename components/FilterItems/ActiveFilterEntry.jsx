@@ -14,30 +14,30 @@ function ActiveFilterEntry(props) {
   useEffect(() => {
     if (
       state?.prices.length ||
-      state?.range230Vs.length ||
+      state?.rangeLithiums.length ||
       state?.loadingWeights.length ||
       state?.maxSpeeds.length ||
-      state?.chargingTime230Vs.length ||
+      state?.chargingTimeLithiums.length ||
       state?.categorys.length
     ) {
       props.setShowAll(true);
     }
     if (
       !state?.prices.length &&
-      !state?.range230Vs.length &&
+      !state?.rangeLithiums.length &&
       !state?.loadingWeights.length &&
       !state?.maxSpeeds.length &&
-      !state?.chargingTime230Vs.length &&
+      !state?.chargingTimeLithiums.length &&
       !state?.categorys.length
     ) {
       props.setShowAll(false);
     }
   }, [
     state?.prices,
-    state?.range230Vs,
+    state?.rangeLithiums,
     state?.loadingWeights,
     state?.maxSpeeds,
-    state?.chargingTime230Vs,
+    state?.chargingTimeLithiums,
     state?.categorys,
   ]);
 
@@ -52,8 +52,8 @@ function ActiveFilterEntry(props) {
     },
     {
       id: 2,
-      value: state?.range230Vs.length
-        ? state?.range230Vs.map((el) => "ab " + el.min).join("") + " km"
+      value: state?.rangeLithiums.length
+        ? state?.rangeLithiums.map((el) => "ab " + el.min).join("") + " km"
         : null,
       image: image,
     },
@@ -75,9 +75,10 @@ function ActiveFilterEntry(props) {
     {
       id: 5,
       value:
-        state?.chargingTime230Vs.length ||
-        state?.chargingTime230Vs.length == undefined
-          ? state?.chargingTime230Vs.map((el) => "ab " + el.min).join("") + " h"
+        state?.chargingTimeLithiums.length ||
+        state?.chargingTimeLithiums.length == undefined
+          ? state?.chargingTimeLithiums.map((el) => "ab " + el.min).join("") +
+            " h"
           : null,
       image: image5,
     },
@@ -123,11 +124,11 @@ function ActiveFilterEntry(props) {
           <div
             onClick={() => {
               if (item.id === 1) dispatch({ type: "price", data: [] });
-              if (item.id === 2) dispatch({ type: "range230V", data: [] });
+              if (item.id === 2) dispatch({ type: "rangeLithium", data: [] });
               if (item.id === 3) dispatch({ type: "loadingWeight", data: [] });
               if (item.id === 4) dispatch({ type: "maxSpeed", data: [] });
               if (item.id === 5)
-                dispatch({ type: "chargingTime230V", data: [] });
+                dispatch({ type: "chargingTimeLithium", data: [] });
               if (item.id === 6) dispatch({ type: "category", data: [] });
             }}
             className={"w-3.5 my-auto mr-4 cursor-pointer"}
@@ -139,11 +140,11 @@ function ActiveFilterEntry(props) {
       {/* REMOVE ALL FILTERS */}
       <div
         className={
-          state?.range230Vs.length ||
+          state?.rangeLithiums.length ||
           state?.prices.length ||
           state?.loadingWeights.length ||
           state?.maxSpeeds.length ||
-          state?.chargingTime230Vs.length ||
+          state?.chargingTimeLithiums.length ||
           state?.categorys.length
             ? " flex items-end h-10 "
             : "hidden"
@@ -154,7 +155,7 @@ function ActiveFilterEntry(props) {
           onClick={() => {
             props.setShowAll(!props.showAll);
             dispatch({
-              type: "range230V",
+              type: "rangeLithium",
               data: [],
             });
             dispatch({
@@ -170,7 +171,7 @@ function ActiveFilterEntry(props) {
               data: [],
             });
             dispatch({
-              type: "chargingTime230V",
+              type: "chargingTimeLithium",
               data: [],
             });
             dispatch({

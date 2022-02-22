@@ -33,25 +33,25 @@
         "value": 150,
         "name": "ab 150 km",
         "id": 1,
-        "categoryName": "range230V"
+        "categoryName": "rangeLithium"
       },
       {
         "id": 2,
         "name": "ab 200 km",
         "value": 200,
-        "categoryName": "range230V"
+        "categoryName": "rangeLithium"
       },
       {
         "id": 3,
         "name": "ab 250 km",
         "value": 250,
-        "categoryName": "range230V"
+        "categoryName": "rangeLithium"
       },
       {
         "id": 4,
         "name": "ab 500 km",
         "value": 500,
-        "categoryName": "range230V"
+        "categoryName": "rangeLithium"
       }
     ]
   },
