@@ -1,5 +1,6 @@
 ---
-title: ARI-458-Pritsche
+title: ARI-458-Truck
+name: ARI-458-Pritsche
 price: 13700
 description: mwqowöqDÄQMDÄQ
 src: /images/ari_458_pritsche_vorne_links_acb13085b0.jpg
@@ -8,7 +9,7 @@ typeClass: L7E
 loadingWeight:
   value: 531
   baseUnit: kg
-  key: loadingweight
+  key: payload
 curbweight:
   value: 604
   baseUnit: kg
@@ -31,11 +32,11 @@ chargingTime230V:
   baseUnit: h
 chargingTimeLithium:
   value: 5
-  key: Charging Time type2
-  baseUnit: h
+  key: Charging Time
+  baseUnit: h ( type2)
 chargingTimeFast:
   value: 2
-  key: Charging Time fast
+  key: "fast Charging Time "
   baseUnit: h
 batteryCapacityBlei:
   value: "0"
@@ -53,7 +54,7 @@ consumption:
   key: consumption
   value: 7,5
 power:
-  value: 7,5/7,5
+  value: " min-7,5/max-7,5"
   baseUnit: kw
   key: power
 seats:
