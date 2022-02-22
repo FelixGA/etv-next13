@@ -1,13 +1,19 @@
 ---
-title: Evum-aCar-flatbed truck
+title: Evum-aCar-Truck
+name: Evum-aCar-Pritsche
 price: 33080
-description: mlmkljb bkl
-src: /images/evum-acar-front-1024x683.jpg
+description: >-
+  
+
+
+
+  Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A -Car nun seit Juni 2020 auf dem Markt. Ursprünglich wurde der kräftige Elektrotransporter für Entwicklungs- und Schwellenländern entwickelt, wo er in der Landwirtschaft und der Industrie zum Einsatz kommen sollte. Während der Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen Markt attraktiv sein könnte.
+src: /images/Evum-Acar-Front-1024x683.jpg
 category: flatbed truck
 loadingWeight:
+  key: payload
   value: 1200
   baseUnit: kg
-  key: loading weight
 curbweight:
   key: curb weight
   value: 1500
@@ -17,69 +23,69 @@ maxSpeed:
   value: 70
   baseUnit: km/h
 range230V:
+  key: range sla
   value: 0
   baseUnit: nicht verfügbar
-  key: range sla
 rangeLithium:
+  key: "range "
   value: 110
   baseUnit: km
-  key: range lithium
 chargingTime230V:
+  key: Ladezeit
   value: 0
-  key: ct 230v
-  baseUnit: h
+  baseUnit: keine Angabe
 chargingTimeLithium:
+  key: charging time
   value: 6
-  baseUnit: h
-  key: ct type 2
+  baseUnit: "Stunden "
 chargingTimeFast:
+  key: charging time fast
   value: 0
-  key: ct fast
-  baseUnit: h
+  baseUnit: keine Angabe
 batteryCapacityBlei:
   key: capacitiy sla
   value: "0"
   baseUnit: keine Angabe
 batteryCapacityLithium:
+  key: capacity lithium
   value: 16,5
   baseUnit: kWh
-  key: capacity lithium
 batteryIncluded:
-  key: battery included
-  value: yes
+  value: ja
+  key: Batterie Verfügbarkeit
 consumption:
-  baseUnit: kWh
   key: consumption
   value: 19,6
+  baseUnit: kWh
 power:
-  value: 20/28
-  baseUnit: kw
   key: power
+  value: min-20/max-28
+  baseUnit: kw
 seats:
-  value: 2
   key: seats
+  value: 2
 rating:
   key: good
   value: 4,0
 guarantee:
-  key: guarantee
+  key: Car guarantee
   value: 0
-  baseUnit: no information
+  baseUnit: keine Angabe
 availability:
-  key: "0"
-  value: no information
+  key: no information
+  value: no info
 subsidies:
   key: subsidies
   value: 0
-  baseUnit: no information
+  baseUnit: no info
 batteryGuarantee:
   key: battery guarantee
   value: 0
-  baseUnit: no information
+  baseUnit: no info
 loadingHeight:
+  key: loading height
   value: 895
   baseUnit: mm
-  key: loading height
 carSizes:
   width: width
   length: length
@@ -92,13 +98,13 @@ carSizes:
   valuewheelbase: 2596
   key: car sizes
 loadingVolume:
-  valueheight: 352
-  valuewidth: 1608
-  valuelength: 1778
-  baseUnit: mm
   key: loading volume
   height: height
+  valueheight: 352
   width: width
+  valuewidth: 1608
+  valuelength: 1778
   length: length
+  baseUnit: mm
 ---
-dfveGEfea
+Das Evum aCar ist ein Elektrotransporter der Kategorie N1  mit bis zu 1200kg Nutzlast.
