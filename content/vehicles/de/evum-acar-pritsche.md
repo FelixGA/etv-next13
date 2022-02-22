@@ -1,9 +1,14 @@
 ---
 title: Evum-aCar-Pritsche
+name: Evum-aCar-Pritsche
 price: 33080
-description: Das Evum aCar ist ein Elektrotransporter der Kategorie N1  mit bis
-  zu 1200kg Nutzlast.
-src: /images/evum-acar-front-1024x683.jpg
+description: >-
+  
+
+
+
+  Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A -Car nun seit Juni 2020 auf dem Markt. Ursprünglich wurde der kräftige Elektrotransporter für Entwicklungs- und Schwellenländern entwickelt, wo er in der Landwirtschaft und der Industrie zum Einsatz kommen sollte. Während der Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen Markt attraktiv sein könnte.
+src: /images/Evum-Acar-Front-1024x683.jpg
 category: Pritsche
 typeClass: L7E
 loadingWeight:
@@ -15,7 +20,7 @@ curbweight:
   value: 1500
   baseUnit: kg
 maxSpeed:
-  key: Höchstgeschwindigkeit
+  key: km/h
   value: 70
   baseUnit: km/h
 range230V:
@@ -33,7 +38,7 @@ chargingTime230V:
 chargingTimeLithium:
   key: Ladezeit typ2
   value: 6
-  baseUnit: "Stunden "
+  baseUnit: St.
 chargingTimeFast:
   key: Schnellladung
   value: 0
@@ -55,7 +60,7 @@ consumption:
   baseUnit: kWh
 power:
   key: Leistung
-  value: 20/28
+  value: min-20/max-28
   baseUnit: kw
 seats:
   key: Sitzplätze
@@ -103,4 +108,4 @@ loadingVolume:
   length: Länge
   baseUnit: mm
 ---
-Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A-Car nun seit Juni 2020 auf dem Markt. Ursprünglich wurde der kräftige Elektrotransporter für Entwicklungs- und Schwellenländern entwickelt, wo er in der Landwirtschaft und der Industrie zum Einsatz kommen sollte. Während der Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen Markt attraktiv sein könnte.
+Das Evum aCar ist ein Elektrotransporter der Kategorie N1  mit bis zu 1200kg Nutzlast.
