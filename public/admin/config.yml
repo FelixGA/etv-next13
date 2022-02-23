@@ -44,6 +44,12 @@ collections:
         fields:
           - { label: "Name", name: "name", widget: "string", i18n: true }
           - { label: "Markdown", name: "markdown", widget: "markdown" }
+          - {
+              label: "Details",
+              name: "details",
+              widget: "markdown",
+              required: false,
+            }
 
   - label: "Blog"
     name: "blog"
@@ -76,6 +82,7 @@ collections:
     name: "vehicles"
     folder: "content/vehicles"
     create: true
+    slug: "{{fields.name}}"
     identifier_field: name
     i18n: true
 
@@ -88,11 +95,13 @@ collections:
           required: true,
         }
       - {
-          label: "slug",
+          label: "name",
           name: "name",
           widget: "string",
           i18n: duplicate,
           required: true,
+          pattern:
+            ["[^!@#$%^&>*(),=+{:}|?><|}]", "Must be also unique for every car"],
         }
 
       - { label: "Price", name: "price", widget: "number", i18n: duplicate }
@@ -106,7 +115,13 @@ collections:
         name: "description"
         widget: "markdown"
         i18n: true
-      - { label: Image, name: src, widget: image, i18n: duplicate }
+      - {
+          label: Image,
+          name: src,
+          widget: image,
+          i18n: duplicate,
+          allow_multiple: true,
+        }
       - label: "Body"
         name: "body"
         widget: "markdown"
