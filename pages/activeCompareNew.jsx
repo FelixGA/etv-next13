@@ -1,6 +1,9 @@
+import Image from "next/image";
+import Link from "next/link";
 import { useStore } from "../components/store";
 import { useState, useEffect } from "react";
 import getContent from "/utils/getContent";
+import ActiveCompareKeys from "../components/ActiveCompare/ActiveCompareKeys";
 
 export default function activeCompareNew(props) {
   const { state, dispatch } = useStore();
@@ -35,14 +38,23 @@ export default function activeCompareNew(props) {
   }, []);
 
   return (
-    <div className="main-wrapper">
-      <div className="pt-8 pb-12 pl-[5vw]">
+    <div className="main-wrapper bg-red-300">
+      <div className="pt-8 pb-6 px-4">
         <h1 className="font-bold  text-[#2C3F53] text-2xl lg:text-4xl">
           Ihre Auswahl im Detailvergleich
         </h1>
       </div>
-      <div className="bg-grey-lighter grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col   scrollbar-hide ">
-        <div className="w-40">some text</div>
+      <div className="lg:w-64 xl:w-88 2xl:w-[380px] pl-4">
+        <button className="mb-12 text-sm bg-grey-lighter w-52 h-10  rounded-md text-blue-darker ">
+          <Link href="/comparePage">
+            <a className="visited:text-blue-darker">
+              « zurück zur Ergebnisliste
+            </a>
+          </Link>
+        </button>
+      </div>
+      <div className="bg-grey-lighter grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll">
+        <ActiveCompareKeys />
         <div className="w-40">some text2</div>
         <div className="w-40">some text3</div>
         <div className="w-40">some text4</div>
