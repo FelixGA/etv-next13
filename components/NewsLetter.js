@@ -1,14 +1,13 @@
-const NewsLetter = () => {
+const NewsLetter = (props) => {
+  console.log("HEREEE", props.getContent.content[4].name);
   return (
     <div className="newsletter-container flex flex-col justify-center flex-wrap items-center p-10 bg-grey-lightest">
       <h2 className="text-grey-darkest text-2xl tracking-wider font-bold py-2">
         {" "}
-        Zum Newsletter anmelden
+        {props.getContent.content[4].name}
       </h2>
       <p className="flex justify-center custom-text px-4 py-8  text-grey-darker">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod,
-        nisi vel consectetur euismod, nisi nisl euismod nisi, vel consectetur
-        nisi nisl euismod.bold
+        {props.getContent.content[4].markdown}
       </p>{" "}
       <span>
         <p className="w-full align-left text-grey-dark font-bold">Email</p>

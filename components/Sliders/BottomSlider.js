@@ -3,11 +3,12 @@ import React from "react";
 import BottomSliderCard from "../Sliders/BottomSliderCard";
 import ButtonForAlleTransporter from "./ButtonForAlleTransporter";
 
-export default function BottomSlider() {
+export default function BottomSlider(props) {
+  console.log("HEREEE", props.getContent.content[4].name);
   return (
     <div className="flex flex-col  ">
       <h2 className="text-center text-3xl text-black-dark font-bold my-8">
-        Beliebte Kategorien
+        Beliebte Kategorien{props.getContent.content[4].details}
       </h2>
       <div className="flex flex-row overflow-x-auto scrollbar-hide rounded-md">
         <BottomSliderCard />
@@ -19,7 +20,7 @@ export default function BottomSlider() {
               onClick={() => {
                 state.prices = [];
                 state.loadingWeights = [];
-                state.range230Vs = [];
+                state.rangeLithiums = [];
               }}
               className="visited:text-blue-darker"
             >

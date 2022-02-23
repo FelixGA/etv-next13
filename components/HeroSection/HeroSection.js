@@ -6,7 +6,7 @@ import Link from "next/link";
 
 //import filtersData from "../filtersData.json";
 
-const HeroSection = () => {
+const HeroSection = (props) => {
   const { state, dispatch } = useStore();
 
   const details = [
@@ -114,46 +114,48 @@ const HeroSection = () => {
           </div>
           <div className="main-heading-text lg:flex lg:flex-col lg:justify-evenly">
             <h1 className="text-2xl lg:text-3xl pl-3 md:pt-8">
-              Elektrotransporter-Vergleich
+              {props.getContent.title}
             </h1>
             <p className="text-grey-darker text-2xl lg:text-3xl pl-3">
-              Hier finden Sie den{" "}
-              <b className="text-grey-darkest font-bold">
+              {props.getContent.content[0].markdown}
+              {/* <b className="text-grey-darkest font-bold">
                 passenden Elektrotransporter,
               </b>
               <br></br>
-              genau für Ihre Ansprüche
+              genau für Ihre Ansprüche */}
             </p>
 
             <p className="hidden lg:flex justify-between">
               <span className="text-blue-extra font-bold pl-3 text-xl xl:text-2xl">
-                <b className="text-blue-extrablue">&#10004;</b> unabhängig
+                {props.getContent.content[0].details}
+                {/* <b className="text-blue-extrablue">&#10004;</b> unabhängig
               </span>
               <span className="text-blue-extra font-bold text-xl xl:text-2xl">
                 <b className="text-blue-extrablue">&#10004;</b> schnell
               </span>
               <span className="text-blue-extra font-bold text-xl xl:text-2xl">
-                <b className="text-blue-extrablue">&#10004;</b> immer aktuell
+                <b className="text-blue-extrablue">&#10004;</b> immer aktuell */}
               </span>
             </p>
           </div>
         </div>
         <div className="lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border border-blue-dark">
           <h2 className="text-blue-dark font-bold pt-2 pl-2 lg:hidden ">
-            Jetzt vergleichen
+            {props.getContent.content[1].name}
           </h2>
 
           <div className="comaprison-input-container m-2 lg:items-center lg:flex lg:flex-row lg:justify-between lg:flex-1">
             <div className="flex lg:flex-row flex-col lg:w-1/2 justify-around items-start lg:items-center flex-wrap">
-              <div className="h-14 lg:w-68 w-full pt-2 gmsou text-base rounded-sm bg-white lg:w-[14vw]">
-                <label className="tracking-wide flex justify-between px-2 text-left">
-                  Reichweite <div className=" relative top-6">▼</div>
+              <div className="h-14 lg:w-68  w-full pt-2 gmsou text-base rounded-lg bg-white lg:w-[14vw]">
+                <label className=" flex flex-row justify-between px-2 text-left">
+                  {props.getContent.content[1].markdown.split(", ")[0]}
+                  <div className=" relative top-6">▼</div>
                 </label>
                 <div className=" m-1">
                   <select
                     className="tracking-wider p-4 relative bottom-6 w-full
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
-                    id="range230V"
+                    id="rangeLithium"
                     onChange={(e) => {
                       setChooseRange(e.target.value);
                     }}
@@ -168,7 +170,8 @@ const HeroSection = () => {
               </div>
               <div className="h-14 lg:w-68 w-full my-4 pt-2 gmsou text-base rounded-sm bg-white lg:w-[14vw]	tracking-wide">
                 <label className="px-2 flex flex-row justify-between text-left">
-                  Preis <div className=" relative top-6">▼</div>
+                  {props.getContent.content[1].markdown.split(", ")[1]}
+                  <div className=" relative top-6">▼</div>
                 </label>
                 <div className=" m-1">
                   <select
@@ -190,7 +193,8 @@ const HeroSection = () => {
             <span className="flex flex-1 lg:w-1/2 lg:justify-around justify-between items-start lg:items-center flex-wrap ">
               <div className="w-2/5 h-14 pt-2 gmsou mb-6 lg:mb-0 lg:w-[14vw] text-base rounded-sm bg-white tracking-wide">
                 <label className="px-2 flex flex-row justify-between text-left">
-                  Nutzlast <div className=" relative right-0 top-6">▼</div>
+                  {props.getContent.content[1].markdown.split(", ")[2]}
+                  <div className=" relative right-0 top-6">▼</div>
                 </label>
                 <div className=" mt-1 px-1">
                   <select
@@ -221,7 +225,7 @@ const HeroSection = () => {
                     ],
                   });
                   dispatch({
-                    type: "range230V",
+                    type: "rangeLithium",
                     data: [
                       {
                         min: Number(chooseRange),

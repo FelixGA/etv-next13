@@ -59,11 +59,13 @@ export default function comparePage(props) {
     // /* ᴄᴀʀs ʀᴀɴɢᴇ ғɪʟᴛᴇʀ */
 
     const getCarsByRange = props.vehicles
-      ?.sort((a, b) => b.range230V.value - a.range230V.value)
+      ?.sort((a, b) => b.rangeLithium.value - a.rangeLithium.value)
       .map((item) => item);
     // /* ᴄᴀʀs ᴄʜᴀʀɢɪɴɢ ᴛɪᴍᴇ ғɪʟᴛᴇʀ */
     const getCarsfastest = props.vehicles
-      ?.sort((a, b) => a.chargingTime230V.value - b.chargingTime230V.value)
+      ?.sort(
+        (a, b) => a.chargingTimeLithium.value - b.chargingTimeLithium.value
+      )
       .map((item) => item);
 
     /* initial value */

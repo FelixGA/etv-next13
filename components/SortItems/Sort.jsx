@@ -30,7 +30,7 @@ function Sort() {
     { sortCategory: "Niedrigster Preis", sortType: "lowest" },
     { sortCategory: "Höchster Preis", sortType: "highest" },
     { sortCategory: "Bestseller", sortType: "bestseller" },
-    { sortCategory: "Beste Ladenzeit", sortType: "chargingTime230V" },
+    { sortCategory: "Beste Ladenzeit", sortType: "chargingTimeLithium" },
     { sortCategory: "Höchste Zuladung", sortType: "highestWeight" },
     { sortCategory: "Höchste Reichweite", sortType: "highestRange" },
     { sortCategory: "Höchste Vmax", sortType: "highestVmax" },

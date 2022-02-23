@@ -36,22 +36,22 @@ function CarCardDetailsMobile(props) {
           <div className="flex flex-row flex-1 py-1">
             <div className="flex flex-row flex-1 justify-between">
               <div className="text-grey-dark font-bold w-full xs:w-2/5">
-                {props.carItem?.range230V.key}:
+                {props.carItem?.rangeLithium.key}:
               </div>
               <div className="text-blue-dark font-bold w-full xs:w-3/5">
-                {props.carItem?.range230V.value}
-                {props.carItem?.range230V.baseUnit}
+                {props.carItem?.rangeLithium.value}
+                {props.carItem?.rangeLithium.baseUnit}
               </div>
             </div>
           </div>
           <div className="flex flex-row flex-1 py-1 ">
             <div className="flex flex-row flex-1 justify-between">
               <div className="text-grey-dark font-bold w-full xs:w-2/5">
-                {props.carItem?.chargingTime230V.key}:
+                {props.carItem?.chargingTimeLithium.key}:
               </div>
               <div className="text-blue-dark font-bold w-full xs:w-3/5">
-                {props.carItem?.chargingTime230V.value}
-                {props.carItem?.chargingTime230V.baseUnit}
+                {props.carItem?.chargingTimeLithium.value}
+                {props.carItem?.chargingTimeLithium.baseUnit}
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ function CarCardDetailsMobile(props) {
           router.query.cartitle ? "hidden" : "flex flex-wrap justify-end"
         }
       >
-        <Link href={`/transporter/${props.carItem?.title}`}>
+        <Link href={`/transporter/${props.carItem?.name}`}>
           <a className="border-2 border-blue-darker text-blue-darker m-4 rounded visited:text-blue-dark px-4 py-2 w-fit">
             Zur Productseite
           </a>

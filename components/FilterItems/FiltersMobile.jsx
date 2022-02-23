@@ -75,7 +75,7 @@ const priceFilterData = [
 const filtersData = [
   {
     id: 1,
-    category: "range230Vs",
+    category: "rangeLithiums",
     title: "Reichweite",
     image: image,
     options: [
@@ -83,25 +83,25 @@ const filtersData = [
         value: 150,
         name: "ab 150 km",
         id: 1,
-        categoryName: "range230V",
+        categoryName: "rangeLithium",
       },
       {
         id: 2,
         name: "ab 200 km",
         value: 200,
-        categoryName: "range230V",
+        categoryName: "rangeLithium",
       },
       {
         id: 3,
         name: "ab 250 km",
         value: 250,
-        categoryName: "range230V",
+        categoryName: "rangeLithium",
       },
       {
         id: 4,
         name: "ab 500 km",
         value: 500,
-        categoryName: "range230V",
+        categoryName: "rangeLithium",
       },
     ],
   },
@@ -174,32 +174,32 @@ const filtersData = [
   {
     id: 5,
     title: "Ladenzeit",
-    category: "chargingTime230Vs",
+    category: "chargingTimeLithiums",
     image: image6,
     options: [
       {
         name: "ab 1 Stunde",
         value: 1,
         id: 1,
-        categoryName: "chargingTime230V",
+        categoryName: "chargingTimeLithium",
       },
       {
         name: "ab 10 Stunde",
         value: 10,
         id: 2,
-        categoryName: "chargingTime230V",
+        categoryName: "chargingTimeLithium",
       },
       {
         name: "ab 20 Stunde",
         value: 20,
         id: 3,
-        categoryName: "chargingTime230V",
+        categoryName: "chargingTimeLithium",
       },
       {
         name: "ab 40 Stunde",
         value: 40,
         id: 4,
-        categoryName: "chargingTime230V",
+        categoryName: "chargingTimeLithium",
       },
     ],
   },

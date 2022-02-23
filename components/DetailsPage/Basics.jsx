@@ -7,7 +7,7 @@ const Basics = ({ basics, carItem }) => {
           className="
                  flex flex-row w-full bg-[#F2F5F8] "
         >
-          <p className="w-1/2 py-1 ">Class:</p>
+          <p className="w-1/2 py-1 ">Klasse:</p>
           <p className="w-1/2 py-1">{carItem.typeClass}</p>
         </div>
         {basics?.map((item, index) => (
@@ -21,7 +21,7 @@ const Basics = ({ basics, carItem }) => {
           >
             <p className="w-1/2 py-1">{item.key}</p>
             <p className="w-1/2 py-1">
-              {item.value} {item.baseUnit}
+              {item.value ? item.value : "-"} {item.baseUnit}
             </p>
           </div>
         ))}

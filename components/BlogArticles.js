@@ -1,22 +1,19 @@
 import Image from "next/image";
-const BlogArticles = () => {
+const BlogArticles = (props) => {
   return (
     <div className="lg:justify-between lg:items-center lg:flex lg:flex-col">
       <div className="blog-article-one p-10 lg:py-28 flex lg:flex-row justify-center w-3/4 items-center">
         <div>
           <span>
             <div className="h-8 w-24 flex items-center flex-wrap justify-center bg-orange-light text-white font-bold rounded">
-              jetzt neu
+              {props.getContent.content[2].details}
             </div>
             <h2 className="text-grey-darkest text-2xl font-bold py-5">
-              Elektrotransporter Kaufberater
+              {props.getContent.content[2].name}
             </h2>
           </span>
           <p className="tracking-wide font-bold text-grey-dark pb-6 pr-3">
-            Hier steht ein Text der Lust macht den Kauf­ber­ater (= euer
-            nor­maler Fun­nel) zu be­nutzen. Hier kön­nten so Dinge ste­hen wie:
-            In weni­gen schrit­ten zum per­fek­ten E-Trans­porter für Ihre
-            Ansprüche.
+            {props.getContent.content[2].markdown}
           </p>
           <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 my-3 text-sm rounded-lg">
             Zum Kaufberater
@@ -43,13 +40,10 @@ const BlogArticles = () => {
         </div>
         <span>
           <h2 className="text-grey-darkest text-2xl font-bold py-5">
-            Förderungen für Elektrotransporter
+            {props.getContent.content[3].name}
           </h2>
           <p className="tracking-wide font-bold text-grey-dark pb-6">
-            Im Rah­men der angestrebten En­ergiewende ist seit 2016 eine
-            bun­desweite Förderung der Elek­tro­mo­bil­ität durch die
-            so­ge­nan­nte “Umwelt­prämie” möglich, welche den Kauf rein
-            elek­trischer Fahrzeuge fi­nanziell un­ter­stützt.
+            {props.getContent.content[3].markdown}
           </p>
           <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 my-6 text-sm rounded-lg">
             Mehr erfahren

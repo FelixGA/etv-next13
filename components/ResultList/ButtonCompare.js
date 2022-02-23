@@ -22,7 +22,6 @@ function ButtonCompare(props) {
     }
     /* for enabling one individual button*/
     if (state?.disabledButtons === props.carItem.title) {
-      console.log("disabled", state?.disabledButtons);
       setDisabled(false);
     }
   }, [

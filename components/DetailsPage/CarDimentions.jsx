@@ -4,11 +4,11 @@ const CarDimentions = ({ vehichleDimentions, carItem }) => {
     (carItem?.loadingVolume.valueheight *
       carItem?.loadingVolume.valuewidth *
       carItem?.loadingVolume.valuelength) /
-      1000000
+      1000000000
   ).toFixed(2);
   let truckBed = parseFloat(
     (carItem?.loadingVolume.valuewidth * carItem?.loadingVolume.valuelength) /
-      1000
+      1000000
   ).toFixed(2);
   return (
     <section className="w-full lg:w-1/2 lg:px-2 lg:pl-6 ">
@@ -32,7 +32,7 @@ const CarDimentions = ({ vehichleDimentions, carItem }) => {
                flex flex-row w-full bg-[#F2F5F8] "
         >
           <p className="w-1/2 py-1 ">{carItem.carSizes.wheelbase}:</p>
-          <p className="w-1/2 py-1">{carItem.carSizes.valuewheelbase} cm</p>
+          <p className="w-1/2 py-1">{carItem.carSizes.valuewheelbase} mm</p>
         </div>
         <div
           className="
