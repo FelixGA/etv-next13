@@ -14,7 +14,6 @@ export default function Activecompare(props) {
   //console.log(getCars);
   /*  get the 3 from the state for comparison */
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
-  console.log(comparedCars);
 
   return (
     <div className="wrapper">

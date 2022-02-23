@@ -11,8 +11,6 @@ import { useState } from "react";
 export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
-
-  console.log(getCars);
   return (
     <>
       <Head>
@@ -25,7 +23,7 @@ export default function Home(props) {
 
       {/* <MDXRemote {...props.page.sources.main} components={components} /> */}
       <HeroSection getContent={getContent} />
-      <TopSlider getCars={getCars} />
+      <TopSlider getCars={getCars} getContent={getContent} />
       <BlogArticles getContent={getContent} />
       <BottomSlider getContent={getContent} />
       <NewsLetter getContent={getContent} />

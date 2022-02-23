@@ -1,6 +1,4 @@
 const Details = ({ details }) => {
-  console.log(details);
-
   return (
     <section className=" text-[#2C3F53] ">
       <h3 className="text-black-darkest font-bold pt-8 pb-4">Details</h3>
