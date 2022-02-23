@@ -1,4 +1,5 @@
 const Basics = ({ basics, carItem }) => {
+  //slug: "{{fields.name}}"
   return (
     <section className="w-full lg:w-1/2 lg:px-2">
       <h3 className="text-black-darkest font-bold pt-8 pb-4">Grundlagen</h3>

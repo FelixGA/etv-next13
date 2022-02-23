@@ -82,7 +82,6 @@ collections:
     name: "vehicles"
     folder: "content/vehicles"
     create: true
-    slug: "{{fields.name}}"
     identifier_field: name
     i18n: true
 
