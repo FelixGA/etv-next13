@@ -5,7 +5,7 @@ import { useStore } from "../store";
 import SortDesktop from "../SortItems/SortDesktop";
 import ActiveFilterEntry from "./ActiveFilterEntry";
 
-function ActiveFilterBlock() {
+function ActiveFilterBlock({ getContent }) {
   const { state, dispatch } = useStore();
   const [clicked, setClicked] = useState(true);
   const [showAll, setShowAll] = useState(false);
@@ -18,14 +18,18 @@ function ActiveFilterBlock() {
           showAll ? "flex flex-grow justify-between flex-1 " : "hidden"
         }
       >
-        <ActiveFilterEntry showAll={showAll} setShowAll={setShowAll} />
+        <ActiveFilterEntry
+          showAll={showAll}
+          setShowAll={setShowAll}
+          getContent={getContent}
+        />
       </div>
 
       {/* HEADING + SORTING */}
       <div className="flex justify-between">
         <div className={showAll ? "w-full " : "flex items-center flex-1 "}>
           <h1 className="pl-4 text-2xl md:text-3xl text-blue-extra py-4">
-            Die besten E-Transporter nach Ihrer Auswahl
+            {getContent.title}
           </h1>
         </div>
         <div

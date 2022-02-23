@@ -5,7 +5,7 @@ const Basics = ({ basics, carItem }) => {
       <div className="flex flex-col w-full text-[#2C3F53] lg:pr-6">
         <div
           className="
-                 flex flex-row w-full bg-[#F2F5F8] "
+                 flex flex-row w-full bg-bg-grey-lighter "
         >
           <p className="w-1/2 py-1 ">Klasse:</p>
           <p className="w-1/2 py-1">{carItem.typeClass}</p>
@@ -14,9 +14,7 @@ const Basics = ({ basics, carItem }) => {
           <div
             key={index}
             className={
-              index % 2 !== 0
-                ? "flex flex-row w-full bg-[#F2F5F8] "
-                : "flex flex-row w-full "
+              index % 2 == 0 ? "flex flex-1 bg-grey-lighter " : "flex flex-1 "
             }
           >
             <p className="w-1/2 py-1">{item.key}</p>
@@ -27,9 +25,9 @@ const Basics = ({ basics, carItem }) => {
         ))}
         <div
           className={
-            basics.length % 2 !== 0
-              ? "flex flex-row w-full bg-[#F2F5F8] "
-              : "flex flex-row w-full "
+            basics.length % 2 == 0
+              ? "flex flex-1 bg-grey-lighter "
+              : "flex flex-1 "
           }
         >
           <p className="w-1/2 py-1">Gesamtgewicht</p>

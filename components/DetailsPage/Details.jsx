@@ -6,9 +6,7 @@ const Details = ({ details }) => {
         <div
           key={index}
           className={
-            index % 2 == 0
-              ? "flex flex-row w-full bg-[#F2F5F8] "
-              : "flex flex-row w-full "
+            index % 2 == 0 ? "flex flex-1 bg-grey-lighter " : "flex flex-1 "
           }
         >
           <p className="w-1/2 py-1">{item.key}</p>

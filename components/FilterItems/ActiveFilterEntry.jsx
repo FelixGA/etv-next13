@@ -180,7 +180,7 @@ function ActiveFilterEntry(props) {
             });
           }}
         >
-          alle Filter loschen
+          {props.getContent.content[0].name}
         </div>
       </div>
     </div>

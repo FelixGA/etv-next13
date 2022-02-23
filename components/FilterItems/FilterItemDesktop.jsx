@@ -20,10 +20,11 @@ const variants = {
   },
 };
 
-function FilterItemDesktop(props) {
-  const item = props.item;
+function FilterItemDesktop({ item, getContent }) {
+  // const item = props.item;
   const { state, dispatch } = useStore();
-
+  console.log(getContent);
+  // let getContent = props.getContent;
   /* to render the four ranges */
   const rangesForCheckboxes = item.options.map((checkbox, index) => (
     <div
@@ -39,7 +40,7 @@ function FilterItemDesktop(props) {
       key={index}
       className="mt-4 flex cursor-pointer py-2 "
     >
-      <FilterCheckbox checkbox={checkbox} />
+      <FilterCheckbox checkbox={checkbox} getContent={getContent} />
       <label
         forhtml={checkbox.name}
         className="inline-flex items-center  pl-5 text-lg text-[#2C3F53] "

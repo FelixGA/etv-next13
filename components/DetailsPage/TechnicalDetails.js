@@ -28,7 +28,12 @@ const TechnicalDetails = ({ carItem }) => {
       carItem.batteryGuarantee,
       carItem.guarantee,
       carItem.availability,
+      carItem.batteryCapacityLithium,
+      carItem.batteryIncluded,
+      carItem.consumption,
+      carItem.seats,
     ];
+
     SetDetails(details);
     const vehichleDimentions = [
       { key: carItem.loadingVolume.key },
