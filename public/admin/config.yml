@@ -76,6 +76,7 @@ collections:
     name: "vehicles"
     folder: "content/vehicles"
     create: true
+    slug: "{{fields.name}}"
     identifier_field: name
     i18n: true
 
@@ -88,11 +89,13 @@ collections:
           required: true,
         }
       - {
-          label: "slug",
+          label: "name",
           name: "name",
           widget: "string",
           i18n: duplicate,
           required: true,
+          pattern:
+            ["[^!@#$%^&>*(),=+{:}|?><|}]", "Must be also unique for every car"],
         }
 
       - { label: "Price", name: "price", widget: "number", i18n: duplicate }
