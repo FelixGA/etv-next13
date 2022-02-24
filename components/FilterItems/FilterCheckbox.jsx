@@ -4,9 +4,11 @@ import { useStore } from "../store";
 function FilterCheckbox(props) {
   const { state, dispatch } = useStore();
   const [isChecked, setIsChecked] = useState("");
+  console.log(0, isChecked);
   /* CHECKING WHICH CHECKBOX IS ACTIVE UPON THE RANGE */
   useEffect(() => {
     let minPrice = state?.prices.map((el) => el.min).join(" ");
+    console.log(1, minPrice);
     if (props.checkbox.categoryName == "price" && state?.prices.length) {
       minPrice >= 0 ? setIsChecked("0-20000€") : null;
       minPrice >= 20001 ? setIsChecked("20001-40000€") : null;
@@ -14,7 +16,7 @@ function FilterCheckbox(props) {
       minPrice >= 60001 ? setIsChecked("60001-90000€") : null;
     } else {
       /* unchecking the box */
-      setIsChecked(props.checkbox.categoryName);
+      // setIsChecked(props.checkbox.categoryName);
     }
 
     let minRange = state?.rangeLithiums.map((el) => el.min).join(" ");
@@ -28,7 +30,7 @@ function FilterCheckbox(props) {
       minRange >= 500 ? setIsChecked("ab 500 km") : null;
     } else {
       /* unchecking the box */
-      setIsChecked(props.checkbox.categoryName);
+      // setIsChecked(props.checkbox.categoryName);
     }
 
     let minWeight = state?.loadingWeights.map((el) => el.min).join(" ");
@@ -63,6 +65,7 @@ function FilterCheckbox(props) {
       categories == "Kasten" ? setIsChecked("Kasten") : null;
     }
   }, [
+    state?.prices,
     state?.rangeLithiums,
     state?.loadingWeights,
     state?.maxSpeeds,

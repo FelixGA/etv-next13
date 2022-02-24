@@ -236,10 +236,7 @@ const filtersData = [
     ],
   },
 ];
-console.log(
-  "🚀 ~ file: FiltersMobile.jsx ~ line 239 ~ filtersData",
-  filtersData
-);
+
 
 function FiltersMobile() {
   /* UseStates */

@@ -1,12 +1,11 @@
 export default function ActiveCompareKeys({ getKeys }) {
-  console.log();
   return (
     /* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN MOBILE VIEW<> */
     <>
-      <div className=" w-full border-r-2  shadow-xl">
-        <div className="h-36 bg-grey-lighter"></div>
-        <div className=" flex items-center h-10 w-full bg-white ">
-          <h3 className=" p-4 text-[#2C3F53] text-xl">Grundlagen</h3>
+      <div className="min-w-min border-r-2 shadow-xl">
+        <div className="h-44 lg:h-96 bg-grey-lighter"></div>
+        <div className="flex items-center h-10 flex-1 bg-white mt-8">
+          <h3 className="   text-[#2C3F53] text-xl">Grundlagen</h3>
         </div>
         {getKeys
           .map((key, index) => (
@@ -18,7 +17,7 @@ export default function ActiveCompareKeys({ getKeys }) {
                   : "flex items-center h-10 flex-1 bg-white"
               }
             >
-              <h3 className="p-4 text-[#2C3F53] text-sm">{key}</h3>
+              <h3 className="p-4 text-[#2C3F53] text-sm ">{key}</h3>
             </div>
           ))
           .splice(0, 11)}

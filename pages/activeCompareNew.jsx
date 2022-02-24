@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { useStore } from "../components/store";
 import { useState, useEffect } from "react";
@@ -71,11 +70,27 @@ export default function activeCompareNew(props) {
         </button>
       </div>
       {/* KEYS AND ITEMS FOR COMPARE */}
-      <div className="grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll">
-        <ActiveCompareKeys getKeys={getKeys} />
-        <ActiveCompareItem />
-        <ActiveCompareItem />
-        <ActiveCompareItem />
+      <div className="grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
+        <div>
+          <ActiveCompareKeys getKeys={getKeys} />
+        </div>
+        <div>
+          <ActiveCompareItem />
+        </div>
+        <div>
+          <ActiveCompareItem />
+        </div>
+        <div>
+          <ActiveCompareItem />
+        </div>
+      </div>
+      <div className="flex flex-1 justify-center pt-4 ">
+        <div className="cursor-pointer border w-32 h-10 flex justify-center bg-blue-light text-white m-10">
+          <button>Ausstattung</button>
+        </div>
+        <div className="cursor-pointer border w-32 h-10 flex justify-center bg-blue-light text-white m-10">
+          <button>Masse</button>
+        </div>
       </div>
     </div>
   );

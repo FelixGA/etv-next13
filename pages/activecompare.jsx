@@ -8,8 +8,6 @@ import getContent from "/utils/getContent";
 import { MDXRemote } from "next-mdx-remote";
 
 export default function Activecompare(props) {
-  console.log(props);
-
   const { state, dispatch } = useStore();
 
   const [getCars, SetGetCars] = useState(props.vehicles);

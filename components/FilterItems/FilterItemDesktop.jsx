@@ -21,11 +21,10 @@ const variants = {
 };
 
 function FilterItemDesktop(props) {
-  const item = props.item;
   const { state, dispatch } = useStore();
 
   /* to render the four ranges */
-  const rangesForCheckboxes = item.options.map((checkbox, index) => (
+  const rangesForCheckboxes = props.item.options.map((checkbox, index) => (
     <div
       onClick={() => {
         dispatch({
@@ -42,7 +41,7 @@ function FilterItemDesktop(props) {
       <FilterCheckbox checkbox={checkbox} />
       <label
         forhtml={checkbox.name}
-        className="inline-flex items-center  pl-5 text-lg text-[#2C3F53] "
+        className="inline-flex items-center   pl-5 text-lg text-[#2C3F53] "
       >
         {checkbox.name}
       </label>
@@ -55,7 +54,7 @@ function FilterItemDesktop(props) {
         onClick={() => {
           dispatch({
             type: "truncate",
-            data: state?.truncates !== item.title ? item.title : "",
+            data: state?.truncates !== props.item.title ? props.item.title : "",
           });
         }}
       >
@@ -63,7 +62,7 @@ function FilterItemDesktop(props) {
           <div className="flex flex-row pl-4  ">
             <div className="w-6 h-6 ml-4 ">
               <Image
-                src={item.image}
+                src={props.item.image}
                 alt="picture"
                 objectFit="cover"
                 width={24}
@@ -72,13 +71,15 @@ function FilterItemDesktop(props) {
               />
             </div>
             <div className="pl-4 my-auto ">
-              <h4 className=" font-bold text-blue-darker">{item.title}</h4>
+              <h4 className=" font-bold text-blue-darker">
+                {props.item.title}
+              </h4>
             </div>
           </div>
           <div className="flex flex-row  ">
             <span
               className={
-                state[item.category].length > 0
+                state[props.item.category].length > 0
                   ? "flex text-green-700 text-xl "
                   : "hidden"
               }
@@ -87,7 +88,7 @@ function FilterItemDesktop(props) {
             </span>
             <div
               className={
-                state?.truncates == item.title
+                state?.truncates == props.item.title
                   ? "flex items-center w-6 mr-5 my-auto transition transform rotate-180 origin-center	"
                   : "flex items-center w-6 mr-5 my-auto transition transform rotate-0 origin-center	 "
               }
@@ -98,7 +99,7 @@ function FilterItemDesktop(props) {
         </div>
       </div>
       <AnimatePresence initial={false}>
-        {state?.truncates == item.title && (
+        {state?.truncates == props.item.title && (
           <motion.div
             variants={variants}
             initial="enter"

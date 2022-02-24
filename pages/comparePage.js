@@ -11,6 +11,7 @@ import FiltersMobile from "../components/FilterItems/FiltersMobile";
 export default function comparePage(props) {
   const [sortedCars, SetSortedCars] = useState([]);
   const { state, dispatch } = useStore();
+
   useEffect(() => {
     SetSortedCars(props.vehicles);
 

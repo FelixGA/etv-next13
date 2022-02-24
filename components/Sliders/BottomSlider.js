@@ -4,7 +4,7 @@ import BottomSliderCard from "../Sliders/BottomSliderCard";
 import ButtonForAlleTransporter from "./ButtonForAlleTransporter";
 
 export default function BottomSlider(props) {
-  console.log("HEREEE", props.getContent.content[4].name);
+  // console.log("HEREEE", props.getContent.content[4].name);
   return (
     <div className="flex flex-col  ">
       <h2 className="text-center text-3xl text-black-dark font-bold my-8">
