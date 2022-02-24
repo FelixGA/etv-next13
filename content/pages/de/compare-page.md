@@ -14,16 +14,8 @@ content:
       alle Filter loschen
   - name: " Alle Filter anzeigen"
     markdown: Preis, Reichweite, Zuladung, V-Max, Ladenzeit, Aufbautyp
-    details: |-
-      ab,
-
-      Pritsche,
-
-      Kipper,
-
-      Koffer,
-
-      Kasten,
-
-      stunden
+    details: ab, Pritsche, Kipper, Koffer, Kasten, stunden
+  - name: " Sortieren nach"
+    markdown: Empfohlen, Niedrigster Preis, Höchster Preis, Bestseller, Beste
+      Ladenzeit, Höchste Zuladung, Höchste Reichweite, Höchste Vmax
 ---

@@ -50,7 +50,7 @@ const initialState = {
   disabledButtons: "",
   maximalThrees: "",
   /* sorting state */
-  activeSortValues: "Niedrigster Preis",
+  activeSortValues: "",
 };
 
 const StoreContext = createContext(initialState);

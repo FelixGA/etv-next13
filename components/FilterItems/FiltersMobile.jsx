@@ -32,211 +32,213 @@ const variants = {
   },
 };
 
-/* filter list */
-const priceFilterData = [
-  {
-    id: 1,
-    category: "prices",
-    title: "Price",
-    image: image4,
-    options: [
-      {
-        value: 0,
-        max: 20000,
-        name: "0-20000€",
-        id: 1,
-        categoryName: "price",
-      },
-      {
-        id: 2,
-        name: "20001-40000€",
-        value: 20001,
-        max: 40000,
-        categoryName: "price",
-      },
-      {
-        id: 3,
-        name: "40001-60000€",
-        value: 40001,
-        max: 60000,
-        categoryName: "price",
-      },
-      {
-        id: 4,
-        name: "60001-90000€",
-        value: 60001,
-        max: 90000,
-        categoryName: "price",
-      },
-    ],
-  },
-];
-const filtersData = [
-  {
-    id: 1,
-    category: "rangeLithiums",
-    title: "Reichweite",
-    image: image,
-    options: [
-      {
-        value: 150,
-        name: "ab 150 km",
-        id: 1,
-        categoryName: "rangeLithium",
-      },
-      {
-        id: 2,
-        name: "ab 200 km",
-        value: 200,
-        categoryName: "rangeLithium",
-      },
-      {
-        id: 3,
-        name: "ab 250 km",
-        value: 250,
-        categoryName: "rangeLithium",
-      },
-      {
-        id: 4,
-        name: "ab 500 km",
-        value: 500,
-        categoryName: "rangeLithium",
-      },
-    ],
-  },
-  {
-    id: 2,
-    category: "loadingWeights",
-    title: "Zuladung",
+function FiltersMobile({ getContent }) {
+  /* filter list */
+  let fromWord = getContent.content[1].details.split(",")[0];
+  let hourWord = getContent.content[1].details.split(",")[5];
+  const filtersData = [
+    {
+      id: 1,
+      category: "rangeLithiums",
+      title: getContent.content[1].markdown.split(", ")[1],
+      image: image,
+      options: [
+        {
+          value: 150,
+          name: `${fromWord} 150 km`,
+          id: 1,
+          categoryName: "rangeLithium",
+        },
+        {
+          id: 2,
+          name: `${fromWord} 200 km`,
+          value: 200,
+          categoryName: "rangeLithium",
+        },
+        {
+          id: 3,
+          name: `${fromWord} 250 km`,
+          value: 250,
+          categoryName: "rangeLithium",
+        },
+        {
+          id: 4,
+          name: `${fromWord} 500 km`,
+          value: 500,
+          categoryName: "rangeLithium",
+        },
+      ],
+    },
+    {
+      id: 2,
+      category: "loadingWeights",
+      title: getContent.content[1].markdown.split(", ")[2],
 
-    image: image2,
-    options: [
-      {
-        id: 1,
-        name: "ab 500 kg",
-        value: 500,
-        categoryName: "loadingWeight",
-      },
-      {
-        id: 2,
-        name: "ab 1000 kg",
-        value: 1000,
-        categoryName: "loadingWeight",
-      },
-      {
-        id: 3,
-        name: "ab 1500 kg",
-        value: 1500,
-        categoryName: "loadingWeight",
-      },
-      {
-        id: 4,
-        name: "ab 2500 kg",
-        value: 2500,
-        categoryName: "loadingWeight",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "V-Max",
+      image: image2,
+      options: [
+        {
+          id: 1,
+          name: `${fromWord} 500 kg`,
+          value: 500,
+          categoryName: "loadingWeight",
+        },
+        {
+          id: 2,
+          name: `${fromWord} 1000 kg`,
+          value: 1000,
+          categoryName: "loadingWeight",
+        },
+        {
+          id: 3,
+          name: `${fromWord} 1500 kg`,
+          value: 1500,
+          categoryName: "loadingWeight",
+        },
+        {
+          id: 4,
+          name: `${fromWord} 2500 kg`,
+          value: 2500,
+          categoryName: "loadingWeight",
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: getContent.content[1].markdown.split(", ")[3],
 
-    category: "maxSpeeds",
-    image: image3,
-    options: [
-      {
-        id: 1,
-        name: "ab 10km/h",
-        value: 10,
-        categoryName: "maxSpeed",
-      },
-      {
-        id: 2,
-        name: "ab 200km/h",
-        value: 200,
-        categoryName: "maxSpeed",
-      },
-      {
-        id: 3,
-        name: "ab 400km/h",
-        value: 400,
-        categoryName: "maxSpeed",
-      },
-      {
-        id: 4,
-        name: "ab 600km/h",
-        value: 600,
-        categoryName: "maxSpeed",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Ladenzeit",
-    category: "chargingTimeLithiums",
-    image: image6,
-    options: [
-      {
-        name: "ab 1 Stunde",
-        value: 1,
-        id: 1,
-        categoryName: "chargingTimeLithium",
-      },
-      {
-        name: "ab 10 Stunde",
-        value: 10,
-        id: 2,
-        categoryName: "chargingTimeLithium",
-      },
-      {
-        name: "ab 20 Stunde",
-        value: 20,
-        id: 3,
-        categoryName: "chargingTimeLithium",
-      },
-      {
-        name: "ab 40 Stunde",
-        value: 40,
-        id: 4,
-        categoryName: "chargingTimeLithium",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Aufbautyp",
-    category: "categorys",
-    image: image5,
-    options: [
-      {
-        name: "Pritsche",
-        value: "Pritsche",
-        id: 1,
-        categoryName: "category",
-      },
-      {
-        name: "Kipper",
-        value: "Kipper",
-        id: 2,
-        categoryName: "category",
-      },
-      {
-        name: "Koffer",
-        value: "Koffer",
-        id: 3,
-        categoryName: "category",
-      },
-      {
-        name: "Kasten",
-        value: "Kasten",
-        id: 4,
-        categoryName: "category",
-      },
-    ],
-  },
-];
+      category: "maxSpeeds",
+      image: image3,
+      options: [
+        {
+          id: 1,
+          name: `${fromWord} 10km/h`,
+          value: 10,
+          categoryName: "maxSpeed",
+        },
+        {
+          id: 2,
+          name: `${fromWord} 200km/h`,
+          value: 200,
+          categoryName: "maxSpeed",
+        },
+        {
+          id: 3,
+          name: `${fromWord} 400km/h`,
+          value: 400,
+          categoryName: "maxSpeed",
+        },
+        {
+          id: 4,
+          name: `${fromWord} 600km/h`,
+          value: 600,
+          categoryName: "maxSpeed",
+        },
+      ],
+    },
+    {
+      id: 5,
+      title: getContent.content[1].markdown.split(", ")[4],
+      category: "chargingTimeLithiums",
+      image: image6,
+      options: [
+        {
+          name: `${fromWord} 1 ${hourWord}`,
+          value: 1,
+          id: 1,
+          categoryName: "chargingTimeLithium",
+        },
+        {
+          name: `${fromWord} 10 ${hourWord}`,
+          value: 10,
+          id: 2,
+          categoryName: "chargingTimeLithium",
+        },
+        {
+          name: `${fromWord} 20 ${hourWord}`,
+          value: 20,
+          id: 3,
+          categoryName: "chargingTimeLithium",
+        },
+        {
+          name: `${fromWord} 40 ${hourWord}`,
+          value: 40,
+          id: 4,
+          categoryName: "chargingTimeLithium",
+        },
+      ],
+    },
+    {
+      id: 4,
+      title: getContent.content[1].markdown.split(", ")[5],
+      category: "categorys",
+      image: image5,
+      options: [
+        {
+          name: getContent.content[1].details.split(", ")[1],
+          value: "Pritsche",
+          id: 1,
+          categoryName: "category",
+        },
+        {
+          name: getContent.content[1].details.split(", ")[2],
+          value: "Kipper",
+          id: 2,
+          categoryName: "category",
+        },
+        {
+          name: getContent.content[1].details.split(", ")[3],
+          value: "Koffer",
+          id: 3,
+          categoryName: "category",
+        },
+        {
+          name: getContent.content[1].details.split(", ")[4],
+          value: "Kasten",
+          id: 4,
+          categoryName: "category",
+        },
+      ],
+    },
+  ];
 
-function FiltersMobile() {
+  const priceFilterData = [
+    {
+      id: 1,
+      category: "prices",
+      title: getContent.content[1].markdown.split(", ")[0],
+      image: image4,
+      options: [
+        {
+          value: 1,
+          max: 20000,
+          name: "0-20000€",
+          id: 1,
+          categoryName: "price",
+        },
+        {
+          id: 2,
+          name: "20001-40000€",
+          value: 20001,
+          max: 40000,
+          categoryName: "price",
+        },
+        {
+          id: 3,
+          name: "40001-60000€",
+          value: 40001,
+          max: 60000,
+          categoryName: "price",
+        },
+        {
+          id: 4,
+          name: "60001-90000€",
+          value: 60001,
+          max: 90000,
+          categoryName: "price",
+        },
+      ],
+    },
+  ];
   /* UseStates */
   const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
   const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
@@ -279,7 +281,8 @@ function FiltersMobile() {
                 />
               </div>
               <span className="ml-2 font-black   my-auto text-sm text-blue-darker">
-                Alle Filter anzeigen
+                {/* Alle Filter anzeigen */}
+                {getContent.content[1].name}
               </span>
             </div>
 
@@ -307,8 +310,8 @@ function FiltersMobile() {
       <div className={clicked ? "block" : "hidden"}>
         {priceFilterData.map((item) => (
           <div className="relative  " key={item.id}>
-            <Sort />
-            <FilterItemMobile item={item} />
+            <Sort getContent={getContent} />
+            <FilterItemMobile item={item} getContent={getContent} />
             <AnimatePresence initial={false}>
               {state?.truncates == item.title && (
                 <motion.div
@@ -325,9 +328,9 @@ function FiltersMobile() {
             </AnimatePresence>
           </div>
         ))}
-        {filtersData.map((item, index) => (
-          <div key={item.id} className="">
-            <FilterItemMobile item={item} />
+        {filtersData.map((item) => (
+          <div key={item.id}>
+            <FilterItemMobile item={item} getContent={getContent} />
           </div>
         ))}
       </div>

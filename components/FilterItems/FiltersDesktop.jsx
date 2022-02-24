@@ -203,7 +203,7 @@ function FiltersDesktop({ getContent }) {
       image: image4,
       options: [
         {
-          value: 0,
+          value: 1,
           max: 20000,
           name: "0-20000€",
           id: 1,
@@ -234,39 +234,34 @@ function FiltersDesktop({ getContent }) {
     },
   ];
 
-  const getPriceFilterData = priceFilterData.map((item) => {
-    return (
-      <div className="relative bg-white" key={item.id}>
-        <FilterItemDesktop item={item} getContent={getContent} />
-        <AnimatePresence initial={false}>
-          {state?.truncates == item.title && (
-            <motion.div
-              variants={variants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{ type: "tween", duration: 0.2 }}
-              className="flex flex-col ml-8 relative "
-            >
-              <PriceInputs />
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    );
-  });
-  const getFiltersData = filtersData.map((item) => {
-    return (
-      <div className="bg-white " key={item.id}>
-        <FilterItemDesktop item={item} />
-      </div>
-    );
-  });
-
   return (
     <div className="">
-      <div className="">{getPriceFilterData}</div>
-      {getFiltersData}
+      <div className="">
+        {priceFilterData.map((item) => (
+          <div className="relative bg-white" key={item.id}>
+            <FilterItemDesktop item={item} getContent={getContent} />
+            <AnimatePresence initial={false}>
+              {state?.truncates == item.title && (
+                <motion.div
+                  variants={variants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  transition={{ type: "tween", duration: 0.2 }}
+                  className="flex flex-col ml-8 relative "
+                >
+                  <PriceInputs />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        ))}
+      </div>
+      {filtersData.map((item) => (
+        <div className="bg-white" key={item.id}>
+          <FilterItemDesktop item={item} getContent={getContent} />
+        </div>
+      ))}
     </div>
   );
 }

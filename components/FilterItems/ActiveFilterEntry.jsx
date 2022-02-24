@@ -53,14 +53,16 @@ function ActiveFilterEntry(props) {
     {
       id: 2,
       value: state?.rangeLithiums.length
-        ? state?.rangeLithiums.map((el) => "ab " + el.min).join("") + " km"
+        ? state?.rangeLithiums.map((el) => `${fromWord}  ${el.min} km`).join("")
         : null,
       image: image,
     },
     {
       id: 3,
       value: state?.loadingWeights.length
-        ? state?.loadingWeights.map((el) => "ab " + el.min).join("") + " kg"
+        ? state?.loadingWeights
+            .map((el) => `${fromWord}  ${el.min}  kg`)
+            .join("")
         : null,
       image: image2,
     },
@@ -68,7 +70,9 @@ function ActiveFilterEntry(props) {
       id: 4,
       value:
         state?.maxSpeeds.length || state?.maxSpeeds.length == undefined
-          ? state?.maxSpeeds.map((el) => "ab " + el.min).join("") + " km/h"
+          ? state?.maxSpeeds
+              .map((el) => `${fromWord}   ${el.min} km/h`)
+              .join("")
           : null,
       image: image3,
     },
@@ -77,8 +81,9 @@ function ActiveFilterEntry(props) {
       value:
         state?.chargingTimeLithiums.length ||
         state?.chargingTimeLithiums.length == undefined
-          ? state?.chargingTimeLithiums.map((el) => "ab " + el.min).join("") +
-            " h"
+          ? state?.chargingTimeLithiums
+              .map((el) => `${fromWord}  ${el.min} ${hourWord} `)
+              .join("")
           : null,
       image: image5,
     },
@@ -86,12 +91,13 @@ function ActiveFilterEntry(props) {
       id: 6,
       value:
         state?.categorys.length || state?.categorys == undefined
-          ? state?.categorys.map((el) => "Typ: " + el.min).join("")
+          ? state?.categorys.map((el) => "Type: " + el.min).join("")
           : null,
       image: image6,
     },
   ];
-
+  let fromWord = props.getContent.content[1].details.split(",")[0];
+  let hourWord = props.getContent.content[1].details.split(",")[5];
   return (
     <div
       className={

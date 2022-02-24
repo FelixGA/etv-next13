@@ -4,7 +4,6 @@ import FiltersDesktop from "../components/FilterItems/FiltersDesktop";
 import { useStore } from "../components/store";
 import StickyPopUpForComparison from "../components/ResultList/StickyPopUpForComparison";
 import getContent from "/utils/getContent";
-import { MDXRemote } from "next-mdx-remote";
 import { useState, useEffect } from "react";
 import FiltersMobile from "../components/FilterItems/FiltersMobile";
 
@@ -12,6 +11,7 @@ export default function comparePage(props) {
   const [sortedCars, SetSortedCars] = useState([]);
   const [getContent, SetGetContent] = useState(props.page);
   const { state, dispatch } = useStore();
+  console.log(state?.activeSortValues);
   useEffect(() => {
     SetSortedCars(props.vehicles);
     SetGetContent(props.page);
@@ -74,26 +74,30 @@ export default function comparePage(props) {
     // let sortedCars = getCarslowestPrice;
 
     // /* ɢᴇᴛ ʀᴇsᴜʟᴛs from sorting */
-    if (state?.activeSortValues === "Höchster Preis") {
-      SetSortedCars(getCarshighestPrice);
-    }
 
-    if (state?.activeSortValues === "Niedrigster Preis") {
-      SetSortedCars(getCarslowestPrice);
-    }
-    if (state?.activeSortValues === "Höchste Zuladung") {
-      SetSortedCars(getCarslightest);
-    }
-    if (state?.activeSortValues === "Höchste Reichweite") {
-      SetSortedCars(getCarsByRange);
-    }
-    if (state?.activeSortValues === "Höchste Vmax") {
-      SetSortedCars(getCarsBymaxSpeed);
-    }
-    if (state?.activeSortValues === "Beste Ladenzeit") {
-      SetSortedCars(getCarsfastest);
-    }
-  }, [props.vehicles, state.activeSortValues]);
+    // if (state?.activeSortValues.sortType === "highest") {
+    //   SetSortedCars(getCarshighestPrice);
+    // }
+
+    // if (state?.activeSortValues.sortType === "lowest") {
+    //   SetSortedCars(getCarslowestPrice);
+    // }
+    // if (state?.activeSortValues.sortType === "highestWeight") {
+    //   SetSortedCars(getCarslightest);
+    // }
+    // if (state?.activeSortValues.sortType === "highestRange") {
+    //   SetSortedCars(getCarsByRange);
+    // }
+    // if (state?.activeSortValues.sortType === "highestVmax") {
+    //   SetSortedCars(getCarsBymaxSpeed);
+    // }
+    // if (state?.activeSortValues.sortType === "chargingTimeLithium") {
+    //   SetSortedCars(getCarsfastest);
+    // }
+  }, [
+    props.vehicles,
+    // state.activeSortValues
+  ]);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">

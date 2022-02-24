@@ -40,13 +40,13 @@ function ActiveFilterBlock({ getContent }) {
         >
           <div className="relative flex justify-center items-center xl:pr-0">
             <h4 className="sort-heading w-fit ">
-              {`Sortieren nach: ${state?.activeSortValues}`}{" "}
+              {`${getContent?.content[2].name}: ${state?.activeSortValues.sortCategory}`}{" "}
             </h4>
             {/* SORT DESKTOP */}
             <div
               className={clicked ? "hidden" : "flex absolute top-4 right-0 "}
             >
-              <SortDesktop />
+              <SortDesktop getContent={getContent} />
             </div>
             <div
               className={

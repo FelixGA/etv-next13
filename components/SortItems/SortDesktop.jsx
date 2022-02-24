@@ -1,29 +1,51 @@
 import { useState } from "react";
 import { useStore } from "../store";
 
-function SortDesktop() {
+function SortDesktop({ getContent }) {
   const { state, dispatch } = useStore();
 
+  let sortingCate = getContent.content[2].markdown.split(", ").map((el) => el);
   const sortBy2 = [
     {
-      sortCategory: "Empfohlen",
+      sortCategory: sortingCate[0],
       sortType: 1,
     },
-    { sortCategory: "Niedrigster Preis", sortType: "lowest" },
-    { sortCategory: "Höchster Preis", sortType: "highest" },
-    { sortCategory: "Bestseller", sortType: "bestseller" },
-    { sortCategory: "Beste Ladenzeit", sortType: "chargingTimeLithium" },
-    { sortCategory: "Höchste Zuladung", sortType: "highestWeight" },
-    { sortCategory: "Höchste Reichweite", sortType: "highestRange" },
-    { sortCategory: "Höchste Vmax", sortType: "highestVmax" },
+    {
+      sortCategory: sortingCate[1],
+      sortType: "lowest",
+    },
+    {
+      sortCategory: sortingCate[2],
+      sortType: "highest",
+    },
+    {
+      sortCategory: sortingCate[3],
+      sortType: "bestseller",
+    },
+    {
+      sortCategory: sortingCate[4],
+      sortType: "chargingTimeLithium",
+    },
+    {
+      sortCategory: sortingCate[5],
+      sortType: "highestWeight",
+    },
+    {
+      sortCategory: sortingCate[6],
+      sortType: "highestRange",
+    },
+    {
+      sortCategory: sortingCate[7],
+      sortType: "highestVmax",
+    },
   ];
   const [isChecked, setIsChecked] = useState("");
   const getAllSortings = sortBy2.map((rank) => {
     return (
       <div
         onClick={() => {
-          setIsChecked(rank?.sortType);
-          dispatch({ type: "activeSortValue", data: rank?.sortCategory });
+          setIsChecked(rank?.sortCategory);
+          dispatch({ type: "activeSortValue", data: rank });
         }}
         key={rank.sortType}
         className="mt-1 flex flex-row py-2  mr-4 "
@@ -33,7 +55,7 @@ function SortDesktop() {
           onChange={() => {
             return null;
           }}
-          checked={isChecked == rank?.sortType ? true : false}
+          checked={isChecked == rank?.sortCategory ? true : false}
           type="checkbox"
           id={rank?.sortCategory}
           name={rank?.sortCategory}

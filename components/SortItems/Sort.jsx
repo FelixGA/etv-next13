@@ -4,22 +4,43 @@ import { BsSortDown } from "react-icons/bs";
 import { useState } from "react";
 import { useStore } from "../store";
 
-function Sort() {
+function Sort({ getContent }) {
   const { state, dispatch } = useStore();
-
-  const sortBy2 = [
-    {
-      sortCategory: "Empfohlen",
-      sortType: 1,
-    },
-    { sortCategory: "Niedrigster Preis", sortType: "lowest" },
-    { sortCategory: "Höchster Preis", sortType: "highest" },
-    { sortCategory: "Bestseller", sortType: "bestseller" },
-    { sortCategory: "Beste Ladenzeit", sortType: "chargingTimeLithium" },
-    { sortCategory: "Höchste Zuladung", sortType: "highestWeight" },
-    { sortCategory: "Höchste Reichweite", sortType: "highestRange" },
-    { sortCategory: "Höchste Vmax", sortType: "highestVmax" },
-  ];
+ let sortingCate = getContent.content[2].markdown.split(", ").map((el) => el);
+ const sortBy2 = [
+   {
+     sortCategory: sortingCate[0],
+     sortType: 1,
+   },
+   {
+     sortCategory: sortingCate[1],
+     sortType: "lowest",
+   },
+   {
+     sortCategory: sortingCate[2],
+     sortType: "highest",
+   },
+   {
+     sortCategory: sortingCate[3],
+     sortType: "bestseller",
+   },
+   {
+     sortCategory: sortingCate[4],
+     sortType: "chargingTimeLithium",
+   },
+   {
+     sortCategory: sortingCate[5],
+     sortType: "highestWeight",
+   },
+   {
+     sortCategory: sortingCate[6],
+     sortType: "highestRange",
+   },
+   {
+     sortCategory: sortingCate[7],
+     sortType: "highestVmax",
+   },
+ ];
   const [truncate, setTruncate] = useState(false);
   const [isChecked, setIsChecked] = useState("");
   const [rotateIt, setRotateIt] = useState(false);
@@ -68,7 +89,7 @@ function Sort() {
             </div>
             <div className="pl-4 my-auto ">
               <h4 className="py-3  font-bold text-blue-dark text-md">
-                Sortieren nach ↬ {state?.activeSortValues}
+                {getContent?.content[2].name} ↬ {state?.activeSortValues}
               </h4>
             </div>
           </div>
