@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useStore } from "../store";

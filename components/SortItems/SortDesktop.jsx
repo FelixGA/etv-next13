@@ -4,6 +4,7 @@ import { useStore } from "../store";
 function SortDesktop({ getContent }) {
   const { state, dispatch } = useStore();
   const [SortArray, setSortArray] = useState([]);
+  const [isChecked, setIsChecked] = useState("");
   useEffect(() => {
     let sortingCate = getContent.content[2].markdown
       .split(", ")
@@ -55,47 +56,47 @@ function SortDesktop({ getContent }) {
     setSortArray(sortBy2);
   }, [getContent]);
 
-  const [isChecked, setIsChecked] = useState("");
-  const getAllSortings = SortArray.map((rank, index) => {
-    return (
-      <div
-        onClick={() => {
-          setIsChecked(rank?.sortCategory);
-          dispatch({
-            type: "activeSortValue",
-            data: [
-              {
-                sortType: rank.sortType,
-                sortCategory: rank.sortCategory,
-              },
-            ],
-          });
-        }}
-        key={index}
-        className="mt-1 flex flex-row py-2  mr-4 "
-      >
-        <input
-          className=" appearance-none w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
-          onChange={() => {
-            return null;
-          }}
-          checked={isChecked == rank?.sortCategory ? true : false}
-          type="checkbox"
-          id={rank?.sortCategory}
-          name={rank?.sortCategory}
-        ></input>
-        <label
-          forhtml={rank?.sortCategory}
-          className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
-        >
-          {rank?.sortCategory}
-        </label>
-      </div>
-    );
-  });
   return (
     <div className="hidden md:flex items-center bg-white border rounded-md mt-2 z-10 w-64 xl:mr-0">
-      <div className="flex flex-col pl-4 items-start">{getAllSortings}</div>
+      <div className="flex flex-col pl-4 items-start">
+        {SortArray.map((rank, index) => {
+          return (
+            <div
+              onClick={() => {
+                setIsChecked(rank?.sortCategory);
+                dispatch({
+                  type: "activeSortValue",
+                  data: [
+                    {
+                      sortType: rank.sortType,
+                      sortCategory: rank.sortCategory,
+                    },
+                  ],
+                });
+              }}
+              key={index}
+              className="mt-1 flex flex-row py-2  mr-4 "
+            >
+              <input
+                className=" appearance-none w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+                onChange={() => {
+                  return null;
+                }}
+                checked={isChecked == rank?.sortCategory ? true : false}
+                type="checkbox"
+                id={rank?.sortCategory}
+                name={rank?.sortCategory}
+              ></input>
+              <label
+                forhtml={rank?.sortCategory}
+                className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53] "
+              >
+                {rank?.sortCategory}
+              </label>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
