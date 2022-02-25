@@ -11,7 +11,7 @@ export default function comparePage(props) {
   const [sortedCars, SetSortedCars] = useState([]);
   const [getContent, SetGetContent] = useState(props.page);
   const { state, dispatch } = useStore();
-  console.log(state?.activeSortValues[0]?.sortType);
+
   useEffect(() => {
     SetSortedCars(props.vehicles);
     SetGetContent(props.page);
@@ -70,7 +70,7 @@ export default function comparePage(props) {
       .map((item) => item);
 
     /* initial value */
-    let sortedCars = getCarslowestPrice;
+    SetSortedCars(getCarslowestPrice);
 
     /* ɢᴇᴛ ʀᴇsᴜʟᴛs from sorting */
 
@@ -86,7 +86,6 @@ export default function comparePage(props) {
     }
     if (state?.activeSortValues[0]?.sortType == "highestRange") {
       SetSortedCars(getCarsByRange);
-      console.log("FIREEEE");
     }
     if (state?.activeSortValues[0]?.sortType === "highestVmax") {
       SetSortedCars(getCarsBymaxSpeed);
