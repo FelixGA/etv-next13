@@ -11,7 +11,7 @@ export default function comparePage(props) {
   const [sortedCars, SetSortedCars] = useState([]);
   const [getContent, SetGetContent] = useState(props.page);
   const { state, dispatch } = useStore();
-  console.log(state?.activeSortValues);
+  console.log(state?.activeSortValues[0]?.sortType);
   useEffect(() => {
     SetSortedCars(props.vehicles);
     SetGetContent(props.page);
@@ -42,15 +42,14 @@ export default function comparePage(props) {
     // const convertPriceToNumber = (price) => {
     //   return parseFloat(price.replace(/[^0-9.-]+/g, ""));
     // };
-
-    const getCarshighestPrice = props.vehicles
-      ?.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
-      .map((item) => item);
-
     // get the cheapest auto
     // const getCheapest = getCarslowestPrice?.slice(0, 1);
     // get the most expensive auto
     // const getHighest = getCarshighestPrice?.slice(0, 1);
+    const getCarshighestPrice = props.vehicles
+      ?.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
+      .map((item) => item);
+
     // /* cᴀʀs ᴡᴇɪɢʜᴛ ғɪʟᴛᴇʀ */
     const getCarslightest = props.vehicles
       ?.sort((a, b) => b.loadingWeight.value - a.loadingWeight.value)
@@ -71,33 +70,31 @@ export default function comparePage(props) {
       .map((item) => item);
 
     /* initial value */
-    // let sortedCars = getCarslowestPrice;
+    let sortedCars = getCarslowestPrice;
 
-    // /* ɢᴇᴛ ʀᴇsᴜʟᴛs from sorting */
+    /* ɢᴇᴛ ʀᴇsᴜʟᴛs from sorting */
 
-    // if (state?.activeSortValues.sortType === "highest") {
-    //   SetSortedCars(getCarshighestPrice);
-    // }
+    if (state?.activeSortValues[0]?.sortType === "highest") {
+      SetSortedCars(getCarshighestPrice);
+    }
 
-    // if (state?.activeSortValues.sortType === "lowest") {
-    //   SetSortedCars(getCarslowestPrice);
-    // }
-    // if (state?.activeSortValues.sortType === "highestWeight") {
-    //   SetSortedCars(getCarslightest);
-    // }
-    // if (state?.activeSortValues.sortType === "highestRange") {
-    //   SetSortedCars(getCarsByRange);
-    // }
-    // if (state?.activeSortValues.sortType === "highestVmax") {
-    //   SetSortedCars(getCarsBymaxSpeed);
-    // }
-    // if (state?.activeSortValues.sortType === "chargingTimeLithium") {
-    //   SetSortedCars(getCarsfastest);
-    // }
-  }, [
-    props.vehicles,
-    // state.activeSortValues
-  ]);
+    if (state?.activeSortValues[0]?.sortType === "lowest") {
+      SetSortedCars(getCarslowestPrice);
+    }
+    if (state?.activeSortValues[0]?.sortType === "highestWeight") {
+      SetSortedCars(getCarslightest);
+    }
+    if (state?.activeSortValues[0]?.sortType == "highestRange") {
+      SetSortedCars(getCarsByRange);
+      console.log("FIREEEE");
+    }
+    if (state?.activeSortValues[0]?.sortType === "highestVmax") {
+      SetSortedCars(getCarsBymaxSpeed);
+    }
+    if (state?.activeSortValues[0]?.sortType === "chargingTimeLithium") {
+      SetSortedCars(getCarsfastest);
+    }
+  }, [props.vehicles, state.activeSortValues]);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">

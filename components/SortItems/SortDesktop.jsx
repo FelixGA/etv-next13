@@ -1,53 +1,77 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useStore } from "../store";
 
 function SortDesktop({ getContent }) {
   const { state, dispatch } = useStore();
+  const [SortArray, setSortArray] = useState([]);
+  useEffect(() => {
+    let sortingCate = getContent.content[2].markdown
+      .split(", ")
+      .map((el) => el);
+    const sortBy2 = [
+      {
+        sortCategory: sortingCate[0],
+        sortType: 1,
+      },
+      {
+        sortCategory: sortingCate[1],
+        sortType: "lowest",
+      },
+      {
+        sortCategory: sortingCate[2],
+        sortType: "highest",
+      },
+      {
+        sortCategory: sortingCate[3],
+        sortType: "bestseller",
+      },
+      {
+        sortCategory: sortingCate[4],
+        sortType: "chargingTimeLithium",
+      },
+      {
+        sortCategory: sortingCate[5],
+        sortType: "highestWeight",
+      },
+      {
+        sortCategory: sortingCate[6],
+        sortType: "highestRange",
+      },
+      {
+        sortCategory: sortingCate[7],
+        sortType: "highestVmax",
+      },
+    ];
+    //lowest price as in initial state
+    dispatch({
+      type: "activeSortValue",
+      data: [
+        {
+          sortType: sortBy2[1].sortType,
+          sortCategory: sortBy2[1].sortCategory,
+        },
+      ],
+    });
+    setSortArray(sortBy2);
+  }, [getContent]);
 
-  let sortingCate = getContent.content[2].markdown.split(", ").map((el) => el);
-  const sortBy2 = [
-    {
-      sortCategory: sortingCate[0],
-      sortType: 1,
-    },
-    {
-      sortCategory: sortingCate[1],
-      sortType: "lowest",
-    },
-    {
-      sortCategory: sortingCate[2],
-      sortType: "highest",
-    },
-    {
-      sortCategory: sortingCate[3],
-      sortType: "bestseller",
-    },
-    {
-      sortCategory: sortingCate[4],
-      sortType: "chargingTimeLithium",
-    },
-    {
-      sortCategory: sortingCate[5],
-      sortType: "highestWeight",
-    },
-    {
-      sortCategory: sortingCate[6],
-      sortType: "highestRange",
-    },
-    {
-      sortCategory: sortingCate[7],
-      sortType: "highestVmax",
-    },
-  ];
   const [isChecked, setIsChecked] = useState("");
-  const getAllSortings = sortBy2.map((rank) => {
+  const getAllSortings = SortArray.map((rank, index) => {
     return (
       <div
         onClick={() => {
           setIsChecked(rank?.sortCategory);
-          dispatch({ type: "activeSortValue", data: rank });
+          dispatch({
+            type: "activeSortValue",
+            data: [
+              {
+                sortType: rank.sortType,
+                sortCategory: rank.sortCategory,
+              },
+            ],
+          });
         }}
-        key={rank.sortType}
+        key={index}
         className="mt-1 flex flex-row py-2  mr-4 "
       >
         <input

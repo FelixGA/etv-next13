@@ -4,7 +4,7 @@ name: axiam-pro-etruck-pritsche
 price: 19290
 description: bhkvmnxyfgdfl.h
 src: /images/aixam-pro-pritsche.jpg
-category: flatbed truck
+category: Pritsche
 loadingWeight:
   value: 327
   baseUnit: kg

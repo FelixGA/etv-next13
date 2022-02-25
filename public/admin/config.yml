@@ -131,18 +131,8 @@ collections:
         name: "category"
         widget: "select"
         multiple: false
-        i18n: true
-        options:
-          [
-            "Pritsche",
-            "Kipper",
-            "Kasten",
-            "Koffer",
-            "flatbed truck",
-            "tipper truck",
-            "panel van",
-            "box van",
-          ]
+        i18n: duplicate
+        options: ["Pritsche", "Kipper", "Kasten", "Koffer"]
       - label: "Type-Class"
         name: "typeClass"
         widget: "select"
