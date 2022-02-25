@@ -2,7 +2,6 @@ import { useStore } from "../store";
 
 function FilterCheckbox(props) {
   const { state, dispatch } = useStore();
-
   return (
     <>
       <input

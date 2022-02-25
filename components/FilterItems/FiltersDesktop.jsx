@@ -26,8 +26,9 @@ const variants = {
 
 function FiltersDesktop({ getContent }) {
   const { state, dispatch } = useStore();
+
   /* filter list */
-  
+
   let fromWord = getContent.content[1].details.split(",")[0];
   let hourWord = getContent.content[1].details.split(",")[5];
   const filtersData = [

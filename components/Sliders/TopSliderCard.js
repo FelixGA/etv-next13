@@ -94,7 +94,7 @@ const TopSliderCard = (props) => {
           </p>
         </div>
 
-        <div className="flex  w-48 h-12 border border-blue-lighter m-auto mt-8">
+        <div className="flex w-48 h-12 border border-blue-lighter m-auto mt-8">
           <div className="text-xs w-16 h-full bg-orange-dark text-white flex items-center justify-center">
             <span className="font-bold"> TEST</span>
           </div>
@@ -105,12 +105,12 @@ const TopSliderCard = (props) => {
             <div className="flex flex-row pb-8">
               <div className="">
                 <span className="relative bottom-1 pl-2.5 font-black text-m ">
-                  {caritem.rating.key}
+                  {/* {caritem.rating.key} */} dd
                 </span>
               </div>
               <div className="pb-2">
                 <span className="relative bottom-1 text-xxs font-black pl-3 tracking-widest ">
-                  {caritem.rating.value}
+                  {/* {caritem.rating.value} */} 25
                 </span>
               </div>
             </div>

@@ -8,7 +8,7 @@ import FilterCheckboxMobile from "./FilterCheckboxMobile";
 
 const variants = {
   enter: {
-    y: -1000,
+    y: -500,
     opacity: 0,
   },
   center: {
@@ -16,7 +16,7 @@ const variants = {
     opacity: 1,
   },
   exit: {
-    y: -1000,
+    y: -500,
     opacity: 0,
   },
 };
@@ -24,11 +24,10 @@ const variants = {
 function FilterItemMobile({ item }) {
   const { state, dispatch } = useStore();
   /* to render the four ranges */
-
   return (
-    <div>
+    <div className="bg-white ">
       <div
-        className=" cursor-pointer "
+        className=" cursor-pointer bg-white"
         onClick={() => {
           dispatch({
             type: "truncate",
@@ -36,7 +35,7 @@ function FilterItemMobile({ item }) {
           });
         }}
       >
-        <div className="flex flex-row justify-between border-b py-4 flex-1">
+        <div className="flex flex-row justify-between border-b py-4 flex-1 bg-white">
           <div className="flex flex-row  ">
             <div className="w-6 h-6 ml-4 ">
               <Image
@@ -80,37 +79,48 @@ function FilterItemMobile({ item }) {
         }
       >
         {/* RENDERING THE FOUR RANGES */}
-        {item.options.map((checkbox, index) => (
-          <div
-            onClick={() => {
-              dispatch({
-                type: checkbox.categoryName,
-                data:
-                  checkbox.categoryName == "price"
-                    ? [{ min: checkbox.value, max: checkbox.max }]
-                    : [{ min: checkbox.value, max: 99999 }],
-              });
-            }}
-            key={index}
-            className="mt-1 flex flex-row py-2 "
-          >
-            
-            <FilterCheckboxMobile
-              checkbox={checkbox}
-              name={checkbox.categoryName}
-              value={checkbox.value}
-              id={checkbox.id}
-              category={item.category}
-              key={checkbox.value}
-            ></FilterCheckboxMobile>
-            <label
-              forhtml="categories"
-              className="inline-flex items-center cursor-pointer pl-5 # font-thin text-lg text-[#2C3F53]"
+        <AnimatePresence initial={false}>
+          {state?.truncates == item.title && (
+            <motion.div
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{ type: "Inertia", duration: 0.2 }}
             >
-              {checkbox.name}
-            </label>
-          </div>
-        ))}
+              {item.options.map((checkbox, index) => (
+                <div
+                  onClick={() => {
+                    dispatch({
+                      type: checkbox.categoryName,
+                      data:
+                        checkbox.categoryName == "price"
+                          ? [{ min: checkbox.value, max: checkbox.max }]
+                          : [{ min: checkbox.value, max: 99999 }],
+                    });
+                  }}
+                  key={index}
+                  className="mt-1 flex flex-row py-2 "
+                >
+                  <FilterCheckboxMobile
+                    checkbox={checkbox}
+                    name={checkbox.categoryName}
+                    value={checkbox.value}
+                    id={checkbox.id}
+                    category={item.category}
+                    key={checkbox.value}
+                  ></FilterCheckboxMobile>
+                  <label
+                    forhtml="categories"
+                    className="inline-flex items-center cursor-pointer pl-5 # font-thin text-lg text-[#2C3F53]"
+                  >
+                    {checkbox.name}
+                  </label>
+                </div>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );

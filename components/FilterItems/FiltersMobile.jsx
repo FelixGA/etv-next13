@@ -253,13 +253,13 @@ function FiltersMobile({ getContent }) {
     SetUserInputMaxPrice(e.target.value);
   };
   return (
-    <div className="absolute z-10 bg-white w-full ">
+    <div className="absolute z-10 bg-white w-full">
       <div className="flex flex-col bg-white ">
-        <div className="shadow-dropdown w-full z-40">
+        <div className="shadow-dropdown w-full ">
           <div
             className={
               clicked
-                ? "h-10 shadow-dropdown flex justify-between align-middle border-b"
+                ? "h-10 shadow-dropdown flex justify-between align-middle border-b "
                 : "h-10 shadow-dropdown flex justify-between align-middle "
             }
             onClick={() => {
@@ -267,10 +267,7 @@ function FiltersMobile({ getContent }) {
             }}
           >
             <div className="flex-1 flex">
-              <div
-                className="w-3.5 my-auto ml-6  
-          "
-              >
+              <div className="w-3.5 my-auto ml-6">
                 <Image
                   src={filterImage}
                   alt="filter icon"
@@ -296,44 +293,46 @@ function FiltersMobile({ getContent }) {
               <MdKeyboardArrowDown size={28} />
             </div>
           </div>
-          <div className="">
-            <div
-              className={
-                clicked
-                  ? "font-bold	 my-auto text-sm text-blue-darker"
-                  : "hidden"
-              }
-            ></div>
-          </div>
         </div>
       </div>
-      <div className={clicked ? "block" : "hidden"}>
-        {priceFilterData.map((item) => (
-          <div className="relative  " key={item.id}>
-            <Sort getContent={getContent} />
-            <FilterItemMobile item={item} getContent={getContent} />
-            <AnimatePresence initial={false}>
-              {state?.truncates == item.title && (
-                <motion.div
-                  variants={variants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                  transition={{ type: "tween", duration: 0.2 }}
-                  className="flex flex-col ml-8 relative   "
-                >
-                  <PriceInputs />
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-        ))}
-        {filtersData.map((item) => (
-          <div key={item.id}>
-            <FilterItemMobile item={item} getContent={getContent} />
-          </div>
-        ))}
-      </div>
+      <AnimatePresence initial={false}>
+        {clicked && (
+          <motion.div
+            className={clicked ? "block" : "hidden"}
+            variants={variants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ type: "tween", duration: 0.2 }}
+          >
+            {priceFilterData.map((item) => (
+              <div className="relative  " key={item.id}>
+                <Sort getContent={getContent} />
+                <FilterItemMobile item={item} getContent={getContent} />
+                <AnimatePresence initial={false}>
+                  {state?.truncates == item.title && (
+                    <motion.div
+                      variants={variants}
+                      initial="enter"
+                      animate="center"
+                      exit="exit"
+                      transition={{ type: "tween", duration: 0.2 }}
+                      className="flex flex-col ml-8 relative   "
+                    >
+                      <PriceInputs />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
+            {filtersData.map((item) => (
+              <div key={item.id}>
+                <FilterItemMobile item={item} getContent={getContent} />
+              </div>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
