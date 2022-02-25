@@ -15,7 +15,7 @@ export default function ActiveCompareItem({ comparedCars }) {
           >
             {/* IMAGE + HEADING */}
             <div className="bg-grey-lighter lg:h-72 absolute w-full top-0"></div>
-            <div className="w-44 h-44 lg:w-80 lg:h-72 xl:w-[80%] ml-4 relative lg:top-10 xl:top-12">
+            <div className="w-44 h-44 lg:w-80 lg:h-72 xl:w-[70%] ml-4 relative lg:top-10 xl:top-12">
               <Image
                 className="rounded-md md:rounded-lg brightness-50 "
                 src={item.src}

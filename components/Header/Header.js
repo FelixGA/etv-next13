@@ -23,7 +23,7 @@ const Header = () => {
   // dd
   return (
     <div className="relative print:hidden">
-      <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-18 w-screen ">
+      <div className=" sticky top-0 z-30 bg-blue-darker flex justify-between items-center h-18 ">
         <Link href={`/`} passHref>
           <div className="flex flex-row pl-0 sm:pl-4 xl:ml-40 cursor-pointer">
             <div className="logo-container mt-2 w-20 ">
