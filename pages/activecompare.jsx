@@ -9,12 +9,36 @@ import { MDXRemote } from "next-mdx-remote";
 
 export default function Activecompare(props) {
   const { state, dispatch } = useStore();
+
   const [getCars, SetGetCars] = useState(props.vehicles);
   // get all cars as props
   //console.log(getCars);
   /*  get the 3 from the state for comparison */
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
-
+  // console.log(comparedCars);
+  const getkeys = [
+    getCars[0]?.availability.key,
+    getCars[0]?.batteryCapacityBlei.key,
+    getCars[0]?.batteryCapacityLithium.key,
+    getCars[0]?.batteryGuarantee.key,
+    getCars[0]?.batteryIncluded.key,
+    getCars[0]?.chargingTime230V.key,
+    getCars[0]?.chargingTimeFast.key,
+    getCars[0]?.chargingTimeLithium.key,
+    getCars[0]?.consumption.key,
+    getCars[0]?.curbweight.key,
+    getCars[0]?.guarantee.key,
+    getCars[0]?.loadingHeight.key,
+    getCars[0]?.loadingVolume.key,
+    getCars[0]?.loadingWeight.key,
+    getCars[0]?.maxSpeed.key,
+    getCars[0]?.power.key,
+    getCars[0]?.range230V.key,
+    getCars[0]?.rangeLithium.key,
+    getCars[0]?.seats.key,
+    getCars[0]?.subsidies.key,
+  ];
+  // console.log(getkeys);
   return (
     <div className="wrapper">
       <div className="heading+btn  pt-8 pb-12 pl-[5vw]">
@@ -22,7 +46,7 @@ export default function Activecompare(props) {
           Ihre Auswahl im Detailvergleich
         </h1>
         {/* BUTTON VISIBLE ONLY ON MOBILE */}
-        <div className="w-fit lg:hidden mt-4">
+        {/* <div className="w-fit lg:hidden mt-4">
           <button className="   bg-grey-lighter w-56 h-10 rounded-md text-blue-darker font-medium">
             <Link href="/comparePage">
               <a className="visited:text-blue-darker">
@@ -30,11 +54,11 @@ export default function Activecompare(props) {
               </a>
             </Link>
           </button>
-        </div>
+        </div> */}
       </div>
       {/* BUTTON AND IMAGES <>VISIBLE IN DESKTOP VIEW<> */}
       <div className="btn+img w-full h-52 2xl:h-80 bg-grey-lighter hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col   scrollbar-hide justify-center  items-center">
-        <div className="lg:w-64 xl:w-88 2xl:w-[380px] pl-4">
+        {/*  <div className="lg:w-64 xl:w-88 2xl:w-[380px] pl-4">
           <button className="mb-32 2xl:mb-36 text-sm bg-white w-52 h-10  rounded-md text-blue-darker ">
             <Link href="/comparePage">
               <a className="visited:text-blue-darker">
@@ -42,14 +66,13 @@ export default function Activecompare(props) {
               </a>
             </Link>
           </button>
-        </div>
-
+        </div> */}
         {/* <ActiveCompareImage comparedCars={comparedCars} /> */}
       </div>
       {/* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN MOBILE VIEW<> */}
-      <div className="data-content-wrapper  grid grid-flow-col grid-cols-[1/4_minmax(130px,_1fr)] w-full scrollbar-hide overflow-x-scroll lg:hidden">
+      {/* <div className="data-content-wrapper  grid grid-flow-col grid-cols-[1/4_minmax(130px,_1fr)] w-full scrollbar-hide overflow-x-scroll lg:hidden">
         <div className="data-content-categories  w-full border-r-2 shadow-xl ">
-          {/* sticky left-0 z-10*/}
+        
           <div className="placeholder-image-clone bg-[#F2F5F8] h-36 "></div>
           <div className="first-category flex items-center h-10 w-full bg-white">
             <h3 className="first-category-title p-4 text-[#2C3F53] text-xl">
@@ -119,11 +142,12 @@ export default function Activecompare(props) {
           <div className="w-[105%] bg-[#D0DDEA] h-20"></div>
         </div>
         <div className="flex flex-row">
-          {/* <ActiveCompareItem comparedCars={comparedCars} /> */}
+          
         </div>
-      </div>
+      </div> */}
+
       {/* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN DESKTOP VIEW<> */}
-      <div className="data-content-wrapper w-full  hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center pt-12">
+      {/* <div className="data-content-wrapper w-full  hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center pt-12">
         <div className="data-content-categories   lg:w-64 xl:w-88 2xl:w-[380px]">
           <div className="placeholder-image-clone flex lg:hidden h-16  w-56 lg:w-full xl:w-88 2xl:w-[380px]"></div>
           <div className="first-category lg:w-full xl:w-88 2xl:w-[380px] h-10">
@@ -192,13 +216,11 @@ export default function Activecompare(props) {
             </h3>
           </div>
         </div>
-
-        {/* <ActiveCompareItem comparedCars={comparedCars} /> */}
-      </div>
+       
+      </div> */}
       {/* BUTTONS */}
       <div className="CTA-btn w-full h-24 hidden lg:grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide justify-center  items-center bg-[#D0DDEA] mt-24">
-        <div className="placeholder lg:w-64 xl:w-88 2xl:w-[380px] p-4 h-8 "></div>
-        {/* <ActiveCompareButton comparedCars={comparedCars} /> */}
+        {/* <div className="placeholder lg:w-64 xl:w-88 2xl:w-[380px] p-4 h-8 "></div> */}
       </div>
     </div>
   );

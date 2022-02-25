@@ -1,8 +1,23 @@
-import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { BsSortDown } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import { useStore } from "../store";
+import { motion, AnimatePresence } from "framer-motion";
+
+const variants = {
+  enter: {
+    y: -1000,
+    opacity: 0,
+  },
+  center: {
+    y: 0,
+    opacity: 1,
+  },
+  exit: {
+    y: -1000,
+    opacity: 0,
+  },
+};
 
 function Sort({ getContent }) {
   const { state, dispatch } = useStore();
