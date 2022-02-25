@@ -24,37 +24,40 @@ const variants = {
   },
 };
 
-function FiltersDesktop() {
+function FiltersDesktop({ getContent }) {
   const { state, dispatch } = useStore();
   /* filter list */
+  //console.log(getContent.content[1].markdown.split(", ")[2]);
+  let fromWord = getContent.content[1].details.split(",")[0];
+  let hourWord = getContent.content[1].details.split(",")[5];
   const filtersData = [
     {
       id: 1,
       category: "rangeLithiums",
-      title: "Reichweite",
+      title: getContent.content[1].markdown.split(", ")[1],
       image: image,
       options: [
         {
           value: 150,
-          name: "ab 150 km",
+          name: `${fromWord} 150 km`,
           id: 1,
           categoryName: "rangeLithium",
         },
         {
           id: 2,
-          name: "ab 200 km",
+          name: `${fromWord} 200 km`,
           value: 200,
           categoryName: "rangeLithium",
         },
         {
           id: 3,
-          name: "ab 250 km",
+          name: `${fromWord} 250 km`,
           value: 250,
           categoryName: "rangeLithium",
         },
         {
           id: 4,
-          name: "ab 500 km",
+          name: `${fromWord} 500 km`,
           value: 500,
           categoryName: "rangeLithium",
         },
@@ -63,31 +66,31 @@ function FiltersDesktop() {
     {
       id: 2,
       category: "loadingWeights",
-      title: "Zuladung",
+      title: getContent.content[1].markdown.split(", ")[2],
 
       image: image2,
       options: [
         {
           id: 1,
-          name: "ab 500 kg",
+          name: `${fromWord} 500 kg`,
           value: 500,
           categoryName: "loadingWeight",
         },
         {
           id: 2,
-          name: "ab 1000 kg",
+          name: `${fromWord} 1000 kg`,
           value: 1000,
           categoryName: "loadingWeight",
         },
         {
           id: 3,
-          name: "ab 1500 kg",
+          name: `${fromWord} 1500 kg`,
           value: 1500,
           categoryName: "loadingWeight",
         },
         {
           id: 4,
-          name: "ab 2500 kg",
+          name: `${fromWord} 2500 kg`,
           value: 2500,
           categoryName: "loadingWeight",
         },
@@ -95,32 +98,32 @@ function FiltersDesktop() {
     },
     {
       id: 3,
-      title: "V-Max",
+      title: getContent.content[1].markdown.split(", ")[3],
 
       category: "maxSpeeds",
       image: image3,
       options: [
         {
           id: 1,
-          name: "ab 10km/h",
+          name: `${fromWord} 10km/h`,
           value: 10,
           categoryName: "maxSpeed",
         },
         {
           id: 2,
-          name: "ab 200km/h",
+          name: `${fromWord} 200km/h`,
           value: 200,
           categoryName: "maxSpeed",
         },
         {
           id: 3,
-          name: "ab 400km/h",
+          name: `${fromWord} 400km/h`,
           value: 400,
           categoryName: "maxSpeed",
         },
         {
           id: 4,
-          name: "ab 600km/h",
+          name: `${fromWord} 600km/h`,
           value: 600,
           categoryName: "maxSpeed",
         },
@@ -128,30 +131,30 @@ function FiltersDesktop() {
     },
     {
       id: 5,
-      title: "Ladenzeit",
+      title: getContent.content[1].markdown.split(", ")[4],
       category: "chargingTimeLithiums",
       image: image6,
       options: [
         {
-          name: "ab 1 Stunde",
+          name: `${fromWord} 1 ${hourWord}`,
           value: 1,
           id: 1,
           categoryName: "chargingTimeLithium",
         },
         {
-          name: "ab 10 Stunde",
+          name: `${fromWord} 10 ${hourWord}`,
           value: 10,
           id: 2,
           categoryName: "chargingTimeLithium",
         },
         {
-          name: "ab 20 Stunde",
+          name: `${fromWord} 20 ${hourWord}`,
           value: 20,
           id: 3,
           categoryName: "chargingTimeLithium",
         },
         {
-          name: "ab 40 Stunde",
+          name: `${fromWord} 40 ${hourWord}`,
           value: 40,
           id: 4,
           categoryName: "chargingTimeLithium",
@@ -160,30 +163,30 @@ function FiltersDesktop() {
     },
     {
       id: 4,
-      title: "Aufbautyp",
+      title: getContent.content[1].markdown.split(", ")[5],
       category: "categorys",
       image: image5,
       options: [
         {
-          name: "Pritsche",
+          name: getContent.content[1].details.split(", ")[1],
           value: "Pritsche",
           id: 1,
           categoryName: "category",
         },
         {
-          name: "Kipper",
+          name: getContent.content[1].details.split(", ")[2],
           value: "Kipper",
           id: 2,
           categoryName: "category",
         },
         {
-          name: "Koffer",
+          name: getContent.content[1].details.split(", ")[3],
           value: "Koffer",
           id: 3,
           categoryName: "category",
         },
         {
-          name: "Kasten",
+          name: getContent.content[1].details.split(", ")[4],
           value: "Kasten",
           id: 4,
           categoryName: "category",
@@ -196,11 +199,11 @@ function FiltersDesktop() {
     {
       id: 1,
       category: "prices",
-      title: "Price",
+      title: getContent.content[1].markdown.split(", ")[0],
       image: image4,
       options: [
         {
-          value: 0,
+          value: 1,
           max: 20000,
           name: "0-20000€",
           id: 1,
@@ -231,39 +234,34 @@ function FiltersDesktop() {
     },
   ];
 
-  const getPriceFilterData = priceFilterData.map((item) => {
-    return (
-      <div className="relative bg-white" key={item.id}>
-        <FilterItemDesktop item={item} />
-        <AnimatePresence initial={false}>
-          {state?.truncates == item.title && (
-            <motion.div
-              variants={variants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{ type: "tween", duration: 0.2 }}
-              className="flex flex-col ml-8 relative "
-            >
-              <PriceInputs />
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    );
-  });
-  const getFiltersData = filtersData.map((item) => {
-    return (
-      <div className="bg-white " key={item.id}>
-        <FilterItemDesktop item={item} />
-      </div>
-    );
-  });
-
   return (
     <div className="">
-      <div className="">{getPriceFilterData}</div>
-      {getFiltersData}
+      <div className="">
+        {priceFilterData.map((item) => (
+          <div className="relative bg-white" key={item.id}>
+            <FilterItemDesktop item={item} getContent={getContent} />
+            <AnimatePresence initial={false}>
+              {state?.truncates == item.title && (
+                <motion.div
+                  variants={variants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  transition={{ type: "tween", duration: 0.2 }}
+                  className="flex flex-col ml-8 relative "
+                >
+                  <PriceInputs />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        ))}
+      </div>
+      {filtersData.map((item) => (
+        <div className="bg-white" key={item.id}>
+          <FilterItemDesktop item={item} getContent={getContent} />
+        </div>
+      ))}
     </div>
   );
 }

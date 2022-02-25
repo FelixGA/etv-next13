@@ -1,6 +1,5 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
-
 import FilterCheckbox from "./FilterCheckbox";
 import { useStore } from "../store";
 import { motion, AnimatePresence } from "framer-motion";
@@ -20,36 +19,15 @@ const variants = {
   },
 };
 
-function FilterItemDesktop(props) {
-  const item = props.item;
+function FilterItemDesktop({ item }) {
+  // const item = props.item;
   const { state, dispatch } = useStore();
 
   /* to render the four ranges */
-  const rangesForCheckboxes = item.options.map((checkbox, index) => (
-    <div
-      onClick={() => {
-        dispatch({
-          type: checkbox.categoryName,
-          data:
-            checkbox.categoryName == "price"
-              ? [{ min: checkbox.value, max: checkbox.max }]
-              : [{ min: checkbox.value, max: 99999 }],
-        });
-      }}
-      key={index}
-      className="mt-4 flex cursor-pointer py-2 "
-    >
-      <FilterCheckbox checkbox={checkbox} />
-      <label
-        forhtml={checkbox.name}
-        className="inline-flex items-center  pl-5 text-lg text-[#2C3F53] "
-      >
-        {checkbox.name}
-      </label>
-    </div>
-  ));
+
   return (
     <>
+      {/* truncate state */}
       <div
         className=" cursor-pointer relative z-50 bg-white w-full "
         onClick={() => {
@@ -108,7 +86,36 @@ function FilterItemDesktop(props) {
             className="flex flex-col ml-8 -z-50"
           >
             {/* RENDERING THE FOUR RANGES */}
-            {rangesForCheckboxes}
+            {item.options.map((checkbox, index) => (
+              <div
+                onClick={() => {
+                  dispatch({
+                    type: checkbox.categoryName,
+                    data:
+                      checkbox.categoryName == "price"
+                        ? [{ min: checkbox.value, max: checkbox.max }]
+                        : [{ min: checkbox.value, max: 99999 }],
+                  });
+                }}
+                key={index}
+                className="mt-4 flex cursor-pointer py-2 "
+              >
+                <FilterCheckbox
+                  checkbox={checkbox}
+                  name={checkbox.categoryName}
+                  value={checkbox.value}
+                  id={checkbox.id}
+                  category={item.category}
+                  key={checkbox.value}
+                ></FilterCheckbox>
+                <label
+                  forhtml={checkbox.name}
+                  className="inline-flex items-center  pl-5 text-lg text-[#2C3F53] "
+                >
+                  {checkbox.name}
+                </label>
+              </div>
+            ))}
           </motion.div>
         )}
       </AnimatePresence>

@@ -204,7 +204,7 @@ function TruncateFilter() {
     <div className="absolute z-10 bg-white w-full ">
       <div className="flex flex-col mt-2  ">
         <div>
-          <Sort />
+          <Sort getContent={getContent} />
         </div>
         {/* Preis */}
         <div

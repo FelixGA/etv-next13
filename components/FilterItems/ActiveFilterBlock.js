@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useStore } from "../store";
 import SortDesktop from "../SortItems/SortDesktop";
 import ActiveFilterEntry from "./ActiveFilterEntry";
 
-function ActiveFilterBlock() {
+function ActiveFilterBlock({ getContent }) {
   const { state, dispatch } = useStore();
   const [clicked, setClicked] = useState(true);
   const [showAll, setShowAll] = useState(false);
@@ -18,14 +18,18 @@ function ActiveFilterBlock() {
           showAll ? "flex flex-grow justify-between flex-1 " : "hidden"
         }
       >
-        <ActiveFilterEntry showAll={showAll} setShowAll={setShowAll} />
+        <ActiveFilterEntry
+          showAll={showAll}
+          setShowAll={setShowAll}
+          getContent={getContent}
+        />
       </div>
 
       {/* HEADING + SORTING */}
       <div className="flex justify-between">
         <div className={showAll ? "w-full " : "flex items-center flex-1 "}>
           <h1 className="pl-4 text-2xl md:text-3xl text-blue-extra py-4">
-            Die besten E-Transporter nach Ihrer Auswahl
+            {getContent.title}
           </h1>
         </div>
         <div
@@ -36,13 +40,14 @@ function ActiveFilterBlock() {
         >
           <div className="relative flex justify-center items-center xl:pr-0">
             <h4 className="sort-heading w-fit ">
-              {`Sortieren nach: ${state?.activeSortValues}`}{" "}
+              {`${getContent?.content[2].name}:
+               ${state?.activeSortValues[0]?.sortCategory}`}
             </h4>
             {/* SORT DESKTOP */}
             <div
               className={clicked ? "hidden" : "flex absolute top-4 right-0 "}
             >
-              <SortDesktop />
+              <SortDesktop getContent={getContent} />
             </div>
             <div
               className={
