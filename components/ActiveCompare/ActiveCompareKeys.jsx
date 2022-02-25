@@ -1,11 +1,15 @@
-export default function ActiveCompareKeys({ getKeys }) {
+export default function ActiveCompareKeys({ getKeys, comparedCars }) {
   return (
     /* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN MOBILE VIEW<> */
     <>
-      <div className="min-w-min border-r-2 shadow-xl">
-        <div className="h-44 lg:h-96 bg-grey-lighter"></div>
-        <div className="flex items-center h-10 flex-1 bg-white mt-8">
-          <h3 className="   text-[#2C3F53] text-xl">Grundlagen</h3>
+      <div
+        className={
+          comparedCars.length ? "w-full border-r-2 shadow-xl " : "hidden"
+        }
+      >
+        <div className="h-44 lg:h-72 bg-grey-lighter"></div>
+        <div className="flex items-center h-10 flex-1 bg-white mt-8 lg:mt-10 pl-4">
+          <h3 className="text-[#2C3F53] text-xl">Grundlagen</h3>
         </div>
         {getKeys
           .map((key, index) => (

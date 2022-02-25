@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TestResult() {
   return (
-    <div className="flex w-48 h-12 border border-blue-lighter m-auto mt-8">
+    <div className="flex w-48 h-12 border border-blue-lighter m-auto my-2">
       <div className="text-xs w-16 h-full bg-orange-dark text-white flex items-center justify-center">
         <span className="font-bold"> TEST</span>
       </div>

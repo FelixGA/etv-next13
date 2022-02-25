@@ -9,7 +9,8 @@ export default function activeCompareNew(props) {
   const { state, dispatch } = useStore();
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getKeys, SetGetKeys] = useState([]);
-
+  let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
+  /*  console.log(comparedCars); */
   useEffect(() => {
     SetGetCars(props.vehicles);
     let arrkeys = [
@@ -60,7 +61,7 @@ export default function activeCompareNew(props) {
         </h1>
       </div>
       {/* BACK BUTTON */}
-      <div className="lg:w-64 xl:w-88 2xl:w-[380px] pl-4">
+      <div className="lg:w-64 xl:w-88 2xl:w-[380px] pl-4 ">
         <button className="mb-12 text-sm bg-grey-lighter w-52 h-10  rounded-md text-blue-darker ">
           <Link href="/comparePage">
             <a className="visited:text-blue-darker">
@@ -72,16 +73,10 @@ export default function activeCompareNew(props) {
       {/* KEYS AND ITEMS FOR COMPARE */}
       <div className="grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
         <div>
-          <ActiveCompareKeys getKeys={getKeys} />
+          <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
         </div>
-        <div>
-          <ActiveCompareItem />
-        </div>
-        <div>
-          <ActiveCompareItem />
-        </div>
-        <div>
-          <ActiveCompareItem />
+        <div className="flex ">
+          <ActiveCompareItem comparedCars={comparedCars} />
         </div>
       </div>
       <div className="flex flex-1 justify-center pt-4 ">
