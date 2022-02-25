@@ -7,10 +7,10 @@ import image5 from "../../public/images/ladezeit@2x.png";
 import image6 from "../../public/images/more-svgrepo-com.png";
 import { AiOutlineClose } from "react-icons/ai";
 import { useStore } from "../store";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 function ActiveFilterEntry(props) {
   const { state, dispatch } = useStore();
-
+  const [filterData, setFilterData] = useState([]);
   useEffect(() => {
     if (
       state?.prices.length ||
@@ -32,6 +32,66 @@ function ActiveFilterEntry(props) {
     ) {
       props.setShowAll(false);
     }
+
+    let fromWord = props.getContent.content[1].details.split(",")[0];
+    let hourWord = props.getContent.content[1].details.split(",")[5];
+    setFilterData([
+      {
+        id: 1,
+        value: state?.prices.length
+          ? state?.prices.map((el) => el.min + "-" + el.max).join("") + "€"
+          : null,
+
+        image: image4,
+      },
+      {
+        id: 2,
+        value: state?.rangeLithiums.length
+          ? state?.rangeLithiums
+              .map((el) => `${fromWord}  ${el.min} km`)
+              .join("")
+          : null,
+        image: image,
+      },
+      {
+        id: 3,
+        value: state?.loadingWeights.length
+          ? state?.loadingWeights
+              .map((el) => `${fromWord}  ${el.min}  kg`)
+              .join("")
+          : null,
+        image: image2,
+      },
+      {
+        id: 4,
+        value:
+          state?.maxSpeeds.length || state?.maxSpeeds.length == undefined
+            ? state?.maxSpeeds
+                .map((el) => `${fromWord}   ${el.min} km/h`)
+                .join("")
+            : null,
+        image: image3,
+      },
+      {
+        id: 5,
+        value:
+          state?.chargingTimeLithiums.length ||
+          state?.chargingTimeLithiums.length == undefined
+            ? state?.chargingTimeLithiums
+                .map((el) => `${fromWord}  ${el.min} ${hourWord} `)
+                .join("")
+            : null,
+        image: image5,
+      },
+      {
+        id: 6,
+        value:
+          state?.categorys.length || state?.categorys == undefined
+            ? state?.categorys.map((el) => "Type: " + el.min).join("")
+            : null,
+        image: image6,
+      },
+    ]);
   }, [
     state?.prices,
     state?.rangeLithiums,
@@ -41,63 +101,6 @@ function ActiveFilterEntry(props) {
     state?.categorys,
   ]);
 
-  const activeFilterData = [
-    {
-      id: 1,
-      value: state?.prices.length
-        ? state?.prices.map((el) => el.min + "-" + el.max).join("") + "€"
-        : null,
-
-      image: image4,
-    },
-    {
-      id: 2,
-      value: state?.rangeLithiums.length
-        ? state?.rangeLithiums.map((el) => `${fromWord}  ${el.min} km`).join("")
-        : null,
-      image: image,
-    },
-    {
-      id: 3,
-      value: state?.loadingWeights.length
-        ? state?.loadingWeights
-            .map((el) => `${fromWord}  ${el.min}  kg`)
-            .join("")
-        : null,
-      image: image2,
-    },
-    {
-      id: 4,
-      value:
-        state?.maxSpeeds.length || state?.maxSpeeds.length == undefined
-          ? state?.maxSpeeds
-              .map((el) => `${fromWord}   ${el.min} km/h`)
-              .join("")
-          : null,
-      image: image3,
-    },
-    {
-      id: 5,
-      value:
-        state?.chargingTimeLithiums.length ||
-        state?.chargingTimeLithiums.length == undefined
-          ? state?.chargingTimeLithiums
-              .map((el) => `${fromWord}  ${el.min} ${hourWord} `)
-              .join("")
-          : null,
-      image: image5,
-    },
-    {
-      id: 6,
-      value:
-        state?.categorys.length || state?.categorys == undefined
-          ? state?.categorys.map((el) => "Type: " + el.min).join("")
-          : null,
-      image: image6,
-    },
-  ];
-  let fromWord = props.getContent.content[1].details.split(",")[0];
-  let hourWord = props.getContent.content[1].details.split(",")[5];
   return (
     <div
       className={
@@ -106,7 +109,7 @@ function ActiveFilterEntry(props) {
           : "hidden"
       }
     >
-      {activeFilterData?.map((item, index) => (
+      {filterData?.map((item, index) => (
         <div
           className={
             item.value !== null
