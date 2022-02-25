@@ -1,5 +1,4 @@
 const NewsLetter = (props) => {
-  // console.log("HEREEE", props.getContent.content[4].name);
   return (
     <div className="newsletter-container flex flex-col justify-center flex-wrap items-center p-10 bg-grey-lightest">
       <h2 className="text-grey-darkest text-2xl tracking-wider font-bold py-2">

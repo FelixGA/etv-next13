@@ -18,9 +18,7 @@ const CarDimentions = ({ vehichleDimentions, carItem }) => {
           <div
             key={index}
             className={
-              index % 2 == 0
-                ? "flex flex-row w-full bg-[#F2F5F8] "
-                : "flex flex-row w-full "
+              index % 2 == 0 ? "flex flex-1 bg-grey-lighter " : "flex flex-1 "
             }
           >
             <p className="w-1/2 py-1">{item.key}:</p>
@@ -29,7 +27,7 @@ const CarDimentions = ({ vehichleDimentions, carItem }) => {
         ))}
         <div
           className="
-               flex flex-row w-full bg-[#F2F5F8] "
+               flex flex-1 bg-grey-lighter "
         >
           <p className="w-1/2 py-1 ">{carItem.carSizes.wheelbase}:</p>
           <p className="w-1/2 py-1">{carItem.carSizes.valuewheelbase} mm</p>
@@ -43,7 +41,7 @@ const CarDimentions = ({ vehichleDimentions, carItem }) => {
         </div>
         <div
           className="
-                 flex flex-row w-full bg-[#F2F5F8] "
+                 flex flex-1 bg-grey-lighter  "
         >
           <p className="w-1/2 py-1 ">Ladevolumen:</p>
           <p className="w-1/2 py-1">{loadingspace} m³</p>

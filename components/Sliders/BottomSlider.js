@@ -4,11 +4,10 @@ import BottomSliderCard from "../Sliders/BottomSliderCard";
 import ButtonForAlleTransporter from "./ButtonForAlleTransporter";
 
 export default function BottomSlider(props) {
-  // console.log("HEREEE", props.getContent.content[4].name);
   return (
     <div className="flex flex-col  ">
       <h2 className="text-center text-3xl text-black-dark font-bold my-8">
-        Beliebte Kategorien{props.getContent.content[4].details}
+        {props.getContent.content[4].details}
       </h2>
       <div className="flex flex-row overflow-x-auto scrollbar-hide rounded-md">
         <BottomSliderCard />

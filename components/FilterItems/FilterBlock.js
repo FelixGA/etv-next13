@@ -40,7 +40,7 @@ function FilterBlock() {
                 layout="responsive"
               />
             </div>
-            <span className="ml-2 font-black   my-auto text-sm text-blue-darker">
+            <span className="ml-2 font-black  my-auto text-sm text-blue-darker">
               Alle Filter anzeigen
             </span>
           </div>

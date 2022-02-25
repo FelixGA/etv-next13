@@ -83,7 +83,7 @@ function CarCard(props) {
           </div>
           {/* MOBILE RATING BOX end*/}
           {/* BUTTONS start */}
-          <div className="flex-1 flex justify-center flex-col">
+          <div className="flex-1 flex justify-evenly flex-col ">
             <ButtonAnfragen />
             <ButtonCompare carItem={carItem} />
           </div>

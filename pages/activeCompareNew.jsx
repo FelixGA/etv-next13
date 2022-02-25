@@ -71,7 +71,7 @@ export default function activeCompareNew(props) {
         </button>
       </div>
       {/* KEYS AND ITEMS FOR COMPARE */}
-      <div className="grid grid-cols-[1/4_minmax(250px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
+      <div className="grid grid-cols-[20%_minmax(250px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
         <div>
           <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
         </div>

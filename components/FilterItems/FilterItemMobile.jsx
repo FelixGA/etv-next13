@@ -21,32 +21,9 @@ const variants = {
   },
 };
 
-function FilterItemMobile(props) {
-  const item = props.item;
-
+function FilterItemMobile({ item }) {
   const { state, dispatch } = useStore();
   /* to render the four ranges */
-  const rangesForCheckboxesmMobile = item.options.map((checkbox, index) => (
-    <div
-      onClick={() => {
-        dispatch({
-          type: checkbox.categoryName,
-          data: [{ min: checkbox.value, max: 99999 }],
-        });
-      }}
-      key={index}
-      className="mt-1 flex flex-row py-2"
-    >
-      <FilterCheckboxMobile checkbox={checkbox} />
-
-      <label
-        forhtml="categories"
-        className="inline-flex items-center cursor-pointer pl-5 # font-thin text-lg text-[#2C3F53] "
-      >
-        {checkbox.name}
-      </label>
-    </div>
-  ));
   return (
     <div className="bg-white ">
       <div
@@ -111,11 +88,39 @@ function FilterItemMobile(props) {
               exit="exit"
               transition={{ type: "Inertia", duration: 0.2 }}
             >
-              {rangesForCheckboxesmMobile}
+              {item.options.map((checkbox, index) => (
+                <div
+                  onClick={() => {
+                    dispatch({
+                      type: checkbox.categoryName,
+                      data:
+                        checkbox.categoryName == "price"
+                          ? [{ min: checkbox.value, max: checkbox.max }]
+                          : [{ min: checkbox.value, max: 99999 }],
+                    });
+                  }}
+                  key={index}
+                  className="mt-1 flex flex-row py-2 "
+                >
+                  <FilterCheckboxMobile
+                    checkbox={checkbox}
+                    name={checkbox.categoryName}
+                    value={checkbox.value}
+                    id={checkbox.id}
+                    category={item.category}
+                    key={checkbox.value}
+                  ></FilterCheckboxMobile>
+                  <label
+                    forhtml="categories"
+                    className="inline-flex items-center cursor-pointer pl-5 # font-thin text-lg text-[#2C3F53]"
+                  >
+                    {checkbox.name}
+                  </label>
+                </div>
+              ))}
             </motion.div>
           )}
         </AnimatePresence>
-        {/* <div className="bg-blue-500">{rangesForCheckboxesmMobile}</div> */}
       </div>
     </div>
   );

@@ -4,16 +4,17 @@ import FiltersDesktop from "../components/FilterItems/FiltersDesktop";
 import { useStore } from "../components/store";
 import StickyPopUpForComparison from "../components/ResultList/StickyPopUpForComparison";
 import getContent from "/utils/getContent";
-import { MDXRemote } from "next-mdx-remote";
 import { useState, useEffect } from "react";
 import FiltersMobile from "../components/FilterItems/FiltersMobile";
 
 export default function comparePage(props) {
   const [sortedCars, SetSortedCars] = useState([]);
+  const [getContent, SetGetContent] = useState(props.page);
   const { state, dispatch } = useStore();
 
   useEffect(() => {
     SetSortedCars(props.vehicles);
+    SetGetContent(props.page);
 
     /* ɢᴇᴛ ʀᴇsᴜʟᴛs ᴜᴘᴏɴ ᴄᴀᴛᴇɢᴏʀʏ */
     const getPritsche = props.vehicles?.filter(
@@ -41,15 +42,14 @@ export default function comparePage(props) {
     // const convertPriceToNumber = (price) => {
     //   return parseFloat(price.replace(/[^0-9.-]+/g, ""));
     // };
-
-    const getCarshighestPrice = props.vehicles
-      ?.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
-      .map((item) => item);
-
     // get the cheapest auto
     // const getCheapest = getCarslowestPrice?.slice(0, 1);
     // get the most expensive auto
     // const getHighest = getCarshighestPrice?.slice(0, 1);
+    const getCarshighestPrice = props.vehicles
+      ?.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
+      .map((item) => item);
+
     // /* cᴀʀs ᴡᴇɪɢʜᴛ ғɪʟᴛᴇʀ */
     const getCarslightest = props.vehicles
       ?.sort((a, b) => b.loadingWeight.value - a.loadingWeight.value)
@@ -70,41 +70,43 @@ export default function comparePage(props) {
       .map((item) => item);
 
     /* initial value */
-    // let sortedCars = getCarslowestPrice;
+    SetSortedCars(getCarslowestPrice);
 
-    // /* ɢᴇᴛ ʀᴇsᴜʟᴛs from sorting */
-    if (state?.activeSortValues === "Höchster Preis") {
+    /* ɢᴇᴛ ʀᴇsᴜʟᴛs from sorting */
+
+    if (state?.activeSortValues[0]?.sortType === "highest") {
       SetSortedCars(getCarshighestPrice);
     }
 
-    if (state?.activeSortValues === "Niedrigster Preis") {
+    if (state?.activeSortValues[0]?.sortType === "lowest") {
       SetSortedCars(getCarslowestPrice);
     }
-    if (state?.activeSortValues === "Höchste Zuladung") {
+    if (state?.activeSortValues[0]?.sortType === "highestWeight") {
       SetSortedCars(getCarslightest);
     }
-    if (state?.activeSortValues === "Höchste Reichweite") {
+    if (state?.activeSortValues[0]?.sortType == "highestRange") {
       SetSortedCars(getCarsByRange);
     }
-    if (state?.activeSortValues === "Höchste Vmax") {
+    if (state?.activeSortValues[0]?.sortType === "highestVmax") {
       SetSortedCars(getCarsBymaxSpeed);
     }
-    if (state?.activeSortValues === "Beste Ladenzeit") {
+    if (state?.activeSortValues[0]?.sortType === "chargingTimeLithium") {
       SetSortedCars(getCarsfastest);
     }
   }, [props.vehicles, state.activeSortValues]);
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
       <div className="xl:ml-40 hidden md:block bg-white mt-24 ">
         {/* <div className="relative bg-blue-500 h-24  w-80 z-90"></div> */}
-        <FiltersDesktop />
+        <FiltersDesktop getContent={getContent} />
       </div>
-      <div className="flex md:hidden bg-red-500">
-        <FiltersMobile />
+      <div className="flex md:hidden">
+        <FiltersMobile getContent={getContent} />
       </div>
-      <div className="heading+sorting+content xl:mr-40 mt-10 md:mt-24  ">
+      <div className="heading+sorting+content xl:mr-40 mt-10 md:mt-24">
         <div className="">
-          <ActiveFilterBlock />
+          <ActiveFilterBlock getContent={getContent} />
         </div>
         <div className="">
           <ResultList sortedCars={sortedCars} />
@@ -120,7 +122,7 @@ export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
-  const page = pages.find((page) => page.path === "/compare-page");
+  const page = pages.find((page) => page.path === "/comparePage");
 
   if (!pages) {
     return {
@@ -132,6 +134,7 @@ export async function getStaticProps(context) {
     props: {
       vehicles,
       posts,
+      page,
     },
   };
 }
