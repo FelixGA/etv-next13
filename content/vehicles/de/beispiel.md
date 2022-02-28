@@ -12,7 +12,7 @@ description: >-
 
 
   Der Elektrotransporter  in zwei Aufbautypen verfügbar: als Pritsche sowie mit Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem Gelände konzipiert.
-src: /images/aixam-pro-pritsche.jpg
+src: /images/X.png
 category: Pritsche
 typeClass: L7E
 loadingWeight:

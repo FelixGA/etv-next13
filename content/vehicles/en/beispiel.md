@@ -1,6 +1,7 @@
 ---
 title: example
 name: beispiel
+price: 19290
 description: >-
   Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen”
   mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein
@@ -11,6 +12,7 @@ description: >-
 
 
   Der Elektrotransporter  in zwei Aufbautypen verfügbar: als Pritsche sowie mit Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem Gelände konzipiert.
+src: /images/X.png
 loadingWeight:
   key: Nutzlast
   value: 327
