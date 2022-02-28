@@ -39,8 +39,8 @@ chargingTimeFast:
   key: "fast Charging Time "
   baseUnit: h
 batteryCapacityBlei:
-  value: "0"
-  baseUnit: keine Angabe
+  value: "-"
+  baseUnit: " "
   key: "capacity "
 batteryCapacityLithium:
   value: "10"
