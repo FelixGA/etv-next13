@@ -62,7 +62,7 @@ export default function activeCompareNew(props) {
       </div>
       {/* BACK BUTTON */}
       <div className="lg:w-64 xl:w-88 2xl:w-[380px] pl-4 ">
-        <button className="mb-12 text-sm bg-grey-lighter w-52 h-10  rounded-md text-blue-darker ">
+        <button className="mb-12 text-sm bg-grey-lighter w-52 h-10 rounded-md text-blue-darker ">
           <Link href="/comparePage">
             <a className="visited:text-blue-darker">
               « zurück zur Ergebnisliste
@@ -71,13 +71,10 @@ export default function activeCompareNew(props) {
         </button>
       </div>
       {/* KEYS AND ITEMS FOR COMPARE */}
-      <div className="grid grid-cols-[20%_minmax(250px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
-        <div>
-          <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
-        </div>
-        <div className="flex ">
-          <ActiveCompareItem comparedCars={comparedCars} />
-        </div>
+      <div className="grid grid-cols-[auto-fill,_minmax(250px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll  ">
+        <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
+
+        <ActiveCompareItem comparedCars={comparedCars} />
       </div>
       <div className="flex flex-1 justify-center pt-4 ">
         <div className="cursor-pointer border w-32 h-10 flex justify-center bg-blue-light text-white m-10">
