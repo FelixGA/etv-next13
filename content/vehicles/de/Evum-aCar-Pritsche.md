@@ -72,29 +72,29 @@ guarantee:
   key: Garantie Fahrzeug
   value: 0
   baseUnit: keine Angabe
-availability:
-  key: Verfügbarkeit
-  value: keine Angabe
 subsidies:
   key: Förderungsmöglichkeiten
-  value: 0
-  baseUnit: keine Angabe
-batteryGuarantee:
-  key: Batterie-Garantie
   value: 0
   baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
   value: 895
   baseUnit: mm
-loadingVolumeTotal:
-  key: losdf
-  value: "234"
-  baseUnit: m3
 loadingArea:
   key: Ladefläche
   value: "234234"
   baseUnit: m2
+loadingVolumeTotal:
+  key: losdf
+  value: "234"
+  baseUnit: m3
+availability:
+  key: Verfügbarkeit
+  value: keine Angabe
+batteryGuarantee:
+  key: Batterie-Garantie
+  value: 0
+  baseUnit: keine Angabe
 carSizes:
   width: Breite
   length: Länge
