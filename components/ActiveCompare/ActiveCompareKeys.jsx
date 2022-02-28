@@ -1,6 +1,7 @@
 export default function ActiveCompareKeys({ getKeys, comparedCars }) {
   return (
     /* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN MOBILE VIEW<> */
+    //
     <>
       <div
         className={
