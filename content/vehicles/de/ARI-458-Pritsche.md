@@ -1,11 +1,9 @@
 ---
-title: ARI-458-Pritsche
-name: ARI-458-Pritsche
+title: ARI 458 Pritsche
+name: ARI 458 Pritsche
 price: 13700
-description: Der ARI-458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e
-  mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen
-  Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.
-src: /images/ari_458_pritsche_vorne_links_acb13085b0.jpg
+description: mmmmmm
+src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
 category: Pritsche
 typeClass: L7E
 loadingWeight:
@@ -17,93 +15,92 @@ curbweight:
   value: 604
   baseUnit: kg
 maxSpeed:
-  key: km/h
+  key: vMax
   value: 80
   baseUnit: km/h
 range230V:
-  key: Reichweite SLA Blei
+  key: Reichweite SLA-Akku
   value: 120
   baseUnit: km
 rangeLithium:
-  key: "Reichweite "
+  key: Reichweite Lithium-Akku
   value: 150
   baseUnit: km
 chargingTime230V:
-  key: Ladezeit
-  value: 5
-  baseUnit: St.
+  key: Ladezeit 230-V
+  value: 6
+  baseUnit: h
 chargingTimeLithium:
-  key: Ladezeit typ2
-  value: 5
-  baseUnit: St.
+  key: Ladezeit Typ 2
+  value: 6
+  baseUnit: h
 chargingTimeFast:
-  key: Schnellladung
+  key: Schnell-Ladezeit
   value: 2
-  baseUnit: St.
+  baseUnit: h
 batteryCapacityBlei:
-  key: Kapazität
-  value: "0"
-  baseUnit: keine Angabe
+  key: Kapazität Blei-Gel-Akku
+  baseUnit: kwh
+  value: "?"
 batteryCapacityLithium:
-  key: Kapazität
+  key: Kapazität Lithium-Akku
   value: "10"
-  baseUnit: kWh
+  baseUnit: kwh
 batteryIncluded:
+  key: Akku inklusive
   value: ja
-  key: Batterie Verfügbarkeit
 consumption:
-  key: "Verbrauch "
+  key: Verbrauch
   value: 7,5
-  baseUnit: kWh
+  baseUnit: kwh
 power:
   key: Leistung
-  value: " min-7,5/max-7,5"
+  value: 7,5
   baseUnit: kw
 seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: gut
-  value: "4,0 "
+  key: Bewertung
+  value: "2"
 guarantee:
   key: Garantie Fahrzeug
   value: 6
   baseUnit: Monate
 availability:
   key: Verfügbarkeit
-  value: keine Angabe
+  value: 14-16 Wochen
 subsidies:
-  key: Förderungsmöglichkeiten
-  value: 0
-  baseUnit: keine Angabe
+  key: Förderhöhe
+  baseUnit: Euro
+  value: 1
 batteryGuarantee:
-  key: Batterie-Garantie
-  value: 6
+  key: Garantie Akku
+  value: 48
   baseUnit: Monate
 loadingHeight:
   key: Ladehöhe
-  value: 560
-  baseUnit: mm
+  value: 10
+  baseUnit: cm
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
   valuewidth: 1300
-  baseUnit: mm
+  baseUnit: cm
   valuelength: 3150
   valueheight: 1600
   valuewheelbase: 2300
-  key: Fahrzeug Maße
+  key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum Maße
   height: Höhe
   valueheight: 250
   width: Breite
   valuewidth: 1160
-  valuelength: 1320
   length: Länge
-  baseUnit: mm
+  valuelength: 1320
+  baseUnit: cm
 ---
-
-Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer zulässigen Höchstgeschwindigkeit von 80 km/h
+Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
