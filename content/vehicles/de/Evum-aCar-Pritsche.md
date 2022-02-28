@@ -1,5 +1,5 @@
 ---
-title: Evum-aCar-Truck
+title: Evum-aCar-Pritsche
 name: Evum-aCar-Pritsche
 price: 33080
 description: >-
@@ -12,100 +12,100 @@ src: /images/Evum-Acar-Front-1024x683.jpg
 category: Pritsche
 typeClass: L7E
 loadingWeight:
-  key: payload
+  key: Nutzlast
   value: 1200
   baseUnit: kg
 curbweight:
-  key: curb weight
+  key: Leergewicht
   value: 1500
   baseUnit: kg
 maxSpeed:
-  key: VMax
+  key: km/h
   value: 70
   baseUnit: km/h
 range230V:
-  key: range sla
+  key: Reichweite SLA Blei
   value: 0
   baseUnit: nicht verfügbar
 rangeLithium:
-  key: "range "
+  key: "Reichweite "
   value: 110
   baseUnit: km
 chargingTime230V:
-  key: sfgsfdgdf
+  key: Ladezeit
   value: 0
   baseUnit: keine Angabe
 chargingTimeLithium:
-  key: charging time
+  key: Ladezeit typ2
   value: 6
   baseUnit: St.
 chargingTimeFast:
-  key: charging time fast
+  key: Schnellladung
   value: 0
   baseUnit: keine Angabe
 batteryCapacityBlei:
-  key: capacitiy sla
+  key: Kapazität
   value: "0"
   baseUnit: keine Angabe
 batteryCapacityLithium:
-  key: capacity lithium
+  key: Kapazität
   value: 16,5
   baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie Verfügbarkeit
 consumption:
-  key: consumption
+  key: "Verbrauch "
   value: 19,6
   baseUnit: kWh
 power:
-  key: power
+  key: Leistung
   value: min-20/max-28
   baseUnit: kw
 seats:
-  key: seats
+  key: Sitzplätze
   value: 2
 rating:
-  key: good
+  key: gut
   value: 4,0
 guarantee:
-  key: Car guarantee
+  key: Garantie Fahrzeug
   value: 0
   baseUnit: keine Angabe
 availability:
-  key: no information
-  value: no info
+  key: Verfügbarkeit
+  value: keine Angabe
 subsidies:
-  key: subsidies
+  key: Förderungsmöglichkeiten
   value: 0
-  baseUnit: no info
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: battery guarantee
+  key: Batterie-Garantie
   value: 0
-  baseUnit: no info
+  baseUnit: keine Angabe
 loadingHeight:
-  key: loading height
+  key: Ladehöhe
   value: 895
   baseUnit: mm
 carSizes:
-  width: width
-  length: length
-  height: height
-  wheelbase: wheelbase
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
   valuewidth: 1500
   baseUnit: mm
   valuelength: 4000
   valueheight: 2000
   valuewheelbase: 2596
-  key: car sizes
+  key: Fahrzeug Maße
 loadingVolume:
-  key: loading volume
-  height: height
+  key: Laderaum Maße
+  height: Höhe
   valueheight: 352
-  width: width
+  width: Breite
   valuewidth: 1608
   valuelength: 1778
-  length: length
+  length: Länge
   baseUnit: mm
 ---
 
