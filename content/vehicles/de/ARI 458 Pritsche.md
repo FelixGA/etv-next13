@@ -40,8 +40,8 @@ chargingTimeFast:
   baseUnit: h
 batteryCapacityBlei:
   key: Kapazität Blei-Gel-Akku
-  baseUnit: kwh
-  value: "?"
+  baseUnit: " "
+  value: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium-Akku
   value: "10"
