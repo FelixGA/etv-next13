@@ -27,12 +27,15 @@ rangeLithium:
 chargingTime230V:
   value: 6
   key: Charging Time 230-V
+  baseUnit: h
 chargingTimeLithium:
   value: 6
   key: Charging Time Type 2
+  baseUnit: h
 chargingTimeFast:
   value: 2
   key: Charging Time fast
+  baseUnit: h
 batteryCapacityBlei:
   value: "?"
   baseUnit: kwh
@@ -40,7 +43,7 @@ batteryCapacityBlei:
 batteryCapacityLithium:
   value: "10"
   baseUnit: kwh
-  key: Battery Capacity Lithium
+  key: Battery-Capacity-Lithium
 batteryIncluded:
   key: Battery included
   value: yes
@@ -49,7 +52,7 @@ consumption:
   key: Consumption
   value: 7,5
 power:
-  value: 7,5/7,5
+  value: 7,5
   baseUnit: kw
   key: Power
 seats:
@@ -61,7 +64,7 @@ rating:
 guarantee:
   key: Guarantee
   value: 6
-  baseUnit: months
+  baseUnit: Months
 availability:
   key: Availibility
   value: 14-16 Wochen
@@ -71,7 +74,7 @@ subsidies:
 batteryGuarantee:
   key: Battery Guarantee
   value: 48
-  baseUnit: months
+  baseUnit: Months
 loadingHeight:
   value: 10
   baseUnit: cm
@@ -85,6 +88,7 @@ carSizes:
   valuelength: 3150
   valueheight: 1600
   valuewheelbase: 2300
+  key: Car-Sizes
 loadingVolume:
   valueheight: 250
   valuewidth: 1160
@@ -93,4 +97,5 @@ loadingVolume:
   key: Loading Volume
   height: Height
   width: Width
+  length: Length
 ---

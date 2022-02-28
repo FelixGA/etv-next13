@@ -55,7 +55,7 @@ consumption:
   baseUnit: kwh
 power:
   key: Leistung
-  value: 7,5/7,5
+  value: 7,5
   baseUnit: kw
 seats:
   key: Sitzplätze
