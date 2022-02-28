@@ -1,5 +1,5 @@
 ---
-title: Axiam-Pro eTruck-flatbed truck
+title: Axiam-pro-Etruck-flatbed Truck
 name: axiam-pro-etruck-pritsche
 price: 19290
 description: bhkvmnxyfgdfl.h
@@ -82,6 +82,14 @@ loadingHeight:
   value: 750
   baseUnit: mm
   key: loading height
+loadingVolumeTotal:
+  value: bitte auffuellen
+  baseUnit: bitte auffuellen
+  key: bitte auffuellen
+loadingArea:
+  value: bitte auffuellen
+  baseUnit: bitte auffuellen
+  key: bitte auffuellen
 carSizes:
   width: width
   length: length

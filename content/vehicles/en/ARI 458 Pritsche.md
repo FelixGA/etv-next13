@@ -38,8 +38,8 @@ chargingTimeFast:
   key: Charging Time fast
   baseUnit: h
 batteryCapacityBlei:
-  value: "?"
-  baseUnit: kwh
+  value: "-"
+  baseUnit: " kjf"
   key: Battery Capacity SLA
 batteryCapacityLithium:
   value: "10"

@@ -6,12 +6,7 @@ src: /images/etv-logo-final.png
 content:
   - details: ""
     name: alle Filter loschen
-    markdown: |-
-      alle Filter loschen
-
-      alle Filter loschen
-
-      alle Filter loschen
+    markdown: alle Filter loschen
   - name: " Alle Filter anzeigen"
     markdown: Preis, Reichweite, Zuladung, V-Max, Ladenzeit, Aufbautyp
     details: ab, Pritsche, Kipper, Koffer, Kasten, stunden

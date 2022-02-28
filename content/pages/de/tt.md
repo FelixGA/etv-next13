@@ -13,10 +13,12 @@ content:
     markdown: Reichweite, Preis, Nutzlast
     details: |
       Beste Testberichte
-  - name: Elektrotransporter Kaufberater
-    markdown: "Hier steht ein Text der Lust macht den Kauf­ber­ater (= euer
-      nor­maler Fun­nel) zu be­nutzen. Hier kön­nten so Dinge ste­hen wie: In
-      weni­gen schrit­ten zum per­fek­ten E-Trans­porter für Ihre Ansprüche."
+  - name: eAutoAdvisor
+    markdown: >-
+      ## Elektrotransporter Kaufberater
+
+
+      Hier steht ein Text der Lust macht den Kauf­ber­ater (= euer nor­maler Fun­nel) zu be­nutzen. Hier kön­nten so Dinge ste­hen wie: In weni­gen schrit­ten zum per­fek­ten E-Trans­porter für Ihre Ansprüche.
     details: jetzt neu
   - name: Förderungen für Elektrotransporter
     markdown: Im Rah­men der angestrebten En­ergiewende ist seit 2016 eine
