@@ -406,13 +406,13 @@ collections:
               i18n: duplicate,
             }
       - label: "loading Volume in m3"
-        name: "loadingVolume"
+        name: "loadingVolumeTotal"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
           - {
               label: "baseUnit",
               name: "baseUnit",
@@ -426,7 +426,7 @@ collections:
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
           - {
               label: "baseUnit",
               name: "baseUnit",

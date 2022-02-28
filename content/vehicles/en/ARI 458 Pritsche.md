@@ -78,6 +78,14 @@ batteryGuarantee:
 loadingHeight:
   value: 10
   baseUnit: cm
+loadingVolumeTotal:
+  value: "234523453245"
+  baseUnit: m3
+  key: loading Volume
+loadingArea:
+  value: "235"
+  baseUnit: m2
+  key: LadeflächeEnglish
 carSizes:
   width: Width
   length: Length

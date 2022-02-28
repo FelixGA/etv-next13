@@ -3,7 +3,7 @@ title: Evum-aCar-Truck
 name: Evum-aCar-Pritsche
 price: 33080
 description: >-
-
+  
 
 
 
@@ -87,6 +87,14 @@ loadingHeight:
   key: loading height
   value: 895
   baseUnit: mm
+loadingVolumeTotal:
+  value: "234"
+  baseUnit: m3
+  key: LoadingVolume
+loadingArea:
+  value: "234234"
+  baseUnit: m2
+  key: LadeflächeEnglish
 carSizes:
   width: width
   length: length
