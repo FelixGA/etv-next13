@@ -16,7 +16,7 @@ curbweight:
   baseUnit: kg
 maxSpeed:
   key: vMax
-  value: 80
+  value: 78
   baseUnit: km/h
 range230V:
   key: Reichweite SLA-Akku
