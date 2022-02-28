@@ -89,6 +89,7 @@ loadingVolumeTotal:
 loadingArea:
   value: bitte auffuellen
   baseUnit: bitte auffuellen
+  key: bitte auffuellen
 carSizes:
   width: width
   length: length
