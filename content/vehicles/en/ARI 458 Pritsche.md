@@ -61,7 +61,7 @@ seats:
   key: Seats
 rating:
   value: "2"
-  key: Result
+  key: good
 guarantee:
   key: Guarantee
   value: 6
