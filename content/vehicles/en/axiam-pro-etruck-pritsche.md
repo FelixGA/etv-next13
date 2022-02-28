@@ -82,6 +82,13 @@ loadingHeight:
   value: 750
   baseUnit: mm
   key: loading height
+loadingVolumeTotal:
+  value: bitte auffuellen
+  baseUnit: bitte auffuellen
+  key: bitte auffuellen
+loadingArea:
+  value: bitte auffuellen
+  baseUnit: bitte auffuellen
 carSizes:
   width: width
   length: length
