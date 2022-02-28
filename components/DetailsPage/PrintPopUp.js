@@ -25,7 +25,7 @@ const PrintPopUp = (props) => {
       </div>
       <div
         id="PRICE-ANFRAGEN-BUTTONS-SECTION"
-        className=" bg-red-500 w-72 h-full flex items-center "
+        className="  w-72 h-full flex items-center "
       >
         <div className="flex justify-center items-center">
           <ButtonAnfragen />

@@ -2,105 +2,109 @@
 title: ARI 458 Pritsche
 name: ARI 458 Pritsche
 price: 13700
-description: mmmmmm
 src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
 category: Pritsche
 typeClass: L7E
 loadingWeight:
-  key: Nutzlast
   value: 531
   baseUnit: kg
+  key: Loading Weight
 curbweight:
-  key: Leergewicht
   value: 604
   baseUnit: kg
+  key: Curb Weight
 maxSpeed:
-  key: vMax
   value: 80
   baseUnit: km/h
+  key: Maxspeed
 range230V:
-  key: Reichweite SLA-Akku
   value: 120
   baseUnit: km
+  key: Range SLA
 rangeLithium:
-  key: Reichweite Lithium-Akku
   value: 150
   baseUnit: km
+  key: Range Lithium-Battery
 chargingTime230V:
-  key: Ladezeit 230-V
   value: 6
+  key: Charging Time 230-V
   baseUnit: h
 chargingTimeLithium:
-  key: Ladezeit Typ 2
   value: 6
+  key: Charging Time Type 2
   baseUnit: h
 chargingTimeFast:
-  key: Schnell-Ladezeit
   value: 2
+  key: Charging Time fast
   baseUnit: h
 batteryCapacityBlei:
-  key: Kapazität Blei-Gel-Akku
-  baseUnit: " "
-  value: "-"
+  value: "?"
+  baseUnit: kwh
+  key: Battery Capacity SLA
 batteryCapacityLithium:
-  key: Kapazität Lithium-Akku
   value: "10"
   baseUnit: kwh
+  key: Battery-Capacity-Lithium
 batteryIncluded:
-  key: Akku inklusive
-  value: ja
+  key: Battery included
+  value: yes
 consumption:
-  key: Verbrauch
-  value: 7,5
   baseUnit: kwh
+  key: Consumption
+  value: 7,5
 power:
-  key: Leistung
   value: 7,5
   baseUnit: kw
+  key: Power
 seats:
-  key: Sitzplätze
   value: 2
+  key: Seats
 rating:
-  key: Bewertung
   value: "2"
+  key: Result
 guarantee:
-  key: Garantie Fahrzeug
+  key: Guarantee
   value: 6
-  baseUnit: Monate
+  baseUnit: Months
 availability:
-  key: Verfügbarkeit
+  key: Availibility
   value: 14-16 Wochen
 subsidies:
-  key: Förderhöhe
+  key: Subsidies
   baseUnit: Euro
-  value: 1
 batteryGuarantee:
-  key: Garantie Akku
+  key: Battery Guarantee
   value: 48
-  baseUnit: Monate
+  baseUnit: Months
 loadingHeight:
-  key: Ladehöhe
   value: 10
   baseUnit: cm
+loadingVolumeTotal:
+  value: "234523453245"
+  baseUnit: m3
+  key: loading Volume
+loadingArea:
+  value: "235"
+  baseUnit: m2
+  key: LadeflächeEnglish
 carSizes:
-  width: Breite
-  length: Länge
-  height: Höhe
-  wheelbase: Radstand
+  width: Width
+  length: Length
+  height: Height
+  wheelbase: Wheelbase-Value
   valuewidth: 1300
   baseUnit: cm
   valuelength: 3150
   valueheight: 1600
   valuewheelbase: 2300
-  key: Fahrzeugmaße
+  key: Car-Sizes
 loadingVolume:
-  key: Laderaum Maße
-  height: Höhe
   valueheight: 250
-  width: Breite
   valuewidth: 1160
-  length: Länge
   valuelength: 1320
   baseUnit: cm
+  key: Loading Volume
+  height: Height
+  width: Width
+  length: Length
 ---
-Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.

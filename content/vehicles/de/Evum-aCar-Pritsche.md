@@ -3,7 +3,7 @@ title: Evum-aCar-Pritsche
 name: Evum-aCar-Pritsche
 price: 33080
 description: >-
-
+  
 
 
 
@@ -26,7 +26,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Blei
   value: 0
-  baseUnit: nicht verfügbar
+  baseUnit: " eryheryj"
 rangeLithium:
   key: "Reichweite "
   value: 110
@@ -41,12 +41,12 @@ chargingTimeLithium:
   baseUnit: St.
 chargingTimeFast:
   key: Schnellladung
-  value: 0
+  value: 1
   baseUnit: keine Angabe
 batteryCapacityBlei:
   key: Kapazität
-  value: "0"
-  baseUnit: keine Angabe
+  value: "-"
+  baseUnit: " "
 batteryCapacityLithium:
   key: Kapazität
   value: 16,5
@@ -87,6 +87,14 @@ loadingHeight:
   key: Ladehöhe
   value: 895
   baseUnit: mm
+loadingVolumeTotal:
+  key: losdf
+  value: "234"
+  baseUnit: m3
+loadingArea:
+  key: Ladefläche
+  value: "234234"
+  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
