@@ -1,105 +1,101 @@
 ---
-title: ARI-458-Truck
-name: ARI-458-Pritsche
+name: ARI 458 Pritsche
 price: 13700
-description: mwqowöqDÄQMDÄQ
-src: /images/ari_458_pritsche_vorne_links_acb13085b0.jpg
+src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
 category: Pritsche
 typeClass: L7E
 loadingWeight:
   value: 531
   baseUnit: kg
-  key: payload
+  key: Loading Weight
 curbweight:
   value: 604
   baseUnit: kg
-  key: curbweight
+  key: Curb Weight
 maxSpeed:
   value: 80
   baseUnit: km/h
-  key: vMax
+  key: Maxspeed
 range230V:
   value: 120
   baseUnit: km
-  key: Range Sla
+  key: Range SLA
 rangeLithium:
   value: 150
   baseUnit: km
-  key: Range Lithium
+  key: Range Lithium-Battery
 chargingTime230V:
-  value: 5
-  key: Charging Time 230V
+  value: 6
+  key: Charging Time 230-V
   baseUnit: h
 chargingTimeLithium:
-  value: 5
-  key: Charging Time
-  baseUnit: h ( type2)
+  value: 6
+  key: Charging Time Type 2
+  baseUnit: h
 chargingTimeFast:
   value: 2
-  key: "fast Charging Time "
+  key: Charging Time fast
   baseUnit: h
 batteryCapacityBlei:
-  value: "0"
-  baseUnit: keine Angabe
-  key: "capacity "
+  value: "?"
+  baseUnit: kwh
+  key: Battery Capacity SLA
 batteryCapacityLithium:
   value: "10"
-  baseUnit: kWh
-  key: capacity lithium
+  baseUnit: kwh
+  key: Battery-Capacity-Lithium
 batteryIncluded:
-  key: battery included
+  key: Battery included
   value: yes
 consumption:
-  baseUnit: kWh
-  key: consumption
+  baseUnit: kwh
+  key: Consumption
   value: 7,5
 power:
-  value: " min-7,5/max-7,5"
+  value: 7,5
   baseUnit: kw
-  key: power
+  key: Power
 seats:
   value: 2
-  key: seats
+  key: Seats
 rating:
-  value: "4,0 "
-  key: good
+  value: "2"
+  key: Result
 guarantee:
-  key: guarantee
+  key: Guarantee
   value: 6
-  baseUnit: months
+  baseUnit: Months
 availability:
-  key: AVAILABILITY
-  value: no information
+  key: Availibility
+  value: 14-16 Wochen
 subsidies:
-  key: subsidies
-  value: 0
-  baseUnit: no information
+  key: Subsidies
+  baseUnit: Euro
 batteryGuarantee:
-  key: BATTERY-GUARANTEE
-  value: 6
-  baseUnit: months
+  key: Battery Guarantee
+  value: 48
+  baseUnit: Months
 loadingHeight:
-  value: 560
-  baseUnit: mm
-  key: loading height
+  value: 10
+  baseUnit: cm
 carSizes:
-  width: width
-  length: length
-  height: height
-  wheelbase: wheelbase
+  width: Width
+  length: Length
+  height: Height
+  wheelbase: Wheelbase-Value
   valuewidth: 1300
-  baseUnit: mm
+  baseUnit: cm
   valuelength: 3150
   valueheight: 1600
   valuewheelbase: 2300
-  key: car sizes
+  key: Car-Sizes
 loadingVolume:
   valueheight: 250
   valuewidth: 1160
   valuelength: 1320
-  baseUnit: mm
-  key: loading volume
-  height: height
-  width: width
-  length: length
+  baseUnit: cm
+  key: Loading Volume
+  height: Height
+  width: Width
+  length: Length
 ---

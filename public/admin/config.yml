@@ -405,6 +405,34 @@ collections:
               widget: "string",
               i18n: duplicate,
             }
+      - label: "loading Volume in m3"
+        name: "loadingVolume"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "loading area in m2"
+        name: "loadingArea"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              widget: "string",
+              i18n: duplicate,
+            }
       - label: "Car-Sizes"
         name: "carSizes"
         widget: "object"
