@@ -26,7 +26,7 @@ maxSpeed:
 range230V:
   key: range sla
   value: 0
-  baseUnit: nicht verfügbar
+  baseUnit: " eryheryj"
 rangeLithium:
   key: "range "
   value: 110
@@ -41,12 +41,12 @@ chargingTimeLithium:
   baseUnit: St.
 chargingTimeFast:
   key: charging time fast
-  value: 0
+  value: 1
   baseUnit: keine Angabe
 batteryCapacityBlei:
   key: capacitiy sla
-  value: "0"
-  baseUnit: keine Angabe
+  value: "-"
+  baseUnit: " "
 batteryCapacityLithium:
   key: capacity lithium
   value: 16,5
