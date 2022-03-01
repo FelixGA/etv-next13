@@ -42,7 +42,7 @@ export default function Activecompare(props) {
   return (
     <div className="wrapper">
       <div className="heading+btn  pt-8 pb-12 pl-[5vw]">
-        <h1 className="font-bold  text-[#2C3F53] text-2xl lg:text-4xl">
+        <h1 className="font-bold  text-blue-extra text-2xl lg:text-4xl">
           Ihre Auswahl im Detailvergleich
         </h1>
         {/* BUTTON VISIBLE ONLY ON MOBILE */}
@@ -75,67 +75,67 @@ export default function Activecompare(props) {
         
           <div className="placeholder-image-clone bg-[#F2F5F8] h-36 "></div>
           <div className="first-category flex items-center h-10 w-full bg-white">
-            <h3 className="first-category-title p-4 text-[#2C3F53] text-xl">
+            <h3 className="first-category-title p-4 text-blue-extra text-xl">
               Grundlagen
             </h3>
           </div>
           <div className="second-category flex items-center h-10 w-full bg-[#F2F5F8]">
-            <h3 className="second-category-title p-4 text-[#2C3F53] text-sm">
+            <h3 className="second-category-title p-4 text-blue-extra text-sm">
               Reichweite
             </h3>
           </div>
           <div className="third-category flex items-center h-10 w-full">
-            <h3 className="third-category-title p-4 text-[#2C3F53] text-sm ">
+            <h3 className="third-category-title p-4 text-blue-extra text-sm ">
               Zuladung
             </h3>
           </div>
           <div className="forth-category flex items-center h-10 w-full bg-[#F2F5F8]">
-            <h3 className="forth-category-title p-4 text-[#2C3F53] text-sm">
+            <h3 className="forth-category-title p-4 text-blue-extra text-sm">
               Ladezeit
             </h3>
           </div>
           <div className="fifth-category flex items-center h-10 w-full">
-            <h3 className="fifth-category-title p-4 text-[#2C3F53] text-sm">
+            <h3 className="fifth-category-title p-4 text-blue-extra text-sm">
               Höchst- geschwindigkeit
             </h3>
           </div>
           <div className="sixth-category flex items-center h-10 w-full bg-[#F2F5F8]">
-            <h3 className="sixth-category-title p-4 text-[#2C3F53] text-sm">
+            <h3 className="sixth-category-title p-4 text-blue-extra text-sm">
               Nutzlastpreis
             </h3>
           </div>
           <div className="seventh-category flex items-center h-10 w-full">
-            <h3 className="seventh-category-title p-4 text-[#2C3F53] text-sm">
+            <h3 className="seventh-category-title p-4 text-blue-extra text-sm">
               Kaufpreis
             </h3>
           </div>
           <div className="eigth-category flex items-center h-10 w-full bg-[#F2F5F8]">
-            <h3 className="eigth-category-title p-4 text-[#2C3F53] text-md">
+            <h3 className="eigth-category-title p-4 text-blue-extra text-md">
               Ausstattung
             </h3>
           </div>
           <div className="ninth-category flex items-center h-10 w-full">
-            <h3 className="ninth-category-title p-4 text-[#2C3F53] text-sm">
+            <h3 className="ninth-category-title p-4 text-blue-extra text-sm">
               Elektrische Fensterheber
             </h3>
           </div>
           <div className="ten-category flex items-center h-10 w-full bg-[#F2F5F8]">
-            <h3 className="ten-category-title p-4 text-[#2C3F53] text-sm">
+            <h3 className="ten-category-title p-4 text-blue-extra text-sm">
               ABS
             </h3>
           </div>
           <div className="eleven-category flex items-center h-10 w-full">
-            <h3 className="eleven-category-title p-4 text-[#2C3F53] text-sm">
+            <h3 className="eleven-category-title p-4 text-blue-extra text-sm">
               Airbags
             </h3>
           </div>
           <div className="twelwe-category flex items-center h-10 w-full bg-[#F2F5F8]">
-            <h3 className="twelwe-category-title p-4 text-[#2C3F53] text-sm">
+            <h3 className="twelwe-category-title p-4 text-blue-extra text-sm">
               Klimaanlage
             </h3>
           </div>
           <div className="thirtine-category flex items-center h-10 w-full">
-            <h3 className="thirtine-category-title p-4 text-[#2C3F53] text-sm">
+            <h3 className="thirtine-category-title p-4 text-blue-extra text-sm">
               Goldene Wasserhähne
             </h3>
           </div>
@@ -151,67 +151,67 @@ export default function Activecompare(props) {
         <div className="data-content-categories   lg:w-64 xl:w-88 2xl:w-[380px]">
           <div className="placeholder-image-clone flex lg:hidden h-16  w-56 lg:w-full xl:w-88 2xl:w-[380px]"></div>
           <div className="first-category lg:w-full xl:w-88 2xl:w-[380px] h-10">
-            <h3 className="first-category-title pl-4 text-2xl xl:text-md font-bold text-[#2C3F53]">
+            <h3 className="first-category-title pl-4 text-2xl xl:text-md font-bold text-blue-extra">
               Grundlagen
             </h3>
           </div>
           <div className="second-category h-10 bg-[#F2F5F8] w-full flex items-center">
-            <h3 className="second-category-title text-md font-medium text-[#2C3F53] pl-4">
+            <h3 className="second-category-title text-md font-medium text-blue-extra pl-4">
               Reichweite
             </h3>
           </div>
           <div className="third-category h-10">
-            <h3 className="third-category-title h-10  w-full flex items-center text-[#2C3F53] pl-4">
+            <h3 className="third-category-title h-10  w-full flex items-center text-blue-extra pl-4">
               Zuladung
             </h3>
           </div>
           <div className="forth-category h-10">
-            <h3 className="forth-category-title h-10 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center pl-4">
+            <h3 className="forth-category-title h-10 bg-[#F2F5F8] w-full text-blue-extra flex items-center pl-4">
               Ladezeit
             </h3>
           </div>
           <div className="fifth-category h-10">
-            <h3 className="fifth-category-title h-10  w-full text-[#2C3F53] flex items-center pl-4">
+            <h3 className="fifth-category-title h-10  w-full text-blue-extra flex items-center pl-4">
               Höchst- geschwindigkeit
             </h3>
           </div>
           <div className="sixth-category h-10">
-            <h3 className="sixth-category-title h-10 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center pl-4">
+            <h3 className="sixth-category-title h-10 bg-[#F2F5F8] w-full text-blue-extra flex items-center pl-4">
               Nutzlastpreis
             </h3>
           </div>
           <div className="seventh-category h-10">
-            <h3 className="seventh-category-title h-10  w-full text-[#2C3F53] flex items-center pl-4">
+            <h3 className="seventh-category-title h-10  w-full text-blue-extra flex items-center pl-4">
               Kaufpreis
             </h3>
           </div>
           <div className="eigth-category h-10 mt-20">
-            <h3 className="eigth-category-title text-2xl xl:text-md font-bold text-[#2C3F53] pl-4">
+            <h3 className="eigth-category-title text-2xl xl:text-md font-bold text-blue-extra pl-4">
               Ausstattung
             </h3>
           </div>
           <div className="ninth-category h-10">
-            <h3 className="ninth-category-title h-10 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center pl-4">
+            <h3 className="ninth-category-title h-10 bg-[#F2F5F8] w-full text-blue-extra flex items-center pl-4">
               Elektrische Fensterheber
             </h3>
           </div>
           <div className="ten-category h-10">
-            <h3 className="ten-category-title h-10  w-full text-[#2C3F53] flex items-center pl-4">
+            <h3 className="ten-category-title h-10  w-full text-blue-extra flex items-center pl-4">
               ABS
             </h3>
           </div>
           <div className="eleven-category h-10">
-            <h3 className="eleven-category-title h-10 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center pl-4">
+            <h3 className="eleven-category-title h-10 bg-[#F2F5F8] w-full text-blue-extra flex items-center pl-4">
               Airbags
             </h3>
           </div>
           <div className="twelwe-category h-10">
-            <h3 className="twelwe-category-title h-10  w-full text-[#2C3F53] flex items-center pl-4">
+            <h3 className="twelwe-category-title h-10  w-full text-blue-extra flex items-center pl-4">
               Klimaanlage
             </h3>
           </div>
           <div className="thirtine-category h-10">
-            <h3 className="thirtine-category-title h-10 bg-[#F2F5F8] w-full text-[#2C3F53] flex items-center pl-4">
+            <h3 className="thirtine-category-title h-10 bg-[#F2F5F8] w-full text-blue-extra flex items-center pl-4">
               Goldene Wasserhähne
             </h3>
           </div>

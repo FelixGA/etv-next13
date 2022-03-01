@@ -138,7 +138,7 @@ function Sort({ getContent }) {
               ></input>
               <label
                 forhtml={rank?.sortCategory}
-                className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-[#2C3F53]"
+                className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-blue-extra"
               >
                 {rank?.sortCategory}
               </label>

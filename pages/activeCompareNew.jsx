@@ -13,6 +13,7 @@ export default function activeCompareNew(props) {
   const { state, dispatch } = useStore();
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getKeys, SetGetKeys] = useState([]);
+  const [toggleValues, setToggleValues] = useState(false);
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
   /*  console.log(comparedCars); */
   useEffect(() => {
@@ -60,7 +61,7 @@ export default function activeCompareNew(props) {
     <div className="main-wrapper ">
       {/* HEADING */}
       <div className="pt-8 pb-6 px-4">
-        <h1 className="font-bold text-[#2C3F53] text-2xl lg:text-4xl">
+        <h1 className="font-bold text-blue-extra text-2xl lg:text-4xl">
           Ihre Auswahl im Detailvergleich
         </h1>
       </div>
@@ -82,31 +83,36 @@ export default function activeCompareNew(props) {
       </div>
       <div className="flex flex-1 justify-evenly py-8 ">
         <div className="cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-light text-white shrink-0 rounded-md">
-          <button className="">Ausstattung</button>
+          <button className="" onClick={() => setToggleValues(true)}>
+            Ausstattung
+          </button>
         </div>
         <div className="cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-light text-white shrink-0 rounded-md">
-          <button>Masse</button>
+          <button onClick={() => setToggleValues(true)}>Masse</button>
         </div>
       </div>
-      <div className="grid grid-cols-[auto-fill,_minmax(250px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
-        <div className="hidden">
-          <ActiveCompareEquipmentKeys
-            getKeys={getKeys}
-            comparedCars={comparedCars}
-          />
-        </div>
-        <div className="">
-          <ActiveCompareMaßeKeys
-            getKeys={getKeys}
-            comparedCars={comparedCars}
-          />
-        </div>
-        <div className="hidden">
-          <ActiveCompareEquipmentValues comparedCars={comparedCars} />
-        </div>
-        <div className="flex">
-          <ActiveCompareMaßeValues comparedCars={comparedCars} />
-        </div>
+      <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide">
+        {/*  <ActiveCompareEquipmentKeys
+          getKeys={getKeys}
+          comparedCars={comparedCars}
+        /> */}
+
+        <ActiveCompareMaßeKeys getKeys={getKeys} comparedCars={comparedCars} />
+
+        {/* <ActiveCompareEquipmentValues comparedCars={comparedCars} /> */}
+
+        <ActiveCompareMaßeValues comparedCars={comparedCars} />
+      </div>
+      <div
+        className={
+          getKeys.length > 1
+            ? "hidden"
+            : " flex-1 lg:hidden pl-8 bg-[#D0DDEA] h-20 flex items-center"
+        }
+      >
+        <button className="h-8 w-3/4  bg-orange-lighter rounded-[5px] font-bold tex-blue-darker">
+          Weiter
+        </button>
       </div>
     </div>
   );

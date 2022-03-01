@@ -9,7 +9,7 @@ export default function ActiveCompareEquipmentKeys({ getKeys, comparedCars }) {
         }
       >
         {getKeys
-          .map((key, index) => (
+          .map((item, index) => (
             <div
               key={index}
               className={
@@ -18,7 +18,7 @@ export default function ActiveCompareEquipmentKeys({ getKeys, comparedCars }) {
                   : "flex items-center h-10 flex-1 bg-white"
               }
             >
-              <h3 className="p-4 text-[#2C3F53] text-sm ">{key}</h3>
+              <h3 className="p-4 text-blue-extra text-lg ">{item}</h3>
             </div>
           ))
           .splice(11)}

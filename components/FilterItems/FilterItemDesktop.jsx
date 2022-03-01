@@ -110,7 +110,7 @@ function FilterItemDesktop({ item }) {
                 ></FilterCheckbox>
                 <label
                   forhtml={checkbox.name}
-                  className="inline-flex items-center  pl-5 text-lg text-[#2C3F53] "
+                  className="inline-flex items-center  pl-5 text-lg text-blue-extra "
                 >
                   {checkbox.name}
                 </label>
