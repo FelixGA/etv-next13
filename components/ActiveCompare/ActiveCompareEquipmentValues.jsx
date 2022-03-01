@@ -1,10 +1,6 @@
-import Image from "next/image";
-import TestResult from "../repeated/TestResult";
+import React from "react";
 
-export default function ActiveCompareItem({ comparedCars }) {
-  console.log(comparedCars, "00000");
-  // console.log(comparedCars[0].rating);
-
+export default function ActiveCompareEquipmentValues({ comparedCars }) {
   return (
     <>
       {comparedCars?.map((item, index) => (
@@ -14,38 +10,8 @@ export default function ActiveCompareItem({ comparedCars }) {
             /* key={index} */
           >
             {/* IMAGE + HEADING */}
-            <div className="relative h-72">
-              <div className="lg:bg-grey-lighter absolute -z-10 inset-0 h-72 "></div>
 
-              <div className="pl-8 relative top-12 xl:top-4 pr-4">
-                <Image
-                  className="rounded-md md:rounded-lg brightness-50 "
-                  src={item.src}
-                  alt="picture"
-                  objectFit="cover"
-                  width={380}
-                  height={250}
-                ></Image>
-                <div className="lg:absolute lg:top-0 pl-4 h-10">
-                  <h3 className="text-[#2C3F53] lg:text-white pt-2 font-bold text-sm lg:text-lg overflow-hidden">
-                    {item.title}
-                  </h3>
-                </div>
-              </div>
-              <div className="flex lg:hidden  h-18 py-auto items-end pb-2">
-                <h2 className="text-sm font-bold text-[#F45625] ">
-                  Testnote
-                  <span className="text-green-light">{item.rating.value}</span>
-                </h2>
-              </div>
-            </div>
             <div className=" relative">
-              <div className="hidden lg:flex py-2 pl-8">
-                <TestResult
-                  itemKey={item.rating.key}
-                  itemValue={item.rating?.value || "-"}
-                />
-              </div>
               <div className=" h-10 bg-grey-lighter w-full flex items-center ">
                 <h3 className="second-category-title text-sm lg:text-lg font-medium text-[#2C3F53] pl-8">
                   {item.typeClass}
@@ -112,11 +78,6 @@ export default function ActiveCompareItem({ comparedCars }) {
                   Gesamtgewicht
                 </h3>
               </div>
-            </div>
-            <div className=" flex-1 lg:hidden pl-8 bg-[#D0DDEA] h-20 flex items-center">
-              <button className="h-8 w-3/4  bg-orange-lighter rounded-[5px] font-bold tex-blue-darker">
-                Weiter
-              </button>
             </div>
           </div>
         </div>

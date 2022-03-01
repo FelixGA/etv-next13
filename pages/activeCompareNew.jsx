@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 import getContent from "/utils/getContent";
 import ActiveCompareKeys from "../components/ActiveCompare/ActiveCompareKeys";
 import ActiveCompareItem from "../components/ActiveCompare/ActiveCompareItem";
+import ActiveCompareEquipmentKeys from "../components/ActiveCompare/ActiveCompareEquipmentKeys";
+import ActiveCompareEquipmentValues from "../components/ActiveCompare/ActiveCompareEquipmentValues";
+import ActiveCompareMaßeValues from "../components/ActiveCompare/ActiveCompareMaßeValues";
+import ActiveCompareMaßeKeys from "../components/ActiveCompare/ActiveCompareMaßeKeys";
 
 export default function activeCompareNew(props) {
   const { state, dispatch } = useStore();
@@ -56,12 +60,12 @@ export default function activeCompareNew(props) {
     <div className="main-wrapper ">
       {/* HEADING */}
       <div className="pt-8 pb-6 px-4">
-        <h1 className="font-bold  text-[#2C3F53] text-2xl lg:text-4xl">
+        <h1 className="font-bold text-[#2C3F53] text-2xl lg:text-4xl">
           Ihre Auswahl im Detailvergleich
         </h1>
       </div>
       {/* BACK BUTTON */}
-      <div className="lg:w-64 xl:w-88 2xl:w-[380px] pl-4 ">
+      <div className="lg:w-64 xl:w-88 2xl:w-[380px] pl-4 block lg:hidden ">
         <button className="mb-12 text-sm bg-grey-lighter w-52 h-10 rounded-md text-blue-darker ">
           <Link href="/comparePage">
             <a className="visited:text-blue-darker">
@@ -71,17 +75,37 @@ export default function activeCompareNew(props) {
         </button>
       </div>
       {/* KEYS AND ITEMS FOR COMPARE */}
-      <div className="grid grid-cols-[auto-fill,_minmax(250px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll  ">
+      <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
         <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
 
         <ActiveCompareItem comparedCars={comparedCars} />
       </div>
-      <div className="flex flex-1 justify-center pt-4 ">
-        <div className="cursor-pointer border w-32 h-10 flex justify-center bg-blue-light text-white m-10">
-          <button>Ausstattung</button>
+      <div className="flex flex-1 justify-evenly py-8 ">
+        <div className="cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-light text-white shrink-0 rounded-md">
+          <button className="">Ausstattung</button>
         </div>
-        <div className="cursor-pointer border w-32 h-10 flex justify-center bg-blue-light text-white m-10">
+        <div className="cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-light text-white shrink-0 rounded-md">
           <button>Masse</button>
+        </div>
+      </div>
+      <div className="grid grid-cols-[auto-fill,_minmax(250px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
+        <div className="hidden">
+          <ActiveCompareEquipmentKeys
+            getKeys={getKeys}
+            comparedCars={comparedCars}
+          />
+        </div>
+        <div className="">
+          <ActiveCompareMaßeKeys
+            getKeys={getKeys}
+            comparedCars={comparedCars}
+          />
+        </div>
+        <div className="hidden">
+          <ActiveCompareEquipmentValues comparedCars={comparedCars} />
+        </div>
+        <div className="flex">
+          <ActiveCompareMaßeValues comparedCars={comparedCars} />
         </div>
       </div>
     </div>
