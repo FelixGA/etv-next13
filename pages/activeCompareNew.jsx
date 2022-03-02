@@ -103,17 +103,6 @@ export default function activeCompareNew(props) {
 
         <ActiveCompareMaßeValues comparedCars={comparedCars} />
       </div>
-      <div
-        className={
-          getKeys.length > 1
-            ? "hidden"
-            : " flex-1 lg:hidden pl-8 bg-[#D0DDEA] h-20 flex items-center"
-        }
-      >
-        <button className="h-8 w-3/4  bg-orange-lighter rounded-[5px] font-bold tex-blue-darker">
-          Weiter
-        </button>
-      </div>
     </div>
   );
 }
