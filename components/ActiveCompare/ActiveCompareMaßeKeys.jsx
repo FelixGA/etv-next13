@@ -11,8 +11,8 @@ export default function ActiveCompareMaßeKeys({ getKeys, comparedCars }) {
   // console.log(test2, "test2");
   return (
     <>
-      <div className={comparedCars.length ? "w-full border-r-2  " : "hidden"}>
-        <div className="bg-white w-64"></div>
+      <div className={comparedCars.length ? "w-full border-r" : "hidden"}>
+        <div className="w-32 lg:w-56 xl:w-64 2xl:w-72 "></div>
         {test3.map((key, index) => (
           <div
             key={index}
@@ -22,7 +22,9 @@ export default function ActiveCompareMaßeKeys({ getKeys, comparedCars }) {
                 : "flex items-center h-10 flex-1  bg-grey-lighter"
             }
           >
-            <h3 className="p-4 text-blue-extra text-lg ">{key}</h3>
+            <h3 className="pl-2 lg:pl-8 text-blue-extra text-sm lg:text-lg ">
+              {key}
+            </h3>
           </div>
         ))}
       </div>

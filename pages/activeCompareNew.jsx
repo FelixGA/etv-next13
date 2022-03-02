@@ -58,7 +58,7 @@ export default function activeCompareNew(props) {
   }, []);
 
   return (
-    <div className="main-wrapper ">
+    <div className="main-wrapper 2xl:px-40">
       {/* HEADING */}
       <div className="pt-8 pb-6 px-4">
         <h1 className="font-bold text-blue-extra text-2xl lg:text-4xl">
@@ -91,7 +91,7 @@ export default function activeCompareNew(props) {
           <button onClick={() => setToggleValues(true)}>Masse</button>
         </div>
       </div>
-      <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide">
+      <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
         {/*  <ActiveCompareEquipmentKeys
           getKeys={getKeys}
           comparedCars={comparedCars}

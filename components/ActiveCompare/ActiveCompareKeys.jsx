@@ -4,14 +4,10 @@ export default function ActiveCompareKeys({ getKeys, comparedCars }) {
   return (
     /* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN MOBILE VIEW<> */
     <>
-      <div
-        className={
-          comparedCars.length ? "w-full border-r-2 shadow-xl " : "hidden"
-        }
-      >
-        <div className="h-36 lg:h-72 bg-grey-lighter">
+      <div className={comparedCars.length ? "w-full border-r" : "hidden"}>
+        <div className="h-36 md:h-40 md:w-full lg:h-64 xl:h-72  bg-grey-lighter">
           {/* BACK BUTTON */}
-          <div className="lg:w-64 xl:w-88 2xl:w-[380px] hidden lg:block pt-12 pl-4">
+          <div className="lg:w-64 xl:w-88 2xl:w-[380px] hidden lg:block pt-12 pl-8 lg:pl-4 xl:pl-8">
             <button className="text-sm bg-white w-52 h-10 rounded-md text-blue-darker ">
               <Link href="/comparePage">
                 <a className="visited:text-blue-darker">
@@ -21,8 +17,8 @@ export default function ActiveCompareKeys({ getKeys, comparedCars }) {
             </button>
           </div>
         </div>
-        <div className="flex items-center flex-1 bg-white pt-11 lg:pt-9 px-4">
-          <h3 className="text-blue-extra text-xl ">Grundlagen</h3>
+        <div className="flex items-center flex-1 bg-white pt-4 md:pt-8 lg:pt-16 xl:pt-14 pl-2 lg:pl-8 px-2">
+          <h3 className="text-blue-extra text-xl font-bold ">Grundlagen</h3>
         </div>
         {getKeys
           .map((item, index) => (
@@ -34,7 +30,7 @@ export default function ActiveCompareKeys({ getKeys, comparedCars }) {
                   : "flex items-center h-10 flex-1 bg-white"
               }
             >
-              <h3 className=" text-blue-extra text-sm lg:text-lg px-4">
+              <h3 className=" text-blue-extra text-sm lg:text-lg pl-2 lg:pl-8">
                 {item}
               </h3>
             </div>

@@ -3,11 +3,7 @@ import React from "react";
 export default function ActiveCompareEquipmentKeys({ getKeys, comparedCars }) {
   return (
     <>
-      <div
-        className={
-          comparedCars.length ? "w-full border-r-2 shadow-xl " : "hidden"
-        }
-      >
+      <div className={comparedCars.length ? "w-full " : "hidden"}>
         {getKeys
           .map((item, index) => (
             <div

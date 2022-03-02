@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import TestResult from "../repeated/TestResult";
 
 export default function ActiveCompareItem({ comparedCars }) {
@@ -14,33 +15,37 @@ export default function ActiveCompareItem({ comparedCars }) {
             /* key={index} */
           >
             {/* IMAGE + HEADING */}
-            <div className="relative h-36 xl:h-72">
-              <div className="lg:bg-grey-lighter absolute -z-10 inset-0 h-52 xl:h-72"></div>
+            <div className="relative h-36 xl:h-72 ">
+              <div className="lg:bg-grey-lighter absolute -z-10 inset-0 lg:h-64 xl:h-72"></div>
+              <Link href={`/transporter/${item.name}`}>
+                <div className="relative md:top-2 lg:top-12 xl:top-10 2xl:top-4 px-1 md:px-2 xl:pl-8 cursor-pointer">
+                  <a>
+                    <Image
+                      className="rounded-md md:rounded-lg brightness-50 "
+                      src={item.src}
+                      alt="picture"
+                      objectFit="cover"
+                      width={380}
+                      height={250}
+                    ></Image>
+                  </a>
 
-              <div className="pl-2 lg:pl-8 relative top-2 lg:top-12 xl:top-4 lg:pr-4">
-                <Image
-                  className="rounded-md md:rounded-lg brightness-50 "
-                  src={item.src}
-                  alt="picture"
-                  objectFit="cover"
-                  width={380}
-                  height={250}
-                ></Image>
-                <div className="lg:absolute lg:top-0 pl-4 h-10">
-                  <h3 className="text-blue-extra lg:text-white pt-2 font-bold text-sm lg:text-lg overflow-hidden">
-                    {item.title}
-                  </h3>
+                  <div className="lg:absolute lg:top-0 md:pl-4 h-10">
+                    <h3 className="text-blue-extra lg:text-white md:pt-2 font-bold text-sm lg:text-lg overflow-hidden">
+                      {item.title}
+                    </h3>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
-            <div className=" relative">
-              <div className="flex lg:hidden h-18 py-auto items-end pb-2">
-                <h2 className="text-sm font-bold text-[#F45625] pl-8">
+            <div className="relative">
+              <div className="flex lg:hidden h-11 md:h-[76px] items-end pb-2">
+                <h2 className="text-sm font-bold text-[#F45625] pl-4 lg:pl-8">
                   Testnote
                   <span className="text-green-light">{item.rating.value}</span>
                 </h2>
               </div>
-              <div className="hidden lg:flex py-2 pl-8">
+              <div className="hidden lg:flex pt-6 lg:pt-36 xl:pt-6 pl-8 pb-3 ">
                 <TestResult
                   itemKey={item.rating.key}
                   itemValue={item.rating?.value || "-"}
