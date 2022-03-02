@@ -82,12 +82,12 @@ export default function activeCompareNew(props) {
         <ActiveCompareItem comparedCars={comparedCars} />
       </div>
       <div className="flex flex-1 justify-evenly py-8 ">
-        <div className="cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-light text-white shrink-0 rounded-md">
+        <div className="cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-dark text-white shrink-0 rounded-md">
           <button className="" onClick={() => setToggleValues(true)}>
             Ausstattung
           </button>
         </div>
-        <div className="cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-light text-white shrink-0 rounded-md">
+        <div className="cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-dark text-white shrink-0 rounded-md">
           <button onClick={() => setToggleValues(true)}>Masse</button>
         </div>
       </div>
