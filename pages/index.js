@@ -5,8 +5,9 @@ import { serialize } from "next-mdx-remote/serialize";
 import BlogArticles from "../components/BlogArticles";
 import HeroSection from "../components/HeroSection/HeroSection";
 import TopSlider from "../components/Sliders/TopSlider";
-import BottomSlider from "../components/Sliders/BottomSlider";
+import Funnel from "../components/Caradvisor/Funnel";
 import NewsLetter from "../components/NewsLetter";
+import ButtonForAlleTransporter from "../components/Sliders/ButtonForAlleTransporter";
 import { useState } from "react";
 
 export default function Home(props) {
@@ -30,7 +31,8 @@ export default function Home(props) {
       />
       <TopSlider getCars={getCars} getContent={getContent} />
       <BlogArticles getMarkdownContext={getMarkdownContext} />
-      <BottomSlider getContent={getContent} />
+      <Funnel getCars={getCars} />
+      <ButtonForAlleTransporter />
       <NewsLetter getMarkdownContext={getMarkdownContext} />
     </>
   );

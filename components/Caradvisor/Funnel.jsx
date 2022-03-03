@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import BottomSliderCard from "../Sliders/BottomSliderCard";
-import ButtonForAlleTransporter from "./ButtonForAlleTransporter";
 
 export default function BottomSlider(props) {
   return (
@@ -10,8 +9,6 @@ export default function BottomSlider(props) {
       <div className="flex justify-center items-center h-48 bg-red-400  ">
         FUNNEL
       </div>
-
-      <ButtonForAlleTransporter />
     </div>
   );
 }

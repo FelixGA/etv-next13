@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote";
+import Link from "next/link";
 const BlogArticles = ({ getMarkdownContext, getContent }) => {
   return (
     <div className="lg:justify-between lg:items-center lg:flex lg:flex-col">
@@ -17,9 +18,13 @@ const BlogArticles = ({ getMarkdownContext, getContent }) => {
               <MDXRemote {...getMarkdownContext.eAutoAdvisor} />
             </p>
           </span>
-          <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 my-3 text-sm rounded-lg">
-            Zum Kaufberater
-          </button>{" "}
+          <Link href="/caradvisor">
+            <a>
+              <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 my-3 text-sm rounded-lg">
+                Zum Kaufberater
+              </button>
+            </a>
+          </Link>
         </div>
         <div className="hidden xl:flex xl:w-full xl:scale-125 ">
           <Image
