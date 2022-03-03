@@ -17,7 +17,7 @@ category: Koffer
 typeClass: L7E
 loadingWeight:
   key: Nutzlast
-  value: 1200
+  value: 531
   baseUnit: kg
 curbweight:
   key: Leergewicht

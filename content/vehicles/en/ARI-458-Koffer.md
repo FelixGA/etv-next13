@@ -6,7 +6,7 @@ src: /images/ari-458-koffer-3-.jpg
 category: Koffer
 loadingWeight:
   key: Loading Weight
-  value: 1200
+  value: 531
   baseUnit: kg
 curbweight:
   key: Curb Weight
