@@ -24,7 +24,7 @@ range230V:
 rangeLithium:
   value: 150
   baseUnit: km
-  key: Range Lithium-Battery
+  key: Range Lithium Battery
 chargingTime230V:
   value: 6
   key: Charging Time 230-V
@@ -35,11 +35,11 @@ chargingTimeLithium:
   baseUnit: h
 chargingTimeFast:
   value: 2
-  key: Charging Time fast
+  key: Fast Charging Time
   baseUnit: h
 batteryCapacityBlei:
-  value: "?"
-  baseUnit: kwh
+  value: "-"
+  baseUnit: " "
   key: Battery Capacity SLA
 batteryCapacityLithium:
   value: "10"
@@ -80,9 +80,9 @@ loadingHeight:
   value: 10
   baseUnit: cm
 loadingVolumeTotal:
-  value: "234523453245"
+  value: 0,38
   baseUnit: m3
-  key: loading Volume
+  key: Loading Volume
 loadingArea:
   value: "235"
   baseUnit: m2
@@ -91,19 +91,19 @@ carSizes:
   width: Width
   length: Length
   height: Height
-  wheelbase: Wheelbase-Value
+  wheelbase: Wheelbase
   valuewidth: 1300
   baseUnit: cm
   valuelength: 3150
   valueheight: 1600
   valuewheelbase: 2300
-  key: Car-Sizes
+  key: Car Sizes
 loadingVolume:
   valueheight: 250
   valuewidth: 1160
   valuelength: 1320
   baseUnit: cm
-  key: Loading Volume
+  key: Loading Area Sizes
   height: Height
   width: Width
   length: Length

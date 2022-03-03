@@ -17,15 +17,15 @@ curbweight:
   value: 604
   baseUnit: kg
 maxSpeed:
-  key: vMax
+  key: km/h
   value: 78
   baseUnit: km/h
 range230V:
-  key: Reichweite SLA-Akku
+  key: Reichweite SLA Akku
   value: 120
   baseUnit: km
 rangeLithium:
-  key: Reichweite Lithium-Akku
+  key: Reichweite Lithium Akku
   value: 150
   baseUnit: km
 chargingTime230V:
@@ -41,11 +41,11 @@ chargingTimeFast:
   value: 2
   baseUnit: h
 batteryCapacityBlei:
-  key: Kapazität Blei-Gel-Akku
+  key: Kapazität SLA Akku
   baseUnit: " "
   value: "-"
 batteryCapacityLithium:
-  key: Kapazität Lithium-Akku
+  key: Kapazität Lithium Akku
   value: "10"
   baseUnit: kwh
 batteryIncluded:
@@ -63,7 +63,7 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: zb gut
+  key: Note
   value: "2"
 guarantee:
   key: Garantie Fahrzeug
@@ -85,9 +85,9 @@ loadingHeight:
   value: 10
   baseUnit: cm
 loadingVolumeTotal:
-  key: Ladenvolumen
+  key: Ladevolumen
   baseUnit: m3
-  value: "234523453245"
+  value: 0,38
 loadingArea:
   key: Ladefläche
   value: "235"
@@ -104,7 +104,7 @@ carSizes:
   valuewheelbase: 2300
   key: Fahrzeugmaße
 loadingVolume:
-  key: Laderaum Maße
+  key: Laderaum-Maße
   height: Höhe
   valueheight: 250
   width: Breite
