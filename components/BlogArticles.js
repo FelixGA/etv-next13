@@ -14,9 +14,9 @@ const BlogArticles = ({ getMarkdownContext, getContent }) => {
               {getContent.content[2].name}
             </h2>*/}
 
-            <p className="tracking-wide  py-5 font-bold text-grey-darkest pb-6 pr-3">
+            <div className="tracking-wide  py-5 font-bold text-grey-darkest pb-6 pr-3">
               <MDXRemote {...getMarkdownContext.eAutoAdvisor} />
-            </p>
+            </div>
           </span>
           <Link href="/caradvisor">
             <a>
@@ -49,9 +49,9 @@ const BlogArticles = ({ getMarkdownContext, getContent }) => {
           {/* <h2 className="text-grey-darkest text-2xl font-bold ">
            dfg
           </h2> */}
-          <p className="tracking-wide font-bold text-grey-darkest pb-6 py-5">
+          <div className="tracking-wide font-bold text-grey-darkest pb-6 py-5">
             <MDXRemote {...getMarkdownContext.substities} />
-          </p>
+          </div>
           <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 my-6 text-sm rounded-lg">
             Mehr erfahren
           </button>

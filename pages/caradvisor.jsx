@@ -3,9 +3,11 @@ import { useState, useEffect } from "react";
 import Funnel from "../components/Caradvisor/Funnel";
 
 export default function caradvisor(props) {
+  const [getCars, SetGetCars] = useState(props.vehicles);
+  const { state, dispatch } = useStore();
   return (
     <div>
-      <Funnel />
+      <Funnel getCars={getCars} />
     </div>
   );
 }

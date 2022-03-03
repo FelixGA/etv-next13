@@ -7,9 +7,9 @@ const NewsLetter = ({ getMarkdownContext }) => {
         {" "}
         
       </h2> */}
-      <p className="flex flex-col justify-center custom-text px-4 py-8  text-grey-darker">
+      <div className="flex flex-col justify-center custom-text px-4 py-8  text-grey-darker">
         <MDXRemote {...getMarkdownContext.newsletter} />
-      </p>{" "}
+      </div>{" "}
       <span>
         <p className="w-full align-left text-grey-dark font-bold">Email</p>
         <div className="flex flex-col xs:flex-row">

@@ -117,9 +117,9 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
             <h1 className="text-2xl lg:text-3xl pl-3 md:pt-8">
               {getContent.title}
             </h1>
-            <p className="text-grey-darker text-2xl lg:text-3xl pl-3">
+            <div className="text-grey-darker text-2xl lg:text-3xl pl-3">
               <MDXRemote {...getMarkdownContext.header} />
-            </p>
+            </div>
 
             <p className="hidden lg:flex justify-between">
               <span className="text-blue-extra font-bold pl-3 text-xl xl:text-2xl">
