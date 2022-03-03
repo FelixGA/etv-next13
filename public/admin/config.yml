@@ -42,7 +42,7 @@ collections:
         i18n: true
         required: false
         fields:
-          - { label: "Name", name: "name", widget: "string", i18n: true }
+          - { label: "Name", name: "name", widget: "string", i18n: duplicate }
           - { label: "Markdown", name: "markdown", widget: "markdown" }
           - {
               label: "Details",

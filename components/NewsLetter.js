@@ -1,12 +1,14 @@
-const NewsLetter = (props) => {
+import { MDXRemote } from "next-mdx-remote";
+
+const NewsLetter = ({ getMarkdownContext }) => {
   return (
     <div className="newsletter-container flex flex-col justify-center flex-wrap items-center p-10 bg-grey-lightest">
-      <h2 className="text-grey-darkest text-2xl tracking-wider font-bold py-2">
+      {/* <h2 className="text-grey-darkest text-2xl tracking-wider font-bold py-2">
         {" "}
-        {props.getContent.content[4].name}
-      </h2>
-      <p className="flex justify-center custom-text px-4 py-8  text-grey-darker">
-        {props.getContent.content[4].markdown}
+        
+      </h2> */}
+      <p className="flex flex-col justify-center custom-text px-4 py-8  text-grey-darker">
+        <MDXRemote {...getMarkdownContext.newsletter} />
       </p>{" "}
       <span>
         <p className="w-full align-left text-grey-dark font-bold">Email</p>

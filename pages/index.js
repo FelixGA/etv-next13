@@ -1,6 +1,7 @@
 import Head from "next/head";
 import getContent from "/utils/getContent";
 import { MDXRemote } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
 import BlogArticles from "../components/BlogArticles";
 import HeroSection from "../components/HeroSection/HeroSection";
 import TopSlider from "../components/Sliders/TopSlider";
@@ -11,10 +12,12 @@ import { useState } from "react";
 export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
-  console.log(
-    getContent?.content.find((content) => content.name === "Jetzt vergleichen")
-      .markdown
-  );
+  const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
+
+  // console.log(
+  //   getContent.content.find((content) => content.name === "header").markdown
+  // );
+
   return (
     <>
       <Head>
@@ -25,18 +28,17 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
-        {/* <MDXRemote
-          {...getContent?.content.find(
-            (content) => content.name === "Jetzt vergleichen"
-          ).markdown}
-        /> */}
-      </div>
-      <HeroSection getContent={getContent} />
+      <HeroSection
+        getContent={getContent}
+        getMarkdownContext={getMarkdownContext}
+      />
       <TopSlider getCars={getCars} getContent={getContent} />
-      <BlogArticles getContent={getContent} />
+      <BlogArticles getMarkdownContext={getMarkdownContext} />
       <BottomSlider getContent={getContent} />
-      <NewsLetter getContent={getContent} />
+      <NewsLetter
+        getContent={getContent}
+        getMarkdownContext={getMarkdownContext}
+      />
     </>
   );
 }
@@ -46,7 +48,18 @@ export async function getStaticProps(context) {
   const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   const page = pages.find((page) => page.path === "/");
-
+  const header = await serialize(
+    page.content.find((content) => content.name === "header").markdown
+  );
+  const eAutoAdvisor = await serialize(
+    page.content.find((content) => content.name === "eAutoAdvisor").markdown
+  );
+  const substities = await serialize(
+    page.content.find((content) => content.name === "substities").markdown
+  );
+  const newsletter = await serialize(
+    page.content.find((content) => content.name === "newsletter").markdown
+  );
   if (!page) {
     return {
       notFound: true,
@@ -55,6 +68,7 @@ export async function getStaticProps(context) {
 
   return {
     props: {
+      context: { header, eAutoAdvisor, substities, newsletter },
       page,
       posts,
       vehicles,
