@@ -33,7 +33,7 @@ chargingTime230V:
   value: 6
   baseUnit: h
 chargingTimeLithium:
-  key: Ladezeit Typ 2
+  key: Ladezeit Typ 2 Ladekabel
   value: 6
   baseUnit: h
 chargingTimeFast:
