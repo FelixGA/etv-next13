@@ -14,10 +14,6 @@ export default function Home(props) {
   const [getContent, SetGetContent] = useState(props.page);
   const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
 
-  // console.log(
-  //   getContent.content.find((content) => content.name === "header").markdown
-  // );
-
   return (
     <>
       <Head>
@@ -35,10 +31,7 @@ export default function Home(props) {
       <TopSlider getCars={getCars} getContent={getContent} />
       <BlogArticles getMarkdownContext={getMarkdownContext} />
       <BottomSlider getContent={getContent} />
-      <NewsLetter
-        getContent={getContent}
-        getMarkdownContext={getMarkdownContext}
-      />
+      <NewsLetter getMarkdownContext={getMarkdownContext} />
     </>
   );
 }
