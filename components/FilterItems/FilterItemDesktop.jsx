@@ -82,7 +82,7 @@ function FilterItemDesktop({ item }) {
             initial="enter"
             animate="center"
             exit="exit"
-            transition={{ type: "tween", duration: 0.2 }}
+            transition={{ type: "tween", duration: 0.1 }}
             className="flex flex-col ml-8 -z-50"
           >
             {/* RENDERING THE FOUR RANGES */}

@@ -86,7 +86,7 @@ function FilterItemMobile({ item }) {
               initial="enter"
               animate="center"
               exit="exit"
-              transition={{ type: "Inertia", duration: 0.2 }}
+              transition={{ type: "Inertia", duration: 0.1 }}
             >
               {item.options.map((checkbox, index) => (
                 <div

@@ -303,7 +303,7 @@ function FiltersMobile({ getContent }) {
             initial="enter"
             animate="center"
             exit="exit"
-            transition={{ type: "tween", duration: 0.2 }}
+            transition={{ type: "tween", duration: 0.1 }}
           >
             {priceFilterData.map((item) => (
               <div className="relative  " key={item.id}>
@@ -316,7 +316,7 @@ function FiltersMobile({ getContent }) {
                       initial="enter"
                       animate="center"
                       exit="exit"
-                      transition={{ type: "tween", duration: 0.2 }}
+                      transition={{ type: "tween", duration: 0.1 }}
                       className="flex flex-col ml-8 relative   "
                     >
                       <PriceInputs />

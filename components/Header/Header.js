@@ -63,7 +63,7 @@ const Header = () => {
           )}
         </AnimatePresence>
         {/* BUTTON */}
-        <div className="mr-20 lg:mr-8">
+        <div className="pr-18 lg:pr-4">
           <div className="bg-yellow-light hover:bg-orange-lighter text-grey-darker font-bold flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer">
             <div className="w-6 xs:w-8 pl-2 ">
               <Image

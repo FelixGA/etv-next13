@@ -66,7 +66,14 @@ export default function activeCompareNew(props) {
         </h1>
       </div>
       {/* BACK BUTTON */}
-      <div className="lg:w-64 xl:w-88 2xl:w-[380px] pl-4 block lg:hidden ">
+
+      <div
+        className={
+          comparedCars.length > 1
+            ? "lg:w-64 xl:w-88 2xl:w-[380px] pl-4 block  "
+            : "hidden"
+        }
+      >
         <button className="mb-12 text-sm bg-grey-lighter w-52 h-10 rounded-md text-blue-darker ">
           <Link href="/comparePage">
             <a className="visited:text-blue-darker">
@@ -81,13 +88,13 @@ export default function activeCompareNew(props) {
 
         <ActiveCompareItem comparedCars={comparedCars} />
       </div>
-      <div className="flex flex-1 justify-evenly py-8 ">
-        <div className="cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-dark text-white shrink-0 rounded-md">
+      <div className="flex flex-1 justify-center py-8 ">
+        <div className="mr-4 cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-dark text-white shrink-0 rounded-md">
           <button className="" onClick={() => setToggleValues(true)}>
             Ausstattung
           </button>
         </div>
-        <div className="cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-dark text-white shrink-0 rounded-md">
+        <div className="ml-4 cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-dark text-white shrink-0 rounded-md">
           <button onClick={() => setToggleValues(true)}>Masse</button>
         </div>
       </div>
