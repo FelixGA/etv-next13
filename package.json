@@ -11,6 +11,7 @@
     "postbuild": "node next-sitemap"
   },
   "dependencies": {
+    "@next/mdx": "^12.1.0",
     "@openlab/vercel-netlify-cms-github": "^1.1.1",
     "@sergeymyssak/nextjs-sitemap": "^2.0.3",
     "framer-motion": "^6.2.3",

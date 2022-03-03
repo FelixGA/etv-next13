@@ -11,7 +11,10 @@ import { useState } from "react";
 export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
-  console.log(getContent.content.find((content) => content.name === "header"));
+  console.log(
+    getContent?.content.find((content) => content.name === "Jetzt vergleichen")
+      .markdown
+  );
   return (
     <>
       <Head>
@@ -22,9 +25,13 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <MDXRemote
-        {...props.page.content.find((content) => content.name === "header")}
-      /> */}
+      <div>
+        {/* <MDXRemote
+          {...getContent?.content.find(
+            (content) => content.name === "Jetzt vergleichen"
+          ).markdown}
+        /> */}
+      </div>
       <HeroSection getContent={getContent} />
       <TopSlider getCars={getCars} getContent={getContent} />
       <BlogArticles getContent={getContent} />
