@@ -28,7 +28,7 @@ maxSpeed:
   value: 80
   baseUnit: km/h
 range230V:
-  key: Reichweite SLA Blei
+  key: Reichweite SLA Akku
   value: 120
   baseUnit: " km"
 rangeLithium:
@@ -71,7 +71,7 @@ seats:
   value: 2
 rating:
   key: Note
-  value: 4,0
+  value: 2,0
 guarantee:
   key: Garantie Fahrzeug
   value: 6
