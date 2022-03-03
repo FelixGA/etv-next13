@@ -102,7 +102,7 @@ loadingVolume:
   valueheight: 250
   valuewidth: 1160
   valuelength: 1320
-  baseUnit: cm
+  baseUnit: mm
   key: Loading Area Sizes
   height: Height
   width: Width
