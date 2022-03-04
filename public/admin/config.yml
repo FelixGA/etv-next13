@@ -138,7 +138,7 @@ collections:
         widget: "select"
         multiple: false
         i18n: duplicate
-        options: ["L7E", "L6E", "N1", "N1N2", "N2"]
+        options: ["L7E", "L6E", "N1", "N1N2", "N2",  "L2E"]
         # default: ["Design"]
       - label: "Loadingweight"
         name: "loadingWeight"
