@@ -23,7 +23,9 @@ const Footer = () => {
         <div className="flex lg:w-48 w-1/2 flex-col justify-start flex-wrap ">
           <h5 className=" text-xs font-bold ">
             <Link href="/comparePage">
-              <a>{`Transporter`.toUpperCase()}</a>
+              <a className="visited:text-grey-dark">
+                {`Transporter`.toUpperCase()}
+              </a>
             </Link>
           </h5>
           <ul className=" flex flex-col justify-between items-start flex-wrap  my-4  text-black">
