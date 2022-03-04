@@ -4,6 +4,7 @@ import ButtonCompare from "../ResultList/ButtonCompare";
 const PrintPopUp = (props) => {
   let carItem = props.carItem;
   return (
+
     <div className="sticky md:mt-20 lg:z-10 lg:bottom-0 flex-1 h-24 lg:h-32 xl:h-36 bg-grey-light flex justify-end items-center print:hidden">
       <div className="flex-1 xl:flex-0.5 flex justify-between h-24 ">
         <div
@@ -36,6 +37,7 @@ const PrintPopUp = (props) => {
               ab {carItem?.price} €
             </p>
           </div>
+
         </div>
       </div>
     </div>

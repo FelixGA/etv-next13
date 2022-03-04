@@ -81,10 +81,12 @@ export default function activeCompareNew(props) {
         </button>
       </div>
       {/* KEYS AND ITEMS FOR COMPARE */}
+
       <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
         <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
 
         <ActiveCompareItem comparedCars={comparedCars} />
+
       </div>
       <div className="flex flex-1 justify-center py-8 ">
         <div

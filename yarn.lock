@@ -1041,11 +1041,13 @@
   "version" "12.1.0"
 
 "@next/eslint-plugin-next@12.1.0":
+
   "integrity" "sha512-WFiyvSM2G5cQmh32t/SiQuJ+I2O+FHVlK/RFw5b1565O2kEM/36EXncjt88Pa+X5oSc+1SS+tWxowWJd1lqI+g=="
   "resolved" "https://registry.npmjs.org/@next/eslint-plugin-next/-/eslint-plugin-next-12.1.0.tgz"
   "version" "12.1.0"
   dependencies:
     "glob" "7.1.7"
+
 
 "@next/swc-linux-x64-gnu@12.1.0":
   "integrity" "sha512-OKO4R/digvrVuweSw/uBM4nSdyzsBV5EwkUeeG4KVpkIZEe64ZwRpnFB65bC6hGwxIBnTv5NMSnJ+0K/WmG78A=="

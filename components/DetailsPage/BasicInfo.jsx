@@ -62,7 +62,7 @@ const BasicInfo = ({ carItem, descriptionSize }) => {
           >
             {carItem?.description}
           </p>
-          <span className="text-sm text-blue-dark">Alle Daten anzeigen</span>
+          {/* <span className="text-sm text-blue-dark">Alle Daten anzeigen</span> */}
         </div>
       </div>
     </div>

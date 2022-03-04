@@ -5,6 +5,7 @@ price: 19290
 description: bhkvmnxyfgdfl.h
 src: /images/aixam-pro-pritsche.jpg
 category: Pritsche
+typeClass: L7E
 loadingWeight:
   value: 327
   baseUnit: kg
@@ -81,6 +82,14 @@ loadingHeight:
   value: 750
   baseUnit: mm
   key: loading height
+loadingVolumeTotal:
+  value: bitte auffuellen
+  baseUnit: bitte auffuellen
+  key: bitte auffuellen
+loadingArea:
+  value: bitte auffuellen
+  baseUnit: bitte auffuellen
+  key: bitte auffuellen
 carSizes:
   width: width
   length: length

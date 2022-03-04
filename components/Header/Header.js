@@ -22,8 +22,10 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
+
     <div className="relative print:hidden ">
       <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-18 w-full 2xl:px-40">
+
         <Link href={`/`} passHref>
           <div className="flex flex-row pl-0 sm:pl-4 cursor-pointer">
             <div className="logo-container mt-2 w-20 ">
