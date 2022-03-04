@@ -7,6 +7,7 @@ import image5 from "../../public/images/aufbautype.png";
 import image from "../../public/images/reichweite.png";
 import image2 from "../../public/images/zuladung.png";
 import ButtonForAlleTransporter from "../Sliders/ButtonForAlleTransporter";
+import Router from "next/router";
 
 export default function Funnel({ getCars }) {
   const filtersData = [
@@ -146,7 +147,10 @@ export default function Funnel({ getCars }) {
     state.rangeLithiums.length > 0 ? setCurrentFilter(filtersData[2]) : null;
     state.loadingWeights.length > 0 ? setCurrentFilter(filtersData[3]) : null;
     state.prices.length > 0 ? setCurrentFilter("move to next") : null;
-  }, [state]);
+    if (currentFilter === "move to next") {
+      Router.push("/comparePage");
+    }
+  }, [state, currentFilter]);
 
   return (
     <div className="flex flex-col flex-1 ">

@@ -4,9 +4,6 @@ import { useState, useEffect } from "react";
 import getContent from "/utils/getContent";
 import ActiveCompareKeys from "../components/ActiveCompare/ActiveCompareKeys";
 import ActiveCompareItem from "../components/ActiveCompare/ActiveCompareItem";
-
-import ActiveCompareMaßeValues from "../components/ActiveCompare/ActiveCompareMaßeValues";
-import ActiveCompareMaßeKeys from "../components/ActiveCompare/ActiveCompareMaßeKeys";
 import ActiveCompareEquipmentKeysValues from "../components/ActiveCompare/ActiveCompareEquipmentKeysValues";
 import ActiveCompareMaßeKeysValues from "../components/ActiveCompare/ActiveCompareMaßeKeysValues";
 
@@ -81,23 +78,21 @@ export default function activeCompareNew(props) {
         </button>
       </div>
       {/* KEYS AND ITEMS FOR COMPARE */}
-
       <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
         <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
 
         <ActiveCompareItem comparedCars={comparedCars} />
-
       </div>
       <div className="flex flex-1 justify-center py-8 ">
         <div
           onClick={() => setToggle(true)}
-          className="mr-4 cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
+          className="text-lg mr-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
         >
-          <button className="">Ausstattung</button>
+          <button>Ausstattung</button>
         </div>
         <div
           onClick={() => setToggle(false)}
-          className="ml-4 cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
+          className="text-lg ml-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
         >
           <button>Masse</button>
         </div>

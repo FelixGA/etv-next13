@@ -15,7 +15,6 @@ export default function ActiveCompareItem({ comparedCars }) {
             /* key={index} */
           >
             {/* IMAGE + HEADING */}
-
             <div className="relative h-36 xl:h-72 ">
               <div className="lg:bg-grey-lighter absolute -z-10 inset-0 lg:h-64 xl:h-72"></div>
               <Link href={`/transporter/${item.name}`}>

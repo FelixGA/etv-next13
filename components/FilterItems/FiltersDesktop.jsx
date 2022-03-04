@@ -236,7 +236,7 @@ function FiltersDesktop({ getContent }) {
   ];
 
   return (
-    <div className="">
+    <div className=" xl:pl-2 2xl:pl-40">
       <div className="">
         {priceFilterData.map((item) => (
           <div className="relative bg-white" key={item.id}>
