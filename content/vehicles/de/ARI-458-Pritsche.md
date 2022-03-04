@@ -1,6 +1,6 @@
 ---
-title: ARI 458 Pritsche
-name: ARI 458 Pritsche
+title: ARI-458-Pritsche
+name: ARI-458-Pritsche
 price: 13700
 description: Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI
   Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen

@@ -7,7 +7,7 @@ const PrintPopUp = (props) => {
     <div className="sticky md:mt-20 lg:z-10 lg:bottom-0 flex-1 h-18 lg:h-32 bg-grey-light flex justify-evenly items-center print:hidden">
       <div
         id="BLUE-BUTTONS-SECTION"
-        className=" h-full flex justify-between items-center "
+        className=" h-full flex flex-col md:flex-row justify-between items-center "
       >
         <div className=" xs:mx-2  justify-center items-center">
           <button
@@ -25,7 +25,7 @@ const PrintPopUp = (props) => {
       </div>
       <div
         id="PRICE-ANFRAGEN-BUTTONS-SECTION"
-        className="  w-72 h-full flex items-center "
+        className="  w-72 h-full flex flex-col md:flex-row items-center "
       >
         <div className="flex justify-center items-center">
           <ButtonAnfragen />

@@ -1,6 +1,6 @@
 ---
-title: ARI 458 Pritsche
-name: ARI 458 Pritsche
+title: ARI-458-Pritsche
+name: ARI-458-Pritsche
 price: 13700
 src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
 category: Pritsche

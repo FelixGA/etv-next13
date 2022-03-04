@@ -10,7 +10,7 @@ content:
       genau für Ihre Ansprüche EN
     details: ✔ unabhängig ✔ schnell ✔ immer aktuell
   - name: compareBox
-    markdown: Reichweite, Preis, Nutzlast EN
+    markdown: Reichweite, Preis, Nutzlast
     details: |
       Beste Testberichte
   - name: eAutoAdvisor

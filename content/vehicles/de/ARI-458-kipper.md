@@ -1,6 +1,6 @@
 ---
-title: ARI 458 Kipper
-name: ARI 458 Kipper
+title: ARI-458-Kipper
+name: ARI-458-Kipper
 price: 16100
 description: >-
   Der ARI 458 Kipper bietet eine offene Ladefläche mit Seitenwänden, welche in
@@ -122,4 +122,5 @@ loadingVolume:
   length: Länge
   baseUnit: mm
 ---
+
 Der ARI 458 Kipper ist ein elektrischer Kleintransporter mit kippbarer Ladefläche und 80 km/h Höchstgeschwindigkeit.

@@ -1,6 +1,6 @@
 ---
-title: ARI 458 Koffer
-name: ARI 458 Koffer
+title: ARI-458-Koffer
+name: ARI-458-Koffer
 price: 14100
 src: /images/ari-458-koffer-3-.jpg
 category: Koffer
