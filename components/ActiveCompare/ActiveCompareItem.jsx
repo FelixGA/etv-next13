@@ -18,7 +18,7 @@ export default function ActiveCompareItem({ comparedCars }) {
             <div className="relative h-36 xl:h-72 ">
               <div className="lg:bg-grey-lighter absolute -z-10 inset-0 lg:h-64 xl:h-72"></div>
               <Link href={`/transporter/${item.name}`}>
-                <div className="relative md:top-2 lg:top-12 xl:top-10 2xl:top-4 px-1 md:px-2 xl:pl-8 cursor-pointer">
+                <div className="relative md:top-2 lg:top-12 xl:top-10 2xl:top-6 px-1 md:px-2 xl:pl-8 cursor-pointer">
                   <a>
                     <Image
                       className="rounded-md md:rounded-lg brightness-50 "
@@ -31,7 +31,7 @@ export default function ActiveCompareItem({ comparedCars }) {
                   </a>
 
                   <div className="lg:absolute lg:top-0 md:pl-4 h-10">
-                    <h3 className="text-blue-extra lg:text-white md:pt-2 font-bold text-sm lg:text-lg overflow-hidden">
+                    <h3 className="text-blue-extra lg:text-white md:pt-2 font-black text-sm lg:text-lg line-clamp-3">
                       {item.title}
                     </h3>
                   </div>

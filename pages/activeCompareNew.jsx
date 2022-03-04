@@ -4,16 +4,19 @@ import { useState, useEffect } from "react";
 import getContent from "/utils/getContent";
 import ActiveCompareKeys from "../components/ActiveCompare/ActiveCompareKeys";
 import ActiveCompareItem from "../components/ActiveCompare/ActiveCompareItem";
-import ActiveCompareEquipmentKeys from "../components/ActiveCompare/ActiveCompareEquipmentKeys";
-import ActiveCompareEquipmentValues from "../components/ActiveCompare/ActiveCompareEquipmentValues";
+
 import ActiveCompareMaßeValues from "../components/ActiveCompare/ActiveCompareMaßeValues";
 import ActiveCompareMaßeKeys from "../components/ActiveCompare/ActiveCompareMaßeKeys";
+import ActiveCompareEquipmentKeysValues from "../components/ActiveCompare/ActiveCompareEquipmentKeysValues";
+import ActiveCompareMaßeKeysValues from "../components/ActiveCompare/ActiveCompareMaßeKeysValues";
 
 export default function activeCompareNew(props) {
+  console.log("hi");
   const { state, dispatch } = useStore();
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getKeys, SetGetKeys] = useState([]);
-  const [toggleValues, setToggleValues] = useState(false);
+  const [toggle, setToggle] = useState(true);
+  console.log(toggle);
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
   /*  console.log(comparedCars); */
   useEffect(() => {
@@ -66,15 +69,10 @@ export default function activeCompareNew(props) {
         </h1>
       </div>
       {/* BACK BUTTON */}
-
       <div
-        className={
-          comparedCars.length > 1
-            ? "lg:w-64 xl:w-88 2xl:w-[380px] pl-4 block  "
-            : "hidden"
-        }
+        className={comparedCars.length > 1 ? "pl-4 block lg:hidden" : "hidden"}
       >
-        <button className="mb-12 text-sm bg-grey-lighter w-52 h-10 rounded-md text-blue-darker ">
+        <button className="mb-12 text-sm w-52 h-10 rounded-md text-blue-darker bg-grey-lighter">
           <Link href="/comparePage">
             <a className="visited:text-blue-darker">
               « zurück zur Ergebnisliste
@@ -89,26 +87,31 @@ export default function activeCompareNew(props) {
         <ActiveCompareItem comparedCars={comparedCars} />
       </div>
       <div className="flex flex-1 justify-center py-8 ">
-        <div className="mr-4 cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-dark text-white shrink-0 rounded-md">
-          <button className="" onClick={() => setToggleValues(true)}>
-            Ausstattung
-          </button>
+        <div
+          onClick={() => setToggle(true)}
+          className="mr-4 cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
+        >
+          <button className="">Ausstattung</button>
         </div>
-        <div className="ml-4 cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-dark text-white shrink-0 rounded-md">
-          <button onClick={() => setToggleValues(true)}>Masse</button>
+        <div
+          onClick={() => setToggle(false)}
+          className="ml-4 cursor-pointer border w-32 sm:w-48 h-10 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
+        >
+          <button>Masse</button>
         </div>
       </div>
       <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
-        {/*  <ActiveCompareEquipmentKeys
-          getKeys={getKeys}
-          comparedCars={comparedCars}
-        /> */}
-
-        <ActiveCompareMaßeKeys getKeys={getKeys} comparedCars={comparedCars} />
-
-        {/* <ActiveCompareEquipmentValues comparedCars={comparedCars} /> */}
-
-        <ActiveCompareMaßeValues comparedCars={comparedCars} />
+        {toggle ? (
+          <ActiveCompareEquipmentKeysValues
+            getKeys={getKeys}
+            comparedCars={comparedCars}
+          />
+        ) : (
+          <ActiveCompareMaßeKeysValues
+            getKeys={getKeys}
+            comparedCars={comparedCars}
+          />
+        )}
       </div>
     </div>
   );

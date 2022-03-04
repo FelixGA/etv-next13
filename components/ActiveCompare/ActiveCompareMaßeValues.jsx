@@ -55,7 +55,7 @@ export default function ActiveCompareMaßeValues({ comparedCars }) {
           <div
             className={
               comparedCars
-                ? " flex-1 lg:hidden pl-4 xl:pl-8 bg-[#D0DDEA] h-20 flex items-center"
+                ? " flex-1 pl-4 xl:pl-8 bg-[#D0DDEA] h-20 flex items-center"
                 : "hidden"
             }
           >
