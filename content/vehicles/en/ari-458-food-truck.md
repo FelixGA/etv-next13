@@ -58,7 +58,7 @@ seats:
   key: Seats
   value: 2
 rating:
-  value: "2"
+  value: 1,0
   key: Result
 guarantee:
   key: Guarantee vehicle

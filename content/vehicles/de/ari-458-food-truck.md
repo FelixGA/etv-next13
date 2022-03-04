@@ -66,8 +66,8 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Note
-  value: "2"
+  key: Sehr gut
+  value: 1,0
 guarantee:
   key: Garantie Fahrzeug
   value: 6
