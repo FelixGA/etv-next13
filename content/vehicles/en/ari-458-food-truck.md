@@ -2,6 +2,7 @@
 title: ARI 458 Food Truck
 name: ARI 458 Food Truck
 price: 19430
+description: ""
 src: /images/ari-458-food-truck-5-.jpg
 category: Kasten
 loadingWeight:
@@ -27,6 +28,7 @@ rangeLithium:
 chargingTime230V:
   value: 6
   key: Charge Time 230v-socket
+  baseUnit: bitte auffüllen
 chargingTimeLithium:
   key: Charge Time Type 2
   value: 6
@@ -69,6 +71,8 @@ availability:
   value: "-"
 subsidies:
   key: Subsidies
+  baseUnit: bitte auffüllen
+  value: 0
 batteryGuarantee:
   key: "Battery-Guarantee "
   value: 48

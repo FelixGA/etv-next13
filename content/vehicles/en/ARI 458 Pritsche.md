@@ -2,6 +2,7 @@
 title: ARI 458 Pritsche
 name: ARI 458 Pritsche
 price: 13700
+description: ""
 src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
 category: Pritsche
 typeClass: L7E
@@ -72,6 +73,7 @@ availability:
 subsidies:
   key: Subsidies
   baseUnit: Euro
+  value: 0
 batteryGuarantee:
   key: Battery Guarantee
   value: 48
@@ -79,6 +81,7 @@ batteryGuarantee:
 loadingHeight:
   value: 10
   baseUnit: cm
+  key: bitte auffüllen
 loadingVolumeTotal:
   value: 0,38
   baseUnit: m3

@@ -1,6 +1,8 @@
 ---
+title: ARI 458 truck
 name: ARI 458 Kipper
 price: 16100
+description: ""
 src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
 category: Kipper
 loadingWeight:
@@ -69,6 +71,8 @@ availability:
   value: 14-16 weeks
 subsidies:
   key: Subsidies
+  value: 0
+  baseUnit: bitte auffüllen
 batteryGuarantee:
   key: Battery Guarantee
   value: 48

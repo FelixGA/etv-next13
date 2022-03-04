@@ -2,6 +2,7 @@
 title: ARI 345 Food Truck
 name: ARI 345 Food Truck
 price: 12750
+description: ""
 src: /images/ari_345_food_truck_l_.png
 category: Kasten
 typeClass: L7E
@@ -21,15 +22,22 @@ range230V:
   key: Range SLA Battery
   value: 55
   baseUnit: km
+rangeLithium:
+  key: bitte auffüllen
+  value: 0
+  baseUnit: km
 chargingTime230V:
   key: Charge Time 230v-socket
   value: 5
+  baseUnit: bitte auffüllen
 chargingTimeLithium:
   key: Charge Time Type2 Cable
   value: 0
+  baseUnit: bitte auffüllen
 chargingTimeFast:
   key: Fast Charging
   value: 0
+  baseUnit: bitte auffüllen
 batteryCapacityBlei:
   key: Capacity SLA Battery
   value: 3,24
@@ -58,10 +66,14 @@ rating:
 guarantee:
   key: Guarantee Vehicle
   value: 6
+  baseUnit: bitte auffüllen
 availability:
   key: Availability
+  value: bitte auffüllen
 subsidies:
   key: Subsidies
+  baseUnit: bitte auffüllen
+  value: 0
 batteryGuarantee:
   key: Battery-Guarantee
   value: 0

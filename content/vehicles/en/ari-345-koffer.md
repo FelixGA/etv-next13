@@ -2,6 +2,7 @@
 title: ARI 345 Koffer
 name: ARI 345 Koffer
 price: 7395
+description: ""
 src: /images/dsc_0071.png
 category: Koffer
 loadingWeight:
@@ -27,12 +28,15 @@ rangeLithium:
 chargingTime230V:
   key: Charge Time 230v-socket
   value: 5
+  baseUnit: h
 chargingTimeLithium:
   key: Charge Time Type2 Cable
   value: 0
+  baseUnit: h
 chargingTimeFast:
   key: Fast Charging
   value: 0
+  baseUnit: h
 batteryCapacityBlei:
   key: Capacity SLA Battery
   value: 3,24
@@ -64,10 +68,15 @@ guarantee:
   baseUnit: Months
 availability:
   key: Availability
+  value: bitte auffüllen
 subsidies:
   key: Subsidies
+  baseUnit: bitte auffüllen
+  value: 0
 batteryGuarantee:
   key: Battery-Guarante
+  value: 0
+  baseUnit: bitte auffüllen
 loadingHeight:
   key: Loading Height
   value: 560

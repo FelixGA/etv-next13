@@ -30,11 +30,9 @@ chargingTime230V:
 chargingTimeLithium:
   value: 0
   key: Charge Time Type2 Cable
-  baseUnit: bitte auffüllen
 chargingTimeFast:
   key: Fast Charging
   value: 0
-  baseUnit: bitte auffüllen
 batteryCapacityBlei:
   value: 3,24
   baseUnit: " kwh"
@@ -66,15 +64,11 @@ guarantee:
   baseUnit: Months
 availability:
   key: Availability
-  value: bitte auffüllen
 subsidies:
   key: Subsidies
   value: 0
-  baseUnit: bitte auffüllen
 batteryGuarantee:
   key: Battery-Guarantee
-  baseUnit: bitte auffüllen
-  value: 0
 loadingHeight:
   key: Loading Height
   value: 560

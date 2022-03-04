@@ -1,108 +1,106 @@
 ---
-title: ARI 345 Pritsche
-name: ARI 345 Pritsche
-price: 6995
-src: /images/345-front-1-.jpg
+title: ARI 458 Food Truck
+name: ARI 458 Food Truck
+price: 19430
+src: /images/ari-458-food-truck-5-.jpg
+category: Kasten
 loadingWeight:
-  value: 325
+  value: 0
   baseUnit: kg
   key: Loading Weight
 curbweight:
   key: Curb Weight
-  value: 336
+  value: 1
   baseUnit: kg
 maxSpeed:
-  key: Maximum Speed
-  value: 45
+  value: 80
   baseUnit: km/h
+  key: Maximum Speed
 range230V:
-  value: 55
+  value: 120
   baseUnit: km
   key: Range SLA Battery
 rangeLithium:
-  value: 0
-  baseUnit: km
   key: Range Lithium Battery
+  value: 150
+  baseUnit: km
 chargingTime230V:
-  value: 5
+  value: 6
   key: Charge Time 230v-socket
-  baseUnit: h
 chargingTimeLithium:
-  value: 0
-  key: Charge Time Type2 Cable
-  baseUnit: bitte auffüllen
+  key: Charge Time Type 2
+  value: 6
+  baseUnit: h
 chargingTimeFast:
   key: Fast Charging
-  value: 0
-  baseUnit: bitte auffüllen
+  value: 2
+  baseUnit: h
 batteryCapacityBlei:
-  value: 3,24
-  baseUnit: " kwh"
+  value: "-"
+  baseUnit: " "
   key: Capacity SLA Battery
 batteryCapacityLithium:
-  value: "-"
-  baseUnit: kWh
   key: Capacity Lithium Battery
+  value: "10"
+  baseUnit: kwh
 batteryIncluded:
   key: Battery included
   value: yes
 consumption:
   key: Consumption
-  baseUnit: kWh
-  value: 5,6
+  baseUnit: kwh
+  value: 7,5
 power:
   key: Power
-  value: min-3/max-3
+  value: 7,5
   baseUnit: kw
 seats:
-  value: 1
   key: Seats
+  value: 2
 rating:
-  value: 2,0
-  key: Good
+  value: 1,0
+  key: Result
 guarantee:
-  key: Guarantee Vehicle
+  key: Guarantee vehicle
   value: 6
   baseUnit: Months
 availability:
   key: Availability
-  value: bitte auffüllen
+  value: "-"
 subsidies:
   key: Subsidies
-  value: 0
-  baseUnit: bitte auffüllen
 batteryGuarantee:
-  key: Battery-Guarantee
-  baseUnit: bitte auffüllen
-  value: 0
+  key: "Battery-Guarantee "
+  value: 48
+  baseUnit: Months
 loadingHeight:
   key: Loading Height
-  value: 560
-  baseUnit: mm
+  value: 1
+  baseUnit: cm
 loadingVolumeTotal:
-  value: 0,36
+  value: 2,15
   baseUnit: m3
   key: Loading Volume
 loadingArea:
   key: Loading Area
-  value: 1,43
+  value: 1,72
   baseUnit: m2
 carSizes:
   width: Width
   length: Length
   height: Height
   wheelbase: Wheelbase
-  valuewidth: 1160
-  baseUnit: mm
-  valuelength: 2820
-  valueheight: 1600
-  valuewheelbase: 1850
+  valuewidth: 1300
+  baseUnit: cm
+  valuelength: 3150
+  valueheight: 1685
+  valuewheelbase: 2300
   key: Car Sizes
 loadingVolume:
-  valueheight: 250
-  valuewidth: 1160
-  valuelength: 1230
-  baseUnit: mm
+  valueheight: 1250
+  valuewidth: 1300
+  valuelength: 1320
+  baseUnit: cm
   key: Loading Area Sizes
   height: Height
   width: Width
