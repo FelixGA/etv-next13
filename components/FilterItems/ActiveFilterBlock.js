@@ -26,14 +26,14 @@ function ActiveFilterBlock({ getContent }) {
       </div>
 
       {/* HEADING + SORTING */}
-      <div className="flex justify-between">
+      <div className="flex justify-between 2xl:pr-40">
         <div className={showAll ? "w-full " : "flex items-center flex-1 "}>
           <h1 className="pl-4 text-2xl md:text-3xl text-blue-extra py-4">
             {getContent.title}
           </h1>
         </div>
         <div
-          className="hidden md:flex right-2 cursor-pointer justify-between items-end"
+          className="hidden md:flex right-2 cursor-pointer justify-between items-end "
           onClick={() => {
             setClicked(!clicked);
           }}
