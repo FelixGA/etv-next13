@@ -34,8 +34,8 @@ function CarCard(props) {
 
   return (
     <div className="shadow-lg mb-4 lg:shadow-none border-t lg:border-2 lg:border-grey-lighter lg:rounded-xl overflow-hidden">
-      <div className="flex">
-        <div className="flex-1  ">
+      <div className="flex h-80 lg:h-60">
+        <div className="flex-1 ">
           <Link href={`/transporter/${carItem.name}`}>
             <a>
               <h3 className="title text-xl font-bold text-black-darkest py-2 lg:hidden pl-2">
@@ -45,10 +45,10 @@ function CarCard(props) {
           </Link>
 
           <Link href={`/transporter/${carItem.name}`} passHref>
-            <a className="block w-36 sm:w-64 md:w-80 h-52">
+            <a className="block w-36 sm:w-64 md:w-80 h-52 ">
               {carItem?.src && (
                 <Image
-                  className=""
+                  className="rounded-l"
                   src={
                     carItem.src
                   } /* "https://aixam.de/wp-content/uploads/2019/01/aixam-pro-pritsche.jpg" */
@@ -83,7 +83,7 @@ function CarCard(props) {
           </div>
           {/* MOBILE RATING BOX end*/}
           {/* BUTTONS start */}
-          <div className="flex-1 flex justify-evenly flex-col ">
+          <div className="flex-1 flex justify-center flex-col">
             <ButtonAnfragen />
             <ButtonCompare carItem={carItem} />
           </div>

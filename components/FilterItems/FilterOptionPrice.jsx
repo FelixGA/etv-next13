@@ -67,7 +67,7 @@ function FilterOptionPrice() {
 
         <label
           forhtml="preis"
-          className="inline-flex items-center cursor-pointer pl-5 font-thin text-lg text-[#2C3F53]"
+          className="inline-flex items-center cursor-pointer pl-5 font-thin text-lg text-blue-extra"
         >
           {item.value}
         </label>

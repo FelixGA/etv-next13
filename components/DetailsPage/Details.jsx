@@ -1,6 +1,6 @@
 const Details = ({ details }) => {
   return (
-    <section className=" text-[#2C3F53] ">
+    <section className=" text-blue-extra ">
       <h3 className="text-black-darkest font-bold pt-8 pb-4">Details</h3>
       {details?.map((item, index) => (
         <div
