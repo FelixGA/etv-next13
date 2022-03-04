@@ -1,14 +1,19 @@
 ---
-title: Evum-aCar-Pritsche
-name: Evum-aCar-Pritsche
-price: 33080
+title: beispiel
+name: beispiel
+price: 80000
 description: >-
-  
+  Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des
+  Produktionsstarts durch die Corona-Krise, ist das Evum A -Car nun seit Juni
+  2020 auf dem Markt. Ursprünglich wurde der kräftige Elektrotransporter für
+  Entwicklungs- und Schwellenländern entwickelt, wo er in der Landwirtschaft und
+  der Industrie zum Einsatz kommen sollte. Während der Entstehungsphase wurde
+  aber klar, dass das Fahrzeug auch für den europäischen Markt attraktiv sein
+  könnte.
 
 
-
-  Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A -Car nun seit Juni 2020 auf dem Markt. Ursprünglich wurde der kräftige Elektrotransporter für Entwicklungs- und Schwellenländern entwickelt, wo er in der Landwirtschaft und der Industrie zum Einsatz kommen sollte. Während der Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen Markt attraktiv sein könnte.
-src: /images/Evum-Acar-Front-1024x683.jpg
+  VOM Evum-aCar-Truck kopiert
+src: /images/X.png
 category: Pritsche
 typeClass: L7E
 loadingWeight:
@@ -72,29 +77,29 @@ guarantee:
   key: Garantie Fahrzeug
   value: 0
   baseUnit: keine Angabe
+availability:
+  key: Verfügbarkeit
+  value: keine Angabe
 subsidies:
   key: Förderungsmöglichkeiten
+  value: 0
+  baseUnit: keine Angabe
+batteryGuarantee:
+  key: Batterie-Garantie
   value: 0
   baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
   value: 895
   baseUnit: mm
-loadingArea:
-  key: Ladefläche
-  value: "234234"
-  baseUnit: m2
 loadingVolumeTotal:
   key: losdf
   value: "234"
   baseUnit: m3
-availability:
-  key: Verfügbarkeit
-  value: keine Angabe
-batteryGuarantee:
-  key: Batterie-Garantie
-  value: 0
-  baseUnit: keine Angabe
+loadingArea:
+  key: Ladefläche
+  value: "234234"
+  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge

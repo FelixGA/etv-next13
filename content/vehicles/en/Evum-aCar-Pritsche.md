@@ -12,7 +12,7 @@ src: /images/Evum-Acar-Front-1024x683.jpg
 category: Pritsche
 typeClass: L7E
 loadingWeight:
-  key: payload
+  key: Payload
   value: 1200
   baseUnit: kg
 curbweight:
@@ -72,29 +72,29 @@ guarantee:
   key: Car guarantee
   value: 0
   baseUnit: keine Angabe
-availability:
-  key: no information
-  value: no info
 subsidies:
   key: subsidies
-  value: 0
-  baseUnit: no info
-batteryGuarantee:
-  key: battery guarantee
   value: 0
   baseUnit: no info
 loadingHeight:
   key: loading height
   value: 895
   baseUnit: mm
-loadingVolumeTotal:
-  value: "234"
-  baseUnit: m3
-  key: LoadingVolume
 loadingArea:
   value: "234234"
   baseUnit: m2
   key: LadeflächeEnglish
+loadingVolumeTotal:
+  value: "234"
+  baseUnit: m3
+  key: LoadingVolume
+availability:
+  key: no information
+  value: no info
+batteryGuarantee:
+  key: battery guarantee
+  value: 0
+  baseUnit: no info
 carSizes:
   width: width
   length: length

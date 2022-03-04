@@ -1,39 +1,42 @@
 ---
-title: ARI 458 Pritsche
-name: ARI 458 Pritsche
-price: 13700
-description: Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI
-  Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen
-  Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
-src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
-category: Pritsche
+title: ARI 458 Food Truck
+name: ARI 458 Food Truck
+price: 19430
+description: Der ARI 458 Food Truck ist ein elektrisches Gastro-Fahrzeug von ARI
+  Motors. Er bietet eine umweltfreundliche und individuell gestaltbare
+  Transportlösung für Gastro-Unternehmer. Der günstige Preis des Food Trucks
+  eröffnet auch Neueinsteigern die Chance, mit überschaubarem Startkapital den
+  Sprung ins Gastro-Gewerbe zu schaffen und sich von Anfang an nachhaltig
+  aufzustellen.
+src: /images/ari-458-food-truck-5-.jpg
+category: Kasten
 typeClass: L7E
 loadingWeight:
   key: Nutzlast
-  value: 531
+  value: 1
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 604
+  value: 1
   baseUnit: kg
 maxSpeed:
   key: km/h
-  value: 78
+  value: 80
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 120
   baseUnit: km
 rangeLithium:
-  key: Reichweite Lithium Akku
+  key: Reichweite Lithium-Akku
   value: 150
   baseUnit: km
 chargingTime230V:
-  key: Ladezeit 230-V
+  key: Ladezeit 230-V-Steckdose
   value: 6
   baseUnit: h
 chargingTimeLithium:
-  key: Ladezeit Typ 2 Ladekabel
+  key: Ladezeit Typ 2
   value: 6
   baseUnit: h
 chargingTimeFast:
@@ -45,7 +48,7 @@ batteryCapacityBlei:
   baseUnit: " "
   value: "-"
 batteryCapacityLithium:
-  key: Kapazität Lithium Akku
+  key: Kapazität Lithium-Akku
   value: "10"
   baseUnit: kwh
 batteryIncluded:
@@ -63,7 +66,7 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
+  key: Note
   value: "2"
 guarantee:
   key: Garantie Fahrzeug
@@ -71,7 +74,7 @@ guarantee:
   baseUnit: Monate
 availability:
   key: Verfügbarkeit
-  value: 14-16 Wochen
+  value: "-"
 subsidies:
   key: Förderhöhe
   baseUnit: Euro
@@ -82,15 +85,15 @@ batteryGuarantee:
   baseUnit: Monate
 loadingHeight:
   key: Ladehöhe
-  value: 10
+  value: 1
   baseUnit: cm
 loadingVolumeTotal:
   key: Ladevolumen
   baseUnit: m3
-  value: 0,38
+  value: 2,15
 loadingArea:
   key: Ladefläche
-  value: "235"
+  value: 1,72
   baseUnit: m2
 carSizes:
   width: Breite
@@ -100,18 +103,17 @@ carSizes:
   valuewidth: 1300
   baseUnit: cm
   valuelength: 3150
-  valueheight: 1600
+  valueheight: 1685
   valuewheelbase: 2300
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 250
+  valueheight: 1250
   width: Breite
-  valuewidth: 1160
+  valuewidth: 1300
   length: Länge
   valuelength: 1320
-  baseUnit: mm
+  baseUnit: cm
 ---
-
-Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
+Der ARI 458 Food Truck ist ein elektrischer Kleintransporter mit Gastro-Aufbau. Er kann  individuell gestaltet und an verschiedene Gastrokonzepte angepasst werden.
