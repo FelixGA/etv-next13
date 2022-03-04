@@ -2,7 +2,7 @@ const Basics = ({ basics, carItem }) => {
   return (
     <section className="w-full lg:w-1/2 lg:px-2">
       <h3 className="text-black-darkest font-bold pt-8 pb-4">Grundlagen</h3>
-      <div className="flex flex-col w-full text-[#2C3F53] lg:pr-6">
+      <div className="flex flex-col w-full text-blue-extra lg:pr-6">
         <div
           className="
                  flex flex-row w-full bg-grey-lighter "

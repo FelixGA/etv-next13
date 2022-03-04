@@ -20,12 +20,14 @@ const variants = {
 };
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
-  // dd
+
   return (
-    <div className="relative print:hidden">
-      <div className=" sticky top-0 z-30 bg-blue-darker flex justify-between items-center h-18 ">
+
+    <div className="relative print:hidden ">
+      <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-18 w-full 2xl:px-40">
+
         <Link href={`/`} passHref>
-          <div className="flex flex-row pl-0 sm:pl-4 xl:ml-40 cursor-pointer">
+          <div className="flex flex-row pl-0 sm:pl-4 cursor-pointer">
             <div className="logo-container mt-2 w-20 ">
               <Image
                 src="/images/etv-logo-final-white.png"
@@ -63,7 +65,7 @@ const Header = () => {
           )}
         </AnimatePresence>
         {/* BUTTON */}
-        <div className="mr-20 lg:mr-8 xl:mr-40 ">
+        <div className="pr-18 lg:pr-4">
           <div className="bg-yellow-light hover:bg-orange-lighter text-grey-darker font-bold flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer">
             <div className="w-6 xs:w-8 pl-2 ">
               <Image

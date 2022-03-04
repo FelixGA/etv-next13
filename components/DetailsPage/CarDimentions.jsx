@@ -13,7 +13,7 @@ const CarDimentions = ({ vehichleDimentions, carItem }) => {
   return (
     <section className="w-full lg:w-1/2 lg:px-2 lg:pl-6 ">
       <h3 className="text-black-darkest font-bold pt-8 pb-4">Fahrzeug Maße </h3>
-      <div className="flex flex-col w-full text-[#2C3F53] ">
+      <div className="flex flex-col w-full text-blue-extra ">
         {vehichleDimentions?.map((item, index) => (
           <div
             key={index}

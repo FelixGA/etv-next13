@@ -82,7 +82,7 @@ function FilterItemDesktop({ item }) {
             initial="enter"
             animate="center"
             exit="exit"
-            transition={{ type: "tween", duration: 0.2 }}
+            transition={{ type: "tween", duration: 0.1 }}
             className="flex flex-col ml-8 -z-50"
           >
             {/* RENDERING THE FOUR RANGES */}
@@ -110,7 +110,7 @@ function FilterItemDesktop({ item }) {
                 ></FilterCheckbox>
                 <label
                   forhtml={checkbox.name}
-                  className="inline-flex items-center  pl-5 text-lg text-[#2C3F53] "
+                  className="inline-flex items-center  pl-5 text-lg text-blue-extra "
                 >
                   {checkbox.name}
                 </label>

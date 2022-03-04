@@ -86,7 +86,7 @@ function FilterItemMobile({ item }) {
               initial="enter"
               animate="center"
               exit="exit"
-              transition={{ type: "Inertia", duration: 0.2 }}
+              transition={{ type: "Inertia", duration: 0.1 }}
             >
               {item.options.map((checkbox, index) => (
                 <div
@@ -112,7 +112,7 @@ function FilterItemMobile({ item }) {
                   ></FilterCheckboxMobile>
                   <label
                     forhtml="categories"
-                    className="inline-flex items-center cursor-pointer pl-5 # font-thin text-lg text-[#2C3F53]"
+                    className="inline-flex items-center cursor-pointer pl-5 # font-thin text-lg text-blue-extra"
                   >
                     {checkbox.name}
                   </label>
