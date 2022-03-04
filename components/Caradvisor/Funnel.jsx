@@ -132,7 +132,7 @@ export default function Funnel({ getCars }) {
       <div>
         {currentFilter !== "move to next" ? (
           <h2 className="text-center text-3xl text-black-dark font-bold my-8">
-            frage nach {currentFilter.title}
+            {currentFilter.title}
           </h2>
         ) : (
           <Link href="/comparePage">
