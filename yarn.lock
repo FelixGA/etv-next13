@@ -1041,10 +1041,12 @@
   "version" "12.1.0"
 
 "@next/eslint-plugin-next@12.1.0":
+
   "integrity" "sha512-WFiyvSM2G5cQmh32t/SiQuJ+I2O+FHVlK/RFw5b1565O2kEM/36EXncjt88Pa+X5oSc+1SS+tWxowWJd1lqI+g=="
   "resolved" "https://registry.npmjs.org/@next/eslint-plugin-next/-/eslint-plugin-next-12.1.0.tgz"
   "version" "12.1.0"
   dependencies:
+<<<<<<< HEAD
 <<<<<<< HEAD
     "glob" "7.1.7"
 =======
@@ -1085,6 +1087,10 @@
   resolved "https://registry.yarnpkg.com/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-12.1.0.tgz#b445f767569cdc2dddee785ca495e1a88c025566"
   integrity sha512-hB8cLSt4GdmOpcwRe2UzI5UWn6HHO/vLkr5OTuNvCJ5xGDwpPXelVkYW/0+C3g5axbDW2Tym4S+MQCkkH9QfWA==
 >>>>>>> 2b3f0687b8385bc1259bed13d8004edb9ef87718
+=======
+    "glob" "7.1.7"
+
+>>>>>>> 866650c9b81fb6f55f1a7365c0cdb8c42fb3828f
 
 "@next/swc-linux-x64-gnu@12.1.0":
   "integrity" "sha512-OKO4R/digvrVuweSw/uBM4nSdyzsBV5EwkUeeG4KVpkIZEe64ZwRpnFB65bC6hGwxIBnTv5NMSnJ+0K/WmG78A=="
