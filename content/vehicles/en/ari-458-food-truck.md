@@ -1,40 +1,40 @@
 ---
-title: ARI 458 Koffer
-name: ARI 458 Koffer
-price: 14100
+title: ARI 458 Food Truck
+name: ARI 458 Food Truck
+price: 19430
 description: ""
-src: /images/ari-458-koffer-3-.jpg
-category: Koffer
+src: /images/ari-458-food-truck-5-.jpg
+category: Kasten
 loadingWeight:
-  key: Loading Weight
-  value: 531
+  value: 0
   baseUnit: kg
+  key: Loading Weight
 curbweight:
   key: Curb Weight
-  value: 604
+  value: 1
   baseUnit: kg
 maxSpeed:
   value: 80
   baseUnit: km/h
   key: Maximum Speed
 range230V:
-  key: Range SLA Battery
   value: 120
-  baseUnit: " km"
+  baseUnit: km
+  key: Range SLA Battery
 rangeLithium:
+  key: Range Lithium Battery
   value: 150
   baseUnit: km
-  key: Range Lithium Battery
 chargingTime230V:
-  key: Charge Time 230-V-socket
   value: 6
-  baseUnit: h
+  key: Charge Time 230v-socket
+  baseUnit: bitte auffüllen
 chargingTimeLithium:
+  key: Charge Time Type 2
   value: 6
-  key: Type 2 charging cable
   baseUnit: h
 chargingTimeFast:
-  key: Fast charging
+  key: Fast Charging
   value: 2
   baseUnit: h
 batteryCapacityBlei:
@@ -42,25 +42,25 @@ batteryCapacityBlei:
   baseUnit: " "
   key: Capacity SLA Battery
 batteryCapacityLithium:
-  value: "10"
-  baseUnit: kWh
   key: Capacity Lithium Battery
+  value: "10"
+  baseUnit: kwh
 batteryIncluded:
   key: Battery included
   value: yes
 consumption:
   key: Consumption
-  baseUnit: kWh
+  baseUnit: kwh
   value: 7,5
 power:
   key: Power
-  value: min-7,5/max-7,5
+  value: 7,5
   baseUnit: kw
 seats:
   key: Seats
   value: 2
 rating:
-  value: 2,0
+  value: 1,0
   key: Result
 guarantee:
   key: Guarantee vehicle
@@ -68,43 +68,43 @@ guarantee:
   baseUnit: Months
 availability:
   key: Availability
-  value: 14-16 weeks
+  value: "-"
 subsidies:
   key: Subsidies
   baseUnit: bitte auffüllen
   value: 0
 batteryGuarantee:
-  key: Battery Guarantee
+  key: "Battery-Guarantee "
   value: 48
   baseUnit: Months
 loadingHeight:
   key: Loading Height
-  value: 680
-  baseUnit: mm
+  value: 1
+  baseUnit: cm
 loadingVolumeTotal:
-  value: 1,49
+  value: 2,15
   baseUnit: m3
   key: Loading Volume
 loadingArea:
-  value: 1,57
-  baseUnit: m2
   key: Loading Area
+  value: 1,72
+  baseUnit: m2
 carSizes:
   width: Width
   length: Length
   height: Height
   wheelbase: Wheelbase
   valuewidth: 1300
-  baseUnit: mm
+  baseUnit: cm
   valuelength: 3150
   valueheight: 1685
   valuewheelbase: 2300
-  key: Car-Sizes
+  key: Car Sizes
 loadingVolume:
-  valueheight: 950
-  valuewidth: 1190
+  valueheight: 1250
+  valuewidth: 1300
   valuelength: 1320
-  baseUnit: mm
+  baseUnit: cm
   key: Loading Area Sizes
   height: Height
   width: Width

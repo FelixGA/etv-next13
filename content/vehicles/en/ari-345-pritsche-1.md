@@ -1,111 +1,112 @@
 ---
-title: ARI 458 Koffer
-name: ARI 458 Koffer
-price: 14100
+title: ARI 345 Food Truck
+name: ARI 345 Food Truck
+price: 12750
 description: ""
-src: /images/ari-458-koffer-3-.jpg
-category: Koffer
+src: /images/ari_345_food_truck_l_.png
+category: Kasten
+typeClass: L7E
 loadingWeight:
   key: Loading Weight
-  value: 531
+  value: 325
   baseUnit: kg
 curbweight:
   key: Curb Weight
-  value: 604
+  value: 336
   baseUnit: kg
 maxSpeed:
-  value: 80
-  baseUnit: km/h
   key: Maximum Speed
+  value: 45
+  baseUnit: km/h
 range230V:
   key: Range SLA Battery
-  value: 120
-  baseUnit: " km"
-rangeLithium:
-  value: 150
+  value: 55
   baseUnit: km
-  key: Range Lithium Battery
+rangeLithium:
+  key: bitte auffüllen
+  value: 0
+  baseUnit: km
 chargingTime230V:
-  key: Charge Time 230-V-socket
-  value: 6
-  baseUnit: h
+  key: Charge Time 230v-socket
+  value: 5
+  baseUnit: bitte auffüllen
 chargingTimeLithium:
-  value: 6
-  key: Type 2 charging cable
-  baseUnit: h
+  key: Charge Time Type2 Cable
+  value: 0
+  baseUnit: bitte auffüllen
 chargingTimeFast:
-  key: Fast charging
-  value: 2
-  baseUnit: h
+  key: Fast Charging
+  value: 0
+  baseUnit: bitte auffüllen
 batteryCapacityBlei:
-  value: "-"
-  baseUnit: " "
   key: Capacity SLA Battery
+  value: 3,24
+  baseUnit: " kwh"
 batteryCapacityLithium:
-  value: "10"
-  baseUnit: kWh
   key: Capacity Lithium Battery
+  value: "-"
+  baseUnit: kWh
 batteryIncluded:
   key: Battery included
   value: yes
 consumption:
   key: Consumption
   baseUnit: kWh
-  value: 7,5
+  value: 5,6
 power:
   key: Power
-  value: min-7,5/max-7,5
+  value: min-0/max-3
   baseUnit: kw
 seats:
   key: Seats
-  value: 2
+  value: 1
 rating:
-  value: 2,0
-  key: Result
+  key: Good
+  value: 1,0
 guarantee:
-  key: Guarantee vehicle
+  key: Guarantee Vehicle
   value: 6
-  baseUnit: Months
+  baseUnit: bitte auffüllen
 availability:
   key: Availability
-  value: 14-16 weeks
+  value: bitte auffüllen
 subsidies:
   key: Subsidies
   baseUnit: bitte auffüllen
   value: 0
 batteryGuarantee:
-  key: Battery Guarantee
-  value: 48
+  key: Battery-Guarantee
+  value: 0
   baseUnit: Months
 loadingHeight:
   key: Loading Height
-  value: 680
+  value: 560
   baseUnit: mm
 loadingVolumeTotal:
-  value: 1,49
-  baseUnit: m3
   key: Loading Volume
+  value: 2,15
+  baseUnit: m3
 loadingArea:
-  value: 1,57
-  baseUnit: m2
   key: Loading Area
+  value: 1,72
+  baseUnit: m2
 carSizes:
   width: Width
   length: Length
   height: Height
   wheelbase: Wheelbase
-  valuewidth: 1300
+  valuewidth: 1160
   baseUnit: mm
-  valuelength: 3150
-  valueheight: 1685
-  valuewheelbase: 2300
-  key: Car-Sizes
+  valuelength: 2820
+  valueheight: 1600
+  valuewheelbase: 1850
+  key: Car Sizes
 loadingVolume:
-  valueheight: 950
-  valuewidth: 1190
+  key: Loading Area Sizes
+  valueheight: 1250
+  valuewidth: 1300
   valuelength: 1320
   baseUnit: mm
-  key: Loading Area Sizes
   height: Height
   width: Width
   length: Length

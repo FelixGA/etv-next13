@@ -1,19 +1,21 @@
 ---
-title: ARI 458 Koffer
-name: ARI 458 Koffer
-price: 14100
+title: ARI 458 Kipper
+name: ARI 458 Kipper
+price: 16100
 description: >-
-  Der ARI 458 mit Kofferaufbau ist besonders für Lieferdienste und
-  Lastentransporte sehr gut geeignet. Der Kunde hat hier die Wahl zwischen den
-  drei Größen, welche ein Ladevolumen von 1.444 Liter (Basisversion), 2.131
-  Liter („L“) sowie 2.789 Liter beim „XL“-Modell besitzen. Der Kofferraum ist
-  ohne Einschränkungen in Form von Radkästen nutzbar und hat eine Höhe von 95
-  Zentimeter bis 1,30 Meter.
+  Der ARI 458 Kipper bietet eine offene Ladefläche mit Seitenwänden, welche in
+  den beiden Größen jeweils 1,56 m² bzw. 1,86 m² beträgt. Für die Sicherung der
+  Ladung sind zudem Verzurr-Ösen sowie eine stabile Plane für das
+  Pritschen-Modell verfügbar. Wie der Name schon sagt, ist die Ladefläche beim
+  Kipper natürlich kippbar, um auf Baustellen benötigte Materialien ohne
+  menschlichen Kraftaufwand zielgenau abzuladen. Dies kann mechanisch über ein
+  hydraulisches Hebel-System sowie elektrisch erfolgen und ist in bis zu drei
+  Richtungen möglich.
 
 
-  Weiterhin können verschiedene Wege der Beladung gewählt werden. So kann der Koffer mit zwei Flügeltüren am Heck geordert werden, welche es mit verschiedenen Verschluss-Systemen gibt, um zum Beispiel für Lieferdienste ein einfaches Öffnen mit einer Hand möglich zu machen. Alternativ gibt es auch eine „Rolltor“-Variante, bei der die Heckklappe nach oben eingerollt wird. Für das mehrseitige Beladen der Box sind Seitentüren verfügbar, welche gerade im Falle von kleinteiliger Ladung von Vorteil sind.
-src: /images/ari-458-koffer-3-.jpg
-category: Koffer
+  Die Nutzlast des ARI 458 Kipper liegt bei rund 530 Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450 Kilogramm möglich.
+src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
+category: Kipper
 typeClass: L7E
 loadingWeight:
   key: Nutzlast
@@ -21,7 +23,7 @@ loadingWeight:
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 604
+  value: 1500
   baseUnit: kg
 maxSpeed:
   key: km/h
@@ -40,9 +42,9 @@ chargingTime230V:
   value: 6
   baseUnit: h
 chargingTimeLithium:
-  key: Ladezeit Typ 2 Ladekabel
+  key: Ladezeit Typ2-Kabel
   value: 6
-  baseUnit: St.
+  baseUnit: h
 chargingTimeFast:
   key: Schnellladung
   value: 2
@@ -60,7 +62,7 @@ batteryIncluded:
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "7,5 "
+  value: 7,5
   baseUnit: kWh
 power:
   key: Leistung
@@ -80,7 +82,7 @@ availability:
   key: Verfügbarkeit
   value: 14-16 Wochen
 subsidies:
-  key: Förderungsmöglichkeiten
+  key: Förderhöhe
   value: 0
   baseUnit: keine Angabe
 batteryGuarantee:
@@ -89,15 +91,15 @@ batteryGuarantee:
   baseUnit: Monate
 loadingHeight:
   key: Ladehöhe
-  value: 680
-  baseUnit: mm
+  value: 71
+  baseUnit: cm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 1,49
+  value: 0,44
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 1,57
+  value: 1,75
   baseUnit: m2
 carSizes:
   width: Breite
@@ -109,15 +111,15 @@ carSizes:
   valuelength: 3150
   valueheight: 1685
   valuewheelbase: 2300
-  key: Fahrzeugmaße
+  key: Fahrzeug-Maße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 950
+  valueheight: 250
   width: Breite
-  valuewidth: 1190
-  valuelength: 1320
+  valuewidth: 1250
+  valuelength: 1400
   length: Länge
   baseUnit: mm
 ---
-Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI Motors mit 80 km/h Höchstgeschwindigkeit.
+Der ARI 458 Kipper ist ein elektrischer Kleintransporter mit kippbarer Ladefläche und 80 km/h Höchstgeschwindigkeit.

@@ -1,37 +1,35 @@
 ---
-title: ARI 458 Koffer
-name: ARI 458 Koffer
-price: 14100
-description: ""
-src: /images/ari-458-koffer-3-.jpg
-category: Koffer
+name: ARI 458 Kipper
+price: 16100
+src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
+category: Kipper
 loadingWeight:
   key: Loading Weight
   value: 531
   baseUnit: kg
 curbweight:
   key: Curb Weight
-  value: 604
+  value: 1500
   baseUnit: kg
 maxSpeed:
+  key: Maximum Speed
   value: 80
   baseUnit: km/h
-  key: Maximum Speed
 range230V:
-  key: Range SLA Battery
   value: 120
   baseUnit: " km"
+  key: Range SLA Battery
 rangeLithium:
   value: 150
   baseUnit: km
   key: Range Lithium Battery
 chargingTime230V:
-  key: Charge Time 230-V-socket
   value: 6
+  key: Charge Time 230v socket
   baseUnit: h
 chargingTimeLithium:
   value: 6
-  key: Type 2 charging cable
+  key: "Charge Time type2 "
   baseUnit: h
 chargingTimeFast:
   key: Fast charging
@@ -67,28 +65,26 @@ guarantee:
   value: 6
   baseUnit: Months
 availability:
-  key: Availability
+  key: Availibility
   value: 14-16 weeks
 subsidies:
   key: Subsidies
-  baseUnit: bitte auffüllen
-  value: 0
 batteryGuarantee:
   key: Battery Guarantee
   value: 48
   baseUnit: Months
 loadingHeight:
   key: Loading Height
-  value: 680
-  baseUnit: mm
+  value: 71
+  baseUnit: cm
 loadingVolumeTotal:
-  value: 1,49
+  value: 0,44
   baseUnit: m3
   key: Loading Volume
 loadingArea:
-  value: 1,57
+  key: "Loading Area "
+  value: 1,75
   baseUnit: m2
-  key: Loading Area
 carSizes:
   width: Width
   length: Length
@@ -99,11 +95,11 @@ carSizes:
   valuelength: 3150
   valueheight: 1685
   valuewheelbase: 2300
-  key: Car-Sizes
+  key: Car Sizes
 loadingVolume:
-  valueheight: 950
-  valuewidth: 1190
-  valuelength: 1320
+  valueheight: 250
+  valuewidth: 1250
+  valuelength: 1400
   baseUnit: mm
   key: Loading Area Sizes
   height: Height

@@ -2,7 +2,6 @@
 title: ARI 458 Koffer
 name: ARI 458 Koffer
 price: 14100
-description: ""
 src: /images/ari-458-koffer-3-.jpg
 category: Koffer
 loadingWeight:
@@ -71,8 +70,6 @@ availability:
   value: 14-16 weeks
 subsidies:
   key: Subsidies
-  baseUnit: bitte auffüllen
-  value: 0
 batteryGuarantee:
   key: Battery Guarantee
   value: 48
