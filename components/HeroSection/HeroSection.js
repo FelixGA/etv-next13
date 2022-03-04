@@ -6,7 +6,7 @@ import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote";
 
 //import filtersData from "../filtersData.json";
-
+//
 const HeroSection = ({ getContent, getMarkdownContext }) => {
   const { state, dispatch } = useStore();
 
