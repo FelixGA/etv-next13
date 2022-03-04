@@ -5,7 +5,7 @@ price: 19430
 src: /images/ari-458-food-truck-5-.jpg
 category: Kasten
 loadingWeight:
-  value: 1
+  value: 0
   baseUnit: kg
   key: Loading Weight
 curbweight:
