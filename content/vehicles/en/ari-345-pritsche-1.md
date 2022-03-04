@@ -1,5 +1,6 @@
 ---
 title: ARI 345 Food Truck
+name: ARI 345 Food Truck
 price: 12750
 src: /images/ari_345_food_truck_l_.png
 category: Kasten

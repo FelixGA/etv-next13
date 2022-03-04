@@ -1,6 +1,6 @@
 ---
 title: ARI 345 Food Truck
-name: ARI 345 Pritsche
+name: ARI 345 Food Truck
 price: 12750
 description: Der ARI 345 Food Truck hat alles am Start, was Gastronomen und
   Caterer brauchen, um Ihr Gastro-Unternehmen nachhaltig ins Rollen zu bringen.
