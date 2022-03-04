@@ -50,16 +50,29 @@ const Footer = () => {
         </div>
         <div className="flex lg:w-48 w-1/2 flex-col justify-start flex-wrap ">
           <h5 className=" text-xs  font-bold">
-            {" "}
-            <Link href="/Kontakt">
-              <a>{`Kontakt`.toUpperCase()}</a>
-            </Link>
+            {`Rechtliches & Kontakt`.toUpperCase()}
           </h5>
           <ul className=" flex flex-col justify-between items-start flex-wrap mly-2 mt-4 text-black">
-            <li>article 1</li>
-            <li>article 2</li>
-            <li>article 3</li>
-            <li>article 4</li>
+            <Link href="/Impressum">
+              <a>
+                <li>Impressum</li>
+              </a>
+            </Link>
+            <Link href="/Kontakt">
+              <a>
+                <li>Kontakt</li>
+              </a>
+            </Link>
+            <Link href="/Datenschutzerklärung">
+              <a>
+                <li>Datenschutzerklärung</li>
+              </a>
+            </Link>
+            <Link href="/AllgemeineGeschäftsbedingungen">
+              <a>
+                <li>Allgemeine Geschäftsbedingungen</li>
+              </a>
+            </Link>
           </ul>
         </div>
       </nav>

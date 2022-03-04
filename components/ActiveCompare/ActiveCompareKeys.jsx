@@ -3,6 +3,7 @@ import Link from "next/link";
 export default function ActiveCompareKeys({ getKeys, comparedCars }) {
   return (
     /* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN MOBILE VIEW<> */
+    //
     <>
       <div className={comparedCars.length ? "w-full border-r" : "hidden"}>
         <div className="h-36 md:h-40 md:w-full lg:h-64 xl:h-72  bg-grey-lighter">

@@ -37,6 +37,7 @@ const TechnicalDetails = ({ carItem }) => {
     SetDetails(details);
     const vehichleDimentions = [
       { key: carItem.loadingVolume.key },
+
       {
         value:
           carItem.loadingVolume.valueheight + " " + carItem.carSizes.baseUnit,
@@ -65,6 +66,18 @@ const TechnicalDetails = ({ carItem }) => {
       {
         value: carItem.carSizes.valuelength + " " + carItem.carSizes.baseUnit,
         key: carItem.carSizes.length,
+      },
+      {
+        key: carItem.loadingVolumeTotal.key,
+        value:
+          carItem.loadingVolumeTotal.value +
+          " " +
+          carItem.loadingVolumeTotal.baseUnit,
+      },
+
+      {
+        key: carItem.loadingArea.key,
+        value: carItem.loadingArea.value + " " + carItem.loadingArea.baseUnit,
       },
     ];
 

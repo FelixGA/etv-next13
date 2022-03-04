@@ -69,11 +69,11 @@ export default function ActiveCompareEquipmentValues({ comparedCars }) {
           <div
             className={
               comparedCars
-                ? " flex-1 pl-4 xl:pl-8 bg-[#D0DDEA] h-20 flex items-center"
+                ? " flex-1 pl-4 xl:pl-8 bg-[#D0DDEA] h-20 flex items-center pr-2"
                 : "hidden"
             }
           >
-            <button className="h-8 w-full  bg-orange-lighter rounded-[5px] font-bold tex-blue-darker">
+            <button className="h-8 w-full bg-orange-lighter rounded-[5px] font-bold tex-blue-darker ">
               Weiter
             </button>
           </div>

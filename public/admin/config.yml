@@ -42,7 +42,7 @@ collections:
         i18n: true
         required: false
         fields:
-          - { label: "Name", name: "name", widget: "string", i18n: true }
+          - { label: "Name", name: "name", widget: "string", i18n: duplicate }
           - { label: "Markdown", name: "markdown", widget: "markdown" }
           - {
               label: "Details",
@@ -100,8 +100,6 @@ collections:
           widget: "string",
           i18n: duplicate,
           required: true,
-          pattern:
-            ["[^!@#$%^&>*(),=+{:}|?><|}]", "Must be also unique for every car"],
         }
 
       - { label: "Price", name: "price", widget: "number", i18n: duplicate }
@@ -138,7 +136,7 @@ collections:
         widget: "select"
         multiple: false
         i18n: duplicate
-        options: ["L7E", "L6E", "N1", "N1N2", "N2"]
+        options: ["L7E", "L6E", "N1", "N1N2", "N2", "L2E"]
         # default: ["Design"]
       - label: "Loadingweight"
         name: "loadingWeight"
@@ -399,6 +397,34 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
           - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "loading Volume in m3"
+        name: "loadingVolumeTotal"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "loading area in m2"
+        name: "loadingArea"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
           - {
               label: "baseUnit",
               name: "baseUnit",
