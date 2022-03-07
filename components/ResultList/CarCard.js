@@ -7,6 +7,7 @@ import ButtonCompare from "./ButtonCompare";
 import ButtonAnfragen from "./ButtonAnfragen";
 import Link from "next/link";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import MobileTestResult from "../repeated/MobileTestResult";
 
 function CarCard(props) {
   /* HOOKS */
@@ -15,27 +16,10 @@ function CarCard(props) {
 
   const carItem = props.caritem;
 
-  const mobileRatingBox = (
-    <div className="border border-black-dark flex flex-col flex-1 h-10 sm:h-11">
-      <p className=" flex flex-row justify-center items-center">
-        <span className="flex flex-1 justify-center bg-orange-dark text-white font-bold text-xs border-black-dark border-b ">
-          TEST
-        </span>
-        <span className="flex flex-1 justify-center text-grey-dark text-xxs font-bold bg-grey-lighter border-black-dark border-b border-l">
-          ERGEBNIS
-        </span>
-      </p>
-      <p className="text-sm font-bold text-grey-darkest flex items-center justify-center pt-0.5 sm:pt-1 ">
-        <b className="text-sm pr-1">{carItem.rating.value} </b>{" "}
-        {carItem.rating.key}
-      </p>
-    </div>
-  );
-
   return (
     <div className="shadow-lg mb-4 lg:shadow-none border-t lg:border-2 lg:border-grey-lighter lg:rounded-xl overflow-hidden ">
-      <div className="flex h-80 lg:h-60">
-        <div className="flex-1 ">
+      <div className="flex  sm:flex-row ">
+        <div className="flex-1 relative ">
           <Link href={`/transporter/${carItem.name}`}>
             <a>
               <h3 className="title text-xl font-bold text-black-darkest py-2 lg:hidden pl-2">
@@ -45,17 +29,18 @@ function CarCard(props) {
           </Link>
 
           <Link href={`/transporter/${carItem.name}`} passHref>
-            <a className="block w-36 sm:w-64 md:w-80 h-52 ">
+            <a className="w-full relative ">
               {carItem?.src && (
                 <Image
-                  className="rounded-l"
+                  className=""
                   src={
                     carItem.src
                   } /* "https://aixam.de/wp-content/uploads/2019/01/aixam-pro-pritsche.jpg" */
                   alt={carItem.title}
                   width={450}
                   height={350}
-                  objectFit="cover"
+                  objectFit="contain"
+                  layout="responsive"
                 />
               )}
             </a>
@@ -69,21 +54,21 @@ function CarCard(props) {
         <div className=" hidden 2xl:block w-[1px] h-32 mt-16 bg-grey-border mr-4"></div>
         {/* DIVIDER end */}
         {/* CONTAINER FOR PRICE AND BUTTONS start */}
-        <div className="flex flex-col justify-center lg:justify-between flex-1 items-end pr-2 xl:items-center my-4 ">
-          {/* PRICE start */}
+        <div className="flex flex-col justify-center lg:justify-between sm:flex-1 items-end px-2 xl:items-center my-4 ">
+          {/* PRICE + MOBILE RATING BOX start*/}
           <div className="">
             <p className="text-green-light text-xl xl:text-2xl font-black pr-2">
               ab {carItem.price} €
             </p>
+            <div className="lg:hidden w-24 sm:w-28 pt-0 sm:pt-2 pb-2 sm:pb-0 ">
+              {/* {mobileRatingBox} */}
+              <MobileTestResult />
+            </div>
           </div>
-          {/* PRICE end */}
-          {/* MOBILE RATING BOX start*/}
-          <div className="lg:hidden w-24 sm:w-28 pt-0 sm:pt-2 pb-2 sm:pb-0 ">
-            {mobileRatingBox}
-          </div>
-          {/* MOBILE RATING BOX end*/}
+
+          {/* PRICE + MOBILE RATING BOX end*/}
           {/* BUTTONS start */}
-          <div className="flex-1 flex justify-center flex-col">
+          <div className="flex-1 flex sm:justify-center flex-col justify-end">
             <ButtonAnfragen />
             <ButtonCompare carItem={carItem} />
           </div>

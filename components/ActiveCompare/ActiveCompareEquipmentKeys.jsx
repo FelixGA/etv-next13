@@ -20,7 +20,7 @@ export default function ActiveCompareEquipmentKeys({ getKeys, comparedCars }) {
                 : "flex items-center h-10 flex-1  bg-grey-lighter"
             }
           >
-            <h3 className="pl-2 lg:pl-8 text-blue-extra text-sm lg:text-lg ">
+            <h3 className="pl-4 lg:pl-8 text-blue-extra text-sm lg:text-lg ">
               {key}
             </h3>
           </div>

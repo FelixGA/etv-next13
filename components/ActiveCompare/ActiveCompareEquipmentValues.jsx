@@ -5,11 +5,11 @@ export default function ActiveCompareEquipmentValues({ comparedCars }) {
   return (
     <>
       {comparedCars?.map((item, index) => (
-        <div className="" key={index}>
+        <div className="w-full" key={index}>
           <div className="data-content-categories relative ">
             <div className="pl-8 relative lg:w-[255px] xl:w-[340px] top-12 pr-4"></div>
-            <div className=" relative">
-              <div className=" h-10 bg-white flex-1 flex items-center ">
+            <div className=" relative ">
+              <div className="h-10 bg-white flex-1 flex items-center">
                 <h3 className="second-category-title text-sm lg:text-lg font-medium text-blue-extra pl-4 lg:pl-8">
                   {item.batteryCapacityBlei.value}
                   <span> &nbsp;{item.batteryCapacityBlei.baseUnit}</span>

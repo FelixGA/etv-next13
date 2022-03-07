@@ -16,8 +16,8 @@ function PriceInputs() {
   return (
     <>
       {/* MIN MAX PRICE INPUT */}
-      <div className="wrapper py-4 flex flex-row justify-start ">
-        <div className="flex py-2 mx-2 w-28 h-9 bg-transparent border rounded-lg border-blue-dark">
+      <div className="wrapper py-4 flex flex-row justify-start border-b pl-4">
+        <div className="flex py-2 w-28 h-9 bg-transparent border rounded-lg border-blue-dark">
           <input
             type="number"
             id="min"

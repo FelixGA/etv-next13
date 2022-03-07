@@ -84,7 +84,7 @@ function Sort({ getContent }) {
           setTruncate(!truncate);
         }}
       >
-        <div className="flex justify-between border-b   py-1 ">
+        <div className="flex justify-between border-b-2 py-1 ">
           <div className="flex ">
             <div className="ml-5 my-auto">
               <BsSortDown size={20} fill="#1F1E80" />
