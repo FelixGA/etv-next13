@@ -152,7 +152,7 @@ export default function Funnel({ getCars }) {
     <div className="flex flex-col flex-1 ">
       <div className="flex flex-1 flex-col my-4 items-center ">
         {currentFilter !== "move to next" ? (
-          <h2 className="text-center text-3xl text-black-dark font-bold my-8">
+          <h2 className="text-center text-2xl md:text-3xl text-black-dark font-bold my-8 md:px-2">
             {currentFilter.title}
           </h2>
         ) : (
