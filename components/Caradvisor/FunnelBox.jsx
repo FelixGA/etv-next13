@@ -1,31 +1,29 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "../store";
-import image4 from "../../public/images/preis.png";
-import image5 from "../../public/images/aufbautype.png";
-import image from "../../public/images/reichweite.png";
-import image2 from "../../public/images/zuladung.png";
-export default function FunnelBox({ currentFilter }) {
+
+import Router from "next/router";
+export default function FunnelBox({ currentFilter, redirecter }) {
   const { state, dispatch } = useStore();
 
-  return currentFilter !== "move to next" ? (
+  return !redirecter ? (
     <div className="flex justify-around items-center flex-wrap ">
       {currentFilter.options.map((item, index) => {
         return (
           <div
             onClick={() => {
+              item.categoryName === "category"
+                ? Router.push("/caradvisor")
+                : null;
               dispatch({
                 type: item.categoryName,
 
-                data:
-                  item.categoryName == "price"
-                    ? [{ min: item.value, max: item.max }]
-                    : [{ min: item.value, max: 99999 }],
+                data: [{ min: item.value, max: item.max }],
               });
             }}
             key={index}
             className="w-48 h-48 
-            flex flex-col justify-center items-center  rounded-lg shadow-lg"
+            flex flex-col justify-center items-center  rounded-lg shadow-lg m-8 hover:scale-125"
           >
             {" "}
             <div className="w-28 h-28  ">

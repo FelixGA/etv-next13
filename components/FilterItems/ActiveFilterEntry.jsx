@@ -48,7 +48,7 @@ function ActiveFilterEntry(props) {
         id: 2,
         value: state?.rangeLithiums.length
           ? state?.rangeLithiums
-              .map((el) => `${fromWord}  ${el.min} km`)
+              .map((el) => `${fromWord}  ${el.min} bis ${el?.max} km`)
               .join("")
           : null,
         image: image,
@@ -57,7 +57,7 @@ function ActiveFilterEntry(props) {
         id: 3,
         value: state?.loadingWeights.length
           ? state?.loadingWeights
-              .map((el) => `${fromWord}  ${el.min}  kg`)
+              .map((el) => `${fromWord}  ${el.min} bis ${el?.max}  kg`)
               .join("")
           : null,
         image: image2,
@@ -67,7 +67,7 @@ function ActiveFilterEntry(props) {
         value:
           state?.maxSpeeds.length || state?.maxSpeeds.length == undefined
             ? state?.maxSpeeds
-                .map((el) => `${fromWord}   ${el.min} km/h`)
+                .map((el) => `${fromWord}   ${el.min} bis ${el?.max} km/h`)
                 .join("")
             : null,
         image: image3,
