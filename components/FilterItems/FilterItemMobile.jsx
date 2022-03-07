@@ -25,7 +25,7 @@ function FilterItemMobile({ item }) {
   const { state, dispatch } = useStore();
   /* to render the four ranges */
   return (
-    <div className="bg-white ">
+    <div className="bg-white border-b ">
       <div
         className=" cursor-pointer bg-white"
         onClick={() => {
