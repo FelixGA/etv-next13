@@ -72,7 +72,7 @@ function ButtonCompare(props) {
         }}
         className={
           disabled
-            ? "bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white text-sm xl:tracking-wider rounded px-4 flex justify-center items-center h-8 sm:h-10 w-32 xl:w-36  "
+            ? "bg-blue-dark disabled:bg-grey-400 hover:bg-blue-light text-white text-sm xl:tracking-wider rounded px-4 flex justify-center items-center h-8 sm:h-10 w-32 xl:w-36  "
             : "bg-blue-dark disabled:bg-grey-light hover:bg-blue-light text-white text-sm xl:tracking-wider rounded px-4 flex justify-center items-center h-8 sm:h-10 w-32 xl:w-36 "
         }
       >

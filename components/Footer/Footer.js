@@ -57,22 +57,22 @@ const Footer = () => {
           <ul className=" flex flex-col justify-between items-start flex-wrap mly-2 mt-4 text-black">
             <Link href="/Impressum">
               <a>
-                <li>Impressum</li>
+                <li>test</li>
               </a>
             </Link>
             <Link href="/Kontakt">
               <a>
-                <li>Kontakt</li>
+                <li>test</li>
               </a>
             </Link>
             <Link href="/Datenschutzerklärung">
               <a>
-                <li>Datenschutzerklärung</li>
+                <li>test</li>
               </a>
             </Link>
             <Link href="/AllgemeineGeschäftsbedingungen">
               <a>
-                <li>Allgemeine Geschäftsbedingungen</li>
+                <li>test</li>
               </a>
             </Link>
           </ul>

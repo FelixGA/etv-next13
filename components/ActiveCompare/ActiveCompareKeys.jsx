@@ -18,7 +18,7 @@ export default function ActiveCompareKeys({ getKeys, comparedCars }) {
             </button>
           </div>
         </div>
-        <div className="flex items-center flex-1 bg-white pt-4 md:pt-8 lg:pt-16 xl:pt-14 pl-2 lg:pl-8 px-2">
+        <div className="flex items-center flex-1 bg-white pt-4 md:pt-8 lg:pt-16 xl:pt-14 pl-4 lg:pl-8 px-2">
           <h3 className="text-blue-extra text-xl font-bold ">Grundlagen</h3>
         </div>
         {getKeys
@@ -31,7 +31,7 @@ export default function ActiveCompareKeys({ getKeys, comparedCars }) {
                   : "flex items-center h-10 flex-1 bg-white"
               }
             >
-              <h3 className=" text-blue-extra text-sm lg:text-lg pl-2 lg:pl-8">
+              <h3 className=" text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
                 {item}
               </h3>
             </div>
