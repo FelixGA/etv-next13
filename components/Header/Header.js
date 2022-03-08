@@ -63,19 +63,24 @@ const Header = () => {
           )}
         </AnimatePresence>
         {/* BUTTON */}
+
         <div className="pr-18 lg:pr-4">
-          <div className="bg-yellow-light hover:bg-orange-lighter text-grey-darker font-bold flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer">
-            <div className="w-6 xs:w-8 pl-2 ">
-              <Image
-                src="/images/iconStyle2x.png"
-                width={18}
-                height={18}
-                layout="responsive"
-                objectFit="cover"
-              />
-            </div>
-            <span className="pr-3 text-xs xs:text-base">Kaufberater</span>
-          </div>
+          <Link href="/caradvisor" passHref>
+            <a>
+              <div className="bg-yellow-light hover:bg-orange-lighter text-grey-darker font-bold flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer">
+                <div className="w-6 xs:w-8 pl-2 ">
+                  <Image
+                    src="/images/iconStyle2x.png"
+                    width={18}
+                    height={18}
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+                <span className="pr-3 text-xs xs:text-base">Kaufberater</span>
+              </div>
+            </a>
+          </Link>
         </div>
       </div>
       <div

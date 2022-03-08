@@ -179,8 +179,8 @@ export default function Funnel({ getCars }) {
     state?.maxSpeeds,
     state?.chargingTimeLithiums,
     state?.categorys,
-    ,
-    currentFilter,
+
+    redirecter,
   ]);
 
   return (
