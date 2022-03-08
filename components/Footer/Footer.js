@@ -23,7 +23,9 @@ const Footer = () => {
         <div className="flex lg:w-48 w-1/2 flex-col justify-start flex-wrap ">
           <h5 className=" text-xs font-bold ">
             <Link href="/comparePage">
-              <a>{`Transporter`.toUpperCase()}</a>
+              <a className="visited:text-grey-dark">
+                {`Transporter`.toUpperCase()}
+              </a>
             </Link>
           </h5>
           <ul className=" flex flex-col justify-between items-start flex-wrap  my-4  text-black">
@@ -55,22 +57,22 @@ const Footer = () => {
           <ul className=" flex flex-col justify-between items-start flex-wrap mly-2 mt-4 text-black">
             <Link href="/Impressum">
               <a>
-                <li>test</li>
+                <li>Impressum</li>
               </a>
             </Link>
             <Link href="/Kontakt">
               <a>
-                <li>test</li>
+                <li>Kontakt</li>
               </a>
             </Link>
             <Link href="/Datenschutzerklärung">
               <a>
-                <li>test</li>
+                <li>Datenschutzerklärung</li>
               </a>
             </Link>
             <Link href="/AllgemeineGeschäftsbedingungen">
               <a>
-                <li>test</li>
+                <li>AllgemeineGeschäftsbedingungen</li>
               </a>
             </Link>
           </ul>

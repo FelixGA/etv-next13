@@ -8,12 +8,11 @@ import ActiveCompareEquipmentKeysValues from "../components/ActiveCompare/Active
 import ActiveCompareMaßeKeysValues from "../components/ActiveCompare/ActiveCompareMaßeKeysValues";
 
 export default function activeCompareNew(props) {
-  console.log("hi");
   const { state, dispatch } = useStore();
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getKeys, SetGetKeys] = useState([]);
   const [toggle, setToggle] = useState(true);
-  console.log(toggle);
+
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
   /*  console.log(comparedCars); */
   useEffect(() => {

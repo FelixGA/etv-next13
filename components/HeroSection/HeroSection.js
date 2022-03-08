@@ -16,7 +16,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
       options: [
         {
           id: "1",
-          name: "0-20000 ",
+          name: "1-20000 ",
           value: "0-20000 ",
         },
         {
@@ -42,23 +42,23 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
       options: [
         {
           id: "1",
-          name: "ab 150km ",
-          value: "150 ",
+          name: "ab 50 km ",
+          value: "50",
         },
         {
           id: "2",
-          name: "ab 200km",
-          value: "200",
+          name: "ab 100km",
+          value: "100",
         },
         {
           id: "3",
-          name: "ab 250km",
-          value: "250",
+          name: "ab 150km",
+          value: "150",
         },
         {
           id: "4",
-          name: "ab 500km",
-          value: "500",
+          name: "ab 200km",
+          value: "200",
         },
       ],
     },
@@ -68,18 +68,23 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
       options: [
         {
           id: "1",
-          name: "ab:500kg",
-          value: "500",
+          name: "ab:100kg",
+          value: "100",
         },
         {
           id: "2",
-          name: "ab:1000kg",
-          value: "1000",
+          name: "ab:250kg",
+          value: "250",
         },
         {
           id: "3",
-          name: "ab:1500kg",
-          value: "1500",
+          name: "ab:450kg",
+          value: "450",
+        },
+        {
+          id: "4",
+          name: "ab:500kg",
+          value: "500",
         },
       ],
     },
@@ -225,7 +230,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
                     data: [
                       {
                         min: Number(chooseRange),
-                        max: Number(chooseRange) + 9999,
+                        max:  100000,
                       },
                     ],
                   });
@@ -234,7 +239,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
                     data: [
                       {
                         min: Number(chooseWeight),
-                        max: 999999,
+                        max: 100000,
                       },
                     ],
                   });

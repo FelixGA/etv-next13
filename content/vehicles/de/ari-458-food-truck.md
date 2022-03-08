@@ -13,7 +13,7 @@ category: Kasten
 typeClass: L7E
 loadingWeight:
   key: Nutzlast
-  value: 0
+  value: 531
   baseUnit: kg
 curbweight:
   key: Leergewicht

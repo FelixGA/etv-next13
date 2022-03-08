@@ -6,7 +6,7 @@ description: ""
 src: /images/ari-458-food-truck-5-.jpg
 category: Kasten
 loadingWeight:
-  value: 0
+  value: 531
   baseUnit: kg
   key: Loading Weight
 curbweight:
