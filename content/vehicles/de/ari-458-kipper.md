@@ -1,6 +1,6 @@
 ---
 title: ARI 458 Kipper
-name: ARI 458 Kipper
+name: ari-458-kipper
 price: 16100
 description: >-
   Der ARI 458 Kipper bietet eine offene Ladefläche mit Seitenwänden, welche in

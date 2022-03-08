@@ -1,6 +1,6 @@
 ---
 title: ARI 345 Food Truck
-name: ARI 345 Food Truck
+name: ari-345-food-truck
 price: 12750
 description: Der ARI 345 Food Truck hat alles am Start, was Gastronomen und
   Caterer brauchen, um Ihr Gastro-Unternehmen nachhaltig ins Rollen zu bringen.
@@ -11,7 +11,7 @@ description: Der ARI 345 Food Truck hat alles am Start, was Gastronomen und
   Kaffeetanks, eines Hot-Dog-Moduls oder einer Grillstation.
 src: /images/ari_345_food_truck_l_.png
 category: Kasten
-typeClass: L7E
+typeClass: L2E
 loadingWeight:
   key: Nutzlast
   value: 325

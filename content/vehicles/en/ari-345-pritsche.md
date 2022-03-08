@@ -1,8 +1,9 @@
 ---
 title: ARI 345 Pritsche
-name: ARI 345 Pritsche
+name: ari-345-pritsche
 price: 6995
 src: /images/345-front-1-.jpg
+typeClass: L2E
 loadingWeight:
   value: 325
   baseUnit: kg
