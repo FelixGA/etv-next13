@@ -2,8 +2,6 @@ import Link from "next/link";
 import { useStore } from "../store";
 import FunnelBox from "./FunnelBox";
 import { useState, useEffect } from "react";
-import image4 from "../../public/images/preis.png";
-
 import weight250 from "../../public/images/weight250.png";
 import weight100 from "../../public/images/weight100.jpg";
 import weight450 from "../../public/images/weight450.png";
@@ -19,8 +17,13 @@ import kastenicon from "../../public/images/kasten.png";
 import kippericon from "../../public/images/kipper.png";
 import ButtonForAlleTransporter from "../Sliders/ButtonForAlleTransporter";
 import Router from "next/router";
+import { useRouter } from "next/router";
 
 export default function Funnel({ getCars }) {
+  const router = useRouter();
+
+  // router.query.page = router.query.page ? router.query.page : 1;
+
   const filtersData = [
     {
       title: `Welchen Aufbautyp wählen Sie für Ihren Elektrotransporter? `,
@@ -165,6 +168,7 @@ export default function Funnel({ getCars }) {
   const [redirecter, setRedDirecter] = useState(false);
   useEffect(() => {
     if (redirecter) {
+      /*  here is the solution! */
       Router.push("/comparePage");
       setRedDirecter(false);
     }
