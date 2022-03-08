@@ -15,7 +15,7 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
           objectFit="contain"
         />
       </div>
-      <div className="pt-12 2xl:pt-48 px-12 xl:pl-20">
+      <div className="pt-12 2xl:pt-48 xl:px-12 xl:pl-20">
         {/* <h2 className="text-grey-darkest text-2xl font-bold ">
            dfg
           </h2> */}
