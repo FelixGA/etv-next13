@@ -1,10 +1,11 @@
 ---
 title: ARI 345 Koffer
-name: ARI 345 Koffer
+name: ari-345-koffer
 price: 7395
 description: ""
 src: /images/dsc_0071.png
 category: Koffer
+typeClass: L2E
 loadingWeight:
   key: Loading Weight
   value: 325

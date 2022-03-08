@@ -1,6 +1,6 @@
 ---
 title: ARI 458 Food Truck
-name: ARI 458 Food Truck
+name: ari-458-food-truck
 price: 19430
 description: Der ARI 458 Food Truck ist ein elektrisches Gastro-Fahrzeug von ARI
   Motors. Er bietet eine umweltfreundliche und individuell gestaltbare

@@ -1,6 +1,6 @@
 ---
 title: ARI 458 Koffer
-name: ARI 458 Koffer
+name: ari-458-koffer
 price: 14100
 description: >-
   Der ARI 458 mit Kofferaufbau ist besonders für Lieferdienste und

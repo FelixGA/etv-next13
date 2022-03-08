@@ -1,6 +1,6 @@
 ---
 title: ARI 345 Koffer
-name: ARI 345 Koffer
+name: ari-345-koffer
 price: 7395
 description: Der ARI 345 Koffer ist ein dreirädriges elektrisches Lastenmoped
   mit offener Fahrerkabine und einem geschlossenen **Koffer-Aufbau.** Das
@@ -9,7 +9,7 @@ description: Der ARI 345 Koffer ist ein dreirädriges elektrisches Lastenmoped
   Mopedführerschein der Klasse AM gefahren werden.
 src: /images/dsc_0071.png
 category: Koffer
-typeClass: L7E
+typeClass: L2E
 loadingWeight:
   key: Nutzlast
   value: 325

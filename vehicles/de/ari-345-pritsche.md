@@ -9,7 +9,7 @@ description: Der ARI 345 Pritsche ist ein dreirädriges Lastenmoped mit offener
   Klasse AM gefahren werden.
 src: /images/345-front-1-.jpg
 category: Pritsche
-typeClass: L7E
+typeClass: L2E
 loadingWeight:
   key: Nutzlast
   value: 325
@@ -115,4 +115,5 @@ loadingVolume:
   length: Länge
   baseUnit: mm
 ---
+
 Das ARI 345 Pritsche ist ein dreirädriges elektrisches Lastenmoped mit 45 km/h Höchstgeschwindigkeit und eignet sich ideal für innerstädtische Liefer-und Cateringdienste.

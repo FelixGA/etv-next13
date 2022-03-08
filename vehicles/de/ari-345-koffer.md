@@ -2,14 +2,15 @@
 title: ARI 345 Koffer
 name: ARI 345 Koffer
 price: 7395
-description: Der ARI 345 Koffer ist ein dreirädriges elektrisches Lastenmoped
+description: >- 
+Der ARI 345 Koffer ist ein dreirädriges elektrisches Lastenmoped
   mit offener Fahrerkabine und einem geschlossenen **Koffer-Aufbau.** Das
   Fahrzeug ist in drei Größen mit bis zu 1,49 Meter Ladelänge und knapp 2 m³
   Ladevolumen erhältlich. Das Fahrzeug kann bereits von Jugendlichen mit dem
   Mopedführerschein der Klasse AM gefahren werden.
 src: /images/dsc_0071.png
 category: Koffer
-typeClass: L7E
+typeClass: L2E
 loadingWeight:
   key: Nutzlast
   value: 325
@@ -115,4 +116,5 @@ loadingVolume:
   length: Länge
   baseUnit: mm
 ---
+
 Das ARI 345 Pritsche ist ein dreirädriges elektrisches Lastenmoped mit 45 km/h Höchstgeschwindigkeit und eignet sich ideal für innerstädtische Liefer-und Cateringdienste.

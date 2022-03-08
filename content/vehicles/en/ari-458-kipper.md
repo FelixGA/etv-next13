@@ -1,6 +1,6 @@
 ---
 title: ARI 458 truck
-name: ARI 458 Kipper
+name: ari-458-kipper
 price: 16100
 description: ""
 src: /images/ARI-458-Kipper-L-Heck-300x199.jpg

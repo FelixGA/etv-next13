@@ -1,11 +1,11 @@
 ---
 title: ARI 345 Food Truck
-name: ARI 345 Food Truck
+name: ari-345-food-truck
 price: 12750
 description: ""
 src: /images/ari_345_food_truck_l_.png
 category: Kasten
-typeClass: L7E
+typeClass: L2E
 loadingWeight:
   key: Loading Weight
   value: 325

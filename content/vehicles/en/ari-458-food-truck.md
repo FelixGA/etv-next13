@@ -1,6 +1,6 @@
 ---
 title: ARI 458 Food Truck
-name: ARI 458 Food Truck
+name: ari-458-food-truck
 price: 19430
 description: ""
 src: /images/ari-458-food-truck-5-.jpg
