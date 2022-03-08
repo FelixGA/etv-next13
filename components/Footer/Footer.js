@@ -67,12 +67,12 @@ const Footer = () => {
             </Link>
             <Link href="/Datenschutzerklärung">
               <a>
-                <li>Datenschutzerklärung</li>
+                <li>&nbsp;{"Daten-schutzerklärung"}</li>
               </a>
             </Link>
             <Link href="/AllgemeineGeschäftsbedingungen">
               <a>
-                <li>AllgemeineGeschäftsbedingungen</li>
+                <li>&nbsp;{"Allgemeine-Geschäft-sbedingungen"}</li>
               </a>
             </Link>
           </ul>
