@@ -9,16 +9,20 @@ const NewsLetter = ({ getMarkdownContext }) => {
       </h2> */}
       <div className="flex flex-col justify-center custom-text px-4 py-8  text-grey-darker">
         <MDXRemote {...getMarkdownContext.newsletter} />
-      </div>{" "}
-      <span>
+      </div>
+      <div className="">
         <p className="w-full align-left text-grey-dark font-bold">Email</p>
         <div className="flex flex-col xs:flex-row">
-          <input type="email" placeholder="" className="h-14 text-lg w-3/4" />
-          <button className="bg-blue-dark  hover:bg-blue-light text-white font-bold px-6 text-sm rounded-r-lg h-14">
+          <input
+            type="email"
+            placeholder="your e-mail"
+            className="h-14 text-lg rounded-sm w-48 sm:w-full"
+          />
+          <button className="bg-blue-dark mt-2 xs:mt-0 hover:bg-blue-light text-white font-bold px-6 text-sm rounded-sm sm:rounded-r-lg h-14">
             anmelden
           </button>
         </div>
-      </span>
+      </div>
     </div>
   );
 };

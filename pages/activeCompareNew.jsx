@@ -85,13 +85,13 @@ export default function activeCompareNew(props) {
       <div className="flex flex-1 justify-center py-8 ">
         <div
           onClick={() => setToggle(true)}
-          className="text-lg mr-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
+          className="text-lg mr-1 sm:mr-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
         >
           <button>Ausstattung</button>
         </div>
         <div
           onClick={() => setToggle(false)}
-          className="text-lg ml-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
+          className="text-lg ml-1 sm:ml-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
         >
           <button>Masse</button>
         </div>

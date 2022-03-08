@@ -2,6 +2,7 @@ import { MDXRemote } from "next-mdx-remote";
 import Link from "next/link";
 import Image from "next/image";
 export default function FirstArticle({ getMarkdownContext, getContent }) {
+  // console.log(<MDXRemote {...getMarkdownContext.eAutoAdvisor} />);
   return (
     <div className="blog-article-one flex">
       <div className=" flex flex-col justify-evenly flex-1">
