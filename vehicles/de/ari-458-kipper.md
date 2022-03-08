@@ -122,4 +122,5 @@ loadingVolume:
   length: Länge
   baseUnit: mm
 ---
+
 Der ARI 458 Kipper ist ein elektrischer Kleintransporter mit kippbarer Ladefläche und 80 km/h Höchstgeschwindigkeit.
