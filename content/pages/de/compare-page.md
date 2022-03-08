@@ -8,8 +8,8 @@ content:
     name: alle Filter loschen
     markdown: alle Filter loschen
   - name: " Alle Filter anzeigen"
-    markdown: Preis, Reichweite, Zuladung, V-Max, Ladezeit, Aufbautyp
-    details: ab, Pritsche, Kipper, Koffer, Kasten, stunden
+    markdown: Preis, Reichweite, Zuladung, km/h, Ladezeit, Aufbautyp
+    details: ab, Pritsche, Kipper, Koffer, Kasten, Stunden
   - name: " Sortieren nach"
     markdown: Empfohlen, Niedrigster Preis, Höchster Preis, Bestseller, Beste
       Ladenzeit, Höchste Zuladung, Höchste Reichweite, Höchste Vmax

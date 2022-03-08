@@ -10,7 +10,6 @@ import filterImage from "../../public/images/filter-icon.png";
 function FilterBlock() {
   const { state, dispatch } = useStore();
   const [truncate, setTruncate] = useState(false);
-  const [clicked, setClicked] = useState(true);
 
   return (
     <div className=" w-full min-w-fit relative">

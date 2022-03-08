@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function ActiveCompareEquipmentValues({ comparedCars }) {
-  console.log(comparedCars);
+  
   return (
     <>
       {comparedCars?.map((item, index) => (

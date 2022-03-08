@@ -37,9 +37,9 @@
 
 /* FROM HERE WE GIVE css for reference  */
 
-/* a:visited {
+a:visited {
   color: white;
-} */
+}
 
 .select {
   @apply rounded-lg  bg-white text-base cursor-pointer  items-center;

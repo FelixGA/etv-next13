@@ -31,8 +31,7 @@ export default function Home(props) {
       />
       <TopSlider getCars={getCars} getContent={getContent} />
       <BlogArticles getMarkdownContext={getMarkdownContext} />
-      <Funnel getCars={getCars} getCars={getCars} getContent={getContent} />
-
+      <Funnel getCars={getCars} getContent={getContent} />
       <NewsLetter getMarkdownContext={getMarkdownContext} />
     </>
   );
