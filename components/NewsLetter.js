@@ -16,9 +16,9 @@ const NewsLetter = ({ getMarkdownContext }) => {
           <input
             type="email"
             placeholder="your e-mail"
-            className="h-14 text-lg rounded-lg w-48 sm:w-full"
+            className="h-14 text-lg rounded-sm w-48 sm:w-full"
           />
-          <button className="bg-blue-dark mt-2 xs:mt-0 hover:bg-blue-light text-white font-bold px-6 text-sm rounded-lg sm:rounded-r-lg h-14">
+          <button className="bg-blue-dark mt-2 xs:mt-0 hover:bg-blue-light text-white font-bold px-6 text-sm rounded-sm sm:rounded-r-lg h-14">
             anmelden
           </button>
         </div>
