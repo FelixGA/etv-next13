@@ -78,7 +78,7 @@ const Header = () => {
                   />
                 </div>
                 <span className="pr-3 text-xs xs:text-base">Kaufberater</span>
-              </div>{" "}
+              </div>
             </a>
           </Link>
         </div>
