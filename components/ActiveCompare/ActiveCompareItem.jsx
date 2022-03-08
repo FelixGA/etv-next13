@@ -11,7 +11,7 @@ export default function ActiveCompareItem({ comparedCars }) {
       {comparedCars?.map((item, index) => (
         <div className="" key={index}>
           <div
-            className="data-content-categories relative "
+            className="data-content-categories relative w-40 sm:w-full"
             /* key={index} */
           >
             {/* IMAGE + HEADING */}

@@ -142,7 +142,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
 
           <div className="comaprison-input-container m-2 lg:items-center lg:flex lg:flex-row lg:justify-between lg:flex-1">
             <div className="flex lg:flex-row flex-col lg:w-1/2 justify-around items-start lg:items-center flex-wrap">
-              <div className="h-14 lg:w-68  w-full pt-2 gmsou text-base rounded-lg bg-white lg:w-[14vw]">
+              <div className="h-14 lg:w-68  w-full pt-2 shadow-angelos1 text-base rounded-lg bg-white lg:w-[14vw]">
                 <label className=" flex flex-row justify-between px-2 text-left">
                   {getContent.content[1].markdown.split(", ")[0]}
                   <div className=" relative top-6">▼</div>
@@ -164,7 +164,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
                   </select>
                 </div>
               </div>
-              <div className="h-14 lg:w-68 w-full my-4 pt-2 gmsou text-base rounded-sm bg-white lg:w-[14vw]	tracking-wide">
+              <div className="h-14 lg:w-68 w-full my-4 pt-2 shadow-angelos1 text-base rounded-lg bg-white lg:w-[14vw]	tracking-wide">
                 <label className="px-2 flex flex-row justify-between text-left">
                   {getContent.content[1].markdown.split(", ")[1]}
                   <div className=" relative top-6">▼</div>
@@ -187,7 +187,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
               </div>
             </div>
             <span className="flex flex-1 lg:w-1/2 lg:justify-around justify-between items-start lg:items-center flex-wrap ">
-              <div className="w-2/5 h-14 pt-2 gmsou mb-6 lg:mb-0 lg:w-[14vw] text-base rounded-sm bg-white tracking-wide">
+              <div className="w-2/5 h-14 pt-2 shadow-angelos1 mb-6 lg:mb-0 lg:w-[14vw] text-base rounded-lg bg-white tracking-wide">
                 <label className="px-2 flex flex-row justify-between text-left">
                   {getContent.content[1].markdown.split(", ")[2]}
                   <div className=" relative right-0 top-6">▼</div>

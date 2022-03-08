@@ -5,7 +5,9 @@ export default function ActiveCompareKeys({ getKeys, comparedCars }) {
     /* BUTTON AND IMAGES AND COMPARE CATEGORIES  <>VISIBLE IN MOBILE VIEW<> */
     //
     <>
-      <div className={comparedCars.length ? "w-full border-r" : "hidden"}>
+      <div
+        className={comparedCars.length ? "w-40 sm:w-full border-r " : "hidden"}
+      >
         <div className="h-36 md:h-40 md:w-full lg:h-64 xl:h-72  bg-grey-lighter">
           {/* BACK BUTTON */}
           <div className="lg:w-64 xl:w-88 2xl:w-[380px] hidden lg:block pt-12 pl-8 lg:pl-4 xl:pl-8">
@@ -27,8 +29,8 @@ export default function ActiveCompareKeys({ getKeys, comparedCars }) {
               key={index}
               className={
                 index % 2 == 0
-                  ? "flex items-center h-10 flex-1 bg-grey-lighter"
-                  : "flex items-center h-10 flex-1 bg-white"
+                  ? "flex items-center h-10 flex-1 bg-grey-lighter pr-1"
+                  : "flex items-center h-10 flex-1 bg-white pr-1"
               }
             >
               <h3 className=" text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">

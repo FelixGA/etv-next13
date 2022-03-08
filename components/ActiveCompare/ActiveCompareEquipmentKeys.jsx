@@ -7,17 +7,19 @@ export default function ActiveCompareEquipmentKeys({ getKeys, comparedCars }) {
     <>
       <div
         className={
-          comparedCars.length ? "w-full border-r bg-grey-border" : "hidden"
+          comparedCars.length
+            ? " border-r bg-grey-border w-40 sm:w-full"
+            : "hidden"
         }
       >
-        <div className="w-32 lg:w-56 xl:w-64 2xl:w-72 "></div>
+        {/* <div className="w-32 lg:w-56 xl:w-64 2xl:w-72 "></div> */}
         {equipmentKeys.map((key, index) => (
           <div
             key={index}
             className={
               index % 2 == 0
-                ? "flex items-center h-10 flex-1 bg-white"
-                : "flex items-center h-10 flex-1  bg-grey-lighter"
+                ? "flex items-center h-10 flex-1 bg-white pr-1"
+                : "flex items-center h-10 flex-1  bg-grey-lighter pr-1"
             }
           >
             <h3 className="pl-4 lg:pl-8 text-blue-extra text-sm lg:text-lg ">

@@ -68,9 +68,6 @@ select:focus {
 .logo {
   filter: contrast(900%);
 }
-.gmsou {
-  box-shadow: 0 0 0 1px #243280;
-}
 .custom-text {
   text-align: center;
 }
