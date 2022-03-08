@@ -43,6 +43,7 @@ module.exports = {
         header: "0 2px 24px 0 rgba(0,0,0,0.5)",
         dropdown: "0 2px 6px 0 rgba(44,63,83,0.25)",
         test: "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px",
+        angelos1: "0 0 0 1px #243280;",
       }),
       blur: {
         xs: "2px",
