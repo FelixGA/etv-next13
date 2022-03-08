@@ -28,7 +28,7 @@ const BlogArticles = ({ getMarkdownContext, getContent }) => {
         </div>
         <div className="hidden xl:flex xl:w-full xl:scale-125 ">
           <Image
-            src="/images/berater.png"
+            src="/images/etvberaterwithcar.png"
             width={400}
             height={300}
             className="blog-article-two-image"
