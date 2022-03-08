@@ -33,7 +33,6 @@ function ActiveFilterEntry(props) {
       props.setShowAll(false);
     }
 
-    let fromWord = props.getContent.content[1].details.split(",")[0];
     let hourWord = props.getContent.content[1].details.split(",")[5];
     setFilterData([
       {
@@ -48,7 +47,12 @@ function ActiveFilterEntry(props) {
         id: 2,
         value: state?.rangeLithiums.length
           ? state?.rangeLithiums
-              .map((el) => `${fromWord}  ${el.min} bis ${el?.max} km`)
+              .map(
+                (el) =>
+                  `${
+                    el?.max < 99999 ? el.min + "-" + el.max : "ab " + el.min
+                  }  km`
+              )
               .join("")
           : null,
         image: image,
@@ -57,7 +61,12 @@ function ActiveFilterEntry(props) {
         id: 3,
         value: state?.loadingWeights.length
           ? state?.loadingWeights
-              .map((el) => `${fromWord}  ${el.min} bis ${el?.max}  kg`)
+              .map(
+                (el) =>
+                  `${
+                    el?.max < 99999 ? el.min + "-" + el.max : "ab " + el.min
+                  }  kg`
+              )
               .join("")
           : null,
         image: image2,
@@ -67,7 +76,12 @@ function ActiveFilterEntry(props) {
         value:
           state?.maxSpeeds.length || state?.maxSpeeds.length == undefined
             ? state?.maxSpeeds
-                .map((el) => `${fromWord}   ${el.min} bis ${el?.max} km/h`)
+                .map(
+                  (el) =>
+                    `${
+                      el?.max < 99999 ? el.min + "-" + el.max : "ab " + el.min
+                    } km/h`
+                )
                 .join("")
             : null,
         image: image3,
@@ -78,7 +92,7 @@ function ActiveFilterEntry(props) {
           state?.chargingTimeLithiums.length ||
           state?.chargingTimeLithiums.length == undefined
             ? state?.chargingTimeLithiums
-                .map((el) => `${fromWord}  ${el.min} ${hourWord} `)
+                .map((el) => `${el.min} ${hourWord} `)
                 .join("")
             : null,
         image: image5,

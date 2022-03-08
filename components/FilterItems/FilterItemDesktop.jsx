@@ -94,7 +94,7 @@ function FilterItemDesktop({ item }) {
                     data:
                       checkbox.categoryName == "price"
                         ? [{ min: checkbox.value, max: checkbox.max }]
-                        : [{ min: checkbox.value, max: 10000 }],
+                        : [{ min: checkbox.value, max: 100000 }],
                   });
                 }}
                 key={index}

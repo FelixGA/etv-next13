@@ -13,7 +13,7 @@ content:
 
       alle Filter loschen
   - name: show all
-    markdown: price, range, payload, V-Max, charging time, body type
+    markdown: price, range, payload, Max-Speed, charging time, body type
     details: from, flatbed, tipper, suitcase, box, hours
   - markdown: Recommended, Lowest price, highest price, bestseller, best charging
       time, highest payload, highest range, highest Vmax

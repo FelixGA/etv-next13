@@ -17,14 +17,16 @@ const ResultList = (props) => {
       !state?.chargingTimeLithiums ||
       props.sortedCars?.length === 0
     )
-     
       return;
-      
+
     let filteredCars = props.sortedCars?.filter((car) => {
-      let rangeval=car.rangeLithium.value
-      let chargingTimeval=car.chargingTimeLithium.value
-      car.rangeLithium.value== 0 ?  rangeval= car.range230V.value : null
-      car.chargingTimeLithium.value== 0 ?  car.chargingTimeval= car.chargingTime230V.value : null
+      let rangeval = car.rangeLithium.value;
+      let chargingTimeval = car.chargingTimeLithium.value;
+      //declaring the right range and charging time according to the battery
+      car.rangeLithium.value == 0 ? (rangeval = car.range230V.value) : null;
+      car.chargingTimeLithium.value == 0
+        ? (chargingTimeval = car.chargingTime230V.value)
+        : null;
       if (
         state?.prices?.length > 0 &&
         state?.prices?.every(
@@ -45,9 +47,7 @@ const ResultList = (props) => {
       if (
         state?.rangeLithiums?.length > 0 &&
         state?.rangeLithiums?.every(
-          (entry) =>
-            entry.min > rangeval ||
-            entry.max < rangeval
+          (entry) => entry.min > rangeval || entry.max < rangeval
         )
       )
         return false;
@@ -62,9 +62,7 @@ const ResultList = (props) => {
       if (
         state?.chargingTimeLithiums?.length > 0 &&
         state?.chargingTimeLithiums?.every(
-          (entry) =>
-            entry.min > car.chargingTimeval ||
-            entry.max < car.chargingTimeval
+          (entry) => entry.min > chargingTimeval || entry.max < chargingTimeval
         )
       )
         return false;

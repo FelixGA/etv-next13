@@ -26,12 +26,12 @@ export default function FunnelBox({ currentFilter, redirecter }) {
             flex flex-col justify-center items-center  rounded-lg shadow-lg m-8 hover:scale-125"
           >
             {" "}
-            <div className="w-28 h-28  ">
+            <div className="w-56 h-56 px-2 ">
               <Image
                 src={item.image}
                 alt="picture"
                 objectFit="cover"
-                width={24}
+                width={48}
                 height={28}
                 layout="responsive"
               />
