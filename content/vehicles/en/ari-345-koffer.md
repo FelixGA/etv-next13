@@ -2,7 +2,12 @@
 title: ARI 345 Koffer
 name: ari-345-koffer
 price: 7395
-description: ""
+description: >-
+  ![ARI 345 ](/images/whatsapp-image-2021-07-ari_345-koffer.jpeg "ARI 345
+  Koffer")
+
+
+  The ARI 345 is a load-carrying electric bike of vehicle category L2e with a payload of 325 kg. Its maximum speed is 45 km/h.
 src: /images/dsc_0071.png
 category: Koffer
 typeClass: L2E
@@ -111,3 +116,4 @@ loadingVolume:
   width: Width
   length: Length
 ---
+The ARI 345 is a load-carrying electric bike with a maximum speed of 45 km/h. Its perfect for urban delivery services and catering services.
