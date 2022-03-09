@@ -27,10 +27,12 @@ range230V:
   key: range sla
   value: 0
   baseUnit: " eryheryj"
+  maxValue: 0
 rangeLithium:
   key: "range "
   value: 110
   baseUnit: km
+  maxValue: 0
 chargingTime230V:
   key: sfgsfdgdf
   value: 0
@@ -72,29 +74,29 @@ guarantee:
   key: Car guarantee
   value: 0
   baseUnit: keine Angabe
+availability:
+  key: no information
+  value: no info
 subsidies:
   key: subsidies
+  value: 0
+  baseUnit: no info
+batteryGuarantee:
+  key: battery guarantee
   value: 0
   baseUnit: no info
 loadingHeight:
   key: loading height
   value: 895
   baseUnit: mm
-loadingArea:
-  value: "234234"
-  baseUnit: m2
-  key: LadeflächeEnglish
 loadingVolumeTotal:
   value: "234"
   baseUnit: m3
   key: LoadingVolume
-availability:
-  key: no information
-  value: no info
-batteryGuarantee:
-  key: battery guarantee
-  value: 0
-  baseUnit: no info
+loadingArea:
+  value: "234234"
+  baseUnit: m2
+  key: LadeflächeEnglish
 carSizes:
   width: width
   length: length

@@ -5,6 +5,9 @@ function CarCardDetailsMobile({ carItem }) {
 
   // const { cartitle } = router.query;
 
+  //declaring the right range and charging time according to the battery
+  let range = carItem.rangeLithium;
+  carItem.rangeLithium.value == 0 ? (range = carItem.range230V) : null;
   return (
     <div className="flex-1 flex flex-col lg:hidden">
       <div className="px-2 flex flex-col justify-between">
@@ -41,9 +44,9 @@ function CarCardDetailsMobile({ carItem }) {
                   : carItem?.range230V.key}
               </div>
               <div className="text-blue-dark font-bold w-full xs:w-3/5">
-                {carItem?.rangeLithium.value
-                  ? carItem?.rangeLithium.value
-                  : carItem?.range230V.value}
+                {range.maxValue
+                  ? `${range.value}-${range.maxValue}`
+                  : range.value}
                 {carItem?.rangeLithium.baseUnit}
               </div>
             </div>
