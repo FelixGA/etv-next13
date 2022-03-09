@@ -184,30 +184,30 @@ export default function Funnel({ getContent }) {
     redirecter,
   ]);
 
-  return (
-    <div className="flex flex-col flex-1 ">
-      <p></p>
-      <div className="flex flex-1 flex-col my-4 items-center ">
-        {!redirecter ? (
-          <h2 className="text-center text-3xl text-black-dark font-bold my-8 px-4">
-            {currentFilter.title}
-          </h2>
-        ) : (
-          <h3>Wir suchen das passende Fahrzeug für Sie.</h3>
-          // <Link href="/comparePage" passHref>
-          //   <div className="w-full my-8 flex items-center justify-center">
-          //     <a className="flex items-center h-12 px-6 border rounded-md border-blue-darker text-blue-darker font-bold">
-          //       Transporter anzeigen
-          //     </a>
-          //   </div>
-          // </Link>
-        )}
+  return (<></>
+    // <div className="flex flex-col flex-1 ">
+    //   <p></p>
+    //   <div className="flex flex-1 flex-col my-4 items-center ">
+    //     {!redirecter ? (
+    //       <h2 className="text-center text-3xl text-black-dark font-bold my-8 px-4">
+    //         {currentFilter.title}
+    //       </h2>
+    //     ) : (
+    //       <h3>Wir suchen das passende Fahrzeug für Sie.</h3>
+    //       // <Link href="/comparePage" passHref>
+    //       //   <div className="w-full my-8 flex items-center justify-center">
+    //       //     <a className="flex items-center h-12 px-6 border rounded-md border-blue-darker text-blue-darker font-bold">
+    //       //       Transporter anzeigen
+    //       //     </a>
+    //       //   </div>
+    //       // </Link>
+    //     )}
 
-        <FunnelBox currentFilter={currentFilter} redirecter={redirecter} />
-      </div>
-      <div className={!redirecter ? "hidden" : "visible"}>
-        <ButtonForAlleTransporter />
-      </div>
-    </div>
+    //     <FunnelBox currentFilter={currentFilter} redirecter={redirecter} />
+    //   </div>
+    //   <div className={!redirecter ? "hidden" : "visible"}>
+    //     <ButtonForAlleTransporter />
+    //   </div>
+    // </div>
   );
 }
