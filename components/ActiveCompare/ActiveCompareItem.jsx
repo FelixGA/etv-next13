@@ -31,9 +31,9 @@ export default function ActiveCompareItem({ comparedCars }) {
                   </a>
 
                   <div className="lg:absolute lg:top-0 md:pl-4 h-10">
-                    <h3 className="text-blue-extra lg:text-white md:pt-2 font-black text-sm lg:text-lg line-clamp-3">
+                    {/* <h3 className="text-blue-extra lg:text-white md:pt-2 font-black text-sm lg:text-lg line-clamp-3">
                       {item.title}
-                    </h3>
+                    </h3> */}
                   </div>
                 </div>
               </Link>
