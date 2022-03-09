@@ -20,8 +20,8 @@ function CarCardProps(props) {
       <div className="flex flex-col flex-1 justify-center text-sm lg:pl-2 ">
         <div className="text-blue-dark font-bold ">{props.details?.key}</div>
         <div className="text-grey-dark font-bold ">
-          {props.details?.value ? props.details?.value : "-"} {""}
-          {/* {props.details?.type}  */}
+          {props.details?.value ? props.details?.value : "-"}
+          {props.details?.maxValue ? ` - ${props.details?.maxValue} ` : " "}
           {props.details?.baseUnit}
         </div>
       </div>

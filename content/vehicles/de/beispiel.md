@@ -32,10 +32,12 @@ range230V:
   key: Reichweite SLA Blei
   value: 0
   baseUnit: " eryheryj"
+  maxValue: 0
 rangeLithium:
   key: "Reichweite "
   value: 110
   baseUnit: km
+  maxValue: 340
 chargingTime230V:
   key: Ladezeit
   value: 0

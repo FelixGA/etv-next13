@@ -22,10 +22,12 @@ range230V:
   value: 0
   baseUnit: km
   key: Range SLA
+  maxValue: 0
 rangeLithium:
   value: 95
   baseUnit: km
   key: Range Lithium
+  maxValue: 0
 chargingTime230V:
   value: 0
   key: charging time

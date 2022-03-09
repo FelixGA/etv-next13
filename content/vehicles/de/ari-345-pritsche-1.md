@@ -28,10 +28,12 @@ range230V:
   key: Reichweite SLA Akku
   value: 55
   baseUnit: km
+  maxValue: 100
 rangeLithium:
   key: Reichweite Lithium Akku
   value: 0
   baseUnit: km
+  maxValue: 0
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 5

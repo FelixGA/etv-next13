@@ -22,10 +22,12 @@ range230V:
   key: Range SLA Battery
   value: 55
   baseUnit: km
+  maxValue: 100
 rangeLithium:
   key: bitte auffüllen
   value: 0
   baseUnit: km
+  maxValue: 0
 chargingTime230V:
   key: Charge Time 230v-socket
   value: 5

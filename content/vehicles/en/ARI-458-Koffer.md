@@ -21,10 +21,12 @@ range230V:
   key: Range SLA Battery
   value: 120
   baseUnit: " km"
+  maxValue: -3
 rangeLithium:
   value: 150
   baseUnit: km
   key: Range Lithium Battery
+  maxValue: 495
 chargingTime230V:
   key: Charge Time 230-V-socket
   value: 6

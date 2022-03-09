@@ -2,8 +2,6 @@ import Link from "next/link";
 import { useStore } from "../store";
 import FunnelBox from "./FunnelBox";
 import { useState, useEffect } from "react";
-import image4 from "../../public/images/preis.png";
-
 import weight250 from "../../public/images/weight250.png";
 import weight100 from "../../public/images/weight100.jpg";
 import weight450 from "../../public/images/weight450.png";
@@ -19,8 +17,10 @@ import kastenicon from "../../public/images/kasten.png";
 import kippericon from "../../public/images/kipper.png";
 import ButtonForAlleTransporter from "../Sliders/ButtonForAlleTransporter";
 import Router from "next/router";
+import { useRouter } from "next/router";
 
-export default function Funnel({ getCars }) {
+export default function Funnel({ getContent }) {
+  const router = useRouter();
   const filtersData = [
     {
       title: `Welchen Aufbautyp wählen Sie für Ihren Elektrotransporter? `,
@@ -164,7 +164,8 @@ export default function Funnel({ getCars }) {
   const [currentFilter, setCurrentFilter] = useState(filtersData[0]);
   const [redirecter, setRedDirecter] = useState(false);
   useEffect(() => {
-    if (redirecter) {
+    if (redirecter && router.pathname == "/caradvisor") {
+      /*  here is the solution! */
       Router.push("/comparePage");
       setRedDirecter(false);
     }
@@ -184,28 +185,30 @@ export default function Funnel({ getCars }) {
   ]);
 
   return (
-    <div className="flex flex-col flex-1 ">
-      <div className="flex flex-1 flex-col my-4 items-center ">
-        {!redirecter ? (
-          <h2 className="text-center text-3xl text-black-dark font-bold my-8 sm:px-4">
-            {currentFilter.title}
-          </h2>
-        ) : (
-          <h3>Wir suchen das passende Fahrzeug für Sie.</h3>
-          // <Link href="/comparePage" passHref>
-          //   <div className="w-full my-8 flex items-center justify-center">
-          //     <a className="flex items-center h-12 px-6 border rounded-md border-blue-darker text-blue-darker font-bold">
-          //       Transporter anzeigen
-          //     </a>
-          //   </div>
-          // </Link>
-        )}
+    <></>
+    // <div className="flex flex-col flex-1 ">
+    //   <p></p>
+    //   <div className="flex flex-1 flex-col my-4 items-center ">
+    //     {!redirecter ? (
+    //       <h2 className="text-center text-3xl text-black-dark font-bold my-8 px-4">
+    //         {currentFilter.title}
+    //       </h2>
+    //     ) : (
+    //       <h3>Wir suchen das passende Fahrzeug für Sie.</h3>
+    //       // <Link href="/comparePage" passHref>
+    //       //   <div className="w-full my-8 flex items-center justify-center">
+    //       //     <a className="flex items-center h-12 px-6 border rounded-md border-blue-darker text-blue-darker font-bold">
+    //       //       Transporter anzeigen
+    //       //     </a>
+    //       //   </div>
+    //       // </Link>
+    //     )}
 
-        <FunnelBox currentFilter={currentFilter} redirecter={redirecter} />
-      </div>
-      <div className={!redirecter ? "hidden" : "visible"}>
-        <ButtonForAlleTransporter />
-      </div>
-    </div>
+    //     <FunnelBox currentFilter={currentFilter} redirecter={redirecter} />
+    //   </div>
+    //   <div className={!redirecter ? "hidden" : "visible"}>
+    //     <ButtonForAlleTransporter />
+    //   </div>
+    // </div>
   );
 }
