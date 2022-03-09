@@ -40,7 +40,7 @@ description: >-
   Neben diesen Standard-Aufbauten hat sich das Unternehmen vor allem auf individuelle Kundenlösungen spezialisiert. So sind auch Sonderanfertigungen möglich. Potentiellen Einsatzfeldern sind keine Grenzen gesetzt. 
 
 
-  ![ARI 345 Food Truck](/images/ari-345-fahrzeugvarianten.jpg "ARI 345 Food Truck - Elektrisches Lastenmoped mit Gastro-Aufbau von ARI Motors")
+  ![ARI 345 Koffer, Pritsche und mit Planenaufbau](/images/ari-345-fahrzeugvarianten.jpg "ARI 345  - Fahrzeugvarianten")
 
 
   ## Antrieb & Aufladung (3/5 Punkten)
@@ -230,4 +230,4 @@ loadingVolume:
   length: Länge
   baseUnit: mm
 ---
-Das ARI 345 Pritsche ist ein dreirädriges elektrisches Lastenmoped mit 45 km/h Höchstgeschwindigkeit und eignet sich ideal für innerstädtische Liefer-und Cateringdienste.
+Das ARI 345 Koffer ist ein dreirädriges elektrisches Lastenmoped mit 45 km/h Höchstgeschwindigkeit und eignet sich ideal für innerstädtische Liefer-und Cateringdienste.
