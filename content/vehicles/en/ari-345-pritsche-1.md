@@ -4,7 +4,7 @@ name: ari-345-food-truck
 price: 12750
 description: ""
 src: /images/ari_345_food_truck_l_.png
-category: Kasten
+category: Koffer
 typeClass: L2E
 loadingWeight:
   key: Loading Weight

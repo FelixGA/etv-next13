@@ -184,7 +184,8 @@ export default function Funnel({ getContent }) {
     redirecter,
   ]);
 
-  return (<></>
+  return (
+    <></>
     // <div className="flex flex-col flex-1 ">
     //   <p></p>
     //   <div className="flex flex-1 flex-col my-4 items-center ">
