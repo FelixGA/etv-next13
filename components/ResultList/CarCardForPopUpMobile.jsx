@@ -18,9 +18,9 @@ function CarCardForPopUpMobile(props) {
           height={111}
           layout="responsive"
         />
-        {/* <p className="text-sm text-white text-center line-clamp-2">
+        <p className="text-sm text-white text-center line-clamp-2">
           {props.selectedCar.title}
-        </p> */}
+        </p>
         <div
           className="absolute top-0 right-0 cursor-pointer"
           onClick={() => {
