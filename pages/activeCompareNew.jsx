@@ -57,60 +57,59 @@ export default function activeCompareNew(props) {
   }, []);
 
   return (
-    <></>
-    // <div className="main-wrapper 2xl:px-40">
-    //   {/* HEADING */}
-    //   <div className="pt-8 pb-6 px-4">
-    //     <h1 className="font-bold text-blue-extra text-2xl lg:text-4xl">
-    //       Ihre Auswahl im Detailvergleich
-    //     </h1>
-    //   </div>
-    //   {/* BACK BUTTON */}
-    //   <div
-    //     className={comparedCars.length > 1 ? "pl-4 block lg:hidden" : "hidden"}
-    //   >
-    //     <button className="mb-12 text-sm w-52 h-10 rounded-md text-blue-darker bg-grey-lighter">
-    //       <Link href="/comparePage">
-    //         <a className="visited:text-blue-darker">
-    //           « zurück zur Ergebnisliste
-    //         </a>
-    //       </Link>
-    //     </button>
-    //   </div>
-    //   {/* KEYS AND ITEMS FOR COMPARE */}
-    //   <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
-    //     <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
+    <div className="main-wrapper 2xl:px-40">
+      {/* HEADING */}
+      <div className="pt-8 pb-6 px-4">
+        <h1 className="font-bold text-blue-extra text-2xl lg:text-4xl">
+          Ihre Auswahl im Detailvergleich
+        </h1>
+      </div>
+      {/* BACK BUTTON */}
+      <div
+        className={comparedCars.length > 1 ? "pl-4 block lg:hidden" : "hidden"}
+      >
+        <button className="mb-12 text-sm w-52 h-10 rounded-md text-blue-darker bg-grey-lighter">
+          <Link href="/comparePage">
+            <a className="visited:text-blue-darker">
+              « zurück zur Ergebnisliste
+            </a>
+          </Link>
+        </button>
+      </div>
+      {/* KEYS AND ITEMS FOR COMPARE */}
+      <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
+        <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
 
-    //     <ActiveCompareItem comparedCars={comparedCars} />
-    //   </div>
-    //   <div className="flex flex-1 justify-center py-8 ">
-    //     <div
-    //       onClick={() => setToggle(true)}
-    //       className="text-lg mr-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
-    //     >
-    //       <button>Ausstattung</button>
-    //     </div>
-    //     <div
-    //       onClick={() => setToggle(false)}
-    //       className="text-lg ml-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
-    //     >
-    //       <button>Masse</button>
-    //     </div>
-    //   </div>
-    //   <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
-    //     {toggle ? (
-    //       <ActiveCompareEquipmentKeysValues
-    //         getKeys={getKeys}
-    //         comparedCars={comparedCars}
-    //       />
-    //     ) : (
-    //       <ActiveCompareMaßeKeysValues
-    //         getKeys={getKeys}
-    //         comparedCars={comparedCars}
-    //       />
-    //     )}
-    //   </div>
-    // </div>
+        <ActiveCompareItem comparedCars={comparedCars} />
+      </div>
+      <div className="flex flex-1 justify-center py-8 ">
+        <div
+          onClick={() => setToggle(true)}
+          className="text-lg mr-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
+        >
+          <button>Ausstattung</button>
+        </div>
+        <div
+          onClick={() => setToggle(false)}
+          className="text-lg ml-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
+        >
+          <button>Masse</button>
+        </div>
+      </div>
+      <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
+        {toggle ? (
+          <ActiveCompareEquipmentKeysValues
+            getKeys={getKeys}
+            comparedCars={comparedCars}
+          />
+        ) : (
+          <ActiveCompareMaßeKeysValues
+            getKeys={getKeys}
+            comparedCars={comparedCars}
+          />
+        )}
+      </div>
+    </div>
   );
 }
 
