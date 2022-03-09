@@ -7,9 +7,7 @@ export default function ActiveCompareEquipmentKeys({ getKeys, comparedCars }) {
     <>
       <div
         className={
-          comparedCars.length
-            ? " border-r bg-grey-border w-40 sm:w-full"
-            : "hidden"
+          comparedCars.length ? " border-r bg-grey-border sm:w-full" : "hidden"
         }
       >
         {/* <div className="w-32 lg:w-56 xl:w-64 2xl:w-72 "></div> */}

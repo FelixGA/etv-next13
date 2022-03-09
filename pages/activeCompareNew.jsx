@@ -77,37 +77,68 @@ export default function activeCompareNew(props) {
         </button>
       </div>
       {/* KEYS AND ITEMS FOR COMPARE */}
-      <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
-        <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
-
-        <ActiveCompareItem comparedCars={comparedCars} />
+      <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
+        <div className="min-w-[200px] flex ">
+          <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
+        </div>
+        <div className="min-w-[600px] flex">
+          <ActiveCompareItem comparedCars={comparedCars} />
+        </div>
       </div>
       <div className="flex flex-1 justify-center py-8 ">
         <div
           onClick={() => setToggle(true)}
-          className="text-lg mr-1 sm:mr-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
+          className="text-lg mr-1 sm:mr-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark hover:bg-blue-light text-white shrink-0 rounded-md"
         >
           <button>Ausstattung</button>
         </div>
         <div
           onClick={() => setToggle(false)}
-          className="text-lg ml-1 sm:ml-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
+          className="text-lg ml-1 sm:ml-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark hover:bg-blue-light text-white shrink-0 rounded-md"
         >
           <button>Masse</button>
         </div>
       </div>
-      <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
-        {toggle ? (
-          <ActiveCompareEquipmentKeysValues
-            getKeys={getKeys}
-            comparedCars={comparedCars}
-          />
-        ) : (
-          <ActiveCompareMaßeKeysValues
-            getKeys={getKeys}
-            comparedCars={comparedCars}
-          />
-        )}
+      <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
+        <div className="min-w-[300px] flex">
+          {toggle ? (
+            <ActiveCompareEquipmentKeysValues
+              getKeys={getKeys}
+              comparedCars={comparedCars}
+            />
+          ) : (
+            <ActiveCompareMaßeKeysValues
+              getKeys={getKeys}
+              comparedCars={comparedCars}
+            />
+          )}
+        </div>
+      </div>
+      <div className="grid gap-4 grid-flow-col  overflow-x-scroll">
+        <div className="min-w-[300px]">dssfd</div>
+        <div className="min-w-[300px]">
+          fsdfsdffffffff ffffff ffdfsss ssssss sssss ssssssss fsdddddd dddddd
+          fsdfffffffffffff fsdffsdfsf f
+        </div>
+        <div className="min-w-[300px]">
+          fsdddd ddddddddddddddd ddddddddddddddcxy ddddddddddddddd ddddddddddddd
+          dddddddddddddddd
+        </div>
+        <div className="min-w-[300px]">dsffffffffffffff fffffffffffff ffff</div>
+      </div>
+      <div className="grid gap-4 grid-flow-col  overflow-x-scroll">
+        <div className="min-w-[300px]">dssfd</div>
+        <div className="min-w-[300px]">
+          fsdfsdffffffff ffffff ffdfsss ssssss sssss ssssssss fsdddddd dddddd
+          fsdfffffffffffff fsdffsdfsf f
+        </div>
+        <div className="min-w-[300px]">
+          fsdddd ddddddddddddddd ddddddddddddddcxy dddddddddtdrrrrrrr
+          trdtttttttt dddddd ddddddddddddd dddddddddddddddd
+        </div>
+        <div className="min-w-[300px]">
+          dsffffffffffftrtdrtdrfff fffffffffffff ffff
+        </div>
       </div>
     </div>
   );

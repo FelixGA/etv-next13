@@ -1,12 +1,11 @@
 import React from "react";
 
 export default function ActiveCompareEquipmentValues({ comparedCars }) {
-  
   return (
     <>
       {comparedCars?.map((item, index) => (
         <div className="w-full" key={index}>
-          <div className="data-content-categories relative w-40 sm:w-full">
+          <div className="data-content-categories relative">
             <div className="pl-8 relative lg:w-[255px] xl:w-[340px] top-12 pr-4"></div>
             <div className=" relative ">
               <div className="h-10 bg-white flex-1 flex items-center">

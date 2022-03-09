@@ -13,9 +13,7 @@ export default function ActiveCompareMaßeKeys({ getKeys, comparedCars }) {
     <>
       <div
         className={
-          comparedCars.length
-            ? "w-40 sm:w-full border-r bg-grey-border"
-            : "hidden"
+          comparedCars.length ? " sm:w-full border-r bg-grey-border" : "hidden"
         }
       >
         <div className="w-32 lg:w-56 xl:w-64 2xl:w-72 "></div>

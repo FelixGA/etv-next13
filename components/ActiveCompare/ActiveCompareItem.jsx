@@ -11,14 +11,13 @@ export default function ActiveCompareItem({ comparedCars }) {
       {comparedCars?.map((item, index) => (
         <div className="" key={index}>
           <div
-            className="data-content-categories relative w-40 sm:w-full"
+            className="data-content-categories relative"
             /* key={index} */
           >
             {/* IMAGE + HEADING */}
-            <div className="relative h-36 xl:h-72 ">
-              <div className="lg:bg-grey-lighter absolute -z-10 inset-0 lg:h-64 xl:h-72"></div>
-              <Link href={`/transporter/${item.name}`}>
-                <div className="relative md:top-2 lg:top-12 xl:top-10 2xl:top-6 pl-2 md:px-2 xl:pl-8 cursor-pointer">
+            <div className="relative h-full bg-grey-lighter p-4">
+              <div className="relative cursor-pointer">
+                <Link href={`/transporter/${item.name}`}>
                   <a>
                     <Image
                       className="rounded-md md:rounded-lg brightness-50 "
@@ -28,15 +27,15 @@ export default function ActiveCompareItem({ comparedCars }) {
                       width={380}
                       height={250}
                     ></Image>
-                  </a>
 
-                  <div className="lg:absolute lg:top-0 md:pl-4 h-10">
-                    <h3 className="text-blue-extra lg:text-white md:pt-2 font-black text-sm lg:text-lg line-clamp-3">
-                      {item.title}
-                    </h3>
-                  </div>
-                </div>
-              </Link>
+                    <div className="lg:absolute lg:top-0 left-4">
+                      <h3 className="text-blue-extra lg:text-white md:pt-2 font-black text-sm lg:text-lg line-clamp-3">
+                        {item.title}
+                      </h3>
+                    </div>
+                  </a>
+                </Link>
+              </div>
             </div>
             <div className="relative">
               <div className="flex lg:hidden h-11 md:h-[76px] items-end pb-2">
@@ -45,7 +44,7 @@ export default function ActiveCompareItem({ comparedCars }) {
                   <span className="text-green-light">{item.rating.value}</span>
                 </h2>
               </div>
-              <div className="hidden lg:flex pt-6 lg:pt-36 xl:pt-6 pl-8 pb-3 ">
+              <div className="hidden lg:flex h-20 p-4 pl-8">
                 <TestResult
                   itemKey={item.rating.key}
                   itemValue={item.rating?.value || "-"}
@@ -56,14 +55,14 @@ export default function ActiveCompareItem({ comparedCars }) {
                   {item.typeClass}
                 </h3>
               </div>
-              <div className="third-category h-10">
+              <div className="third-category ">
                 <h3 className="third-category-title text-sm lg:text-lg h-10 pl-4 lg:pl-8 flex-1 flex items-center text-blue-extra">
                   {item.range230V.value}
                   <span> &nbsp;{item.range230V.baseUnit}</span>
                 </h3>
               </div>
 
-              <div className="forth-category h-10 bg-grey-lighter">
+              <div className="forth-category  bg-grey-lighter">
                 <h3 className="forth-category-title text-sm lg:text-lg h-10 pl-4 lg:pl-8  flex-1 text-blue-extra flex items-center">
                   {item.rangeLithium.value}
 
