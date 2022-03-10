@@ -10,7 +10,7 @@ export default function ActiveCompareKeys({ getKeys, comparedCars }) {
     <div className={comparedCars.length ? " border-r " : "hidden"}>
       <div className="   bg-grey-lighter">
         {/* BACK BUTTON + placeholder */}
-        <div className="relative bg-red-500 ">
+        <div className="relative h-full bg-grey-lighter p-4">
           <button className="text-sm bg-white w-52 h-10 rounded-md text-blue-darker absolute hidden lg:block top-4 left-8">
             <Link href="/comparePage">
               <a className="visited:text-blue-darker">
@@ -18,25 +18,24 @@ export default function ActiveCompareKeys({ getKeys, comparedCars }) {
               </a>
             </Link>
           </button>
-          <div className="relative h-full bg-red-300 p-4 flex flex-1 invisible items-center pl-8">
-            <div className="relative cursor-pointer">
-              <a>
-                <Image
-                  className="rounded-md md:rounded-lg brightness-50 "
-                  src={image}
-                  alt="picture"
-                  objectFit="cover"
-                  width={380}
-                  height={250}
-                ></Image>
 
-                <div className="lg:absolute lg:top-0 left-4">
-                  <h3 className="text-blue-extra lg:text-white md:pt-2 font-black text-sm lg:text-lg line-clamp-3">
-                    random name
-                  </h3>
-                </div>
-              </a>
-            </div>
+          <div className="relative cursor-pointer invisible">
+            <a>
+              <Image
+                className="rounded-md md:rounded-lg brightness-50 "
+                src={image}
+                alt="picture"
+                objectFit="cover"
+                width={380}
+                height={250}
+              ></Image>
+
+              <div className="lg:absolute lg:top-0 left-4">
+                <h3 className="text-blue-extra lg:text-white md:pt-2 font-black text-sm lg:text-lg line-clamp-3">
+                  random name
+                </h3>
+              </div>
+            </a>
           </div>
         </div>
       </div>

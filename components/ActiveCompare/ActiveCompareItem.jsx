@@ -15,7 +15,7 @@ export default function ActiveCompareItem({ comparedCars }) {
             /* key={index} */
           >
             {/* IMAGE + HEADING */}
-            <div className="relative h-full bg-grey-lighter p-4">
+            {/* <div className="relative h-full bg-grey-lighter p-4">
               <div className="relative cursor-pointer">
                 <Link href={`/transporter/${item.name}`}>
                   <a>
@@ -36,7 +36,7 @@ export default function ActiveCompareItem({ comparedCars }) {
                   </a>
                 </Link>
               </div>
-            </div>
+            </div> */}
             <div className="relative">
               <div className="flex lg:hidden h-11 md:h-[76px] items-end pb-2">
                 <h2 className="text-sm font-bold text-[#F45625] pl-4 lg:pl-8">

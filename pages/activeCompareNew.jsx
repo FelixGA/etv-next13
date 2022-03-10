@@ -6,6 +6,8 @@ import ActiveCompareKeys from "../components/ActiveCompare/ActiveCompareKeys";
 import ActiveCompareItem from "../components/ActiveCompare/ActiveCompareItem";
 import ActiveCompareEquipmentKeysValues from "../components/ActiveCompare/ActiveCompareEquipmentKeysValues";
 import ActiveCompareMaßeKeysValues from "../components/ActiveCompare/ActiveCompareMaßeKeysValues";
+import ActiveCompareImages from "../components/ActiveCompare/ActiveCompareImages";
+import ActiveCompareBasics from "../components/ActiveCompare/ActiveCompareBasics";
 
 export default function activeCompareNew(props) {
   const { state, dispatch } = useStore();
@@ -78,13 +80,19 @@ export default function activeCompareNew(props) {
       </div>
       {/* KEYS AND ITEMS FOR COMPARE */}
       <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
-        <div className="min-w-[200px] flex ">
-          <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
-        </div>
-        <div className="min-w-[600px] flex">
-          <ActiveCompareItem comparedCars={comparedCars} />
-        </div>
+        {/* <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} /> */}
+
+        <ActiveCompareImages comparedCars={comparedCars} />
       </div>
+      <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
+        <ActiveCompareBasics getKeys={getKeys} comparedCars={comparedCars} />
+      </div>
+      {/* <div className="min-w-[200px] flex flex-1">
+        </div>
+        <div className="min-w-[600px] flex flex-1">
+          <ActiveCompareItem comparedCars={comparedCars} />
+        </div> */}
+
       <div className="flex flex-1 justify-center py-8 ">
         <div
           onClick={() => setToggle(true)}
@@ -126,7 +134,7 @@ export default function activeCompareNew(props) {
         </div>
         <div className="min-w-[300px]">dsffffffffffffff fffffffffffff ffff</div>
       </div>
-      <div className="grid gap-4 grid-flow-col  overflow-x-scroll">
+      {/* <div className="grid gap-4 grid-flow-col  overflow-x-scroll">
         <div className="min-w-[300px]">dssfd</div>
         <div className="min-w-[300px]">
           fsdfsdffffffff ffffff ffdfsss ssssss sssss ssssssss fsdddddd dddddd
@@ -139,7 +147,7 @@ export default function activeCompareNew(props) {
         <div className="min-w-[300px]">
           dsffffffffffftrtdrtdrfff fffffffffffff ffff
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
