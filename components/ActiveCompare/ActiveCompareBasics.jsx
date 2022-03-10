@@ -4,11 +4,11 @@ export default function ActiveCompareBasics({ getKeys, comparedCars }) {
   return (
     <>
       {/* KEYS */}
-      <div className="flex flex-col min-w-[170px]">
-        <div className="flex items-center flex-1 bg-white h-10 pl-8">
+      <div className="flex flex-col min-w-[160px]">
+        <div className="flex items-center flex-1 bg-white  pl-8">
           <h3 className="text-blue-extra text-xl font-bold ">Grundlagen</h3>
         </div>
-        <div className="bg-red-500">
+        <div className="">
           {getKeys
             .map((item, index) => (
               <div
@@ -24,12 +24,12 @@ export default function ActiveCompareBasics({ getKeys, comparedCars }) {
                 </h3>
               </div>
             ))
-            .splice(0, 11)}
+            .slice(0, 11)}
         </div>
       </div>
       {/* VALUES */}
       {comparedCars?.map((item, index) => (
-        <div className="relative min-w-[170px]">
+        <div className="relative min-w-[160px]">
           <div className="flex lg:hidden h-11 md:h-[76px] items-end pb-2">
             <h2 className="text-sm font-bold text-[#F45625] pl-4 lg:pl-8">
               Testnote
