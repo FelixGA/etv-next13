@@ -1,34 +1,60 @@
 import TestResult from "../repeated/TestResult";
+import { useState, useEffect } from "react";
 
-export default function ActiveCompareBasics({ getKeys, comparedCars }) {
+export default function ActiveCompareEntries({ keys, comparedCars }) {
+  const [entries, setEntries] = useState([
+    ["key1key1key1key1key1key1key1key1", "key2"],
+    ["value1", "value2"],
+    ["value1", "value2"],
+  ]);
+  console.log(entries);
+
+  useEffect(() => {
+    if (!keys?.length > 0 || !comparedCars?.length > 0) return;
+    const entries = [];
+
+    const entryKeys = [];
+    for (const key of keys) {
+      entryKeys.push(comparedCars[0][key].key);
+    }
+    entries.push(entryKeys);
+
+    for (const car of comparedCars) {
+      const carValues = [];
+      for (const key of keys) {
+        const entryValues = [];
+
+        const entry = car[key];
+        carValues.push(`${entry.value} ${entry.baseUnit}`);
+      }
+      entries.push(carValues);
+    }
+    setEntries(entries);
+  }, [keys, comparedCars]);
   return (
     <>
       {/* KEYS */}
-      <div className="flex flex-col min-w-[160px]">
-        <div className="flex items-center flex-1 bg-white  pl-8">
+      {/* <div className="flex flex-col min-w-[160px]"> */}
+      {/* <div className="flex items-center flex-1 bg-white  pl-8">
           <h3 className="text-blue-extra text-xl font-bold ">Grundlagen</h3>
+        </div> */}
+      {entries.map((entry, index) => (
+        <div key={index} className="">
+          {entry.map((value, index) => (
+            <p
+              className={`${
+                index % 2 == 1 ? "bg-grey-lighter" : "bg-white"
+              } text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8 `}
+            >
+              {value}
+            </p>
+          ))}
         </div>
-        <div className="">
-          {getKeys
-            .map((item, index) => (
-              <div
-                key={index}
-                className={
-                  index % 2 == 0
-                    ? "flex items-center h-10 flex-1 bg-grey-lighter pr-1"
-                    : "flex items-center h-10 flex-1 bg-white pr-1"
-                }
-              >
-                <h3 className=" text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
-                  {item}
-                </h3>
-              </div>
-            ))
-            .slice(0, 11)}
-        </div>
-      </div>
+      ))}
+
+      {/* </div> */}
       {/* VALUES */}
-      {comparedCars?.map((item, index) => (
+      {/* {comparedCars?.map((item, index) => (
         <div className="relative min-w-[160px]">
           <div className="flex lg:hidden h-11 md:h-[76px] items-end pb-2">
             <h2 className="text-sm font-bold text-[#F45625] pl-4 lg:pl-8">
@@ -109,7 +135,7 @@ export default function ActiveCompareBasics({ getKeys, comparedCars }) {
             </h3>
           </div>
         </div>
-      ))}
+      ))} */}
     </>
   );
 }

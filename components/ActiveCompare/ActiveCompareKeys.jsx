@@ -57,7 +57,7 @@ export default function ActiveCompareKeys({ getKeys, comparedCars }) {
             </h3>
           </div>
         ))
-        .splice(0, 11)}
+        .slice(0, 11)}
 
       {/* <div className="w-[105%] bg-[#D0DDEA] h-20"></div> */}
     </div>

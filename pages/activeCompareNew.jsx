@@ -7,17 +7,35 @@ import ActiveCompareItem from "../components/ActiveCompare/ActiveCompareItem";
 import ActiveCompareEquipmentKeysValues from "../components/ActiveCompare/ActiveCompareEquipmentKeysValues";
 import ActiveCompareMaßeKeysValues from "../components/ActiveCompare/ActiveCompareMaßeKeysValues";
 import ActiveCompareImages from "../components/ActiveCompare/ActiveCompareImages";
-import ActiveCompareBasics from "../components/ActiveCompare/ActiveCompareBasics";
+import ActiveCompareBasics from "../components/ActiveCompare/ActiveCompareEntries";
 import ActiveCompareEquipment from "../components/ActiveCompare/ActiveCompareEquipment";
+import ActiveCompareEntries from "../components/ActiveCompare/ActiveCompareEntries";
+const basicKeys = [
+  // "typeClass",
+  "rangeLithium",
+  "maxSpeed",
+  // "chargingTime230V",
+  // "chargingTimeFast",
+  // "power",
+  // "loadingWeight",
+  // "curbweight",
+  // "Gesamtgewicht",
+  // "loadingVolume",
+  // "loadingHeight",
+  // "loadingLength",
+  // "loadingWidth",
+];
+const equipmentKeys = ["range"];
 
 export default function activeCompareNew(props) {
   const { state, dispatch } = useStore();
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getKeys, SetGetKeys] = useState([]);
+
   const [toggle, setToggle] = useState(true);
 
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
-  console.log(comparedCars);
+  // console.log(comparedCars);
   useEffect(() => {
     SetGetCars(props.vehicles);
     let arrkeys = [
@@ -59,6 +77,14 @@ export default function activeCompareNew(props) {
     SetGetKeys(arrkeys);
   }, []);
 
+  // let basicKeys = getKeys.slice(0, 11);
+  // let equipmentKeys = getKeys.slice(21);
+  // let dimensionPartOne = getKeys.slice(11, 12);
+  // let dimensionPartTwo = getKeys.slice(15, 21);
+  // let dimensionsKeys = [...dimensionPartOne, ...dimensionPartTwo];
+
+  // console.log(dimensionsKeys);
+
   return (
     <div className="main-wrapper 2xl:px-40">
       {/* HEADING */}
@@ -83,8 +109,9 @@ export default function activeCompareNew(props) {
       <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
         <ActiveCompareImages comparedCars={comparedCars} />
       </div>
-      <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
-        <ActiveCompareBasics getKeys={getKeys} comparedCars={comparedCars} />
+      <div className="grid grid-flow-col auto-cols-fr overflow-x-scroll scrollbar-hide">
+        {/* <ActiveCompareEntries getKeys={getKeys} comparedCars={comparedCars} /> */}
+        <ActiveCompareEntries keys={basicKeys} comparedCars={comparedCars} />
       </div>
       {/* BUTTONS */}
       <div className="flex flex-1 justify-center py-8">
@@ -103,16 +130,14 @@ export default function activeCompareNew(props) {
       </div>
       {/* AUSSTATUNG AND MAẞE */}
       <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
-        {/* <ActiveCompareEquipment getKeys={getKeys} comparedCars={comparedCars} /> */}
-        <ActiveCompareBasics getKeys={getKeys} comparedCars={comparedCars} />
         {/* {toggle ? (
-          <ActiveCompareEquipment
-            getKeys={getKeys}
+          <ActiveCompareEntries
+            equipmentKeys={equipmentKeys}
             comparedCars={comparedCars}
           />
         ) : (
-          <ActiveCompareMaßeKeysValues
-            getKeys={getKeys}
+          <ActiveCompareEntries
+            dimensionsKeys={dimensionsKeys}
             comparedCars={comparedCars}
           />
         )} */}
