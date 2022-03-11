@@ -2,11 +2,7 @@ import TestResult from "../repeated/TestResult";
 import { useState, useEffect } from "react";
 
 export default function ActiveCompareEntries({ keys, comparedCars }) {
-  const [entries, setEntries] = useState([
-    ["key1key1key1key1key1key1key1key1", "key2"],
-    ["value1", "value2"],
-    ["value1", "value2"],
-  ]);
+  const [entries, setEntries] = useState([]);
   console.log(entries);
 
   useEffect(() => {
@@ -16,6 +12,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
     const entryKeys = [];
     for (const key of keys) {
       entryKeys.push(comparedCars[0][key].key);
+      // console.log(comparedCars[0][key].key);
     }
     entries.push(entryKeys);
 
@@ -34,17 +31,20 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
   return (
     <>
       {/* KEYS */}
-      {/* <div className="flex flex-col min-w-[160px]"> */}
+
       {/* <div className="flex items-center flex-1 bg-white  pl-8">
           <h3 className="text-blue-extra text-xl font-bold ">Grundlagen</h3>
         </div> */}
       {entries.map((entry, index) => (
-        <div key={index} className="">
+        <div
+          key={index}
+          className="relative h-full bg-grey-lighter min-w-[160px]"
+        >
           {entry.map((value, index) => (
             <p
               className={`${
                 index % 2 == 1 ? "bg-grey-lighter" : "bg-white"
-              } text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8 `}
+              } text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8 h-10`}
             >
               {value}
             </p>
@@ -52,7 +52,6 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
         </div>
       ))}
 
-      {/* </div> */}
       {/* VALUES */}
       {/* {comparedCars?.map((item, index) => (
         <div className="relative min-w-[160px]">
