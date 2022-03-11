@@ -7,11 +7,16 @@ export default function caradvisor(props) {
 
   return (
     <div className="bg-blue-extralight">
+      <div className="bg-green-lighter flex justify-center h-12 items-center">
+        <div className="pr-60 text-white text-2xl">kostenlos </div>
+        <div className="text-white text-2xl">unparteiisch </div>
+        <div className="pl-60 text-white text-2xl">unverbindlich</div>
+      </div>
       <Funnel getCars={getCars} />
-      <div className="flex justify-between">
+      <div className="flex justify-between relative lg:pl-80">
         {/* medal gold image */}
-        <div className="flex ">
-          <div className=" w-28">
+        <div className="flex relative left-6 ">
+          <div className=" w-28 pt-12">
             <Image
               src="/images/siegel2.png"
               width={166}
@@ -32,7 +37,7 @@ export default function caradvisor(props) {
           </div>
         </div>
         {/* human image */}
-        <div className=" w-96 relative bottom-20">
+        <div className=" w-96 absolute bottom-0 right-0 hidden lg:block">
           <Image
             src="/images/berater.png"
             width={266}

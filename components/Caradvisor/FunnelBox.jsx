@@ -22,10 +22,10 @@ export default function FunnelBox({ currentFilter, redirecter }) {
               });
             }}
             key={index}
-            className="w-80 h-80 
+            className="w-72 h-72 
             flex flex-col justify-center items-center rounded-lg shadow-lg m-4 hover:scale-125 bg-white"
           >
-            <div className="w-64 h-64 pt-4">
+            <div className="w-52 h-5w-52 pt-4">
               <Image
                 src={item.image}
                 alt="picture"
