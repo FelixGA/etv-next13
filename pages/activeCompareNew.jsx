@@ -10,7 +10,7 @@ import ActiveCompareImages from "../components/ActiveCompare/ActiveCompareImages
 import ActiveCompareBasics from "../components/ActiveCompare/ActiveCompareEntries";
 import ActiveCompareEquipment from "../components/ActiveCompare/ActiveCompareEquipment";
 import ActiveCompareEntries from "../components/ActiveCompare/ActiveCompareEntries";
-const basicKeys = [
+const allKeys = [
   // "typeClass",
   "range230V",
   "rangeLithium",
@@ -21,11 +21,8 @@ const basicKeys = [
   "power",
   "loadingWeight",
   "curbweight",
-];
-
-const dimensionKeys = ["loadingVolume", "loadingHeight"];
-
-const equipmentKeys = [
+  "loadingVolume",
+  "loadingHeight",
   "batteryCapacityBlei",
   "batteryCapacityLithium",
   "batteryGuarantee",
@@ -36,6 +33,20 @@ const equipmentKeys = [
   "seats",
   "subsidies",
 ];
+
+// const dimensionKeys = ["loadingVolume", "loadingHeight"];
+
+// const equipmentKeys = [
+//   "batteryCapacityBlei",
+//   "batteryCapacityLithium",
+//   "batteryGuarantee",
+//   "batteryIncluded",
+//   "consumption",
+//   "availability",
+//   "guarantee",
+//   "seats",
+//   "subsidies",
+// ];
 
 export default function activeCompareNew(props) {
   const { state, dispatch } = useStore();
@@ -112,7 +123,7 @@ export default function activeCompareNew(props) {
         <ActiveCompareImages comparedCars={comparedCars} />
       </div>
       <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
-        <ActiveCompareEntries keys={basicKeys} comparedCars={comparedCars} />
+        <ActiveCompareEntries keys={allKeys} comparedCars={comparedCars} />
       </div>
       {/* BUTTONS */}
       {/* <div className="flex flex-1 justify-center py-8">
@@ -130,7 +141,7 @@ export default function activeCompareNew(props) {
         </div>
       </div> */}
       {/* AUSSTATUNG AND MAẞE */}
-      <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
+      {/* <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
         <ActiveCompareEntries
           keys={equipmentKeys}
           comparedCars={comparedCars}
@@ -141,7 +152,7 @@ export default function activeCompareNew(props) {
           keys={dimensionKeys}
           comparedCars={comparedCars}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

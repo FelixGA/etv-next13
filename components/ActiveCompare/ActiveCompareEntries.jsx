@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function ActiveCompareEntries({ keys, comparedCars }) {
   const [entries, setEntries] = useState([]);
-  console.log(entries);
+  console.log(entries, "test");
 
   useEffect(() => {
     if (!keys?.length > 0 || !comparedCars?.length > 0) return;
@@ -12,6 +12,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
     const entryKeys = [];
     for (const key of keys) {
       entryKeys.push(comparedCars[0][key].key);
+      console.log(entryKeys);
       // console.log(comparedCars[0][key].key);
     }
     entries.push(entryKeys);
@@ -35,6 +36,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
       {/* <div className="flex items-center flex-1 bg-white  pl-8">
           <h3 className="text-blue-extra text-xl font-bold ">Grundlagen</h3>
         </div> */}
+
       {entries.map((entry, index) => (
         <div
           key={index}
