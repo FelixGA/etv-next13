@@ -112,11 +112,10 @@ export default function activeCompareNew(props) {
         <ActiveCompareImages comparedCars={comparedCars} />
       </div>
       <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
-        {/* <ActiveCompareEntries getKeys={getKeys} comparedCars={comparedCars} /> */}
         <ActiveCompareEntries keys={basicKeys} comparedCars={comparedCars} />
       </div>
       {/* BUTTONS */}
-      <div className="flex flex-1 justify-center py-8">
+      {/* <div className="flex flex-1 justify-center py-8">
         <div
           onClick={() => setToggle(true)}
           className="text-lg mr-1 sm:mr-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark hover:bg-blue-light text-white shrink-0 rounded-md"
@@ -129,20 +128,19 @@ export default function activeCompareNew(props) {
         >
           <button>Masse</button>
         </div>
-      </div>
+      </div> */}
       {/* AUSSTATUNG AND MAẞE */}
       <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
-        {toggle ? (
-          <ActiveCompareEntries
-            keys={equipmentKeys}
-            comparedCars={comparedCars}
-          />
-        ) : (
-          <ActiveCompareEntries
-            keys={dimensionKeys}
-            comparedCars={comparedCars}
-          />
-        )}
+        <ActiveCompareEntries
+          keys={equipmentKeys}
+          comparedCars={comparedCars}
+        />
+      </div>
+      <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
+        <ActiveCompareEntries
+          keys={dimensionKeys}
+          comparedCars={comparedCars}
+        />
       </div>
     </div>
   );

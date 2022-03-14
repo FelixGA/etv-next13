@@ -8,9 +8,9 @@ export default function caradvisor(props) {
   return (
     <div className="bg-blue-extralight">
       <div className="bg-green-lighter flex justify-center h-12 items-center">
-        <div className="pr-60 text-white text-2xl">kostenlos </div>
+        <div className="xl:pr-60 text-white text-2xl">kostenlos </div>
         <div className="text-white text-2xl">unparteiisch </div>
-        <div className="pl-60 text-white text-2xl">unverbindlich</div>
+        <div className="xl:pl-60 text-white text-2xl">unverbindlich</div>
       </div>
       <Funnel getCars={getCars} />
       <div className="flex justify-between relative lg:pl-80">
