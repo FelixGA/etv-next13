@@ -16,23 +16,23 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
       options: [
         {
           id: "1",
-          name: "1-20000 ",
-          value: "0-20000 ",
+          name: "1-10000 ",
+          value: "0-10000 ",
         },
         {
           id: "2",
-          name: "20001-40000",
-          value: "20001-40000",
+          name: "10001-20000",
+          value: "10001-20000",
         },
         {
           id: "3",
-          name: "40001-60000",
-          value: "40001-60000",
+          name: "20001-40000",
+          value: "20001",
         },
         {
           id: "4",
-          name: "60001-90000",
-          value: "60001-90000",
+          name: "40001-80000",
+          value: "40001-80000",
         },
       ],
     },
@@ -230,7 +230,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
                     data: [
                       {
                         min: Number(chooseRange),
-                        max:  100000,
+                        max: 100000,
                       },
                     ],
                   });
