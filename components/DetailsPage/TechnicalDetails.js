@@ -36,6 +36,24 @@ const TechnicalDetails = ({ carItem }) => {
 
     SetDetails(details);
     const vehichleDimentions = [
+      { key: carItem.carSizes.key },
+      {
+        value: carItem.carSizes.valueheight + " " + carItem.carSizes.baseUnit,
+        key: carItem.carSizes.height,
+      },
+      {
+        value: carItem.carSizes.valuewidth + " " + carItem.carSizes.baseUnit,
+        key: carItem.carSizes.width,
+      },
+      {
+        value: carItem.carSizes.valuelength + " " + carItem.carSizes.baseUnit,
+        key: carItem.carSizes.length,
+      },
+      {
+        key: carItem.carSizes.wheelbase,
+        value: carItem.carSizes.valuewheelbase + " mm",
+      },
+
       { key: carItem.loadingVolume.key },
 
       {
@@ -54,18 +72,9 @@ const TechnicalDetails = ({ carItem }) => {
         key: carItem.loadingVolume.length,
       },
 
-      { key: carItem.carSizes.key },
       {
-        value: carItem.carSizes.valueheight + " " + carItem.carSizes.baseUnit,
-        key: carItem.carSizes.height,
-      },
-      {
-        value: carItem.carSizes.valuewidth + " " + carItem.carSizes.baseUnit,
-        key: carItem.carSizes.width,
-      },
-      {
-        value: carItem.carSizes.valuelength + " " + carItem.carSizes.baseUnit,
-        key: carItem.carSizes.length,
+        key: carItem.loadingArea.key,
+        value: carItem.loadingArea.value + " " + carItem.loadingArea.baseUnit,
       },
       {
         key: carItem.loadingVolumeTotal.key,
@@ -73,11 +82,6 @@ const TechnicalDetails = ({ carItem }) => {
           carItem.loadingVolumeTotal.value +
           " " +
           carItem.loadingVolumeTotal.baseUnit,
-      },
-
-      {
-        key: carItem.loadingArea.key,
-        value: carItem.loadingArea.value + " " + carItem.loadingArea.baseUnit,
       },
     ];
 
