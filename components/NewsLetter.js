@@ -11,7 +11,9 @@ const NewsLetter = ({ getMarkdownContext }) => {
         <MDXRemote {...getMarkdownContext.newsletter} />
       </div>
       <div className="">
-        <p className="w-full align-left text-grey-dark font-bold">Email</p>
+        <p className="w-full align-left text-blue-lighter font-bold pb-1">
+          Email
+        </p>
         <div className="flex flex-col xs:flex-row">
           <input
             type="email"
