@@ -5,22 +5,22 @@ function FilterOptionPrice() {
   const filterOptionPriceData = [
     {
       id: "1",
-      value: "0-20000€",
+      value: "0-10000€",
       name: "preis",
     },
     {
       id: "2",
-      value: "20001-40000€",
+      value: "10001-20000€",
       name: "preis",
     },
     {
       id: "3",
-      value: "40001-60000€",
+      value: "20001€",
       name: "preis",
     },
     {
       id: "4",
-      value: "60001-90000€",
+      value: "40001-80000€",
       name: "preis",
     },
   ];
@@ -31,10 +31,10 @@ function FilterOptionPrice() {
   useEffect(() => {
     let minPrice = state?.prices.map((el) => el.min).join(" ");
     let maxPrice = state?.prices.map((el) => el.max).join(" ");
-    if (minPrice >= 0 && maxPrice <= 20000) setIsChecked("1");
-    if (minPrice > 20000 && maxPrice <= 40000) setIsChecked("2");
-    if (minPrice > 40000 && maxPrice <= 60000) setIsChecked("3");
-    if (minPrice > 60000 && maxPrice <= 90000) setIsChecked("4");
+    if (minPrice >= 0 && maxPrice <= 10000) setIsChecked("1");
+    if (minPrice > 10000 && maxPrice <= 20000) setIsChecked("2");
+    if (minPrice > 20000 && maxPrice <= 40000) setIsChecked("3");
+    if (minPrice > 40000 && maxPrice <= 80000) setIsChecked("4");
   }, [state?.prices]);
 
   return filterOptionPriceData?.map((item) => {
@@ -50,16 +50,16 @@ function FilterOptionPrice() {
             setIsChecked(item.id);
             isChecked;
             if (item.id === "1") {
-              dispatch({ type: "price", data: [{ min: 0, max: 20000 }] });
+              dispatch({ type: "price", data: [{ min: 0, max: 10000 }] });
             }
             if (item.id === "2") {
-              dispatch({ type: "price", data: [{ min: 20001, max: 40000 }] });
+              dispatch({ type: "price", data: [{ min: 10001, max: 20000 }] });
             }
             if (item.id === "3") {
-              dispatch({ type: "price", data: [{ min: 40001, max: 60000 }] });
+              dispatch({ type: "price", data: [{ min: 20001, max: 40000 }] });
             }
             if (item.id === "4") {
-              dispatch({ type: "price", data: [{ min: 60001, max: 90000 }] });
+              dispatch({ type: "price", data: [{ min: 40001, max: 80000 }] });
             }
           }}
           checked={isChecked == item.id && state?.prices.length ? true : false}
