@@ -14,6 +14,7 @@
     "@next/mdx": "^12.1.0",
     "@openlab/vercel-netlify-cms-github": "^1.1.1",
     "@sergeymyssak/nextjs-sitemap": "^2.0.3",
+    "@tailwindcss/line-clamp": "^0.3.1",
     "framer-motion": "^6.2.3",
     "gray-matter": "^4.0.3",
     "next": "12.1.0",
@@ -27,7 +28,6 @@
     "vercel": "^24.0.0"
   },
   "devDependencies": {
-    "@tailwindcss/line-clamp": "^0.3.1",
     "autoprefixer": "^10.4.2",
     "eslint": "8.9.0",
     "eslint-config-next": "12.1.0",

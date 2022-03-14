@@ -31,10 +31,12 @@ range230V:
   key: Reichweite SLA Blei
   value: 0
   baseUnit: km
+  maxValue: 0
 rangeLithium:
   key: "Reichweite "
   value: 95
   baseUnit: km
+  maxValue: 0
 chargingTime230V:
   key: Ladezeit
   value: 0

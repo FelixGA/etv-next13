@@ -2,7 +2,10 @@
 title: ARI 458 Pritsche
 name: ARI 458 Pritsche
 price: 13700
-description: ""
+description: The "ARI 458 Pritsche" is an electric flatbed transporter
+  manufactured by ARI Motors. It features a high payload as well as an
+  economical consumption. Its maximum range is up to 495 kilometres in case of
+  using a lithium battery.
 src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
 category: Pritsche
 typeClass: L7E
@@ -22,13 +25,15 @@ range230V:
   value: 120
   baseUnit: km
   key: Range SLA
+  maxValue: 0
 rangeLithium:
   value: 150
   baseUnit: km
   key: Range Lithium Battery
+  maxValue: 495
 chargingTime230V:
   value: 6
-  key: Charging Time 230-V
+  key: Charge Time 230v-socket
   baseUnit: h
 chargingTimeLithium:
   value: 6
@@ -69,7 +74,7 @@ guarantee:
   baseUnit: Months
 availability:
   key: Availibility
-  value: 14-16 Wochen
+  value: 14-16 weeks
 subsidies:
   key: Subsidies
   baseUnit: Euro
@@ -81,7 +86,7 @@ batteryGuarantee:
 loadingHeight:
   value: 10
   baseUnit: cm
-  key: bitte auffüllen
+  key: Loading Height
 loadingVolumeTotal:
   value: 0,38
   baseUnit: m3
@@ -89,7 +94,7 @@ loadingVolumeTotal:
 loadingArea:
   value: "235"
   baseUnit: m2
-  key: LadeflächeEnglish
+  key: Loading Area
 carSizes:
   width: Width
   length: Length
@@ -111,3 +116,4 @@ loadingVolume:
   width: Width
   length: Length
 ---
+The "ARI 458 Pritsche" is an electric flatbed transporter manufactured by ARI Motors. It features a high payload as well as an economical consumption. Its maximum range is up to 495 kilometres in case of using a lithium battery.
