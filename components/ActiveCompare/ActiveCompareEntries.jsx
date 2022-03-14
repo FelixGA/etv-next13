@@ -34,8 +34,6 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
   }, [keys, comparedCars]);
   return (
     <>
-      {/* KEYS */}
-
       {entries.map((entry, index) => (
         <div key={index} className="relative h-full min-w-[160px] bg-white">
           {index == 0 ? (
