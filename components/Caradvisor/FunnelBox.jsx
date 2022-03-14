@@ -22,21 +22,21 @@ export default function FunnelBox({ currentFilter, redirecter }) {
               });
             }}
             key={index}
-            className="w-48 h-48
-            flex flex-col justify-center items-center  rounded-lg shadow-lg m-8 hover:scale-125"
+
+            className="w-72 h-72 flex flex-col justify-center items-center cursor-pointer rounded-lg shadow-lg m-4 hover:scale-125 bg-white"
+
           >
-            {" "}
-            <div className="w-56 h-56 px-2 ">
+            <div className="w-52 h-5w-52 pt-4">
               <Image
                 src={item.image}
                 alt="picture"
-                objectFit="cover"
+                objectFit="contain"
                 width={48}
                 height={28}
                 layout="responsive"
               />
             </div>
-            <p className="font-bold text-black pt-8">{item.name}</p>
+            <p className="font-bold text-black pb-4 text-xl">{item.name}</p>
           </div>
         );
       })}

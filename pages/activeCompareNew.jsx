@@ -6,15 +6,46 @@ import ActiveCompareKeys from "../components/ActiveCompare/ActiveCompareKeys";
 import ActiveCompareItem from "../components/ActiveCompare/ActiveCompareItem";
 import ActiveCompareEquipmentKeysValues from "../components/ActiveCompare/ActiveCompareEquipmentKeysValues";
 import ActiveCompareMaßeKeysValues from "../components/ActiveCompare/ActiveCompareMaßeKeysValues";
+import ActiveCompareImages from "../components/ActiveCompare/ActiveCompareImages";
+import ActiveCompareBasics from "../components/ActiveCompare/ActiveCompareEntries";
+import ActiveCompareEquipment from "../components/ActiveCompare/ActiveCompareEquipment";
+import ActiveCompareEntries from "../components/ActiveCompare/ActiveCompareEntries";
+const basicKeys = [
+  // "typeClass",
+  "range230V",
+  "rangeLithium",
+  "maxSpeed",
+  "chargingTime230V",
+  "chargingTimeLithium",
+  "chargingTimeFast",
+  "power",
+  "loadingWeight",
+  "curbweight",
+];
+
+const dimensionKeys = ["loadingVolume", "loadingHeight"];
+
+const equipmentKeys = [
+  "batteryCapacityBlei",
+  "batteryCapacityLithium",
+  "batteryGuarantee",
+  "batteryIncluded",
+  "consumption",
+  "availability",
+  "guarantee",
+  "seats",
+  "subsidies",
+];
 
 export default function activeCompareNew(props) {
   const { state, dispatch } = useStore();
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getKeys, SetGetKeys] = useState([]);
+
   const [toggle, setToggle] = useState(true);
 
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
-  /*  console.log(comparedCars); */
+  // console.log(comparedCars);
   useEffect(() => {
     SetGetCars(props.vehicles);
     let arrkeys = [
@@ -77,37 +108,43 @@ export default function activeCompareNew(props) {
         </button>
       </div>
       {/* KEYS AND ITEMS FOR COMPARE */}
-      <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
-        <ActiveCompareKeys getKeys={getKeys} comparedCars={comparedCars} />
-
-        <ActiveCompareItem comparedCars={comparedCars} />
+      <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
+        <ActiveCompareImages comparedCars={comparedCars} />
       </div>
-      <div className="flex flex-1 justify-center py-8 ">
+      <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
+        <ActiveCompareEntries keys={basicKeys} comparedCars={comparedCars} />
+      </div>
+      {/* BUTTONS */}
+      {/* <div className="flex flex-1 justify-center py-8">
         <div
           onClick={() => setToggle(true)}
-          className="text-lg mr-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
+
+          className="text-lg mr-1 sm:mr-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark hover:bg-blue-light text-white shrink-0 rounded-md"
+
         >
           <button>Ausstattung</button>
         </div>
         <div
           onClick={() => setToggle(false)}
-          className="text-lg ml-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark text-white shrink-0 rounded-md"
+
+          className="text-lg ml-1 sm:ml-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark hover:bg-blue-light text-white shrink-0 rounded-md"
+
         >
           <button>Masse</button>
         </div>
+      </div> */}
+      {/* AUSSTATUNG AND MAẞE */}
+      <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
+        <ActiveCompareEntries
+          keys={equipmentKeys}
+          comparedCars={comparedCars}
+        />
       </div>
-      <div className="grid grid-cols-[auto-fill,_minmax(300px,_1fr)] grid-flow-col scrollbar-hide overflow-x-scroll ">
-        {toggle ? (
-          <ActiveCompareEquipmentKeysValues
-            getKeys={getKeys}
-            comparedCars={comparedCars}
-          />
-        ) : (
-          <ActiveCompareMaßeKeysValues
-            getKeys={getKeys}
-            comparedCars={comparedCars}
-          />
-        )}
+      <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
+        <ActiveCompareEntries
+          keys={dimensionKeys}
+          comparedCars={comparedCars}
+        />
       </div>
     </div>
   );

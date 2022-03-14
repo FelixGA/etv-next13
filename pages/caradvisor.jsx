@@ -6,29 +6,40 @@ export default function caradvisor(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
   return (
-    <div>
-      <Funnel getContent={getContent} />
-      <div className="flex">
+
+    <div className="bg-blue-extralight">
+      <div className="bg-green-lighter flex justify-center h-12 items-center">
+        <div className="xl:pr-60 text-white text-2xl">kostenlos </div>
+        <div className="text-white text-2xl">unparteiisch </div>
+        <div className="xl:pl-60 text-white text-2xl">unverbindlich</div>
+      </div>
+      <Funnel getCars={getCars} />
+      <div className="flex justify-between relative lg:pl-80">
+
         {/* medal gold image */}
-        <div className="m-10 w-64">
-          <Image
-            src="/images/siegel2.png"
-            width={166}
-            height={166}
-            layout="responsive"
-          />
-        </div>
-        {/* medal dsvgo image */}
-        <div className="m-10 w-64">
-          <Image
-            src="/images/siegel.png"
-            width={166}
-            height={166}
-            layout="responsive"
-          />
+        <div className="flex relative left-6 ">
+          <div className=" w-28 pt-12">
+            <Image
+              src="/images/siegel2.png"
+              width={166}
+              height={166}
+              layout="responsive"
+              objectFit="contain"
+            />
+          </div>
+          {/* medal dsvgo image */}
+          <div className="w-52">
+            <Image
+              src="/images/siegel.png"
+              width={166}
+              height={166}
+              layout="responsive"
+              objectFit="contain"
+            />
+          </div>
         </div>
         {/* human image */}
-        <div className="m-10 w-96">
+        <div className=" w-96 absolute bottom-0 right-0 hidden lg:block">
           <Image
             src="/images/berater.png"
             width={266}
