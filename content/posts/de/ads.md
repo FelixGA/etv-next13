@@ -1,8 +1,9 @@
 ---
-title: dd
-slug: asdf
+title: article
+slug: aris
 publishedAt: 02/08/2022
-description: dd
+description: ddafdfb
 preview: dd
+thumbnail: /images/Arrow-right-512.png
 ---
-dd
+test
