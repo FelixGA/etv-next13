@@ -2,7 +2,8 @@
 title: ARI 458 Koffer
 name: ari-458-koffer
 price: 14100
-description: ""
+description: The "ARI 458 Koffer" is an electric transporter manufactured by ARI
+  Motors with 80 km/h maximum speed.
 src: /images/ari-458-koffer-3-.jpg
 category: Koffer
 loadingWeight:
@@ -73,7 +74,7 @@ availability:
   value: 14-16 weeks
 subsidies:
   key: Subsidies
-  baseUnit: bitte auffüllen
+  baseUnit: Months
   value: 0
 batteryGuarantee:
   key: Battery Guarantee
@@ -101,7 +102,7 @@ carSizes:
   valuelength: 3150
   valueheight: 1685
   valuewheelbase: 2300
-  key: Car-Sizes
+  key: Car Sizes
 loadingVolume:
   valueheight: 950
   valuewidth: 1190
@@ -112,3 +113,4 @@ loadingVolume:
   width: Width
   length: Length
 ---
+The "ARI 458 Koffer" is an electric transporter manufactured by ARI Motors with 80 km/h maximum speed.
