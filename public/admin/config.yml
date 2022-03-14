@@ -189,6 +189,13 @@ collections:
           - { label: "Key", name: "key", widget: "string", i18n: true }
           - { label: "Value", name: "value", widget: "number", i18n: duplicate }
           - {
+              label: "Value(max)",
+              name: "maxValue",
+              widget: "number",
+              i18n: duplicate,
+            }
+
+          - {
               label: "baseUnit",
               name: "baseUnit",
               widget: "string",
@@ -202,6 +209,13 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
           - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+
+          - {
+              label: "Value(max)",
+              name: "maxValue",
+              widget: "number",
+              i18n: duplicate,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",

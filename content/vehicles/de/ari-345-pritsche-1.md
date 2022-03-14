@@ -10,7 +10,7 @@ description: Der ARI 345 Food Truck hat alles am Start, was Gastronomen und
   Gastrokonzepte angepasst werden. Möglich sind zum Beispiel der Einbau eines
   Kaffeetanks, eines Hot-Dog-Moduls oder einer Grillstation.
 src: /images/ari_345_food_truck_l_.png
-category: Kasten
+category: Koffer
 typeClass: L2E
 loadingWeight:
   key: Nutzlast
@@ -28,10 +28,12 @@ range230V:
   key: Reichweite SLA Akku
   value: 55
   baseUnit: km
+  maxValue: 100
 rangeLithium:
   key: Reichweite Lithium Akku
   value: 0
   baseUnit: km
+  maxValue: 0
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 5

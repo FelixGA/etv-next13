@@ -2,10 +2,9 @@
 title: ARI 458 Pritsche
 name: ARI 458 Pritsche
 price: 13700
-description: " Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI
+description: Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI
   Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen
   Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
-  skta"
 src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
 category: Pritsche
 typeClass: L7E
@@ -25,10 +24,12 @@ range230V:
   key: Reichweite SLA Akku
   value: 120
   baseUnit: km
+  maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
   value: 150
   baseUnit: km
+  maxValue: 495
 chargingTime230V:
   key: Ladezeit 230-V
   value: 6

@@ -4,8 +4,9 @@ import Funnel from "../components/Caradvisor/Funnel";
 import Image from "next/image";
 export default function caradvisor(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
-
+  const [getContent, SetGetContent] = useState(props.page);
   return (
+
     <div className="bg-blue-extralight">
       <div className="bg-green-lighter flex justify-center h-12 items-center">
         <div className="xl:pr-60 text-white text-2xl">kostenlos </div>
@@ -14,6 +15,7 @@ export default function caradvisor(props) {
       </div>
       <Funnel getCars={getCars} />
       <div className="flex justify-between relative lg:pl-80">
+
         {/* medal gold image */}
         <div className="flex relative left-6 ">
           <div className=" w-28 pt-12">
@@ -45,7 +47,7 @@ export default function caradvisor(props) {
             layout="responsive"
           />
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 }
