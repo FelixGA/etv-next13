@@ -6,6 +6,10 @@ description: Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI
   Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen
   Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
 src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
+relatedBlogs: |-
+  bitte auffuelen test skata
+
+  ![skata](/images/ETV-IconsReichweite-250.svg "skata")
 category: Pritsche
 typeClass: L7E
 loadingWeight:

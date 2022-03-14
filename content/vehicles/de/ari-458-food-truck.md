@@ -9,6 +9,10 @@ description: Der ARI 458 Food Truck ist ein elektrisches Gastro-Fahrzeug von ARI
   Sprung ins Gastro-Gewerbe zu schaffen und sich von Anfang an nachhaltig
   aufzustellen.
 src: /images/ari-458-food-truck-5-.jpg
+relatedBlogs: |-
+  bitte auffuelen test skata
+
+  ![skata](/images/ETV-IconsReichweite-250.svg "skata")
 category: Kasten
 typeClass: L7E
 loadingWeight:

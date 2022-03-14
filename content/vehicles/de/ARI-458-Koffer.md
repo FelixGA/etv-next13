@@ -136,6 +136,10 @@ description: >-
 
   4,4
 src: /images/ari-458-koffer-3-.jpg
+relatedBlogs: |-
+  bitte auffuelen test skata
+
+  ![skata](/images/ETV-IconsReichweite-250.svg "skata")
 category: Koffer
 typeClass: L7E
 loadingWeight:
