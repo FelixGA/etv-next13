@@ -76,15 +76,15 @@ guarantee:
   baseUnit: Months
 availability:
   key: Availability
-  value: bitte auffüllen
+  value: no information
 subsidies:
   key: Subsidies
-  baseUnit: bitte auffüllen
+  baseUnit: Eur
   value: 0
 batteryGuarantee:
   key: Battery-Guarante
   value: 0
-  baseUnit: bitte auffüllen
+  baseUnit: Months
 loadingHeight:
   key: Loading Height
   value: 560
