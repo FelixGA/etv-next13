@@ -21,7 +21,7 @@ export default function ActiveCompareImages({ comparedCars }) {
               className="rounded-md md:rounded-lg brightness-50 "
               src={image}
               alt="picture"
-              objectFit="cover"
+              objectFit="contain"
               width={380}
               height={250}
             ></Image>
@@ -46,7 +46,7 @@ export default function ActiveCompareImages({ comparedCars }) {
                   className="rounded-md md:rounded-lg brightness-50 "
                   src={item.src}
                   alt="picture"
-                  objectFit="contain"
+                  objectFit="cover"
                   width={380}
                   height={250}
                 ></Image>
