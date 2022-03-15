@@ -28,7 +28,7 @@ rangeLithium:
 chargingTime230V:
   value: 0
   key: Charge Time 230v-socket
-  baseUnit: No information
+  baseUnit: No details available
 chargingTimeLithium:
   value: 0
   key: Charge time type2 cable
@@ -47,11 +47,11 @@ batteryCapacityLithium:
   key: Capacity Lithium Battery
 batteryIncluded:
   key: Battery included
-  value: No information
+  value: No details available
 consumption:
   key: Consumption
   baseUnit: kWh
-  value: No information
+  value: No details available
 power:
   key: Power
   value: min-8/max-9
@@ -65,18 +65,18 @@ rating:
 guarantee:
   key: Guarantee Vehicle
   value: 0
-  baseUnit: No information
+  baseUnit: No details available
 availability:
   key: Availability
-  value: No information
+  value: No details available
 subsidies:
   key: Subsidies
   value: 0
-  baseUnit: No information
+  baseUnit: No details available
 batteryGuarantee:
   key: Battery-Guarantee
   value: 0
-  baseUnit: no information
+  baseUnit: no details available
 loadingHeight:
   key: Loading Height
   value: 780
