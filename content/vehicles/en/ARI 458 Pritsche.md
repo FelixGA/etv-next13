@@ -7,6 +7,10 @@ description: The "ARI 458 Pritsche" is an electric flatbed transporter
   economical consumption. Its maximum range is up to 495 kilometres in case of
   using a lithium battery.
 src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
+relatedBlogs: |-
+  bitte auffuelen test skata
+
+  ![skata](/images/ETV-IconsReichweite-250.svg "skata")
 category: Pritsche
 typeClass: L7E
 loadingWeight:

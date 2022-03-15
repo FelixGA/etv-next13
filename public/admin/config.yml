@@ -85,7 +85,7 @@ collections:
         i18n: duplicate
         options: ["Pritsche", "Kipper", "Kasten", "Koffer"]
       - {
-          label: "Description",
+          label: "Description-Body",
           name: "description",
           widget: "markdown",
           default: "bitte auffuelen",
@@ -105,13 +105,13 @@ collections:
           default: "bitte auffuelen",
           i18n: true,
         }
-      - label: "post vehicles"
+      - label: "post related vehicles"
         name: "vehicle"
         widget: "relation"
         collection: "vehicles"
         search_fields: ["name"]
         display_fields: ["name"]
-        value_field: "description"
+        value_field: "rating"
 
       - label: "Published at"
         name: "publishedAt"
@@ -181,7 +181,7 @@ collections:
         collection: "blogs"
         search_fields: ["title"]
         display_fields: ["title"]
-        value_field: "description"
+        value_field: "content"
 
       - label: "Category"
         name: "category"
