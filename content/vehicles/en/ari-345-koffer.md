@@ -76,10 +76,10 @@ guarantee:
   baseUnit: Months
 availability:
   key: Availability
-  value: no information
+  value: no details available
 subsidies:
   key: Subsidies
-  baseUnit: Eur
+  baseUnit: Euro
   value: 0
 batteryGuarantee:
   key: Battery-Guarante
