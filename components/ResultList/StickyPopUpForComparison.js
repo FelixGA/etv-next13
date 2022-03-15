@@ -10,7 +10,7 @@ const StickyPopUpForComparison = () => {
   const getCarCardForPopup = state?.autoForComparisons?.map(
     (selectedCar, index) => {
       return (
-        <div>
+        <>
           <div
             className="hidden md:flex md:flex-row  w-44 lg:w-52 h-28 mx-2 "
             key={index}
@@ -20,7 +20,7 @@ const StickyPopUpForComparison = () => {
           <div className="flex  md:hidden ">
             <CarCardForPopUpMobile selectedCar={selectedCar} />
           </div>
-        </div>
+        </>
       );
     }
   );
