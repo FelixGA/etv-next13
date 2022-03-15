@@ -80,33 +80,34 @@ export default function activeCompare(props) {
   }, []);
 
   return (
-    <div className="main-wrapper 2xl:px-40">
-      {/* HEADING */}
-      <div className="pt-8 pb-6 px-4">
-        <h1 className="font-bold text-blue-extra text-2xl lg:text-4xl">
-          Ihre Auswahl im Detailvergleich
-        </h1>
-      </div>
-      {/* BACK BUTTON */}
-      <div
-        className={comparedCars.length > 1 ? "pl-4 block lg:hidden" : "hidden"}
-      >
-        <button className="mb-12 text-sm w-52 h-10 rounded-md text-blue-darker bg-grey-lighter">
-          <Link href="/comparePage">
-            <a className="visited:text-blue-darker">
-              « zurück zur Ergebnisliste
-            </a>
-          </Link>
-        </button>
-      </div>
-      {/* KEYS AND ITEMS FOR COMPARE */}
-      <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
-        <ActiveCompareImages comparedCars={comparedCars} />
-      </div>
-      <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
-        <ActiveCompareEntries keys={allKeys} comparedCars={comparedCars} />
-      </div>
-    </div>
+    <div></div>
+    // <div className="main-wrapper 2xl:px-40">
+    //   {/* HEADING */}
+    //   <div className="pt-8 pb-6 px-4">
+    //     <h1 className="font-bold text-blue-extra text-2xl lg:text-4xl">
+    //       Ihre Auswahl im Detailvergleich
+    //     </h1>
+    //   </div>
+    //   {/* BACK BUTTON */}
+    //   <div
+    //     className={comparedCars.length > 1 ? "pl-4 block lg:hidden" : "hidden"}
+    //   >
+    //     <button className="mb-12 text-sm w-52 h-10 rounded-md text-blue-darker bg-grey-lighter">
+    //       <Link href="/comparePage">
+    //         <a className="visited:text-blue-darker">
+    //           « zurück zur Ergebnisliste
+    //         </a>
+    //       </Link>
+    //     </button>
+    //   </div>
+    //   {/* KEYS AND ITEMS FOR COMPARE */}
+    //   <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
+    //     <ActiveCompareImages comparedCars={comparedCars} />
+    //   </div>
+    //   <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
+    //     <ActiveCompareEntries keys={allKeys} comparedCars={comparedCars} />
+    //   </div>
+    // </div>
   );
 }
 
