@@ -85,26 +85,20 @@ collections:
         i18n: duplicate
         options: ["Pritsche", "Kipper", "Kasten", "Koffer"]
       - {
-          label: "Description-Body",
+          label: "Description",
           name: "description",
           widget: "markdown",
           default: "bitte auffuelen",
           i18n: true,
         }
       - {
-          label: "Content",
-          name: "content",
-          widget: "markdown",
-          default: "bitte auffuelen",
-          i18n: true,
-        }
-      - {
-          label: "Preview",
+          label: "Content-Body",
           name: "body",
           widget: "markdown",
           default: "bitte auffuelen",
           i18n: true,
         }
+
       - label: "post related vehicles"
         name: "vehicle"
         widget: "relation"
@@ -153,7 +147,21 @@ collections:
           required: true,
         }
 
-      - { label: "Price", name: "price", widget: "number", i18n: duplicate }
+      - {
+          label: "Price",
+          name: "price",
+          widget: "number",
+          i18n: duplicate,
+          required: true,
+        }
+      - label: "related blogs"
+        name: "relatedBlogs"
+        widget: "relation"
+        collection: "blogs"
+        search_fields: ["title"]
+        display_fields: ["title"]
+        value_field: "title"
+
       # - label: "Published at"
       #   name: "publishedAt"
       #   widget: "date"
@@ -163,6 +171,7 @@ collections:
       - label: "Description"
         name: "description"
         widget: "markdown"
+        required: true
         i18n: true
       - {
           label: Image,
@@ -175,17 +184,11 @@ collections:
         name: "body"
         widget: "markdown"
         i18n: true
-      - label: "related blogs"
-        name: "relatedBlogs"
-        widget: "relation"
-        collection: "blogs"
-        search_fields: ["title"]
-        display_fields: ["title"]
-        value_field: "content"
 
       - label: "Category"
         name: "category"
         widget: "select"
+        required: true
         multiple: false
         i18n: duplicate
         options: ["Pritsche", "Kipper", "Kasten", "Koffer"]
@@ -198,6 +201,7 @@ collections:
         # default: ["Design"]
       - label: "Loadingweight"
         name: "loadingWeight"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
@@ -212,6 +216,7 @@ collections:
             }
       - label: "Curb Weight"
         name: "curbweight"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
@@ -226,6 +231,7 @@ collections:
             }
       - label: "maxSpeed"
         name: "maxSpeed"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
@@ -240,17 +246,31 @@ collections:
             }
       - label: "Range-SLA"
         name: "range230V"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              i18n: duplicate,
+              required: true,
+            }
           - {
               label: "Value(max)",
               name: "maxValue",
               widget: "number",
               i18n: duplicate,
+              required: true,
             }
 
           - {
@@ -258,39 +278,69 @@ collections:
               name: "baseUnit",
               widget: "string",
               i18n: duplicate,
+              required: true,
             }
       - label: "Range-Lithium"
         name: "rangeLithium"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
+        required: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              i18n: duplicate,
+              required: true,
+            }
 
           - {
               label: "Value(max)",
               name: "maxValue",
               widget: "number",
               i18n: duplicate,
+              required: true,
             }
           - {
               label: "baseUnit",
               name: "baseUnit",
               widget: "string",
               i18n: duplicate,
+              required: true,
             }
       - label: "chargingTime-230V"
         name: "chargingTime230V"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              i18n: duplicate,
+              required: true,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
+              required: true,
               widget: "string",
               i18n: true,
             }
@@ -299,90 +349,181 @@ collections:
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
+        required: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              i18n: duplicate,
+              required: true,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
               widget: "string",
               i18n: true,
+              required: true,
             }
       - label: "chargingTime-Fast"
         name: "chargingTimeFast"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              i18n: duplicate,
+              required: true,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
+              required: true,
               widget: "string",
               i18n: true,
             }
       - label: "battery-Capacity-Blei"
         name: "batteryCapacityBlei"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
+              required: true,
               widget: "string",
               i18n: duplicate,
             }
       - label: "battery-Capacity-Lithium"
         name: "batteryCapacityLithium"
         widget: "object"
+        required: true
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
+              required: true,
               widget: "string",
               i18n: duplicate,
             }
       - label: "battery-Included"
         name: "batteryIncluded"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "string", i18n: true }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
       - label: "consumption"
         name: "consumption"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "string", i18n: true }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
+              required: true,
               widget: "string",
               i18n: duplicate,
             }
 
       - label: "power"
         name: "power"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
           - {
               label: "Value min/max",
               name: "value",
+              required: true,
               widget: "string",
               i18n: duplicate,
             }
@@ -392,9 +533,11 @@ collections:
               name: "baseUnit",
               widget: "string",
               i18n: duplicate,
+              required: true,
             }
       - label: "Seats"
         name: "seats"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
@@ -404,186 +547,356 @@ collections:
 
       - label: "rating"
         name: "rating"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Result", name: "key", widget: "string", i18n: true }
-          - { label: "Note", name: "value", widget: "string", i18n: duplicate }
+          - {
+              label: "Result",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Note",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
       - label: "guarantee"
         name: "guarantee"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: true }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              i18n: true,
+              required: true,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
+              required: true,
               widget: "string",
               i18n: true,
             }
       - label: "availability"
         name: "availability"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "From-When", name: "value", widget: "string", i18n: true }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "From-When",
+              name: "value",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
 
       - label: "subsidies"
         name: "subsidies"
         widget: "object"
+        required: true
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: true }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              i18n: true,
+              required: true,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
+              required: true,
               widget: "string",
               i18n: true,
             }
       - label: "battery-guarantee"
         name: "batteryGuarantee"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: true }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              i18n: true,
+              required: true,
+            }
           - {
               label: "Weeks/Months/Years",
               name: "baseUnit",
               widget: "string",
               i18n: true,
+              required: true,
             }
       - label: "loading Height"
         name: "loadingHeight"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
+        required: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              i18n: duplicate,
+              required: true,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
               widget: "string",
               i18n: duplicate,
+              required: true,
             }
       - label: "loading Volume in m3"
         name: "loadingVolumeTotal"
         widget: "object"
+        required: true
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
+              required: true,
               widget: "string",
               i18n: duplicate,
             }
       - label: "loading area in m2"
         name: "loadingArea"
+        required: true
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
+              required: true,
               widget: "string",
               i18n: duplicate,
             }
       - label: "Car-Sizes"
         name: "carSizes"
+        required: true
         widget: "object"
         summary: "{{fields.height}}: {{fields.width}}: {{fields.length}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "height", name: "height", widget: "string", i18n: true }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "height",
+              name: "height",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
           - {
               label: "height-Value",
               name: "valueheight",
+              required: true,
               widget: "number",
               i18n: duplicate,
             }
 
-          - { label: "width", name: "width", widget: "string", i18n: true }
+          - {
+              label: "width",
+              name: "width",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
           - {
               label: "width-Value",
               name: "valuewidth",
+              required: true,
               widget: "number",
               i18n: duplicate,
             }
 
-          - { label: "length", name: "length", widget: "string", i18n: true }
+          - {
+              label: "length",
+              name: "length",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
           - {
               label: "length-Value",
               name: "valuelength",
               widget: "number",
               i18n: duplicate,
+              required: true,
             }
           - {
               label: "wheelbase",
               name: "wheelbase",
               widget: "string",
               i18n: true,
+              required: true,
             }
           - {
               label: "wheelbase-Value",
               name: "valuewheelbase",
               widget: "number",
               i18n: duplicate,
+              required: true,
             }
           - {
               label: "baseUnit",
               name: "baseUnit",
               widget: "string",
               i18n: duplicate,
+              required: true,
             }
       - label: "loadingVolume"
         name: "loadingVolume"
         widget: "object"
         summary: "{{fields.height}}: {{fields.width}}: {{fields.length}}"
         i18n: true
+        required: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "height", name: "height", widget: "string", i18n: true }
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "height",
+              name: "height",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
           - {
               label: "height-Value",
               name: "valueheight",
               widget: "number",
+              required: true,
               i18n: duplicate,
             }
 
-          - { label: "width", name: "width", widget: "string", i18n: true }
+          - {
+              label: "width",
+              name: "width",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
           - {
               label: "width-Value",
               name: "valuewidth",
               widget: "number",
               i18n: duplicate,
+              required: true,
             }
 
-          - { label: "length", name: "length", widget: "string", i18n: true }
+          - {
+              label: "length",
+              name: "length",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
           - {
               label: "length-Value",
               name: "valuelength",
               widget: "number",
               i18n: duplicate,
+              required: true,
             }
           - {
               label: "baseUnit",
               name: "baseUnit",
               widget: "string",
               i18n: duplicate,
+              required: true,
             }

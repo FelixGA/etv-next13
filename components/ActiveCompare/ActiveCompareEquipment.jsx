@@ -34,7 +34,7 @@ export default function ActiveCompareEquipment({ getKeys, comparedCars }) {
         {comparedCars?.map((item, index) => (
           <div className=" " key={index}>
             <div className="data-content-categories relative min-w-[160px]">
-              <div className="pl-8 relative lg:w-[255px] xl:w-[340px] top-12 pr-4 bg-red-500 border-4"></div>
+              <div className="pl-8 relative lg:w-[255px] xl:w-[340px] top-12 pr-4 border-4"></div>
               <div className=" relative ">
                 <div className="h-10 bg-white  flex items-center">
                   <h3 className="second-category-title text-sm lg:text-lg font-medium text-blue-extra pl-4 lg:pl-8">

@@ -42,9 +42,6 @@ description: >-
   Die Nutzlast der 458er-Reihe liegt bei rund 530 Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450 Kilogramm möglich.
 
 
-  ![]()
-
-
   ## Antrieb und Aufladung (4/5)
 
 
@@ -128,7 +125,6 @@ description: >-
 
   **4,4**
 src: /images/ari-458-food-truck-5-.jpg
-
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -261,7 +257,6 @@ relatedBlogs: >-
 
   4,4
 category: Kasten
-
 typeClass: L7E
 loadingWeight:
   key: Nutzlast
