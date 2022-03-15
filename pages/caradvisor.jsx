@@ -6,19 +6,17 @@ export default function caradvisor(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
   return (
-
     <div className="bg-blue-extralight">
-      <div className="bg-green-lighter flex justify-center h-12 items-center">
+      <div className="bg-green-lighter hidden xl:flex justify-center h-12 items-center">
         <div className="xl:pr-60 text-white text-2xl">kostenlos </div>
         <div className="text-white text-2xl">unparteiisch </div>
         <div className="xl:pl-60 text-white text-2xl">unverbindlich</div>
       </div>
       <Funnel getCars={getCars} />
-      <div className="flex justify-between relative lg:pl-80">
-
+      <div className="flex justify-between relative ">
         {/* medal gold image */}
-        <div className="flex relative left-6 ">
-          <div className=" w-28 pt-12">
+        <div className="flex relative left-0 sm:left-[25vw] ">
+          <div className="w-20 sm:w-28 pt-10 sm:pt-12">
             <Image
               src="/images/siegel2.png"
               width={166}
@@ -28,7 +26,7 @@ export default function caradvisor(props) {
             />
           </div>
           {/* medal dsvgo image */}
-          <div className="w-52">
+          <div className="w-40 sm:w-52">
             <Image
               src="/images/siegel.png"
               width={166}
