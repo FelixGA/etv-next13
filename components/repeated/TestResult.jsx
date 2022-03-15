@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function TestResult({ testResultArr }) {
-  console.log(testResultArr?.key);
+  // console.log(testResultArr?.key);
   return (
     <>
       <div className="flex items-end w-full h-10 lg:hidden pl-4">

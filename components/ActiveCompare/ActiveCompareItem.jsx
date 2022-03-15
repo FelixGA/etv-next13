@@ -3,7 +3,7 @@ import Link from "next/link";
 import TestResult from "../repeated/TestResult";
 
 export default function ActiveCompareItem({ comparedCars }) {
-  console.log(comparedCars, "00000");
+  // console.log(comparedCars, "00000");
   // console.log(comparedCars[0].rating);
 
   return (

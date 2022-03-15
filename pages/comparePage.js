@@ -90,27 +90,25 @@ export default function comparePage(props) {
   }, [props.vehicles, state.activeSortValues]);
 
   return (
-    <div>test test</div>
-    // <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
-    //   <div className=" hidden md:block bg-white mt-24 ">
-
-    //     <FiltersDesktop getContent={getContent} />
-    //   </div>
-    //   <div className="flex md:hidden">
-    //     <FiltersMobile getContent={getContent} />
-    //   </div>
-    //   <div className="heading+sorting+content mt-10 md:mt-24">
-    //     <div className="">
-    //       <ActiveFilterBlock getContent={getContent} />
-    //     </div>
-    //     <div className="xl:pr-2 2xl:pr-40">
-    //       <ResultList sortedCars={sortedCars} />
-    //     </div>
-    //   </div>
-    //   <div className="col-span-full ">
-    //     <StickyPopUpForComparison />
-    //   </div>
-    // </div>
+    <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
+      <div className=" hidden md:block bg-white mt-24 ">
+        <FiltersDesktop getContent={getContent} />
+      </div>
+      <div className="flex md:hidden">
+        <FiltersMobile getContent={getContent} />
+      </div>
+      <div className="heading+sorting+content mt-10 md:mt-24">
+        <div className="">
+          <ActiveFilterBlock getContent={getContent} />
+        </div>
+        <div className="xl:pr-2 2xl:pr-40">
+          <ResultList sortedCars={sortedCars} />
+        </div>
+      </div>
+      <div className="col-span-full ">
+        <StickyPopUpForComparison />
+      </div>
+    </div>
   );
 }
 export async function getStaticProps(context) {
@@ -118,7 +116,7 @@ export async function getStaticProps(context) {
   const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   let blogs = await getContent("blog", context.locale);
-  console.log(blogs);
+  // console.log(blogs);
   const page = pages.find((page) => page.path === "/comparePage");
 
   if (!pages) {
