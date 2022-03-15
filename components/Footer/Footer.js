@@ -67,12 +67,12 @@ const Footer = () => {
             </Link>
             <Link href="/Datenschutzerklärung">
               <a>
-                <li>&nbsp;{"Daten-schutzerklärung"}</li>
+                <li>Daten-schutz-erklärung</li>
               </a>
             </Link>
             <Link href="/AllgemeineGeschäftsbedingungen">
               <a>
-                <li>&nbsp;{"Allgemeine-Geschäft-sbedingungen"}</li>
+                <li>Allgemeine-Geschäfts-bedingungen</li>
               </a>
             </Link>
           </ul>
@@ -82,7 +82,6 @@ const Footer = () => {
         <div className="flex flex-row justify-start items-center w-full flex-wrap">
           <Image src="/images/etv-logo-final.png" width={60} height={40} />
           <p className="text-blue-dark text-base font-bold leading-4">
-            {" "}
             Elektrotransporter
             <br />
             Vergleich

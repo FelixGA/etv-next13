@@ -2,7 +2,9 @@
 title: ARI 345 Food Truck
 name: ari-345-food-truck
 price: 12750
-description: ""
+description: The ARI 345 Food Truck has everything gastronomes and caterers need
+  to get their gastro business rolling. An airy driver's cab, a large sales
+  counter, electric drive and - lots of free space.
 src: /images/ari_345_food_truck_l_.png
 category: Koffer
 typeClass: L2E
@@ -24,22 +26,22 @@ range230V:
   baseUnit: km
   maxValue: 100
 rangeLithium:
-  key: bitte auffüllen
+  key: Range Lithium Battery
   value: 0
   baseUnit: km
   maxValue: 0
 chargingTime230V:
   key: Charge Time 230v-socket
   value: 5
-  baseUnit: bitte auffüllen
+  baseUnit: h
 chargingTimeLithium:
   key: Charge Time Type2 Cable
   value: 0
-  baseUnit: bitte auffüllen
+  baseUnit: h
 chargingTimeFast:
   key: Fast Charging
   value: 0
-  baseUnit: bitte auffüllen
+  baseUnit: h
 batteryCapacityBlei:
   key: Capacity SLA Battery
   value: 3,24
@@ -68,13 +70,13 @@ rating:
 guarantee:
   key: Guarantee Vehicle
   value: 6
-  baseUnit: bitte auffüllen
+  baseUnit: Months
 availability:
   key: Availability
-  value: bitte auffüllen
+  value: no information
 subsidies:
   key: Subsidies
-  baseUnit: bitte auffüllen
+  baseUnit: no information
   value: 0
 batteryGuarantee:
   key: Battery-Guarantee
@@ -113,3 +115,4 @@ loadingVolume:
   width: Width
   length: Length
 ---
+The "ARI 345 Food Truck" is an electric load carrying bike designed for caterers and gastronoms. Its maximum speed is 45 km/h and its loading weight is 325 kg.

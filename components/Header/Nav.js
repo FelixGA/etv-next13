@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import Link from "next/link";
-
+import Router from "next/router";
+import { useRouter } from "next/router";
 const Nav = () => {
   const [isActive, setIsActive] = useState(false);
+  const router = useRouter();
+  console.log(router.pathname);
   return (
-    <div className=" w-full ">
+    <div className={router.pathname == "/caradvisor" ? "hidden" : "w-full"}>
       <nav className=" ">
         <ul className="flex justify-around items-center flex-1  text-blue-lighter text-lg font-bold">
           <li>

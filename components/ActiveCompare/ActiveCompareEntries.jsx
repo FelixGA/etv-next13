@@ -2,8 +2,11 @@ import TestResult from "../repeated/TestResult";
 import { useState, useEffect } from "react";
 
 export default function ActiveCompareEntries({ keys, comparedCars }) {
+  // console.log(test, "blablabla");
   const [entries, setEntries] = useState([]);
-  console.log(entries);
+  // console.log(entries, "test");
+  let testResultArr = comparedCars.map((test) => test.rating);
+  console.log(testResultArr);
 
   useEffect(() => {
     if (!keys?.length > 0 || !comparedCars?.length > 0) return;
@@ -12,6 +15,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
     const entryKeys = [];
     for (const key of keys) {
       entryKeys.push(comparedCars[0][key].key);
+      // console.log(entryKeys);
       // console.log(comparedCars[0][key].key);
     }
     entries.push(entryKeys);
@@ -30,24 +34,30 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
   }, [keys, comparedCars]);
   return (
     <>
-      {/* KEYS */}
-
-      {/* <div className="flex items-center flex-1 bg-white  pl-8">
-          <h3 className="text-blue-extra text-xl font-bold ">Grundlagen</h3>
-        </div> */}
       {entries.map((entry, index) => (
-        <div
-          key={index}
-          className="relative h-full bg-grey-lighter min-w-[160px]"
-        >
+        <div key={index} className="relative h-full min-w-[160px] bg-white">
+          {index == 0 ? (
+            <div className="flex items-end pb-2 flex-1 bg-white h-20 pl-4 lg:pl-8">
+              <h3 className="text-blue-extra text-xl font-bold ">Grundlagen</h3>
+            </div>
+          ) : (
+            <div className="lg:pt-4 flex items-center h-20 lg:pl-8">
+              <TestResult testResultArr={testResultArr[index - 1]} />
+            </div>
+          )}
+
           {entry.map((value, index) => (
-            <p
+            <div
               className={`${
-                index % 2 == 1 ? "bg-grey-lighter" : "bg-white"
-              } text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8 h-10`}
+                index % 2 == 1
+                  ? "bg-white flex items-center  h-10 "
+                  : "bg-grey-lighter flex items-center  h-10"
+              }`}
             >
-              {value}
-            </p>
+              <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8  ">
+                {value}
+              </p>
+            </div>
           ))}
         </div>
       ))}

@@ -2,7 +2,14 @@
 title: ARI 458 truck
 name: ari-458-kipper
 price: 16100
-description: ""
+description: The ARI 458 Pickup is a versatile light electric van which,
+  depending on the type of battery, can hold 531 - 648 kg cargo load and up to
+  2.05m². The vehicle was designed for use on the last mile in city centers,
+  parks, green areas, but also factories, train stations or airports. With a
+  flatbed, the vehicle is suitable for craftsmen and for use on large
+  construction sites, but also for gardening and landscaping companies .. Thanks
+  to the three selectable flatbed sizes and practical accessories, the perfect
+  transport solution can be found for every need.
 src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
 category: Kipper
 loadingWeight:
@@ -74,7 +81,7 @@ availability:
 subsidies:
   key: Subsidies
   value: 0
-  baseUnit: bitte auffüllen
+  baseUnit: no details available
 batteryGuarantee:
   key: Battery Guarantee
   value: 48
@@ -112,3 +119,4 @@ loadingVolume:
   width: Width
   length: Length
 ---
+The ARI 458 Pickup is a versatile light electric van which, depending on the type of battery, can hold 531 - 648 kg cargo load and up to 2.05m². The vehicle was designed for use on the last mile.
