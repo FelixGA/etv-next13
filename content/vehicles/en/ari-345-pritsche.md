@@ -2,6 +2,14 @@
 title: ARI 345 Pritsche
 name: ari-345-pritsche
 price: 6995
+description: The ARI 345 Pikcup is a three-wheeled delivery moped with an open
+  driver's cab and a tiltable pickup bed. The vehicle body is available in three
+  sizes with a loading length of up to 1.55 meters and around 1.8 m² loading
+  area. The vehicle can already be driven with a moped driving license in many
+  countries. As a pickup with 325 kg cargo load, the ARI 345 is particularly
+  suitable for inner-city use by delivery services, landscaping companies and
+  construction companies. Practical accessories such as a lattice box or a
+  tarpaulin structure are available for the loading platform.
 src: /images/345-front-1-.jpg
 typeClass: L2E
 loadingWeight:
@@ -33,11 +41,11 @@ chargingTime230V:
 chargingTimeLithium:
   value: 0
   key: Charge Time Type2 Cable
-  baseUnit: bitte auffüllen
+  baseUnit: h
 chargingTimeFast:
   key: Fast Charging
   value: 0
-  baseUnit: bitte auffüllen
+  baseUnit: h
 batteryCapacityBlei:
   value: 3,24
   baseUnit: " kwh"
@@ -69,14 +77,14 @@ guarantee:
   baseUnit: Months
 availability:
   key: Availability
-  value: bitte auffüllen
+  value: no details available
 subsidies:
   key: Subsidies
   value: 0
-  baseUnit: bitte auffüllen
+  baseUnit: no details available
 batteryGuarantee:
   key: Battery-Guarantee
-  baseUnit: bitte auffüllen
+  baseUnit: no details available
   value: 0
 loadingHeight:
   key: Loading Height
@@ -111,3 +119,4 @@ loadingVolume:
   width: Width
   length: Length
 ---
+The ARI 345 Pikcup is a three-wheeled delivery moped with an open driver's cab and a tiltable pickup bed.  The ARI 345 is particularly suitable for inner-city use by delivery services, landscaping companies and construction companies.
