@@ -15,7 +15,7 @@ export default function Home(props) {
   const [getContent, SetGetContent] = useState(props.page);
   const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
   // console.log(getCars.map((item) => item.relatedBlogs));
-  console.log(props.blogs);
+  // console.log(props.blogs);
   return (
     <>
       <Head>

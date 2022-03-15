@@ -39,13 +39,6 @@ export default function comparePage(props) {
       ?.sort((a, b) => parseFloat(a.price) * 1 - parseFloat(b.price) * 1)
       .map((item) => item);
 
-    // const convertPriceToNumber = (price) => {
-    //   return parseFloat(price.replace(/[^0-9.-]+/g, ""));
-    // };
-    // get the cheapest auto
-    // const getCheapest = getCarslowestPrice?.slice(0, 1);
-    // get the most expensive auto
-    // const getHighest = getCarshighestPrice?.slice(0, 1);
     const getCarshighestPrice = props.vehicles
       ?.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
       .map((item) => item);
@@ -62,6 +55,7 @@ export default function comparePage(props) {
     const getCarsByRange = props.vehicles
       ?.sort((a, b) => b.rangeLithium.value - a.rangeLithium.value)
       .map((item) => item);
+
     // /* ᴄᴀʀs ᴄʜᴀʀɢɪɴɢ ᴛɪᴍᴇ ғɪʟᴛᴇʀ */
     const getCarsfastest = props.vehicles
       ?.sort(
@@ -98,7 +92,6 @@ export default function comparePage(props) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
       <div className=" hidden md:block bg-white mt-24 ">
-        {/* <div className="relative bg-blue-500 h-24  w-80 z-90"></div> */}
         <FiltersDesktop getContent={getContent} />
       </div>
       <div className="flex md:hidden">
@@ -123,7 +116,7 @@ export async function getStaticProps(context) {
   const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   let blogs = await getContent("blog", context.locale);
-  console.log(blogs);
+  // console.log(blogs);
   const page = pages.find((page) => page.path === "/comparePage");
 
   if (!pages) {
