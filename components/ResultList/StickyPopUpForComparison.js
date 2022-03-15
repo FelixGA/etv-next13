@@ -45,9 +45,7 @@ const StickyPopUpForComparison = () => {
       <div className="hidden md:flex flex-col-reverse justify-between  ml-4 xl:pl-4 relative  h-full">
         <div className="mb-12 lg:mb-8 ">
           <Link
-            href={
-              state?.autoForComparisons.length > 1 ? "/activeCompareNew" : "#"
-            }
+            href={state?.autoForComparisons.length > 1 ? "/activeCompare" : "#"}
           >
             <a className="pr-4 ">
               <button
@@ -86,9 +84,7 @@ const StickyPopUpForComparison = () => {
       {/* Mobile view */}
       <div className=" md:hidden flex flex-row w-full h-1/3 items-center justify-around">
         <Link
-          href={
-            state?.autoForComparisons.length > 1 ? "/activeCompareNew" : "#"
-          }
+          href={state?.autoForComparisons.length > 1 ? "/activeCompare" : "#"}
         >
           <a className="flex lg:hidden">
             <button
