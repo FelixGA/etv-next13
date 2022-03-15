@@ -80,7 +80,7 @@ export default function activeCompare(props) {
   }, []);
 
   return (
-    <div></div>
+    <div>test</div>
     // <div className="main-wrapper 2xl:px-40">
     //   {/* HEADING */}
     //   <div className="pt-8 pb-6 px-4">

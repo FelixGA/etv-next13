@@ -39,13 +39,6 @@ export default function comparePage(props) {
       ?.sort((a, b) => parseFloat(a.price) * 1 - parseFloat(b.price) * 1)
       .map((item) => item);
 
-    // const convertPriceToNumber = (price) => {
-    //   return parseFloat(price.replace(/[^0-9.-]+/g, ""));
-    // };
-    // get the cheapest auto
-    // const getCheapest = getCarslowestPrice?.slice(0, 1);
-    // get the most expensive auto
-    // const getHighest = getCarshighestPrice?.slice(0, 1);
     const getCarshighestPrice = props.vehicles
       ?.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
       .map((item) => item);
@@ -62,6 +55,7 @@ export default function comparePage(props) {
     const getCarsByRange = props.vehicles
       ?.sort((a, b) => b.rangeLithium.value - a.rangeLithium.value)
       .map((item) => item);
+
     // /* ᴄᴀʀs ᴄʜᴀʀɢɪɴɢ ᴛɪᴍᴇ ғɪʟᴛᴇʀ */
     const getCarsfastest = props.vehicles
       ?.sort(
@@ -96,26 +90,27 @@ export default function comparePage(props) {
   }, [props.vehicles, state.activeSortValues]);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
-      <div className=" hidden md:block bg-white mt-24 ">
-        {/* <div className="relative bg-blue-500 h-24  w-80 z-90"></div> */}
-        <FiltersDesktop getContent={getContent} />
-      </div>
-      <div className="flex md:hidden">
-        <FiltersMobile getContent={getContent} />
-      </div>
-      <div className="heading+sorting+content mt-10 md:mt-24">
-        <div className="">
-          <ActiveFilterBlock getContent={getContent} />
-        </div>
-        <div className="xl:pr-2 2xl:pr-40">
-          <ResultList sortedCars={sortedCars} />
-        </div>
-      </div>
-      <div className="col-span-full ">
-        <StickyPopUpForComparison />
-      </div>
-    </div>
+    <div>test test</div>
+    // <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
+    //   <div className=" hidden md:block bg-white mt-24 ">
+
+    //     <FiltersDesktop getContent={getContent} />
+    //   </div>
+    //   <div className="flex md:hidden">
+    //     <FiltersMobile getContent={getContent} />
+    //   </div>
+    //   <div className="heading+sorting+content mt-10 md:mt-24">
+    //     <div className="">
+    //       <ActiveFilterBlock getContent={getContent} />
+    //     </div>
+    //     <div className="xl:pr-2 2xl:pr-40">
+    //       <ResultList sortedCars={sortedCars} />
+    //     </div>
+    //   </div>
+    //   <div className="col-span-full ">
+    //     <StickyPopUpForComparison />
+    //   </div>
+    // </div>
   );
 }
 export async function getStaticProps(context) {
