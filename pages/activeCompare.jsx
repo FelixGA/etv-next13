@@ -2,14 +2,9 @@ import Link from "next/link";
 import { useStore } from "../components/store";
 import { useState, useEffect } from "react";
 import getContent from "/utils/getContent";
-import ActiveCompareKeys from "../components/ActiveCompare/ActiveCompareKeys";
-import ActiveCompareItem from "../components/ActiveCompare/ActiveCompareItem";
-import ActiveCompareEquipmentKeysValues from "../components/ActiveCompare/ActiveCompareEquipmentKeysValues";
-import ActiveCompareMaßeKeysValues from "../components/ActiveCompare/ActiveCompareMaßeKeysValues";
 import ActiveCompareImages from "../components/ActiveCompare/ActiveCompareImages";
-import ActiveCompareBasics from "../components/ActiveCompare/ActiveCompareEntries";
-import ActiveCompareEquipment from "../components/ActiveCompare/ActiveCompareEquipment";
 import ActiveCompareEntries from "../components/ActiveCompare/ActiveCompareEntries";
+
 const allKeys = [
   // "typeClass",
   "range230V",
@@ -34,25 +29,10 @@ const allKeys = [
   "subsidies",
 ];
 
-// const dimensionKeys = ["loadingVolume", "loadingHeight"];
-
-// const equipmentKeys = [
-//   "batteryCapacityBlei",
-//   "batteryCapacityLithium",
-//   "batteryGuarantee",
-//   "batteryIncluded",
-//   "consumption",
-//   "availability",
-//   "guarantee",
-//   "seats",
-//   "subsidies",
-// ];
-
-export default function activeCompareNew(props) {
+export default function activeCompare(props) {
   const { state, dispatch } = useStore();
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getKeys, SetGetKeys] = useState([]);
-
   const [toggle, setToggle] = useState(true);
 
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
@@ -72,8 +52,8 @@ export default function activeCompareNew(props) {
       getCars[0]?.loadingWeight.key,
       getCars[0]?.curbweight.key,
       "Gesamtgewicht",
-      /* fahrzeug masse */
 
+      /* fahrzeug masse */
       getCars[0]?.loadingHeight.key,
       getCars[0]?.loadingHeight.height,
       getCars[0]?.loadingHeight.width,
@@ -84,6 +64,7 @@ export default function activeCompareNew(props) {
       getCars[0]?.loadingVolume.length,
       "Ladefläche",
       "Ladevolumen",
+
       /* details */
       getCars[0]?.batteryCapacityBlei.key,
       getCars[0]?.batteryCapacityLithium.key,
@@ -125,38 +106,6 @@ export default function activeCompareNew(props) {
       <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
         <ActiveCompareEntries keys={allKeys} comparedCars={comparedCars} />
       </div>
-      {/* BUTTONS */}
-      {/* <div className="flex flex-1 justify-center py-8">
-        <div
-          onClick={() => setToggle(true)}
-
-          className="text-lg mr-1 sm:mr-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark hover:bg-blue-light text-white shrink-0 rounded-md"
-
-        >
-          <button>Ausstattung</button>
-        </div>
-        <div
-          onClick={() => setToggle(false)}
-
-          className="text-lg ml-1 sm:ml-4 cursor-pointer border w-32 sm:w-48 h-12 flex justify-center bg-blue-dark hover:bg-blue-light text-white shrink-0 rounded-md"
-
-        >
-          <button>Masse</button>
-        </div>
-      </div> */}
-      {/* AUSSTATUNG AND MAẞE */}
-      {/* <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
-        <ActiveCompareEntries
-          keys={equipmentKeys}
-          comparedCars={comparedCars}
-        />
-      </div>
-      <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
-        <ActiveCompareEntries
-          keys={dimensionKeys}
-          comparedCars={comparedCars}
-        />
-      </div> */}
     </div>
   );
 }
