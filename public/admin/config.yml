@@ -33,7 +33,7 @@ collections:
           name: src,
           widget: image,
           i18n: duplicate,
-          choose_url: true,
+          choose_url: false,
         }
       - label: "Content"
         name: "content"
@@ -51,34 +51,85 @@ collections:
               required: false,
             }
 
-  - label: "Blog"
-    name: "blog"
-    folder: "content/posts"
+  - label: "Blogs"
+    name: "blogs"
+    folder: "content/blogs"
     create: true
     i18n: true
     fields:
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Slug", name: "slug", widget: "string", i18n: duplicate }
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          default: "bitte auffuelen",
+          i18n: true,
+        }
+      - {
+          label: "Slug",
+          name: "slug",
+          widget: "string",
+          default: "bitte auffuelen",
+          i18n: duplicate,
+        }
+      - {
+          label: "Youtube Link",
+          name: "youtubeLink",
+          widget: "string",
+          default: "bitte auffuelen",
+          i18n: duplicate,
+        }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        multiple: false
+        i18n: duplicate
+        options: ["Pritsche", "Kipper", "Kasten", "Koffer"]
+      - {
+          label: "Description-Body",
+          name: "description",
+          widget: "markdown",
+          default: "bitte auffuelen",
+          i18n: true,
+        }
+      - {
+          label: "Content",
+          name: "content",
+          widget: "markdown",
+          default: "bitte auffuelen",
+          i18n: true,
+        }
+      - {
+          label: "Preview",
+          name: "body",
+          widget: "markdown",
+          default: "bitte auffuelen",
+          i18n: true,
+        }
+      - label: "post related vehicles"
+        name: "vehicle"
+        widget: "relation"
+        collection: "vehicles"
+        search_fields: ["name"]
+        display_fields: ["name"]
+        value_field: "rating"
+
       - label: "Published at"
         name: "publishedAt"
         widget: "date"
         default: ""
         format: "MM/DD/YYYY"
         i18n: true
-      - label: "Description"
-        name: "description"
-        widget: "text"
-        i18n: true
       - label: "Featured Image"
-        name: "thumbnail"
+        i18n: true
+        name: "src"
         widget: "image"
         choose_url: true
+        allow_multiple: true
         media_library:
           config:
             multiple: true
-      - { label: "Preview", name: "body", widget: "markdown", i18n: true }
 
-  - label: "Vehicle"
+  - label: "Vehicles"
     name: "vehicles"
     folder: "content/vehicles"
     create: true
@@ -124,6 +175,13 @@ collections:
         name: "body"
         widget: "markdown"
         i18n: true
+      - label: "related blogs"
+        name: "relatedBlogs"
+        widget: "relation"
+        collection: "blogs"
+        search_fields: ["title"]
+        display_fields: ["title"]
+        value_field: "content"
 
       - label: "Category"
         name: "category"
