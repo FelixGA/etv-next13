@@ -11,7 +11,7 @@ loadingWeight:
 curbweight:
   key: Curb Weight
   value: 0
-  baseUnit: kg
+  baseUnit: keine Angabe
 maxSpeed:
   key: Maximum Speed
   value: 45
@@ -19,7 +19,7 @@ maxSpeed:
 range230V:
   key: Range SLA Battery
   value: 0
-  baseUnit: km
+  baseUnit: keine Angabe
 rangeLithium:
   value: 95
   baseUnit: km
@@ -39,7 +39,7 @@ chargingTimeFast:
 batteryCapacityBlei:
   key: Capacity SLA Battery
   value: "0"
-  baseUnit: kwh
+  baseUnit: keine Angabe
 batteryCapacityLithium:
   key: Capacity Lithium Battery
   value: 9,2
@@ -79,15 +79,15 @@ batteryGuarantee:
 loadingHeight:
   key: Loading Height
   value: 0
-  baseUnit: mm
+  baseUnit: keine Angabe
 loadingVolumeTotal:
   key: Loading Volume
   value: "0"
-  baseUnit: m3
+  baseUnit: keine Angabe
 loadingArea:
   key: Loading Area
   value: "0"
-  baseUnit: m2
+  baseUnit: keine Angabe
 carSizes:
   width: Width
   length: Length

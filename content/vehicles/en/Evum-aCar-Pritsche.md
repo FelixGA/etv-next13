@@ -26,38 +26,38 @@ maxSpeed:
 range230V:
   key: range sla
   value: 0
-  baseUnit: " eryheryj"
+  baseUnit: keine Angabe
   maxValue: 0
 rangeLithium:
-  key: "range "
+  key: Range Lithium Akku
   value: 110
   baseUnit: km
   maxValue: 0
 chargingTime230V:
-  key: sfgsfdgdf
+  key: Charge time 230v-socket
   value: 0
   baseUnit: keine Angabe
 chargingTimeLithium:
-  key: charging time
+  key: Charge time type2 cable
   value: 6
-  baseUnit: St.
+  baseUnit: h
 chargingTimeFast:
-  key: charging time fast
+  key: Fast charging time
   value: 1
   baseUnit: keine Angabe
 batteryCapacityBlei:
-  key: capacitiy sla
+  key: Capacitiy SLA Battery
   value: "-"
-  baseUnit: " "
+  baseUnit: " keine Angabe"
 batteryCapacityLithium:
-  key: capacity lithium
+  key: Capacity Lithium
   value: 16,5
-  baseUnit: kWh
+  baseUnit: kwh
 batteryIncluded:
   value: ja
-  key: Batterie Verfügbarkeit
+  key: Battery included
 consumption:
-  key: consumption
+  key: Consumption
   value: 19,6
   baseUnit: kWh
 power:
@@ -71,20 +71,20 @@ rating:
   key: good
   value: 4,0
 guarantee:
-  key: Car guarantee
+  key: Guarantee vehicle
   value: 0
   baseUnit: keine Angabe
 availability:
-  key: no information
-  value: no info
+  key: Availability
+  value: no details available
 subsidies:
-  key: subsidies
+  key: Subsidies
   value: 0
-  baseUnit: no info
+  baseUnit: no details available
 batteryGuarantee:
-  key: battery guarantee
+  key: Battery-Guarantee
   value: 0
-  baseUnit: no info
+  baseUnit: no details available
 loadingHeight:
   key: loading height
   value: 895
@@ -92,25 +92,25 @@ loadingHeight:
 loadingVolumeTotal:
   value: "234"
   baseUnit: m3
-  key: LoadingVolume
+  key: Loading Volume
 loadingArea:
-  value: "234234"
+  value: 2,86
   baseUnit: m2
-  key: LadeflächeEnglish
+  key: Loading Area
 carSizes:
-  width: width
+  width: Width
   length: length
-  height: height
-  wheelbase: wheelbase
+  height: Height
+  wheelbase: Wheelbase
   valuewidth: 1500
   baseUnit: mm
   valuelength: 4000
   valueheight: 2000
   valuewheelbase: 2596
-  key: car sizes
+  key: Car Sizes
 loadingVolume:
-  key: loading volume
-  height: height
+  key: Loading volume
+  height: Height
   valueheight: 352
   width: width
   valuewidth: 1608

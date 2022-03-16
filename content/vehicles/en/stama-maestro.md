@@ -19,7 +19,7 @@ maxSpeed:
   baseUnit: km/h
 range230V:
   value: 0
-  baseUnit: km
+  baseUnit: keine Angabe
   key: Range SLA Battery
 rangeLithium:
   value: 110
@@ -32,26 +32,26 @@ chargingTime230V:
 chargingTimeLithium:
   value: 0
   key: Charge time type2 cable
-  baseUnit: h
+  baseUnit: no details available
 chargingTimeFast:
   value: 0
   key: Fast charging time
-  baseUnit: h
+  baseUnit: no details available
 batteryCapacityBlei:
-  value: "0"
-  baseUnit: " kwh"
+  value: "-"
+  baseUnit: keine Angabe
   key: Capacity SLA Battery
 batteryCapacityLithium:
   value: 14,4
-  baseUnit: kWh
+  baseUnit: kwh
   key: Capacity Lithium Battery
 batteryIncluded:
   key: Battery included
   value: No details available
 consumption:
   key: Consumption
-  baseUnit: kWh
-  value: No details available
+  baseUnit: keine Angabe
+  value: "-"
 power:
   key: Power
   value: min-8/max-9
@@ -64,14 +64,14 @@ rating:
   key: Good
 guarantee:
   key: Guarantee Vehicle
-  value: 0
+  value: ""
   baseUnit: No details available
 availability:
   key: Availability
   value: No details available
 subsidies:
   key: Subsidies
-  value: 0
+  value: ""
   baseUnit: No details available
 batteryGuarantee:
   key: Battery-Guarantee

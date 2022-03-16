@@ -141,6 +141,7 @@ content: >-
 youtubeLink: www.youtube.com
 description: "!!!!!!!!!!!!!!!hier ist für SEO!!!!!!!!!!!!!!"
 ---
+
 # beispiel Titel von Elektrotransporter-Vergleich
 
 ![beispiel mit Solarpanel](/images/Chevron_down.png "beispiel mit Solarpanel - Vielseitiger Elektrotransporter")
@@ -149,21 +150,21 @@ Hier könnte noch etwas stehen, was Leute davon überzeugt, dass es richtig gut 
 
 ## Konzept & Fahrzeugvarianten
 
-Die möglichen Aufbauten teilen sich in vier Oberkategorien auf: Koffer, Pritsche, Kipper sowie Individualaufbauten. Zu Individualaufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer, Laubgitteraufbau, Food Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI 458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert. Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus für große Strecken. 
+Die möglichen Aufbauten teilen sich in vier Oberkategorien auf: Koffer, Pritsche, Kipper sowie Individualaufbauten. Zu Individualaufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer, Laubgitteraufbau, Food Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI 458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert. Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus für große Strecken.
 
 ![ mit Kühlkoffer-Aufbau](/images/whatsapp-image-2021-07-01-at-13.01-4-.jpeg "ARI 458 mit Kühlkofferaufbau - perfekt für Cateringdienste")
 
 ## Laderaum & Flexibilität (⅘)
 
-Für Lieferdienste und Lastentransporte ist der ARI 458 mit Kofferaufbau sehr gut geeignet. Kunden haben hier die Wahl zwischen den drei Größen, welche ein Ladevolumen von 1,45 m3 (Basisversion), 2,05 m3 („L“) sowie 2,77 m3 bei der „XL“-Version besitzen. Bei der Höhe variieren die Koffer-Aufbauten zwischen 95, 110 und 130 cm. Die Ladekantenhöhe des ARI 458 ist mit 68 cm angenehm niedrig. 
+Für Lieferdienste und Lastentransporte ist der ARI 458 mit Kofferaufbau sehr gut geeignet. Kunden haben hier die Wahl zwischen den drei Größen, welche ein Ladevolumen von 1,45 m3 (Basisversion), 2,05 m3 („L“) sowie 2,77 m3 bei der „XL“-Version besitzen. Bei der Höhe variieren die Koffer-Aufbauten zwischen 95, 110 und 130 cm. Die Ladekantenhöhe des ARI 458 ist mit 68 cm angenehm niedrig.
 
 Weiterhin können Kunden den Kofferaufbau individuell konfigurieren. So kann der Koffer beispielsweise mit zwei Flügeltüren am Heck oder einer „Rolltor“-Variante geordert werden. Für das mehrseitige Beladen der Box sind Seitentüren verfügbar, welche gerade im Falle von kleinteiliger Ladung von Vorteil sind.
 
-Als Pritsche und Kipper bietet der ARI 458 eine offene Ladefläche, welche in drei Größen von 1,53 m², 1,86 m²  bis 2,05 m² verfügbar ist. Die Höhe der Bordwände beträgt hier 25 cm.  Das Kippen der Ladefläche erfolgt beim ARI 458 Kipper entweder elektrisch-hydraulisch per Fernbedienung oder mechanisch-hydraulisch per Pumpe. Für die Sicherung der Ladung sind zudem Verzurr-Ösen sowie eine stabile Plane für das Pritschen-Modell verfügbar. Ebenso lässt sich die Ladefläche durch einen drei- oder vierteiligen Laubgitter-Aufbau ergänzen. 
+Als Pritsche und Kipper bietet der ARI 458 eine offene Ladefläche, welche in drei Größen von 1,53 m², 1,86 m²  bis 2,05 m² verfügbar ist. Die Höhe der Bordwände beträgt hier 25 cm.  Das Kippen der Ladefläche erfolgt beim ARI 458 Kipper entweder elektrisch-hydraulisch per Fernbedienung oder mechanisch-hydraulisch per Pumpe. Für die Sicherung der Ladung sind zudem Verzurr-Ösen sowie eine stabile Plane für das Pritschen-Modell verfügbar. Ebenso lässt sich die Ladefläche durch einen drei- oder vierteiligen Laubgitter-Aufbau ergänzen.
 
-Neben den ‘Standard’-Aufbauten ist der ARI 458 auch als Verkaufsfahrzeug oder Food Truck verfügbar. Das Verkaufsfahrzeug mit 3 Flügeltüren ist in den Größen 1,99 m3, 2,42 m3   und 2,77 m3 erhältlich. 
+Neben den ‘Standard’-Aufbauten ist der ARI 458 auch als Verkaufsfahrzeug oder Food Truck verfügbar. Das Verkaufsfahrzeug mit 3 Flügeltüren ist in den Größen 1,99 m3, 2,42 m3   und 2,77 m3 erhältlich.
 
-beispiel ist ebenso in 3 Größen mit den maximalen Aufbau-Maßen von 1640×1300×1250 (LxBxH) bestellbar. Neben einer großzügigen Arbeitsfläche und weiteren ausziehbaren Arbeitsplatten bietet dieser eine Menge Stauraum im unteren Teil des Aufbaus. 
+beispiel ist ebenso in 3 Größen mit den maximalen Aufbau-Maßen von 1640×1300×1250 (LxBxH) bestellbar. Neben einer großzügigen Arbeitsfläche und weiteren ausziehbaren Arbeitsplatten bietet dieser eine Menge Stauraum im unteren Teil des Aufbaus.
 
 Die Nutzlast der 458er-Reihe liegt bei rund 530 Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450 Kilogramm möglich.
 
@@ -173,7 +174,7 @@ Die Nutzlast der 458er-Reihe liegt bei rund 530 Kilogramm, welche durch verschie
 
 Den Antrieb des ARI 458 übernimmt ein Wechselstrommotor mit einer Kraft von 7,5 kW, welcher den Elektrotransporter auf eine Höchstgeschwindigkeit von 78 Km/h beschleunigt. Die Kraft wird auf die Hinterachse übertragen, auf welcher bei Beladung auch das meiste Gewicht liegt. Damit soll auch unter Vollladung eine gute Straßenlage garantiert werden.
 
-Bezüglich der Energiespeicherung hat der Kunde die Wahl: 
+Bezüglich der Energiespeicherung hat der Kunde die Wahl:
 
 Als Basisversion besitzt der ARI 458 eine SLA-Batterie, welche eine Reichweite von rund 120 Kilometern besitzt. Gegen Aufpreis wird das Fahrzeug mit einem Lithium-Ionen-Akku geliefert, wodurch die Laufleistung einer Aufladung auf circa 150 Kilometer steigt. Optional kann ein zweites Akkupaket geordert werden, wodurch eine Reichweite bis 200 Kilometer möglich ist. Wie bei allen Elektrofahrzeugen ist diese natürlich auch von den Umweltbedingungen und dem Gebrauch von elektrischen Geräten wie Radio oder Klimaanlage abhängig. Positiv auf die Reichweite wirkt sich ein optional verfügbares Solarmodul auf dem Dach aus, welches die Fahrstrecke nochmals um rund 30 Kilometer erweitern kann.
 
@@ -213,7 +214,7 @@ Innerorts liegt der Verbrauch des Ari 458 bei 6,2 kWh und außerorts bei 8,0 kWh
 
 ## Preise & Garantie (4/5)
 
-In Sachen Preis ist der ARI 458 im Segment der Elektrotransporter wohl ungeschlagen. So liegt der Grundpreis der Pritschen-Version bei 13.700 Euro. Selbst mit dem „XL“-Koffer kostet das Fahrzeug mit 17.290 Euro weitaus weniger als vergleichbare Fahrzeuge der Konkurrenz. Die für Baustellen und Handwerker geeignete Kipper-Variante beginnt ab 16.400 Euro. Die Preise für das Verkaufsfahrzeug und den Food Truck starten bei 17.150 und 19.430 Euro. Der Kühlkoffer-Aufbau ist ab 19.900 Euro auf dem Markt verfügbar.   
+In Sachen Preis ist der ARI 458 im Segment der Elektrotransporter wohl ungeschlagen. So liegt der Grundpreis der Pritschen-Version bei 13.700 Euro. Selbst mit dem „XL“-Koffer kostet das Fahrzeug mit 17.290 Euro weitaus weniger als vergleichbare Fahrzeuge der Konkurrenz. Die für Baustellen und Handwerker geeignete Kipper-Variante beginnt ab 16.400 Euro. Die Preise für das Verkaufsfahrzeug und den Food Truck starten bei 17.150 und 19.430 Euro. Der Kühlkoffer-Aufbau ist ab 19.900 Euro auf dem Markt verfügbar.
 
 Das Fahrzeug kommt mit einer Herstellergarantie von 6 Monaten sowie einer Gewährleistung über eine Zeit von 2 Jahren. Auf die Lithium-Batterie haben Kunden einen Garantieanspruch von 4 Jahren bzw. 60.000 Kilometer.
 
