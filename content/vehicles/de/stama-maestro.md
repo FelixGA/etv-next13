@@ -32,7 +32,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Akku
   value: 0
-  baseUnit: km
+  baseUnit: keine Angabe
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -46,26 +46,26 @@ chargingTime230V:
 chargingTimeLithium:
   key: Ladezeit Typ2-Ladekabel
   value: 0
-  baseUnit: h
+  baseUnit: keine Angabe
 chargingTimeFast:
   key: Schnellladezeit
   value: 0
   baseUnit: keine Angabe
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: "0"
-  baseUnit: " kwh"
+  value: "-"
+  baseUnit: keine Angabe
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: 14,4
-  baseUnit: kWh
+  baseUnit: kwh
 batteryIncluded:
   value: keine Angabe
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: k.A.
-  baseUnit: kWh
+  value: "-"
+  baseUnit: keine Angabe
 power:
   key: "Leistung "
   value: min-8/max-9
