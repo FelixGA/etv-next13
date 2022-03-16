@@ -2,11 +2,6 @@
 title: ARI 458 Food Truck
 name: ari-458-food-truck
 price: 19430
-description: Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e
-  mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen
-  Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.
-src: /images/ari-458-food-truck-5-.jpg
-
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -138,8 +133,11 @@ relatedBlogs: >-
 
 
   4,4
+description: Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e
+  mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen
+  Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.
+src: /images/ari-458-food-truck-5-.jpg
 category: Kasten
-
 loadingWeight:
   value: 531
   baseUnit: kg

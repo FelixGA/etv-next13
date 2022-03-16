@@ -2,6 +2,7 @@
 title: ARI 345 Food Truck
 name: ari-345-food-truck
 price: 12750
+relatedBlogs: beispiel
 description: Der ARI 345 Food Truck hat alles am Start, was Gastronomen und
   Caterer brauchen, um Ihr Gastro-Unternehmen nachhaltig ins Rollen zu bringen.
   Eine luftige Fahrerkabine, einen großen Verkaufstresen, elektrischen Antrieb

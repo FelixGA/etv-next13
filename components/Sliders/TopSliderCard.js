@@ -2,69 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineArrowRight } from "react-icons/hi";
 
-/* import image from "../public/images/VW-e-Crafter-Front-300x225.jpg"; */
-// const images = [
-//   {
-//     index: 1,
-//     title: "ARI 458",
-//     image: require("../../public/images/VW-e-Crafter-Front-300x225.jpg"),
-//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-//   },
-//   {
-//     index: 2,
-//     title: "ARI 145",
-//     image: require("../../public/images/Stama-Maestro-Front-300x200.jpg"),
-//     desc: "Das Lastenmoped verfügt über zwei stabile Gepäckträger. Die Nutzlast beträgt 105 kg.",
-//   },
-//   {
-//     index: 3,
-//     title: "ARI 802",
-//     image: require("../../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg"),
-//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-//   },
-//   {
-//     index: 4,
-//     title: "ARI 901",
-//     image: require("../../public/images/Addax-MT-Laubgitter-Wiki-300x200.jpg"),
-//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-//   },
-//   {
-//     index: 5,
-//     title: "ARI 345",
-//     image: require("../../public/images/ARI-458-Kipper-L-Heck-300x199.jpg"),
-//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-//   },
-//   {
-//     index: 6,
-//     title: "ARI 802",
-//     image: require("../../public/images/VW-e-Crafter-Front-300x225.jpg"),
-//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-//   },
-//   {
-//     index: 7,
-//     title: "ARI 901",
-//     image: require("../../public/images/Stama-Maestro-Front-300x200.jpg"),
-//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-//   },
-//   {
-//     index: 8,
-//     title: "ARI 345",
-//     image: require("../../public/images/Maxus-eDeliver-3-Front-2-300x200.jpg"),
-//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-//   },
-//   {
-//     index: 9,
-//     title: "ARI 802",
-//     image: require("../../public/images/Addax-MT-Laubgitter-Wiki-300x200.jpg"),
-//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-//   },
-//   {
-//     index: 10,
-//     title: "ARI 345",
-//     image: require("../../public/images/ARI-458-Kipper-L-Heck-300x199.jpg"),
-//     desc: "Kurze Beschreibung zum Auto soll nicht länger als zwei Zeilen werden.",
-//   },
-// ];
 const TopSliderCard = (props) => {
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
     <div className="min-w-64 mr-2 pl-6" key={index}>

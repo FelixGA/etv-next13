@@ -2,6 +2,7 @@
 title: ARI 345 Pritsche
 name: ari-345-pritsche
 price: 6995
+relatedBlogs: beispiel
 description: Der ARI 345 Pritsche ist ein dreirädriges Lastenmoped mit offener
   Fahrerkabine und einer kippbaren Pickup-Ladefläche. Das Fahrzeug ist in drei
   Größen mit bis zu 1,55 Meter Ladelänge und rund 1,8 m² Ladefläche erhältlich.

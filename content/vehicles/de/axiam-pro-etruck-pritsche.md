@@ -2,6 +2,7 @@
 title: Axiam-pro-Etruck-pritsche
 name: axiam-pro-etruck-pritsche
 price: 19290
+relatedBlogs: beispiel
 description: >-
   Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen”
   mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein

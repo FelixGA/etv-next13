@@ -2,7 +2,7 @@ import { useState } from "react";
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
 import TopSlider from "../../components/Sliders/TopSlider";
-
+import { serialize } from "next-mdx-remote/serialize";
 import Articles from "../../components/DetailsPage/Articles";
 import PrintPopUp from "../../components/DetailsPage/PrintPopUp";
 import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
@@ -18,6 +18,9 @@ export default function Details(props) {
   const [carItem, SetCarItem] = useState(props.vehicle);
   /* for the view more hook */
   const [descriptionSize, SetDescriptionSize] = useState(true);
+  const [getMarkdownContext, SetGetMarkdownContext] = useState(
+    props.relatedBlog
+  );
   return (
     <>
       {/* image and rating section */}
@@ -28,7 +31,7 @@ export default function Details(props) {
       <TechnicalDetails carItem={carItem} />
       {/* description and articles section */}
 
-      <Articles carItem={carItem} />
+      <Articles carItem={carItem} getMarkdownContext={getMarkdownContext} />
       {/* slider  */}
 
       <TopSlider getCars={getCars} />
@@ -45,6 +48,7 @@ export async function getStaticProps(context) {
     context.locale
   );
   let vehicles = await getContent("vehicles", context.locale);
+
   /*  get the first 4 from this category for the slider */
   vehicles = Object.entries(vehicles).map(([key, value]) => {
     return value;
@@ -52,7 +56,18 @@ export async function getStaticProps(context) {
   vehicles = vehicles
     .filter((item, index) => item.category === vehicle.category)
     .slice(0, 4);
+  /* get related blogs*/
+  let blog = await getContentBySlug(
+    "blogs",
+    context.params.cartitle,
+    context.locale
+  );
+  /* catching errors in case there isnt blog yet */
+  let emptyBlog = await getContentBySlug("blogs", "beispiel", context.locale);
 
+  let relatedBlog;
+
+  blog.source ? (relatedBlog = blog.source) : (relatedBlog = emptyBlog.source);
   if (!vehicle) {
     return {
       notFound: true,
@@ -63,6 +78,7 @@ export async function getStaticProps(context) {
     props: {
       vehicle,
       vehicles,
+      relatedBlog,
     },
   };
 }

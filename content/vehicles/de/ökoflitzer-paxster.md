@@ -2,6 +2,7 @@
 title: Ökoflitzer Paxster
 name: ökoflitzer-paxster
 price: 140000
+relatedBlogs: beispiel
 description: mmmmm
 src: /images/X.png
 category: Koffer

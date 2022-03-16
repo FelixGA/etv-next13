@@ -2,6 +2,7 @@
 title: Stama Maestro
 name: stama-maestro
 price: 34250
+relatedBlogs: beispiel
 description: >-
   Der Stama Maestro kam 2019 auf den Markt und ist das bisher größte Fahrzeug
   des Herstellers. Außerdem ist er unter dem Namen Addax in Deutschland
