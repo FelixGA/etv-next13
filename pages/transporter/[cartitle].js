@@ -24,13 +24,14 @@ export default function Details(props) {
   return (
     <>
       {/* image and rating section */}
+      <div className="2xl:px-40">
+        <BasicInfo carItem={carItem} descriptionSize={descriptionSize} />
 
-      <BasicInfo carItem={carItem} descriptionSize={descriptionSize} />
-      {/* technical details section */}
+        {/* technical details section */}
 
-      <TechnicalDetails carItem={carItem} />
-      {/* description and articles section */}
-
+        <TechnicalDetails carItem={carItem} />
+        {/* description and articles section */}
+      </div>
       <Articles carItem={carItem} getMarkdownContext={getMarkdownContext} />
       {/* slider  */}
 
