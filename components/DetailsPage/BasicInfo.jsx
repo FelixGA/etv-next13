@@ -52,7 +52,7 @@ const BasicInfo = ({ carItem, descriptionSize }) => {
         </div>
         {/* description */}
         <div className="w-full text-black-darkest flex flex-col lg:px-8">
-          <h3 className="w-full text-black-darkest font-bold pb-4">
+          <h3 className="w-full text-black-darkest font-bold py-4">
             Über das Fahrzeug
           </h3>
           <p

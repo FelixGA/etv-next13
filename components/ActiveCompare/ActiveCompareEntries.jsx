@@ -41,7 +41,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
               <h3 className="text-blue-extra text-xl font-bold ">Grundlagen</h3>
             </div>
           ) : (
-            <div className="lg:pt-4 flex items-center h-20 lg:pl-8">
+            <div className="pt-6 lg:pt-4 flex items-center h-20 lg:pl-8">
               <TestResult testResultArr={testResultArr[index - 1]} />
             </div>
           )}
@@ -50,8 +50,8 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
             <div
               className={`${
                 index % 2 == 1
-                  ? "bg-white flex items-center  h-10 "
-                  : "bg-grey-lighter flex items-center  h-10"
+                  ? "bg-white flex items-center  h-12 "
+                  : "bg-grey-lighter flex items-center  h-12"
               }`}
             >
               <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8  ">

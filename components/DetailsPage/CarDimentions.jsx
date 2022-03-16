@@ -12,7 +12,7 @@ const CarDimentions = ({ vehichleDimentions, carItem }) => {
   // ).toFixed(2);
   return (
     <section className="w-full lg:w-1/2 lg:px-2 lg:pl-6 ">
-      <h3 className="text-black-darkest font-bold pt-8 pb-4">Maße </h3>
+      <h3 className="text-black-darkest font-bold pt-8 pb-4 pl-4">Maße </h3>
       <div className="flex flex-col w-full text-blue-extra ">
         {vehichleDimentions?.map((item, index) => (
           <div
@@ -24,13 +24,13 @@ const CarDimentions = ({ vehichleDimentions, carItem }) => {
             <p
               className={
                 index == 0 || index == 5
-                  ? "w-1/2 py-1 font-bold"
-                  : "w-1/2 py-1 "
+                  ? "w-1/2 py-1 font-bold flex items-center pl-4 h-12"
+                  : "w-1/2 py-1 flex items-center pl-4 h-12"
               }
             >
               {item.key}:
             </p>
-            <p className="w-1/2 py-1">{item.value}</p>
+            <p className="w-1/2 py-1 flex items-center pl-4">{item.value}</p>
           </div>
         ))}
 
