@@ -2,6 +2,18 @@
 title: beispiel
 name: beispiel
 price: 80000
+description: >-
+  Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des
+  Produktionsstarts durch die Corona-Krise, ist das Evum A -Car nun seit Juni
+  2020 auf dem Markt. Ursprünglich wurde der kräftige Elektrotransporter für
+  Entwicklungs- und Schwellenländern entwickelt, wo er in der Landwirtschaft und
+  der Industrie zum Einsatz kommen sollte. Während der Entstehungsphase wurde
+  aber klar, dass das Fahrzeug auch für den europäischen Markt attraktiv sein
+  könnte.
+
+
+  VOM Evum-aCar-Truck kopiert
+src: /images/X.png
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -133,18 +145,6 @@ relatedBlogs: >-
 
 
   4,4
-description: >-
-  Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des
-  Produktionsstarts durch die Corona-Krise, ist das Evum A -Car nun seit Juni
-  2020 auf dem Markt. Ursprünglich wurde der kräftige Elektrotransporter für
-  Entwicklungs- und Schwellenländern entwickelt, wo er in der Landwirtschaft und
-  der Industrie zum Einsatz kommen sollte. Während der Entstehungsphase wurde
-  aber klar, dass das Fahrzeug auch für den europäischen Markt attraktiv sein
-  könnte.
-
-
-  VOM Evum-aCar-Truck kopiert
-src: /images/X.png
 category: Pritsche
 typeClass: L7E
 loadingWeight:
@@ -172,7 +172,7 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: St
 chargingTimeLithium:
   key: Ladezeit typ2
   value: 6
