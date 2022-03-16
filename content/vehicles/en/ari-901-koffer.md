@@ -2,6 +2,11 @@
 title: ARI 901 Box
 name: ari-901-koffer
 price: 38995
+description: Der ARI 901 mit Kofferaufbau ist ein leistungsstarker
+  Elektrotransporter der Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung
+  aufnehmen. Das Fahrzeug eignet sich speziell für den Einsatz bei Lieferanten,
+  Handwerkern, Baufirmen, Kommunen, Landschaftsbaubetrieben sowie
+  Transportfirmen.
 src: /images/ari-901-koffer.jpg
 category: Koffer
 typeClass: N1
@@ -109,3 +114,4 @@ loadingVolume:
   width: Width
   length: Length
 ---
+Der ARI 901 mit Kofferaufbau ist ein leistungsstarker Elektrotransporter der Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung aufnehmen. Das Fahrzeug eignet sich speziell für den Einsatz bei Lieferanten, Handwerkern, Baufirmen, Kommunen, Landschaftsbaubetrieben sowie Transportfirmen.
