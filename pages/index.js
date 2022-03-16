@@ -7,7 +7,6 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import TopSlider from "../components/Sliders/TopSlider";
 import Funnel from "../components/Caradvisor/Funnel";
 import NewsLetter from "../components/NewsLetter";
-import ButtonForAlleTransporter from "../components/Sliders/ButtonForAlleTransporter";
 import { useState } from "react";
 
 export default function Home(props) {

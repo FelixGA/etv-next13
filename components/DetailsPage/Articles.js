@@ -1,9 +1,12 @@
 import Image from "next/image";
 import RatingBox from "../../components/ResultList/RatingBox";
+import { MDXRemote } from "next-mdx-remote";
 
-const Articles = ({ carItem }) => {
+const Articles = ({ carItem, getMarkdownContext }) => {
   return (
     <>
+      {" "}
+      <MDXRemote {...getMarkdownContext} />
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
         <div className=" lg:w-1/3 w-full m-auto relative  ">
           <Image
@@ -29,7 +32,6 @@ const Articles = ({ carItem }) => {
           </button>
         </div>
       </div>
-
       {/* other articles section */}
       {/* First Article */}
       <div className=" flex lg:flex-row-reverse flex-col w-full lg:p-18 justify-center items-center  p-4 ">

@@ -2,7 +2,6 @@ import { useState } from "react";
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
 import TopSlider from "../../components/Sliders/TopSlider";
-import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import Articles from "../../components/DetailsPage/Articles";
 import PrintPopUp from "../../components/DetailsPage/PrintPopUp";
@@ -19,7 +18,9 @@ export default function Details(props) {
   const [carItem, SetCarItem] = useState(props.vehicle);
   /* for the view more hook */
   const [descriptionSize, SetDescriptionSize] = useState(true);
-  console.log(props.relatedBlog.source.compiledSource);
+  const [getMarkdownContext, SetGetMarkdownContext] = useState(
+    props.relatedBlog
+  );
   return (
     <>
       {/* image and rating section */}
@@ -29,10 +30,10 @@ export default function Details(props) {
 
       <TechnicalDetails carItem={carItem} />
       {/* description and articles section */}
-      {}
-      <Articles carItem={carItem} />
+
+      <Articles carItem={carItem} getMarkdownContext={getMarkdownContext} />
       {/* slider  */}
-      <MDXRemote {...props.relatedBlog} />
+
       <TopSlider getCars={getCars} />
       {/*sticky popup  */}
       <PrintPopUp carItem={carItem} />
@@ -41,13 +42,17 @@ export default function Details(props) {
 }
 
 export async function getStaticProps(context) {
-  let blogs = await getContent("blogs", context.locale);
   let vehicle = await getContentBySlug(
     "vehicles",
     context.params.cartitle,
     context.locale
   );
   let vehicles = await getContent("vehicles", context.locale);
+  const pages = await getContent("pages", context.locale);
+  const page = pages.find((page) => page.path === "/");
+  const header = await serialize(
+    page.content.find((content) => content.name === "header").markdown
+  );
 
   /*  get the first 4 from this category for the slider */
   vehicles = Object.entries(vehicles).map(([key, value]) => {
@@ -56,13 +61,17 @@ export async function getStaticProps(context) {
   vehicles = vehicles
     .filter((item, index) => item.category === vehicle.category)
     .slice(0, 4);
-  let relatedBlog = await getContentBySlug(
+  let blog = await getContentBySlug(
     "blogs",
     context.params.cartitle,
     context.locale
   );
-  relatedBlog = await serialize(relatedBlog.source.compiledSource).markdown;
-  // .replace(/<p>/g, "")
+
+  const relatedBlog = blog.source;
+
+  // relatedBlog = await serialize(relatedBlog.source.compiledSource).markdown;
+
+  //.replace(/<p>/g, "");
   if (!vehicle) {
     return {
       notFound: true,
@@ -74,6 +83,7 @@ export async function getStaticProps(context) {
       vehicle,
       vehicles,
       relatedBlog,
+      context: { header },
     },
   };
 }
