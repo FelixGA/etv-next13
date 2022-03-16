@@ -13,7 +13,7 @@ loadingWeight:
 curbweight:
   key: Leergewicht
   value: 0
-  baseUnit: kg
+  baseUnit: keine Angabe
 maxSpeed:
   key: km/h
   value: 45
@@ -21,7 +21,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Akku
   value: 0
-  baseUnit: km
+  baseUnit: keine Angabe
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -43,7 +43,7 @@ chargingTimeFast:
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "0"
-  baseUnit: kwh
+  baseUnit: keine Angabe
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: 9,2
@@ -83,15 +83,15 @@ batteryGuarantee:
 loadingHeight:
   key: Ladehöhe
   value: 0
-  baseUnit: mm
+  baseUnit: keine Angabe
 loadingVolumeTotal:
   key: Ladevolumen
   value: "0"
-  baseUnit: m3
+  baseUnit: keine Angabe
 loadingArea:
   key: Ladefläche
   value: "0"
-  baseUnit: m2
+  baseUnit: keine Angabe
 carSizes:
   width: Breite
   length: Länge
