@@ -26,36 +26,36 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Blei
   value: 0
-  baseUnit: " eryheryj"
+  baseUnit: keine Angabe
   maxValue: 0
 rangeLithium:
-  key: "Reichweite "
+  key: Reichweite Lithium Akku
   value: 110
   baseUnit: km
   maxValue: 0
 chargingTime230V:
-  key: Ladezeit
+  key: Ladezeit 230-V-Steckdose
   value: 0
   baseUnit: keine Angabe
 chargingTimeLithium:
-  key: Ladezeit typ2
+  key: Ladezeit Typ2
   value: 6
-  baseUnit: St.
+  baseUnit: h
 chargingTimeFast:
-  key: Schnellladung
+  key: Schnellladezeit
   value: 1
   baseUnit: keine Angabe
 batteryCapacityBlei:
-  key: Kapazität
+  key: Kapazität SLA Akku
   value: "-"
-  baseUnit: " "
+  baseUnit: " keine Angabe"
 batteryCapacityLithium:
-  key: Kapazität
+  key: Kapazität Lithium Akku
   value: 16,5
-  baseUnit: kWh
+  baseUnit: kwh
 batteryIncluded:
   value: ja
-  key: Batterie Verfügbarkeit
+  key: Batterie inklusive
 consumption:
   key: "Verbrauch "
   value: 19,6
@@ -68,7 +68,7 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: gut
+  key: Gut
   value: 4,0
 guarantee:
   key: Garantie Fahrzeug
@@ -78,11 +78,11 @@ availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
-  key: Förderungsmöglichkeiten
+  key: Förderhöhe
   value: 0
   baseUnit: keine Angabe
 batteryGuarantee:
-  key: Batterie-Garantie
+  key: Garantie Akku
   value: 0
   baseUnit: keine Angabe
 loadingHeight:
@@ -90,12 +90,12 @@ loadingHeight:
   value: 895
   baseUnit: mm
 loadingVolumeTotal:
-  key: losdf
+  key: Ladevolumen
   value: "234"
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: "234234"
+  value: 2,86
   baseUnit: m2
 carSizes:
   width: Breite
@@ -107,9 +107,9 @@ carSizes:
   valuelength: 4000
   valueheight: 2000
   valuewheelbase: 2596
-  key: Fahrzeug Maße
+  key: Fahrzeugmaße
 loadingVolume:
-  key: Laderaum Maße
+  key: Laderaum-Maße
   height: Höhe
   valueheight: 352
   width: Breite
