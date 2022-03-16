@@ -183,7 +183,7 @@ batteryCapacityBlei:
   baseUnit: " kwh"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "-"
+  value: "0"
   baseUnit: kWh
 batteryIncluded:
   value: ja
