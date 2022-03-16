@@ -2,7 +2,6 @@ import { useState } from "react";
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
 import TopSlider from "../../components/Sliders/TopSlider";
-import { serialize } from "next-mdx-remote/serialize";
 import Articles from "../../components/DetailsPage/Articles";
 import PrintPopUp from "../../components/DetailsPage/PrintPopUp";
 import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
