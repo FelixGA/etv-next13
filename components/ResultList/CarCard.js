@@ -69,7 +69,9 @@ function CarCard(props) {
           {/* PRICE + MOBILE RATING BOX end*/}
           {/* BUTTONS start */}
           <div className="flex-1 flex sm:justify-center flex-col justify-end">
-            <ButtonAnfragen />
+            <div className="pb-1">
+              <ButtonAnfragen />
+            </div>
             <ButtonCompare carItem={carItem} />
           </div>
           {/* BUTTONS end */}

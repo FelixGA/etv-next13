@@ -6,7 +6,7 @@ import Image from "next/image";
 const BasicInfo = ({ carItem, descriptionSize }) => {
   return (
     <div className="w-full flex flex-col lg:flex-row lg:pt-12  p-4  lg:px-24">
-      <div className=" w-full lg:w-1/2 flex flex-col justify-end">
+      <div className=" w-full lg:w-1/2 flex flex-col justify-start">
         <div className="lg:w-64  pb-8">
           <button className="text-sm bg-white w-48 h-10 print:hidden  text-blue-darker border">
             <Link href="/comparePage">
@@ -29,7 +29,7 @@ const BasicInfo = ({ carItem, descriptionSize }) => {
       <div className="flex flex-col lg:w-1/2 ">
         {/* DESKTOP VERSION FOR DETAILS TABLE*/}
         <div className="hidden lg:flex justify-center flex-col w-4/5 px-8 pb-6 ">
-          <h2 className="hidden lg:block text-4xl text-black-darkest pl-2 ">
+          <h2 className="hidden lg:block text-3xl text-blue-extra p-2 font-black">
             {carItem.title}
           </h2>
 
@@ -52,7 +52,7 @@ const BasicInfo = ({ carItem, descriptionSize }) => {
         </div>
         {/* description */}
         <div className="w-full text-black-darkest flex flex-col lg:px-8">
-          <h3 className="w-full text-black-darkest font-bold py-4">
+          <h3 className="w-full text-blue-extra text-2xl font-bold py-4">
             Über das Fahrzeug
           </h3>
           <p
