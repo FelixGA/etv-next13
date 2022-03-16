@@ -5,17 +5,18 @@ import { MDXRemote } from "next-mdx-remote";
 const Articles = ({ carItem, getMarkdownContext }) => {
   return (
     <>
-      {" "}
-      <MDXRemote {...getMarkdownContext} />
-      <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
-        <div className=" lg:w-1/3 w-full m-auto relative  ">
+      <div className="px-2 2xl:px-48">
+        <MDXRemote {...getMarkdownContext} />
+      </div>
+      {/* <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
+        <div className=" lg:w-1/3 w-full m-auto relative bg-red-500 ">
           <Image
             src={carItem?.src}
             alt={carItem?.title}
             width={195}
             height={140}
             layout="responsive"
-            objectFit="cover"
+            objectFit="contain"
             className="rounded-l-lg"
           />
           <div className="ml-auto w-full flex flex-row-reverse absolute  bottom-0 p-2  md:p-4 ">
@@ -31,10 +32,10 @@ const Articles = ({ carItem, getMarkdownContext }) => {
             Testbericht lesen
           </button>
         </div>
-      </div>
+      </div> */}
       {/* other articles section */}
       {/* First Article */}
-      <div className=" flex lg:flex-row-reverse flex-col w-full lg:p-18 justify-center items-center  p-4 ">
+      {/* <div className=" flex lg:flex-row-reverse flex-col w-full lg:p-18 justify-center items-center  p-4 ">
         <div className="w-full p-4 lg:w-1/2 lg:p-12 print:hidden">
           {carItem?.src && (
             <Image
@@ -52,7 +53,7 @@ const Articles = ({ carItem, getMarkdownContext }) => {
           <h3>Text-Bild-Element mit Text links</h3>
           <p>{carItem?.description}</p>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

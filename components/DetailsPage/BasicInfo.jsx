@@ -6,9 +6,9 @@ import Image from "next/image";
 const BasicInfo = ({ carItem, descriptionSize }) => {
   return (
     <div className="w-full flex flex-col lg:flex-row lg:pt-12  p-4  lg:px-24">
-      <div className=" w-full lg:w-1/2 ">
-        <div className="lg:w-64  ">
-          <button className="text-sm bg-white w-48 h-10 print:hidden  text-blue-darker ">
+      <div className=" w-full lg:w-1/2 flex flex-col justify-end">
+        <div className="lg:w-64  pb-8">
+          <button className="text-sm bg-white w-48 h-10 print:hidden  text-blue-darker border">
             <Link href="/comparePage">
               <a className="visited:text-blue-darker">
                 « zurück zur Ergebnisliste
@@ -57,7 +57,9 @@ const BasicInfo = ({ carItem, descriptionSize }) => {
           </h3>
           <p
             className={
-              !descriptionSize ? "h-auto" : `text-ellipsis overflow-hidden h-48`
+              !descriptionSize
+                ? "h-auto"
+                : `text-ellipsis overflow-hidden leading-7 h-auto `
             }
           >
             {carItem?.description}
