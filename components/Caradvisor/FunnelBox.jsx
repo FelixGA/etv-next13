@@ -7,7 +7,7 @@ export default function FunnelBox({ currentFilter, redirecter }) {
   const { state, dispatch } = useStore();
 
   return !redirecter ? (
-    <div className="flex justify-around items-center flex-wrap ">
+    <div className="flex justify-around items-center flex-wrap  ">
       {currentFilter.options.map((item, index) => {
         return (
           <div
@@ -22,7 +22,7 @@ export default function FunnelBox({ currentFilter, redirecter }) {
               });
             }}
             key={index}
-            className="w-60 h-60 flex flex-col justify-center items-center cursor-pointer rounded-lg shadow-lg m-4 hover:scale-125 bg-white"
+            className="w-72 h-72 flex flex-col justify-center items-center cursor-pointer rounded-lg shadow-lg m-4 hover:scale-110 bg-white"
           >
             <div className="w-52 h-5w-52 pt-4">
               <Image

@@ -61,15 +61,17 @@ collections:
           label: "Title",
           name: "title",
           widget: "string",
-          default: "bitte auffuelen",
+          default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
           i18n: true,
+          required: true,
         }
       - {
           label: "Slug",
           name: "slug",
           widget: "string",
-          default: "bitte auffuelen",
+          default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
           i18n: duplicate,
+          required: true,
         }
       - {
           label: "Youtube Link",
@@ -83,22 +85,8 @@ collections:
         widget: "select"
         multiple: false
         i18n: duplicate
+        required: true
         options: ["Pritsche", "Kipper", "Kasten", "Koffer"]
-      - {
-          label: "Description",
-          name: "description",
-          widget: "markdown",
-          default: "bitte auffuelen",
-          i18n: true,
-        }
-      - {
-          label: "Content-Body",
-          name: "body",
-          widget: "markdown",
-          default: "bitte auffuelen",
-          i18n: true,
-        }
-
       - label: "post related vehicles"
         name: "vehicle"
         widget: "relation"
@@ -106,22 +94,23 @@ collections:
         search_fields: ["name"]
         display_fields: ["name"]
         value_field: "rating"
-
-      - label: "Published at"
-        name: "publishedAt"
-        widget: "date"
-        default: ""
-        format: "MM/DD/YYYY"
-        i18n: true
-      - label: "Featured Image"
-        i18n: true
-        name: "src"
-        widget: "image"
-        choose_url: true
-        allow_multiple: true
-        media_library:
-          config:
-            multiple: true
+        required: true
+      - {
+          label: "Description",
+          name: "description",
+          widget: "markdown",
+          default: "bitte auffuelen",
+          i18n: true,
+          required: true,
+        }
+      - {
+          label: "Content-Body",
+          name: "body",
+          widget: "markdown",
+          default: "bitte auffuelen",
+          i18n: true,
+          required: true,
+        }
 
   - label: "Vehicles"
     name: "vehicles"
@@ -156,6 +145,7 @@ collections:
         }
       - label: "related blogs"
         name: "relatedBlogs"
+        required: true
         widget: "relation"
         collection: "blogs"
         search_fields: ["title"]

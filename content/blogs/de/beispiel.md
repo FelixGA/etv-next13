@@ -1,14 +1,12 @@
 ---
+publishedAt: 03/02/2022
+src: /images/X.png
 title: beispiel
 slug: beispiel
-youtubeLink: www.youtube.com
 category: Koffer
-description: "!!!!!!!!!!!!!!!hier ist für SEO!!!!!!!!!!!!!!"
 vehicle:
   key: gut
   value: 4,0
-publishedAt: 03/02/2022
-src: /images/X.png
 content: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -140,18 +138,20 @@ content: >-
 
 
   4,4
+youtubeLink: www.youtube.com
+description: "!!!!!!!!!!!!!!!hier ist für SEO!!!!!!!!!!!!!!"
 ---
-# beispiel Testbericht von Elektrotransporter-Vergleich
+# beispiel Titel von Elektrotransporter-Vergleich
 
-![ARI 458 Koffer mit Solarpanel](/images/dsc_0666.jpg "ARI 458 Koffer mit Solarpanel - Vielseitiger Elektrotransporter")
+![beispiel mit Solarpanel](/images/Chevron_down.png "beispiel mit Solarpanel - Vielseitiger Elektrotransporter")
 
-Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen. 
+Hier könnte noch etwas stehen, was Leute davon überzeugt, dass es richtig gut ist!
 
 ## Konzept & Fahrzeugvarianten
 
 Die möglichen Aufbauten teilen sich in vier Oberkategorien auf: Koffer, Pritsche, Kipper sowie Individualaufbauten. Zu Individualaufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer, Laubgitteraufbau, Food Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI 458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert. Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus für große Strecken. 
 
-![ARI 458 mit Kühlkoffer-Aufbau](/images/whatsapp-image-2021-07-01-at-13.01-4-.jpeg "ARI 458 mit Kühlkofferaufbau - perfekt für Cateringdienste")
+![ mit Kühlkoffer-Aufbau](/images/whatsapp-image-2021-07-01-at-13.01-4-.jpeg "ARI 458 mit Kühlkofferaufbau - perfekt für Cateringdienste")
 
 ## Laderaum & Flexibilität (⅘)
 
@@ -163,11 +163,11 @@ Als Pritsche und Kipper bietet der ARI 458 eine offene Ladefläche, welche in dr
 
 Neben den ‘Standard’-Aufbauten ist der ARI 458 auch als Verkaufsfahrzeug oder Food Truck verfügbar. Das Verkaufsfahrzeug mit 3 Flügeltüren ist in den Größen 1,99 m3, 2,42 m3   und 2,77 m3 erhältlich. 
 
-Der ARI 458 Food Truck ist ebenso in 3 Größen mit den maximalen Aufbau-Maßen von 1640×1300×1250 (LxBxH) bestellbar. Neben einer großzügigen Arbeitsfläche und weiteren ausziehbaren Arbeitsplatten bietet dieser eine Menge Stauraum im unteren Teil des Aufbaus. 
+beispiel ist ebenso in 3 Größen mit den maximalen Aufbau-Maßen von 1640×1300×1250 (LxBxH) bestellbar. Neben einer großzügigen Arbeitsfläche und weiteren ausziehbaren Arbeitsplatten bietet dieser eine Menge Stauraum im unteren Teil des Aufbaus. 
 
 Die Nutzlast der 458er-Reihe liegt bei rund 530 Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450 Kilogramm möglich.
 
-![ARI 458 Koffer Laderaum Heckansicht](/images/ari-458-koffer-2-.jpg "ARI 458 Koffer - Kompakter Laderaum mit hoher Zuladung")
+![ARI 458 Koffer Laderaum Heckansicht](/images/X.png "ARI 458 Koffer - Kompakter Laderaum mit hoher Zuladung")
 
 ## Antrieb & Aufladung (4/5)
 
@@ -179,7 +179,7 @@ Als Basisversion besitzt der ARI 458 eine SLA-Batterie, welche eine Reichweite v
 
 Die Aufladung erfolgt über handelsübliche 220-V-Steckdosen mit Schuko-Stecker. ARI Motors liefert optional außerdem einen Typ-2-Adapter für die Aufladung an öffentlichen Ladesäulen mit. Die Aufladung mit 220 Volt dauert bei vollkommener Entladung rund 6 Stunden, während ein voller Akku per Schnellladung in 4 Stunden erreicht werden kann. Der ARI 458 nutzt auch die Selbstaufladung in Form von Rekuperation, die allerdings hier nicht direkt mit der Bremsanlage verbunden ist.
 
-![ARI 458 Koffer Aufladen mit Ladekabel](/images/dsc_0269.jpg "ARI 458 Koffer - Einfaches Aufladen mit Ladekabel")
+![ARI 458 Koffer Aufladen mit Ladekabel](/images/ari-345-tacho-anzeige.jpg "ARI 458 Koffer - Einfaches Aufladen mit Ladekabel")
 
 ## Komfort & Ausstattung (4/5)
 
@@ -217,13 +217,13 @@ In Sachen Preis ist der ARI 458 im Segment der Elektrotransporter wohl ungeschla
 
 Das Fahrzeug kommt mit einer Herstellergarantie von 6 Monaten sowie einer Gewährleistung über eine Zeit von 2 Jahren. Auf die Lithium-Batterie haben Kunden einen Garantieanspruch von 4 Jahren bzw. 60.000 Kilometer.
 
-![ARI 458 Koffer - verschiedene Größen](/images/ari-458-gruppenbilder-21-.jpg "ARI 458 Koffer - Aufbauten in verschiedenen Größen")
+![ARI 458 Koffer - verschiedene Größen](/images/arrow-right-solid.svg "ARI 458 Koffer - Aufbauten in verschiedenen Größen")
 
 ## Fazit
 
 Die Einsatzmöglichkeiten des ARI 458 sind zahlreich. Je nach Aufbau ist er speziell für Liefer- und Transportbetriebe (Kofferaufbau) und Handwerks- und Baubetriebe (Pritsche und Kipper) interessant. Bei den Individualaufbauten gibt es zudem für Garten- und Landschaftsbaubetriebe praktische Varianten. Neben der Vielseitigkeit liegen die Vorteile des ARI 458 in der guten Raumnutzung, der intuitiven Bedienung sowie den niedrigen Preisen ab 13.700 Euro. Natürlich erhält der Kunde dafür kein Luxusfahrzeug, sondern einen effizienten Elektrotransporter mit sehr guter Raumnutzung und individuell anpassbaren Ausstattungs- und Funktionsmöglichkeiten.
 
-![ARI 458 Kühlkofferaufbau im Einsatz für Drensteinfurter Tafel e.V.](/images/dsc_0729.jpg "ARI 458 mit Kühlkofferaufbau - ideal für Auslieferung von Speisen und Getränken")
+![ARI 458 Kühlkofferaufbau im Einsatz für Drensteinfurter Tafel e.V.](/images/Chevron_down.png "ARI 458 mit Kühlkofferaufbau - ideal für Auslieferung von Speisen und Getränken")
 
 ## Gesamtbewertung:
 

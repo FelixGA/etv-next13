@@ -20,7 +20,7 @@ function CarCardDetailsDesktop({ carItem }) {
             className={
               router.query.cartitle
                 ? "hidden"
-                : " pl-8 text-blue-extra font-bold "
+                : " pl-8 text-blue-extra font-bold"
             }
           >
             {carItem?.title}

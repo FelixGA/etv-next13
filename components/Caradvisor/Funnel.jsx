@@ -184,10 +184,10 @@ export default function Funnel({ getContent }) {
   ]);
 
   return (
-    <div className="flex flex-col flex-1 bg-green-500">
-      <div className="flex flex-1 flex-col my-4 items-center bg-black">
+    <div className="flex flex-col flex-1 ">
+      <div className="flex flex-1 flex-col my-4 items-center ">
         {!redirecter ? (
-          <h2 className="text-center text-3xl text-black-dark font-bold my-8 px-4">
+          <h2 className="text-center text-3xl text-black-dark font-bold my-8 px-1 sm:px-4">
             {currentFilter.title}
           </h2>
         ) : (

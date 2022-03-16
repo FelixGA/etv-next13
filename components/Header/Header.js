@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <div className="relative print:hidden ">
-      <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-18 w-full 2xl:px-40">
+      <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-20 sm:h-24 w-full 2xl:px-40">
         <Link href={`/`} passHref>
           <div className="flex flex-row pl-0 sm:pl-4 cursor-pointer">
             <div className="logo-container mt-2 w-20 ">
@@ -87,7 +87,7 @@ const Header = () => {
         onClick={() => {
           setIsActive(!isActive);
         }}
-        className="ham-menu-container  lg:hidden  absolute top-6 right-6 z-40 "
+        className="ham-menu-container absolute right-5 sm:top-9 top-7 lg:hidden z-40 "
       >
         <div className="menu">
           <div className="line"></div>

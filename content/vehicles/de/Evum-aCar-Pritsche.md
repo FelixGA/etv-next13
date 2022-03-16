@@ -2,6 +2,7 @@
 title: Evum-aCar-Pritsche
 name: Evum-aCar-Pritsche
 price: 33080
+relatedBlogs: beispiel
 description: >-
   
 

@@ -48,11 +48,6 @@ export async function getStaticProps(context) {
     context.locale
   );
   let vehicles = await getContent("vehicles", context.locale);
-  const pages = await getContent("pages", context.locale);
-  const page = pages.find((page) => page.path === "/");
-  const header = await serialize(
-    page.content.find((content) => content.name === "header").markdown
-  );
 
   /*  get the first 4 from this category for the slider */
   vehicles = Object.entries(vehicles).map(([key, value]) => {
@@ -61,17 +56,18 @@ export async function getStaticProps(context) {
   vehicles = vehicles
     .filter((item, index) => item.category === vehicle.category)
     .slice(0, 4);
+  /* get related blogs*/
   let blog = await getContentBySlug(
     "blogs",
     context.params.cartitle,
     context.locale
   );
+  /* catching errors in case there isnt blog yet */
+  let emptyBlog = await getContentBySlug("blogs", "beispiel", context.locale);
 
-  const relatedBlog = blog.source;
+  let relatedBlog;
 
-  // relatedBlog = await serialize(relatedBlog.source.compiledSource).markdown;
-
-  //.replace(/<p>/g, "");
+  blog.source ? (relatedBlog = blog.source) : (relatedBlog = emptyBlog.source);
   if (!vehicle) {
     return {
       notFound: true,
@@ -83,7 +79,6 @@ export async function getStaticProps(context) {
       vehicle,
       vehicles,
       relatedBlog,
-      context: { header },
     },
   };
 }
