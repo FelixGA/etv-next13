@@ -59,7 +59,7 @@ const BasicInfo = ({ carItem, descriptionSize }) => {
             className={
               !descriptionSize
                 ? "h-auto"
-                : `text-ellipsis overflow-hidden leading-7 h-auto `
+                : `text-ellipsis overflow-hidden leading-7 h-auto font-black`
             }
           >
             {carItem?.description}
