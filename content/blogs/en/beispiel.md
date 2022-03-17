@@ -1,14 +1,16 @@
 ---
-title: test
-slug: beispiel
+title: ari-345-food-truck-elektrisches-gastro-moped
+slug: ari-458-koffer-elektrotransporter-mit-aufbau
 vehicle:
   key: gut
   value: 4,0
-description: "!!!!!!!!!!!!!!!hier ist für SEO!!!!!!!!!!!!!!"
+description: Der ARI 458 Koffer von ARI Motors ist ein wendiger
+  Elektrotransporter mit hoher Zuladung und sparsamem Verbrauch.
 publishedAt: 03/02/2022
 src: /images/X.png
+youtubeLink: https://www.youtube.com/watch?v=OJ4xza2e1P0
 ---
-# beispiel Titel von Elektrotransporter-Vergleich
+# ARI 345 Koffer - Testbericht von Elektrotransporter-Vergleich
 
 ![beispiel mit Solarpanel](/images/Chevron_down.png "beispiel mit Solarpanel - Vielseitiger Elektrotransporter")
 
