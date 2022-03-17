@@ -1,12 +1,12 @@
 ---
 publishedAt: 03/01/2022
 src: /images/X.png
-title: beispiel
-slug: beispiel
+title: ari-458-koffer-elektrotransporter-mit-aufbau
+slug: ari-458-koffer-elektrotransporter-mit-aufbau
 category: Koffer
 vehicle:
-  key: gut
-  value: 4,0
+  key: Sehr gut
+  value: 1,0
 content: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -138,11 +138,11 @@ content: >-
 
 
   4,4
-youtubeLink: www.youtube.com
-description: "!!!!!!!!!!!!!!!hier ist für SEO!!!!!!!!!!!!!!"
+youtubeLink: https://www.youtube.com/watch?v=OJ4xza2e1P0
+description: Der ARI 458 Koffer von ARI Motors ist ein wendiger
+  Elektrotransporter mit hoher Zuladung und sparsamem Verbrauch.
 ---
-
-# beispiel Titel von Elektrotransporter-Vergleich
+# ARI 345 Koffer -Testbericht von Elektrotransporter-Vergleich
 
 ![beispiel mit Solarpanel](/images/Chevron_down.png "beispiel mit Solarpanel - Vielseitiger Elektrotransporter")
 

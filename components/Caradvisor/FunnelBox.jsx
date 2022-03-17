@@ -22,9 +22,9 @@ export default function FunnelBox({ currentFilter, redirecter }) {
               });
             }}
             key={index}
-            className="w-72 h-72 flex flex-col justify-center items-center cursor-pointer rounded-lg shadow-lg m-4 hover:scale-110 bg-white"
+            className="w-32 sm:w-40 lg:w-56 h-32 sm:h-40 lg:h-56 flex flex-col justify-center items-center cursor-pointer rounded-lg shadow-lg m-2 hover:scale-110 bg-white"
           >
-            <div className="w-52 h-5w-52 pt-4">
+            <div className="w-24 sm:w-36 lg:w-56 h-24 sm:h-36 lg:h-56 pt-4">
               <Image
                 src={item.image}
                 alt="picture"
@@ -34,7 +34,9 @@ export default function FunnelBox({ currentFilter, redirecter }) {
                 layout="responsive"
               />
             </div>
-            <p className="font-bold text-black pb-4 text-xl">{item.name}</p>
+            <p className="font-bold text-black py-4 text-sm lg:text-lg xl:text-xl">
+              {item.name}
+            </p>
           </div>
         );
       })}

@@ -1,14 +1,88 @@
 ---
-title: Evum-aCar-Pritsche
-name: Evum-aCar-Pritsche
-price: 33080
-description: >-
-  
-
-
-
-  Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A -Car nun seit Juni 2020 auf dem Markt. Ursprünglich wurde der kräftige Elektrotransporter für Entwicklungs- und Schwellenländern entwickelt, wo er in der Landwirtschaft und der Industrie zum Einsatz kommen sollte. Während der Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen Markt attraktiv sein könnte.
-src: /images/Evum-Acar-Front-1024x683.jpg
+title: Citroen eJumpy
+name: citroen-e-jumpy
+price: 37830
+description: "Der Citroen eJumpy ist seit 2020 auf dem Markt. Der elektrische
+  Kastenwagen ist in zwei Längen erhältlich: 4,95 Meter (M) sowie 5,30 Meter
+  (XL). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75
+  kWh Kapazität."
+src: /images/citroen-ejumpy-frontansicht.jpg
+category: Kasten
+typeClass: N1
+loadingWeight:
+  key: Nutzlast
+  value: 928
+  baseUnit: kg
+curbweight:
+  key: Leergewicht
+  value: 1937
+  baseUnit: kg
+maxSpeed:
+  key: km/h
+  value: 130
+  baseUnit: km/h
+range230V:
+  key: Reichweite SLA Blei
+  value: 0
+  baseUnit: keine Angabe
+  maxValue: 0
+rangeLithium:
+  key: Reichweite Lithium Akku
+  value: 212
+  baseUnit: km
+  maxValue: 340
+chargingTime230V:
+  key: Ladezeit 230-V-Steckdose
+  value: 0
+  baseUnit: keine Angabe
+chargingTimeLithium:
+  key: Ladezeit Typ2 Ladekabel
+  value: 5
+  baseUnit: h
+chargingTimeFast:
+  key: Schnellladezeit
+  value: 1
+  baseUnit: h
+batteryCapacityBlei:
+  key: Kapazität SLA Akku
+  value: "-"
+  baseUnit: " keine Angabe"
+batteryCapacityLithium:
+  key: Kapazität Lithium Akku
+  value: "50"
+  baseUnit: kWh
+batteryIncluded:
+  value: keine Angabe
+  key: Batterie inklusive
+consumption:
+  key: "Verbrauch "
+  value: 24,9
+  baseUnit: kWh
+power:
+  key: Leistung
+  value: min-57/max-100
+  baseUnit: kw
+seats:
+  key: Sitzplätze
+  value: 3
+rating:
+  key: Gut
+  value: 2,0
+guarantee:
+  key: Garantie Fahrzeug
+  value: 0
+  baseUnit: keine Angabe
+availability:
+  key: Verfügbarkeit
+  value: keine Angabe
+subsidies:
+  key: Förderhöhe
+  value: 0
+  baseUnit: keine Angabe
+loadingHeight:
+  key: Ladehöhe
+  value: 544
+  baseUnit: mm
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -140,114 +214,37 @@ relatedBlogs: >-
 
 
   4,4
-category: Pritsche
-typeClass: L7E
-loadingWeight:
-  key: Nutzlast
-  value: 1200
-  baseUnit: kg
-curbweight:
-  key: Leergewicht
-  value: 1500
-  baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 70
-  baseUnit: km/h
-range230V:
-  key: Reichweite SLA Blei
-  value: 0
-  baseUnit: keine Angabe
-  maxValue: 0
-rangeLithium:
-  key: Reichweite Lithium Akku
-  value: 110
-  baseUnit: km
-  maxValue: 0
-chargingTime230V:
-  key: Ladezeit 230-V-Steckdose
-  value: 0
-  baseUnit: keine Angabe
-chargingTimeLithium:
-  key: Ladezeit Typ2
-  value: 6
-  baseUnit: h
-chargingTimeFast:
-  key: Schnellladezeit
-  value: 1
-  baseUnit: keine Angabe
-batteryCapacityBlei:
-  key: Kapazität SLA Akku
-  value: "-"
-  baseUnit: " keine Angabe"
-batteryCapacityLithium:
-  key: Kapazität Lithium Akku
-  value: 16,5
-  baseUnit: kwh
-batteryIncluded:
-  value: ja
-  key: Batterie inklusive
-consumption:
-  key: "Verbrauch "
-  value: 19,6
-  baseUnit: kWh
-power:
-  key: Leistung
-  value: min-20/max-28
-  baseUnit: kw
-seats:
-  key: Sitzplätze
-  value: 2
-rating:
-  key: Gut
-  value: 4,0
-guarantee:
-  key: Garantie Fahrzeug
-  value: 0
-  baseUnit: keine Angabe
-availability:
-  key: Verfügbarkeit
-  value: keine Angabe
-subsidies:
-  key: Förderhöhe
-  value: 0
-  baseUnit: keine Angabe
 batteryGuarantee:
-  key: Garantie Akku
+  key: Batterie-Garantie
   value: 0
   baseUnit: keine Angabe
-loadingHeight:
-  key: Ladehöhe
-  value: 895
-  baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: "234"
+  value: 5,19
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 2,86
+  value: 3,90
   baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1500
+  valuewidth: 1920
   baseUnit: mm
-  valuelength: 4000
-  valueheight: 2000
-  valuewheelbase: 2596
+  valuelength: 4959
+  valueheight: 1877
+  valuewheelbase: 3275
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 352
+  valueheight: 1330
   width: Breite
   valuewidth: 1608
-  valuelength: 1778
+  valuelength: 2410
   length: Länge
   baseUnit: mm
 ---
-
-Das Evum aCar ist ein Elektrotransporter der Kategorie N1 mit bis zu 1200kg Nutzlast.
+Der Citroen eJumpy ist seit 2020 auf dem Markt. Der elektrische Kastenwagen ist in zwei Längen erhältlich: 4,95 Meter (M) sowie 5,30 Meter (XL). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität.
