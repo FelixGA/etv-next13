@@ -2,6 +2,9 @@
 title: ari-458-koffer-elektrischer-kleintransporter
 slug: ari-458-koffer-elektrischer-kleintransporter
 youtubeLink: https://www.youtube.com/watch?v=l2ESpKWjEnk
+vehicle:
+  key: Gut
+  value: 2,0
 description: Der ARI 458 Koffer von ARI Motors ist ein wendiger
   Elektrotransporter mit hoher Zuladung und sparsamem Verbrauch.
 ---
