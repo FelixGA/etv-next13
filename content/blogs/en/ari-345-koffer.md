@@ -5,6 +5,7 @@ vehicle:
   key: Gut
   value: 2,0
 publishedAt: 03/17/2022
+
 description: Der ARI
 ---
 # ARI 345 Koffer -Testbericht von Elektrotransporter-Vergleich
