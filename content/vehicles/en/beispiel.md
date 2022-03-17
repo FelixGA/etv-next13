@@ -2,11 +2,6 @@
 title: example
 name: beispiel
 price: 80000
-description: |-
-  english  
-
-  VOM Evum-aCar-Truck kopiert
-src: /images/X.png
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -138,6 +133,11 @@ relatedBlogs: >-
 
 
   4,4
+description: |-
+  english  
+
+  VOM Evum-aCar-Truck kopiert
+src: /images/X.png
 category: Pritsche
 typeClass: L7E
 loadingWeight:
