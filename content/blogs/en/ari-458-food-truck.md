@@ -1,14 +1,15 @@
 ---
-title: ari-458-food-truck
-slug: ari-458-food-truck
-youtubeLink: bitte auffuelen
-category: Kasten
-description: bitte auffuelen
+title: ari-458-food-truck-elektrisches-gastro-mobil
+slug: ari-458-food-truck-elektrisches-gastro-mobil
+youtubeLink: https://www.youtube.com/watch?v=U1z-nSHox7E
+category: Koffer
 vehicle:
   key: Sehr gut
   value: 1,0
+description: Der ARI 458 Food Truck von ARI Motors ist ein individuell
+  konfigurierbarer Elektrotransporter für Caterer und Gastronomen.
 ---
-# ARI 458 Testbericht von Elektrotransporter-Vergleich
+# ARI 458 -Testbericht von Elektrotransporter-Vergleich
 
 ![ARI 458 Food Truck - Elektrotransporter mit Gastro-Aufbau](/images/ari-458-food-truck-5-2-.jpg "ARI 458 Food Truck - indivuduell gestaltbarer Elektrotransporter mit Gastro-Aufbau")
 
@@ -18,7 +19,7 @@ Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer zu
 
 Die möglichen Aufbauten teilen sich in vier Oberkategorien auf: Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den erhältlichen Individual-Aufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer, Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI 458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert. Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus für große Strecken. 
 
-![ARI 458 Food Truck - Heckansicht](/images/ari-458-food-truck-heckansicht-1-.jpg "ARI 458 Food Truck mit ausziehbarer Theke sowie Schubladen und Fächern")
+![ARI 458 Food Truck - Seitenansicht ](/images/ari-458-food-truck-heckansicht-1-.jpg "ARI 458 Food Truck Seitenansicht")
 
 ## Laderaum & Flexibilität (⅘)
 
