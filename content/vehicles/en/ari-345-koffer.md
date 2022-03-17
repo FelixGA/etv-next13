@@ -2,7 +2,7 @@
 title: ARI 345 Koffer
 name: ari-345-koffer
 price: 7395
-relatedBlogs: ari-345-koffer
+relatedBlogs: beispiel
 description: >-
   ![ARI 345 ](/images/whatsapp-image-2021-07-ari_345-koffer.jpeg "ARI 345
   Koffer")
@@ -32,7 +32,7 @@ range230V:
 rangeLithium:
   key: Range Lithium Battery
   value: 0
-  baseUnit: km
+  baseUnit: keine Angabe
   maxValue: 0
 chargingTime230V:
   key: Charge Time 230v-socket
