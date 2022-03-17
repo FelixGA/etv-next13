@@ -1,12 +1,12 @@
 ---
-publishedAt: 03/01/2022
+publishedAt: 03/17/2022
 src: /images/X.png
 title: ari-458-koffer-elektrotransporter-mit-aufbau
 slug: ari-458-koffer-elektrotransporter-mit-aufbau
 category: Koffer
 vehicle:
-  key: Sehr gut
-  value: 1,0
+  key: Gut
+  value: 2,0
 content: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 

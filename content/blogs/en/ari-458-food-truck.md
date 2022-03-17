@@ -6,6 +6,7 @@ category: Koffer
 vehicle:
   key: Sehr gut
   value: 1,0
+publishedAt: ""
 description: Der ARI 458 Food Truck von ARI Motors ist ein individuell
   konfigurierbarer Elektrotransporter für Caterer und Gastronomen.
 ---

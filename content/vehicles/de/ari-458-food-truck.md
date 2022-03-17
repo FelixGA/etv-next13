@@ -1,8 +1,8 @@
 ---
 title: ARI 458 Food Truck
-name: ari-458-food-truck
+name: ari-458-food-truck-elektrisches-gastro-mobil
 price: 19430
-relatedBlogs: beispiel
+relatedBlogs: ari-458-food-truck-elektrisches-gastro-mobil
 description: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 

@@ -2,11 +2,7 @@ import Head from "next/head";
 import getContent from "/utils/getContent";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import BlogArticles from "../components/BlogArticles";
-import HeroSection from "../components/HeroSection/HeroSection";
-import TopSlider from "../components/Sliders/TopSlider";
-import Funnel from "../components/Caradvisor/Funnel";
-import NewsLetter from "../components/NewsLetter";
+
 import { useState } from "react";
 import Blog from "../components/Blog/Blog";
 
