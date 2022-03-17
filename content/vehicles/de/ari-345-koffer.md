@@ -2,7 +2,7 @@
 title: ARI 345 Koffer
 name: ari-345-koffer
 price: 7395
-relatedBlogs: beispiel
+relatedBlogs: ari-345-koffer
 description: >-
   ![ARI 345 mit Kofferaufbau](/images/dsc_0071.png "ARI 345 mit Kofferbau -
   Elektrisches Lastentrike von ARI Motors")

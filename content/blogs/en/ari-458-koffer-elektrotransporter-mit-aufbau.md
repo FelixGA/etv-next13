@@ -1,13 +1,13 @@
 ---
-title: ari-345
-slug: ari-345-koffer
+title: example  bitte nicht ändern
+slug: beispiel bitte nicht ändern
 vehicle:
-  key: Gut
-  value: 2,0
-publishedAt: 03/17/2022
-description: Der ARI
+  key: gut
+  value: 4,0
+publishedAt: 03/01/2022
+description: beispiel  bitte nicht ändern
 ---
-# ARI 345 Koffer -Testbericht von Elektrotransporter-Vergleich
+# beispiel -Testbericht von Elektrotransporter-Vergleich
 
 ![beispiel mit Solarpanel](/images/Chevron_down.png "beispiel mit Solarpanel - Vielseitiger Elektrotransporter")
 

@@ -2,7 +2,7 @@
 title: ARI 901 Kipper
 name: ari-901-kipper
 price: 35995
-relatedBlogs: beispiel
+relatedBlogs: beispiel  bitte nicht ändern
 description: Der ARI 901 Kipper ist ein leistungsstarker Elektrotransporter der
   Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung aufnehmen. Das Fahrzeug
   eignet sich speziell für den Einsatz bei Lieferanten, Baufirmen, Handwerkern,
