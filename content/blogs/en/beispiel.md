@@ -1,6 +1,6 @@
 ---
 title: ari-345-food-truck-elektrisches-gastro-moped
-slug: ari-458-koffer-elektrotransporter-mit-aufbau
+slug: beispiel
 vehicle:
   key: Sehr gut
   value: 1,0
@@ -8,7 +8,7 @@ description: Der ARI 458 Koffer von ARI Motors ist ein wendiger
   Elektrotransporter mit hoher Zuladung und sparsamem Verbrauch.
 publishedAt: 03/02/2022
 src: /images/X.png
-youtubeLink: https://www.youtube.com/watch?v=OJ4xza2e1P0
+youtubeLink: www.youtube.com
 ---
 # ARI 345 Koffer - Testbericht von Elektrotransporter-Vergleich
 
