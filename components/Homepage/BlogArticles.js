@@ -1,5 +1,5 @@
-import FirstArticle from "./HomePageArticles/FiirstArticle";
-import SecondArticle from "./HomePageArticles/SecondArticle";
+import FirstArticle from "./FiirstArticle";
+import SecondArticle from "./SecondArticle";
 const BlogArticles = ({ getMarkdownContext, getContent }) => {
   return (
     <div className="lg:justify-between lg:items-center lg:flex lg:flex-col justify-center ">
