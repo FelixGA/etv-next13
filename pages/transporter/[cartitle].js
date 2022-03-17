@@ -62,8 +62,7 @@ export async function getStaticProps(context) {
     context.params.cartitle,
     context.locale
   );
-  console.log(context.params.cartitle);
-  console.log(blog);
+
   /* catching errors in case there isnt blog yet */
   let emptyBlog = await getContentBySlug(
     "blogs",

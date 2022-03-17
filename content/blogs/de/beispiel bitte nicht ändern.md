@@ -1,12 +1,13 @@
 ---
-publishedAt: 03/01/2022
-src: /images/X.png
 title: beispiel  bitte nicht ändern
 slug: beispiel bitte nicht ändern
-category: Koffer
+youtubeLink: https://www.youtube.com/watch?v=OJ4xza2e1P0
+category: Kipper
 vehicle:
   key: gut
   value: 4,0
+publishedAt: 03/01/2022
+src: /images/anschluss@2x.png
 content: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -138,7 +139,6 @@ content: >-
 
 
   4,4
-youtubeLink: https://www.youtube.com/watch?v=OJ4xza2e1P0
 description: beispiel  bitte nicht ändern
 ---
 # beispiel -Testbericht von Elektrotransporter-Vergleich

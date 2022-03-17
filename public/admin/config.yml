@@ -102,6 +102,13 @@ collections:
         format: "MM/DD/YYYY"
         i18n: true
       - {
+          label: Image,
+          name: src,
+          widget: image,
+          i18n: duplicate,
+          choose_url: false,
+        }
+      - {
           label: "Description",
           name: "description",
           widget: "markdown",

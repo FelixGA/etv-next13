@@ -2,14 +2,15 @@
 title: ari-345-koffer
 slug: ari-345-koffer
 youtubeLink: https://www.youtube.com/watch?v=Qn05011EQLI
+category: Koffer
 vehicle:
   key: Gut
   value: 2,0
 publishedAt: 03/17/2022
+src: /images/ari-345-koffer-mit-geöffneter-seitenklappe-und-solarpanel.jpg
 description: Der ARI 345 Koffer ist ein dreirädriges Lastenmoped mit offener
   Fahrerkabine, ideal geeignet für den innerstädtischen Einsatz.
 ---
-
 ![ARI 345 mit Kofferaufbau](/images/dsc_0071.png "ARI 345 mit Kofferaufbau ")
 
 # ARI 345 Testbericht von Elektrotransporter-Vergleich
@@ -18,21 +19,21 @@ Das ARI 345 ist ein Elektro-Lastentrike der Fahrzeugklasse L2e mit einer Höchst
 
 ## Konzept & Fahrzeugvarianten
 
-Das ARI 345 ist aktuell eines der kompaktesten Fahrzeuge des in Borna ansässigen Unternehmens ARI Motors. Das Lastenmoped ist in den Aufbau-Varianten Pritsche, Koffer, Kipper und Food Truck verfügbar. Das ARI 345 bietet Platz für eine Person. Durch seine kompakten Außenmaße ist das Lastenmoped vor allem für kurze Wege sowie den innerstädtischen Einsatz geeignet.
+Das ARI 345 ist aktuell eines der kompaktesten Fahrzeuge des in Borna ansässigen Unternehmens ARI Motors. Das Lastenmoped ist in den Aufbau-Varianten Pritsche, Koffer, Kipper und Food Truck verfügbar. Das ARI 345 bietet Platz für eine Person. Durch seine kompakten Außenmaße ist das Lastenmoped vor allem für kurze Wege sowie den innerstädtischen Einsatz geeignet. 
 
 ![ARI 345 Koffer von ARI Motors](/images/ari-345-koffer-mit-geöffneter-seitenklappe-und-solarpanel.jpg "ARI 345 Koffer von ARI Motors")
 
 ## Laderaum & Fahrzeugvarianten (4/5)
 
-Das ARI 345 Pritsche ist in drei Größen mit Ladeflächen von 1,42 m², 1,53 m² und 1,79 m² verfügbar. Die Höhe der Ladebordwand liegt bei 25 cm. Die Ladekantenhöhe bei allen Aufbauten beträgt 56cm.
+Das ARI 345 Pritsche ist in drei Größen mit Ladeflächen von 1,42 m², 1,53 m² und 1,79 m² verfügbar. Die Höhe der Ladebordwand liegt bei 25 cm. Die Ladekantenhöhe bei allen Aufbauten beträgt 56cm. 
 
-Der Kipper-Aufbau ist in den gleichen Größen verfügbar. Das Kippen der Ladefläche kann mechanisch-hydraulisch oder elektrisch-hydraulisch erfolgen. Für die Sicherung der Ladung sind zudem Verzurr-Ösen sowie eine stabile Plane für das Pritschen-Modell verfügbar. Ebenso lässt sich die Ladefläche durch einen drei- oder vierteiligen Laubgitter-Aufbau ergänzen.
+Der Kipper-Aufbau ist in den gleichen Größen verfügbar. Das Kippen der Ladefläche kann mechanisch-hydraulisch oder elektrisch-hydraulisch erfolgen. Für die Sicherung der Ladung sind zudem Verzurr-Ösen sowie eine stabile Plane für das Pritschen-Modell verfügbar. Ebenso lässt sich die Ladefläche durch einen drei- oder vierteiligen Laubgitter-Aufbau ergänzen. 
 
-Das ARI 345 mit Koffer-Aufbau kommt ebenfalls in 3 Größen mit Ladevolumen von 1,36 m3, 1,46 m3 und 1,90 m3. Die Höhe des Koffers variiert dabei zwischen 95 cm (Standard- und L-Version) und 110 cm (XL-Version).
+Das ARI 345 mit Koffer-Aufbau kommt ebenfalls in 3 Größen mit Ladevolumen von 1,36 m3, 1,46 m3 und 1,90 m3. Die Höhe des Koffers variiert dabei zwischen 95 cm (Standard- und L-Version) und 110 cm (XL-Version).  
 
-Der Food Truck-Aufbau ist in zwei Größen mit Ladevolumen von 2,15 m3 und 2,42 m3 erhältlich. Die maximalen Aufbau-Maße liegen bei 1,49 x 1,30 x 1,25 m. Neben einer großzügigen Arbeitsfläche und weiteren ausziehbaren Arbeitsplatten bietet dieser eine Menge Stauraum im unteren Teil des Aufbaus.
+Der Food Truck-Aufbau ist in zwei Größen mit Ladevolumen von 2,15 m3 und 2,42 m3 erhältlich. Die maximalen Aufbau-Maße liegen bei 1,49 x 1,30 x 1,25 m. Neben einer großzügigen Arbeitsfläche und weiteren ausziehbaren Arbeitsplatten bietet dieser eine Menge Stauraum im unteren Teil des Aufbaus. 
 
-Neben diesen Standard-Aufbauten hat sich das Unternehmen vor allem auf individuelle Kundenlösungen spezialisiert. So sind auch Sonderanfertigungen möglich. Potentiellen Einsatzfeldern sind keine Grenzen gesetzt.
+Neben diesen Standard-Aufbauten hat sich das Unternehmen vor allem auf individuelle Kundenlösungen spezialisiert. So sind auch Sonderanfertigungen möglich. Potentiellen Einsatzfeldern sind keine Grenzen gesetzt. 
 
 ![ARI 345 Koffer, Pritsche und mit Planenaufbau](/images/ari-345-fahrzeugvarianten.jpg "ARI 345 Koffer, Pritsche und mit Planenaufbau")
 
@@ -42,15 +43,15 @@ Das ARI 345 wird angetrieben über einen 3 KW starken Permanent-Magnet-Synchron-
 
 Die Blei-Gel Batterie schafft mit einer Kapazität von 3,24 kWh bei einfacher Ausführung eine Reichweite von 55 km oder 100 km bei zweifacher Ausführung (bei 40 Km/h). Optional ist das Fahrzeug auch mit einem LiFePO4-Akku-Paket für 100 km Reichweite und 50 kg mehr Nutzlast erhältlich. Die Kosten des zusätzlichen LiFePO4-Akkus liegen bei 2200 €.
 
-Das Lastentrike kann an einer klassischen 230-V-Haushaltssteckdose mit 16Ah Sicherung in 5-6 Stunden vollständig geladen werden. Eine extra Wallbox ist nicht nötig.
+Das Lastentrike kann an einer klassischen 230-V-Haushaltssteckdose mit 16Ah Sicherung in 5-6 Stunden vollständig geladen werden. Eine extra Wallbox ist nicht nötig. 
 
 ![ARI 345 Food Truck](/images/ari_345_food_truck_l_.png "ARI 345 Food Truck")
 
 ## Komfort & Ausstattung (4/5)
 
-Der Elektro-Kleintransporter verfügt serienmäßig über FM-Radio mit MP3, Bluetooth und Rückfahrkamera sowie eine LCD-Batterie-Kapazitätsanzeige und Tachometer. Ebenso ist ein USB-Anschluss ins Cockpit integriert, über welchen beispielsweise ein Smartphone geladen werden kann.
+Der Elektro-Kleintransporter verfügt serienmäßig über FM-Radio mit MP3, Bluetooth und Rückfahrkamera sowie eine LCD-Batterie-Kapazitätsanzeige und Tachometer. Ebenso ist ein USB-Anschluss ins Cockpit integriert, über welchen beispielsweise ein Smartphone geladen werden kann. 
 
-Optional kann das Lastenmoped auch mit einem Rammschutz, einem drei- oder vierteiligen Laubgitter oder einem Leiterträger ausgerüstet werden. Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist erhältlich.
+Optional kann das Lastenmoped auch mit einem Rammschutz, einem drei- oder vierteiligen Laubgitter oder einem Leiterträger ausgerüstet werden. Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist erhältlich. 
 
 ![ARI 345 Tacho-Anzeige](/images/ari-345-tacho-anzeige.jpg "ARI 345 Tacho-Anzeige")
 
@@ -58,19 +59,19 @@ Optional kann das Lastenmoped auch mit einem Rammschutz, einem drei- oder vierte
 
 Das Fahrzeug kommt auf eine Steigfähigkeit von 18% und wird dadurch auch im bergigen Gelände keine Probleme bekommen. Gebremst wird das Lasten-Trike über 3 hydraulische Scheibenbremsen. Durch den Heckantrieb liegt das Gewicht im hinteren Bereich des Fahrzeuges. So wird vor allem mit Beladung ein optimaler Fahrkomfort ermöglicht. Gefedert wird das Fahrzeug vorne über eine Federgabel mit Stoßdämpfern und hinten über Blattfedern. So lässt sich mit dem ARI 345 auch in unwegsamen Gelände arbeiten.
 
-Durch die Fahrerkabine und einen Dreipunktgurt ist es zudem nicht notwendig, während der Fahrt einen Helm zu tragen.
+Durch die Fahrerkabine und einen Dreipunktgurt ist es zudem nicht notwendig, während der Fahrt einen Helm zu tragen.  
 
 ![ARI 345 Koffer Frontansicht](/images/ari-345-lastentrike-koffer-front.jpg "ARI 345 Koffer Frontansicht")
 
 ## Umwelt (5/5)
 
-Der kombinierte Verbrauch des ARI 345 ist mit ca. 5,6 kWh sehr niedrig. Durch ein zusätzliches Solarpanel, welches für rund 30 Kilometer mehr Reichweite sorgt, ist das Fahrzeug noch sparsamer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 1,68 €.
+Der kombinierte Verbrauch des ARI 345 ist mit ca. 5,6 kWh sehr niedrig. Durch ein zusätzliches Solarpanel, welches für rund 30 Kilometer mehr Reichweite sorgt, ist das Fahrzeug noch sparsamer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 1,68 €. 
 
 ![ARI 345 Koffer mit Solarpanel](/images/ari-345-koffer-mit-solarpanel-nahansicht.jpg "ARI 345 Koffer mit Solarpanel")
 
 ## Preise & Garantie (3/5)
 
-Das ARI 345 ist vergleichsweise günstig. Die Preise für die Pritsche starten bei 6.995 €. Der Koffer ist ab 7.395€  und der Food Truck ab 12.725 € erhältlich.
+Das ARI 345 ist vergleichsweise günstig. Die Preise für die Pritsche starten bei 6.995 €. Der Koffer ist ab 7.395€  und der Food Truck ab 12.725 € erhältlich. 
 
 Auf das Fahrzeug gibt es 6 Monate Garantie und auf die Batterie 18 Monate Gewährleistung.
 
@@ -78,7 +79,7 @@ Auf das Fahrzeug gibt es 6 Monate Garantie und auf die Batterie 18 Monate Gewäh
 
 ## Fazit:
 
-Das ARI 345 bietet zahlreiche Einsatzmöglichkeiten. Die Versionen Pritsche und Kipper eignen sich beispielsweise für Kommunen, Landschaftsbau- oder Handwerksbetriebe.
+Das ARI 345 bietet zahlreiche Einsatzmöglichkeiten. Die Versionen Pritsche und Kipper eignen sich beispielsweise für Kommunen, Landschaftsbau- oder Handwerksbetriebe. 
 
 ![ARI 345 Pritsche](/images/345-front-1-.jpg "ARI 345 Pritsche")
 
@@ -89,5 +90,3 @@ Das ARI 345 Koffer ist eine gute Wahl für Lieferfirmen oder Dienstleister. Mit 
 ## Gesamtpunktzahl:
 
 4 Sterne
-
-##

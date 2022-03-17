@@ -1,12 +1,13 @@
 ---
-publishedAt: 03/17/2022
-src: /images/X.png
 title: ari-345-koffer
 slug: ari-345-koffer
+youtubeLink: https://www.youtube.com/watch?v=Qn05011EQLI
 category: Koffer
 vehicle:
-  key: Sehr gut
-  value: 1,0
+  key: Gut
+  value: 2,0
+publishedAt: 03/17/2022
+src: /images/ari-345-koffer-mit-geöffneter-seitenklappe-und-solarpanel.jpg
 content: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -138,7 +139,6 @@ content: >-
 
 
   4,4
-youtubeLink: https://www.youtube.com/watch?v=Qn05011EQLI
 description: Der ARI 345 Koffer ist ein dreirädriges Lastenmoped mit offener
   Fahrerkabine, ideal geeignet für den innerstädtischen Einsatz.
 ---

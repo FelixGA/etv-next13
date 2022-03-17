@@ -7,6 +7,7 @@ vehicle:
   key: Sehr gut
   value: 1,0
 publishedAt: ""
+src: /images/ari-458-food-truck-heckansicht-1-.jpg
 description: Der ARI 458 Food Truck von ARI Motors ist ein individuell
   konfigurierbarer Elektrotransporter für Caterer und Gastronomen.
 ---

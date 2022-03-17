@@ -1,0 +1,139 @@
+.container {
+  margin: auto;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "el0 el0 el1 el2"
+    "el0 el0 el3 el4";
+  border-bottom: #85ba4b solid 15px;
+  max-width: 1536px;
+}
+
+.el0 {
+  grid-area: el0;
+  position: relative;
+  object-fit: cover;
+  transition: transform 0.1s;
+}
+
+.el0:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.el1 {
+  grid-area: el1;
+  position: relative;
+  object-fit: cover;
+  transition: transform 0.1s;
+}
+
+.el1:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.el2 {
+  grid-area: el2;
+  position: relative;
+  object-fit: cover;
+  transition: transform 0.1s;
+}
+
+.el2:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.el3 {
+  grid-area: el3;
+  position: relative;
+  object-fit: cover;
+  transition: transform 0.1s;
+}
+
+.el3:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+/* .el4{
+    grid-area: el4;
+    position: relative;
+    object-fit: contain;
+} */
+
+.bottomText {
+  background-color: #006237a6;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 6em;
+  padding: 10px 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link {
+  color: #85ba4b;
+  display: inline;
+  font-size: 11px;
+}
+
+.linkTile {
+  grid-area: el4;
+  background-image: linear-gradient(to top, #006237 0%, #448b41 80%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  object-fit: contain;
+}
+
+.linkTileLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  transition: translate 0.1s;
+}
+
+.linkTileLinks:hover {
+  color: #85ba4b;
+  transform: translate(10px);
+}
+
+.daImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .link {
+    display: none;
+  }
+
+  .bottomText {
+    min-height: 0em;
+  }
+}

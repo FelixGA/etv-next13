@@ -4,14 +4,14 @@ import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 
 import { useState } from "react";
-// import Blog from "../components/Blog/Blog";
+import Blog from "../components/Blog/Blog";
 
 export default function Home(props) {
   const [getBlogs, SetGetBlogs] = useState(props.blogs);
 
   return (
     <>
-      {/* <Blog getBlogs={getBlogs} /> */}
+      <Blog getBlogs={getBlogs} />
     </>
   );
 }
