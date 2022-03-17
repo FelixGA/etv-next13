@@ -1,6 +1,6 @@
 ---
 title: ARI 458 Koffer
-name: ari-458-koffer-elektrotransporter-mit-aufbau
+name: ari-458-koffer-elektrischer-kleintransporter
 price: 14100
 relatedBlogs: ari-458-koffer-elektrotransporter-mit-aufbau
 description: The "ARI 458 Koffer" is an electric transporter manufactured by ARI
