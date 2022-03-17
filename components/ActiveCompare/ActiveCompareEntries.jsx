@@ -50,11 +50,11 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
             <div
               className={`${
                 index % 2 == 1
-                  ? "bg-white flex items-center  h-12 "
-                  : "bg-grey-lighter flex items-center  h-12"
+                  ? "bg-white flex items-center h-12 "
+                  : "bg-grey-lighter flex items-center h-12"
               }`}
             >
-              <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8  ">
+              <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
                 {value}
               </p>
             </div>

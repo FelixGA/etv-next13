@@ -257,7 +257,7 @@ function TruncateFilter() {
       </div>
       <div
         className={
-          state?.truncates == "price" ? " flex flex-col ml-4 mt-2" : "hidden"
+          state?.truncates == "price" ? "flex flex-col ml-4 mt-2 " : "hidden"
         }
       >
         <div className="">

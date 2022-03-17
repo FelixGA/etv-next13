@@ -5,7 +5,7 @@ const Basics = ({ basics, carItem }) => {
         Grundlagen
       </h3>
       <div className="flex flex-col w-full text-blue-extra lg:pr-6">
-        <div className="flex flex-row w-full bg-grey-lighter">
+        <div className="flex flex-row flex-1 bg-grey-lighter">
           <p className="w-1/2 py-1 h-12 flex items-center pl-4">Klasse:</p>
           <p className="w-1/2 py-1 h-12 flex items-center pl-4">
             {carItem.typeClass}

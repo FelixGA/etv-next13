@@ -25,7 +25,7 @@ function FilterItemMobile({ item }) {
   const { state, dispatch } = useStore();
   /* to render the four ranges */
   return (
-    <div className="bg-white border-b ">
+    <div className="bg-white border-b">
       <div
         className=" cursor-pointer bg-white"
         onClick={() => {
@@ -75,7 +75,9 @@ function FilterItemMobile({ item }) {
       </div>
       <div
         className={
-          state?.truncates == item.title ? "flex flex-col ml-4 mt-2" : "hidden"
+          state?.truncates == item.title
+            ? "flex flex-col ml-4 mt-2 mb-2"
+            : "hidden"
         }
       >
         {/* RENDERING THE FOUR RANGES */}
