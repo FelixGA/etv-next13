@@ -4,8 +4,8 @@ slug: beispiel
 vehicle:
   key: gut
   value: 4,0
-description: "!!!!!!!!!!!!!!!hier ist für SEO!!!!!!!!!!!!!!"
 publishedAt: 03/02/2022
+description: "!!!!!!!!!!!!!!!hier ist für SEO!!!!!!!!!!!!!!"
 src: /images/X.png
 ---
 # beispiel Titel von Elektrotransporter-Vergleich

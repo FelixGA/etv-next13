@@ -1,5 +1,5 @@
 ---
-publishedAt: 03/02/2022
+publishedAt: 03/01/2022
 src: /images/X.png
 title: beispiel
 slug: beispiel

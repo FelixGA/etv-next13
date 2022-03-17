@@ -3,10 +3,11 @@ title: ari-458-food-truck
 slug: ari-458-food-truck
 youtubeLink: bitte auffuelen
 category: Kasten
-description: bitte auffuelen
 vehicle:
   key: Sehr gut
   value: 1,0
+publishedAt: ""
+description: bitte auffuelen
 ---
 # ARI 458 Testbericht von Elektrotransporter-Vergleich
 

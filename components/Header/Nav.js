@@ -45,7 +45,7 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link href="/Magazin">
+            <Link href="/magazin">
               <a
                 onClick={() => {
                   setIsActive(false);
