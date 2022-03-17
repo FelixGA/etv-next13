@@ -1,5 +1,5 @@
 ---
-title: ari-345-food-truck-elektrisches-gastro-moped
+title: example
 slug: beispiel
 vehicle:
   key: Sehr gut

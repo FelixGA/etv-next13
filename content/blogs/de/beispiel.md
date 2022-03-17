@@ -5,8 +5,8 @@ title: beispiel
 slug: beispiel
 category: Koffer
 vehicle:
-  key: Sehr gut
-  value: 1,0
+  key: gut
+  value: 4,0
 content: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
