@@ -2,6 +2,7 @@
 title: Axiam-pro-ETRUCK-Van
 name: axiam-pro-etruck-van
 price: 19990
+relatedBlogs: beispiel
 description: Aixam ist ein französischer Hersteller von sogenannten
   “Leichtkraftfahrzeugen” mit einem Vertrieb in Deutschland.
 category: Koffer

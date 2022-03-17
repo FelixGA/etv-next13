@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Router from "next/router";
 import { useRouter } from "next/router";
+
 const Nav = () => {
   const [isActive, setIsActive] = useState(false);
   const router = useRouter();
@@ -45,7 +45,7 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link href="/Magazin">
+            <Link href="/magazin">
               <a
                 onClick={() => {
                   setIsActive(false);

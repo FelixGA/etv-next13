@@ -1,97 +1,98 @@
 ---
-title: test
-slug: beispiel
+title: ari-345-koffer
+slug: ari-345-koffer
+youtubeLink: https://www.youtube.com/watch?v=Qn05011EQLI
 vehicle:
-  key: gut
-  value: 4,0
-description: "!!!!!!!!!!!!!!!hier ist für SEO!!!!!!!!!!!!!!"
-publishedAt: 03/02/2022
-src: /images/X.png
+  key: Gut
+  value: 2,0
+publishedAt: 03/17/2022
+description: Der ARI 345 Koffer ist ein dreirädriges Lastenmoped mit offener
+  Fahrerkabine, ideal geeignet für den innerstädtischen Einsatz.
 ---
-# beispiel Titel von Elektrotransporter-Vergleich
+![ARI 345 mit Kofferaufbau](/images/dsc_0071.png "ARI 345 mit Kofferaufbau ")
 
-![beispiel mit Solarpanel](/images/Chevron_down.png "beispiel mit Solarpanel - Vielseitiger Elektrotransporter")
+# ARI 345 Testbericht von Elektrotransporter-Vergleich
 
-Hier könnte noch etwas stehen, was Leute davon überzeugt, dass es richtig gut ist!
+Das ARI 345 ist ein Elektro-Lastentrike der Fahrzeugklasse L2e mit einer Höchstgeschwindigkeit von 45 km/h und einer maximalen Nutzlast von 325 Kilogramm.
 
 ## Konzept & Fahrzeugvarianten
 
-Die möglichen Aufbauten teilen sich in vier Oberkategorien auf: Koffer, Pritsche, Kipper sowie Individualaufbauten. Zu Individualaufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer, Laubgitteraufbau, Food Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI 458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert. Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus für große Strecken. 
+Das ARI 345 ist aktuell eines der kompaktesten Fahrzeuge des in Borna ansässigen Unternehmens ARI Motors. Das Lastenmoped ist in den Aufbau-Varianten Pritsche, Koffer, Kipper und Food Truck verfügbar. Das ARI 345 bietet Platz für eine Person. Durch seine kompakten Außenmaße ist das Lastenmoped vor allem für kurze Wege sowie den innerstädtischen Einsatz geeignet. 
 
-![ mit Kühlkoffer-Aufbau](/images/whatsapp-image-2021-07-01-at-13.01-4-.jpeg "ARI 458 mit Kühlkofferaufbau - perfekt für Cateringdienste")
+![ARI 345 Koffer von ARI Motors](/images/ari-345-koffer-mit-geöffneter-seitenklappe-und-solarpanel.jpg "ARI 345 Koffer von ARI Motors")
 
-## Laderaum & Flexibilität (⅘)
+## Laderaum & Fahrzeugvarianten (4/5)
 
-Für Lieferdienste und Lastentransporte ist der ARI 458 mit Kofferaufbau sehr gut geeignet. Kunden haben hier die Wahl zwischen den drei Größen, welche ein Ladevolumen von 1,45 m3 (Basisversion), 2,05 m3 („L“) sowie 2,77 m3 bei der „XL“-Version besitzen. Bei der Höhe variieren die Koffer-Aufbauten zwischen 95, 110 und 130 cm. Die Ladekantenhöhe des ARI 458 ist mit 68 cm angenehm niedrig. 
+Das ARI 345 Pritsche ist in drei Größen mit Ladeflächen von 1,42 m², 1,53 m² und 1,79 m² verfügbar. Die Höhe der Ladebordwand liegt bei 25 cm. Die Ladekantenhöhe bei allen Aufbauten beträgt 56cm. 
 
-Weiterhin können Kunden den Kofferaufbau individuell konfigurieren. So kann der Koffer beispielsweise mit zwei Flügeltüren am Heck oder einer „Rolltor“-Variante geordert werden. Für das mehrseitige Beladen der Box sind Seitentüren verfügbar, welche gerade im Falle von kleinteiliger Ladung von Vorteil sind.
+Der Kipper-Aufbau ist in den gleichen Größen verfügbar. Das Kippen der Ladefläche kann mechanisch-hydraulisch oder elektrisch-hydraulisch erfolgen. Für die Sicherung der Ladung sind zudem Verzurr-Ösen sowie eine stabile Plane für das Pritschen-Modell verfügbar. Ebenso lässt sich die Ladefläche durch einen drei- oder vierteiligen Laubgitter-Aufbau ergänzen. 
 
-Als Pritsche und Kipper bietet der ARI 458 eine offene Ladefläche, welche in drei Größen von 1,53 m², 1,86 m²  bis 2,05 m² verfügbar ist. Die Höhe der Bordwände beträgt hier 25 cm.  Das Kippen der Ladefläche erfolgt beim ARI 458 Kipper entweder elektrisch-hydraulisch per Fernbedienung oder mechanisch-hydraulisch per Pumpe. Für die Sicherung der Ladung sind zudem Verzurr-Ösen sowie eine stabile Plane für das Pritschen-Modell verfügbar. Ebenso lässt sich die Ladefläche durch einen drei- oder vierteiligen Laubgitter-Aufbau ergänzen. 
+Das ARI 345 mit Koffer-Aufbau kommt ebenfalls in 3 Größen mit Ladevolumen von 1,36 m3, 1,46 m3 und 1,90 m3. Die Höhe des Koffers variiert dabei zwischen 95 cm (Standard- und L-Version) und 110 cm (XL-Version).  
 
-Neben den ‘Standard’-Aufbauten ist der ARI 458 auch als Verkaufsfahrzeug oder Food Truck verfügbar. Das Verkaufsfahrzeug mit 3 Flügeltüren ist in den Größen 1,99 m3, 2,42 m3   und 2,77 m3 erhältlich. 
+Der Food Truck-Aufbau ist in zwei Größen mit Ladevolumen von 2,15 m3 und 2,42 m3 erhältlich. Die maximalen Aufbau-Maße liegen bei 1,49 x 1,30 x 1,25 m. Neben einer großzügigen Arbeitsfläche und weiteren ausziehbaren Arbeitsplatten bietet dieser eine Menge Stauraum im unteren Teil des Aufbaus. 
 
-beispiel ist ebenso in 3 Größen mit den maximalen Aufbau-Maßen von 1640×1300×1250 (LxBxH) bestellbar. Neben einer großzügigen Arbeitsfläche und weiteren ausziehbaren Arbeitsplatten bietet dieser eine Menge Stauraum im unteren Teil des Aufbaus. 
+Neben diesen Standard-Aufbauten hat sich das Unternehmen vor allem auf individuelle Kundenlösungen spezialisiert. So sind auch Sonderanfertigungen möglich. Potentiellen Einsatzfeldern sind keine Grenzen gesetzt. 
 
-Die Nutzlast der 458er-Reihe liegt bei rund 530 Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450 Kilogramm möglich.
+![ARI 345 Koffer, Pritsche und mit Planenaufbau](/images/ari-345-fahrzeugvarianten.jpg "ARI 345 Koffer, Pritsche und mit Planenaufbau")
 
-![ARI 458 Koffer Laderaum Heckansicht](/images/X.png "ARI 458 Koffer - Kompakter Laderaum mit hoher Zuladung")
+## Antrieb & Aufladung (3/5 Punkten)
 
-## Antrieb & Aufladung (4/5)
+Das ARI 345 wird angetrieben über einen 3 KW starken Permanent-Magnet-Synchron-Motor am Heck des Fahrzeugs. Das Automatik-Getriebe bietet auch Fahrern mit wenig Moped-Erfahrung eine einfache Bedienung.
 
-Den Antrieb des ARI 458 übernimmt ein Wechselstrommotor mit einer Kraft von 7,5 kW, welcher den Elektrotransporter auf eine Höchstgeschwindigkeit von 78 Km/h beschleunigt. Die Kraft wird auf die Hinterachse übertragen, auf welcher bei Beladung auch das meiste Gewicht liegt. Damit soll auch unter Vollladung eine gute Straßenlage garantiert werden.
+Die Blei-Gel Batterie schafft mit einer Kapazität von 3,24 kWh bei einfacher Ausführung eine Reichweite von 55 km oder 100 km bei zweifacher Ausführung (bei 40 Km/h). Optional ist das Fahrzeug auch mit einem LiFePO4-Akku-Paket für 100 km Reichweite und 50 kg mehr Nutzlast erhältlich. Die Kosten des zusätzlichen LiFePO4-Akkus liegen bei 2200 €.
 
-Bezüglich der Energiespeicherung hat der Kunde die Wahl: 
+Das Lastentrike kann an einer klassischen 230-V-Haushaltssteckdose mit 16Ah Sicherung in 5-6 Stunden vollständig geladen werden. Eine extra Wallbox ist nicht nötig. 
 
-Als Basisversion besitzt der ARI 458 eine SLA-Batterie, welche eine Reichweite von rund 120 Kilometern besitzt. Gegen Aufpreis wird das Fahrzeug mit einem Lithium-Ionen-Akku geliefert, wodurch die Laufleistung einer Aufladung auf circa 150 Kilometer steigt. Optional kann ein zweites Akkupaket geordert werden, wodurch eine Reichweite bis 200 Kilometer möglich ist. Wie bei allen Elektrofahrzeugen ist diese natürlich auch von den Umweltbedingungen und dem Gebrauch von elektrischen Geräten wie Radio oder Klimaanlage abhängig. Positiv auf die Reichweite wirkt sich ein optional verfügbares Solarmodul auf dem Dach aus, welches die Fahrstrecke nochmals um rund 30 Kilometer erweitern kann.
-
-Die Aufladung erfolgt über handelsübliche 220-V-Steckdosen mit Schuko-Stecker. ARI Motors liefert optional außerdem einen Typ-2-Adapter für die Aufladung an öffentlichen Ladesäulen mit. Die Aufladung mit 220 Volt dauert bei vollkommener Entladung rund 6 Stunden, während ein voller Akku per Schnellladung in 4 Stunden erreicht werden kann. Der ARI 458 nutzt auch die Selbstaufladung in Form von Rekuperation, die allerdings hier nicht direkt mit der Bremsanlage verbunden ist.
-
-![ARI 458 Koffer Aufladen mit Ladekabel](/images/ari-345-tacho-anzeige.jpg "ARI 458 Koffer - Einfaches Aufladen mit Ladekabel")
+![ARI 345 Food Truck](/images/ari_345_food_truck_l_.png "ARI 345 Food Truck")
 
 ## Komfort & Ausstattung (4/5)
 
-Der ARI 458 ist durch seine geringen Maße besonders für den Einsatz im dichten Stadtverkehr sowie in verwinkelten Parkanlagen und Werksgeländen geeignet. Er bietet ein üppiges Ladevolumen bei hoher Wendigkeit, ohne viel Platz zu beanspruchen. Bei eingelegtem Rückwärtsgang erklingt ein Warnton und die Sicht nach hinten wird durch eine Rückfahrkamera erleichtert, was besonders mit Kofferaufbau sehr nützlich ist.
+Der Elektro-Kleintransporter verfügt serienmäßig über FM-Radio mit MP3, Bluetooth und Rückfahrkamera sowie eine LCD-Batterie-Kapazitätsanzeige und Tachometer. Ebenso ist ein USB-Anschluss ins Cockpit integriert, über welchen beispielsweise ein Smartphone geladen werden kann. 
 
-Für kalte Tage bietet der ARI 458 eine Frontscheibenheizung, die gleichzeitig den Innenraum heizt. So können Mitarbeiter auch bei frostigen Temperaturen schnell für gute Sicht und ein persönliches Wohlgefühl sorgen. Gegen Aufpreis ist eine Klimaanlage erhältlich, welche gerade im Hochsommer eine angenehme Kühlung verschafft. Serienmäßig ist ein Radio verbaut, welches via Touchscreen einfach bedienbar ist und mit einer Freisprechmöglichkeit, USB-Anschluss und Bluetooth-Funktion nützliche Helfer für den Arbeitsalltag bietet. Der Fahrer kann auch das eigene Smartphone mit dem Entertainment-System verbinden und damit auf Navigationsprogramme zugreifen.
+Optional kann das Lastenmoped auch mit einem Rammschutz, einem drei- oder vierteiligen Laubgitter oder einem Leiterträger ausgerüstet werden. Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist erhältlich. 
 
-Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist verfügbar. Für sperrige Güter, wie etwa Leitern, sind ein Dachgepäckträger sowie eine Leiterklappe im hinteren Bereich des Kofferdach praktisch. Eine Anhängerkupplung ist ebenso erhältlich, allerdings darf der ARI 458 bisher nur auf Werks- und Privatgelände mit Anhänger gefahren werden.
+![ARI 345 Tacho-Anzeige](/images/ari-345-tacho-anzeige.jpg "ARI 345 Tacho-Anzeige")
 
-![ARI 458 Koffer Innenraum mit Touchscreen-Radio](/images/ari-458-innenraum-fahrerplatz.jpg "ARI 458 Koffer Funktionaler Innenraum mit Touchscreen-Radio und Rückfahrkamera")
+## Bedienung & Fahrbetrieb 
 
-## Bedienung & Fahrbetrieb
+Das Fahrzeug kommt auf eine Steigfähigkeit von 18% und wird dadurch auch im bergigen Gelände keine Probleme bekommen. Gebremst wird das Lasten-Trike über 3 hydraulische Scheibenbremsen. Durch den Heckantrieb liegt das Gewicht im hinteren Bereich des Fahrzeuges. So wird vor allem mit Beladung ein optimaler Fahrkomfort ermöglicht. Gefedert wird das Fahrzeug vorne über eine Federgabel mit Stoßdämpfern und hinten über Blattfedern. So lässt sich mit dem ARI 345 auch in unwegsamen Gelände arbeiten.
 
-In der Praxis ist der ARI 458 sehr einfach zu bedienen. Über eine Funkfernbedienung im Schlüssel kann das Fahrzeug geöffnet und verschlossen werden, was speziell Lieferdiensten die Verriegelung mit vollen Händen ermöglicht. Der Innenraum des Elektrotransporters ist sehr übersichtlich und intuitiv bedienbar. So sind die wichtigsten Funktionen über eine Bedieneinheit in der Mitte des Armaturenbretts steuerbar. Einzig die Bedienung der elektrisch verstellbaren Außenspiegel befindet sich links vom Lenkrad neben der Tür.
+Durch die Fahrerkabine und einen Dreipunktgurt ist es zudem nicht notwendig, während der Fahrt einen Helm zu tragen.  
 
-Das Radio bietet dank Touchscreen eine einfach Bedienung, die wenig Zeit und Aufmerksamkeit erfordert. So kann der Fahrer unkompliziert zwischen verschiedenen Radiosendern wählen oder im Falle einer eingelegten Navigationskarte neue Routen berechnen. Dank der Verbindungsmöglichkeit mit dem eigenen Telefon über USB oder Bluetooth ist das Telefonieren über Freisprechanlage genauso möglich wie das Abspielen von eigener Musik oder das Nutzen einer Navigations-App über den Touchscreen.
+![ARI 345 Koffer Frontansicht](/images/ari-345-lastentrike-koffer-front.jpg "ARI 345 Koffer Frontansicht")
 
-Den Ladestatus des Akkus findet der Fahrer im Tacho, ebenso wie die Information über den eingelegten Fahrmodus. Dieser ist über einen Fahrstufenschalter in der Mitte des Armaturenbretts wählbar. Neben den normalen Fahrmodi („R“, „N“ und „D“) ist auch ein ECO-Modus wählbar, bei dem Energie durch sanftes Beschleunigen sowie eine begrenzte Höchstgeschwindigkeit von 50 Km/h gespart wird. Dadurch kann die Reichweite erhöht werden.
+## Umwelt (5/5)
 
-Auf der Straße bewegt sich der ARI 458 recht flott und wendig. Die Beschleunigung setzt direkt ein und bringt das Fahrzeug schnell auf Geschwindigkeit. Auch außerhalb der Stadt ist der Elektrotransporter kein Verkehrshindernis, sondern kommt ohne Probleme auf die Höchstgeschwindigkeit von knapp 80 km/h. Der ARI 458 liegt gut auf der Straße und hat dank des niedrigen Schwerpunkts und Heckantrieb auch mit Ladung keinerlei Probleme in Kurven. Anfangs irritiert es etwas, dass sich der Blinker nicht von selbst zurücksetzt. Allerdings gewöhnt man sich schnell daran, dies nach dem Abbiegevorgang selbst von Hand zu erledigen.
+Der kombinierte Verbrauch des ARI 345 ist mit ca. 5,6 kWh sehr niedrig. Durch ein zusätzliches Solarpanel, welches für rund 30 Kilometer mehr Reichweite sorgt, ist das Fahrzeug noch sparsamer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 1,68 €. 
 
-Die Wendigkeit des kompakten Transporters ist gerade in engen Innenstädten sowie Werkshallen von Vorteil. Für einfacheres Rangieren bei niedrigen Geschwindigkeiten bietet sich die optional verfügbare Servolenkung an. Positiv fällt auch das Glasdach auf, welches ein besseres Raumgefühl erzeugt und gerade an sonnigen Tagen einen angenehmen Effekt hat. Natürlich kann man bei heftiger Sonneneinstrahlung dies auch durch ein Rollo abdecken.
+![ARI 345 Koffer mit Solarpanel](/images/ari-345-koffer-mit-solarpanel-nahansicht.jpg "ARI 345 Koffer mit Solarpanel")
 
-![ARI 458 Koffer mit Glasdach](/images/dsc_0376.jpg "ARI 458 Koffer mit Glasdach und Sonnenrollo")
+## Preise & Garantie (3/5)
 
-## Umwelt (⅘)
+Das ARI 345 ist vergleichsweise günstig. Die Preise für die Pritsche starten bei 6.995 €. Der Koffer ist ab 7.395€  und der Food Truck ab 12.725 € erhältlich. 
 
-Innerorts liegt der Verbrauch des Ari 458 bei 6,2 kWh und außerorts bei 8,0 kWh. Das Fahrzeug kommt dadurch auf einen niedrigen kombinierten Verbrauch von 7,1 kWh. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 2,13 €.
+Auf das Fahrzeug gibt es 6 Monate Garantie und auf die Batterie 18 Monate Gewährleistung.
 
-![ARI 458 - Tacho mit Ladestand-Anzeige](/images/dsc_0309.jpg "ARI 458 Koffer -  sparsamer Verbrauch")
+![ARI 345 Koffer Seitenansicht](/images/whatsapp-image-2021-07-ari_345-koffer.jpeg "ARI 345 Koffer Seitenansicht")
 
-## Preise & Garantie (4/5)
+## Fazit:
 
-In Sachen Preis ist der ARI 458 im Segment der Elektrotransporter wohl ungeschlagen. So liegt der Grundpreis der Pritschen-Version bei 13.700 Euro. Selbst mit dem „XL“-Koffer kostet das Fahrzeug mit 17.290 Euro weitaus weniger als vergleichbare Fahrzeuge der Konkurrenz. Die für Baustellen und Handwerker geeignete Kipper-Variante beginnt ab 16.400 Euro. Die Preise für das Verkaufsfahrzeug und den Food Truck starten bei 17.150 und 19.430 Euro. Der Kühlkoffer-Aufbau ist ab 19.900 Euro auf dem Markt verfügbar.   
+Das ARI 345 bietet zahlreiche Einsatzmöglichkeiten. Die Versionen Pritsche und Kipper eignen sich beispielsweise für Kommunen, Landschaftsbau- oder Handwerksbetriebe. 
 
-Das Fahrzeug kommt mit einer Herstellergarantie von 6 Monaten sowie einer Gewährleistung über eine Zeit von 2 Jahren. Auf die Lithium-Batterie haben Kunden einen Garantieanspruch von 4 Jahren bzw. 60.000 Kilometer.
+![ARI 345 Pritsche](/images/345-front-1-.jpg "ARI 345 Pritsche")
 
-![ARI 458 Koffer - verschiedene Größen](/images/arrow-right-solid.svg "ARI 458 Koffer - Aufbauten in verschiedenen Größen")
+Das ARI 345 Koffer ist eine gute Wahl für Lieferfirmen oder Dienstleister. Mit dem neusten Food Truck-Aufbau finden sich zudem auch zahlreiche Einsatzmöglichkeiten im gastronomischen Bereich. Die Anschaffungskosten des Fahrzeugs sind dabei vergleichsweise niedrig.
 
-## Fazit
+![ARI 345 Koffer mit geöffnetem Laderaum](/images/ari-345-koffer-mit-geöffnetem-laderaum.jpg "ARI 345 Koffer mit geöffnetem Laderaum")
 
-Die Einsatzmöglichkeiten des ARI 458 sind zahlreich. Je nach Aufbau ist er speziell für Liefer- und Transportbetriebe (Kofferaufbau) und Handwerks- und Baubetriebe (Pritsche und Kipper) interessant. Bei den Individualaufbauten gibt es zudem für Garten- und Landschaftsbaubetriebe praktische Varianten. Neben der Vielseitigkeit liegen die Vorteile des ARI 458 in der guten Raumnutzung, der intuitiven Bedienung sowie den niedrigen Preisen ab 13.700 Euro. Natürlich erhält der Kunde dafür kein Luxusfahrzeug, sondern einen effizienten Elektrotransporter mit sehr guter Raumnutzung und individuell anpassbaren Ausstattungs- und Funktionsmöglichkeiten.
+## Gesamtpunktzahl:
 
-![ARI 458 Kühlkofferaufbau im Einsatz für Drensteinfurter Tafel e.V.](/images/Chevron_down.png "ARI 458 mit Kühlkofferaufbau - ideal für Auslieferung von Speisen und Getränken")
+4 Sterne
 
-## Gesamtbewertung:
 
-4,4
+
+
+
+
+
+##

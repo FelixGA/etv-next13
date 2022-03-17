@@ -4,6 +4,9 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { useStore } from "../store";
+import { useRouter } from "next/router";
+
 const variants = {
   enter: {
     x: 1000,
@@ -20,7 +23,8 @@ const variants = {
 };
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
-
+  const { state, dispatch } = useStore();
+  const router = useRouter();
   return (
     <div className="relative print:hidden ">
       <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-20 sm:h-24 w-full 2xl:px-40">
@@ -64,10 +68,14 @@ const Header = () => {
         </AnimatePresence>
         {/* BUTTON */}
 
-        <div className="pr-18 lg:pr-4">
+        <div
+          className={
+            router.pathname !== "/caradvisor" ? "pr-18 lg:pr-4" : "hidden"
+          }
+        >
           <Link href="/caradvisor" passHref>
             <a>
-              <div className="bg-yellow-light hover:bg-orange-lighter text-grey-darker font-bold flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer">
+              <div className="bg-yellow-light  hover:bg-orange-lighter text-grey-darker font-bold flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer">
                 <div className="w-6 xs:w-8 pl-2 ">
                   <Image
                     src="/images/iconStyle2x.png"
@@ -77,7 +85,7 @@ const Header = () => {
                     objectFit="cover"
                   />
                 </div>
-                <span className="pr-3 text-xs xs:text-base">Kaufberater</span>
+                <span className="pr-3 text-xs xs:text-base ">Kaufberater</span>
               </div>
             </a>
           </Link>

@@ -1,8 +1,8 @@
 ---
 title: ARI 458 Koffer
-name: ari-458-koffer
+name: ari-458-koffer-elektrischer-kleintransporter
 price: 14100
-relatedBlogs: beispiel
+relatedBlogs: ari-458-koffer-elektrischer-kleintransporter
 description: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 

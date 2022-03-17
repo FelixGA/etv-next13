@@ -1,16 +1,18 @@
 ---
-title: ari-458-food-truck
-slug: ari-458-food-truck
-youtubeLink: bitte auffuelen
-category: Kasten
-description: bitte auffuelen
+title: ari-458-food-truck-elektrisches-gastro-mobil
+slug: ari-458-food-truck-elektrisches-gastro-mobil
+youtubeLink: https://www.youtube.com/watch?v=U1z-nSHox7E
+category: Koffer
 vehicle:
   key: Sehr gut
   value: 1,0
+publishedAt: 03/17/2022
+description: Der ARI 458 Food Truck von ARI Motors ist ein individuell
+  konfigurierbarer Elektrotransporter für Caterer und Gastronomen.
 ---
-# ARI 458 Testbericht von Elektrotransporter-Vergleich
+# ARI 458 -Testbericht von Elektrotransporter-Vergleich
 
-![ARI 458 Food Truck - Elektrotransporter mit Gastro-Aufbau](/images/ari-458-food-truck-5-2-.jpg "ARI 458 Food Truck - indivuduell gestaltbarer Elektrotransporter mit Gastro-Aufbau")
+![ARI 458 Food Truck - Elektrotransporter mit Gastro-Aufbau](/images/ari-458-food-truck-5-2-.jpg "ARI 458 Food Truck - Elektrotransporter mit Gastro-Aufbau")
 
 Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen. 
 
@@ -18,7 +20,7 @@ Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer zu
 
 Die möglichen Aufbauten teilen sich in vier Oberkategorien auf: Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den erhältlichen Individual-Aufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer, Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI 458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert. Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus für große Strecken. 
 
-![ARI 458 Food Truck - Heckansicht](/images/ari-458-food-truck-heckansicht-1-.jpg "ARI 458 Food Truck mit ausziehbarer Theke sowie Schubladen und Fächern")
+![ARI 458 Food Truck Gastrofahrzeug in Seitenansicht](/images/ari-458-food-truck-heckansicht-1-.jpg "ARI 458 Food Truck Gastrofahrzeug in Seitenansicht ")
 
 ## Laderaum & Flexibilität (⅘)
 
@@ -42,7 +44,7 @@ Bezüglich der Energiespeicherung hat der Kunde die Wahl: Als Basisversion besit
 
 Die Aufladung erfolgt über handelsübliche 220-V-Steckdosen mit Schuko-Stecker. ARI Motors liefert optional außerdem einen Typ-2-Adapter für die Aufladung an öffentlichen Ladesäulen mit. Die Aufladung mit 220 Volt dauert bei vollkommener Entladung rund 6 Stunden, während ein voller Akku per Schnellladung in 4 Stunden erreicht werden kann. Der ARI 458 nutzt auch die Selbstaufladung in Form von Rekuperation, die allerdings hier nicht direkt mit der Bremsanlage verbunden ist.
 
-![ARI 458 Food Truck - Aufladen mit Ladekabel](/images/dsc_0269.jpg "ARI 458 Food Truck - einfaches Aufladen mit Ladekabel")
+![ARI 458 Food Truck - Aufladen mit Ladekabel](/images/dsc_0269.jpg "ARI 458 Food Truck - Aufladen mit Ladekabel")
 
 ## Komfort & Ausstattung (4/5)
 
@@ -52,7 +54,7 @@ Für kalte Tage bietet der ARI 458 eine Frontscheibenheizung, die gleichzeitig d
 
 Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist verfügbar. Für sperrige Güter, wie etwa Leitern, sind ein Dachgepäckträger sowie eine Leiterklappe im hinteren Bereich des Kofferdach praktisch. Eine Anhängerkupplung ist ebenso erhältlich, allerdings darf der ARI 458 bisher nur auf Werks- und Privatgelände mit Anhänger gefahren werden.
 
-![ARI 458 Koffer mit Touchscreen-Radio](/images/ari-458-innenraum-fahrerplatz.jpg "ARI 458 Koffer mit Touchscreen-Radio und USB-Anschluss")
+![ARI 458 Koffer mit Touchscreen-Radio](/images/ari-458-innenraum-fahrerplatz.jpg "ARI 458 Koffer mit Touchscreen-Radio ")
 
 ## Bedienung & Fahrbetrieb
 
@@ -66,13 +68,13 @@ Auf der Straße bewegt sich der ARI 458 recht flott und wendig. Die Beschleunigu
 
 Die Wendigkeit des kompakten Transporters ist gerade in engen Innenstädten sowie Werkshallen von Vorteil. Für einfacheres Rangieren bei niedrigen Geschwindigkeiten bietet sich die optional verfügbare Servolenkung an. Positiv fällt auch das Glasdach auf, welches ein besseres Raumgefühl erzeugt und gerade an sonnigen Tagen einen angenehmen Effekt hat. Natürlich kann man bei heftiger Sonneneinstrahlung dieses auch durch ein Rollo abdecken.
 
-![ARI 458 Koffer - Tacho-Anzeige mit Ladestand](/images/ari-345-tacho-anzeige.jpg "ARI 458 Koffer Innenraum mit Tacho")
+![ARI 458 Koffer - Tachoanzeige mit Ladestand](/images/ari-345-tacho-anzeige.jpg "ARI 458 Koffer - Tachoanzeige mit Ladestand")
 
 ## Umwelt (⅘)
 
 Innerorts liegt der Verbrauch des Ari 458 bei 6,2 kWh und außerorts bei 8,0 kWh. Das Fahrzeug kommt dadurch auf einen niedrigen kombinierten Verbrauch von 7,1 kWh. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 2,13 €.
 
-![ARI 458 Koffer Verbrauch](/images/dsc_0309.jpg "ARI 458 Koffer - sparsamer Verbrauch")
+![ARI 458 Koffer - sparsamer Verbrauch](/images/dsc_0309.jpg "ARI 458 Koffer - sparsamer Verbrauch")
 
 ## Preise & Garantie (4/5)
 
@@ -80,7 +82,7 @@ In Sachen Preis ist der ARI 458 im Segment der Elektrotransporter wohl ungeschla
 
 Das Fahrzeug kommt mit einer Herstellergarantie von 6 Monaten sowie einer Gewährleistung über eine Zeit von 2 Jahren. Auf die Lithium Batterie haben Kunden einen Garantieanspruch von 4 Jahren bzw. 60.000 Kilometer.
 
-![ARI 458 Food Truck Frontansicht](/images/dsc_0190.jpg "ARI 458 Food Truck - ideal für Caterer und Gastronomen")
+![ARI 458 Food Truck Frontansicht](/images/dsc_0190.jpg "ARI 458 Food Truck Frontansicht")
 
 ## Fazit
 

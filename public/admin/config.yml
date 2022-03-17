@@ -95,6 +95,12 @@ collections:
         display_fields: ["name"]
         value_field: "rating"
         required: true
+      - label: "Published at"
+        name: "publishedAt"
+        widget: "date"
+        default: ""
+        format: "MM/DD/YYYY"
+        i18n: true
       - {
           label: "Description",
           name: "description",
@@ -140,6 +146,7 @@ collections:
           label: "Price",
           name: "price",
           widget: "number",
+          value_type: "float",
           i18n: duplicate,
           required: true,
         }
@@ -152,12 +159,6 @@ collections:
         display_fields: ["title"]
         value_field: "title"
 
-      # - label: "Published at"
-      #   name: "publishedAt"
-      #   widget: "date"
-      #   default: ""
-      #   format: "MM/DD/YYYY"
-      #   i18n: true
       - label: "Description"
         name: "description"
         widget: "markdown"
@@ -197,7 +198,13 @@ collections:
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              value_type: "float",
+              i18n: duplicate,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
@@ -212,7 +219,13 @@ collections:
         i18n: true
         fields:
           - { label: "key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              value_type: "float",
+              i18n: duplicate,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
@@ -227,7 +240,13 @@ collections:
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              value_type: "float",
+              i18n: duplicate,
+            }
           - {
               label: "baseUnit",
               name: "baseUnit",
@@ -252,6 +271,7 @@ collections:
               label: "Value",
               name: "value",
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -259,6 +279,7 @@ collections:
               label: "Value(max)",
               name: "maxValue",
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -288,6 +309,7 @@ collections:
               label: "Value",
               name: "value",
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -296,6 +318,7 @@ collections:
               label: "Value(max)",
               name: "maxValue",
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -324,6 +347,7 @@ collections:
               label: "Value",
               name: "value",
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -352,6 +376,7 @@ collections:
               label: "Value",
               name: "value",
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -380,6 +405,7 @@ collections:
               label: "Value",
               name: "value",
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -533,7 +559,13 @@ collections:
         i18n: true
         fields:
           - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "number", i18n: duplicate }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              value_type: "float",
+              i18n: duplicate,
+            }
 
       - label: "rating"
         name: "rating"
@@ -574,6 +606,7 @@ collections:
               label: "Value",
               name: "value",
               widget: "number",
+              value_type: "float",
               i18n: true,
               required: true,
             }
@@ -624,6 +657,7 @@ collections:
               label: "Value",
               name: "value",
               widget: "number",
+              value_type: "float",
               i18n: true,
               required: true,
             }
@@ -652,6 +686,7 @@ collections:
               label: "Value",
               name: "value",
               widget: "number",
+              value_type: "float",
               i18n: true,
               required: true,
             }
@@ -680,6 +715,7 @@ collections:
               label: "Value",
               name: "value",
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -772,6 +808,7 @@ collections:
               name: "valueheight",
               required: true,
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
             }
 
@@ -787,6 +824,7 @@ collections:
               name: "valuewidth",
               required: true,
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
             }
 
@@ -801,6 +839,7 @@ collections:
               label: "length-Value",
               name: "valuelength",
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -815,6 +854,7 @@ collections:
               label: "wheelbase-Value",
               name: "valuewheelbase",
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -850,6 +890,7 @@ collections:
               label: "height-Value",
               name: "valueheight",
               widget: "number",
+              value_type: "float",
               required: true,
               i18n: duplicate,
             }
@@ -865,6 +906,7 @@ collections:
               label: "width-Value",
               name: "valuewidth",
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -880,6 +922,7 @@ collections:
               label: "length-Value",
               name: "valuelength",
               widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
