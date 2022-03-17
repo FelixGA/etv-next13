@@ -14,13 +14,9 @@ description: >-
 
 
   VOM Evum-aCar-Truck kopiert
-<<<<<<< HEAD
 src: /images/anschluss@2x.png
-=======
-src: /images/X.png
->>>>>>> fab5ecc66f293ee5fe032267e7996f161bf3312e
-category: Pritsche
-typeClass: L7E
+category: Kasten
+typeClass: N1
 loadingWeight:
   key: Nutzlast
   value: 1200

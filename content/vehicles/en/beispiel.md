@@ -1,5 +1,5 @@
 ---
-title: example  bitte nicht ändern
+title: example bitte nicht ändern
 name: beispiel bitte nicht ändern
 price: 80000
 relatedBlogs: beispiel  bitte nicht ändern
@@ -15,6 +15,8 @@ description: >-
 
   VOM Evum-aCar-Truck kopiert
 src: /images/anschluss@2x.png
+category: Kasten
+typeClass: N1
 loadingWeight:
   key: Nutzlast
   value: 1200

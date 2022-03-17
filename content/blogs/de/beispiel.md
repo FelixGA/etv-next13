@@ -1,8 +1,8 @@
 ---
 publishedAt: 03/17/2022
 src: /images/X.png
-title: beispiel
-slug: beispiel
+title: ari-345-koffer
+slug: ari-345-koffer
 category: Koffer
 vehicle:
   key: Gut
@@ -139,8 +139,7 @@ content: >-
 
   4,4
 youtubeLink: www.youtube.com
-description: Der ARI 458 Koffer von ARI Motors ist ein wendiger
-  Elektrotransporter mit hoher Zuladung und sparsamem Verbrauch.
+description: Der ARI
 ---
 # ARI 345 Koffer -Testbericht von Elektrotransporter-Vergleich
 
