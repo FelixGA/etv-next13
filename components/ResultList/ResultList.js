@@ -99,7 +99,7 @@ const ResultList = (props) => {
 
   const getdisplayedCars = shownCars?.map((caritem, index) => {
     return (
-      <div className="container-product w-full md:pl-2" key={index}>
+      <div className="container-product w-full md:pl-4" key={index}>
         {/* <div className="product-icon"></div> */}
         <CarCard caritem={caritem} />
       </div>

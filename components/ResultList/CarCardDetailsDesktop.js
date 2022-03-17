@@ -27,7 +27,7 @@ function CarCardDetailsDesktop({ carItem }) {
           </h3>
         </a>
       </Link>
-      <div className="w-full grid grid-cols-2 2xl:grid-cols-3  h-40">
+      <div className="w-full grid grid-cols-2 2xl:grid-cols-3 h-40">
         <div className="  flex flex-col justify-between ">
           <CarCardProps
             details={
