@@ -3,14 +3,20 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = ({ blogs }) => {
-  console.log("Footer blogs: ", blogs);
+  /*  select blogs upon category */
+  const referenzen = blogs?.filter((blog) => blog.category === "referenzen");
+
+  const magazine = blogs?.filter((blog) => blog.category !== "referenzen");
+  console.log(magazine);
   const list = (
     <ul className=" flex flex-col justify-between items-start flex-wrap  my-4  text-black">
-      <li>article 1</li>
-      <li>article 2</li>
-      <li>article 3</li>
-      <li>article 4</li>
-      <li>article 5</li>
+      {magazine?.map((blog) => (
+        <li className="">
+          <Link href={`/magazin/${blog.slug}`}>
+            <a className="text-black">{blog.title}</a>
+          </Link>
+        </li>
+      ))}
     </ul>
   );
   return (
@@ -48,17 +54,12 @@ const Footer = ({ blogs }) => {
         </div>
         <div className="flex lg:w-48 w-1/2 flex-col items-center justify-start flex-wrap ">
           <h5 className=" text-xs font-bold">
-            <Link href="/Magazin">
+            <Link href="/magazin">
               <a>{`Magazin`.toUpperCase()}</a>
             </Link>
           </h5>
-          <ul className=" flex flex-col justify-between items-start flex-wrap  my-4  text-black">
-            <li>article 1</li>
-            <li>article 2</li>
-            <li>article 3</li>
-            <li>article 4</li>
-            <li>article 5</li>
-          </ul>
+
+          {list}
         </div>
         <div className="flex lg:w-48 w-1/2 flex-col items-center justify-start flex-wrap ">
           <h5 className=" text-xs items-center font-bold">
