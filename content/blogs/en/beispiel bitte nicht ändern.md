@@ -1,5 +1,5 @@
 ---
-title: example  bitte nicht ändern
+title: example  1
 slug: beispiel bitte nicht ändern
 category: referenzen
 vehicle:
