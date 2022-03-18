@@ -2,10 +2,12 @@
 title: ari-345-koffer
 slug: ari-345-koffer
 youtubeLink: https://www.youtube.com/watch?v=Qn05011EQLI
+category: referenzen
 vehicle:
   key: Gut
   value: 2,0
 publishedAt: 03/17/2022
+src: /images/ari-345-koffer-mit-geöffneter-seitenklappe-und-solarpanel.jpg
 description: Der ARI 345 Koffer ist ein dreirädriges Lastenmoped mit offener
   Fahrerkabine, ideal geeignet für den innerstädtischen Einsatz.
 ---
@@ -88,11 +90,3 @@ Das ARI 345 Koffer ist eine gute Wahl für Lieferfirmen oder Dienstleister. Mit 
 ## Gesamtpunktzahl:
 
 4 Sterne
-
-
-
-
-
-
-
-##

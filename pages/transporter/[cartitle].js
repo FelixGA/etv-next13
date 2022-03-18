@@ -62,8 +62,13 @@ export async function getStaticProps(context) {
     context.params.cartitle,
     context.locale
   );
+
   /* catching errors in case there isnt blog yet */
-  let emptyBlog = await getContentBySlug("blogs", "beispiel", context.locale);
+  let emptyBlog = await getContentBySlug(
+    "blogs",
+    "beispiel bitte nicht ändern",
+    context.locale
+  );
 
   let relatedBlog;
 

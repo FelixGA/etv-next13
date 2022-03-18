@@ -14,8 +14,6 @@ export default function Home(props) {
   const [getContent, SetGetContent] = useState(props.page);
   const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
 
-  console.log(getCars.map((car) => car.title));
-  console.log(getCars[14]);
   return (
     <>
       <Head>
@@ -30,6 +28,7 @@ export default function Home(props) {
         getContent={getContent}
         getMarkdownContext={getMarkdownContext}
       />
+
       <TopSlider getCars={getCars} getContent={getContent} />
       <BlogArticles getMarkdownContext={getMarkdownContext} />
 

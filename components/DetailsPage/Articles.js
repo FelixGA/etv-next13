@@ -1,12 +1,12 @@
 import Image from "next/image";
 import RatingBox from "../../components/ResultList/RatingBox";
-// import styles from "../DetailsPage/Articles.module.css";
+import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
 const Articles = ({ carItem, getMarkdownContext }) => {
   return (
     <>
-      <div className="px-2 2xl:px-48">
+      <div className={styles.mdxstyles}>
         <MDXRemote {...getMarkdownContext} />
       </div>
       {/* <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">

@@ -86,7 +86,13 @@ collections:
         multiple: false
         i18n: duplicate
         required: true
-        options: ["Pritsche", "Kipper", "Kasten", "Koffer"]
+        options:
+          [
+            "neuigkeiten",
+            "foerderung",
+            "haeufig_gestellte_fragen",
+            "referenzen",
+          ]
       - label: "post related vehicles"
         name: "vehicle"
         widget: "relation"
@@ -101,6 +107,13 @@ collections:
         default: ""
         format: "MM/DD/YYYY"
         i18n: true
+      - {
+          label: Image,
+          name: src,
+          widget: image,
+          i18n: duplicate,
+          choose_url: false,
+        }
       - {
           label: "Description",
           name: "description",
