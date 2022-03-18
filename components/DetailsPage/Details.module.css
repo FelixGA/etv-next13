@@ -1,0 +1,9 @@
+.mdxstyles {
+  @apply px-2 2xl:px-48;
+}
+.mdxstyles img {
+  width: 360px;
+}
+.mdxstyles p {
+  color: red;
+}

@@ -4,9 +4,20 @@
   grid-template-columns: 3fr 1fr;
   /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
 }
+.mdxstyles {
+  @apply hidden md:line-clamp-4 md:block;
+}
+.mdxstyles img,
+.mdxstyles h2,
+.mdxstyles h1 {
+  @apply hidden;
+}
+.mdxstyles p {
+  @apply text-gray-500;
+}
 
 .markdown a {
-  @apply text-green-dark font-bold;
+  @apply text-blue-dark font-bold;
 }
 .markdown p {
   display: -webkit-box;

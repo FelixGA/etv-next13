@@ -25,7 +25,7 @@ export default function Blog({ getBlogs }) {
   return (
     <>
       {/* <Head page={page} /> */}
-      <BlogHeader getBlogs={getBlogs} />
+      {/* <BlogHeader getBlogs={getBlogs} /> */}
       <div className="grid w-full max-w-screen-xl">
         <h1 className="px-4 pt-8 pb-2 text-blue-dark font-bold">
           {/* {page?.title}  */}
@@ -67,13 +67,19 @@ export default function Blog({ getBlogs }) {
                             {post.title}
                           </h2>
                         </div>
-                        <div className="hidden md:line-clamp-4 md:block">
+                        <div
+                          // className="hidden mdxstyles md:line-clamp-4 md:block"
+                          className={styles.mdxstyles}
+                        >
                           <MDXRemote {...post.source} />
                         </div>
                       </div>
                       <div className="flex-1 flex flex-col justify-between p-4">
                         <h2 className="text-xl pb-2">{post.title}</h2>
-                        <div className="hidden md:line-clamp-4 md:block">
+                        <div
+                          // className="hidden mdxstyles md:line-clamp-4 md:block"
+                          className={styles.mdxstyles}
+                        >
                           <MDXRemote {...post.source} />
                         </div>
                       </div>
