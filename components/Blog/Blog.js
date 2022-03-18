@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote";
-import Head from "/components/core/Head.js";
+// import Head from "/components/core/Head.js";
 import styles from "./Blog.module.css";
-import BlogHeader from "./BlogHeader";
-import Link from "next/link";
+// import BlogHeader from "./BlogHeader";
+// import Link from "next/link";
 // import tileCatalogue from "/public/images/tileCatalogue.png";
 // import tileFacebook from "/public/images/tileFacebook.png";
 // import tileYoutube from "/public/images/tileYoutube.png";
