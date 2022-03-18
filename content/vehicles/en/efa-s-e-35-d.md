@@ -2,6 +2,7 @@
 title: efa-s-e-35-d
 name: efa-s-e-35-d
 price: 0
+relatedBlogs: beispiel  bitte nicht ändern
 description: Efa-S steht für “Elektro-Fahrzeuge Schwaben” und bezeichnet ein
   Stuttgarter Unternehmen, welches sich auf die Elektro-Umrüstung von
   gebrauchten Fahrzeugen mit Verbrennungsmotor spezialisiert hat. Mit dem E35
