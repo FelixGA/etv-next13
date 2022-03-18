@@ -59,14 +59,14 @@
   z-index: 1;
 }
 
-/* .el4{
-    grid-area: el4;
-    position: relative;
-    object-fit: contain;
-} */
+.el4 {
+  grid-area: el4;
+  position: relative;
+  object-fit: contain;
+}
 
 .bottomText {
-  background-color: #006237a6;
+  background-color: #001f62a6;
   color: white;
   padding: 10px;
   position: absolute;
@@ -84,7 +84,7 @@
 }
 
 .link {
-  color: #85ba4b;
+  color: #4b56ba;
   display: inline;
   font-size: 11px;
 }

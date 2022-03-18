@@ -1,7 +1,7 @@
 ---
 title: example  bitte nicht ändern
 slug: beispiel bitte nicht ändern
-category: Kipper
+category: referenzen
 vehicle:
   key: gut
   value: 4,0

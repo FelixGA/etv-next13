@@ -12,7 +12,6 @@ import Link from "next/link";
 export default function Blog({ getBlogs }) {
   //   const [prefix, setPrefix] = useState("");
 
-  console.log(getBlogs);
   //   useEffect(() => {
   //     if (!page?.locale) return;
   //     if (page?.locale === "de") setPrefix("magazin");
@@ -26,9 +25,9 @@ export default function Blog({ getBlogs }) {
   return (
     <>
       {/* <Head page={page} /> */}
-      <BlogHeader props={props} />
+      <BlogHeader getBlogs={getBlogs} />
       <div className="grid w-full max-w-screen-xl">
-        <h1 className="px-4 pt-8 pb-2 text-green-dark font-bold">
+        <h1 className="px-4 pt-8 pb-2 text-blue-dark font-bold">
           {/* {page?.title}  */}
           title magazin
         </h1>
@@ -64,7 +63,7 @@ export default function Blog({ getBlogs }) {
                           <h6>
                             {new Date(post.publishedAt).toLocaleDateString()}
                           </h6>
-                          <h2 className="text-xl pb-2 font-bold text-green-dark">
+                          <h2 className="text-xl pb-2 font-bold text-blue-dark">
                             {post.title}
                           </h2>
                         </div>
@@ -72,12 +71,12 @@ export default function Blog({ getBlogs }) {
                           <MDXRemote {...post.source} />
                         </div>
                       </div>
-                      {/* <div className="flex-1 flex flex-col justify-between p-4">
+                      <div className="flex-1 flex flex-col justify-between p-4">
                         <h2 className="text-xl pb-2">{post.title}</h2>
                         <div className="hidden md:line-clamp-4 md:block">
                           <MDXRemote {...post.source} />
                         </div>
-                      </div> */}
+                      </div>
                     </a>
                   )
               )}

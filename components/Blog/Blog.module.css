@@ -5,20 +5,15 @@
   /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
 }
 
-/* .markdown {
-  p {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    
-  }
-
-  a {
-    @apply text-green-dark font-bold;
-  }
-} */
-
+.markdown a {
+  @apply text-green-dark font-bold;
+}
+.markdown p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .textContent {
   flex: 1 1 0%;
   display: flex;

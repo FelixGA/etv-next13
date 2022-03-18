@@ -2,11 +2,21 @@ import Image from "next/image";
 
 import Link from "next/link";
 
-const Footer = () => {
+const Footer = ({ blogs }) => {
+  console.log("Footer blogs: ", blogs);
+  const list = (
+    <ul className=" flex flex-col justify-between items-start flex-wrap  my-4  text-black">
+      <li>article 1</li>
+      <li>article 2</li>
+      <li>article 3</li>
+      <li>article 4</li>
+      <li>article 5</li>
+    </ul>
+  );
   return (
     <footer className="p-10 lg:flex lg:flex-row-reverse lg:flex-wrap lg:justify-around print:hidden ">
-      <nav className="flex flex-row justify-between flex-wrap my-10 ">
-        <div className="flex lg:w-48 w-1/2  flex-col justify-start flex-wrap ">
+      <nav className="flex flex-col xs:flex-row justify-between flex-wrap my-10 items-center  ">
+        <div className="flex lg:w-48  w-1/2 items-center flex-col justify-start  flex-wrap ">
           <h5 className=" text-xs font-bold">
             <Link href="/Leichttransporter">
               <a>{`Leichttransporter`.toUpperCase()}</a>
@@ -20,7 +30,7 @@ const Footer = () => {
             <li>article 5</li>
           </ul>
         </div>
-        <div className="flex lg:w-48 w-1/2 flex-col justify-start flex-wrap ">
+        <div className="flex lg:w-48 w-1/2 items-center flex-col justify-start  flex-wrap ">
           <h5 className=" text-xs font-bold ">
             <Link href="/comparePage">
               <a className="visited:text-grey-dark">
@@ -28,7 +38,7 @@ const Footer = () => {
               </a>
             </Link>
           </h5>
-          <ul className=" flex flex-col justify-between items-start flex-wrap  my-4  text-black">
+          <ul className=" flex flex-col items-center justify-between  flex-wrap  my-4  text-black">
             <li>article 1</li>
             <li>article 2</li>
             <li>article 3</li>
@@ -36,7 +46,7 @@ const Footer = () => {
             <li>article 5</li>
           </ul>
         </div>
-        <div className="flex lg:w-48 w-1/2 flex-col justify-start flex-wrap ">
+        <div className="flex lg:w-48 w-1/2 flex-col items-center justify-start flex-wrap ">
           <h5 className=" text-xs font-bold">
             <Link href="/Magazin">
               <a>{`Magazin`.toUpperCase()}</a>
@@ -50,8 +60,8 @@ const Footer = () => {
             <li>article 5</li>
           </ul>
         </div>
-        <div className="flex lg:w-48 w-1/2 flex-col justify-start flex-wrap ">
-          <h5 className=" text-xs  font-bold">
+        <div className="flex lg:w-48 w-1/2 flex-col items-center justify-start flex-wrap ">
+          <h5 className=" text-xs items-center font-bold">
             {`Rechtliches & Kontakt`.toUpperCase()}
           </h5>
           <ul className=" flex flex-col justify-between items-start flex-wrap mly-2 mt-4 text-black">

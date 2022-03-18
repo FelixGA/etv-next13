@@ -2,7 +2,7 @@
 title: ari-458-food-truck-elektrisches-gastro-mobil
 slug: ari-458-food-truck-elektrisches-gastro-mobil
 youtubeLink: https://www.youtube.com/watch?v=U1z-nSHox7E
-category: Koffer
+category: referenzen
 vehicle:
   key: Sehr gut
   value: 1,0

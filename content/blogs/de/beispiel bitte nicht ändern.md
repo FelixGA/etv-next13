@@ -2,7 +2,7 @@
 title: beispiel  bitte nicht ändern
 slug: beispiel bitte nicht ändern
 youtubeLink: https://www.youtube.com/watch?v=OJ4xza2e1P0
-category: Kipper
+category: referenzen
 vehicle:
   key: gut
   value: 4,0

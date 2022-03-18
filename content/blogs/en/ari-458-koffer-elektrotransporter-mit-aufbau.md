@@ -1,6 +1,6 @@
 ---
 title: ari-458-koffer-elektrischer-kleintransporter
-category: Koffer
+category: referenzen
 vehicle:
   key: Gut
   value: 2,0

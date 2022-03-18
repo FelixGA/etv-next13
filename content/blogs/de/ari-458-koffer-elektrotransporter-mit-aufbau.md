@@ -2,7 +2,7 @@
 title: ari-458-koffer-elektrischer-kleintransporter
 slug: ari-458-koffer-elektrotransporter-mit-aufbau
 youtubeLink: https://www.youtube.com/watch?v=l2ESpKWjEnk
-category: Koffer
+category: referenzen
 vehicle:
   key: Gut
   value: 2,0

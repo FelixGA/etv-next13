@@ -2,7 +2,7 @@
 title: ari-345-koffer
 slug: ari-345-koffer
 youtubeLink: https://www.youtube.com/watch?v=Qn05011EQLI
-category: Koffer
+category: referenzen
 vehicle:
   key: Gut
   value: 2,0
