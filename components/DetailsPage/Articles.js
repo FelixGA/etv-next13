@@ -6,9 +6,9 @@ import { MDXRemote } from "next-mdx-remote";
 const Articles = ({ carItem, getMarkdownContext }) => {
   return (
     <>
-      <div className={styles.mdxstyles}>
+      {/* <div className={styles.mdxstyles}>
         <MDXRemote {...getMarkdownContext} />
-      </div>
+      </div> */}
       {/* <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
         <div className=" lg:w-1/3 w-full m-auto relative bg-red-500 ">
           <Image
