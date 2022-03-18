@@ -37,7 +37,7 @@ function FilterItemDesktop({ item }) {
           });
         }}
       >
-        <div className="flex flex-row justify-between border-b py-4 flex-1 bg-white  ">
+        <div className="flex flex-row justify-between border-b  py-4 flex-1 bg-white  ">
           <div className="flex flex-row pl-4  ">
             <div className="w-6 h-6 ml-4 ">
               <Image
@@ -98,7 +98,7 @@ function FilterItemDesktop({ item }) {
                   });
                 }}
                 key={index}
-                className="mt-4 flex cursor-pointer py-2 "
+                className="mt-4 flex cursor-pointer py-2 last-of-type:pb-4 last-of-type:shadow-sm"
               >
                 <FilterCheckbox
                   checkbox={checkbox}

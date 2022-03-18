@@ -6,8 +6,8 @@ import Image from "next/image";
 const BasicInfo = ({ carItem, descriptionSize }) => {
   return (
     <div className="w-full flex flex-col lg:flex-row lg:pt-12  p-4  lg:px-24">
-      <div className=" w-full lg:w-1/2 flex flex-col justify-end">
-        <div className="lg:w-64  pb-8">
+      <div className=" w-full lg:w-1/2 flex flex-col justify-start">
+        <div className="lg:w-64 pb-4 lg:pb-8">
           <button className="text-sm bg-white w-48 h-10 print:hidden  text-blue-darker border">
             <Link href="/comparePage">
               <a className="visited:text-blue-darker">
@@ -23,13 +23,13 @@ const BasicInfo = ({ carItem, descriptionSize }) => {
           height={140}
           layout="responsive"
           objectFit="cover"
-          className="rounded-l-lg"
+          className="rounded-lg lg:rounded-none lg:rounded-l-lg"
         />
       </div>
-      <div className="flex flex-col lg:w-1/2 ">
+      <div className="flex flex-col lg:w-1/2 pt-4 sm:pt-0">
         {/* DESKTOP VERSION FOR DETAILS TABLE*/}
-        <div className="hidden lg:flex justify-center flex-col w-4/5 px-8 pb-6 ">
-          <h2 className="hidden lg:block text-4xl text-black-darkest pl-2 ">
+        <div className="hidden lg:flex justify-start flex-col px-8 pb-2 ">
+          <h2 className="hidden lg:block text-3xl text-blue-extra p-2 font-black">
             {carItem.title}
           </h2>
 
@@ -38,28 +38,28 @@ const BasicInfo = ({ carItem, descriptionSize }) => {
 
         {/* MOBILE VERSION DETAILS TABLE */}
         <div className="flex flex-col w-full lg:hidden my-4">
-          <div className="flex flex-row w-full 	lg:hidden flex-wrap">
+          <div className="flex flex-row	flex-1 lg:hidden justify-between">
             <div className="w-2/3 xs:w-3/4 flex flex-col">
-              <h2 className="w-full text-black-darkest text-2xl font-bold ">
+              <h2 className="w-full text-blue-extra text-2xl sm:text-2xl font-bold pb-2">
                 {carItem.title}
               </h2>
               <CarCardDetailsMobile carItem={carItem} />
             </div>
-            <div className="w-1/3  xs:w-1/4  md:pl-4">
+            <div className="w-28 px-2  md:px-4 ">
               <RatingBox carItem={carItem} />
             </div>
           </div>
         </div>
         {/* description */}
-        <div className="w-full text-black-darkest flex flex-col lg:px-8">
-          <h3 className="w-full text-black-darkest font-bold py-4">
+        <div className="w-full flex flex-col lg:px-8">
+          <h3 className="w-full text-blue-extra text-2xl font-bold py-2">
             Über das Fahrzeug
           </h3>
           <p
             className={
               !descriptionSize
                 ? "h-auto"
-                : `text-ellipsis overflow-hidden leading-7 h-auto `
+                : `text-ellipsis overflow-hidden leading-7 h-auto font-black`
             }
           >
             {carItem?.description}

@@ -28,38 +28,27 @@ const Header = () => {
   return (
     <div className="relative print:hidden ">
       <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-20 sm:h-24 w-full 2xl:px-40">
-        <div
-          className="flex flex-row pl-0 sm:pl-4 cursor-pointer"
-          onClick={() => {
-            dispatch({ type: "category", data: [] });
-            dispatch({ type: "rangeLithium", data: [] });
-            dispatch({ type: "loadingWeight", data: [] });
-            dispatch({ type: "price", data: [] });
-          }}
-        >
-          <Link href={`/`} passHref>
-            <div className="flex flex-row pl-0">
-              <div className="logo-container mt-2 w-20 ">
-                <Image
-                  src="/images/etv-logo-final-white.png"
-                  width={80}
-                  height={60}
-                  className="logo"
-                  objectFit="cover"
-                  layout="responsive"
-                />
-              </div>
-              <div className=" items-center hidden sm:flex">
-                <p className="text-white text-xs ">
-                  ELEKTROTRANSPORTER
-                  <br />
-                  VERGLEICH
-                </p>
-              </div>
+        <Link href={`/`} passHref>
+          <div className="flex flex-row pl-2 sm:pl-4 cursor-pointer">
+            <div className="logo-container mt-2 w-20 xl:w-28 ">
+              <Image
+                src="/images/etv-logo-final-white.png"
+                width={80}
+                height={60}
+                className="logo"
+                objectFit="cover"
+                layout="responsive"
+              />
             </div>
-          </Link>
-        </div>
-
+            <div className=" items-center hidden sm:flex">
+              <p className="text-white text-xs md:text-sm">
+                ELEKTROTRANSPORTER
+                <br />
+                VERGLEICH
+              </p>
+            </div>
+          </div>
+        </Link>
         <div className="hidden lg:block w-[50%]">
           <Nav />
         </div>

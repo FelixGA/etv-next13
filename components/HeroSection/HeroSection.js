@@ -108,9 +108,10 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
           />
         </div>
       </div>
-      <div className="hero-section-container m-4 lg:w-3/4 lg:m-auto">
-        <div className="main-heading-container flex flex-col xs:flex-row justify-evenly lg:text-xl flex-1 relative">
-          <div className=" sm:p-8 w-3/4 xs:w-96 m-auto xs:m-0">
+      <div className="hero-section-container m-4 mt-0 lg:w-3/4 lg:m-auto">
+        <div className="main-heading-container flex flex-col xs:flex-row justify-between lg:text-xl flex-1 relative">
+          {/* IMAGE */}
+          <div className=" sm:p-8 w-3/5 xs:w-96 m-auto xs:m-0">
             <Image
               className="scale-75 sm:scale-90"
               src="/images/siegel2.png"
@@ -120,11 +121,12 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
               layout="responsive"
             />
           </div>
-          <div className="main-heading-text lg:flex lg:flex-col lg:justify-evenly pb-8">
-            <h1 className="text-2xl lg:text-3xl pl-4 md:pt-8">
+          {/* TITLE AND DESC */}
+          <div className="main-heading-text lg:flex lg:flex-col lg:justify-evenly 2xl:mr-48 py-0 xs:py-4 pb-2">
+            <h1 className="text-2xl lg:text-3xl xl:text-4xl md:pt-8 text-center sm:text-left pb-4">
               {getContent.title}
             </h1>
-            <div className="text-grey-darker text-2xl lg:text-3xl pl-4">
+            <div className="text-grey-darker text-xl sm:text-2xl lg:text-3xl text-center sm:text-left">
               <MDXRemote {...getMarkdownContext.header} />
             </div>
 
@@ -135,6 +137,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
             </p>
           </div>
         </div>
+        {/* COMPARE TOOL */}
         <div className="lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border border-blue-dark relative bottom-0 xl:bottom-6">
           <h2 className="text-blue-dark font-bold pt-2 pl-2 lg:hidden ">
             {getContent.content[1].name}
