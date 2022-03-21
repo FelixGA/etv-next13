@@ -109,9 +109,9 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
         </div>
       </div>
       <div className="hero-section-container m-4 mt-0 lg:w-3/4 lg:m-auto">
-        <div className="main-heading-container flex flex-col xs:flex-row justify-between lg:text-xl flex-1 relative">
+        <div className="main-heading-container flex justify-center lg:text-xl flex-1 relative">
           {/* IMAGE */}
-          <div className=" sm:p-8 w-3/5 xs:w-96 m-auto xs:m-0">
+          <div className="hidden sm:block sm:p-8 w-3/5 sm:w-80 m-auto xs:m-0 ">
             <Image
               className="scale-75 sm:scale-90"
               src="/images/siegel2.png"
@@ -122,97 +122,97 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
             />
           </div>
           {/* TITLE AND DESC */}
-          <div className="main-heading-text lg:flex lg:flex-col lg:justify-evenly 2xl:mr-48 py-0 xs:py-4 pb-2">
-            <h1 className="text-2xl lg:text-3xl xl:text-4xl md:pt-8 text-center sm:text-left pb-4">
+          <div className="main-heading-text lg:flex lg:flex-col lg:justify-evenly  py-2 sm:py-10 pb-2 ">
+            <h1 className="text-2xl lg:text-3xl xl:text-4xl pt-4 text-center  pb-4">
               {getContent.title}
             </h1>
-            <div className="text-grey-darker text-xl sm:text-2xl lg:text-3xl text-center sm:text-left">
+            <div className="text-grey-darker text-xl sm:text-2xl lg:text-3xl text-center pb-4">
               <MDXRemote {...getMarkdownContext.header} />
             </div>
 
-            <p className="hidden lg:flex justify-between">
-              <span className="text-blue-extra font-bold pl-3 text-xl xl:text-2xl">
-                {getContent.content[0].details}
-              </span>
+            <p className="text-blue-extra font-bold pl-3 text-lg xl:text-2xl text-center">
+              {getContent.content[0].details}
             </p>
           </div>
         </div>
         {/* COMPARE TOOL */}
-        <div className="lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border border-blue-dark relative bottom-0 xl:bottom-6">
-          <h2 className="text-blue-dark font-bold pt-2 pl-2 lg:hidden ">
-            {getContent.content[1].name}
-          </h2>
+        <div className="lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border border-blue-dark relative top-2 md:top-10 lg:top-6 bottom-0 xl:bottom-6 pt-4 pb-3">
+          {/* comaprison-input-container */}
+          <div className="comaprison-input-container mx-2 lg:items-center lg:flex lg:flex-row lg:justify-evenly lg:flex-1 ">
+            {/* PRICE AND RANGE */}
 
-          <div className="comaprison-input-container m-2 lg:items-center lg:flex lg:flex-row lg:justify-between lg:flex-1">
-            <div className="flex lg:flex-row flex-col lg:w-1/2 justify-around items-start lg:items-center flex-wrap">
-              <div className="h-14 lg:w-68  w-full pt-2 shadow-angelos1 text-base rounded-sm bg-white lg:w-[14vw]">
-                <label className=" flex flex-row justify-between px-2 text-left">
-                  {getContent.content[1].markdown.split(", ")[0]}
-                  <div className=" relative top-6">▼</div>
-                </label>
-                <div className=" m-1">
-                  <select
-                    className="tracking-wider p-4 relative bottom-6 w-full
+            <div className="h-14 lg:w-68  w-full pt-2 shadow-angelos1 text-base rounded-sm bg-white lg:w-[14vw]">
+              <label className=" flex flex-row justify-between px-2 text-left">
+                {getContent.content[1].markdown.split(", ")[0]}
+                <div className=" relative top-6">▼</div>
+              </label>
+              <div className=" m-1">
+                <select
+                  className="tracking-wider p-4 relative bottom-6 w-full
                text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
-                    id="rangeLithium"
-                    onChange={(e) => {
-                      setChooseRange(e.target.value);
-                    }}
-                  >
-                    {details[1].options.map((option) => (
-                      <option key={option.id} value={option.value}>
-                        {option.name}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-              <div className="h-14 lg:w-68 w-full my-4 pt-2 shadow-angelos1 text-base rounded-sm bg-white lg:w-[14vw]	tracking-wide">
-                <label className="px-2 flex flex-row justify-between text-left">
-                  {getContent.content[1].markdown.split(", ")[1]}
-                  <div className=" relative top-6">▼</div>
-                </label>
-                <div className=" m-1">
-                  <select
-                    className="tracking-wider p-4 relative bottom-6 w-full text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
-                    id="price"
-                    onChange={(e) => {
-                      setChoosePrice(e.target.value);
-                    }}
-                  >
-                    {details[0].options.map((option) => (
-                      <option key={option.id} value={option.value}>
-                        {option.name} €
-                      </option>
-                    ))}
-                  </select>
-                </div>
+                  id="rangeLithium"
+                  onChange={(e) => {
+                    setChooseRange(e.target.value);
+                  }}
+                >
+                  {details[1].options.map((option) => (
+                    <option key={option.id} value={option.value}>
+                      {option.name}
+                    </option>
+                  ))}
+                </select>
               </div>
             </div>
-            <span className="flex flex-1 lg:w-1/2 lg:justify-around justify-between items-start lg:items-center flex-wrap ">
-              <div className="w-2/5 h-14 pt-2 shadow-angelos1 mb-6 lg:mb-0 lg:w-[14vw] text-base rounded-sm bg-white tracking-wide">
-                <label className="px-2 flex flex-row justify-between text-left">
-                  {getContent.content[1].markdown.split(", ")[2]}
-                  <div className=" relative right-0 top-6">▼</div>
-                </label>
-                <div className=" mt-1 px-1">
-                  <select
-                    className="tracking-wider p-4 relative bottom-6 w-full text-base font-bold appearance-none bg-transparent border-none pl-1 m-0  text-blue-dark"
-                    id="loadingWeight"
-                    onChange={(e) => {
-                      setChooseWeight(e.target.value);
-                    }}
-                  >
-                    {details[2].options.map((option) => (
-                      <option key={option.id} value={option.value}>
-                        {option.name}
-                      </option>
-                    ))}
-                  </select>
-                </div>
+            <div className="h-14 lg:w-68 w-full my-4 pt-2 shadow-angelos1 text-base rounded-sm bg-white lg:w-[14vw]	tracking-wide">
+              <label className="px-2 flex flex-row justify-between text-left">
+                {getContent.content[1].markdown.split(", ")[1]}
+                <div className=" relative top-6">▼</div>
+              </label>
+              <div className=" m-1">
+                <select
+                  className="tracking-wider p-4 relative bottom-6 w-full text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
+                  id="price"
+                  onChange={(e) => {
+                    setChoosePrice(e.target.value);
+                  }}
+                >
+                  {details[0].options.map((option) => (
+                    <option key={option.id} value={option.value}>
+                      {option.name} €
+                    </option>
+                  ))}
+                </select>
               </div>
+            </div>
+
+            {/* Weight and button */}
+
+            {/* weight */}
+            <div className="h-14 lg:w-[14vw] w-full my-4 pt-2 shadow-angelos1 text-base rounded-sm bg-white ">
+              <label className="px-2 flex flex-row justify-between text-left">
+                {getContent.content[1].markdown.split(", ")[2]}
+                <div className=" relative top-6">▼</div>
+              </label>
+              <div className=" m-1">
+                <select
+                  className="tracking-wider p-4 relative bottom-6 w-full text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0"
+                  id="rangeLithium"
+                  onChange={(e) => {
+                    setChooseWeight(e.target.value);
+                  }}
+                >
+                  {details[2].options.map((option) => (
+                    <option key={option.id} value={option.value}>
+                      {option.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+            {/* BUTTON */}
+            <div className="flex lg:justify-around justify-between items-start lg:items-center flex-wrap w-full lg:w-[14vw]">
               <button
-                className="bg-blue-dark w-2/5 hover:bg-blue-light text-white font-bold px-2 text-sm rounded-sm lg:w-[14vw] h-14 "
+                className="bg-blue-dark w-full hover:bg-blue-light text-white font-bold px-2 text-sm rounded-lg h-14 "
                 onClick={() => {
                   dispatch({
                     type: "price",
@@ -244,15 +244,15 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
                 }}
               >
                 <Link href="/comparePage">
-                  <a className="py-14">Jetzt vergleichen</a>
+                  <a className="py-10">Jetzt vergleichen</a>
                 </Link>
               </button>
-            </span>
+            </div>
           </div>
         </div>
-        <div className="icons-container flex justify-around flex-wrap pt-2">
+        <div className="icons-container flex justify-around flex-wrap pt-14 lg:pt-10">
           {logos.map((logo, index) => (
-            <i className="m-2 lg:my-20 lg:scale-125" key={index}>
+            <i className="m-2 lg:my-10 lg:scale-125" key={index}>
               <Image src={logo.src} alt={logo.alt} width={48} height={48} />
             </i>
           ))}

@@ -30,7 +30,7 @@ const Header = () => {
       <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-20 sm:h-24 w-full 2xl:px-40">
         <Link href={`/`} passHref>
           <div className="flex flex-row pl-2 sm:pl-4 cursor-pointer">
-            <div className="logo-container mt-2 w-20 xl:w-28 ">
+            <div className="logo-container mt-2 w-16 xl:w-28 ">
               <Image
                 src="/images/etv-logo-final-white.png"
                 width={80}
@@ -40,8 +40,8 @@ const Header = () => {
                 layout="responsive"
               />
             </div>
-            <div className=" items-center hidden sm:flex">
-              <p className="text-white text-xs md:text-sm">
+            <div className=" items-center flex pl-2">
+              <p className="text-white text-xxs md:text-sm">
                 ELEKTROTRANSPORTER
                 <br />
                 VERGLEICH
@@ -70,12 +70,12 @@ const Header = () => {
 
         <div
           className={
-            router.pathname !== "/caradvisor" ? "pr-18 lg:pr-4" : "hidden"
+            router.pathname !== "/caradvisor" ? "pr-18 lg:pr-6" : "hidden"
           }
         >
           <Link href="/caradvisor" passHref>
             <a>
-              <div className="bg-yellow-light  hover:bg-orange-lighter text-grey-darker font-bold flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer">
+              <div className="bg-yellow-light  hover:bg-orange-lighter text-grey-darker font-bold hidden sm:flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer">
                 <div className="w-6 xs:w-8 pl-2 ">
                   <Image
                     src="/images/iconStyle2x.png"
@@ -95,7 +95,11 @@ const Header = () => {
         onClick={() => {
           setIsActive(!isActive);
         }}
-        className="ham-menu-container absolute right-5 sm:top-9 top-7 lg:hidden z-40 "
+        className={
+          router.pathname == "/caradvisor"
+            ? "hidden"
+            : "ham-menu-container absolute right-4 sm:top-9 top-7 lg:hidden z-40 "
+        }
       >
         <div className="menu">
           <div className="line"></div>
