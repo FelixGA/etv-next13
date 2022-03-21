@@ -2,7 +2,16 @@
 title: ARI 345 Pritsche
 name: ari-345-pritsche
 price: 6995
-relatedBlogs: nur beispiel
+relatedBlogs:
+  title: " Konzept & Fahrzeugvarianten"
+  content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
+    Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den erhältlichen
+    Individual-Aufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer,
+    Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI
+    458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert.
+    Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
+    für große Strecken."
+  image: /images/ari-458-food-truck-5-.jpg
 description: Der ARI 345 Pritsche ist ein dreirädriges Lastenmoped mit offener
   Fahrerkabine und einer kippbaren Pickup-Ladefläche. Das Fahrzeug ist in drei
   Größen mit bis zu 1,55 Meter Ladelänge und rund 1,8 m² Ladefläche erhältlich.

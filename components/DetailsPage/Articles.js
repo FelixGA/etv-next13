@@ -9,7 +9,7 @@ const Articles = ({ carItem, getMarkdownContext }) => {
       <div
       // className={styles.mdxstyles}
       >
-        <MDXRemote {...getMarkdownContext} />
+        {/* <MDXRemote {...getMarkdownContext} /> */}
       </div>
       {/* <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
         <div className=" lg:w-1/3 w-full m-auto relative bg-red-500 ">
