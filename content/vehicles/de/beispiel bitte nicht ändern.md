@@ -1,5 +1,5 @@
 ---
-title: beispiel bitte nicht ändern
+title: beispiel ange
 name: beispiel bitte nicht ändern
 price: 80000
 relatedBlogs: beispiel bitte nicht ändern
