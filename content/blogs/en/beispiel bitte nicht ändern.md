@@ -1,25 +1,6 @@
 ---
-title: nur beispiel
-slug: beispiel bitte nicht ändern
-category: haeufig_gestellte_fragen
-vehicle:
-  key: gut
-  value: 4,0
 publishedAt: 03/17/2022
 src: /images/anschluss@2x.png
-description: Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e
-  mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen
-  Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.
-contentHeading:
-  title: " Konzept & Fahrzeugvarianten"
-  content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
-    Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den erhältlichen
-    Individual-Aufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer,
-    Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI
-    458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert.
-    Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
-    für große Strecken."
-  image: /images/ari-458-food-truck-5-.jpg
 contentText:
   title: Laderaum & Flexibilität (⅘)
   content: >-
@@ -45,6 +26,20 @@ contentText:
 
     Die Nutzlast der 458er-Reihe liegt bei rund 530 Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450 Kilogramm möglich.
   image: /images/Arrow-right-512.png
+contentHeading:
+  title: " Konzept & Fahrzeugvarianten"
+  content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
+    Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den erhältlichen
+    Individual-Aufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer,
+    Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI
+    458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert.
+    Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
+    für große Strecken."
+  image: /images/ari-458-food-truck-5-.jpg
+slug: beispiel bitte nicht ändern
+vehicle:
+  key: gut
+  value: 4,0
 contentText2:
   content: >-
     Den Antrieb des ARI 458 übernimmt ein Wechselstrommotor mit einer Kraft von
@@ -139,6 +134,11 @@ contentText7:
     ## **Gesamtbewertung:**
 
     **4,4**
+title: nur beispiel
+category: referenzen
+description: Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e
+  mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen
+  Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.
 ---
 
 
