@@ -3,16 +3,14 @@ title: Axiam-pro-Etruck-pritsche
 name: axiam-pro-etruck-pritsche
 price: 19290
 relatedBlogs: beispiel
-description: >-
-  Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen”
-  mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein
-  leichtes Nutzfahrzeug im Programm, welches mit Dieselmotoren (“D Truck”) sowie
-  Elektroantrieb (“e-Truck”) erhältlich ist. Die hier vorgestellte
-  Elektro-Version gehört zur EG-Fahrzeugkategorie L6e, welche Leichtfahrzeuge
-  bis zu einem Leergewicht von 425 Kilogramm (ohne Akkus) bezeichnet.
-
-
-  Der Elektrotransporter  in zwei Aufbautypen verfügbar: als Pritsche sowie mit Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem Gelände konzipiert.
+description: "Aixam ist ein französischer Hersteller von sogenannten
+  “Leichtkraftfahrzeugen” mit einem Vertrieb in Deutschland. Mit dem Aixam Pro
+  hat das Unternehmen ein leichtes Nutzfahrzeug im Programm, welches mit
+  Dieselmotoren (“D Truck”) sowie Elektroantrieb (“e-Truck”) erhältlich ist. Der
+  Elektrotransporter ist in zwei Aufbautypen verfügbar: als Pritsche sowie mit
+  Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell
+  für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem
+  Gelände konzipiert."
 src: /images/aixam-pro-pritsche.jpg
 category: Pritsche
 typeClass: L6E
@@ -29,38 +27,38 @@ maxSpeed:
   value: 45
   baseUnit: km/h
 range230V:
-  key: Reichweite SLA Blei
+  key: Reichweite SLA Akku
   value: 0
   baseUnit: km
   maxValue: 0
 rangeLithium:
-  key: "Reichweite "
+  key: Reichweite Lithium Akku
   value: 95
   baseUnit: km
-  maxValue: 0
+  maxValue: 95
 chargingTime230V:
-  key: Ladezeit
+  key: Ladezeit 230-V-Steckdose
   value: 0
   baseUnit: keine Angabe
 chargingTimeLithium:
-  key: Ladezeit typ2
+  key: Ladezeit Typ2
   value: 0
   baseUnit: keine Angabe
 chargingTimeFast:
-  key: Schnellladung
+  key: Schnellladezeit
   value: 0
   baseUnit: keine Angabe
 batteryCapacityBlei:
-  key: Kapazität
+  key: Kapazität SLA Akku
   value: "0"
-  baseUnit: nicht verfügbar
+  baseUnit: keine Angabe
 batteryCapacityLithium:
-  key: Kapazität
+  key: Kapazität Lithium Akku
   value: 7,26
   baseUnit: kWh
 batteryIncluded:
   value: ja
-  key: Batterie Verfügbarkeit
+  key: Batterie inclusive
 consumption:
   key: "Verbrauch "
   value: "0"
@@ -78,30 +76,30 @@ rating:
 guarantee:
   key: Garantie Fahrzeug
   value: 0
-  baseUnit: Keine Angabe
+  baseUnit: keine Angabe
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
-  key: Förderungsmöglichkeiten
+  key: Förderhöhe
   value: 0
   baseUnit: keine Angabe
 batteryGuarantee:
-  key: Batterie-Garantie
+  key: Garantie Akku
   value: 0
-  baseUnit: Keine Angabe
+  baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
   value: 750
   baseUnit: mm
 loadingVolumeTotal:
-  key: bitte auffuellen
-  value: bitte auffuellen
-  baseUnit: bitte auffuellen
+  key: Ladevolumen
+  value: 0,61
+  baseUnit: m3
 loadingArea:
-  key: bitte auffuellen
-  value: bitte auffuellen
-  baseUnit: bitte auffuellen
+  key: Ladefläche
+  value: 2,04
+  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -112,9 +110,9 @@ carSizes:
   valuelength: 2911
   valueheight: 1750
   valuewheelbase: 2252
-  key: Fahrzeug Maße
+  key: Fahrzeugmaße
 loadingVolume:
-  key: Laderaum Maße
+  key: Laderaum-Maße
   height: Höhe
   valueheight: 300
   width: Breite
