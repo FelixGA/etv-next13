@@ -2,6 +2,7 @@
 title: Axiam-Pro eTruck-flatbed truck
 name: axiam-pro-etruck-pritsche
 price: 19290
+relatedBlogs: beispiel
 description: bhkvmnxyfgdfl.h
 src: /images/aixam-pro-pritsche.jpg
 category: Pritsche

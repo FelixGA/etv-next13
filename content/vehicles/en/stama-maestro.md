@@ -2,6 +2,7 @@
 title: Stama Maestro
 name: stama-maestro
 price: 34250
+relatedBlogs: beispiel
 description: The electric transporter "Stama Meastro" came onto the market in
   2019 and is the largest vehicle of the danish manifacturer GMR.
 src: /images/stama-maestro-front-1024x683.jpg

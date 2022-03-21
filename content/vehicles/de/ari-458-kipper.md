@@ -2,7 +2,7 @@
 title: ARI 458 Kipper
 name: ari-458-kipper
 price: 16100
-relatedBlogs: beispiel
+relatedBlogs: nur beispiel
 description: >-
   Der ARI 458 Kipper bietet eine offene Ladefläche mit Seitenwänden, welche in
   den beiden Größen jeweils 1,56 m² bzw. 1,86 m² beträgt. Für die Sicherung der

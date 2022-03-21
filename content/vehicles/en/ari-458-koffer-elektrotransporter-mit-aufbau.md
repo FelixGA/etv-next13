@@ -1,8 +1,7 @@
 ---
-title: Citroen eJumpy
-name: citroen-e-jumpy
-price: 37830
-relatedBlogs: >-
+title: ARI 458 Koffer
+relatedBlogs: ari-458-koffer-elektrischer-kleintransporter
+description: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
 
@@ -129,120 +128,118 @@ relatedBlogs: >-
   ![ARI 458 Kühlkofferaufbau im Einsatz für Drensteinfurter Tafel e.V.](/images/dsc_0729.jpg "ARI 458 mit Kühlkofferaufbau - ideal für Auslieferung von Speisen und Getränken")
 
 
-  ## Gesamtbewertung:
+
+
+  ## Gesamtbewertung: 
 
 
   4,4
-description: "Der Citroen eJumpy ist seit 2020 auf dem Markt. Der elektrische
-  Kastenwagen ist in zwei Längen erhältlich: 4,95 Meter (M) sowie 5,30 Meter
-  (XL). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75
-  kWh Kapazität."
-src: /images/citroen-ejumpy-frontansicht.jpg
-category: Kasten
-typeClass: N1
 loadingWeight:
-  key: Loading Weight
-  value: 928
+  key: Nutzlast
+  value: 531
   baseUnit: kg
 curbweight:
-  key: Curb Weight
-  value: 1937
+  key: Leergewicht
+  value: 604
   baseUnit: kg
 maxSpeed:
-  key: Maximum Speed
-  value: 130
+  key: km/h
+  value: 80
   baseUnit: km/h
 range230V:
-  key: Range SLA Battery
-  value: 0
-  baseUnit: keine Angabe
+  key: Reichweite SLA Akku
+  value: 120
+  baseUnit: " km"
+  maxValue: -3
 rangeLithium:
-  value: 212
+  key: Reichweite Lithium Akku
+  value: 150
   baseUnit: km
-  key: Range Lithium Battery
+  maxValue: 495
 chargingTime230V:
-  value: 0
-  key: Charge time 230v-socket
-  baseUnit: no details availabe
-chargingTimeLithium:
-  value: 5
-  key: Charge time type2 cable
+  key: Ladezeit 230-V-Steckdose
+  value: 6
   baseUnit: h
+chargingTimeLithium:
+  key: Ladezeit Typ 2 Ladekabel
+  value: 6
+  baseUnit: St.
 chargingTimeFast:
-  value: 1
-  key: Fast charging time
+  key: Schnellladung
+  value: 2
   baseUnit: h
 batteryCapacityBlei:
+  key: Kapazität SLA Akku
   value: "-"
-  baseUnit: " keine Angabe"
-  key: Capacity SLA Battery
+  baseUnit: " "
 batteryCapacityLithium:
-  value: "50"
+  key: Kapazität Lithium Akku
+  value: "10"
   baseUnit: kWh
-  key: Capacity Lithium Battery
 batteryIncluded:
-  key: Battery included
-  value: no details available
+  value: ja
+  key: Batterie inklusive
 consumption:
-  key: Consumption
+  key: "Verbrauch "
+  value: "7,5 "
   baseUnit: kWh
-  value: 24,9
 power:
-  key: Power
-  value: min-57/max-100
+  key: Leistung
+  value: min-7,5/max-7,5
   baseUnit: kw
 seats:
-  key: Seats
-  value: 3
+  key: Sitzplätze
+  value: 2
 rating:
+  key: Gut
   value: 2,0
-  key: Good
 guarantee:
-  key: Guarantee vehicle
-  value: 0
-  baseUnit: no details available
+  key: Garantie Fahrzeug
+  value: 6
+  baseUnit: Monate
 availability:
-  key: Availability
-  value: no details available
+  key: Verfügbarkeit
+  value: 14-16 Wochen
 subsidies:
-  key: Subsidies
+  key: Förderungsmöglichkeiten
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: Battery Guarantee
-  value: 0
-  baseUnit: no details available
+  key: Garantie Akku
+  value: 48
+  baseUnit: Monate
 loadingHeight:
-  key: Loading Height
-  value: 544
+  key: Ladehöhe
+  value: 680
   baseUnit: mm
 loadingVolumeTotal:
-  value: 5,19
+  key: Ladevolumen
+  value: 1,49
   baseUnit: m3
-  key: Loading Volume
 loadingArea:
-  key: Loading Area
-  value: 3,90
+  key: Ladefläche
+  value: 1,57
   baseUnit: m2
 carSizes:
-  width: Width
-  length: Length
-  height: Height
-  wheelbase: Wheelbase
-  valuewidth: 1920
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
+  valuewidth: 1300
   baseUnit: mm
-  valuelength: 4959
-  valueheight: 1877
-  valuewheelbase: 3275
-  key: Car Sizes
+  valuelength: 3150
+  valueheight: 1685
+  valuewheelbase: 2300
+  key: Fahrzeugmaße
 loadingVolume:
-  valueheight: 1330
-  valuewidth: 1608
-  valuelength: 2410
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 950
+  width: Breite
+  valuewidth: 1190
+  valuelength: 1320
+  length: Länge
   baseUnit: mm
-  key: Loading Area Sizes
-  height: Height
-  width: "1620"
-  length: Length
 ---
-Der Citroen eJumpy ist seit 2020 auf dem Markt. Der elektrische Kastenwagen ist in zwei Längen erhältlich: 4,95 Meter (M) sowie 5,30 Meter (XL). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität.
+
+Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI Motors mit 80 km/h Höchstgeschwindigkeit.
