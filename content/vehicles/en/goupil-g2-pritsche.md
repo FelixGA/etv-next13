@@ -43,7 +43,7 @@ chargingTimeFast:
 batteryCapacityBlei:
   key: Capacity SLA Battery
   value: 5,8
-  baseUnit: " keine Angabe"
+  baseUnit: kwh
 batteryCapacityLithium:
   key: Capacity Lithium Battery
   value: 5,2/8,6
