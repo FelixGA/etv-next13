@@ -70,7 +70,7 @@ const Header = () => {
 
         <div
           className={
-            router.pathname !== "/caradvisor" ? "pr-18 lg:pr-4" : "hidden"
+            router.pathname !== "/caradvisor" ? "pr-18 lg:pr-6" : "hidden"
           }
         >
           <Link href="/caradvisor" passHref>

@@ -20,17 +20,6 @@ function MobileNav(props) {
             </a>
           </Link>
         </li>
-        {/* <li className="">
-          <Link href="/Leichttransporter">
-            <a
-              onClick={() => {
-                setIsActive(false);
-              }}
-            >
-              Leichttransporter
-            </a>
-          </Link>
-        </li> */}
         <li className="">
           <Link href="/comparePage">
             <a
@@ -40,6 +29,17 @@ function MobileNav(props) {
             >
               {" "}
               Transporter
+            </a>
+          </Link>
+        </li>
+        <li className="">
+          <Link href="/caradvisor">
+            <a
+              onClick={() => {
+                setIsActive(false);
+              }}
+            >
+              Kaufberater
             </a>
           </Link>
         </li>
