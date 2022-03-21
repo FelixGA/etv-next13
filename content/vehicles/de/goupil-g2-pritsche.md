@@ -19,7 +19,7 @@ curbweight:
 maxSpeed:
   key: km/h
   value: 30
-  baseUnit: keine Angabe
+  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 45
