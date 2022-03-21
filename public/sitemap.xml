@@ -5,37 +5,42 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/activeCompare</loc>
-        <lastmod>2022-03-15</lastmod>
+        <lastmod>2022-03-21</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/activeCompare" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/api/auth</loc>
-        <lastmod>2022-03-15</lastmod>
+        <lastmod>2022-03-21</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/api/auth" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/api/callback</loc>
-        <lastmod>2022-03-15</lastmod>
+        <lastmod>2022-03-21</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/api/callback" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/caradvisor</loc>
-        <lastmod>2022-03-15</lastmod>
+        <lastmod>2022-03-21</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/caradvisor" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/comparePage</loc>
-        <lastmod>2022-03-15</lastmod>
+        <lastmod>2022-03-21</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/comparePage" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com</loc>
-        <lastmod>2022-03-15</lastmod>
+        <lastmod>2022-03-21</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com" />
     </url>
     <url>
+        <loc>https://www.elektrotransporter-vergleich.com/magazin</loc>
+        <lastmod>2022-03-21</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin" />
+    </url>
+    <url>
         <loc>https://www.elektrotransporter-vergleich.com/transporter/[cartitle]</loc>
-        <lastmod>2022-03-15</lastmod>
+        <lastmod>2022-03-21</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/transporter/[cartitle]" />
     </url>
 </urlset>

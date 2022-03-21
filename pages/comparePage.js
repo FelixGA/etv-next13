@@ -42,7 +42,7 @@ export default function comparePage(props) {
     const getCarshighestPrice = props.vehicles
       ?.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
       .map((item) => item);
-
+    //
     // /* cᴀʀs ᴡᴇɪɢʜᴛ ғɪʟᴛᴇʀ */
     const getCarslightest = props.vehicles
       ?.sort((a, b) => b.loadingWeight.value - a.loadingWeight.value)

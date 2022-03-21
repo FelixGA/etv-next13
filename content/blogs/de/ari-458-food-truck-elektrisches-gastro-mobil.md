@@ -1,5 +1,5 @@
 ---
-title: ari-458-food-truck-elektrisches-gastro-mobil
+title: ARI 458 food truck
 slug: ari-458-food-truck-elektrisches-gastro-mobil
 youtubeLink: https://www.youtube.com/watch?v=U1z-nSHox7E
 category: referenzen
