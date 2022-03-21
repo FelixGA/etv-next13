@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: ari-motors-team/elektrotransporter-vergleich
   branch: dev
   base_url: https://preview-elektrotransporter-vergleich.vercel.app
