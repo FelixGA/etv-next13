@@ -163,7 +163,7 @@ rangeLithium:
   key: Range Lithium Akku
   value: 110
   baseUnit: km
-  maxValue: 0
+  maxValue: 110
 chargingTime230V:
   key: Charge time 230v-socket
   value: 0
@@ -174,7 +174,7 @@ chargingTimeLithium:
   baseUnit: h
 chargingTimeFast:
   key: Fast charging time
-  value: 1
+  value: 0
   baseUnit: keine Angabe
 batteryCapacityBlei:
   key: Capacitiy SLA Battery

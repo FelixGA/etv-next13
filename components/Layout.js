@@ -12,3 +12,12 @@ export default function Layout(props) {
     </>
   );
 }
+export async function getStaticProps(context) {
+  let blogs = await getContent("blogs", context.locale);
+
+  return {
+    props: {
+      blogs,
+    },
+  };
+}

@@ -19,7 +19,7 @@ curbweight:
 maxSpeed:
   key: km/h
   value: 30
-  baseUnit: keine Angabe
+  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 45
@@ -45,7 +45,7 @@ chargingTimeFast:
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: 5,8
-  baseUnit: " keine Angabe"
+  baseUnit: kwh
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: 5,2/8,6
@@ -100,7 +100,7 @@ carSizes:
   height: Höhe
   wheelbase: Radstand
   valuewidth: 1105
-  baseUnit: cm
+  baseUnit: mm
   valuelength: 3170
   valueheight: 1785
   valuewheelbase: 2215

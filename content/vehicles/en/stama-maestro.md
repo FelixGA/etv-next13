@@ -2,112 +2,125 @@
 title: Stama Maestro
 name: stama-maestro
 price: 34250
-description: The electric transporter "Stama Meastro" came onto the market in
-  2019 and is the largest vehicle of the danish manifacturer GMR.
+relatedBlogs: beispiel
+description: >-
+  Der Stama Maestro kam 2019 auf den Markt und ist das bisher größte Fahrzeug
+  des Herstellers. Außerdem ist er unter dem Namen Addax in Deutschland
+  verfügbar. Er ist mit fester oder hydraulisch kippbaren Pritsche verfügbar,
+  welche entweder mit klappbaren Seitenwänden oder mit einem hohen Gitteraufbau
+  versehen ist.
+
+
+  Technisch gibt es den Stama Maestro in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und als MT15 mit  72 Volt-Motor angetrieben. Beide Versionen sind mit Lithium-Ionen-Akkus zur Energiespeicherung ausgestattet, die eine Kapazität von 10,2 kWh bzw. 14,4 kWh besitzen.
+
+
+  Der Stama Maestro besitzt eine EU-Typengenehmigung und kann somit in allen EU-Staaten auf öffentlichen Straßen bewegt werden.
 src: /images/stama-maestro-front-1024x683.jpg
 loadingWeight:
-  key: Loading Weight
+  key: Nutzlast
   value: 1000
   baseUnit: kg
 curbweight:
-  key: Curb Weight
+  key: Leergewicht
   value: 600
   baseUnit: kg
 maxSpeed:
-  key: Maximum Speed
+  key: km/h
   value: 70
   baseUnit: km/h
 range230V:
+  key: Reichweite SLA Akku
   value: 0
   baseUnit: keine Angabe
-  key: Range SLA Battery
+  maxValue: 0
 rangeLithium:
+  key: Reichweite Lithium Akku
   value: 110
   baseUnit: km
-  key: Range Lithium Battery
+  maxValue: 340
 chargingTime230V:
+  key: Ladezeit 230-V-Steckdose
   value: 0
-  key: Charge Time 230v-socket
-  baseUnit: No details available
-chargingTimeLithium:
-  value: 0
-  key: Charge time type2 cable
-  baseUnit: no details available
-chargingTimeFast:
-  value: 0
-  key: Fast charging time
-  baseUnit: no details available
-batteryCapacityBlei:
-  value: "-"
   baseUnit: keine Angabe
-  key: Capacity SLA Battery
+chargingTimeLithium:
+  key: Ladezeit Typ2-Ladekabel
+  value: 0
+  baseUnit: keine Angabe
+chargingTimeFast:
+  key: Schnellladezeit
+  value: 0
+  baseUnit: keine Angabe
+batteryCapacityBlei:
+  key: Kapazität SLA Akku
+  value: "0"
+  baseUnit: keine Angabe
 batteryCapacityLithium:
+  key: Kapazität Lithium Akku
   value: 14,4
   baseUnit: kwh
-  key: Capacity Lithium Battery
 batteryIncluded:
-  key: Battery included
-  value: No details available
+  value: keine Angabe
+  key: Batterie inklusive
 consumption:
-  key: Consumption
+  key: "Verbrauch "
+  value: "0"
   baseUnit: keine Angabe
-  value: "-"
 power:
-  key: Power
+  key: "Leistung "
   value: min-8/max-9
   baseUnit: kw
 seats:
-  key: Seats
+  key: Sitzplätze
   value: 2
 rating:
+  key: Gut
   value: 2,0
-  key: Good
 guarantee:
-  key: Guarantee Vehicle
-  value: ""
-  baseUnit: No details available
-availability:
-  key: Availability
-  value: No details available
-subsidies:
-  key: Subsidies
-  value: ""
-  baseUnit: No details available
-batteryGuarantee:
-  key: Battery-Guarantee
+  key: Garantie Fahrzeug
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
+availability:
+  key: Verfügbarkeit
+  value: keine Angabe
+subsidies:
+  key: Förderhöhe
+  value: 0
+  baseUnit: keine Angabe
+batteryGuarantee:
+  key: Garantie Akku
+  value: 0
+  baseUnit: keine Angabe
 loadingHeight:
-  key: Loading Height
+  key: Ladehöhe
   value: 780
   baseUnit: mm
 loadingVolumeTotal:
+  key: Ladevolumen
   value: 0,00
   baseUnit: m3
-  key: Loading Volume
 loadingArea:
-  key: Loadingg Area
+  key: Ladefläche
   value: 3,23
   baseUnit: m2
 carSizes:
-  width: Width
-  length: Length
-  height: Height
-  wheelbase: Wheelbase
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
   valuewidth: 1500
   baseUnit: mm
   valuelength: 3590
   valueheight: 2050
   valuewheelbase: 2027
-  key: Car Sizes
+  key: Fahrzeugmaße
 loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 0
+  width: Breite
   valuewidth: 1500
   valuelength: 2150
+  length: Länge
   baseUnit: mm
-  key: Loading Area Sizes
-  height: Height
-  width: Width
-  length: Length
 ---
-The "Stama maestro" is an electric transporter of the danish manufacturer GMR and was designed for maintenance and cleaning of parks, streets and plants.
+Der Stama Maestro, ein Elektrotransporter des dänischen Herstellers GMR, ist für die Pflege und Reinigung von Parks, Straßen und Anlagen konzipiert.

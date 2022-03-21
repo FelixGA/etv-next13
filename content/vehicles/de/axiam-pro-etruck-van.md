@@ -2,7 +2,7 @@
 title: Axiam-pro-Etruck-van
 name: axiam-pro-etruck-van
 price: 19990
-relatedBlogs: beispiel  bitte nicht ändern
+relatedBlogs: nur beispiel
 description: >-
   Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen”
   mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein
@@ -34,10 +34,10 @@ range230V:
   baseUnit: km
   maxValue: 0
 rangeLithium:
-  key: "Reichweite "
+  key: Reichweite Lithium Akku
   value: 95
   baseUnit: km
-  maxValue: 0
+  maxValue: 95
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
@@ -53,7 +53,7 @@ chargingTimeFast:
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "0"
-  baseUnit: "-"
+  baseUnit: keine Angabe
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: 7,26
@@ -63,7 +63,7 @@ batteryIncluded:
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "-"
+  value: "0"
   baseUnit: keine Angabe
 power:
   key: Leistung
@@ -78,7 +78,7 @@ rating:
 guarantee:
   key: Garantie Fahrzeug
   value: 0
-  baseUnit: Keine Angabe
+  baseUnit: keine Angabe
 availability:
   key: Verfügbarkeit
   value: keine Angabe
@@ -87,7 +87,7 @@ subsidies:
   value: 0
   baseUnit: keine Angabe
 batteryGuarantee:
-  key: Batterie-Garantie
+  key: Garantie Akku
   value: 0
   baseUnit: keine Angabe
 loadingHeight:

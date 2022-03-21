@@ -1,114 +1,125 @@
 ---
-title: Axiam-pro-ETRUCK-Van
+title: Axiam-pro-Etruck-van
 name: axiam-pro-etruck-van
 price: 19990
-relatedBlogs: beispiel
-description: Aixam ist ein französischer Hersteller von sogenannten
-  “Leichtkraftfahrzeugen” mit einem Vertrieb in Deutschland.
+relatedBlogs: beispiel  bitte nicht ändern
+description: >-
+  Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen”
+  mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein
+  leichtes Nutzfahrzeug im Programm, welches mit Dieselmotoren (“D Truck”) sowie
+  Elektroantrieb (“e-Truck”) erhältlich ist. Die hier vorgestellte
+  Elektro-Version gehört zur EG-Fahrzeugkategorie L6e, welche Leichtfahrzeuge
+  bis zu einem Leergewicht von 425 Kilogramm (ohne Akkus) bezeichnet.
+
+
+  Der Elektrotransporter  in zwei Aufbautypen verfügbar: als Pritsche sowie mit Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem Gelände konzipiert.
 category: Koffer
 loadingWeight:
-  key: Loading Weight
+  key: Nutzlast
   value: 327
   baseUnit: kg
 curbweight:
-  key: Curb Weight
+  key: Leergewicht
   value: 440
   baseUnit: kg
 maxSpeed:
-  key: Maximum Speed
+  key: km/h
   value: 45
   baseUnit: km/h
 range230V:
+  key: Reichweite SLA Akku
   value: 0
   baseUnit: km
-  key: Range SLA Battery
+  maxValue: 0
 rangeLithium:
-  key: Range Lithium Battery
+  key: Reichweite Lithium Akku
   value: 95
   baseUnit: km
+  maxValue: 95
 chargingTime230V:
+  key: Ladezeit 230-V-Steckdose
   value: 0
-  key: Charge Time 230v-socket
-  baseUnit: no details available
+  baseUnit: keine Angabe
 chargingTimeLithium:
-  key: Charge time type 2 cable
+  key: Ladezeit Typ2-Kabel
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 chargingTimeFast:
+  key: Schnellladezeit
   value: 0
-  key: Fast charging
-  baseUnit: no details available
+  baseUnit: keine Angabe
 batteryCapacityBlei:
+  key: Kapazität SLA Akku
   value: "0"
-  baseUnit: "-"
-  key: Capacity SLA Battery
+  baseUnit: keine Angabe
 batteryCapacityLithium:
-  key: Capacity Lithium Battery
+  key: Kapazität Lithium Akku
   value: 7,26
   baseUnit: kWh
 batteryIncluded:
-  key: Battery included
-  value: yes
+  value: ja
+  key: Batterie inklusive
 consumption:
-  key: Consumption
+  key: "Verbrauch "
+  value: "0"
   baseUnit: keine Angabe
-  value: "-"
 power:
-  key: Power
+  key: Leistung
   value: min-6/max-6
   baseUnit: kw
 seats:
-  key: Seats
+  key: Sitzplätze
   value: 2
 rating:
+  key: Befriedigend
   value: 3,0
-  key: Satisfactory
 guarantee:
-  key: Guarantee vehicle
-  baseUnit: no details available
+  key: Garantie Fahrzeug
   value: 0
+  baseUnit: keine Angabe
 availability:
-  key: Availability
-  value: no details available
+  key: Verfügbarkeit
+  value: keine Angabe
 subsidies:
-  key: Subsidies
+  key: Förderhöhe
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: Battery-Guarantee
+  key: Garantie Akku
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 loadingHeight:
-  key: Loading Height
+  key: Ladehöhe
   value: 370
   baseUnit: mm
 loadingVolumeTotal:
+  key: Ladevolumen
   value: 2,77
   baseUnit: m3
-  key: Loading Volume
 loadingArea:
+  key: Ladefläche
   value: 1,98
   baseUnit: m2
-  key: Loading Area
 carSizes:
-  width: Width
-  length: Length
-  height: Height
-  wheelbase: Wheelbase
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
   valuewidth: 1500
   baseUnit: mm
   valuelength: 3000
   valueheight: 1750
   valuewheelbase: 2252
-  key: Car Sizes
+  key: Fahrzeugmaße
 loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 1400
+  width: Breite
   valuewidth: 1465
   valuelength: 1350
+  length: Länge
   baseUnit: mm
-  key: Loading Area Sizes
-  height: Height
-  width: Width
-  length: Length
 ---
-Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen” mit einem Vertrieb in Deutschland.
+
+Der Axiam-Pro eTruck ist ein Elektrotransporter mit 80 Kilometer Reichweite und 45 km/h Höchstgeschwindigkeit.

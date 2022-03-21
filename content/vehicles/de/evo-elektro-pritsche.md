@@ -100,7 +100,7 @@ carSizes:
   height: Höhe
   wheelbase: Radstand
   valuewidth: 1560
-  baseUnit: keine Angabe
+  baseUnit: mm
   valuelength: 4280
   valueheight: 1910
   valuewheelbase: 2760

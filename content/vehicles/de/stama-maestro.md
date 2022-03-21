@@ -2,7 +2,7 @@
 title: Stama Maestro
 name: stama-maestro
 price: 34250
-relatedBlogs: beispiel
+relatedBlogs: nur beispiel
 description: >-
   Der Stama Maestro kam 2019 auf den Markt und ist das bisher größte Fahrzeug
   des Herstellers. Außerdem ist er unter dem Namen Addax in Deutschland
@@ -54,7 +54,7 @@ chargingTimeFast:
   baseUnit: keine Angabe
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: "-"
+  value: "0"
   baseUnit: keine Angabe
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
@@ -65,7 +65,7 @@ batteryIncluded:
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "-"
+  value: "0"
   baseUnit: keine Angabe
 power:
   key: "Leistung "

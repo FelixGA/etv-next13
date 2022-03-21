@@ -2,6 +2,7 @@
 title: Ökoflitzer Paxster
 name: ökoflitzer-paxster
 price: 140000
+relatedBlogs: beispiel
 description: mmmm
 src: /images/X.png
 loadingWeight:
@@ -79,7 +80,7 @@ batteryGuarantee:
 loadingHeight:
   key: Loading Height
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: mm
 loadingVolumeTotal:
   key: Loading Volume
   value: "0"

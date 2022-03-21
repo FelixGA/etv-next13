@@ -1,5 +1,5 @@
 ---
-title: ari-345-koffer
+title: ARI-345-Koffer
 slug: ari-345-koffer
 youtubeLink: https://www.youtube.com/watch?v=Qn05011EQLI
 category: referenzen

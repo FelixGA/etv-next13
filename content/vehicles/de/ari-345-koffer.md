@@ -2,7 +2,7 @@
 title: ARI 345 Koffer
 name: ari-345-koffer
 price: 7395
-relatedBlogs: beispiel
+relatedBlogs: ARI-345-Koffer
 description: Der ARI 345 Koffer ist ein dreirädriges Lastenmoped mit offener
   Fahrerkabine und einem geschlossenen Koffer-Aufbau. Das Fahrzeug ist in drei
   Größen mit bis zu 1,49 Meter Ladelänge und knapp 2 m³ Ladevolumen erhältlich.
