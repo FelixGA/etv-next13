@@ -2,8 +2,10 @@ import Image from "next/image";
 import RatingBox from "../../components/ResultList/RatingBox";
 import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
+import Link from "next/link";
 
-const Articles = ({ carItem, getMarkdownContext }) => {
+const Articles = ({ carItem, getBlogContext }) => {
+  console.log(getBlogContext);
   return (
     <>
       <div
@@ -11,11 +13,11 @@ const Articles = ({ carItem, getMarkdownContext }) => {
       >
         {/* <MDXRemote {...getMarkdownContext} /> */}
       </div>
-      {/* <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
-        <div className=" lg:w-1/3 w-full m-auto relative bg-red-500 ">
+      <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
+        <div className=" lg:w-1/3 w-full m-auto relative ">
           <Image
             src={carItem?.src}
-            alt={carItem?.title}
+            alt={getBlogContext?.title}
             width={195}
             height={140}
             layout="responsive"
@@ -30,12 +32,17 @@ const Articles = ({ carItem, getMarkdownContext }) => {
           <h3 className="w-full py-4 text-black-darkest text-2xl font-bold ">
             Testbericht{"\n"} {carItem.title}
           </h3>
-          <p>{carItem?.body}</p>
-          <button className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden">
-            Testbericht lesen
-          </button>
+          <h4 className="font-bold ">{getBlogContext?.title}</h4>
+          <p>{getBlogContext?.content}</p>
+          <Link href={`/magazin/${carItem.name}`}>
+            <a target="_blank" className="text-blue-500">
+              <button className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden">
+                Testbericht lesen
+              </button>
+            </a>
+          </Link>
         </div>
-      </div> */}
+      </div>
       {/* other articles section */}
       {/* First Article */}
       {/* <div className=" flex lg:flex-row-reverse flex-col w-full lg:p-18 justify-center items-center  p-4 ">
