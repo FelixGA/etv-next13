@@ -84,8 +84,8 @@ batteryGuarantee:
   baseUnit: Months
 loadingHeight:
   key: Loading Height
-  value: 1
-  baseUnit: cm
+  value: 0
+  baseUnit: keine Angabe
 loadingVolumeTotal:
   value: 2,15
   baseUnit: m3

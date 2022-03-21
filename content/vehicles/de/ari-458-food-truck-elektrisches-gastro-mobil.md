@@ -204,8 +204,8 @@ batteryGuarantee:
   baseUnit: Monate
 loadingHeight:
   key: Ladehöhe
-  value: 1
-  baseUnit: cm
+  value: 0
+  baseUnit: keine Angabe
 loadingVolumeTotal:
   key: Ladevolumen
   baseUnit: m3
