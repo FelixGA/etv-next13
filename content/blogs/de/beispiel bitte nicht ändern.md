@@ -1,5 +1,5 @@
 ---
-title: beispiel  bitte nicht ändern
+title: nur beispiel
 slug: beispiel bitte nicht ändern
 youtubeLink: https://www.youtube.com/watch?v=OJ4xza2e1P0
 category: referenzen
