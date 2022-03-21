@@ -1,5 +1,5 @@
 ---
-title: ARI 458 truck
+title: ARI 458 Kipper
 name: ari-458-kipper
 price: 16100
 relatedBlogs: beispiel
@@ -29,7 +29,7 @@ range230V:
   value: 120
   baseUnit: " km"
   key: Range SLA Battery
-  maxValue: 0
+  maxValue: 120
 rangeLithium:
   value: 150
   baseUnit: km
@@ -49,7 +49,7 @@ chargingTimeFast:
   baseUnit: h
 batteryCapacityBlei:
   value: "-"
-  baseUnit: " "
+  baseUnit: " keine Angabe"
   key: Capacity SLA Battery
 batteryCapacityLithium:
   value: "10"

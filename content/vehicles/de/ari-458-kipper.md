@@ -2,19 +2,14 @@
 title: ARI 458 Kipper
 name: ari-458-kipper
 price: 16100
-relatedBlogs: nur beispiel
-description: >-
-  Der ARI 458 Kipper bietet eine offene Ladefläche mit Seitenwänden, welche in
-  den beiden Größen jeweils 1,56 m² bzw. 1,86 m² beträgt. Für die Sicherung der
-  Ladung sind zudem Verzurr-Ösen sowie eine stabile Plane für das
-  Pritschen-Modell verfügbar. Wie der Name schon sagt, ist die Ladefläche beim
-  Kipper natürlich kippbar, um auf Baustellen benötigte Materialien ohne
-  menschlichen Kraftaufwand zielgenau abzuladen. Dies kann mechanisch über ein
-  hydraulisches Hebel-System sowie elektrisch erfolgen und ist in bis zu drei
-  Richtungen möglich.
-
-
-  Die Nutzlast des ARI 458 Kipper liegt bei rund 530 Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450 Kilogramm möglich.
+relatedBlogs: beispiel
+description: Der ARI 458 Kipper bietet eine offene Ladefläche mit Seitenwänden,
+  welche in den beiden Größen jeweils 1,56 m² bzw. 1,86 m² beträgt. Für die
+  Sicherung der Ladung sind zudem Verzurr-Ösen sowie eine stabile Plane für das
+  Pritschen-Modell verfügbar. Die Nutzlast des ARI 458 Kipper liegt bei rund 530
+  Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind
+  selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450
+  Kilogramm möglich.
 src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
 category: Kipper
 typeClass: L7E
@@ -34,7 +29,7 @@ range230V:
   key: Reichweite SLA Akku
   value: 120
   baseUnit: " km"
-  maxValue: 0
+  maxValue: 120
 rangeLithium:
   key: Reichweite Lithium Akku
   value: 150
@@ -55,7 +50,7 @@ chargingTimeFast:
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
-  baseUnit: " "
+  baseUnit: " keine Angabe"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "10"

@@ -1,6 +1,7 @@
 ---
 title: ARI 458 Koffer
 relatedBlogs: ari-458-koffer-elektrischer-kleintransporter
+<<<<<<< HEAD
 description: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -134,6 +135,10 @@ description: >-
 
 
   4,4
+=======
+description: Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI
+  Motors mit 80 km/h Höchstgeschwindigkeit.
+>>>>>>> 014997d706676d6bb59b77c644fbc3562ac78137
 loadingWeight:
   key: Nutzlast
   value: 531
@@ -150,7 +155,11 @@ range230V:
   key: Reichweite SLA Akku
   value: 120
   baseUnit: " km"
+<<<<<<< HEAD
   maxValue: -3
+=======
+  maxValue: 120
+>>>>>>> 014997d706676d6bb59b77c644fbc3562ac78137
 rangeLithium:
   key: Reichweite Lithium Akku
   value: 150
@@ -163,7 +172,11 @@ chargingTime230V:
 chargingTimeLithium:
   key: Ladezeit Typ 2 Ladekabel
   value: 6
+<<<<<<< HEAD
   baseUnit: St.
+=======
+  baseUnit: h
+>>>>>>> 014997d706676d6bb59b77c644fbc3562ac78137
 chargingTimeFast:
   key: Schnellladung
   value: 2
@@ -171,7 +184,11 @@ chargingTimeFast:
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
+<<<<<<< HEAD
   baseUnit: " "
+=======
+  baseUnit: " keine Angabe"
+>>>>>>> 014997d706676d6bb59b77c644fbc3562ac78137
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "10"
