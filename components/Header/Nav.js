@@ -22,7 +22,7 @@ const Nav = () => {
               </a>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/Leichttransporter">
               <a
                 onClick={() => {
@@ -32,7 +32,7 @@ const Nav = () => {
                 Leichttransporter
               </a>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/comparePage">
               <a
