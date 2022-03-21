@@ -80,7 +80,7 @@ batteryGuarantee:
 loadingHeight:
   key: Loading Height
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: mm
 loadingVolumeTotal:
   key: Loading Volume
   value: "0"

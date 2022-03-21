@@ -1,118 +1,125 @@
 ---
-title: Axiam-Pro eTruck-flatbed truck
+title: Axiam-pro-Etruck-pritsche
 name: axiam-pro-etruck-pritsche
 price: 19290
 relatedBlogs: beispiel
-description: bhkvmnxyfgdfl.h
+description: "Aixam ist ein französischer Hersteller von sogenannten
+  “Leichtkraftfahrzeugen” mit einem Vertrieb in Deutschland. Mit dem Aixam Pro
+  hat das Unternehmen ein leichtes Nutzfahrzeug im Programm, welches mit
+  Dieselmotoren (“D Truck”) sowie Elektroantrieb (“e-Truck”) erhältlich ist. Der
+  Elektrotransporter ist in zwei Aufbautypen verfügbar: als Pritsche sowie mit
+  Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell
+  für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem
+  Gelände konzipiert."
 src: /images/aixam-pro-pritsche.jpg
 category: Pritsche
 typeClass: L6E
 loadingWeight:
+  key: Nutzlast
   value: 327
   baseUnit: kg
-  key: payload
 curbweight:
+  key: Leergewicht
   value: 440
   baseUnit: kg
-  key: "curb weight "
 maxSpeed:
+  key: km/h
   value: 45
   baseUnit: km/h
-  key: vMax
 range230V:
+  key: Reichweite SLA Akku
   value: 0
   baseUnit: km
-  key: Range SLA
   maxValue: 0
 rangeLithium:
+  key: Reichweite Lithium Akku
   value: 95
   baseUnit: km
-  key: Range Lithium
-  maxValue: 0
+  maxValue: 95
 chargingTime230V:
+  key: Ladezeit 230-V-Steckdose
   value: 0
-  key: charging time
-  baseUnit: no info
+  baseUnit: keine Angabe
 chargingTimeLithium:
+  key: Ladezeit Typ2
   value: 0
-  baseUnit: h
-  key: CT Type 2
+  baseUnit: keine Angabe
 chargingTimeFast:
+  key: Schnellladezeit
   value: 0
-  key: CT Fast
-  baseUnit: h
+  baseUnit: keine Angabe
 batteryCapacityBlei:
+  key: Kapazität SLA Akku
   value: "0"
-  baseUnit: nicht verfügbar
-  key: capacity sla
+  baseUnit: keine Angabe
 batteryCapacityLithium:
+  key: Kapazität Lithium Akku
   value: 7,26
   baseUnit: kWh
-  key: capacity
 batteryIncluded:
-  key: battery included
-  value: yes
+  value: ja
+  key: Batterie inclusive
 consumption:
-  baseUnit: keine Angabe
-  key: consumption
+  key: "Verbrauch "
   value: "0"
+  baseUnit: keine Angabe
 power:
+  key: Leistung
   value: min-6/max-6
   baseUnit: kw
-  key: power
 seats:
+  key: Sitzplätze
   value: 2
-  key: seats
 rating:
+  key: befriedigend
   value: 3,0
-  key: satisfactory
 guarantee:
-  key: guarantee
+  key: Garantie Fahrzeug
   value: 0
-  baseUnit: no information
+  baseUnit: keine Angabe
 availability:
-  key: availability
-  value: no information
+  key: Verfügbarkeit
+  value: keine Angabe
 subsidies:
-  key: subsidies
+  key: Förderhöhe
   value: 0
-  baseUnit: no information
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: battery guarantee
+  key: Garantie Akku
   value: 0
-  baseUnit: no information
+  baseUnit: keine Angabe
 loadingHeight:
+  key: Ladehöhe
   value: 750
   baseUnit: mm
-  key: loading height
 loadingVolumeTotal:
-  value: bitte auffuellen
-  baseUnit: bitte auffuellen
-  key: bitte auffuellen
+  key: Ladevolumen
+  value: 0,61
+  baseUnit: m3
 loadingArea:
-  value: bitte auffuellen
-  baseUnit: bitte auffuellen
-  key: bitte auffuellen
+  key: Ladefläche
+  value: 2,04
+  baseUnit: m2
 carSizes:
-  width: width
-  length: length
-  height: height
-  wheelbase: wheelbase
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
   valuewidth: 1500
   baseUnit: mm
   valuelength: 2911
   valueheight: 1750
   valuewheelbase: 2252
-  key: car sizes
+  key: Fahrzeugmaße
 loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 300
+  width: Breite
   valuewidth: 1465
   valuelength: 1395
+  length: Länge
   baseUnit: mm
-  key: loadingvolume
-  height: height
-  width: width
-  length: length
 ---
 
-devgfy
+Der Axiam-Pro eTruck ist ein Elektrotransporter mit 80 Kilometer Reichweite und 45 km/h Höchstgeschwindigkeit.

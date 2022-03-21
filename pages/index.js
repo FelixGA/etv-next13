@@ -44,7 +44,6 @@ export async function getStaticProps(context) {
   let vehicles = await getContent("vehicles", context.locale);
   let blogs = await getContent("blogs", context.locale);
   const page = pages.find((page) => page.path === "/");
-  console.log(blogs);
   const header = await serialize(
     page.content.find((content) => content.name === "header").markdown
   );
@@ -69,7 +68,7 @@ export async function getStaticProps(context) {
       page,
       posts,
       vehicles,
-      // blogs,
+      blogs,
     },
   };
 }

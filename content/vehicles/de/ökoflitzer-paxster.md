@@ -69,7 +69,7 @@ rating:
 guarantee:
   key: Garantie Fahrzeug
   value: 0
-  baseUnit: Keine Angabe
+  baseUnit: keine Angabe
 availability:
   key: Verfügbarkeit
   value: keine Angabe
@@ -84,7 +84,7 @@ batteryGuarantee:
 loadingHeight:
   key: Ladehöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
   value: "0"

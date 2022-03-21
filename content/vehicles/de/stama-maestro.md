@@ -54,7 +54,7 @@ chargingTimeFast:
   baseUnit: keine Angabe
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: "-"
+  value: "0"
   baseUnit: keine Angabe
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
@@ -65,7 +65,7 @@ batteryIncluded:
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "-"
+  value: "0"
   baseUnit: keine Angabe
 power:
   key: "Leistung "
