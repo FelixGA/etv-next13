@@ -163,7 +163,7 @@ rangeLithium:
   key: Reichweite Lithium Akku
   value: 110
   baseUnit: km
-  maxValue: 0
+  maxValue: 110
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
@@ -174,7 +174,7 @@ chargingTimeLithium:
   baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
-  value: 1
+  value: 0
   baseUnit: keine Angabe
 batteryCapacityBlei:
   key: Kapazität SLA Akku
