@@ -17,9 +17,7 @@ export default function Details(props) {
   const [carItem, SetCarItem] = useState(props.vehicle);
   /* for the view more hook */
   const [descriptionSize, SetDescriptionSize] = useState(true);
-  const [getMarkdownContext, SetGetMarkdownContext] = useState(
-    props.relatedBlog
-  );
+  const [getBlogContext, SetGetBlogContext] = useState(props.relatedBlog);
   return (
     <>
       {/* image and rating section */}
@@ -31,7 +29,7 @@ export default function Details(props) {
         <TechnicalDetails carItem={carItem} />
         {/* description and articles section */}
       </div>
-      <Articles carItem={carItem} getMarkdownContext={getMarkdownContext} />
+      <Articles carItem={carItem} getBlogContext={getBlogContext} />
       {/* slider  */}
 
       <TopSlider getCars={getCars} />
@@ -72,7 +70,9 @@ export async function getStaticProps(context) {
 
   let relatedBlog;
 
-  blog.source ? (relatedBlog = blog.source) : (relatedBlog = emptyBlog.source);
+  blog.source
+    ? (relatedBlog = blog.contentHeading)
+    : (relatedBlog = emptyBlog.contentHeading);
   if (!vehicle) {
     return {
       notFound: true,

@@ -61,7 +61,7 @@ collections:
           label: "Title",
           name: "title",
           widget: "string",
-          default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
+          default: "ein titel",
           i18n: true,
           required: true,
         }
@@ -93,14 +93,14 @@ collections:
             "haeufig_gestellte_fragen",
             "referenzen",
           ]
-      - label: "post related vehicles"
-        name: "vehicle"
-        widget: "relation"
-        collection: "vehicles"
-        search_fields: ["name"]
-        display_fields: ["name"]
-        value_field: "rating"
-        required: true
+      # - label: "post related vehicles"
+      #   name: "vehicle"
+      #   widget: "relation"
+      #   collection: "vehicles"
+      #   search_fields: ["name"]
+      #   display_fields: ["name"]
+      #   value_field: "rating"
+      #   required: true
       - label: "Published at"
         name: "publishedAt"
         widget: "date"
@@ -130,6 +130,198 @@ collections:
           i18n: true,
           required: true,
         }
+
+      - label: "content Heading(Konzept & Fahrzeugvarianten)"
+        name: "contentHeading"
+
+        widget: "object"
+        summary: " {{fields.title}} "
+        i18n: true
+
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              default: "hier steht dn text",
+              i18n: duplicate,
+            }
+          - {
+              label: "Image",
+              name: "image",
+              widget: "image",
+              i18n: duplicate,
+              choose_url: false,
+            }
+      - label: "content Text(Laderaum & Flexibilität)"
+        name: "contentText"
+
+        widget: "object"
+        summary: " {{fields.title}} "
+        i18n: true
+
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              default: "hier steht dn text",
+              i18n: duplicate,
+            }
+          - {
+              label: "Image",
+              name: "image",
+              widget: "image",
+              i18n: duplicate,
+              choose_url: false,
+            }
+      - label: "content Text(Antrieb und Aufladung)"
+        name: "contentText2"
+
+        widget: "object"
+        summary: " {{fields.title}} "
+        i18n: true
+
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              default: "hier steht dn text",
+              i18n: duplicate,
+            }
+          - {
+              label: "Image",
+              name: "image",
+              widget: "image",
+              i18n: duplicate,
+              choose_url: false,
+            }
+      - label: "content Text(Komfort & Ausstattung)"
+        name: "contentText3"
+
+        widget: "object"
+        summary: " {{fields.title}} "
+        i18n: true
+
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              default: "hier steht dn text",
+              i18n: duplicate,
+            }
+          - {
+              label: "Image",
+              name: "image",
+              widget: "image",
+              i18n: duplicate,
+              choose_url: false,
+            }
+      - label: "content Text(Bedienung & Fahrbetrieb)"
+        name: "contentText4"
+
+        widget: "object"
+        summary: " {{fields.title}} "
+        i18n: true
+
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              default: "hier steht dn text",
+              i18n: duplicate,
+            }
+          - {
+              label: "Image",
+              name: "image",
+              widget: "image",
+              i18n: duplicate,
+              choose_url: false,
+            }
+      - label: "content Text(Umwelt)"
+        name: "contentText5"
+
+        widget: "object"
+        summary: " {{fields.title}} "
+        i18n: true
+
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              default: "hier steht dn text",
+              i18n: duplicate,
+            }
+          - {
+              label: "Image",
+              name: "image",
+              widget: "image",
+              i18n: duplicate,
+              choose_url: false,
+            }
+      - label: "content Text(Preise & Garantie)"
+        name: "contentText6"
+
+        widget: "object"
+        summary: " {{fields.title}} "
+        i18n: true
+
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              default: "hier steht dn text",
+              i18n: duplicate,
+            }
+          - {
+              label: "Image",
+              name: "image",
+              widget: "image",
+              i18n: duplicate,
+              choose_url: false,
+            }
+      - label: "content Text(Fazit)"
+        name: "contentText7"
+
+        widget: "object"
+        summary: " {{fields.title}} "
+        i18n: true
+
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              default: "hier steht dn text",
+              i18n: duplicate,
+            }
+          - {
+              label: "Total Score(Gesamtbewertung)",
+              name: "totalscore",
+              widget: "markdown",
+              i18n: true,
+            }
 
   - label: "Vehicles"
     name: "vehicles"
@@ -170,7 +362,7 @@ collections:
         collection: "blogs"
         search_fields: ["title"]
         display_fields: ["title"]
-        value_field: "title"
+        value_field: "contentHeading"
 
       - label: "Description"
         name: "description"
@@ -281,7 +473,7 @@ collections:
               required: true,
             }
           - {
-              label: "Value",
+              label: "Value(Min auch)",
               name: "value",
               widget: "number",
               value_type: "float",
@@ -289,7 +481,7 @@ collections:
               required: true,
             }
           - {
-              label: "Value(max)",
+              label: "Value(nur max)",
               name: "maxValue",
               widget: "number",
               value_type: "float",
@@ -319,7 +511,7 @@ collections:
               required: true,
             }
           - {
-              label: "Value",
+              label: "Value(Min auch)",
               name: "value",
               widget: "number",
               value_type: "float",
@@ -328,7 +520,7 @@ collections:
             }
 
           - {
-              label: "Value(max)",
+              label: "Value(nur max)",
               name: "maxValue",
               widget: "number",
               value_type: "float",
