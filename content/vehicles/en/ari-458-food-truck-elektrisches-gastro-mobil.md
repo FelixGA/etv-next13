@@ -100,7 +100,7 @@ carSizes:
   height: Height
   wheelbase: Wheelbase
   valuewidth: 1300
-  baseUnit: cm
+  baseUnit: mm
   valuelength: 3150
   valueheight: 1685
   valuewheelbase: 2300
@@ -109,7 +109,7 @@ loadingVolume:
   valueheight: 1250
   valuewidth: 1300
   valuelength: 1320
-  baseUnit: cm
+  baseUnit: mm
   key: Loading Area Sizes
   height: Height
   width: Width
