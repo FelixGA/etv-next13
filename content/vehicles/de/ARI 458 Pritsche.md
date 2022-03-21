@@ -25,7 +25,7 @@ range230V:
   key: Reichweite SLA Akku
   value: 120
   baseUnit: km
-  maxValue: 0
+  maxValue: 120
 rangeLithium:
   key: Reichweite Lithium Akku
   value: 150
@@ -101,7 +101,7 @@ carSizes:
   height: Höhe
   wheelbase: Radstand
   valuewidth: 1300
-  baseUnit: cm
+  baseUnit: mm
   valuelength: 3150
   valueheight: 1600
   valuewheelbase: 2300

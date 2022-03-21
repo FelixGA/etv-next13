@@ -3,9 +3,15 @@ title: ARI 458 Food Truck
 name: ari-458-food-truck-elektrisches-gastro-mobil
 price: 19430
 relatedBlogs: ari-458-food-truck-elektrisches-gastro-mobil
+<<<<<<< HEAD
 description: Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e
   mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen
   Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.
+=======
+description: Der ARI 458 Food Truck ist ein elektrischer Kleintransporter mit
+  Gastro-Aufbau. Er kann  individuell gestaltet und an verschiedene
+  Gastrokonzepte angepasst werden.
+>>>>>>> ebe82377b3d7036536d88276db423cf875ac05f4
 src: /images/ari-458-food-truck-5-.jpg
 category: Kasten
 typeClass: L7E
@@ -85,8 +91,8 @@ batteryGuarantee:
   baseUnit: Monate
 loadingHeight:
   key: Ladehöhe
-  value: 1
-  baseUnit: cm
+  value: 0
+  baseUnit: keine Angabe
 loadingVolumeTotal:
   key: Ladevolumen
   baseUnit: m3
@@ -101,7 +107,7 @@ carSizes:
   height: Höhe
   wheelbase: Radstand
   valuewidth: 1300
-  baseUnit: cm
+  baseUnit: mm
   valuelength: 3150
   valueheight: 1685
   valuewheelbase: 2300
@@ -114,6 +120,6 @@ loadingVolume:
   valuewidth: 1300
   length: Länge
   valuelength: 1320
-  baseUnit: cm
+  baseUnit: mm
 ---
 Der ARI 458 Food Truck ist ein elektrischer Kleintransporter mit Gastro-Aufbau. Er kann  individuell gestaltet und an verschiedene Gastrokonzepte angepasst werden.

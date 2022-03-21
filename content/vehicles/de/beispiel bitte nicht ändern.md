@@ -1,8 +1,8 @@
 ---
-title: beispiel ange
-name: beispiel bitte nicht ändern
+title: beispiel
+name: beispiel-bitte-nicht-ändern
 price: 80000
-relatedBlogs: beispiel bitte nicht ändern
+relatedBlogs: beispiel
 description: >-
   Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des
   Produktionsstarts durch die Corona-Krise, ist das Evum A -Car nun seit Juni
