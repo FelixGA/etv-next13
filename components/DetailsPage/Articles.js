@@ -5,7 +5,6 @@ import { MDXRemote } from "next-mdx-remote";
 import Link from "next/link";
 
 const Articles = ({ carItem, getBlogContext }) => {
-  console.log(getBlogContext);
   return (
     <>
       <div
