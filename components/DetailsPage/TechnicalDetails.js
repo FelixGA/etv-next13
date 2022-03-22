@@ -100,8 +100,8 @@ const TechnicalDetails = ({ carItem }) => {
       1000
   ).toFixed(2);
   return (
-    <div className="w-full flex flex-col justify-center items-start lg:pt-12 lg:px-4  pt-4 ">
-      <h3 className="text-blue-extra font-bold text-2xl lg:text-3xl pl-4">
+    <div className="w-full flex flex-col justify-center items-start lg:pt-12 lg:px-4 py-8 ">
+      <h3 className="text-blue-extra font-bold text-3xl lg:text-4xl pl-4">
         Technische Daten
       </h3>
       <div className="flex flex-col w-full lg:flex-row">
