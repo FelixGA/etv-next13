@@ -22,7 +22,7 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
         <div className="tracking-wide font-bold text-blue-lighter px-8 pb-6 py-5 xl:pr-36">
           <MDXRemote {...getMarkdownContext.substities} />
         </div>
-        <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 my-6 text-sm rounded-lg mx-10">
+        <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 my-6 text-sm rounded-lg mx-8">
           Mehr erfahren
         </button>
       </div>
