@@ -6,7 +6,10 @@ publishedAt: 03/17/2022
 src: /images/anschluss@2x.png
 contentHeading:
   title: " Konzept & Fahrzeugvarianten"
-  content: ""
+  content: lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum
+    dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet
+    consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur
+    adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.
   image: /images/ari-458-food-truck-5-.jpg
 contentText:
   title: Laderaum & Flexibilität (⅘)

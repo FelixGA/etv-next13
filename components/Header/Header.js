@@ -29,7 +29,35 @@ const Header = () => {
     <div className="relative print:hidden ">
       <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-20 sm:h-24 w-full 2xl:px-40">
         <Link href={`/`} passHref>
-          <div className="flex flex-row pl-2 sm:pl-4 cursor-pointer">
+          <div
+            className="flex flex-row pl-2 sm:pl-4 cursor-pointer bg-red-600"
+            onClick={() => {
+              dispatch({
+                type: "rangeLithium",
+                data: [],
+              });
+              dispatch({
+                type: "loadingWeight",
+                data: [],
+              });
+              dispatch({
+                type: "price",
+                data: [],
+              });
+              dispatch({
+                type: "maxSpeed",
+                data: [],
+              });
+              dispatch({
+                type: "category",
+                data: [],
+              });
+              dispatch({
+                type: "chargingTimeLithium",
+                data: [],
+              });
+            }}
+          >
             <div className="logo-container mt-2 w-16 xl:w-28 ">
               <Image
                 src="/images/etv-logo-final-white.png"

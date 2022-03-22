@@ -8,7 +8,10 @@ description: Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e
   Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.
 contentHeading:
   title: " Konzept & Fahrzeugvarianten BEISPIEL"
-  content: ""
+  content: lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum
+    dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet
+    consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur
+    adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.
   image: /images/ari-458-food-truck-5-.jpg
 contentText:
   title: Laderaum & Flexibilität (⅘)

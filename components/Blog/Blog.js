@@ -24,6 +24,7 @@ export default function Blog({ getBlogs }) {
 
   return (
     <>
+      lorem ipsum dolor sit amet consectetur adipisicing elit.
       {/* <Head page={page} /> */}
       {/* <BlogHeader getBlogs={getBlogs} /> */}
       <div className="grid w-full max-w-screen-xl mx-auto">
@@ -72,9 +73,8 @@ export default function Blog({ getBlogs }) {
                         <h3 className="text-xl pb-2">
                           {post.contentHeading.title}
                         </h3>
-                        <div className="hidden mdxstyles md:line-clamp-4 md:block"></div>
                       </div>
-                      <div className="hidden md:line-clamp-4 md:block">
+                      <div className="hidden md:line-clamp-6 md:block">
                         {post.contentHeading.content}
                       </div>
                     </a>
