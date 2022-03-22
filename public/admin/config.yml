@@ -133,13 +133,19 @@ collections:
 
       - label: "content Heading(Konzept & Fahrzeugvarianten)"
         name: "contentHeading"
-
+        required: false
         widget: "object"
         summary: " {{fields.title}} "
         i18n: true
 
         fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+              required: false,
+            }
 
           - {
               label: "Content",
@@ -147,6 +153,7 @@ collections:
               widget: "markdown",
               default: "hier steht dn text",
               i18n: duplicate,
+              required: false,
             }
           - {
               label: "Image",
@@ -154,16 +161,24 @@ collections:
               widget: "image",
               i18n: duplicate,
               choose_url: false,
+              required: false,
             }
       - label: "content Text(Laderaum & Flexibilität)"
         name: "contentText"
+        required: false
 
         widget: "object"
         summary: " {{fields.title}} "
         i18n: true
 
         fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+              required: false,
+            }
 
           - {
               label: "Content",
@@ -171,6 +186,7 @@ collections:
               widget: "markdown",
               default: "hier steht dn text",
               i18n: duplicate,
+              required: false,
             }
           - {
               label: "Image",
@@ -178,6 +194,7 @@ collections:
               widget: "image",
               i18n: duplicate,
               choose_url: false,
+              required: false,
             }
       - label: "content Text(Antrieb und Aufladung)"
         name: "contentText2"

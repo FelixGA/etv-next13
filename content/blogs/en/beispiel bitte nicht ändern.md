@@ -6,13 +6,7 @@ publishedAt: 03/17/2022
 src: /images/anschluss@2x.png
 contentHeading:
   title: " Konzept & Fahrzeugvarianten"
-  content: "BEISPIEL Die möglichen Aufbauten teilen sich in vier Oberkategorien
-    auf: Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den
-    erhältlichen Individual-Aufbauten zählen beispielsweise Kühl- oder
-    Tiefkühlkoffer, Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug
-    und Alkoven-Aufbau. Der ARI 458 ist vor allem für kurze Wege und
-    innerstädtischen Verkehr konzipiert. Mit einem zusätzlichen
-    Reichweiten-Paket eignet er sich aber auch durchaus für große Strecken."
+  content: ""
   image: /images/ari-458-food-truck-5-.jpg
 contentText:
   title: Laderaum & Flexibilität (⅘)
@@ -140,6 +134,4 @@ contentText7:
 
     **4,4**
 ---
-
-
-## srge
+Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.

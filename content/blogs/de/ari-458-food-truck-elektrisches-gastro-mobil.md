@@ -2,14 +2,8 @@
 title: ARI 458 food truck
 slug: ari-458-food-truck-elektrisches-gastro-mobil
 youtubeLink: https://www.youtube.com/watch?v=U1z-nSHox7E
-category: referenzen
-vehicle:
-  key: Sehr gut
-  value: 1,0
 publishedAt: 03/17/2022
 src: /images/ari-458-food-truck-heckansicht-1-.jpg
-description: Der ARI 458 Food Truck von ARI Motors ist ein individuell
-  konfigurierbarer Elektrotransporter für Caterer und Gastronomen.
 contentHeading:
   title: Konzept & Fahrzeugvarianten
   content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
@@ -21,7 +15,7 @@ contentHeading:
     für große Strecken."
   image: /images/ari-458-food-truck-heckansicht-1-.jpg
 contentText:
-  title: "## Laderaum & Flexibilität (⅘)"
+  title: Laderaum & Flexibilität (⅘)
   content: >-
     Für Lieferdienste und Lastentransporte ist der ARI 458 mit Kofferaufbau sehr
     gut geeignet. Kunden haben hier die Wahl zwischen den drei Größen, welche
@@ -45,6 +39,12 @@ contentText:
 
     Die Nutzlast der 458er-Reihe liegt bei rund 530 Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450 Kilogramm möglich.
   image: /images/ari-458-food-truck-5-2-.jpg
+vehicle:
+  key: Sehr gut
+  value: 1,0
+category: referenzen
+description: Der ARI 458 Food Truck von ARI Motors ist ein individuell
+  konfigurierbarer Elektrotransporter für Caterer und Gastronomen.
 contentText2:
   content: >-
     Den Antrieb des ARI 458 übernimmt ein Wechselstrommotor mit einer Kraft von
@@ -58,7 +58,7 @@ contentText2:
 
 
     Die Aufladung erfolgt über handelsübliche 220-V-Steckdosen mit Schuko-Stecker. ARI Motors liefert optional außerdem einen Typ-2-Adapter für die Aufladung an öffentlichen Ladesäulen mit. Die Aufladung mit 220 Volt dauert bei vollkommener Entladung rund 6 Stunden, während ein voller Akku per Schnellladung in 4 Stunden erreicht werden kann. Der ARI 458 nutzt auch die Selbstaufladung in Form von Rekuperation, die allerdings hier nicht direkt mit der Bremsanlage verbunden ist.
-  title: "## Antrieb und Aufladung (4/5)"
+  title: Antrieb und Aufladung (4/5)
   image: /images/dsc_0269.jpg
 contentText3:
   content: >-
@@ -101,7 +101,7 @@ contentText4:
     Die Wendigkeit des kompakten Transporters ist gerade in engen Innenstädten sowie Werkshallen von Vorteil. Für einfacheres Rangieren bei niedrigen Geschwindigkeiten bietet sich die optional verfügbare Servolenkung an. Positiv fällt auch das Glasdach auf, welches ein besseres Raumgefühl erzeugt und gerade an sonnigen Tagen einen angenehmen Effekt hat. Natürlich kann man bei heftiger Sonneneinstrahlung dieses auch durch ein Rollo abdecken.
   image: /images/ari-345-tacho-anzeige.jpg
 contentText5:
-  title: "## Umwelt (⅘)"
+  title: Umwelt (⅘)
   content: Innerorts liegt der Verbrauch des Ari 458 bei 6,2 kWh und außerorts bei
     8,0 kWh. Das Fahrzeug kommt dadurch auf einen niedrigen kombinierten
     Verbrauch von 7,1 kWh. Bei angenommenen 30 Cent pro Kilowattstunde kosten
@@ -134,9 +134,6 @@ contentText7:
     effizienten Elektrotransporter mit sehr guter Raumnutzung und individuell
     anpassbaren Ausstattungs- und Funktionsmöglichkeiten.
   title: " Fazit"
-  totalscore: |-
-    ## **Gesamtbewertung:**
-
-    **4,4**
+  totalscore: Gesamtbewertung:4,4
 ---
 Der ARI 458 Food Truck von ARI Motors ist ein individuell konfigurierbarer Elektrotransporter für Caterer und Gastronomen.
