@@ -2,7 +2,7 @@
 title: ARI 345 Pritsche
 name: ari-345-pritsche
 price: 6995
-relatedBlogs: beispiel
+relatedBlogs: nur beispiel
 description: The ARI 345 Pikcup is a three-wheeled delivery moped with an open
   driver's cab and a tiltable pickup bed. The vehicle body is available in three
   sizes with a loading length of up to 1.55 meters and around 1.8 m² loading
