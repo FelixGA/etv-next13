@@ -1,5 +1,7 @@
 import TestResult from "../repeated/TestResult";
 import { useState, useEffect } from "react";
+import ActiveCompareButton from "./ActiveCompareButton";
+import ButtonAnfragen from "../ResultList/ButtonAnfragen";
 
 export default function ActiveCompareEntries({ keys, comparedCars }) {
   // console.log(test, "blablabla");
@@ -59,6 +61,17 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
               </p>
             </div>
           ))}
+          <div
+            className={
+              index !== 0 ? "px-4 bg-grey-border h-20 flex items-center" : ""
+            }
+          >
+            {index !== 0 ? (
+              <ButtonAnfragen />
+            ) : (
+              <div className="bg-grey-border h-20"></div>
+            )}
+          </div>
         </div>
       ))}
     </>
