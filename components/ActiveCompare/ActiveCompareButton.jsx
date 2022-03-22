@@ -9,17 +9,15 @@ export default function ActiveCompareButton(props) {
 
   return (
     <div>
-      {props.comparedCars.map((item, index) => (
-        <div key={index}>
-          <div className="  lg:w-64 xl:w-88 2xl:w-[380px] p-4">
-            <button className="h-8 w-full  bg-orange-lighter rounded-[5px]">
-              <Link href={`/transporter/${item?.name}`}>
-                <a className="visited:text-blue-darker">Weiter</a>
-              </Link>
-            </button>
-          </div>
+      <div>
+        <div className="  lg:w-64 xl:w-88 2xl:w-[380px] p-4">
+          <button className="h-8 w-full  bg-orange-lighter rounded-[5px]">
+            <Link href={`/caradvisor`}>
+              <a className="visited:text-blue-darker">Weiter</a>
+            </Link>
+          </button>
         </div>
-      ))}
+      </div>
     </div>
   );
 }
