@@ -1,6 +1,23 @@
-/* .container {
+.container {
   margin: auto;
+}
+.markdown p {
+  @apply text-black;
+}
+.markdown {
+  @apply hidden md:line-clamp-4 md:block;
+}
 
+.markdown h2,
+.markdown li,
+.markdown h1 {
+  @apply text-black;
+}
+.markdown p {
+  @apply text-black;
+}
+
+/*
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
