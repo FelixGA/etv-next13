@@ -70,7 +70,9 @@ export default function Blog({ getBlogs }) {
                       </div>
                       <div className="flex-1 flex flex-col justify-between"></div>
                       <div className="hidden md:line-clamp-6 md:block text-center px-2">
-                        {post.contentHeading.content}
+                        {post.contentHeading.content
+                          ? post.contentHeading.content
+                          : post.description}
                       </div>
                     </a>
                   )
