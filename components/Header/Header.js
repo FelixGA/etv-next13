@@ -1,7 +1,7 @@
 import Nav from "../Header/Nav";
 import MobileNav from "./MobileNav";
 import Image from "next/image";
-import { useState } from "react";
+
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useStore } from "../store";
@@ -22,7 +22,7 @@ const variants = {
   },
 };
 const Header = () => {
-  const [isActive, setIsActive] = useState(false);
+  /*  const [isActive, setIsActive] = useState(false); */
   const { state, dispatch } = useStore();
   const router = useRouter();
   return (
@@ -81,7 +81,7 @@ const Header = () => {
           <Nav />
         </div>
         <AnimatePresence initial={false}>
-          {isActive && (
+          {state?.mobileNavActives && (
             <motion.div
               className=" lg:hidden w-full sm:w-96 absolute right-0 top-18  "
               variants={variants}
@@ -121,7 +121,10 @@ const Header = () => {
       </div>
       <div
         onClick={() => {
-          setIsActive(!isActive);
+          dispatch({
+            type: "mobileNavActive",
+            data: !state?.mobileNavActives,
+          });
         }}
         className={
           router.pathname == "/caradvisor"

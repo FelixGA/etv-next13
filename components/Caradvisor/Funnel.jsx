@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 import { useStore } from "../store";
 import FunnelBox from "./FunnelBox";
 import { useState, useEffect } from "react";
@@ -192,14 +192,23 @@ export default function Funnel({ getContent }) {
             {currentFilter.title}
           </h2>
         ) : (
-
-          <div>
-            <h3>Wir suchen das passende Fahrzeug für Sie.</h3>
-            <div className="lg:w-full scale-125 lg:m-auto">
+          <div className="pt-8">
+            <h3 className="text-center">
+              Wir suchen das passende Fahrzeug für Sie.
+            </h3>
+            <div className="w-[90%] lg:w-full lg:scale-125 m-auto">
               <CarBrandsLogos />
             </div>
+            <div className="w-full">
+              <Image
+                src="/images/loading.gif"
+                width={500}
+                height={320}
+                className="loading"
+                objectFit="contain"
+              />
+            </div>
           </div>
-
         )}
         <div className="flex justify-center">
           <FunnelBox currentFilter={currentFilter} redirecter={redirecter} />
