@@ -1,19 +1,22 @@
-import { useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { useRouter } from "next/router";
 
-function MobileNav(props) {
+import { useRouter } from "next/router";
+import { useStore } from "../store";
+function MobileNav() {
   const router = useRouter();
+  const { state, dispatch } = useStore();
   return (
-    <div className="relative bg-blue-darker w-full h-screen">
+    <div className="relative bg-blue-darker w-full h-screen ">
       <ul className="flex flex-col items-center sm:items-start sm:pl-16 flex-1 h-3/4 justify-evenly text-grey-dark text-3xl ">
         <li className="">
           <Link href="/">
             <a
               className="text-[#E7E8EC]"
               onClick={() => {
-                setIsActive(false);
+                dispatch({
+                  type: "mobileNavActive",
+                  data: !state?.mobileNavActives,
+                });
               }}
             >
               Start
@@ -24,7 +27,10 @@ function MobileNav(props) {
           <Link href="/comparePage">
             <a
               onClick={() => {
-                setIsActive(false);
+                dispatch({
+                  type: "mobileNavActive",
+                  data: !state?.mobileNavActives,
+                });
               }}
             >
               {" "}
@@ -36,7 +42,10 @@ function MobileNav(props) {
           <Link href="/caradvisor">
             <a
               onClick={() => {
-                setIsActive(false);
+                dispatch({
+                  type: "mobileNavActive",
+                  data: !state?.mobileNavActives,
+                });
               }}
             >
               Kaufberater
@@ -47,7 +56,10 @@ function MobileNav(props) {
           <Link href="/Magazin">
             <a
               onClick={() => {
-                setIsActive(false);
+                dispatch({
+                  type: "mobileNavActive",
+                  data: !state?.mobileNavActives,
+                });
               }}
             >
               Magazin
@@ -58,7 +70,10 @@ function MobileNav(props) {
           <Link href="/Kontakt">
             <a
               onClick={() => {
-                setIsActive(false);
+                dispatch({
+                  type: "mobileNavActive",
+                  data: !state?.mobileNavActives,
+                });
               }}
             >
               Kontakt

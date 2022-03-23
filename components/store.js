@@ -29,14 +29,19 @@ const reducer = (state, action) => {
 
     case "disabledButton":
       return { ...state, disabledButtons: action.data };
+
     case "maximalThree":
       return { ...state, maximalThrees: action.data };
+    /*  states for navbar */
+    case "mobileNavActive":
+      return { ...state, mobileNavActives: action.data };
     default:
       return;
   }
 };
 
 const initialState = {
+  mobileNavActive: false,
   prices: [],
   rangeLithiums: [],
   loadingWeights: [],

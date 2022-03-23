@@ -11,10 +11,10 @@ const Footer = ({ blogs }) => {
   const rights = [
     { slug: "impressum", title: "Impressum" },
     { slug: "kontakt", title: "Kontakt" },
-    { slug: "datenschutzerklaerung", title: "Datenschutzerklärung" },
+    { slug: "datenschutzerklaerung", title: "Datenschutz-erklärung" },
     {
       slug: "allgemeineGeschaeftsbedingungen",
-      title: "Allgemeine Geschäftsbedingungen",
+      title: "Allgemeine Geschäfts-bedingungen",
     },
   ];
 
@@ -60,7 +60,7 @@ const Footer = ({ blogs }) => {
           </Link>
         </div>
       </span>
-      <nav className="flex mt-10 flex-col xs:flex-row  justify-between items-center xs:items-start ">
+      <nav className="flex mt-10 flex-col sm:flex-row justify-between items-center sm:items-start px-10 ">
         <div className="flex lg:w-48 items-center flex-col justify-center">
           <h5 className="text-xs font-bold">
             <Link href="/comparePage">

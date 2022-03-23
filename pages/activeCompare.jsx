@@ -101,10 +101,14 @@ export default function activeCompare(props) {
       </div>
       {/* KEYS AND ITEMS FOR COMPARE */}
       <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
-        <ActiveCompareImages comparedCars={comparedCars} />
-      </div>
-      <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
-        <ActiveCompareEntries keys={allKeys} comparedCars={comparedCars} />
+        <div className="w-full">
+          <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
+            <ActiveCompareImages comparedCars={comparedCars} />
+          </div>
+          <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
+            <ActiveCompareEntries keys={allKeys} comparedCars={comparedCars} />
+          </div>
+        </div>
       </div>
     </div>
   );

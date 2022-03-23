@@ -13,10 +13,10 @@ export default function caradvisor(props) {
         <div className="xl:pl-60 text-white text-2xl">unverbindlich</div>
       </div>
       <Funnel getCars={getCars} />
-      <div className="flex justify-between relative ">
+      <div className="flex justify-between relative">
         {/* medal gold image */}
-        <div className="flex relative left-0 sm:left-[25vw] lg:left-[10vw]">
-          <div className="w-20 sm:w-28 pt-10 sm:pt-12">
+        <div className="flex relative left-[25%] sm:left-[25vw] lg:left-[10vw]">
+          <div className="w-16 sm:w-28 pt-8 sm:pt-12">
             <Image
               src="/images/siegel2.png"
               width={166}
@@ -26,7 +26,7 @@ export default function caradvisor(props) {
             />
           </div>
           {/* medal dsvgo image */}
-          <div className="w-40 sm:w-52">
+          <div className="w-32 sm:w-52">
             <Image
               src="/images/siegel.png"
               width={166}
@@ -37,11 +37,11 @@ export default function caradvisor(props) {
           </div>
         </div>
         {/* human image */}
-        <div className="w-72 2xl:w-96 absolute bottom-0 right-0 hidden lg:block">
+        <div className="w-44 xl:w-64 2xl:w-96 absolute bottom-0 right-0 2xl:right-6 hidden lg:block">
           <Image
-            src="/images/berater.png"
-            width={266}
-            height={296}
+            src="/images/beraterNew.png"
+            width={500}
+            height={700}
             layout="responsive"
           />
         </div>

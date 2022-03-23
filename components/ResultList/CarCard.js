@@ -20,7 +20,7 @@ function CarCard({ carItem }) {
         <div className="flex-1 relative pl-2">
           <Link href={`/transporter/${carItem.name}`}>
             <a>
-              <h3 className="title text-xl font-bold text-black-darkest pt-2 lg:hidden pl-2">
+              <h3 className="title text-xl font-bold text-black-darkest pt-2 lg:hidden pl-2 h-14">
                 {carItem.title}
               </h3>
             </a>
@@ -55,10 +55,10 @@ function CarCard({ carItem }) {
         <div className="flex flex-col justify-center lg:justify-between sm:flex-1 items-end px-2 xl:items-center my-4 ">
           {/* PRICE + MOBILE RATING BOX start*/}
           <div className="">
-            <p className="text-green-light text-xl xl:text-2xl font-black md:pr-2">
+            <p className="text-green-light text-xl xl:text-2xl font-black md:pr-2 text-right pb-2">
               ab {carItem.price} €
             </p>
-            <div className="lg:hidden w-24 sm:w-28 pt-2 pb-2 sm:pb-0 ">
+            <div className="lg:hidden  pb-2 sm:pb-0 ">
               {/* {mobileRatingBox} */}
               <MobileTestResult />
             </div>
