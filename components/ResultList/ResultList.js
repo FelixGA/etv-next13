@@ -97,11 +97,11 @@ const ResultList = (props) => {
   );
   /* ɢᴇᴛ the cars upon filters */
 
-  const getdisplayedCars = shownCars?.map((caritem, index) => {
+  const getdisplayedCars = shownCars?.map((carItem, index) => {
     return (
       <div className="container-product w-full md:pl-4" key={index}>
         {/* <div className="product-icon"></div> */}
-        <CarCard caritem={caritem} />
+        <CarCard carItem={carItem} />
       </div>
     );
   });

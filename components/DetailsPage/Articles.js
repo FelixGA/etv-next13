@@ -1,8 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import RatingBox from "../../components/ResultList/RatingBox";
 import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
-import Link from "next/link";
 
 const Articles = ({ carItem, getBlogContext }) => {
   return (
