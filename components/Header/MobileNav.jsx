@@ -53,7 +53,7 @@ function MobileNav() {
           </Link>
         </li>
         <li className="">
-          <Link href="/Magazin">
+          <Link href="/magazin">
             <a
               onClick={() => {
                 dispatch({
