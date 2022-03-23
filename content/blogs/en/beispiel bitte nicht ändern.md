@@ -6,11 +6,11 @@ publishedAt: 03/17/2022
 src: /images/anschluss@2x.png
 contentHeading:
   title: " BEISPIEL & Fahrzeugvarianten "
-  content: jftjlorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum
-    dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet
-    consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur
-    adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing
-    elit.dyjtyjd
+  content: >-
+    lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dol
+
+
+    or sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.dyjtyjd
   image: /images/anschluss@2x.png
 contentText:
   title: ""

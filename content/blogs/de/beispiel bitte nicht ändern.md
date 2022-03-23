@@ -8,11 +8,11 @@ description: Das Beispiel ist ein Elektro-Kleintransporter der Fahrzeugklasse
   Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.
 contentHeading:
   title: " BEISPIEL & Fahrzeugvarianten "
-  content: jftjlorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum
-    dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet
-    consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur
-    adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing
-    elit.dyjtyjd
+  content: >-
+    lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dol
+
+
+    or sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.dyjtyjd
   image: /images/anschluss@2x.png
 contentText:
   title: ""
@@ -180,4 +180,4 @@ content: >-
 
   4,4
 ---
-Das Beispiel ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.
+**Das Beispiel ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer zulässigen** Höchstgeschwindigkeit von 80 km/h und einer maximalen Zuladung von 450 Kilogramm. Der Transporter bietet Platz für 2 Personen.

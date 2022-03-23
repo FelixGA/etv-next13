@@ -13,7 +13,7 @@
   @apply hidden;
 }
 .mdxstyles p {
-  @apply text-gray-500;
+  @apply text-black;
 }
 
 .markdown a {

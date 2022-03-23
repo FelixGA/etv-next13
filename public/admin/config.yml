@@ -134,7 +134,7 @@ collections:
 
       - label: "content Heading(Konzept & Fahrzeugvarianten)"
         name: "contentHeading"
-        required: true
+        required: false
         widget: "object"
         summary: " {{fields.title}} "
         i18n: true
@@ -145,7 +145,7 @@ collections:
               name: "title",
               widget: "string",
               i18n: true,
-              required: true,
+              required: false,
             }
 
           - {
@@ -154,7 +154,7 @@ collections:
               widget: "markdown",
               default: "hier steht dn text",
               i18n: duplicate,
-              required: true,
+              required: false,
             }
           - {
               label: "Image",

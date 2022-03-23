@@ -2,7 +2,7 @@ import { useState } from "react";
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
 import TopSlider from "../../components/Sliders/TopSlider";
-
+import { serialize } from "next-mdx-remote/serialize";
 import getSlugs from "/utils/getSlugs";
 import BlogPost from "../../components/Blog/BlogPost";
 
@@ -50,10 +50,8 @@ export async function getStaticProps(context) {
 
   // let relatedBlog;
 
-  // blog.source
-  //   ? (relatedBlog = blog.contentHeading)
-  //   : (relatedBlog = emptyBlog.contentHeading);
-  // if (!vehicle) {
+  // blog.slug === "beispiel bitte nicht ändern" ? (blog = emptyBlog) : null;
+  // if (!blog) {
   //   return {
   //     notFound: true,
   //   };
