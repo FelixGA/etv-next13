@@ -1,12 +1,12 @@
 import TestResult from "../repeated/TestResult";
 import { useState, useEffect } from "react";
-import ActiveCompareButton from "./ActiveCompareButton";
+
 import ButtonAnfragen from "../ResultList/ButtonAnfragen";
 
 export default function ActiveCompareEntries({ keys, comparedCars }) {
-  // console.log(test, "blablabla");
+  // console.log(comparedCars, "blablabla");
   const [entries, setEntries] = useState([]);
-  // console.log(entries, "test");
+  console.log(entries, "test");
   let testResultArr = comparedCars.map((test) => test.rating);
   // console.log(testResultArr);
 
@@ -56,8 +56,14 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
                   : "bg-grey-lighter flex items-center h-12"
               }`}
             >
-              <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
-                {value}
+              <p
+                className={
+                  value.includes("Laderaum-Maße")
+                    ? "text-blue-extra text-lg font-bold pl-4 lg:pl-8"
+                    : "text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8"
+                }
+              >
+                {value[0] == 0 || value.includes("undefined") ? "-" : value}
               </p>
             </div>
           ))}
