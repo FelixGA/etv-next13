@@ -26,11 +26,11 @@ export default function FirstArticle({ getMarkdownContext, getContent }) {
           </a>
         </Link>
       </div>
-      <div className="hidden xl:block w-4/7 pl-4">
+      <div className="hidden xl:flex ml-10 mt-20 scale-125">
         <Image
-          src="/images/berater.png"
-          width={600}
-          height={450}
+          src="/images/kaufberaterCar.png"
+          width={800}
+          height={650}
           className="blog-article-two-image"
           objectFit="contain"
         />

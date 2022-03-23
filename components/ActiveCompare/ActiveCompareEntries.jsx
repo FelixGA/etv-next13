@@ -63,7 +63,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
           ))}
           <div
             className={
-              index !== 0 ? "px-4 bg-grey-border h-20 flex items-center" : ""
+              index !== 0 ? "pl-4 bg-grey-border h-20 flex items-center" : ""
             }
           >
             {index !== 0 ? (
