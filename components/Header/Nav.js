@@ -22,14 +22,14 @@ const Nav = () => {
               </a>
             </Link>
           </li>
-          {/* <li>
-            <Link href="/Leichttransporter">
+          {/*  <li>
+            <Link href="/caradviser">
               <a
                 onClick={() => {
                   setIsActive(false);
                 }}
               >
-                Leichttransporter
+                Kaufberater
               </a>
             </Link>
           </li> */}

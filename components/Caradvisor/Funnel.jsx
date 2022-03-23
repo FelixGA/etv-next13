@@ -186,21 +186,24 @@ export default function Funnel({ getContent }) {
 
   return (
     <div className="flex flex-col flex-1 ">
-      <div className="flex flex-1 flex-col my-4 items-center ">
+      <div className="flex flex-1 flex-col my-4 items-center justify-center pb-6">
         {!redirecter ? (
-          <h2 className="text-center text-3xl text-black-dark font-bold my-8 px-1 sm:px-4">
+          <h2 className="text-3xl text-black-dark font-bold text-center h-40 flex items-center">
             {currentFilter.title}
           </h2>
         ) : (
+
           <div>
             <h3>Wir suchen das passende Fahrzeug für Sie.</h3>
             <div className="lg:w-full scale-125 lg:m-auto">
               <CarBrandsLogos />
             </div>
           </div>
-        )}
 
-        <FunnelBox currentFilter={currentFilter} redirecter={redirecter} />
+        )}
+        <div className="flex justify-center">
+          <FunnelBox currentFilter={currentFilter} redirecter={redirecter} />
+        </div>
       </div>
       <div className={!redirecter ? "hidden" : "visible"}>
         <ButtonForAlleTransporter />
