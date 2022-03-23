@@ -28,9 +28,10 @@ export async function getStaticProps(context) {
     context.params.blogtitle,
     context.locale
   );
+
   let vehicles = await getContent("vehicles", context.locale);
 
-  /*  get the first 4 from this category for the slider */
+  /*  get the cars from this category for the slider */
   vehicles = Object.entries(vehicles).map(([key, value]) => {
     return value;
   });
@@ -38,15 +39,14 @@ export async function getStaticProps(context) {
   vehicles = vehicles.filter(
     (item, index) =>
       item.category ===
-      vehicles.find((item) => item.name === blog.slug).category
+      vehicles.find((item) => item.name === blog.slug)?.category
   );
-
-  /* catching errors in case there isnt blog yet */
-  // let emptyBlog = await getContentBySlug(
-  //   "blogs",
-  //   "beispiel bitte nicht ändern",
-  //   context.locale
-  // );
+  /* catching errors */
+  let emptyBlog = await getContentBySlug(
+    "blogs",
+    "beispiel bitte nicht ändern",
+    context.locale
+  );
 
   // let relatedBlog;
 

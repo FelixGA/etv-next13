@@ -5,6 +5,7 @@ export default function BlogPost({ getBlogContext }) {
   const [content, setContent] = useState();
   useEffect(() => {
     let differentContent = [
+      getBlogContext.contentHeading,
       getBlogContext.contentText,
       getBlogContext.contentText2,
       getBlogContext.contentText3,
@@ -14,7 +15,7 @@ export default function BlogPost({ getBlogContext }) {
     ];
     setContent(differentContent);
   }, [getBlogContext]);
-  console.log(content);
+
   return (
     <div className="flex flex-1 flex-col p-4 lg:p-8">
       <h2 className="m-auto py-8 text-blue-dark font-bold text-4xl text-center">
@@ -42,23 +43,27 @@ export default function BlogPost({ getBlogContext }) {
               />
             )}
           </div>
-          <div className=" w-full lg:w-1/2 flex flex-col  ">
-            <h3 className="font-bold text-xl text-grey-darker text-center py-4">
-              {article.title}:
-            </h3>
-            <p>{article.content}</p>
-          </div>
+          {article?.title && (
+            <div className=" w-full lg:w-1/2 flex flex-col  ">
+              <h3 className="font-bold text-xl text-grey-darker text-center py-4">
+                {article.title}:
+              </h3>
+              <p>{article.content}</p>
+            </div>
+          )}
         </div>
       ))}
-      <div className=" lg:my-4 ">
-        <h3 className="font-bold text-xl text-grey-darker text-center py-4">
-          {getBlogContext.contentText7?.title}:
-        </h3>
-        <p>{getBlogContext.contentText7?.content}</p>
-        <p className="font-bold text-xl text-grey-darker text-center flex flex-col  lg:my-4 ">
-          {getBlogContext.contentText7?.totalscore}
-        </p>
-      </div>
+      {getBlogContext.contentText7?.title && (
+        <div className=" lg:my-4 ">
+          <h3 className="font-bold text-xl text-grey-darker text-center py-4">
+            {getBlogContext.contentText7?.title}
+          </h3>
+          <p>{getBlogContext.contentText7?.content}</p>
+          <p className="font-bold text-xl text-grey-darker text-center flex flex-col  lg:my-4 ">
+            {getBlogContext.contentText7?.totalscore}
+          </p>
+        </div>
+      )}
     </div>
   );
 }

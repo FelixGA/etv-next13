@@ -24,7 +24,6 @@ export default function Blog({ getBlogs }) {
 
   return (
     <>
-      lorem ipsum dolor sit amet consectetur adipisicing elit.
       {/* <Head page={page} /> */}
       {/* <BlogHeader getBlogs={getBlogs} /> */}
       <div className="grid w-full max-w-screen-xl mx-auto">
@@ -64,17 +63,13 @@ export default function Blog({ getBlogs }) {
                           <h6>
                             {new Date(post.publishedAt).toLocaleDateString()}
                           </h6>
-                          <h2 className="text-xl pb-2 font-bold text-blue-dark">
+                          <h2 className="text-xl font-bold text-blue-dark">
                             {post.title}
                           </h2>
                         </div>
                       </div>
-                      <div className="flex-1 flex flex-col justify-between p-4">
-                        <h3 className="text-xl pb-2">
-                          {post.contentHeading.title}
-                        </h3>
-                      </div>
-                      <div className="hidden md:line-clamp-6 md:block">
+                      <div className="flex-1 flex flex-col justify-between"></div>
+                      <div className="hidden md:line-clamp-6 md:block text-center px-2">
                         {post.contentHeading.content}
                       </div>
                     </a>

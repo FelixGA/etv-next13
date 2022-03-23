@@ -30,7 +30,7 @@ const Header = () => {
       <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-20 sm:h-24 w-full 2xl:px-40">
         <Link href={`/`} passHref>
           <div
-            className="flex flex-row pl-2 sm:pl-4 cursor-pointer bg-red-600"
+            className="flex flex-row pl-2 sm:pl-4 cursor-pointer "
             onClick={() => {
               dispatch({
                 type: "rangeLithium",

@@ -18,6 +18,7 @@ import kippericon from "../../public/images/kipper.png";
 import ButtonForAlleTransporter from "../Sliders/ButtonForAlleTransporter";
 import Router from "next/router";
 import { useRouter } from "next/router";
+import CarBrandsLogos from "../repeated/CarBrandsLogos";
 
 export default function Funnel({ getContent }) {
   const router = useRouter();
@@ -191,14 +192,12 @@ export default function Funnel({ getContent }) {
             {currentFilter.title}
           </h2>
         ) : (
-          <h3>Wir suchen das passende Fahrzeug für Sie.</h3>
-          // <Link href="/comparePage" passHref>
-          //   <div className="w-full my-8 flex items-center justify-center">
-          //     <a className="flex items-center h-12 px-6 border rounded-md border-blue-darker text-blue-darker font-bold">
-          //       Transporter anzeigen
-          //     </a>
-          //   </div>
-          // </Link>
+          <div>
+            <h3>Wir suchen das passende Fahrzeug für Sie.</h3>
+            <div className="lg:w-full scale-125 lg:m-auto">
+              <CarBrandsLogos />
+            </div>
+          </div>
         )}
 
         <FunnelBox currentFilter={currentFilter} redirecter={redirecter} />
