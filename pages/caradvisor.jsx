@@ -37,11 +37,11 @@ export default function caradvisor(props) {
           </div>
         </div>
         {/* human image */}
-        <div className="w-72 2xl:w-96 absolute bottom-0 right-0 hidden lg:block">
+        <div className="w-44 xl:w-64 2xl:w-96 absolute bottom-0 right-0 2xl:right-6 hidden lg:block">
           <Image
-            src="/images/berater.png"
-            width={266}
-            height={296}
+            src="/images/beraterNew.png"
+            width={500}
+            height={700}
             layout="responsive"
           />
         </div>

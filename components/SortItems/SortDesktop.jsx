@@ -10,38 +10,38 @@ function SortDesktop({ getContent }) {
       .split(", ")
       .map((el) => el);
     const sortBy2 = [
+      // {
+      //   sortCategory: sortingCate[0],
+      //   sortType: 1,
+      // },
       {
-        sortCategory: sortingCate[0],
-        sortType: 1,
-      },
-      {
-        sortCategory: sortingCate[1],
+        sortCategory: "Niedrigster Preis",
         sortType: "lowest",
       },
       {
-        sortCategory: sortingCate[2],
+        sortCategory: "Höchster Preis",
         sortType: "highest",
       },
+      // {
+      //   sortCategory: sortingCate[3],
+      //   sortType: "bestseller",
+      // },
       {
-        sortCategory: sortingCate[3],
-        sortType: "bestseller",
-      },
-      {
-        sortCategory: sortingCate[4],
+        sortCategory: "Beste Ladenzeit",
         sortType: "chargingTimeLithium",
       },
       {
-        sortCategory: sortingCate[5],
+        sortCategory: "Höchste Zuladung",
         sortType: "highestWeight",
       },
       {
-        sortCategory: sortingCate[6],
+        sortCategory: "Höchste Reichweite",
         sortType: "highestRange",
       },
-      {
-        sortCategory: sortingCate[7],
-        sortType: "highestVmax",
-      },
+      // {
+      //   sortCategory: sortingCate[7],
+      //   sortType: "highestVmax",
+      // },
     ];
     //lowest price as in initial state
     dispatch({
