@@ -79,6 +79,7 @@ collections:
           widget: "string",
           default: "bitte auffuelen",
           i18n: duplicate,
+          required: false,
         }
       - label: "Category"
         name: "category"
@@ -133,13 +134,19 @@ collections:
 
       - label: "content Heading(Konzept & Fahrzeugvarianten)"
         name: "contentHeading"
-
+        required: true
         widget: "object"
         summary: " {{fields.title}} "
         i18n: true
 
         fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
 
           - {
               label: "Content",
@@ -147,6 +154,7 @@ collections:
               widget: "markdown",
               default: "hier steht dn text",
               i18n: duplicate,
+              required: true,
             }
           - {
               label: "Image",
@@ -154,16 +162,24 @@ collections:
               widget: "image",
               i18n: duplicate,
               choose_url: false,
+              required: false,
             }
       - label: "content Text(Laderaum & Flexibilität)"
         name: "contentText"
+        required: false
 
         widget: "object"
         summary: " {{fields.title}} "
         i18n: true
 
         fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+              required: false,
+            }
 
           - {
               label: "Content",
@@ -171,6 +187,7 @@ collections:
               widget: "markdown",
               default: "hier steht dn text",
               i18n: duplicate,
+              required: false,
             }
           - {
               label: "Image",
@@ -178,16 +195,24 @@ collections:
               widget: "image",
               i18n: duplicate,
               choose_url: false,
+              required: false,
             }
       - label: "content Text(Antrieb und Aufladung)"
         name: "contentText2"
+        required: false
 
         widget: "object"
         summary: " {{fields.title}} "
         i18n: true
 
         fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+              required: false,
+            }
 
           - {
               label: "Content",
@@ -195,6 +220,7 @@ collections:
               widget: "markdown",
               default: "hier steht dn text",
               i18n: duplicate,
+              required: false,
             }
           - {
               label: "Image",
@@ -202,16 +228,24 @@ collections:
               widget: "image",
               i18n: duplicate,
               choose_url: false,
+              required: false,
             }
       - label: "content Text(Komfort & Ausstattung)"
         name: "contentText3"
+        required: false
 
         widget: "object"
         summary: " {{fields.title}} "
         i18n: true
 
         fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+              required: false,
+            }
 
           - {
               label: "Content",
@@ -219,23 +253,32 @@ collections:
               widget: "markdown",
               default: "hier steht dn text",
               i18n: duplicate,
+              required: false,
             }
           - {
               label: "Image",
               name: "image",
               widget: "image",
               i18n: duplicate,
+              required: false,
               choose_url: false,
             }
       - label: "content Text(Bedienung & Fahrbetrieb)"
         name: "contentText4"
+        required: false
 
         widget: "object"
         summary: " {{fields.title}} "
         i18n: true
 
         fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+              required: false,
+            }
 
           - {
               label: "Content",
@@ -243,6 +286,7 @@ collections:
               widget: "markdown",
               default: "hier steht dn text",
               i18n: duplicate,
+              required: false,
             }
           - {
               label: "Image",
@@ -250,16 +294,24 @@ collections:
               widget: "image",
               i18n: duplicate,
               choose_url: false,
+              required: false,
             }
       - label: "content Text(Umwelt)"
         name: "contentText5"
+        required: false
 
         widget: "object"
         summary: " {{fields.title}} "
         i18n: true
 
         fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+              required: false,
+            }
 
           - {
               label: "Content",
@@ -267,6 +319,7 @@ collections:
               widget: "markdown",
               default: "hier steht dn text",
               i18n: duplicate,
+              required: false,
             }
           - {
               label: "Image",
@@ -274,16 +327,24 @@ collections:
               widget: "image",
               i18n: duplicate,
               choose_url: false,
+              required: false,
             }
       - label: "content Text(Preise & Garantie)"
         name: "contentText6"
+        required: false
 
         widget: "object"
         summary: " {{fields.title}} "
         i18n: true
 
         fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+              required: false,
+            }
 
           - {
               label: "Content",
@@ -291,6 +352,7 @@ collections:
               widget: "markdown",
               default: "hier steht dn text",
               i18n: duplicate,
+              required: false,
             }
           - {
               label: "Image",
@@ -298,16 +360,24 @@ collections:
               widget: "image",
               i18n: duplicate,
               choose_url: false,
+              required: false,
             }
       - label: "content Text(Fazit)"
         name: "contentText7"
+        required: false
 
         widget: "object"
         summary: " {{fields.title}} "
         i18n: true
 
         fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+              required: false,
+            }
 
           - {
               label: "Content",
@@ -315,12 +385,14 @@ collections:
               widget: "markdown",
               default: "hier steht dn text",
               i18n: duplicate,
+              required: false,
             }
           - {
               label: "Total Score(Gesamtbewertung)",
               name: "totalscore",
               widget: "markdown",
               i18n: true,
+              required: false,
             }
 
   - label: "Vehicles"

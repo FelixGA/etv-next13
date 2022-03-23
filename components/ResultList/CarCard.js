@@ -9,12 +9,10 @@ import Link from "next/link";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import MobileTestResult from "../repeated/MobileTestResult";
 
-function CarCard(props) {
+function CarCard({ carItem }) {
   /* HOOKS */
   const { state, dispatch } = useStore();
   const [showDetails, setShowDetails] = useState(false);
-
-  const carItem = props.caritem;
 
   return (
     <div className="shadow-lg mb-4 lg:shadow-none border-t lg:border-2 lg:border-grey-lighter lg:rounded-xl overflow-hidden ">
