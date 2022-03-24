@@ -130,7 +130,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
               <MDXRemote {...getMarkdownContext.header} />
             </div>
 
-            <p className="text-blue-extra font-bold px-3 text-mg xl:text-2xl text-center">
+            <p className="text-blue-extra font-bold px-3 text-sm xl:text-2xl text-center">
               {getContent.content[0].details}
             </p>
           </div>
