@@ -77,7 +77,7 @@ function Sort({ getContent }) {
   }, [getContent]);
 
   return (
-    <div className="block md:hidden">
+    <div className="block md:hidden ">
       <div
         className=" cursor-pointer"
         onClick={() => {
@@ -91,11 +91,12 @@ function Sort({ getContent }) {
             </div>
             <div className="pl-4 my-auto ">
               <h4 className="py-3  font-bold text-blue-dark text-md">
-                {getContent?.content[2].name} ↬{" "}
+                {/* {getContent?.content[2].name} ↬{" "} */}
                 {state?.activeSortValues[0]?.sortCategory}
               </h4>
             </div>
           </div>
+
           <div
             className={
               truncate

@@ -51,7 +51,7 @@ function FilterItemMobile({ item }) {
               <h4 className=" font-bold text-blue-darker">{item.title}</h4>
             </div>
           </div>
-          <div className="flex flex-row  ">
+          <div className="flex flex-row">
             <span
               className={
                 state[item.category].length > 0
