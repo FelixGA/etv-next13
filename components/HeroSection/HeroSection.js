@@ -136,7 +136,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
           </div>
         </div>
         {/* COMPARE TOOL */}
-        <div className="lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border border-blue-dark relative top-2 md:top-10 lg:top-6 bottom-0 xl:bottom-6 pt-6 pb-6 rounded-md">
+        <div className="lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border border-blue-dark relative top-2 md:top-10 lg:top-6 bottom-0 xl:bottom-6 pt-5 pb-4 rounded-md">
           {/* comaprison-input-container */}
           <div className="comaprison-input-container mx-2 lg:items-center lg:flex lg:flex-row lg:justify-evenly lg:flex-1 ">
             {/* PRICE AND RANGE */}
