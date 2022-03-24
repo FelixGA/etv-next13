@@ -7,14 +7,15 @@ const TopSliderCard = (props) => {
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
     <div className="relative">
       <div className="min-w-64 px-6" key={index}>
-        <div className="w-72">
+        <div className="w-72 border rounded-md">
           <Link href={`/transporter/${caritem.name}`} passHref>
             <a>
               {caritem.src && (
                 <Image
+                  className=""
                   src={caritem.src}
                   alt="picture"
-                  objectFit="cover"
+                  objectFit="contain"
                   width={264}
                   height={244}
                   layout="responsive"
