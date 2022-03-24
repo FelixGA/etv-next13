@@ -1,9 +1,16 @@
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Layout(props) {
   const [blogs, setBlogs] = useState(props.blogs);
+  const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
+
+  useEffect(() => {
+    setValueFromUseEffect(props.params);
+    setBlogs(props.blogs);
+  }, [props]);
+
   return (
     <>
       <Header />
@@ -18,6 +25,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       blogs,
+      params: context.params,
     },
   };
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
 import TopSlider from "../../components/Sliders/TopSlider";
@@ -15,9 +15,19 @@ export default function Details(props) {
 
   /* carItem hook for the ONE car that it is displayed */
   const [carItem, SetCarItem] = useState(props.vehicle);
+
   /* for the view more hook */
   const [descriptionSize, SetDescriptionSize] = useState(true);
   const [getBlogContext, SetGetBlogContext] = useState(props.relatedBlog);
+  /* to make the Page change after clicking next/link */
+
+  const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
+  useEffect(() => {
+    setValueFromUseEffect(props.params.cartitle);
+    SetGetCars(props.vehicles);
+    SetCarItem(props.vehicle);
+  }, [props]);
+
   return (
     <>
       {/* image and rating section */}
@@ -60,6 +70,8 @@ export async function getStaticProps(context) {
     context.params.cartitle,
     context.locale
   );
+  /* get all blogs*/
+  let blogs = await getContent("blogs", context.locale);
 
   /* catching errors in case there isnt blog yet */
   let emptyBlog = await getContentBySlug(
@@ -84,6 +96,8 @@ export async function getStaticProps(context) {
       vehicle,
       vehicles,
       relatedBlog,
+      params: context.params,
+      blogs,
     },
   };
 }
