@@ -18,7 +18,7 @@ export default function ActiveCompareImages({ comparedCars }) {
         <div className="relative cursor-pointer invisible">
           <a>
             <Image
-              className="rounded-md md:rounded-lg brightness-50 "
+              className="rounded-md md:rounded-lg "
               src={image}
               alt="picture"
               objectFit="contain"
@@ -43,7 +43,7 @@ export default function ActiveCompareImages({ comparedCars }) {
             <Link href={`/transporter/${item.name}`}>
               <a>
                 <Image
-                  className=" rounded-md md:rounded-lg brightness-50 "
+                  className=" rounded-md md:rounded-lg brightness-[0.75] "
                   src={item.src}
                   alt="picture"
                   objectFit="cover"

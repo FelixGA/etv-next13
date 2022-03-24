@@ -91,7 +91,7 @@ export default function activeCompare(props) {
       <div
         className={comparedCars.length > 1 ? "pl-4 block lg:hidden" : "hidden"}
       >
-        <button className="mb-12 text-sm w-52 h-10 rounded-md text-blue-darker bg-grey-lighter">
+        <button className="mb-8 text-sm w-52 h-10 rounded-md text-blue-darker bg-grey-lighter">
           <Link href="/comparePage">
             <a className="visited:text-blue-darker">
               « zurück zur Ergebnisliste

@@ -23,7 +23,7 @@ const Articles = ({ carItem, getBlogContext }) => {
             objectFit="contain"
             className="rounded-l-lg"
           />
-          <div className="ml-auto w-full flex flex-row-reverse absolute  bottom-0 p-2  md:p-4 ">
+          <div className="flex absolute bottom-0 right-0 md:p-4 scale-75">
             <RatingBox carItem={carItem} />
           </div>
         </div>
@@ -35,7 +35,7 @@ const Articles = ({ carItem, getBlogContext }) => {
           <p>{getBlogContext?.content}</p>
           <Link href={`/magazin/${carItem.name}`}>
             <a target="_blank" className="text-blue-500">
-              <button className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden">
+              <button className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden rounded-md">
                 Testbericht lesen
               </button>
             </a>

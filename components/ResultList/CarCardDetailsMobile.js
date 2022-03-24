@@ -17,7 +17,7 @@ function CarCardDetailsMobile({ carItem }) {
               <div className="text-grey-dark font-bold w-full xs:w-2/5 leading-7 pl-4">
                 {carItem?.loadingWeight.key}:
               </div>
-              <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2">
+              <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2 flex items-end">
                 {carItem?.loadingWeight.value}
                 {carItem?.loadingWeight.baseUnit}
               </div>
@@ -28,7 +28,7 @@ function CarCardDetailsMobile({ carItem }) {
               <div className="text-grey-dark font-bold w-full xs:w-2/5 leading-7 pl-4">
                 {carItem?.maxSpeed.key}:
               </div>
-              <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2">
+              <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2 flex items-end">
                 {carItem?.maxSpeed.value}
                 {carItem?.maxSpeed.baseUnit}
               </div>
@@ -43,7 +43,7 @@ function CarCardDetailsMobile({ carItem }) {
                   ? carItem?.rangeLithium.key
                   : carItem?.range230V.key}
               </div>
-              <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2">
+              <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2 flex items-end ">
                 {range.maxValue
                   ? `${range.value}-${range.maxValue}`
                   : range.value}
@@ -59,7 +59,7 @@ function CarCardDetailsMobile({ carItem }) {
                   : carItem?.chargingTime230V.key}
                 :
               </div>
-              <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2">
+              <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2 flex items-end">
                 {carItem?.chargingTimeLithium.value
                   ? carItem?.chargingTimeLithium.value
                   : carItem?.chargingTime230V.value}
