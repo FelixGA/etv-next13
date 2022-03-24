@@ -29,7 +29,7 @@ function FilterItemDesktop({ item }) {
     <>
       {/* truncate state */}
       <div
-        className=" cursor-pointer relative z-50 bg-white w-full "
+        className="cursor-pointer relative z-50 bg-white w-full h-16"
         onClick={() => {
           dispatch({
             type: "truncate",
@@ -37,7 +37,7 @@ function FilterItemDesktop({ item }) {
           });
         }}
       >
-        <div className="flex flex-row justify-between border-b  py-4 flex-1 bg-white  ">
+        <div className="flex flex-row justify-between border-b py-4 flex-1 bg-white  ">
           <div className="flex flex-row pl-4  ">
             <div className="w-6 h-6 ml-4 ">
               <Image
@@ -53,11 +53,11 @@ function FilterItemDesktop({ item }) {
               <h4 className=" font-bold text-blue-darker">{item.title}</h4>
             </div>
           </div>
-          <div className="flex flex-row  ">
+          <div className="flex">
             <span
               className={
                 state[item.category].length > 0
-                  ? "flex text-green-700 text-xl "
+                  ? "flex text-green-700 text-xl h-6"
                   : "hidden"
               }
             >

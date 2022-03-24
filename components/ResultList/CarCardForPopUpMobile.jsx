@@ -10,10 +10,10 @@ function CarCardForPopUpMobile(props) {
     <div className="grid grid-cols-3  ">
       <div className="relative w-20 sm:w-28 mx-2 mt-1 border border-grey-dark">
         <Image
-          className=" md:rounded-md brightness-50"
+          className=" md:rounded-md brightness-[0.75]"
           src={props.selectedCar.pic}
           alt="picture"
-          objectFit="cover"
+          objectFit="contain"
           width={228.97}
           height={111}
           layout="responsive"

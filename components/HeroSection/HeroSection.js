@@ -130,13 +130,13 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
               <MDXRemote {...getMarkdownContext.header} />
             </div>
 
-            <p className="text-blue-extra font-bold pl-3 text-lg xl:text-2xl text-center">
+            <p className="text-blue-extra font-bold px-3 text-sm xl:text-2xl text-center">
               {getContent.content[0].details}
             </p>
           </div>
         </div>
         {/* COMPARE TOOL */}
-        <div className="lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border border-blue-dark relative top-2 md:top-10 lg:top-6 bottom-0 xl:bottom-6 pt-4 pb-3">
+        <div className="lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border border-blue-dark relative top-2 md:top-10 lg:top-6 bottom-0 xl:bottom-6 pt-5 pb-4 rounded-md">
           {/* comaprison-input-container */}
           <div className="comaprison-input-container mx-2 lg:items-center lg:flex lg:flex-row lg:justify-evenly lg:flex-1 ">
             {/* PRICE AND RANGE */}
@@ -244,7 +244,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
                 }}
               >
                 <Link href="/comparePage">
-                  <a className="py-10">Jetzt vergleichen</a>
+                  <a className="py-10 text-lg">Jetzt vergleichen</a>
                 </Link>
               </button>
             </div>

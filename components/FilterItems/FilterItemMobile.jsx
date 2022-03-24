@@ -51,11 +51,11 @@ function FilterItemMobile({ item }) {
               <h4 className=" font-bold text-blue-darker">{item.title}</h4>
             </div>
           </div>
-          <div className="flex flex-row  ">
+          <div className="flex flex-row">
             <span
               className={
                 state[item.category].length > 0
-                  ? "flex text-green-700 text-xl pr-2 "
+                  ? "flex text-green-700 text-xl h-6 "
                   : "hidden"
               }
             >
@@ -114,7 +114,7 @@ function FilterItemMobile({ item }) {
                   ></FilterCheckboxMobile>
                   <label
                     forhtml="categories"
-                    className="inline-flex items-center cursor-pointer pl-5 # font-thin text-lg text-blue-extra"
+                    className="inline-flex items-center cursor-pointer pl-5 tracking-wide text-lg text-blue-extra"
                   >
                     {checkbox.name}
                   </label>

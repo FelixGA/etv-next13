@@ -58,10 +58,10 @@ function SortDesktop() {
                 });
               }}
               key={index}
-              className="mt-1 flex flex-row py-2  mr-4 "
+              className="mt-1 flex flex-row py-2 mr-4 "
             >
               <input
-                className=" appearance-none w-6 h-6 tex t-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+                className=" appearance-none w-6 h-6 tex text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
                 onChange={() => {
                   return null;
                 }}
@@ -72,7 +72,7 @@ function SortDesktop() {
               ></input>
               <label
                 forhtml={rank?.sortCategory}
-                className="inline-flex items-center cursor-pointer pl-5 text-lg font-thin text-blue-extra "
+                className="inline-flex items-center cursor-pointer pl-5 text-lg tracking-wide text-blue-extra "
               >
                 {rank?.sortCategory}
               </label>
