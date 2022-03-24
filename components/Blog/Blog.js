@@ -39,7 +39,7 @@ export default function Blog({ getBlogs }) {
                 (post, index) =>
                   post.category && (
                     <a
-                      className="flex flex-col max-w-md shadow-card rounded-md transition transform hover:scale-105 overflow-hidden"
+                      className="flex flex-col max-w-md min-w-md shadow-card rounded-md transition transform hover:scale-105 overflow-hidden mx-6"
                       //   href={`/${prefix}/${post.slug}`}
                       href={`/magazin/${post.slug}`}
                       key={index}
@@ -69,7 +69,7 @@ export default function Blog({ getBlogs }) {
                         </div>
                       </div>
                       <div className="flex-1 flex flex-col justify-between"></div>
-                      <div className="hidden md:line-clamp-6 md:block text-center px-2">
+                      <div className="hidden line-clamp-6 block text-center px-2">
                         {post.contentHeading.content
                           ? post.contentHeading.content
                           : post.description}
