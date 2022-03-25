@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
 import TopSlider from "../../components/Sliders/TopSlider";
@@ -10,6 +10,12 @@ export default function Blogs(props) {
   /* getBlogContext hook for the ONE car that it is displayed */
   const [relatedVehicles, SetRelatedVehicles] = useState(props.vehicles);
   const [getBlogContext, SetGetBlogContext] = useState(props.blog);
+  const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
+  useEffect(() => {
+    setValueFromUseEffect(props.params.blogtitle);
+    SetRelatedVehicles(props.vehicles);
+    SetGetBlogContext(props.blog);
+  }, [props]);
 
   return (
     <>
@@ -41,26 +47,15 @@ export async function getStaticProps(context) {
       item.category ===
       vehicles.find((item) => item.name === blog.slug)?.category
   );
-  /* catching errors */
-  let emptyBlog = await getContentBySlug(
-    "blogs",
-    "beispiel bitte nicht ändern",
-    context.locale
-  );
 
-  // let relatedBlog;
-
-  // blog.slug === "beispiel bitte nicht ändern" ? (blog = emptyBlog) : null;
-  // if (!blog) {
-  //   return {
-  //     notFound: true,
-  //   };
-  // }
-
+  /* get all blogs*/
+  let blogs = await getContent("blogs", context.locale);
   return {
     props: {
       vehicles,
       blog,
+      blogs,
+      params: context.params,
     },
   };
 }

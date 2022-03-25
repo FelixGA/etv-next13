@@ -17,8 +17,10 @@ const NewsLetter = ({ getMarkdownContext }) => {
         <div className="flex flex-col xs:flex-row">
           <input
             type="email"
-            placeholder="your e-mail"
+
+            placeholder="deine E-mail"
             className="h-14 text-lg rounded-sm w-48 sm:w-full placeholder:pl-2"
+
           />
           <button className="bg-blue-dark mt-2 xs:mt-0 hover:bg-blue-light text-white font-bold px-6 text-md rounded-md sm:rounded-r-lg h-14">
             anmelden

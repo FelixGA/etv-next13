@@ -1,11 +1,23 @@
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import { useState } from "react";
 import { useStore } from "../../elektrotransporter-vergleich/components/store";
+import { useState, useEffect } from "react";
+
+  
+
+
 
 export default function Layout(props) {
   const [blogs, setBlogs] = useState(props.blogs);
   const { state, dispatch } = useStore();
+  const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
+
+  useEffect(() => {
+    setValueFromUseEffect(props.params);
+    setBlogs(props.blogs);
+  }, [props]);
+
+
   return (
     <div
       className={state?.mobileNavActives ? "overflow-hidden max-h-screen" : ""}
@@ -22,6 +34,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       blogs,
+      params: context.params,
     },
   };
 }

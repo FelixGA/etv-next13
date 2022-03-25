@@ -67,14 +67,13 @@ export default function comparePage(props) {
     SetSortedCars(getCarslowestPrice);
 
     /* ɢᴇᴛ ʀᴇsᴜʟᴛs from sorting */
-
+    if (state?.activeSortValues[0]?.sortType === "lowest") {
+      SetSortedCars(getCarslowestPrice);
+    }
     if (state?.activeSortValues[0]?.sortType === "highest") {
       SetSortedCars(getCarshighestPrice);
     }
 
-    if (state?.activeSortValues[0]?.sortType === "lowest") {
-      SetSortedCars(getCarslowestPrice);
-    }
     if (state?.activeSortValues[0]?.sortType === "highestWeight") {
       SetSortedCars(getCarslightest);
     }
@@ -115,7 +114,7 @@ export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
-  let blogs = await getContent("blog", context.locale);
+  let blogs = await getContent("blogs", context.locale);
   // console.log(blogs);
   const page = pages.find((page) => page.path === "/comparePage");
 
@@ -130,6 +129,7 @@ export async function getStaticProps(context) {
       vehicles,
       posts,
       page,
+      blogs,
     },
   };
 }
