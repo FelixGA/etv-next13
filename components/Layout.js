@@ -1,11 +1,7 @@
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import { useStore } from "../../elektrotransporter-vergleich/components/store";
+import { useStore } from "../components/store";
 import { useState, useEffect } from "react";
-
-  
-
-
 
 export default function Layout(props) {
   const [blogs, setBlogs] = useState(props.blogs);
@@ -16,7 +12,6 @@ export default function Layout(props) {
     setValueFromUseEffect(props.params);
     setBlogs(props.blogs);
   }, [props]);
-
 
   return (
     <div
