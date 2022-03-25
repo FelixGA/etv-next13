@@ -73,7 +73,7 @@ const Header = () => {
               />
             </div>
             <div className=" items-center flex pl-2">
-              <p className="text-white text-xxs md:text-sm">
+              <p className="text-white text-xs md:text-sm pt-1">
                 ELEKTROTRANSPORTER
                 <br />
                 VERGLEICH
@@ -87,7 +87,7 @@ const Header = () => {
         <AnimatePresence initial={false}>
           {state?.mobileNavActives && (
             <motion.div
-              className=" lg:hidden w-full sm:w-96 absolute right-0 top-18  "
+              className="lg:hidden w-full sm:w-96 absolute right-0 top-18 z-90 "
               variants={variants}
               initial="enter"
               animate="center"
