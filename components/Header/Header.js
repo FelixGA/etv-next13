@@ -103,7 +103,35 @@ const Header = () => {
         >
           <Link href="/caradvisor" passHref>
             <a>
-              <div className="bg-yellow-light  hover:bg-orange-lighter text-grey-darker font-bold hidden sm:flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer">
+              <div
+                className="bg-yellow-light  hover:bg-orange-lighter text-grey-darker font-bold hidden sm:flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer"
+                onClick={() => {
+                  dispatch({
+                    type: "rangeLithium",
+                    data: [],
+                  });
+                  dispatch({
+                    type: "loadingWeight",
+                    data: [],
+                  });
+                  dispatch({
+                    type: "price",
+                    data: [],
+                  });
+                  dispatch({
+                    type: "maxSpeed",
+                    data: [],
+                  });
+                  dispatch({
+                    type: "category",
+                    data: [],
+                  });
+                  dispatch({
+                    type: "chargingTimeLithium",
+                    data: [],
+                  });
+                }}
+              >
                 <div className="w-6 xs:w-8 pl-2 ">
                   <Image
                     src="/images/iconStyle2x.png"

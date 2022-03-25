@@ -56,7 +56,7 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link href="/Kontakt">
+            <Link href="/kontakt">
               <a
                 onClick={() => {
                   setIsActive(false);
