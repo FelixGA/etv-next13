@@ -261,7 +261,7 @@ function FiltersMobile({ getContent }) {
     SetUserInputMaxPrice(e.target.value);
   };
   return (
-    <div className="absolute z-10 bg-white w-full">
+    <div className="absolute z-20 bg-white w-full shadow-lg">
       <div className="flex flex-col bg-white ">
         <div className="shadow-dropdown w-full ">
           <div
@@ -285,7 +285,7 @@ function FiltersMobile({ getContent }) {
                   layout="responsive"
                 />
               </div>
-              <span className="ml-2 font-black   my-auto text-sm text-blue-darker">
+              <span className="ml-4 font-black my-auto text-sm text-blue-darker">
                 {/* Alle Filter anzeigen */}
                 {getContent.content[1].name}
               </span>
@@ -306,7 +306,7 @@ function FiltersMobile({ getContent }) {
       <AnimatePresence initial={false}>
         {clicked && (
           <motion.div
-            className={clicked ? "block" : "hidden"}
+            className={clicked ? "block " : "hidden"}
             variants={variants}
             initial="enter"
             animate="center"
