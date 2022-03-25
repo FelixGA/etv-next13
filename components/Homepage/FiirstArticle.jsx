@@ -20,7 +20,7 @@ export default function FirstArticle({ getMarkdownContext, getContent }) {
         </div>
         <Link href="/caradvisor">
           <a>
-            <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 mt-10 text-sm rounded-lg">
+            <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 mt-6 text-sm rounded-md">
               Zum Kaufberater
             </button>
           </a>

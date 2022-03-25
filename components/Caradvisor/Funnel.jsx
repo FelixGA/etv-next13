@@ -132,19 +132,19 @@ export default function Funnel({ getContent }) {
         {
           value: 1,
           max: 10000,
-          name: "0-10000€",
+          name: "0 - 10000€",
           categoryName: "price",
           image: price,
         },
         {
-          name: "10001-20000€",
+          name: "10001 - 20000€",
           value: 10001,
           max: 20000,
           categoryName: "price",
           image: price,
         },
         {
-          name: "20001-40000€",
+          name: "20001 - 40000€",
           value: 20001,
           max: 40000,
           categoryName: "price",

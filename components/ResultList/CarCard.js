@@ -21,7 +21,7 @@ function CarCard({ carItem }) {
           <div className="flex ">
             <Link href={`/transporter/${carItem.name}`}>
               <a>
-                <h3 className="title text-xl font-bold text-black-darkest pt-1 lg:hidden pl-2 flex leading-7">
+                <h3 className="title text-xl font-bold text-black-darkest py-1 lg:hidden  flex leading-7">
                   {carItem.title}
                 </h3>
               </a>

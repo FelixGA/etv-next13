@@ -14,7 +14,7 @@ function CarCardForPopUpMobile(props) {
           src={props.selectedCar.pic}
           alt="picture"
           objectFit="contain"
-          width={228.97}
+          width={300.97}
           height={111}
           layout="responsive"
         />

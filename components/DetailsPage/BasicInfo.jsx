@@ -54,9 +54,9 @@ const BasicInfo = ({ carItem, descriptionSize }) => {
           </div>
         </div>
         {/* description */}
-        <div className="w-full flex flex-col lg:px-8">
-          <h3 className="w-full text-blue-extra text-2xl font-bold py-2">
-            Über das Fahrzeug
+        <div className="w-full flex flex-col lg:px-10">
+          <h3 className="w-full text-blue-extra text-2xl font-bold mt-4 pb-1">
+            Über das Fahrzeug:
           </h3>
           <p
             className={

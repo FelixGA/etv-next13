@@ -25,7 +25,7 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
 
         <Link href="/magazin/foerderungen">
           <a>
-            <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 my-6 text-sm rounded-lg mx-10">
+            <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5  text-sm rounded-md mx-10">
               Mehr erfahren
             </button>
           </a>

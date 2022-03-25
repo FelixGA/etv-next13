@@ -22,15 +22,13 @@ export default function Home(props) {
         <link rel="manifest" href="./manifest.json" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      {/* state?.mobileNavActives */}
       <HeroSection
         getContent={getContent}
         getMarkdownContext={getMarkdownContext}
       />
-
       <TopSlider getCars={getCars} getContent={getContent} />
       <BlogArticles getMarkdownContext={getMarkdownContext} />
-
       <Funnel getCars={getCars} getContent={getContent} />
       <NewsLetter getMarkdownContext={getMarkdownContext} />
     </>

@@ -13,7 +13,7 @@ export default function TestResult({ testResultArr }) {
           }
         >
           Testnote
-          <span className="text-green-light">{testResultArr?.value}</span>
+          <span className="text-green-light pl-1">{testResultArr?.value}</span>
         </h2>
       </div>
       {/* desktop test */}
