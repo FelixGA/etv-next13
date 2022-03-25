@@ -35,7 +35,8 @@ collections:
           i18n: duplicate,
           choose_url: false,
         }
-      - label: "Content"
+
+      - label: "Content(extra)"
         name: "content"
         widget: "list"
         summary: "{{fields.name}}"

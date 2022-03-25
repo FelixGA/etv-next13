@@ -1,6 +1,5 @@
 import Head from "next/head";
 import getContent from "/utils/getContent";
-import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import BlogArticles from "../components/Homepage/BlogArticles";
 import HeroSection from "../components/HeroSection/HeroSection";

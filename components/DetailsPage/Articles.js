@@ -5,6 +5,7 @@ import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
 const Articles = ({ carItem, getBlogContext }) => {
+  console.log(getBlogContext);
   return (
     <>
       <div
@@ -15,7 +16,7 @@ const Articles = ({ carItem, getBlogContext }) => {
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
         <div className=" lg:w-1/3 w-full m-auto relative ">
           <Image
-            src={carItem?.src}
+            src={getBlogContext?.image}
             alt={getBlogContext?.title}
             width={195}
             height={140}

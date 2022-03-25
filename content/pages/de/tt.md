@@ -36,3 +36,4 @@ content:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur euismod, nisi nisl euismod nisi, vel consectetur nisi nisl euismod.bold
     details: Beliebte Kategorien
 ---
+.

@@ -4,7 +4,7 @@ import getContent from "/utils/getContent";
 import { useState } from "react";
 import Blog from "../components/Blog/Blog";
 
-export default function Home(props) {
+export default function magazin(props) {
   const [getBlogs, SetGetBlogs] = useState(props.blogs);
 
   return (
