@@ -33,6 +33,10 @@ const Header = () => {
             className="flex flex-row pl-2 sm:pl-4 cursor-pointer "
             onClick={() => {
               dispatch({
+                type: "mobileNavActive",
+                data: false,
+              });
+              dispatch({
                 type: "rangeLithium",
                 data: [],
               });

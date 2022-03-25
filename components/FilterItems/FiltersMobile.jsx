@@ -119,25 +119,25 @@ function FiltersMobile({ getContent }) {
       options: [
         {
           id: 1,
-          name: `${fromWord} 50km/h`,
+          name: `${fromWord} 50 km/h`,
           value: 50,
           categoryName: "maxSpeed",
         },
         {
           id: 2,
-          name: `${fromWord} 80km/h`,
+          name: `${fromWord} 80 km/h`,
           value: 80,
           categoryName: "maxSpeed",
         },
         {
           id: 3,
-          name: `${fromWord} 120km/h`,
+          name: `${fromWord} 120 km/h`,
           value: 120,
           categoryName: "maxSpeed",
         },
         {
           id: 4,
-          name: `${fromWord} 180km/h`,
+          name: `${fromWord} 180 km/h`,
           value: 180,
           categoryName: "maxSpeed",
         },
@@ -219,27 +219,27 @@ function FiltersMobile({ getContent }) {
         {
           value: 1,
           max: 10000,
-          name: "0-10000€",
+          name: "0 - 10000 €",
           id: 1,
           categoryName: "price",
         },
         {
           id: 2,
-          name: "10001-20000€",
+          name: "10001 - 20000 €",
           value: 10001,
           max: 20000,
           categoryName: "price",
         },
         {
           id: 3,
-          name: "20001-40000€",
+          name: "20001 - 40000 €",
           value: 20001,
           max: 20000,
           categoryName: "price",
         },
         {
           id: 4,
-          name: "40001-80000€",
+          name: "40001 - 80000 €",
           value: 40001,
           max: 80000,
           categoryName: "price",
@@ -267,8 +267,8 @@ function FiltersMobile({ getContent }) {
           <div
             className={
               clicked
-                ? "h-10 shadow-dropdown flex justify-between align-middle border-b "
-                : "h-10 shadow-dropdown flex justify-between align-middle "
+                ? "h-14 shadow-dropdown flex justify-between align-middle border-b "
+                : "h-14 shadow-dropdown flex justify-between align-middle "
             }
             onClick={() => {
               setClicked(!clicked);

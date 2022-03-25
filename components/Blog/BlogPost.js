@@ -21,7 +21,7 @@ export default function BlogPost({ getBlogContext }) {
     <div className="flex flex-1 flex-col p-4 lg:p-8">
       {getBlogContext?.category !== "referenzen" ? (
         <div>
-          <h2 className="m-auto py-8 text-blue-dark font-bold text-4xl text-center ">
+          <h2 className="m-auto py-8 text-blue-dark font-bold text-4xl bg-red-500 ">
             {getBlogContext?.title}
           </h2>
           <div className={styles.markdown}>
@@ -42,11 +42,11 @@ export default function BlogPost({ getBlogContext }) {
           </div>
         </div>
       ) : (
-        <h2 className="flex flex-col m-auto py-8 text-blue-dark font-bold text-4xl text-center">
+        <h2 className="flex flex-col m-auto pb-4 pt-2 text-blue-dark font-bold text-3xl xl:text-4xl">
           Testbericht von {getBlogContext?.title}
           <Link href={`/transporter/${getBlogContext?.slug}`}>
             <span className="py-2 text-blue-dark font-bold text-sm text-left cursor-pointer">
-              Auto Details anzeigen
+              Auto Details anzeigen ▼
             </span>
           </Link>
         </h2>

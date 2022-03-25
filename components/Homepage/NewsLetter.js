@@ -11,16 +11,18 @@ const NewsLetter = ({ getMarkdownContext }) => {
         <MDXRemote {...getMarkdownContext.newsletter} />
       </div>
       <div className="">
-        <p className="w-full align-left text-blue-lighter font-bold pb-1">
+        <p className="w-full align-left text-blue-lighter font-bold pb-1 pl-1">
           Email
         </p>
         <div className="flex flex-col xs:flex-row">
           <input
             type="email"
-            placeholder=" deine E-mail.."
-            className="h-14 text-lg rounded-sm w-48 sm:w-full"
+
+            placeholder="deine E-mail"
+            className="h-14 text-lg rounded-sm w-48 sm:w-full placeholder:pl-2"
+
           />
-          <button className="bg-blue-dark mt-2 xs:mt-0 hover:bg-blue-light text-white font-bold px-6 text-sm rounded-sm sm:rounded-r-lg h-14">
+          <button className="bg-blue-dark mt-2 xs:mt-0 hover:bg-blue-light text-white font-bold px-6 text-md rounded-md sm:rounded-r-lg h-14">
             anmelden
           </button>
         </div>
