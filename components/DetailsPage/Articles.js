@@ -5,19 +5,19 @@ import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
 const Articles = ({ carItem, getBlogContext }) => {
-  console.log(getBlogContext);
+  // console.log(getBlogContext[0].title);
   return (
     <>
       <div
       // className={styles.mdxstyles}
       >
-        {/* <MDXRemote {...getMarkdownContext} /> */}
+        {/* <MDXRemote {...getBlogContext[0].context} /> */}
       </div>
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
         <div className=" lg:w-1/3 w-full m-auto relative ">
           <Image
-            src={getBlogContext?.image}
-            alt={getBlogContext?.title}
+            src={carItem?.src}
+            alt={carItem?.title}
             width={195}
             height={140}
             layout="responsive"
@@ -32,11 +32,21 @@ const Articles = ({ carItem, getBlogContext }) => {
           <h3 className="w-full py-4 text-black-darkest text-2xl font-bold ">
             Testbericht{"\n"} {carItem.title}
           </h3>
-          <h4 className="font-bold ">{getBlogContext?.title}</h4>
-          <p>{getBlogContext?.content}</p>
+          <h4 className="font-bold ">
+            {" "}
+            {getBlogContext[0]?.title ? getBlogContext[0]?.title : "kommt bald"}
+          </h4>
+          <p>
+            {getBlogContext[0]?.content
+              ? getBlogContext[0]?.content
+              : "kommt bald"}
+          </p>
           <Link href={`/magazin/${carItem.name}`}>
             <a target="_blank" className="text-blue-500">
-              <button className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden rounded-md">
+              <button
+                disabled={getBlogContext[0]?.title ? false : true}
+                className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden rounded-md"
+              >
                 Testbericht lesen
               </button>
             </a>

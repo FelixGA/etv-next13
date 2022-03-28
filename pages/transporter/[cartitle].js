@@ -5,6 +5,7 @@ import TopSlider from "../../components/Sliders/TopSlider";
 import Articles from "../../components/DetailsPage/Articles";
 import PrintPopUp from "../../components/DetailsPage/PrintPopUp";
 import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
+import { serialize } from "next-mdx-remote/serialize";
 
 import getSlugs from "/utils/getSlugs";
 import BasicInfo from "../../components/DetailsPage/BasicInfo";
@@ -26,6 +27,7 @@ export default function Details(props) {
     setValueFromUseEffect(props.params.cartitle);
     SetGetCars(props.vehicles);
     SetCarItem(props.vehicle);
+    SetGetBlogContext(props.relatedBlog);
   }, [props]);
 
   return (
@@ -33,17 +35,13 @@ export default function Details(props) {
       {/* image and rating section */}
       <div className="2xl:px-40">
         <BasicInfo carItem={carItem} descriptionSize={descriptionSize} />
-
         {/* technical details section */}
-
-        <TechnicalDetails carItem={carItem} />
+        <TechnicalDetails carItem={carItem} />{" "}
         {/* description and articles section */}
       </div>
-      <Articles carItem={carItem} getBlogContext={getBlogContext} />
+      <Articles carItem={carItem} getBlogContext={getBlogContext} />{" "}
       {/* slider  */}
-
-      <TopSlider getCars={getCars} />
-      {/*sticky popup  */}
+      <TopSlider getCars={getCars} /> {/*sticky popup  */}
       <PrintPopUp carItem={carItem} />
     </>
   );
@@ -65,8 +63,8 @@ export async function getStaticProps(context) {
     .filter((item, index) => item.category === vehicle.category)
     .slice(0, 4);
   /* get related blogs*/
-  let blog = await getContentBySlug(
-    "blogs",
+  let carsreview = await getContentBySlug(
+    "carsreview",
     context.params.cartitle,
     context.locale
   );
@@ -74,17 +72,18 @@ export async function getStaticProps(context) {
   let blogs = await getContent("blogs", context.locale);
 
   /* catching errors in case there isnt blog yet */
-  let emptyBlog = await getContentBySlug(
+  let emptyCarsreview = await getContentBySlug(
     "blogs",
     "beispiel bitte nicht ändern",
     context.locale
   );
-
+  // const shit = await serialize(carsreview.content.map((cont) => cont.markdown));
+  // console.log(shit);
   let relatedBlog;
-
-  blog.source
-    ? (relatedBlog = blog.contentHeading)
-    : (relatedBlog = emptyBlog.contentHeading);
+  /* will delete it later */
+  carsreview.source
+    ? (relatedBlog = carsreview.content)
+    : (relatedBlog = emptyCarsreview.contentHeading);
   if (!vehicle) {
     return {
       notFound: true,
@@ -96,6 +95,7 @@ export async function getStaticProps(context) {
       vehicle,
       vehicles,
       relatedBlog,
+
       params: context.params,
       blogs,
     },
