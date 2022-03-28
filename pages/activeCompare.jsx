@@ -6,7 +6,6 @@ import ActiveCompareImages from "../components/ActiveCompare/ActiveCompareImages
 import ActiveCompareEntries from "../components/ActiveCompare/ActiveCompareEntries";
 
 const allKeys = [
-  // "typeClass",
   "range230V",
   "rangeLithium",
   "maxSpeed",
@@ -37,11 +36,13 @@ export default function activeCompare(props) {
 
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
   // console.log(comparedCars);
+  let typeClass = { key: getCars[0]?.typeClass };
+
   useEffect(() => {
     SetGetCars(props.vehicles);
     let arrkeys = [
       /* grundlagen - basics */
-      "Klasse",
+
       getCars[0]?.range230V.key,
       getCars[0]?.rangeLithium.key,
       getCars[0]?.maxSpeed.key,
@@ -78,7 +79,7 @@ export default function activeCompare(props) {
     ];
     SetGetKeys(arrkeys);
   }, []);
-
+  console.log(getKeys);
   return (
     <div className="main-wrapper 2xl:px-40">
       {/* HEADING */}

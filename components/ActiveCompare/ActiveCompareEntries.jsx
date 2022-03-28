@@ -6,7 +6,7 @@ import ButtonAnfragen from "../ResultList/ButtonAnfragen";
 export default function ActiveCompareEntries({ keys, comparedCars }) {
   // console.log(comparedCars, "blablabla");
   const [entries, setEntries] = useState([]);
-  console.log(entries, "test");
+  // console.log(entries, "test");
   let testResultArr = comparedCars.map((test) => test.rating);
   // console.log(testResultArr);
 
@@ -16,28 +16,37 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
 
     const entryKeys = [];
     for (const key of keys) {
-      entryKeys.push(comparedCars[0][key].key);
+      entryKeys.push(
+        comparedCars[0][key].key ? comparedCars[0][key].key : keys[0]
+      );
       // console.log(entryKeys);
       // console.log(comparedCars[0][key].key);
+      // ? comparedCars[0][key].key : keys[0]
+      // { key: getCars[0]?.typeClass }
     }
     entries.push(entryKeys);
 
     for (const car of comparedCars) {
       const carValues = [];
+
+      // console.log(typeClass, "blabla");
       for (const key of keys) {
         const entryValues = [];
 
         const entry = car[key];
+
         carValues.push(`${entry.value} ${entry.baseUnit}`);
       }
       entries.push(carValues);
     }
+
     setEntries(entries);
   }, [keys, comparedCars]);
+
   return (
     <>
       {entries.map((entry, index) => (
-        <div key={index} className="relative h-full min-w-[160px] bg-white">
+        <div key={index} className="relative h-full min-w-[160px]">
           {index == 0 ? (
             <div className="flex items-end pb-1 flex-1 bg-white h-18 pl-4 lg:pl-8">
               <h3 className="text-blue-extra text-xl font-bold pb-2">
@@ -50,21 +59,33 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
             </div>
           )}
 
+          {index == 0 ? (
+            <div className="flex items-center  flex-1 bg-grey-lighter h-12 pl-4 lg:pl-8 border-4">
+              <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8 ">
+                Klasse
+              </p>
+            </div>
+          ) : (
+            <div className="pt-1 lg:pt-4 flex items-center h-12 lg:pl-8">
+              {comparedCars[index - 1].typeClass}
+            </div>
+          )}
+
+          {/*  {index == 0 ? (
+            <p>typeClass</p>
+          ) : (
+            comparedCars?.map((el) => <p>{el.typeClass}</p>)
+          )} */}
+
           {entry.map((value, index) => (
             <div
               className={`${
                 index % 2 == 1
-                  ? "bg-white flex items-center h-12 "
-                  : "bg-grey-lighter flex items-center h-12"
+                  ? "bg-grey-lighter flex items-center h-12 "
+                  : "bg-white flex items-center h-12"
               }`}
             >
-              <p
-                className={
-                  value.includes("Laderaum-Maße")
-                    ? "text-blue-extra text-lg font-bold pl-4 lg:pl-8"
-                    : "text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8"
-                }
-              >
+              <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
                 {value[0] == 0 || value.includes("undefined") ? "-" : value}
               </p>
             </div>
