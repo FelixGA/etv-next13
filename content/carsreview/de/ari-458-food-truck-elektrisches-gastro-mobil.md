@@ -4,7 +4,9 @@ slug: ari-458-food-truck-elektrisches-gastro-mobil
 youtubeLink: bitte auffuelen
 category: Kasten
 publishedAt: 03/03/2022
-description: bitte fuer SEO auffuelen
+description: bitte fuer SEO auffuelen bitte fuer SEO auffuelen bitte fuer SEO
+  auffuelen bitte fuer SEO auffuelen
+src: /images/ari-458-food-truck-heckansicht-1-.jpg
 content:
   - content: >-
       ### Konzept & Fahrzeugvarianten

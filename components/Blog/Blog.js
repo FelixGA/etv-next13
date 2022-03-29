@@ -21,16 +21,12 @@ export default function Blog({ getBlogs }) {
   //     if (page?.locale === "it") setPrefix("it/blog");
   //     if (page?.locale === "cs") setPrefix("cs/magazin");
   //   }, [page]);
-
+  console.log(getBlogs);
   return (
     <>
       {/* <Head page={page} /> */}
       {/* <BlogHeader getBlogs={getBlogs} /> */}
       <div className="grid w-full max-w-screen-xl mx-auto">
-        <h1 className="px-4 pt-8 pb-2 text-blue-dark font-bold text-4xl text-center">
-          {/* {page?.title}  */}
-          Magazin
-        </h1>
         <div className="max-w-screen-2xl p-2 md:p-4">
           <div className="grid gap-4 md:gap-8 justify-items-center grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]">
             {getBlogs
@@ -70,7 +66,7 @@ export default function Blog({ getBlogs }) {
                       </div>
                       <div className="flex-1 flex flex-col justify-between"></div>
                       <div className="hidden line-clamp-6 block text-center px-2">
-                        {post.contentHeading.content
+                        {post?.contentHeading?.content
                           ? post.contentHeading.content
                           : post.description}
                       </div>

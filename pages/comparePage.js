@@ -11,7 +11,6 @@ export default function comparePage(props) {
   const [sortedCars, SetSortedCars] = useState([]);
   const [getContent, SetGetContent] = useState(props.page);
   const { state, dispatch } = useStore();
-
   useEffect(() => {
     SetSortedCars(props.vehicles);
     SetGetContent(props.page);

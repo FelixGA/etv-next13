@@ -3,7 +3,9 @@ title: ARI-345-Koffer
 slug: ari-345-koffer
 category: Koffer
 publishedAt: 03/17/2022
-description: bitte fuer SEO auffuelen
+description: bitte fuer SEO auffuelen bitte fuer SEO auffuelen bitte fuer SEO
+  auffuelen bitte fuer SEO auffuelen
+src: /images/ari-345-koffer-mit-geöffneter-seitenklappe-und-solarpanel.jpg
 content:
   - content: >-
       ### Konzept & Fahrzeugvarianten

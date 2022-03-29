@@ -4,7 +4,9 @@ slug: ari-458-food-truck-elektrisches-gastro-mobil
 youtubeLink: bitte auffuelen
 category: Kasten
 publishedAt: 03/03/2022
-description: bitte fuer SEO auffuelen
+description: bitte fuer SEO auffuelen bitte fuer SEO auffuelen bitte fuer SEO
+  auffuelen bitte fuer SEO auffuelen
+src: /images/ari-458-food-truck-heckansicht-1-.jpg
 content:
   - content: >-
       ### Konzept & Fahrzeugvarianten
@@ -107,8 +109,12 @@ content:
       ### Fazit
 
 
-
-
       Die Einsatzmöglichkeiten des ARI 458 sind zahlreich. Je nach Aufbau ist er speziell für Liefer- und Transportbetriebe (Kofferaufbau) und Handwerks- und Baubetriebe (Pritsche und Kipper) interessant. Bei den Individual-Aufbauten gibt es zudem für Garten- und Landschaftsbaubetriebe praktische Varianten. Neben dieser Vielseitigkeit im Hinblick auf Aufbauten und Einsatzoptionen liegen die Vorteile des ARI 458 in der guten Raumnutzung, der intuitiven Bedienung sowie den niedrigen Preisen ab 13.700 Euro. Natürlich erhält der Kunde dafür kein Luxusfahrzeug, sondern einen effizienten Elektrotransporter mit sehr guter Raumnutzung und individuell anpassbaren Ausstattungs- und Funktionsmöglichkeiten.
+
+
+      ## Gesamtpunktzahl:
+
+
+      4.4
     title: Fazit
 ---

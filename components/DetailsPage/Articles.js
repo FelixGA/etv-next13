@@ -4,8 +4,7 @@ import RatingBox from "../../components/ResultList/RatingBox";
 import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
-const Articles = ({ carItem, getBlogContext, getTestReview }) => {
-  console.log(getTestReview);
+const Articles = ({ carItem, getTestReview }) => {
   // console.log(getBlogContext[0].title);
   return (
     <>

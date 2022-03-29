@@ -28,7 +28,6 @@ export default function Details(props) {
     SetGetBlogContext(props.relatedBlog);
     SetTestReview(props.getTestReview);
   }, [props]);
-
   return (
     <>
       {/* image and rating section */}
@@ -40,7 +39,7 @@ export default function Details(props) {
       </div>
       <Articles
         carItem={carItem}
-        getBlogContext={getBlogContext}
+        // getBlogContext={getBlogContext}
         getTestReview={getTestReview}
       />
       {/* slider  */}
@@ -72,14 +71,8 @@ export async function getStaticProps(context) {
     context.params.cartitle,
     context.locale
   );
-  /* testing if there is an undefined value for this carsreview   */
-  // if (carsreview.source) {
-  //   console.log("carsreview exist", carsreview.source !== undefined);
-  // } else {
-  //   console.log("carsreview not exist", carsreview.source !== undefined);
-  // }
 
-  /* catching errors in case there isnt review yet */
+  /* catching errors in case there is no carsreview yet */
   let getTestReview = null;
 
   if (carsreview.source !== undefined) {
