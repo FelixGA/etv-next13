@@ -15,6 +15,7 @@ const allKeys = [
   "power",
   "loadingWeight",
   "curbweight",
+  /*  "Gesamtgewicht", */
   "loadingVolume",
   "loadingHeight",
   "batteryCapacityBlei",
@@ -38,48 +39,6 @@ export default function activeCompare(props) {
   // console.log(comparedCars);
   let typeClass = { key: getCars[0]?.typeClass };
 
-  useEffect(() => {
-    SetGetCars(props.vehicles);
-    let arrkeys = [
-      /* grundlagen - basics */
-
-      getCars[0]?.range230V.key,
-      getCars[0]?.rangeLithium.key,
-      getCars[0]?.maxSpeed.key,
-      getCars[0]?.chargingTime230V.key,
-      getCars[0]?.chargingTimeLithium.key,
-      getCars[0]?.chargingTimeFast.key,
-      getCars[0]?.power.key,
-      getCars[0]?.loadingWeight.key,
-      getCars[0]?.curbweight.key,
-      "Gesamtgewicht",
-
-      /* fahrzeug masse */
-      getCars[0]?.loadingHeight.key,
-      getCars[0]?.loadingHeight.height,
-      getCars[0]?.loadingHeight.width,
-      getCars[0]?.loadingHeight.length,
-      getCars[0]?.loadingVolume.key,
-      getCars[0]?.loadingVolume.height,
-      getCars[0]?.loadingVolume.width,
-      getCars[0]?.loadingVolume.length,
-      "Ladefläche",
-      "Ladevolumen",
-
-      /* details */
-      getCars[0]?.batteryCapacityBlei.key,
-      getCars[0]?.batteryCapacityLithium.key,
-      getCars[0]?.batteryGuarantee.key,
-      getCars[0]?.batteryIncluded.key,
-      getCars[0]?.consumption.key,
-      getCars[0]?.availability.key,
-      getCars[0]?.guarantee.key,
-      getCars[0]?.seats.key,
-      getCars[0]?.subsidies.key,
-    ];
-    SetGetKeys(arrkeys);
-  }, []);
-  console.log(getKeys);
   return (
     <div className="main-wrapper 2xl:px-40">
       {/* HEADING */}

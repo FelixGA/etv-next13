@@ -4,32 +4,45 @@ import { useState, useEffect } from "react";
 import ButtonAnfragen from "../ResultList/ButtonAnfragen";
 
 export default function ActiveCompareEntries({ keys, comparedCars }) {
-  // console.log(comparedCars, "blablabla");
   const [entries, setEntries] = useState([]);
-  // console.log(entries, "test");
+
   let testResultArr = comparedCars.map((test) => test.rating);
-  // console.log(testResultArr);
 
   useEffect(() => {
     if (!keys?.length > 0 || !comparedCars?.length > 0) return;
-    const entries = [];
-
+    let entries = [];
+    let totalWeight = [];
+    for (let i = 0; i < comparedCars.length; i++) {
+      let weight =
+        comparedCars[i].curbweight.value +
+        comparedCars[i].loadingWeight.value +
+        " kg";
+      totalWeight.push(weight);
+    }
     const entryKeys = [];
     for (const key of keys) {
       entryKeys.push(
         comparedCars[0][key].key ? comparedCars[0][key].key : keys[0]
       );
-      // console.log(entryKeys);
-      // console.log(comparedCars[0][key].key);
-      // ? comparedCars[0][key].key : keys[0]
-      // { key: getCars[0]?.typeClass }
+
+      /*   if (comparedCars[0][key].key == "Laderaum-Maße") {
+        const test = comparedCars[0][key].key;
+
+        // <p>{comparedCars[0][key].key.bold()}</p>;
+      } */
     }
     entries.push(entryKeys);
 
     for (const car of comparedCars) {
       const carValues = [];
+      {
+        // (entry[10] = "Laderaum Maße" && (
+        //   <h3 className="text-blue-extra text-sm font-bold lg:text-lg  ">
+        //     Laderaum Maße
+        //   </h3>
+        // ))
+      }
 
-      // console.log(typeClass, "blabla");
       for (const key of keys) {
         const entryValues = [];
 
@@ -39,8 +52,16 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
       }
       entries.push(carValues);
     }
+    /* Main keys push to position 8 for calculating the total weight */
+
+    entries[0].splice(9, 0, "Gesamtgewicht");
+    for (let i = 1; i < comparedCars?.length + 1; i++) {
+      // console.log(comparedCars, "comparedCars");
+      entries[i].splice(9, 0, totalWeight[i - 1]);
+    }
 
     setEntries(entries);
+    console.log(entries);
   }, [keys, comparedCars]);
 
   return (
@@ -58,16 +79,20 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
               <TestResult testResultArr={testResultArr[index - 1]} />
             </div>
           )}
-
+          {/* ADDS THE CLASS TYPE AS FIRST LINE */}
           {index == 0 ? (
-            <div className="flex items-center  flex-1 bg-grey-lighter h-12 pl-4 lg:pl-8 border-4">
-              <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8 ">
-                Klasse
-              </p>
+            <div className="flex items-center  flex-1 bg-grey-lighter h-12 pl-4 lg:pl-8 ">
+              {/*  if(entries[0] == Laderaum Maße){" "}
+              {<p className="font-bold">test</p>} */}
+              <p className="text-blue-extra text-sm lg:text-lg  ">Klasse</p>
+              {/* {entry == test ? <p>{test}</p> : <p>test no</p>} */}
             </div>
           ) : (
-            <div className="pt-1 lg:pt-4 flex items-center h-12 lg:pl-8">
-              {comparedCars[index - 1].typeClass}
+            <div className="flex items-center  flex-1 bg-grey-lighter h-12 pl-4 lg:pl-8">
+              <p className="text-blue-extra text-sm lg:text-lg ">
+                {" "}
+                {comparedCars[index - 1].typeClass}
+              </p>
             </div>
           )}
 
@@ -76,23 +101,26 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
           ) : (
             comparedCars?.map((el) => <p>{el.typeClass}</p>)
           )} */}
-
           {entry.map((value, index) => (
-            <div
-              className={`${
-                index % 2 == 1
-                  ? "bg-grey-lighter flex items-center h-12 "
-                  : "bg-white flex items-center h-12"
-              }`}
-            >
-              <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
-                {value[0] == 0 || value.includes("undefined") ? "-" : value}
-              </p>
-            </div>
+            <>
+              <div
+                className={`${
+                  index % 2 == 1
+                    ? "bg-grey-lighter flex items-center h-12 "
+                    : "bg-white flex items-center h-12"
+                }`}
+              >
+                <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
+                  {value || "-"}
+                </p>
+              </div>
+            </>
           ))}
           <div
             className={
-              index !== 0 ? "pl-4 bg-grey-border h-20 flex items-center" : ""
+              index !== 0
+                ? "pl-4 md:pl-8 bg-grey-border h-20 flex items-center"
+                : ""
             }
           >
             {index !== 0 ? (

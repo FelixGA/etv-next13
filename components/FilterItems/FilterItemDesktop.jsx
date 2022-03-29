@@ -29,7 +29,7 @@ function FilterItemDesktop({ item }) {
     <>
       {/* truncate state */}
       <div
-        className="cursor-pointer relative z-50 bg-white w-full h-16"
+        className="cursor-pointer relative z-50 bg-white w-full h-18 flex items-center"
         onClick={() => {
           dispatch({
             type: "truncate",
@@ -37,9 +37,9 @@ function FilterItemDesktop({ item }) {
           });
         }}
       >
-        <div className="flex flex-row justify-between border-b py-4 flex-1 bg-white  ">
-          <div className="flex flex-row pl-4  ">
-            <div className="w-6 h-6 ml-4 ">
+        <div className="flex justify-between border-b py-4 flex-1 bg-white items-center ">
+          <div className="flex items-center pl-8 justify-center">
+            <div className="w-8 h-full">
               <Image
                 src={item.image}
                 alt="picture"

@@ -9,7 +9,7 @@ const StickyPopUpForComparison = () => {
   /* GET CAR-CARDS-LIST */
   const getCarCardForPopup = state?.autoForComparisons?.map(
     (selectedCar, index) => {
-      console.log(state?.autoForComparisons);
+      // console.log(state?.autoForComparisons);
       return (
         <>
           <div
