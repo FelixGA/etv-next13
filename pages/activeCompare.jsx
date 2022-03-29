@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import getContent from "/utils/getContent";
 import ActiveCompareImages from "../components/ActiveCompare/ActiveCompareImages";
 import ActiveCompareEntries from "../components/ActiveCompare/ActiveCompareEntries";
+import ActiveCompareSizes from "../components/ActiveCompare/ActiveCompareSizes";
+import ActiveCompareDetails from "../components/ActiveCompare/ActiveCompareDetails";
 
 const allKeys = [
   "range230V",
@@ -15,8 +17,10 @@ const allKeys = [
   "power",
   "loadingWeight",
   "curbweight",
-  /*  "Gesamtgewicht", */
-  "loadingVolume",
+];
+const carSizes = ["loadingVolume", "loadingArea", "loadingVolumeTotal"];
+
+const carDetails = [
   "loadingHeight",
   "batteryCapacityBlei",
   "batteryCapacityLithium",
@@ -36,7 +40,7 @@ export default function activeCompare(props) {
   const [toggle, setToggle] = useState(true);
 
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
-  // console.log(comparedCars);
+  console.log(comparedCars);
   let typeClass = { key: getCars[0]?.typeClass };
 
   return (
@@ -67,6 +71,12 @@ export default function activeCompare(props) {
           </div>
           <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
             <ActiveCompareEntries keys={allKeys} comparedCars={comparedCars} />
+          </div>
+          <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
+            <ActiveCompareDetails keys={carSizes} comparedCars={comparedCars} />
+          </div>
+          <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
+            <ActiveCompareSizes keys={carDetails} comparedCars={comparedCars} />
           </div>
         </div>
       </div>
