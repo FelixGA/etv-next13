@@ -4,15 +4,14 @@ import RatingBox from "../../components/ResultList/RatingBox";
 import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
-const Articles = ({ carItem, getBlogContext }) => {
+const Articles = ({ carItem, getBlogContext, getTestReview }) => {
+  console.log(getTestReview);
   // console.log(getBlogContext[0].title);
   return (
     <>
       <div
       // className={styles.mdxstyles}
-      >
-        {/* <MDXRemote {...getBlogContext[0].context} /> */}
-      </div>
+      ></div>
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
         <div className=" lg:w-1/3 w-full m-auto relative ">
           <Image
@@ -30,21 +29,16 @@ const Articles = ({ carItem, getBlogContext }) => {
         </div>
         <div className=" lg:w-2/3 flex flex-col flex-wrap lg:px-6">
           <h3 className="w-full py-4 text-black-darkest text-2xl font-bold ">
-            Testbericht{"\n"} {carItem.title}
+            Testbericht {carItem.title}
           </h3>
-          <h4 className="font-bold ">
-            {" "}
-            {getBlogContext[0]?.title ? getBlogContext[0]?.title : "kommt bald"}
-          </h4>
-          <p>
-            {getBlogContext[0]?.content
-              ? getBlogContext[0]?.content
-              : "kommt bald"}
-          </p>
+
+          <div>
+            {getTestReview ? <MDXRemote {...getTestReview[0]} /> : "kommt bald"}
+          </div>
           <Link href={`/magazin/${carItem.name}`}>
             <a target="_blank" className="text-blue-500">
               <button
-                disabled={getBlogContext[0]?.title ? false : true}
+                // disabled={getTestReview ? true : false}
                 className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden rounded-md"
               >
                 Testbericht lesen

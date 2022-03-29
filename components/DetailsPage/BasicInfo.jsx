@@ -3,7 +3,7 @@ import CarCardDetailsMobile from "../../components/ResultList/CarCardDetailsMobi
 import CarCardDetailsDesktop from "../../components/ResultList/CarCardDetailsDesktop";
 import RatingBox from "../../components/ResultList/RatingBox";
 import Image from "next/image";
-const BasicInfo = ({ carItem, descriptionSize }) => {
+const BasicInfo = ({ carItem }) => {
   return (
     <div className="w-full flex flex-col lg:flex-row lg:pt-12  p-4  lg:px-24">
       <div className=" w-full lg:w-1/2 flex flex-col justify-start">
@@ -58,13 +58,7 @@ const BasicInfo = ({ carItem, descriptionSize }) => {
           <h3 className="w-full text-blue-extra text-2xl font-bold mt-4 pb-1">
             Über das Fahrzeug:
           </h3>
-          <p
-            className={
-              !descriptionSize
-                ? "h-auto"
-                : `text-ellipsis overflow-hidden leading-7 h-auto font-black`
-            }
-          >
+          <p className="text-ellipsis overflow-hidden leading-7 h-auto font-black">
             {carItem?.description}
           </p>
           {/* <span className="text-sm text-blue-dark">Alle Daten anzeigen</span> */}

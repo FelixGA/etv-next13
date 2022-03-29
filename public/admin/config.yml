@@ -99,7 +99,7 @@ collections:
       - {
           label: "Description",
           name: "description",
-          widget: "markdown",
+          widget: "text",
           default: "bitte fuer SEO auffuelen",
           i18n: true,
           required: true,
