@@ -6,7 +6,7 @@ import ButtonAnfragen from "../ResultList/ButtonAnfragen";
 export default function ActiveCompareEntries({ keys, comparedCars }) {
   // console.log(comparedCars, "blablabla");
   const [entries, setEntries] = useState([]);
-  console.log(entries, "test");
+
   let testResultArr = comparedCars.map((test) => test.rating);
   // console.log(testResultArr);
 

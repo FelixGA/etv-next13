@@ -3,9 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import ListItems from "./ListItems";
 
-const Footer = ({ blogs }) => {
+const Footer = ({ blogs, reviews }) => {
+  console.log(reviews);
+
   /*  select blogs upon category */
-  const references = blogs?.filter((blog) => blog.category === "referenzen");
 
   const magazine = blogs?.filter((blog) => blog.category !== "referenzen");
   const rights = [
@@ -53,7 +54,7 @@ const Footer = ({ blogs }) => {
             </Link>
           </h5>
 
-          <ListItems itemsList={references} />
+          <ListItems itemsList={reviews} />
         </div>
         <div className="flex lg:w-48 items-center flex-col justify-center ">
           <h5 className="text-xs font-bold">

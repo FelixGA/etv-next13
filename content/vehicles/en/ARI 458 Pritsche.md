@@ -12,118 +12,142 @@ relatedBlogs:
     Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
-description: The "ARI 458 Pritsche" is an electric flatbed transporter
-  manufactured by ARI Motors. It features a high payload as well as an
-  economical consumption. Its maximum range is up to 495 kilometres in case of
-  using a lithium battery.
+description: Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI
+  Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen
+  Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
 src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
 category: Pritsche
 typeClass: L7E
 loadingWeight:
+  key: Nutzlast
   value: 531
   baseUnit: kg
-  key: Loading Weight
 curbweight:
+  key: Leergewicht
   value: 604
   baseUnit: kg
-  key: Curb Weight
 maxSpeed:
+  key: km/h
   value: 78
   baseUnit: km/h
-  key: Maxspeed
 range230V:
+  key: Reichweite SLA Akku
   value: 120
   baseUnit: km
-  key: Range SLA
   maxValue: 120
 rangeLithium:
+  key: Reichweite Lithium Akku
   value: 150
   baseUnit: km
-  key: Range Lithium Battery
   maxValue: 495
 chargingTime230V:
+  key: Ladezeit 230-V
   value: 6
-  key: Charge Time 230v-socket
   baseUnit: h
 chargingTimeLithium:
+  key: Ladezeit Typ 2 Ladekabel
   value: 6
-  key: Charging Time Type 2
   baseUnit: h
 chargingTimeFast:
+  key: Schnell-Ladezeit
   value: 2
-  key: Fast Charging Time
   baseUnit: h
 batteryCapacityBlei:
-  value: "-"
+  key: Kapazität SLA Akku
   baseUnit: " "
-  key: Battery Capacity SLA
+  value: "-"
 batteryCapacityLithium:
+  key: Kapazität Lithium Akku
   value: "10"
   baseUnit: kwh
-  key: Battery-Capacity-Lithium
 batteryIncluded:
-  key: Battery included
-  value: yes
+  key: Akku inklusive
+  value: ja
 consumption:
-  baseUnit: kwh
-  key: Consumption
+  key: Verbrauch
   value: 7,5
+  baseUnit: kwh
 power:
+  key: Leistung
   value: 7,5
   baseUnit: kw
-  key: Power
 seats:
+  key: Sitzplätze
   value: 2
-  key: Seats
 rating:
+  key: Gut
   value: 2,0
-  key: Good
 guarantee:
-  key: Guarantee
+  key: Garantie Fahrzeug
   value: 6
-  baseUnit: Months
+  baseUnit: Monate
 availability:
-  key: Availibility
-  value: 14-16 weeks
+  key: Verfügbarkeit
+  value: 14-16 Wochen
 subsidies:
-  key: Subsidies
+  key: Förderhöhe
   baseUnit: Euro
-  value: 0
+  value: 1
 batteryGuarantee:
-  key: Battery Guarantee
+  key: Garantie Akku
   value: 48
-  baseUnit: Months
+  baseUnit: Monate
 loadingHeight:
+  key: Ladehöhe
   value: 10
   baseUnit: cm
-  key: Loading Height
 loadingVolumeTotal:
-  value: 0,38
+  key: Ladevolumen
   baseUnit: m3
-  key: Loading Volume
+  value: 0,38
 loadingArea:
+  key: Ladefläche
   value: "235"
   baseUnit: m2
-  key: Loading Area
 carSizes:
-  width: Width
-  length: Length
-  height: Height
-  wheelbase: Wheelbase
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
   valuewidth: 1300
   baseUnit: mm
   valuelength: 3150
   valueheight: 1600
   valuewheelbase: 2300
-  key: Car Sizes
+  key: Fahrzeugmaße
+carSizesLength:
+  value: "0"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
 loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 250
+  width: Breite
   valuewidth: 1160
+  length: Länge
   valuelength: 1320
   baseUnit: mm
-  key: Loading Area Sizes
-  height: Height
-  width: Width
-  length: Length
+loadingVolumeLength:
+  key: Länge
+  value: "0"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
 ---
-The "ARI 458 Pritsche" is an electric flatbed transporter manufactured by ARI Motors. It features a high payload as well as an economical consumption. Its maximum range is up to 495 kilometres in case of using a lithium battery.
+
+Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.

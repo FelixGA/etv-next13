@@ -66,6 +66,8 @@ export async function getStaticProps(context) {
     .slice(0, 4);
 
   /* get related reviews*/
+    let carsreviews = await getContent("carsreview", context.locale);
+
   let carsreview = await getContentBySlug(
     "carsreview",
     context.params.cartitle,
@@ -107,6 +109,7 @@ export async function getStaticProps(context) {
       vehicles,
       relatedBlog,
       getTestReview,
+      carsreviews,
       params: context.params,
       blogs,
     },

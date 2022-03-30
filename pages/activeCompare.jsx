@@ -119,7 +119,8 @@ export async function getStaticProps(context) {
   const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   const page = pages.find((page) => page.path === "/activecompare");
-
+  let carsreviews = await getContent("carsreview", context.locale);
+  let blogs = await getContent("blogs", context.locale);
   if (!pages) {
     return {
       notFound: true,
@@ -130,6 +131,8 @@ export async function getStaticProps(context) {
     props: {
       vehicles,
       posts,
+      carsreviews,
+      blogs,
     },
   };
 }

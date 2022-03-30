@@ -3,6 +3,7 @@ import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote";
 // import Head from "/components/core/Head.js";
 import styles from "./Blog.module.css";
+import { useRouter } from "next/router";
 // import BlogHeader from "./BlogHeader";
 // import Link from "next/link";
 // import tileCatalogue from "/public/images/tileCatalogue.png";
@@ -10,6 +11,7 @@ import styles from "./Blog.module.css";
 // import tileYoutube from "/public/images/tileYoutube.png";
 
 export default function Blog({ getBlogs }) {
+  const router = useRouter();
   //   const [prefix, setPrefix] = useState("");
 
   //   useEffect(() => {
@@ -21,7 +23,7 @@ export default function Blog({ getBlogs }) {
   //     if (page?.locale === "it") setPrefix("it/blog");
   //     if (page?.locale === "cs") setPrefix("cs/magazin");
   //   }, [page]);
-  console.log(getBlogs);
+
   return (
     <>
       {/* <Head page={page} /> */}
@@ -37,7 +39,12 @@ export default function Blog({ getBlogs }) {
                     <a
                       className="flex flex-col max-w-md min-w-md shadow-card rounded-md transition transform hover:scale-105 overflow-hidden mx-6"
                       //   href={`/${prefix}/${post.slug}`}
-                      href={`/magazin/${post.slug}`}
+                      href={
+                        router.pathname == "/magazin/reviews"
+                          ? `/magazin/reviews/${post.slug}`
+                          : `/magazin/${post.slug}`
+                      }
+                      // href={`/magazin/${post.slug}`}
                       key={index}
                     >
                       {post.src && (

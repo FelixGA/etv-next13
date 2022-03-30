@@ -1067,7 +1067,7 @@ collections:
               i18n: true,
               required: true,
             }
-      - label: "loading Height"
+      - label: "loading-Height"
         name: "loadingHeight"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
@@ -1124,6 +1124,7 @@ collections:
               widget: "string",
               i18n: duplicate,
             }
+
       - label: "loading area in m2"
         name: "loadingArea"
         required: true
@@ -1235,6 +1236,90 @@ collections:
               i18n: duplicate,
               required: true,
             }
+      - label: "Car-Sizes-length"
+        name: "carSizesLength"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "Car-Sizes-width"
+        name: "carSizesWidth"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "Car-Sizes-height"
+        name: "carSizesHeight"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
       - label: "loadingVolume"
         name: "loadingVolume"
         widget: "object"
@@ -1302,4 +1387,88 @@ collections:
               widget: "string",
               i18n: duplicate,
               required: true,
+            }
+      - label: "Loading-volume-length"
+        name: "loadingVolumeLength"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "Loading-volume-width"
+        name: "loadingVolumeWidth"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "Loading-volume-height"
+        name: "loadingVolumeHeight"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
             }
