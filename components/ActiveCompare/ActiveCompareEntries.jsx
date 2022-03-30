@@ -59,7 +59,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
         <div key={index} className="relative h-full min-w-[160px]">
           {index == 0 ? (
             <div className="flex items-end pb-1 flex-1 bg-white h-18 pl-4 lg:pl-8">
-              <h3 className="text-blue-extra text-xl font-bold pb-2">
+              <h3 className="text-blue-extra text-2xl font-bold pb-2">
                 Grundlagen
               </h3>
             </div>

@@ -42,43 +42,50 @@ export default function ActiveCompareSizes({ keys, comparedCars }) {
     /* Main keys push to position 8 for calculating the total weight */
 
     setEntries(entries);
-    // console.log(entries);
   }, [keys, comparedCars]);
 
   return (
     <>
       {entries.map((entry, index) => (
-        <div key={index} className="relative h-full min-w-[160px]">
+        <div key={index} className="relative h-full min-w-[160px]  ">
+          <h3
+            className={
+              index == 0
+                ? "h-14 font-bold text-blue-extra pl-4 lg:pl-8 pt-4 text-2xl"
+                : "h-14 invisible"
+            }
+          >
+            Maße
+          </h3>
           {/* ADDS THE CLASS TYPE AS FIRST LINE */}
 
           {entry.map((value, index) => (
-            <>
+            <div
+              className={`${
+                index % 2 == 1
+                  ? "bg-white flex items-center h-12"
+                  : "bg-grey-lighter flex items-center h-12 "
+              }`}
+            >
               <div
-                className={`${
-                  index % 2 == 1
-                    ? "bg-white flex items-center h-12 "
-                    : "bg-grey-lighter flex items-center h-12"
-                }`}
+                className={
+                  value === "Fahrzeugmaße" || value === "Laderaum-Maße"
+                    ? "text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8 font-bold"
+                    : "text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8 "
+                }
               >
-                <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
+                <p
+                  className={
+                    value === "Fahrzeugmaße" || value === "Laderaum-Maße"
+                      ? ""
+                      : ""
+                  }
+                >
                   {value || "-"}
                 </p>
               </div>
-            </>
+            </div>
           ))}
-          <div
-            className={
-              index !== 0
-                ? "pl-4 md:pl-8 bg-grey-border h-20 flex items-center"
-                : ""
-            }
-          >
-            {index !== 0 ? (
-              <ButtonAnfragen />
-            ) : (
-              <div className="bg-grey-border h-20"></div>
-            )}
-          </div>
         </div>
       ))}
     </>
