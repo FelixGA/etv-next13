@@ -126,6 +126,10 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
 carSizesLength:
   value: "0"
   key: Länge
@@ -139,4 +143,5 @@ carSizesHeight:
   value: "0"
   baseUnit: mm
 ---
+
 Der Goupil ist ein Elektrotransporter der Klasse L7e mit 2 Sitzplätzen, 500 kg Nutzlast und 30 km/h Höchstgeschwindigkeit.

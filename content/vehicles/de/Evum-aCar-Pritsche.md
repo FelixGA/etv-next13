@@ -13,7 +13,7 @@ relatedBlogs:
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
 description: >-
-  
+
 
 
 
@@ -137,6 +137,10 @@ loadingVolumeWidth:
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
+  value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
   value: "0"
   baseUnit: mm
 carSizesLength:

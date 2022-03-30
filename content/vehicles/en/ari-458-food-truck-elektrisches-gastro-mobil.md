@@ -126,6 +126,10 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
 carSizesLength:
   value: "0"
   key: Länge
@@ -139,4 +143,5 @@ carSizesHeight:
   value: "0"
   baseUnit: mm
 ---
-Der ARI 458 Food Truck ist ein elektrischer Kleintransporter mit Gastro-Aufbau. Er kann  individuell gestaltet und an verschiedene Gastrokonzepte angepasst werden.
+
+Der ARI 458 Food Truck ist ein elektrischer Kleintransporter mit Gastro-Aufbau. Er kann individuell gestaltet und an verschiedene Gastrokonzepte angepasst werden.

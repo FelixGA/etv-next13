@@ -130,6 +130,10 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
 carSizesLength:
   value: "0"
   key: Länge
@@ -143,4 +147,5 @@ carSizesHeight:
   value: "0"
   baseUnit: mm
 ---
+
 The ARI 345 is a load-carrying electric bike with a maximum speed of 45 km/h. Its perfect for urban delivery services and catering services.

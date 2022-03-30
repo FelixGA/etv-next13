@@ -109,7 +109,7 @@ carSizes:
   valuelength: 4000
   valueheight: 2000
   valuewheelbase: 2596
-  key: Fahrzeug Maße
+  key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum Maße
   height: Höhe

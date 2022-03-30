@@ -116,7 +116,7 @@ carSizes:
   valuelength: 2820
   valueheight: 1600
   valuewheelbase: 1850
-  key: Fahrzeug-Maße
+  key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
@@ -138,6 +138,10 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
 carSizesLength:
   value: "0"
   key: Länge
@@ -151,4 +155,5 @@ carSizesHeight:
   value: "0"
   baseUnit: mm
 ---
+
 Das ARI 345 Pritsche ist ein dreirädriges elektrisches Lastenmoped mit 45 km/h Höchstgeschwindigkeit und eignet sich ideal für innerstädtische Liefer-und Cateringdienste.

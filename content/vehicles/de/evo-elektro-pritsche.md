@@ -126,6 +126,10 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
 carSizesLength:
   value: "0"
   key: Länge
@@ -139,4 +143,5 @@ carSizesHeight:
   value: "0"
   baseUnit: mm
 ---
+
 Der EVO ist ein Transporter der Klasse N1 und eignet sich speziell für den Einsatz in Städten, Parkanlagen und auf Friedhöfen.

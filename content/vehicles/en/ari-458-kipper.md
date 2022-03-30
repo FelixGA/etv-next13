@@ -131,6 +131,10 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
 carSizesLength:
   value: "0"
   key: Länge
@@ -144,4 +148,5 @@ carSizesHeight:
   value: "0"
   baseUnit: mm
 ---
+
 The ARI 458 Pickup is a versatile light electric van which, depending on the type of battery, can hold 531 - 648 kg cargo load and up to 2.05m². The vehicle was designed for use on the last mile.
