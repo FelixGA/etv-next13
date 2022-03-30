@@ -22,7 +22,7 @@ export default function BlogPost({ getBlogContext }) {
     <div className="flex flex-1 flex-col p-4 lg:p-8">
       {getBlogContext?.category !== "referenzen" ? (
         <div>
-          <h2 className="m-auto py-8 text-blue-dark font-bold text-4xl bg-red-500 ">
+          <h2 className="m-auto py-8 text-blue-dark font-bold text-4xl">
             {getBlogContext?.title}
           </h2>
           <div className={styles.markdown}>

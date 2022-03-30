@@ -4,9 +4,10 @@ import { useState, useEffect } from "react";
 import getContent from "/utils/getContent";
 import ActiveCompareImages from "../components/ActiveCompare/ActiveCompareImages";
 import ActiveCompareEntries from "../components/ActiveCompare/ActiveCompareEntries";
+import ActiveCompareSizes from "../components/ActiveCompare/ActiveCompareSizes";
+import ActiveCompareDetails from "../components/ActiveCompare/ActiveCompareDetails";
 
 const allKeys = [
-  // "typeClass",
   "range230V",
   "rangeLithium",
   "maxSpeed",
@@ -16,7 +17,15 @@ const allKeys = [
   "power",
   "loadingWeight",
   "curbweight",
+];
+const carSizes = [
   "loadingVolume",
+  "loadingArea",
+  "loadingVolumeTotal",
+  "carSizes",
+];
+
+const carDetails = [
   "loadingHeight",
   "batteryCapacityBlei",
   "batteryCapacityLithium",
@@ -36,48 +45,8 @@ export default function activeCompare(props) {
   const [toggle, setToggle] = useState(true);
 
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
-  // console.log(comparedCars);
-  useEffect(() => {
-    SetGetCars(props.vehicles);
-    let arrkeys = [
-      /* grundlagen - basics */
-      "Klasse",
-      getCars[0]?.range230V.key,
-      getCars[0]?.rangeLithium.key,
-      getCars[0]?.maxSpeed.key,
-      getCars[0]?.chargingTime230V.key,
-      getCars[0]?.chargingTimeLithium.key,
-      getCars[0]?.chargingTimeFast.key,
-      getCars[0]?.power.key,
-      getCars[0]?.loadingWeight.key,
-      getCars[0]?.curbweight.key,
-      "Gesamtgewicht",
-
-      /* fahrzeug masse */
-      getCars[0]?.loadingHeight.key,
-      getCars[0]?.loadingHeight.height,
-      getCars[0]?.loadingHeight.width,
-      getCars[0]?.loadingHeight.length,
-      getCars[0]?.loadingVolume.key,
-      getCars[0]?.loadingVolume.height,
-      getCars[0]?.loadingVolume.width,
-      getCars[0]?.loadingVolume.length,
-      "Ladefläche",
-      "Ladevolumen",
-
-      /* details */
-      getCars[0]?.batteryCapacityBlei.key,
-      getCars[0]?.batteryCapacityLithium.key,
-      getCars[0]?.batteryGuarantee.key,
-      getCars[0]?.batteryIncluded.key,
-      getCars[0]?.consumption.key,
-      getCars[0]?.availability.key,
-      getCars[0]?.guarantee.key,
-      getCars[0]?.seats.key,
-      getCars[0]?.subsidies.key,
-    ];
-    SetGetKeys(arrkeys);
-  }, []);
+  console.log(comparedCars);
+  let typeClass = { key: getCars[0]?.typeClass };
 
   return (
     <div className="main-wrapper 2xl:px-40">
@@ -107,6 +76,15 @@ export default function activeCompare(props) {
           </div>
           <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
             <ActiveCompareEntries keys={allKeys} comparedCars={comparedCars} />
+          </div>
+          <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
+            <ActiveCompareSizes keys={carSizes} comparedCars={comparedCars} />
+          </div>
+          <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
+            <ActiveCompareDetails
+              keys={carDetails}
+              comparedCars={comparedCars}
+            />
           </div>
         </div>
       </div>

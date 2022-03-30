@@ -6,8 +6,8 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 const TopSliderCard = (props) => {
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
     <div className="relative">
-      <div className="min-w-64 px-6" key={index}>
-        <div className="w-64 ">
+      <div className="px-6" key={index}>
+        <div className="w-full ">
           <Link href={`/transporter/${caritem.name}`} passHref>
             <a>
               {caritem.src && (

@@ -9,6 +9,7 @@ const StickyPopUpForComparison = () => {
   /* GET CAR-CARDS-LIST */
   const getCarCardForPopup = state?.autoForComparisons?.map(
     (selectedCar, index) => {
+      // console.log(state?.autoForComparisons);
       return (
         <>
           <div
@@ -39,7 +40,7 @@ const StickyPopUpForComparison = () => {
       </h3>
       {/* conditions and mapping */}
 
-      <div className="flex flex-row w-full h-2/3 md:w-auto">
+      <div className="flex w-full h-2/3 md:w-auto justify-around ">
         {state?.autoForComparisons?.length ? getCarCardForPopup : null}
       </div>
       <div className="hidden md:flex flex-col-reverse justify-between  ml-4 xl:pl-4 relative  h-full">

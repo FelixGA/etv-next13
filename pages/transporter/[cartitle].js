@@ -15,7 +15,7 @@ export default function Details(props) {
 
   /* carItem hook for the ONE car that it is displayed */
   const [carItem, SetCarItem] = useState(props.vehicle);
-
+  console.log(carItem);
   /* for the view more hook */
   const [descriptionSize, SetDescriptionSize] = useState(true);
   const [getBlogContext, SetGetBlogContext] = useState(props.relatedBlog);
