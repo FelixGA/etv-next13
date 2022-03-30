@@ -122,6 +122,30 @@ loadingVolume:
   valuelength: 1350
   length: Länge
   baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "0"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+carSizesLength:
+  value: "0"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
 ---
 
 Der Axiam-Pro eTruck ist ein Elektrotransporter mit 80 Kilometer Reichweite und 45 km/h Höchstgeschwindigkeit.

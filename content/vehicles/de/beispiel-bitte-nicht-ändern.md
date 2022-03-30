@@ -123,6 +123,30 @@ loadingVolume:
   valuelength: 1778
   length: Länge
   baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "0"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+carSizesLength:
+  value: "0"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
 ---
 
 Das Evum aCar ist ein Elektrotransporter der Kategorie N1 mit bis zu 1200kg Nutzlast.

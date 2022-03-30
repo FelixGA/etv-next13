@@ -119,5 +119,29 @@ loadingVolume:
   height: Height
   width: Width
   length: Length
+loadingVolumeLength:
+  key: Länge
+  value: "0"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+carSizesLength:
+  value: "0"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
 ---
 The ARI 345 Pikcup is a three-wheeled delivery moped with an open driver's cab and a tiltable pickup bed.  The ARI 345 is particularly suitable for inner-city use by delivery services, landscaping companies and construction companies.

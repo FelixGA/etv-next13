@@ -115,18 +115,7 @@ carSizes:
   valueheight: 1600
   valuewheelbase: 2300
   key: Fahrzeugmaße
-carSizesLength:
-  value: "0"
-  key: Länge
-  baseUnit: mm
-carSizesWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-carSizesHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
+
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
@@ -145,6 +134,18 @@ loadingVolumeWidth:
   value: "0"
   baseUnit: mm
 loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+carSizesLength:
+  value: "0"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+carSizesHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
