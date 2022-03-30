@@ -1,7 +1,5 @@
 ---
 title: ARI 458 Pritsche
-name: ARI 458 Pritsche
-price: 13700
 relatedBlogs:
   title: " Konzept & Fahrzeugvarianten"
   content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
@@ -15,9 +13,6 @@ relatedBlogs:
 description: Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI
   Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen
   Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
-src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
-category: Pritsche
-typeClass: L7E
 loadingWeight:
   key: Nutzlast
   value: 531
@@ -115,18 +110,6 @@ carSizes:
   valueheight: 1600
   valuewheelbase: 2300
   key: Fahrzeugmaße
-carSizesLength:
-  value: "0"
-  key: Länge
-  baseUnit: mm
-carSizesWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-carSizesHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
@@ -136,30 +119,6 @@ loadingVolume:
   length: Länge
   valuelength: 1320
   baseUnit: mm
-loadingVolumeLength:
-  key: Länge
-  value: "0"
-  baseUnit: mm
-loadingVolumeWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-loadingVolumeHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
-loadingVolumeLength:
-  key: Länge
-  value: "0"
-  baseUnit: mm
-loadingVolumeWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-loadingVolumeHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
 carSizesLength:
   value: "0"
   key: Länge
@@ -170,6 +129,22 @@ carSizesWidth:
   baseUnit: mm
 carSizesHeight:
   key: Höhe
+  value: "0"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "0"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
   value: "0"
   baseUnit: mm
 ---

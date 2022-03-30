@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ListItems = (props) => {
-  console.log(props.itemsList);
+  props.itemsList;
   return (
     <ul className=" flex flex-col justify-between items-center my-6 text-black">
       {props.itemsList?.map((blog) => (

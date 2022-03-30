@@ -4,7 +4,7 @@ import Link from "next/link";
 import ListItems from "./ListItems";
 
 const Footer = ({ blogs, reviews }) => {
-  console.log(reviews);
+  reviews;
 
   /*  select blogs upon category */
 

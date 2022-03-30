@@ -9,7 +9,7 @@ export default function ReviewPost({ getCarsReview, getMdxContent }) {
   // useEffect(() => {
   //   setTestReview(getCarsReview);
   // }, [getCarsReview]);
-  console.log(999, getCarsReview);
+  999, getCarsReview;
   return (
     <div className="flex flex-1 flex-col p-4 lg:p-8">
       <div>

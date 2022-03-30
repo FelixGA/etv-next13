@@ -5,7 +5,7 @@ import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
 const Articles = ({ carItem, getTestReview }) => {
-  // console.log(getBlogContext[0].title);
+  // (getBlogContext[0].title);
   return (
     <>
       <div

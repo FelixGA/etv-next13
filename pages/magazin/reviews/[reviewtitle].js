@@ -19,7 +19,7 @@ export default function Reviews(props) {
     SetGetMdxContent(props.getTestReview);
     SetGetCarsReview(props.carsreview);
   }, [props]);
-  console.log(66666, props.getTestReview);
+  66666, props.getTestReview;
   return (
     <>
       <ReviewPost getCarsReview={getCarsReview} getMdxContent={getMdxContent} />

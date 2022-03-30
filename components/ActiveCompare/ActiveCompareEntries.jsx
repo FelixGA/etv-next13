@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 import ButtonAnfragen from "../ResultList/ButtonAnfragen";
 
 export default function ActiveCompareEntries({ keys, comparedCars }) {
-  // console.log(comparedCars, "blablabla");
+  // (comparedCars, "blablabla");
   const [entries, setEntries] = useState([]);
 
   let testResultArr = comparedCars.map((test) => test.rating);
-  // console.log(testResultArr);
+  // (testResultArr);
 
   useEffect(() => {
     if (!keys?.length > 0 || !comparedCars?.length > 0) return;
@@ -17,8 +17,8 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
     const entryKeys = [];
     for (const key of keys) {
       entryKeys.push(comparedCars[0][key].key);
-      // console.log(entryKeys);
-      // console.log(comparedCars[0][key].key);
+      // (entryKeys);
+      // (comparedCars[0][key].key);
     }
     entries.push(entryKeys);
 
