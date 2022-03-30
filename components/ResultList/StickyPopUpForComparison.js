@@ -31,7 +31,7 @@ const StickyPopUpForComparison = () => {
     <div
       className={
         state?.autoForComparisons?.length > 0
-          ? "flex flex-col md:flex-row h-32 bottom-0 fixed z-10 md:justify-center md:items-center md:h-40 w-[100vw] bg-grey-moredark "
+          ? "flex flex-col md:flex-row h-32 bottom-0 fixed z-20 md:justify-center md:items-center md:h-40 w-[100vw] bg-grey-moredark "
           : "hidden"
       }
     >
