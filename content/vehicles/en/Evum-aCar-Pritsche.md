@@ -1,8 +1,17 @@
 ---
-title: Evum-aCar-Truck
+title: Evum-aCar-Pritsche
 name: Evum-aCar-Pritsche
 price: 33080
-relatedBlogs: nur beispiel
+relatedBlogs:
+  title: " Konzept & Fahrzeugvarianten"
+  content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
+    Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den erhältlichen
+    Individual-Aufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer,
+    Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI
+    458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert.
+    Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
+    für große Strecken."
+  image: /images/ari-458-food-truck-5-.jpg
 description: >-
   
 
@@ -13,110 +22,138 @@ src: /images/Evum-Acar-Front-1024x683.jpg
 category: Pritsche
 typeClass: L7E
 loadingWeight:
-  key: Payload
+  key: Nutzlast
   value: 1200
   baseUnit: kg
 curbweight:
-  key: curb weight
+  key: Leergewicht
   value: 1500
   baseUnit: kg
 maxSpeed:
-  key: VMax
+  key: km/h
   value: 70
   baseUnit: km/h
 range230V:
-  key: range sla
+  key: Reichweite SLA Blei
   value: 0
   baseUnit: keine Angabe
   maxValue: 0
 rangeLithium:
-  key: Range Lithium Akku
+  key: Reichweite Lithium Akku
   value: 110
   baseUnit: km
   maxValue: 110
 chargingTime230V:
-  key: Charge time 230v-socket
+  key: Ladezeit 230-V-Steckdose
   value: 0
   baseUnit: keine Angabe
 chargingTimeLithium:
-  key: Charge time type2 cable
+  key: Ladezeit Typ2
   value: 6
   baseUnit: h
 chargingTimeFast:
-  key: Fast charging time
+  key: Schnellladezeit
   value: 0
   baseUnit: keine Angabe
 batteryCapacityBlei:
-  key: Capacitiy SLA Battery
+  key: Kapazität SLA Akku
   value: "-"
   baseUnit: " keine Angabe"
 batteryCapacityLithium:
-  key: Capacity Lithium
+  key: Kapazität Lithium Akku
   value: 16,5
   baseUnit: kwh
 batteryIncluded:
   value: ja
-  key: Battery included
+  key: Batterie inklusive
 consumption:
-  key: Consumption
+  key: "Verbrauch "
   value: 19,6
   baseUnit: kWh
 power:
-  key: power
+  key: Leistung
   value: min-20/max-28
   baseUnit: kw
 seats:
-  key: seats
+  key: Sitzplätze
   value: 2
 rating:
-  key: good
+  key: Gut
   value: 4,0
 guarantee:
-  key: Guarantee vehicle
+  key: Garantie Fahrzeug
   value: 0
   baseUnit: keine Angabe
 availability:
-  key: Availability
-  value: no details available
+  key: Verfügbarkeit
+  value: keine Angabe
 subsidies:
-  key: Subsidies
+  key: Förderhöhe
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: Battery-Guarantee
+  key: Garantie Akku
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 loadingHeight:
-  key: loading height
+  key: Ladehöhe
   value: 895
   baseUnit: mm
 loadingVolumeTotal:
+  key: Ladevolumen
   value: "234"
   baseUnit: m3
-  key: Loading Volume
 loadingArea:
+  key: Ladefläche
   value: 2,86
   baseUnit: m2
-  key: Loading Area
 carSizes:
-  width: Width
-  length: length
-  height: Height
-  wheelbase: Wheelbase
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
   valuewidth: 1500
   baseUnit: mm
   valuelength: 4000
   valueheight: 2000
   valuewheelbase: 2596
-  key: Car Sizes
+  key: Fahrzeugmaße
 loadingVolume:
-  key: Loading volume
-  height: Height
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 352
-  width: width
+  width: Breite
   valuewidth: 1608
   valuelength: 1778
-  length: length
+  length: Länge
+  baseUnit: mm
+carSizesLength:
+  value: "4000"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "1500"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "2000"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "1778"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "1608"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "352"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
   baseUnit: mm
 ---
 
