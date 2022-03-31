@@ -17,6 +17,7 @@ export default function datenschutzerklaerung(props) {
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   let blogs = await getContent("blogs", context.locale);
+  let carsreviews = await getContent("carsreview", context.locale);
 
   const page = pages.find((page) => page.path === "/datenschutzerklaerung");
   const datenschutzerklaerung = await serialize(
