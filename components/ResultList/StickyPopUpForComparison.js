@@ -35,7 +35,7 @@ const StickyPopUpForComparison = () => {
           : "hidden"
       }
     >
-      <h3 className="hidden xl:flex text-3xl  xl:pr-20 xl:pl-4 text-white font-bold">
+      <h3 className="hidden xl:flex text-3xl xl:pr-20 xl:pl-4 text-white font-bold">
         Ihr Vergleich
       </h3>
       {/* conditions and mapping */}
