@@ -3,7 +3,7 @@ title: Evum-aCar-Pritsche
 name: Evum-aCar-Pritsche
 price: 33080
 description: >-
-  
+
 
 
 
@@ -105,7 +105,7 @@ carSizes:
   valuelength: 4000
   valueheight: 2000
   valuewheelbase: 2596
-  key: Fahrzeug Maße
+  key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum Maße
   height: Höhe

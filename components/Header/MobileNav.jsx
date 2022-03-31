@@ -46,6 +46,30 @@ function MobileNav() {
                   type: "mobileNavActive",
                   data: !state?.mobileNavActives,
                 });
+                dispatch({
+                  type: "rangeLithium",
+                  data: [],
+                });
+                dispatch({
+                  type: "loadingWeight",
+                  data: [],
+                });
+                dispatch({
+                  type: "price",
+                  data: [],
+                });
+                dispatch({
+                  type: "maxSpeed",
+                  data: [],
+                });
+                dispatch({
+                  type: "category",
+                  data: [],
+                });
+                dispatch({
+                  type: "chargingTimeLithium",
+                  data: [],
+                });
               }}
             >
               Kaufberater
@@ -67,7 +91,7 @@ function MobileNav() {
           </Link>
         </li>
         <li className="">
-          <Link href="/Kontakt">
+          <Link href="/kontakt">
             <a
               onClick={() => {
                 dispatch({

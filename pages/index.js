@@ -1,6 +1,5 @@
 import Head from "next/head";
 import getContent from "/utils/getContent";
-import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import BlogArticles from "../components/Homepage/BlogArticles";
 import HeroSection from "../components/HeroSection/HeroSection";
@@ -13,7 +12,7 @@ export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
   const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
-
+  getCars;
   return (
     <>
       <Head>
@@ -41,6 +40,8 @@ export async function getStaticProps(context) {
   const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   let blogs = await getContent("blogs", context.locale);
+  let carsreviews = await getContent("carsreview", context.locale);
+
   const page = pages.find((page) => page.path === "/");
   const header = await serialize(
     page.content.find((content) => content.name === "header").markdown
@@ -63,6 +64,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       context: { header, eAutoAdvisor, substities, newsletter },
+      carsreviews,
       page,
       posts,
       vehicles,

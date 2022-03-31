@@ -1,4 +1,4 @@
-const CarDimentions = ({ vehichleDimentions, carItem }) => {
+const CarDimentions = ({ vehichleDimentions }) => {
   /* calculations */
   // let loadingspace = parseFloat(
   //   (carItem?.loadingVolume.valueheight *
@@ -32,7 +32,9 @@ const CarDimentions = ({ vehichleDimentions, carItem }) => {
             >
               {item.key}:
             </p>
-            <p className="w-1/2 py-1 flex items-center pl-4">{item.value}</p>
+            <p className="w-1/2 py-1 flex items-center pl-4">
+              {item.value} {index === 0 || index === 5 ? " " : item.baseUnit}
+            </p>
           </div>
         ))}
 

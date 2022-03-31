@@ -109,7 +109,7 @@ carSizes:
   valuelength: 3150
   valueheight: 1685
   valuewheelbase: 2300
-  key: Fahrzeug-Maße
+  key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
@@ -119,5 +119,34 @@ loadingVolume:
   valuelength: 1400
   length: Länge
   baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "0"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
+carSizesLength:
+  value: "0"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
 ---
+
 Der ARI 458 Kipper ist ein elektrischer Kleintransporter mit kippbarer Ladefläche und 80 km/h Höchstgeschwindigkeit.

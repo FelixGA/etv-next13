@@ -5,7 +5,7 @@ import TopSlider from "../../components/Sliders/TopSlider";
 import Articles from "../../components/DetailsPage/Articles";
 import PrintPopUp from "../../components/DetailsPage/PrintPopUp";
 import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
-
+import { serialize } from "next-mdx-remote/serialize";
 import getSlugs from "/utils/getSlugs";
 import BasicInfo from "../../components/DetailsPage/BasicInfo";
 
@@ -15,35 +15,35 @@ export default function Details(props) {
 
   /* carItem hook for the ONE car that it is displayed */
   const [carItem, SetCarItem] = useState(props.vehicle);
-  console.log(carItem);
-  /* for the view more hook */
-  const [descriptionSize, SetDescriptionSize] = useState(true);
+  /* for the "TestBericht" part  */
+  const [getTestReview, SetTestReview] = useState(props.getTestReview);
+  /* the content for the future related blogs  */
   const [getBlogContext, SetGetBlogContext] = useState(props.relatedBlog);
   /* to make the Page change after clicking next/link */
-
   const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
   useEffect(() => {
     setValueFromUseEffect(props.params.cartitle);
     SetGetCars(props.vehicles);
     SetCarItem(props.vehicle);
+    SetGetBlogContext(props.relatedBlog);
+    SetTestReview(props.getTestReview);
   }, [props]);
-
   return (
     <>
       {/* image and rating section */}
       <div className="2xl:px-40">
-        <BasicInfo carItem={carItem} descriptionSize={descriptionSize} />
-
+        <BasicInfo carItem={carItem} />
         {/* technical details section */}
-
-        <TechnicalDetails carItem={carItem} />
+        <TechnicalDetails carItem={carItem} />{" "}
         {/* description and articles section */}
       </div>
-      <Articles carItem={carItem} getBlogContext={getBlogContext} />
+      <Articles
+        carItem={carItem}
+        // getBlogContext={getBlogContext}
+        getTestReview={getTestReview}
+      />
       {/* slider  */}
-
-      <TopSlider getCars={getCars} />
-      {/*sticky popup  */}
+      <TopSlider getCars={getCars} /> {/*sticky popup  */}
       <PrintPopUp carItem={carItem} />
     </>
   );
@@ -64,27 +64,39 @@ export async function getStaticProps(context) {
   vehicles = vehicles
     .filter((item, index) => item.category === vehicle.category)
     .slice(0, 4);
-  /* get related blogs*/
-  let blog = await getContentBySlug(
-    "blogs",
+
+  /* get related reviews*/
+    let carsreviews = await getContent("carsreview", context.locale);
+
+  let carsreview = await getContentBySlug(
+    "carsreview",
     context.params.cartitle,
     context.locale
   );
-  /* get all blogs*/
+
+  /* catching errors in case there is no carsreview yet */
+  let getTestReview = null;
+
+  if (carsreview.source !== undefined) {
+    /* serializing the array with mdx */
+    getTestReview = await Promise.all(
+      carsreview?.content.map((item, index) => {
+        return serialize(item.content);
+      })
+    );
+  } else {
+    getTestReview = null;
+  }
+
+  /* get all blogs for the footer*/
   let blogs = await getContent("blogs", context.locale);
+  /* get related blog */
+  let relatedBlog = blogs.find(
+    (item, index) => item.category === vehicle.category
+  )
+    ? blogs.find((item, index) => item.slug === context.params.cartitle)
+    : blogs.find((item, index) => item.slug === "beispiel bitte nicht ändern");
 
-  /* catching errors in case there isnt blog yet */
-  let emptyBlog = await getContentBySlug(
-    "blogs",
-    "beispiel bitte nicht ändern",
-    context.locale
-  );
-
-  let relatedBlog;
-
-  blog.source
-    ? (relatedBlog = blog.contentHeading)
-    : (relatedBlog = emptyBlog.contentHeading);
   if (!vehicle) {
     return {
       notFound: true,
@@ -96,6 +108,8 @@ export async function getStaticProps(context) {
       vehicle,
       vehicles,
       relatedBlog,
+      getTestReview,
+      carsreviews,
       params: context.params,
       blogs,
     },

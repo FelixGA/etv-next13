@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 const Nav = () => {
   const [isActive, setIsActive] = useState(false);
   const router = useRouter();
-  // console.log(router.pathname);
+  // (router.pathname);
   return (
     <div className={router.pathname == "/caradvisor" ? "hidden" : "w-full"}>
       <nav className=" ">
@@ -56,7 +56,7 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link href="/Kontakt">
+            <Link href="/kontakt">
               <a
                 onClick={() => {
                   setIsActive(false);
