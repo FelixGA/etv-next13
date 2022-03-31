@@ -3,6 +3,7 @@ import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote";
 // import Head from "/components/core/Head.js";
 import styles from "./Blog.module.css";
+import { useRouter } from "next/router";
 // import BlogHeader from "./BlogHeader";
 // import Link from "next/link";
 // import tileCatalogue from "/public/images/tileCatalogue.png";
@@ -10,6 +11,7 @@ import styles from "./Blog.module.css";
 // import tileYoutube from "/public/images/tileYoutube.png";
 
 export default function Blog({ getBlogs }) {
+  const router = useRouter();
   //   const [prefix, setPrefix] = useState("");
 
   //   useEffect(() => {
@@ -27,10 +29,6 @@ export default function Blog({ getBlogs }) {
       {/* <Head page={page} /> */}
       {/* <BlogHeader getBlogs={getBlogs} /> */}
       <div className="grid w-full max-w-screen-xl mx-auto">
-        <h1 className="px-4 pt-8 pb-2 text-blue-dark font-bold text-4xl text-center">
-          {/* {page?.title}  */}
-          Magazin
-        </h1>
         <div className="max-w-screen-2xl p-2 md:p-4">
           <div className="grid gap-4 md:gap-8 justify-items-center grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]">
             {getBlogs
@@ -41,7 +39,12 @@ export default function Blog({ getBlogs }) {
                     <a
                       className="flex flex-col max-w-md min-w-md shadow-card rounded-md transition transform hover:scale-105 overflow-hidden mx-6"
                       //   href={`/${prefix}/${post.slug}`}
-                      href={`/magazin/${post.slug}`}
+                      href={
+                        router.pathname == "/magazin/reviews"
+                          ? `/magazin/reviews/${post.slug}`
+                          : `/magazin/${post.slug}`
+                      }
+                      // href={`/magazin/${post.slug}`}
                       key={index}
                     >
                       {post.src && (
@@ -70,7 +73,7 @@ export default function Blog({ getBlogs }) {
                       </div>
                       <div className="flex-1 flex flex-col justify-between"></div>
                       <div className="hidden line-clamp-6 block text-center px-2">
-                        {post.contentHeading.content
+                        {post?.contentHeading?.content
                           ? post.contentHeading.content
                           : post.description}
                       </div>

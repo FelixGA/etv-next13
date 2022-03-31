@@ -7,7 +7,7 @@ const TechnicalDetails = ({ carItem }) => {
   const [basics, SetBasics] = useState([]);
   const [vehichleDimentions, SetVehichleDimentions] = useState([]);
   const [details, SetDetails] = useState([]);
-
+  carItem;
   /* to get the new data in case they are updated */
   /* get two subsets of the car properties to map them */
   useEffect(() => {
@@ -36,69 +36,83 @@ const TechnicalDetails = ({ carItem }) => {
 
     SetDetails(details);
     const vehichleDimentions = [
-      { key: carItem.carSizes.key },
-      {
-        value: carItem.carSizes.valueheight + " " + carItem.carSizes.baseUnit,
-        key: carItem.carSizes.height,
-      },
-      {
-        value: carItem.carSizes.valuewidth + " " + carItem.carSizes.baseUnit,
-        key: carItem.carSizes.width,
-      },
-      {
-        value: carItem.carSizes.valuelength + " " + carItem.carSizes.baseUnit,
-        key: carItem.carSizes.length,
-      },
-      {
-        key: carItem.carSizes.wheelbase,
-        value: carItem.carSizes.valuewheelbase + " mm",
-      },
-
-      { key: carItem.loadingVolume.key },
-
-      {
-        value:
-          carItem.loadingVolume.valueheight + " " + carItem.carSizes.baseUnit,
-        key: carItem.loadingVolume.height,
-      },
-      {
-        value:
-          carItem.loadingVolume.valuewidth + " " + carItem.carSizes.baseUnit,
-        key: carItem.loadingVolume.width,
-      },
-      {
-        value:
-          carItem.loadingVolume.valuelength + " " + carItem.carSizes.baseUnit,
-        key: carItem.loadingVolume.length,
-      },
-
-      {
-        key: carItem.loadingArea.key,
-        value: carItem.loadingArea.value + " " + carItem.loadingArea.baseUnit,
-      },
-      {
-        key: carItem.loadingVolumeTotal.key,
-        value:
-          carItem.loadingVolumeTotal.value +
-          " " +
-          carItem.loadingVolumeTotal.baseUnit,
-      },
+      carItem.carSizes,
+      carItem.loadingVolumeHeight,
+      carItem.loadingVolumeLength,
+      carItem.wheelbase,
+      carItem.loadingVolumeWidth,
+      carItem.loadingVolume,
+      carItem.carSizesHeight,
+      carItem.carSizesLength,
+      carItem.carSizesWidth,
+      carItem.loadingVolumeTotal,
+      carItem.loadingArea,
     ];
+
+    // const vehichleDimentions = [
+    //   { key: carItem.carSizes.key },
+    //   {
+    //     value: carItem.carSizes.valueheight + " " + carItem.carSizes.baseUnit,
+    //     key: carItem.carSizes.height,
+    //   },
+    //   {
+    //     value: carItem.carSizes.valuewidth + " " + carItem.carSizes.baseUnit,
+    //     key: carItem.carSizes.width,
+    //   },
+    //   {
+    //     value: carItem.carSizes.valuelength + " " + carItem.carSizes.baseUnit,
+    //     key: carItem.carSizes.length,
+    //   },
+    //   {
+    //     key: carItem.carSizes.wheelbase,
+    //     value: carItem.carSizes.valuewheelbase + " mm",
+    //   },
+
+    //   { key: carItem.loadingVolume.key },
+
+    //   {
+    //     value:
+    //       carItem.loadingVolume.valueheight + " " + carItem.carSizes.baseUnit,
+    //     key: carItem.loadingVolume.height,
+    //   },
+    //   {
+    //     value:
+    //       carItem.loadingVolume.valuewidth + " " + carItem.carSizes.baseUnit,
+    //     key: carItem.loadingVolume.width,
+    //   },
+    //   {
+    //     value:
+    //       carItem.loadingVolume.valuelength + " " + carItem.carSizes.baseUnit,
+    //     key: carItem.loadingVolume.length,
+    //   },
+
+    //   {
+    //     key: carItem.loadingArea.key,
+    //     value: carItem.loadingArea.value + " " + carItem.loadingArea.baseUnit,
+    //   },
+    //   {
+    //     key: carItem.loadingVolumeTotal.key,
+    //     value:
+    //       carItem.loadingVolumeTotal.value +
+    //       " " +
+    //       carItem.loadingVolumeTotal.baseUnit,
+    //   },
+    // ];
 
     SetVehichleDimentions(vehichleDimentions);
   }, [carItem]);
 
   /* calculations */
-  let loadingspace = parseFloat(
-    (carItem?.loadingVolume.valueheight *
-      carItem?.loadingVolume.valuewidth *
-      carItem?.loadingVolume.valuelength) /
-      1000000
-  ).toFixed(2);
-  let truckBed = parseFloat(
-    (carItem?.loadingVolume.valuewidth * carItem?.loadingVolume.valuelength) /
-      1000
-  ).toFixed(2);
+  // let loadingspace = parseFloat(
+  //   (carItem?.loadingVolume.valueheight *
+  //     carItem?.loadingVolume.valuewidth *
+  //     carItem?.loadingVolume.valuelength) /
+  //     1000000
+  // ).toFixed(2);
+  // let truckBed = parseFloat(
+  //   (carItem?.loadingVolume.valuewidth * carItem?.loadingVolume.valuelength) /
+  //     1000
+  // ).toFixed(2);
   return (
     <div className="w-full flex flex-col justify-center items-start lg:pt-12 lg:px-4 py-8 ">
       <h3 className="text-blue-extra font-bold text-3xl lg:text-4xl pl-4">

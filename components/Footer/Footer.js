@@ -3,18 +3,28 @@ import Image from "next/image";
 import Link from "next/link";
 import ListItems from "./ListItems";
 
-const Footer = ({ blogs }) => {
+const Footer = ({ blogs, reviews }) => {
+  reviews;
+
   /*  select blogs upon category */
-  const references = blogs?.filter((blog) => blog.category === "referenzen");
 
   const magazine = blogs?.filter((blog) => blog.category !== "referenzen");
   const rights = [
-    { slug: "impressum", title: "Impressum" },
-    { slug: "kontakt", title: "Kontakt" },
-    { slug: "datenschutzerklaerung", title: "Datenschutz-erklärung" },
+    {
+      slug: "impressum",
+      title: "Impressum",
+      category: "rechtlichesundkontakt",
+    },
+    { slug: "kontakt", title: "Kontakt", category: "rechtlichesundkontakt" },
+    {
+      slug: "datenschutzerklaerung",
+      title: "Datenschutz-erklärung",
+      category: "rechtlichesundkontakt",
+    },
     {
       slug: "allgemeineGeschaeftsbedingungen",
       title: "Allgemeine Geschäfts-bedingungen",
+      category: "rechtlichesundkontakt",
     },
   ];
 
@@ -33,32 +43,6 @@ const Footer = ({ blogs }) => {
           Hier könnte noch etwas stehen, was Leute davon überzeugt, dass Ihr
           richtig gut seid!
         </p>
-        <div className="flex flex-row justify-around w-full ">
-          <Link href="/Leichttransporter">
-            <a>
-              <img
-                className="opacity-50 "
-                src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png"
-              />
-            </a>
-          </Link>
-          <Link href="/Leichttransporter">
-            <a>
-              <img
-                className="opacity-50 "
-                src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"
-              />
-            </a>
-          </Link>
-          <Link href="/Leichttransporter">
-            <a>
-              <img
-                className="opacity-50 "
-                src="https://img.icons8.com/ios-glyphs/30/000000/twitter.png"
-              />
-            </a>
-          </Link>
-        </div>
       </span>
       <nav className="flex mt-10 flex-col sm:flex-row justify-between items-center sm:items-start px-10 ">
         <div className="flex lg:w-48 items-center flex-col justify-center">
@@ -70,7 +54,7 @@ const Footer = ({ blogs }) => {
             </Link>
           </h5>
 
-          <ListItems itemsList={references} />
+          <ListItems itemsList={reviews} />
         </div>
         <div className="flex lg:w-48 items-center flex-col justify-center ">
           <h5 className="text-xs font-bold">

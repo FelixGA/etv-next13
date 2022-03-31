@@ -50,12 +50,15 @@ export async function getStaticProps(context) {
 
   /* get all blogs*/
   let blogs = await getContent("blogs", context.locale);
+  let carsreviews = await getContent("carsreview", context.locale);
+
   return {
     props: {
       vehicles,
       blog,
       blogs,
       params: context.params,
+      carsreviews,
     },
   };
 }

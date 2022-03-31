@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 export default function Layout(props) {
   const [blogs, setBlogs] = useState(props.blogs);
+  const [reviews, setReviews] = useState(props.carsreviews);
   const { state, dispatch } = useStore();
   const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
 
@@ -19,16 +20,18 @@ export default function Layout(props) {
     >
       <Header />
       <main>{props.children}</main>
-      <Footer blogs={blogs} />
+      <Footer blogs={blogs} reviews={reviews} />
     </div>
   );
 }
 export async function getStaticProps(context) {
   let blogs = await getContent("blogs", context.locale);
+  let carsreviews = await getContent("carsreview", context.locale);
 
   return {
     props: {
       blogs,
+      carsreviews,
       params: context.params,
     },
   };

@@ -114,5 +114,34 @@ loadingVolume:
   height: Height
   width: Width
   length: Length
+loadingVolumeLength:
+  key: Länge
+  value: "0"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
+carSizesLength:
+  value: "0"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
 ---
+
 Der ARI 901 Kipper ist ein leistungsstarker Elektrotransporter der Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung aufnehmen. Das Fahrzeug eignet sich speziell für den Einsatz bei Lieferanten, Baufirmen, Handwerkern, Kommunen sowie Landschaftsbaubetrieben. Der ARI 901 Kipper ist in drei Größen mit bis zu 5 m² Ladevolumen erhältlich. Die drei wählbaren Kipper-Größen ermöglichen eine perfekte Anpassungen an die Anforderung Ihres Unternehmens.

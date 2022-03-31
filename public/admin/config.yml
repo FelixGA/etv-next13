@@ -35,7 +35,8 @@ collections:
           i18n: duplicate,
           choose_url: false,
         }
-      - label: "Content"
+
+      - label: "Content(extra)"
         name: "content"
         widget: "list"
         summary: "{{fields.name}}"
@@ -50,7 +51,99 @@ collections:
               widget: "markdown",
               required: false,
             }
+  - label: "Cars-Reviews"
+    name: "carsreviews"
 
+    folder: "content/carsreview"
+    create: true
+    i18n: true
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          default: "ein titel",
+          i18n: true,
+          required: true,
+        }
+      - {
+          label: "Slug",
+          name: "slug",
+          widget: "string",
+          default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
+          i18n: duplicate,
+          required: true,
+        }
+      - {
+          label: "Youtube Link",
+          name: "youtubeLink",
+          widget: "string",
+          default: "bitte auffuelen",
+          i18n: duplicate,
+          required: false,
+        }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        multiple: false
+        i18n: duplicate
+        required: true
+        options: ["Pritsche", "Kipper", "Kasten", "Koffer"]
+      - label: "Published at"
+        name: "publishedAt"
+        widget: "date"
+        default: ""
+        format: "MM/DD/YYYY"
+        i18n: true
+
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          default: "bitte fuer SEO auffuelen",
+          i18n: true,
+          required: true,
+        }
+      - {
+          label: Image,
+          name: src,
+          widget: image,
+          i18n: duplicate,
+          choose_url: false,
+          required: false,
+        }
+
+      - label: "Content(here is the Testbericht)"
+        name: "content"
+        widget: "list"
+        summary: "{{fields.title}}"
+        i18n: true
+        required: false
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              i18n: true,
+              required: false,
+            }
+
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              default: "hier steht dn text",
+              i18n: duplicate,
+              required: false,
+            }
+          - {
+              label: "Image",
+              name: "image",
+              widget: "image",
+              i18n: duplicate,
+              choose_url: true,
+              required: false,
+            }
   - label: "Blogs"
     name: "blogs"
     folder: "content/blogs"
@@ -974,7 +1067,7 @@ collections:
               i18n: true,
               required: true,
             }
-      - label: "loading Height"
+      - label: "loading-Height"
         name: "loadingHeight"
         widget: "object"
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
@@ -1031,6 +1124,7 @@ collections:
               widget: "string",
               i18n: duplicate,
             }
+
       - label: "loading area in m2"
         name: "loadingArea"
         required: true
@@ -1209,4 +1303,189 @@ collections:
               widget: "string",
               i18n: duplicate,
               required: true,
+            }
+      - label: "Car-Sizes-length"
+        name: "carSizesLength"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "Car-Sizes-width"
+        name: "carSizesWidth"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "Car-Sizes-height"
+        name: "carSizesHeight"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
+
+      - label: "Loading-volume-length"
+        name: "loadingVolumeLength"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "Loading-volume-width"
+        name: "loadingVolumeWidth"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "Loading-volume-height"
+        name: "loadingVolumeHeight"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
+      - label: "wheelbase"
+        name: "wheelbase"
+        widget: "object"
+
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+
+              widget: "string",
+              i18n: duplicate,
             }

@@ -118,7 +118,7 @@ carSizes:
   valuelength: 2820
   valueheight: 1600
   valuewheelbase: 1850
-  key: Fahrzeug-Maße
+  key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
@@ -128,5 +128,34 @@ loadingVolume:
   valuelength: 1320
   length: Länge
   baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "0"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
+carSizesLength:
+  value: "0"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
 ---
+
 Das ARI 345 Food Truck ist ein elektrisches Lastenmoped mit Gastro-Aufbau mit 45 km/h Höchstgeschwindigkeit und 325 kg Zuladung. Es eignet sich ideal als strombetriebene Fahrzeugbasis für nachhaltig orientierte Gastronomen und Caterer.

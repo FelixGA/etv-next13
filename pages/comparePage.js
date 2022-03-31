@@ -11,7 +11,6 @@ export default function comparePage(props) {
   const [sortedCars, SetSortedCars] = useState([]);
   const [getContent, SetGetContent] = useState(props.page);
   const { state, dispatch } = useStore();
-
   useEffect(() => {
     SetSortedCars(props.vehicles);
     SetGetContent(props.page);
@@ -115,7 +114,8 @@ export async function getStaticProps(context) {
   const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   let blogs = await getContent("blogs", context.locale);
-  // console.log(blogs);
+      let carsreviews = await getContent("carsreview", context.locale);
+
   const page = pages.find((page) => page.path === "/comparePage");
 
   if (!pages) {
@@ -130,6 +130,7 @@ export async function getStaticProps(context) {
       posts,
       page,
       blogs,
+      carsreviews
     },
   };
 }
