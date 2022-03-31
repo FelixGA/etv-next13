@@ -2,150 +2,152 @@
 title: ARI 345 Koffer
 name: ari-345-koffer
 price: 7395
-relatedBlogs: beispiel
-description: >-
-  ![ARI 345 ](/images/whatsapp-image-2021-07-ari_345-koffer.jpeg "ARI 345
-  Koffer")
-
-
-  The ARI 345 is a load-carrying electric bike of vehicle category L2e with a payload of 325 kg. Its maximum speed is 45 km/h.
+relatedBlogs: ARI-345-Koffer
+description: Der ARI 345 Koffer ist ein dreirädriges Lastenmoped mit offener
+  Fahrerkabine und einem geschlossenen Koffer-Aufbau. Das Fahrzeug ist in drei
+  Größen mit bis zu 1,49 Meter Ladelänge und knapp 2 m³ Ladevolumen erhältlich.
+  Das Fahrzeug kann bereits von Jugendlichen mit dem Mopedführerschein der
+  Klasse AM gefahren werden. Mit Kofferaufbau und 325 kg Nutzlast eignet sich
+  der ARI 345 speziell für den innerstädtischen Einsatz bei Lieferdiensten,
+  Handwerkern und Dienstleistern aller Art. Der Aufbau kann außerdem mit einer
+  Kühlanlage sowie zusätzlichen Seitentüren ausgestattet werden.
 src: /images/dsc_0071.png
 category: Koffer
 typeClass: L2E
 loadingWeight:
-  key: Loading Weight
+  key: Nutzlast
   value: 325
   baseUnit: kg
 curbweight:
-  key: Curb Weight
+  key: Leergewicht
   value: 336
   baseUnit: kg
 maxSpeed:
-  key: Maximum Speed
+  key: km/h
   value: 45
   baseUnit: km/h
 range230V:
-  key: Range SLA Battery
+  key: Reichweite SLA Akku
   value: 55
   baseUnit: km
   maxValue: 100
 rangeLithium:
-  key: Range Lithium Battery
+  key: Reichweite Lithium Akku
   value: 0
   baseUnit: keine Angabe
   maxValue: 0
 chargingTime230V:
-  key: Charge Time 230v-socket
+  key: Ladezeit 230-V-Steckdose
   value: 5
   baseUnit: h
 chargingTimeLithium:
-  key: Charge Time Type2 Cable
+  key: Ladezeit Typ2 Ladekabel
   value: 0
-  baseUnit: h
+  baseUnit: keine Angabe
 chargingTimeFast:
-  key: Fast Charging
+  key: Schnellladung
   value: 0
-  baseUnit: h
+  baseUnit: keine Angabe
 batteryCapacityBlei:
-  key: Capacity SLA Battery
+  key: Kapazität SLA Akku
   value: 3,24
   baseUnit: " kwh"
 batteryCapacityLithium:
-  key: Capacity Lithium Battery
+  key: Kapazität Lithium Akku
   value: "0"
   baseUnit: kWh
 batteryIncluded:
-  key: Battery included
-  value: yes
+  value: ja
+  key: Batterie inklusive
 consumption:
-  key: Consumption
-  baseUnit: kWh
+  key: "Verbrauch "
   value: 5,6
+  baseUnit: kWh
 power:
-  key: Power
+  key: Leistung
   value: min-0/max-3
   baseUnit: kw
 seats:
-  key: Seats
+  key: Sitzplätze
   value: 1
 rating:
-  key: Good
+  key: Gut
   value: 2,0
 guarantee:
-  key: Guarantee Vehicle
+  key: Garantie Fahrzeug
   value: 6
-  baseUnit: Months
+  baseUnit: Monate
 availability:
-  key: Availability
-  value: no details available
+  key: Verfügbarkeit
+  value: keine Angabe
 subsidies:
-  key: Subsidies
-  baseUnit: Euro
+  key: Förderhöhe
   value: 0
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: Battery-Guarante
+  key: Garantie Akku
   value: 0
-  baseUnit: Months
+  baseUnit: keine Angabe
 loadingHeight:
-  key: Loading Height
+  key: Ladehöhe
   value: 560
   baseUnit: mm
 loadingVolumeTotal:
-  key: Loading Volume
+  key: Ladevolumen
   value: 1,36
   baseUnit: m3
 loadingArea:
-  key: Loading Area
+  key: Ladefläche
   value: 1,43
   baseUnit: m2
 carSizes:
-  width: Width
-  length: Length
-  height: Height
-  wheelbase: Wheelbase
-  valuewidth: 1160
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
+  valuewidth: 1300
   baseUnit: mm
   valuelength: 2820
   valueheight: 1600
   valuewheelbase: 1850
-  key: Car Sizes
+  key: Fahrzeugmaße
 loadingVolume:
-  key: Loading Area Sizes
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 950
+  width: Breite
   valuewidth: 1160
   valuelength: 1230
+  length: Länge
   baseUnit: mm
-  height: Height
-  width: Width
-  length: Length
+carSizesLength:
+  value: "2820"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "1300"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "1600"
+  baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "0"
+  value: "1230"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "0"
+  value: "1160"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
+  value: "0095"
   baseUnit: mm
 wheelbase:
   key: Radstand
   value: "0"
   baseUnit: mm
-carSizesLength:
-  value: "0"
-  key: Länge
-  baseUnit: mm
-carSizesWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-carSizesHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
 ---
 
-The ARI 345 is a load-carrying electric bike with a maximum speed of 45 km/h. Its perfect for urban delivery services and catering services.
+Das ARI 345 Koffer ist ein dreirädriges elektrisches Lastenmoped mit 45 km/h Höchstgeschwindigkeit und eignet sich ideal für innerstädtische Liefer-und Cateringdienste.
