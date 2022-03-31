@@ -28,7 +28,7 @@ function ActiveFilterBlock({ getContent }) {
       {/* HEADING + SORTING */}
       <div className="flex justify-between 2xl:pr-40">
         <div className={showAll ? "w-full " : "flex items-center flex-1 "}>
-          <h1 className="pl-4 text-2xl md:text-3xl text-blue-extra pt-8 pb-2">
+          <h1 className="pl-4 text-2xl md:text-3xl text-blue-extra pt-8 pb-4">
             {getContent.title}
           </h1>
         </div>
