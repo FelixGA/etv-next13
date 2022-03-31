@@ -2,130 +2,148 @@
 title: ARI 345 Pritsche
 name: ari-345-pritsche
 price: 6995
-relatedBlogs: nur beispiel
-description: The ARI 345 Pikcup is a three-wheeled delivery moped with an open
-  driver's cab and a tiltable pickup bed. The vehicle body is available in three
-  sizes with a loading length of up to 1.55 meters and around 1.8 m² loading
-  area. The vehicle can already be driven with a moped driving license in many
-  countries. As a pickup with 325 kg cargo load, the ARI 345 is particularly
-  suitable for inner-city use by delivery services, landscaping companies and
-  construction companies. Practical accessories such as a lattice box or a
-  tarpaulin structure are available for the loading platform.
+relatedBlogs:
+  title: " Konzept & Fahrzeugvarianten"
+  content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
+    Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den erhältlichen
+    Individual-Aufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer,
+    Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI
+    458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert.
+    Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
+    für große Strecken."
+  image: /images/ari-458-food-truck-5-.jpg
+description: Der ARI 345 Pritsche ist ein dreirädriges Lastenmoped mit offener
+  Fahrerkabine und einer kippbaren Pickup-Ladefläche. Das Fahrzeug ist in drei
+  Größen mit bis zu 1,55 Meter Ladelänge und rund 1,8 m² Ladefläche erhältlich.
+  Das Lastenmoped kann bereits von Jugendlichen mit dem Mopedführerschein der
+  Klasse AM gefahren werden.
 src: /images/345-front-1-.jpg
 typeClass: L2E
 loadingWeight:
+  key: Nutzlast
   value: 325
   baseUnit: kg
-  key: Loading Weight
 curbweight:
-  key: Curb Weight
+  key: Leergewicht
   value: 336
   baseUnit: kg
 maxSpeed:
-  key: Maximum Speed
+  key: km/h
   value: 45
   baseUnit: km/h
 range230V:
+  key: Reichweite SLA Akku
   value: 55
   baseUnit: km
-  key: Range SLA Battery
   maxValue: 100
 rangeLithium:
+  key: Reichweite Lithium Akku
   value: 0
   baseUnit: km
-  key: Range Lithium Battery
   maxValue: 0
 chargingTime230V:
+  key: Ladezeit 230-V-Steckdose
   value: 5
-  key: Charge Time 230v-socket
   baseUnit: h
 chargingTimeLithium:
+  key: Ladezeit Typ2 Ladekabel
   value: 0
-  key: Charge Time Type2 Cable
   baseUnit: h
 chargingTimeFast:
-  key: Fast Charging
+  key: Schnellladung
   value: 0
   baseUnit: h
 batteryCapacityBlei:
+  key: Kapazität SLA Akku
   value: 3,24
   baseUnit: " kwh"
-  key: Capacity SLA Battery
 batteryCapacityLithium:
+  key: Kapazität Lithium Akku
   value: "-"
   baseUnit: kWh
-  key: Capacity Lithium Battery
 batteryIncluded:
-  key: Battery included
-  value: yes
+  value: ja
+  key: Batterie inklusive
 consumption:
-  key: Consumption
-  baseUnit: kWh
+  key: "Verbrauch "
   value: 5,6
+  baseUnit: kWh
 power:
-  key: Power
+  key: Leistung
   value: min-3/max-3
   baseUnit: kw
 seats:
+  key: Sitzplätze
   value: 1
-  key: Seats
 rating:
+  key: Gut
   value: 2,0
-  key: Good
 guarantee:
-  key: Guarantee Vehicle
+  key: Garantie Fahrzeug
   value: 6
-  baseUnit: Months
+  baseUnit: Monate
 availability:
-  key: Availability
-  value: no details available
+  key: Verfügbarkeit
+  value: keine Angabe
 subsidies:
-  key: Subsidies
+  key: Förderhöhe
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: Battery-Guarantee
-  baseUnit: no details available
+  key: Garantie Akku
   value: 0
+  baseUnit: keine Angabe
 loadingHeight:
-  key: Loading Height
+  key: Ladehöhe
   value: 560
   baseUnit: mm
 loadingVolumeTotal:
+  key: Ladevolumen
   value: 0,36
   baseUnit: m3
-  key: Loading Volume
 loadingArea:
-  key: Loading Area
+  key: Ladefläche
   value: 1,43
   baseUnit: m2
 carSizes:
-  width: Width
-  length: Length
-  height: Height
-  wheelbase: Wheelbase
-  valuewidth: 1160
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
+  valuewidth: 1300
   baseUnit: mm
   valuelength: 2820
   valueheight: 1600
   valuewheelbase: 1850
-  key: Car Sizes
+  key: Fahrzeugmaße
 loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 250
+  width: Breite
   valuewidth: 1160
   valuelength: 1230
+  length: Länge
   baseUnit: mm
-  key: Loading Area Sizes
-  height: Height
-  width: Width
-  length: Length
+carSizesLength:
+  value: "2820"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "1300"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "1600"
+  baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "0"
+  value: "1230"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "0"
+  value: "1160"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
@@ -133,20 +151,8 @@ loadingVolumeHeight:
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "0"
-  baseUnit: mm
-carSizesLength:
-  value: "0"
-  key: Länge
-  baseUnit: mm
-carSizesWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-carSizesHeight:
-  key: Höhe
-  value: "0"
+  value: "250"
   baseUnit: mm
 ---
 
-The ARI 345 Pikcup is a three-wheeled delivery moped with an open driver's cab and a tiltable pickup bed. The ARI 345 is particularly suitable for inner-city use by delivery services, landscaping companies and construction companies.
+Das ARI 345 Pritsche ist ein dreirädriges elektrisches Lastenmoped mit 45 km/h Höchstgeschwindigkeit und eignet sich ideal für innerstädtische Liefer-und Cateringdienste.
