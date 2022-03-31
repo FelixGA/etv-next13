@@ -1,145 +1,154 @@
 ---
 title: ARI 458 Food Truck
 name: ari-458-food-truck-elektrisches-gastro-mobil
-price: 19430
-relatedBlogs: ari-458-food-truck-elektrisches-gastro-mobil
+price: 19990
+relatedBlogs:
+  title: Konzept & Fahrzeugvarianten
+  content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
+    Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den erhältlichen
+    Individual-Aufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer,
+    Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI
+    458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert.
+    Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
+    für große Strecken."
+  image: /images/ari-458-food-truck-heckansicht-1-.jpg
 description: Der ARI 458 Food Truck ist ein elektrischer Kleintransporter mit
   Gastro-Aufbau. Er kann  individuell gestaltet und an verschiedene
   Gastrokonzepte angepasst werden.
 src: /images/ari-458-food-truck-5-.jpg
 category: Kasten
 loadingWeight:
+  key: Nutzlast
   value: 531
   baseUnit: kg
-  key: Loading Weight
 curbweight:
-  key: Curb Weight
+  key: Leergewicht
   value: 1
   baseUnit: kg
 maxSpeed:
+  key: km/h
   value: 80
   baseUnit: km/h
-  key: Maximum Speed
 range230V:
+  key: Reichweite SLA Akku
   value: 120
   baseUnit: km
-  key: Range SLA Battery
   maxValue: 0
 rangeLithium:
-  key: Range Lithium Battery
+  key: Reichweite Lithium-Akku
   value: 150
   baseUnit: km
   maxValue: 495
 chargingTime230V:
+  key: Ladezeit 230-V-Steckdose
   value: 6
-  key: Charge Time 230v-socket
   baseUnit: h
 chargingTimeLithium:
-  key: Charge Time Type 2
+  key: Ladezeit Typ 2
   value: 6
   baseUnit: h
 chargingTimeFast:
-  key: Fast Charging
+  key: Schnell-Ladezeit
   value: 2
   baseUnit: h
 batteryCapacityBlei:
-  value: "-"
+  key: Kapazität SLA Akku
   baseUnit: " kwh"
-  key: Capacity SLA Battery
+  value: "-"
 batteryCapacityLithium:
-  key: Capacity Lithium Battery
+  key: Kapazität Lithium-Akku
   value: "10"
   baseUnit: kwh
 batteryIncluded:
-  key: Battery included
-  value: yes
+  key: Akku inklusive
+  value: ja
 consumption:
-  key: Consumption
-  baseUnit: kwh
+  key: Verbrauch
   value: 7,5
+  baseUnit: kwh
 power:
-  key: Power
+  key: Leistung
   value: 7,5
   baseUnit: kw
 seats:
-  key: Seats
+  key: Sitzplätze
   value: 2
 rating:
+  key: Sehr gut
   value: 1,0
-  key: Result
 guarantee:
-  key: Guarantee vehicle
+  key: Garantie Fahrzeug
   value: 6
-  baseUnit: Months
+  baseUnit: Monate
 availability:
-  key: Availability
+  key: Verfügbarkeit
   value: "-"
 subsidies:
-  key: Subsidies
+  key: Förderhöhe
   baseUnit: Euro
-  value: 0
+  value: 1
 batteryGuarantee:
-  key: "Battery-Guarantee "
+  key: Garantie Akku
   value: 48
-  baseUnit: Months
+  baseUnit: Monate
 loadingHeight:
-  key: Loading Height
+  key: Ladehöhe
   value: 0
   baseUnit: keine Angabe
 loadingVolumeTotal:
-  value: 2,15
+  key: Ladevolumen
   baseUnit: m3
-  key: Loading Volume
+  value: 2,15
 loadingArea:
-  key: Loading Area
+  key: Ladefläche
   value: 1,72
   baseUnit: m2
 carSizes:
-  width: Width
-  length: Length
-  height: Height
-  wheelbase: Wheelbase
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
   valuewidth: 1300
   baseUnit: mm
   valuelength: 3150
-  valueheight: 1685
+  valueheight: 1950
   valuewheelbase: 2300
-  key: Car Sizes
+  key: Fahrzeugmaße
 loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 1250
+  width: Breite
   valuewidth: 1300
+  length: Länge
   valuelength: 1320
   baseUnit: mm
-  key: Loading Area Sizes
-  height: Height
-  width: Width
-  length: Length
-loadingVolumeLength:
-  key: Länge
-  value: "0"
-  baseUnit: mm
-loadingVolumeWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-loadingVolumeHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "0"
-  baseUnit: mm
 carSizesLength:
-  value: "0"
+  value: "3150"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "0"
+  value: "1300"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
+  value: "1250"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "1320"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "1300"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "1250"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
   value: "0"
   baseUnit: mm
 ---

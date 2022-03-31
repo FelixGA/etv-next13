@@ -1,7 +1,7 @@
 ---
 title: ARI 458 Food Truck
 name: ari-458-food-truck-elektrisches-gastro-mobil
-price: 19430
+price: 19990
 relatedBlogs:
   title: Konzept & Fahrzeugvarianten
   content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
@@ -112,10 +112,9 @@ carSizes:
   valuewidth: 1300
   baseUnit: mm
   valuelength: 3150
-  valueheight: 1685
+  valueheight: 1950
   valuewheelbase: 2300
   key: Fahrzeugmaße
-
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
@@ -125,32 +124,32 @@ loadingVolume:
   length: Länge
   valuelength: 1320
   baseUnit: mm
-loadingVolumeLength:
-  key: Länge
-  value: "0"
-  baseUnit: mm
-loadingVolumeWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-loadingVolumeHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "0"
-  baseUnit: mm
 carSizesLength:
-  value: "0"
+  value: "3150"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "0"
+  value: "1300"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
+  value: "1250"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "1320"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "1300"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "1250"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
   value: "0"
   baseUnit: mm
 ---
