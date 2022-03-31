@@ -7,10 +7,22 @@ export default function caradvisor(props) {
   const [getContent, SetGetContent] = useState(props.page);
   return (
     <div className="bg-blue-extralight">
-      <div className="bg-green-lighter hidden xl:flex justify-center h-12 items-center">
-        <div className="xl:pr-60 text-white text-2xl">kostenlos </div>
-        <div className="text-white text-2xl">unparteiisch </div>
-        <div className="xl:pl-60 text-white text-2xl">unverbindlich</div>
+      <div className="bg-green-lighter hidden xl:flex justify-around h-12 items-center">
+        <div className="">
+          <p className="text-white text-lg 2xl:text-xl w-full">
+            ✔️ über 10 Jahre Erfahrung mit KFZ
+          </p>
+        </div>
+        <div className="">
+          <p className="text-white text-lg 2xl:text-xl w-full">
+            ✔️ 500+ verkaufte Transporter seit 2019
+          </p>
+        </div>
+        <div className=" ">
+          <p className="text-white text-lg 2xl:text-xl w-full">
+            ✔️ unverbindliches Angebot in 24 Stunden
+          </p>
+        </div>
       </div>
       <Funnel getCars={getCars} />
       <div className="flex justify-between relative">

@@ -6,14 +6,14 @@ function CarCardforPopUp(props) {
   const { state, dispatch } = useStore();
   return (
     <div className="w-[80%] md:w-full relative ">
-      <div className="w-16 md:min-w-36 md:w-full relative">
+      <div className="w-16  md:w-full relative">
         <Image
           className=" md:rounded-md brightness-50"
           src={props.selectedCar.pic}
           alt="picture"
-          objectFit="cover"
+          objectFit="fill"
           width={228.97}
-          height={111}
+          height={125}
           layout="responsive"
         />
         <div className="absolute hidden md:flex  top-1 left-1 items-center justify-center">
@@ -28,7 +28,7 @@ function CarCardforPopUp(props) {
         </p>
       </div> */}
 
-      <div className="absolute hidden md:flex md:bottom-6 lg:bottom-4 right-2 ">
+      <div className="absolute hidden md:flex md:bottom-6 lg:bottom-1 right-2 ">
         <p className="text-white font-black text-lg">
           {`ab ${props.selectedCar.price} €`}
         </p>
