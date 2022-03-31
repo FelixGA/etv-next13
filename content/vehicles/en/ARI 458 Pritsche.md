@@ -1,5 +1,7 @@
 ---
 title: ARI 458 Pritsche
+name: ARI 458 Pritsche
+price: 13700
 relatedBlogs:
   title: " Konzept & Fahrzeugvarianten"
   content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
@@ -13,6 +15,9 @@ relatedBlogs:
 description: Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI
   Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen
   Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
+src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
+category: Pritsche
+typeClass: L7E
 loadingWeight:
   key: Nutzlast
   value: 531
@@ -141,10 +146,6 @@ loadingVolumeWidth:
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
-  baseUnit: mm
-wheelbase:
-  key: Radstand
   value: "0"
   baseUnit: mm
 wheelbase:
