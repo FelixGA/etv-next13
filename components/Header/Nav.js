@@ -16,6 +16,34 @@ const Nav = () => {
                 className="text-[#E7E8EC]"
                 onClick={() => {
                   setIsActive(false);
+                  dispatch({
+                    type: "mobileNavActive",
+                    data: false,
+                  });
+                  dispatch({
+                    type: "rangeLithium",
+                    data: [],
+                  });
+                  dispatch({
+                    type: "loadingWeight",
+                    data: [],
+                  });
+                  dispatch({
+                    type: "price",
+                    data: [],
+                  });
+                  dispatch({
+                    type: "maxSpeed",
+                    data: [],
+                  });
+                  dispatch({
+                    type: "category",
+                    data: [],
+                  });
+                  dispatch({
+                    type: "chargingTimeLithium",
+                    data: [],
+                  });
                 }}
               >
                 Start

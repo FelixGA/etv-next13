@@ -9,13 +9,26 @@ export default function ReviewPost({ getCarsReview, getMdxContent }) {
   // useEffect(() => {
   //   setTestReview(getCarsReview);
   // }, [getCarsReview]);
-  999, getCarsReview;
+
   return (
     <div className="flex flex-1 flex-col p-4 lg:p-8">
       <div>
+        <button className="text-sm bg-white w-52 h-10 rounded-md text-blue-darker  lg:block  left-8">
+          <Link href="/comparePage">
+            <a className="visited:text-blue-darker">
+              « zurück zur Ergebnisliste
+            </a>
+          </Link>
+        </button>
         <h2 className="m-auto py-8 text-blue-dark font-bold text-4xl ">
           Testbericht - {getCarsReview?.title}
+          <Link href={`/transporter/${getCarsReview?.slug}`}>
+            <span className="lg:px-8 text-blue-dark font-bold text-xs text-left cursor-pointer">
+              Details anzeigen
+            </span>
+          </Link>
         </h2>
+
         <div className={styles.markdown}>
           {/* <MDXRemote {...getBlogContext.source} /> */}
         </div>
@@ -33,7 +46,6 @@ export default function ReviewPost({ getCarsReview, getMdxContent }) {
           )}
         </div> */}
       </div>
-
       {getCarsReview?.content.map((article, index) => (
         <div
           key={index}
