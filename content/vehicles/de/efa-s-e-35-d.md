@@ -1,5 +1,5 @@
 ---
-title: efa-s-e-35-d
+title: Efa-S E35
 name: efa-s-e-35-d
 price: 0
 relatedBlogs: nur beispiel
@@ -103,7 +103,7 @@ carSizes:
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1500
+  valuewidth: 0
   baseUnit: keine Angabe
   valuelength: 0
   valueheight: 0
@@ -118,22 +118,6 @@ loadingVolume:
   valuelength: 3090
   length: Länge
   baseUnit: mm
-loadingVolumeLength:
-  key: Länge
-  value: "0"
-  baseUnit: mm
-loadingVolumeWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-loadingVolumeHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "0"
-  baseUnit: mm
 carSizesLength:
   value: "0"
   key: Länge
@@ -144,6 +128,22 @@ carSizesWidth:
   baseUnit: mm
 carSizesHeight:
   key: Höhe
+  value: "0"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "3090"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "2078"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
   value: "0"
   baseUnit: mm
 ---
