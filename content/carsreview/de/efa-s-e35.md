@@ -68,10 +68,30 @@ content:
 
       Der Efa-S E35 ist auf viel Raumvolumen und eine hohe Nutzlast ausgelegt und dementsprechend unhandlich im Vergleich zu kleineren Fahrzeugen. Enge Innenstädte sind also nicht unbedingt die perfekte Umgebung für ihn. Die Beladung ist dank der großen Türen und der niedrigen Ladekante allerdings sehr einfach auch für sperrige Güter. Ein Fleet Management-System wird nicht angeboten.
     title: Bedienung & Fahrbetrieb
+    image: /images/gazelle-pritsche.jpg
   - content: >-
       ### Umwelt
 
 
       Konkrete Verbrauchsangabe gibt es nicht beim Efa-s E35. Eine Reichweite von 200 Kilometern bei einem 80 kWh-Akku entspricht ungefähr einem Verbrauch von 40 kWh auf 100 Kilometer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke also ca. 12,00 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
+  - content: >-
+      ### Preise & Garantie
+
+
+      Eine offizielle Preisliste gibt es nicht und konkrete Angebote gibt es nur auf Anfrage. Allerdings findet man im Netz Angebote des Typs für einen Neupreis von bis zu 90.000 Euro. Immerhin kann das Fahrzeug aber als 4,25-Tonner eine Förderung von bis zu 50% der Preisdifferenz zu einem herkömmlichen Antrieb erhalten. Laut Hersteller können hier Zuschüsse von bis zu 30.000 Euro erreicht werden.
+    title: Preise & Garantie
+    image: /images/efa-s-e35-kasten.jpg
+  - content: >-
+      ### Fazit
+
+
+      Der Efa-S ist in Sachen Ladevolumen sowie Motorleistung ein Schwergewicht. Mehr als 10.000 Liter Laderaum und ein Drehmoment von bis zu 730 Nm sind eine ordentliche Ansage. Zudem scheint der Stuttgarter Hersteller dank leistungsstarken Akkus eine vernünftige Reichweite für den 3,5-Tonner bereitstellen zu können.
+
+
+      ### Gesamtpunktzahl:
+
+
+      3,2 Sterne
+    title: Fazit
 ---
