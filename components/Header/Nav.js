@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useStore } from "../store";
 
 const Nav = () => {
   const [isActive, setIsActive] = useState(false);
   const router = useRouter();
+  const { dispatch } = useStore();
   // (router.pathname);
   return (
     <div className={router.pathname == "/caradvisor" ? "hidden" : "w-full"}>

@@ -74,6 +74,14 @@ collections:
           i18n: duplicate,
           required: true,
         }
+      - label: "related Cars"
+        name: "relatedCars"
+        required: true
+        widget: "relation"
+        collection: "vehicles"
+        search_fields: ["title"]
+        display_fields: ["title"]
+        value_field: "name"
       - {
           label: "Youtube Link",
           name: "youtubeLink",
@@ -522,12 +530,20 @@ collections:
         }
       - label: "related blogs"
         name: "relatedBlogs"
-        required: true
+        required: false
         widget: "relation"
         collection: "blogs"
         search_fields: ["title"]
         display_fields: ["title"]
         value_field: "contentHeading"
+      - label: "related reviews"
+        name: "relatedReviews"
+        required: false
+        widget: "relation"
+        collection: "carsreviews"
+        search_fields: ["title"]
+        display_fields: ["title"]
+        value_field: "slug"
 
       - label: "Description"
         name: "description"
