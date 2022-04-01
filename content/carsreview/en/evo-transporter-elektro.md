@@ -1,6 +1,7 @@
 ---
 title: ein titel
 slug: evo-transporter-elektro
+relatedCars: evo-elektro-pritsche
 youtubeLink: bitte auffuelen
 category: Pritsche
 publishedAt: ""
