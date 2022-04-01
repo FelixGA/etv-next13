@@ -21,7 +21,7 @@ const TopSlider = ({ getContent, getCars }) => {
         </h2>
 
         <div
-          className="grid grid-flow-col gap-2 auto-cols-[minmax(285px,_1fr)] overflow-x-scroll scrollbar-hide  p-2"
+          className="grid grid-flow-col gap-2 auto-cols-[minmax(285px,_1fr)] overflow-x-scroll scrollbar-hide p-2"
           ref={container}
         >
           <TopSliderCard displayedCars={getCars} />

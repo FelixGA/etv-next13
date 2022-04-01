@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineArrowRight } from "react-icons/hi";
-import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 const TopSliderCard = (props) => {
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
@@ -15,9 +14,9 @@ const TopSliderCard = (props) => {
                   className="rounded-md "
                   src={caritem.src}
                   alt="picture"
-                  objectFit="contain"
+                  objectFit="cover"
                   width={380}
-                  height={250}
+                  height={270}
                   layout="responsive"
                 />
               )}
