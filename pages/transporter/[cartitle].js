@@ -28,22 +28,26 @@ export default function Details(props) {
     SetGetBlogContext(props.relatedBlog);
     SetTestReview(props.getTestReview);
   }, [props]);
+  console.log("getBlogContext", getBlogContext);
+  console.log("getTestReview", getTestReview);
+  console.log("carItem", carItem);
   return (
     <>
       {/* image and rating section */}
       <div className="2xl:px-40">
         <BasicInfo carItem={carItem} />
         {/* technical details section */}
-        <TechnicalDetails carItem={carItem} />{" "}
+        <TechnicalDetails carItem={carItem} />
         {/* description and articles section */}
       </div>
       <Articles
         carItem={carItem}
-        // getBlogContext={getBlogContext}
+        getBlogContext={getBlogContext}
         getTestReview={getTestReview}
       />
       {/* slider  */}
-      <TopSlider getCars={getCars} /> {/*sticky popup  */}
+      <TopSlider getCars={getCars} />
+      {/*sticky popup  */}
       <PrintPopUp carItem={carItem} />
     </>
   );
@@ -66,7 +70,7 @@ export async function getStaticProps(context) {
     .slice(0, 4);
 
   /* get related reviews*/
-    let carsreviews = await getContent("carsreview", context.locale);
+  let carsreviews = await getContent("carsreview", context.locale);
 
   let carsreview = await getContentBySlug(
     "carsreview",
