@@ -5,20 +5,12 @@ import { useState } from "react";
 import Blog from "../components/Blog/Blog";
 
 export default function kontakt(props) {
-  const [getBlogs, SetGetBlogs] = useState(props.blogs);
-  const [getName, SetGetName] = useState("");
-  const [getEmail, SetGetEmail] = useState("");
-  const [getMessage, SetGetMessage] = useState("");
-  const [getFirma, SetGetFirma] = useState("");
-  const [getLocation, SetGetLocation] = useState("");
-  const [getPhone, SetGetPhone] = useState("");
-  const [getPostNum, SetGetPostNum] = useState("");
-  const [getData, SetGetData] = useState({});
-
   const emailRegex = RegExp(
-    /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
   );
 
+  const fullNameRegex = RegExp(/^[a-zA-Z ]{2,30}$/);
+  const phoneNumberRegex = RegExp(/^[0-9]{9,15}$/);
   // const handleSubmit = (e) => {
   //   alert("Thank you for your message!");
   //   e.preventDefault();
@@ -36,14 +28,12 @@ export default function kontakt(props) {
   };
 
   const onError = (errors, e) => console.log("errors", errors, e);
-  const watchName = watch("firstName");
-
-  // console.log(getData);
+  // const watchName = watch("firstName");
   return (
     <div className="flex flex-col items-center h-screen w-screen">
       <form
         /* action="/action_page.php" */
-        action=" https://api.vercel.com/v6/deployments"
+        action="https://api.vercel.com/v6/deployments"
         method="POST"
         onSubmit={handleSubmit(onSubmit, onError)}
         Content-Type="application/json"
@@ -51,7 +41,7 @@ export default function kontakt(props) {
       >
         <label for="name">Name:</label>
         <input
-          {...register("firstName", { required: true })}
+          {...register("firstName", { required: true, pattern: fullNameRegex })}
           // onChange={(e) => SetGetName(e.target.value)}
           id="name"
           type="string"
@@ -62,7 +52,7 @@ export default function kontakt(props) {
 
         <label for="firma">Firma:</label>
         <input
-          {...register("firma", { required: true })}
+          {...register("firma", { required: false })}
           // onChange={(e) => SetGetFirma(e.target.value)}
           id="firma"
           type="string"
@@ -72,7 +62,9 @@ export default function kontakt(props) {
         />
         <label for="location">Postleitzahl:</label>
         <input
-          {...register("zipcode", { required: true, pattern: /^[A-Za-z]+$/i })}
+          {...register("zipcode", {
+            required: false,
+          })}
           // onChange={(e) => SetGetPostNum(e.target.value)}
           id="zipcode"
           type="string"
@@ -83,17 +75,17 @@ export default function kontakt(props) {
         <label for="Ort">Ort:</label>
 
         <input
-          {...register("location", { required: true })}
+          {...register("city", { required: false })}
           // onChange={(e) => SetGetLocation(e.target.value)}
-          id="location"
+          id="city"
           type="string"
           // name="location"
-          title="location"
+          title="city"
           className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-46 appearance-none leading-normal"
         />
-        <label for="email-input">email:</label>
+        <label for="email-input">Email:</label>
         <input
-          {...register("email", { required: true })}
+          {...register("email", { required: true, pattern: emailRegex })}
           // onChange={(e) => SetGetEmail(e.target.value)}
           id="email-input"
           type="email"
@@ -103,7 +95,7 @@ export default function kontakt(props) {
         />
         <label for="phone">Telefon:</label>
         <input
-          {...register("phone", { required: true })}
+          {...register("phone", { required: false, pattern: phoneNumberRegex })}
           // onChange={(e) => SetGetPhone(e.target.value)}
           id="phone"
           type="number"
@@ -111,7 +103,7 @@ export default function kontakt(props) {
           title="write proper e mail"
           className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-46 appearance-none leading-normal"
         />
-        <label for="message">Nachricht (optional)</label>
+        <label for="message">Nachricht</label>
         <input
           {...register("message", { required: false })}
           // onChange={(e) => SetGetMessage(e.target.value)}
@@ -130,22 +122,7 @@ export default function kontakt(props) {
           <p> {errors.phone && "Phone is required"}</p>
           <p> {errors.message && "Message is required"}</p>
         </div>
-        <button
-          type="submit"
-          className="bg-yellow-light"
-          onClick={() => {
-            // SetGetData({
-            //   name: getName,
-            //   firma: getFirma,
-            //   location: getLocation,
-            //   email: getEmail,
-            //   phone: getPhone,
-            //   message: getMessage,
-            //   postNum: getPostNum,
-            // });
-            // console.log(getData);
-          }}
-        >
+        <button type="submit" className="bg-yellow-light">
           Submit
         </button>
       </form>
