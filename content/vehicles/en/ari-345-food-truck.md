@@ -2,147 +2,160 @@
 title: ARI 345 Food Truck
 name: ari-345-food-truck
 price: 12750
-relatedBlogs: nur beispiel
-description: The ARI 345 Food Truck has everything gastronomes and caterers need
-  to get their gastro business rolling. An airy driver's cab, a large sales
-  counter, electric drive and - lots of free space.
+relatedBlogs:
+  title: " Konzept & Fahrzeugvarianten"
+  content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
+    Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den erhältlichen
+    Individual-Aufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer,
+    Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI
+    458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert.
+    Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
+    für große Strecken."
+  image: /images/ari-458-food-truck-5-.jpg
+description: Der ARI 345 Food Truck hat alles am Start, was Gastronomen und
+  Caterer brauchen, um Ihr Gastro-Unternehmen nachhaltig ins Rollen zu bringen.
+  Eine luftige Fahrerkabine, einen großen Verkaufstresen, elektrischen Antrieb
+  und - jede Menge Stauraum in Form von Schubladen und Fächern. Der Food Truck
+  auf drei Rädern ist individuell gestaltbar und kann an verschiedenste
+  Gastrokonzepte angepasst werden. Möglich sind zum Beispiel der Einbau eines
+  Kaffeetanks, eines Hot-Dog-Moduls oder einer Grillstation.
 src: /images/ari_345_food_truck_l_.png
 category: Koffer
 typeClass: L2E
 loadingWeight:
-  key: Loading Weight
+  key: Nutzlast
   value: 325
   baseUnit: kg
 curbweight:
-  key: Curb Weight
+  key: Leergewicht
   value: 336
   baseUnit: kg
 maxSpeed:
-  key: Maximum Speed
+  key: km/h
   value: 45
   baseUnit: km/h
 range230V:
-  key: Range SLA Battery
+  key: Reichweite SLA Akku
   value: 55
   baseUnit: km
   maxValue: 100
 rangeLithium:
-  key: Range Lithium Battery
+  key: Reichweite Lithium Akku
   value: 0
   baseUnit: km
   maxValue: 0
 chargingTime230V:
-  key: Charge Time 230v-socket
+  key: Ladezeit 230-V-Steckdose
   value: 5
   baseUnit: h
 chargingTimeLithium:
-  key: Charge Time Type2 Cable
+  key: Ladezeit Typ2 Ladekabel
   value: 0
   baseUnit: h
 chargingTimeFast:
-  key: Fast Charging
+  key: Schnellladung
   value: 0
   baseUnit: h
 batteryCapacityBlei:
-  key: Capacity SLA Battery
+  key: Kapazität SLA Akku
   value: 3,24
   baseUnit: " kwh"
 batteryCapacityLithium:
-  key: Capacity Lithium Battery
+  key: Kapazität Lithium Akku
   value: "0"
   baseUnit: keine Angabe
 batteryIncluded:
-  key: Battery included
-  value: yes
+  value: ja
+  key: Batterie inklusive
 consumption:
-  key: Consumption
-  baseUnit: kWh
+  key: "Verbrauch "
   value: 5,6
+  baseUnit: kWh
 power:
-  key: Power
+  key: Leistung
   value: min-0/max-3
   baseUnit: kw
 seats:
-  key: Seats
+  key: Sitzplätze
   value: 1
 rating:
-  key: Good
+  key: Sehr gut
   value: 1,0
 guarantee:
-  key: Guarantee Vehicle
+  key: Garantie Fahrzeug
   value: 6
-  baseUnit: Months
+  baseUnit: Monate
 availability:
-  key: Availability
-  value: no information
+  key: Verfügbarkeit
+  value: keine Angabe
 subsidies:
-  key: Subsidies
-  baseUnit: no information
+  key: Förderhöhe
   value: 0
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: Battery-Guarantee
+  key: Garantie Akku
   value: 0
-  baseUnit: Months
+  baseUnit: Monate
 loadingHeight:
-  key: Loading Height
+  key: Ladehöhe
   value: 560
   baseUnit: mm
 loadingVolumeTotal:
-  key: Loading Volume
+  key: Ladevolumen
   value: 2,15
   baseUnit: m3
 loadingArea:
-  key: Loading Area
+  key: Ladefläche
   value: 1,72
   baseUnit: m2
 carSizes:
-  width: Width
-  length: Length
-  height: Height
-  wheelbase: Wheelbase
-  valuewidth: 1160
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
+  valuewidth: 1300
   baseUnit: mm
   valuelength: 2820
-  valueheight: 1600
+  valueheight: 1830
   valuewheelbase: 1850
-  key: Car Sizes
+  key: Fahrzeugmaße
 loadingVolume:
-  key: Loading Area Sizes
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 1250
+  width: Breite
   valuewidth: 1300
   valuelength: 1320
+  length: Länge
   baseUnit: mm
-  height: Height
-  width: Width
-  length: Length
+carSizesLength:
+  value: "2820"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "1300"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "1830"
+  baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "0"
+  value: "1320"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "0"
+  value: "1300"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
+  value: "1250"
   baseUnit: mm
 wheelbase:
   key: Radstand
   value: "0"
   baseUnit: mm
-carSizesLength:
-  value: "0"
-  key: Länge
-  baseUnit: mm
-carSizesWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-carSizesHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
 ---
 
-The "ARI 345 Food Truck" is an electric load carrying bike designed for caterers and gastronoms. Its maximum speed is 45 km/h and its loading weight is 325 kg.
+Das ARI 345 Food Truck ist ein elektrisches Lastenmoped mit Gastro-Aufbau mit 45 km/h Höchstgeschwindigkeit und 325 kg Zuladung. Es eignet sich ideal als strombetriebene Fahrzeugbasis für nachhaltig orientierte Gastronomen und Caterer.

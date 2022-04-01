@@ -1,8 +1,8 @@
 ---
-title: efa-s-e-35-d
+title: Efa-S E35
 name: efa-s-e-35-d
 price: 0
-relatedBlogs: beispiel  bitte nicht ändern
+relatedBlogs: nur beispiel
 description: Efa-S steht für “Elektro-Fahrzeuge Schwaben” und bezeichnet ein
   Stuttgarter Unternehmen, welches sich auf die Elektro-Umrüstung von
   gebrauchten Fahrzeugen mit Verbrennungsmotor spezialisiert hat. Mit dem E35
@@ -13,110 +13,139 @@ src: /images/efa-s-e35-plane.jpg
 category: Pritsche
 typeClass: N1N2
 loadingWeight:
+  key: Nutzlast
   value: 900
   baseUnit: kg
-  key: Loading Weight
 curbweight:
-  key: Curb Weight
+  key: Leergewicht
   value: 0
   baseUnit: keine Angabe
 maxSpeed:
-  key: Maximum Speed
+  key: km/h
   value: 88
   baseUnit: km/h
 range230V:
+  key: Reichweite SLA Akku
   value: 0
-  maxValue: 0
   baseUnit: keine Angabe
-  key: Range SLA Battery
+  maxValue: 0
 rangeLithium:
+  key: Reichweite Lithium Akku
   value: 200
-  maxValue: 200
   baseUnit: km
-  key: Range Lithium Battery
+  maxValue: 200
 chargingTime230V:
-  key: Charge time 230v-socket
+  key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 chargingTimeLithium:
+  key: Ladezeit Typ2 Ladekabel
   value: 0
-  key: Charge time type2 cable
-  baseUnit: no details available
+  baseUnit: keine Angabe
 chargingTimeFast:
+  key: Schnellladezeit
   value: 0
-  key: Fast charging time
-  baseUnit: no details available
+  baseUnit: keine Angabe
 batteryCapacityBlei:
+  key: Kapazität SLA Akku
   value: "-"
   baseUnit: " keine Angabe"
-  key: Capacity SLA Battery
 batteryCapacityLithium:
+  key: Kapazität Lithium Akku
   value: "80"
   baseUnit: kwh
-  key: Capacity Lithium Battery
 batteryIncluded:
-  key: Battery included
-  value: no details available
+  value: keine Angabe
+  key: Batterie inklusive
 consumption:
-  key: Consumption
-  baseUnit: keine Angabe
+  key: "Verbrauch "
   value: "-"
+  baseUnit: keine Angabe
 power:
-  key: Power
+  key: Leistung
   value: min-110/max-110
   baseUnit: kw
 seats:
-  key: Seats
+  key: Sitzplätze
   value: 3
 rating:
+  key: Befriedigend
   value: 3,0
-  key: Saticfactory
 guarantee:
-  key: Guarantee vehicle
+  key: Garantie Fahrzeug
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 availability:
-  key: Availability
-  value: no details available
+  key: Verfügbarkeit
+  value: keine Angabe
 subsidies:
-  key: Subsidies
+  key: Förderhöhe
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: Battery Guarantee
+  key: Garantie Akku
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 loadingHeight:
-  key: Loading Height
+  key: Ladehöhe
   value: 950
   baseUnit: mm
 loadingVolumeTotal:
+  key: Ladevolumen
   value: 0,00
   baseUnit: m3
-  key: Loading Volume
 loadingArea:
-  key: Loading Area
+  key: Ladefläche
   value: 6,42
   baseUnit: m2
 carSizes:
-  width: "-"
-  length: "-"
-  height: Height
-  wheelbase: Wheelbase
-  valuewidth: 1500
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
+  valuewidth: 0
   baseUnit: keine Angabe
   valuelength: 0
   valueheight: 0
   valuewheelbase: 0
-  key: Car Sizes
+  key: Fahrzeugmaße
 loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 0
+  width: Breite
   valuewidth: 2078
   valuelength: 3090
+  length: Länge
   baseUnit: mm
-  key: Loading Area Sizes
-  height: Height
-  width: Width
-  length: Length
+carSizesLength:
+  value: "0"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "3090"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "2078"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
 ---
+
 Der Efa-S-35 D ist ein großer Transporter mit Elektromotor, den es in den Versionen Pritsche, Koffer, Planenaufbau & Kasten gibt.

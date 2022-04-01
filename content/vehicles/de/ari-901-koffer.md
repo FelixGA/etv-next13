@@ -2,88 +2,6 @@
 title: ARI 901 Kofferaufbau
 name: ari-901-koffer
 price: 38995
-description: Der ARI 901 mit Kofferaufbau ist ein leistungsstarker
-  Elektrotransporter der Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung
-  aufnehmen. Das Fahrzeug eignet sich speziell für den Einsatz bei Lieferanten,
-  Handwerkern, Baufirmen, Kommunen, Landschaftsbaubetrieben sowie
-  Transportfirmen.
-src: /images/ari-901-koffer.jpg
-category: Koffer
-typeClass: N1
-loadingWeight:
-  key: Nutzlast
-  value: 900
-  baseUnit: kg
-curbweight:
-  key: Leergewicht
-  value: 1610
-  baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 100
-  baseUnit: km/h
-range230V:
-  key: Reichweite SLA Akku
-  value: 0
-  baseUnit: " keine Angabe"
-  maxValue: 0
-rangeLithium:
-  key: Reichweite Lithium Akku
-  value: 250
-  baseUnit: km
-  maxValue: 495
-chargingTime230V:
-  key: Ladezeit 230-V-Steckdose
-  value: 0
-  baseUnit: keine Angabe
-chargingTimeLithium:
-  key: Ladezeit Typ2-Kabel
-  value: 8
-  baseUnit: h
-chargingTimeFast:
-  key: Schnellladezeit
-  value: 4
-  baseUnit: h
-batteryCapacityBlei:
-  key: Kapazität SLA Akku
-  value: "40"
-  baseUnit: " kwh"
-batteryCapacityLithium:
-  key: Kapazität Lithium Akku
-  value: 40,32
-  baseUnit: kwh
-batteryIncluded:
-  value: ja
-  key: Batterie inklusive
-consumption:
-  key: "Verbrauch "
-  value: "16"
-  baseUnit: kWh
-power:
-  key: Leistung
-  value: min-30/max-60
-  baseUnit: kw
-seats:
-  key: Sitzplätze
-  value: 2
-rating:
-  key: Gut
-  value: 2,0
-guarantee:
-  key: Garantie Fahrzeug
-  value: 6
-  baseUnit: Monate
-availability:
-  key: Verfügbarkeit
-  value: keine Angabe
-subsidies:
-  key: Förderhöhe
-  value: 0
-  baseUnit: keine Angabe
-loadingHeight:
-  key: Ladehöhe
-  value: 76
-  baseUnit: cm
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -215,10 +133,92 @@ relatedBlogs: >-
 
 
   4,4
+description: Der ARI 901 mit Kofferaufbau ist ein leistungsstarker
+  Elektrotransporter der Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung
+  aufnehmen. Das Fahrzeug eignet sich speziell für den Einsatz bei Lieferanten,
+  Handwerkern, Baufirmen, Kommunen, Landschaftsbaubetrieben sowie
+  Transportfirmen.
+src: /images/ari-901-koffer.jpg
+category: Koffer
+typeClass: N1
+loadingWeight:
+  key: Nutzlast
+  value: 900
+  baseUnit: kg
+curbweight:
+  key: Leergewicht
+  value: 1610
+  baseUnit: kg
+maxSpeed:
+  key: km/h
+  value: 100
+  baseUnit: km/h
+range230V:
+  key: Reichweite SLA Akku
+  value: 0
+  baseUnit: " keine Angabe"
+  maxValue: 0
+rangeLithium:
+  key: Reichweite Lithium Akku
+  value: 250
+  baseUnit: km
+  maxValue: 495
+chargingTime230V:
+  key: Ladezeit 230-V-Steckdose
+  value: 0
+  baseUnit: keine Angabe
+chargingTimeLithium:
+  key: Ladezeit Typ2-Kabel
+  value: 8
+  baseUnit: h
+chargingTimeFast:
+  key: Schnellladezeit
+  value: 4
+  baseUnit: h
+batteryCapacityBlei:
+  key: Kapazität SLA Akku
+  value: "40"
+  baseUnit: " kwh"
+batteryCapacityLithium:
+  key: Kapazität Lithium Akku
+  value: 40,32
+  baseUnit: kwh
+batteryIncluded:
+  value: ja
+  key: Batterie inklusive
+consumption:
+  key: "Verbrauch "
+  value: "16"
+  baseUnit: kWh
+power:
+  key: Leistung
+  value: min-30/max-60
+  baseUnit: kw
+seats:
+  key: Sitzplätze
+  value: 2
+rating:
+  key: Gut
+  value: 2,0
+guarantee:
+  key: Garantie Fahrzeug
+  value: 6
+  baseUnit: Monate
+availability:
+  key: Verfügbarkeit
+  value: keine Angabe
+subsidies:
+  key: Förderhöhe
+  value: 0
+  baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: keine Angabe
+loadingHeight:
+  key: Ladehöhe
+  value: 76
+  baseUnit: cm
 loadingVolumeTotal:
   key: Ladevolumen
   value: 6,69
@@ -247,32 +247,32 @@ loadingVolume:
   valuelength: 2860
   length: Länge
   baseUnit: mm
-loadingVolumeLength:
-  key: Länge
-  value: "0"
-  baseUnit: mm
-loadingVolumeWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-loadingVolumeHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "0"
-  baseUnit: mm
 carSizesLength:
-  value: "0"
+  value: "4910"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "0"
+  value: "1650"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
+  value: "2385"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "2860"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "1500"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "1560"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
   value: "0"
   baseUnit: mm
 ---

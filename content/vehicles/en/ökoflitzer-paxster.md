@@ -2,112 +2,143 @@
 title: Ökoflitzer Paxster
 name: ökoflitzer-paxster
 price: 140000
-relatedBlogs: beispiel
-description: mmmm
+relatedBlogs: nur beispiel
+description: mmmmm
 src: /images/X.png
 loadingWeight:
-  key: Loading Weight
+  key: Nutzlast
   value: 200
   baseUnit: kg
 curbweight:
-  key: Curb Weight
+  key: Leergewicht
   value: 0
   baseUnit: keine Angabe
 maxSpeed:
-  key: Maximum Speed
+  key: km/h
   value: 45
   baseUnit: km/h
 range230V:
-  key: Range SLA Battery
+  key: Reichweite SLA Akku
   value: 0
   baseUnit: keine Angabe
+  maxValue: 0
 rangeLithium:
+  key: Reichweite Lithium Akku
   value: 95
   baseUnit: km
-  key: Range Lithium Battery
+  maxValue: 0
 chargingTime230V:
-  key: Charge time 230v-socket
+  key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 chargingTimeLithium:
-  key: Charge time type2 cable
+  key: Ladezeit Typ2-Kabel
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 chargingTimeFast:
-  key: Fast charging
+  key: Schnellladezeit
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 batteryCapacityBlei:
-  key: Capacity SLA Battery
+  key: Kapazität SLA Akku
   value: "0"
   baseUnit: keine Angabe
 batteryCapacityLithium:
-  key: Capacity Lithium Battery
+  key: Kapazität Lithium Akku
   value: 9,2
   baseUnit: kwh
 batteryIncluded:
-  key: Battery included
-  value: yes
+  value: ja
+  key: Batterie inklusive
 consumption:
-  key: Consumption
-  baseUnit: keine Angabe
+  key: "Verbrauch "
   value: "0"
+  baseUnit: keine Angabe
 power:
-  key: Power
+  key: Leistung
   value: min-4/max-4
   baseUnit: kw
 seats:
-  key: Seats
+  key: Sitzplätze
   value: 1
 rating:
-  key: Satisfactory
+  key: Befriedigend
   value: 3,0
 guarantee:
-  key: Guarantee vehicle
+  key: Garantie Fahrzeug
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 availability:
-  key: Availability
-  value: no details available
+  key: Verfügbarkeit
+  value: keine Angabe
 subsidies:
-  key: Subsidies
+  key: Förderhöhe
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: Battery Guarantee
+  key: Garantie Akku
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 loadingHeight:
-  key: Loading Height
+  key: Ladehöhe
   value: 0
   baseUnit: mm
 loadingVolumeTotal:
-  key: Loading Volume
+  key: Ladevolumen
   value: "0"
   baseUnit: keine Angabe
 loadingArea:
-  key: Loading Area
+  key: Ladefläche
   value: "0"
   baseUnit: keine Angabe
 carSizes:
-  width: Width
-  length: Length
-  height: Height
-  wheelbase: Wheelbase
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
   valuewidth: 1180
   baseUnit: mm
   valuelength: 2320
   valueheight: 1860
   valuewheelbase: 0
-  key: Car Sizes
+  key: Fahrzeugmaße
 loadingVolume:
-  key: Loading Area Sizes
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 0
+  width: Breite
   valuewidth: 0
   valuelength: 0
+  length: Länge
   baseUnit: mm
-  height: Height
-  width: Width
-  length: Length
+carSizesLength:
+  value: "2320"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "1180"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "1860"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "0"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
 ---
+
 mmm

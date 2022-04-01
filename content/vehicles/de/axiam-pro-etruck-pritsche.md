@@ -120,32 +120,32 @@ loadingVolume:
   valuelength: 1395
   length: Länge
   baseUnit: mm
-loadingVolumeLength:
-  key: Länge
-  value: "0"
-  baseUnit: mm
-loadingVolumeWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-loadingVolumeHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "0"
-  baseUnit: mm
 carSizesLength:
-  value: "0"
+  value: "2911"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "0"
+  value: "1500"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
+  value: "1750"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "1395"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "1465"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "300"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
   value: "0"
   baseUnit: mm
 ---

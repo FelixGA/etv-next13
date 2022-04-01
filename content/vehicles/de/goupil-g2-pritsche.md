@@ -1,5 +1,5 @@
 ---
-title: goupil-g2-pritsche
+title: Goupil G2 Pritsche
 name: goupil-g2-pritsche
 price: 30000
 relatedBlogs: beispiel  bitte nicht ändern
@@ -114,13 +114,25 @@ loadingVolume:
   valuelength: 1250
   length: Länge
   baseUnit: mm
+carSizesLength:
+  value: "3170"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "1105"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "1785"
+  baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "0"
+  value: "1250"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "0"
+  value: "1020"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
@@ -128,18 +140,6 @@ loadingVolumeHeight:
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "0"
-  baseUnit: mm
-carSizesLength:
-  value: "0"
-  key: Länge
-  baseUnit: mm
-carSizesWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-carSizesHeight:
-  key: Höhe
   value: "0"
   baseUnit: mm
 ---

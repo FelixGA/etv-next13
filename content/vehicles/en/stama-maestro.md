@@ -2,7 +2,7 @@
 title: Stama Maestro
 name: stama-maestro
 price: 34250
-relatedBlogs: beispiel
+relatedBlogs: nur beispiel
 description: >-
   Der Stama Maestro kam 2019 auf den Markt und ist das bisher größte Fahrzeug
   des Herstellers. Außerdem ist er unter dem Namen Addax in Deutschland
@@ -122,5 +122,34 @@ loadingVolume:
   valuelength: 2150
   length: Länge
   baseUnit: mm
+carSizesLength:
+  value: "3590"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "1500"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "2050"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "2150"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "1500"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
 ---
+
 Der Stama Maestro, ein Elektrotransporter des dänischen Herstellers GMR, ist für die Pflege und Reinigung von Parks, Straßen und Anlagen konzipiert.

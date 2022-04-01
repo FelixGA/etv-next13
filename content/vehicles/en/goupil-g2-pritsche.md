@@ -1,5 +1,5 @@
 ---
-title: goupil-g2-pritsche
+title: Goupil G2 Pritsche
 name: goupil-g2-pritsche
 relatedBlogs: beispiel  bitte nicht ändern
 description: Der Goupil ist ein Elektrotransporter der Klasse L7e mit 2
@@ -7,110 +7,139 @@ description: Der Goupil ist ein Elektrotransporter der Klasse L7e mit 2
 src: /images/goupil.jpg
 typeClass: L7E
 loadingWeight:
+  key: Nutzlast
   value: 370
   baseUnit: kg
-  key: Loading Weight
 curbweight:
-  key: Curb Weight
+  key: Leergewicht
   value: 0
   baseUnit: keine Angabe
 maxSpeed:
-  key: Maximum Speed
+  key: km/h
   value: 30
   baseUnit: km/h
 range230V:
-  key: Range SLA Battery
+  key: Reichweite SLA Akku
   value: 45
+  baseUnit: km
   maxValue: 45
-  baseUnit: km
 rangeLithium:
-  key: Range Lithium Battery
+  key: Reichweite Lithium Akku
   value: 61
-  maxValue: 100
   baseUnit: km
+  maxValue: 100
 chargingTime230V:
-  key: Charge time 230v-socket
+  key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 chargingTimeLithium:
-  key: Charge time type2 cable
+  key: Ladezeit Typ2 Ladekabel
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 chargingTimeFast:
-  key: Fast charging time
+  key: Schnellladezeit
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 batteryCapacityBlei:
-  key: Capacity SLA Battery
+  key: Kapazität SLA Akku
   value: 5,8
   baseUnit: kwh
 batteryCapacityLithium:
-  key: Capacity Lithium Battery
+  key: Kapazität Lithium Akku
   value: 5,2/8,6
   baseUnit: kwh
 batteryIncluded:
-  key: Battery included
-  value: no details available
+  value: keine Angabe
+  key: Batterie inklusive
 consumption:
-  key: Consumption
+  key: "Verbrauch "
+  value: "-"
   baseUnit: keine Angabe
-  value: no details available
 power:
-  key: Power
+  key: Leistung
   value: min-5,1/max-5,1
   baseUnit: kw
 seats:
-  key: Seats
+  key: Sitzplätze
   value: 2
 rating:
+  key: Gut
   value: 2,0
-  key: Good
 guarantee:
-  key: Guarantee vehicle
+  key: Garantie Fahrzeug
   value: 2
-  baseUnit: years
+  baseUnit: Jahre
 availability:
-  key: Availablility
-  value: no details available
+  key: Verfügbarkeit
+  value: keine Angabe
 subsidies:
-  key: Subsidies
+  key: Förderhöhe
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: Battery Gurantee
+  key: Garantie Akku
   value: 5
-  baseUnit: years
+  baseUnit: Jahre
 loadingHeight:
-  key: Loading Height
+  key: Ladehöhe
   value: 780
   baseUnit: mm
 loadingVolumeTotal:
-  key: Loading Volume
+  key: Ladevolumen
   value: 0,00
   baseUnit: m3
 loadingArea:
-  key: Loading Area
+  key: Ladefläche
   value: 1,28
   baseUnit: m2
 carSizes:
-  width: Width
-  length: Length
-  height: Height
-  wheelbase: Wheelbase
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
   valuewidth: 1105
   baseUnit: mm
   valuelength: 3170
   valueheight: 1785
   valuewheelbase: 2215
-  key: Car Sizes
+  key: Fahrzeugmaße
 loadingVolume:
-  key: Loading Area Sizes
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 0
+  width: Breite
   valuewidth: 1020
   valuelength: 1250
+  length: Länge
   baseUnit: mm
-  height: Height
-  width: Width
-  length: Length
+carSizesLength:
+  value: "3170"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "1105"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "1785"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "1250"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "1020"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
 ---
+
 Der Goupil ist ein Elektrotransporter der Klasse L7e mit 2 Sitzplätzen, 500 kg Nutzlast und 30 km/h Höchstgeschwindigkeit.

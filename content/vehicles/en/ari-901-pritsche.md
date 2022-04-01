@@ -1,8 +1,8 @@
 ---
-title: ARI 901 Pickup
+title: ARI 901 Pritsche
 name: ari-901-pritsche
 price: 35995
-relatedBlogs: beispiel  bitte nicht ändern
+relatedBlogs: nur beispiel
 description: Der ARI 901 Pritsche ist ein leistungsstarker Elektrotransporter
   der Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung aufnehmen. Das
   Fahrzeug eignet sich speziell für den Einsatz bei Lieferanten, Baufirmen,
@@ -13,108 +13,139 @@ description: Der ARI 901 Pritsche ist ein leistungsstarker Elektrotransporter
 src: /images/ari-901-pritsche-in-kommunalorange.jpg
 category: Pritsche
 loadingWeight:
-  key: Loading Weight
+  key: Nutzlast
   value: 916
   baseUnit: kg
 curbweight:
-  key: Curb Weight
+  key: Leergewicht
   value: 1594
   baseUnit: kg
 maxSpeed:
-  key: Maximum Speed
+  key: km/h
   value: 100
   baseUnit: km/h
 range230V:
-  key: Range SLA Battery
+  key: Reichweite SLA Akku
   value: 0
   baseUnit: " keine Angabe"
+  maxValue: 0
 rangeLithium:
-  key: Range Lithium Battery
+  key: Reichweite Lithium Akku
   value: 250
   baseUnit: km
+  maxValue: 495
 chargingTime230V:
-  key: Charge time 230v-socket
+  key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 chargingTimeLithium:
-  key: Charge time type2 cable
+  key: Ladezeit Typ2-Kabel
   value: 8
   baseUnit: h
 chargingTimeFast:
-  key: Fast charging time
+  key: Schnellladezeit
   value: 4
   baseUnit: h
 batteryCapacityBlei:
-  key: Capacity SLA Battery
+  key: Kapazität SLA Akku
   value: "40"
   baseUnit: " kwh"
 batteryCapacityLithium:
-  key: Capacity Lithium Battery
+  key: Kapazität Lithium Akku
   value: 40,32
   baseUnit: kwh
 batteryIncluded:
-  key: Battery included
-  value: yes
+  value: ja
+  key: Batterie inklusive
 consumption:
-  key: Consumption
-  baseUnit: kWh
+  key: "Verbrauch "
   value: "16"
+  baseUnit: kWh
 power:
   key: Leistung
   value: min-30/max-60
   baseUnit: kw
 seats:
-  key: Seats
+  key: Sitzplätze
   value: 2
 rating:
-  key: Good
+  key: Gut
   value: 2,0
 guarantee:
-  key: Guarantee vehicle
+  key: Garantie Fahrzeug
   value: 6
-  baseUnit: Months
+  baseUnit: Monate
 availability:
-  key: Availability
-  value: no details available
+  key: Verfügbarkeit
+  value: keine Angabe
 subsidies:
-  key: Subsidies
+  key: Förderhöhe
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 batteryGuarantee:
-  key: Battery-Guarantee
+  key: Garantie Akku
   value: 0
-  baseUnit: no details available
+  baseUnit: keine Angabe
 loadingHeight:
-  key: Loading Height
+  key: Ladehöhe
   value: 76
   baseUnit: cm
 loadingVolumeTotal:
+  key: Ladevolumen
   value: 1,79
   baseUnit: m3
-  key: Loading Volume
 loadingArea:
-  key: Loading Area
+  key: Ladefläche
   value: 4,72
   baseUnit: m2
 carSizes:
-  width: Width
-  length: Length
-  height: Height
-  wheelbase: Wheelbase
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
   valuewidth: 1650
   baseUnit: mm
   valuelength: 4910
   valueheight: 1940
   valuewheelbase: 3050
-  key: Car Sizes
+  key: Fahrzeugmaße
 loadingVolume:
-  key: Loading Area Sizes
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 380
-  valuewidth: 1650
+  width: Breite
+  valuewidth: 1500
   valuelength: 2860
+  length: Länge
   baseUnit: mm
-  height: Height
-  width: Width
-  length: Length
+carSizesLength:
+  value: "4910"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "1650"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "1940"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "2860"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "1500"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "380"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
 ---
+
 Der ARI 901 Pritsche ist ein leistungsstarker Elektrotransporter der Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung aufnehmen. Das Fahrzeug eignet sich speziell für den Einsatz bei Lieferanten, Baufirmen, Handwerkern, Kommunen sowie Landschaftsbaubetrieben. Das Fahrzeug ist in drei Pritschen-Größen mit bis zu 5 m² Ladevolumen erhältlich. Die drei wählbaren Pritschen-Größen ermöglichen eine perfekte Anpassungen an die Anforderung Ihres Unternehmens.

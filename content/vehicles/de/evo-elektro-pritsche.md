@@ -1,5 +1,5 @@
 ---
-title: evo-elektro-pritsche
+title: EVO Transporter
 name: evo-elektro-pritsche
 price: 30000
 relatedBlogs: beispiel  bitte nicht ändern
@@ -114,6 +114,18 @@ loadingVolume:
   valuelength: 2240
   length: Länge
   baseUnit: mm
+carSizesLength:
+  value: "0"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
 loadingVolumeLength:
   key: Länge
   value: "0"
@@ -128,18 +140,6 @@ loadingVolumeHeight:
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "0"
-  baseUnit: mm
-carSizesLength:
-  value: "0"
-  key: Länge
-  baseUnit: mm
-carSizesWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-carSizesHeight:
-  key: Höhe
   value: "0"
   baseUnit: mm
 ---
