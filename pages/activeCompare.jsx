@@ -19,10 +19,15 @@ const allKeys = [
   "curbweight",
 ];
 const carSizes = [
-  "loadingVolume",
-  "loadingArea",
+  "loadingVolumeHeight",
+  "loadingVolumeLength",
+  "loadingVolumeWidth",
+  "wheelbase",
+  "carSizesHeight",
+  "carSizesLength",
+  "carSizesWidth",
   "loadingVolumeTotal",
-  "carSizes",
+  "loadingArea",
 ];
 
 const carDetails = [
@@ -74,13 +79,14 @@ export default function activeCompare(props) {
           <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
             <ActiveCompareImages comparedCars={comparedCars} />
           </div>
-          <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
+
+          <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)]">
             <ActiveCompareEntries keys={allKeys} comparedCars={comparedCars} />
           </div>
-          <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
+          <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)]">
             <ActiveCompareSizes keys={carSizes} comparedCars={comparedCars} />
           </div>
-          <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)] overflow-x-scroll scrollbar-hide">
+          <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)]">
             <ActiveCompareDetails
               keys={carDetails}
               comparedCars={comparedCars}

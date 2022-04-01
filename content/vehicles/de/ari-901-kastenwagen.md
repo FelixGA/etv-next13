@@ -102,7 +102,7 @@ carSizes:
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1612
+  valuewidth: 1626
   baseUnit: mm
   valuelength: 4430
   valueheight: 1940
@@ -111,38 +111,38 @@ carSizes:
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1940
+  valueheight: 1300
   width: Breite
   valuewidth: 1440
   valuelength: 2300
   length: Länge
   baseUnit: mm
-loadingVolumeLength:
-  key: Länge
-  value: "0"
-  baseUnit: mm
-loadingVolumeWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-loadingVolumeHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "0"
-  baseUnit: mm
 carSizesLength:
-  value: "0"
+  value: "4430"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "0"
+  value: "1626"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
+  value: "1940"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "2300"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "1440"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "1300"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
   value: "0"
   baseUnit: mm
 ---

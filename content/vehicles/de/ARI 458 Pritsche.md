@@ -1,7 +1,7 @@
 ---
 title: ARI 458 Pritsche
 name: ARI 458 Pritsche
-price: 13700
+price: 14790
 relatedBlogs:
   title: " Konzept & Fahrzeugvarianten"
   content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
@@ -125,28 +125,28 @@ loadingVolume:
   valuelength: 1320
   baseUnit: mm
 carSizesLength:
-  value: "0"
+  value: "3150"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "0"
+  value: "1600"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "0"
+  value: "1300"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "0"
+  value: "1320"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "0"
+  value: "1160"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
+  value: "250"
   baseUnit: mm
 wheelbase:
   key: Radstand

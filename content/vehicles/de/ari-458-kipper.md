@@ -1,7 +1,7 @@
 ---
 title: ARI 458 Kipper
 name: ari-458-kipper
-price: 16100
+price: 17590
 relatedBlogs: beispiel
 description: Der ARI 458 Kipper bietet eine offene Ladefläche mit Seitenwänden,
   welche in den beiden Größen jeweils 1,56 m² bzw. 1,86 m² beträgt. Für die
@@ -107,7 +107,7 @@ carSizes:
   valuewidth: 1300
   baseUnit: mm
   valuelength: 3150
-  valueheight: 1685
+  valueheight: 1600
   valuewheelbase: 2300
   key: Fahrzeugmaße
 loadingVolume:
@@ -119,32 +119,32 @@ loadingVolume:
   valuelength: 1400
   length: Länge
   baseUnit: mm
-loadingVolumeLength:
-  key: Länge
-  value: "0"
-  baseUnit: mm
-loadingVolumeWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-loadingVolumeHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "0"
-  baseUnit: mm
 carSizesLength:
-  value: "0"
+  value: "3150"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "0"
+  value: "1300"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
+  value: "1600"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "1400"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "1250"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "250"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
   value: "0"
   baseUnit: mm
 ---

@@ -52,8 +52,8 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
           <h3
             className={
               index == 0
-                ? "h-14 font-bold text-blue-extra pl-4 lg:pl-8 pt-4 text-2xl"
-                : "h-14 invisible"
+                ? "h-16 font-bold text-blue-extra pl-4 lg:pl-8 pt-5 text-2xl"
+                : "h-16 invisible"
             }
           >
             Details
@@ -68,13 +68,7 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
                   : "bg-grey-lighter  flex items-center h-12"
               }`}
             >
-              <p
-                className={
-                  value == "Fahrzeug-Maße"
-                    ? "text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8 font-bold"
-                    : "text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8 "
-                }
-              >
+              <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
                 {value || "-"}
               </p>
             </div>
@@ -82,7 +76,7 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
           <div
             className={
               index !== 0
-                ? "pl-4 md:pl-8 bg-grey-border h-20 flex items-center"
+                ? "pl-4 xl:pl-8 bg-grey-border h-20 flex items-center px-1"
                 : ""
             }
           >

@@ -31,11 +31,11 @@ const StickyPopUpForComparison = () => {
     <div
       className={
         state?.autoForComparisons?.length > 0
-          ? "flex flex-col md:flex-row h-32 bottom-0 fixed z-10 md:justify-center md:items-center md:h-40 w-[100vw] bg-grey-moredark "
+          ? "flex flex-col md:flex-row h-32 bottom-0 fixed z-20 md:justify-center md:items-center md:h-40 w-[100vw] bg-grey-moredark "
           : "hidden"
       }
     >
-      <h3 className="hidden xl:flex text-3xl  xl:pr-20 xl:pl-4 text-white font-bold">
+      <h3 className="hidden xl:flex text-3xl xl:pr-20 xl:pl-4 text-white font-bold">
         Ihr Vergleich
       </h3>
       {/* conditions and mapping */}
