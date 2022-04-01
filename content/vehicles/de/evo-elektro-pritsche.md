@@ -3,6 +3,7 @@ title: EVO Transporter
 name: evo-elektro-pritsche
 price: 30000
 relatedBlogs: beispiel  bitte nicht ändern
+relatedReviews: evo-transporter-elektro
 description: Der EVO ist ein Transporter der Klasse N1 und eignet sich speziell
   für den Einsatz in Städten, Parkanlagen und auf Friedhöfen.
 src: /images/evo-pritsche.jpg
