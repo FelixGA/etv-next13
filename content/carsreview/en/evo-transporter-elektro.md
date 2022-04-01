@@ -28,7 +28,7 @@ content:
       Neben der Standardversion mit einer Kabine für 2 Personen soll ab 2022  auch eine Doppelkabine mit Platz für bis zu 4 Personen erhältlich sein, welche zudem mit einem Kofferaufbau lieferbar ist.
     title: Konzept & Fahrzeugvarianten
   - content: >-
-      ### Laderaum & Flexibilität
+      ### Laderaum & Flexibilität (3/5)
 
 
       Mit Kipperaufbau hat der EVO Transporter eine Ladefläche von rund 3,6 m², welche sich aus einer Länge von 2,31 Meter und einer Breite von 1,56 Meter ergeben. Die Seitenwände der Ladefläche haben eine Höhe von 30 Zentimetern. Das Kippen der Aufbaus wird über eine außen befindliche Steuerung per 12 Volt-Batterie bewerkstelligt, welche unabhängig von der Antriebsbatterie arbeitet.
@@ -41,14 +41,14 @@ content:
     title: Laderaum & Flexibilität
     image: /images/evo-front.jpg
   - content: >-
-      ### Antrieb & Aufladung
+      ### Antrieb & Aufladung (2/5)
 
 
       Der Elektromotor des EVO Transporters arbeitet mit einer Spannung von 72 Volt und hat eine Dauerleistung von 15 kW. Er entwickelt ein maximales Drehmoment von 100 Nm und bringt den EVO auf eine Höchstgeschwindigkeit von 70 Km/h. Bei den Batterien handelt es sich um Lithium-Eisenphosphat-Akkus (LiFeP04) handelt, welche über ein an Bord befindliches, separates Ladegerät aufgeladen wird. In der Standard-Variante hat dieser eine Kapazität von 10 kWh, wodurch das Fahrzeug laut Hersteller eine Reichweite von rund 50 Kilometer erreicht. Gegen Aufpreis sind größere Kapazitäten von 18 kWh bzw. 26 kWh verfügbar, wodurch die Reichweite auf 80 Kilometer bzw. 120 Kilometer steigt.
     title: Antrieb & Aufladung
     image: /images/evo-lade.jpg
   - content: >-
-      ### Komfort & Ausstattung
+      ### Komfort & Ausstattung (4/5)
 
 
       Besonders angepriesen wird beim EVO Transporter der Wendekreis von nur 6,90 Meter. Dies ist recht beachtlich für ein Fahrzeug von dieser Länge. Erleichtert wird das Rangieren auf so engem Raum noch von einer Servolenkung. Für problemloses Starten an Hängen ist das Fahrzeug mit einem Berganfahrassistenten ausgestattet. 
@@ -64,13 +64,13 @@ content:
     title: Bedienung & Fahrbetrieb
     image: /images/evo-koffer-heck.jpg
   - content: >-
-      ### Umwelt
+      ### Umwelt (3/5)
 
 
       Konkrete Verbrauchsangaben gibt es zum EVO Transporter mit Elektroantrieb leider nicht. In der 10 kWh-Version gibt der Hersteller eine Reichweite von 50 Kilometer an. Gegen Aufpreis sind größere Kapazitäten von 18 kWh bzw. 26 kWh verfügbar mit Reichweiten von 80 Kilometer bzw. 120 Kilometer. Dies entspricht einem ungefähren Energieverbrauch von 20 - 22 kWh auf 100 Kilometer und somit Kosten von 6,00 bis 6,60 Euro bei einem Strompreis von 30 Cent pro kWh. Eine Solaranlage für mehr Reichweite ist nicht verfügbar.
     title: Umwelt
   - content: >-
-      ### Preise & Garantie
+      ### Preise & Garantie (3/5)
 
 
       Eine offen ersichtliche Preisliste zum Fahrzeug gibt es nicht. Dies liegt wohl daran, dass es verschiedene Aufbauten gibt, die teils von anderen Fahrzeugbauern übernommen werden. Außerdem richtet sich der EVO Transporter an Gewerbe sowie Kommunen, welche oft einzelne Angebote erhalten je nach Aufbau und Zahl der georderten Fahrzeuge. Der ungefähre Einstiegspreis liegt aber bei rund 30.000 Euro. Auch über die Dauer einer Fahrzeug-Garantie finden sich keine Angaben.
