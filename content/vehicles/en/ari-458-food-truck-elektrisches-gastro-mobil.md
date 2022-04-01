@@ -12,6 +12,7 @@ relatedBlogs:
     Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
     für große Strecken."
   image: /images/ari-458-food-truck-heckansicht-1-.jpg
+relatedReviews: ari-458-food-truck-elektrisches-gastro-mobil
 description: Der ARI 458 Food Truck ist ein elektrischer Kleintransporter mit
   Gastro-Aufbau. Er kann  individuell gestaltet und an verschiedene
   Gastrokonzepte angepasst werden.
@@ -149,7 +150,7 @@ loadingVolumeHeight:
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "0"
+  value: "2300"
   baseUnit: mm
 ---
 
