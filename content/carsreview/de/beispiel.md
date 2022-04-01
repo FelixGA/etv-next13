@@ -1,6 +1,7 @@
 ---
 title: beispiel
 slug: beispiel-bitte-nicht-anfassen
+relatedCars: beispiel-bitte-nicht-ändern
 youtubeLink: bitte auffuelen
 category: Kipper
 publishedAt: 03/16/2022

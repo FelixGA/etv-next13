@@ -1,6 +1,7 @@
 ---
 title: ARI-345-Koffer
 slug: ari-345-koffer
+relatedCars: ari-345-koffer
 youtubeLink: bitte auffuelen
 category: Koffer
 publishedAt: 03/17/2022
