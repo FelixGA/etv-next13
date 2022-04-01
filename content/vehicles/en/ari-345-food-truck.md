@@ -154,7 +154,7 @@ loadingVolumeHeight:
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "0"
+  value: "1850"
   baseUnit: mm
 ---
 
