@@ -17,16 +17,16 @@ content:
       Paul Thiede
 
 
-      Ernst-Meyer-Straße 15,
+      Petersteinweg 14,
 
 
-      04229 Leipzig
+      04107 Leipzig
 
 
       ## Kontaktmöglichkeiten
 
 
-      E-Mail-Adresse: [Info@elektrotransporter-vergleich.de](http://E-Mail-Adresse:%20Info@elektrotransportervergleich.de./)
+      E-Mail-Adresse: [info@elektrotransporter-vergleich.de](http://E-Mail-Adresse:%20Info@elektrotransportervergleich.de./)
 
 
       Telefon: +49 341 2251672
@@ -35,7 +35,7 @@ content:
       ## Journalistisch-redaktionelle Angebote
 
 
-      Inhaltlich verantwortlich: Paul Thiede.
+      Inhaltlich verantwortlich: Geschäftsführer Paul Thiede.
     name: Impressum
 ---
 # Impressum

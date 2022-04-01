@@ -60,10 +60,7 @@ content:
       ### Bedienung & Fahrbetrieb
 
 
-      Das Fahrzeug kommt auf eine Steigfähigkeit von 18% und wird dadurch auch im bergigen Gelände keine Probleme bekommen. Gebremst wird das Lasten-Trike über 3 hydraulische Scheibenbremsen. Durch den Heckantrieb liegt das Gewicht im hinteren Bereich des Fahrzeuges. So wird vor allem mit Beladung ein optimaler Fahrkomfort ermöglicht. Gefedert wird das Fahrzeug vorne über eine Federgabel mit Stoßdämpfern und hinten über Blattfedern. So lässt sich mit dem ARI 345 auch in unwegsamen Gelände arbeiten.
-
-
-      Durch die Fahrerkabine und einen Dreipunktgurt ist es zudem nicht notwendig, während der Fahrt einen Helm zu tragen.
+      Das Fahrzeug kommt auf eine Steigfähigkeit von 18% und wird dadurch auch im bergigen Gelände keine Probleme bekommen. Gebremst wird das Lasten-Trike über 3 hydraulische Scheibenbremsen. Durch den Heckantrieb liegt das Gewicht im hinteren Bereich des Fahrzeuges. So wird vor allem mit Beladung ein optimaler Fahrkomfort ermöglicht. Gefedert wird das Fahrzeug vorne über eine Federgabel mit Stoßdämpfern und hinten über Blattfedern. So lässt sich mit dem ARI 345 auch in unwegsamen Gelände arbeiten. Durch die Fahrerkabine und einen Dreipunktgurt ist es zudem nicht notwendig, während der Fahrt einen Helm zu tragen.
     image: /images/ari-345-lastentrike-koffer-front.jpg
     title: Bedienung & Fahrbetrieb
   - content: >-
@@ -77,10 +74,7 @@ content:
       ### Preise & Garantie (4/5)
 
 
-      Das ARI 345 ist vergleichsweise günstig. Die Preise für die Pritsche starten bei 6.995 €. Der Koffer ist ab 7.395€  und der Food Truck ab 12.725 € erhältlich. 
-
-
-      Auf das Fahrzeug gibt es 6 Monate Garantie und auf die Batterie 18 Monate Gewährleistung.
+      Das ARI 345 ist vergleichsweise günstig. Die Preise für die Pritsche starten bei 6.995 €. Der Koffer ist ab 7.395€  und der Food Truck ab 12.725 € erhältlich. Auf das Fahrzeug gibt es 6 Monate Garantie und auf die Batterie 18 Monate Gewährleistung.
     title: Preise & Garantie
     image: /images/dsc_0071.png
   - content: >-

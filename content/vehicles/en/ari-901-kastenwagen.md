@@ -90,11 +90,11 @@ loadingHeight:
   baseUnit: cm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 64,43
+  value: 4,31
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 33,21
+  value: 3,31
   baseUnit: m2
 carSizes:
   width: Breite
@@ -142,7 +142,7 @@ loadingVolumeHeight:
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "0"
+  value: "2800"
   baseUnit: mm
 ---
 
