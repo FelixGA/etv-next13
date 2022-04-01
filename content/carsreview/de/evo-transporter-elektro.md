@@ -46,6 +46,7 @@ content:
 
       Der Elektromotor des EVO Transporters arbeitet mit einer Spannung von 72 Volt und hat eine Dauerleistung von 15 kW. Er entwickelt ein maximales Drehmoment von 100 Nm und bringt den EVO auf eine Höchstgeschwindigkeit von 70 Km/h. Bei den Batterien handelt es sich um Lithium-Eisenphosphat-Akkus (LiFeP04) handelt, welche über ein an Bord befindliches, separates Ladegerät aufgeladen wird. In der Standard-Variante hat dieser eine Kapazität von 10 kWh, wodurch das Fahrzeug laut Hersteller eine Reichweite von rund 50 Kilometer erreicht. Gegen Aufpreis sind größere Kapazitäten von 18 kWh bzw. 26 kWh verfügbar, wodurch die Reichweite auf 80 Kilometer bzw. 120 Kilometer steigt.
     title: Antrieb & Aufladung
+    image: /images/evo-lade.jpg
   - content: >-
       ### Komfort & Ausstattung
 
@@ -55,6 +56,29 @@ content:
 
       Für gutes Sehen und Gesehenwerden sorgt ein serienmäßiges LED-Tagfahrlicht sowie Nebelscheinwerfer in der Frontschürze. Und für die Sicherheit der Insassen ist der EVO serienmäßig mit zwei Airbags ausgestattet. In Sachen Unterhaltungselektronik ist laut Hersteller ein Radio mit USB-Anschluss im Preis enthalten. Angaben darüber, ob dies über eine praktische Bluetooth-Funktion (als Freisprechanlage) verfügt, gibt es leider nicht.
     title: Komfort & Ausstattung
-  - content: hier steht dn text
-  - content: hier steht dn text
+  - content: >-
+      ### Bedienung & Fahrbetrieb
+
+
+      Der elektrische EVO Transporter ist sehr schmal konzipiert, um auch in Parkanlagen und auf Friedhöfen alle Wege befahren zu können. Zudem ist das Fahrzeug sehr übersichtlich dank großer Fensterflächen und hoher Sitzposition. Über die Höhe der Ladekante oder ein mögliches Fleet Management-System gibt es keine Angaben.
+    title: Bedienung & Fahrbetrieb
+    image: /images/evo-koffer-heck.jpg
+  - content: >-
+      ### Umwelt
+
+
+      Konkrete Verbrauchsangaben gibt es zum EVO Transporter mit Elektroantrieb leider nicht. In der 10 kWh-Version gibt der Hersteller eine Reichweite von 50 Kilometer an. Gegen Aufpreis sind größere Kapazitäten von 18 kWh bzw. 26 kWh verfügbar mit Reichweiten von 80 Kilometer bzw. 120 Kilometer. Dies entspricht einem ungefähren Energieverbrauch von 20 - 22 kWh auf 100 Kilometer und somit Kosten von 6,00 bis 6,60 Euro bei einem Strompreis von 30 Cent pro kWh. Eine Solaranlage für mehr Reichweite ist nicht verfügbar.
+    title: Umwelt
+  - content: >-
+      ### Preise & Garantie
+
+
+      Eine offen ersichtliche Preisliste zum Fahrzeug gibt es nicht. Dies liegt wohl daran, dass es verschiedene Aufbauten gibt, die teils von anderen Fahrzeugbauern übernommen werden. Außerdem richtet sich der EVO Transporter an Gewerbe sowie Kommunen, welche oft einzelne Angebote erhalten je nach Aufbau und Zahl der georderten Fahrzeuge. Der ungefähre Einstiegspreis liegt aber bei rund 30.000 Euro. Auch über die Dauer einer Fahrzeug-Garantie finden sich keine Angaben.
+    title: Preise & Garantie
+  - content: >-
+      ### Fazit
+
+
+      Der EVO ist dank der verschiedenen Aufbau-Varianten vielfältig einsetzbar, vom Straßenbau bis zur Landschaftspflege. Sein kleiner Wendekreis ist zudem nützlich in engen Innenstädten und Parkanlagen. Die Ausstattung des Fahrzeugs ist recht umfangreich. Die Reichweite ist leider erst mit der teuersten Akku-Variante höher als 100 Kilometer, weshalb der EVO nicht für große Strecken geeignet ist.
+    title: Fazit
 ---
