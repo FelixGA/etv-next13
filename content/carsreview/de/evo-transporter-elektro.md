@@ -27,4 +27,34 @@ content:
 
       Neben der Standardversion mit einer Kabine für 2 Personen soll ab 2022  auch eine Doppelkabine mit Platz für bis zu 4 Personen erhältlich sein, welche zudem mit einem Kofferaufbau lieferbar ist.
     title: Konzept & Fahrzeugvarianten
+  - content: >-
+      ### Laderaum & Flexibilität
+
+
+      Mit Kipperaufbau hat der EVO Transporter eine Ladefläche von rund 3,6 m², welche sich aus einer Länge von 2,31 Meter und einer Breite von 1,56 Meter ergeben. Die Seitenwände der Ladefläche haben eine Höhe von 30 Zentimetern. Das Kippen der Aufbaus wird über eine außen befindliche Steuerung per 12 Volt-Batterie bewerkstelligt, welche unabhängig von der Antriebsbatterie arbeitet.
+
+
+      Als klassische Pritsche ist die Ladefläche etwas kleiner und kommt auf eine Länge von 2,24 Meter sowie einer Breite von 1,40 Meter. Die beladbare Fläche beträgt also rund 3,1 m². Die Seitenwände sind hier 5 Zentimeter höher als beim Kipper.
+
+
+      Der EVO Transporter ist auch mit Anhängerkupplung erhältlich und kann dann bis zu 750 Kilogramm ziehen. Die Nutzlast beträgt für die Pritschen-Version rund 825 Kilogramm und dürfte bei den anderen Aufbauten in einem ähnlichen Bereich liegen.
+    title: Laderaum & Flexibilität
+    image: /images/evo-front.jpg
+  - content: >-
+      ### Antrieb & Aufladung
+
+
+      Der Elektromotor des EVO Transporters arbeitet mit einer Spannung von 72 Volt und hat eine Dauerleistung von 15 kW. Er entwickelt ein maximales Drehmoment von 100 Nm und bringt den EVO auf eine Höchstgeschwindigkeit von 70 Km/h. Bei den Batterien handelt es sich um Lithium-Eisenphosphat-Akkus (LiFeP04) handelt, welche über ein an Bord befindliches, separates Ladegerät aufgeladen wird. In der Standard-Variante hat dieser eine Kapazität von 10 kWh, wodurch das Fahrzeug laut Hersteller eine Reichweite von rund 50 Kilometer erreicht. Gegen Aufpreis sind größere Kapazitäten von 18 kWh bzw. 26 kWh verfügbar, wodurch die Reichweite auf 80 Kilometer bzw. 120 Kilometer steigt.
+    title: Antrieb & Aufladung
+  - content: >-
+      ### Komfort & Ausstattung
+
+
+      Besonders angepriesen wird beim EVO Transporter der Wendekreis von nur 6,90 Meter. Dies ist recht beachtlich für ein Fahrzeug von dieser Länge. Erleichtert wird das Rangieren auf so engem Raum noch von einer Servolenkung. Für problemloses Starten an Hängen ist das Fahrzeug mit einem Berganfahrassistenten ausgestattet. 
+
+
+      Für gutes Sehen und Gesehenwerden sorgt ein serienmäßiges LED-Tagfahrlicht sowie Nebelscheinwerfer in der Frontschürze. Und für die Sicherheit der Insassen ist der EVO serienmäßig mit zwei Airbags ausgestattet. In Sachen Unterhaltungselektronik ist laut Hersteller ein Radio mit USB-Anschluss im Preis enthalten. Angaben darüber, ob dies über eine praktische Bluetooth-Funktion (als Freisprechanlage) verfügt, gibt es leider nicht.
+    title: Komfort & Ausstattung
+  - content: hier steht dn text
+  - content: hier steht dn text
 ---
