@@ -1,17 +1,18 @@
 ---
-title: Stama Maestro
+title: Stama Maestro MTN
 name: stama-maestro
-price: 34250
+price: 35450
 relatedBlogs: nur beispiel
+relatedReviews: stama-maestro-mtn
 description: >-
-  Der Stama Maestro kam 2019 auf den Markt und ist das bisher größte Fahrzeug
-  des Herstellers. Außerdem ist er unter dem Namen Addax in Deutschland
-  verfügbar. Er ist mit fester oder hydraulisch kippbaren Pritsche verfügbar,
-  welche entweder mit klappbaren Seitenwänden oder mit einem hohen Gitteraufbau
-  versehen ist.
-
-
-  Technisch gibt es den Stama Maestro in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und als MT15 mit  72 Volt-Motor angetrieben. Beide Versionen sind mit Lithium-Ionen-Akkus zur Energiespeicherung ausgestattet, die eine Kapazität von 10,2 kWh bzw. 14,4 kWh besitzen.
+  Der Stama Mastro ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit
+  einer maximalen Höchstgeschwindigkeit von 55 km/h oder 70 km/h.GMR ist ein
+  dänischer Hersteller, der sich auf Fahrzeuge für die Pflege und Reinigung von
+  Parks, Straßen und Anlagen spezialisiert hat. Der Stama Maestro kam 2019 auf
+  den Markt und ist das bisher größte Fahrzeug des Herstellers. Außerdem ist er
+  unter dem Namen Addax in Deutschland verfügbar. Er ist mit fester oder
+  hydraulisch kippbarer Pritsche verfügbar. Diese kann entweder mit klappbaren
+  Seitenwänden oder mit einem hohen Gitteraufbau versehen werden.
 
 
   Der Stama Maestro besitzt eine EU-Typengenehmigung und kann somit in allen EU-Staaten auf öffentlichen Straßen bewegt werden.
@@ -37,9 +38,9 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 110
+  value: 87
   baseUnit: km
-  maxValue: 340
+  maxValue: 132
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
@@ -65,7 +66,7 @@ batteryIncluded:
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "0"
+  value: "12"
   baseUnit: keine Angabe
 power:
   key: "Leistung "
@@ -90,8 +91,8 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
-  value: 0
-  baseUnit: keine Angabe
+  value: 5
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
   value: 780
@@ -111,21 +112,21 @@ carSizes:
   wheelbase: Radstand
   valuewidth: 1500
   baseUnit: mm
-  valuelength: 3590
-  valueheight: 2050
-  valuewheelbase: 2027
+  valuelength: 3635
+  valueheight: 1990
+  valuewheelbase: 2040
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
   valueheight: 0
   width: Breite
-  valuewidth: 1500
+  valuewidth: 1484
   valuelength: 2150
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "3590"
+  value: "3"
   key: Länge
   baseUnit: mm
 carSizesWidth:

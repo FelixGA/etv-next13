@@ -1,7 +1,7 @@
 ---
 title: Stama Maestro
 name: stama-maestro
-price: 34250
+price: 35450
 relatedBlogs: nur beispiel
 description: >-
   Der Stama Maestro kam 2019 auf den Markt und ist das bisher größte Fahrzeug
@@ -35,9 +35,9 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 110
+  value: 87
   baseUnit: km
-  maxValue: 340
+  maxValue: 132
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
@@ -109,21 +109,21 @@ carSizes:
   wheelbase: Radstand
   valuewidth: 1500
   baseUnit: mm
-  valuelength: 3590
-  valueheight: 2050
-  valuewheelbase: 2027
+  valuelength: 3635
+  valueheight: 1990
+  valuewheelbase: 2040
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
   valueheight: 0
   width: Breite
-  valuewidth: 1500
+  valuewidth: 1484
   valuelength: 2150
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "3590"
+  value: "3"
   key: Länge
   baseUnit: mm
 carSizesWidth:
