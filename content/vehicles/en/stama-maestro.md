@@ -1,9 +1,8 @@
 ---
 title: Stama Maestro
-name: stama-maestro-mtn
-price: 35450
+name: stama-maestro
+price: 34250
 relatedBlogs: nur beispiel
-relatedReviews: stama-maestro-mtn
 description: >-
   Der Stama Maestro kam 2019 auf den Markt und ist das bisher größte Fahrzeug
   des Herstellers. Außerdem ist er unter dem Namen Addax in Deutschland
@@ -36,9 +35,9 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 87
+  value: 110
   baseUnit: km
-  maxValue: 132
+  maxValue: 340
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
@@ -110,21 +109,21 @@ carSizes:
   wheelbase: Radstand
   valuewidth: 1500
   baseUnit: mm
-  valuelength: 3635
-  valueheight: 1990
-  valuewheelbase: 2040
+  valuelength: 3590
+  valueheight: 2050
+  valuewheelbase: 2027
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
   valueheight: 0
   width: Breite
-  valuewidth: 1484
+  valuewidth: 1500
   valuelength: 2150
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "3635"
+  value: "3590"
   key: Länge
   baseUnit: mm
 carSizesWidth:
@@ -133,7 +132,7 @@ carSizesWidth:
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1990"
+  value: "2050"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
