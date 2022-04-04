@@ -30,8 +30,8 @@ const Footer = ({ blogs, reviews }) => {
 
   return (
     <footer className="p-10 lg:flex lg:flex-row lg:justify-around print:hidden ">
-      <span className="lg:w-1/4 lg:pt-14">
-        <div className="flex flex-row justify-start items-center w-full flex-wrap">
+      <div className="lg:w-1/4 lg:pt-14 ">
+        <div className="flex flex-row justify-start items-center w-full flex-wrap ">
           <Image src="/images/etv-logo-final.png" width={60} height={40} />
           <p className="text-blue-dark text-xs font-bold ">
             Elektrotransporter
@@ -43,10 +43,10 @@ const Footer = ({ blogs, reviews }) => {
           Hier könnte noch etwas stehen, was Leute davon überzeugt, dass Ihr
           richtig gut seid!
         </p>
-      </span>
+      </div>
       <nav className="flex mt-10 flex-col sm:flex-row justify-between items-center sm:items-start px-6 ">
-        <div className="flex lg:w-48 items-center flex-col justify-center">
-          <h3 className="text-sm font-bold tracking-wider">
+        <div className="flex lg:w-48 items-center flex-col justify-start  ">
+          <h3 className="text-sm font-bold tracking-wider h-10">
             <Link href="/comparePage">
               <a>{`Transporter`.toUpperCase()}</a>
             </Link>
@@ -54,8 +54,8 @@ const Footer = ({ blogs, reviews }) => {
 
           <ListItems itemsList={reviews} />
         </div>
-        <div className="flex lg:w-48 items-center flex-col justify-center ">
-          <h3 className="text-sm font-bold tracking-wider">
+        <div className="flex lg:w-48 items-center flex-col justify-start ">
+          <h3 className="text-sm font-bold tracking-wider h-10">
             <Link href="/magazin">
               <a>{`Magazin`.toUpperCase()}</a>
             </Link>
@@ -63,8 +63,8 @@ const Footer = ({ blogs, reviews }) => {
 
           <ListItems itemsList={magazine} />
         </div>
-        <div className="flex lg:w-48 items-center flex-col justify-center ">
-          <h3 className=" text-sm font-bold text-center tracking-wider">
+        <div className="flex lg:w-48 items-center flex-col justify-start ">
+          <h3 className=" text-sm font-bold text-center tracking-wider h-10">
             {`Rechtliches & Kontakt`.toUpperCase()}
           </h3>
           <ListItems itemsList={rights} />

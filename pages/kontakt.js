@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import getContent from "/utils/getContent";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
@@ -30,89 +31,154 @@ export default function kontakt(props) {
   const onError = (errors, e) => console.log("errors", errors, e);
   // const watchName = watch("firstName");
   return (
-    <div className="flex flex-col items-center h-screen w-screen">
+    <div className="flex flex-col items-center min-h-screen w-screen">
+      <div className="pt-8 flex justify-center">
+        <p className="text-2xl font-bold sm:w-[60%] text-center px-2">
+          Erhalten Sie jetzt Ihr Angebot
+          <span className="font-thin"> kostenlos und unverbindlich</span>
+        </p>
+      </div>
+      {/* IMAGES */}
+      <div className="flex justify-center items-center relative left-6">
+        <div className="w-24">
+          <Image
+            src="/images/siegel2.png"
+            width={166}
+            height={166}
+            layout="responsive"
+            objectFit="contain"
+          />
+        </div>
+        {/* medal dsvgo image */}
+        <div className="w-44 relative left-4">
+          <Image
+            src="/images/siegel.png"
+            width={166}
+            height={166}
+            layout="responsive"
+            objectFit="contain"
+          />
+        </div>
+      </div>
       <form
         /* action="/action_page.php" */
         action="https://api.vercel.com/v6/deployments"
         method="POST"
         onSubmit={handleSubmit(onSubmit, onError)}
         Content-Type="application/json"
-        className="flex flex-col items-center w-20 h-24"
+        className="flex flex-col items-center justify-center border w-[90%]"
       >
-        <label for="name">Name:</label>
-        <input
-          {...register("firstName", { required: true, pattern: fullNameRegex })}
-          // onChange={(e) => SetGetName(e.target.value)}
-          id="name"
-          type="string"
-          // name="name"
-          title="write name"
-          className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-46 appearance-none leading-normal"
-        />
+        <div className="mb-4 flex justify-center flex-col w-full">
+          <label for="name " className="text-blue-lighter font-bold ">
+            Name:
+          </label>
+          <input
+            {...register("firstName", {
+              required: true,
+              pattern: fullNameRegex,
+            })}
+            // onChange={(e) => SetGetName(e.target.value)}
+            id="name"
+            type="string"
+            // name="name"
+            title="write name"
+            className="bg-grey-lighter focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block  appearance-none leading-normal"
+          />
+        </div>
+        <div className="mb-4 ">
+          <label for="firma" className="text-blue-lighter  font-bold py-2">
+            Firma:
+          </label>
+          <input
+            {...register("firma", { required: false })}
+            // onChange={(e) => SetGetFirma(e.target.value)}
+            id="firma"
+            type="string"
+            // name="name"
+            title="write firma"
+            className="bg-grey-lighter focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-72 appearance-none leading-normal"
+          />
+        </div>
+        <div className="mb-4">
+          <label for="locatio n" className="text-blue-lighter  font-bold py-2">
+            Postleitzahl:
+          </label>
+          <input
+            {...register("zipcode", {
+              required: false,
+            })}
+            // onChange={(e) => SetGetPostNum(e.target.value)}
+            id="zipcode"
+            type="string"
+            // name="zip code"
+            title="zip code"
+            className="bg-grey-lighter focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-72 appearance-none leading-normal"
+          />
+        </div>
+        <div className="mb-4 ">
+          <label for="Ort" className="text-blue-lighter  font-bold py-2">
+            Ort:
+          </label>
 
-        <label for="firma">Firma:</label>
-        <input
-          {...register("firma", { required: false })}
-          // onChange={(e) => SetGetFirma(e.target.value)}
-          id="firma"
-          type="string"
-          // name="name"
-          title="write firma"
-          className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-46 appearance-none leading-normal"
-        />
-        <label for="location">Postleitzahl:</label>
-        <input
-          {...register("zipcode", {
-            required: false,
-          })}
-          // onChange={(e) => SetGetPostNum(e.target.value)}
-          id="zipcode"
-          type="string"
-          // name="zip code"
-          title="zip code"
-          className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-46 appearance-none leading-normal"
-        />
-        <label for="Ort">Ort:</label>
-
-        <input
-          {...register("city", { required: false })}
-          // onChange={(e) => SetGetLocation(e.target.value)}
-          id="city"
-          type="string"
-          // name="location"
-          title="city"
-          className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-46 appearance-none leading-normal"
-        />
-        <label for="email-input">Email:</label>
-        <input
-          {...register("email", { required: true, pattern: emailRegex })}
-          // onChange={(e) => SetGetEmail(e.target.value)}
-          id="email-input"
-          type="email"
-          // name="email-input"
-          title="write proper e mail"
-          className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-46 appearance-none leading-normal"
-        />
-        <label for="phone">Telefon:</label>
-        <input
-          {...register("phone", { required: false, pattern: phoneNumberRegex })}
-          // onChange={(e) => SetGetPhone(e.target.value)}
-          id="phone"
-          type="number"
-          // name="phone"
-          title="write proper e mail"
-          className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-46 appearance-none leading-normal"
-        />
-        <label for="message">Nachricht</label>
-        <input
-          {...register("message", { required: false })}
-          // onChange={(e) => SetGetMessage(e.target.value)}
-          id="message"
-          type="text"
-          // name="message"
-          title="write name"
-          className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-46 appearance-none leading-normal"
-        />
+          <input
+            {...register("city", { required: false })}
+            // onChange={(e) => SetGetLocation(e.target.value)}
+            id="city"
+            type="string"
+            // name="location"
+            title="city"
+            className="bg-grey-lighter focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-72 appearance-none leading-normal"
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            for="email-inpu t"
+            className="text-blue-lighter  font-bold py-2"
+          >
+            Email:
+          </label>
+          <input
+            {...register("email", { required: true, pattern: emailRegex })}
+            // onChange={(e) => SetGetEmail(e.target.value)}
+            id="email-input"
+            type="email"
+            // name="email-input"
+            title="write proper e mail"
+            className="bg-grey-lighter focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-72 appearance-none leading-normal"
+          />
+        </div>
+        <div className="mb-4 ">
+          <label for="phone" className="text-blue-lighter  font-bold py-2">
+            Telefon:
+          </label>
+          <input
+            {...register("phone", {
+              required: false,
+              pattern: phoneNumberRegex,
+            })}
+            // onChange={(e) => SetGetPhone(e.target.value)}
+            id="phone"
+            type="number"
+            // name="phone"
+            title="write proper e mail"
+            className="bg-grey-lighter focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-72 appearance-none leading-normal"
+          />
+        </div>
+        <div className="mb-4">
+          <label for="message" className="text-blue-lighter  font-bold ">
+            Nachricht
+          </label>
+          <textarea
+            {...register("message", { required: false })}
+            // onChange={(e) => SetGetMessage(e.target.value)}
+            rows="4"
+            id="message"
+            type="text-area"
+            // name="message"
+            title="write name"
+            className="bg-grey-lighter focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg block appearance-none leading-normal w-72"
+          />
+        </div>
         <div className="text-black">
           <p>{errors.firstName && "Name is required"}</p>
           <p> {errors.firma && "Firma is required"}</p>
