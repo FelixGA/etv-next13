@@ -4,7 +4,7 @@ name: ökoflitzer-paxster
 price: 140000
 relatedBlogs: nur beispiel
 description: mmmmm
-src: /images/X.png
+src: /images/paxter-bild.jpg
 loadingWeight:
   key: Nutzlast
   value: 200
