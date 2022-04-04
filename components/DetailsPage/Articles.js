@@ -4,8 +4,9 @@ import RatingBox from "../../components/ResultList/RatingBox";
 import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
-const Articles = ({ carItem, getTestReview }) => {
+const Articles = ({ carItem, getTestReview, getCarsReview }) => {
   // (getBlogContext[0].title);
+
   return (
     <>
       <div
@@ -30,20 +31,21 @@ const Articles = ({ carItem, getTestReview }) => {
           <h3 className="w-full py-4 text-black-darkest text-2xl font-bold ">
             Testbericht {carItem.title}
           </h3>
-
           <div>
             {getTestReview ? <MDXRemote {...getTestReview[0]} /> : "kommt bald"}
           </div>
-          <Link href={`/magazin/${carItem.name}`}>
-            <a target="_blank" className="text-blue-500">
-              <button
-                // disabled={getTestReview ? true : false}
-                className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden rounded-md"
-              >
-                Testbericht lesen
-              </button>
-            </a>
-          </Link>
+          {getCarsReview && (
+            <Link href={`/magazin/reviews/${getCarsReview?.slug}`}>
+              <a target="_blank" className="text-blue-500">
+                <button
+                  // disabled={getTestReview ? true : false}
+                  className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden rounded-md"
+                >
+                  Testbericht lesen
+                </button>
+              </a>
+            </Link>
+          )}
         </div>
       </div>
       {/* other articles section */}

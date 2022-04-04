@@ -12,6 +12,7 @@ relatedBlogs:
     Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
+relatedReviews: ari-345-koffer
 description: Der ARI 345 Food Truck hat alles am Start, was Gastronomen und
   Caterer brauchen, um Ihr Gastro-Unternehmen nachhaltig ins Rollen zu bringen.
   Eine luftige Fahrerkabine, einen großen Verkaufstresen, elektrischen Antrieb

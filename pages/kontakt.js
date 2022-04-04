@@ -24,7 +24,7 @@ export default function kontakt(props) {
   } = useForm();
   const onSubmit = (data, e) => {
     e.preventDefault();
-    console.log("data", data);
+    "data", data;
   };
 
   const onError = (errors, e) => console.log("errors", errors, e);
@@ -122,8 +122,11 @@ export default function kontakt(props) {
           <p> {errors.phone && "Phone is required"}</p>
           <p> {errors.message && "Message is required"}</p>
         </div>
-        <button type="submit" className="bg-yellow-light">
-          Submit
+        <button
+          type="submit"
+          className="bg-blue-light hover:bg-blue-lighter text-white font-bold text-sm md:text-md w-32 md:w-96 h-10 disabled:bg-grey-light p-4 m-8 rounded-lg"
+        >
+          Unverbindlich und kostenlos anfragen
         </button>
       </form>
     </div>
