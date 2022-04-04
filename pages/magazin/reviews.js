@@ -11,9 +11,9 @@ export default function reviews(props) {
 
   return (
     <>
-      <h1 className="px-4 pt-8 pb-2 text-blue-dark font-bold text-4xl text-center">
+      <h2 className="px-4 pt-8 pb-2 text-blue-dark font-bold text-4xl text-center">
         Testberichte
-      </h1>
+      </h2>
       <Blog getBlogs={getTestReview} />
     </>
   );
