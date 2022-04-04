@@ -135,7 +135,7 @@ carSizesWidth:
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1"
+  value: "1990"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
