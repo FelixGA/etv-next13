@@ -1,6 +1,6 @@
 ---
 title: Stama Maestro
-name: stama-maestro
+name: stama-maestro-pritsche
 price: 34250
 relatedBlogs: nur beispiel
 description: >-

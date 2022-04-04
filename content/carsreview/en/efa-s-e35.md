@@ -2,7 +2,7 @@
 title: "EFA-S E35    "
 slug: efa-s-e-35
 relatedCars: efa-s-e-35-d
-youtubeLink: bitte auffuelen
+youtubeLink: ""
 category: Koffer
 publishedAt: 04/01/2022
 description: Der EFA-S E35 ist ein Elektrotransporter auf Basis der Fahrzeuge

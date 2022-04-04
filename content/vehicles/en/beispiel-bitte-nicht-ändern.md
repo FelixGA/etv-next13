@@ -1,7 +1,5 @@
 ---
 title: beispiel
-name: beispiel-bitte-nicht-ändern
-price: 80000
 relatedBlogs: nur beispiel
 description: >-
   Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des
@@ -14,9 +12,6 @@ description: >-
 
 
   VOM Evum-aCar-Truck kopiert
-src: /images/anschluss@2x.png
-category: Kasten
-typeClass: N1
 loadingWeight:
   key: Nutzlast
   value: 1200
