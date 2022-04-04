@@ -83,20 +83,18 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
           )}
 
           {entry.map((value, index) => (
-            <>
-              <div
-                key={index}
-                className={`${
-                  index % 2 == 1
-                    ? "bg-grey-lighter flex items-center h-12 "
-                    : "bg-white flex items-center h-12"
-                }`}
-              >
-                <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
-                  {value || "-"}
-                </p>
-              </div>
-            </>
+            <div
+              key={index}
+              className={`${
+                index % 2 == 1
+                  ? "bg-grey-lighter flex items-center h-12 "
+                  : "bg-white flex items-center h-12"
+              }`}
+            >
+              <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
+                {value || "-"}
+              </p>
+            </div>
           ))}
         </div>
       ))}
