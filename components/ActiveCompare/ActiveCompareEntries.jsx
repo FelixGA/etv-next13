@@ -5,7 +5,7 @@ import ButtonAnfragen from "../ResultList/ButtonAnfragen";
 
 export default function ActiveCompareEntries({ keys, comparedCars }) {
   const [entries, setEntries] = useState([]);
-  console.log(comparedCars);
+  // console.log(comparedCars);
   let testResultArr = comparedCars.map((test) => test.rating);
 
   useEffect(() => {
@@ -85,6 +85,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
           {entry.map((value, index) => (
             <>
               <div
+                key={index}
                 className={`${
                   index % 2 == 1
                     ? "bg-grey-lighter flex items-center h-12 "

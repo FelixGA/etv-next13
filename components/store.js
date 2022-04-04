@@ -13,9 +13,11 @@ const reducer = (state, action) => {
       return { ...state, maxSpeeds: action.data };
     case "chargingTimeLithium":
       return { ...state, chargingTimeLithiums: action.data };
-
     case "category":
       return { ...state, categorys: action.data };
+
+    /*  */
+
     case "truncate":
       return { ...state, truncates: action.data };
     /* sorting state */

@@ -5,7 +5,7 @@ import ButtonAnfragen from "../ResultList/ButtonAnfragen";
 
 export default function ActiveCompareDetails({ keys, comparedCars }) {
   const [entries, setEntries] = useState([]);
-  console.log(comparedCars);
+  // console.log(comparedCars);
   let testResultArr = comparedCars.map((test) => test.rating);
 
   useEffect(() => {
@@ -40,7 +40,7 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
       entries.push(carValues);
     }
     /* Main keys push to position 8 for calculating the total weight */
-    console.log(entries, "entries test");
+    // console.log(entries, "entries test");
     setEntries(entries);
     // console.log(entries);
   }, [keys, comparedCars]);
@@ -62,6 +62,7 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
 
           {entry.map((value, index) => (
             <div
+              key={index}
               className={`${
                 index % 2 == 1
                   ? "bg-white flex items-center h-12 "

@@ -19,6 +19,15 @@ const variants = {
   },
 };
 
+const filterTitles = [
+  "Preis",
+  "Reichweite",
+  "Zuladung",
+  "Hochgeschwindigkeit",
+  "Ladezeit",
+  "Aufbautyp",
+];
+
 function FilterItemDesktop({ item }) {
   // const item = props.item;
   const { state, dispatch } = useStore();
@@ -49,7 +58,7 @@ function FilterItemDesktop({ item }) {
                 layout="responsive"
               />
             </div>
-            <div className="pl-4 my-auto ">
+            <div className="pl-4 my-auto">
               <h4 className=" font-bold text-blue-darker">{item.title}</h4>
             </div>
           </div>

@@ -6,8 +6,10 @@ const Basics = ({ basics, carItem }) => {
       </h3>
       <div className="flex flex-col w-full text-blue-extra lg:pr-6">
         <div className="flex flex-row flex-1 bg-grey-lighter">
-          <p className="w-1/2 py-1 h-14 flex items-center pl-4 ">Klasse:</p>
-          <p className="w-1/2 py-1 h-14 flex items-center pl-4">
+          <p className="w-1/2 py-1 h-14 flex items-center pl-4 text-md ">
+            Klasse:
+          </p>
+          <p className="w-1/2 py-1 h-14 flex items-center pl-4 text-md">
             {carItem.typeClass}
           </p>
         </div>
@@ -18,8 +20,10 @@ const Basics = ({ basics, carItem }) => {
               index % 2 !== 0 ? "flex flex-1 bg-grey-lighter " : "flex flex-1 "
             }
           >
-            <p className="w-1/2 py-1 h-14 flex items-center pl-4">{item.key}</p>
-            <p className="w-1/2 py-1 h-14 flex items-center pl-4">
+            <p className="w-1/2 py-1 h-14 flex items-center pl-4 text-md">
+              {item.key}
+            </p>
+            <p className="w-1/2 py-1 h-14 flex items-center pl-4 text-md">
               {item.value ? item.value : "-"} {item.value ? item.baseUnit : ""}
             </p>
           </div>
@@ -31,10 +35,10 @@ const Basics = ({ basics, carItem }) => {
               : "flex flex-1 "
           }
         >
-          <p className="w-1/2 py-1 h-14 flex items-center pl-4">
+          <p className="w-1/2 py-1 h-14 flex items-center pl-4 text-md">
             Gesamtgewicht
           </p>
-          <p className="w-1/2 py-1 h-14 flex items-center pl-4">
+          <p className="w-1/2 py-1 h-14 flex items-center pl-4 text-md">
             {carItem.curbweight.value + carItem.loadingWeight.value}{" "}
             {carItem.curbweight.baseUnit}
           </p>

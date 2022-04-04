@@ -31,11 +31,14 @@ function FiltersDesktop({ getContent }) {
 
   let fromWord = getContent.content[1].details.split(",")[0];
   let hourWord = getContent.content[1].details.split(",")[5];
+  const filterTitles = ["Preis"];
   const filtersData = [
     {
       id: 1,
       category: "rangeLithiums",
-      title: getContent.content[1].markdown.split(", ")[1],
+      /*       title: getContent.content[1].markdown.split(", ")[1],
+       */ title: "Reichweite",
+
       image: image,
       options: [
         {
@@ -71,7 +74,7 @@ function FiltersDesktop({ getContent }) {
     {
       id: 2,
       category: "loadingWeights",
-      title: getContent.content[1].markdown.split(", ")[2],
+      title: "Zuladung",
 
       image: image2,
       options: [
@@ -107,7 +110,7 @@ function FiltersDesktop({ getContent }) {
     },
     {
       id: 3,
-      title: getContent.content[1].markdown.split(", ")[3],
+      title: "Hochgeschwindigkeit",
 
       category: "maxSpeeds",
       image: image3,
@@ -139,8 +142,8 @@ function FiltersDesktop({ getContent }) {
       ],
     },
     {
-      id: 5,
-      title: getContent.content[1].markdown.split(", ")[4],
+      id: 4,
+      title: "Ladezeit",
       category: "chargingTimeLithiums",
       image: image6,
       options: [
@@ -171,8 +174,8 @@ function FiltersDesktop({ getContent }) {
       ],
     },
     {
-      id: 4,
-      title: getContent.content[1].markdown.split(", ")[5],
+      id: 5,
+      title: "Aufbautyp",
       category: "categorys",
       image: image5,
       options: [
@@ -208,7 +211,7 @@ function FiltersDesktop({ getContent }) {
     {
       id: 1,
       category: "prices",
-      title: getContent.content[1].markdown.split(", ")[0],
+      title: "Preis",
       image: image4,
       options: [
         {
@@ -246,8 +249,8 @@ function FiltersDesktop({ getContent }) {
   return (
     <div className="xl:ml-2 2xl:ml-40 ">
       <div className="">
-        {priceFilterData.map((item) => (
-          <div className="relative bg-white" key={item.id}>
+        {priceFilterData.map((item, index) => (
+          <div className="relative bg-white" key={index}>
             <FilterItemDesktop item={item} getContent={getContent} />
             <AnimatePresence initial={false}>
               {state?.truncates == item.title && (
@@ -266,8 +269,8 @@ function FiltersDesktop({ getContent }) {
           </div>
         ))}
       </div>
-      {filtersData.map((item) => (
-        <div className="bg-white" key={item.id}>
+      {filtersData.map((item, index) => (
+        <div className="bg-white" key={index}>
           <FilterItemDesktop item={item} getContent={getContent} />
         </div>
       ))}
