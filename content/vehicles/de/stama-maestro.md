@@ -1,8 +1,9 @@
 ---
-title: Stama Maestro
-name: stama-maestro
+title: Stama Maestro Pritsche
+name: stama-maestro-pritsche
 price: 34250
 relatedBlogs: nur beispiel
+relatedReviews: stama-maestro-mtn
 description: >-
   Der Stama Maestro kam 2019 auf den Markt und ist das bisher größte Fahrzeug
   des Herstellers. Außerdem ist er unter dem Namen Addax in Deutschland
