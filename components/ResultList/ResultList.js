@@ -88,7 +88,7 @@ const ResultList = (props) => {
   /* ɢᴇᴛ pop up for not meeting criteria */
   const showMoreMessage = (
     <div className="mx-auto">
-      <p className=" md:text-xl text-black-darkest pt-4">
+      <p className=" md:text-xl text-black-darkest pt-4 px-4 text-center">
         Ist ihr gesuchter Transporter nicht dabei?
       </p>
 

@@ -32,7 +32,7 @@ function CarCard({ carItem }) {
               <a className="w-full relative">
                 {carItem?.src && (
                   <Image
-                    className="rounded-sm"
+                    className="rounded-md"
                     src={
                       carItem.src
                     } /* "https://aixam.de/wp-content/uploads/2019/01/aixam-pro-pritsche.jpg" */
