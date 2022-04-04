@@ -9,6 +9,7 @@ export default function ReviewPost({ getCarsReview, getMdxContent }) {
   // useEffect(() => {
   //   setTestReview(getCarsReview);
   // }, [getCarsReview]);
+  // console.log(getCarsReview.content.map((item) => item.image));
   return (
     <div className="flex items-center flex-col p-8">
       <div>
@@ -51,7 +52,7 @@ export default function ReviewPost({ getCarsReview, getMdxContent }) {
           className="flex flex-col lg:my-4 items-center justify-center lg:py-12"
         >
           <div className="w-full md:w-1/2 lg:px-12 ">
-            {article?.image && (
+            {/* {article?.image && (
               <Image
                 src={article?.image}
                 alt={getCarsReview?.title}
@@ -61,7 +62,7 @@ export default function ReviewPost({ getCarsReview, getMdxContent }) {
                 objectFit="cover"
                 className="rounded-lg float-right"
               />
-            )}
+            )} */}
           </div>
           {article?.title && (
             <div
