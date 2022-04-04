@@ -4,20 +4,27 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 // import Script from "next/script";
 import { useState, useRef } from "react";
 const TopSlider = ({ getContent, getCars }) => {
+  // console.log(getCars, "get cars");
   const container = useRef();
   // const style = { color: "black" };
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center overflow-hidden">
       <div
-        onClick={() => (container.current.scrollLeft -= 293)}
-        className="xl:flex items-center hidden"
+        onClick={(e) => {
+          container.current.scrollLeft -= 293;
+        }}
+        className={
+          getCars.length > 4
+            ? " hidden xl:flex items-center pl-1 hover:scale-125 bg-white"
+            : "hidden"
+        }
       >
         <FaArrowCircleLeft size={40} color="#243280" />
       </div>
 
       <div className="print:hidden flex flex-col w-full xl:w-[1200px]">
-        <h2 className="text-3xl font-black text-black-dark text-left mt-4 tracking-wide px-6 relative pb-4">
-          {getContent?.content[1].details}
+        <h2 className="no-select text-3xl font-black text-black-dark text-left mt-4 tracking-wide px-6 relative pb-4">
+          Beste Testberichte
         </h2>
 
         <div
@@ -30,7 +37,11 @@ const TopSlider = ({ getContent, getCars }) => {
 
       <div
         onClick={() => (container.current.scrollLeft += 293)}
-        className="xl:flex items-center hidden"
+        className={
+          getCars.length > 4
+            ? "xl:flex items-center hidden pr-1 hover:scale-125"
+            : "hidden"
+        }
       >
         <FaArrowCircleRight size={40} color="#243280" />
       </div>

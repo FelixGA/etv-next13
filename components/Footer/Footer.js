@@ -44,31 +44,29 @@ const Footer = ({ blogs, reviews }) => {
           richtig gut seid!
         </p>
       </span>
-      <nav className="flex mt-10 flex-col sm:flex-row justify-between items-center sm:items-start px-10 ">
+      <nav className="flex mt-10 flex-col sm:flex-row justify-between items-center sm:items-start px-6 ">
         <div className="flex lg:w-48 items-center flex-col justify-center">
-          <h5 className="text-xs font-bold">
+          <h3 className="text-sm font-bold tracking-wider">
             <Link href="/comparePage">
-              <a className="visited:text-grey-dark">
-                {`Transporter`.toUpperCase()}
-              </a>
+              <a>{`Transporter`.toUpperCase()}</a>
             </Link>
-          </h5>
+          </h3>
 
           <ListItems itemsList={reviews} />
         </div>
         <div className="flex lg:w-48 items-center flex-col justify-center ">
-          <h5 className="text-xs font-bold">
+          <h3 className="text-sm font-bold tracking-wider">
             <Link href="/magazin">
               <a>{`Magazin`.toUpperCase()}</a>
             </Link>
-          </h5>
+          </h3>
 
           <ListItems itemsList={magazine} />
         </div>
         <div className="flex lg:w-48 items-center flex-col justify-center ">
-          <h5 className=" text-xs items-center font-bold">
+          <h3 className=" text-sm font-bold text-center tracking-wider">
             {`Rechtliches & Kontakt`.toUpperCase()}
-          </h5>
+          </h3>
           <ListItems itemsList={rights} />
         </div>
       </nav>

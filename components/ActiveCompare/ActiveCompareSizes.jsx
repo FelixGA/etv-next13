@@ -5,7 +5,7 @@ import ButtonAnfragen from "../ResultList/ButtonAnfragen";
 
 export default function ActiveCompareSizes({ keys, comparedCars }) {
   const [columns, setColumns] = useState([]);
-  console.log(comparedCars);
+  // console.log(comparedCars);
   let testResultArr = comparedCars.map((test) => test.rating);
 
   useEffect(() => {
@@ -39,7 +39,6 @@ export default function ActiveCompareSizes({ keys, comparedCars }) {
         carValues.push(`${entry.value} ${entry.baseUnit}`);
       }
       columns.push(carValues);
-      console.log(columns);
     }
     /* Main keys push to position 8 for calculating the total weight */
 

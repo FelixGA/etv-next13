@@ -50,7 +50,7 @@ export default function activeCompare(props) {
   const [toggle, setToggle] = useState(true);
 
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
-  console.log(comparedCars);
+  // console.log(comparedCars);
   let typeClass = { key: getCars[0]?.typeClass };
 
   return (
