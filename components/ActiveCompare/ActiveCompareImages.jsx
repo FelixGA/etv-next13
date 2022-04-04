@@ -16,7 +16,7 @@ export default function ActiveCompareImages({ comparedCars }) {
         </button>
 
         <div className="relative cursor-pointer invisible">
-          <a>
+          <a className="w-full">
             <Image
               className="rounded-md md:rounded-lg "
               src={image}

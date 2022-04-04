@@ -77,7 +77,7 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
           <div
             className={
               index !== 0
-                ? "pl-4 xl:pl-8 bg-grey-border h-20 flex items-center px-1"
+                ? "pl-3 xl:pl-8 bg-grey-border h-20 flex items-center justify-start pr-1"
                 : ""
             }
           >

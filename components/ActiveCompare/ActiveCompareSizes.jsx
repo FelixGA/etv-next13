@@ -64,7 +64,7 @@ export default function ActiveCompareSizes({ keys, comparedCars }) {
           {col.map((value, index) => (
             <>
               {index == 0 && (
-                <div className="col-span-full row-span-full">
+                <div className="col-span-full row-span-full" key={index}>
                   {colIndex == 0 ? (
                     <>
                       <p className="h-16 font-bold text-blue-extra pl-4 lg:pl-8 pt-5 text-2xl ">
