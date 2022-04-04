@@ -1,6 +1,6 @@
 ---
 title: ARI-458-Koffer
-slug: ari-458-koffer-elektrotransporter-mit-aufbau
+slug: ari-458-koffer
 relatedCars: ari-458-koffer-elektrotransporter-mit-aufbau
 youtubeLink: bitte auffuelen
 category: Koffer

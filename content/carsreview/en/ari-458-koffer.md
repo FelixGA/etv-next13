@@ -1,6 +1,7 @@
 ---
 title: ARI-458-Koffer
-slug: ari-458-koffer-elektrotransporter-mit-aufbau
+slug: ari-458-koffer
+relatedCars: ari-458-koffer-elektrotransporter-mit-aufbau
 category: Koffer
 publishedAt: 03/02/2022
 description: bitte fuer SEO auffuelen bitte fuer SEO auffuelen bitte fuer SEO
