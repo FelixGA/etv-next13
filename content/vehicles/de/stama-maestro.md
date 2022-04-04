@@ -1,6 +1,6 @@
 ---
 title: Stama Maestro MTN
-name: stama-maestro
+name: stama-maestro-mtn
 price: 35450
 relatedBlogs: nur beispiel
 relatedReviews: stama-maestro-mtn
@@ -126,7 +126,7 @@ loadingVolume:
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "3"
+  value: "3635"
   key: Länge
   baseUnit: mm
 carSizesWidth:
@@ -135,7 +135,7 @@ carSizesWidth:
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "2050"
+  value: "1"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
