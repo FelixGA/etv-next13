@@ -1,6 +1,7 @@
 ---
 title: ein titel
 slug: goupil-g2-testbericht-von-elektrotransporter-vergleich
+relatedCars: goupil-g2-pritsche
 youtubeLink: https://www.youtube.com/watch?v=TO-NSxOFGLo
 category: Pritsche
 publishedAt: ""
