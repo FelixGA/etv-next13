@@ -1,8 +1,18 @@
 ---
 title: Goupil G2 Pritsche
 name: goupil-g2-beispiel
+relatedBlogs:
+  title: " BEISPIEL & Fahrzeugvarianten "
+  content: >-
+    lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dol
+
+
+    or sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.dyjtyjd
+  image: /images/anschluss@2x.png
+relatedReviews: beispiel-bitte-nicht-anfassen
 description: Der Goupil ist ein Elektrotransporter der Klasse L7e mit 2
   Sitzplätzen, 500 kg Nutzlast und 30 km/h Höchstgeschwindigkeit.
+src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
 loadingWeight:
   key: Nutzlast
   value: 500

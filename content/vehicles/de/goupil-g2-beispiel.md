@@ -13,7 +13,7 @@ relatedBlogs:
 relatedReviews: beispiel-bitte-nicht-anfassen
 description: Der Goupil ist ein Elektrotransporter der Klasse L7e mit 2
   Sitzplätzen, 500 kg Nutzlast und 30 km/h Höchstgeschwindigkeit.
-src: /images/goupil.jpg
+src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
 category: Pritsche
 typeClass: L7E
 loadingWeight:
