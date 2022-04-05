@@ -109,7 +109,7 @@ loadingVolume:
   height: Höhe
   valueheight: 0
   width: Breite
-  valuewidth: 1020
+  valuewidth: 1000
   valuelength: 1250
   length: Länge
   baseUnit: mm
@@ -131,7 +131,7 @@ loadingVolumeLength:
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1020"
+  value: "1000"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
