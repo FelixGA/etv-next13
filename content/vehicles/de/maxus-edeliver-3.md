@@ -104,46 +104,46 @@ carSizes:
   wheelbase: Radstand
   valuewidth: 1780
   baseUnit: keine Angabe
-  valuelength: 4555
+  valuelength: 4550
   valueheight: 1900
   valuewheelbase: 0
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 0
+  valueheight: 1220
   width: Breite
-  valuewidth: 2078
-  valuelength: 3090
+  valuewidth: 1665
+  valuelength: 2180
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "0"
+  value: "4550"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "0"
+  value: "1780"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "0"
+  value: "1900"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "3090"
+  value: "2180"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "2078"
+  value: "1665"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
+  value: "1220"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "0"
+  value: "2910"
   baseUnit: mm
 ---
 Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der in zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit von 120 km/h.
