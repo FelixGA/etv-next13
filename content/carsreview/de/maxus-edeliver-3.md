@@ -10,43 +10,44 @@ description: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der
   aufnehmen kann.
 src: /images/Maxus-eDeliver-3-Front-2-300x200.jpg
 content:
-  - content: Der EVO Transporter mit Elektroantrieb ist ein Elektrotransporter, der
-      als Pritsche- und Kipper-Version erhältlich ist und kann rund 800
-      Kilogramm Nutzlast aufnehmen. Eine Koffer-Version mit Doppelkabine soll
-      folgen.
+  - content: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der in
+      zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
+      aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit von
+      120 km/h.
     title: Einleitung
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
 
-      Der Transporter von EVO gehört zur Nutzfahrzeug-Klasse N1 und zielt speziell auf den Einsatz in Städte, Parkanlagen und Friedhöfen ab. Ab Werk wird er in drei verschiedenen Aufbau-Varianten geliefert: als Kipper, Pritsche oder als Chassis. Letzteres bezeichnet ein Modell ohne Aufbau, welcher dann von Fahrzeugbau-Firmen individuell angefertigt werden kann. So bieten verschiedene Unternehmen den EVO-Kleintransporter beispielsweise als Müll-Transporter oder Pritsche mit Planenaufbau an.
+      Der chinesische SAIC-Konzern ist einer der größten Fahrzeughersteller der Welt mit verschiedenen Marken, unter anderem MG Rover. Eine weitere Marke ist Maxus, die besonders für SUVs und Nutzfahrzeuge bekannt ist. Im Bereich der Elektrotransporter hat Maxus neben dem großen EV 80 auch den eDeliver 3 im Angebot, einen Kastenwagen in zwei Längen, der speziell auf Lieferfirmen abzielt.
 
 
-      Das  als Pritsche 4,28 Meter lange Fahrzeug basiert auf der optisch baugleichen Version mit Ottomotor. In der elektrischen Variante gibt es keine Motorenauswahl und der EVO wird immer von einem 72 Volt-Aggregat angetrieben. Dafür gibt es bei der Auswahl des Akkus drei Auswahlmöglichkeiten: 10 kWh, 18 kWh sowie 26 kWh Speicherkapazität, wodurch natürlich verschiedene Reichweiten erreicht werden können.
-
-
-      Neben der Standardversion mit einer Kabine für 2 Personen soll ab 2022  auch eine Doppelkabine mit Platz für bis zu 4 Personen erhältlich sein, welche zudem mit einem Kofferaufbau lieferbar ist.
+      Der Maxus eDeliver 3 ist in zwei Längen erhältlich: L1 hat eine Länge von 4,55 Meter, während die Version L2 stolze 60 Zentimeter länger ist. Der Kunde hat zudem die Wahl zwischen zwei Akku-Versionen mit Kapazitäten von 35 bzw. 50 kWh. Beides sind Lithium-Ionen-Batterien.
     title: Konzept & Fahrzeugvarianten
+    image: /images/maxus-edeliver-3-laderaum.jpg
   - content: >-
       ### Laderaum & Flexibilität (3/5)
 
 
-      Mit Kipperaufbau hat der EVO Transporter eine Ladefläche von rund 3,6 m², welche sich aus einer Länge von 2,31 Meter und einer Breite von 1,56 Meter ergeben. Die Seitenwände der Ladefläche haben eine Höhe von 30 Zentimetern. Das Kippen der Aufbaus wird über eine außen befindliche Steuerung per 12 Volt-Batterie bewerkstelligt, welche unabhängig von der Antriebsbatterie arbeitet.
+      In der Kurzversion L1 hat der Laderaum eine Länge von 2,18 Meter, wodurch eine Ladevolumen von 4.800 Liter zur Verfügung steht. Als L2 können Waren und Güter bis zu einer Länge von 2,77 Meter verstaut werden. Insgesamt besitzt der lange Elektrotransporter ein Ladevolumen von 6.300 Liter. Die Beladung wird über zwei Flügeltüren im Heck sowie eine seitliche Schiebetür vollzogen, die Ladekante ist mit 54 Zentimeter angenehm niedrig.
 
 
-      Als klassische Pritsche ist die Ladefläche etwas kleiner und kommt auf eine Länge von 2,24 Meter sowie einer Breite von 1,40 Meter. Die beladbare Fläche beträgt also rund 3,1 m². Die Seitenwände sind hier 5 Zentimeter höher als beim Kipper.
-
-
-      Der EVO Transporter ist auch mit Anhängerkupplung erhältlich und kann dann bis zu 750 Kilogramm ziehen. Die Nutzlast beträgt für die Pritschen-Version rund 825 Kilogramm und dürfte bei den anderen Aufbauten in einem ähnlichen Bereich liegen.
+      Die Zuladung variiert nach Länge des Fahrzeugs: während die kurze Version mit 50 kWh-Akku 830 Kilogramm aufnehmen kann, sind es in der Langversion 865 Kilogramm. Die Anhängelast beträgt 750 Kilogramm gebremst und zwischen 945 und 1015 Kilogramm mit einem ungebremsten Hänger.
     title: Laderaum & Flexibilität
-    image: /images/evo-front.jpg
+    image: ""
   - content: >-
-      ### Antrieb & Aufladung (2/5)
+      ### Antrieb & Aufladung (4/5)
 
 
-      Der Elektromotor des EVO Transporters arbeitet mit einer Spannung von 72 Volt und hat eine Dauerleistung von 15 kW. Er entwickelt ein maximales Drehmoment von 100 Nm und bringt den EVO auf eine Höchstgeschwindigkeit von 70 Km/h. Bei den Batterien handelt es sich um Lithium-Eisenphosphat-Akkus (LiFeP04) handelt, welche über ein an Bord befindliches, separates Ladegerät aufgeladen wird. In der Standard-Variante hat dieser eine Kapazität von 10 kWh, wodurch das Fahrzeug laut Hersteller eine Reichweite von rund 50 Kilometer erreicht. Gegen Aufpreis sind größere Kapazitäten von 18 kWh bzw. 26 kWh verfügbar, wodurch die Reichweite auf 80 Kilometer bzw. 120 Kilometer steigt.
+      Den Antrieb beim Maxus eDeliver 3 übernimmt ein 90 kW-Elektromotor, der ein Drehmoment von 250 Nm bereitstellen kann. Damit erreicht der E-Transporter eine Höchstgeschwindigkeit von 120 km/h, die elektronisch abgeregelt ist, um die Reichweite nicht zu sehr einzuschränken.
+
+
+      Die mögliche Reichweite unterscheidet sich natürlich deutlich bei den beiden Akku-Varianten. Die kombinierte WLTP-Reichweite liegt bei der 35 kWh-Version zwischen 150 und 158 Kilometer, mit großem Akku sind 230 bis 240 Kilometer möglich. Die Verbrauchsangaben liegen zwischen 23,6 und 25,3 kWh auf 100 Kilometer.
+
+
+      Bei den Ladezeiten auf 80% gibt Maxus 6 Stunden für die kleine Batterie und 8 Stunden für die 53 kWh-Variante an. Mit einem Gleichstrom-Schnellladeanschluss soll diese Aufladung in nur 45 Minuten möglich sein.
     title: Antrieb & Aufladung
-    image: /images/evo-lade.jpg
+    image: ""
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
