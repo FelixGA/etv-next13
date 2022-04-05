@@ -32,4 +32,23 @@ consumption:
 power:
   value: "90"
   baseUnit: kw
+seats:
+  value: 2
+rating:
+  value: 3,6
+loadingHeight:
+  value: 540
+  baseUnit: mm
+loadingVolumeTotal:
+  value: 4,80
+  baseUnit: m3
+loadingArea:
+  value: "0"
+  baseUnit: m2
+carSizes:
+  valueheight: 1900
+  valuewidth: 1780
+  valuelength: 4555
+  valuewheelbase: 0
+  baseUnit: keine Angabe
 ---

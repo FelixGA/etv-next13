@@ -66,13 +66,13 @@ power:
   baseUnit: kw
 seats:
   key: Sitzplätze
-  value: 3
+  value: 2
 rating:
-  key: Befriedigend
-  value: 3,0
+  key: Gut
+  value: 3,6
 guarantee:
   key: Garantie Fahrzeug
-  value: 0
+  value: 5
   baseUnit: keine Angabe
 availability:
   key: Verfügbarkeit
@@ -83,29 +83,29 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
-  value: 0
+  value: 8
   baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
-  value: 950
+  value: 540
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 0,00
+  value: 4,80
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 6,42
+  value: "0"
   baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 0
+  valuewidth: 1780
   baseUnit: keine Angabe
-  valuelength: 0
-  valueheight: 0
+  valuelength: 4555
+  valueheight: 1900
   valuewheelbase: 0
   key: Fahrzeugmaße
 loadingVolume:
