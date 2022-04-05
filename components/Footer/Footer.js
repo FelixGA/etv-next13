@@ -29,24 +29,10 @@ const Footer = ({ blogs, reviews }) => {
   ];
 
   return (
-    <footer className="p-10 lg:flex lg:flex-row lg:justify-around print:hidden ">
-      <div className="lg:w-1/4 lg:pt-14 ">
-        <div className="flex flex-row justify-start items-center w-full flex-wrap ">
-          <Image src="/images/etv-logo-final.png" width={60} height={40} />
-          <p className="text-blue-dark text-xs font-bold ">
-            Elektrotransporter
-            <br />
-            Vergleich
-          </p>
-        </div>
-        <p className="p-3 ">
-          Hier könnte noch etwas stehen, was Leute davon überzeugt, dass Ihr
-          richtig gut seid!
-        </p>
-      </div>
-      <nav className="flex mt-10 flex-col sm:flex-row justify-between items-center sm:items-start px-6 ">
+    <footer className="py-10 lg:flex lg:flex-row-reverse lg:justify-around print:hidden ">
+      <nav className="flex mt-10 flex-col sm:flex-row justify-between items-center sm:items-start">
         <div className="flex lg:w-48 items-center flex-col justify-start  ">
-          <h3 className="text-sm font-bold tracking-wider h-10">
+          <h3 className="text-sm font-bold tracking-wider h-6">
             <Link href="/comparePage">
               <a>{`Transporter`.toUpperCase()}</a>
             </Link>
@@ -55,7 +41,7 @@ const Footer = ({ blogs, reviews }) => {
           <ListItems itemsList={reviews} />
         </div>
         <div className="flex lg:w-48 items-center flex-col justify-start ">
-          <h3 className="text-sm font-bold tracking-wider h-10">
+          <h3 className="text-sm font-bold tracking-wider h-6">
             <Link href="/magazin">
               <a>{`Magazin`.toUpperCase()}</a>
             </Link>
@@ -64,12 +50,28 @@ const Footer = ({ blogs, reviews }) => {
           <ListItems itemsList={magazine} />
         </div>
         <div className="flex lg:w-48 items-center flex-col justify-start ">
-          <h3 className=" text-sm font-bold text-center tracking-wider h-10">
+          <h3 className=" text-sm font-bold text-center tracking-wider h-6">
             {`Rechtliches & Kontakt`.toUpperCase()}
           </h3>
           <ListItems itemsList={rights} />
         </div>
       </nav>
+      <div className="lg:w-1/4 lg:pt-14 ">
+        <div className="flex flex-row justify-start items-center flex-wrap pl-2">
+          <Image src="/images/etv-logo-final.png" width={60} height={40} />
+          <p className="text-blue-dark text-xs font-bold ">
+            Elektrotransporter
+            <br />
+            Vergleich
+          </p>
+        </div>
+        <div className="flex ">
+          <p className="px-4">
+            Hier könnte noch etwas stehen, was Leute davon überzeugt, dass Ihr
+            richtig gut seid!
+          </p>
+        </div>
+      </div>
     </footer>
   );
 };
