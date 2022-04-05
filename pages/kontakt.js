@@ -21,18 +21,20 @@ export default function kontakt(props) {
     setValue,
     formState: { errors },
   } = useForm();
-  const onSubmit = async (data, e) => {
-    e.preventDefault();
-    "data", data;
-    console.log(data);
+  const onSubmit =
+    // async
+    (data, e) => {
+      e.preventDefault();
+      "data", data;
+      console.log(data);
 
-    try {
-      const result = await axios.post(`/api/handleForm`, data);
-      // console.log(result);
-    } catch (err) {
-      console.log("error", err.response.data.message);
-    }
-  };
+      // try {
+      //   const result = await axios.post(`/api/handleForm`, data);
+      //   // console.log(result);
+      // } catch (err) {
+      //   console.log("error", err.response.data.message);
+      // }
+    };
 
   const onError = (errors, e) => console.log("errors", errors, e);
   // const watchName = watch("firstName");
