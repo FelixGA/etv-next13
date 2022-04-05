@@ -9,7 +9,7 @@ src: /images/goupil.jpg
 typeClass: L7E
 loadingWeight:
   key: Nutzlast
-  value: 370
+  value: 500
   baseUnit: kg
 curbweight:
   key: Leergewicht
