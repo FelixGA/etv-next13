@@ -71,7 +71,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
           {/* ADDS THE CLASS TYPE AS FIRST LINE */}
           {index == 0 ? (
             <div className="flex items-center  flex-1 bg-grey-lighter h-12 pl-4 lg:pl-8 ">
-              <p className="text-blue-extra text-sm lg:text-lg  ">Klasse</p>
+              <p className="text-blue-extra text-sm lg:text-lg">Klasse</p>
             </div>
           ) : (
             <div className="flex items-center  flex-1 bg-grey-lighter h-12 pl-4 lg:pl-8">
