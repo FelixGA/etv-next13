@@ -18,4 +18,10 @@ rangeLithium:
   value: 150
   maxValue: 240
   baseUnit: km
+chargingTime230V:
+  value: 0
+chargingTimeLithium:
+  value: 6
+chargingTimeFast:
+  value: 0.75
 ---

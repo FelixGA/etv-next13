@@ -39,11 +39,11 @@ chargingTime230V:
   baseUnit: keine Angabe
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 0
+  value: 6
   baseUnit: keine Angabe
 chargingTimeFast:
   key: Schnellladezeit
-  value: 0
+  value: 0.75
   baseUnit: keine Angabe
 batteryCapacityBlei:
   key: Kapazität SLA Akku
