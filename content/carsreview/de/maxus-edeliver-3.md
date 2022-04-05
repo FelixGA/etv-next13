@@ -3,12 +3,12 @@ title: Maxus eDeliver 3
 slug: maxus-edeliver-3
 relatedCars: maxus-edeliver-3
 youtubeLink: bitte auffuelen
-category: Pritsche
+category: Kasten
 publishedAt: 04/01/2022
-description: Der EFA-S E35 ist ein Elektrotransporter auf Basis der Fahrzeuge
-  der russischen Firma GAZ. Das Fahrzeug ist in drei Aufbauvarianten erhältlich
-  und kann als N1-Transporter rund eine Tonne Nutzlast aufnehmen.
-src: /images/evo-pritsche.jpg
+description: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der
+  in zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
+  aufnehmen kann.
+src: /images/Maxus-eDeliver-3-Front-2-300x200.jpg
 content:
   - content: Der EVO Transporter mit Elektroantrieb ist ein Elektrotransporter, der
       als Pritsche- und Kipper-Version erhältlich ist und kann rund 800
