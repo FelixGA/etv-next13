@@ -1,9 +1,6 @@
-import Head from "next/head";
 import getContent from "/utils/getContent";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
-import Blog from "../components/Blog/Blog";
-import fetch from "node-fetch";
+import axios from "axios";
 
 export default function kontakt(props) {
   const emailRegex = RegExp(
@@ -12,10 +9,8 @@ export default function kontakt(props) {
 
   const fullNameRegex = RegExp(/^[a-zA-Z ]{2,30}$/);
   const phoneNumberRegex = RegExp(/^[0-9]{9,15}$/);
-  // const handleSubmit = (e) => {
-  //   alert("Thank you for your message!");
-  //   e.preventDefault();
-  // };
+  const countryRegex = RegExp(/^[a-zA-Z ]{2,30}$/);
+
   const {
     register,
     handleSubmit,
@@ -23,13 +18,22 @@ export default function kontakt(props) {
     setValue,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data, e) => {
+  const onSubmit = async (data, e) => {
     e.preventDefault();
     "data", data;
+    console.log(data);
+
+    try {
+      const result = await axios.post(`/api/handleForm`, data);
+      // console.log(result);
+    } catch (err) {
+      console.log("error", err.response.data.message);
+    }
   };
 
   const onError = (errors, e) => console.log("errors", errors, e);
   // const watchName = watch("firstName");
+
   return (
     <div className="flex flex-col items-center h-screen w-screen">
       <form
@@ -37,7 +41,7 @@ export default function kontakt(props) {
         action="https://api.vercel.com/v6/deployments"
         method="POST"
         onSubmit={handleSubmit(onSubmit, onError)}
-        Content-Type="application/json"
+        // Content-Type="application/json"
         className="flex flex-col items-center w-20 h-24"
       >
         <label for="name">Name:</label>
@@ -53,7 +57,7 @@ export default function kontakt(props) {
 
         <label for="firma">Firma:</label>
         <input
-          {...register("firma", { required: false })}
+          {...register("firma", { required: false, pattern: fullNameRegex })}
           // onChange={(e) => SetGetFirma(e.target.value)}
           id="firma"
           type="string"
@@ -76,7 +80,7 @@ export default function kontakt(props) {
         <label for="Ort">Ort:</label>
 
         <input
-          {...register("city", { required: false })}
+          {...register("city", { required: false, pattern: countryRegex })}
           // onChange={(e) => SetGetLocation(e.target.value)}
           id="city"
           type="string"
@@ -118,7 +122,7 @@ export default function kontakt(props) {
           <p>{errors.firstName && "Name is required"}</p>
           <p> {errors.firma && "Firma is required"}</p>
           <p> {errors.zipcode && "Postleitzahl is required"}</p>
-          <p> {errors.location && "Ort is required"}</p>
+          {/* <p> {errors.city && "Ort is required"}</p> */}
           <p> {errors.email && "Email is required"}</p>
           <p> {errors.phone && "Phone is required"}</p>
           <p> {errors.message && "Message is required"}</p>
@@ -154,16 +158,16 @@ export async function getStaticProps(context) {
     },
   };
 }
-export default async function handler(request, response) {
-  // const res = await fetch('https://...', {
-  //   method: 'POST',
-  //   body: JSON.stringify({
-  //     client_id: process.env.CLIENT_ID,
-  //     client_secret: process.env.CLIENT_SECRET,
-  //   }),
-  //   headers: { 'Content-Type': 'application/json' },
-  // });
+// export default async function handler(request, response) {
+//   const res = await fetch('https://vercel.com/team-ari-motor/elektrotransporter-vergleich/3zavYzjBWxvMY4iqowRdoVgkMi4D', {
+//     method: 'POST',
+//     body: JSON.stringify({
+//       client_id: process.env.CLIENT_ID,
+//       client_secret: process.env.CLIENT_SECRET,
+//     }),
+//     headers: { 'Content-Type': 'application/json' },
+//   });
 
-  const data = await res.json();
-  return response.status(200).json({ data });
-}
+//   const data = await res.json();
+//   return response.status(200).json({ data });
+// }
