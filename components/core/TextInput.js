@@ -8,6 +8,7 @@ export default function TextInput({
   pattern,
   registerData,
   width,
+  required,
 }) {
   const fullNameRegex = RegExp(/^[a-zA-Z ]{2,30}$/);
 
@@ -28,7 +29,7 @@ export default function TextInput({
         // value={props.value || ""}
         // onChange={props.onChange}
         {...register(registerData, {
-          required: true,
+          required: required,
           pattern: { pattern },
         })}
       />

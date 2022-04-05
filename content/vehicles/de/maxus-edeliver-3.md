@@ -17,11 +17,11 @@ loadingWeight:
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 0
+  value: 1445
   baseUnit: keine Angabe
 maxSpeed:
   key: km/h
-  value: 88
+  value: 120
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
@@ -30,49 +30,49 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 200
+  value: 150
   baseUnit: km
-  maxValue: 0
+  maxValue: 240
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
   baseUnit: keine Angabe
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 0
+  value: 6
   baseUnit: keine Angabe
 chargingTimeFast:
   key: Schnellladezeit
-  value: 0
-  baseUnit: keine Angabe
+  value: 45
+  baseUnit: Minuten
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
   baseUnit: " keine Angabe"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "80"
+  value: "35"
   baseUnit: kwh
 batteryIncluded:
-  value: keine Angabe
+  value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "-"
+  value: "24"
   baseUnit: keine Angabe
 power:
   key: Leistung
-  value: min-110/max-110
+  value: "90"
   baseUnit: kw
 seats:
   key: Sitzplätze
-  value: 3
+  value: 2
 rating:
-  key: Befriedigend
-  value: 3,0
+  key: Gut
+  value: 3,6
 guarantee:
   key: Garantie Fahrzeug
-  value: 0
+  value: 5
   baseUnit: keine Angabe
 availability:
   key: Verfügbarkeit
@@ -83,67 +83,67 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
-  value: 0
+  value: 8
   baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
-  value: 950
+  value: 540
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 0,00
+  value: 4,80
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 6,42
+  value: "0"
   baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 0
+  valuewidth: 1780
   baseUnit: keine Angabe
-  valuelength: 0
-  valueheight: 0
+  valuelength: 4550
+  valueheight: 1900
   valuewheelbase: 0
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 0
+  valueheight: 1220
   width: Breite
-  valuewidth: 2078
-  valuelength: 3090
+  valuewidth: 1665
+  valuelength: 2180
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "0"
+  value: "4550"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "0"
+  value: "1780"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "0"
+  value: "1900"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "3090"
+  value: "2180"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "2078"
+  value: "1665"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
+  value: "1220"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "0"
+  value: "2910"
   baseUnit: mm
 ---
 Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der in zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit von 120 km/h.
