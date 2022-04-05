@@ -1,7 +1,7 @@
 ---
 title: Goupil G2 Pritsche
 name: goupil-g2-pritsche
-price: 30000
+price: 19700
 relatedBlogs: beispiel  bitte nicht ändern
 description: Der Goupil ist ein Elektrotransporter der Klasse L7e mit 2
   Sitzplätzen, 500 kg Nutzlast und 30 km/h Höchstgeschwindigkeit.
