@@ -32,7 +32,7 @@ const Footer = ({ blogs, reviews }) => {
     <footer className="py-10 lg:flex lg:flex-row-reverse lg:justify-around print:hidden ">
       <nav className="flex mt-10 flex-col sm:flex-row justify-between items-center sm:items-start">
         <div className="flex lg:w-48 items-center flex-col justify-start  ">
-          <h3 className="text-sm font-bold tracking-wider h-6">
+          <h3 className="text-sm font-bold tracking-wider h-6 sm:h-8">
             <Link href="/comparePage">
               <a>{`Transporter`.toUpperCase()}</a>
             </Link>
@@ -41,7 +41,7 @@ const Footer = ({ blogs, reviews }) => {
           <ListItems itemsList={reviews} />
         </div>
         <div className="flex lg:w-48 items-center flex-col justify-start ">
-          <h3 className="text-sm font-bold tracking-wider h-6">
+          <h3 className="text-sm font-bold tracking-wider h-6 sm:h-8 ">
             <Link href="/magazin">
               <a>{`Magazin`.toUpperCase()}</a>
             </Link>
@@ -50,7 +50,7 @@ const Footer = ({ blogs, reviews }) => {
           <ListItems itemsList={magazine} />
         </div>
         <div className="flex lg:w-48 items-center flex-col justify-start ">
-          <h3 className=" text-sm font-bold text-center tracking-wider h-6">
+          <h3 className=" text-sm font-bold text-center tracking-wider h-6 sm:h-8 ">
             {`Rechtliches & Kontakt`.toUpperCase()}
           </h3>
           <ListItems itemsList={rights} />
