@@ -20,9 +20,11 @@ export default function TextArea({
         }`}
         htmlFor={id}
         rows={4}
-        register={register}
+        {...register(registerData, {
+          required: true,
+        })}
+        type={type}
         id={id}
-        registerData={registerData}
       ></textarea>
     </div>
   );
