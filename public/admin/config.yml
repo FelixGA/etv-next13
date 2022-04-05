@@ -78,6 +78,7 @@ collections:
         name: "relatedCars"
         required: true
         widget: "relation"
+        i18n: duplicate
         collection: "vehicles"
         search_fields: ["title"]
         display_fields: ["title"]
@@ -532,6 +533,7 @@ collections:
         name: "relatedBlogs"
         required: false
         widget: "relation"
+        i18n: duplicate
         collection: "blogs"
         search_fields: ["title"]
         display_fields: ["title"]
@@ -540,6 +542,7 @@ collections:
         name: "relatedReviews"
         required: false
         widget: "relation"
+        i18n: duplicate
         collection: "carsreviews"
         search_fields: ["title"]
         display_fields: ["title"]
