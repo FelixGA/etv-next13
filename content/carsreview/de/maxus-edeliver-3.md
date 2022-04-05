@@ -47,45 +47,42 @@ content:
 
       Bei den Ladezeiten auf 80% gibt Maxus 6 Stunden für die kleine Batterie und 8 Stunden für die 53 kWh-Variante an. Mit einem Gleichstrom-Schnellladeanschluss soll diese Aufladung in nur 45 Minuten möglich sein.
     title: Antrieb & Aufladung
-    image: ""
+    image: /images/maxus-edeliver3-motor.jpg
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
 
-      Besonders angepriesen wird beim EVO Transporter der Wendekreis von nur 6,90 Meter. Dies ist recht beachtlich für ein Fahrzeug von dieser Länge. Erleichtert wird das Rangieren auf so engem Raum noch von einer Servolenkung. Für problemloses Starten an Hängen ist das Fahrzeug mit einem Berganfahrassistenten ausgestattet. 
-
-
-      Für gutes Sehen und Gesehenwerden sorgt ein serienmäßiges LED-Tagfahrlicht sowie Nebelscheinwerfer in der Frontschürze. Und für die Sicherheit der Insassen ist der EVO serienmäßig mit zwei Airbags ausgestattet. In Sachen Unterhaltungselektronik ist laut Hersteller ein Radio mit USB-Anschluss im Preis enthalten. Angaben darüber, ob dies über eine praktische Bluetooth-Funktion (als Freisprechanlage) verfügt, gibt es leider nicht.
+      Der Maxus eDeliver 3 ist ein recht luxuriös ausgestatteter Transporter, der bereits serienmäßig mit einer manuellen Klimaanlage, einem Bordcomputer, einem Radio mit Bluetooth-Funktion und einer Sitzheizung zum Kunden kommt und somit für Lieferfahrer viel Komfort bietet. Die Rückfahrkamera und die Berganfahrhilfe sind weitere kostenlose Details, die den Alltag im eDeliver 3 für Gewerbetreibende deutlich erleichtern sollten. Zusätzliche Optionen sind hingegen rar, so ist nur eine Metallic-Lackierung gegen Aufpreis zu bekommen.
     title: Komfort & Ausstattung
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Der elektrische EVO Transporter ist sehr schmal konzipiert, um auch in Parkanlagen und auf Friedhöfen alle Wege befahren zu können. Zudem ist das Fahrzeug sehr übersichtlich dank großer Fensterflächen und hoher Sitzposition. Über die Höhe der Ladekante oder ein mögliches Fleet Management-System gibt es keine Angaben.
+      Der Maxus eDeliver 3 hat dank der hohen Sitzposition eine gute Übersicht, allerdings ist wie bei den meisten geschlossenen Kastenwagen die Übersicht eingeschränkt. Die Ladekante ist mit 54 Zentimeter angenehm niedrig, wodurch sich der Elektrotransporter einfach per Heck- oder Seitentür beladen lässt. Ein Flottenmanagement-System wird derzeit nicht angeboten.
     title: Bedienung & Fahrbetrieb
-    image: /images/evo-koffer-heck.jpg
+    image: /images/maxus-edliever3-innenraum.jpg
   - content: >-
       ### Umwelt (3/5)
 
 
-      Konkrete Verbrauchsangaben gibt es zum EVO Transporter mit Elektroantrieb leider nicht. In der 10 kWh-Version gibt der Hersteller eine Reichweite von 50 Kilometer an. Gegen Aufpreis sind größere Kapazitäten von 18 kWh bzw. 26 kWh verfügbar mit Reichweiten von 80 Kilometer bzw. 120 Kilometer. Dies entspricht einem ungefähren Energieverbrauch von 20 - 22 kWh auf 100 Kilometer und somit Kosten von 6,00 bis 6,60 Euro bei einem Strompreis von 30 Cent pro kWh. Eine Solaranlage für mehr Reichweite ist nicht verfügbar.
+      Der Energieverbrauch wird bei der 50 kWh-Version mit rund 23 kWh auf 100 Kilometer angegeben. Dies entspricht bei 30 Cent pro kWh ungefähr 6,90 Euro Energiekosten. Ein Solarmodul für eine erweiterte Reichweite wird derzeit leider nicht angeboten.
     title: Umwelt
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie (4/5)
 
 
-      Eine offen ersichtliche Preisliste zum Fahrzeug gibt es nicht. Dies liegt wohl daran, dass es verschiedene Aufbauten gibt, die teils von anderen Fahrzeugbauern übernommen werden. Außerdem richtet sich der EVO Transporter an Gewerbe sowie Kommunen, welche oft einzelne Angebote erhalten je nach Aufbau und Zahl der georderten Fahrzeuge. Der ungefähre Einstiegspreis liegt aber bei rund 30.000 Euro. Auch über die Dauer einer Fahrzeug-Garantie finden sich keine Angaben.
+      Der Maxus eDeliver 3 startet bei 34.990 Euro für die kurze Version mit kleinem Akku, das Topmodell (L2 mit 53 kWh-Akku) kostet exakt 5.000 Euro mehr. Das ist sicher nicht billig, allerdings bekommt man dafür einen leistungsstarken Elektrotransporter mit umfangreicher Ausstattung. Außerdem ist die Herstellergarantie auf das Fahrzeug mit 5 Jahren bzw. 100.000 Kilometer sehr großzügig. Auf den Lithium-Ionen-Akku gibt es sogar 8 Jahre bzw. 160.000 Kilometer Garantie.
     title: Preise & Garantie
   - content: >-
       ### Fazit
 
 
-      Der EVO ist dank der verschiedenen Aufbau-Varianten vielfältig einsetzbar, vom Straßenbau bis zur Landschaftspflege. Sein kleiner Wendekreis ist zudem nützlich in engen Innenstädten und Parkanlagen. Die Ausstattung des Fahrzeugs ist recht umfangreich. Die Reichweite ist leider erst mit der teuersten Akku-Variante höher als 100 Kilometer, weshalb der EVO nicht für große Strecken geeignet ist.
+      Mit dem eDeliver 3 hat Maxus einen kräftigen und komfortablen Kastenwagen im Angebot, der außerdem mit ordentlicher Reichweite und viel Stauraum aufwartet. Wirklich günstig ist er dadurch zwar nicht, allerdings immer noch rund 10.000 Euro preiswerter als ein Mercedes-Benz eVito. Allein das dürfte schon genug Anreiz für einige Käufer sein.
 
 
       ### Gesamtpunktzahl:
 
 
-      3 Sterne
+      3,6 Sterne
     title: Fazit
 ---
