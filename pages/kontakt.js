@@ -82,6 +82,7 @@ export default function kontakt(props) {
           type={"string"}
           pattern={fullNameRegex}
           registerData={"firstName"}
+          required={true}
         />
         <TextInput
           placeholder={"ihr Firmenname"}
@@ -115,9 +116,10 @@ export default function kontakt(props) {
           placeholder={"z.B. max@muster.com"}
           register={register}
           label={"Email:"}
-          id={"email-input"}
+          id={"emailInput"}
           type={"string"}
-          registerData={"email-input"}
+          registerData={"emailInput"}
+          required={true}
         />
         <TextInput
           placeholder={"z.B. 030 - 123 45 67"}
@@ -141,7 +143,7 @@ export default function kontakt(props) {
           <p> {errors.firma && "Firma is required"}</p>
           <p> {errors.zipcode && "Postleitzahl is required"}</p>
           <p> {errors.location && "Ort is required"}</p>
-          <p> {errors.email && "Email is required"}</p>
+          <p> {errors.emailInput && "Email is required"}</p>
           <p> {errors.phone && "Phone is required"}</p>
           <p> {errors.message && "Message is required"}</p>
         </div>
