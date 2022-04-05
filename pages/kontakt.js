@@ -24,11 +24,10 @@ export default function kontakt(props) {
   const onSubmit = async (data, e) => {
     e.preventDefault();
     "data", data;
-    console.log(data);
 
     try {
       const result = await axios.post(`/api/handleForm`, data);
-      // console.log(result);
+      console.log(result);
     } catch (err) {
       console.log("error", err.response.data.message);
     }
