@@ -12,6 +12,7 @@ relatedBlogs:
     Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
+relatedReviews: ari-345-koffer
 description: Der ARI 345 Pritsche ist ein dreirädriges Lastenmoped mit offener
   Fahrerkabine und einer kippbaren Pickup-Ladefläche. Das Fahrzeug ist in drei
   Größen mit bis zu 1,55 Meter Ladelänge und rund 1,8 m² Ladefläche erhältlich.

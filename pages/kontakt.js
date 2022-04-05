@@ -21,20 +21,21 @@ export default function kontakt(props) {
     setValue,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data, e) => {
+  const onSubmit = async (data, e) => {
     e.preventDefault();
     "data", data;
     console.log(data);
 
-    //    try {
-    //   const result = await axios.post(`/api/`, data);
-    //   console.log(result);
-    // } catch (err) {
-    //   console.log("error", err.response.data.message);
-    // }
+    try {
+      const result = await axios.post(`/api/handleForm`, data);
+      // console.log(result);
+    } catch (err) {
+      console.log("error", err.response.data.message);
+    }
   };
 
   const onError = (errors, e) => console.log("errors", errors, e);
+  // const watchName = watch("firstName");
 
   return (
     <div className="flex flex-col items-center ">
@@ -178,3 +179,16 @@ export async function getStaticProps(context) {
     },
   };
 }
+// export default async function handler(request, response) {
+//   const res = await fetch('https://vercel.com/team-ari-motor/elektrotransporter-vergleich/3zavYzjBWxvMY4iqowRdoVgkMi4D', {
+//     method: 'POST',
+//     body: JSON.stringify({
+//       client_id: process.env.CLIENT_ID,
+//       client_secret: process.env.CLIENT_SECRET,
+//     }),
+//     headers: { 'Content-Type': 'application/json' },
+//   });
+
+//   const data = await res.json();
+//   return response.status(200).json({ data });
+// }

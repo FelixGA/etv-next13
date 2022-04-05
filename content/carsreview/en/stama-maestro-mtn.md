@@ -1,6 +1,7 @@
 ---
 title: Stama-Maestro-MTN
 slug: stama-maestro-mtn
+relatedCars: stama-maestro
 youtubeLink: "0"
 category: Pritsche
 publishedAt: 04/04/2022

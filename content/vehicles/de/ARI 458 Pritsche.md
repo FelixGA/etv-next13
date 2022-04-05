@@ -54,7 +54,7 @@ chargingTimeFast:
   baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  baseUnit: " "
+  baseUnit: "- "
   value: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku

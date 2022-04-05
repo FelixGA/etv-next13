@@ -17,6 +17,8 @@ export default function Details(props) {
   const [carItem, SetCarItem] = useState(props.vehicle);
   /* for the "TestBericht" part  */
   const [getTestReview, SetTestReview] = useState(props.getTestReview);
+  /* for the "Testbericht" part  */
+  const [getCarsReview, SetCarsReview] = useState(props.carsreview);
   /* the content for the future related blogs  */
   const [getBlogContext, SetGetBlogContext] = useState(props.relatedBlog);
   /* to make the Page change after clicking next/link */
@@ -27,10 +29,10 @@ export default function Details(props) {
     SetCarItem(props.vehicle);
     SetGetBlogContext(props.relatedBlog);
     SetTestReview(props.getTestReview);
+    SetCarsReview(props.carsreview);
   }, [props]);
-  console.log("getBlogContext", getBlogContext);
-  console.log("getTestReview", getTestReview);
-  console.log("carItem", carItem);
+  // console.log("getCarsReview", getCarsReview.slug);
+
   return (
     <>
       {/* image and rating section */}
@@ -44,6 +46,7 @@ export default function Details(props) {
         carItem={carItem}
         getBlogContext={getBlogContext}
         getTestReview={getTestReview}
+        getCarsReview={getCarsReview}
       />
       {/* slider  */}
       <TopSlider getCars={getCars} />
@@ -72,16 +75,33 @@ export async function getStaticProps(context) {
   /* get related reviews*/
   let carsreviews = await getContent("carsreview", context.locale);
 
-  let carsreview = await getContentBySlug(
+  // let carsreview = await getContentBySlug(
+  //   "carsreview",
+  //   context.params.cartitle,
+  //   context.locale
+  // );
+  let carsreview = carsreviews.find(
+    (item) =>
+      context.params.cartitle == item.relatedCars ||
+      context.params.cartitle.includes(item.slug)
+  )
+    ? carsreviews.find(
+        (item) =>
+          context.params.cartitle == item.relatedCars ||
+          context.params.cartitle.includes(item.slug)
+      )
+    : null;
+
+  console.log(
     "carsreview",
-    context.params.cartitle,
-    context.locale
+    carsreviews.find((item) => item.relatedCars == "evo-elektro-pritsche")
+      .relatedCars
   );
 
   /* catching errors in case there is no carsreview yet */
   let getTestReview = null;
 
-  if (carsreview.source !== undefined) {
+  if (carsreview !== undefined && carsreview !== null) {
     /* serializing the array with mdx */
     getTestReview = await Promise.all(
       carsreview?.content.map((item, index) => {
@@ -113,6 +133,7 @@ export async function getStaticProps(context) {
       vehicles,
       relatedBlog,
       getTestReview,
+      carsreview,
       carsreviews,
       params: context.params,
       blogs,
