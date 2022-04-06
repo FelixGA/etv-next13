@@ -1,7 +1,7 @@
 import TextArea from "../core/TextArea";
 import TextInput from "../core/TextInput";
 import { useForm } from "react-hook-form";
-export default function Form() {
+export default function Form(props) {
   const emailRegex = RegExp(
     /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
   );
@@ -21,13 +21,6 @@ export default function Form() {
     e.preventDefault();
     "data", data;
     console.log(data);
-
-    //    try {
-    //   const result = await axios.post(`/api/`, data);
-    //   console.log(result);
-    // } catch (err) {
-    //   console.log("error", err.response.data.message);
-    // }
   };
 
   const onError = (errors, e) => console.log("errors", errors, e);
@@ -38,8 +31,7 @@ export default function Form() {
       // action="https://api.vercel.com/v6/deployments"
       method="POST"
       onSubmit={handleSubmit(onSubmit, onError)}
-      // content-type="application/json"
-      className="flex flex-col items-center justify-center w-full bg-white z-90"
+      className="flex flex-col items-center justify-center w-fit bg-white rounded-md p-8"
     >
       <TextInput
         placeholder={"z.B. Max Muster"}
@@ -115,6 +107,7 @@ export default function Form() {
         <p> {errors.message && "Message is required"}</p>
       </div>
       <button
+        onClick={() => props.setOpen(false)}
         type="submit"
         className="bg-blue-darker text-white h-auto w-64 xs:w-96 rounded-lg py-2 mb-0 sm:mb-8"
       >

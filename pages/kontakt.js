@@ -8,7 +8,8 @@ import Form from "../components/repeated/Form";
 
 export default function kontakt(props) {
   return (
-    <div className="flex flex-col items-center ">
+    // <div className="relative h-screen">
+    <div className="flex flex-col items-center">
       <div className="pt-8 flex justify-center">
         <p className="text-2xl md:text-3xl font-bold sm:w-[60%] md:w-[80%] text-center px-4">
           Erhalten Sie jetzt Ihr Angebot
@@ -37,17 +38,11 @@ export default function kontakt(props) {
           />
         </div>
       </div>
-      <Form
-      // handleSubmit={handleSubmit}
-      // register={register}
-      // onSubmit={onSubmit}
-      // onError={onError}
-      // emailRegex={emailRegex}
-      // fullNameRegex={fullNameRegex}
-      // phoneNumberRegex={phoneNumberRegex}
-      // countryRegex={countryRegex}
-      />
+      <div className="">
+        <Form />
+      </div>
     </div>
+    // </div>
   );
 }
 

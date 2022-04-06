@@ -26,9 +26,9 @@ export default function Layout(props) {
     >
       <Header />
       {/* {openForm && ( */}
-      <div className="relative top-20 left-20 ">
+      {/* <div className="relative top-20 left-20 ">
         <Form />
-      </div>
+      </div> */}
       {/* )} */}
       <main>{props.children}</main>
       <Footer blogs={blogs} reviews={reviews} />
