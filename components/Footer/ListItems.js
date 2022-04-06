@@ -3,7 +3,7 @@ import Link from "next/link";
 const ListItems = (props) => {
   props.itemsList;
   return (
-    <ul className="flex flex-col justify-between items-center pb-8 pt-2 text-black px-2">
+    <ul className="flex flex-col justify-between items-center pt-2 text-black px-8 pb-4">
       {props.itemsList
         ?.map((blog, index) => (
           <li className="my-1 flex justify-between items-center" key={index}>

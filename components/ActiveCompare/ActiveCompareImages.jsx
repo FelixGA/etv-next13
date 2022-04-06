@@ -6,7 +6,7 @@ export default function ActiveCompareImages({ comparedCars }) {
   return (
     <>
       {/* PLACEHOLDER */}
-      <div className="relative h-full bg-grey-lighter p-4 pl-8 min-w-[160px]">
+      <div className="relative h-full bg-grey-lighter lg:pl-8 min-w-[160px]">
         <button className="text-sm bg-white w-52 h-10 rounded-md text-blue-darker absolute hidden lg:block top-4 left-8">
           <Link href="/comparePage">
             <a className="visited:text-blue-darker">
@@ -36,7 +36,7 @@ export default function ActiveCompareImages({ comparedCars }) {
       </div>
       {comparedCars?.map((item, index) => (
         <div
-          className="relative h-full bg-grey-lighter p-4 pl-8 min-w-[160px]"
+          className="relative h-full bg-grey-lighter p-4 sm:pl-10 min-w-[160px]"
           key={index}
         >
           <div className="relative cursor-pointer ">

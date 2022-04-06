@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+
 export default function TextArea({
   register,
   label,
@@ -9,8 +11,11 @@ export default function TextArea({
   registerData,
   width,
 }) {
+  const router = useRouter();
   return (
-    <div className="text-left mb-4">
+    <div
+      className={router.pathname == "/kontakt" ? "text-left mb-4" : "hidden"}
+    >
       <label htmlFor={id} className="text-blue-lighter font-bold py-2">
         {label}
       </label>

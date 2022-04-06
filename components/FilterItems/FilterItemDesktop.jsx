@@ -38,7 +38,7 @@ function FilterItemDesktop({ item }) {
     <>
       {/* truncate state */}
       <div
-        className="cursor-pointer relative z-50 bg-white w-full h-18 flex items-center"
+        className="cursor-pointer relative z-40 bg-white w-full h-18 flex items-center"
         onClick={() => {
           dispatch({
             type: "truncate",

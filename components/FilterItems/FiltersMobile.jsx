@@ -40,7 +40,7 @@ function FiltersMobile({ getContent }) {
     {
       id: 1,
       category: "rangeLithiums",
-      title: getContent.content[1].markdown.split(", ")[1],
+      title: "Reichweite",
       image: image,
       options: [
         {
@@ -76,7 +76,7 @@ function FiltersMobile({ getContent }) {
     {
       id: 2,
       category: "loadingWeights",
-      title: getContent.content[1].markdown.split(", ")[2],
+      title: "Zuladung",
 
       image: image2,
       options: [
@@ -112,8 +112,7 @@ function FiltersMobile({ getContent }) {
     },
     {
       id: 3,
-      title: getContent.content[1].markdown.split(", ")[3],
-
+      title: "Hochgeschwindigkeit",
       category: "maxSpeeds",
       image: image3,
       options: [
@@ -145,7 +144,7 @@ function FiltersMobile({ getContent }) {
     },
     {
       id: 5,
-      title: getContent.content[1].markdown.split(", ")[4],
+      title: "Ladezeit",
       category: "chargingTimeLithiums",
       image: image6,
       options: [
@@ -177,7 +176,7 @@ function FiltersMobile({ getContent }) {
     },
     {
       id: 4,
-      title: getContent.content[1].markdown.split(", ")[5],
+      title: "Aufbautyp",
       category: "categorys",
       image: image5,
       options: [
@@ -213,7 +212,7 @@ function FiltersMobile({ getContent }) {
     {
       id: 1,
       category: "prices",
-      title: getContent.content[1].markdown.split(", ")[0],
+      title: "Preis",
       image: image4,
       options: [
         {
