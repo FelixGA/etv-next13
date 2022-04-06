@@ -7,7 +7,7 @@ let apiToken = defaultClient.authentications.api_key;
 apiToken.apiKey = "f7bd272970fd0a0e33611f38cdb3fc7bf41b7c75";
 
 module.exports = async (request, response) => {
-  console.log("request", request.body);
+  // console.log("request", request.body);
 
   //   console.log("response", response);
   const api = new pipedrive.DealsApi();
@@ -41,7 +41,7 @@ module.exports = async (request, response) => {
   } catch (error) {
     console.log("error is", error);
   }
-  console.log("deal", deal);
+  // console.log("deal", deal);
   response.send(deal.success);
   return deal;
 };
