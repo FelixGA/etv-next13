@@ -22,6 +22,7 @@ function ButtonAnfragen() {
           setDisabled(true);
           setOpen(true);
         }}
+        onSubmit={() => setOpen(false)}
         className={
           router.pathname == "/activeCompare"
             ? "relative bg-orange-lighter hover:bg-yellow-light text-blue-dark font-bold text-sm md:text-md xl:tracking-wide rounded w-32 md:w-96 h-8 sm:h-10 disabled:bg-grey-light mx-1"
