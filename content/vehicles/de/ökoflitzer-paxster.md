@@ -1,7 +1,7 @@
 ---
 title: Ökoflitzer Paxster
 name: ökoflitzer-paxster
-price: 140000
+price: 14000
 relatedBlogs: nur beispiel
 description: mmmmm
 src: /images/paxter-bild.jpg
