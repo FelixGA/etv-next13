@@ -43,7 +43,7 @@ export default function Form(props) {
       // action="https://api.vercel.com/v6/deployments"
       method="POST"
       onSubmit={handleSubmit(onSubmit, onError)}
-      className="flex flex-col items-center justify-center w-fit bg-white rounded-md p-8 sm:p-0"
+      className="flex flex-col items-center justify-center w-fit bg-white rounded-md p-8 shadow-lg"
     >
       <TextInput
         placeholder={"z.B. Max Muster"}
