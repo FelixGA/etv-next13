@@ -40,45 +40,42 @@ content:
       ### Antrieb & Aufladung (4/5)
 
 
-      Den Antrieb beim Maxus eDeliver 3 übernimmt ein 90 kW-Elektromotor, der ein Drehmoment von 250 Nm bereitstellen kann. Damit erreicht der E-Transporter eine Höchstgeschwindigkeit von 120 km/h, die elektronisch abgeregelt ist, um die Reichweite nicht zu sehr einzuschränken.
+      Der Elektromotor des Maxus EV 80 leistet satte 100 kW bei einem maximalen Drehmoment von 320 Nm. Der Maxus EV 80 hat also ordentlich Kraft unter der Haube. Das bereits leer 2,5 Tonnen wiegende Fahrzeug wird dadurch in 24 Sekunden von 0 auf 100 Km/h gebracht und erreicht eine Höchstgeschwindigkeit von 100 Km/h. 
 
 
-      Die mögliche Reichweite unterscheidet sich natürlich deutlich bei den beiden Akku-Varianten. Die kombinierte WLTP-Reichweite liegt bei der 35 kWh-Version zwischen 150 und 158 Kilometer, mit großem Akku sind 230 bis 240 Kilometer möglich. Die Verbrauchsangaben liegen zwischen 23,6 und 25,3 kWh auf 100 Kilometer.
-
-
-      Bei den Ladezeiten auf 80% gibt Maxus 6 Stunden für die kleine Batterie und 8 Stunden für die 53 kWh-Variante an. Mit einem Gleichstrom-Schnellladeanschluss soll diese Aufladung in nur 45 Minuten möglich sein.
+      Als Energiespeicher agiert ein Lithium-Ionen-Akku mit einer Kapazität von 56 kWh. Dieser kann über einen seitlichen 30 kW Wechselstrom-Lader oder einen 7,4 kW Gleichstrom-Lader mit Energie versorgt werden. Die Reichweite gibt der Hersteller mit 192 Kilometer für den niedrigeren Maxus und 182 Kilometer für die hohe Version an. Ob diese Werte mit Beladung oder auch im Stadtverkehr zu erreichen sind, ist allerdings fraglich. Die Ladezeiten werden von SAIC mit 8,5 Stunden (Gleichstrom) und recht eindrucksvollen 2,5 Stunden (CCS-Schnellladung mit Wechselstrom) angegeben. Auch hier ist aber anzumerken, dass ein Praxistest zeigen muss, ob diese Werte realistisch sind.
     title: Antrieb & Aufladung
-    image: /images/maxus-edeliver3-motor.jpg
+    image: ""
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung (3/5)
 
 
-      Der Maxus eDeliver 3 ist ein recht luxuriös ausgestatteter Transporter, der bereits serienmäßig mit einer manuellen Klimaanlage, einem Bordcomputer, einem Radio mit Bluetooth-Funktion und einer Sitzheizung zum Kunden kommt und somit für Lieferfahrer viel Komfort bietet. Die Rückfahrkamera und die Berganfahrhilfe sind weitere kostenlose Details, die den Alltag im eDeliver 3 für Gewerbetreibende deutlich erleichtern sollten. Zusätzliche Optionen sind hingegen rar, so ist nur eine Metallic-Lackierung gegen Aufpreis zu bekommen.
+      An sich ist die Ausstattung des Maxus EV 80 sehr umfangreich. Ohne Aufpreis sind bereits eine Klimaanlage, Doppelairbags, ESP, elektrische Fensterheber und ein Radio mit MP3-Funktion enthalten. Letzteres kann gegen Aufpreis noch mit einem 10-Zoll-Monitor versehen werden.
     title: Komfort & Ausstattung
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Der Maxus eDeliver 3 hat dank der hohen Sitzposition eine gute Übersicht, allerdings ist wie bei den meisten geschlossenen Kastenwagen die Übersicht eingeschränkt. Die Ladekante ist mit 54 Zentimeter angenehm niedrig, wodurch sich der Elektrotransporter einfach per Heck- oder Seitentür beladen lässt. Ein Flottenmanagement-System wird derzeit nicht angeboten.
+      DIe üppigen Maße des Maxus EV 80 sorgen für viel Ladevolumen, schränken seine Eignung für enge Innenstädte aber deutlich ein. Dies gilt auch für den Wendekreis von knapp 15 Meter. Wenn aber genug Platz da ist, entfaltet das Fahrzeug natürlich seine Packer-Qualitäten, welche durch praktische, serienmäßige Details wie Laderaumbeleuchtung, ein beschichteter Boden oder Zurrösen unterstrichen werden.
     title: Bedienung & Fahrbetrieb
-    image: /images/maxus-edliever3-innenraum.jpg
+    image: /images/maxus-ev80-innenraum.jpg
   - content: >-
       ### Umwelt (3/5)
 
 
-      Der Energieverbrauch wird bei der 50 kWh-Version mit rund 23 kWh auf 100 Kilometer angegeben. Dies entspricht bei 30 Cent pro kWh ungefähr 6,90 Euro Energiekosten. Ein Solarmodul für eine erweiterte Reichweite wird derzeit leider nicht angeboten.
+      Konkrete Angabe zum Energieverbrauch des Maxus EV 80 gibtes nicht. Die Reichweite von 154 Kilometer mit einem 56 kWh-Akku entspricht aber einem ungefähren Verbrauch von 27,5 kWh auf 100 Kilometer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke also rund 8,25 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie (5/5)
 
 
-      Der Maxus eDeliver 3 startet bei 34.990 Euro für die kurze Version mit kleinem Akku, das Topmodell (L2 mit 53 kWh-Akku) kostet exakt 5.000 Euro mehr. Das ist sicher nicht billig, allerdings bekommt man dafür einen leistungsstarken Elektrotransporter mit umfangreicher Ausstattung. Außerdem ist die Herstellergarantie auf das Fahrzeug mit 5 Jahren bzw. 100.000 Kilometer sehr großzügig. Auf den Lithium-Ionen-Akku gibt es sogar 8 Jahre bzw. 160.000 Kilometer Garantie.
+      Die Preise für den Maxus EV 80 sind leider nicht offen einsehbar, der Einstiegspreis des Fahrzeugs liegt aber bei 39.990 Euro netto, immerhin rund 20.000 Euro weniger als ein vergleichbarer Renault Master Z.E. Der EV 80 kann außerdem gemietet werden für monatlich 700 Euro aufwärts. Bei der Garantie zeigt sich der chinesische Hersteller recht großzügig. Neben einer dreijährigen Fahrzeuggarantie gibt es ganze 5 Jahre auf das Akkupaket. Sollte das Fahrzeug allerdings vorher die 100.000 Kilometer überschreiten, verfallen beide Garantien.
     title: Preise & Garantie
   - content: >-
       ### Fazit
 
 
-      Mit dem eDeliver 3 hat Maxus einen kräftigen und komfortablen Kastenwagen im Angebot, der außerdem mit ordentlicher Reichweite und viel Stauraum aufwartet. Wirklich günstig ist er dadurch zwar nicht, allerdings immer noch rund 10.000 Euro preiswerter als ein Mercedes-Benz eVito. Allein das dürfte schon genug Anreiz für einige Käufer sein.
+      Wie viele Fahrzeuge chinesischer Hersteller versucht auch der Maxus EV 80 mit hoher Funktionalität und einem niedrigen Preis die Konkurrenz zu überholen. Seine kräftiger Elektromotor, das hohe Ladevolumen und die preiswerte Anschaffung sind sicherlich für viele größere Unternehmen sehr attraktiv. Für innerstädtische und kleinere Betriebe dürfte das Fahrzeug aber wohl zu groß und ungelenkig sein.
 
 
       ### Gesamtpunktzahl:
