@@ -10,8 +10,10 @@ export default function TextArea({
   pattern,
   registerData,
   width,
+  required,
 }) {
   const router = useRouter();
+  router.pathname == "/kontakt" ? (required = true) : (required = false);
   return (
     <div
       className={router.pathname == "/kontakt" ? "text-left mb-4" : "hidden"}
@@ -26,7 +28,7 @@ export default function TextArea({
         htmlFor={id}
         rows={4}
         {...register(registerData, {
-          required: true,
+          required: required,
         })}
         type={type}
         id={id}
