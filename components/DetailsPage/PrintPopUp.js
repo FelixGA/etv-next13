@@ -32,7 +32,7 @@ const PrintPopUp = (props) => {
             </p>
           </div>
           <div className=" mr-2 md:mr-6 pb-1">
-            <ButtonAnfragen />
+            <ButtonAnfragen carItem={carItem.title} />
           </div>
         </div>
       </div>

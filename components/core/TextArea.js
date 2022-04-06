@@ -10,8 +10,10 @@ export default function TextArea({
   pattern,
   registerData,
   width,
+  carItem,
 }) {
   const router = useRouter();
+  console.log(carItem);
   return (
     <div
       className={router.pathname == "/kontakt" ? "text-left mb-4" : "hidden"}
@@ -28,6 +30,7 @@ export default function TextArea({
         {...register(registerData, {
           required: true,
         })}
+        defaultValue={carItem ? carItem : " -"}
         type={type}
         id={id}
       ></textarea>

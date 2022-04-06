@@ -19,7 +19,7 @@ module.exports = async (request, response) => {
   try {
     deal = await api.addDeal({
       title: `ETV ${request.body.firstName} ${
-        request.body.message ? request.body.message.substring(0, 10) : "Auto"
+        request.body.message ? request.body.message.substring(0, 20) : "Auto"
       }`,
       // summery
       fb07b001b07303f14b2ca37cd10cf492a60d3399: `Name:

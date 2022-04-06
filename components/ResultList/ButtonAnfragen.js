@@ -5,8 +5,9 @@ import { useRouter } from "next/router";
 import Form from "../repeated/Form";
 import Modal from "../core/Modal";
 
-function ButtonAnfragen() {
+function ButtonAnfragen({ carItem }) {
   /* HOOKS */
+
   const router = useRouter();
   const [disabled, setDisabled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -14,7 +15,7 @@ function ButtonAnfragen() {
   return (
     <div className="relative">
       <Modal open={open} setOpen={setOpen}>
-        <Form open={open} setOpen={setOpen} />
+        <Form open={open} setOpen={setOpen} carItem={carItem} />
       </Modal>
 
       <button

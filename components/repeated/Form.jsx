@@ -108,6 +108,7 @@ export default function Form(props) {
         id={"message"}
         type={"textarea"}
         registerData={"message"}
+        carItem={props.carItem}
       />
 
       <div className="text-black">
