@@ -5,36 +5,37 @@ relatedCars: maxus-ev-80
 youtubeLink: https://www.youtube.com/watch?v=v2ww9LqV2vA
 category: Kasten
 publishedAt: 04/01/2022
-description: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der
-  in zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
-  aufnehmen kann.
-src: /images/Maxus-eDeliver-3-Front-2-300x200.jpg
+description: Der Maxus EV 80 ist ein großer Elektrotransporter, der als
+  Kastenwagen 910 Kilogramm Nutzlast aufnehmen kann und eine
+  Höchstgeschwindigkeit von 100 km/h erreicht. Das Fahrzeug ist ebenso als
+  Chassis-Version ohne Aufbau verfügbar.
+src: /images/maxus-ev80-kasten-front.jpg
 content:
-  - content: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der in
-      zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
-      aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit von
-      120 km/h.
+  - content: Der Maxus EV 80 ist ein großer Elektrotransporter, der als Kastenwagen
+      910 Kilogramm Nutzlast aufnehmen kann und eine Höchstgeschwindigkeit von
+      100 km/h erreicht. Das Fahrzeug ist ebenso als Chassis-Version ohne Aufbau
+      verfügbar.
     title: Einleitung
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
 
-      Der chinesische SAIC-Konzern ist einer der größten Fahrzeughersteller der Welt mit verschiedenen Marken, unter anderem MG Rover. Eine weitere Marke ist Maxus, die besonders für SUVs und Nutzfahrzeuge bekannt ist. Im Bereich der Elektrotransporter hat Maxus neben dem großen EV 80 auch den eDeliver 3 im Angebot, einen Kastenwagen in zwei Längen, der speziell auf Lieferfirmen abzielt.
+      Seit 2018 konnte man den großen Elektrotransporter SAIC Maxus EV 80 bereits auf deutschen Straßen sehen. Damals wurden rund 200 Fahrzeuge über eine Autovermietung in den Straßenverkehr gebracht. Im Jahr 2020 folgte der freie Verkauf des Modells vom größten chinesischen Hersteller SAIC, zu dem unter anderem SSangyong gehört. 
 
 
-      Der Maxus eDeliver 3 ist in zwei Längen erhältlich: L1 hat eine Länge von 4,55 Meter, während die Version L2 stolze 60 Zentimeter länger ist. Der Kunde hat zudem die Wahl zwischen zwei Akku-Versionen mit Kapazitäten von 35 bzw. 50 kWh. Beides sind Lithium-Ionen-Batterien.
+      Der Maxus EV 80 ist als Kastenwagen in zwei Größen erhältlich, wobei diese sich nur in der Höhe unterscheiden. Außerdem ist das Fahrzeug als “Chassis Cab” ohne Aufbau erhältlich. Dieses Modell kann dann von Fahrzeugbaufirmen mit eigenen Aufbauten versehen werden. In Sachen Antrieb und Batterie gibt es keine Auswahlmöglichkeiten, alle Modelle kommen mit einem 92 kW starken Elektromotor zum Kunden, der durch einen 56 kWh Akku gespeist wird.
     title: Konzept & Fahrzeugvarianten
-    image: /images/maxus-edeliver-3-laderaum.jpg
+    image: /images/maxus-ev80-chassis.jpg
   - content: >-
       ### Laderaum & Flexibilität (3/5)
 
 
-      In der Kurzversion L1 hat der Laderaum eine Länge von 2,18 Meter, wodurch eine Ladevolumen von 4.800 Liter zur Verfügung steht. Als L2 können Waren und Güter bis zu einer Länge von 2,77 Meter verstaut werden. Insgesamt besitzt der lange Elektrotransporter ein Ladevolumen von 6.300 Liter. Die Beladung wird über zwei Flügeltüren im Heck sowie eine seitliche Schiebetür vollzogen, die Ladekante ist mit 54 Zentimeter angenehm niedrig.
+      Der Maxus EV 80 hat eine Länge von 5,70 Meter und eine Breite von 2,00 Meter sowie einen Radstand von 3,85 Meter. In Sachen Fahrzeughöhe kann der Kunde zwischen zwei Varianten wählen: Dem “H2 Mitteldach” mit 2,35 Meter und dem “H2 Hochdach” mit 2,55 Meter Höhe. Dadurch ergeben sich natürlich auch unterschiedliche Laderaumhöhen von 1,74 Meter und 1,94 Meter. Mit der Laderaumlänge von 3,15 Meter und einer Breite von 1,80 Meter ergibt sich so ein Gesamtvolumen von 10,2 m³ für das “Mitteldach” sowie 11,5 m³ für die “Hochdach”-Variante. 
 
 
-      Die Zuladung variiert nach Länge des Fahrzeugs: während die kurze Version mit 50 kWh-Akku 830 Kilogramm aufnehmen kann, sind es in der Langversion 865 Kilogramm. Die Anhängelast beträgt 750 Kilogramm gebremst und zwischen 945 und 1015 Kilogramm mit einem ungebremsten Hänger.
+      Die Be- und Entladung erfolgt über zwei geteilte Hecktüren und eine seitliche Schiebetür, wobei die Ladekante mit 56 Zentimetern auf der für diese Fahrzeuge üblichen Höhe liegt. Die Nutzlast beträgt 955 Kilogramm für die niedrigere Variante und 885 Kilogramm für den “Hochdach”-Maxus. Die niedrigere Nutzlast der größeren Variante liegt am höheren Leergewicht und der 3,5-Tonnen-Grenze. Mit der optional verfügbaren Anhängerkupplung darf der EV 80 gebremste Anhänger bis 1.200 Kilogramm und ungebremste bis 750 Kilogramm ziehen.
     title: Laderaum & Flexibilität
-    image: ""
+    image: /images/maxus-ev80-kasten-laderaum.jpg
   - content: >-
       ### Antrieb & Aufladung (4/5)
 
