@@ -39,30 +39,30 @@ chargingTime230V:
   baseUnit: keine Angabe
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 6
+  value: 8.5
   baseUnit: keine Angabe
 chargingTimeFast:
   key: Schnellladezeit
-  value: 45
-  baseUnit: Minuten
+  value: 2.5
+  baseUnit: keine Angabe
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
   baseUnit: " keine Angabe"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "35"
+  value: "56"
   baseUnit: kwh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "24"
+  value: "0"
   baseUnit: keine Angabe
 power:
   key: Leistung
-  value: "90"
+  value: "92"
   baseUnit: kw
 seats:
   key: Sitzplätze

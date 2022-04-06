@@ -1,6 +1,7 @@
 ---
 name: maxus-ev-80
 price: 53400
+relatedBlogs: nur beispiel
 src: /images/maxus-ev80-kasten-front.jpg
 loadingWeight:
   value: 910
@@ -15,4 +16,16 @@ rangeLithium:
   value: 156
   maxValue: 190
   baseUnit: km
+chargingTimeLithium:
+  value: 8.5
+chargingTimeFast:
+  value: 2.5
+batteryCapacityLithium:
+  value: "56"
+  baseUnit: kwh
+consumption:
+  baseUnit: keine Angabe
+power:
+  value: "92"
+  baseUnit: kw
 ---
