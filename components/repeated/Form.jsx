@@ -1,7 +1,12 @@
 import TextArea from "../core/TextArea";
 import TextInput from "../core/TextInput";
 import { useForm } from "react-hook-form";
+
+import axios from "axios";
+import { useRouter } from "next/router";
+
 export default function Form(props) {
+  const router = useRouter();
   const emailRegex = RegExp(
     /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
   );
@@ -17,10 +22,17 @@ export default function Form(props) {
     setValue,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data, e) => {
+  const onSubmit = async (data, e) => {
     e.preventDefault();
     "data", data;
     console.log(data);
+
+    try {
+      const result = await axios.post(`/api/handleForm`, data);
+      console.log(result);
+    } catch (err) {
+      console.log("error", err.response.data.message);
+    }
   };
 
   const onError = (errors, e) => console.log("errors", errors, e);
@@ -31,7 +43,7 @@ export default function Form(props) {
       // action="https://api.vercel.com/v6/deployments"
       method="POST"
       onSubmit={handleSubmit(onSubmit, onError)}
-      className="flex flex-col items-center justify-center w-fit bg-white rounded-md p-8"
+      className="flex flex-col items-center justify-center w-fit bg-white rounded-md p-8 sm:p-0"
     >
       <TextInput
         placeholder={"z.B. Max Muster"}
@@ -88,6 +100,7 @@ export default function Form(props) {
         type={"number"}
         registerData={"phone"}
       />
+
       <TextArea
         placeholder={"z.B. 030 - 123 45 67"}
         register={register}
@@ -107,7 +120,7 @@ export default function Form(props) {
         <p> {errors.message && "Message is required"}</p>
       </div>
       <button
-        onClick={() => props.setOpen(false)}
+        /*  onClick={() => props.setOpen(false)} */
         type="submit"
         className="bg-blue-darker text-white h-auto w-64 xs:w-96 rounded-lg py-2 mb-0 sm:mb-8"
       >

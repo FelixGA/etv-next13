@@ -112,7 +112,7 @@ export default function ActiveCompareSizes({ keys, comparedCars }) {
          
                 }
                 onClick={() => {
-                  console.log("value:", value);
+                  ("value:", value);
                 }}
               > */}
                 <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">

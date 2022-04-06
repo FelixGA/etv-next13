@@ -3,6 +3,7 @@ title: Efa-S E35
 name: efa-s-e-35-d
 price: 0
 relatedBlogs: nur beispiel
+relatedReviews: efa-s-e-35
 description: Efa-S steht für “Elektro-Fahrzeuge Schwaben” und bezeichnet ein
   Stuttgarter Unternehmen, welches sich auf die Elektro-Umrüstung von
   gebrauchten Fahrzeugen mit Verbrennungsmotor spezialisiert hat. Mit dem E35
@@ -33,7 +34,7 @@ rangeLithium:
   key: Reichweite Lithium Akku
   value: 200
   baseUnit: km
-  maxValue: 200
+  maxValue: 0
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0

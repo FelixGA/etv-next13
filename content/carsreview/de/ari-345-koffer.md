@@ -1,6 +1,6 @@
 ---
-title: ARI-345-Koffer
-slug: ari-345-koffer
+title: ARI-345
+slug: ari-345
 relatedCars: ari-345-koffer
 youtubeLink: bitte auffuelen
 category: Koffer

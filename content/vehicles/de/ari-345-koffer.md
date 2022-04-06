@@ -36,7 +36,7 @@ rangeLithium:
   key: Reichweite Lithium Akku
   value: 0
   baseUnit: keine Angabe
-  maxValue: 0
+  maxValue: 100
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 5

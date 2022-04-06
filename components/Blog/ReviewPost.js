@@ -9,12 +9,12 @@ export default function ReviewPost({ getCarsReview, getMdxContent }) {
   // useEffect(() => {
   //   setTestReview(getCarsReview);
   // }, [getCarsReview]);
-
+  // console.log(getCarsReview.content.map((item) => item.image));
   return (
-    <div className="flex flex-1 flex-col p-4 lg:p-8">
+    <div className="flex items-center flex-col p-8">
       <div>
-        <button className="text-sm bg-white w-52 h-10 rounded-md text-blue-darker  lg:block  left-8">
-          <Link href="/comparePage">
+        <button className="text-sm bg-white w-52 h-10 rounded-md text-blue-darker left-8">
+          <Link href="/magazin/reviews">
             <a className="visited:text-blue-darker">
               « zurück zur Ergebnisliste
             </a>
@@ -22,7 +22,7 @@ export default function ReviewPost({ getCarsReview, getMdxContent }) {
         </button>
         <h2 className="m-auto py-8 text-blue-dark font-bold text-4xl ">
           Testbericht - {getCarsReview?.title}
-          <Link href={`/transporter/${getCarsReview?.slug}`}>
+          <Link href={`/transporter/${getCarsReview?.relatedCars}`}>
             <span className="lg:px-8 text-blue-dark font-bold text-xs text-left cursor-pointer">
               Details anzeigen
             </span>
@@ -49,14 +49,10 @@ export default function ReviewPost({ getCarsReview, getMdxContent }) {
       {getCarsReview?.content.map((article, index) => (
         <div
           key={index}
-          className={
-            index % 2 !== 0
-              ? "flex flex-col lg:flex-row lg:my-4 items-start justify-center lg:pt-12"
-              : "flex flex-col lg:flex-row-reverse lg:my-4 items-start justify-center"
-          }
+          className="flex flex-col lg:my-4 items-center justify-center lg:py-12"
         >
           <div className="w-full md:w-1/2 lg:px-12 ">
-            {article?.image && (
+            {/* {article?.image && (
               <Image
                 src={article?.image}
                 alt={getCarsReview?.title}
@@ -66,17 +62,17 @@ export default function ReviewPost({ getCarsReview, getMdxContent }) {
                 objectFit="cover"
                 className="rounded-lg float-right"
               />
-            )}
+            )} */}
           </div>
           {article?.title && (
             <div
               // className=" w-full lg:w-1/2 flex flex-col"
               className={styles.review}
             >
-              <p className="leading-7">
+              <div className="leading-7">
                 {" "}
                 <MDXRemote {...getMdxContent[index]} />
-              </p>
+              </div>
             </div>
           )}
         </div>

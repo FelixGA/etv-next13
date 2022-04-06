@@ -13,7 +13,7 @@ export default function magazin(props) {
       <h1 className="px-4 pt-8 pb-2 text-blue-dark font-bold text-4xl text-center">
         Magazin
       </h1>
-      <div className="px-4 pt-8 pb-2 text-blue-dark font-bold text-2xl text-left">
+      <div className="px-4 pt-8 pb-2 flex items-center justify-center text-blue-dark font-bold text-2xl text-center">
         <Link href="/magazin/reviews">
           <a>TESTBERICHTE</a>
         </Link>

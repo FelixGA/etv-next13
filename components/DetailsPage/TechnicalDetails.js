@@ -7,7 +7,7 @@ const TechnicalDetails = ({ carItem }) => {
   const [basics, SetBasics] = useState([]);
   const [vehichleDimentions, SetVehichleDimentions] = useState([]);
   const [details, SetDetails] = useState([]);
-  console.log("carItem", carItem);
+  "carItem", carItem;
 
   /* to get the new data in case they are updated */
   /* get two subsets of the car properties to map them */

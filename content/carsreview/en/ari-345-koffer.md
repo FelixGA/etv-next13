@@ -1,6 +1,7 @@
 ---
-title: ARI-345-Koffer
-slug: ari-345-koffer
+title: ARI-345
+slug: ari-345
+relatedCars: ari-345-koffer
 category: Koffer
 publishedAt: 03/17/2022
 description: bitte fuer SEO auffuelen bitte fuer SEO auffuelen bitte fuer SEO
