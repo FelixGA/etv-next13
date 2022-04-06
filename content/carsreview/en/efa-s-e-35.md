@@ -1,10 +1,14 @@
 ---
 title: "EFA-S E35    "
+slug: efa-s-e-35
 relatedCars: efa-s-e-35-d
+youtubeLink: ""
+category: Koffer
 publishedAt: 04/01/2022
 description: Der EFA-S E35 ist ein Elektrotransporter auf Basis der Fahrzeuge
   der russischen Firma GAZ. Das Fahrzeug ist in drei Aufbauvarianten erhältlich
   und kann als N1-Transporter rund eine Tonne Nutzlast aufnehmen.
+src: /images/efa-s-e35-plane.jpg
 content:
   - content: Der EFA-S E35 ist ein Elektrotransporter auf Basis der Fahrzeuge der
       russischen Firma GAZ. Das Fahrzeug ist in drei Aufbauvarianten erhältlich
