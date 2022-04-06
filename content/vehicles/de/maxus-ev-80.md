@@ -72,7 +72,7 @@ rating:
   value: 3,6
 guarantee:
   key: Garantie Fahrzeug
-  value: 5
+  value: 3
   baseUnit: keine Angabe
 availability:
   key: Verfügbarkeit
@@ -83,7 +83,7 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
-  value: 8
+  value: 5
   baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
