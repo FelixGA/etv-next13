@@ -6,8 +6,11 @@ import StickyPopUpForComparison from "../components/ResultList/StickyPopUpForCom
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import FiltersMobile from "../components/FilterItems/FiltersMobile";
+import Form from "../components/repeated/Form";
+import Modal from "../components/core/Modal.js";
 
 export default function comparePage(props) {
+  const [open, setOpen] = useState(true);
   const [sortedCars, SetSortedCars] = useState([]);
   const [getContent, SetGetContent] = useState(props.page);
   const { state, dispatch } = useStore();
@@ -88,23 +91,28 @@ export default function comparePage(props) {
   }, [props.vehicles, state.activeSortValues]);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
-      <div className=" hidden md:block bg-white mt-24 ">
-        <FiltersDesktop getContent={getContent} />
-      </div>
-      <div className="flex md:hidden ">
-        <FiltersMobile getContent={getContent} />
-      </div>
-      <div className="heading+sorting+content mt-10 md:mt-20">
-        <div className="">
-          <ActiveFilterBlock getContent={getContent} />
+    <div>
+      {/* <Modal open={open} setOpen={setOpen}>
+        <Form />
+      </Modal> */}
+      <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
+        <div className=" hidden md:block bg-white mt-24 ">
+          <FiltersDesktop getContent={getContent} />
         </div>
-        <div className="xl:pr-2 2xl:pr-40">
-          <ResultList sortedCars={sortedCars} />
+        <div className="flex md:hidden ">
+          <FiltersMobile getContent={getContent} />
         </div>
-      </div>
-      <div className="col-span-full ">
-        <StickyPopUpForComparison />
+        <div className="heading+sorting+content mt-10 md:mt-20">
+          <div className="">
+            <ActiveFilterBlock getContent={getContent} />
+          </div>
+          <div className="xl:pr-2 2xl:pr-40">
+            <ResultList sortedCars={sortedCars} />
+          </div>
+        </div>
+        <div className="col-span-full ">
+          <StickyPopUpForComparison />
+        </div>
       </div>
     </div>
   );
@@ -114,7 +122,7 @@ export async function getStaticProps(context) {
   const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   let blogs = await getContent("blogs", context.locale);
-      let carsreviews = await getContent("carsreview", context.locale);
+  let carsreviews = await getContent("carsreview", context.locale);
 
   const page = pages.find((page) => page.path === "/comparePage");
 
@@ -130,7 +138,7 @@ export async function getStaticProps(context) {
       posts,
       page,
       blogs,
-      carsreviews
+      carsreviews,
     },
   };
 }

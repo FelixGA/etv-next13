@@ -119,7 +119,7 @@ function ActiveFilterEntry(props) {
     <div
       className={
         props.showAll
-          ? "grid gap-2 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:filter-grid px-2 items-start mt-6 relative"
+          ? "grid gap-2 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:filter-grid px-2 items-start mt-7 relative"
           : "hidden"
       }
     >

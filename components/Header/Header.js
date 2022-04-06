@@ -1,7 +1,7 @@
 import Nav from "../Header/Nav";
 import MobileNav from "./MobileNav";
 import Image from "next/image";
-
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useStore } from "../store";
@@ -22,7 +22,7 @@ const variants = {
   },
 };
 const Header = () => {
-  /*  const [isActive, setIsActive] = useState(false); */
+  const [hamState, setHamState] = useState(false);
   const { state, dispatch } = useStore();
   const router = useRouter();
   return (
@@ -164,6 +164,15 @@ const Header = () => {
             : "ham-menu-container absolute right-4 sm:top-9 top-7 lg:hidden z-40 "
         }
       >
+        {/* <div className="relative" onClick={() => setHamState(!hamState)}>
+          <div
+            className={
+              hamState
+                ? "relative after:content-[''] after:w-6 after:bg-white after:h-[3px] after:absolute after:top-2 before:content-[''] before:w-6 before:bg-white before:h-[3px] before:absolute before:top-4 bg-white h-[3px] w-6"
+                : "relative after:content-[''] after:w-6 after:bg-white after:h-[3px] after:absolute after:top-2 before:content-[''] before:w-6 before:bg-white before:h-[3px] before:absolute before:top-4 bg-white h-[3px] w-6 before:rotate-45 -rotate-90"
+            }
+          ></div>
+        </div> */}
         <div className="menu">
           <div className="line"></div>
           <div className="line"></div>
