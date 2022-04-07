@@ -1,6 +1,6 @@
 ---
 title: Mercedes-Benz eSprinter
-name: mercedes-benz-sprinter
+name: mercedes-benz-esprinter
 price: 54090
 relatedBlogs: nur beispiel
 relatedReviews: ""
@@ -16,7 +16,7 @@ loadingWeight:
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 2487
+  value: 2499
   baseUnit: keine Angabe
 maxSpeed:
   key: km/h
@@ -31,7 +31,7 @@ rangeLithium:
   key: Reichweite Lithium Akku
   value: 92
   baseUnit: km
-  maxValue: 120
+  maxValue: 158
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
@@ -61,7 +61,7 @@ consumption:
   baseUnit: keine Angabe
 power:
   key: Leistung
-  value: "70"
+  value: "85"
   baseUnit: kw
 seats:
   key: Sitzplätze
@@ -90,7 +90,7 @@ loadingHeight:
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 4,63
+  value: 11,0
   baseUnit: m3
 loadingArea:
   key: Ladefläche
@@ -101,19 +101,19 @@ carSizes:
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1928
+  valuewidth: 2175
   baseUnit: keine Angabe
-  valuelength: 5140
-  valueheight: 1941
-  valuewheelbase: 0
+  valuelength: 6088
+  valueheight: 2687
+  valuewheelbase: 3924
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
   valueheight: 0
   width: Breite
-  valuewidth: 0
-  valuelength: 2831
+  valuewidth: 1787
+  valuelength: 3272
   length: Länge
   baseUnit: mm
 carSizesLength:
