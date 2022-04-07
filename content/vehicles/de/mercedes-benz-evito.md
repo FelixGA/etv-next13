@@ -111,39 +111,39 @@ carSizes:
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1925
+  valueheight: 0
   width: Breite
-  valuewidth: 1800
-  valuelength: 3200
+  valuewidth: 0
+  valuelength: 2831
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "5700"
+  value: "5140"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1998"
+  value: "1928"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "2552"
+  value: "1941"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "3200"
+  value: "2831"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1800"
+  value: "0"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "1925"
+  value: "0"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "3850"
+  value: "3200"
   baseUnit: mm
 ---
 Der Maxus EV 80 ist ein großer Elektrotransporter, der als Kastenwagen 910 Kilogramm Nutzlast aufnehmen kann und eine Höchstgeschwindigkeit von 100 km/h erreicht. Das Fahrzeug ist ebenso als Chassis-Version ohne Aufbau verfügbar.
