@@ -83,15 +83,15 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
-  value: 5
+  value: 0
   baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
-  value: 560
+  value: 0
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 11,6
+  value: 4,63
   baseUnit: m3
 loadingArea:
   key: Ladefläche
@@ -102,10 +102,10 @@ carSizes:
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1998
+  valuewidth: 1928
   baseUnit: keine Angabe
-  valuelength: 5700
-  valueheight: 2552
+  valuelength: 5140
+  valueheight: 1941
   valuewheelbase: 0
   key: Fahrzeugmaße
 loadingVolume:

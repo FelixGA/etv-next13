@@ -30,4 +30,16 @@ power:
   baseUnit: kw
 rating:
   value: 3,4
+loadingHeight:
+  value: 0
+  baseUnit: mm
+loadingVolumeTotal:
+  value: 4,63
+  baseUnit: m3
+carSizes:
+  valueheight: 1941
+  valuewidth: 1928
+  valuelength: 5140
+  valuewheelbase: 0
+  baseUnit: keine Angabe
 ---
