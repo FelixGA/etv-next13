@@ -1,12 +1,11 @@
 import { MDXRemote } from "next-mdx-remote";
-import TextInput from "../core/TextInput";
-import { useForm } from "react-hook-form";
+
+//import { useForm } from "react-hook-form";
 const NewsLetter = ({ getMarkdownContext }) => {
   const emailRegex = RegExp(
     /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
   );
 
-  const fullNameRegex = RegExp(/^[a-zA-Z ]{2,30}$/);
   // const {
   //   register,
   //   handleSubmit,
