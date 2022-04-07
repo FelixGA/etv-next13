@@ -50,18 +50,18 @@ batteryCapacityBlei:
   baseUnit: " keine Angabe"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "60"
+  value: "35"
   baseUnit: kwh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: 21,5
+  value: 37,1
   baseUnit: keine Angabe
 power:
   key: Leistung
-  value: "85"
+  value: "70"
   baseUnit: kw
 seats:
   key: Sitzplätze
