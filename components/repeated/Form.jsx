@@ -159,7 +159,7 @@ export default function Form(props) {
           <button
             onClick={() => setSend(true)}
             type="submit"
-            className="bg-blue-darker text-white h-auto w-64 xs:w-96 rounded-lg py-2 mb-0 sm:mb-8"
+            className="bg-blue-darker hover:bg-blue-light text-white h-auto w-64 xs:w-96 rounded-lg py-2 mb-0 sm:mb-8"
           >
             Unverbindlich und kostenlos anfragen
           </button>
@@ -167,14 +167,18 @@ export default function Form(props) {
       </div>
       <div
         className={
-          send ? "flex h-fit justify-center items-center w-52  " : "hidden"
+          send
+            ? "flex h-fit justify-center items-center w-64 xs:w-80 sm:w-96 "
+            : "hidden"
         }
       >
-        <p className="p-4 sm:p-8 mt-4">
+        <p className="px-8 sm:p-8 mt-4 w-full sm:w-2/3 sm:text-lg">
           Vielen Dank für Ihre Fahrzeug-Konfiguration! Wir senden Ihnen jetzt
-          eine E-Mail. Bitte prüfen Sie Ihren Posteingang! Bei Fragen zu Ihrem
-          Fahrzeug-Angebot könne Sie uns jederzeit kostenlos anrufen: 0341 978
-          56 933
+          eine E-Mail. Bitte prüfen Sie Ihren Posteingang! <br />{" "}
+          <p className="pt-4 pb-4">
+            Fragen zu Ihrem Fahrzeug-Angebot könne Sie uns jederzeit kostenlos
+            anrufen: 0341 978 56 933
+          </p>
         </p>
       </div>
     </>
