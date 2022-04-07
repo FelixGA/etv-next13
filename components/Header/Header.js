@@ -108,7 +108,7 @@ const Header = () => {
           <Link href="/caradvisor" passHref>
             <a>
               <div
-                className="bg-yellow-light  hover:bg-orange-lighter text-grey-darker font-bold hidden sm:flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer"
+                className="bg-yellow-light hover:bg-orange-lighter text-grey-darker font-bold hidden md:flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer "
                 onClick={() => {
                   dispatch({
                     type: "rangeLithium",
@@ -161,7 +161,7 @@ const Header = () => {
         className={
           router.pathname == "/caradvisor"
             ? "hidden"
-            : "ham-menu-container absolute right-4 sm:top-9 top-7 lg:hidden z-40 "
+            : "ham-menu-container absolute right-4 sm:top-9 top-7 md:hidden z-40 "
         }
       >
         {/* <div className="relative" onClick={() => setHamState(!hamState)}>
