@@ -6,7 +6,10 @@ const ListItems = (props) => {
     <ul className="flex flex-col justify-between items-center pt-2 text-black px-8 pb-4">
       {props.itemsList
         ?.map((blog, index) => (
-          <li className="my-1 flex justify-between items-center" key={index}>
+          <li
+            className="my-1 flex justify-between flex-wrap items-center"
+            key={index}
+          >
             <Link
               href={
                 blog.category === "rechtlichesundkontakt"
@@ -16,7 +19,9 @@ const ListItems = (props) => {
                   : `/magazin/reviews/${blog.slug}`
               }
             >
-              <a className="text-center text-sm xs:text-lg">{blog.title}</a>
+              <a className="text-center flex-wrap text-sm xs:text-lg">
+                {blog.title}
+              </a>
             </Link>
           </li>
         ))

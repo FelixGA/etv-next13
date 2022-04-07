@@ -6,7 +6,7 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import TopSlider from "../components/Sliders/TopSlider";
 import Funnel from "../components/Caradvisor/Funnel";
 import NewsLetter from "../components/Homepage/NewsLetter";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);

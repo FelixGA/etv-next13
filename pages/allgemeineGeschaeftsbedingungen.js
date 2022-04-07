@@ -1,7 +1,7 @@
 import Head from "next/head";
 import getContent from "/utils/getContent";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
