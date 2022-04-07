@@ -5,7 +5,7 @@ const ListItems = (props) => {
   return (
     <ul className="flex flex-col justify-between items-center pt-2 text-black px-8 pb-4">
       {props.itemsList?.map((blog, index) => (
-        <li className="my-1 flex justify-between items-center" key={index}>
+        <li className="my-2 flex justify-between items-center" key={index}>
           <Link
             href={
               blog.category === "rechtlichesundkontakt"

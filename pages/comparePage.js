@@ -6,8 +6,6 @@ import StickyPopUpForComparison from "../components/ResultList/StickyPopUpForCom
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import FiltersMobile from "../components/FilterItems/FiltersMobile";
-import Form from "../components/repeated/Form";
-import Modal from "../components/core/Modal.js";
 
 export default function comparePage(props) {
   const [open, setOpen] = useState(true);
@@ -92,9 +90,6 @@ export default function comparePage(props) {
 
   return (
     <div>
-      {/* <Modal open={open} setOpen={setOpen}>
-        <Form />
-      </Modal> */}
       <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
         <div className=" hidden md:block bg-white mt-24 ">
           <FiltersDesktop getContent={getContent} />
