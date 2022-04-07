@@ -166,9 +166,11 @@ export default function Form(props) {
         </form>
       </div>
       <div
-        className={send ? "flex h-fit justify-center items-center  " : "hidden"}
+        className={
+          send ? "flex h-fit justify-center items-center w-52  " : "hidden"
+        }
       >
-        <p className="p-8 mt-4">
+        <p className="p-4 sm:p-8 mt-4">
           Vielen Dank für Ihre Fahrzeug-Konfiguration! Wir senden Ihnen jetzt
           eine E-Mail. Bitte prüfen Sie Ihren Posteingang! Bei Fragen zu Ihrem
           Fahrzeug-Angebot könne Sie uns jederzeit kostenlos anrufen: 0341 978
