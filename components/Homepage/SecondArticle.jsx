@@ -15,17 +15,17 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
           objectFit="contain"
         />
       </div>
-      <div className="md:pt-10 2xl:pt-48 xl:px-12 xl:pl-20">
+      <div className="md:pt-10 2xl:pt-48 xl:px-12 xl:pl-20 ">
         {/* <h2 className="text-grey-darkest text-2xl font-bold ">
            dfg
           </h2> */}
-        <div className="tracking-wide font-bold text-blue-lighter px-2 xs:px-10 pb-6 py-5 xl:pr-36">
+        <div className="tracking-wide font-bold text-blue-lighter px-1 xs:px-10 pb-6 py-5 xl:pr-36">
           {<MDXRemote {...getMarkdownContext.substities} />}
         </div>
 
         <Link href="/magazin/foerderungen">
-          <a>
-            <button className="bg-blue-dark hover:bg-blue-light text-white font-bold py-4 px-6 mb-5  text-sm rounded-md mx-10">
+          <a className="">
+            <button className="bg-blue-dark no-select hover:bg-blue-light text-white font-bold py-4 px-6 xs:ml-10 mb-5 mt-6 text-sm rounded-md">
               Mehr erfahren
             </button>
           </a>
