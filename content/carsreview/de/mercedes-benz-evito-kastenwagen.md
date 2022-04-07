@@ -56,37 +56,45 @@ content:
       ### Komfort & Ausstattung (4/5)
 
 
-      Der Maxus eDeliver 3 ist ein recht luxuriös ausgestatteter Transporter, der bereits serienmäßig mit einer manuellen Klimaanlage, einem Bordcomputer, einem Radio mit Bluetooth-Funktion und einer Sitzheizung zum Kunden kommt und somit für Lieferfahrer viel Komfort bietet. Die Rückfahrkamera und die Berganfahrhilfe sind weitere kostenlose Details, die den Alltag im eDeliver 3 für Gewerbetreibende deutlich erleichtern sollten. Zusätzliche Optionen sind hingegen rar, so ist nur eine Metallic-Lackierung gegen Aufpreis zu bekommen.
+      Im Vergleich zu preiswerteren Elektro-Nutzfahrzeugen ist der Mercedes-Benz eVito bereits in der Basisversion weniger spartanisch. Außerdem kann er mit vielen Details ausgestattet werden, die den Komfort des Fahrers erhöhen. Gegen Aufpreis sind so neben einer Klimaanlage und Sitzheizung auch Komfortsitze erhältlich. Allerdings sei angemerkt, dass einige der vielen Ausstattungsoptionen die Reichweite beeinträchtigen können. In dieser Hinsicht interessant sind aber die verschiedenen Rekuperationsstufen, die der Fahrer wählen und so die Reichweite beeinflussen kann.
+
+
+      In Sachen Entertainment-Systeme bietet Mercedes-Benz gleich mehrere Optionen für den eVito, allerdings keine ohne Aufpreis. Das preiswerteste Modell kostet 570 Euro extra und verfügt über nützliche Funktionen wie Bluetooth (für eine Freisprechfunktion), USB-Anschluss oder einen SD-Speicherkarten-Steckplatz. Für ein größeres Display mit Navigation muss der Kunde allerdings schon etwas tiefer in die Tasche greifen.
     title: Komfort & Ausstattung
+    image: /images/mb-e-vito-innen-1-1024x683.jpg
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Der Maxus eDeliver 3 hat dank der hohen Sitzposition eine gute Übersicht, allerdings ist wie bei den meisten geschlossenen Kastenwagen die Übersicht eingeschränkt. Die Ladekante ist mit 54 Zentimeter angenehm niedrig, wodurch sich der Elektrotransporter einfach per Heck- oder Seitentür beladen lässt. Ein Flottenmanagement-System wird derzeit nicht angeboten.
+      Der Mercedes-Benz eVito ist durch seine kompakten Maße und die hohe Sitzposition recht übersichtlich, wobei die Kastenwagen-Version durch fehlende Fenster im Laderaum natürlich etwas weniger Rundumsicht bietet. Gegen Aufpreis gibt es ein Assistenzsystem-Paket, welches für zusätzliche Sicherheit sorgt. Ebenfalls als Sonderausstattung ist ein sogenanntes “Easy Cargo”-paket, welches das Be- und Entladen erleichtern soll.
     title: Bedienung & Fahrbetrieb
-    image: /images/maxus-edliever3-innenraum.jpg
+    image: ""
   - content: >-
       ### Umwelt (3/5)
 
 
-      Der Energieverbrauch wird bei der 50 kWh-Version mit rund 23 kWh auf 100 Kilometer angegeben. Dies entspricht bei 30 Cent pro kWh ungefähr 6,90 Euro Energiekosten. Ein Solarmodul für eine erweiterte Reichweite wird derzeit leider nicht angeboten.
+      Der Energieverbrauch des eVito von Mercedes-Benz liegt laut Hersteller bei rund 21,5 kWh auf 100 km. Bei 30 Cent pro Kilowattstunde ergeben 100 km Fahrstrecke somit Kosten von rund 6,45 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
   - content: >-
       ### Preise & Garantie (4/5)
 
 
-      Der Maxus eDeliver 3 startet bei 34.990 Euro für die kurze Version mit kleinem Akku, das Topmodell (L2 mit 53 kWh-Akku) kostet exakt 5.000 Euro mehr. Das ist sicher nicht billig, allerdings bekommt man dafür einen leistungsstarken Elektrotransporter mit umfangreicher Ausstattung. Außerdem ist die Herstellergarantie auf das Fahrzeug mit 5 Jahren bzw. 100.000 Kilometer sehr großzügig. Auf den Lithium-Ionen-Akku gibt es sogar 8 Jahre bzw. 160.000 Kilometer Garantie.
+      Die Preise des Mercedes-Benz eVito beginnen bei 45.990,00 € („Lang“) sowie 47.470,00 € („Extralang“). Der Lithium-Ionen-Akku ist mit im Preis enthalten und kann nicht gemietet werden. Da viele für Unternehmen nützliche Helfer allerdings Aufpreis kosten, dürften die wenigsten Kunden diese Anschaffungskosten einhalten.
+
+
+      Der Hersteller bietet eine Garantie von 24 Monaten auf das Fahrzeug. Zusätzlich lassen sich „ServiceCare“-Pakete gegen einen monatlichen Betrag buchen, welche dem Kunden einen Rundum-Service in Sachen Wartung und dem Austausch von Verschleißteilen bieten. Diese können je nach Laufleistung angepasst werden.
     title: Preise & Garantie
+    image: /images/mb-e-vito-seite-1-1024x683.jpg
   - content: >-
       ### Fazit
 
 
-      Mit dem eDeliver 3 hat Maxus einen kräftigen und komfortablen Kastenwagen im Angebot, der außerdem mit ordentlicher Reichweite und viel Stauraum aufwartet. Wirklich günstig ist er dadurch zwar nicht, allerdings immer noch rund 10.000 Euro preiswerter als ein Mercedes-Benz eVito. Allein das dürfte schon genug Anreiz für einige Käufer sein.
+      Der eVito von Mercedes-Benz ist gegenüber dem großen Transporter Sprinter zwar kompakt, bietet dank seiner Länge aber trotzdem ein hohes Raumvolumen. Die bis zu 6.600 Liter Beladungskapazität dürften für einige Lieferanten und Handwerksbetriebe interessant sein. Der Stuttgarter E-Transporter bietet auch einen hohen Komfort im Vergleich zu einigen auf Funktionalität abzielenden Konkurrenz-Modellen. Negativ fällt hier aber ins Gewicht, dass viele Ausstattungsoptionen extra bezahlt werden müssen.
 
 
       ### Gesamtpunktzahl:
 
 
-      3,6 Sterne
+      3,4 Sterne
     title: Fazit
 ---
