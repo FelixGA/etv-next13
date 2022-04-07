@@ -13,6 +13,7 @@ export default function Layout(props) {
 
   useEffect(() => {
     setValueFromUseEffect(props.params);
+    setReviews(props.carsreviews);
     setBlogs(props.blogs);
   }, [props]);
 

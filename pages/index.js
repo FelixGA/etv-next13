@@ -12,6 +12,13 @@ export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
   const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
+  const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
+  useEffect(() => {
+    SetTestReviews(props.carsreviews);
+    SetGetCars(props.vehicles);
+    SetGetContent(props.page);
+    SetGetMarkdownContext(props.context);
+  }, [props]);
   return (
     <>
       <Head>

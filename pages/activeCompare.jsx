@@ -48,6 +48,10 @@ export default function activeCompare(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getKeys, SetGetKeys] = useState([]);
   const [toggle, setToggle] = useState(true);
+  const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
+  useEffect(() => {
+    SetTestReviews(props.carsreviews);
+  }, [props]);
 
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
   // console.log(comparedCars);

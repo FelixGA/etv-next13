@@ -1,13 +1,17 @@
 import Head from "next/head";
 import getContent from "/utils/getContent";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Blog from "../components/Blog/Blog";
 import Link from "next/link";
 
 export default function magazin(props) {
   const [getBlogs, SetGetBlogs] = useState(props.blogs);
-
+  const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
+  useEffect(() => {
+    SetGetBlogs(props.blogs);
+    SetTestReviews(props.carsreviews);
+  }, [props]);
   return (
     <>
       <h1 className="px-4 pt-8 pb-2 text-blue-dark font-bold text-4xl text-center">

@@ -1,12 +1,16 @@
 import getContent from "/utils/getContent";
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 
 import Image from "next/image";
 import Form from "../components/repeated/Form";
 
 export default function kontakt(props) {
   const [open, setOpen] = useState(true);
-
+  const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
+useEffect(() => {
+  SetTestReviews(props.carsreviews);
+  
+}, [props]);
   // const watchName = watch("firstName");
 
   return (
