@@ -34,6 +34,11 @@ module.exports = withPWA({
         permanent: false,
         destination: "/ie11_fallback.html",
       },
+      {
+        source: "/about",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 });
