@@ -15,34 +15,6 @@ export default function kontakt(props) {
   return (
     // <div className="relative h-screen">
     <div className="flex flex-col items-center">
-      <div className="pt-8 flex justify-center">
-        <p className="text-2xl md:text-3xl font-bold sm:w-[60%] md:w-[80%] text-center px-4">
-          Erhalten Sie jetzt Ihr Angebot
-          <span className="font-thin"> kostenlos und unverbindlich</span>
-        </p>
-      </div>
-      {/* IMAGES */}
-      <div className="flex justify-center items-center relative left-6">
-        <div className="w-24">
-          <Image
-            src="/images/siegel2.png"
-            width={166}
-            height={166}
-            layout="responsive"
-            objectFit="contain"
-          />
-        </div>
-        {/* medal dsvgo image */}
-        <div className="w-32 sm:w-44 relative sm:left-4">
-          <Image
-            src="/images/siegel.png"
-            width={166}
-            height={166}
-            layout="responsive"
-            objectFit="contain"
-          />
-        </div>
-      </div>
       <div className="">
         <Form open={open} setOpen={setOpen} />
       </div>

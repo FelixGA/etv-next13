@@ -7,7 +7,7 @@ const ListItems = (props) => {
       {props.itemsList
         ?.map((blog, index) => (
           <li
-            className="my-1 flex justify-between flex-wrap items-center"
+            className="my-2 flex justify-between flex-wrap items-center"
             key={index}
           >
             <Link
