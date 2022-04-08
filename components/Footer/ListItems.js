@@ -19,7 +19,7 @@ const ListItems = (props) => {
                   : `/magazin/reviews/${blog.slug}`
               }
             >
-              <a className="text-center flex-wrap text-sm xs:text-lg">
+              <a className="text-center flex-wrap text-sm sm:text-lg">
                 {blog.title}
               </a>
             </Link>

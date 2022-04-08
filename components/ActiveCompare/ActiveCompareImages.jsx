@@ -43,7 +43,7 @@ export default function ActiveCompareImages({ comparedCars }) {
             <Link href={`/transporter/${item.name}`}>
               <a>
                 <Image
-                  className=" rounded-md md:rounded-lg brightness-[0.5] "
+                  className=" rounded-md md:rounded-lg brightness-[0.7] "
                   src={item.src}
                   alt="picture"
                   objectFit="cover"
@@ -52,7 +52,7 @@ export default function ActiveCompareImages({ comparedCars }) {
                 ></Image>
 
                 <div className="lg:absolute lg:top-0 left-4">
-                  <h3 className="text-blue-extra lg:text-white md:pt-2 font-black text-sm lg:text-lg line-clamp-3">
+                  <h3 className="text-blue-extra lg:text-white md:pt-2 font-bold text-sm lg:text-xl line-clamp-3">
                     {item.title}
                   </h3>
                 </div>
