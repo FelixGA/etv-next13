@@ -111,7 +111,7 @@ function FiltersMobile() {
     },
     {
       id: 3,
-      title: "Hochgeschwindigkeit",
+      title: "Km/h",
       category: "maxSpeeds",
       image: image3,
       options: [
