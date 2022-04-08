@@ -10,41 +10,38 @@ description: "Der Cargo Van der österreichischen Firma NME ist ein elektrischer
   Höchstgeschwindigkeit von 90 km/h erreicht.    "
 src: /images/nme-cargo-van-frontansicht.jpg
 content:
-  - content: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
-      Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und
-      rund eine Tonne Nutzlast aufnehmen kann.
+  - content: Der Cargo Van der österreichischen Firma NME ist ein elektrischer
+      Kastenwagen, der bis zu 1.000 Kilogramm Nutzlast aufnehmen kann und eine
+      Höchstgeschwindigkeit von 90 km/h erreicht.
     title: Einleitung
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
 
-      Die großen Transporter bis 3,5 Tonnen haben bei Daimler Tradition. 1977 kam mit dem Mercedes-Benz T1 das erste Fahrzeug dieser Art auf den Markt und wurde bis 1995 gebaut. Seitdem laufen die Fahrzeuge unter dem Namen Sprinter, welcher seit 2018 in der dritten Generation erhältlich ist. Später folgte die Einführung des rein elektrischen Modells eSprinter, welcher vorerst nur als Kastenwagen verfügbar ist. Mit diesem zielt der Hersteller auf größere Lieferunternehmen im städtischen Bereich.
-
-
-      Im Gegensatz zu den vier verschiedenen Längen des herkömmlichen Sprinters ist die Elektro-Version nur in einer 6,09 Meter langen Ausführung mit Hochdach erhältlich. Eine Auswahl gibt es deshalb nur bei der Batterie. Hier kann zwischen einer nutzbaren Kapazität von 35 kWh und 47 kWh gewählt werden, wodurch eine Durchschnittsreichweite von 120 bzw. 158 Kilometern erreicht werden soll.
+      Der chinesische Konzern DSFK und die dazugehörige Marke Dongfeng bieten in Deutschland über einzelne Händler PKWs und Nutzfahrzeuge an. Neben Verbrenner-Fahrzeugen sind vermehrt auch Elektrofahrzeuge im Angebot. Die österreichische Firma “New Mobility Enterprise” (kurz: NME) vertreibt mit dem NME Cargo Van einen Kastenwagen von Dongfeng, welcher mit großem Platzangebot und niedrigem Preis punkten will. Eine große Auswahl gibt es nicht: Den NME Cargo Van gibt es nur als 4,50 Meter langen, zweisitzigen Kastenwagen mit einem 41 kWh-Akku.
     title: Konzept & Fahrzeugvarianten
-    image: /images/mb-esprinter-laderaum.jpg
-  - content: >-
-      ### Laderaum & Flexibilität (4/5)
-
-
-      Der Mercedes-Benz eSprinter ist für ein hohes Ladevolumen konzipiert, welches mit stolzen 11,0 m³ dementsprechend üppig ausfällt. Auch die Laderaumlänge von 3,27 Meter ist länger als so manches Fahrzeug und sorgt dafür, dass der eSprinter auch extrem sperrige Ladung aufnehmen kann. Die Zuladung erfolg über hohe Flügeltüren im Heck oder eine seitliche Schiebetür auf der rechten Seite. Die Höhe der Ladekante liegt bei 61,5 Zentimeter. Außerdem kann man über einen optional verfügbaren “Heckauftritt” bequem in den Laderaum einsteigen und somit das Be- und Entladen deutlich erleichtern.
-
-
-      Die Nutzlast des Mercedes-Benz eSprinter ist abhängig von der Akku-Kapazität. Da das zulässige Gesamtgewicht bei 3,5 Tonnen liegt, führt das höhere Gewicht des 47 kWh-Akkus zu einer niedrigeren Zuladung von 848 Kilogramm. Mit der leichteren 35 kWh-Batterie darf der eSprinter hingegen bis zu 1.001 Kilogramm zuladen. Auf dem Dach des Elektro-Transporters dürfen zudem maximal 150 Kilogramm mitgeführt werden.
-    title: Laderaum & Flexibilität
     image: ""
+  - content: >-
+      ### Laderaum & Flexibilität (3/5)
+
+
+      Der Cargo Van ist ein Kastenwagen mit einer nach oben schwingenden Heckklappe sowie zwei seitlichen Schiebetüren. Der Laderaum hat eine Länge von 2,53 Meter, eine Breite von 1,48 Meter und ist 1,35 Meter hoch, wodurch ein Ladevolumen von rund 4,8m³ zur Verfügung steht. Eine Deckenleuchte sorgt für das nötige Licht bei dunkleren Bedingungen, ansonsten ist der Laderaum karg und funktional ausgestattet. Der Boden sowie die Radkästen können gegen Aufpreis mit einer Verkleidung versehen werden.
+
+
+      Der NME Cargo Van hat ein Leergewicht von rund 1.600 Kilogramm und darf zusätzlich maximal 1.000 Kilogramm zuladen. Optional ist eine Anhängerkupplung erhältlich, allerdings gibt es derzeit keine Angaben über die mögliche Anhängelast.
+    title: Laderaum & Flexibilität
+    image: /images/nme-cargo-van-heckansicht.jpg
   - content: >-
       ### Antrieb & Aufladung (4/5)
 
 
-      Wie beim eVito übernimmt auch im eSprinter ein asynchroner Elektromotor mit einer Leistung von 85 kW den Antrieb auf die Vorderachse. Dieser entwickelt ein maximales Drehmoment von 295 Nm und kann das Fahrzeug auf bis zu 120 Km/h bringen. Die Höchstgeschwindigkeit in der Standard-Version allerdings bei 80 Km/h abgeriegelt und kann optional auf 100 Km/h oder eben 120 Km/h hochgesetzt werden. Jedoch dürfte bei solchen Geschwindigkeiten die Reichweite deutlich geringer ausfallen.
+      Der Elektromotor befindet sich unter der Sitzbank und hat eine Dauerleistung von 30 kW. Per Sportmodus kann eine Leistung von 50 kW für 30 Minuten aktiviert werden, für 30 Sekunden sogar die Spitzenleistung von 60 kW. Dadurch verringert sich natürlich auch die Reichweite.
 
 
-      Mit einer nutzbaren Akku-Kapazität von 35 kWh soll der Mercedes-Benz eSprinter rund 120 Kilometer weit kommen, bei dem größeren Akku mit 47 kWh sind laut Hersteller knapp 160 Kilometer drin. Leider ist anzunehmen, dass bei hoher Zuladung und in zähem Stadtverkehr diese Angaben wohl nicht erreicht werden dürfen. Allerdings arbeitet das Fahrzeug mit Rekuperation in gleich vier wählbaren Stufen, wodurch der Akku während der Fahrt wieder aufgeladen wird.
+      Der Lithium-Eisenphosphat-Akku hat eine Kapazität von rund 41 kWh, wodurch der Cargo Van laut Hersteller eine realistische Reichweite von 180 Kilometer erreichen soll. Wie sehr sich eine volle Beladung auf die Reichweite auswirkt, ist leider nicht bekannt.
 
 
-      Die Aufladung kann per Haushaltssteckdose, Wallbox oder Ladestation mit Wechsel- oder Gleichstrom erfolgen. Eine Vollladung per Wechselstrom mit 7,4 kW soll in rund 6 Stunden (35 kWh) bzw. etwa 8 Stunden (47 kWh) erledigt sein. Bei der Aufladung über eine Gleichstrom-Ladestation mit optional verfügbaren 80 kW soll der Akku laut Hersteller in gerade einmal 20 Minuten von 10% auf 80% gebracht werden.
+      Das Fahrzeug kann an einer gewöhnlicher Haushaltssteckdose aufgeladen werden. Allerdings beträgt die Ladeleistung hier nur 3,3 kW, was zu einer Ladezeit von rund 13 Stunden 0 auf 100% führt. Gegen Aufpreis ist auch ein Schnellladekabel-Adapter verfügbar. Dadurch kann per Gleichstrom eine Ladeleistung von 35 kW und somit theoretisch eine Ladezeit von etwa 70 Minuten erreicht werden.
     title: Antrieb & Aufladung
     image: /images/mb-esprinter-anschluss-2.jpg
   - content: >-
