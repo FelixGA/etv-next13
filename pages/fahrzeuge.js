@@ -2,16 +2,45 @@ import { useStore } from "../components/store";
 
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
-
+import Image from "next/image";
+import FahrzeugeResultList from "../components/FahrzeugeResultLIst/FahrzeugeResultList";
 export default function fahrzeuge(props) {
-  const [sortedCars, SetSortedCars] = useState([]);
-
+  const [sortedCars, SetSortedCars] = useState(props.vehicles);
+  const [getContent, SetGetContent] = useState(props.page);
+  const [getCarsReview, SetCarsReview] = useState(props.carsreviews);
   const { state, dispatch } = useStore();
   useEffect(() => {
-    SetSortedCars(props.vehicles);
-  }, [props.vehicles]);
+    /* ᴄᴀʀs ranking ғɪʟᴛᴇʀ */
+    SetSortedCars(
+      props.vehicles.sort((a, b) => a.rating.value - b.rating.value)
+    );
 
-  return <div>vechicles</div>;
+    SetCarsReview(props.carsreviews);
+    SetGetContent(props.page);
+  }, [props.vehicles]);
+  return (
+    <div className="w-3/4 margin-auto ">
+      <h1>
+        Elektro-Transporter – {sortedCars.length} {getContent.title}
+      </h1>
+      <p>{getContent.description}</p>
+      <div className="w-3/4 ">
+        <Image
+          src={getContent.src}
+          alt={getContent.title}
+          width={195}
+          height={30}
+          layout="responsive"
+          objectFit="cover"
+        />
+      </div>
+
+      <FahrzeugeResultList
+        sortedCars={sortedCars}
+        getCarsReview={getCarsReview}
+      />
+    </div>
+  );
 }
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
@@ -34,6 +63,7 @@ export async function getStaticProps(context) {
       posts,
       page,
       blogs,
+
       carsreviews,
     },
   };

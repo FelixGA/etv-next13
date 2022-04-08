@@ -92,12 +92,6 @@ export async function getStaticProps(context) {
       )
     : null;
 
-  console.log(
-    "carsreview",
-    carsreviews.find((item) => item.relatedCars == "evo-elektro-pritsche")
-      .relatedCars
-  );
-
   /* catching errors in case there is no carsreview yet */
   let getTestReview = null;
 
