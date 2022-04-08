@@ -1,3 +1,4 @@
+import Head from "../../components/core/Head";
 import { useState, useEffect } from "react";
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
@@ -35,6 +36,7 @@ export default function Details(props) {
 
   return (
     <>
+      <Head page={props.vehicle} />
       {/* image and rating section */}
       <div className="2xl:px-40">
         <BasicInfo carItem={carItem} />

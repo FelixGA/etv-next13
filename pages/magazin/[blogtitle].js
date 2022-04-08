@@ -1,8 +1,8 @@
+import Head from "../../components/core/Head";
 import { useState, useEffect } from "react";
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
 import TopSlider from "../../components/Sliders/TopSlider";
-import { serialize } from "next-mdx-remote/serialize";
 import getSlugs from "/utils/getSlugs";
 import BlogPost from "../../components/Blog/BlogPost";
 
@@ -19,10 +19,9 @@ export default function Blogs(props) {
 
   return (
     <>
+      <Head page={props.blog} />
       <BlogPost getBlogContext={getBlogContext} />
-
       {/* slider  */}
-
       <TopSlider getCars={relatedVehicles} />
     </>
   );

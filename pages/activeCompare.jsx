@@ -1,3 +1,4 @@
+import Head from "../components/core/Head";
 import Link from "next/link";
 import { useStore } from "../components/store";
 import { useState, useEffect } from "react";
@@ -53,11 +54,10 @@ export default function activeCompare(props) {
 
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
   // console.log(comparedCars);
-  
 
   return (
     <div className="main-wrapper 2xl:px-40">
-      {/* HEADING */}
+      <Head page={props.page} />
       <div className="pt-8 pb-6 px-4">
         <h1 className="font-bold text-blue-extra text-2xl lg:text-4xl">
           Ihre Auswahl im Detailvergleich

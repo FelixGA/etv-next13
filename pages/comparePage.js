@@ -1,3 +1,4 @@
+import Head from "../components/core/Head";
 import ActiveFilterBlock from "../components/FilterItems/ActiveFilterBlock";
 import ResultList from "../components/ResultList/ResultList";
 import FiltersDesktop from "../components/FilterItems/FiltersDesktop";
@@ -27,7 +28,6 @@ export default function comparePage(props) {
     // const getKasten = props.vehicles?.filter(
     //   (item) => item.category === "Kasten"
     // );
-  
 
     /* PRICE SORTING */
     const getCarslowestPrice = props.vehicles
@@ -85,6 +85,8 @@ export default function comparePage(props) {
 
   return (
     <div>
+      <Head page={props.page} />
+
       <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
         <div className=" hidden md:block bg-white mt-24 ">
           <FiltersDesktop />

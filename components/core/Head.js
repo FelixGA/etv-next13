@@ -15,6 +15,14 @@ export default function MainHead(props) {
       {props.page?.src && (
         <meta property="og:image" content={props.page?.src} />
       )}
+      {props.page?.description && (
+        <>
+          <meta name="description" content={props.page?.description} />
+          {/* <meta property="og:description" content={props.page?.description} />
+          <meta name="twitter:description" content={props.page?.description} />
+          <meta name="twitter:card" content={props.page?.description} /> */}
+        </>
+      )}
     </Head>
   );
 }

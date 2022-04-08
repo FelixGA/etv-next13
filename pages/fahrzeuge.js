@@ -1,5 +1,5 @@
 import { useStore } from "../components/store";
-
+import Head from "../components/core/Head";
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -20,6 +20,7 @@ export default function fahrzeuge(props) {
   }, [props.vehicles]);
   return (
     <div className="w-3/4 margin-auto ">
+      <Head page={props.page} />
       <h1>
         Elektro-Transporter – {sortedCars.length} {getContent.title}
       </h1>

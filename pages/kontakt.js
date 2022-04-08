@@ -1,9 +1,7 @@
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
-
-import Image from "next/image";
 import Form from "../components/repeated/Form";
-
+import Head from "../components/core/Head";
 export default function kontakt(props) {
   const [open, setOpen] = useState(true);
   const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
@@ -15,6 +13,8 @@ export default function kontakt(props) {
   return (
     // <div className="relative h-screen">
     <div className="flex flex-col items-center relative">
+      <Head page={props.page} />
+
       {/* <div className="absolute left-96 top-72 w-[20%]">
         <Image
           src="/images/test.png"
