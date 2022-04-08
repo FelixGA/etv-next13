@@ -33,7 +33,6 @@ function ActiveFilterEntry(props) {
       props.setShowAll(false);
     }
 
-    let hourWord = props.getContent.content[1].details.split(",")[5];
     setFilterData([
       {
         id: 1,
@@ -92,7 +91,7 @@ function ActiveFilterEntry(props) {
           state?.chargingTimeLithiums.length ||
           state?.chargingTimeLithiums.length == undefined
             ? state?.chargingTimeLithiums
-                .map((el) => `${el.min} ${hourWord} `)
+                .map((el) => `${el.min} Stunden `)
                 .join("")
             : null,
         image: image5,
@@ -203,7 +202,7 @@ function ActiveFilterEntry(props) {
             });
           }}
         >
-          {props.getContent.content[0].name}
+          alle Filter loschen
         </div>
       </div>
     </div>

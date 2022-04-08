@@ -63,7 +63,7 @@ export default function Form(props) {
 
         <div
           className={
-            router.pathname == "/kontakt"
+            router.pathname == "/kontakt" || "comparePage"
               ? "justify-center items-center relative left-6 flex"
               : "hidden"
           }

@@ -71,7 +71,7 @@ function CarCard({ carItem }) {
           {/* BUTTONS start */}
           <div className="flex-1 flex sm:justify-center flex-col justify-end">
             <div className="pb-1">
-              <ButtonAnfragen />
+              <ButtonAnfragen carItem={carItem.title} />
             </div>
             <ButtonCompare carItem={carItem} />
           </div>

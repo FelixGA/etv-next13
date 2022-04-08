@@ -82,8 +82,9 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
             }
           >
             {index !== 0 ? (
-              <ButtonAnfragen />
+              <ButtonAnfragen carItem={comparedCars[index - 1].title} />
             ) : (
+              // carItem={carItem}
               <div className="bg-grey-border h-20"></div>
             )}
           </div>

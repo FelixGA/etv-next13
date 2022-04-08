@@ -8,31 +8,26 @@ import { useState, useEffect } from "react";
 import FiltersMobile from "../components/FilterItems/FiltersMobile";
 
 export default function comparePage(props) {
-  const [open, setOpen] = useState(true);
   const [sortedCars, SetSortedCars] = useState([]);
-  const [getContent, SetGetContent] = useState(props.page);
+
   const { state, dispatch } = useStore();
   useEffect(() => {
     SetSortedCars(props.vehicles);
-    SetGetContent(props.page);
 
     /* ɢᴇᴛ ʀᴇsᴜʟᴛs ᴜᴘᴏɴ ᴄᴀᴛᴇɢᴏʀʏ */
-    const getPritsche = props.vehicles?.filter(
-      (item) => item.category === "Pritsche"
-    );
-    const getKipper = props.vehicles?.filter(
-      (item) => item.category === "Kipper"
-    );
-    const getKoffer = props.vehicles?.filter(
-      (item) => item.category === "Koffer"
-    );
-    const getKasten = props.vehicles?.filter(
-      (item) => item.category === "Kasten"
-    );
-    /* ɢᴇᴛ ᴀʟʟ ᴄᴀᴛᴇɢᴏʀɪᴇs ғʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀ */
-    const getCategories = [
-      ...new Set(props.vehicles?.map((item) => item.category)),
-    ];
+    // const getPritsche = props.vehicles?.filter(
+    //   (item) => item.category === "Pritsche"
+    // );
+    // const getKipper = props.vehicles?.filter(
+    //   (item) => item.category === "Kipper"
+    // );
+    // const getKoffer = props.vehicles?.filter(
+    //   (item) => item.category === "Koffer"
+    // );
+    // const getKasten = props.vehicles?.filter(
+    //   (item) => item.category === "Kasten"
+    // );
+  
 
     /* PRICE SORTING */
     const getCarslowestPrice = props.vehicles
@@ -92,14 +87,14 @@ export default function comparePage(props) {
     <div>
       <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
         <div className=" hidden md:block bg-white mt-24 ">
-          <FiltersDesktop getContent={getContent} />
+          <FiltersDesktop />
         </div>
         <div className="flex md:hidden ">
-          <FiltersMobile getContent={getContent} />
+          <FiltersMobile />
         </div>
         <div className="heading+sorting+content mt-10 md:mt-20">
           <div className="">
-            <ActiveFilterBlock getContent={getContent} />
+            <ActiveFilterBlock />
           </div>
           <div className="xl:pr-2 2xl:pr-40">
             <ResultList sortedCars={sortedCars} />

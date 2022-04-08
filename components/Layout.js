@@ -8,11 +8,11 @@ export default function Layout(props) {
   const [blogs, setBlogs] = useState(props.blogs);
   const [reviews, setReviews] = useState(props.carsreviews);
   const { state, dispatch } = useStore();
-  const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
-  const [openForm, setOpenForm] = useState(false);
+  // const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
 
   useEffect(() => {
-    setValueFromUseEffect(props.params);
+    // setValueFromUseEffect(props.params);
+    setReviews(props.carsreviews);
     setBlogs(props.blogs);
   }, [props]);
 

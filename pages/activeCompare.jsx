@@ -46,12 +46,14 @@ const carDetails = [
 export default function activeCompare(props) {
   const { state, dispatch } = useStore();
   const [getCars, SetGetCars] = useState(props.vehicles);
-  const [getKeys, SetGetKeys] = useState([]);
-  const [toggle, setToggle] = useState(true);
+  const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
+  useEffect(() => {
+    SetTestReviews(props.carsreviews);
+  }, [props]);
 
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
   // console.log(comparedCars);
-  let typeClass = { key: getCars[0]?.typeClass };
+  
 
   return (
     <div className="main-wrapper 2xl:px-40">

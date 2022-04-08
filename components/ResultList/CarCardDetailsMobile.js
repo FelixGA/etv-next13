@@ -26,7 +26,7 @@ function CarCardDetailsMobile({ carItem }) {
           <div className="flex flex-row flex-1  py-1">
             <div className="flex flex-row flex-1 justify-center border-b">
               <div className="text-grey-dark font-bold w-full xs:w-2/5 leading-7">
-                {/* {carItem?.maxSpeed.key} */}Hochgeschwindigkeit:
+                {carItem?.maxSpeed.key}
               </div>
               <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2 flex items-end">
                 {carItem?.maxSpeed.value}

@@ -1,23 +1,13 @@
 ---
-title: ARI 458 Pritsche
-name: ARI 458 Pritsche
-price: 14790
-relatedBlogs:
-  title: " Konzept & Fahrzeugvarianten"
-  content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
-    Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den erhältlichen
-    Individual-Aufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer,
-    Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI
-    458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert.
-    Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
-    für große Strecken."
-  image: /images/ari-458-food-truck-5-.jpg
+title: ARI 458 Koffer
+name: ari-458-koffer-elektrischer-kleintransporter
+price: 15100
+relatedBlogs: ari-458-koffer-elektrischer-kleintransporter
 relatedReviews: ari-458-koffer
-description: Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI
-  Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen
-  Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
-src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
-category: Pritsche
+description: Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI
+  Motors mit 80 km/h Höchstgeschwindigkeit.
+src: /images/ari-458-koffer-3-.jpg
+category: Koffer
 typeClass: L7E
 loadingWeight:
   key: Nutzlast
@@ -29,20 +19,20 @@ curbweight:
   baseUnit: kg
 maxSpeed:
   key: km/h
-  value: 78
+  value: 80
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 120
-  baseUnit: km
-  maxValue: 120
+  baseUnit: " km"
+  maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
   value: 150
   baseUnit: km
   maxValue: 495
 chargingTime230V:
-  key: Ladezeit 230-V
+  key: Ladezeit 230-V-Steckdose
   value: 6
   baseUnit: h
 chargingTimeLithium:
@@ -50,27 +40,27 @@ chargingTimeLithium:
   value: 6
   baseUnit: h
 chargingTimeFast:
-  key: Schnell-Ladezeit
+  key: Schnellladung
   value: 2
   baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  baseUnit: "- "
-  value: "-"
+  value: "0"
+  baseUnit: " keine Angabe"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "10"
-  baseUnit: kwh
+  baseUnit: kWh
 batteryIncluded:
-  key: Akku inklusive
   value: ja
+  key: Batterie inklusive
 consumption:
-  key: Verbrauch
-  value: 7,5
-  baseUnit: kwh
+  key: "Verbrauch "
+  value: "7,5 "
+  baseUnit: kWh
 power:
   key: Leistung
-  value: 7,5
+  value: min-7,5/max-7,5
   baseUnit: kw
 seats:
   key: Sitzplätze
@@ -86,24 +76,24 @@ availability:
   key: Verfügbarkeit
   value: 14-16 Wochen
 subsidies:
-  key: Förderhöhe
-  baseUnit: Euro
-  value: 1
+  key: Förderungsmöglichkeiten
+  value: 0
+  baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
   value: 48
   baseUnit: Monate
 loadingHeight:
   key: Ladehöhe
-  value: 10
-  baseUnit: cm
+  value: 680
+  baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
+  value: 1,49
   baseUnit: m3
-  value: 0,38
 loadingArea:
   key: Ladefläche
-  value: "235"
+  value: 1,57
   baseUnit: m2
 carSizes:
   width: Breite
@@ -113,17 +103,17 @@ carSizes:
   valuewidth: 1300
   baseUnit: mm
   valuelength: 3150
-  valueheight: 1600
+  valueheight: 1685
   valuewheelbase: 2300
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 250
+  valueheight: 950
   width: Breite
   valuewidth: 1160
-  length: Länge
   valuelength: 1320
+  length: Länge
   baseUnit: mm
 carSizesLength:
   value: "3150"
@@ -131,11 +121,11 @@ carSizesLength:
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1600"
+  value: "1300"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1300"
+  value: "1685"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -147,7 +137,7 @@ loadingVolumeWidth:
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "250"
+  value: "0095"
   baseUnit: mm
 wheelbase:
   key: Radstand
@@ -155,4 +145,4 @@ wheelbase:
   baseUnit: mm
 ---
 
-Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
+Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI Motors mit 80 km/h Höchstgeschwindigkeit.

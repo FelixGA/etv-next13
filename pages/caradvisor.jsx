@@ -4,7 +4,11 @@ import Funnel from "../components/Caradvisor/Funnel";
 import Image from "next/image";
 export default function caradvisor(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
-  const [getContent, SetGetContent] = useState(props.page);
+
+  const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
+  useEffect(() => {
+    SetTestReviews(props.carsreviews);
+  }, [props]);
   return (
     <div className="bg-blue-extralight">
       <div className="bg-green-lighter hidden xl:flex justify-around h-12 items-center">
@@ -66,6 +70,7 @@ export async function getStaticProps(context) {
   const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   const page = pages.find((page) => page.path === "/caradvisor");
+  let carsreviews = await getContent("carsreview", context.locale);
 
   if (!pages) {
     return {
@@ -78,6 +83,7 @@ export async function getStaticProps(context) {
       vehicles,
       posts,
       page,
+      carsreviews,
     },
   };
 }

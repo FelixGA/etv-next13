@@ -12,12 +12,14 @@ export default function Reviews(props) {
   const [relatedVehicles, SetRelatedVehicles] = useState(props.vehicles);
   const [getMdxContent, SetGetMdxContent] = useState(props.getTestReview);
   const [getCarsReview, SetGetCarsReview] = useState(props.carsreview);
+  const [getCarsReviews, SetGetCarsReviews] = useState(props.carsreviews);
   const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
   useEffect(() => {
     setValueFromUseEffect(props.params.blogtitle);
     SetRelatedVehicles(props.vehicles);
     SetGetMdxContent(props.getTestReview);
     SetGetCarsReview(props.carsreview);
+    SetGetCarsReviews(props.carsreviews);
   }, [props]);
   66666, props.getTestReview;
   return (
@@ -30,6 +32,7 @@ export default function Reviews(props) {
 export async function getStaticProps(context) {
   /* get all blogs*/
   let blogs = await getContent("blogs", context.locale);
+  let carsreviews = await getContent("carsreview", context.locale);
 
   /* get reviews */
   let carsreview = await getContentBySlug(
@@ -65,6 +68,7 @@ export async function getStaticProps(context) {
     props: {
       vehicles,
       carsreview,
+      carsreviews,
       blogs,
       getTestReview,
       params: context.params,
