@@ -22,4 +22,14 @@ chargingTimeLithium:
   value: 0
 chargingTimeFast:
   value: 1.2
+batteryCapacityLithium:
+  value: "41"
+  baseUnit: kwh
+consumption:
+  baseUnit: keine Angabe
+power:
+  value: "60"
+  baseUnit: kw
+rating:
+  value: 3,2
 ---

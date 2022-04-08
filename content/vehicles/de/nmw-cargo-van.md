@@ -50,28 +50,28 @@ batteryCapacityBlei:
   baseUnit: " keine Angabe"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "56"
+  value: "41"
   baseUnit: kwh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "0"
+  value: "23"
   baseUnit: keine Angabe
 power:
   key: Leistung
-  value: "92"
+  value: "60"
   baseUnit: kw
 seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
-  value: 3,6
+  key: Befriedigend
+  value: 3,2
 guarantee:
   key: Garantie Fahrzeug
-  value: 3
+  value: 2
   baseUnit: keine Angabe
 availability:
   key: Verfügbarkeit
