@@ -86,11 +86,11 @@ batteryGuarantee:
   baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
-  value: 560
+  value: 0
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 11,6
+  value: 4,8
   baseUnit: m3
 loadingArea:
   key: Ladefläche
@@ -101,48 +101,48 @@ carSizes:
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1998
+  valuewidth: 1680
   baseUnit: keine Angabe
-  valuelength: 5700
-  valueheight: 2552
+  valuelength: 4500
+  valueheight: 1980
   valuewheelbase: 0
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1925
+  valueheight: 1350
   width: Breite
-  valuewidth: 1800
-  valuelength: 3200
+  valuewidth: 1480
+  valuelength: 2530
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "5700"
+  value: "4500"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1998"
+  value: "1680"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "2552"
+  value: "1980"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "3200"
+  value: "2530"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1800"
+  value: "1480"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "1925"
+  value: "1350"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "3850"
+  value: "2925"
   baseUnit: mm
 ---
 Der Cargo Van der österreichischen Firma NME ist ein elektrischer Kastenwagen, der bis zu 1.000 Kilogramm Nutzlast aufnehmen kann und eine Höchstgeschwindigkeit von 90 km/h erreicht.
