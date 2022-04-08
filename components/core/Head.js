@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 export default function MainHead(props) {
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
     <Head>
