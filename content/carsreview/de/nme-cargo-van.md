@@ -43,53 +43,44 @@ content:
 
       Das Fahrzeug kann an einer gewöhnlicher Haushaltssteckdose aufgeladen werden. Allerdings beträgt die Ladeleistung hier nur 3,3 kW, was zu einer Ladezeit von rund 13 Stunden 0 auf 100% führt. Gegen Aufpreis ist auch ein Schnellladekabel-Adapter verfügbar. Dadurch kann per Gleichstrom eine Ladeleistung von 35 kW und somit theoretisch eine Ladezeit von etwa 70 Minuten erreicht werden.
     title: Antrieb & Aufladung
-    image: /images/mb-esprinter-anschluss-2.jpg
+    image: /images/nme-cargo-van-innenraum.jpg
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung (2/5)
 
 
-      Wie sein Geschwisterchen eVito ist auch der eSprinter recht komfortabel ausgestattet im Vergleich zu Nutzfahrzeugen anderer Hersteller. Als Serienausstattung sind bereits eine Sitzheizung für den Fahrer, ein digitales Radio (DAB) sowie ein elektronisches Stabilitätsprogramm (ESP) integriert. Bei der verfügbaren Zusatzausstattung bietet Mercedes-Benz viele Optionen für den Stadtverkehr an, da der eSprinter wohl bevorzugt in dieser Umgebung genutzt werden wird.
-
-
-      So sind optional Helfer wie ein Rückfahrkamera und ein Totwinkel-Assistent verfügbar, welche bei der Größe und Unübersichtlichkeit des Fahrzeugs nützlich sein können. Weitere Extras sind zum Beispiel eine Klimaanlage sowie ein LED-Lichtband zur Beleuchtung des Laderaums. Auch ein dritter Sitzplatz in der Kabine ist gegen Aufpreis verfügbar.
+      Der NME Cargo Van ist ein praktischer und nicht sehr üppig ausgestatteter Kastenwagen. Allerdings wird er trotzdem serienmäßig mit einer manuellen Klimaanlage, einer Zentralverriegelung mit Fernbedienung sowie elektrischen Fensterhebern ausgeliefert. Optional gibt es zudem eine Multimedia-Einheit mit Freisprechanlage und Rückfahrkamera, einen Satz Winterreifen sowie ein Typ 2-Ladekabel.
     title: Komfort & Ausstattung
-    image: /images/mb-esprinter-innenraum.jpg
+    image: ""
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Der Mercedes-Benz eSprinter zielt auf die Kurierbranche, die oft im urbanen Raum tätig ist. Allerdings ist das Fahrzeug durch seine Größe sicher kein ideales Stadtauto. Die fehlenden Fenster in der Kastenwagen-Version tun ihr übriges. Eine Rückfahrkamera oder gar eine 360-Grad-Kamera sind deshalb ideale Helfer, kosten aber leider extra.
-
-
-      Für Fuhrpark-Manager bietet das Fahrzeug aber viel praktische Unterstützung. So können die eSprinter einer Flotte zum Beispiel auch vom Fuhrparkmanager per App geöffnet werden, ohne dass der Mitarbeiter einen Schlüssel benötigt. So werden Fahrzeugwechsel bei vielen Fahrern vereinfacht. Außerdem können via Smartphone alle Transporter der Flotte jederzeit in Echtzeit verfolgt und mit neuen Aufträgen versorgt werden.
+      Der Elektromotor hat ein Drehmoment von 220 Nm, wodurch der NME Cargo Van recht flott unterwegs ist. Die Höchstgeschwindigkeit liegt bei 90 km/h, was die Autobahn-Tauglichkeit eher verringert. Da das Fahrzeug aber wohl zum Großteil im urbanen Lieferdienst eingesetzt werden dürfte, fällt dies nicht zu sehr ins Gewicht. Ein Flottenmanagement-System wird nicht angeboten.
     title: Bedienung & Fahrbetrieb
-    image: /images/mb-esprinter-heck.jpg
+    image: /images/nme-cargo-van-seitentuer.jpg
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt (4/5)
 
 
-      Mit der kleineren Hochvoltbatterie von 35 kWh soll der eSprinter ca. 37,1 kWh auf 100 Kilometer verbrauchen. Bei der größeren Version mit 47 kWh liegt der Verbrauch interessanterweise niedriger bei nur 32,5 kWh / 100 Km. Damit soll das Fahrzeug knapp 160 Kilometer weit fahren können. Ein Solarmodul für mehr Reichweite wird derzeit nicht angeboten.
+      Die Reichweite von 180 Kilometer mit einem 41 kWh-Akku spricht für einen Energieverbrauch von ungefähr 23 kWh pro 100 Kilometer, für einen Elektrotransporter dieser Größe vollkommen im Rahmen. Die Kosten pro 100 Kilometer betragen so ungefähr 6,90 Euro bei einem Strompreis von 30 Cent pro kWh. Ein Solarmodul ist derzeit allerdings nichts erhältlich.
     title: Umwelt
   - content: >-
       ### Preise & Garantie (4/5)
 
 
-      Beim eSprinter setzt Mercedes-Benz vermehrt auf das Leasing des Fahrzeugs. So ist der große Elektro-Transporter laut Hersteller ab 299 Euro im Monat erhältlich. Beim Kaufpreis startet der eSprinter als 35 kWh-Version bei einem Listenpreis von 54.090 Euro, wodurch sich ein Kaufpreis inklusive Mehrwertsteuer von 64.367,10 Euro ergibt. 
-
-
-      Mit dem größeren 47 kWh-Akku kostet das Fahrzeug mindestens 61.310 Euro netto. In allen Angeboten ist der Akku mit enthalten und muss nicht gemietet werden. Wie auf alle Transporter gibt Mercedes-Benz auch auf den eSprinter eine Neufahrzeug-Garantie von 24 Monaten, welche ohne Kilometerbegrenzung gilt.
+      Der NME Cargo Van hat einen Preis von 27.000 Euro, welcher durch Förderungen natürlich noch gesenkt werden kann. Auf den Akku gibt NME 5 Jahre Garantie, solange die Restkapazität über 70% liegt. Bei hoher Beanspruchung kann diese also deutlich eher verfallen. Das Fahrzeug an sich hat 2 Jahre oder 60.000 Kilometer Garantie.
     title: Preise & Garantie
-    image: ""
+    image: /images/nmw-cargo-van-ladestecker.jpg
   - content: >-
       ### Fazit
 
 
-      Der Mercedes-Benz eSprinter ist besonders durch seinen riesigen Laderaum von 11 m³ für den Waren- und Gütertransport von großen Lademengen interessant. Aber auch in Sachen Komfort ist das Fahrzeug anderen Nutzfahrzeugen überlegen. Die Elektroversion bietet sich aber vorerst nur für den Stadtverkehr oder kürzere Überlandstrecken an, da die angegeben Reichweiten mit Ladung wohl nicht zu erreichen sind.
+      Der von NME vertriebene Cargo Van auf Basis von Dongfeng ist ein sehr geräumiger und funktionaler Kastenwagen, der besonders in der Lieferbranche dank seines Preises so manchen Interessenten finden dürfte. Luxus oder extrem hohe Qualität ist nicht zu erwarten, dafür aber ein praktischer Lastesel.
 
 
       ### Gesamtpunktzahl:
 
 
-      3,4 Sterne
+      3,2 Sterne
     title: Fazit
 ---
