@@ -17,22 +17,21 @@ function CarCard({ carItem }) {
   return (
     <div className="shadow-lg mb-4 lg:shadow-none border-t lg:border-2 lg:border-grey-lighter lg:rounded-xl overflow-hidden ">
       <div className="flex sm:flex-row">
-        <div className="flex flex-col flex-1 relative pl-2 pt-3 justify-between ">
-          <div className="flex ">
-            <Link href={`/transporter/${carItem.name}`}>
-              <a>
-                <h3 className="title text-xl font-bold text-black-darkest py-1 lg:hidden  flex leading-7">
-                  {carItem.title}
-                </h3>
-              </a>
-            </Link>
-          </div>
-          <div className="pb-6 ">
+        <div className="flex flex-col flex-1 relative pl-2 lg:pl-0 pt-3 justify-between">
+          <Link href={`/transporter/${carItem.name}`}>
+            <a>
+              <h3 className="title text-xl font-bold text-black-darkest py-1 sm:pl-2 xl:hidden flex leading-7">
+                {carItem.title}
+              </h3>
+            </a>
+          </Link>
+
+          <div className="pb-6 lg:pb-0">
             <Link href={`/transporter/${carItem.name}`} passHref>
               <a className="w-full relative">
                 {carItem?.src && (
                   <Image
-                    className="rounded-md"
+                    className="rounded-l-md"
                     src={
                       carItem.src
                     } /* "https://aixam.de/wp-content/uploads/2019/01/aixam-pro-pritsche.jpg" */
@@ -48,7 +47,7 @@ function CarCard({ carItem }) {
           </div>
         </div>
 
-        <div className=" hidden lg:flex lg:my-auto lg:w-1/2">
+        <div className=" hidden lg:flex lg:my-auto lg:w-[45%]">
           <CarCardDetailsDesktop carItem={carItem} />
         </div>
         {/* DIVIDER start*/}

@@ -14,7 +14,15 @@ export default function kontakt(props) {
 
   return (
     // <div className="relative h-screen">
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center relative">
+      {/* <div className="absolute left-96 top-72 w-[20%]">
+        <Image
+          src="/images/test.png"
+          width={50}
+          height={90}
+          layout="responsive"
+        />
+      </div> */}
       <div className="">
         <Form open={open} setOpen={setOpen} />
       </div>

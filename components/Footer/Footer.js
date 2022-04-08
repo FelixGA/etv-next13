@@ -33,38 +33,54 @@ const Footer = ({ blogs, reviews }) => {
       <footer className="py-10 lg:flex lg:flex-row-reverse lg:justify-around print:hidden ">
         <nav className="flex mt-10 flex-col sm:flex-row justify-between items-center sm:items-start pb-8">
           <div className="flex lg:w-48 items-center flex-col justify-start  ">
-            <h3 className="text-sm sm:text-lg font-bold tracking-wider h-6 sm:h-10 lg:h-12  pt-2">
+            <h3 className="text-sm sm:text-lg font-bold tracking-wider h-6 sm:h-10 lg:h-12">
               <Link href="/comparePage">
                 <a>{`Transporter`.toUpperCase()}</a>
               </Link>
             </h3>
-
-            <ListItems itemsList={reviews} />
+            <div className="pt-4">
+              <ListItems itemsList={reviews} />
+            </div>
           </div>
           <div className="flex lg:w-48 items-center flex-col justify-start ">
-            <h3 className="text-sm sm:text-lg font-bold tracking-wider h-6 sm:h-10 lg:h-12  pt-2">
+            <h3 className="text-sm sm:text-lg font-bold tracking-wider h-6 sm:h-10 lg:h-12">
               <Link href="/magazin">
                 <a>{`Magazin`.toUpperCase()}</a>
               </Link>
             </h3>
-
-            <ListItems itemsList={magazine} />
+            <div className="pt-4">
+              <ListItems itemsList={magazine} />
+            </div>
           </div>
           <div className="flex lg:w-48 items-center flex-col justify-start ">
-            <h3 className=" text-sm sm:text-lg font-bold text-center tracking-wider h-6 sm:h-10 lg:h-12  pt-2">
+            <h3 className="text-sm sm:text-lg font-bold text-center tracking-wider h-6 sm:h-10 lg:h-fit">
               {`Rechtliches & Kontakt`.toUpperCase()}
             </h3>
-            <ListItems itemsList={rights} />
+            <div className="pt-2">
+              <ListItems itemsList={rights} />
+            </div>
           </div>
         </nav>
-        <div className="lg:w-1/4 lg:pt-14 px-8">
-          <div className="flex flex-row justify-start items-center flex-wrap pl-2">
-            <Image src="/images/etv-logo-final.png" width={60} height={40} />
-            <p className="text-blue-dark text-xs font-bold ">
-              Elektrotransporter
-              <br />
-              Vergleich
-            </p>
+
+        <div className="lg:w-1/4 lg:pt-11 px-8">
+          <div className="flex flex-row justify-start items-center pl-2 ">
+            <div className="w-1/3 sm:w-1/2 md:w-[15%] lg:w-[40%] xl:w-[25%]">
+              <Image
+                className=""
+                src="/images/etv-logo-final.png"
+                width={60}
+                height={40}
+                objectFit="contain"
+                layout="responsive"
+              />
+            </div>
+            <div className="w-full sm:w-1/2">
+              <p className="text-blue-dark text-xs sm:text-lg font-bold ">
+                Elektrotransporter
+                <br />
+                Vergleich
+              </p>
+            </div>
           </div>
           <div className="flex ">
             <p className="px-4">
