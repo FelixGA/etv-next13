@@ -6,12 +6,19 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import TopSlider from "../components/Sliders/TopSlider";
 import Funnel from "../components/Caradvisor/Funnel";
 import NewsLetter from "../components/Homepage/NewsLetter";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
   const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
+  const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
+  useEffect(() => {
+    SetTestReviews(props.carsreviews);
+    SetGetCars(props.vehicles);
+    SetGetContent(props.page);
+    SetGetMarkdownContext(props.context);
+  }, [props]);
   return (
     <>
       <Head>

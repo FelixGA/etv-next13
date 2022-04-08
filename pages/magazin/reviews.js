@@ -1,14 +1,18 @@
 import Head from "next/head";
 import getContent from "/utils/getContent";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Blog from "../../components/Blog/Blog";
 import Link from "next/link";
 
 export default function reviews(props) {
   const [getBlogs, SetGetBlogs] = useState(props.blogs);
-  const [getTestReview, SetTestReview] = useState(props.carsreview);
+  const [getTestReview, SetTestReview] = useState(props.carsreviews);
 
+  useEffect(() => {
+    SetGetBlogs(props.blogs);
+    SetTestReview(props.carsreviews);
+  }, [props]);
   return (
     <>
       <h2 className="px-4 pt-8 pb-2 text-blue-dark font-bold text-4xl text-center">
@@ -25,7 +29,7 @@ export async function getStaticProps(context) {
   let vehicles = await getContent("vehicles", context.locale);
   const page = pages.find((page) => page.path === "/magazin");
   let blogs = await getContent("blogs", context.locale);
-  let carsreview = await getContent("carsreview", context.locale);
+  let carsreviews = await getContent("carsreview", context.locale);
 
   if (!page) {
     return {
@@ -39,7 +43,7 @@ export async function getStaticProps(context) {
       posts,
       vehicles,
       blogs,
-      carsreview,
+      carsreviews,
     },
   };
 }

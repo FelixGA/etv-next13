@@ -32,10 +32,9 @@ const variants = {
   },
 };
 
-function FiltersMobile({ getContent }) {
+function FiltersMobile() {
   /* filter list */
-  let fromWord = getContent.content[1].details.split(",")[0];
-  let hourWord = getContent.content[1].details.split(",")[5];
+
   const filtersData = [
     {
       id: 1,
@@ -46,27 +45,27 @@ function FiltersMobile({ getContent }) {
         {
           value: 50,
           max: 1000,
-          name: `${fromWord} 50 km`,
+          name: `ab 50 km`,
           id: 1,
           categoryName: "rangeLithium",
         },
         {
           id: 2,
-          name: `${fromWord} 100 km`,
+          name: `ab 100 km`,
           value: 100,
           max: 1000,
           categoryName: "rangeLithium",
         },
         {
           id: 3,
-          name: `${fromWord} 150 km`,
+          name: `ab 150 km`,
           value: 150,
           max: 1000,
           categoryName: "rangeLithium",
         },
         {
           id: 4,
-          name: `${fromWord} 200 km`,
+          name: `ab 200 km`,
           value: 200,
           max: 1000,
           categoryName: "rangeLithium",
@@ -82,28 +81,28 @@ function FiltersMobile({ getContent }) {
       options: [
         {
           id: 1,
-          name: `${fromWord} 100 kg`,
+          name: `ab 100 kg`,
           value: 100,
           max: 100000,
           categoryName: "loadingWeight",
         },
         {
           id: 2,
-          name: `${fromWord} 250 kg`,
+          name: `ab 250 kg`,
           value: 250,
           max: 100000,
           categoryName: "loadingWeight",
         },
         {
           id: 3,
-          name: `${fromWord} 450 kg`,
+          name: `ab 450 kg`,
           value: 450,
           max: 100000,
           categoryName: "loadingWeight",
         },
         {
           id: 4,
-          name: `${fromWord} 500 kg`,
+          name: `ab 500 kg`,
           value: 500,
           max: 100000,
           categoryName: "loadingWeight",
@@ -118,25 +117,25 @@ function FiltersMobile({ getContent }) {
       options: [
         {
           id: 1,
-          name: `${fromWord} 50 km/h`,
+          name: `ab 50 km/h`,
           value: 50,
           categoryName: "maxSpeed",
         },
         {
           id: 2,
-          name: `${fromWord} 80 km/h`,
+          name: `ab 80 km/h`,
           value: 80,
           categoryName: "maxSpeed",
         },
         {
           id: 3,
-          name: `${fromWord} 120 km/h`,
+          name: `ab 120 km/h`,
           value: 120,
           categoryName: "maxSpeed",
         },
         {
           id: 4,
-          name: `${fromWord} 180 km/h`,
+          name: `ab 180 km/h`,
           value: 180,
           categoryName: "maxSpeed",
         },
@@ -149,25 +148,25 @@ function FiltersMobile({ getContent }) {
       image: image6,
       options: [
         {
-          name: `${fromWord} 5 ${hourWord}`,
+          name: `ab 5 Stunden`,
           value: 5,
           id: 1,
           categoryName: "chargingTimeLithium",
         },
         {
-          name: `${fromWord} 10 ${hourWord}`,
+          name: `ab 10 Stunden`,
           value: 10,
           id: 2,
           categoryName: "chargingTimeLithium",
         },
         {
-          name: `${fromWord} 15 ${hourWord}`,
+          name: `ab 15 Stunden`,
           value: 15,
           id: 3,
           categoryName: "chargingTimeLithium",
         },
         {
-          name: `${fromWord} 20 ${hourWord}`,
+          name: `ab 20 Stunden`,
           value: 20,
           id: 4,
           categoryName: "chargingTimeLithium",
@@ -181,25 +180,25 @@ function FiltersMobile({ getContent }) {
       image: image5,
       options: [
         {
-          name: getContent.content[1].details.split(", ")[1],
+          name: "Pritsche",
           value: "Pritsche",
           id: 1,
           categoryName: "category",
         },
         {
-          name: getContent.content[1].details.split(", ")[2],
+          name: "Kipper",
           value: "Kipper",
           id: 2,
           categoryName: "category",
         },
         {
-          name: getContent.content[1].details.split(", ")[3],
+          name: "Koffer",
           value: "Koffer",
           id: 3,
           categoryName: "category",
         },
         {
-          name: getContent.content[1].details.split(", ")[4],
+          name: "Kasten",
           value: "Kasten",
           id: 4,
           categoryName: "category",
@@ -286,7 +285,7 @@ function FiltersMobile({ getContent }) {
               </div>
               <span className="ml-4 font-black my-auto text-sm text-blue-darker">
                 {/* Alle Filter anzeigen */}
-                {getContent.content[1].name}
+                Alle Filter anzeigen
               </span>
             </div>
 
@@ -314,8 +313,8 @@ function FiltersMobile({ getContent }) {
           >
             {priceFilterData.map((item) => (
               <div className="relative  " key={item.id}>
-                <Sort getContent={getContent} />
-                <FilterItemMobile item={item} getContent={getContent} />
+                <Sort />
+                <FilterItemMobile item={item} />
                 <AnimatePresence initial={false}>
                   {state?.truncates == item.title && (
                     <motion.div
@@ -334,7 +333,7 @@ function FiltersMobile({ getContent }) {
             ))}
             {filtersData.map((item) => (
               <div key={item.id}>
-                <FilterItemMobile item={item} getContent={getContent} />
+                <FilterItemMobile item={item} />
               </div>
             ))}
           </motion.div>

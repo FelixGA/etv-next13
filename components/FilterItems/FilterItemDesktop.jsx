@@ -19,14 +19,14 @@ const variants = {
   },
 };
 
-const filterTitles = [
-  "Preis",
-  "Reichweite",
-  "Zuladung",
-  "Hochgeschwindigkeit",
-  "Ladezeit",
-  "Aufbautyp",
-];
+// const filterTitles = [
+//   "Preis",
+//   "Reichweite",
+//   "Zuladung",
+//   "Hochgeschwindigkeit",
+//   "Ladezeit",
+//   "Aufbautyp",
+// ];
 
 function FilterItemDesktop({ item }) {
   // const item = props.item;

@@ -1,10 +1,15 @@
 import getContent from "/utils/getContent";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+import Image from "next/image";
 import Form from "../components/repeated/Form";
 
 export default function kontakt(props) {
   const [open, setOpen] = useState(true);
-
+  const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
+  useEffect(() => {
+    SetTestReviews(props.carsreviews);
+  }, [props]);
   // const watchName = watch("firstName");
 
   return (
@@ -38,16 +43,3 @@ export async function getStaticProps(context) {
     },
   };
 }
-// export default async function handler(request, response) {
-//   const res = await fetch('https://vercel.com/team-ari-motor/elektrotransporter-vergleich/3zavYzjBWxvMY4iqowRdoVgkMi4D', {
-//     method: 'POST',
-//     body: JSON.stringify({
-//       client_id: process.env.CLIENT_ID,
-//       client_secret: process.env.CLIENT_SECRET,
-//     }),
-//     headers: { 'Content-Type': 'application/json' },
-//   });
-
-//   const data = await res.json();
-//   return response.status(200).json({ data });
-// }

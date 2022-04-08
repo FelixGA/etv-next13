@@ -11,6 +11,7 @@ export default function TextArea({
   registerData,
   width,
   required,
+  carItem,
 }) {
   const router = useRouter();
   router.pathname == "/kontakt" ? (required = true) : (required = false);
@@ -30,6 +31,7 @@ export default function TextArea({
         {...register(registerData, {
           required: required,
         })}
+        defaultValue={carItem ? carItem : " -"}
         type={type}
         id={id}
       ></textarea>
