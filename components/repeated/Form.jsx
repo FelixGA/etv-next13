@@ -48,13 +48,26 @@ export default function Form(props) {
         }
       >
         <div className=" sm:pt-8 flex justify-center items-center">
-          <p className="text-md sm:text-xl md:text-2xl font-bold w-2/3 text-center pt-4 pl-4 pr-4">
+          <p
+            className={
+              router.pathname !== "/kontakt"
+                ? "text-md sm:text-xl md:text-2xl lg:text-3xl font-bold w-full text-center pt-8 pl-4 pr-4 pb-4 sm:w-3/4"
+                : "text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold w-full text-center pt-4 pl-4 pr-4 sm:w-3/4"
+            }
+          >
             Erhalten Sie jetzt Ihr Angebot
             <span className="font-thin"> kostenlos und unverbindlich</span>
           </p>
         </div>
         {/* IMAGES */}
-        <div className=" justify-center items-center relative left-6 hidden sm:flex">
+
+        <div
+          className={
+            router.pathname == "/kontakt" || "comparePage"
+              ? "justify-center items-center relative left-6 flex"
+              : "hidden"
+          }
+        >
           <div className="w-10 sm:w-24">
             <Image
               src="/images/siegel2.png"
@@ -80,7 +93,7 @@ export default function Form(props) {
           // action="https://api.vercel.com/v6/deployments"
           method="POST"
           onSubmit={handleSubmit(onSubmit, onError)}
-          className="flex flex-col w-fit bg-white rounded-md p-4 sm:p-8 shadow-lg"
+          className="flex flex-col w-fit bg-white rounded-md pl-4 pr-4 pt-0 pb-4 sm:p-8 shadow-lg"
         >
           <TextInput
             placeholder={"z.B. Max Muster"}
@@ -159,7 +172,7 @@ export default function Form(props) {
           <button
             onClick={() => setSend(true)}
             type="submit"
-            className="bg-blue-darker text-white h-auto w-64 xs:w-96 rounded-lg py-2 mb-0 sm:mb-8"
+            className="bg-blue-darker hover:bg-blue-light text-white h-auto w-64 xs:w-96 rounded-lg py-2 mb-0 sm:mb-8"
           >
             Unverbindlich und kostenlos anfragen
           </button>
@@ -167,14 +180,18 @@ export default function Form(props) {
       </div>
       <div
         className={
-          send ? "flex h-fit justify-center items-center w-52  " : "hidden"
+          send
+            ? "flex h-fit justify-center items-center w-64 xs:w-80 sm:w-96 "
+            : "hidden"
         }
       >
-        <p className="p-4 sm:p-8 mt-4">
+        <p className="px-8 sm:p-8 mt-4 w-full sm:w-2/3 sm:text-lg">
           Vielen Dank für Ihre Fahrzeug-Konfiguration! Wir senden Ihnen jetzt
-          eine E-Mail. Bitte prüfen Sie Ihren Posteingang! Bei Fragen zu Ihrem
-          Fahrzeug-Angebot könne Sie uns jederzeit kostenlos anrufen: 0341 978
-          56 933
+          eine E-Mail. Bitte prüfen Sie Ihren Posteingang! <br />{" "}
+          <p className="pt-4 pb-4">
+            Fragen zu Ihrem Fahrzeug-Angebot könne Sie uns jederzeit kostenlos
+            anrufen: 0341 978 56 933
+          </p>
         </p>
       </div>
     </>

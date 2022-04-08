@@ -192,8 +192,8 @@ export default function Funnel({ getContent }) {
             {currentFilter.title}
           </h2>
         ) : (
-          <div className="pt-8">
-            <h3 className="text-center text-xl sm:text-3xl">
+          <div className="pt-8 px-4">
+            <h3 className="text-center text-xl sm:text-3xl ">
               Wir suchen das passende Fahrzeug für Sie.
             </h3>
             <div className="w-[90%] lg:w-full lg:scale-125 m-auto ">
