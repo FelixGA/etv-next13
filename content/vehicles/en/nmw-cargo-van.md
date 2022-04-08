@@ -14,7 +14,7 @@ maxSpeed:
   baseUnit: km/h
 rangeLithium:
   value: 180
-  maxValue: 178
+  maxValue: 180
   baseUnit: km
 chargingTime230V:
   value: 13

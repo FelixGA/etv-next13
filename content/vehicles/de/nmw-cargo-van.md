@@ -31,7 +31,7 @@ rangeLithium:
   key: Reichweite Lithium Akku
   value: 180
   baseUnit: km
-  maxValue: 178
+  maxValue: 180
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 13
@@ -145,4 +145,4 @@ wheelbase:
   value: "3850"
   baseUnit: mm
 ---
-Der Maxus EV 80 ist ein großer Elektrotransporter, der als Kastenwagen 910 Kilogramm Nutzlast aufnehmen kann und eine Höchstgeschwindigkeit von 100 km/h erreicht. Das Fahrzeug ist ebenso als Chassis-Version ohne Aufbau verfügbar.
+Der Cargo Van der österreichischen Firma NME ist ein elektrischer Kastenwagen, der bis zu 1.000 Kilogramm Nutzlast aufnehmen kann und eine Höchstgeschwindigkeit von 90 km/h erreicht.
