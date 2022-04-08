@@ -25,44 +25,37 @@ function Sort({ getContent }) {
   const [truncate, setTruncate] = useState(false);
   const [isChecked, setIsChecked] = useState("");
 
+  const sortBy2 = [
+    {
+      sortCategory: "Niedrigster Preis",
+      sortType: "lowest",
+    },
+    {
+      sortCategory: "Höchster Preis",
+      sortType: "highest",
+    },
+    // {
+    //   sortCategory: sortingCate[3],
+    //   sortType: "bestseller",
+    // },
+    {
+      sortCategory: "Beste Ladenzeit",
+      sortType: "chargingTimeLithium",
+    },
+    {
+      sortCategory: "Höchste Zuladung",
+      sortType: "highestWeight",
+    },
+    {
+      sortCategory: "Höchste Reichweite",
+      sortType: "highestRange",
+    },
+    // {
+    //   sortCategory: sortingCate[7],
+    //   sortType: "highestVmax",
+    // },
+  ];
   useEffect(() => {
-    let sortingCate = getContent.content[2].markdown
-      .split(", ")
-      .map((el) => el);
-    const sortBy2 = [
-      // {
-      //   sortCategory: sortingCate[0],
-      //   sortType: 1,
-      // },
-      {
-        sortCategory: "Niedrigster Preis",
-        sortType: "lowest",
-      },
-      {
-        sortCategory: "Höchster Preis",
-        sortType: "highest",
-      },
-      // {
-      //   sortCategory: sortingCate[3],
-      //   sortType: "bestseller",
-      // },
-      {
-        sortCategory: "Beste Ladenzeit",
-        sortType: "chargingTimeLithium",
-      },
-      {
-        sortCategory: "Höchste Zuladung",
-        sortType: "highestWeight",
-      },
-      {
-        sortCategory: "Höchste Reichweite",
-        sortType: "highestRange",
-      },
-      // {
-      //   sortCategory: sortingCate[7],
-      //   sortType: "highestVmax",
-      // },
-    ];
     //lowest price as in initial state
     dispatch({
       type: "activeSortValue",
