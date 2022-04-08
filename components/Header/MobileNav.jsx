@@ -52,7 +52,7 @@ function MobileNav() {
           </Link>
         </li>
         <li className="">
-          <Link href="/comparePage">
+          <Link href="/fahrzeuge">
             <a
               onClick={() => {
                 dispatch({
@@ -63,6 +63,21 @@ function MobileNav() {
             >
               {" "}
               Transporter
+            </a>
+          </Link>
+        </li>
+        <li className="">
+          <Link href="/comparePage">
+            <a
+              onClick={() => {
+                dispatch({
+                  type: "mobileNavActive",
+                  data: !state?.mobileNavActives,
+                });
+              }}
+            >
+              {" "}
+              Transporter-Vergleich
             </a>
           </Link>
         </li>

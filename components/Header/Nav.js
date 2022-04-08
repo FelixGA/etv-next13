@@ -52,17 +52,17 @@ const Nav = () => {
               </a>
             </Link>
           </li>
-          {/*  <li>
-            <Link href="/caradviser">
+          <li>
+            <Link href="/fahrzeuge">
               <a
                 onClick={() => {
                   setIsActive(false);
                 }}
               >
-                Kaufberater
+                Transporter
               </a>
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link href="/comparePage">
               <a
@@ -70,7 +70,7 @@ const Nav = () => {
                   setIsActive(false);
                 }}
               >
-                Transporter
+                Transporter-Vergleich
               </a>
             </Link>
           </li>
