@@ -18,28 +18,39 @@ export default function fahrzeuge(props) {
     SetCarsReview(props.carsreviews);
     SetGetContent(props.page);
   }, [props.vehicles]);
+  console.log(
+    props.vehicles.map(
+      (car) => `${car.title} ________________ ${car.relatedReviews}`
+    )
+  );
   return (
-    <div className="w-3/4 margin-auto ">
+    <div className="w-full">
       <Head page={props.page} />
-      <h1>
-        Elektro-Transporter – {sortedCars.length} {getContent.title}
-      </h1>
-      <p>{getContent.description}</p>
-      <div className="w-3/4 ">
-        <Image
-          src={getContent.src}
-          alt={getContent.title}
-          width={195}
-          height={30}
-          layout="responsive"
-          objectFit="cover"
-        />
-      </div>
+      <div className="2xl:px-48">
+        <h1 className="text-black text-2xl xl:text-4xl tracking-wider pb-4 pt-8 xl:pt-12 px-4 2xl:px-48 text-left">
+          Elektro-Transporter – {sortedCars.length} {getContent.title}
+        </h1>
 
-      <FahrzeugeResultList
-        sortedCars={sortedCars}
-        getCarsReview={getCarsReview}
-      />
+        <div className="w-3/4 mx-auto my-2">
+          <Image
+            src="/images/test2.svg"
+            alt={getContent.title}
+            width={150}
+            height={30}
+            layout="responsive"
+            objectFit="contain"
+          />
+        </div>
+        <div className="px-4 2xl:px-48">
+          <p>{getContent.description}</p>
+        </div>
+        <div className="2xl:px-48">
+          <FahrzeugeResultList
+            sortedCars={sortedCars}
+            getCarsReview={getCarsReview}
+          />
+        </div>
+      </div>
     </div>
   );
 }
