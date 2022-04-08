@@ -48,13 +48,26 @@ export default function Form(props) {
         }
       >
         <div className=" sm:pt-8 flex justify-center items-center">
-          <p className="text-md sm:text-xl md:text-2xl font-bold w-2/3 text-center pt-4 pl-4 pr-4">
+          <p
+            className={
+              router.pathname !== "/kontakt"
+                ? "text-md sm:text-xl md:text-2xl lg:text-3xl font-bold w-full text-center pt-8 pl-4 pr-4 pb-4 sm:w-3/4"
+                : "text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold w-full text-center pt-4 pl-4 pr-4 sm:w-3/4"
+            }
+          >
             Erhalten Sie jetzt Ihr Angebot
             <span className="font-thin"> kostenlos und unverbindlich</span>
           </p>
         </div>
         {/* IMAGES */}
-        <div className=" justify-center items-center relative left-6 hidden sm:flex">
+
+        <div
+          className={
+            router.pathname == "/kontakt"
+              ? "justify-center items-center relative left-6 flex"
+              : "hidden"
+          }
+        >
           <div className="w-10 sm:w-24">
             <Image
               src="/images/siegel2.png"
@@ -80,7 +93,7 @@ export default function Form(props) {
           // action="https://api.vercel.com/v6/deployments"
           method="POST"
           onSubmit={handleSubmit(onSubmit, onError)}
-          className="flex flex-col w-fit bg-white rounded-md p-4 sm:p-8 shadow-lg"
+          className="flex flex-col w-fit bg-white rounded-md pl-4 pr-4 pt-0 pb-4 sm:p-8 shadow-lg"
         >
           <TextInput
             placeholder={"z.B. Max Muster"}
