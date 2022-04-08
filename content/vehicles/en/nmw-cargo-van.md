@@ -1,6 +1,7 @@
 ---
-name: nmw-cargo-van
+name: nme-cargo-van
 price: 27000
+relatedBlogs: nur beispiel
 src: /images/nme-cargo-van-frontansicht.jpg
 loadingWeight:
   value: 1000

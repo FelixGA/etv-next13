@@ -1,6 +1,6 @@
 ---
 title: NME Cargo Van
-name: nmw-cargo-van
+name: nme-cargo-van
 price: 27000
 relatedBlogs: nur beispiel
 relatedReviews: ""
