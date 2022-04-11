@@ -188,22 +188,22 @@ export default function Form(props) {
                 <input
                   id="confirm"
                   type="checkbox"
-                  className="mr-2 h-4 w-4"
+                  className="mr-1 h-3 w-3"
                   /* onClick={() => setCheckedStatus(true)}
               checked={checkedStatus} */
                   {...field}
                 />
               )}
             />{" "}
-            <label for="confirm" className="text-md">
+            <label for="confirm" className="text-sm">
               Ja, ich stimme der{" "}
-              <span className="font-bold">
+              <span className="font-bold text-blue-dark">
                 <Link href={"/impressum"}>
                   <a>Datenschutzerklärung</a>
                 </Link>
               </span>{" "}
               und den{" "}
-              <span className="font-bold">
+              <span className="font-bold text-blue-dark">
                 <Link href={"/allgemeineGeschaeftsbedingungen"}>
                   <a>AGBs</a>
                 </Link>

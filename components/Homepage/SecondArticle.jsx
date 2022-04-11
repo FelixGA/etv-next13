@@ -7,7 +7,7 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
     <div className="blog-article-two bg-grey-lightest flex px-8 pb-8 flex-col md:flex-row">
       <div className="w-[76%] mx-auto md:w-full relative xl:pl-10 md:pb-10 xl:mt-10 ">
         <Image
-          src="/images/schweinFull.jpeg"
+          src="/images/shweinFull.png"
           width={300}
           height={300}
           className="blog-article-two-image"
