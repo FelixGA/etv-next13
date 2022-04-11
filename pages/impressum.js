@@ -1,4 +1,3 @@
-import Head from "next/head";
 import getContent from "/utils/getContent";
 import Head from "../components/core/Head";
 import { useState } from "react";
