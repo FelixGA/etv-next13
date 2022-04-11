@@ -40,45 +40,55 @@ content:
       ### Antrieb & Aufladung (4/5)
 
 
-      Den Antrieb beim Maxus eDeliver 3 übernimmt ein 90 kW-Elektromotor, der ein Drehmoment von 250 Nm bereitstellen kann. Damit erreicht der E-Transporter eine Höchstgeschwindigkeit von 120 km/h, die elektronisch abgeregelt ist, um die Reichweite nicht zu sehr einzuschränken.
+      Angetrieben wird der Opel Vivaro-E Cargo von einem 100 kW Elektromotor, der ein Drehmoment von 260 Nm bereitstellt und den Citroen in ungefähr 12 Sekunden von 0 auf 100 km/h bringt. Wie meist bei Elektrofahrzeugen erfolgt die Kraftübertragung stufenlos. Die Höchstgeschwindigkeit beträgt bei allen Versionen bei 130 km/h. 
 
 
-      Die mögliche Reichweite unterscheidet sich natürlich deutlich bei den beiden Akku-Varianten. Die kombinierte WLTP-Reichweite liegt bei der 35 kWh-Version zwischen 150 und 158 Kilometer, mit großem Akku sind 230 bis 240 Kilometer möglich. Die Verbrauchsangaben liegen zwischen 23,6 und 25,3 kWh auf 100 Kilometer.
+      Der Opel Vivaro-E Cargo ist mit zwei Akku-Varianten erhältlich: Der 50 kWh-Akku ermöglicht maximale Reichweiten um die 230 Kilometer. Für eine 11 kW Wechselstrom-Wallbox gibt Opel die volle Aufladungszeit mit 4 Stunden und 45 Minuten an. Außerdem ist eine Schnellladefunktion für eine 100 kW Gleichstrom-Wallbox verfügbar, welche die Ladung von 0 auf 80% in gerade einmal 32 Minuten erledigen soll.
 
 
-      Bei den Ladezeiten auf 80% gibt Maxus 6 Stunden für die kleine Batterie und 8 Stunden für die 53 kWh-Variante an. Mit einem Gleichstrom-Schnellladeanschluss soll diese Aufladung in nur 45 Minuten möglich sein.
+      Der größere Akku mit 75 kWh Kapazität soll über eine maximale Reichweite von rund 320 Kilometer liegen ermöglichen, was sehr beachtlich ist für ein Fahrzeug dieser Größe. Allerdings dürften solche Strecken nur ohne Zuladung und mit wenig Steigung zu schaffen sein. Die Ladezeiten liegen hier bei rund 7 Stunden für die Wallbox und rund 48 Minuten für die 80-prozentige Schnellaufladung.
     title: Antrieb & Aufladung
-    image: /images/maxus-edeliver3-motor.jpg
+    image: /images/opel-vivaro-e-cargo-antrieb.jpg
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
 
-      Der Maxus eDeliver 3 ist ein recht luxuriös ausgestatteter Transporter, der bereits serienmäßig mit einer manuellen Klimaanlage, einem Bordcomputer, einem Radio mit Bluetooth-Funktion und einer Sitzheizung zum Kunden kommt und somit für Lieferfahrer viel Komfort bietet. Die Rückfahrkamera und die Berganfahrhilfe sind weitere kostenlose Details, die den Alltag im eDeliver 3 für Gewerbetreibende deutlich erleichtern sollten. Zusätzliche Optionen sind hingegen rar, so ist nur eine Metallic-Lackierung gegen Aufpreis zu bekommen.
+      In der Basisversion verfügt der Vivaro-E bereits serienmäßig über ABS, einen Doppel-Airbag, eine praktische Berganfahrhilfe sowie ein Radio mit Bluetooth-Funktion. Optionales Zubehör beinhaltet z.B. eine Einparkhilfe mit Signalton, ein Multifunktionslenkrad sowie ein Multimedia-Radio.
+
+
+      Leider gibt es bei elektrischen Vivaro nicht wie beim Schwestermodell Citroen Jumpy eine speziell für Baustellen ausgerüstete Variante mit erhöhter Bodenfreiheit und einem Motorschutz sowie einer erhöhten Nutzlast von rund 1.150 Kilogramm. Allerdings sind gegen Aufpreis Optionen wie Bodenplatte aus Holz im Laderaum und eine Trennwand erhältlich.
     title: Komfort & Ausstattung
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Der Maxus eDeliver 3 hat dank der hohen Sitzposition eine gute Übersicht, allerdings ist wie bei den meisten geschlossenen Kastenwagen die Übersicht eingeschränkt. Die Ladekante ist mit 54 Zentimeter angenehm niedrig, wodurch sich der Elektrotransporter einfach per Heck- oder Seitentür beladen lässt. Ein Flottenmanagement-System wird derzeit nicht angeboten.
+      Der Opel Vivaro-E Cargo ist ein recht luxuriöser Kastenwagen, dessen Fahrerkabine sehr komfortabel und hochwertig ist. Die Anzeigen sind fast alle digital und auch sonst mutet das Armaturenbrett sehr modern an. Der Transporter wirkt dadurch weniger wie ein robuster Handwerker-Kastenwagen und mehr wie ein komfortabler Kleinbus. Etwas gewöhnungsbedürftig ist der Fahrmodus-Schalter, der nur mit einem Finger bedient werden kann, wodurch die Auswahl etwas hakelig ist.
+
+
+      Auf der Straße macht der Opel Vivaro-E Cargo eine gute Figur. Die 260 Nm brauchen für ihre Entfaltung nicht wie beim Verbrennermotor einen konkreten Drehzahlbereich, sondern sind direkt vorhanden. Dadurch beschleunigt der Elektrotransporter mehr als ordentlich und ist dank 100 kW Leistung auch auf Landstraßen flott unterwegs. Und auch die Autobahn ist kein Hindernis, allerdings ist das Fahrzeug bei 130 km/h abgeriegelt.
     title: Bedienung & Fahrbetrieb
-    image: /images/maxus-edliever3-innenraum.jpg
+    image: /images/opel-vivaro-e-cargo-innenraum.jpg
   - content: >-
       ### Umwelt (3/5)
 
 
-      Der Energieverbrauch wird bei der 50 kWh-Version mit rund 23 kWh auf 100 Kilometer angegeben. Dies entspricht bei 30 Cent pro kWh ungefähr 6,90 Euro Energiekosten. Ein Solarmodul für eine erweiterte Reichweite wird derzeit leider nicht angeboten.
+      Der Energieverbrauch des Opel Vivaro-E liegt kombiniert laut Hersteller zwischen 21,7 und 26,1 kWh auf 100 km. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke so zwischen 6,60 und 7,80 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
   - content: >-
       ### Preise & Garantie (4/5)
 
 
-      Der Maxus eDeliver 3 startet bei 34.990 Euro für die kurze Version mit kleinem Akku, das Topmodell (L2 mit 53 kWh-Akku) kostet exakt 5.000 Euro mehr. Das ist sicher nicht billig, allerdings bekommt man dafür einen leistungsstarken Elektrotransporter mit umfangreicher Ausstattung. Außerdem ist die Herstellergarantie auf das Fahrzeug mit 5 Jahren bzw. 100.000 Kilometer sehr großzügig. Auf den Lithium-Ionen-Akku gibt es sogar 8 Jahre bzw. 160.000 Kilometer Garantie.
+      Die Preise für den Opel Vivaro-E Cargo beginnen bei 37.490 Euro netto für den Vivaro-E Cargo M mit 50 kWh-Akku und Basisausstattung. Die länger Variante Cargo M liegt etwas darüber. Der Akku mit einer höheren Kapazität von 75 kWh hat eine Aufpreis von rund 5.000 Euro. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
+
+
+      Opel bietet auf den Fahrzeugakku eine Garantie von stolzen 8 Jahren bzw. 160.000 Kilometer. Für das Fahrzeug gelten wie üblich bei Citroen eine Herstellergarantie von 2 Jahren ohne Kilometerbeschränkung.
     title: Preise & Garantie
+    image: /images/opel-vivaro-e-cargo-ladung.jpg
   - content: >-
       ### Fazit
 
 
-      Mit dem eDeliver 3 hat Maxus einen kräftigen und komfortablen Kastenwagen im Angebot, der außerdem mit ordentlicher Reichweite und viel Stauraum aufwartet. Wirklich günstig ist er dadurch zwar nicht, allerdings immer noch rund 10.000 Euro preiswerter als ein Mercedes-Benz eVito. Allein das dürfte schon genug Anreiz für einige Käufer sein.
+      Der Opel Vivaro-E Cargo ist ein recht hochwertiger Kastenwagen, welcher zudem mit einer recht hohen Reichweite punktet. Der Laderaum ist sehr geräumig und einfach beladbar und es gibt viele praktische Ausstattungsdetails für den Berufsalltag, wodurch der Vivaro-E Cargo speziell für Lieferanten und Handwerker sehr interessant sein dürfte. Allerdings ist das Fahrzeug nicht gerade günstig. Die Vivaro-Modelle mit Elektroantrieb kosten 8.000 bis 10.000 Euro netto mehr als das vergleichbare Verbrenner-Modell. Dadurch könnte das Fahrzeug für einige Interessenten schlich nicht erschwinglich sein.
 
 
       ### Gesamtpunktzahl:
