@@ -5,34 +5,35 @@ relatedCars: opel-vivaro-e
 youtubeLink: https://www.youtube.com/watch?v=8w6CNitJ0BM
 category: Kasten
 publishedAt: 04/01/2022
-description: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der
-  in zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
-  aufnehmen kann.
-src: /images/Maxus-eDeliver-3-Front-2-300x200.jpg
+description: >
+  Der Opel Vivaro-E Cargo ist ein Kastenwagen, welcher in zwei Ladelängen
+  erhältlich ist. Der Elektrotransporter erreicht in allen Varianten eine
+  Höchstgeschwindigkeit von 130 km/h und kann rund 900 Kilogramm
+  zuladen.                        
+src: /images/opel-vivaro-e-cargo-front.jpg
 content:
-  - content: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der in
-      zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
-      aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit von
-      120 km/h.
+  - content: Der Opel Vivaro-E Cargo ist ein Kastenwagen, welcher in zwei Ladelängen
+      erhältlich ist. Der Elektrotransporter erreicht in allen Varianten eine
+      Höchstgeschwindigkeit von 130 km/h und kann rund 900 Kilogramm zuladen.
     title: Einleitung
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
 
-      Der chinesische SAIC-Konzern ist einer der größten Fahrzeughersteller der Welt mit verschiedenen Marken, unter anderem MG Rover. Eine weitere Marke ist Maxus, die besonders für SUVs und Nutzfahrzeuge bekannt ist. Im Bereich der Elektrotransporter hat Maxus neben dem großen EV 80 auch den eDeliver 3 im Angebot, einen Kastenwagen in zwei Längen, der speziell auf Lieferfirmen abzielt.
+      Die ersten beiden Generationen des Opel Vivaro waren Gemeinschaftsprojekte mit Nissan und Renault und wurden von 2001 bis 2019 gebaut. Mit der dritten Generation änderte sich dies. Der aktuelle Vivaro ist auch in Zusammenarbeit mit Toyota und dem französischen PSA-Konzern entstanden, wodurch das Fahrzeug gleich drei Geschwister hat: den Peugeot Expert, den Toyota Proace sowie den Citroen Jumpy.
 
 
-      Der Maxus eDeliver 3 ist in zwei Längen erhältlich: L1 hat eine Länge von 4,55 Meter, während die Version L2 stolze 60 Zentimeter länger ist. Der Kunde hat zudem die Wahl zwischen zwei Akku-Versionen mit Kapazitäten von 35 bzw. 50 kWh. Beides sind Lithium-Ionen-Batterien.
+      Seit 2020 ist die elektrische Version Opel Vivaro auf dem Markt. Der Kastenwagen Vivaro-E Cargo ist elektrisch in zwei Längen erhältlich: 4,96 Meter (M) sowie 5,31 Meter (L). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität, welche natürlich unterschiedliche Reichweiten ermöglichen. Der Opel Vivaro-E ist auch mit Doppelkabine sowie als Kombi erhältlich, mit Sitzen und Fenstern im Fond. Hier soll es aber um die Kastenwagen-Version gehen.
     title: Konzept & Fahrzeugvarianten
-    image: /images/maxus-edeliver-3-laderaum.jpg
+    image: /images/opel-vivaro-e-cargo.jpg
   - content: >-
       ### Laderaum & Flexibilität (3/5)
 
 
-      In der Kurzversion L1 hat der Laderaum eine Länge von 2,18 Meter, wodurch eine Ladevolumen von 4.800 Liter zur Verfügung steht. Als L2 können Waren und Güter bis zu einer Länge von 2,77 Meter verstaut werden. Insgesamt besitzt der lange Elektrotransporter ein Ladevolumen von 6.300 Liter. Die Beladung wird über zwei Flügeltüren im Heck sowie eine seitliche Schiebetür vollzogen, die Ladekante ist mit 54 Zentimeter angenehm niedrig.
+      Der Stauraum kann über zwei geteilte, seitlich schwenkende Hecktüren oder eine nach oben schwingende Heckklappe beladen werden. Außerdem ist eine seitliche Schiebetür serienmäßig vorhanden. Der Laderaum hat beim Vivaro-E Cargo M eine Länge von rund 2,41 Meter, die Breite liegt bei maximal 1,62 Meter und die Ladung kann bis zu 1,33 Meter hoch geladen werden. So sind bis zu 5.800 Liter Ladevolumen verfügbar. Bei der großen Version ändert sich vor allem die Länge des Laderaums: als Vivaro-E Cargo L liegt diese bei 2,76 Meter. Dadurch entsteht ein Ladevolumen von maximal 6.600 Liter.
 
 
-      Die Zuladung variiert nach Länge des Fahrzeugs: während die kurze Version mit 50 kWh-Akku 830 Kilogramm aufnehmen kann, sind es in der Langversion 865 Kilogramm. Die Anhängelast beträgt 750 Kilogramm gebremst und zwischen 945 und 1015 Kilogramm mit einem ungebremsten Hänger.
+      Die Nutzlast des Opel Vivaro-E Cargo liegt bei den allen Modellen bei etwas mehr als 900 Kilogramm. Allerdings gibt es die 50 kWh-Version mit einer optionalen erhöhten Nutzlast, wodurch dann rund 200 Kilogramm mehr zugeladen werden können. Die Anhängelast ist bei allen Modellen gleich: 1.000 Kilogramm für gebremste, 750 Kilogramm für ungebremste Anhänger.
     title: Laderaum & Flexibilität
     image: ""
   - content: >-
