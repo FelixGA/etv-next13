@@ -80,9 +80,10 @@ function MobileNav() {
             </a>
           </Link>
         </li>
-        <li className="">
+        <li className=" w-full text-center ">
           <Link href="/comparePage">
             <a
+              className=" "
               onClick={() => {
                 dispatch({
                   type: "mobileNavActive",
@@ -90,8 +91,9 @@ function MobileNav() {
                 });
               }}
             >
-              {" "}
-              Transporter-Vergleich
+              Transporter-
+              <br />
+              Vergleich
             </a>
           </Link>
         </li>
