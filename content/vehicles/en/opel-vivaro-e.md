@@ -133,4 +133,24 @@ relatedBlogs: >-
 
   4,4
 src: /images/opel-vivaro-e-cargo-front.jpg
+loadingWeight:
+  value: 928
+  baseUnit: kg
+rangeLithium:
+  value: 231
+  maxValue: 329
+  baseUnit: km
+chargingTimeLithium:
+  value: 7
+chargingTimeFast:
+  value: 1
+consumption:
+  baseUnit: kWh
+power:
+  value: "100"
+  baseUnit: kw
+seats:
+  value: 2
+rating:
+  value: 3,6
 ---

@@ -158,21 +158,21 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 212
+  value: 231
   baseUnit: km
-  maxValue: 340
+  maxValue: 329
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
   baseUnit: keine Angabe
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 5
+  value: 7
   baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
   value: 1
-  baseUnit: h
+  baseUnit: keine Angabe
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
@@ -186,18 +186,18 @@ batteryIncluded:
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: 24,9
+  value: 21,7-26,1
   baseUnit: kWh
 power:
   key: Leistung
-  value: min-57/max-100
+  value: "100"
   baseUnit: kw
 seats:
   key: Sitzplätze
-  value: 3
+  value: 2
 rating:
   key: Gut
-  value: 2,0
+  value: 3,6
 guarantee:
   key: Garantie Fahrzeug
   value: 0
@@ -274,5 +274,4 @@ wheelbase:
   value: "3275"
   baseUnit: mm
 ---
-
-Der Citroen eJumpy ist seit 2020 auf dem Markt. Der elektrische Kastenwagen ist in zwei Längen erhältlich: 4,95 Meter (M) sowie 5,30 Meter (XL). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität.
+Der Opel Vivaro-E Cargo ist ein Kastenwagen, welcher in zwei Ladelängen erhältlich ist. Der Elektrotransporter erreicht in allen Varianten eine Höchstgeschwindigkeit von 130 km/h und kann rund 900 Kilogramm zuladen.
