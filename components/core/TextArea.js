@@ -31,7 +31,7 @@ export default function TextArea({
         {...register(registerData, {
           required: required,
         })}
-        defaultValue={carItem ? carItem : " -"}
+        defaultValue={carItem ? carItem : null}
         type={type}
         id={id}
       ></textarea>

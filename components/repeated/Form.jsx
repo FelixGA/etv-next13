@@ -165,6 +165,7 @@ export default function Form(props) {
             id={"message"}
             type={"textarea"}
             registerData={"message"}
+            carItem={props.carItem}
             required={true}
           />
 
@@ -179,19 +180,6 @@ export default function Form(props) {
             <p> {errors.checkbox && "accept the terms first"}</p>
           </div>
           <div className="w-64 xs:w-96 pb-4">
-            {/*  <input
-              id="confirm"
-              type="checkbox"
-              className="mr-2 h-4 w-4"
-              onClick={() => setCheckedStatus(true)}
-              checked={checkedStatus}
-            />
-            <label for="confirm" className="text-md">
-              Ja, ich stimme der{" "}
-              <span className="font-bold">Datenschutzerklärung</span> und den{" "}
-              <span className="font-bold">AGBs</span> zu (Widerruf jederzeit
-              möglich).
-            </label> */}
             <Controller
               name="checkbox"
               control={control}
@@ -223,31 +211,17 @@ export default function Form(props) {
               zu (Widerruf jederzeit möglich).
             </label>{" "}
           </div>
-          {/*   <div className="w-64 xs:w-96 pb-4">
-            <input
-              id="confirm"
-              type="checkbox"
-              className="mr-2 h-4 w-4"
-              onClick={() => setCheckedStatus(true)}
-              checked={checkedStatus}
-            />
-            <label for="confirm" className="text-md">
-              Ja, ich stimme der{" "}
-              <span className="font-bold">Datenschutzerklärung</span> und den{" "}
-              <span className="font-bold">AGBs</span> zu (Widerruf jederzeit
-              möglich).
-            </label>
-          </div> */}
+
           <button
             onClick={() => {
               !errors.emailInput &&
               !errors.firstName &&
               watch().firstName.length > 0 &&
               watch().emailInput.length > 0 &&
+              watch().message &&
               watch().checkbox
                 ? setSend(true)
                 : setSend(false);
-              console.log(errors.emailInput ? "error" : "no error");
             }}
             type="submit"
             className="bg-blue-darker hover:bg-blue-light text-white h-auto w-64 xs:w-96 rounded-lg py-2 mb-0 sm:mb-8"
