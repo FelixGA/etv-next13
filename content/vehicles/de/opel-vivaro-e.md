@@ -200,7 +200,7 @@ rating:
   value: 3,6
 guarantee:
   key: Garantie Fahrzeug
-  value: 0
+  value: 2
   baseUnit: keine Angabe
 availability:
   key: Verfügbarkeit
@@ -211,38 +211,38 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Batterie-Garantie
-  value: 0
+  value: 8
   baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
-  value: 544
+  value: 0
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 5,19
+  value: 5,8
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 3,90
+  value: "0"
   baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1920
+  valuewidth: 2010
   baseUnit: mm
   valuelength: 4959
-  valueheight: 1877
+  valueheight: 1895
   valuewheelbase: 3275
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1330
+  valueheight: 0
   width: Breite
-  valuewidth: 1608
-  valuelength: 2410
+  valuewidth: 0
+  valuelength: 0
   length: Länge
   baseUnit: mm
 carSizesLength:
@@ -251,23 +251,23 @@ carSizesLength:
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1920"
+  value: "2010"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1877"
+  value: "1895"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "2410"
+  value: "0"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1608"
+  value: "0"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "1330"
+  value: "0"
   baseUnit: mm
 wheelbase:
   key: Radstand

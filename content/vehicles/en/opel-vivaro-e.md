@@ -1,4 +1,5 @@
 ---
+title: Opel Vivaro-E Cargo
 name: opel-vivaro-e
 price: 37490
 relatedBlogs: >-
@@ -132,25 +133,143 @@ relatedBlogs: >-
 
 
   4,4
+description: Der Opel Vivaro-E Cargo ist ein Kastenwagen, welcher in zwei
+  Ladelängen erhältlich ist. Der Elektrotransporter erreicht in allen Varianten
+  eine Höchstgeschwindigkeit von 130 km/h und kann rund 900 Kilogramm zuladen.
 src: /images/opel-vivaro-e-cargo-front.jpg
 loadingWeight:
+  key: Nutzlast
   value: 928
   baseUnit: kg
+curbweight:
+  key: Leergewicht
+  value: 1937
+  baseUnit: kg
+maxSpeed:
+  key: km/h
+  value: 130
+  baseUnit: km/h
+range230V:
+  key: Reichweite SLA Blei
+  value: 0
+  baseUnit: keine Angabe
+  maxValue: 0
 rangeLithium:
+  key: Reichweite Lithium Akku
   value: 231
-  maxValue: 329
   baseUnit: km
+  maxValue: 329
+chargingTime230V:
+  key: Ladezeit 230-V-Steckdose
+  value: 0
+  baseUnit: keine Angabe
 chargingTimeLithium:
+  key: Ladezeit Typ2 Ladekabel
   value: 7
+  baseUnit: h
 chargingTimeFast:
+  key: Schnellladezeit
   value: 1
+  baseUnit: keine Angabe
+batteryCapacityBlei:
+  key: Kapazität SLA Akku
+  value: "-"
+  baseUnit: " keine Angabe"
+batteryCapacityLithium:
+  key: Kapazität Lithium Akku
+  value: "50"
+  baseUnit: kWh
+batteryIncluded:
+  value: keine Angabe
+  key: Batterie inklusive
 consumption:
+  key: "Verbrauch "
+  value: 21,7-26,1
   baseUnit: kWh
 power:
+  key: Leistung
   value: "100"
   baseUnit: kw
 seats:
+  key: Sitzplätze
   value: 2
 rating:
+  key: Gut
   value: 3,6
+guarantee:
+  key: Garantie Fahrzeug
+  value: 2
+  baseUnit: keine Angabe
+availability:
+  key: Verfügbarkeit
+  value: keine Angabe
+subsidies:
+  key: Förderhöhe
+  value: 0
+  baseUnit: keine Angabe
+batteryGuarantee:
+  key: Batterie-Garantie
+  value: 8
+  baseUnit: keine Angabe
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 5,8
+  baseUnit: m3
+loadingArea:
+  key: Ladefläche
+  value: "0"
+  baseUnit: m2
+carSizes:
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
+  valuewidth: 2010
+  baseUnit: mm
+  valuelength: 4959
+  valueheight: 1895
+  valuewheelbase: 3275
+  key: Fahrzeugmaße
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 0
+  width: Breite
+  valuewidth: 0
+  valuelength: 0
+  length: Länge
+  baseUnit: mm
+carSizesLength:
+  value: "4959"
+  key: Länge
+  baseUnit: mm
+carSizesWidth:
+  key: Breite
+  value: "2010"
+  baseUnit: mm
+carSizesHeight:
+  key: Höhe
+  value: "1895"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "0"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "0"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "3275"
+  baseUnit: mm
 ---
+Der Opel Vivaro-E Cargo ist ein Kastenwagen, welcher in zwei Ladelängen erhältlich ist. Der Elektrotransporter erreicht in allen Varianten eine Höchstgeschwindigkeit von 130 km/h und kann rund 900 Kilogramm zuladen.
