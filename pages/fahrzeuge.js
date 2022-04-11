@@ -31,7 +31,7 @@ export default function fahrzeuge(props) {
           Elektro-Transporter – {sortedCars.length} {getContent.title}
         </h1>
 
-        <div className="w-3/4 mx-auto my-2">
+        <div className="w-3/4 mx-auto my-4">
           <Image
             src="/images/test2.svg"
             alt={getContent.title}

@@ -2,6 +2,7 @@ import TextArea from "../core/TextArea";
 import TextInput from "../core/TextInput";
 import { useForm, Controller } from "react-hook-form";
 import Image from "next/image";
+import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
@@ -208,9 +209,18 @@ export default function Form(props) {
             />{" "}
             <label for="confirm" className="text-md">
               Ja, ich stimme der{" "}
-              <span className="font-bold">Datenschutzerklärung</span> und den{" "}
-              <span className="font-bold">AGBs</span> zu (Widerruf jederzeit
-              möglich).
+              <span className="font-bold">
+                <Link href={"/impressum"}>
+                  <a>Datenschutzerklärung</a>
+                </Link>
+              </span>{" "}
+              und den{" "}
+              <span className="font-bold">
+                <Link href={"/allgemeineGeschaeftsbedingungen"}>
+                  <a>AGBs</a>
+                </Link>
+              </span>{" "}
+              zu (Widerruf jederzeit möglich).
             </label>{" "}
           </div>
           {/*   <div className="w-64 xs:w-96 pb-4">
