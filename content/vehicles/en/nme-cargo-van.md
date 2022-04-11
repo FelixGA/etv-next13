@@ -142,4 +142,5 @@ wheelbase:
   value: "2925"
   baseUnit: mm
 ---
+
 Der Cargo Van der österreichischen Firma NME ist ein elektrischer Kastenwagen, der bis zu 1.000 Kilogramm Nutzlast aufnehmen kann und eine Höchstgeschwindigkeit von 90 km/h erreicht.
