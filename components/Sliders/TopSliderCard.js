@@ -11,7 +11,7 @@ const TopSliderCard = (props) => {
             <a>
               {caritem.src && (
                 <Image
-                  className="rounded-md "
+                  className="rounded-sm "
                   src={caritem.src}
                   alt="picture"
                   objectFit="cover"
@@ -30,8 +30,8 @@ const TopSliderCard = (props) => {
             </a>
           </Link>
           <div className="slider__item-text">
-            <p className="text-sm text-center font-Inter text-blue-lighter	">
-              {caritem.desc}
+            <p className="text-sm text-center font-Inter text-blue-lighter line-clamp-2">
+              {caritem.description}
             </p>
           </div>
 
@@ -46,14 +46,14 @@ const TopSliderCard = (props) => {
                 </span>
               </div>
               <div className="flex flex-row pb-8">
-                <div className="">
-                  <span className="relative bottom-1 pl-2.5 font-black text-m ">
-                    {caritem.rating.key}
+                <div className="pb-2">
+                  <span className="relative bottom-1 text-sm font-black pl-3 tracking-widest ">
+                    {caritem.rating.value}
                   </span>
                 </div>
-                <div className="pb-2">
-                  <span className="relative bottom-1 text-xxs font-black pl-3 tracking-widest ">
-                    {caritem.rating.value}
+                <div className="">
+                  <span className="relative bottom-1 pl-2.5 font-black text-md ">
+                    {caritem.rating.key}
                   </span>
                 </div>
               </div>

@@ -2,6 +2,7 @@ import TextArea from "../core/TextArea";
 import TextInput from "../core/TextInput";
 import { useForm, Controller } from "react-hook-form";
 import Image from "next/image";
+import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
@@ -31,6 +32,7 @@ export default function Form(props) {
   const onSubmit = async (data, e) => {
     e.preventDefault();
     "data", data;
+    // console.log(data);
 
     try {
       const result = await axios.post(`/api/handleForm`, data);
@@ -66,7 +68,7 @@ export default function Form(props) {
 
         <div
           className={
-            router.pathname == "/kontakt" || "comparePage"
+            router.pathname == "/kontakt"
               ? "justify-center items-center relative left-6 flex"
               : "hidden"
           }
@@ -82,7 +84,7 @@ export default function Form(props) {
             />
           </div>
           {/* medal dsvgo image */}
-          <div className="w-24 sm:w-44 relative sm:left-4">
+          <div className="w-28 sm:w-44 relative sm:left-4">
             <Image
               src="/images/siegel.png"
               width={166}
@@ -178,19 +180,6 @@ export default function Form(props) {
             <p> {errors.checkbox && "accept the terms first"}</p>
           </div>
           <div className="w-64 xs:w-96 pb-4">
-            {/*  <input
-              id="confirm"
-              type="checkbox"
-              className="mr-2 h-4 w-4"
-              onClick={() => setCheckedStatus(true)}
-              checked={checkedStatus}
-            />
-            <label for="confirm" className="text-md">
-              Ja, ich stimme der{" "}
-              <span className="font-bold">Datenschutzerklärung</span> und den{" "}
-              <span className="font-bold">AGBs</span> zu (Widerruf jederzeit
-              möglich).
-            </label> */}
             <Controller
               name="checkbox"
               control={control}
@@ -208,11 +197,21 @@ export default function Form(props) {
             />{" "}
             <label for="confirm" className="text-md">
               Ja, ich stimme der{" "}
-              <span className="font-bold">Datenschutzerklärung</span> und den{" "}
-              <span className="font-bold">AGBs</span> zu (Widerruf jederzeit
-              möglich).
+              <span className="font-bold">
+                <Link href={"/impressum"}>
+                  <a>Datenschutzerklärung</a>
+                </Link>
+              </span>{" "}
+              und den{" "}
+              <span className="font-bold">
+                <Link href={"/allgemeineGeschaeftsbedingungen"}>
+                  <a>AGBs</a>
+                </Link>
+              </span>{" "}
+              zu (Widerruf jederzeit möglich).
             </label>{" "}
           </div>
+
           <button
             onClick={() => {
               !errors.emailInput &&
