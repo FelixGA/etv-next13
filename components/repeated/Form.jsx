@@ -26,7 +26,7 @@ export default function Form(props) {
   const onSubmit = async (data, e) => {
     e.preventDefault();
     "data", data;
-    console.log(data);
+    // console.log(data);
 
     try {
       const result = await axios.post(`/api/handleForm`, data);
@@ -36,8 +36,9 @@ export default function Form(props) {
     }
   };
   const [send, setSend] = useState(false);
+  const [checkedStatus, setCheckedStatus] = useState(false);
   const onError = (errors, e) => console.log("errors", errors, e);
-
+  const check = checkedStatus == true ? true : false;
   return (
     <>
       <div
@@ -63,12 +64,12 @@ export default function Form(props) {
 
         <div
           className={
-            router.pathname == "/kontakt" || "comparePage"
+            router.pathname == "/kontakt"
               ? "justify-center items-center relative left-6 flex"
               : "hidden"
           }
         >
-          <div className="w-10 sm:w-24">
+          <div className="w-14 sm:w-24">
             <Image
               src="/images/siegel2.png"
               width={166}
@@ -78,7 +79,7 @@ export default function Form(props) {
             />
           </div>
           {/* medal dsvgo image */}
-          <div className="w-24 sm:w-44 relative sm:left-4">
+          <div className="w-28 sm:w-44 relative sm:left-4">
             <Image
               src="/images/siegel.png"
               width={166}
@@ -169,6 +170,21 @@ export default function Form(props) {
             <p> {errors.phone && "Phone is required"}</p>
             <p> {errors.message && "Message is required"}</p>
           </div>
+          {/*   <div className="w-64 xs:w-96 pb-4">
+            <input
+              id="confirm"
+              type="checkbox"
+              className="mr-2 h-4 w-4"
+              onClick={() => setCheckedStatus(true)}
+              checked={checkedStatus}
+            />
+            <label for="confirm" className="text-md">
+              Ja, ich stimme der{" "}
+              <span className="font-bold">Datenschutzerklärung</span> und den{" "}
+              <span className="font-bold">AGBs</span> zu (Widerruf jederzeit
+              möglich).
+            </label>
+          </div> */}
           <button
             onClick={() => setSend(true)}
             type="submit"
