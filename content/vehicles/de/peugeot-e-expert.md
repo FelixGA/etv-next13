@@ -167,7 +167,7 @@ chargingTime230V:
   baseUnit: keine Angabe
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 5
+  value: 7
   baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
@@ -186,21 +186,21 @@ batteryIncluded:
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: 24,9
+  value: 23,8
   baseUnit: kWh
 power:
   key: Leistung
-  value: min-57/max-100
+  value: "100"
   baseUnit: kw
 seats:
   key: Sitzplätze
-  value: 3
+  value: 2
 rating:
   key: Gut
-  value: 2,0
+  value: 3,6
 guarantee:
   key: Garantie Fahrzeug
-  value: 0
+  value: 2
   baseUnit: keine Angabe
 availability:
   key: Verfügbarkeit
@@ -211,7 +211,7 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Batterie-Garantie
-  value: 0
+  value: 8
   baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
@@ -219,7 +219,7 @@ loadingHeight:
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 5,19
+  value: 5,8
   baseUnit: m3
 loadingArea:
   key: Ladefläche

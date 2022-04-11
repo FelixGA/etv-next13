@@ -137,4 +137,18 @@ rangeLithium:
   value: 231
   maxValue: 329
   baseUnit: km
+chargingTimeLithium:
+  value: 7
+consumption:
+  baseUnit: kWh
+power:
+  value: "100"
+  baseUnit: kw
+seats:
+  value: 2
+rating:
+  value: 3,6
+loadingVolumeTotal:
+  value: 5,8
+  baseUnit: m3
 ---
