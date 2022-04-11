@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from "../components/core/Head";
 import getContent from "/utils/getContent";
 
 import { useState, useEffect } from "react";
@@ -13,7 +13,8 @@ export default function magazin(props) {
     SetTestReviews(props.carsreviews);
   }, [props]);
   return (
-    <>
+    <div>
+      <Head page={props.page} />
       <h1 className="px-4 pt-8 pb-2 text-blue-dark font-bold text-4xl text-center">
         Magazin
       </h1>
@@ -23,7 +24,7 @@ export default function magazin(props) {
         </Link>
       </div>
       <Blog getBlogs={getBlogs} />
-    </>
+    </div>
   );
 }
 

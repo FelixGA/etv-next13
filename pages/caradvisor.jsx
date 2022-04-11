@@ -1,3 +1,4 @@
+import Head from "../components/core/Head";
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import Funnel from "../components/Caradvisor/Funnel";
@@ -11,6 +12,8 @@ export default function caradvisor(props) {
   }, [props]);
   return (
     <div className="bg-blue-extralight">
+      <Head page={props.page} />
+
       <div className="bg-green-lighter hidden xl:flex justify-around h-12 items-center">
         <div className="">
           <p className="text-white text-lg 2xl:text-xl w-full">
