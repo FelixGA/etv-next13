@@ -1,24 +1,24 @@
 import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { useStore } from "../store";
 
 function MobileNav() {
   const router = useRouter();
   const { state, dispatch } = useStore();
-  const [isOpen, setIsOpen] = useState({
-    key: false,
-  });
-  // useEffect(() => {
-  //   if (state.mobileNavActives) {
-  //     // dispatch({
-  //     //   type: "mobileNavActive",
-  //     //   data: !state?.mobileNavActives,
-  //     // });
 
-  //     console.log("mobileNavActives", state.mobileNavActives);
-  //   }
-  // }, [isOpen.key, router.pathname]);
+  const firstUpdate = useRef(true);
+  useLayoutEffect(() => {
+    if (firstUpdate.current) {
+      firstUpdate.current = false;
+      return;
+    }
+
+    dispatch({
+      type: "mobileNavActive",
+      data: false,
+    });
+  }, [router.pathname]);
   return (
     <div className="relative bg-blue-darker w-full h-screen z-90">
       <ul className="flex flex-col items-center sm:items-start sm:pl-16 flex-1 h-3/4 justify-evenly text-grey-dark text-3xl ">
