@@ -39,7 +39,7 @@ const BasicInfo = ({ carItem }) => {
         {/* MOBILE VERSION DETAILS TABLE */}
         <div className="flex flex-col w-full lg:hidden my-4">
           <div className="flex flex-row	flex-1 lg:hidden justify-between">
-            <div className="w-full xs:w-3/4 flex ">
+            <div className="w-full flex ">
               <h2 className="w-full text-blue-extra text-2xl tracking-wide sm:text-2xl font-bold pb-2">
                 {carItem.title}
               </h2>
