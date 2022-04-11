@@ -230,19 +230,19 @@ carSizes:
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 2010
+  valuewidth: 1920
   baseUnit: mm
   valuelength: 4959
-  valueheight: 1895
+  valueheight: 1899
   valuewheelbase: 3275
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 0
+  valueheight: 1397
   width: Breite
-  valuewidth: 0
-  valuelength: 0
+  valuewidth: 1636
+  valuelength: 2512
   length: Länge
   baseUnit: mm
 carSizesLength:
@@ -251,23 +251,23 @@ carSizesLength:
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "2010"
+  value: "1920"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1895"
+  value: "1899"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "0"
+  value: "2512"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "0"
+  value: "1636"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
+  value: "1397"
   baseUnit: mm
 wheelbase:
   key: Radstand
