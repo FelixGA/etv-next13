@@ -136,7 +136,7 @@ relatedBlogs: >-
 description: Der Peugeot e-Expert ist ein elektrischer Kastenwagen, der in zwei
   Längen angeboten ist und über 900 Kilogramm Nutzlast aufnehmen kann. Die
   Höchstgeschwindigkeit liegt bei 130 km/h.
-src: /images/citroen-ejumpy-frontansicht.jpg
+src: /images/peugeot-e-expert-front.jpg
 category: Kasten
 typeClass: N1
 loadingWeight:
@@ -158,9 +158,9 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 212
+  value: 231
   baseUnit: km
-  maxValue: 340
+  maxValue: 329
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
@@ -274,5 +274,4 @@ wheelbase:
   value: "3275"
   baseUnit: mm
 ---
-
-Der Citroen eJumpy ist seit 2020 auf dem Markt. Der elektrische Kastenwagen ist in zwei Längen erhältlich: 4,95 Meter (M) sowie 5,30 Meter (XL). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität.
+Der Peugeot e-Expert ist ein elektrischer Kastenwagen, der in zwei Längen angeboten ist und über 900 Kilogramm Nutzlast aufnehmen kann. Die Höchstgeschwindigkeit liegt bei 130 km/h.
