@@ -74,7 +74,7 @@ content:
       Der Energieverbrauch des Opel Vivaro-E liegt kombiniert laut Hersteller bei rund 23, und 24 kWh auf 100 km. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke so zwischen 6,90 und 7,20 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie (3/5)
 
 
       Die Preise für den Peugeot e-Expert beginnen bei 36.190 Euro netto für den e-Expert L2 mit 50 kWh-Akku und Basisausstattung. Die Variante mit einer Akkukapazität von 75 kWh kostet rund 5.000 Euro mehr. Der e-Expert L3 mit 5,30 Meter Länge ist ab 37.830 Euro netto verfügbar, ab 42.380 Euro mit dem größeren Akku. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
