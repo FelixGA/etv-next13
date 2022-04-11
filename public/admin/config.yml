@@ -21,6 +21,7 @@ collections:
     folder: "content/pages"
     create: true
     i18n: true
+
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Path", name: "path", widget: "string", i18n: duplicate }
@@ -56,7 +57,8 @@ collections:
 
     folder: "content/carsreview"
     create: true
-    # update: true
+    slug: "{{fields.slug}}"
+    identifier_field: slug
     i18n: true
     fields:
       - {
@@ -68,7 +70,7 @@ collections:
           required: true,
         }
       - {
-          label: "Slug(SOS! DUBLICATE THE CARD IF YOU NEED ASSIGN A NEW ENTRY)",
+          label: "slug(SOS! WRITE ME WHENEVER YOU RENAME IT-ANGELOS-)",
           name: "slug",
           widget: "string",
           default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
@@ -161,6 +163,8 @@ collections:
     folder: "content/blogs"
     create: true
     i18n: true
+    slug: "{{fields.slug}}"
+    identifier_field: slug
     fields:
       - {
           label: "Title",
@@ -171,7 +175,7 @@ collections:
           required: true,
         }
       - {
-          label: "(SOS! DUBLICATE THE CARD IF YOU NEED ASSIGN A NEW ENTRY)",
+          label: "slug(SOS! WRITE ME WHENEVER YOU RENAME IT-ANGELOS-)",
           name: "slug",
           widget: "string",
           default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
@@ -286,7 +290,7 @@ collections:
           required: true,
         }
       - {
-          label: "Name-Slug(SOS! DUBLICATE THE CARD IF YOU NEED ASSIGN A NEW ENTRY)",
+          label: "Name-Slug(SOS! WRITE ME WHENEVER YOU RENAME IT-ANGELOS-)",
           name: "name",
           widget: "string",
           i18n: duplicate,
