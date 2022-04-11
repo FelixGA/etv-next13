@@ -1,7 +1,7 @@
 ---
 title: Addax-MT-Testbericht-von-Elektrotransporter-Vergleich
 slug: addax-mt-testbericht-von-elektrotransporter-vergleich
-relatedCars: ARI 458 Pritsche
+relatedCars: addax-mt-pritsche
 youtubeLink: https://www.youtube.com/watch?v=tTpUFu3Stzg
 category: Kipper
 publishedAt: 04/11/2022
