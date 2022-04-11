@@ -15,7 +15,7 @@ loadingWeight:
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 600
+  value: 0
   baseUnit: keine Angabe
 maxSpeed:
   key: km/h
@@ -28,16 +28,16 @@ range230V:
   maxValue: 45
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 63
+  value: 61
   baseUnit: km
-  maxValue: 87
+  maxValue: 100
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
   baseUnit: keine Angabe
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 0
+  value: 5
   baseUnit: keine Angabe
 chargingTimeFast:
   key: Schnellladezeit

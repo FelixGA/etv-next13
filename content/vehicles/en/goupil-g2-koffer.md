@@ -1,16 +1,19 @@
 ---
 name: goupil-g2-koffer
 price: 23000
+relatedBlogs: beispiel  bitte nicht ändern
 relatedReviews: goupil-g2-testbericht-von-elektrotransporter-vergleich
 src: /images/goupil-g2-koffer.png
 category: Koffer
 curbweight:
-  value: 600
+  value: 0
   baseUnit: keine Angabe
 rangeLithium:
-  value: 63
-  maxValue: 87
+  value: 61
+  maxValue: 100
   baseUnit: km
+chargingTimeLithium:
+  value: 5
 loadingVolumeTotal:
   value: 1,25
   baseUnit: m3
