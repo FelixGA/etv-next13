@@ -1,10 +1,10 @@
 import TextArea from "../core/TextArea";
 import TextInput from "../core/TextInput";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import Image from "next/image";
 import axios from "axios";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Form(props) {
   const router = useRouter();
@@ -21,21 +21,24 @@ export default function Form(props) {
     handleSubmit,
     watch,
     setValue,
+    control,
     formState: { errors },
-  } = useForm();
+  } = useForm({
+    defaultValues: {
+      checkbox: false,
+    },
+  });
   const onSubmit = async (data, e) => {
     e.preventDefault();
     "data", data;
-    console.log(data);
 
     try {
       const result = await axios.post(`/api/handleForm`, data);
-      console.log(result);
     } catch (err) {
       console.log("error", err.response.data.message);
     }
   };
-  const [send, setSend] = useState(false);
+  const [send, setSend] = useState("");
   const onError = (errors, e) => console.log("errors", errors, e);
 
   return (
@@ -68,6 +71,7 @@ export default function Form(props) {
               : "hidden"
           }
         >
+          {/* medal siegel image */}
           <div className="w-10 sm:w-24">
             <Image
               src="/images/siegel2.png"
@@ -141,6 +145,7 @@ export default function Form(props) {
             type={"string"}
             registerData={"emailInput"}
             required={true}
+            pattern={emailRegex}
           />
           <TextInput
             placeholder={"z.B. 030 - 123 45 67"}
@@ -168,9 +173,55 @@ export default function Form(props) {
             <p> {errors.emailInput && "Email is required"}</p>
             <p> {errors.phone && "Phone is required"}</p>
             <p> {errors.message && "Message is required"}</p>
+            <p> {errors.checkbox && "accept the terms first"}</p>
+          </div>
+          <div className="w-64 xs:w-96 pb-4">
+            {/*  <input
+              id="confirm"
+              type="checkbox"
+              className="mr-2 h-4 w-4"
+              onClick={() => setCheckedStatus(true)}
+              checked={checkedStatus}
+            />
+            <label for="confirm" className="text-md">
+              Ja, ich stimme der{" "}
+              <span className="font-bold">Datenschutzerklärung</span> und den{" "}
+              <span className="font-bold">AGBs</span> zu (Widerruf jederzeit
+              möglich).
+            </label> */}
+            <Controller
+              name="checkbox"
+              control={control}
+              rules={{ required: true }}
+              render={({ field }) => (
+                <input
+                  id="confirm"
+                  type="checkbox"
+                  className="mr-2 h-4 w-4"
+                  /* onClick={() => setCheckedStatus(true)}
+              checked={checkedStatus} */
+                  {...field}
+                />
+              )}
+            />{" "}
+            <label for="confirm" className="text-md">
+              Ja, ich stimme der{" "}
+              <span className="font-bold">Datenschutzerklärung</span> und den{" "}
+              <span className="font-bold">AGBs</span> zu (Widerruf jederzeit
+              möglich).
+            </label>{" "}
           </div>
           <button
-            onClick={() => setSend(true)}
+            onClick={() => {
+              !errors.emailInput &&
+              !errors.firstName &&
+              watch().firstName.length > 0 &&
+              watch().emailInput.length > 0 &&
+              watch().checkbox
+                ? setSend(true)
+                : setSend(false);
+              console.log(errors.emailInput ? "error" : "no error");
+            }}
             type="submit"
             className="bg-blue-darker hover:bg-blue-light text-white h-auto w-64 xs:w-96 rounded-lg py-2 mb-0 sm:mb-8"
           >

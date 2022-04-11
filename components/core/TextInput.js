@@ -30,7 +30,7 @@ export default function TextInput({
         // onChange={props.onChange}
         {...register(registerData, {
           required: required,
-          pattern: { pattern },
+          pattern: pattern,
         })}
       />
     </div>

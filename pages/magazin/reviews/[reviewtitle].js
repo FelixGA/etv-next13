@@ -1,11 +1,10 @@
+import Head from "../../../components/core/Head";
 import { useState, useEffect } from "react";
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
-import TopSlider from "../../../components/Sliders/TopSlider";
 import { serialize } from "next-mdx-remote/serialize";
 import getSlugs from "/utils/getSlugs";
 import ReviewPost from "../../../components/Blog/ReviewPost";
-import { MDXRemote } from "next-mdx-remote";
 
 export default function Reviews(props) {
   /* getBlogContext hook for the ONE car that it is displayed */
@@ -24,6 +23,8 @@ export default function Reviews(props) {
   66666, props.getTestReview;
   return (
     <>
+      {" "}
+      <Head page={props.getTestReview} />
       <ReviewPost getCarsReview={getCarsReview} getMdxContent={getMdxContent} />
     </>
   );

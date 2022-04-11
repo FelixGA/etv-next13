@@ -1,5 +1,5 @@
 import { useStore } from "../components/store";
-
+import Head from "../components/core/Head";
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -18,8 +18,14 @@ export default function fahrzeuge(props) {
     SetCarsReview(props.carsreviews);
     SetGetContent(props.page);
   }, [props.vehicles]);
+  // console.log(
+  //   props.vehicles.map(
+  //     (car) => `${car.title} ________________ ${car.relatedReviews}`
+  //   )
+  // );
   return (
     <div className="w-full">
+      <Head page={props.page} />
       <div className="2xl:px-48">
         <h1 className="text-black text-2xl xl:text-4xl tracking-wider pb-4 pt-8 xl:pt-12 px-4 2xl:px-48 text-left">
           Elektro-Transporter – {sortedCars.length} {getContent.title}

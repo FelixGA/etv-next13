@@ -1,8 +1,6 @@
-import Head from "next/head";
+import Head from "../components/core/Head";
 import getContent from "/utils/getContent";
-
 import { useState, useEffect } from "react";
-
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 export default function allgemeineGeschaeftsbedingungen(props) {
@@ -15,6 +13,7 @@ export default function allgemeineGeschaeftsbedingungen(props) {
   }, [props]);
   return (
     <div className="flex flex-col justify-between mx-6 py-6 text-center text-sm leading-8 bg-grey-lightest lg:mx-36 lg:pl-16 lg:text-2xl lg:h-screen lg:text-left 2xl:mx-72">
+      <Head page={props.page} />
       <MDXRemote {...getContent.allgemeineGeschaeftsbedingungen} />
     </div>
   );

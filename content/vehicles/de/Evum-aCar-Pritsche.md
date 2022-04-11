@@ -12,6 +12,7 @@ relatedBlogs:
     Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
+relatedReviews: evum-a-car-testbericht-von-elektrotransporter-vergleich
 description: >-
   
 
