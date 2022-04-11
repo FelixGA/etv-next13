@@ -75,7 +75,7 @@ content:
       Der Energieverbrauch des Opel Vivaro-E liegt kombiniert laut Hersteller zwischen 21,7 und 26,1 kWh auf 100 km. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke so zwischen 6,60 und 7,80 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie (3/5)
 
 
       Die Preise für den Opel Vivaro-E Cargo beginnen bei 37.490 Euro netto für den Vivaro-E Cargo M mit 50 kWh-Akku und Basisausstattung. Die länger Variante Cargo M liegt etwas darüber. Der Akku mit einer höheren Kapazität von 75 kWh hat eine Aufpreis von rund 5.000 Euro. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
