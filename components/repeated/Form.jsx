@@ -163,6 +163,8 @@ export default function Form(props) {
             id={"message"}
             type={"textarea"}
             registerData={"message"}
+            carItem={props.carItem}
+            required={true}
           />
 
           <div className="text-black">
@@ -217,10 +219,10 @@ export default function Form(props) {
               !errors.firstName &&
               watch().firstName.length > 0 &&
               watch().emailInput.length > 0 &&
+              watch().message &&
               watch().checkbox
                 ? setSend(true)
                 : setSend(false);
-              console.log(errors.emailInput ? "error" : "no error");
             }}
             type="submit"
             className="bg-blue-darker hover:bg-blue-light text-white h-auto w-64 xs:w-96 rounded-lg py-2 mb-0 sm:mb-8"
