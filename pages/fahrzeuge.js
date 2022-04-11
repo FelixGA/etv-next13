@@ -18,11 +18,11 @@ export default function fahrzeuge(props) {
     SetCarsReview(props.carsreviews);
     SetGetContent(props.page);
   }, [props.vehicles]);
-  console.log(
-    props.vehicles.map(
-      (car) => `${car.title} ________________ ${car.relatedReviews}`
-    )
-  );
+  // console.log(
+  //   props.vehicles.map(
+  //     (car) => `${car.title} ________________ ${car.relatedReviews}`
+  //   )
+  // );
   return (
     <div className="w-full">
       <Head page={props.page} />
