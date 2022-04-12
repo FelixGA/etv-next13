@@ -90,7 +90,7 @@ loadingHeight:
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 11,0
+  value: 7,75
   baseUnit: m3
 loadingArea:
   key: Ladefläche
@@ -101,48 +101,48 @@ carSizes:
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 2175
+  valuewidth: 2070
   baseUnit: keine Angabe
-  valuelength: 6088
-  valueheight: 2687
-  valuewheelbase: 3924
+  valuelength: 5075
+  valueheight: 2370
+  valuewheelbase: 3182
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 0
+  valueheight: 1700
   width: Breite
-  valuewidth: 1787
-  valuelength: 3272
+  valuewidth: 1765
+  valuelength: 2583
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "6088"
+  value: "5075"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "2175"
+  value: "2070"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "2687"
+  value: "2370"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "3272"
+  value: "2583"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1787"
+  value: "1765"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
+  value: "1700"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "3924"
+  value: "3182"
   baseUnit: mm
 ---
 Der Renault Master E-Tech (früher “Master Z.E.”) ist ein Kastenwagen der Fahrzeugklasse N1, der zwischen 900 und 1.050 Kilogramm Nutzlast aufnehmen kann und 100 km/h Höchstgeschwindigkeit erreicht.
