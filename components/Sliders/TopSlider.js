@@ -48,7 +48,7 @@ const TopSlider = ({ getContent, getCars }) => {
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <div className="relative w-18 top-0 block lg:hidden">
+        <div className="relative w-18 top-0 block xl:hidden">
           <Image
             src="/images/swipe.gif"
             width={80}

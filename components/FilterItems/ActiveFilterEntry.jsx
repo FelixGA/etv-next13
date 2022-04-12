@@ -168,7 +168,7 @@ function ActiveFilterEntry(props) {
           state?.maxSpeeds.length ||
           state?.chargingTimeLithiums.length ||
           state?.categorys.length
-            ? "flex justify-end items-start lg:items-end lg:justify-start pr-2 h-10"
+            ? "flex justify-end items-start lg:items-end md:justify-start pr-2 h-10"
             : "hidden"
         }
       >

@@ -80,7 +80,7 @@ function MobileNav() {
             </a>
           </Link>
         </li>
-        <li className=" w-full text-center ">
+        <li className="w-full text-center md:text-left">
           <Link href="/comparePage">
             <a
               className=" "
