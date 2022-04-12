@@ -1,8 +1,8 @@
 ---
 title: Mercedes-Benz eSprinter
-slug: mercedes-benz-esprinter
-relatedCars: mercedes-benz-evito
-youtubeLink: https://www.youtube.com/watch?v=e8lqtbPLuEA
+slug: renault-master-e-tech
+relatedCars: renault-master-e-tech
+youtubeLink: https://www.youtube.com/watch?v=FBT0-FfNmRA
 publishedAt: 04/01/2022
 description: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
   Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und rund
