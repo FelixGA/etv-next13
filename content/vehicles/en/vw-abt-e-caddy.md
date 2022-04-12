@@ -166,4 +166,10 @@ loadingVolumeTotal:
 loadingArea:
   value: "0"
   baseUnit: m2
+carSizes:
+  valueheight: 0
+  valuewidth: 0
+  valuelength: 4880
+  valuewheelbase: 0
+  baseUnit: mm
 ---
