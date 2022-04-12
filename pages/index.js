@@ -38,12 +38,12 @@ export default function Home(props) {
 
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
-  const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   let blogs = await getContent("blogs", context.locale);
   let carsreviews = await getContent("carsreview", context.locale);
 
   const page = pages.find((page) => page.path === "/");
+  /* mdxs for the homepage articles */
   const header = await serialize(
     page.content.find((content) => content.name === "header").markdown
   );
@@ -67,7 +67,6 @@ export async function getStaticProps(context) {
       context: { header, eAutoAdvisor, substities, newsletter },
       carsreviews,
       page,
-      posts,
       vehicles,
       blogs,
     },

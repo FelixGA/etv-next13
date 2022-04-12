@@ -1,28 +1,8 @@
-// import { useState, useEffect } from "react";
 import Image from "next/image";
-import { MDXRemote } from "next-mdx-remote";
-// import Head from "/components/core/Head.js";
-import styles from "./Blog.module.css";
 import { useRouter } from "next/router";
-// import BlogHeader from "./BlogHeader";
-// import Link from "next/link";
-// import tileCatalogue from "/public/images/tileCatalogue.png";
-// import tileFacebook from "/public/images/tileFacebook.png";
-// import tileYoutube from "/public/images/tileYoutube.png";
 
 export default function Blog({ getBlogs }) {
   const router = useRouter();
-  //   const [prefix, setPrefix] = useState("");
-
-  //   useEffect(() => {
-  //     if (!page?.locale) return;
-  //     if (page?.locale === "de") setPrefix("magazin");
-  //     if (page?.locale === "en") setPrefix("en/blog");
-  //     if (page?.locale === "es") setPrefix("es/revista");
-  //     if (page?.locale === "fr") setPrefix("fr/blog");
-  //     if (page?.locale === "it") setPrefix("it/blog");
-  //     if (page?.locale === "cs") setPrefix("cs/magazin");
-  //   }, [page]);
 
   return (
     <>

@@ -33,8 +33,7 @@ function FiltersDesktop() {
     {
       id: 1,
       category: "rangeLithiums",
-      /*       title: getContent.content[1].markdown.split(", ")[1],
-       */ title: "Reichweite",
+      title: "Reichweite",
 
       image: image,
       options: [

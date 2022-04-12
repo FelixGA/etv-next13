@@ -33,9 +33,10 @@ export default function Reviews(props) {
 export async function getStaticProps(context) {
   /* get all blogs*/
   let blogs = await getContent("blogs", context.locale);
+  /* get the reviews */
   let carsreviews = await getContent("carsreview", context.locale);
 
-  /* get reviews */
+  /* get the one review */
   let carsreview = await getContentBySlug(
     "carsreview",
     context.params.reviewtitle,
