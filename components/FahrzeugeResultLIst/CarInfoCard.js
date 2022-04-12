@@ -37,7 +37,7 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
         </p>
         <div className="pb-4 flex justify-center items-center ">
           <Link href={`/transporter/${carItem.name}`} passHref>
-            <a className="w-full lg:w-96 relative">
+            <a className="w-full lg:w-96 relative border-2 rounded-md">
               {carItem?.src && (
                 <Image
                   className={
@@ -47,8 +47,8 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
                   }
                   src={carItem.src}
                   alt={carItem.title}
-                  width={260}
-                  height={180}
+                  width={257}
+                  height={170}
                   objectFit="cover"
                   layout="responsive"
                 />
