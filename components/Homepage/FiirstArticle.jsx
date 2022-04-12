@@ -5,7 +5,7 @@ export default function FirstArticle({ getMarkdownContext, getContent }) {
   // (<MDXRemote {...getMarkdownContext.eAutoAdvisor} />);
   return (
     <div className="blog-article-one flex">
-      <div className=" flex flex-col justify-evenly flex-1">
+      <div className="flex flex-col justify-evenly flex-1 lg:px-20 px-10">
         <div className="mt-4 xl:w-96">
           <div className="no-select h-8 w-24 flex items-center flex-wrap justify-center bg-orange-light text-white font-bold rounded">
             Jetzt neue
@@ -26,7 +26,7 @@ export default function FirstArticle({ getMarkdownContext, getContent }) {
           </a>
         </Link>
       </div>
-      <div className="no-select hidden xl:flex ml-10 mt-20 scale-125 mx-4">
+      <div className="no-select hidden xl:flex ml-10 mt-20  mx-4">
         <Image
           src="/images/kaufberaterCar.png"
           width={800}

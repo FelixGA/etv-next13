@@ -63,8 +63,8 @@ const Footer = ({ blogs, reviews }) => {
         </nav>
 
         <div className="lg:w-1/4 lg:pt-11 px-8">
-          <div className="flex flex-row justify-start items-center pl-2 ">
-            <div className="w-1/3 sm:w-1/2 md:w-[15%] lg:w-[40%] xl:w-[25%]">
+          <div className="flex flex-row justify-start items-center pl-2 w-full">
+            <div className="w-1/3 sm:w-1/5 lg:w-[60%] xl:w-[30%] ">
               <Image
                 className=""
                 src="/images/etv-logo-final.png"
@@ -75,7 +75,7 @@ const Footer = ({ blogs, reviews }) => {
               />
             </div>
             <div className="w-full sm:w-1/2">
-              <p className="text-blue-dark text-xs sm:text-lg font-bold ">
+              <p className="text-blue-dark text-xs sm:text-xl font-bold ">
                 Elektrotransporter
                 <br />
                 Vergleich

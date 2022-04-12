@@ -9,7 +9,7 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
       <div className="">
         <Link href={`/transporter/${carItem.name}`}>
           <a>
-            <h3 className="title text-2xl sm:text-3xl font-bold text-black-darkest py-8 flex leading-7 ">
+            <h3 className="title text-2xl sm:text-3xl font-bold text-black-darkest pt-8 pb-2 flex leading-7 ">
               {carItem.title}
             </h3>
           </a>
