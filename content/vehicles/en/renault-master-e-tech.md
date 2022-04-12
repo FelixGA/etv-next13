@@ -32,4 +32,7 @@ power:
   baseUnit: kw
 rating:
   value: 3,0
+loadingHeight:
+  value: 580
+  baseUnit: mm
 ---

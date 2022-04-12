@@ -82,11 +82,11 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
-  value: 0
+  value: 8
   baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
-  value: 0
+  value: 580
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
