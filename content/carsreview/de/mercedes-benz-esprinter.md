@@ -5,35 +5,39 @@ relatedCars: renault-master-e-tech
 youtubeLink: https://www.youtube.com/watch?v=FBT0-FfNmRA
 category: Kasten
 publishedAt: 04/01/2022
-description: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
-  Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und rund
-  eine Tonne Nutzlast aufnehmen kann.
-src: /images/mb-esprinter-seite.jpg
+description: >
+  Der Renault Master E-Tech (früher “Master Z.E.”) ist ein Kastenwagen der
+  Fahrzeugklasse N1, der zwischen 900 und 1.050 Kilogramm Nutzlast aufnehmen
+  kann und 100 km/h Höchstgeschwindigkeit erreicht.
+src: /images/renault-master-front.jpg
 content:
-  - content: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
-      Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und
-      rund eine Tonne Nutzlast aufnehmen kann.
+  - content: Der Renault Master E-Tech (früher “Master Z.E.”) ist ein Kastenwagen
+      der Fahrzeugklasse N1, der zwischen 900 und 1.050 Kilogramm Nutzlast
+      aufnehmen kann und 100 km/h Höchstgeschwindigkeit erreicht.
     title: Einleitung
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
 
-      Die großen Transporter bis 3,5 Tonnen haben bei Daimler Tradition. 1977 kam mit dem Mercedes-Benz T1 das erste Fahrzeug dieser Art auf den Markt und wurde bis 1995 gebaut. Seitdem laufen die Fahrzeuge unter dem Namen Sprinter, welcher seit 2018 in der dritten Generation erhältlich ist. Später folgte die Einführung des rein elektrischen Modells eSprinter, welcher vorerst nur als Kastenwagen verfügbar ist. Mit diesem zielt der Hersteller auf größere Lieferunternehmen im städtischen Bereich.
+      Der Master ist ein 1980 erstmals vorgestellter Transporter von Renault, der seit 2010 in der dritten Generation gebaut wird. Der Master III ist in Kooperation entwickelt worden und folglich das Schwestermodell des Opel Movano B sowie des Nissan NV400. 2018 wurde mit dem Master Z.E. („Zero Emission“) eine rein elektrische Version eingeführt, welche seitdem das größte Elektro-Modell von Renault darstellt. Inzwischen heisst das Fahrzeug Master E-Tech.
 
 
-      Im Gegensatz zu den vier verschiedenen Längen des herkömmlichen Sprinters ist die Elektro-Version nur in einer 6,09 Meter langen Ausführung mit Hochdach erhältlich. Eine Auswahl gibt es deshalb nur bei der Batterie. Hier kann zwischen einer nutzbaren Kapazität von 35 kWh und 47 kWh gewählt werden, wodurch eine Durchschnittsreichweite von 120 bzw. 158 Kilometern erreicht werden soll.
+      Während der Master mit Verbrennungsmotor auch als Pritsche, Kipper, mit Kofferaufbau und zur Personenbeförderung („Combi“ und „Bus“) erhältlich ist, gibt es den Master Z.E. nur als Kastenwagen oder mit reinem Plattformfahrgestell für individuelle Aufbauten. Als Kastenwagen gibt es ihn in drei Längen: 5,08 Meter (L1), 5,58 Meter (L2) sowie ganze 6,27 Meter (L3). Bei der kurzen Version kann der Kunde außerdem zwischen zwei Höhen wählen: 2,31 Meter (H1) und 2,50 Meter (H2). Die längeren Modelle sind nur mit hoher Karosserie verfügbar. In der Fahrerkabine können bis zu drei Personen befördert werden, eine Doppelkabine ist in der Elektro-Variante leider nicht verfügbar.
     title: Konzept & Fahrzeugvarianten
-    image: /images/mb-esprinter-laderaum.jpg
+    image: ""
   - content: >-
       ### Laderaum & Flexibilität (4/5)
 
 
-      Der Mercedes-Benz eSprinter ist für ein hohes Ladevolumen konzipiert, welches mit stolzen 11,0 m³ dementsprechend üppig ausfällt. Auch die Laderaumlänge von 3,27 Meter ist länger als so manches Fahrzeug und sorgt dafür, dass der eSprinter auch extrem sperrige Ladung aufnehmen kann. Die Zuladung erfolg über hohe Flügeltüren im Heck oder eine seitliche Schiebetür auf der rechten Seite. Die Höhe der Ladekante liegt bei 61,5 Zentimeter. Außerdem kann man über einen optional verfügbaren “Heckauftritt” bequem in den Laderaum einsteigen und somit das Be- und Entladen deutlich erleichtern.
+      Dank seiner üppigen Maße besitzt der Master E-Tech natürlich auch innen viel Platz. So stehen selbst in der kleinsten Version (L1H1) bis zu 7,75 m³ Ladevolumen bei einer maximalen Ladelänge von 2,58 Meter zur Verfügung. Das größte Modell (L3H2) bietet ganze 12,48 m³ Raum für Ladung bei einer Ladelänge von 3,73 Meter. Bei der Zuladung verhält es sich entgegengesetzt: Die kleinste Version hat mit 1.053 Kilogramm die höchste Nutzlast, während der größte Master mit 900 Kilogramm am wenigsten Gewicht zuladen kann.
 
 
-      Die Nutzlast des Mercedes-Benz eSprinter ist abhängig von der Akku-Kapazität. Da das zulässige Gesamtgewicht bei 3,5 Tonnen liegt, führt das höhere Gewicht des 47 kWh-Akkus zu einer niedrigeren Zuladung von 848 Kilogramm. Mit der leichteren 35 kWh-Batterie darf der eSprinter hingegen bis zu 1.001 Kilogramm zuladen. Auf dem Dach des Elektro-Transporters dürfen zudem maximal 150 Kilogramm mitgeführt werden.
+      Die Beladung erfolgt über zwei geteilte Hecktüren im Verhältnis 50:50 oder über eine seitliche Schiebetür rechts. Auch eine zweite Schiebetür ist gegen Aufpreis erhältlich. Die Höhe der Ladeschwelle variiert minimal im Bereich von 54 bis 56 Zentimeter über dem Boden. Dank einer Durchladehöhe am Heck von 1,63 Meter (H1) bis 1,82 Meter (H2) können auch sehr sperrige Güter einfach verstaut werden.
+
+
+      Sollte der Kunde den Master E-Tech mit reinem Plattformfahrgestell kaufen, um einen individuellen Aufbau montieren zu lassen, hat er die Wahl zwischen zwei Radstand-Längen. Deren Nutzlast liegt bei 1.280 bzw. 1.302 Kilogramm, bei denen aber natürlich noch der zusätzliche Aufbau mit einberechnet werden muss.
     title: Laderaum & Flexibilität
-    image: ""
+    image: /images/renault-master-seite.jpg
   - content: >-
       ### Antrieb & Aufladung (4/5)
 

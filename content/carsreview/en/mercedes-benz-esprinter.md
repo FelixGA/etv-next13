@@ -7,7 +7,7 @@ publishedAt: 04/01/2022
 description: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
   Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und rund
   eine Tonne Nutzlast aufnehmen kann.
-src: /images/mb-esprinter-seite.jpg
+src: /images/renault-master-front.jpg
 content:
   - content: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
       Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und
