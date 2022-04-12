@@ -1,6 +1,7 @@
 ---
 name: renault-master-e-tech
 price: 54900
+relatedBlogs: nur beispiel
 src: /images/renault-master-front.jpg
 loadingWeight:
   value: 900
@@ -19,4 +20,16 @@ chargingTime230V:
   value: 20
 chargingTimeLithium:
   value: 5.75
+chargingTimeFast:
+  value: 0
+batteryCapacityLithium:
+  value: "33"
+  baseUnit: kwh
+consumption:
+  baseUnit: keine Angabe
+power:
+  value: "57"
+  baseUnit: kw
+rating:
+  value: 3,0
 ---

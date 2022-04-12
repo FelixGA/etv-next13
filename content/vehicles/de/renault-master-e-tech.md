@@ -42,7 +42,7 @@ chargingTimeLithium:
   baseUnit: keine Angabe
 chargingTimeFast:
   key: Schnellladezeit
-  value: 1
+  value: 0
   baseUnit: keine Angabe
 batteryCapacityBlei:
   key: Kapazität SLA Akku
@@ -50,25 +50,25 @@ batteryCapacityBlei:
   baseUnit: " keine Angabe"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "35"
+  value: "33"
   baseUnit: kwh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: 37,1
+  value: 21,0
   baseUnit: keine Angabe
 power:
   key: Leistung
-  value: "85"
+  value: "57"
   baseUnit: kw
 seats:
   key: Sitzplätze
   value: 2
 rating:
   key: Befriedigend
-  value: 3,4
+  value: 3,0
 guarantee:
   key: Garantie Fahrzeug
   value: 2
