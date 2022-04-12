@@ -4,7 +4,17 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 // import Script from "next/script";
 import { useState, useRef } from "react";
 const TopSlider = ({ getContent, getCars }) => {
-  // console.log(getCars, "get cars");
+  console.log(getCars, "get cars");
+  /* sort by rating */
+  let ratedcars = getCars.sort((a, b) => {
+    return b.rating.value - a.rating.value;
+  });
+  console.log(
+    ratedcars
+      .map((c) => Math.round(c.rating.value * 100) / 100)
+      .sort((a, b) => b - a),
+    "get cars rated"
+  );
   const container = useRef();
   // const style = { color: "black" };
   return (
