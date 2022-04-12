@@ -148,4 +148,22 @@ rangeLithium:
   baseUnit: km
 chargingTimeFast:
   value: 0
+batteryCapacityLithium:
+  value: 37,3
+  baseUnit: kWh
+consumption:
+  baseUnit: kWh
+power:
+  value: "83"
+  baseUnit: kw
+seats:
+  value: 2
+rating:
+  value: 2,6
+loadingVolumeTotal:
+  value: 4,2
+  baseUnit: m3
+loadingArea:
+  value: "0"
+  baseUnit: m2
 ---

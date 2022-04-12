@@ -179,25 +179,25 @@ batteryCapacityBlei:
   baseUnit: " keine Angabe"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "50"
+  value: 37,3
   baseUnit: kWh
 batteryIncluded:
   value: keine Angabe
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: 24,9
+  value: 26,4
   baseUnit: kWh
 power:
   key: Leistung
-  value: min-57/max-100
+  value: "83"
   baseUnit: kw
 seats:
   key: Sitzplätze
-  value: 3
+  value: 2
 rating:
-  key: Gut
-  value: 2,0
+  key: Ausreichend
+  value: 2,6
 guarantee:
   key: Garantie Fahrzeug
   value: 0
@@ -211,7 +211,7 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Batterie-Garantie
-  value: 0
+  value: 8
   baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
@@ -219,11 +219,11 @@ loadingHeight:
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 5,19
+  value: 4,2
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 3,90
+  value: "0"
   baseUnit: m2
 carSizes:
   width: Breite
