@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function SecondArticle({ getMarkdownContext, getContent }) {
   return (
     <div className="blog-article-two bg-grey-lightest flex px-8 pb-8 pt-4 flex-col md:flex-row">
-      <div className="w-[76%] mx-auto md:w-full relative xl:pl-10 sm:pt-10 md:pb-10 lg:pb-4 xl:mt-10 ">
+      <div className="w-full sm:w-[76%] mx-auto md:w-full relative xl:pl-10 sm:pt-10 lg:pt-2 md:pb-10 lg:pb-4 xl:mt-10 ">
         <Image
           src="/images/shweinFull.png"
           width={300}

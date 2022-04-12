@@ -1,4 +1,5 @@
 import { MDXRemote } from "next-mdx-remote";
+import Button from "../core/Button";
 
 //import { useForm } from "react-hook-form";
 const NewsLetter = ({ getMarkdownContext }) => {
@@ -51,13 +52,16 @@ const NewsLetter = ({ getMarkdownContext }) => {
             // })}
             className="h-14 text-lg rounded-sm w-48 sm:w-full placeholder:pl-2"
           />
+          {/* <div className="flex items-center bg-blue-dark mt-2 xs:mt-0 hover:bg-blue-light text-white font-bold px-6 text-md rounded-md sm:rounded-r-lg sm:rounded-none h-14">
+            anmelden
+            <Button disabled={true} />
+          </div> */}
           <button
-            // type="submit"
             disabled={true}
             className="bg-blue-dark mt-2 xs:mt-0 hover:bg-blue-light text-white font-bold px-6 text-md rounded-md sm:rounded-r-lg sm:rounded-none h-14"
           >
             anmelden
-          </button>{" "}
+          </button>
         </form>
       </div>
     </div>
