@@ -133,24 +133,23 @@ relatedBlogs: >-
 
 
   4,4
-description: "Der Citroen eJumpy ist seit 2020 auf dem Markt. Der elektrische
-  Kastenwagen ist in zwei Längen erhältlich: 4,95 Meter (M) sowie 5,30 Meter
-  (XL). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75
-  kWh Kapazität."
-src: /images/citroen-ejumpy-frontansicht.jpg
+description: Der VW ABT e-Caddy ist ein Kastenwagen der Fahrzeugklasse N1, der
+  eine Zuladung von mehr als 500 Kilogramm aufnehmen kann und mit 90 km/h bzw.
+  120 km/h Höchstgeschwindigkeit verfügbar ist.
+src: /images/vw-abt-e-caddy-front.jpg
 category: Kasten
 typeClass: N1
 loadingWeight:
   key: Nutzlast
-  value: 928
+  value: 539
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 1937
+  value: 0
   baseUnit: kg
 maxSpeed:
   key: km/h
-  value: 130
+  value: 90
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
@@ -159,9 +158,9 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 212
+  value: 141
   baseUnit: km
-  maxValue: 340
+  maxValue: 159
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
@@ -172,8 +171,8 @@ chargingTimeLithium:
   baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
-  value: 1
-  baseUnit: h
+  value: 0
+  baseUnit: keine Angabe
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
@@ -275,5 +274,4 @@ wheelbase:
   value: "3275"
   baseUnit: mm
 ---
-
-Der Citroen eJumpy ist seit 2020 auf dem Markt. Der elektrische Kastenwagen ist in zwei Längen erhältlich: 4,95 Meter (M) sowie 5,30 Meter (XL). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität.
+Der VW ABT e-Caddy ist ein Kastenwagen der Fahrzeugklasse N1, der eine Zuladung von mehr als 500 Kilogramm aufnehmen kann und mit 90 km/h bzw. 120 km/h Höchstgeschwindigkeit verfügbar ist.
