@@ -598,7 +598,8 @@ collections:
           - {
               label: "Value",
               name: "value",
-              widget: "string",
+              widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -626,7 +627,8 @@ collections:
           - {
               label: "Value",
               name: "value",
-              widget: "string",
+              widget: "number",
+              value_type: "float",
               i18n: duplicate,
               required: true,
             }
@@ -749,7 +751,9 @@ collections:
           - {
               label: "Note",
               name: "value",
-              widget: "string",
+              widget: "number",
+              value_type: "float",
+
               i18n: duplicate,
               required: true,
             }
