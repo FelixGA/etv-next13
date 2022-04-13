@@ -4,6 +4,7 @@ import { useStore } from "../../components/store";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote";
 import CarBrandsLogos from "../repeated/CarBrandsLogos";
+import OptionItem from "./OptionItem";
 
 //import filtersData from "../filtersData.json";
 //
@@ -16,22 +17,22 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
       options: [
         {
           id: "1",
-          name: "1-10000 ",
+          name: "1-10000 €",
           value: "0-10000 ",
         },
         {
           id: "2",
-          name: "10001-20000",
+          name: "10001-20000 €",
           value: "10001-20000",
         },
         {
           id: "3",
-          name: "20001-40000",
+          name: "20001-40000 €",
           value: "20001",
         },
         {
           id: "4",
-          name: "40001-80000",
+          name: "40001-80000 €",
           value: "40001-80000",
         },
       ],
@@ -92,7 +93,6 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
   const [choosePrice, setChoosePrice] = useState(details[0].options[0].value);
   const [chooseRange, setChooseRange] = useState(details[1].options[0].value);
   const [chooseWeight, setChooseWeight] = useState(details[2].options[0].value);
-  //dispatch({ type: "price", data: choosePrice });
 
   return (
     <div className="relative">
@@ -155,11 +155,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
                     setChooseRange(e.target.value);
                   }}
                 >
-                  {details[1].options.map((option) => (
-                    <option key={option.id} value={option.value}>
-                      {option.name}
-                    </option>
-                  ))}
+                  <OptionItem details={details[1].options} />
                 </select>
               </div>
             </div>
@@ -176,11 +172,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
                     setChoosePrice(e.target.value);
                   }}
                 >
-                  {details[0].options.map((option) => (
-                    <option key={option.id} value={option.value}>
-                      {option.name} €
-                    </option>
-                  ))}
+                  <OptionItem details={details[0].options} />
                 </select>
               </div>
             </div>
@@ -193,6 +185,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
                 {getContent.content[1].markdown.split(", ")[2]}
                 <div className=" relative top-6">▼</div>
               </label>
+
               <div className=" m-1">
                 <select
                   className="tracking-wider p-4 relative bottom-6 w-full text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0"
@@ -201,11 +194,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
                     setChooseWeight(e.target.value);
                   }}
                 >
-                  {details[2].options.map((option) => (
-                    <option key={option.id} value={option.value}>
-                      {option.name}
-                    </option>
-                  ))}
+                  <OptionItem details={details[2].options} />
                 </select>
               </div>
             </div>
