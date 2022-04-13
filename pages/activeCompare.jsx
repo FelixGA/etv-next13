@@ -46,7 +46,6 @@ const carDetails = [
 
 export default function activeCompare(props) {
   const { state, dispatch } = useStore();
-  const [getCars, SetGetCars] = useState(props.vehicles);
   const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
   useEffect(() => {
     SetTestReviews(props.carsreviews);
@@ -102,10 +101,11 @@ export default function activeCompare(props) {
 
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
-  const posts = await getContent("posts", context.locale);
+  /* get all vehicles */
   let vehicles = await getContent("vehicles", context.locale);
   const page = pages.find((page) => page.path === "/activecompare");
   let carsreviews = await getContent("carsreview", context.locale);
+  /* get all blogs */
   let blogs = await getContent("blogs", context.locale);
   if (!pages) {
     return {
@@ -116,9 +116,9 @@ export async function getStaticProps(context) {
   return {
     props: {
       vehicles,
-      posts,
       carsreviews,
       blogs,
+      page,
     },
   };
 }

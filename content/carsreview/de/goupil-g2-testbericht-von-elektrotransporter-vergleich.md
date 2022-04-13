@@ -1,5 +1,5 @@
 ---
-title: Goupil G2 Testbericht von Elektrotransporter-Vergleich
+title: "Goupil G2 "
 slug: goupil-g2-testbericht-von-elektrotransporter-vergleich
 relatedCars: goupil-g2-pritsche
 youtubeLink: https://www.youtube.com/watch?v=TO-NSxOFGLo

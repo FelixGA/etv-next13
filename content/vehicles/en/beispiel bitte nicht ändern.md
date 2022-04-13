@@ -71,7 +71,7 @@ seats:
   value: 2
 rating:
   key: gut
-  value: 4,0
+  value: 4.0
 guarantee:
   key: Garantie Fahrzeug
   value: 0

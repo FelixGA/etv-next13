@@ -21,7 +21,10 @@ function CarCardProps(props) {
         <div className="text-blue-dark font-bold ">{props.details?.key}</div>
         <div className="text-grey-dark font-bold ">
           {props.details?.value ? props.details?.value : "-"}
-          {props.details?.maxValue ? ` - ${props.details?.maxValue} ` : " "}
+          {props.details?.maxValue &&
+          props.details?.maxValue !== props.details?.value
+            ? ` - ${props.details?.maxValue} `
+            : " "}
           {props.details?.baseUnit}
         </div>
       </div>

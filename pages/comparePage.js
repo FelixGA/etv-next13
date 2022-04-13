@@ -111,7 +111,6 @@ export default function comparePage(props) {
 }
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
-  const posts = await getContent("posts", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   let blogs = await getContent("blogs", context.locale);
   let carsreviews = await getContent("carsreview", context.locale);
@@ -127,7 +126,6 @@ export async function getStaticProps(context) {
   return {
     props: {
       vehicles,
-      posts,
       page,
       blogs,
       carsreviews,
