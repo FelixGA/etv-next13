@@ -9,7 +9,7 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
       <div className="">
         <Link href={`/transporter/${carItem.name}`}>
           <a>
-            <h3 className="title text-2xl sm:text-3xl font-bold text-black-darkest pt-8 pb-2 flex leading-7 ">
+            <h3 className="title text-2xl sm:text-3xl font-bold text-black-darkest pt-8 pb-4 flex leading-7 ">
               {carItem.title}
             </h3>
           </a>
@@ -17,7 +17,7 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
       </div>
       {/* IMAGE + TEXT + LINK */}
       <div className="flex flex-col-reverse lg:flex-row-reverse">
-        <p className="pl-0 lg:pl-4 pb-4">
+        <p className="pl-0 lg:pl-8 pb-4">
           {carItem.description}
           {getCarsReview && (
             <Link
@@ -37,7 +37,7 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
         </p>
         <div className="pb-4 flex justify-center items-center ">
           <Link href={`/transporter/${carItem.name}`} passHref>
-            <a className="w-full lg:w-96 relative border-2 rounded-md">
+            <a className="w-full lg:w-96 relative border rounded-md border-blue-dark">
               {carItem?.src && (
                 <Image
                   className={
@@ -49,7 +49,7 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
                   alt={carItem.title}
                   width={257}
                   height={170}
-                  objectFit="cover"
+                  objectFit="contain"
                   layout="responsive"
                 />
               )}

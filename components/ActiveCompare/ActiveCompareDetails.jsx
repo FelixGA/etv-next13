@@ -66,11 +66,13 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
               className={`${
                 index % 2 == 1
                   ? "bg-white flex items-center h-12 "
-                  : "bg-grey-lighter  flex items-center h-12"
+                  : "bg-grey-lighter flex items-center h-12"
               }`}
             >
               <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
-                {value || "-"}
+                {value.includes("undefined") || value.includes("keine Angabe")
+                  ? "-"
+                  : value}
               </p>
             </div>
           ))}
