@@ -3,11 +3,12 @@ import { useState, useEffect } from "react";
 import CarCardDetailsDesktop from "./CarCardDetailsDesktop";
 import CarCardDetailsMobile from "./CarCardDetailsMobile";
 import { useStore } from "../store";
-import ButtonCompare from "./ButtonCompare";
-import ButtonAnfragen from "./ButtonAnfragen";
+
 import Link from "next/link";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import MobileTestResult from "../repeated/MobileTestResult";
+import ButtonCompare from "../repeated/ButtonCompare";
+import ButtonAnfragen from "../repeated/ButtonAnfragen";
 
 function CarCard({ carItem }) {
   /* HOOKS */

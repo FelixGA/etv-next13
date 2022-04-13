@@ -4,9 +4,10 @@ import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/ladezeit@2x.png";
 import Link from "next/link";
-import RatingBox from "./RatingBox";
+
 import { useRouter } from "next/router";
 import CarCardProps from "./CarCardProps";
+import RatingBox from "../repeated/RatingBox";
 
 function CarCardDetailsDesktop({ carItem }) {
   // let carItem = props.carItem;

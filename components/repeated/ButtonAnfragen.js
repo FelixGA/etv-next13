@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useStore } from "../store";
 import { useRouter } from "next/router";
 
-import Form from "../repeated/Form";
+import Form from "./Form";
 import Modal from "../core/Modal";
 
 function ButtonAnfragen({ carItem }) {
