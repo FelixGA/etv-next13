@@ -10,77 +10,80 @@ description: Der VW ABT e-Transporter ist ein elektrischer Kastenwagen der
   kann und mit 90 km/h bzw. 120 km/h Höchstgeschwindigkeit verfügbar ist.
 src: /images/abte_t6.1_front_3.jpg
 content:
-  - content: Der VW ABT e-Caddy ist ein Kastenwagen der Fahrzeugklasse N1, der eine
-      Zuladung von mehr als 500 Kilogramm aufnehmen kann und mit 90 km/h bzw.
-      120 km/h Höchstgeschwindigkeit verfügbar ist.
+  - content: Der VW ABT e-Transporter ist ein elektrischer Kastenwagen der
+      Fahrzeugklasse N1, der eine Zuladung von mehr als 1.000 Kilogramm
+      aufnehmen kann und mit 90 km/h bzw. 120 km/h Höchstgeschwindigkeit
+      verfügbar ist.
     title: Einleitung
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
 
-      Mit Fahrzeuge wie dem e-Up! und dem e-Golf hat Volkswagen schon eine Weile Elektrofahrzeuge im Angebot. Für seine Transporter setzt der Konzern in Sachen Elektromobilität auf die Marke ABT, die sonst vor allem das Tuning von Volkswagen-Modellen übernimmt. Neben dem Elektro-T6 namens ABT E-Transporter 6.1 gibt es auch noch den VW ABT e-Caddy. Dieser ist allerdings nur als Leasingmodell erhältlich.
+      Wie der VW ABT e-Caddy wird auch die elektrische Version des sehr verbreiteten T6-Transporters nicht komplett von Volkswagen produziert, sondern vom Tuning-Partner ABT umgebaut. So ist der VW ABT e-Transporter 6.1 im Prinzip ein normaler VW T6, dessen Verbrennungsmotor einfach mit einem Elektromotor getauscht wurde. Das macht den ABT 6.1 zum einen nicht gerade billig und zum anderen etwas altbacken.
 
 
-      Den elektrischen Caddy gibt es als Kastenwagen mit zwei Sitzen sowie als Kombi-Version als 5-Sitzer mit Fenstern im hinteren Teil des Fahrzeugs. Der e-Caddy basiert auf dem Caddy Maxi und hat eine Länge von 4,88 Meter und ist nur in einer Elektromotor-Version sowie einem Akku verfügbar. Wählen kann der Kunde hier allerdings zwischen zwei Geschwindigkeits-Varianten: So gibt es ihn mit 90 Km/h und 120 Km/h Höchstgeschwindigkeit, wobei sich dabei auch die Reichweiten unterscheiden.
+      Auffällig ist die vergleichsweise schlechte Informationslage, die für einen riesigen Konzern wie Volkswagen sehr überraschend ist. Es gibt kaum Pressefotos und auch die technischen Daten umfassen wirklich nur die nötigsten Angaben. Allerdings gibt es beim e-Transporter sowieso nicht viel Auswahl. Das Fahrzeug ist entweder als Kastenwagen oder Kombi verfügbar. Weitere Entscheidungsmöglichkeiten gibt es nicht.
     title: Konzept & Fahrzeugvarianten
+    image: /images/abt-e-t-6.1-heck-haus.jpg
+  - content: >-
+      ### Laderaum & Flexibilität (3/5)
+
+
+      Der Laderaum des VW ABT e-Transporter 6.1 hat wie sein Verbrenner-Geschwisterchen eine Ladelänge von 2,72 Meter, eine Breite von 1,70 Meter sowie eine Höhe von 1,41 Meter. Somit beträgt das Ladevolumen rund 6,5 m³. Beladen wird wie üblich beim T6 über eine nach oben öffnende Heckklappe bzw. geteilte Hecktüren sowie über eine seitliche Schiebetür. Optional ist auch eine zweite seitliche Schiebetür verfügbar.
+
+
+      Die Zuladung gibt der Hersteller mit 1.096 Kilogramm, somit sind auch bei einem kräftigeren Fahrer eine Tonne Nutzlast drin. Die Anhängelast liegt bei 750 Kilogramm, wobei die Reichweite mit Anhänger natürlich deutlich gesenkt werden dürfte.
+    title: Laderaum & Flexibilität
     image: ""
   - content: >-
-      ### Laderaum & Flexibilität (2/5)
+      ### Antrieb & Aufladung (2/5)
 
 
-      Da die Akkus unter dem Fahrzeugboden gelagert sind, gleicht das Platzangebot des e-Caddy dem eines “normalen” Caddy. Das Fahrzeug hat als Kastenwagen somit ein maximales Ladevolumen von 4.200 Liter, welches über eine nach oben schwenkende Heckklappe sowie über eine seitliche Schiebetür rechts beladen werden kann. Auf Wunsch ist auch eine zweite Schiebetür erhältlich. 
+      Der von ABT verbaute Elektromotor hat eine Leistung von 83 kW und ein maximales Drehmoment von 200 Nm. So kommt der e-Transporter 6.1 ordentlich vom Fleck, ohne allerdings besonders flott unterwegs zu sein. Serienmäßig ist das Fahrzeug auf eine Höchstgeschwindigkeit von 90 Km/h begrenzt, die optional auf 120 Km/h erweitert werden kann. 
 
 
-      Der Laderaum hat dabei eine Länge von 1,78 Meter und eine Höhe von 1,24 Meter. Die Ladekante befindet sich 58 Zentimeter über dem Boden, während die Nutzlast laut Hersteller bei 539 Kilogramm liegt.
-    title: Laderaum & Flexibilität
-    image: /images/vw-abt-e-caddy-ladesaeule-heck.jpg
-  - content: >-
-      ### Antrieb & Aufladung (3/5)
-
-
-      Der Elektromotor des VW ABT e-Caddy hat eine Leistung von 83 kW Leistung und ein Drehmoment von 200 Nm. In Sachen Höchstgeschwindigkeit ist das Fahrzeug auf 90 Km/h bzw. 120 Km/h begrenzt. Dadurch ergeben sich auch unterschiedliche Reichweiten, die ABT mit maximal 159 km (90 Km/h) und maximal 141 km (120 Km/h) nach dem WLTP-Zyklus angibt.
-
-
-      Die Energie wird in einem Akku mit einer Kapazität von 37,3 kWh gespeichert, welcher laut Hersteller in 5 Stunden an einer 7,2 kW-Wallbox zu 80% geladen werden kann. An einer Schnellladestation mit 50 kW soll die 80%-Aufladung in rund 50 Minuten erledigt sein. Während der Fahrt holt sich das Fahrzeug außerdem Bremsenergie per sogenannter Rekuperation zurück.
+      Der rund 330 Kilogramm schwere Akku des Fahrzeugs hat eine Kapazität von 37,3 kWh. So soll eine Reichweite von 106 bis 138 Kilometer erreicht werden. Mit Zuladung und so mancher roten Ampel kann der e-Transporter 6.1 also schnell mal weniger als 100 Kilometer erreichen. Da kommen die meisten seiner Konkurrenten deutlich weiter.
     title: Antrieb & Aufladung
-    image: /images/vw-abt-e-caddy-antriebstrang.jpg
+    image: /images/abt-e-t-6.1-grill.jpg
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung (3/5)
 
 
-      Die Ausstattung des VW ABT e-Caddy entspricht dem der Verbrenner-Version und ist dementsprechend umfassend. Der Elektrotransporter verfügt aber über ein Kombiinstrument, welches dem Fahrer anzeigt, wenn Bremsenergie zurückgewonnen wird.
+      Da es sich um reine Umbauten der Verbrenner-Modelle handelt, basiert auch die Ausstattung des e-Transporters 6.1 auf den herkömmlichen T6-Versionen. Während das Fahrzeug somit zwar serienmäßig über Helferlein wie elektrische Fensterheber verfügt, ist eine Klimaanlage leider nicht einmal gegen Aufpreis erhältlich.
     title: Komfort & Ausstattung
     image: ""
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Der Elektromotor des VW ABT e-Caddy ist mit 83 kW Leistung und einem Drehmoment von 200 Nm sehr kräftig. Allerdings ist der Elektrotransporter mehr als 150 Kilogramm schwerer als der herkömmliche Caddy, was sich laut Testberichten auch auf den Antritt auswirkt.
+      Recht ungewöhnlich für ein Elektrofahrzeug ist das Doppelkupplungsgetriebe. Während die meisten elektrischen Modelle ohne Abstufungen abkommen, werden bei der Fahrt des VW ABT e-Transporter 6.1 drei “Gänge” automatisch geschalten. Dies führt laut Tests allerdings zu Lücken in der Beschleunigung von rund einer Sekunde.
     title: Bedienung & Fahrbetrieb
     image: ""
   - content: >-
       ### Umwelt (2/5)
 
 
-      Der Verbrauch liegt bei den beiden Versionen bei 23,3 – 26,8 kWh/100 km für das langsamere Modell sowie 26,4 – 30,3 kWh/100 km für den schnellen e-Caddy. Für ein Fahrzeug dieser Größe recht hoch. So ergeben sich Energiekosten von 7,00 bis 9,00 Euro pro 100 Kilometer bei einem Strompreis von 30 Cent pro kWh.
+      Der Verbrauch von 27 - 31 kWh (90 Km/h-Version) bzw. 31 - 35 kWh (120 Km/h-Version) ist höher als bei vergleichbaren Elektrotransportern. Die Kosten auf 100 Kilometer liegen bei einem Strompreis von 30 Cent pro kWh zwischen 8,10 Euro und 10,50 Euro. Ein Solarmodul für eine längere Reichweite ist leider nicht verfügbar.
     title: Umwelt
   - content: >-
       ### Preise & Garantie (3/5)
 
 
-      Der e-Caddy ist nur als Leasingmodell erhältlich. Die Raten orientieren sich an einem Basispreis von 29.990 Euro und beginnen bei 293 Euro netto pro Monat. In Sachen Garantie gibt der Hersteller für die Batterie ganze 8 Jahre bzw. 160.000 Kilometer bei einer Restkapazität von 70%.
+      Der Einstiegspreis des elektrischen T6 beträgt stolze 44.990 Euro netto. Bei einem Mehrwertsteuersatz von 19% kostet der VW ABT also mehr als 53.000 Euro brutto. Vergleichbare Version des Verbrenner-Modells sind rund 20.000 billiger. Die Leasingraten beginnen dementsprechend bei satten 459 pro Monat.
+
+      ABT wie VW geben grundsätzlich 2 Jahre Herstellergarantie, so auch beim Elektrotransporter. Diese kann optional auf bis zu 5 Jahre verlängert werden. Ob es eine eigenständige Akku-Garantie gibt, ist leider nirgends offiziell angegeben.
     title: Preise & Garantie
-    image: /images/vw-abt-e-caddy-ladesaeule.jpg
+    image: /images/abt-e-t-6.1-amaturen.jpg
   - content: >-
       ### Fazit
 
 
-      Mit dem e-Caddy haben VW und ABT einen Elektrotransporter auf dem Markt, der dank cleverer Akku-Verbauung mit einem hohen Ladevolumen punkten kann. Auch die Reichweiten sind für ein Fahrzeug dieser Leistung recht ordentlich. Dass das Fahrzeug nur als Leasingmodell verfügbar ist, könnte allerdings  manche potenziellen Kunden abschrecken.
+      Man merkt, dass der VW ABT e-Transporter 6.1 kein eigen entwickeltes Elektrofahrzeug ist, sondern ein umgebauter Verbrenner-T6. Dadurch ist er nicht nur deutlich teurer als das herkömmliche Fahrzeug, sondern basiert auch auf dessen Technik. Im Falle des Doppelkupplungsgetriebes ist das eher unglücklich. Auch in Sachen Reichweite kann das Fahrzeug nicht mit der aktuellen Konkurrenz mithalten. Es ist daher fraglich, ob der e-Transporter wirklich viele Käufer überzeugen kann.
 
 
       ### Gesamtpunktzahl:
 
 
-      2,8 Sterne
+      2,4 Sterne
     title: Fazit
 ---
