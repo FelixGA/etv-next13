@@ -48,7 +48,7 @@ export default function Form(props) {
       <div
         className={
           !send
-            ? "flex justify-center items-center flex-col w-72 xs:w-fit"
+            ? "flex justify-center items-center flex-col w-72 xs:w-full"
             : "hidden"
         }
       >
@@ -170,14 +170,29 @@ export default function Form(props) {
           />
 
           <div className="text-black">
-            <p>{errors.firstName && "Name is required"}</p>
-            <p> {errors.firma && "Firma is required"}</p>
-            <p> {errors.zipcode && "Postleitzahl is required"}</p>
-            <p> {errors.location && "Ort is required"}</p>
-            <p> {errors.emailInput && "Email is required"}</p>
-            <p> {errors.phone && "Phone is required"}</p>
-            <p> {errors.message && "Message is required"}</p>
-            <p> {errors.checkbox && "accept the terms first"}</p>
+            <p className="text-red-500">
+              {errors.firstName && "Name ist erforderlich"}
+            </p>
+            <p className="text-red-500">
+              {errors.firma && "Firma ist erforderlich"}
+            </p>
+            <p className="text-red-500">
+              {errors.zipcode && "Postleitzahl ist erforderlich"}
+            </p>
+            <p className="text-red-500">
+              {errors.location && "Ort ist erforderlich"}
+            </p>
+            <p className="text-red-500">
+              {errors.emailInput && "Email ist erforderlich"}
+            </p>
+            <p> {errors.phone && "Phone ist erforderlich"}</p>
+            <p className="text-red-500">
+              {errors.message && "Message ist erforderlich"}
+            </p>
+            <p className="text-red-500">
+              {errors.checkbox &&
+                "Bitte stimmen Sie den Nutzungsbedingungen zu."}
+            </p>
           </div>
           <div className="w-64 xs:w-96 pb-4">
             <Controller
