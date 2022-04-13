@@ -35,7 +35,7 @@ content:
     title: Laderaum & Flexibilität
     image: /images/vw-abt-e-caddy-ladesaeule-heck.jpg
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung (3/5)
 
 
       Der Elektromotor des VW ABT e-Caddy hat eine Leistung von 83 kW Leistung und ein Drehmoment von 200 Nm. In Sachen Höchstgeschwindigkeit ist das Fahrzeug auf 90 Km/h bzw. 120 Km/h begrenzt. Dadurch ergeben sich auch unterschiedliche Reichweiten, die ABT mit maximal 159 km (90 Km/h) und maximal 141 km (120 Km/h) nach dem WLTP-Zyklus angibt.
@@ -81,6 +81,6 @@ content:
       ### Gesamtpunktzahl:
 
 
-      2,6 Sterne
+      2,8 Sterne
     title: Fazit
 ---
