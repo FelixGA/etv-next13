@@ -32,9 +32,9 @@ export default function caradvisor(props) {
         </div>
       </div>
       <Funnel getCars={getCars} />
-      <div className="flex justify-between relative">
+      <div className="flex justify-between relative ">
         {/* medal gold image */}
-        <div className="flex relative left-[25%] sm:left-[25vw] lg:left-[10vw]">
+        <div className="flex relative left-[30%] sm:left-[36vw] lg:left-[38vw] xl:left-[41vw] 2xl:left-[43vw]">
           <div className="w-16 sm:w-28 pt-8 sm:pt-12">
             <Image
               src="/images/siegel2.png"

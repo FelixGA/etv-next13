@@ -52,7 +52,7 @@ const TopSliderCard = (props) => {
                   </span>
                 </div>
                 <div className="">
-                  <span className="relative bottom-1 pl-2.5 font-black text-md ">
+                  <span className="relative bottom-1 pl-2.5 font-black text-sm ">
                     {caritem.rating.key}
                   </span>
                 </div>

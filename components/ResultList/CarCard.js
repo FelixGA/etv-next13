@@ -61,7 +61,7 @@ function CarCard({ carItem }) {
             </p>
             <div className="lg:hidden  pb-2 sm:pb-0 ">
               {/* {mobileRatingBox} */}
-              <MobileTestResult />
+              <MobileTestResult carItem={carItem} />
             </div>
           </div>
 
