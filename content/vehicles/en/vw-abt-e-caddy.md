@@ -133,6 +133,7 @@ relatedBlogs: >-
 
 
   4,4
+relatedReviews: vw-abt-e-caddy
 description: Der VW ABT e-Caddy ist ein Kastenwagen der Fahrzeugklasse N1, der
   eine Zuladung von mehr als 500 Kilogramm aufnehmen kann und mit 90 km/h bzw.
   120 km/h Höchstgeschwindigkeit verfügbar ist.
@@ -194,8 +195,8 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Ausreichend
-  value: 2,6
+  key: Befriedigend
+  value: 2.8
 guarantee:
   key: Garantie Fahrzeug
   value: 0
