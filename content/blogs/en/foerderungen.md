@@ -1,18 +1,12 @@
 ---
-title: Förderungen für Elektrotransporter
-slug: foerderungen
-youtubeLink: ""
-category: foerderung
 publishedAt: 03/10/2022
-src: /images/schweinFull.jpeg
-description: Förderungen für Elektrotransporter Text Text Text Text Text Text
-  Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
-  Text Text Text
-contentHeading:
+src: /images/shweinfull.png
+contentText:
   title: ""
   content: ""
   image: ""
-contentText:
+slug: foerderungen
+contentHeading:
   title: ""
   content: ""
   image: ""
@@ -41,6 +35,12 @@ contentText7:
   content: ""
   image: /images/Arrow-right-512.png
   totalscore: ""
+title: Förderungen für Elektrotransporter
+youtubeLink: ""
+category: foerderung
+description: Förderungen für Elektrotransporter Text Text Text Text Text Text
+  Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+  Text Text Text
 ---
 # Text über Förderungen
 

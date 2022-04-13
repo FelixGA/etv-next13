@@ -1,24 +1,18 @@
 ---
-title: Förderungen für Elektrotransporter
-slug: foerderungen
 publishedAt: 03/10/2022
-src: /images/schweinFull.jpeg
-description: Förderungen für Elektrotransporter Text Text Text Text Text Text
-  Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
-  Text Text Text
-contentHeading:
+src: /images/shweinfull.png
+contentText:
   title: ""
   content: ""
   image: ""
-contentText:
+slug: foerderungen
+contentHeading:
   title: ""
   content: ""
   image: ""
 vehicle:
   key: gut
   value: 4,0
-youtubeLink: ""
-category: foerderung
 contentText2:
   content: ""
   title: ""
@@ -44,6 +38,7 @@ contentText7:
   content: ""
   image: /images/Arrow-right-512.png
   totalscore: ""
+title: Förderungen für Elektrotransporter
 content: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -175,6 +170,11 @@ content: >-
 
 
   4,4
+youtubeLink: ""
+category: foerderung
+description: Förderungen für Elektrotransporter Text Text Text Text Text Text
+  Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+  Text Text Text
 ---
 # Text über Förderungen
 

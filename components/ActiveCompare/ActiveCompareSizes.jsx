@@ -1,7 +1,4 @@
-import TestResult from "../repeated/TestResult";
 import { useState, useEffect } from "react";
-
-import ButtonAnfragen from "../ResultList/ButtonAnfragen";
 
 export default function ActiveCompareSizes({ keys, comparedCars }) {
   const [columns, setColumns] = useState([]);

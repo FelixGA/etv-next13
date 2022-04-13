@@ -1,7 +1,7 @@
 import TestResult from "../repeated/TestResult";
 import { useState, useEffect } from "react";
 
-import ButtonAnfragen from "../ResultList/ButtonAnfragen";
+import ButtonAnfragen from "../repeated/ButtonAnfragen";
 
 export default function ActiveCompareDetails({ keys, comparedCars }) {
   const [entries, setEntries] = useState([]);

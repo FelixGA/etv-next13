@@ -1,5 +1,5 @@
-import ButtonAnfragen from "../ResultList/ButtonAnfragen";
-import ButtonCompare from "../ResultList/ButtonCompare";
+import ButtonAnfragen from "../repeated/ButtonAnfragen";
+import ButtonCompare from "../repeated/ButtonCompare";
 
 const PrintPopUp = (props) => {
   let carItem = props.carItem;

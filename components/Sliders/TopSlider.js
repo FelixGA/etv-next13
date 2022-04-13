@@ -4,17 +4,6 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 // import Script from "next/script";
 import { useState, useRef } from "react";
 const TopSlider = ({ getContent, getCars }) => {
-  console.log(getCars, "get cars");
-  /* sort by rating */
-  let ratedcars = getCars.sort((a, b) => {
-    return b.rating.value - a.rating.value;
-  });
-  console.log(
-    ratedcars
-      .map((c) => Math.round(c.rating.value * 100) / 100)
-      .sort((a, b) => b - a),
-    "get cars rated"
-  );
   const container = useRef();
   // const style = { color: "black" };
   return (
@@ -42,7 +31,11 @@ const TopSlider = ({ getContent, getCars }) => {
             className="grid grid-flow-col gap-2 auto-cols-[minmax(285px,_1fr)] overflow-x-scroll scrollbar-hide p-2 snap-x "
             ref={container}
           >
-            <TopSliderCard displayedCars={getCars} />
+            <TopSliderCard
+              displayedCars={getCars?.sort(
+                (a, b) => a.rating.value - b.rating.value
+              )}
+            />
           </div>
         </div>
 
