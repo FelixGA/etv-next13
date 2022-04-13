@@ -72,7 +72,7 @@ content:
       ### Preise & Garantie (2/5)
 
 
-      Der Hersteller macht in Sachen Preis keine Angaben. Auf der Website eines Händlers findet sich die Pritschen-Version des Goupil G2 ab 19.700€ zzgl. Mehrwertsteuer. Der Kofferaufbau wird sich in einem ähnlichen Spektrum mit einem möglichen Aufpreis bewegen. 
+      Der Hersteller macht in Sachen Preis keine Angaben. Auf der Website eines Händlers findet sich die Pritschen-Version des Goupil G2 ab 19.700€ zzgl. Mehrwertsteuer. Der Preis für einen Kofferaufbau mit einem Lithium-Akku, lag auf Händleranfrage bei rund 23.000 €. Die Preise können hier je nach Konfigurationen und Händler jedoch variieren.
 
 
       Die Garantie beträgt  2 Jahre auf das Fahrzeug und 3 zusätzliche Jahre  auf die Batterie.

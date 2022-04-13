@@ -1,98 +1,96 @@
 ---
-title: Mercedes-Benz eSprinter
-slug: mercedes-benz-esprinter
-relatedCars: mercedes-benz-evito
-youtubeLink: https://www.youtube.com/watch?v=e8lqtbPLuEA
+title: Renault Master E-Tech
+slug: renault-master-e-tech
+relatedCars: renault-master-e-tech
+youtubeLink: https://www.youtube.com/watch?v=FBT0-FfNmRA
 category: Kasten
 publishedAt: 04/01/2022
-description: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
-  Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und rund
-  eine Tonne Nutzlast aufnehmen kann.
-src: /images/mb-esprinter-seite.jpg
+description: >
+  Der Renault Master E-Tech (früher “Master Z.E.”) ist ein Kastenwagen der
+  Fahrzeugklasse N1, der zwischen 900 und 1.050 Kilogramm Nutzlast aufnehmen
+  kann und 100 km/h Höchstgeschwindigkeit erreicht.
+src: /images/renault-master-front.jpg
 content:
-  - content: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
-      Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und
-      rund eine Tonne Nutzlast aufnehmen kann.
+  - content: Der Renault Master E-Tech (früher “Master Z.E.”) ist ein Kastenwagen
+      der Fahrzeugklasse N1, der zwischen 900 und 1.050 Kilogramm Nutzlast
+      aufnehmen kann und 100 km/h Höchstgeschwindigkeit erreicht.
     title: Einleitung
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
 
-      Die großen Transporter bis 3,5 Tonnen haben bei Daimler Tradition. 1977 kam mit dem Mercedes-Benz T1 das erste Fahrzeug dieser Art auf den Markt und wurde bis 1995 gebaut. Seitdem laufen die Fahrzeuge unter dem Namen Sprinter, welcher seit 2018 in der dritten Generation erhältlich ist. Später folgte die Einführung des rein elektrischen Modells eSprinter, welcher vorerst nur als Kastenwagen verfügbar ist. Mit diesem zielt der Hersteller auf größere Lieferunternehmen im städtischen Bereich.
+      Der Master ist ein 1980 erstmals vorgestellter Transporter von Renault, der seit 2010 in der dritten Generation gebaut wird. Der Master III ist in Kooperation entwickelt worden und folglich das Schwestermodell des Opel Movano B sowie des Nissan NV400. 2018 wurde mit dem Master Z.E. („Zero Emission“) eine rein elektrische Version eingeführt, welche seitdem das größte Elektro-Modell von Renault darstellt. Inzwischen heisst das Fahrzeug Master E-Tech.
 
 
-      Im Gegensatz zu den vier verschiedenen Längen des herkömmlichen Sprinters ist die Elektro-Version nur in einer 6,09 Meter langen Ausführung mit Hochdach erhältlich. Eine Auswahl gibt es deshalb nur bei der Batterie. Hier kann zwischen einer nutzbaren Kapazität von 35 kWh und 47 kWh gewählt werden, wodurch eine Durchschnittsreichweite von 120 bzw. 158 Kilometern erreicht werden soll.
+      Während der Master mit Verbrennungsmotor auch als Pritsche, Kipper, mit Kofferaufbau und zur Personenbeförderung („Combi“ und „Bus“) erhältlich ist, gibt es den Master Z.E. nur als Kastenwagen oder mit reinem Plattformfahrgestell für individuelle Aufbauten. Als Kastenwagen gibt es ihn in drei Längen: 5,08 Meter (L1), 5,58 Meter (L2) sowie ganze 6,27 Meter (L3). Bei der kurzen Version kann der Kunde außerdem zwischen zwei Höhen wählen: 2,31 Meter (H1) und 2,50 Meter (H2). Die längeren Modelle sind nur mit hoher Karosserie verfügbar. In der Fahrerkabine können bis zu drei Personen befördert werden, eine Doppelkabine ist in der Elektro-Variante leider nicht verfügbar.
     title: Konzept & Fahrzeugvarianten
-    image: /images/mb-esprinter-laderaum.jpg
-  - content: >-
-      ### Laderaum & Flexibilität (4/5)
-
-
-      Der Mercedes-Benz eSprinter ist für ein hohes Ladevolumen konzipiert, welches mit stolzen 11,0 m³ dementsprechend üppig ausfällt. Auch die Laderaumlänge von 3,27 Meter ist länger als so manches Fahrzeug und sorgt dafür, dass der eSprinter auch extrem sperrige Ladung aufnehmen kann. Die Zuladung erfolg über hohe Flügeltüren im Heck oder eine seitliche Schiebetür auf der rechten Seite. Die Höhe der Ladekante liegt bei 61,5 Zentimeter. Außerdem kann man über einen optional verfügbaren “Heckauftritt” bequem in den Laderaum einsteigen und somit das Be- und Entladen deutlich erleichtern.
-
-
-      Die Nutzlast des Mercedes-Benz eSprinter ist abhängig von der Akku-Kapazität. Da das zulässige Gesamtgewicht bei 3,5 Tonnen liegt, führt das höhere Gewicht des 47 kWh-Akkus zu einer niedrigeren Zuladung von 848 Kilogramm. Mit der leichteren 35 kWh-Batterie darf der eSprinter hingegen bis zu 1.001 Kilogramm zuladen. Auf dem Dach des Elektro-Transporters dürfen zudem maximal 150 Kilogramm mitgeführt werden.
-    title: Laderaum & Flexibilität
     image: ""
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Laderaum & Flexibilität (3/5)
 
 
-      Wie beim eVito übernimmt auch im eSprinter ein asynchroner Elektromotor mit einer Leistung von 85 kW den Antrieb auf die Vorderachse. Dieser entwickelt ein maximales Drehmoment von 295 Nm und kann das Fahrzeug auf bis zu 120 Km/h bringen. Die Höchstgeschwindigkeit in der Standard-Version allerdings bei 80 Km/h abgeriegelt und kann optional auf 100 Km/h oder eben 120 Km/h hochgesetzt werden. Jedoch dürfte bei solchen Geschwindigkeiten die Reichweite deutlich geringer ausfallen.
+      Dank seiner üppigen Maße besitzt der Master E-Tech natürlich auch innen viel Platz. So stehen selbst in der kleinsten Version (L1H1) bis zu 7,75 m³ Ladevolumen bei einer maximalen Ladelänge von 2,58 Meter zur Verfügung. Das größte Modell (L3H2) bietet ganze 12,48 m³ Raum für Ladung bei einer Ladelänge von 3,73 Meter. Bei der Zuladung verhält es sich entgegengesetzt: Die kleinste Version hat mit 1.053 Kilogramm die höchste Nutzlast, während der größte Master mit 900 Kilogramm am wenigsten Gewicht zuladen kann.
 
 
-      Mit einer nutzbaren Akku-Kapazität von 35 kWh soll der Mercedes-Benz eSprinter rund 120 Kilometer weit kommen, bei dem größeren Akku mit 47 kWh sind laut Hersteller knapp 160 Kilometer drin. Leider ist anzunehmen, dass bei hoher Zuladung und in zähem Stadtverkehr diese Angaben wohl nicht erreicht werden dürfen. Allerdings arbeitet das Fahrzeug mit Rekuperation in gleich vier wählbaren Stufen, wodurch der Akku während der Fahrt wieder aufgeladen wird.
+      Die Beladung erfolgt über zwei geteilte Hecktüren im Verhältnis 50:50 oder über eine seitliche Schiebetür rechts. Auch eine zweite Schiebetür ist gegen Aufpreis erhältlich. Die Höhe der Ladeschwelle variiert minimal im Bereich von 54 bis 56 Zentimeter über dem Boden. Dank einer Durchladehöhe am Heck von 1,63 Meter (H1) bis 1,82 Meter (H2) können auch sehr sperrige Güter einfach verstaut werden.
 
 
-      Die Aufladung kann per Haushaltssteckdose, Wallbox oder Ladestation mit Wechsel- oder Gleichstrom erfolgen. Eine Vollladung per Wechselstrom mit 7,4 kW soll in rund 6 Stunden (35 kWh) bzw. etwa 8 Stunden (47 kWh) erledigt sein. Bei der Aufladung über eine Gleichstrom-Ladestation mit optional verfügbaren 80 kW soll der Akku laut Hersteller in gerade einmal 20 Minuten von 10% auf 80% gebracht werden.
+      Sollte der Kunde den Master E-Tech mit reinem Plattformfahrgestell kaufen, um einen individuellen Aufbau montieren zu lassen, hat er die Wahl zwischen zwei Radstand-Längen. Deren Nutzlast liegt bei 1.280 bzw. 1.302 Kilogramm, bei denen aber natürlich noch der zusätzliche Aufbau mit einberechnet werden muss.
+    title: Laderaum & Flexibilität
+    image: /images/renault-master-seite.jpg
+  - content: >-
+      ### Antrieb & Aufladung (2/5)
+
+
+      Der Elektroantrieb des Renault Master E-Tech ist auf Basis des R75-Motors aus dem ZOE entwickelt und hat eine Leistung von 57 kW sowie ein maximales Drehmoment von 225 Nm. Die Kraftübertragung erfolgt über ein stufenloses Automatikgetriebe. Die Höchstgeschwindigkeit des Elektro-Transporters liegt bei 100 Km/h. 
+
+
+      Als Energiespeicher fungiert wie beim kleinen Bruder Kangoo der Lithium-Ionen-Akku mit 33 kWh Ladekapazität. Damit soll der Master E-Tech per WLTP-Zyklus eine Reichweite von bis zu 120 Kilometer haben. Laut dem leider eher unrealistischen NEF-Zyklus soll das Fahrzeug bis zu 193 Kilometer weit fahren können.
+
+
+      Die Aufladung erfolgt über eine Ladesäule, Schuko-Stecker oder Wallbox. Laut des Laderechners von Renault dauert eine 100%ige Aufladung zwischen knapp 6 Stunden (Ladestation mit 22kW (3x32A)) und fast 20 Stunden bei einer Schuko-Ladung mit 2,3kW (10A).
     title: Antrieb & Aufladung
-    image: /images/mb-esprinter-anschluss-2.jpg
+    image: /images/renault-master-durchsichtig.jpg
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
 
-      Wie sein Geschwisterchen eVito ist auch der eSprinter recht komfortabel ausgestattet im Vergleich zu Nutzfahrzeugen anderer Hersteller. Als Serienausstattung sind bereits eine Sitzheizung für den Fahrer, ein digitales Radio (DAB) sowie ein elektronisches Stabilitätsprogramm (ESP) integriert. Bei der verfügbaren Zusatzausstattung bietet Mercedes-Benz viele Optionen für den Stadtverkehr an, da der eSprinter wohl bevorzugt in dieser Umgebung genutzt werden wird.
+      Der Renault Master E-Tech ist mit seinem hohen Ladevolumen ein echter Packesel. Damit die Ladung gut gesichert werden kann, befinden sich neben einem rutschfesten Boden je nach Version auch acht bis zwölf Verzurrösen im Heck. Um die Beladung an verschiedenen Ladeplattformen zu vereinfachen, können die Hecktüren bis 270 Grad geöffnet werden, wo sie per Magnet an den Seitenwänden befestigt werden können.
 
 
-      So sind optional Helfer wie ein Rückfahrkamera und ein Totwinkel-Assistent verfügbar, welche bei der Größe und Unübersichtlichkeit des Fahrzeugs nützlich sein können. Weitere Extras sind zum Beispiel eine Klimaanlage sowie ein LED-Lichtband zur Beleuchtung des Laderaums. Auch ein dritter Sitzplatz in der Kabine ist gegen Aufpreis verfügbar.
+      Über das Multimedia-System „R-Link Evolution“ kann der Fahrer bequem die Steuerung von Telefon, Navigation und Radio übernehmen. Dies ist über Touchscreen oder Spracheingabe möglich, um die Ablenkung beim Fahren zu minimieren. Eine Freisprechfunktion ermöglicht das Telefonieren ohne motorische Einschränkungen. Mit dem zusätzlich verfügbaren „MY Z.E. Connect“-Paket kann der Kunde außerdem online auf den Ladestatus des Fahrzeugs zugreifen und der “Z.E. Pass” ermöglicht den Zugriff auf bestimmte Ladestationen und das Zahlen per dazugehöriger Karte oder Smartphone-App.
     title: Komfort & Ausstattung
-    image: /images/mb-esprinter-innenraum.jpg
+    image: /images/renault-master-innen.jpg
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Der Mercedes-Benz eSprinter zielt auf die Kurierbranche, die oft im urbanen Raum tätig ist. Allerdings ist das Fahrzeug durch seine Größe sicher kein ideales Stadtauto. Die fehlenden Fenster in der Kastenwagen-Version tun ihr übriges. Eine Rückfahrkamera oder gar eine 360-Grad-Kamera sind deshalb ideale Helfer, kosten aber leider extra.
-
-
-      Für Fuhrpark-Manager bietet das Fahrzeug aber viel praktische Unterstützung. So können die eSprinter einer Flotte zum Beispiel auch vom Fuhrparkmanager per App geöffnet werden, ohne dass der Mitarbeiter einen Schlüssel benötigt. So werden Fahrzeugwechsel bei vielen Fahrern vereinfacht. Außerdem können via Smartphone alle Transporter der Flotte jederzeit in Echtzeit verfolgt und mit neuen Aufträgen versorgt werden.
+      Das Rangieren mit dem großen Transporter wird durch Parksensoren hinten sowie eine Rückfahrkamera erleichtert, welche über den Innenspiegel oder das Navigationssystem übertragen wird. Eine Berganfahrhilfe unterstützt den Fahrer außerdem beim Starten des Fahrzeugs an Steigungen. Ein Flottenmanagement-System ist leider nicht verfügbar.
     title: Bedienung & Fahrbetrieb
-    image: /images/mb-esprinter-heck.jpg
+    image: ""
   - content: >-
       ### Umwelt (3/5)
 
 
-      Mit der kleineren Hochvoltbatterie von 35 kWh soll der eSprinter ca. 37,1 kWh auf 100 Kilometer verbrauchen. Bei der größeren Version mit 47 kWh liegt der Verbrauch interessanterweise niedriger bei nur 32,5 kWh / 100 Km. Damit soll das Fahrzeug knapp 160 Kilometer weit fahren können. Ein Solarmodul für mehr Reichweite wird derzeit nicht angeboten.
+      Der Verbrauch liegt offiziell bei rund 21,0 kWh auf 100 Kilometer. Dies scheint allerdings nur mit wenig Beladung und mit vorsichtigem Gasfuß möglich. Die WLTP-Reichweite von 120 Kilometer ergibt bei einer Akkukapazität einen ungefähren Energieverbrauch von 27,5 kWh auf 100 Kilometer. Bei 30 Cent pro kWh würden die Kosten auf 100 Kilometer also zwischen 6,30 Euro und 8,25 Euro liegen.
     title: Umwelt
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie (3/5)
 
 
-      Beim eSprinter setzt Mercedes-Benz vermehrt auf das Leasing des Fahrzeugs. So ist der große Elektro-Transporter laut Hersteller ab 299 Euro im Monat erhältlich. Beim Kaufpreis startet der eSprinter als 35 kWh-Version bei einem Listenpreis von 54.090 Euro, wodurch sich ein Kaufpreis inklusive Mehrwertsteuer von 64.367,10 Euro ergibt. 
-
-
-      Mit dem größeren 47 kWh-Akku kostet das Fahrzeug mindestens 61.310 Euro netto. In allen Angeboten ist der Akku mit enthalten und muss nicht gemietet werden. Wie auf alle Transporter gibt Mercedes-Benz auch auf den eSprinter eine Neufahrzeug-Garantie von 24 Monaten, welche ohne Kilometerbegrenzung gilt.
+      Die Preise für den Renault Master E-Tech beginnen als Kastenwagen bei 54.900 Euro netto für die Version “L1H1”. Ein detaillierte Preisliste ist leider nur auf Anfrage zu erhalten. Im Gegensatz zum Kangoo E-Tech ist hier die Batterie mit im Preis enthalten und muss nicht dazu gemietet werden. Auf Neufahrzeuge gibt Renault eine Garantie von 2 Jahren, welche gegen Aufpreis verlängert werden kann.
     title: Preise & Garantie
-    image: ""
+    image: /images/renault-master-heck-lade.jpg
   - content: >-
       ### Fazit
 
 
-      Der Mercedes-Benz eSprinter ist besonders durch seinen riesigen Laderaum von 11 m³ für den Waren- und Gütertransport von großen Lademengen interessant. Aber auch in Sachen Komfort ist das Fahrzeug anderen Nutzfahrzeugen überlegen. Die Elektroversion bietet sich aber vorerst nur für den Stadtverkehr oder kürzere Überlandstrecken an, da die angegeben Reichweiten mit Ladung wohl nicht zu erreichen sind.
+      Der Renault Master E-Tech ist als Kastenwagen einer der größten Elektrotransporter. Das üppige Raumvolumen und die großen Ladeöffnungen sind ideal, um sperrige Güter oder Möbel zu be- und entladen. So bietet sich der Master E-Tech als Fahrzeug für Umzugsunternehmen und Lieferdienste mit großen Waren an. Durch sein höheres Gewicht ist die Reichweite geringer als zum Beispiel beim Kangoo E-Tech, weshalb sich das Fahrzeug eher für kurze Strecken und den Stadtverkehr eignet. Praktische Ausstattungen zur Ladungssicherung und Kommunikation erleichtern die Arbeit bei der Fahrt und dem Warentransport.  
 
 
       ### Gesamtpunktzahl:
 
 
-      3,4 Sterne
+      3,0 Sterne
     title: Fazit
 ---
