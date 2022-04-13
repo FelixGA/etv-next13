@@ -95,7 +95,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
   //dispatch({ type: "price", data: choosePrice });
 
   return (
-    <div className="relative ">
+    <div className="relative">
       <div className="hidden lg:flex w-full h-96 absolute justify-end forz border-black-darkest">
         <div className="w-[520px] relative bottom-0 opacity-30 	">
           <Image
