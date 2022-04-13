@@ -161,7 +161,7 @@ const Header = () => {
         className={
           router.pathname == "/caradvisor"
             ? "hidden"
-            : "ham-menu-container absolute right-4 sm:top-9 top-7 md:hidden z-40 "
+            : "ham-menu-container absolute right-4 sm:top-9 top-7 lg:hidden z-40 "
         }
       >
         {/* <div className="relative" onClick={() => setHamState(!hamState)}>

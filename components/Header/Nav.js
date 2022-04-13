@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <div className={router.pathname == "/caradvisor" ? "hidden" : "w-full"}>
       <nav className=" ">
-        <ul className="flex justify-around items-center flex-1  text-blue-lighter text-xl font-bold">
+        <ul className="flex justify-around items-center flex-1 text-blue-lighter text-lg xl:text-xl font-bold">
           <li>
             <Link href="/">
               <a
@@ -63,7 +63,7 @@ const Nav = () => {
               </a>
             </Link>
           </li>
-          <li>
+          <li className="">
             <Link href="/comparePage">
               <a
                 onClick={() => {

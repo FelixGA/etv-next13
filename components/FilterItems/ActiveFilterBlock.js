@@ -35,7 +35,7 @@ function ActiveFilterBlock({ getContent }) {
           }}
         >
           <div className="relative flex justify-center items-center xl:pr-0">
-            <h4 className="sort-heading w-fit ">
+            <h4 className="sort-heading w-fit">
               {` Sortieren nach:
                ${state?.activeSortValues[0]?.sortCategory}`}
             </h4>

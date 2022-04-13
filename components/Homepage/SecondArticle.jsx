@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function SecondArticle({ getMarkdownContext, getContent }) {
   return (
-    <div className="blog-article-two bg-grey-lightest flex px-8 pb-8 flex-col md:flex-row">
-      <div className="w-[76%] mx-auto md:w-full relative xl:pl-10 md:pb-10 xl:mt-10 ">
+    <div className="blog-article-two bg-grey-lightest flex px-8 pb-8 pt-4 flex-col md:flex-row">
+      <div className="w-full sm:w-[76%] mx-auto md:w-full relative xl:pl-10 sm:pt-10 lg:pt-2 md:pb-10 lg:pb-4 xl:mt-10 ">
         <Image
           src="/images/shweinFull.png"
           width={300}
@@ -15,17 +15,17 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
           objectFit="contain"
         />
       </div>
-      <div className="md:pt-10 2xl:pt-48 xl:px-12 xl:pl-20 ">
+      <div className="md:pt-10 2xl:pt-48 xl:px-12 xl:pl-20 sm:pl-4">
         {/* <h2 className="text-grey-darkest text-2xl font-bold ">
            dfg
           </h2> */}
-        <div className="tracking-wide font-bold text-blue-lighter px-1 xs:px-10 pb-6 py-5 xl:pr-36">
+        <div className="tracking-wide font-bold text-blue-lighter px-1 xs:px-2 pb-6 xl:pr-36">
           {<MDXRemote {...getMarkdownContext.substities} />}
         </div>
 
         <Link href="/magazin/foerderungen">
           <a className="">
-            <button className="bg-blue-dark no-select hover:bg-blue-light text-white font-bold py-4 px-6 xs:ml-10 mb-5 mt-6 text-sm rounded-md">
+            <button className="bg-blue-dark no-select hover:bg-blue-light text-white font-bold py-4 px-6 xs:ml-2 mb-5 lg:mt-20 text-sm rounded-md">
               Mehr erfahren
             </button>
           </a>

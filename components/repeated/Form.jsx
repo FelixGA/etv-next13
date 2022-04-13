@@ -232,9 +232,7 @@ export default function Form(props) {
       </div>
       <div
         className={
-          send
-            ? "flex h-fit justify-center items-center w-64 xs:w-80 sm:w-96 "
-            : "hidden"
+          send ? "flex h-fit justify-center items-center w-full " : "hidden"
         }
       >
         <p className="px-8 sm:p-8 mt-4 w-full sm:w-2/3 sm:text-lg">

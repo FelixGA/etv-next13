@@ -31,8 +31,8 @@ const Footer = ({ blogs, reviews }) => {
   return (
     <>
       <footer className="py-10 lg:flex lg:flex-row-reverse lg:justify-around print:hidden ">
-        <nav className="flex mt-10 flex-col sm:flex-row justify-between items-center sm:items-start pb-8">
-          <div className="flex lg:w-48 items-center flex-col justify-start  ">
+        <nav className="flex mt-10 flex-col sm:flex-row justify-between items-center sm:items-start ">
+          <div className="flex lg:w-48 items-center flex-col justify-start pb-8 ">
             <h3 className="text-sm sm:text-lg font-bold tracking-wider h-6 sm:h-10 lg:h-12">
               <Link href="/comparePage">
                 <a>{`Transporter`.toUpperCase()}</a>
@@ -42,7 +42,7 @@ const Footer = ({ blogs, reviews }) => {
               <ListItems itemsList={reviews} />
             </div>
           </div>
-          <div className="flex lg:w-48 items-center flex-col justify-start ">
+          <div className="flex lg:w-48 items-center flex-col justify-start pb-8">
             <h3 className="text-sm sm:text-lg font-bold tracking-wider h-6 sm:h-10 lg:h-12">
               <Link href="/magazin">
                 <a>{`Magazin`.toUpperCase()}</a>
@@ -63,8 +63,8 @@ const Footer = ({ blogs, reviews }) => {
         </nav>
 
         <div className="lg:w-1/4 lg:pt-11 px-8">
-          <div className="flex flex-row justify-start items-center pl-2 ">
-            <div className="w-1/3 sm:w-1/2 md:w-[15%] lg:w-[40%] xl:w-[25%]">
+          <div className="flex flex-row justify-start items-center pl-2 w-full">
+            <div className="w-1/3 sm:w-1/5 lg:w-[60%] xl:w-[30%] ">
               <Image
                 className=""
                 src="/images/etv-logo-final.png"
@@ -75,7 +75,7 @@ const Footer = ({ blogs, reviews }) => {
               />
             </div>
             <div className="w-full sm:w-1/2">
-              <p className="text-blue-dark text-xs sm:text-lg font-bold ">
+              <p className="text-blue-dark text-xs sm:text-xl font-bold ">
                 Elektrotransporter
                 <br />
                 Vergleich
