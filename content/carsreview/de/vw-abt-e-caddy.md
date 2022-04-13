@@ -48,45 +48,39 @@ content:
       ### Komfort & Ausstattung (4/5)
 
 
-      Im Vergleich zu preiswerteren Elektro-Nutzfahrzeugen ist der Mercedes-Benz eVito bereits in der Basisversion weniger spartanisch. Außerdem kann er mit vielen Details ausgestattet werden, die den Komfort des Fahrers erhöhen. Gegen Aufpreis sind so neben einer Klimaanlage und Sitzheizung auch Komfortsitze erhältlich. Allerdings sei angemerkt, dass einige der vielen Ausstattungsoptionen die Reichweite beeinträchtigen können. In dieser Hinsicht interessant sind aber die verschiedenen Rekuperationsstufen, die der Fahrer wählen und so die Reichweite beeinflussen kann.
-
-
-      In Sachen Entertainment-Systeme bietet Mercedes-Benz gleich mehrere Optionen für den eVito, allerdings keine ohne Aufpreis. Das preiswerteste Modell kostet 570 Euro extra und verfügt über nützliche Funktionen wie Bluetooth (für eine Freisprechfunktion), USB-Anschluss oder einen SD-Speicherkarten-Steckplatz. Für ein größeres Display mit Navigation muss der Kunde allerdings schon etwas tiefer in die Tasche greifen.
+      Die Ausstattung des VW ABT e-Caddy entspricht dem der Verbrenner-Version und ist dementsprechend umfassend. Der Elektrotransporter verfügt aber über ein Kombiinstrument, welches dem Fahrer anzeigt, wenn Bremsenergie zurückgewonnen wird.
     title: Komfort & Ausstattung
-    image: /images/mb-e-vito-innen-1-1024x683.jpg
+    image: ""
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Der Mercedes-Benz eVito ist durch seine kompakten Maße und die hohe Sitzposition recht übersichtlich, wobei die Kastenwagen-Version durch fehlende Fenster im Laderaum natürlich etwas weniger Rundumsicht bietet. Gegen Aufpreis gibt es ein Assistenzsystem-Paket, welches für zusätzliche Sicherheit sorgt. Ebenfalls als Sonderausstattung ist ein sogenanntes “Easy Cargo”-paket, welches das Be- und Entladen erleichtern soll.
+      Der Elektromotor des VW ABT e-Caddy ist mit 83 kW Leistung und einem Drehmoment von 200 Nm sehr kräftig. Allerdings ist der Elektrotransporter mehr als 150 Kilogramm schwerer als der herkömmliche Caddy, was sich laut Testberichten auch auf den Antritt auswirkt.
     title: Bedienung & Fahrbetrieb
     image: ""
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt (2/5)
 
 
-      Der Energieverbrauch des eVito von Mercedes-Benz liegt laut Hersteller bei rund 21,5 kWh auf 100 km. Bei 30 Cent pro Kilowattstunde ergeben 100 km Fahrstrecke somit Kosten von rund 6,45 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
+      Der Verbrauch liegt bei den beiden Versionen bei 23,3 – 26,8 kWh/100 km für das langsamere Modell sowie 26,4 – 30,3 kWh/100 km für den schnellen e-Caddy. Für ein Fahrzeug dieser Größe recht hoch. So ergeben sich Energiekosten von 7,00 bis 9,00 Euro pro 100 Kilometer bei einem Strompreis von 30 Cent pro kWh.
     title: Umwelt
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie (3/5)
 
 
-      Die Preise des Mercedes-Benz eVito beginnen bei 45.990,00 € („Lang“) sowie 47.470,00 € („Extralang“). Der Lithium-Ionen-Akku ist mit im Preis enthalten und kann nicht gemietet werden. Da viele für Unternehmen nützliche Helfer allerdings Aufpreis kosten, dürften die wenigsten Kunden diese Anschaffungskosten einhalten.
-
-
-      Der Hersteller bietet eine Garantie von 24 Monaten auf das Fahrzeug. Zusätzlich lassen sich „ServiceCare“-Pakete gegen einen monatlichen Betrag buchen, welche dem Kunden einen Rundum-Service in Sachen Wartung und dem Austausch von Verschleißteilen bieten. Diese können je nach Laufleistung angepasst werden.
+      Der e-Caddy ist nur als Leasingmodell erhältlich. Die Raten orientieren sich an einem Basispreis von 29.990 Euro und beginnen bei 293 Euro netto pro Monat. In Sachen Garantie gibt der Hersteller für die Batterie ganze 8 Jahre bzw. 160.000 Kilometer bei einer Restkapazität von 70%.
     title: Preise & Garantie
-    image: /images/mb-e-vito-seite-1-1024x683.jpg
+    image: /images/vw-abt-e-caddy-ladesaeule.jpg
   - content: >-
       ### Fazit
 
 
-      Der eVito von Mercedes-Benz ist gegenüber dem großen Transporter Sprinter zwar kompakt, bietet dank seiner Länge aber trotzdem ein hohes Raumvolumen. Die bis zu 6.600 Liter Beladungskapazität dürften für einige Lieferanten und Handwerksbetriebe interessant sein. Der Stuttgarter E-Transporter bietet auch einen hohen Komfort im Vergleich zu einigen auf Funktionalität abzielenden Konkurrenz-Modellen. Negativ fällt hier aber ins Gewicht, dass viele Ausstattungsoptionen extra bezahlt werden müssen.
+      Mit dem e-Caddy haben VW und ABT einen Elektrotransporter auf dem Markt, der dank cleverer Akku-Verbauung mit einem hohen Ladevolumen punkten kann. Auch die Reichweiten sind für ein Fahrzeug dieser Leistung recht ordentlich. Dass das Fahrzeug nur als Leasingmodell verfügbar ist, könnte allerdings  manche potenziellen Kunden abschrecken.
 
 
       ### Gesamtpunktzahl:
 
 
-      3,4 Sterne
+      2,6 Sterne
     title: Fazit
 ---
