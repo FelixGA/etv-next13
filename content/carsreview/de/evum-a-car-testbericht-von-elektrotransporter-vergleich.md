@@ -1,5 +1,5 @@
 ---
-title: Evum A-Car Testbericht von Elektrotransporter-Vergleich
+title: Evum A-Car
 slug: evum-a-car-testbericht-von-elektrotransporter-vergleich
 relatedCars: Evum-aCar-Pritsche
 youtubeLink: https://www.youtube.com/watch?v=6UhB-lkSbYU

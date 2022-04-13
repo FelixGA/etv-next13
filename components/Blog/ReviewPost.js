@@ -14,7 +14,7 @@ export default function ReviewPost({ getCarsReview, getMdxContent }) {
           </Link>
         </button>
         <h2 className="m-auto py-8 text-blue-dark font-bold text-4xl ">
-          Testbericht - {getCarsReview?.title}
+          {getCarsReview?.title} Testbericht-von-Elektrotransporter-Vergleich
           <Link href={`/transporter/${getCarsReview?.relatedCars}`}>
             <span className="lg:px-8 text-blue-dark font-bold text-xs text-left cursor-pointer">
               Details anzeigen

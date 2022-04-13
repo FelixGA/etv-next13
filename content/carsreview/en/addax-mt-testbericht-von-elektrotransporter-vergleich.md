@@ -1,5 +1,5 @@
 ---
-title: Addax-MT-Testbericht-von-Elektrotransporter-Vergleich
+title: Addax-MT
 slug: addax-mt-testbericht-von-elektrotransporter-vergleich
 relatedCars: addax-mt-pritsche
 youtubeLink: https://www.youtube.com/watch?v=tTpUFu3Stzg
