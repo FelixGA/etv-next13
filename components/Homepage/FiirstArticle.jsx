@@ -4,10 +4,10 @@ import Image from "next/image";
 export default function FirstArticle({ getMarkdownContext, getContent }) {
   // (<MDXRemote {...getMarkdownContext.eAutoAdvisor} />);
   return (
-    <div className="blog-article-one flex">
-      <div className="flex flex-col justify-evenly flex-1 lg:px-20 px-10">
-        <div className="mt-4 xl:w-96">
-          <div className="no-select h-8 w-24 flex items-center flex-wrap justify-center bg-orange-light text-white font-bold rounded">
+    <div className="flex px-8 xl:px-16 2xl:px-96">
+      <div className=" flex flex-col flex-1 xl:flex-1 pt-4">
+        <div className="pt-4 xl:pt-24">
+          <div className="no-select bg-orange-light text-white font-bold rounded w-24 flex justify-center items-center h-10">
             Jetzt neue
           </div>
           {/* <h2 className="text-grey-darkest text-2xl font-bold">
@@ -20,13 +20,13 @@ export default function FirstArticle({ getMarkdownContext, getContent }) {
         </div>
         <Link href="/caradvisor">
           <a>
-            <button className="bg-blue-dark no-select  hover:bg-blue-light text-white font-bold py-4 px-6 mb-5 mt-6 text-sm rounded-md">
+            <button className="bg-blue-dark no-select hover:bg-blue-light text-white font-bold py-4 px-6 mt-8 xl:mt-24 text-sm rounded-md">
               Zum Kaufberater
             </button>
           </a>
         </Link>
       </div>
-      <div className="no-select hidden xl:flex ml-10 mt-20  mx-4">
+      <div className="no-select hidden xl:flex">
         <Image
           src="/images/kaufberaterCar.png"
           width={800}
