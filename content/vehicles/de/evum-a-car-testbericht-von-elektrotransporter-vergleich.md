@@ -66,11 +66,11 @@ batteryIncluded:
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "0"
+  value: 15,9
   baseUnit: "-"
 power:
   key: Leistung
-  value: "51"
+  value: "20"
   baseUnit: kW
 seats:
   key: Sitzplätze
@@ -91,30 +91,30 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
-  value: 6
-  baseUnit: Jahre
+  value: 0
+  baseUnit: "-"
 loadingHeight:
   key: Ladehöhe
   value: 0
   baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 7,7
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
   value: "0"
   baseUnit: "-"
+loadingArea:
+  key: Ladefläche
+  value: 2,86
+  baseUnit: m²
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1928
+  valuewidth: 1500
   baseUnit: mm
-  valuelength: 5809
-  valueheight: 2312
-  valuewheelbase: 3494
+  valuelength: 4000
+  valueheight: 2000
+  valuewheelbase: 2596
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße

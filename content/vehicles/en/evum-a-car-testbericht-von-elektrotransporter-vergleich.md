@@ -32,4 +32,21 @@ chargingTimeFast:
 batteryCapacityLithium:
   value: 16.5
   baseUnit: kwh
+consumption:
+  baseUnit: "-"
+power:
+  value: "20"
+  baseUnit: kW
+loadingVolumeTotal:
+  value: "0"
+  baseUnit: "-"
+loadingArea:
+  value: 2,86
+  baseUnit: m²
+carSizes:
+  valueheight: 2000
+  valuewidth: 1500
+  valuelength: 4000
+  valuewheelbase: 2596
+  baseUnit: mm
 ---
