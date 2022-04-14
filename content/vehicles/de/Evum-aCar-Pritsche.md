@@ -1,7 +1,7 @@
 ---
-title: Evum aCar Pritsche
-name: Evum-aCar-Pritsche
-price: 33080
+title: Streetscooter
+name: streetscooter
+price: 39990
 relatedBlogs:
   title: " Konzept & Fahrzeugvarianten"
   content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
@@ -80,7 +80,7 @@ seats:
   value: 2
 rating:
   key: Gut
-  value: 4.0
+  value: 4
 guarantee:
   key: Garantie Fahrzeug
   value: 0
