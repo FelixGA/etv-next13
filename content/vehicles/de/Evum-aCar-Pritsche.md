@@ -12,27 +12,24 @@ relatedBlogs:
     Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
-relatedReviews: evum-a-car-testbericht-von-elektrotransporter-vergleich
-description: >-
-  
-
-
-
-  Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A -Car nun seit Juni 2020 auf dem Markt. Ursprünglich wurde der kräftige Elektrotransporter für Entwicklungs- und Schwellenländern entwickelt, wo er in der Landwirtschaft und der Industrie zum Einsatz kommen sollte. Während der Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen Markt attraktiv sein könnte.
-src: /images/Evum-Acar-Front-1024x683.jpg
-category: Pritsche
-typeClass: L7E
+relatedReviews: ""
+description: Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von
+  der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit
+  Kofferaufbau im Umlauf und kann reichlich 1.000 Kilogramm Nutzlast aufnehmen.
+src: /images/streetscooter-front.jpg
+category: Koffer
+typeClass: N1
 loadingWeight:
   key: Nutzlast
-  value: 1200
+  value: 1014
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 1500
+  value: 1786
   baseUnit: kg
 maxSpeed:
   key: km/h
-  value: 70
+  value: 100
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
@@ -41,21 +38,21 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 110
+  value: 101
   baseUnit: km
-  maxValue: 110
+  maxValue: 205
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
-  value: 0
-  baseUnit: keine Angabe
+  value: 16
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2
-  value: 6
-  baseUnit: h
+  value: 0
+  baseUnit: "-"
 chargingTimeFast:
   key: Schnellladezeit
-  value: 0
-  baseUnit: keine Angabe
+  value: 3
+  baseUnit: Stunden
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
@@ -157,5 +154,4 @@ wheelbase:
   value: "2596"
   baseUnit: mm
 ---
-
-Das Evum aCar ist ein Elektrotransporter der Kategorie N1 mit bis zu 1200kg Nutzlast.
+Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit Kofferaufbau im Umlauf und kann reichlich 1.000 Kilogramm Nutzlast aufnehmen.
