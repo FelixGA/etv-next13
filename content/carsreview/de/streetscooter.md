@@ -5,10 +5,10 @@ relatedCars: maxus-edeliver-3
 youtubeLink: https://www.youtube.com/watch?v=fcjYIzGqs4s
 category: Koffer
 publishedAt: 04/01/2022
-description: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der
-  in zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
-  aufnehmen kann.
-src: /images/Maxus-eDeliver-3-Front-2-300x200.jpg
+description: Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von
+  der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit
+  Kofferaufbau im Umlauf und kann reichlich 1.000 Kilogramm Nutzlast aufnehmen.
+src: /images/streetscooter-front.jpg
 content:
   - content: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der in
       zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
