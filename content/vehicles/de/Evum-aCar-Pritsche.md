@@ -55,33 +55,33 @@ chargingTimeFast:
   baseUnit: Stunden
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: "-"
-  baseUnit: " keine Angabe"
+  value: 0
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: 16,5
+  value: 43.4
   baseUnit: kwh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: 19,6
-  baseUnit: kWh
+  value: "0"
+  baseUnit: "-"
 power:
   key: Leistung
-  value: min-20/max-28
-  baseUnit: kw
+  value: "51"
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
-  value: 4
+  key: Befriedigend
+  value: 3.2
 guarantee:
   key: Garantie Fahrzeug
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 availability:
   key: Verfügbarkeit
   value: keine Angabe
@@ -91,30 +91,30 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
-  value: 0
-  baseUnit: keine Angabe
+  value: 6
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
-  value: 895
-  baseUnit: mm
+  value: 0
+  baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
-  value: "234"
+  value: 7,7
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 2,86
-  baseUnit: m2
+  value: "0"
+  baseUnit: "-"
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1500
+  valuewidth: 1928
   baseUnit: mm
-  valuelength: 4000
-  valueheight: 2000
-  valuewheelbase: 2596
+  valuelength: 5809
+  valueheight: 2312
+  valuewheelbase: 3494
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
