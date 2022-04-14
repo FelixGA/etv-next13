@@ -72,7 +72,7 @@ content:
       ### Umwelt (3/5)
 
 
-      Der Energieverbrauch des Opel Vivaro-E liegt kombiniert laut Hersteller bei rund 23, und 24 kWh auf 100 km. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke so zwischen 6,90 und 7,20 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
+      Der Energieverbrauch des Peugeot e-Expert wird nicht konkret angegeben, dürfte aber ähnlich seinen GEschwistermodellen um die 25 kWh auf 100 km liegen. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke so circka 7,50 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
   - content: >-
       ### Preise & Garantie (3/5)
