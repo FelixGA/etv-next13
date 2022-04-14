@@ -119,39 +119,39 @@ carSizes:
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1405
+  valueheight: 0
   width: Breite
-  valuewidth: 1680
-  valuelength: 3165
+  valuewidth: 1608
+  valuelength: 1778
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "5809"
+  value: "4000"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1928"
+  value: "1500"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "2312"
+  value: "2000"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "3165"
+  value: "1778"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1680"
+  value: "1608"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "1405"
+  value: "0"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "3494"
+  value: "2596"
   baseUnit: mm
 ---
 Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A-Car nun seit Juni 2020 auf dem Markt.
