@@ -1,5 +1,5 @@
 ---
-title: Evum aCar Pritsche
+title: Streetscooter
 name: streetscooter
 price: 39990
 relatedBlogs:
@@ -13,12 +13,9 @@ relatedBlogs:
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
 relatedReviews: ""
-description: >-
-  
-
-
-
-  Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A -Car nun seit Juni 2020 auf dem Markt. Ursprünglich wurde der kräftige Elektrotransporter für Entwicklungs- und Schwellenländern entwickelt, wo er in der Landwirtschaft und der Industrie zum Einsatz kommen sollte. Während der Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen Markt attraktiv sein könnte.
+description: Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von
+  der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit
+  Kofferaufbau im Umlauf und kann reichlich 1.000 Kilogramm Nutzlast aufnehmen.
 src: /images/streetscooter-front.jpg
 category: Koffer
 typeClass: N1
@@ -47,15 +44,15 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 16
-  baseUnit: keine Angabe
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2
   value: 0
-  baseUnit: h
+  baseUnit: "-"
 chargingTimeFast:
   key: Schnellladezeit
   value: 3
-  baseUnit: keine Angabe
+  baseUnit: Stunden
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: 0
@@ -69,7 +66,7 @@ batteryIncluded:
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: 19,6
+  value: "0"
   baseUnit: "-"
 power:
   key: Leistung
@@ -79,12 +76,12 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
+  key: Befriedigend
   value: 3.2
 guarantee:
   key: Garantie Fahrzeug
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 availability:
   key: Verfügbarkeit
   value: keine Angabe
@@ -94,8 +91,8 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
-  value: 0
-  baseUnit: keine Angabe
+  value: 6
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
   value: 0
@@ -122,40 +119,39 @@ carSizes:
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 352
+  valueheight: 1405
   width: Breite
-  valuewidth: 1608
-  valuelength: 1778
+  valuewidth: 1680
+  valuelength: 3165
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "4000"
+  value: "5809"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1500"
+  value: "1928"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "2000"
+  value: "2312"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "1778"
+  value: "3165"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1608"
+  value: "1680"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "352"
+  value: "1405"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "2596"
+  value: "3494"
   baseUnit: mm
 ---
-
-Das Evum aCar ist ein Elektrotransporter der Kategorie N1 mit bis zu 1200kg Nutzlast.
+Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit Kofferaufbau im Umlauf und kann reichlich 1.000 Kilogramm Nutzlast aufnehmen.

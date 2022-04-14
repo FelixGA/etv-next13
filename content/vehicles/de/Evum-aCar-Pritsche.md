@@ -119,39 +119,39 @@ carSizes:
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 352
+  valueheight: 1405
   width: Breite
-  valuewidth: 1608
-  valuelength: 1778
+  valuewidth: 1680
+  valuelength: 3165
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "4000"
+  value: "5809"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1500"
+  value: "1928"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "2000"
+  value: "2312"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "1778"
+  value: "3165"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1608"
+  value: "1680"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "352"
+  value: "1405"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "2596"
+  value: "3494"
   baseUnit: mm
 ---
 Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit Kofferaufbau im Umlauf und kann reichlich 1.000 Kilogramm Nutzlast aufnehmen.
