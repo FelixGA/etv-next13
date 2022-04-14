@@ -25,11 +25,11 @@ loadingWeight:
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 1786
+  value: 1200
   baseUnit: kg
 maxSpeed:
   key: km/h
-  value: 100
+  value: 70
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
@@ -38,28 +38,28 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 101
+  value: 110
   baseUnit: km
-  maxValue: 205
+  maxValue: 110
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
-  value: 16
-  baseUnit: "-"
+  value: 6.5
+  baseUnit: Stunden
 chargingTimeLithium:
   key: Ladezeit Typ2
-  value: 0
-  baseUnit: "-"
+  value: 2
+  baseUnit: Stunden
 chargingTimeFast:
   key: Schnellladezeit
-  value: 3
-  baseUnit: Stunden
+  value: 0
+  baseUnit: "-"
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: 0
   baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: 43.4
+  value: 16.5
   baseUnit: kwh
 batteryIncluded:
   value: ja
