@@ -175,4 +175,25 @@ loadingVolume:
   valuewidth: 1527
   valuelength: 1817
   baseUnit: mm
+carSizesLength:
+  value: "4403"
+  baseUnit: mm
+carSizesWidth:
+  value: "1927"
+  baseUnit: mm
+carSizesHeight:
+  value: "1796"
+  baseUnit: mm
+loadingVolumeLength:
+  value: "1817"
+  baseUnit: mm
+loadingVolumeWidth:
+  value: "1527"
+  baseUnit: mm
+loadingVolumeHeight:
+  value: "1198"
+  baseUnit: mm
+wheelbase:
+  value: "2785"
+  baseUnit: mm
 ---

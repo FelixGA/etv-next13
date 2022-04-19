@@ -246,32 +246,32 @@ loadingVolume:
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "4956"
+  value: "4403"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1920"
+  value: "1927"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1895"
+  value: "1796"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "2512"
+  value: "1817"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1636"
+  value: "1527"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "1397"
+  value: "1198"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "3275"
+  value: "2785"
   baseUnit: mm
 ---
 Der Peugeot e-Partner ist ein elektrischer Kastenwagen der Fahrzeugklasse N1, der eine Zuladung von 650 bis 1.000 Kilogramm aufnehmen kann und eine Höchstgeschwindigkeit von 135 km/h erreicht.
