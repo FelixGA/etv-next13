@@ -19,35 +19,35 @@ content:
       ### **Konzept & Fahrzeugvarianten**
 
 
-      Die ersten beiden Generationen des Opel Vivaro waren Gemeinschaftsprojekte mit Nissan und Renault und wurden von 2001 bis 2019 gebaut. Mit der dritten Generation änderte sich dies. Der aktuelle Vivaro ist auch in Zusammenarbeit mit Toyota und dem französischen PSA-Konzern entstanden, wodurch das Fahrzeug gleich drei Geschwister hat: den Peugeot Expert, den Toyota Proace sowie den Citroen Jumpy.
+      Seit 1996 hat Peugeot den Partner im Angebot, der gemeinsam mit dem Citroen Berlingo entwickelt wurde. Die dritte Generation kam 2018 auf dem Markt und hat mit dem Opel Combo sowie dem Toyota Proace City zwei weitere Geschwister. Im Jahr 2021 wurde die elektrische Variante Peugeot e-Partner auf den Markt gebracht.
 
 
-      Seit 2020 ist die elektrische Version Opel Vivaro auf dem Markt. Der Kastenwagen Vivaro-E Cargo ist elektrisch in zwei Längen erhältlich: 4,96 Meter (M) sowie 5,31 Meter (L). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität, welche natürlich unterschiedliche Reichweiten ermöglichen. Der Opel Vivaro-E ist auch mit Doppelkabine sowie als Kombi erhältlich, mit Sitzen und Fenstern im Fond. Hier soll es aber um die Kastenwagen-Version gehen.
+      Das Fahrzeug ist in zwei Fahrzeuglängen erhältlich: als 4,40 Meter lange L1-Version sowie als L2 mit 25 Zentimeter mehr Länge, die natürlich auch dem Ladevolumen zu Gute kommt Auswahlmöglichkeiten bei der Art oder Größe der Akkus gibt es leider nicht.
     title: Konzept & Fahrzeugvarianten
-    image: /images/opel-vivaro-e-cargo.jpg
+    image: ""
   - content: >-
       ### Laderaum & Flexibilität (3/5)
 
 
-      Der Stauraum kann über zwei geteilte, seitlich schwenkende Hecktüren oder eine nach oben schwingende Heckklappe beladen werden. Außerdem ist eine seitliche Schiebetür serienmäßig vorhanden. Der Laderaum hat beim Vivaro-E Cargo M eine Länge von rund 2,41 Meter, die Breite liegt bei maximal 1,62 Meter und die Ladung kann bis zu 1,33 Meter hoch geladen werden. So sind bis zu 5.800 Liter Ladevolumen verfügbar. Bei der großen Version ändert sich vor allem die Länge des Laderaums: als Vivaro-E Cargo L liegt diese bei 2,76 Meter. Dadurch entsteht ein Ladevolumen von maximal 6.600 Liter.
+      In der kürzeren L1-Version hat der Peugeot e-Partner eine Ladelänge von 1,82 Meter. Die Breite der Ladefläche variiert zwischen 1,53 Meter und 1,73 Meter, während die Höhe des Laderaums 1,20 Meter beträgt. So entsteht ein Laderaum von 3.300 Liter, welches mit der optionalen Multiflex-Doppelbeifahrersitzbank auf 3.800 Liter erweitert werden kann.
 
 
-      Die Nutzlast des Opel Vivaro-E Cargo liegt bei den allen Modellen bei etwas mehr als 900 Kilogramm. Allerdings gibt es die 50 kWh-Version mit einer optionalen erhöhten Nutzlast, wodurch dann rund 200 Kilogramm mehr zugeladen werden können. Die Anhängelast ist bei allen Modellen gleich: 1.000 Kilogramm für gebremste, 750 Kilogramm für ungebremste Anhänger.
+      Die größere L2-Version ist 25 Zentimeter, wodurch sich auf die Ladelänge auf 2,17 Meter vergrößert. Somit ist gesamt ein Ladevolumen von 3.900 Liter gegeben. Mit umgeklappter Multiflex-Doppelbeifahrersitzbank sind 4.400 Liter Ladung möglich.
+
+
+      Die Nutzlast liegt standardmäßig bei 542 (L1) bzw. 548 Kilogramm (L2) und kann gegen Aufpreis auf 720 bzw. 728 Kilogramm erhöht werden. Zudem kann ein ungebremster Anhänger mit einem maximalen Gewicht von 750 Kilogramm angehangen werden.
     title: Laderaum & Flexibilität
-    image: ""
+    image: /images/peugeot-e-partner-heckansicht-strasse.jpg
   - content: >-
       ### Antrieb & Aufladung (4/5)
 
 
-      Angetrieben wird der Opel Vivaro-E Cargo von einem 100 kW Elektromotor, der ein Drehmoment von 260 Nm bereitstellt und den Citroen in ungefähr 12 Sekunden von 0 auf 100 km/h bringt. Wie meist bei Elektrofahrzeugen erfolgt die Kraftübertragung stufenlos. Die Höchstgeschwindigkeit beträgt bei allen Versionen bei 130 km/h. 
+      Angetrieben wird der Peugeot e-Partner von einem Elektromotor mit 100 kW Spitzenleistung angetrieben. Dessen Dauerleistung liegt laut Hersteller bei 57 kW und er kann ein Drehmoment von 260 Nm entwickeln. Die Höchstgeschwindigkeit wird elektronisch bei 130 km/h abgeriegelt.
 
 
-      Der Opel Vivaro-E Cargo ist mit zwei Akku-Varianten erhältlich: Der 50 kWh-Akku ermöglicht maximale Reichweiten um die 230 Kilometer. Für eine 11 kW Wechselstrom-Wallbox gibt Opel die volle Aufladungszeit mit 4 Stunden und 45 Minuten an. Außerdem ist eine Schnellladefunktion für eine 100 kW Gleichstrom-Wallbox verfügbar, welche die Ladung von 0 auf 80% in gerade einmal 32 Minuten erledigen soll.
-
-
-      Der größere Akku mit 75 kWh Kapazität soll über eine maximale Reichweite von rund 320 Kilometer liegen ermöglichen, was sehr beachtlich ist für ein Fahrzeug dieser Größe. Allerdings dürften solche Strecken nur ohne Zuladung und mit wenig Steigung zu schaffen sein. Die Ladezeiten liegen hier bei rund 7 Stunden für die Wallbox und rund 48 Minuten für die 80-prozentige Schnellaufladung.
+      Als Energiespeicher agiert ein Lithium-Ionen-Akku mit eine Kapazität von 50 kWh. Damit soll das Fahrzeug eine Reichweite von 254 bis 278 Kilometer erreichen. Diese Wegstrecke ist allerdings eher unrealistisch mit Zuladung und normalem Stadtverkehr zu erreichen. Die Aufladung soll mit einer Haushaltssteckdose rund 31 Stunden, mit einer 11 kW-Wallbox rund 5 Stunden dauern. An einer DC-Schnellladesäule soll das Fahrzeug zudem in nur 30 Minuten von 0 auf 100 % Ladung gebracht werden können.
     title: Antrieb & Aufladung
-    image: /images/opel-vivaro-e-cargo-antrieb.jpg
+    image: /images/peugeot-e-partner-antrieb.jpg
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
