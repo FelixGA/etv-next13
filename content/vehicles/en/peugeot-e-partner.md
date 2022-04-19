@@ -153,7 +153,7 @@ rangeLithium:
 chargingTime230V:
   value: 0
 chargingTimeLithium:
-  value: 0
+  value: 5
 chargingTimeFast:
   value: 0
 consumption:
