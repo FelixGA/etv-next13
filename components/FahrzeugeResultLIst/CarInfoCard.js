@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 const CarInfoCard = ({ carItem, getCarsReview }) => {
   const router = useRouter();
   return (
-    <div>
+    <div className="px-4 xl:px-0">
       {/* TITLE */}
       <div className="">
         <Link href={`/transporter/${carItem.name}`}>
@@ -17,7 +17,7 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
       </div>
       {/* IMAGE + TEXT + LINK */}
       <div className="flex flex-col-reverse lg:flex-row-reverse">
-        <p className="pb-4 pl-0 lg:pl-8">
+        <p className="pb-4 pl-0 text-lg lg:pl-8 ">
           {carItem.description}
           {getCarsReview && (
             <Link
@@ -41,7 +41,8 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
               {carItem?.src && (
                 <Image
                   className={
-                    router.pathname == "/fahrzeuge"
+                    router.pathname ==
+                    "/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich"
                       ? "rounded-md "
                       : "rounded-l-md "
                   }

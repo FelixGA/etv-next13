@@ -20,7 +20,7 @@ function MobileNav() {
     });
   }, [router.pathname]);
   return (
-    <div className="relative bg-blue-darker w-full h-screen z-90">
+    <div className="relative w-full h-screen bg-blue-darker z-90">
       <ul className="flex flex-col items-center sm:items-start sm:pl-16 flex-1 h-3/4 justify-evenly text-[#928888] text-3xl ">
         <li className="">
           <Link href="/">
@@ -66,7 +66,7 @@ function MobileNav() {
           </Link>
         </li>
         <li className="">
-          <Link href="/fahrzeuge">
+          <Link href="fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich">
             <a
               onClick={() => {
                 dispatch({
@@ -83,7 +83,7 @@ function MobileNav() {
         <li className="w-full text-center md:text-left">
           <Link href="/comparePage">
             <a
-              className=" "
+              className=""
               onClick={() => {
                 dispatch({
                   type: "mobileNavActive",

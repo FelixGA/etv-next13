@@ -16,26 +16,26 @@ function CarCard({ carItem }) {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <div className="shadow-lg mb-4 lg:shadow-none border-t lg:border-2 lg:border-grey-lighter lg:rounded-xl overflow-hidden ">
+    <div className="mb-4 overflow-hidden border-t shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter lg:rounded-xl">
       <div className="flex sm:flex-row">
-        <div className="flex flex-col flex-1 relative pl-2 lg:pl-0 pt-3 justify-between">
+        <div className="relative flex flex-col justify-between flex-1 pl-2 lg:pl-0">
           <Link href={`/transporter/${carItem.name}`}>
             <a>
-              <h3 className="title text-xl font-bold text-black-darkest py-1 sm:pl-2 xl:hidden flex leading-7">
+              <h3 className="flex items-center py-2 text-xl font-bold leading-7 title text-black-darkest sm:pl-2 xl:hidden">
                 {carItem.title}
               </h3>
             </a>
           </Link>
 
-          <div className="pb-6 lg:pb-0">
+          <div className="w-full pb-6 lg:pb-0">
             <Link href={`/transporter/${carItem.name}`} passHref>
-              <a className="w-full relative">
+              <a className="relative w-full ">
                 {carItem?.src && (
                   <Image
                     className="rounded-l-md"
                     src={carItem.src}
                     alt={carItem.title}
-                    width={550}
+                    width={600}
                     height={394}
                     objectFit="cover"
                     layout="responsive"
@@ -53,13 +53,13 @@ function CarCard({ carItem }) {
         <div className=" hidden 2xl:block w-[1px] h-32 mt-16 bg-grey-border mr-4"></div>
         {/* DIVIDER end */}
         {/* CONTAINER FOR PRICE AND BUTTONS start */}
-        <div className="flex flex-col justify-center lg:justify-between sm:flex-1 items-end px-2 xl:items-center mb-4 pt-4">
+        <div className="flex flex-col items-end justify-center px-4 pt-4 mb-4 lg:justify-between sm:w-fit xl:items-center">
           {/* PRICE + MOBILE RATING BOX start*/}
           <div className="">
-            <p className="text-green-light text-xl xl:text-2xl font-black md:pr-2 text-right pb-2 2xl:mt-4">
+            <p className="pb-2 text-xl font-black text-right text-green-light xl:text-2xl md:pr-2 2xl:mt-4">
               ab {carItem.price} €
             </p>
-            <div className="lg:hidden  pb-2 sm:pb-0 ">
+            <div className="pb-2 lg:hidden sm:pb-0 ">
               {/* {mobileRatingBox} */}
               <MobileTestResult carItem={carItem} />
             </div>
@@ -67,7 +67,7 @@ function CarCard({ carItem }) {
 
           {/* PRICE + MOBILE RATING BOX end*/}
           {/* BUTTONS start */}
-          <div className="flex-1 flex sm:justify-center flex-col justify-end">
+          <div className="flex flex-col justify-end flex-1 sm:justify-center">
             <div className="pb-1">
               <ButtonAnfragen carItem={carItem.title} />
             </div>
@@ -78,7 +78,7 @@ function CarCard({ carItem }) {
             onClick={() => {
               setShowDetails(!showDetails);
             }}
-            className="text-blue-dark font-bold  text-xs cursor-pointer flex items-center pt-2  lg:hidden "
+            className="flex items-center pt-2 text-xs font-bold cursor-pointer text-blue-dark lg:hidden "
           >
             {showDetails ? "weniger" : "mehr"}
             <p className="pl-1">Details</p>
