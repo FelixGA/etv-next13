@@ -1,7 +1,7 @@
 ---
-title: Evum aCar Pritsche
-name: Evum-aCar-Pritsche
-price: 33080
+title: Streetscooter
+name: streetscooter
+price: 39990
 relatedBlogs:
   title: " Konzept & Fahrzeugvarianten"
   content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
@@ -12,27 +12,24 @@ relatedBlogs:
     Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
-relatedReviews: evum-a-car-testbericht-von-elektrotransporter-vergleich
-description: >-
-  
-
-
-
-  Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A -Car nun seit Juni 2020 auf dem Markt. Ursprünglich wurde der kräftige Elektrotransporter für Entwicklungs- und Schwellenländern entwickelt, wo er in der Landwirtschaft und der Industrie zum Einsatz kommen sollte. Während der Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen Markt attraktiv sein könnte.
-src: /images/Evum-Acar-Front-1024x683.jpg
-category: Pritsche
-typeClass: L7E
+relatedReviews: ""
+description: Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von
+  der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit
+  Kofferaufbau im Umlauf und kann reichlich 1.000 Kilogramm Nutzlast aufnehmen.
+src: /images/streetscooter-front.jpg
+category: Koffer
+typeClass: N1
 loadingWeight:
   key: Nutzlast
-  value: 1200
+  value: 1014
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 1500
+  value: 1786
   baseUnit: kg
 maxSpeed:
   key: km/h
-  value: 70
+  value: 100
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
@@ -41,50 +38,50 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 110
+  value: 101
   baseUnit: km
-  maxValue: 110
+  maxValue: 205
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
-  value: 0
-  baseUnit: keine Angabe
+  value: 16
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2
-  value: 6
-  baseUnit: h
+  value: 0
+  baseUnit: "-"
 chargingTimeFast:
   key: Schnellladezeit
-  value: 0
-  baseUnit: keine Angabe
+  value: 3
+  baseUnit: Stunden
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: "-"
-  baseUnit: " keine Angabe"
+  value: 0
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: 16,5
+  value: 43.4
   baseUnit: kwh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: 19,6
-  baseUnit: kWh
+  value: "0"
+  baseUnit: "-"
 power:
   key: Leistung
-  value: min-20/max-28
-  baseUnit: kw
+  value: "51"
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
-  value: 4.0
+  key: Befriedigend
+  value: 3.2
 guarantee:
   key: Garantie Fahrzeug
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 availability:
   key: Verfügbarkeit
   value: keine Angabe
@@ -94,68 +91,67 @@ subsidies:
   baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
-  value: 0
-  baseUnit: keine Angabe
+  value: 6
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
-  value: 895
-  baseUnit: mm
+  value: 0
+  baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
-  value: "234"
+  value: 7,7
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 2,86
-  baseUnit: m2
+  value: "0"
+  baseUnit: "-"
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1500
+  valuewidth: 1928
   baseUnit: mm
-  valuelength: 4000
-  valueheight: 2000
-  valuewheelbase: 2596
+  valuelength: 5809
+  valueheight: 2312
+  valuewheelbase: 3494
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 352
+  valueheight: 1405
   width: Breite
-  valuewidth: 1608
-  valuelength: 1778
+  valuewidth: 1680
+  valuelength: 3165
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "4000"
+  value: "5809"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1500"
+  value: "1928"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "2000"
+  value: "2312"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "1778"
+  value: "3165"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1608"
+  value: "1680"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "352"
+  value: "1405"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "2596"
+  value: "3494"
   baseUnit: mm
 ---
-
-Das Evum aCar ist ein Elektrotransporter der Kategorie N1 mit bis zu 1200kg Nutzlast.
+Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit Kofferaufbau im Umlauf und kann reichlich 1.000 Kilogramm Nutzlast aufnehmen.
