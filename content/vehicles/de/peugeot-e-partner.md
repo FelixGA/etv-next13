@@ -175,8 +175,8 @@ chargingTimeFast:
   baseUnit: "-"
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: "-"
-  baseUnit: " keine Angabe"
+  value: 0
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "50"
@@ -196,8 +196,8 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
-  value: 3.6
+  key: Befriedigend
+  value: 3.4
 guarantee:
   key: Garantie Fahrzeug
   value: 2
