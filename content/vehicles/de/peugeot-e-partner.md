@@ -133,10 +133,10 @@ relatedBlogs: >-
 
 
   4,4
-description: Der Peugeot e-Expert ist ein elektrischer Kastenwagen, der in zwei
-  Längen angeboten ist und über 900 Kilogramm Nutzlast aufnehmen kann. Die
-  Höchstgeschwindigkeit liegt bei 130 km/h.
-src: /images/peugeot-e-expert-front.jpg
+description: Der Peugeot e-Partner ist ein elektrischer Kastenwagen der
+  Fahrzeugklasse N1, der eine Zuladung von 650 bis 1.000 Kilogramm aufnehmen
+  kann und eine Höchstgeschwindigkeit von 135 km/h erreicht.
+src: /images/peugeot-e-partner-ladesaeule.jpg
 category: Kasten
 typeClass: N1
 loadingWeight:
@@ -274,4 +274,4 @@ wheelbase:
   value: "3275"
   baseUnit: mm
 ---
-Der Peugeot e-Expert ist ein elektrischer Kastenwagen, der in zwei Längen angeboten ist und über 900 Kilogramm Nutzlast aufnehmen kann. Die Höchstgeschwindigkeit liegt bei 130 km/h.
+Der Peugeot e-Partner ist ein elektrischer Kastenwagen der Fahrzeugklasse N1, der eine Zuladung von 650 bis 1.000 Kilogramm aufnehmen kann und eine Höchstgeschwindigkeit von 135 km/h erreicht.
