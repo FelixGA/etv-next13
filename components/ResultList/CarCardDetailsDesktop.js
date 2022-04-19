@@ -14,22 +14,22 @@ function CarCardDetailsDesktop({ carItem }) {
   const router = useRouter();
 
   return (
-    <div className=" w-full flex flex-col justify-center">
+    <div className="flex flex-col justify-center w-full">
       <Link href={`/transporter/${carItem?.name}`}>
-        <a>
+        <a className="relative">
           <h3
             className={
               router.query.cartitle
                 ? "hidden"
-                : "pl-8 text-blue-extra font-bold hidden xl:block"
+                : "pl-8 relative bottom-5 text-blue-extra text-2xl font-bold hidden xl:block"
             }
           >
             {carItem?.title}
           </h3>
         </a>
       </Link>
-      <div className="w-full grid grid-cols-2 2xl:grid-cols-3 h-40">
-        <div className="  flex flex-col justify-between ">
+      <div className="grid w-full h-40 grid-cols-2 2xl:grid-cols-3">
+        <div className="flex flex-col justify-between ">
           <CarCardProps
             details={
               carItem?.rangeLithium.value
@@ -52,7 +52,7 @@ function CarCardDetailsDesktop({ carItem }) {
           <CarCardProps details={carItem?.maxSpeed} image={image3} />
         </div>
 
-        <div className=" flex-1  hidden 2xl:flex justify-center items-center ">
+        <div className="items-center justify-center flex-1 hidden 2xl:flex">
           <div className="w-24">
             <RatingBox carItem={carItem} />
           </div>

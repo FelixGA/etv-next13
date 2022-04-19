@@ -12,7 +12,7 @@ const FahrzeugeResultList = ({ sortedCars, getCarsReview }) => {
     <div className="flex flex-col flex-1 lg:w-full lg:bg-white">
       {sortedCars?.map((carItem, index) => {
         return (
-          <div className="flex mt-4 lg:flex-row flex-col px-4" key={index}>
+          <div className="flex flex-col mt-4 lg:flex-row" key={index}>
             <CarInfoCard carItem={carItem} getCarsReview={getCarsReview} />
           </div>
         );

@@ -1,9 +1,9 @@
-import { useStore } from "../components/store";
-import Head from "../components/core/Head";
+import { useStore } from "../../components/store";
+import Head from "../../components/core/Head";
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import FahrzeugeResultList from "../components/FahrzeugeResultLIst/FahrzeugeResultList";
+import FahrzeugeResultList from "../../components/FahrzeugeResultLIst/FahrzeugeResultList";
 export default function fahrzeuge(props) {
   const [sortedCars, SetSortedCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
@@ -27,11 +27,11 @@ export default function fahrzeuge(props) {
     <div className="w-full">
       <Head page={props.page} />
       <div className="2xl:px-48">
-        <h1 className="text-black text-2xl xl:text-4xl tracking-wider pb-4 pt-8 xl:pt-12 px-4 2xl:px-48 text-left">
+        <h1 className="px-4 pt-8 pb-4 text-2xl leading-9 tracking-wider text-center text-black lg:text-left lg:text-4xl xl:pt-12 2xl:px-48">
           Elektro-Transporter – {sortedCars.length} {getContent.title}
         </h1>
 
-        <div className="w-3/4 mx-auto my-4">
+        <div className="w-3/5 mx-auto my-4 ">
           <Image
             src="/images/test2.svg"
             alt={getContent.title}
@@ -42,7 +42,7 @@ export default function fahrzeuge(props) {
           />
         </div>
         <div className="px-4 2xl:px-48">
-          <p>{getContent.description}</p>
+          <p className="py-4 text-xl">{getContent.description}</p>
         </div>
         <div className="2xl:px-48">
           <FahrzeugeResultList
@@ -61,7 +61,11 @@ export async function getStaticProps(context) {
   let blogs = await getContent("blogs", context.locale);
   let carsreviews = await getContent("carsreview", context.locale);
 
-  const page = pages.find((page) => page.path === "/fahrzeuge");
+  const page = pages.find(
+    (page) =>
+      page.path ===
+      "/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich"
+  );
 
   if (!pages) {
     return {

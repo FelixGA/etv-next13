@@ -1,15 +1,15 @@
 const Basics = ({ basics, carItem }) => {
   return (
-    <section className="w-full lg:w-1/2 lg:px-2">
-      <h3 className="text-blue-extra font-bold pt-8 pb-4 pl-4 leading-7 text-2xl">
+    <section className="w-full lg:w-1/3 ">
+      <h3 className="pt-8 pb-4 pl-4 text-2xl font-bold leading-7 text-blue-extra">
         Grundlagen
       </h3>
-      <div className="flex flex-col w-full text-blue-extra lg:pr-6">
+      <div className="flex flex-col w-full text-blue-extra">
         <div className="flex flex-row flex-1 bg-grey-lighter">
-          <p className="w-1/2 py-1 h-14 flex items-center pl-4 text-md ">
+          <p className="flex items-center w-1/2 py-1 pl-4 h-14 text-md ">
             Klasse:
           </p>
-          <p className="w-1/2 py-1 h-14 flex items-center pl-4 text-md">
+          <p className="flex items-center w-1/2 py-1 pl-4 lg:border-r-2 border-grey-light">
             {carItem.typeClass}
           </p>
         </div>
@@ -20,10 +20,10 @@ const Basics = ({ basics, carItem }) => {
               index % 2 !== 0 ? "flex flex-1 bg-grey-lighter " : "flex flex-1 "
             }
           >
-            <p className="w-1/2 py-1 h-14 flex items-center pl-4 text-md">
+            <p className="flex items-center w-1/2 py-1 pl-4 h-14 text-md">
               {item.key}
             </p>
-            <p className="w-1/2 py-1 h-14 flex items-center pl-4 text-md">
+            <p className="flex items-center w-1/2 py-1 pl-4 lg:border-r-2 border-grey-light h-14 text-md">
               {item.value ? item.value : "-"} {item.value ? item.baseUnit : ""}
             </p>
           </div>
@@ -35,10 +35,10 @@ const Basics = ({ basics, carItem }) => {
               : "flex flex-1 "
           }
         >
-          <p className="w-1/2 py-1 h-14 flex items-center pl-4 text-md">
+          <p className="flex items-center w-1/2 py-1 pl-4 h-14 text-md">
             Gesamtgewicht
           </p>
-          <p className="w-1/2 py-1 h-14 flex items-center pl-4 text-md">
+          <p className="flex items-center w-1/2 py-1 pl-4 h-14 text-md lg:border-r-2 border-grey-light">
             {carItem.curbweight.value + carItem.loadingWeight.value}{" "}
             {carItem.curbweight.baseUnit}
           </p>
