@@ -164,11 +164,11 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 7
-  baseUnit: h
+  value: 0
+  baseUnit: "-"
 chargingTimeFast:
   key: Schnellladezeit
   value: 1
