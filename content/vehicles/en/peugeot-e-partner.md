@@ -158,4 +158,16 @@ chargingTimeFast:
   value: 0
 consumption:
   baseUnit: kWh
+loadingHeight:
+  value: 0
+  baseUnit: "-"
+loadingVolumeTotal:
+  value: 3,3
+  baseUnit: m3
+carSizes:
+  valueheight: 1796
+  valuewidth: 1921
+  valuelength: 4403
+  valuewheelbase: 3275
+  baseUnit: mm
 ---

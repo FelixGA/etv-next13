@@ -215,11 +215,11 @@ batteryGuarantee:
   baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
-  value: 544
-  baseUnit: mm
+  value: 0
+  baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 5,8
+  value: 3,3
   baseUnit: m3
 loadingArea:
   key: Ladefläche
@@ -230,10 +230,10 @@ carSizes:
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1920
+  valuewidth: 1921
   baseUnit: mm
-  valuelength: 4956
-  valueheight: 1895
+  valuelength: 4403
+  valueheight: 1796
   valuewheelbase: 3275
   key: Fahrzeugmaße
 loadingVolume:
