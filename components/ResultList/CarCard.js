@@ -56,7 +56,7 @@ function CarCard({ carItem }) {
         <div className="flex flex-col justify-center lg:justify-between sm:flex-1 items-end px-2 xl:items-center mb-4 pt-4">
           {/* PRICE + MOBILE RATING BOX start*/}
           <div className="">
-            <p className="text-green-light text-xl xl:text-2xl font-black md:pr-2 text-right pb-2">
+            <p className="text-green-light text-xl xl:text-2xl font-black md:pr-2 text-right pb-2 2xl:mt-4">
               ab {carItem.price} €
             </p>
             <div className="lg:hidden  pb-2 sm:pb-0 ">
