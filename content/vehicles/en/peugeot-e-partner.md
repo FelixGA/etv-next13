@@ -133,4 +133,21 @@ relatedBlogs: >-
 
   4,4
 src: /images/peugeot-e-partner-ladesaeule.jpg
+loadingWeight:
+  value: 650
+  baseUnit: kg
+curbweight:
+  value: 0
+  baseUnit: "-"
+maxSpeed:
+  value: 135
+  baseUnit: km/h
+range230V:
+  value: 0
+  maxValue: 0
+  baseUnit: "-"
+rangeLithium:
+  value: 249
+  maxValue: 280
+  baseUnit: km
 ---

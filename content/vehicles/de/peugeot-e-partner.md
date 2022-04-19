@@ -141,26 +141,26 @@ category: Kasten
 typeClass: N1
 loadingWeight:
   key: Nutzlast
-  value: 928
+  value: 650
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 1937
-  baseUnit: kg
+  value: 0
+  baseUnit: "-"
 maxSpeed:
   key: km/h
-  value: 130
+  value: 135
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 231
+  value: 249
   baseUnit: km
-  maxValue: 329
+  maxValue: 280
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
