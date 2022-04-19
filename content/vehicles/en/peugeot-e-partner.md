@@ -154,4 +154,8 @@ chargingTime230V:
   value: 0
 chargingTimeLithium:
   value: 0
+chargingTimeFast:
+  value: 0
+consumption:
+  baseUnit: kWh
 ---

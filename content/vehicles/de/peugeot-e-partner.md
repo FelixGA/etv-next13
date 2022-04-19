@@ -171,8 +171,8 @@ chargingTimeLithium:
   baseUnit: "-"
 chargingTimeFast:
   key: Schnellladezeit
-  value: 1
-  baseUnit: h
+  value: 0
+  baseUnit: "-"
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
@@ -182,11 +182,11 @@ batteryCapacityLithium:
   value: "50"
   baseUnit: kWh
 batteryIncluded:
-  value: keine Angabe
+  value: wahlweise
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: 23,8
+  value: 22,4
   baseUnit: kWh
 power:
   key: Leistung
