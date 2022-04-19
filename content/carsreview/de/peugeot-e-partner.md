@@ -6,15 +6,14 @@ youtubeLink: https://www.youtube.com/watch?v=nGKEnLS21Cw
 category: Kasten
 publishedAt: 04/01/2022
 description: >
-  Der Opel Vivaro-E Cargo ist ein Kastenwagen, welcher in zwei Ladelängen
-  erhältlich ist. Der Elektrotransporter erreicht in allen Varianten eine
-  Höchstgeschwindigkeit von 130 km/h und kann rund 900 Kilogramm
-  zuladen.                        
-src: /images/opel-vivaro-e-cargo-front.jpg
+  Der Peugeot e-Partner ist ein elektrischer Kastenwagen der Fahrzeugklasse N1,
+  der eine Zuladung von 542 und 728 Kilogramm aufnehmen kann und eine
+  Höchstgeschwindigkeit von 130 km/h erreicht.
+src: /images/peugeot-e-partner-ladesaeule.jpg
 content:
-  - content: Der Opel Vivaro-E Cargo ist ein Kastenwagen, welcher in zwei Ladelängen
-      erhältlich ist. Der Elektrotransporter erreicht in allen Varianten eine
-      Höchstgeschwindigkeit von 130 km/h und kann rund 900 Kilogramm zuladen.
+  - content: Der Peugeot e-Partner ist ein elektrischer Kastenwagen der
+      Fahrzeugklasse N1, der eine Zuladung von 542 und 728 Kilogramm aufnehmen
+      kann und eine Höchstgeschwindigkeit von 130 km/h erreicht.
     title: Einleitung
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
