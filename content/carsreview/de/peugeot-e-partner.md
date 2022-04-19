@@ -1,7 +1,7 @@
 ---
 title: Peugeot e-Partner
 slug: peugeot-e-partner
-relatedCars: opel-vivaro-e
+relatedCars: peugeot-e-partner
 youtubeLink: https://www.youtube.com/watch?v=nGKEnLS21Cw
 category: Kasten
 publishedAt: 04/01/2022
@@ -49,50 +49,47 @@ content:
     title: Antrieb & Aufladung
     image: /images/peugeot-e-partner-antrieb.jpg
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung (3/5)
 
 
-      In der Basisversion verfügt der Vivaro-E bereits serienmäßig über ABS, einen Doppel-Airbag, eine praktische Berganfahrhilfe sowie ein Radio mit Bluetooth-Funktion. Optionales Zubehör beinhaltet z.B. eine Einparkhilfe mit Signalton, ein Multifunktionslenkrad sowie ein Multimedia-Radio.
-
-
-      Leider gibt es bei elektrischen Vivaro nicht wie beim Schwestermodell Citroen Jumpy eine speziell für Baustellen ausgerüstete Variante mit erhöhter Bodenfreiheit und einem Motorschutz sowie einer erhöhten Nutzlast von rund 1.150 Kilogramm. Allerdings sind gegen Aufpreis Optionen wie Bodenplatte aus Holz im Laderaum und eine Trennwand erhältlich.
+      Serienmäßig kommt der Peugeot e-Partner in der Variante “Pro” bereits mit einer Berganfahrhilfe, elektrischen Fensterhebern vorn sowie einer Audioanlage mit Touchscreen zum Kunden. Auch ABS, ESP sowie elektrisch einstellbare und beheizbare Außenspiegel sind gratis mit dabei. Die höhere Ausstattungsvariante “Premium” hat zudem eine Klimaanlage sowie die “Peugeot Connect Box”. Für Gewerbetreibende würde sich zudem das “Grip”-Paket mit vielen praktischen Optionen lohnen, allerdings ist ausgerechnet dieses nicht für die elektrische Version erhältlich.
     title: Komfort & Ausstattung
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Der Opel Vivaro-E Cargo ist ein recht luxuriöser Kastenwagen, dessen Fahrerkabine sehr komfortabel und hochwertig ist. Die Anzeigen sind fast alle digital und auch sonst mutet das Armaturenbrett sehr modern an. Der Transporter wirkt dadurch weniger wie ein robuster Handwerker-Kastenwagen und mehr wie ein komfortabler Kleinbus. Etwas gewöhnungsbedürftig ist der Fahrmodus-Schalter, der nur mit einem Finger bedient werden kann, wodurch die Auswahl etwas hakelig ist.
+      Dank der direkt abrufbaren 260 Nm ist der Peugeot e-Partner sehr flott im Antritt, auch wenn dies bei höheren Geschwindigkeiten deutlich nachlässt. Durch geringen Maße ist das Fahrzeug zudem recht übersichtlich und einfach zu navigieren. Das Fahrzeug kann dank der niedrigen Ladekante von 55 Zentimeter sehr leicht über die Hecktüren oder die rechte Seitentür beladen werden. Optional ist eine zweite Schiebetür verfügbar.
 
 
-      Auf der Straße macht der Opel Vivaro-E Cargo eine gute Figur. Die 260 Nm brauchen für ihre Entfaltung nicht wie beim Verbrennermotor einen konkreten Drehzahlbereich, sondern sind direkt vorhanden. Dadurch beschleunigt der Elektrotransporter mehr als ordentlich und ist dank 100 kW Leistung auch auf Landstraßen flott unterwegs. Und auch die Autobahn ist kein Hindernis, allerdings ist das Fahrzeug bei 130 km/h abgeriegelt.
+      Serienmäßig ist in den Elektro-Modellen die “Peugeot Connect Box”, welche mit einem GPS-Modul und Notfallbatterie ausgestattet ist. Ein Flottenmanagement-System wird für den Peugeot e-Partner leider nicht angeboten, allerdings kann das Fahrzeug über die optionale “My Peugeot”-App entriegelt oder vorgewärmt werden. Auch lässt sich so aus der Ferne der Ladevorgang überprüfen und planen.
     title: Bedienung & Fahrbetrieb
-    image: /images/opel-vivaro-e-cargo-innenraum.jpg
+    image: /images/peugeot-e-partner-innenraum.jpg
   - content: >-
       ### Umwelt (3/5)
 
 
-      Der Energieverbrauch des Opel Vivaro-E liegt kombiniert laut Hersteller zwischen 21,7 und 26,1 kWh auf 100 km. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke so zwischen 6,60 und 7,80 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
+      Der Verbrauch des Peugeot e-Partner wird mit 22,4 - 19,7 kWh vom Hersteller angegeben. Dies entspricht Energiekosten von rund 6,00 bis 6,60 Euro auf 100 Kilometer bei einem Strompreis von 30 Cent pro Kilowattstunde. Ein Solarmodul für eine erweiterte Reiche wird nicht angeboten.
     title: Umwelt
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie (4/5)
 
 
-      Die Preise für den Opel Vivaro-E Cargo beginnen bei 37.490 Euro netto für den Vivaro-E Cargo M mit 50 kWh-Akku und Basisausstattung. Die länger Variante Cargo M liegt etwas darüber. Der Akku mit einer höheren Kapazität von 75 kWh hat eine Aufpreis von rund 5.000 Euro. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
+      Die Preise des Peugeot e-Partner beginnen bei 28.990 Euro netto für die Kurzversion in der “Pro”-Ausstattungslinie. Als besser ausgestattete “Premium”-Version ist der Elektrotransporter ab 30.380 Euro zzgl. MwSt. verfügbar. Die längere Version L2 ist nur in der Basisversion erhältlich. Diese kostet mindestens 31.540 Euro netto.
 
 
-      Opel bietet auf den Fahrzeugakku eine Garantie von stolzen 8 Jahren bzw. 160.000 Kilometer. Für das Fahrzeug gelten wie üblich bei Citroen eine Herstellergarantie von 2 Jahren ohne Kilometerbeschränkung.
+      Auf das Fahrzeug gibt Peugeot 2 Jahre Herstellergarantie, beim Akku sind es sogar 6 Jahre bzw. 160.000 Kilometer, bezogen auf 70% Ladekapazität. Gegen Durchrostung sind alle Peugeot-Nutzfahrzeuge auf 5 Jahre abgesichert.
     title: Preise & Garantie
-    image: /images/opel-vivaro-e-cargo-ladung.jpg
+    image: /images/peugeot-e-partner-heckansicht.jpg
   - content: >-
       ### Fazit
 
 
-      Der Opel Vivaro-E Cargo ist ein recht hochwertiger Kastenwagen, welcher zudem mit einer recht hohen Reichweite punktet. Der Laderaum ist sehr geräumig und einfach beladbar und es gibt viele praktische Ausstattungsdetails für den Berufsalltag, wodurch der Vivaro-E Cargo speziell für Lieferanten und Handwerker sehr interessant sein dürfte. Allerdings ist das Fahrzeug nicht gerade günstig. Die Vivaro-Modelle mit Elektroantrieb kosten 8.000 bis 10.000 Euro netto mehr als das vergleichbare Verbrenner-Modell. Dadurch könnte das Fahrzeug für einige Interessenten schlich nicht erschwinglich sein.
+      Der Peugeot e-Partner ist ein kompakter Elektrotransporter, der besonders für den urbanen Lieferbetrieb geeignet ist. Zwar wird die Reichweite mit rund 250 Kilometer angegeben, es ist aber sehr unwahrscheinlich, dass diese in der Realität eingehalten werden kann. Dank des komfortablen Innenraums und der guten Ausstattung kommt das Fahrzeug recht hochwertig daher, gleichzeitig können bis zu 4,4 m³ Ladung aufgenommen werden. 
 
 
       ### Gesamtpunktzahl:
 
 
-      3,6 Sterne
+      3,4 Sterne
     title: Fazit
 ---
