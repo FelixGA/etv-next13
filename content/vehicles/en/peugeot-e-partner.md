@@ -164,11 +164,14 @@ loadingHeight:
 loadingVolumeTotal:
   value: 3,3
   baseUnit: m3
+loadingArea:
+  value: "0"
+  baseUnit: "-"
 carSizes:
   valueheight: 1796
   valuewidth: 1921
   valuelength: 4403
-  valuewheelbase: 1785
+  valuewheelbase: 2785
   baseUnit: mm
 loadingVolume:
   valueheight: 1198
