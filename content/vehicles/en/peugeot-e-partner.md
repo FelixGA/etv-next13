@@ -161,6 +161,8 @@ batteryCapacityBlei:
   baseUnit: "-"
 consumption:
   baseUnit: kWh
+rating:
+  value: 3.4
 loadingHeight:
   value: 0
   baseUnit: "-"
