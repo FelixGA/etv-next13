@@ -234,15 +234,15 @@ carSizes:
   baseUnit: mm
   valuelength: 4403
   valueheight: 1796
-  valuewheelbase: 3275
+  valuewheelbase: 1785
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1397
+  valueheight: 1198
   width: Breite
-  valuewidth: 1636
-  valuelength: 2512
+  valuewidth: 1527
+  valuelength: 1817
   length: Länge
   baseUnit: mm
 carSizesLength:

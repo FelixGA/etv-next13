@@ -168,6 +168,11 @@ carSizes:
   valueheight: 1796
   valuewidth: 1921
   valuelength: 4403
-  valuewheelbase: 3275
+  valuewheelbase: 1785
+  baseUnit: mm
+loadingVolume:
+  valueheight: 1198
+  valuewidth: 1527
+  valuelength: 1817
   baseUnit: mm
 ---
