@@ -134,7 +134,7 @@ relatedBlogs: >-
   4,4
 src: /images/peugeot-e-partner-ladesaeule.jpg
 loadingWeight:
-  value: 650
+  value: 542
   baseUnit: kg
 curbweight:
   value: 0
