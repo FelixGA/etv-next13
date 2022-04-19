@@ -140,7 +140,7 @@ curbweight:
   value: 0
   baseUnit: "-"
 maxSpeed:
-  value: 135
+  value: 130
   baseUnit: km/h
 range230V:
   value: 0
