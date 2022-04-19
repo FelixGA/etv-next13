@@ -30,7 +30,7 @@ const Footer = ({ blogs, reviews }) => {
 
   return (
     <>
-      <footer className="py-10 bg-blue-darker lg:flex lg:flex-row-reverse lg:justify-around print:hidden">
+      <footer className="pt-10 bg-blue-darker lg:flex lg:flex-row-reverse lg:justify-around print:hidden">
         <nav className="flex flex-col items-center justify-between mt-10 sm:flex-row sm:items-start ">
           <div className="flex flex-col items-center justify-start pb-8 lg:w-48 ">
             <h3 className="h-6 text-sm font-bold tracking-wider sm:text-lg sm:h-10 lg:h-12">
@@ -62,12 +62,12 @@ const Footer = ({ blogs, reviews }) => {
           </div>
         </nav>
 
-        <div className="px-8 lg:w-1/4 lg:pt-11">
+        <div className="px-8 lg:w-1/4 lg:pt-8">
           <div className="flex flex-row items-center justify-start w-full pl-2">
             <div className="w-1/3 sm:w-1/5 lg:w-[60%] xl:w-[30%] ">
               <Image
                 className=""
-                src="/images/etv-logo-final.png"
+                src="/images/etv-logo-final-white.png"
                 width={60}
                 height={40}
                 objectFit="contain"
@@ -83,7 +83,7 @@ const Footer = ({ blogs, reviews }) => {
             </div>
           </div>
           <div className="flex ">
-            <p className="px-4 text-white">
+            <p className="px-4 text-[#b1a7a7]">
               Hier könnte noch etwas stehen, was Leute davon überzeugt, dass Ihr
               richtig gut seid!
             </p>

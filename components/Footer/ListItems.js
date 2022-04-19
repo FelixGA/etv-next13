@@ -3,7 +3,7 @@ import Link from "next/link";
 const ListItems = (props) => {
   props.itemsList;
   return (
-    <ul className="flex flex-col items-center justify-between px-8 pb-4 text-white">
+    <ul className="flex flex-col items-center justify-between px-8 pb-4 text-[#b1a7a7]">
       {props.itemsList
         ?.map((blog, index) => (
           <li
