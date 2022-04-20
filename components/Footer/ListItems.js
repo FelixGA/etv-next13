@@ -3,13 +3,10 @@ import Link from "next/link";
 const ListItems = (props) => {
   props.itemsList;
   return (
-    <ul className="flex flex-col items-center justify-between px-8 pb-4 text-[#b1a7a7]">
+    <ul className="flex flex-col sm:pb-4 text-[#b1a7a7] items-center sm:items-start ">
       {props.itemsList
         ?.map((blog, index) => (
-          <li
-            className="flex flex-wrap items-center justify-between my-2"
-            key={index}
-          >
+          <li className="flex items-center justify-between my-2 " key={index}>
             <Link
               href={
                 blog.category === "rechtlichesundkontakt"
@@ -19,9 +16,7 @@ const ListItems = (props) => {
                   : `/magazin/reviews/${blog.slug}`
               }
             >
-              <a className="flex-wrap text-sm text-center sm:text-lg">
-                {blog.title}
-              </a>
+              <a className="text-sm text-left sm:text-lg">{blog.title}</a>
             </Link>
           </li>
         ))
