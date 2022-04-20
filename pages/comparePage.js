@@ -88,7 +88,7 @@ export default function comparePage(props) {
       <Head page={props.page} />
 
       <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
-        <div className=" hidden md:block bg-white mt-24 ">
+        <div className="hidden mt-24 bg-white  md:block">
           <FiltersDesktop />
         </div>
         <div className="flex md:hidden ">

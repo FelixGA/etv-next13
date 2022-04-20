@@ -6,7 +6,7 @@ function CarCardforPopUp(props) {
   const { state, dispatch } = useStore();
   return (
     <div className="w-[80%] md:w-full relative ">
-      <div className="w-16  md:w-full relative">
+      <div className="relative w-16 md:w-full">
         <Image
           className=" md:rounded-md brightness-50"
           src={props.selectedCar.pic}
@@ -16,25 +16,25 @@ function CarCardforPopUp(props) {
           height={125}
           layout="responsive"
         />
-        <div className="absolute hidden md:flex  top-1 left-1 items-center justify-center">
-          <h4 className=" text-md lg:text-lg font-black text-white  ">
+        <div className="absolute items-center justify-center hidden md:flex top-1 left-1">
+          <h4 className="text-base font-black text-white  lg:text-lg">
             {props.selectedCar.title}
           </h4>
         </div>
       </div>
-      {/* <div className="flex  w-full md:hidden">
-        <p className="text-white text-center	pt-2">
+      {/* <div className="flex w-full md:hidden">
+        <p className="pt-2 text-center text-white">
           Das kann nen langen Namen haben X153
         </p>
       </div> */}
 
       <div className="absolute hidden md:flex md:bottom-6 lg:bottom-1 right-2 ">
-        <p className="text-white font-black text-lg">
+        <p className="text-lg font-black text-white">
           {`ab ${props.selectedCar.price} €`}
         </p>
       </div>
       <div
-        className="absolute top-1 right-1 cursor-pointer"
+        className="absolute cursor-pointer top-1 right-1"
         onClick={() => {
           dispatch({
             type: "disabledButton",
