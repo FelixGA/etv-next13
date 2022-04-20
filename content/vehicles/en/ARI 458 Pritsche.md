@@ -56,22 +56,22 @@ chargingTimeFast:
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   baseUnit: "- "
-  value: "-"
+  value: 0
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "10"
-  baseUnit: kwh
+  baseUnit: kWh
 batteryIncluded:
   key: Akku inklusive
   value: ja
 consumption:
   key: Verbrauch
   value: 7,5
-  baseUnit: kwh
+  baseUnit: kWh
 power:
   key: Leistung
   value: 7,5
-  baseUnit: kw
+  baseUnit: kWh
 seats:
   key: Sitzplätze
   value: 2
