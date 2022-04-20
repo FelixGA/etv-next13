@@ -12,7 +12,7 @@ relatedBlogs:
     Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
-relatedReviews: ""
+relatedReviews: streetscooter
 description: Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von
   der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit
   Kofferaufbau im Umlauf und kann reichlich 1.000 Kilogramm Nutzlast aufnehmen.
@@ -34,7 +34,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Blei
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -44,7 +44,7 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 16
-  baseUnit: "-"
+  baseUnit: h-
 chargingTimeLithium:
   key: Ladezeit Typ2
   value: 0
@@ -52,7 +52,7 @@ chargingTimeLithium:
 chargingTimeFast:
   key: Schnellladezeit
   value: 3
-  baseUnit: Stunden
+  baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: 0
@@ -60,7 +60,7 @@ batteryCapacityBlei:
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: 43.4
-  baseUnit: kwh
+  baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
@@ -88,7 +88,7 @@ availability:
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
   value: 6

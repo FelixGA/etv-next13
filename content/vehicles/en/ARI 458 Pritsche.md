@@ -1,6 +1,6 @@
 ---
 title: ARI 458 Pritsche
-name: ARI 458 Pritsche
+name: ari-458-pritsche
 price: 14790
 relatedBlogs:
   title: " Konzept & Fahrzeugvarianten"
@@ -56,28 +56,28 @@ chargingTimeFast:
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   baseUnit: "- "
-  value: "-"
+  value: 0
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "10"
-  baseUnit: kwh
+  baseUnit: kWh
 batteryIncluded:
   key: Akku inklusive
   value: ja
 consumption:
   key: Verbrauch
   value: 7,5
-  baseUnit: kwh
+  baseUnit: kWh
 power:
   key: Leistung
   value: 7,5
-  baseUnit: kw
+  baseUnit: kWh
 seats:
   key: Sitzplätze
   value: 2
 rating:
   key: Gut
-  value: 2.0
+  value: 2
 guarantee:
   key: Garantie Fahrzeug
   value: 6

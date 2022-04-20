@@ -20,7 +20,7 @@ loadingWeight:
 curbweight:
   key: Leergewicht
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 maxSpeed:
   key: km/h
   value: 88
@@ -28,7 +28,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Akku
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -38,55 +38,55 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 chargingTimeFast:
   key: Schnellladezeit
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
-  baseUnit: " keine Angabe"
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "80"
-  baseUnit: kwh
+  baseUnit: kWh
 batteryIncluded:
-  value: keine Angabe
+  value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "-"
-  baseUnit: keine Angabe
+  value: "0"
+  baseUnit: "-"
 power:
   key: Leistung
   value: min-110/max-110
-  baseUnit: kw
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 3
 rating:
   key: Befriedigend
-  value: 3.0
+  value: 3
 guarantee:
   key: Garantie Fahrzeug
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 loadingHeight:
   key: Ladehöhe
   value: 950
@@ -105,7 +105,7 @@ carSizes:
   height: Höhe
   wheelbase: Radstand
   valuewidth: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   valuelength: 0
   valueheight: 0
   valuewheelbase: 0
@@ -118,19 +118,19 @@ loadingVolume:
   valuewidth: 2078
   valuelength: 3090
   length: Länge
-  baseUnit: mm
+  baseUnit: "-"
 carSizesLength:
   value: "0"
   key: Länge
-  baseUnit: mm
+  baseUnit: "-"
 carSizesWidth:
   key: Breite
   value: "0"
-  baseUnit: mm
+  baseUnit: "-"
 carSizesHeight:
   key: Höhe
   value: "0"
-  baseUnit: mm
+  baseUnit: "-"
 loadingVolumeLength:
   key: Länge
   value: "3090"
@@ -142,11 +142,11 @@ loadingVolumeWidth:
 loadingVolumeHeight:
   key: Höhe
   value: "0"
-  baseUnit: mm
+  baseUnit: "-"
 wheelbase:
   key: Radstand
   value: "0"
-  baseUnit: mm
+  baseUnit: "-"
 ---
 
 Der Efa-S-35 D ist ein großer Transporter mit Elektromotor, den es in den Versionen Pritsche, Koffer, Planenaufbau & Kasten gibt.

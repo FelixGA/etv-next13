@@ -3,6 +3,7 @@ title: Maxus EV 80
 name: maxus-ev-80
 price: 53400
 relatedBlogs: nur beispiel
+relatedReviews: maxus-ev-80
 description: Der Maxus EV 80 ist ein großer Elektrotransporter, der als
   Kastenwagen 910 Kilogramm Nutzlast aufnehmen kann und eine
   Höchstgeschwindigkeit von 100 km/h erreicht. Das Fahrzeug ist ebenso als
@@ -15,7 +16,7 @@ loadingWeight:
 curbweight:
   key: Leergewicht
   value: 2590
-  baseUnit: keine Angabe
+  baseUnit: kg
 maxSpeed:
   key: km/h
   value: 100
@@ -23,7 +24,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Akku
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -33,34 +34,34 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
   value: 8.5
-  baseUnit: keine Angabe
+  baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
   value: 2.5
-  baseUnit: keine Angabe
+  baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
-  baseUnit: " keine Angabe"
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "56"
-  baseUnit: kwh
+  baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
   value: "0"
-  baseUnit: keine Angabe
+  baseUnit: "-"
 power:
   key: Leistung
   value: "92"
-  baseUnit: kw
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
@@ -70,18 +71,18 @@ rating:
 guarantee:
   key: Garantie Fahrzeug
   value: 3
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
   value: 5
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
   value: 560
@@ -100,10 +101,10 @@ carSizes:
   height: Höhe
   wheelbase: Radstand
   valuewidth: 1998
-  baseUnit: keine Angabe
+  baseUnit: mm
   valuelength: 5700
   valueheight: 2552
-  valuewheelbase: 0
+  valuewheelbase: 3850
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße

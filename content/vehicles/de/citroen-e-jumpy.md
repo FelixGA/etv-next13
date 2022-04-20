@@ -155,7 +155,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Blei
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -165,7 +165,7 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
   value: 5
@@ -177,13 +177,13 @@ chargingTimeFast:
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
-  baseUnit: " keine Angabe"
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "50"
   baseUnit: kWh
 batteryIncluded:
-  value: keine Angabe
+  value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
@@ -192,28 +192,28 @@ consumption:
 power:
   key: Leistung
   value: min-57/max-100
-  baseUnit: kw
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 3
 rating:
   key: Gut
-  value: 2.0
+  value: 2
 guarantee:
   key: Garantie Fahrzeug
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Batterie-Garantie
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 loadingHeight:
   key: Ladehöhe
   value: 544

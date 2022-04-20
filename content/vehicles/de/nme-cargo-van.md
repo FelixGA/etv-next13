@@ -3,7 +3,7 @@ title: NME Cargo Van
 name: nme-cargo-van
 price: 27000
 relatedBlogs: nur beispiel
-relatedReviews: ""
+relatedReviews: nme-cargo-van
 description: Der Cargo Van der österreichischen Firma NME ist ein elektrischer
   Kastenwagen, der bis zu 1.000 Kilogramm Nutzlast aufnehmen kann und eine
   Höchstgeschwindigkeit von 90 km/h erreicht.
@@ -17,7 +17,7 @@ loadingWeight:
 curbweight:
   key: Leergewicht
   value: 1600
-  baseUnit: keine Angabe
+  baseUnit: kg
 maxSpeed:
   key: km/h
   value: 90
@@ -25,7 +25,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Akku
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -35,34 +35,34 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 13
-  baseUnit: keine Angabe
+  baseUnit: h
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 chargingTimeFast:
   key: Schnellladezeit
   value: 1.2
-  baseUnit: keine Angabe
+  baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: "-"
-  baseUnit: " keine Angabe"
+  value: 0
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "41"
-  baseUnit: kwh
+  baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
   value: "23"
-  baseUnit: keine Angabe
+  baseUnit: kWh
 power:
   key: Leistung
   value: "60"
-  baseUnit: kw
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
@@ -72,18 +72,18 @@ rating:
 guarantee:
   key: Garantie Fahrzeug
   value: 2
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
   value: 5
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
   value: 0
@@ -95,17 +95,17 @@ loadingVolumeTotal:
 loadingArea:
   key: Ladefläche
   value: "0"
-  baseUnit: m2
+  baseUnit: "-"
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
   valuewidth: 1680
-  baseUnit: keine Angabe
+  baseUnit: mm
   valuelength: 4500
   valueheight: 1980
-  valuewheelbase: 0
+  valuewheelbase: 2925
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße

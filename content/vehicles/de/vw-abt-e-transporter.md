@@ -133,7 +133,7 @@ relatedBlogs: >-
 
 
   4,4
-relatedReviews: ""
+relatedReviews: vw-abt-e-transporter
 description: Der VW ABT e-Transporter ist ein elektrischer Kastenwagen der
   Fahrzeugklasse N1, der eine Zuladung von mehr als 1.000 Kilogramm aufnehmen
   kann und mit 90 km/h bzw. 120 km/h Höchstgeschwindigkeit verfügbar ist.
@@ -147,7 +147,7 @@ loadingWeight:
 curbweight:
   key: Leergewicht
   value: 0
-  baseUnit: kg
+  baseUnit: "-"
 maxSpeed:
   key: km/h
   value: 90
@@ -155,7 +155,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Blei
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -165,7 +165,7 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
   value: 5
@@ -173,11 +173,11 @@ chargingTimeLithium:
 chargingTimeFast:
   key: Schnellladezeit
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
-  baseUnit: " keine Angabe"
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: 37,3
@@ -192,7 +192,7 @@ consumption:
 power:
   key: Leistung
   value: "83"
-  baseUnit: kw
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
@@ -202,22 +202,22 @@ rating:
 guarantee:
   key: Garantie Fahrzeug
   value: 2
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Batterie-Garantie
   value: 8
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
   value: 0
-  baseUnit: mm
+  baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
   value: 6,5

@@ -1,149 +1,143 @@
 ---
-title: Maxus eDeliver 3
-name: maxus-edeliver-3
-price: 36490
-relatedBlogs: nur beispiel
-relatedReviews: maxus-edeliver-3
-description: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der
-  in zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
-  aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit von 120
-  km/h.
-src: /images/Maxus-eDeliver-3-Front-2-300x200.jpg
-category: Kasten
-typeClass: N1
+title: ARI 458 Koffer
+relatedBlogs: ari-458-koffer-elektrischer-kleintransporter
+relatedReviews: ari-458-koffer
+description: Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI
+  Motors mit 80 km/h Höchstgeschwindigkeit.
 loadingWeight:
   key: Nutzlast
-  value: 830
+  value: 531
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 1445
+  value: 604
   baseUnit: kg
 maxSpeed:
   key: km/h
-  value: 120
+  value: 80
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
-  value: 0
-  baseUnit: "-"
+  value: 120
+  baseUnit: " km"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
   value: 150
   baseUnit: km
-  maxValue: 240
+  maxValue: 495
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
-  value: 0
-  baseUnit: "-"
+  value: 6
+  baseUnit: h
 chargingTimeLithium:
-  key: Ladezeit Typ2 Ladekabel
+  key: Ladezeit Typ 2 Ladekabel
   value: 6
   baseUnit: h
 chargingTimeFast:
-  key: Schnellladezeit
-  value: 45
-  baseUnit: Minuten
+  key: Schnellladung
+  value: 2
+  baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: 0
+  value: "0"
   baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "35"
+  value: "10"
   baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "24"
+  value: "7,5 "
   baseUnit: kWh
 power:
   key: Leistung
-  value: "90"
+  value: min-7,5/max-7,5
   baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
 rating:
   key: Gut
-  value: 3.6
+  value: 2
 guarantee:
   key: Garantie Fahrzeug
-  value: 5
-  baseUnit: Jahre
+  value: 6
+  baseUnit: Monate
 availability:
   key: Verfügbarkeit
-  value: keine Angabe
+  value: 14-16 Wochen
 subsidies:
-  key: Förderhöhe
+  key: Förderungsmöglichkeiten
   value: 0
   baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
-  value: 8
-  baseUnit: Jahre
+  value: 48
+  baseUnit: Monate
 loadingHeight:
   key: Ladehöhe
-  value: 540
+  value: 680
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 4,80
+  value: 1,49
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: "0"
-  baseUnit: "-"
+  value: 1,57
+  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1780
+  valuewidth: 1300
   baseUnit: mm
-  valuelength: 4550
-  valueheight: 1900
-  valuewheelbase: 2910
+  valuelength: 3150
+  valueheight: 1685
+  valuewheelbase: 2300
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1220
+  valueheight: 950
   width: Breite
-  valuewidth: 1665
-  valuelength: 2180
+  valuewidth: 1160
+  valuelength: 1320
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "4550"
+  value: "3150"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1780"
+  value: "1300"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1900"
+  value: "1685"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "2180"
+  value: "1320"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1665"
+  value: "1160"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "1220"
+  value: "0095"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "2910"
+  value: "2300"
   baseUnit: mm
 ---
-Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der in zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit von 120 km/h.
+
+Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI Motors mit 80 km/h Höchstgeschwindigkeit.

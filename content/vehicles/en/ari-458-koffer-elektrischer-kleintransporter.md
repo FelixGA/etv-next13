@@ -2,145 +2,146 @@
 title: ARI 458 Koffer
 name: ari-458-koffer-elektrischer-kleintransporter
 price: 14100
-relatedBlogs: ari-458-koffer-elektrotransporter-mit-aufbau
-description: The "ARI 458 Koffer" is an electric transporter manufactured by ARI
-  Motors with 80 km/h maximum speed.
+relatedBlogs: ari-458-koffer-elektrischer-kleintransporter
+relatedReviews: ari-458-koffer
+description: Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI
+  Motors mit 80 km/h Höchstgeschwindigkeit.
 src: /images/ari-458-koffer-3-.jpg
 category: Koffer
 loadingWeight:
-  key: Loading Weight
+  key: Nutzlast
   value: 531
   baseUnit: kg
 curbweight:
-  key: Curb Weight
+  key: Leergewicht
   value: 604
   baseUnit: kg
 maxSpeed:
+  key: km/h
   value: 80
   baseUnit: km/h
-  key: Maximum Speed
 range230V:
-  key: Range SLA Battery
+  key: Reichweite SLA Akku
   value: 120
   baseUnit: " km"
-  maxValue: -3
+  maxValue: 0
 rangeLithium:
+  key: Reichweite Lithium Akku
   value: 150
   baseUnit: km
-  key: Range Lithium Battery
   maxValue: 495
 chargingTime230V:
-  key: Charge Time 230-V-socket
+  key: Ladezeit 230-V-Steckdose
   value: 6
   baseUnit: h
 chargingTimeLithium:
+  key: Ladezeit Typ 2 Ladekabel
   value: 6
-  key: Type 2 charging cable
   baseUnit: h
 chargingTimeFast:
-  key: Fast charging
+  key: Schnellladung
   value: 2
   baseUnit: h
 batteryCapacityBlei:
-  value: "-"
-  baseUnit: " "
-  key: Capacity SLA Battery
+  key: Kapazität SLA Akku
+  value: "0"
+  baseUnit: "-"
 batteryCapacityLithium:
+  key: Kapazität Lithium Akku
   value: "10"
   baseUnit: kWh
-  key: Capacity Lithium Battery
 batteryIncluded:
-  key: Battery included
-  value: yes
+  value: ja
+  key: Batterie inklusive
 consumption:
-  key: Consumption
+  key: "Verbrauch "
+  value: "7,5 "
   baseUnit: kWh
-  value: 7,5
 power:
-  key: Power
+  key: Leistung
   value: min-7,5/max-7,5
-  baseUnit: kw
+  baseUnit: kW
 seats:
-  key: Seats
+  key: Sitzplätze
   value: 2
 rating:
-  value: 2.0
-  key: Result
+  key: Gut
+  value: 2
 guarantee:
-  key: Guarantee vehicle
+  key: Garantie Fahrzeug
   value: 6
-  baseUnit: Months
+  baseUnit: Monate
 availability:
-  key: Availability
-  value: 14-16 weeks
+  key: Verfügbarkeit
+  value: 14-16 Wochen
 subsidies:
-  key: Subsidies
-  baseUnit: Months
+  key: Förderungsmöglichkeiten
   value: 0
+  baseUnit: "-"
 batteryGuarantee:
-  key: Battery Guarantee
+  key: Garantie Akku
   value: 48
-  baseUnit: Months
+  baseUnit: Monate
 loadingHeight:
-  key: Loading Height
+  key: Ladehöhe
   value: 680
   baseUnit: mm
 loadingVolumeTotal:
+  key: Ladevolumen
   value: 1,49
   baseUnit: m3
-  key: Loading Volume
 loadingArea:
+  key: Ladefläche
   value: 1,57
   baseUnit: m2
-  key: Loading Area
 carSizes:
-  width: Width
-  length: Length
-  height: Height
-  wheelbase: Wheelbase
+  width: Breite
+  length: Länge
+  height: Höhe
+  wheelbase: Radstand
   valuewidth: 1300
   baseUnit: mm
   valuelength: 3150
   valueheight: 1685
   valuewheelbase: 2300
-  key: Car Sizes
+  key: Fahrzeugmaße
 loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
   valueheight: 950
-  valuewidth: 1190
+  width: Breite
+  valuewidth: 1160
   valuelength: 1320
-  baseUnit: mm
-  key: Loading Area Sizes
-  height: Height
-  width: Width
-  length: Length
-loadingVolumeLength:
-  key: Länge
-  value: "0"
-  baseUnit: mm
-loadingVolumeWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-loadingVolumeHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "0"
+  length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "0"
+  value: "3150"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "0"
+  value: "1300"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "0"
+  value: "1685"
+  baseUnit: mm
+loadingVolumeLength:
+  key: Länge
+  value: "1320"
+  baseUnit: mm
+loadingVolumeWidth:
+  key: Breite
+  value: "1160"
+  baseUnit: mm
+loadingVolumeHeight:
+  key: Höhe
+  value: "0095"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2300"
   baseUnit: mm
 ---
 
-The "ARI 458 Koffer" is an electric transporter manufactured by ARI Motors with 80 km/h maximum speed.
+Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI Motors mit 80 km/h Höchstgeschwindigkeit.

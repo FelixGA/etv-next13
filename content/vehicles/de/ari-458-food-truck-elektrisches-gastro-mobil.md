@@ -55,12 +55,12 @@ chargingTimeFast:
   baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  baseUnit: " kwh"
+  baseUnit: " -"
   value: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium-Akku
   value: "10"
-  baseUnit: kwh
+  baseUnit: kWh
 batteryIncluded:
   key: Akku inklusive
   value: ja
@@ -77,7 +77,7 @@ seats:
   value: 2
 rating:
   key: Sehr gut
-  value: 1.0
+  value: 1
 guarantee:
   key: Garantie Fahrzeug
   value: 6
@@ -96,7 +96,7 @@ batteryGuarantee:
 loadingHeight:
   key: Ladehöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
   baseUnit: m3
