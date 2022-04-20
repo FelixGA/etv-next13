@@ -8,49 +8,45 @@ publishedAt: 04/01/2022
 description: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
   Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und rund
   eine Tonne Nutzlast aufnehmen kann.
-src: /images/mb-e-vito-front.jpg
+src: /images/mb-esprinter-seite.jpg
 content:
-  - content: Der Mercedes-Benz eVito Kastenwagen ist ein Elektrotransporter, welcher
-      in zwei Fahrzeuglängen erhältlich ist. Das Fahrzeug erreicht eine
-      Höchstgeschwindigkeit von 80 km/h bzw. 120 km/h optional und kann rund 900
-      Kilogramm Nutzlast aufnehmen.
+  - content: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
+      Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und
+      rund eine Tonne Nutzlast aufnehmen kann.
     title: Einleitung
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
 
-      Die dritte Generation des Transporters von Mercedes-Benz kam 2014 kurz nach dem Van-Schwestermodell V-Klasse auf den Markt und wurde 2018 durch eine Elektro-Variante namens eVito ergänzt. Dieses Modell gibt es in zwei Karosserie-Größen. In der „Lang“-Version misst der Kastenwagen 5,14 Meter, während der eVito „Extralang“ auf stolze 5,37 Meter kommt. Die für die Verbrennungsmotoren erhältliche „Kompakt“-Version entfällt hier.
+      Die großen Transporter bis 3,5 Tonnen haben bei Daimler Tradition. 1977 kam mit dem Mercedes-Benz T1 das erste Fahrzeug dieser Art auf den Markt und wurde bis 1995 gebaut. Seitdem laufen die Fahrzeuge unter dem Namen Sprinter, welcher seit 2018 in der dritten Generation erhältlich ist. Später folgte die Einführung des rein elektrischen Modells eSprinter, welcher vorerst nur als Kastenwagen verfügbar ist. Mit diesem zielt der Hersteller auf größere Lieferunternehmen im städtischen Bereich.
 
 
-      Der Mercedes-Benz eVito ist ein reiner Kastenwagen ohne hintere Fenster und bietet Platz für zwei bzw. drei Personen. Für mehr Sitzplätze gibt es allerdings inzwischen den eVito Tourer. Es gibt den Transporter mit einem Elektromotor mit 85 kW Leistung, welcher von einem 41 kWh-Batterie versorgt wird. Im Gegensatz zu vielen anderen Herstellern gibt es hier keine Auswahl zwischen verschiedenen Akku-Kapazitäten und damit auch Reichweiten.
+      Im Gegensatz zu den vier verschiedenen Längen des herkömmlichen Sprinters ist die Elektro-Version nur in einer 6,09 Meter langen Ausführung mit Hochdach erhältlich. Eine Auswahl gibt es deshalb nur bei der Batterie. Hier kann zwischen einer nutzbaren Kapazität von 35 kWh und 47 kWh gewählt werden, wodurch eine Durchschnittsreichweite von 120 bzw. 158 Kilometern erreicht werden soll.
     title: Konzept & Fahrzeugvarianten
-    image: /images/mb-e-vito-laderaum-1-1024x683.jpg
+    image: /images/mb-esprinter-laderaum.jpg
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität (4/5)
 
 
-      Dank seiner üppigen Fahrzeuglänge bietet der Elektro-Transporter natürlich auch ein hohes Raumvolumen. Dieses reicht von 6.000 Liter bzw. 6.600 Liter als „Extralang“. Auch die Laderaumlänge ist mit 2,83 Meter sowie 3,06 Meter dementsprechend großzügig. Dadurch bietet sich der Mercedes-Benz eVito besonders für Lieferfirmen mit Platzbedarf für große und sperrige Ladung an.
+      Der Mercedes-Benz eSprinter ist für ein hohes Ladevolumen konzipiert, welches mit stolzen 11,0 m³ dementsprechend üppig ausfällt. Auch die Laderaumlänge von 3,27 Meter ist länger als so manches Fahrzeug und sorgt dafür, dass der eSprinter auch extrem sperrige Ladung aufnehmen kann. Die Zuladung erfolg über hohe Flügeltüren im Heck oder eine seitliche Schiebetür auf der rechten Seite. Die Höhe der Ladekante liegt bei 61,5 Zentimeter. Außerdem kann man über einen optional verfügbaren “Heckauftritt” bequem in den Laderaum einsteigen und somit das Be- und Entladen deutlich erleichtern.
 
 
-      In der Standard-Version kann der Laderaum über eine nach oben öffnende Heckklappe und eine Schiebetür rechts beladen werden. Gegen Aufpreis sind eine weitere Schiebetür auf der linken Seite sowie zwei getrennt öffnende Flügeltüren am Heck verfügbar. Des Weiteren ist ein „Easy Cargo-Paket“ erhältlich, bei dem unter anderem der Laderaum mit einem robusten Holzfußboden, einer durchgehenden Trennwand zum Fahrerraum und Lastenverankerungsschienen ausgestattet ist.
-
-
-      Die Nutzlast liegt laut Mercedes-Benz bei 888 Kilogramm für die kürzere der beiden Varianten sowie 853 Kilogramm für den „extralangen“ eVito. Diese Angaben sind allerdings ohne Fahrer und mögliche Mitfahrer berechnet und verringern sich natürlich je nach Personenanzahl. Der Elektro-Transporter hat eine Dachlast von 150 Kilogramm.
+      Die Nutzlast des Mercedes-Benz eSprinter ist abhängig von der Akku-Kapazität. Da das zulässige Gesamtgewicht bei 3,5 Tonnen liegt, führt das höhere Gewicht des 47 kWh-Akkus zu einer niedrigeren Zuladung von 848 Kilogramm. Mit der leichteren 35 kWh-Batterie darf der eSprinter hingegen bis zu 1.001 Kilogramm zuladen. Auf dem Dach des Elektro-Transporters dürfen zudem maximal 150 Kilogramm mitgeführt werden.
     title: Laderaum & Flexibilität
     image: ""
   - content: >-
       ### Antrieb & Aufladung (4/5)
 
 
-      Den Antrieb des Mercedes-Benz eVito übernimmt ein Elektromotor mit einer Nennleistung von 85 kW, dessen Dauerleistung der Hersteller mit 70 kW angibt. Diese wird über ein Automatikgetriebe auf die Vorderachse übertragen. Das maximale Drehmoment beträgt 295 Nm, während die Höchstgeschwindigkeit in drei Stufen wählbar ist. Für städtische Unternehmen dürfte die Basisversion mit maximal 80 Km/h vollkommen ausreichen, während sich bei vielen Überlandfahrten die Varianten mit 100 Km/h bzw. 120 Km/h anbieten. Bei solchen Geschwindigkeit reduziert sich natürlich die Reichweite deutlich.
+      Wie beim eVito übernimmt auch im eSprinter ein asynchroner Elektromotor mit einer Leistung von 85 kW den Antrieb auf die Vorderachse. Dieser entwickelt ein maximales Drehmoment von 295 Nm und kann das Fahrzeug auf bis zu 120 Km/h bringen. Die Höchstgeschwindigkeit in der Standard-Version allerdings bei 80 Km/h abgeriegelt und kann optional auf 100 Km/h oder eben 120 Km/h hochgesetzt werden. Jedoch dürfte bei solchen Geschwindigkeiten die Reichweite deutlich geringer ausfallen.
 
 
-      Seit 2021 speichert ein größerer Akku mit einer Kapazität von 60 kWh die elektrische Ladung. Der eVito soll damit eine Reichweite von bis zu 314 Kilometer nach WLTP-Norm erreichen. Dies dürfte allerdings nur unbeladen und unter sehr günstigen Bedingungen erreicht werden. Trotzdem ist das ein deutlicher Schritt gegenüber des alten Akkus, dessen Reichweite in einigen Tests bei gerade einmal rund 100 Kilometer lagen. Zudem hilft die Rekuperationsenergie bei Bremsvorgängen oder Bergabfahrten, welche die Reichweite etwas verlängern kann.
+      Mit einer nutzbaren Akku-Kapazität von 35 kWh soll der Mercedes-Benz eSprinter rund 120 Kilometer weit kommen, bei dem größeren Akku mit 47 kWh sind laut Hersteller knapp 160 Kilometer drin. Leider ist anzunehmen, dass bei hoher Zuladung und in zähem Stadtverkehr diese Angaben wohl nicht erreicht werden dürfen. Allerdings arbeitet das Fahrzeug mit Rekuperation in gleich vier wählbaren Stufen, wodurch der Akku während der Fahrt wieder aufgeladen wird.
 
 
-      Die Aufladung erfolgt über einen Ladestecker Typ 2 an einer Wallbox oder einer öffentlichen Ladestation. Bei einer Ladeleistung von 11 kW kann der eVito laut Mercedes-Benz in 6,5 Stunden voll geladen werden. Außerdem ist nun serienmäßig eine Schnellladefunktion verbaut, mit der das Fahrzeug in 50 Minuten (50 kW) auf 80% der Aufladung gebracht werden soll.
+      Die Aufladung kann per Haushaltssteckdose, Wallbox oder Ladestation mit Wechsel- oder Gleichstrom erfolgen. Eine Vollladung per Wechselstrom mit 7,4 kW soll in rund 6 Stunden (35 kWh) bzw. etwa 8 Stunden (47 kWh) erledigt sein. Bei der Aufladung über eine Gleichstrom-Ladestation mit optional verfügbaren 80 kW soll der Akku laut Hersteller in gerade einmal 20 Minuten von 10% auf 80% gebracht werden.
     title: Antrieb & Aufladung
-    image: /images/mb-e-vito-stecker-1-1024x683.jpg
+    image: /images/mb-esprinter-anschluss-2.jpg
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
