@@ -3,7 +3,7 @@ title: Renault Master E-Tech
 name: renault-master-e-tech
 price: 54900
 relatedBlogs: nur beispiel
-relatedReviews: ""
+relatedReviews: renault-master-e-tech
 description: Der Renault Master E-Tech (früher “Master Z.E.”) ist ein
   Kastenwagen der Fahrzeugklasse N1, der zwischen 900 und 1.050 Kilogramm
   Nutzlast aufnehmen kann und 100 km/h Höchstgeschwindigkeit erreicht.
@@ -17,7 +17,7 @@ loadingWeight:
 curbweight:
   key: Leergewicht
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 maxSpeed:
   key: km/h
   value: 100
@@ -25,7 +25,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Akku
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -35,23 +35,23 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 20
-  baseUnit: keine Angabe
+  baseUnit: h
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
   value: 5.75
-  baseUnit: keine Angabe
+  baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
-  baseUnit: " keine Angabe"
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "33"
-  baseUnit: kwh
+  baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
@@ -62,7 +62,7 @@ consumption:
 power:
   key: Leistung
   value: "57"
-  baseUnit: kw
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
@@ -72,18 +72,18 @@ rating:
 guarantee:
   key: Garantie Fahrzeug
   value: 2
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
   value: 8
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
   value: 580
@@ -102,7 +102,7 @@ carSizes:
   height: Höhe
   wheelbase: Radstand
   valuewidth: 2070
-  baseUnit: keine Angabe
+  baseUnit: mm
   valuelength: 5075
   valueheight: 2370
   valuewheelbase: 3182
