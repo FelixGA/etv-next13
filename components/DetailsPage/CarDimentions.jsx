@@ -11,8 +11,8 @@ const CarDimentions = ({ vehichleDimentions }) => {
   //     1000000
   // ).toFixed(2);
   return (
-    <section className="w-full lg:w-1/2 lg:px-2 lg:pl-6 ">
-      <h3 className="text-blue-extra text-2xl leading-7 font-bold pt-8 pb-4 pl-4">
+    <section className="w-full lg:w-1/3 ">
+      <h3 className="pt-8 pb-4 pl-4 text-2xl font-bold leading-7 text-blue-extra">
         Maße{" "}
       </h3>
       <div className="flex flex-col w-full text-blue-extra ">
@@ -32,22 +32,20 @@ const CarDimentions = ({ vehichleDimentions }) => {
             >
               {item.key}:
             </p>
-            <p className="w-1/2 py-1 flex items-center pl-4">
+            <p className="flex items-center w-1/2 py-1 pl-4 lg:border-r-2 border-grey-light">
               {item.value} {index === 0 || index === 5 ? " " : item.baseUnit}
             </p>
           </div>
         ))}
 
         {/* <div
-          className="
-               flex flex-row w-full  "
+          className="flex flex-row w-full "
         >
           <p className="w-1/2 py-1 ">Ladefläche:</p>
           <p className="w-1/2 py-1">{truckBed} m²</p>
         </div> */}
         {/* <div
-          className="
-                 flex flex-1 bg-grey-lighter  "
+          className="flex flex-1 bg-grey-lighter"
         >
           <p className="w-1/2 py-1 ">Ladevolumen:</p>
           <p className="w-1/2 py-1">{loadingspace} m³</p>

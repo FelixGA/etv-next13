@@ -41,7 +41,7 @@ range230V:
 rangeLithium:
   key: Reichweite Lithium Akku
   value: 0
-  baseUnit: km
+  baseUnit: "-"
   maxValue: 0
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
@@ -62,7 +62,7 @@ batteryCapacityBlei:
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "-"
-  baseUnit: kWh
+  baseUnit: "-"
 batteryIncluded:
   value: ja
   key: Batterie inklusive
@@ -79,7 +79,7 @@ seats:
   value: 1
 rating:
   key: Gut
-  value: 2.0
+  value: 2
 guarantee:
   key: Garantie Fahrzeug
   value: 6
@@ -90,11 +90,11 @@ availability:
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 loadingHeight:
   key: Ladehöhe
   value: 560

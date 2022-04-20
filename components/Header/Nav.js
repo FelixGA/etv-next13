@@ -10,12 +10,12 @@ const Nav = () => {
   // (router.pathname);
   return (
     <div className={router.pathname == "/caradvisor" ? "hidden" : "w-full"}>
-      <nav className=" ">
-        <ul className="flex justify-around items-center flex-1 text-blue-lighter text-lg xl:text-xl font-bold">
+      <nav className="">
+        <ul className="flex justify-around items-center flex-1 text-[#b1a7a7] text-lg xl:text-xl font-bold">
           <li>
             <Link href="/">
               <a
-                className="text-[#E7E8EC]"
+                className="text-[#ffffff]"
                 onClick={() => {
                   setIsActive(false);
                   dispatch({
@@ -53,7 +53,7 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link href="/fahrzeuge">
+            <Link href="/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich">
               <a
                 onClick={() => {
                   setIsActive(false);
