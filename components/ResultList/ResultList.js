@@ -88,7 +88,7 @@ const ResultList = (props) => {
   /* ɢᴇᴛ pop up for not meeting criteria */
   const showMoreMessage = (
     <div className="mx-auto">
-      <p className=" md:text-xl text-black-darkest pt-4 px-4 text-center">
+      <p className="px-4 pt-4 text-center md:text-xl text-black-darkest">
         Ist ihr gesuchter Transporter nicht dabei?
       </p>
 
@@ -99,7 +99,7 @@ const ResultList = (props) => {
 
   const getdisplayedCars = shownCars?.map((carItem, index) => {
     return (
-      <div className="container-product w-full md:pl-4" key={index}>
+      <div className="w-full container-product md:pl-4" key={index}>
         {/* <div className="product-icon"></div> */}
         <CarCard carItem={carItem} />
       </div>

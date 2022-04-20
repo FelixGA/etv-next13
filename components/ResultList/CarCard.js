@@ -21,7 +21,7 @@ function CarCard({ carItem }) {
         <div className="relative flex flex-col justify-between flex-1 pl-2 lg:pl-0">
           <Link href={`/transporter/${carItem.name}`}>
             <a>
-              <h3 className="flex items-center py-2 text-xl font-bold leading-7 title text-black-darkest sm:pl-2 xl:hidden">
+              <h3 className="flex items-center py-2 text-xl font-bold leading-7 title text-black-darkest sm:pl-2 2xl:hidden">
                 {carItem.title}
               </h3>
             </a>

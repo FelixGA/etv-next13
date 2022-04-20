@@ -9,41 +9,41 @@ function CarCardDetailsMobile({ carItem }) {
   let range = carItem.rangeLithium;
   carItem.rangeLithium.value == 0 ? (range = carItem.range230V) : null;
   return (
-    <div className="flex-1 flex flex-col lg:hidden justify-between">
-      <div className="px-2 flex flex-col justify-between pt-4">
-        <div className="flex flex-col flex-1 justify-between text-sm xl:mb-2 mb-0">
+    <div className="flex flex-col justify-between flex-1 lg:hidden">
+      <div className="flex flex-col justify-between px-2 pt-4">
+        <div className="flex flex-col justify-between flex-1 mb-0 text-sm xl:mb-2">
           <div className="flex flex-row flex-1 py-1 ">
-            <div className="flex flex-row flex-1 justify-between border-b">
-              <div className="text-grey-dark font-bold w-full xs:w-2/5 leading-7">
+            <div className="flex flex-row justify-between flex-1 border-b">
+              <div className="w-3/4 font-bold leading-7 text-grey-dark xs:w-2/5">
                 {carItem?.loadingWeight.key}:
               </div>
-              <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2 flex items-end">
+              <div className="flex items-end w-1/4 pl-2 font-bold leading-7 text-blue-dark xs:w-2/5">
                 {carItem?.loadingWeight.value}
                 {carItem?.loadingWeight.baseUnit}
               </div>
             </div>
           </div>
-          <div className="flex flex-row flex-1  py-1">
-            <div className="flex flex-row flex-1 justify-center border-b">
-              <div className="text-grey-dark font-bold w-full xs:w-2/5 leading-7">
+          <div className="flex flex-row flex-1 py-1">
+            <div className="flex flex-row justify-between flex-1 border-b">
+              <div className="w-3/4 font-bold leading-7 text-grey-dark xs:w-2/5">
                 {carItem?.maxSpeed.key}
               </div>
-              <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2 flex items-end">
+              <div className="flex items-end w-1/4 pl-2 font-bold leading-7 text-blue-dark xs:w-2/5">
                 {carItem?.maxSpeed.value}
                 {carItem?.maxSpeed.baseUnit}
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col flex-1 xm:w-1/2 justify-between text-sm ">
+        <div className="flex flex-col justify-between flex-1 text-sm xm:w-1/2 ">
           <div className="flex flex-row flex-1 py-1">
-            <div className="flex flex-row flex-1 justify-between border-b">
-              <div className="text-grey-dark font-bold w-full xs:w-2/5 leading-7">
+            <div className="flex flex-row justify-between flex-1 border-b">
+              <div className="w-3/4 font-bold leading-7 text-grey-dark xs:w-2/5">
                 {carItem?.rangeLithium.value
                   ? carItem?.rangeLithium.key
                   : carItem?.range230V.key}
               </div>
-              <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2 flex items-end ">
+              <div className="flex items-end w-1/4 pl-2 font-bold leading-7 text-blue-dark xs:w-2/5 ">
                 {range.maxValue
                   ? `${range.value}-${range.maxValue}`
                   : range.value}
@@ -52,14 +52,14 @@ function CarCardDetailsMobile({ carItem }) {
             </div>
           </div>
           <div className="flex flex-row flex-1 py-1 ">
-            <div className="flex flex-row flex-1 justify-between border-b">
-              <div className="text-grey-dark font-bold w-full xs:w-2/5 leading-7">
+            <div className="flex flex-row justify-between flex-1 border-b">
+              <div className="w-3/4 font-bold leading-7 text-grey-dark xs:w-2/5">
                 {carItem?.chargingTimeLithium.key
                   ? carItem?.chargingTimeLithium.key
                   : carItem?.chargingTime230V.key}
                 :
               </div>
-              <div className="text-blue-dark font-bold w-full xs:w-3/5 leading-7 pl-2 flex items-end">
+              <div className="flex items-end w-1/4 pl-2 font-bold leading-7 text-blue-dark xs:w-2/5">
                 {carItem?.chargingTimeLithium.value
                   ? carItem?.chargingTimeLithium.value
                   : carItem?.chargingTime230V.value}
@@ -76,7 +76,7 @@ function CarCardDetailsMobile({ carItem }) {
         }
       >
         <Link href={`/transporter/${carItem?.name}`}>
-          <a className="border-2 border-blue-darker text-blue-darker m-4 rounded visited:text-blue-dark px-4 py-2 w-fit">
+          <a className="px-4 py-2 m-4 border-2 rounded border-blue-darker text-blue-darker visited:text-blue-dark w-fit">
             Zur Productseite
           </a>
         </Link>
