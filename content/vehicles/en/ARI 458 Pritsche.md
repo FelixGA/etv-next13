@@ -1,6 +1,6 @@
 ---
 title: ARI 458 Pritsche
-name: ARI 458 Pritsche
+name: ari-458-pritsche
 price: 14790
 relatedBlogs:
   title: " Konzept & Fahrzeugvarianten"
@@ -77,7 +77,7 @@ seats:
   value: 2
 rating:
   key: Gut
-  value: 2.0
+  value: 2
 guarantee:
   key: Garantie Fahrzeug
   value: 6
