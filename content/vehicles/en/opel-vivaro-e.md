@@ -133,6 +133,7 @@ relatedBlogs: >-
 
 
   4,4
+relatedReviews: opel-vivaro-e
 description: Der Opel Vivaro-E Cargo ist ein Kastenwagen, welcher in zwei
   Ladelängen erhältlich ist. Der Elektrotransporter erreicht in allen Varianten
   eine Höchstgeschwindigkeit von 130 km/h und kann rund 900 Kilogramm zuladen.
@@ -152,7 +153,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Blei
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -162,7 +163,7 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
   value: 7
@@ -170,17 +171,17 @@ chargingTimeLithium:
 chargingTimeFast:
   key: Schnellladezeit
   value: 1
-  baseUnit: keine Angabe
+  baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
-  baseUnit: " keine Angabe"
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "50"
   baseUnit: kWh
 batteryIncluded:
-  value: keine Angabe
+  value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
@@ -189,7 +190,7 @@ consumption:
 power:
   key: Leistung
   value: "100"
-  baseUnit: kw
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
@@ -199,18 +200,18 @@ rating:
 guarantee:
   key: Garantie Fahrzeug
   value: 2
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Batterie-Garantie
   value: 8
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
   value: 0
@@ -242,7 +243,7 @@ loadingVolume:
   valuewidth: 0
   valuelength: 0
   length: Länge
-  baseUnit: mm
+  baseUnit: "-"
 carSizesLength:
   value: "4959"
   key: Länge
@@ -258,15 +259,15 @@ carSizesHeight:
 loadingVolumeLength:
   key: Länge
   value: "0"
-  baseUnit: mm
+  baseUnit: "-"
 loadingVolumeWidth:
   key: Breite
   value: "0"
-  baseUnit: mm
+  baseUnit: "-"
 loadingVolumeHeight:
   key: Höhe
   value: "0"
-  baseUnit: mm
+  baseUnit: "-"
 wheelbase:
   key: Radstand
   value: "3275"
