@@ -51,40 +51,43 @@ content:
       ### Komfort & Ausstattung (4/5)
 
 
-      Im Vergleich zu preiswerteren Elektro-Nutzfahrzeugen ist der Mercedes-Benz eVito bereits in der Basisversion weniger spartanisch. Außerdem kann er mit vielen Details ausgestattet werden, die den Komfort des Fahrers erhöhen. Gegen Aufpreis sind so neben einer Klimaanlage und Sitzheizung auch Komfortsitze erhältlich. Allerdings sei angemerkt, dass einige der vielen Ausstattungsoptionen die Reichweite beeinträchtigen können. In dieser Hinsicht interessant sind aber die verschiedenen Rekuperationsstufen, die der Fahrer wählen und so die Reichweite beeinflussen kann.
+      Wie sein Geschwisterchen eVito ist auch der eSprinter recht komfortabel ausgestattet im Vergleich zu Nutzfahrzeugen anderer Hersteller. Als Serienausstattung sind bereits eine Sitzheizung für den Fahrer, ein digitales Radio (DAB) sowie ein elektronisches Stabilitätsprogramm (ESP) integriert. Bei der verfügbaren Zusatzausstattung bietet Mercedes-Benz viele Optionen für den Stadtverkehr an, da der eSprinter wohl bevorzugt in dieser Umgebung genutzt werden wird.
 
 
-      In Sachen Entertainment-Systeme bietet Mercedes-Benz gleich mehrere Optionen für den eVito, allerdings keine ohne Aufpreis. Das preiswerteste Modell kostet 570 Euro extra und verfügt über nützliche Funktionen wie Bluetooth (für eine Freisprechfunktion), USB-Anschluss oder einen SD-Speicherkarten-Steckplatz. Für ein größeres Display mit Navigation muss der Kunde allerdings schon etwas tiefer in die Tasche greifen.
+      So sind optional Helfer wie ein Rückfahrkamera und ein Totwinkel-Assistent verfügbar, welche bei der Größe und Unübersichtlichkeit des Fahrzeugs nützlich sein können. Weitere Extras sind zum Beispiel eine Klimaanlage sowie ein LED-Lichtband zur Beleuchtung des Laderaums. Auch ein dritter Sitzplatz in der Kabine ist gegen Aufpreis verfügbar.
     title: Komfort & Ausstattung
-    image: /images/mb-e-vito-innen-1-1024x683.jpg
+    image: /images/mb-esprinter-innenraum.jpg
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Der Mercedes-Benz eVito ist durch seine kompakten Maße und die hohe Sitzposition recht übersichtlich, wobei die Kastenwagen-Version durch fehlende Fenster im Laderaum natürlich etwas weniger Rundumsicht bietet. Gegen Aufpreis gibt es ein Assistenzsystem-Paket, welches für zusätzliche Sicherheit sorgt. Ebenfalls als Sonderausstattung ist ein sogenanntes “Easy Cargo”-paket, welches das Be- und Entladen erleichtern soll.
+      Der Mercedes-Benz eSprinter zielt auf die Kurierbranche, die oft im urbanen Raum tätig ist. Allerdings ist das Fahrzeug durch seine Größe sicher kein ideales Stadtauto. Die fehlenden Fenster in der Kastenwagen-Version tun ihr übriges. Eine Rückfahrkamera oder gar eine 360-Grad-Kamera sind deshalb ideale Helfer, kosten aber leider extra.
+
+
+      Für Fuhrpark-Manager bietet das Fahrzeug aber viel praktische Unterstützung. So können die eSprinter einer Flotte zum Beispiel auch vom Fuhrparkmanager per App geöffnet werden, ohne dass der Mitarbeiter einen Schlüssel benötigt. So werden Fahrzeugwechsel bei vielen Fahrern vereinfacht. Außerdem können via Smartphone alle Transporter der Flotte jederzeit in Echtzeit verfolgt und mit neuen Aufträgen versorgt werden.
     title: Bedienung & Fahrbetrieb
     image: ""
   - content: >-
       ### Umwelt (3/5)
 
 
-      Der Energieverbrauch des eVito von Mercedes-Benz liegt laut Hersteller bei rund 21,5 kWh auf 100 km. Bei 30 Cent pro Kilowattstunde ergeben 100 km Fahrstrecke somit Kosten von rund 6,45 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
+      Mit der kleineren Hochvoltbatterie von 35 kWh soll der eSprinter ca. 37,1 kWh auf 100 Kilometer verbrauchen. Bei der größeren Version mit 47 kWh liegt der Verbrauch interessanterweise niedriger bei nur 32,5 kWh / 100 Km. Damit soll das Fahrzeug knapp 160 Kilometer weit fahren können. Ein Solarmodul für mehr Reichweite wird derzeit nicht angeboten.
     title: Umwelt
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie (3/5)
 
 
-      Die Preise des Mercedes-Benz eVito beginnen bei 45.990,00 € („Lang“) sowie 47.470,00 € („Extralang“). Der Lithium-Ionen-Akku ist mit im Preis enthalten und kann nicht gemietet werden. Da viele für Unternehmen nützliche Helfer allerdings Aufpreis kosten, dürften die wenigsten Kunden diese Anschaffungskosten einhalten.
+      Beim eSprinter setzt Mercedes-Benz vermehrt auf das Leasing des Fahrzeugs. So ist der große Elektro-Transporter laut Hersteller ab 299 Euro im Monat erhältlich. Beim Kaufpreis startet der eSprinter als 35 kWh-Version bei einem Listenpreis von 54.090 Euro, wodurch sich ein Kaufpreis inklusive Mehrwertsteuer von 64.367,10 Euro ergibt. 
 
 
-      Der Hersteller bietet eine Garantie von 24 Monaten auf das Fahrzeug. Zusätzlich lassen sich „ServiceCare“-Pakete gegen einen monatlichen Betrag buchen, welche dem Kunden einen Rundum-Service in Sachen Wartung und dem Austausch von Verschleißteilen bieten. Diese können je nach Laufleistung angepasst werden.
+      Mit dem größeren 47 kWh-Akku kostet das Fahrzeug mindestens 61.310 Euro netto. In allen Angeboten ist der Akku mit enthalten und muss nicht gemietet werden. Wie auf alle Transporter gibt Mercedes-Benz auch auf den eSprinter eine Neufahrzeug-Garantie von 24 Monaten, welche ohne Kilometerbegrenzung gilt.
     title: Preise & Garantie
-    image: /images/mb-e-vito-seite-1-1024x683.jpg
+    image: /images/mb-esprinter-heck.jpg
   - content: >-
       ### Fazit
 
 
-      Der eVito von Mercedes-Benz ist gegenüber dem großen Transporter Sprinter zwar kompakt, bietet dank seiner Länge aber trotzdem ein hohes Raumvolumen. Die bis zu 6.600 Liter Beladungskapazität dürften für einige Lieferanten und Handwerksbetriebe interessant sein. Der Stuttgarter E-Transporter bietet auch einen hohen Komfort im Vergleich zu einigen auf Funktionalität abzielenden Konkurrenz-Modellen. Negativ fällt hier aber ins Gewicht, dass viele Ausstattungsoptionen extra bezahlt werden müssen.
+      Der Mercedes-Benz eSprinter ist besonders durch seinen riesigen Laderaum von 11 m³ für den Waren- und Gütertransport von großen Lademengen interessant. Aber auch in Sachen Komfort ist das Fahrzeug anderen Nutzfahrzeugen überlegen. Die Elektroversion bietet sich aber vorerst nur für den Stadtverkehr oder kürzere Überlandstrecken an, da die angegeben Reichweiten mit Ladung wohl nicht zu erreichen sind.
 
 
       ### Gesamtpunktzahl:
