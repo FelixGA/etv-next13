@@ -273,4 +273,5 @@ wheelbase:
   value: "2785"
   baseUnit: mm
 ---
+
 Der Peugeot e-Partner ist ein elektrischer Kastenwagen der Fahrzeugklasse N1, der eine Zuladung von 542 bis 728 Kilogramm aufnehmen kann und eine Höchstgeschwindigkeit von 130 km/h erreicht.
