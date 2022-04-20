@@ -12,6 +12,7 @@ relatedBlogs:
     Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
+relatedReviews: ari-345-koffer
 description: Der ARI 345 Food Truck hat alles am Start, was Gastronomen und
   Caterer brauchen, um Ihr Gastro-Unternehmen nachhaltig ins Rollen zu bringen.
   Eine luftige Fahrerkabine, einen großen Verkaufstresen, elektrischen Antrieb
@@ -42,7 +43,7 @@ range230V:
 rangeLithium:
   key: Reichweite Lithium Akku
   value: 0
-  baseUnit: km
+  baseUnit: "-"
   maxValue: 0
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
@@ -59,11 +60,11 @@ chargingTimeFast:
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: 3,24
-  baseUnit: " kwh"
+  baseUnit: kWh
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "0"
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryIncluded:
   value: ja
   key: Batterie inklusive
@@ -80,7 +81,7 @@ seats:
   value: 1
 rating:
   key: Sehr gut
-  value: 1.0
+  value: 1
 guarantee:
   key: Garantie Fahrzeug
   value: 6
@@ -91,11 +92,11 @@ availability:
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
   value: 0
-  baseUnit: Monate
+  baseUnit: "-"
 loadingHeight:
   key: Ladehöhe
   value: 560
