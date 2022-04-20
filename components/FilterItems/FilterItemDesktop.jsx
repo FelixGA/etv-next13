@@ -38,7 +38,7 @@ function FilterItemDesktop({ item }) {
     <>
       {/* truncate state */}
       <div
-        className="cursor-pointer relative z-40 bg-white w-full h-18 flex items-center"
+        className="relative z-10 flex items-center w-full bg-white cursor-pointer h-18"
         onClick={() => {
           dispatch({
             type: "truncate",
@@ -46,8 +46,8 @@ function FilterItemDesktop({ item }) {
           });
         }}
       >
-        <div className="flex justify-between border-b py-4 flex-1 bg-white items-center ">
-          <div className="flex items-center pl-8 justify-center">
+        <div className="flex items-center justify-between flex-1 py-4 bg-white border-b ">
+          <div className="flex items-center justify-center pl-8">
             <div className="w-8 h-full">
               <Image
                 src={item.image}
@@ -58,8 +58,8 @@ function FilterItemDesktop({ item }) {
                 layout="responsive"
               />
             </div>
-            <div className="pl-4 my-auto">
-              <h4 className=" font-bold text-blue-darker">{item.title}</h4>
+            <div className="pl-4 my-auto text-xxs lg:text-base">
+              <h4 className="font-bold text-blue-darker">{item.title}</h4>
             </div>
           </div>
           <div className="flex">
@@ -107,7 +107,7 @@ function FilterItemDesktop({ item }) {
                   });
                 }}
                 key={index}
-                className="mt-4 flex cursor-pointer py-2 last-of-type:pb-4 last-of-type:shadow-sm"
+                className="flex py-2 mt-4 cursor-pointer last-of-type:pb-4 last-of-type:shadow-sm"
               >
                 <FilterCheckbox
                   checkbox={checkbox}
@@ -119,7 +119,7 @@ function FilterItemDesktop({ item }) {
                 ></FilterCheckbox>
                 <label
                   forhtml={checkbox.name}
-                  className="inline-flex items-center  pl-5 text-lg text-blue-extra "
+                  className="inline-flex items-center pl-5 text-lg text-blue-extra "
                 >
                   {checkbox.name}
                 </label>

@@ -81,7 +81,7 @@ const filtersData = [
   },
   {
     id: 3,
-    title: "Km/h",
+    title: "Höchstgeschwindigkeit",
     category: "maxSpeeds",
     image: image3,
     options: [
