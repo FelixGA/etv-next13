@@ -3,7 +3,7 @@ title: Mercedes-Benz eSprinter
 name: mercedes-benz-esprinter
 price: 54090
 relatedBlogs: nur beispiel
-relatedReviews: ""
+relatedReviews: mercedes-benz-esprinter
 description: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
   Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und rund
   eine Tonne Nutzlast aufnehmen kann.
@@ -17,7 +17,7 @@ loadingWeight:
 curbweight:
   key: Leergewicht
   value: 2499
-  baseUnit: keine Angabe
+  baseUnit: kg
 maxSpeed:
   key: km/h
   value: 80
@@ -25,7 +25,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Akku
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -35,34 +35,34 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
   value: 6.5
-  baseUnit: keine Angabe
+  baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
   value: 1
-  baseUnit: keine Angabe
+  baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: "-"
-  baseUnit: " keine Angabe"
+  value: 0
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "35"
-  baseUnit: kwh
+  baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
   value: 37,1
-  baseUnit: keine Angabe
+  baseUnit: kWh
 power:
   key: Leistung
   value: "85"
-  baseUnit: kw
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
@@ -72,22 +72,22 @@ rating:
 guarantee:
   key: Garantie Fahrzeug
   value: 2
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 loadingHeight:
   key: Ladehöhe
   value: 0
-  baseUnit: mm
+  baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
   value: 11,0
@@ -139,7 +139,7 @@ loadingVolumeWidth:
 loadingVolumeHeight:
   key: Höhe
   value: "0"
-  baseUnit: mm
+  baseUnit: "-"
 wheelbase:
   key: Radstand
   value: "3924"
