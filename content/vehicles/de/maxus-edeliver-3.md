@@ -3,7 +3,7 @@ title: Maxus eDeliver 3
 name: maxus-edeliver-3
 price: 36490
 relatedBlogs: nur beispiel
-relatedReviews: ""
+relatedReviews: maxus-edeliver-3
 description: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der
   in zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
   aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit von 120
@@ -18,7 +18,7 @@ loadingWeight:
 curbweight:
   key: Leergewicht
   value: 1445
-  baseUnit: keine Angabe
+  baseUnit: kg
 maxSpeed:
   key: km/h
   value: 120
@@ -26,7 +26,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Akku
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -36,34 +36,34 @@ rangeLithium:
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
   value: 6
-  baseUnit: keine Angabe
+  baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
   value: 45
   baseUnit: Minuten
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: "-"
-  baseUnit: " keine Angabe"
+  value: 0
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: "35"
-  baseUnit: kwh
+  baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
   value: "24"
-  baseUnit: keine Angabe
+  baseUnit: kWh
 power:
   key: Leistung
   value: "90"
-  baseUnit: kw
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
@@ -73,18 +73,18 @@ rating:
 guarantee:
   key: Garantie Fahrzeug
   value: 5
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
   value: 8
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
   value: 540
@@ -96,17 +96,17 @@ loadingVolumeTotal:
 loadingArea:
   key: Ladefläche
   value: "0"
-  baseUnit: m2
+  baseUnit: "-"
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
   valuewidth: 1780
-  baseUnit: keine Angabe
+  baseUnit: mm
   valuelength: 4550
   valueheight: 1900
-  valuewheelbase: 0
+  valuewheelbase: 2910
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße

@@ -1,7 +1,6 @@
 ---
 title: Stama Maestro Pritsche
 name: stama-maestro-pritsche
-price: 34250
 relatedBlogs: nur beispiel
 relatedReviews: stama-maestro-mtn
 description: >-
@@ -17,8 +16,6 @@ description: >-
 
   Der Stama Maestro besitzt eine EU-Typengenehmigung und kann somit in allen EU-Staaten auf öffentlichen Straßen bewegt werden.
 src: /images/stama-maestro-front-1024x683.jpg
-category: Pritsche
-typeClass: L7E
 loadingWeight:
   key: Nutzlast
   value: 1000

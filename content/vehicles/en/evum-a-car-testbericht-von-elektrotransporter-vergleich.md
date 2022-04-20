@@ -32,7 +32,7 @@ maxSpeed:
 range230V:
   key: Reichweite SLA Blei
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
@@ -58,14 +58,14 @@ batteryCapacityBlei:
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
   value: 16.5
-  baseUnit: kwh
+  baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
   value: 15,9
-  baseUnit: "-"
+  baseUnit: kWh
 power:
   key: Leistung
   value: "20"
@@ -86,7 +86,7 @@ availability:
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
   value: 0
@@ -146,7 +146,7 @@ loadingVolumeWidth:
 loadingVolumeHeight:
   key: Höhe
   value: "0"
-  baseUnit: mm
+  baseUnit: "-"
 wheelbase:
   key: Radstand
   value: "2596"

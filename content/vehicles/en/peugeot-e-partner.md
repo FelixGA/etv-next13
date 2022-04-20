@@ -133,6 +133,7 @@ relatedBlogs: >-
 
 
   4,4
+relatedReviews: peugeot-e-partner
 description: Der Peugeot e-Partner ist ein elektrischer Kastenwagen der
   Fahrzeugklasse N1, der eine Zuladung von 542 bis 728 Kilogramm aufnehmen kann
   und eine Höchstgeschwindigkeit von 130 km/h erreicht.
@@ -166,7 +167,7 @@ chargingTime230V:
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
   value: 5
-  baseUnit: Stunden
+  baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
   value: 0
@@ -189,7 +190,7 @@ consumption:
 power:
   key: Leistung
   value: "100"
-  baseUnit: kw
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
@@ -199,14 +200,14 @@ rating:
 guarantee:
   key: Garantie Fahrzeug
   value: 2
-  baseUnit: keine Angabe
+  baseUnit: Jahre
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Batterie-Garantie
   value: 8
@@ -272,4 +273,5 @@ wheelbase:
   value: "2785"
   baseUnit: mm
 ---
+
 Der Peugeot e-Partner ist ein elektrischer Kastenwagen der Fahrzeugklasse N1, der eine Zuladung von 542 bis 728 Kilogramm aufnehmen kann und eine Höchstgeschwindigkeit von 130 km/h erreicht.
