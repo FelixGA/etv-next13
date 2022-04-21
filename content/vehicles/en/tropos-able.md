@@ -1,5 +1,5 @@
 ---
-name: tropos-able
+name: tropos-able-xt1
 price: 27000
 relatedBlogs: beispiel
 relatedReviews: ""
@@ -26,4 +26,10 @@ power:
   baseUnit: kw
 rating:
   value: 3.4
+loadingHeight:
+  value: 0
+  baseUnit: "-"
+loadingVolumeTotal:
+  value: 3,3
+  baseUnit: m3
 ---

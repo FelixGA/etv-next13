@@ -1,6 +1,6 @@
 ---
-title: Tropos Able XT
-name: tropos-able
+title: Tropos Able XT1
+name: tropos-able-xt1
 price: 27000
 relatedBlogs: beispiel
 relatedReviews: ""
@@ -86,11 +86,11 @@ batteryGuarantee:
   baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
-  value: 75
-  baseUnit: cm
+  value: 0
+  baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 0,75
+  value: 3,3
   baseUnit: m3
 loadingArea:
   key: Ladefläche
