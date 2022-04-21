@@ -64,4 +64,7 @@ loadingVolumeWidth:
 loadingVolumeHeight:
   value: "1150"
   baseUnit: mm
+wheelbase:
+  value: "0"
+  baseUnit: "-"
 ---

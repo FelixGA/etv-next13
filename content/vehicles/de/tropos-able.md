@@ -142,7 +142,7 @@ loadingVolumeHeight:
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "2040"
-  baseUnit: mm
+  value: "0"
+  baseUnit: "-"
 ---
 Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e mit einer Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in zwei Akku-Varianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
