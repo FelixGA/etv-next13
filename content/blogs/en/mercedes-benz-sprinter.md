@@ -1,6 +1,6 @@
 ---
 title: E-Works Mobility liefert Sprinter mit 245-Elektro-PS
-slug: mercedes-benz-sprinter
+slug: e-works-mobility-liefert-sprinter-mit-245-elektro-ps
 youtubeLink: ""
 category: neuigkeiten
 publishedAt: 04/03/2022
