@@ -79,15 +79,12 @@ content:
       ### Fazit
 
 
-      Das ARI 345 bietet zahlreiche Einsatzmöglichkeiten. Die Versionen Pritsche und Kipper eignen sich beispielsweise für Kommunen, Landschaftsbau- oder Handwerksbetriebe. 
-
-
-      Das ARI 345 Koffer ist eine gute Wahl für Lieferfirmen oder Dienstleister. Mit dem neusten Food Truck-Aufbau finden sich zudem auch zahlreiche Einsatzmöglichkeiten im gastronomischen Bereich. Die Anschaffungskosten des Fahrzeugs sind dabei vergleichsweise niedrig.
+      Der Aixam Pro e-Truck ist ein sehr kleiner und dafür recht geräumiger Elektrotransporter, der als Koffer-Variante für Lieferdienste, Handwerksbetriebe und den Warentransport im Einzelhandel interessant sein könnte. Die Pritsche dürfte speziell für Landschaftsbaubetriebe und kleinere Baustellen geeignet sein. Die recht geringe Reichweite könnte allerdings für so manche Einschränkung sorgen und die minimale Ausstattung lässt leider so manchen Wunsch offen.
 
 
       ## Gesamtpunktzahl:
 
 
-      4 Sterne
+      3 Sterne
     title: Fazit
 ---
