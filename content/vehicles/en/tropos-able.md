@@ -1,6 +1,7 @@
 ---
 name: tropos-able
-price: 0
+price: 27000
+relatedBlogs: beispiel
 relatedReviews: ""
 src: /images/tropos-able-bunt.jpg
 ---

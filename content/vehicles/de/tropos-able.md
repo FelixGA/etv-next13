@@ -1,12 +1,12 @@
 ---
 title: Tropos Able XT
 name: tropos-able
-price: 0
+price: 27000
 relatedBlogs: beispiel
 relatedReviews: ""
-description: Der Addax MT ist ein Elektro-Kleintransporter der Fahrzeugklasse N1
-  und verfügt über eine maximale Nutzlast von 1000 Kilogramm und eine
-  Anhängelast von 2000 Kilogramm.
+description: Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e
+  mit einer Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in
+  zwei Akku-Varianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
 src: /images/tropos-able-bunt.jpg
 category: Pritsche
 typeClass: N1
@@ -145,4 +145,4 @@ wheelbase:
   value: "2040"
   baseUnit: mm
 ---
-Der Addax MT ist ein Elektro-Kleintransporter der Fahrzeugklasse N1 und verfügt über eine maximale Nutzlast von 1000 Kilogramm und eine Anhängelast von 2000 Kilogramm.
+Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e mit einer Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in zwei Akku-Varianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
