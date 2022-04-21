@@ -1,84 +1,80 @@
 ---
 title: Aixam Pro e-Truck
 slug: aixam-pro-etruck
-relatedCars: ari-345-koffer
-youtubeLink: bitte auffuelen
+relatedCars: aixam-pro-etruck-pritsche
+youtubeLink: https://www.youtube.com/watch?v=Fw_1SbR63SU
 category: Koffer
 publishedAt: 03/17/2022
-description: bitte fuer SEO auffuelen bitte fuer SEO auffuelen bitte fuer SEO
-  auffuelen bitte fuer SEO auffuelen
-src: /images/ari-345-koffer-mit-geöffneter-seitenklappe-und-solarpanel.jpg
+description: >
+  Der Aixam Pro e-Truck ist ein leichter Elektrotransporter der Fahrzeugklasse
+  L6e, der eine maximale Höchstgeschwindigkeit von 45 km/h erreicht und in zwei
+  Aufbauvarianten erhältlich ist. Die Zuladung liegt bei 327
+  Kilogramm.                        
+src: /images/aixam-pro-pritsche.jpg
 content:
+  - content: Der Aixam Pro e-Truck ist ein leichter Elektrotransporter der
+      Fahrzeugklasse L6e, der eine maximale Höchstgeschwindigkeit von 45 km/h
+      erreicht und in zwei Aufbauvarianten erhältlich ist. Die Zuladung liegt
+      bei 327 Kilogramm.
+    title: Einleitung
   - content: >-
       ### Konzept & Fahrzeugvarianten
 
 
-      Das ARI 345 ist aktuell eines der kompaktesten Fahrzeuge des in Borna ansässigen Unternehmens ARI Motors. Das Lastenmoped ist in den Aufbau-Varianten Pritsche, Koffer, Kipper und Food Truck verfügbar. Das ARI 345 bietet Platz für eine Person. Durch seine kompakten Außenmaße ist das Lastenmoped vor allem für kurze Wege sowie den innerstädtischen Einsatz geeignet.
-    image: /images/ari-345-koffer-mit-geöffneter-seitenklappe-und-solarpanel.jpg
+      Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen” mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein leichtes Nutzfahrzeug im Programm, welches mit Dieselmotoren (“D-Truck”) sowie Elektroantrieb (“e-Truck”) erhältlich ist. Die hier vorgestellte Elektro-Version gehört zur EG-Fahrzeugkategorie L6e, welche Leichtfahrzeuge bis zu einem Leergewicht von 425 Kilogramm (ohne Akkus) bezeichnet. 
+
+
+      Der Elektrotransporter  in zwei Aufbautypen verfügbar: als Pritsche sowie mit Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem Gelände konzipiert.
+    image: /images/axiam-pro-van-front.jpg
     title: Konzept & Fahrzeugvarianten
   - content: >-
-      ### Laderaum & Flexibilität (⅘)
+      ### Laderaum & Flexibilität (3/5)
 
 
-      Das ARI 345 Pritsche ist in drei Größen mit Ladeflächen von 1,42 m², 1,53 m² und 1,79 m² verfügbar. Die Höhe der Ladebordwand liegt bei 25 cm. Die Ladekantenhöhe bei allen Aufbauten beträgt 56cm. 
+      Als Koffer-Version “Van” hat der Aixam Pro einen Radstand von 2,52 Meter und ist exakt 3 Meter lang und 1,50 Meter breit. Der Laderaum ist einzig über zwei seitlich öffnende Türen im Heck zugänglich und hat eine Ladehöhe von 1,40 Meter. Der Kofferraum hat eine Länge von 1,35 Meter und kommt auf ein Gesamtvolumen von 2,8m³. 
 
 
-      Der Kipper-Aufbau ist in den gleichen Größen verfügbar. Das Kippen der Ladefläche kann mechanisch-hydraulisch oder elektrisch-hydraulisch erfolgen. Für die Sicherung der Ladung sind zudem Verzurr-Ösen sowie eine stabile Plane für das Pritschen-Modell verfügbar. Ebenso lässt sich die Ladefläche durch einen drei- oder vierteiligen Laubgitter-Aufbau ergänzen. 
-
-
-      Das ARI 345 mit Koffer-Aufbau kommt ebenfalls in 3 Größen mit Ladevolumen von 1,36 m3, 1,46 m3 und 1,90 m3. Die Höhe des Koffers variiert dabei zwischen 95 cm (Standard- und L-Version) und 110 cm (XL-Version).  
-
-
-      Der Food Truck-Aufbau ist in zwei Größen mit Ladevolumen von 2,15 m3 und 2,42 m3 erhältlich. Die maximalen Aufbau-Maße liegen bei 1,49 x 1,30 x 1,25 m. Neben einer großzügigen Arbeitsfläche und weiteren ausziehbaren Arbeitsplatten bietet dieser eine Menge Stauraum im unteren Teil des Aufbaus. 
-
-
-      Neben diesen Standard-Aufbauten hat sich das Unternehmen vor allem auf individuelle Kundenlösungen spezialisiert. So sind auch Sonderanfertigungen möglich. Potentiellen Einsatzfeldern sind keine Grenzen gesetzt.
-    image: /images/ari-345-fahrzeugvarianten.jpg
-    title: LADERAUM
+      Als Pritsche ist der Aixam Pro neun Zentimeter kürzer als der “Van”, hat aber sonst die gleichen Außenmaße. Die Ladefläche hat hier eine Länge von 1,40 Meter und eine Breite von 1,47 Meter, wodurch sich Platz für rund 2m² Güter und Waren ergibt. Das Leergewicht inklusive Akku gibt der Hersteller für beide Versionen mit 440 Kilogramm an, während die Nutzlast bei 327 Kilogramm liegt. Die Anhängelast liegt bei 187 Kilogramm.
+    image: /images/aixam-pro-van-laderaum.jpg
+    title: Laderaum & Flexibilität
   - content: >-
-      ### Antrieb und Aufladung (4/5)
+      ### Antrieb & Aufladung (2/5)
 
 
-      Das ARI 345 wird angetrieben über einen 3 KW starken Permanent-Magnet-Synchron-Motor am Heck des Fahrzeugs. Das Automatik-Getriebe bietet auch Fahrern mit wenig Moped-Erfahrung eine einfache Bedienung.
+      Unter der Haube beider Aixam Pro Elektrotransporter arbeitet ein Synchron-Permanentmagnet-Motor, der eine Nennleistung von 6 kW sowie eine Spitzenleistung von rund 9 kW generiert. Das Drehmoment beträgt 50 Nm. Der Aixam Pro hat ein Automatikgetriebe und kann eine Höchstgeschwindigkeit von 45 Km/h erreichen, was auch den Grenzwert für Fahrzeuge der Kategorie L6e darstellt.
 
 
-      Die Blei-Gel Batterie schafft mit einer Kapazität von 3,24 kWh bei einfacher Ausführung eine Reichweite von 55 km oder 100 km bei zweifacher Ausführung (bei 40 Km/h). Optional ist das Fahrzeug auch mit einem LiFePO4-Akku-Paket für 100 km Reichweite und 50 kg mehr Nutzlast erhältlich. Die Kosten des zusätzlichen LiFePO4-Akkus liegen bei 2200 €.
-
-
-      Das Lastentrike kann an einer klassischen 230-V-Haushaltssteckdose mit 16Ah Sicherung in 5-6 Stunden vollständig geladen werden. Eine extra Wallbox ist nicht nötig.
-    image: /images/dsc_0269.jpg
-    title: Antrieb und Aufladung (4/5)
+      Die Energiespeicherung erfolgt per Lithium-Ionen-Batterien mit einer Spannung von 48 V und einer Kapazität von 7,26 kWh. Die Reichweite liegt damit im Durchschnitt laut Hersteller bei 95 Kilometer, womit sich der Aixam Pro eher für den Stadtverkehr oder kurze Überlandstrecken eignet. Die Aufladung erfolgt über einen 220 Volt-Stecker. Leider gibt es keine Angaben darüber, wieviel Zeit es beansprucht, die Batterien wieder voll aufzuladen.
+    image: /images/aixam-pro-van-heck.jpg
+    title: Antrieb & Aufladung
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung (3/5)
 
 
-      Der Elektro-Kleintransporter verfügt serienmäßig über FM-Radio mit MP3, Bluetooth und Rückfahrkamera sowie eine LCD-Batterie-Kapazitätsanzeige und Tachometer. Ebenso ist ein USB-Anschluss ins Cockpit integriert, über welchen beispielsweise ein Smartphone geladen werden kann. 
-
-
-      Optional kann das Lastenmoped auch mit einem Rammschutz, einem drei- oder vierteiligen Laubgitter oder einem Leiterträger ausgerüstet werden. Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist erhältlich.
-    image: /images/ari-458-innenraum-fahrerplatz.jpg
-    title: Komfort & Ausstattung (4/5)
+      Der Aixam Pro ist sehr einfach ausgestattet. Eine Servolenkung ist ebenso wenig erhältlich wie eine Klimaanlage, während elektrische Fensterheber sowie eine Zentralverriegelung Aufpreis kosten. Auch ein Radio kostet zusätzliches Geld, ist dann aber immerhin mit mit USB-Port und Bluetooth-Funktion ausgestattet.
+    image: ""
+    title: Komfort & Ausstattung
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Das Fahrzeug kommt auf eine Steigfähigkeit von 18% und wird dadurch auch im bergigen Gelände keine Probleme bekommen. Gebremst wird das Lasten-Trike über 3 hydraulische Scheibenbremsen. Durch den Heckantrieb liegt das Gewicht im hinteren Bereich des Fahrzeuges. So wird vor allem mit Beladung ein optimaler Fahrkomfort ermöglicht. Gefedert wird das Fahrzeug vorne über eine Federgabel mit Stoßdämpfern und hinten über Blattfedern. So lässt sich mit dem ARI 345 auch in unwegsamen Gelände arbeiten. Durch die Fahrerkabine und einen Dreipunktgurt ist es zudem nicht notwendig, während der Fahrt einen Helm zu tragen.
-    image: /images/ari-345-lastentrike-koffer-front.jpg
+      Der Aixam Pro ist sehr klein und dadurch auch sehr wendig. In kleinen Gassen oder auf engen Fabrikgeländen ist er wohl am besten aufgehoben. Zwar ist ein Fenster in der Kabinenrückwand serienmäßig dabei, Fenster in den Hecktüren kosten allerdings extra. Und bei vollem Laderaum nutzen auch diese auch nicht viel. Optional ist dafür aber eine Rückfahrkamera erhältlich, die beim Rangieren der Koffer-Version unterstützt.
+    image: /images/aixam-pro-innen.jpg
     title: Bedienung & Fahrbetrieb
   - content: >-
-      ### Umwelt (⅘)
+      ### Umwelt (4/5)
 
 
-      Der kombinierte Verbrauch des ARI 345 ist mit ca. 5,6 kWh sehr niedrig. Durch ein zusätzliches Solarpanel, welches für rund 30 Kilometer mehr Reichweite sorgt, ist das Fahrzeug noch sparsamer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 1,68 €.
+      Konkrete Verbrauchsangaben zu den Aixam Pro e-Trucks gibt es nicht. Die Reichweite von 95 Kilometer bei einer Akku-Kapazität von 7,26 kWh spricht aber für einen Verbrauch von rund 8 kWh auf 100 Kilometer, also sehr niedrig. So kommt man mit 2,40 Euro Energiekosten rund 100 Kilometer weit bei einem Strompreis von 30 Cent pro kWh. Eine Solaranlage ist nicht verfügbar.
     title: Umwelt
-    image: /images/ari-345-koffer-mit-solarpanel-nahansicht.jpg
+    image: ""
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie (3/5)
 
 
-      Das ARI 345 ist vergleichsweise günstig. Die Preise für die Pritsche starten bei 6.995 €. Der Koffer ist ab 7.395€  und der Food Truck ab 12.725 € erhältlich. Auf das Fahrzeug gibt es 6 Monate Garantie und auf die Batterie 18 Monate Gewährleistung.
+      Die Preise für das Fahrzeug betragen in der Basisausstattung ab Werk 19.690 Euro für die Pritsche und 20.490 Euro als “Van”. Die Batterie ist mit im Preis enthalten und muss nicht extra gemietet werden. Aixam gibt eine Garantie von 2 Jahren auf das Fahrzeug, unabhängig vom Kilometerstand.
     title: Preise & Garantie
-    image: /images/dsc_0071.png
+    image: ""
   - content: >-
       ### Fazit
 
