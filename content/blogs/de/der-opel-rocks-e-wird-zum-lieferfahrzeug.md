@@ -8,7 +8,7 @@ src: /images/ampnet_photo_20220323_208407.jpg
 description: Opel hat sein Elektrokleinfahrzeug Rocks-e zum Lieferwagen
   umgerüstet. Jetzt kann es auch Pakete, Pizza & Getränke liefern.
 contentHeading:
-  content: hier steht dn text
+  content: ""
 ---
 Opel rüstet sein Elektrokleinfahrzeug Rocks-e zum Lieferwagen um. Um Pakete, Pizza oder Medikamente zu transportieren wird an Stelle des Beifahrersitzes ein modular unterteilbares Ladeabteil geschaffen. Eine vertikale Wand trennt den Fahrerplatz ab. Insgesamt stehen mehr als 400 Liter Ladevolumen zur Verfügung. Die Nutzlast liegt bei 140 Kilogramm.
 
