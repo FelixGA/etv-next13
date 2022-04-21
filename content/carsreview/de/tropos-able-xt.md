@@ -9,7 +9,7 @@ description: >
   Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e mit einer
   Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in zwei
   Akkuvarianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
-src: /images/aixam-pro-pritsche.jpg
+src: /images/tropos-able-bunt.jpg
 content:
   - content: Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e mit
       einer Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in
@@ -27,27 +27,30 @@ content:
 
 
       Der Tropos Able zielt auf Kunden wie Städte und Kommunen sowie Handwerk und Industrie ab. So gibt es in mit in zwei Aufbauvarianten: der Koffer-Version mit einem Ladevolumen von rund 3.300 Liter sowie als Pritsche mit einer Ladefläche von knapp drei Quadratmetern. In beiden Fällen besitzt das Fahrzeug eine Breite von 1,40 Meter. Weitere Aufbauvarianten sind laut Tropos auch möglich.
-    image: /images/axiam-pro-van-front.jpg
+    image: /images/tropos-able-koffer-seite.jpg
     title: Konzept & Fahrzeugvarianten
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität (4/5)
 
 
-      Als Koffer-Version “Van” hat der Aixam Pro einen Radstand von 2,52 Meter und ist exakt 3 Meter lang und 1,50 Meter breit. Der Laderaum ist einzig über zwei seitlich öffnende Türen im Heck zugänglich und hat eine Ladehöhe von 1,40 Meter. Der Kofferraum hat eine Länge von 1,35 Meter und kommt auf ein Gesamtvolumen von 2,8m³. 
+      Der Koffer des Tropos Able hat eine Länge von 2,20 Meter, eine Höhe von 1,15 Meter und ist 1,35 Meter breit. Dadurch ergibt sich ein Ladevolumen von knapp 3.300 Liter, welches durch geteilte Hecktüren sowie eine seitliche Klapptür (rechts) be- und entladbar ist. Als Pritschenwagen hat die Ladefläche die gleichen Maße, abgesehen natürlich von der Höhe. Die Bodenplatte bildet eine 18mm dicke Siebdruckplatte, welche mit 4 Zurr-Ringen versehen ist.
 
 
-      Als Pritsche ist der Aixam Pro neun Zentimeter kürzer als der “Van”, hat aber sonst die gleichen Außenmaße. Die Ladefläche hat hier eine Länge von 1,40 Meter und eine Breite von 1,47 Meter, wodurch sich Platz für rund 2m² Güter und Waren ergibt. Das Leergewicht inklusive Akku gibt der Hersteller für beide Versionen mit 440 Kilogramm an, während die Nutzlast bei 327 Kilogramm liegt. Die Anhängelast liegt bei 187 Kilogramm.
-    image: /images/aixam-pro-van-laderaum.jpg
+      Gegen Aufpreis ist der Able auch mit einem Transportgestell verfügbar, welches zum Beispiel mit einem Laubgitter für Landschaftsbaubetriebe geliefert werden kann. Auch eine Plane mit Gestell kann auf Basis dessen aufgebaut werden und erweitert somit den Einsatzbereich des Tropos. Die Nutzlast des Tropos Able liegt je nach Ausstattung bei maximal 580 Kilogramm beim XT1 sowie bis zu 700 Kilogramm beim XT2, wobei hier noch kein Fahrer mit eingerechnet ist. Optional ist eine Anhängekupplung verfügbar, die maximal 300 Kilogramm ziehen kann.
+    image: /images/tropos-able-kipper.jpg
     title: Laderaum & Flexibilität
   - content: >-
-      ### Antrieb & Aufladung (2/5)
+      ### Antrieb & Aufladung (3/5)
 
 
-      Unter der Haube beider Aixam Pro Elektrotransporter arbeitet ein Synchron-Permanentmagnet-Motor, der eine Nennleistung von 6 kW sowie eine Spitzenleistung von rund 9 kW generiert. Das Drehmoment beträgt 50 Nm. Der Aixam Pro hat ein Automatikgetriebe und kann eine Höchstgeschwindigkeit von 45 Km/h erreichen, was auch den Grenzwert für Fahrzeuge der Kategorie L6e darstellt.
+      Der Antrieb des Tropos Able wird von einem 10 kW-Elektromotor übernommen. Während die XT1-Modelle eine maximale Höchstgeschwindigkeit von 65 km/h erreichen, kann der Able als XT2  maximal 85 Km/h fahren. Der Antrieb erfolgt über die Hinterachse, um auch bei hoher Beladung eine sichere Straßenlage zu ermöglichen.
 
 
-      Die Energiespeicherung erfolgt per Lithium-Ionen-Batterien mit einer Spannung von 48 V und einer Kapazität von 7,26 kWh. Die Reichweite liegt damit im Durchschnitt laut Hersteller bei 95 Kilometer, womit sich der Aixam Pro eher für den Stadtverkehr oder kurze Überlandstrecken eignet. Die Aufladung erfolgt über einen 220 Volt-Stecker. Leider gibt es keine Angaben darüber, wieviel Zeit es beansprucht, die Batterien wieder voll aufzuladen.
-    image: /images/aixam-pro-van-heck.jpg
+      Mit dem 13 kWh-Akku soll der Tropos Able eine Reichweite von 106 bis 121 Kilometern laut WLTP-Zyklus erreichen. Bei der großen Akku-Variante mit der doppelten Kapazität liegt die Reichweite bei 203 bis 229 Kilometer. Tropos gibt für beide Fahrzeuge sogar eine “praxiserprobte Reichweite” von 130 bzw. 260 Kilometer an. Für urbane Zwecke genügt somit die kleinere Variante, während für längere Strecken der XT2 nötig ist.
+
+
+      Die Aufladung erfolgt bei allen Versionen über einen handelsüblichen 230 Volt-Stecker. Leider finden sich keine offiziellen Angaben oder auch Praxisberichte dazu, wieviel Zeit eine Aufladung des Tropos Able in Anspruch nimmt. Für etwas längere Reichweite sorgt eine Rekuperation der Bremsenergie, welche den Akku während der Fahrt wieder auflädt.
+    image: /images/tropos-able-heck.jpg
     title: Antrieb & Aufladung
   - content: >-
       ### Komfort & Ausstattung (3/5)
