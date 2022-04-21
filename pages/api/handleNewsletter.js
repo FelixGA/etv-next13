@@ -1,3 +1,5 @@
+const express = require("express");
+const app = express();
 const pipedrive = require("pipedrive");
 
 const defaultClient = pipedrive.ApiClient.instance;
@@ -20,6 +22,7 @@ module.exports = async (request, response, stageId = 788) => {
   } catch (error) {
     console.log("error is", error);
   }
+
   response.send(deal.success);
   return deal;
 };

@@ -35,15 +35,21 @@ const NewsLetter = ({ getMarkdownContext }) => {
       <div className="flex flex-col justify-center custom-text px-4 pb-4 text-grey-darker ">
         <MDXRemote {...getMarkdownContext.newsletter} />
       </div>
-      <div className="">
-        <p className="w-full align-left text-blue-lighter font-bold pb-1 pl-1">
+      <div>
+        <p
+          className={
+            send
+              ? "hidden"
+              : "w-full align-left text-blue-lighter font-bold pb-1 pl-1"
+          }
+        >
           Email <span className="text-red-500">*</span>
         </p>
 
         <form
           method="POST"
           onSubmit={handleSubmit(onSubmit, onError)}
-          className="flex flex-col xs:flex-row"
+          className={send ? "hidden" : "flex flex-col xs:flex-row"}
         >
           <input
             content-type="email"
@@ -71,6 +77,15 @@ const NewsLetter = ({ getMarkdownContext }) => {
             anmelden
           </button>
         </form>
+        <div
+          className={
+            send ? "flex h-fit justify-center items-center w-full " : "hidden"
+          }
+        >
+          <p className="w-full px-8 mt-4 sm:p-8 sm:w-2/3 sm:text-lg">
+            Vielen Dank! Das Formular wurde erfolgreich übermittelt.
+          </p>
+        </div>
       </div>
     </div>
   );
