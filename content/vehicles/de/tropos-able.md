@@ -94,51 +94,51 @@ loadingVolumeTotal:
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 2,99
-  baseUnit: m2
+  value: "0"
+  baseUnit: "-"
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1390
-  baseUnit: mm
-  valuelength: 3741
-  valueheight: 1990
-  valuewheelbase: 2040
+  valuewidth: 1400
+  baseUnit: "-"
+  valuelength: 3700
+  valueheight: 1900
+  valuewheelbase: 0
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 250
+  valueheight: 1150
   width: Breite
-  valuewidth: 1390
-  valuelength: 2150
+  valuewidth: 1350
+  valuelength: 2200
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "3741"
+  value: "3700"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1990"
+  value: "1400"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1390"
+  value: "1900"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "2150"
+  value: "2200"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1390"
+  value: "1400"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "250"
+  value: "1150"
   baseUnit: mm
 wheelbase:
   key: Radstand
