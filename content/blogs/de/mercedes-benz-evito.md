@@ -1,6 +1,6 @@
 ---
 title: Mercedes-Benz e-Vito mit höherer Batteriekapazität
-slug: mercedes-benz-evito
+slug: mercedes-benz-e-vito-mit-höherer-batteriekapazität
 youtubeLink: ""
 category: neuigkeiten
 publishedAt: 12/03/2021
