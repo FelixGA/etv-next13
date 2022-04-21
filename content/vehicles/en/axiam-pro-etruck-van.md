@@ -1,6 +1,6 @@
 ---
-title: Axiam-pro-Etruck-van
-name: axiam-pro-etruck-van
+title: Aixam-pro-Etruck-van
+name: aixam-pro-etruck-van
 price: 19990
 relatedBlogs:
   title: ""

@@ -1,16 +1,12 @@
 ---
-title: Axiam-pro-Etruck-pritsche
-name: axiam-pro-etruck-pritsche
-price: 19290
+title: Aixam-pro-Etruck-pritsche
+name: aixam-pro-etruck-pritsche
+price: 19690
 relatedBlogs: beispiel
-description: "Aixam ist ein französischer Hersteller von sogenannten
-  “Leichtkraftfahrzeugen” mit einem Vertrieb in Deutschland. Mit dem Aixam Pro
-  hat das Unternehmen ein leichtes Nutzfahrzeug im Programm, welches mit
-  Dieselmotoren (“D Truck”) sowie Elektroantrieb (“e-Truck”) erhältlich ist. Der
-  Elektrotransporter ist in zwei Aufbautypen verfügbar: als Pritsche sowie mit
-  Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell
-  für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem
-  Gelände konzipiert."
+description: Der Aixam Pro e-Truck ist ein leichter Elektrotransporter der
+  Fahrzeugklasse L6e, der eine maximale Höchstgeschwindigkeit von 45 km/h
+  erreicht und in zwei Aufbauvarianten erhältlich ist. Die Zuladung liegt bei
+  327 Kilogramm.
 src: /images/aixam-pro-pritsche.jpg
 category: Pritsche
 typeClass: L6E
@@ -65,7 +61,7 @@ consumption:
   baseUnit: "-"
 power:
   key: Leistung
-  value: min-6/max-6
+  value: "6"
   baseUnit: kW
 seats:
   key: Sitzplätze
@@ -75,8 +71,8 @@ rating:
   value: 3
 guarantee:
   key: Garantie Fahrzeug
-  value: 0
-  baseUnit: "-"
+  value: 2
+  baseUnit: Jahre
 availability:
   key: Verfügbarkeit
   value: keine Angabe
@@ -149,5 +145,4 @@ wheelbase:
   value: "2252"
   baseUnit: mm
 ---
-
-Der Axiam-Pro eTruck ist ein Elektrotransporter mit 80 Kilometer Reichweite und 45 km/h Höchstgeschwindigkeit.
+Der Aixam Pro e-Truck ist ein leichter Elektrotransporter der Fahrzeugklasse L6e, der eine maximale Höchstgeschwindigkeit von 45 km/h erreicht und in zwei Aufbauvarianten erhältlich ist. Die Zuladung liegt bei 327 Kilogramm.

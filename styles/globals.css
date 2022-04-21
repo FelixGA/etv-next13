@@ -9,15 +9,15 @@
   }
 
   h1 {
-    @apply text-blue-dark text-3xl md:text-3xl font-bold;
+    @apply text-3xl font-bold text-blue-dark md:text-3xl;
   }
 
   h2 {
-    @apply text-blue-dark text-xl md:text-2xl;
+    @apply text-xl text-blue-dark md:text-2xl;
   }
 
   h3 {
-    @apply text-blue-dark text-lg md:text-xl;
+    @apply text-lg text-blue-dark md:text-xl;
   }
 }
 /* for print */
@@ -51,7 +51,7 @@ a:visited {
 }
 
 .select {
-  @apply rounded-lg  bg-white text-base cursor-pointer  items-center;
+  @apply items-center text-base bg-white rounded-lg cursor-pointer;
   /* min-width: 15ch;
   max-width: 20ch; */
   display: grid;
@@ -82,7 +82,7 @@ select:focus {
 }
 .forz {
   z-index: -98;
-  background: linear-gradient(0.25turn, #f2f9ff, #dbe0e4, #dbe0e4);
+  background: linear-gradient(0.25turn, #f0f7fb, #f6faff, #e0f1ff);
 
   filter: hue-rotate(260deg);
   filter: saturate(3.5);
