@@ -53,43 +53,46 @@ content:
     image: /images/tropos-able-heck.jpg
     title: Antrieb & Aufladung
   - content: >-
-      ### Komfort & Ausstattung (3/5)
+      ### Komfort & Ausstattung (4/5)
 
 
-      Der Aixam Pro ist sehr einfach ausgestattet. Eine Servolenkung ist ebenso wenig erhältlich wie eine Klimaanlage, während elektrische Fensterheber sowie eine Zentralverriegelung Aufpreis kosten. Auch ein Radio kostet zusätzliches Geld, ist dann aber immerhin mit mit USB-Port und Bluetooth-Funktion ausgestattet.
+      In der Serienausstattung des Elektrotransporter finden sich einige nützliche Helfer für den Alltagsgebrauch. So sind die Modelle mit einem Radio mit Multifunktions-Touchscreen ausgestattet, welches ebenso eine Bluetooth-Freisprechfunktion für das Telefonieren sowie einen USB-Anschluss besitzt. Die Rückfahrkamera ist besonders praktisch für die Rücksicht bei den Kofferaufbauten und bei beladener Pritsche. Und eine Servolenkung vereinfacht Lenkmanöver bei niedriger Geschwindigkeit. Auch ABS sowie eine Berganfahrhilfe sind bereits serienmäßig verbaut.
     image: ""
     title: Komfort & Ausstattung
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Der Aixam Pro ist sehr klein und dadurch auch sehr wendig. In kleinen Gassen oder auf engen Fabrikgeländen ist er wohl am besten aufgehoben. Zwar ist ein Fenster in der Kabinenrückwand serienmäßig dabei, Fenster in den Hecktüren kosten allerdings extra. Und bei vollem Laderaum nutzen auch diese auch nicht viel. Optional ist dafür aber eine Rückfahrkamera erhältlich, die beim Rangieren der Koffer-Version unterstützt.
-    image: /images/aixam-pro-innen.jpg
+      Für ein Fahrzeug der Fahrzeugklasse L7e ist der Tropos Able recht schwer. Mit Batterien wiegt der Able XT1 knapp 900 Kilogramm, als XT2 sogar eine Tonne. Da L7e-Nutzfahrzeuge ohne Akkus nicht mehr als 600 Kilogramm wiegen dürfen, scheinen die Akkus für mehr als einen erheblichen Teil des Gewichts verantwortlich zu sein. Dies ist natürlich von Nachteil auf Grünflächen und in Parks, wo mehr Gewicht auch mehr Belastung für den Rasen bedeutet. Dafür punktet der Tropos mit einem Wendekreis von knapp 4 Meter.
+
+
+      Als Zusatzausstattung ist eine Databox erhältlich, mit der man mehrere Able-Fahrzeuge vernetzten kann, um beispielsweise das Flottenmanagement zu optimieren oder das sogenannte „Internet der Dinge“ auf die Fahrzeuge des Bestandes anzuwenden. Für Kommunen bietet Tropos an, den Able ab Werk mit oranger Folierung (inklusive rot-weißer Streifen) zu bekleben. Auch an das eigene Firmendesign angelehnte Folierungen sind gegen Aufpreis möglich.
+    image: /images/tropos-able-xl.jpg
     title: Bedienung & Fahrbetrieb
   - content: >-
       ### Umwelt (4/5)
 
 
-      Konkrete Verbrauchsangaben zu den Aixam Pro e-Trucks gibt es nicht. Die Reichweite von 95 Kilometer bei einer Akku-Kapazität von 7,26 kWh spricht aber für einen Verbrauch von rund 8 kWh auf 100 Kilometer, also sehr niedrig. So kommt man mit 2,40 Euro Energiekosten rund 100 Kilometer weit bei einem Strompreis von 30 Cent pro kWh. Eine Solaranlage ist nicht verfügbar.
+      Den Energieverbrauch gibt Tropos mit 12,7 - 11,1 kWh (XT1) bzw. 13,4 - 11,9 kWh (XT2) auf 100 km an. Ein Verbrauch von 12 kWh pro 100 km würde bei Strompreisen von 30 Cent pro kWh zu Energiekosten von 3,60 Euro pro 100 km führen. Ein Solarmodul für mehr Reichweite ist nicht verfügbar.
     title: Umwelt
     image: ""
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie (2/5)
 
 
-      Die Preise für das Fahrzeug betragen in der Basisausstattung ab Werk 19.690 Euro für die Pritsche und 20.490 Euro als “Van”. Die Batterie ist mit im Preis enthalten und muss nicht extra gemietet werden. Aixam gibt eine Garantie von 2 Jahren auf das Fahrzeug, unabhängig vom Kilometerstand.
+      Genaue Preise gibt es für den Tropos Able XT derzeit nur auf Anfrage. Aber da das vorherige Modell XT mit 13 kWh-Lithium-Ionen-Akku bei 25.700 Euro und als 26 kWh-Variante bei 30.700 Euro startete, dürften die heutigen Preise noch höher liegen. Damit ist der Tropos definitiv kein Schnäppchen. Der Akku ist allerdings immer mit im Preis inbegriffen und kann nicht dazu gemietet werden. Die Garantie auf das Fahrzeug beträgt 2 Jahre, auf die Batterie gibt es 5 Jahre.
     title: Preise & Garantie
     image: ""
   - content: >-
       ### Fazit
 
 
-      Der Aixam Pro e-Truck ist ein sehr kleiner und dafür recht geräumiger Elektrotransporter, der als Koffer-Variante für Lieferdienste, Handwerksbetriebe und den Warentransport im Einzelhandel interessant sein könnte. Die Pritsche dürfte speziell für Landschaftsbaubetriebe und kleinere Baustellen geeignet sein. Die recht geringe Reichweite könnte allerdings für so manche Einschränkung sorgen und die minimale Ausstattung lässt leider so manchen Wunsch offen.
+      Der Tropos Able ist ein leichter Elektrotransporter, der speziell für Kommunen sowie Industrie und Handwerk geeignet ist. Durch sein hohes Gewicht scheint er für den Landschaftsbau allerdings weniger geeignet. Trotz seiner geringen Außenmaße ergeben sich je nach Aufbau praktische Transportlösungen mit einer guten Raumausnutzung. Durch die drei angebotenen Batterie-Varianten kann der Kunde außerdem zwischen einem niedrigerem Preis und einer höheren Reichweite abwägen.
 
 
       ## Gesamtpunktzahl:
 
 
-      3 Sterne
+      3,4 Sterne
     title: Fazit
 ---
