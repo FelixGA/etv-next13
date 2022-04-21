@@ -8,19 +8,19 @@ description: Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e
   mit einer Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in
   zwei Akku-Varianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
 src: /images/tropos-able-bunt.jpg
-category: Pritsche
+category: Koffer
 typeClass: N1
 loadingWeight:
   key: Nutzlast
-  value: 886
+  value: 580
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 910
-  baseUnit: kg
+  value: 0
+  baseUnit: "-"
 maxSpeed:
   key: km/h
-  value: 70
+  value: 65
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
@@ -29,9 +29,9 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 80
+  value: 106
   baseUnit: km
-  maxValue: 132
+  maxValue: 121
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
@@ -50,8 +50,8 @@ batteryCapacityBlei:
   baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: 12/14,4
-  baseUnit: "-"
+  value: 13
+  baseUnit: kWh
 batteryIncluded:
   value: keine Angabe
   key: Batterie inklusive
@@ -61,14 +61,14 @@ consumption:
   baseUnit: kWh
 power:
   key: Leistung
-  value: min-12/max-12
+  value: "10"
   baseUnit: kw
 seats:
   key: Sitzplätze
   value: 2
 rating:
   key: Gut
-  value: 2.6
+  value: 3.4
 guarantee:
   key: Garantie Fahrzeug
   value: 2
