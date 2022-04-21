@@ -241,38 +241,6 @@ collections:
           required: true,
         }
 
-      - label: "content Heading(Konzept & Fahrzeugvarianten)"
-        name: "contentHeading"
-        required: false
-        widget: "object"
-        summary: " {{fields.title}} "
-        i18n: true
-
-        fields:
-          - {
-              label: "Title",
-              name: "title",
-              widget: "string",
-              i18n: true,
-              required: false,
-            }
-
-          - {
-              label: "Content",
-              name: "content",
-              widget: "markdown",
-              default: "hier steht dn text",
-              i18n: duplicate,
-              required: false,
-            }
-          - {
-              label: "Image",
-              name: "image",
-              widget: "image",
-              i18n: duplicate,
-              choose_url: false,
-              required: false,
-            }
   - label: "Vehicles"
     name: "vehicles"
     folder: "content/vehicles"
