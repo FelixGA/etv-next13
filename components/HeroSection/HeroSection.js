@@ -96,22 +96,22 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
 
   return (
     <div className="relative">
-      <div className="hidden lg:flex w-full h-96 absolute justify-end forz border-black-darkest">
-        <div className="w-[520px] relative bottom-0 opacity-30 	">
+      <div className="absolute justify-end hidden w-full lg:flex h-[400px] forz border-black-darkest">
+        <div className="relative w-1/2 2xl:bottom-8 2xl:right-0 xl:top-24 2xl:top-2 xl:left-8 lg:scale-150 lg:top-36 opacity-30 2xl:scale-100">
           <Image
-            src="/images/kleintransporter-hintergrund.png"
-            width={400}
-            height={320}
+            src="/images/main.jpeg"
+            width={1200}
+            height={490}
             alt="Kleintransporter"
             objectFit="cover"
             layout="responsive"
           />
         </div>
       </div>
-      <div className="hero-section-container m-4 mt-0 lg:w-3/4 lg:m-auto">
-        <div className="main-heading-container flex justify-center lg:text-xl flex-1 relative">
+      <div className="m-4 mt-0 hero-section-container lg:w-3/4 lg:m-auto">
+        <div className="relative flex justify-center flex-1 main-heading-container lg:text-xl">
           {/* IMAGE */}
-          <div className="hidden sm:block sm:p-8 w-3/5 sm:w-80 m-auto xs:m-0 ">
+          <div className="hidden w-3/5 m-auto sm:block sm:p-8 sm:w-80 xs:m-0 ">
             <Image
               className="scale-75 sm:scale-90"
               src="/images/siegel2.png"
@@ -122,34 +122,33 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
             />
           </div>
           {/* TITLE AND DESC */}
-          <div className="main-heading-text lg:flex lg:flex-col lg:justify-evenly  py-2 sm:py-10 pb-2 ">
-            <h1 className="text-3xl xl:text-4xl pt-4 text-center pb-4">
+          <div className="py-2 pb-2 main-heading-text lg:flex lg:flex-col lg:justify-evenly sm:py-10 ">
+            <h1 className="pt-4 pb-4 text-3xl text-center xl:text-4xl">
               {getContent.title}
             </h1>
-            <div className="text-grey-darker text-xl sm:text-2xl lg:text-3xl text-center pb-4">
+            <div className="pb-4 text-xl text-center text-grey-darker sm:text-2xl lg:text-3xl">
               <MDXRemote {...getMarkdownContext.header} />
             </div>
 
-            <p className="text-blue-extra font-bold px-3 text-sm xl:text-2xl text-center">
+            <p className="px-3 text-sm font-bold text-center text-blue-extra xl:text-2xl">
               {getContent.content[0].details}
             </p>
           </div>
         </div>
         {/* COMPARE TOOL */}
-        <div className="lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border border-blue-dark relative top-2 md:top-10 lg:top-6 bottom-0 xl:bottom-6 pt-5 pb-4 rounded-md">
+        <div className="relative bottom-0 pt-5 pb-4 border rounded-md lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border-blue-dark top-2 md:top-10 lg:top-6 xl:bottom-6">
           {/* comaprison-input-container */}
-          <div className="comaprison-input-container mx-2 lg:items-center lg:flex lg:flex-row lg:justify-evenly lg:flex-1 ">
+          <div className="mx-2 comaprison-input-container lg:items-center lg:flex lg:flex-row lg:justify-evenly lg:flex-1 ">
             {/* PRICE AND RANGE */}
 
             <div className="h-14 lg:w-68  w-full pt-2 shadow-angelos1 text-base rounded-sm bg-white lg:w-[14vw]">
-              <label className=" flex flex-row justify-between px-2 text-left">
+              <label className="flex flex-row justify-between px-2 text-left ">
                 {getContent.content[1].markdown.split(", ")[0]}
-                <div className=" relative top-6">▼</div>
+                <div className="relative top-6">▼</div>
               </label>
-              <div className=" m-1">
+              <div className="m-1 ">
                 <select
-                  className="tracking-wider p-4 relative bottom-6 w-full
-               text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
+                  className="relative w-full p-4 pl-1 m-0 text-base font-bold tracking-wider bg-transparent border-none appearance-none bottom-6 text-blue-dark "
                   id="rangeLithium"
                   onChange={(e) => {
                     setChooseRange(e.target.value);
@@ -160,13 +159,13 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
               </div>
             </div>
             <div className="h-14 lg:w-68 w-full my-4 pt-2 shadow-angelos1 text-base rounded-sm bg-white lg:w-[14vw]	tracking-wide">
-              <label className="px-2 flex flex-row justify-between text-left">
+              <label className="flex flex-row justify-between px-2 text-left">
                 {getContent.content[1].markdown.split(", ")[1]}
-                <div className=" relative top-6">▼</div>
+                <div className="relative top-6">▼</div>
               </label>
-              <div className=" m-1">
+              <div className="m-1 ">
                 <select
-                  className="tracking-wider p-4 relative bottom-6 w-full text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0 "
+                  className="relative w-full p-4 pl-1 m-0 text-base font-bold tracking-wider bg-transparent border-none appearance-none bottom-6 text-blue-dark "
                   id="price"
                   onChange={(e) => {
                     setChoosePrice(e.target.value);
@@ -181,14 +180,14 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
 
             {/* weight */}
             <div className="h-14 lg:w-[14vw] w-full my-4 pt-2 shadow-angelos1 text-base rounded-sm bg-white ">
-              <label className="px-2 flex flex-row justify-between text-left">
+              <label className="flex flex-row justify-between px-2 text-left">
                 {getContent.content[1].markdown.split(", ")[2]}
-                <div className=" relative top-6">▼</div>
+                <div className="relative top-6">▼</div>
               </label>
 
-              <div className=" m-1">
+              <div className="m-1 ">
                 <select
-                  className="tracking-wider p-4 relative bottom-6 w-full text-base font-bold text-blue-dark appearance-none bg-transparent border-none pl-1 m-0"
+                  className="relative w-full p-4 pl-1 m-0 text-base font-bold tracking-wider bg-transparent border-none appearance-none bottom-6 text-blue-dark"
                   id="rangeLithium"
                   onChange={(e) => {
                     setChooseWeight(e.target.value);
@@ -201,7 +200,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
             {/* BUTTON */}
             <div className="flex lg:justify-around justify-between items-start lg:items-center flex-wrap w-full lg:w-[14vw]">
               <button
-                className="bg-blue-dark w-full hover:bg-blue-light text-white font-bold px-2 text-sm rounded-lg h-14 "
+                className="w-full px-2 text-sm font-bold text-white rounded-lg bg-blue-dark hover:bg-blue-light h-14 "
                 onClick={() => {
                   dispatch({
                     type: "price",
