@@ -1,33 +1,34 @@
 import { MDXRemote } from "next-mdx-remote";
-import Button from "../core/Button";
-
-//import { useForm } from "react-hook-form";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { useForm } from "react-hook-form";
 const NewsLetter = ({ getMarkdownContext }) => {
   const emailRegex = RegExp(
     /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
   );
 
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   watch,
-  //   setValue,
-  //   formState: { errors },
-  // } = useForm();
-  // const onSubmit = async (data, e) => {
-  //   e.preventDefault();
-  // "data", data;
-  // console.log(data);
+  const {
+    register,
+    handleSubmit,
+    watch,
+    setValue,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = async (data, e) => {
+    e.preventDefault();
+    "data", data;
+    console.log("mydata", data);
 
-  // try {
-  //   const result = await axios.post(`/api/handleForm`, data);
-  //   console.log(result);
-  // } catch (err) {
-  //   console.log("error", err.response.data.message);
-  // }
-  // };
+    try {
+      const result = await axios.post(`/api/handleNewsletter`, data);
+      console.log("result", result);
+    } catch (err) {
+      console.log("error", err.response.data.message);
+    }
+  };
+  const [send, setSend] = useState("");
 
-  // const onError = (errors, e) => console.log("errors", errors, e);
+  const onError = (errors, e) => console.log("errors", errors, e);
 
   return (
     <div className="newsletter-container flex flex-col justify-center flex-wrap items-center p-10 bg-grey-lightest">
@@ -40,24 +41,31 @@ const NewsLetter = ({ getMarkdownContext }) => {
         </p>
 
         <form
-          // method="POST"
-          // onSubmit={handleSubmit(onSubmit, onError)}
+          method="POST"
+          onSubmit={handleSubmit(onSubmit, onError)}
           className="flex flex-col xs:flex-row"
         >
           <input
             content-type="email"
-            // {...register("emailInput", {
-            //   required: true,
-            //   pattern: emailRegex,
-            // })}
+            placeholder="E-Mail"
+            id="emailInput"
+            type="email"
+            {...register("emailInput", {
+              required: true,
+              pattern: emailRegex,
+            })}
             className="h-14 text-lg rounded-sm w-48 sm:w-full placeholder:pl-2"
           />
-          {/* <div className="flex items-center bg-blue-dark mt-2 xs:mt-0 hover:bg-blue-light text-white font-bold px-6 text-md rounded-md sm:rounded-r-lg sm:rounded-none h-14">
-            anmelden
-            <Button disabled={true} />
-          </div> */}
+          <p className="text-red-500">
+            {errors.emailInput && "Email ist erforderlich"}
+          </p>
           <button
-            disabled={true}
+            onClick={() => {
+              !errors.emailInput && watch().emailInput.length > 0
+                ? setSend(true)
+                : setSend(false);
+            }}
+            type="submit"
             className="bg-blue-dark mt-2 xs:mt-0 hover:bg-blue-light text-white font-bold px-6 text-md rounded-md sm:rounded-r-lg sm:rounded-none h-14"
           >
             anmelden
