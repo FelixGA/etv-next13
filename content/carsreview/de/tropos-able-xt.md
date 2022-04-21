@@ -6,25 +6,27 @@ youtubeLink: https://www.youtube.com/watch?v=zY2hGyJ0yB0
 category: Koffer
 publishedAt: 03/17/2022
 description: >
-  Der Aixam Pro e-Truck ist ein leichter Elektrotransporter der Fahrzeugklasse
-  L6e, der eine maximale Höchstgeschwindigkeit von 45 km/h erreicht und in zwei
-  Aufbauvarianten erhältlich ist. Die Zuladung liegt bei 327
-  Kilogramm.                        
+  Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e mit einer
+  Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in zwei
+  Akkuvarianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
 src: /images/aixam-pro-pritsche.jpg
 content:
-  - content: Der Aixam Pro e-Truck ist ein leichter Elektrotransporter der
-      Fahrzeugklasse L6e, der eine maximale Höchstgeschwindigkeit von 45 km/h
-      erreicht und in zwei Aufbauvarianten erhältlich ist. Die Zuladung liegt
-      bei 327 Kilogramm.
+  - content: Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e mit
+      einer Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in
+      zwei Akkuvarianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben
+      werden.
     title: Einleitung
   - content: >-
       ### Konzept & Fahrzeugvarianten
 
 
-      Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen” mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein leichtes Nutzfahrzeug im Programm, welches mit Dieselmotoren (“D-Truck”) sowie Elektroantrieb (“e-Truck”) erhältlich ist. Die hier vorgestellte Elektro-Version gehört zur EG-Fahrzeugkategorie L6e, welche Leichtfahrzeuge bis zu einem Leergewicht von 425 Kilogramm (ohne Akkus) bezeichnet. 
+      Der Tropos Able ist ein Elektrotransporter der Klasse L7e mit verschiedenen Aufbauarten, welcher hierzulande gleich unter mehreren Namen bekannt ist. Neben der Marke Tropos vertreibt ihn auch die Firma “Zhidou Cars” unter der Bezeichnung „Cenntro Metro“. Außerdem gibt es ein baugleiches Modell noch unter dem Namen “E-Formica 500” sowie „Sevic e500V“ auf dem deutschen Markt angeboten.
 
 
-      Der Elektrotransporter  in zwei Aufbautypen verfügbar: als Pritsche sowie mit Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem Gelände konzipiert.
+      Hier werden wir uns allerdings auf den Tropos Able XT konzentrieren, welcher in zwei Akku-Varianten angeboten wird: als XT1 sowie XT 2. Die Bezeichnungen unterscheiden die Form der Batterie: so besitzt XT1 einen Lithium-Ionen-Akku mit 13 kWh, während der XT 2 bis zu  26 kWh die Energie speichern übernehmen.
+
+
+      Der Tropos Able zielt auf Kunden wie Städte und Kommunen sowie Handwerk und Industrie ab. So gibt es in mit in zwei Aufbauvarianten: der Koffer-Version mit einem Ladevolumen von rund 3.300 Liter sowie als Pritsche mit einer Ladefläche von knapp drei Quadratmetern. In beiden Fällen besitzt das Fahrzeug eine Breite von 1,40 Meter. Weitere Aufbauvarianten sind laut Tropos auch möglich.
     image: /images/axiam-pro-van-front.jpg
     title: Konzept & Fahrzeugvarianten
   - content: >-
