@@ -5,7 +5,7 @@ youtubeLink: ""
 category: neuigkeiten
 publishedAt: 04/03/2022
 src: /images/ampnet_photo_20220401_208813.jpg
-description: E-Works Mobility bietet mit seinem Modell "Heero" einen äußerst
+description: E-Works Mobility bietet mit seinem Modell "Heero" einen
   leistungsfähigen Elektrotransporter in der 3,5-Tonnen-Klasse mit 400 km
   Reichweite an.
 contentHeading:
