@@ -1,0 +1,3 @@
+---
+slug: aixam-pro-etruck
+---
