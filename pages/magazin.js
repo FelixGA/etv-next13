@@ -4,6 +4,7 @@ import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import Blog from "../components/Blog/Blog";
 import Link from "next/link";
+import BlogHeader from "../components/Blog/BlogHeader";
 
 export default function magazin(props) {
   const [getBlogs, SetGetBlogs] = useState(props.blogs);
@@ -15,6 +16,7 @@ export default function magazin(props) {
   return (
     <div>
       <Head page={props.page} />
+      <BlogHeader getBlogs={getBlogs} />
       <h1 className="px-4 pt-8 pb-2 text-blue-dark font-bold text-4xl text-center">
         Magazin
       </h1>

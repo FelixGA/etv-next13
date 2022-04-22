@@ -7,7 +7,7 @@ export default function Blog({ getBlogs }) {
   return (
     <>
       {/* <Head page={page} /> */}
-      {/* <BlogHeader getBlogs={getBlogs} /> */}
+
       <div className="grid w-full max-w-screen-xl mx-auto py-6 px-6 md:px-0">
         <div className="grid gap-4 justify-items-center grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] sm:grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))] ">
           {getBlogs
