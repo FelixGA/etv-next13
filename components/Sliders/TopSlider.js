@@ -23,12 +23,12 @@ const TopSlider = ({ getContent, getCars }) => {
         </div>
 
         <div className="print:hidden flex flex-col w-full xl:w-[1200px]">
-          <h2 className="no-select text-3xl font-black text-black-dark text-left mt-4 tracking-wide px-6 relative pb-4">
+          <h2 className="relative px-6 pb-4 mt-4 text-3xl font-black tracking-wide text-left no-select text-black-dark">
             Beste Testberichte
           </h2>
 
           <div
-            className="grid grid-flow-col gap-2 auto-cols-[minmax(285px,_1fr)] overflow-x-scroll scrollbar-hide p-2 snap-x "
+            className="grid grid-flow-col gap-2 auto-cols-[minmax(287px,_1fr)] overflow-x-scroll scrollbar-hide p-2 snap-x "
             ref={container}
           >
             <TopSliderCard
@@ -50,8 +50,8 @@ const TopSlider = ({ getContent, getCars }) => {
           <FaArrowCircleRight size={40} color="#243280" />
         </div>
       </div>
-      <div className="flex justify-center items-center">
-        <div className="relative w-18 top-0 block xl:hidden">
+      <div className="flex items-center justify-center">
+        <div className="relative top-0 block w-18 xl:hidden">
           <Image
             src="/images/swipe.gif"
             width={80}
