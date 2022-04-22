@@ -27,10 +27,10 @@ const Header = () => {
   const router = useRouter();
   return (
     <div className="relative print:hidden ">
-      <div className=" sticky top-0 z-30 bg-blue-darker flex flex-row justify-between items-center h-20 sm:h-24 w-full 2xl:px-40">
+      <div className="sticky top-0 z-30 flex flex-row items-center justify-between w-full h-20 bg-blue-darker sm:h-24 2xl:px-40">
         <Link href={`/`} passHref>
           <div
-            className="flex flex-row pl-2 sm:pl-4 cursor-pointer "
+            className="flex flex-row pl-2 cursor-pointer sm:pl-4 "
             onClick={() => {
               dispatch({
                 type: "mobileNavActive",
@@ -62,7 +62,7 @@ const Header = () => {
               });
             }}
           >
-            <div className="logo-container mt-2 w-16 xl:w-28 ">
+            <div className="w-16 mt-2 logo-container xl:w-28 ">
               <Image
                 src="/images/etv-logo-final-white.png"
                 width={80}
@@ -72,8 +72,8 @@ const Header = () => {
                 layout="responsive"
               />
             </div>
-            <div className=" items-center flex pl-2">
-              <p className="text-white text-xs md:text-sm pt-1">
+            <div className="flex items-center pl-2 ">
+              <p className="pt-1 text-xs text-white md:text-lg">
                 ELEKTROTRANSPORTER
                 <br />
                 VERGLEICH
@@ -87,7 +87,7 @@ const Header = () => {
         <AnimatePresence initial={false}>
           {state?.mobileNavActives && (
             <motion.div
-              className="lg:hidden w-full sm:w-96 absolute right-0 top-18 z-90 "
+              className="absolute right-0 w-full lg:hidden sm:w-96 top-18 z-90 "
               variants={variants}
               initial="enter"
               animate="center"
@@ -108,7 +108,7 @@ const Header = () => {
           <Link href="/caradvisor" passHref>
             <a>
               <div
-                className="bg-yellow-light hover:bg-orange-lighter text-grey-darker font-bold hidden md:flex justify-evenly items-center h-9 w-28 xs:w-36 text-sm rounded cursor-pointer "
+                className="items-center hidden text-sm font-bold rounded cursor-pointer bg-yellow-light hover:bg-orange-lighter text-grey-darker md:flex justify-evenly h-9 w-28 xs:w-36 "
                 onClick={() => {
                   dispatch({
                     type: "rangeLithium",
@@ -136,7 +136,7 @@ const Header = () => {
                   });
                 }}
               >
-                <div className="w-6 xs:w-8 pl-2 ">
+                <div className="w-6 pl-2 xs:w-8 ">
                   <Image
                     src="/images/iconStyle2x.png"
                     width={18}

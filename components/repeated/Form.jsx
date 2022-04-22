@@ -52,39 +52,24 @@ export default function Form(props) {
             : "hidden"
         }
       >
-        {router.pathname == "/kontakt" ? (
-          <div className="flex flex-col items-end w-1/2 lg:mb-36 sm:pt-8">
-            <div className="hidden w-2/3 mb-12 lg:block">
-              <Image
-                src="/images/frage.jpeg"
-                width={400}
-                height={300}
-                layout="responsive"
-                objectFit="contain"
-              />
-            </div>
-            <p
-              className={
-                router.pathname !== "/kontakt"
-                  ? "text-md sm:text-xl md:text-2xl lg:text-3xl font-bold w-full text-center pt-8 pl-4 pr-4 pb-4 lg:w-1/2"
-                  : "text-md font-bold w-full text-left pt-4 pl-4 pr-4 lg:w-2/3"
-              }
-            >
-              Haben Sie Fragen oder Anregungen zu unserer Webseite oder möchten
-              uns etwas mitteilen? Dann nutzen Sie unser Kontaktformular für Ihr
-              Anliegen!
-            </p>
-          </div>
-        ) : (
-          <div className="hidden"></div>
-        )}
-        <div className="py-4 lg:w-1/2">
+        <p
+          className={
+            router.pathname !== "/kontakt"
+              ? "hidden"
+              : "text-md font-bold w-[80%] text-left lg:hidden p-4"
+          }
+        >
+          Haben Sie Fragen oder Anregungen zu unserer Webseite oder möchten uns
+          etwas mitteilen? Dann nutzen Sie unser Kontaktformular für Ihr
+          Anliegen!
+        </p>
+        <div className="flex items-center justify-center">
           <form
             /* action="/action_page.php" */
             // action="https://api.vercel.com/v6/deployments"
             method="POST"
             onSubmit={handleSubmit(onSubmit, onError)}
-            className="flex flex-col pt-0 pb-4 pl-4 pr-4 bg-white rounded-md shadow-lg w-fit sm:p-8"
+            className="flex flex-col pt-0 pb-4 pl-4 pr-4 bg-white rounded-md shadow-lg sm:p-8"
           >
             <TextInput
               placeholder={"z.B. Max Muster"}
@@ -154,7 +139,7 @@ export default function Form(props) {
               required={true}
             />
 
-            <div className="text-black">
+            <div className="w-64 text-black lg:w-full">
               <p className="text-red-500">
                 {errors.firstName && "Name ist erforderlich"}
               </p>

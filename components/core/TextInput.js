@@ -14,7 +14,7 @@ export default function TextInput({
 
   return (
     <div className="mb-4 ">
-      <label htmlFor={id} className="text-blue-lighter font-bold py-2">
+      <label htmlFor={id} className="py-2 font-bold text-blue-lighter">
         {label}
       </label>
       <input
