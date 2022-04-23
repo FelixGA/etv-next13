@@ -2,6 +2,8 @@
 title: Garia Utility Urban SC Koffer
 name: garia-utility-urban-sc-koffer
 price: 29300
+relatedBlogs: beispiel
+relatedReviews: garia-utility-testbericht-von-elektrotransporter-vergleich
 description: Der Garia Utility Urban SC ist Elektro-Kleintransporter der
   Fahrzeugklasse N1 mit einer Nutzlast von von knapp 570 Kilogramm.
 src: /images/garia-utility-city-sc-header.jpeg
