@@ -1,6 +1,7 @@
 ---
 title: Garia Utility Testbericht von Elektrotransporter-Vergleich
 slug: garia-utility-testbericht-von-elektrotransporter-vergleich
+relatedCars: evum-a-car-testbericht-von-elektrotransporter-vergleich
 youtubeLink: https://www.youtube.com/watch?v=VkRooJ9ZhhY
 category: Kipper
 publishedAt: 04/22/2022
