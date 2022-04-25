@@ -9,7 +9,7 @@ description: Der ARI 901 Kipper ist ein leistungsstarker Elektrotransporter der
   Kommunen sowie Landschaftsbaubetrieben. Der ARI 901 Kipper ist in drei Größen
   mit bis zu 5 m² Ladevolumen erhältlich. Die drei wählbaren Kipper-Größen
   ermöglichen eine perfekte Anpassung an die Anforderung Ihres Unternehmens.
-src: /images/ari_901_kipper_titelbilder.png
+src: /images/901-kipper.png
 category: Kipper
 typeClass: N1
 loadingWeight:
@@ -70,7 +70,7 @@ seats:
   value: 2
 rating:
   key: Gut
-  value: 2.0
+  value: 2
 guarantee:
   key: Garantie Fahrzeug
   value: 6
