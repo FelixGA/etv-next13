@@ -1,6 +1,6 @@
 ---
 title: ARI-458-Koffer
-slug: ari-458-koffer
+slug: ari-458-koffer-testbericht-von-elektrotransporter-vergleich
 relatedCars: ari-458-koffer-elektrischer-kleintransporter
 youtubeLink: bitte auffuelen
 category: Koffer
