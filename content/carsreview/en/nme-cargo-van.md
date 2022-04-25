@@ -1,6 +1,6 @@
 ---
 title: NME Cargo Van
-slug: nme-cargo-van
+slug: nme-cargo-van-testbericht-von-elektrotransporter-vergleich
 relatedCars: nme-cargo-van
 youtubeLink: https://www.youtube.com/watch?v=Ajpy5tYi7xA
 publishedAt: 04/01/2022
