@@ -18,7 +18,7 @@ description: Der ARI 345 Pritsche ist ein dreirädriges Lastenmoped mit offener
   Größen mit bis zu 1,55 Meter Ladelänge und rund 1,8 m² Ladefläche erhältlich.
   Das Lastenmoped kann bereits von Jugendlichen mit dem Mopedführerschein der
   Klasse AM gefahren werden.
-src: /images/345-front-1-.jpg
+src: /images/ari-345-lastentrike-pritsche-mit-europalette.jpg
 typeClass: L2E
 loadingWeight:
   key: Nutzlast
