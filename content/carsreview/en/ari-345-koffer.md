@@ -2,7 +2,7 @@
 title: ARI-345
 slug: ari-345-testbericht-von-elektrotransporter-vergleich
 relatedCars: ari-345-koffer
-youtubeLink: https://www.youtube.com/watch?v=OJ4xza2e1P0
+youtubeLink: https://www.youtube.com/watch?v=OJ4xza2e1P0&list=PLmjRcMALs3P_flqX9VLxK3FNra6vv4OzC
 category: Koffer
 publishedAt: 03/17/2022
 description: bitte fuer SEO auffuelen bitte fuer SEO auffuelen bitte fuer SEO
