@@ -1,7 +1,7 @@
 ---
 title: ARI 458 food truck
 slug: ari-458-food-truck-elektrisches-gastro-mobil
-relatedCars: ari-458-food-truck-elektrisches-gastro-mobil
+relatedCars: ari-458-koffer-elektrischer-kleintransporter
 youtubeLink: bitte auffuelen
 category: Kasten
 publishedAt: 03/03/2022
