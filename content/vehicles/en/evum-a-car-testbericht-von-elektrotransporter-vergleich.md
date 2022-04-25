@@ -1,6 +1,6 @@
 ---
 title: Evum A-Car
-name: evum-a-car-testbericht-von-elektrotransporter-vergleich
+name: evum-a-car-pritsche
 price: 33080
 relatedBlogs:
   title: " Konzept & Fahrzeugvarianten"
@@ -16,7 +16,7 @@ relatedReviews: evum-a-car-testbericht-von-elektrotransporter-vergleich
 description: Nach vielen Jahren der Entwicklung und einer mehrmonatigen
   Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A-Car
   nun seit Juni 2020 auf dem Markt.
-src: /images/Evum-Acar-Front-1024x683.jpg
+src: /images/evum-intralogistik-03.jpg
 loadingWeight:
   key: Nutzlast
   value: 1014
