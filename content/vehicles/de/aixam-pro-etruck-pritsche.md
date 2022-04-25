@@ -7,7 +7,7 @@ description: Der Aixam Pro e-Truck ist ein leichter Elektrotransporter der
   Fahrzeugklasse L6e, der eine maximale Höchstgeschwindigkeit von 45 km/h
   erreicht und in zwei Aufbauvarianten erhältlich ist. Die Zuladung liegt bei
   327 Kilogramm.
-src: /images/aixam-pro-pritsche.jpg
+src: /images/aixam-pro-etruck-pritsche.jpeg
 category: Pritsche
 typeClass: L6E
 loadingWeight:
