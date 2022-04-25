@@ -11,58 +11,36 @@ export default function caradvisor(props) {
     SetTestReviews(props.carsreviews);
   }, [props]);
   return (
-    <div className="bg-blue-extralight">
+    <div className=" bg-blue-extralight">
       <Head page={props.page} />
 
-      <div className="bg-green-lighter hidden xl:flex justify-around h-12 items-center">
-        <div className="">
-          <p className="text-white text-lg 2xl:text-xl w-full">
-            ✔️ über 10 Jahre Erfahrung mit KFZ
-          </p>
-        </div>
-        <div className="">
-          <p className="text-white text-lg 2xl:text-xl w-full">
-            ✔️ 500+ verkaufte Transporter seit 2019
-          </p>
-        </div>
-        <div className=" ">
-          <p className="text-white text-lg 2xl:text-xl w-full">
-            ✔️ unverbindliches Angebot in 24 Stunden
-          </p>
-        </div>
-      </div>
       <Funnel getCars={getCars} />
-      <div className="flex justify-between relative ">
-        {/* medal gold image */}
-        <div className="flex relative left-[30%] sm:left-[36vw] lg:left-[38vw] xl:left-[41vw] 2xl:left-[43vw]">
-          <div className="w-16 sm:w-28 pt-8 sm:pt-12">
-            <Image
-              src="/images/siegel2.png"
-              width={166}
-              height={166}
-              layout="responsive"
-              objectFit="contain"
-            />
-          </div>
-          {/* medal dsvgo image */}
-          <div className="w-32 sm:w-52">
-            <Image
-              src="/images/siegel.png"
-              width={166}
-              height={166}
-              layout="responsive"
-              objectFit="contain"
-            />
-          </div>
-        </div>
+      <div className="relative flex justify-between 2xl:h-64">
         {/* human image */}
-        <div className="w-44 xl:w-64 2xl:w-96 absolute bottom-0 right-0 2xl:right-6 hidden lg:block">
+        <div className="absolute bottom-0 right-0 hidden w-44 xl:w-64 2xl:w-96 2xl:right-6 2xl:block">
           <Image
             src="/images/beraterNew.png"
             width={500}
             height={700}
             layout="responsive"
           />
+        </div>
+      </div>
+      <div className="items-center justify-around hidden h-12 bg-green-lighter lg:flex">
+        <div className="">
+          <p className="w-full text-base text-white lg:text-base 2xl:text-xl">
+            ✔️ über 10 Jahre Erfahrung mit KFZ
+          </p>
+        </div>
+        <div className="">
+          <p className="w-full text-lg text-white 2xl:text-xl">
+            ✔️ 500+ verkaufte Transporter seit 2019
+          </p>
+        </div>
+        <div className="">
+          <p className="w-full text-lg text-white 2xl:text-xl">
+            ✔️ unverbindliches Angebot in 24 Stunden
+          </p>
         </div>
       </div>
     </div>

@@ -186,14 +186,14 @@ export default function Funnel({ getContent }) {
 
   return (
     <div className="flex flex-col flex-1 ">
-      <div className="flex flex-1 flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center flex-1">
         {!redirecter ? (
-          <h2 className="text-xl sm:text-3xl text-black-dark font-bold text-center h-28 flex items-center mx-12 sm:mx-4 mb-4 mt-4 xs:mt-0">
+          <h2 className="flex items-center pt-4 mx-12 text-xl font-bold text-center sm:text-3xl text-black-dark h-28 sm:mx-4 xs:mt-0">
             {currentFilter.title}
           </h2>
         ) : (
-          <div className="pt-8 px-4">
-            <h3 className="text-center text-xl sm:text-3xl ">
+          <div className="px-4 pt-8">
+            <h3 className="text-xl text-center sm:text-3xl ">
               Wir suchen das passende Fahrzeug für Sie.
             </h3>
             <div className="w-[90%] lg:w-full lg:scale-125 m-auto ">

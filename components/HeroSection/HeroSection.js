@@ -105,6 +105,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
             alt="Kleintransporter"
             objectFit="cover"
             layout="responsive"
+            className=""
           />
         </div>
       </div>

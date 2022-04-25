@@ -180,7 +180,7 @@ export default function Form(props) {
                   />
                 )}
               />{" "}
-              <label for="confirm" className="text-sm">
+              <label htmlFor="confirm" className="text-sm">
                 Ja, ich stimme der{" "}
                 <span className="font-bold text-blue-dark">
                   <Link href={"/impressum"}>
@@ -252,12 +252,14 @@ export default function Form(props) {
         }
       >
         <p className="w-full px-8 mt-4 sm:p-8 sm:w-2/3 sm:text-lg">
-          Vielen Dank für Ihre Fahrzeug-Konfiguration! Wir senden Ihnen jetzt
-          eine E-Mail. Bitte prüfen Sie Ihren Posteingang! <br />{" "}
-          <p className="pt-4 pb-4">
-            Fragen zu Ihrem Fahrzeug-Angebot könne Sie uns jederzeit kostenlos
-            anrufen: 0341 978 56 933
-          </p>
+          Vielen Dank für Ihre Nachricht. Wir melden uns umgehend bei Ihnen.{" "}
+          <br />
+          Hier können Sie gleich alle
+          <Link href={"/comparePage"}>
+            <a className="pt-4 pb-4 text-blue-500">
+              Elektrotransporter sofort vergleichen.
+            </a>
+          </Link>
         </p>
       </div>
     </>

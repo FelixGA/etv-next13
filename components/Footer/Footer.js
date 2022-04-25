@@ -82,10 +82,9 @@ const Footer = ({ blogs, reviews }) => {
               </p>
             </div>
           </div>
-          <div className="flex ">
-            <p className="px-4 text-[#b1a7a7] pt-2 sm:pt-4 text-center sm:text-left w-60 xs:w-72 sm:w-80 text-sm">
-              Hier könnte noch etwas stehen, was Leute davon überzeugt, dass Ihr
-              richtig gut seid!
+          <div className="flex w-96">
+            <p className="px-4 text-[#b1a7a7] pt-4 text-center sm:text-left w-full text-sm lg:text-lg">
+              ✔ unabhängig ✔ schnell ✔ immer aktuell
             </p>
           </div>
           <div className="flex justify-between w-24 pt-6 pb-8 sm:pl-4">
