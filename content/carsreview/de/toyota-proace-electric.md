@@ -1,6 +1,6 @@
 ---
 title: Toyota Proace Electric
-slug: toyota-proace-electric
+slug: toyota-proace-electric-testbericht-von-elektrotransporter-vergleich
 relatedCars: toyota-proace-electric
 youtubeLink: https://www.youtube.com/watch?v=8w6CNitJ0BM
 category: Kasten
