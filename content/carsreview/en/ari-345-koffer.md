@@ -1,6 +1,6 @@
 ---
 title: ARI-345
-slug: ari-345
+slug: ari-345-testbericht-von-elektrotransporter-vergleich
 relatedCars: ari-345-koffer
 category: Koffer
 publishedAt: 03/17/2022
