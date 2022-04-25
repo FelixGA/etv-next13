@@ -1,6 +1,6 @@
 ---
 title: Renault Master E-Tech
-slug: renault-master-e-tech
+slug: renault-master-e-tech-testbericht-von-elektrotransporter-vergleich
 relatedCars: renault-master-e-tech
 youtubeLink: https://www.youtube.com/watch?v=FBT0-FfNmRA
 publishedAt: 04/01/2022
