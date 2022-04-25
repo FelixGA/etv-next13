@@ -1,6 +1,6 @@
 ---
 title: Maxus eDeliver 3
-slug: maxus-edeliver-3
+slug: maxus-edeliver-3-testbericht-von-elektrotransporter-vergleich
 relatedCars: maxus-edeliver-3
 youtubeLink: bitte auffuelen
 category: Kasten
