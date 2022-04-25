@@ -32,9 +32,10 @@ const TopSlider = ({ getContent, getCars }) => {
             ref={container}
           >
             <TopSliderCard
-              displayedCars={getCars?.sort(
+              displayedCars={getCars}
+              /*  displayedCars={getCars?.sort(
                 (a, b) => a.rating.value - b.rating.value
-              )}
+              )} */
             />
           </div>
         </div>
