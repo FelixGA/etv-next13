@@ -1,6 +1,6 @@
 ---
 title: ARI 458 food truck
-slug: ari-458-food-truck-elektrisches-gastro-mobil
+slug: ari-458-food-truck--testbericht-von-elektrotransporter-vergleich
 relatedCars: ari-458-koffer-elektrischer-kleintransporter
 youtubeLink: bitte auffuelen
 category: Kasten
