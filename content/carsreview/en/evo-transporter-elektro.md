@@ -1,6 +1,6 @@
 ---
 title: EVO Transporter Elektro
-slug: evo-transporter-elektro
+slug: evo-transporter-elektro-testbericht-von-elektrotransporter-vergleich
 relatedCars: evo-elektro-pritsche
 youtubeLink: bitte auffuelen
 category: Pritsche
