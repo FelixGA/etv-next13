@@ -10,7 +10,7 @@ description: >
   L6e, der eine maximale Höchstgeschwindigkeit von 45 km/h erreicht und in zwei
   Aufbauvarianten erhältlich ist. Die Zuladung liegt bei 327
   Kilogramm.                        
-src: /images/aixam-pro-pritsche.jpg
+src: /images/aixam-pro-etruck-pritsche.jpeg
 content:
   - content: Der Aixam Pro e-Truck ist ein leichter Elektrotransporter der
       Fahrzeugklasse L6e, der eine maximale Höchstgeschwindigkeit von 45 km/h
@@ -25,7 +25,7 @@ content:
 
 
       Der Elektrotransporter  in zwei Aufbautypen verfügbar: als Pritsche sowie mit Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem Gelände konzipiert.
-    image: /images/axiam-pro-van-front.jpg
+    image: /images/aixam-pro-etruck-koffer.jpeg
     title: Konzept & Fahrzeugvarianten
   - content: >-
       ### Laderaum & Flexibilität (3/5)
@@ -74,7 +74,7 @@ content:
 
       Die Preise für das Fahrzeug betragen in der Basisausstattung ab Werk 19.690 Euro für die Pritsche und 20.490 Euro als “Van”. Die Batterie ist mit im Preis enthalten und muss nicht extra gemietet werden. Aixam gibt eine Garantie von 2 Jahren auf das Fahrzeug, unabhängig vom Kilometerstand.
     title: Preise & Garantie
-    image: ""
+    image: /images/aixam-pro-etruck-boutique.jpg
   - content: >-
       ### Fazit
 
