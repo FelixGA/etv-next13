@@ -58,7 +58,7 @@ content:
 
 
       Optional kann das Lastenmoped auch mit einem Rammschutz, einem drei- oder vierteiligen Laubgitter oder einem Leiterträger ausgerüstet werden. Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist erhältlich.
-    image: /images/ari-345.png
+    image: /images/ari-345-tacho-anzeige.jpg
     title: Komfort & Ausstattung (4/5)
   - content: >-
       ### Bedienung & Fahrbetrieb
