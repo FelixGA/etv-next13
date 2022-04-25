@@ -1,6 +1,6 @@
 ---
 title: VW ABT e-Transporter 6.1
-slug: vw-abt-e-transporter
+slug: vw-abt-e-transporter-testbericht-von-elektrotransporter-vergleich
 relatedCars: vw-abt-e-transporter
 youtubeLink: https://www.youtube.com/watch?v=KkfjEanHyOM
 category: Kasten
