@@ -1,6 +1,6 @@
 ---
 title: Aixam Pro e-Truck
-slug: aixam-pro-etruck
+slug: aixam-pro-etruck-testbericht-von-elektrotransporter-vergleich
 relatedCars: aixam-pro-etruck-pritsche
 youtubeLink: https://www.youtube.com/watch?v=Fw_1SbR63SU
 category: Koffer
