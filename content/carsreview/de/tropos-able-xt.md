@@ -1,6 +1,6 @@
 ---
 title: Tropos Able XT
-slug: tropos-able-xt
+slug: tropos-able-xt-testbericht-von-elektrotransporter-vergleich
 relatedCars: tropos-able-xt1
 youtubeLink: https://www.youtube.com/watch?v=zY2hGyJ0yB0
 category: Koffer
