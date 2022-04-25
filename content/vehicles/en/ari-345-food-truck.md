@@ -20,7 +20,7 @@ description: Der ARI 345 Food Truck hat alles am Start, was Gastronomen und
   auf drei Rädern ist individuell gestaltbar und kann an verschiedenste
   Gastrokonzepte angepasst werden. Möglich sind zum Beispiel der Einbau eines
   Kaffeetanks, eines Hot-Dog-Moduls oder einer Grillstation.
-src: /images/ari_345_food_truck_l_.png
+src: /images/ari-345-food-truck-heckansicht.jpg
 category: Koffer
 typeClass: L2E
 loadingWeight:
