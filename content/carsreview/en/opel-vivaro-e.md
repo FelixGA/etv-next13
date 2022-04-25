@@ -1,6 +1,6 @@
 ---
 title: Opel Vivaro-E Cargo
-slug: opel-vivaro-e
+slug: opel-vivaro-e-testbericht-von-elektrotransporter-vergleich
 relatedCars: opel-vivaro-e
 youtubeLink: https://www.youtube.com/watch?v=8w6CNitJ0BM
 publishedAt: 04/01/2022
