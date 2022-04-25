@@ -24,7 +24,7 @@ const TopSliderCard = (props) => {
           </Link>
           <Link href={`/transporter/${caritem.name}`}>
             <a>
-              <h3 className="text-center text-xl font-black text-black-dark mt-8 mb-4	tracking-wide line-clamp-1">
+              <h3 className="mt-8 mb-4 text-xl font-black tracking-wide text-center text-black-dark line-clamp-1">
                 {caritem.name}
               </h3>
             </a>
@@ -35,11 +35,11 @@ const TopSliderCard = (props) => {
             </p>
           </div>
 
-          <div className="flex w-48 h-12 border border-blue-lighter m-auto mt-8">
-            <div className="text-xs w-16 h-full bg-orange-dark text-white flex items-center justify-center">
+          <div className="flex w-48 h-12 m-auto mt-8 border border-blue-lighter">
+            <div className="flex items-center justify-center w-16 h-full text-xs text-white bg-orange-dark">
               <span className="font-bold"> TEST</span>
             </div>
-            <div className=" flex flex-col justify-center w-full">
+            <div className="flex flex-col justify-center w-full ">
               <div className="pt-10 ">
                 <span className="text-xxs tracking-widest pl-2.5">
                   ERGEBNIS
@@ -47,22 +47,22 @@ const TopSliderCard = (props) => {
               </div>
               <div className="flex flex-row pb-8">
                 <div className="pb-2">
-                  <span className="relative bottom-1 text-sm font-black pl-3 tracking-widest ">
-                    {caritem.rating.value}
+                  <span className="relative pl-3 text-sm font-black tracking-widest bottom-1 ">
+                    {/* {caritem.rating.value} */} 5
                   </span>
                 </div>
                 <div className="">
                   <span className="relative bottom-1 pl-2.5 font-black text-sm ">
-                    {caritem.rating.key}
+                    {/*  {caritem.rating.key} */} gut
                   </span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="w-full text-center mt-8 flex  justify-center items-center ">
+          <div className="flex items-center justify-center w-full mt-8 text-center ">
             <Link href={`/transporter/${caritem.name}`}>
-              <a className="text-xs text-center visited:text-blue-darker text-blue-darker pr-4">
+              <a className="pr-4 text-xs text-center visited:text-blue-darker text-blue-darker">
                 Mehr erfahren
               </a>
             </Link>

@@ -73,7 +73,7 @@ const Header = () => {
               />
             </div>
             <div className="flex items-center pl-2 ">
-              <p className="pt-1 text-xs text-white md:text-lg">
+              <p className="pt-1 text-xs text-white md:text-sm xl:text-lg">
                 ELEKTROTRANSPORTER
                 <br />
                 VERGLEICH
