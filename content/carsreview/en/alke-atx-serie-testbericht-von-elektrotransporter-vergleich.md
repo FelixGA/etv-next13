@@ -1,6 +1,7 @@
 ---
 title: Alke ATX Serie Testbericht von Elektrotransporter-Vergleich
 slug: alke-atx-serie-testbericht-von-elektrotransporter-vergleich
+relatedCars: alke-atx-340-e-pritsche
 youtubeLink: https://www.youtube.com/watch?v=mGemJsjE4nI
 publishedAt: 03/15/2022
 description: >

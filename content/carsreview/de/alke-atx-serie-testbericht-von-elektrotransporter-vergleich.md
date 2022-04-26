@@ -1,7 +1,7 @@
 ---
 title: Alke ATX Serie Testbericht von Elektrotransporter-Vergleich
 slug: alke-atx-serie-testbericht-von-elektrotransporter-vergleich
-relatedCars: aixam-pro-etruck-pritsche
+relatedCars: alke-atx-340-e-pritsche
 youtubeLink: https://www.youtube.com/watch?v=mGemJsjE4nI
 category: Koffer
 publishedAt: 03/15/2022
@@ -78,7 +78,7 @@ content:
       ### Preise & Garantie (3/5)
 
 
-      Da die ATX-Serie für Industrie und gewerbliche Kunden konzipiert ist und die Anzahl an Aufbauarten sehr hoch ist, gibt es keine offiziellen Preislisten für das Fahrzeug. Hier müssen sich Kunden mit ihren konkreten Vorstellungen an die Vertriebspartner wenden.  Diese erstellen dann ein Angebot, dessen Preis von der Aufbauart, den Ausstattungsdetails und der Stückzahl abhängig ist. Man sollte aber davon ausgehen, dass unter 25.000 Euro wohl kein Fahrzeug zu bekommen ist.
+      Da die ATX-Serie für Industrie und gewerbliche Kunden konzipiert ist und die Anzahl an Aufbauarten sehr hoch ist, gibt es keine offiziellen Preislisten für das Fahrzeug. Hier müssen sich Kunden mit ihren konkreten Vorstellungen an die Vertriebspartner wenden.  Diese erstellen dann ein Angebot, dessen Preis von der Aufbauart, den Ausstattungsdetails und der Stückzahl abhängig ist. Der Netto-Listenpreis beträgt für den ATX 310 E beispielsweise  23.500€. Der Startpreis für den ATX 340 E liegt bei 27.000 €.
     title: Preise & Garantie
     image: /images/elektro-gelaendewagen-atx330e.jpeg
   - content: >-
