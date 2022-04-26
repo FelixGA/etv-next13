@@ -3,6 +3,7 @@ title: Mercedes-Benz eSprinter
 slug: mercedes-benz-esprinter-testbericht-von-elektrotransporter-vergleich
 relatedCars: mercedes-benz-esprinter
 youtubeLink: https://www.youtube.com/watch?v=e8lqtbPLuEA
+category: Kasten
 publishedAt: 04/01/2022
 description: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
   Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und rund

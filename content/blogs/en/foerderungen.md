@@ -9,7 +9,7 @@ contentHeading:
   title: ""
   content: ""
   image: ""
-slug: foerderungen-skta
+slug: foerderungen-skta5555
 contentText2:
   content: ""
   title: ""

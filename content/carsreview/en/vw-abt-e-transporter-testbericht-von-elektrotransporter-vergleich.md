@@ -3,6 +3,7 @@ title: VW ABT e-Transporter 6.1
 slug: vw-abt-e-transporter-testbericht-von-elektrotransporter-vergleich
 relatedCars: vw-abt-e-transporter
 youtubeLink: https://www.youtube.com/watch?v=KkfjEanHyOM
+category: Kasten
 publishedAt: 04/01/2022
 description: Der VW ABT e-Transporter ist ein elektrischer Kastenwagen der
   Fahrzeugklasse N1, der eine Zuladung von mehr als 1.000 Kilogramm aufnehmen

@@ -3,6 +3,7 @@ title: VW ABT e-Caddy
 slug: vw-abt-e-caddy-testbericht-von-elektrotransporter-vergleich
 relatedCars: vw-abt-e-caddy
 youtubeLink: https://www.youtube.com/watch?v=hNrLMQsJvoM
+category: Kasten
 publishedAt: 04/01/2022
 description: Der VW ABT e-Caddy ist ein Kastenwagen der Fahrzeugklasse N1, der
   eine Zuladung von mehr als 500 Kilogramm aufnehmen kann und mit 90 km/h bzw.

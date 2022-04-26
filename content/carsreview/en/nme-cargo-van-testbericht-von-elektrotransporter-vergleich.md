@@ -3,6 +3,7 @@ title: NME Cargo Van
 slug: nme-cargo-van-testbericht-von-elektrotransporter-vergleich
 relatedCars: nme-cargo-van
 youtubeLink: https://www.youtube.com/watch?v=Ajpy5tYi7xA
+category: Kasten
 publishedAt: 04/01/2022
 description: "Der Cargo Van der österreichischen Firma NME ist ein elektrischer
   Kastenwagen, der bis zu 1.000 Kilogramm Nutzlast aufnehmen kann und eine

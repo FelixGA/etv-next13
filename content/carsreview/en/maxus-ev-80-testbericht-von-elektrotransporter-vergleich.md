@@ -3,6 +3,7 @@ title: Maxus EV 80
 slug: maxus-ev-80-testbericht-von-elektrotransporter-vergleich
 relatedCars: maxus-ev-80
 youtubeLink: https://www.youtube.com/watch?v=v2ww9LqV2vA
+category: Kasten
 publishedAt: 04/01/2022
 description: Der Maxus EV 80 ist ein großer Elektrotransporter, der als
   Kastenwagen 910 Kilogramm Nutzlast aufnehmen kann und eine

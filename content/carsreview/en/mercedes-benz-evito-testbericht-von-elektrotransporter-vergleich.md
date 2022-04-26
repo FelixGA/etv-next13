@@ -3,6 +3,7 @@ title: Mercedes-Benz eVito Kastenwagen
 slug: mercedes-benz-evito-testbericht-von-elektrotransporter-vergleich
 relatedCars: mercedes-benz-evito
 youtubeLink: https://www.youtube.com/watch?v=jOzhROETsQA
+category: Kasten
 publishedAt: 04/01/2022
 description: "Der Mercedes-Benz eVito Kastenwagen ist ein Elektrotransporter,
   welcher in zwei Fahrzeuglängen erhältlich ist. Das Fahrzeug erreicht eine

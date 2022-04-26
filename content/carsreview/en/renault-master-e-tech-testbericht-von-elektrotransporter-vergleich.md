@@ -3,6 +3,7 @@ title: Renault Master E-Tech
 slug: renault-master-e-tech-testbericht-von-elektrotransporter-vergleich
 relatedCars: renault-master-e-tech
 youtubeLink: https://www.youtube.com/watch?v=FBT0-FfNmRA
+category: Kasten
 publishedAt: 04/01/2022
 description: >
   Der Renault Master E-Tech (früher “Master Z.E.”) ist ein Kastenwagen der

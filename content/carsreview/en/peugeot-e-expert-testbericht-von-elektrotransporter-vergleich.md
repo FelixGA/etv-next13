@@ -3,6 +3,7 @@ title: Peugeot E-Expert
 slug: peugeot-e-expert-testbericht-von-elektrotransporter-vergleich
 relatedCars: peugeot-e-expert
 youtubeLink: https://www.youtube.com/watch?v=FMULXSuJ6Uk
+category: Kasten
 publishedAt: 04/01/2022
 description: >
   Der Peugeot e-Expert ist ein elektrischer Kastenwagen, der in zwei Längen

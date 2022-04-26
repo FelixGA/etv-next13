@@ -173,13 +173,11 @@ collections:
           default: "ein titel",
           i18n: true,
           required: true,
-          hint: "slug be careful",
-          mySchemaProperty: "my-schema-property",
         }
       - {
           label: "slug(SOS! WRITE ME WHENEVER YOU RENAME IT-ANGELOS-)",
           name: "slug",
-          widget: "string",
+          widget: slug,
           default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
           i18n: duplicate,
           required: true,

@@ -21,7 +21,7 @@ content:
     title: Konzept & Fahrzeugvarianten
     image: /images/stama-maestro-pritsche.jpg
   - content: >-
-      ### Laderaum & Flexibilität (⅖)
+      ### Laderaum & Flexibilität (3/5)
 
 
       Der Maestro ist 3,63 Meter lang bei einem Radstand von 2,04 Meter. Die Breite des Fahrzeuges beträgt knapp 1,50 Meter (1,39 m ohne Spiegel), womit es auch für engere Parkanlagen geeignet ist. Ohne Warnleuchte hat die Kabine Höhe von 1,99 Meter, welches auch bei hohem Gitteraufbau die Gesamthöhe des Maestros ist.
@@ -79,11 +79,11 @@ content:
     title: Bedienung und Fahrbetrieb
     image: https://de.gmr.dk/admin/public/getimage.ashx?image=/Files/Images/STAMA/MAESTRO/STAMA-MT-10-10_.JPG&crop=0&Width=1200
   - content: >-
-      ### Umwelt (2/5)
+      ### Umwelt (3/5)
 
 
       Der Verbrauch des Fahrzeugs liegt laut Hersteller bei rund 12 kWh. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 Kilometer Fahrt 3,60 €.
-    title: Umwelt (2/5)
+    title: Umwelt (3/5)
     image: https://de.gmr.dk/admin/public/getimage.ashx?image=/Files/Images/STAMA/MAESTRO/MT10-Havn-24_.JPG&crop=0&Width=1200
   - content: >-
       ### Preise & Garantie (2/5)
@@ -99,9 +99,7 @@ content:
       Der Stama Maestro eignet sich dank seiner Wendigkeit und den Aufbautypen besonders für Landschaftsbaubetriebe und Kommunen zur Pflege von Grünanlagen und Parks. Als reines Lieferfahrzeug eignet sich der Mestro wohl eher weniger. Während die Ausstattung sehr minimal ist und selbst eine Heizung Aufpreis kostet, punktet der Stama mit einer Garantie von 5 Jahren auf die Akkus. Der Preis ist bezogen auf die Fahrzeuggröße und Einsatzmöglichkeiten jedoch relativ hoch. 
 
 
-      #### \
-
-      Gesamtnote: 2
+      #### Gesamtnote: 2,4
     title: Fazit
     image: /images/stama-maestro-laubgitter.png
 ---

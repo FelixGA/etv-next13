@@ -9,7 +9,7 @@ contentHeading:
   title: ""
   content: ""
   image: ""
-slug: foerderungen-skta
+slug: foerderungen-skta5555
 vehicle:
   key: gut
   value: 4,0

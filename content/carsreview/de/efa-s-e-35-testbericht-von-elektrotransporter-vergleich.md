@@ -1,5 +1,5 @@
 ---
-title: "EFA-S E35    "
+title: "EFA-S E35"
 slug: efa-s-e-35-testbericht-von-elektrotransporter-vergleich
 relatedCars: efa-s-e-35-d
 youtubeLink: ""
@@ -10,7 +10,8 @@ description: Der EFA-S E35 ist ein Elektrotransporter auf Basis der Fahrzeuge
   und kann als N1-Transporter rund eine Tonne Nutzlast aufnehmen.
 src: /images/efa-s-e35-plane.jpg
 content:
-  - content: Der EFA-S E35 ist ein Elektrotransporter auf Basis der Fahrzeuge der
+  - content:
+      Der EFA-S E35 ist ein Elektrotransporter auf Basis der Fahrzeuge der
       russischen Firma GAZ. Das Fahrzeug ist in drei Aufbauvarianten erhältlich
       und kann als N1-Transporter rund eine Tonne Nutzlast aufnehmen.
     title: Einleitung
