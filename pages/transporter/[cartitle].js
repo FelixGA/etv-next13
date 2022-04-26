@@ -32,7 +32,7 @@ export default function Details(props) {
     SetTestReview(props.getTestReview);
     SetCarsReview(props.carsreview);
   }, [props]);
-  // console.log("getCarsReview", getCarsReview.slug);
+  //console.log("getCarsReview", getCarsReview);
 
   return (
     <>
@@ -76,12 +76,22 @@ export async function getStaticProps(context) {
 
   /* get related reviews*/
   let carsreviews = await getContent("carsreview", context.locale);
-
+  /*  console.log(
+    carsreviews.map(
+      (item) =>
+        "RELATION FROM REVIEW  " +
+        item.relatedCars +
+        "   AND THE SLUG   " +
+        item.slug
+    )
+  );
+  console.log(context.params.cartitle); */
   // let carsreview = await getContentBySlug(
   //   "carsreview",
   //   context.params.cartitle,
   //   context.locale
   // );
+
   let carsreview = carsreviews.find(
     (item) =>
       context.params.cartitle == item.relatedCars ||
@@ -115,7 +125,10 @@ export async function getStaticProps(context) {
     (item, index) => item.category === vehicle.category
   )
     ? blogs.find((item, index) => item.slug === context.params.cartitle)
-    : blogs.find((item, index) => item.slug === "beispiel bitte nicht ändern");
+    : blogs.find(
+        (item, index) =>
+          item.slug === "thg-foerderung-fuer-kleintransporter-von-ari"
+      );
 
   if (!vehicle) {
     return {
