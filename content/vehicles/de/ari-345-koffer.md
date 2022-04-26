@@ -12,7 +12,7 @@ description: Der ARI 345 Koffer ist ein dreirädriges Lastenmoped mit offener
   der ARI 345 speziell für den innerstädtischen Einsatz bei Lieferdiensten,
   Handwerkern und Dienstleistern aller Art. Der Aufbau kann außerdem mit einer
   Kühlanlage sowie zusätzlichen Seitentüren ausgestattet werden.
-src: /images/dsc_0071.png
+src: /images/ari-345-lastentrike-koffer-seitenansicht.jpg
 category: Koffer
 typeClass: L2E
 loadingWeight:

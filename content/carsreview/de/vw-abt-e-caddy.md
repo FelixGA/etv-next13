@@ -1,6 +1,6 @@
 ---
 title: VW ABT e-Caddy
-slug: vw-abt-e-caddy
+slug: vw-abt-e-caddy-testbericht-von-elektrotransporter-vergleich
 relatedCars: vw-abt-e-caddy
 youtubeLink: https://www.youtube.com/watch?v=hNrLMQsJvoM
 category: Kasten

@@ -1,6 +1,6 @@
 ---
 title: Maxus EV 80
-slug: maxus-ev-80
+slug: maxus-ev-80-testbericht-von-elektrotransporter-vergleich
 relatedCars: maxus-ev-80
 youtubeLink: https://www.youtube.com/watch?v=v2ww9LqV2vA
 category: Kasten

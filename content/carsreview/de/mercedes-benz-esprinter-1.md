@@ -1,6 +1,6 @@
 ---
 title: Mercedes-Benz eSprinter
-slug: mercedes-benz-esprinter
+slug: mercedes-benz-esprinter-testbericht-von-elektrotransporter-vergleich
 relatedCars: mercedes-benz-esprinter
 youtubeLink: https://www.youtube.com/watch?v=e8lqtbPLuEA
 category: Kasten

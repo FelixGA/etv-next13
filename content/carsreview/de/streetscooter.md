@@ -1,6 +1,6 @@
 ---
 title: Streetscooter
-slug: streetscooter
+slug: streetscooter-testbericht-von-elektrotransporter-vergleich
 relatedCars: maxus-edeliver-3
 youtubeLink: https://www.youtube.com/watch?v=fcjYIzGqs4s
 category: Koffer

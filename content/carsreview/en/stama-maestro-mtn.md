@@ -1,6 +1,6 @@
 ---
 title: Stama-Maestro-MTN
-slug: stama-maestro-mtn
+slug: stama-maestro-mtn-testbericht-von-elektrotransporter-vergleich
 relatedCars: stama-maestro-pritsche
 youtubeLink: "0"
 category: Pritsche

@@ -1,11 +1,14 @@
 ---
-title: ARI-458-Koffer
-slug: ari-458-koffer
-relatedCars: ari-458-koffer-elektrotransporter-mit-aufbau
+title: ARI 458 Testbericht von Elektrotransporter-Vergleich
+slug: ari-458-testbericht-von-elektrotransporter-vergleich
+relatedCars: ari-458-koffer-elektrischer-kleintransporter
+youtubeLink: https://www.youtube.com/watch?v=s7Vpp2pYBG4&list=PLmjRcMALs3P-QlHQfthmCPL3aRr6dT9mx
 category: Koffer
 publishedAt: 03/02/2022
-description: bitte fuer SEO auffuelen bitte fuer SEO auffuelen bitte fuer SEO
-  auffuelen bitte fuer SEO auffuelen
+description: >
+  Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer
+  zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen Zuladung von
+  450 Kilogramm. 
 src: /images/ari-458-koffer-3-.jpg
 content:
   - content: >-
@@ -13,10 +16,10 @@ content:
 
 
       Die möglichen Aufbauten teilen sich in vier Oberkategorien auf: Koffer, Pritsche, Kipper sowie Individualaufbauten. Zu Individualaufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer, Laubgitteraufbau, Food Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI 458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert. Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus für große Strecken.
-    image: /images/ari-458-koffer-2-.jpg
+    image: /images/ari-458-gruppenbilder-21-.jpg
     title: Konzept & Fahrzeugvarianten
   - content: >-
-      ### Laderaum & Flexibilität (⅘)
+      ### Laderaum & Flexibilität (4/5)
 
 
       Für Lieferdienste und Lastentransporte ist der ARI 458 mit Kofferaufbau sehr gut geeignet. Kunden haben hier die Wahl zwischen den drei Größen, welche ein Ladevolumen von 1,45 m3 (Basisversion), 2,05 m3 („L“) sowie 2,77 m3 bei der „XL“-Version besitzen. Bei der Höhe variieren die Koffer-Aufbauten zwischen 95, 110 und 130 cm. Die Ladekantenhöhe des ARI 458 ist mit 68 cm angenehm niedrig.
@@ -35,7 +38,7 @@ content:
 
 
       Die Nutzlast der 458er-Reihe liegt bei rund 530 Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450 Kilogramm möglich.
-    image: /images/ari-345-koffer-mit-geöffnetem-laderaum.jpg
+    image: /images/ari-458-food-truck-heckansicht-1-.jpg
     title: LADERAUM
   - content: >-
       ### Antrieb und Aufladung (4/5)
@@ -83,7 +86,7 @@ content:
 
 
       Die Wendigkeit des kompakten Transporters ist gerade in engen Innenstädten sowie Werkshallen von Vorteil. Für einfacheres Rangieren bei niedrigen Geschwindigkeiten bietet sich die optional verfügbare Servolenkung an. Positiv fällt auch das Glasdach auf, welches ein besseres Raumgefühl erzeugt und gerade an sonnigen Tagen einen angenehmen Effekt hat. Natürlich kann man bei heftiger Sonneneinstrahlung dies auch durch ein Rollo abdecken.
-    image: /images/dsc_0376.jpg
+    image: /images/ARI-458-Kipper-L-Heck-300x199.jpg
     title: Bedienung & Fahrbetrieb
   - content: >-
       ### Umwelt (⅘)
@@ -91,7 +94,7 @@ content:
 
       Innerorts liegt der Verbrauch des Ari 458 bei 6,2 kWh und außerorts bei 8,0 kWh. Das Fahrzeug kommt dadurch auf einen niedrigen kombinierten Verbrauch von 7,1 kWh. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 2,13 €.
     title: Umwelt
-    image: /images/dsc_0309.jpg
+    image: /images/ari-458-kofferaufbau-mit-solarpanel.jpg
   - content: >-
       ### Preise & Garantie (4/5)
 
@@ -101,7 +104,7 @@ content:
 
       Das Fahrzeug kommt mit einer Herstellergarantie von 6 Monaten sowie einer Gewährleistung über eine Zeit von 2 Jahren. Auf die Lithium-Batterie haben Kunden einen Garantieanspruch von 4 Jahren bzw. 60.000 Kilometer.
     title: Preise & Garantie
-    image: /images/ari-458-gruppenbilder-21-.jpg
+    image: /images/ari-458-mit-planenaufbau.jpg
   - content: >-
       ### Fazit
 
@@ -114,4 +117,5 @@ content:
 
       4,4
     title: Fazit
+    image: /images/ari-458-kipper-l-mit-laubgitter.jpg
 ---

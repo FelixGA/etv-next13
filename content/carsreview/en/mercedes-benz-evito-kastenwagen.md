@@ -1,6 +1,6 @@
 ---
 title: Mercedes-Benz eVito Kastenwagen
-slug: mercedes-benz-evito
+slug: mercedes-benz-evito-testbericht-von-elektrotransporter-vergleich
 relatedCars: mercedes-benz-evito
 youtubeLink: https://www.youtube.com/watch?v=jOzhROETsQA
 publishedAt: 04/01/2022
