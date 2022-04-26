@@ -9,7 +9,6 @@ description: Der neu aufgelegte Kangoo Rapid, erzielt mit LiFePo-Akku & E-Motor
   bis zu 300 km Reichweite und ist ab Frühjahr im Handel.
 contentHeading:
   content: ""
-  image: null
 ---
 Renault bringt im nächsten Frühjahr den Kangoo Rapid „E-TECH 100% Electric“ zum Händler. Die Neuauflage des rein elektrischen Kompakttransporters fährt mit einer Antriebskombination aus 45 kWh-Lithium-Ionen-Batterie und 90 kW starkem Elektromotor, die je nach Fahrstil, Streckenprofil und Außentemperatur eine WLTP-Reichweite von bis zu 300 Kilometern möglich machen soll.
 

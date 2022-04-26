@@ -9,7 +9,6 @@ description: Vinci Energies will seine Flotte auf klimaneutrale Fahrzeuge
   umstellen und erwarb deshalb insgesamt 30 Opel Vivaro-e Cargo.
 contentHeading:
   content: ""
-  image: null
 ---
 Opel Deutschland-Chef Andreas Marx hat am Stammsitz in Rüsselsheim die ersten von 30 Opel Vivaro-e Cargo an Stefan Falk, Geschäftsführer von Vinci Energies Deutschland Building Solutions übergeben. Die emissionsfreien Transporter sind die ersten elektrischen leichten Nutzfahrzeuge in der Flotte der Unternehmensgruppe für Energie-, Verkehrs- und Kommunikationsinfrastruktur sowie Gebäude und Industrieanlagen. Ab sofort sollen dessen Kundendienstmitarbeiter damit in Deutschland auf Montage- und Service-Tour gehen.
 

@@ -9,7 +9,6 @@ description: Der ARI 458 Solar, ein E-Transporter mit Solarmodul, ist Ergebnis
   einer Kooperation zwischen Sono Motors und ARI Motors.
 contentHeading:
   content: ""
-  image: null
 ---
 Mit dem Sion bereitet Sono Motors aus München die Serienfertigung eines Elektroautos mit integrierten Solarzellen für zusätzliche Reichweite vor. Die Idee der zusätzlichen Energiegewinnung hat nun auch zu einer Zusammenarbeit mit dem Elektrofahrzeughersteller Ari Motors aus der Nähe von Leipzig geführt, die die Solarmodule probeweise an seinen Elektrotransporter 458 mit Kofferaufbau und 530 Kilo Nutzlast montiert hat.
 

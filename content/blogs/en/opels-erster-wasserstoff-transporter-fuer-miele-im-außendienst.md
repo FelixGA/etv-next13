@@ -9,7 +9,6 @@ description: Der Vivaro-e-Hydrogen, Opels erster Wasserstoff-Transporter, ist im
   Rhein-Main-Gebiet im Außendienst für Miele unterwegs.
 contentHeading:
   content: ""
-  image: null
 ---
 [](https://www.e-medienportal.net/artikel/detail/58160#image205471 "Dieses Bild in unterschiedlichen Größen herunterladen")[](https://www.e-medienportal.net/artikel/detail/58160#ampnet-carousel)[](https://www.e-medienportal.net/artikel/detail/58160#ampnet-carousel)Opel hat seinen ersten Wasserstoff-Transporter ausgeliefert. Der Vivaro-e Hydrogen wird seine emissionsfreie Arbeit im Fuhrpark des Hausgeräteherstellers Miele aufnehmen, wo das Brennstoffzellenfahrzeug im täglichen Außendienst im Rhein-Main-Gebiet eingesetzt wird.
 

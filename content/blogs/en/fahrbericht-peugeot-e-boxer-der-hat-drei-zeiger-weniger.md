@@ -9,7 +9,6 @@ description: Mit dem Peugeot Boxer reagiert Peugeot auf die wachsende Nachfrage
   nach Alternativen zu Dieseltransportern.
 contentHeading:
   content: ""
-  image: null
 ---
 [](https://www.e-medienportal.net/artikel/detail/57973#ampnet-carousel)Die Zeit läuft gegen die leichten Nutzfahrzeuge – wenigstens in den Innenstädten, die von einer wachsenden Zahl der Stadtverwaltungen zu Umweltzonen umgewidmet werden, in denen die vertrauten Diesel-Transporter dann nicht mehr fahren sollen. Kein Wunder, dass die Elektrifizierung in diesem Segment schnell voranschreitet. Peugeot hat jetzt mit der Markteinführung des elektrisch angetriebenen Boxer seine gesamte Transporter-Modellpalette elektrifiziert.
 
