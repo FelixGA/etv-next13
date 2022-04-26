@@ -5,11 +5,11 @@ contentText:
   title: ""
   content: ""
   image: ""
-slug: foerderungen
 contentHeading:
   title: ""
   content: ""
   image: ""
+slug: foerderungenshit
 contentText2:
   content: ""
   title: ""

@@ -9,8 +9,9 @@ export default function fahrzeuge(props) {
   const [getContent, SetGetContent] = useState(props.page);
   const [getCarsReview, SetCarsReview] = useState(props.carsreviews);
   const { state, dispatch } = useStore();
+  console.log("CAAARRSS", sortedCars);
+  /* ᴄᴀʀs ranking ғɪʟᴛᴇʀ */
   useEffect(() => {
-    /* ᴄᴀʀs ranking ғɪʟᴛᴇʀ */
     SetSortedCars(
       props.vehicles.sort((a, b) => a.rating.value - b.rating.value)
     );

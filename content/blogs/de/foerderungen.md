@@ -5,11 +5,11 @@ contentText:
   title: ""
   content: ""
   image: ""
-slug: foerderungen
 contentHeading:
   title: ""
   content: ""
   image: ""
+slug: foerderungenshit
 vehicle:
   key: gut
   value: 4,0
