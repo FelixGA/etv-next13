@@ -34,14 +34,14 @@ content:
     title: Laderaum & Flexibilität (4/5)
     image: /images/addax.png
   - content: >-
-      ### Antrieb & Aufladung (2/2)
+      ### Antrieb & Aufladung (2/5)
 
 
       Technisch gibt es den Addax MT in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und einer Leistung von 8kW. Dieses Modell ist mit einem Lithium-Ionen-Akku mit 10,2 kWh ausgestattet und erreicht eine Höchstgeschwindigkeit von 58 Km/h. Laut Hersteller soll diese Variante eine Reichweite von 80 Kilometer erreichen. Als MT15 wird der Elektrotransporter von einem 72 Volt-Motor angetrieben, der 12 KW leistet. In dieser Variante übernimmt ebenfalls ein LiFePO4-Akku die Arbeit. Die Kapazität liegt hier aber bei 14,4 kWh, wodurch die Reichweite des Addax auf 132 Kilometer (WLTP) steigen soll. Auch die Höchstgeschwindigkeit liegt hier mit 70 Km/h über der des MT10. Leider liegen jedoch keine Angaben darüber vor, wie lange eine Vollladung des jeweiligen Akkus benötigt.
-    title: Antrieb & Aufladung (2/2)
+    title: Antrieb & Aufladung (2/5)
     image: /images/addax_motors_kühlkoffer.jpg
   - content: >-
-      ### Komfort & Ausstattung (⅖)
+      ### Komfort & Ausstattung (2/5)
 
 
       Das Fahrzeug ist sehr einfach ausgestattet, um eine simple Bedienung zu garantieren und den Akku nicht unnötig zu belasten. Die Ausstattungsliste setzt auf nützliche Helfer wie eine Servolenkung (optional) für einfaches Handling, eine Anhängerkupplung (ebenfalls optional) oder eine serienmäßige Scheibenwaschanlage für die Frontscheibe. Für den Einsatz in der kalten Jahreszeit lohnt es sich, den Aufpreis für eine Heizung und einen Satz Winterreifen zu zahlen. 
@@ -54,7 +54,7 @@ content:
 
 
       Ebenso lässt sich am Addax für einen Aufpreis ein Hochdruckreiniger,ein Bewässerungskit oder ein Laubsauger (Eliet TL 450 Pro 9 HP) integrieren.
-    title: Komfort & Ausstattung (⅖)
+    title: Komfort & Ausstattung (2/5)
     image: /images/addax_innenraum.jpg
   - content: >-
       ### Bedienung und Fahrbetrieb
@@ -73,11 +73,11 @@ content:
       Der Verbrauch des Fahrzeugs liegt laut Hersteller bei rund 12 kWh. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 Kilometer Fahrt 3,60 €.
     title: Umwelt (3/5)
   - content: >-
-      ### Preise & Garantie (⅖)
+      ### Preise & Garantie (2/5)
 
 
       Die Preise für den Addax MT beginnen bei rund 35.450 Euro. Ein konkretes Angebot für ein spezielles Modell können Interessenten auf Anfrage beim Unternehmen erhalten. Im Preis enthalten ist das Akkupaket, auf welches der Hersteller eine Gewährleistung von 5 Jahren gibt. Auf das Fahrzeug gibt der Hersteller eine Garantie von 2 Jahren.
-    title: Preise & Garantie (⅖)
+    title: Preise & Garantie (2/5)
     image: /images/addax_koffer.jpg
   - content: >-
       ### Fazit

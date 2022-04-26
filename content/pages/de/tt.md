@@ -33,7 +33,7 @@ content:
       ## Zum Newsletter anmelden
 
 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur euismod, nisi nisl euismod nisi, vel consectetur nisi nisl euismod.bold
+      Wir versenden in regelmäßigen Abständen einen Newsletter mit aktuellen Themen und Neuigkeiten rund um Elektrotransporter. Natürlich werden kein Spam-Mails von uns verschickt und Sie können sich jederzeit von dem Newsletter abmelden!
     details: Beliebte Kategorien
 ---
 .

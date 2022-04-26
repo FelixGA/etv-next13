@@ -1,6 +1,6 @@
 ---
 title: Toyota Proace Electric
-slug: toyota-proace-electric
+slug: toyota-proace-electric-testbericht-von-elektrotransporter-vergleich
 relatedCars: toyota-proace-electric
 publishedAt: 04/01/2022
 description: "Der Toyota Proace Electric ist ein Kastenwagen, welcher in zwei

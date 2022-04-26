@@ -7,7 +7,7 @@ export default function FunnelBox({ currentFilter, redirecter }) {
   const { state, dispatch } = useStore();
 
   return !redirecter ? (
-    <div className="flex flex-wrap w-[90%] md:w-full justify-center pb-6 lg:pb-2">
+    <div className="flex flex-wrap w-[90%] md:w-full justify-center pb-6 lg:pb-2 ">
       {currentFilter.options.map((item, index) => {
         return (
           <div
@@ -22,9 +22,9 @@ export default function FunnelBox({ currentFilter, redirecter }) {
               });
             }}
             key={index}
-            className="w-32 sm:w-40 lg:w-56 h-32 sm:h-40 lg:h-56 flex flex-col justify-center items-center cursor-pointer rounded-lg shadow-lg sm:mb-8 m-2 hover:scale-110 bg-white"
+            className="flex flex-col items-center justify-center w-32 h-32 m-2 bg-white border shadow-lg cursor-pointer sm:w-40 lg:w-56 lg:h-56 xl:w-64 sm:h-40 xl:h-64 sm:mb-8 hover:scale-110"
           >
-            <div className="w-24 sm:w-36 lg:w-56 h-24 sm:h-36 lg:h-56 pt-4">
+            <div className="w-24 h-24 pt-4 sm:w-36 lg:w-44 lg:h-44 xl:w-60 sm:h-36 xl:h-60">
               <Image
                 src={item.image}
                 alt="picture"
@@ -34,7 +34,7 @@ export default function FunnelBox({ currentFilter, redirecter }) {
                 layout="responsive"
               />
             </div>
-            <p className="font-bold text-black py-4 text-sm lg:text-lg xl:text-xl">
+            <p className="py-4 text-sm font-bold text-black lg:text-lg xl:text-xl">
               {item.name}
             </p>
           </div>

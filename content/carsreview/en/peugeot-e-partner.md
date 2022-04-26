@@ -1,6 +1,6 @@
 ---
 title: Peugeot e-Partner
-slug: peugeot-e-partner
+slug: peugeot-e-partner-testbericht-von-elektrotransporter-vergleich
 relatedCars: peugeot-e-partner
 youtubeLink: https://www.youtube.com/watch?v=nGKEnLS21Cw
 publishedAt: 04/01/2022

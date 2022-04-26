@@ -11,58 +11,96 @@ export default function caradvisor(props) {
     SetTestReviews(props.carsreviews);
   }, [props]);
   return (
-    <div className="bg-blue-extralight">
+    <div className=" bg-blue-extralight">
       <Head page={props.page} />
 
-      <div className="bg-green-lighter hidden xl:flex justify-around h-12 items-center">
+      <Funnel getCars={getCars} />
+      <div className="relative flex justify-between 2xl:h-36">
+        {/* human image */}
+        <div className="absolute bottom-0 right-0 hidden w-44 xl:w-64 2xl:w-96 2xl:right-6 2xl:block">
+          <Image
+            src="/images/beraterNew.png"
+            width={450}
+            height={600}
+            layout="responsive"
+          />
+        </div>
+      </div>
+      <div className="items-center justify-around hidden h-12 bg-green-lighter lg:flex">
         <div className="">
-          <p className="text-white text-lg 2xl:text-xl w-full">
+          <p className="w-full text-base text-white lg:text-base 2xl:text-xl">
             ✔️ über 10 Jahre Erfahrung mit KFZ
           </p>
         </div>
         <div className="">
-          <p className="text-white text-lg 2xl:text-xl w-full">
+          <p className="w-full text-lg text-white 2xl:text-xl">
             ✔️ 500+ verkaufte Transporter seit 2019
           </p>
         </div>
-        <div className=" ">
-          <p className="text-white text-lg 2xl:text-xl w-full">
+        <div className="">
+          <p className="w-full text-lg text-white 2xl:text-xl">
             ✔️ unverbindliches Angebot in 24 Stunden
           </p>
         </div>
       </div>
-      <Funnel getCars={getCars} />
-      <div className="flex justify-between relative ">
-        {/* medal gold image */}
-        <div className="flex relative left-[30%] sm:left-[36vw] lg:left-[38vw] xl:left-[41vw] 2xl:left-[43vw]">
-          <div className="w-16 sm:w-28 pt-8 sm:pt-12">
+      <div className="flex flex-col items-center w-full px-4 bg-white xl:px-40 lg:flex-row justify-evenly">
+        <div className="w-full px-2 py-4">
+          <div className="w-full border shadow-lg ">
             <Image
-              src="/images/siegel2.png"
-              width={166}
-              height={166}
+              src="/images/ETV-IconsWunschfahrzeug.png"
+              width={300}
+              height={300}
               layout="responsive"
               objectFit="contain"
             />
           </div>
-          {/* medal dsvgo image */}
-          <div className="w-32 sm:w-52">
-            <Image
-              src="/images/siegel.png"
-              width={166}
-              height={166}
-              layout="responsive"
-              objectFit="contain"
-            />
-          </div>
+          <h3 className="h-16 pt-2 lg:text-2xl xl:text-2xl">
+            1. Wunschfahrzeug konfigurieren
+          </h3>
+          <p className="h-48 xl:pt-4">
+            Geben Sie in 3 Schritten die Anforderungen für Ihren
+            Elektrotransporter an: Aufbauart, Reichweite und Zuladung!
+            Anschließend erhalten Sie eine Übersicht über für Sie geeignete
+            Fahrzeuge.
+          </p>
         </div>
-        {/* human image */}
-        <div className="w-44 xl:w-64 2xl:w-96 absolute bottom-0 right-0 2xl:right-6 hidden lg:block">
-          <Image
-            src="/images/beraterNew.png"
-            width={500}
-            height={700}
-            layout="responsive"
-          />
+        <div className="w-full px-2 py-4">
+          <div className="w-full border shadow-lg ">
+            <Image
+              src="/images/ETV-IconsVergleichen.png"
+              width={300}
+              height={300}
+              layout="responsive"
+              objectFit="contain"
+            />
+          </div>
+          <h3 className="h-16 pt-2 lg:text-2xl">
+            2. Vorgeschlagene Fahrzeuge vergleichen
+          </h3>
+          <p className="h-48 xl:pt-4 ">
+            Vergleichen Sie in Ruhe die vorgeschlagenen Elektrotransporter. In
+            der Übersicht finden Sie alle Daten sowie die Preise der für Sie
+            geeigneten Fahrzeuge.
+          </p>
+        </div>
+        <div className="w-full px-2 py-4">
+          <div className="w-full border shadow-lg">
+            <Image
+              src="/images/ETV-IconsAngebote.png"
+              width={300}
+              height={300}
+              layout="responsive"
+              objectFit="contain"
+            />
+          </div>
+          <h3 className="h-16 pt-2 lg:text-2xl">
+            3. Kostenloses Angebot erhalten
+          </h3>
+          <p className="h-48 xl:pt-4">
+            Erhalten Sie ein unverbindliches und vollkommen kostenloses Angebot
+            für das von Ihnen gewählte Fahrzeug. Dieses wird Ihnen ganz einfach
+            per Mail zugesandt.
+          </p>
         </div>
       </div>
     </div>

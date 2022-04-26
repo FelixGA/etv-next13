@@ -95,7 +95,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
   const [chooseWeight, setChooseWeight] = useState(details[2].options[0].value);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <div className="absolute justify-end hidden w-full lg:flex h-[400px] forz border-black-darkest">
         <div className="relative w-1/2 2xl:bottom-8 2xl:right-0 xl:top-24 2xl:top-2 xl:left-8 lg:scale-150 lg:top-36 opacity-30 2xl:scale-100">
           <Image
@@ -105,6 +105,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
             alt="Kleintransporter"
             objectFit="cover"
             layout="responsive"
+            className=""
           />
         </div>
       </div>

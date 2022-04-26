@@ -1,6 +1,6 @@
 ---
 title: "EFA-S E35    "
-slug: efa-s-e-35
+slug: efa-s-e-35-testbericht-von-elektrotransporter-vergleich
 relatedCars: efa-s-e-35-d
 youtubeLink: ""
 category: Koffer
