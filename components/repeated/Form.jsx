@@ -48,7 +48,7 @@ export default function Form(props) {
       <div
         className={
           !send
-            ? "flex justify-center flex-col lg:flex-row items-center "
+            ? "flex justify-center flex-col lg:flex-row items-center"
             : "hidden"
         }
       >
@@ -56,7 +56,7 @@ export default function Form(props) {
           className={
             router.pathname !== "/kontakt"
               ? "hidden"
-              : "text-md font-bold w-[80%] text-left lg:hidden p-4"
+              : "text-lg font-bold w-full text-center lg:hidden p-8"
           }
         >
           Haben Sie Fragen oder Anregungen zu unserer Webseite oder möchten uns
@@ -69,7 +69,7 @@ export default function Form(props) {
             // action="https://api.vercel.com/v6/deployments"
             method="POST"
             onSubmit={handleSubmit(onSubmit, onError)}
-            className="flex flex-col pt-0 pb-4 pl-4 pr-4 bg-white rounded-md shadow-lg sm:p-8"
+            className="flex flex-col pt-0 pl-4 pr-4 mb-4 bg-white rounded-md shadow-lg"
           >
             <TextInput
               placeholder={"z.B. Max Muster"}
@@ -256,8 +256,10 @@ export default function Form(props) {
           <br />
           Hier können Sie gleich alle
           <Link href={"/comparePage"}>
-            <a className="pt-4 pb-4 text-blue-500">
-              Elektrotransporter sofort vergleichen.
+            <a className="pt-4 pb-4 text-blue-600">
+              <span className="pl-2">
+                Elektrotransporter sofort vergleichen.
+              </span>
             </a>
           </Link>
         </p>

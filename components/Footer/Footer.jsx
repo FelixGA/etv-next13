@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BsFacebook, BsLinkedin } from "react-icons/bs";
+import { BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
 import Link from "next/link";
 import ListItems from "./ListItems";
 
@@ -82,17 +82,34 @@ const Footer = ({ blogs, reviews }) => {
               </p>
             </div>
           </div>
-          <div className="flex w-72 lg:w-96">
-            <p className="px-4 text-[#b1a7a7] pt-4 text-center sm:text-left w-full text-xs lg:text-sm xl:text-lg">
-              ✔ unabhängig ✔ schnell ✔ immer aktuell
+          <div className="flex w-full">
+            <p className=" text-[#b1a7a7] pt-4 text-center sm:text-left w-full text-xs lg:text-sm xl:text-lg">
+              ✔ unabhängig<span className="pl-2">✔ schnell</span>
+              <span className="pl-2"> ✔ immer</span>
+              aktuell
             </p>
           </div>
-          <div className="flex justify-between w-24 pt-6 pb-8 sm:pl-4">
-            <div className="">
-              <BsFacebook size={25} fill="#fff" />
+          <div className="flex justify-between w-24 pt-6 pb-8 lg:w-40 sm:pl-4">
+            <div className="cursor-pointer">
+              <Link href="https://www.facebook.com/ARIMotorsElektrofahrzeuge">
+                <a target="_blank">
+                  <BsFacebook size={25} fill="#fff" />
+                </a>
+              </Link>
             </div>
-            <div>
-              <BsLinkedin size={25} fill="#fff" />
+            <div className="cursor-pointer">
+              <Link href="https://www.linkedin.com/company/ari-motors-gmbh/mycompany/">
+                <a target="_blank">
+                  <BsLinkedin size={25} fill="#fff" />
+                </a>
+              </Link>
+            </div>
+            <div className="cursor-pointer">
+              <Link href="https://www.youtube.com/c/ARIMotorsGmbH">
+                <a target="_blank">
+                  <BsYoutube size={25} fill="#fff" />
+                </a>
+              </Link>
             </div>
           </div>
         </div>

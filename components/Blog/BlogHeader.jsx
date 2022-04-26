@@ -8,7 +8,7 @@ const options = { year: "numeric", month: "long", day: "numeric" };
 export default function BlogHeader({ getBlogs }) {
   const [posts, setPosts] = useState(getBlogs);
   const [categories, setCategories] = useState([]);
-  console.log("BlogHeader.jsx: posts: ", posts);
+  // console.log("BlogHeader.jsx: posts: ", posts);
   return (
     <div className="lg:grid grid-cols-4 w-full mx-auto max-w-screen-2xl border-b-blue-light border-b-8 hidden">
       {getBlogs &&
