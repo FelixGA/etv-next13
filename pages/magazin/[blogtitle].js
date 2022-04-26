@@ -21,6 +21,7 @@ export default function Blogs(props) {
     <>
       <Head page={props.blog} />
       <BlogPost getBlogContext={getBlogContext} />
+
       {/* slider  */}
       {/* <TopSlider getCars={relatedVehicles} /> */}
     </>

@@ -2,6 +2,7 @@
 title: Maxus eDeliver 3
 slug: maxus-edeliver-3-testbericht-von-elektrotransporter-vergleich
 relatedCars: maxus-edeliver-3
+youtubeLink: bitte auffuelen
 category: Kasten
 publishedAt: 04/01/2022
 description: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der

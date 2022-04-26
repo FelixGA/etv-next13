@@ -3,6 +3,7 @@ title: Peugeot e-Partner
 slug: peugeot-e-partner-testbericht-von-elektrotransporter-vergleich
 relatedCars: peugeot-e-partner
 youtubeLink: https://www.youtube.com/watch?v=nGKEnLS21Cw
+category: Kasten
 publishedAt: 04/01/2022
 description: >
   Der Peugeot e-Partner ist ein elektrischer Kastenwagen der Fahrzeugklasse N1,

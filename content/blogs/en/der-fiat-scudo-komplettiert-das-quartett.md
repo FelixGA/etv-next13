@@ -9,7 +9,6 @@ description: Der Fiat Scudo ist vierter im Quartett der elektrischen Ein-Tonner
   des Stellantis-Konzerns & in verschiedenen Längen lieferbar.
 contentHeading:
   content: ""
-  image: null
 ---
 Mit dem Scudo von Fiat komplettiert der Stellantis-Konzern sein Quartett in der leichten Nutzfahrzeugklasse der Ein-Tonner, das durch die Kooperation mit Toyota sogar zum Quintett wird. Der neue Transporter ist das italienische Schwestermodell von Citroën Jumpy, Opel Vivaro und Peugeot Expert sowie Toyota Proace. Folgerichtig gibt es auch den Scudo in einer reinen Elektroversion und mit einer Normreichweite von bis zu 330 Kilometern.
 

@@ -9,7 +9,6 @@ description: Der Mercedes-Benz e-Vito kommt dank neuer Batterie und Update des
   elektrischen Antriebstranges auf eine Reichweite von bis zu 314 km.
 contentHeading:
   content: ""
-  image: null
 ---
 Nach dem Mercedes‑Benz e-Vito Tourer erhält nun auch der e-Vito Kastenwagen ein umfangreiches Update des elektrischen Antriebsstranges sowie eine neue Batterie mit einer nutzbaren Kapazität von 60 kWh. Die WLTP-Reichweite erhöht sich dabei auf 242 bis 314 Kilometer. Die CCS-Ladedose im Stoßfänger vorne links erlaubt auch schnelles Laden mit Gleichstrom. Damit kann der e-Vito dank einer serienmäßigen Ladeleistung von maximal 50 kW oder optional 80 kW an einer DC-Schnellladestation in etwa 50 Minuten bzw. 35 Minuten von zehn Prozent auf 80 Prozent aufgeladen werden.
 

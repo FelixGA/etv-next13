@@ -3,6 +3,7 @@ title: Tropos Able XT
 slug: tropos-able-xt-testbericht-von-elektrotransporter-vergleich
 relatedCars: tropos-able-xt1
 youtubeLink: https://www.youtube.com/watch?v=zY2hGyJ0yB0
+category: Koffer
 publishedAt: 03/17/2022
 description: >
   Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e mit einer
