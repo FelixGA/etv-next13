@@ -9,7 +9,6 @@ description: Der vollelektrische Transporter "Sustaineer" gilt als
   Nachhaltigkeitspionier von Mercedes Benz und trägt zum Klimaschutz bei.
 contentHeading:
   content: ""
-  image: null
 ---
 Die Transporter für die letzte Meile – sie fallen jedem täglich auf. Gut, wenn die klimaneutral führen, selbst grünen Strom produzierten und die Luftqualität um sich herum auch noch verbessern könnten. Genau das sind Ziele des Technologieträgers von Mercedes-Benz mit dem sinnigen Namen „Sustaineer“ von „sustainability pioneer“. Mit dem Nachhaltigkeitspionier gibt Mercedes-Benz Vans einen Ausblick, wie Nachhaltigkeit im urbanen Lieferverkehr der Zukunft aussehen kann.
 

@@ -9,7 +9,6 @@ description: Der elektrische Opel Movano ist der größte Transporter im
   Nutzfahrzeugprogramm von Opel und ab sofort bestellbar.
 contentHeading:
   content: ""
-  image: null
 ---
 Der neue Opel Movano ist ab sofort bestellbar. Zum Einstiegspreis ab 32.580 Euro (netto) ist der größte Transporter im Nutzfahrzeugprogramm der Rüsselsheimer als Kastenwagen in drei Gewichtsklassen (3,5 bis 4,0 t Gesamtgewicht), vier Längen (L1-L4) und drei Höhen (H1-H3) sowie in den beiden Ausstattungslinien Selection und Edition verfügbar. Angetrieben wird er von einem 2,2-Liter-Turbodiesel in drei Leistungsstufen von 120 PS (88 kW) bis 165 PS (121 kW). Erstmals gibt es aber auch eine batterie-elektrische Variante.
 

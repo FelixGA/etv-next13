@@ -77,7 +77,7 @@ content:
       ### Preise & Garantie (3/5)
 
 
-      Wie bei vielen Elektro-Transportern dieser Art gibt es keine konkreten Preislisten.  Die Fahrzeuge werden hier nach Baukastenprinzip zusammengestellt. So bekommen Kunden nur auf konkrete Anfragen mit genauen Anforderungen auch die Kosten genannt. Die Preise des Fahrzeugs beginnen aber ungefähr bei 18.000 Euro für den Park SC und gehen je nach Aufbau bis zu rund 30.000 Euro für einen City EC mit großem Aufbau. Der Basisprioes des Modells Urban liegt für das kurze Chassis laut BAFA-Liste bei 29.312 zzgl. Mehrwertsteuer. In Sachen Garantie gibt es bei Garia eine sogenannte beschränkte Herstellergarantie. Diese hat eine Dauer von 3 Jahren bzw. 3000 Akku-Stunden.
+      Wie bei vielen Elektro-Transportern dieser Art gibt es keine konkreten Preislisten.  Die Fahrzeuge werden hier nach Baukastenprinzip zusammengestellt. So bekommen Kunden nur auf konkrete Anfragen mit genauen Anforderungen auch die Kosten genannt. Die Preise des Fahrzeugs beginnen aber ungefähr bei 18.000 Euro für den Park SC und gehen je nach Aufbau bis zu rund 30.000 Euro für einen City EC mit großem Aufbau. Der Basispreis des Modells Urban liegt für das kurze Chassis laut BAFA-Liste bei 29.312 zzgl. Mehrwertsteuer. In Sachen Garantie gibt es bei Garia eine sogenannte beschränkte Herstellergarantie. Diese hat eine Dauer von 3 Jahren bzw. 3000 Akku-Stunden.
     title: Preise & Garantie
     image: /images/garia-utility-ec-mech-cage-side.jpeg
   - content: >-

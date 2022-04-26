@@ -177,11 +177,14 @@ collections:
       - {
           label: "slug(SOS! WRITE ME WHENEVER YOU RENAME IT-ANGELOS-)",
           name: "slug",
-          widget: "string",
+          widget: slug,
           default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
           i18n: duplicate,
           required: true,
+          hint: "slug",
+          mySchemaProperty: "my-schema-property",
         }
+
       - {
           label: "Youtube Link",
           name: "youtubeLink",

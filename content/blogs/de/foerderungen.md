@@ -9,7 +9,7 @@ contentHeading:
   title: ""
   content: ""
   image: ""
-slug: foerderungenshit
+slug: foerderungen
 vehicle:
   key: gut
   value: 4,0
@@ -176,14 +176,11 @@ description: Förderungen für Elektrotransporter Text Text Text Text Text Text
   Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
   Text Text Text
 ---
+
 # Text über Förderungen
-
-
 
 > 1. item1
 > 2. item2
 > 3. item3
-
-
 
 lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.lorem ipsum dolor sit amet consectetur adipisicing elit.

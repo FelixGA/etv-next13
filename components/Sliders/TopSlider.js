@@ -33,9 +33,9 @@ const TopSlider = ({ getContent, getCars }) => {
           >
             <TopSliderCard
               displayedCars={getCars}
-              /*  displayedCars={getCars?.sort(
+               displayedCars={getCars?.sort(
                 (a, b) => a.rating.value - b.rating.value
-              )} */
+              )}
             />
           </div>
         </div>

@@ -11,7 +11,8 @@ module.exports = withPWA({
     domains: ["elektrotransporter-vergleich.de"],
   },
   i18n: {
-    locales: ["de", "en"],
+    // locales: ["de", "en"],
+    locales: ["de"],
     defaultLocale: "de",
     domains: [
       {

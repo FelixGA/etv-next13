@@ -1,12 +1,14 @@
 ---
-title: ARI-345
+title: ARI 345 Testbericht von Elektrotransporter-Vergleich
 slug: ari-345-testbericht-von-elektrotransporter-vergleich
 relatedCars: ari-345-koffer
 youtubeLink: https://www.youtube.com/watch?v=OJ4xza2e1P0&list=PLmjRcMALs3P_flqX9VLxK3FNra6vv4OzC
 category: Koffer
 publishedAt: 03/17/2022
-description: bitte fuer SEO auffuelen bitte fuer SEO auffuelen bitte fuer SEO
-  auffuelen bitte fuer SEO auffuelen
+description: >
+  Der ARI 345 ist ein Elektro-Lastentrike der Fahrzeugklasse L2e mit einer
+  Höchstgeschwindigkeit von 45 km/h und einer maximalen Nutzlast von 325
+  Kilogramm.
 src: /images/ari-345-koffer-mit-geöffneter-seitenklappe-und-solarpanel.jpg
 content:
   - content: >-
@@ -17,7 +19,7 @@ content:
     image: /images/ari-345-koffer-mit-geöffneter-seitenklappe-und-solarpanel.jpg
     title: Konzept & Fahrzeugvarianten
   - content: >-
-      ### Laderaum & Flexibilität (⅘)
+      ### Laderaum & Flexibilität (4/5)
 
 
       Das ARI 345 Pritsche ist in drei Größen mit Ladeflächen von 1,42 m², 1,53 m² und 1,79 m² verfügbar. Die Höhe der Ladebordwand liegt bei 25 cm. Die Ladekantenhöhe bei allen Aufbauten beträgt 56cm. 
@@ -56,7 +58,7 @@ content:
 
 
       Optional kann das Lastenmoped auch mit einem Rammschutz, einem drei- oder vierteiligen Laubgitter oder einem Leiterträger ausgerüstet werden. Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist erhältlich.
-    image: /images/ari-458-innenraum-fahrerplatz.jpg
+    image: /images/ari-345-tacho-anzeige.jpg
     title: Komfort & Ausstattung (4/5)
   - content: >-
       ### Bedienung & Fahrbetrieb
@@ -66,7 +68,7 @@ content:
     image: /images/ari-345-lastentrike-koffer-front.jpg
     title: Bedienung & Fahrbetrieb
   - content: >-
-      ### Umwelt (⅘)
+      ### Umwelt (4/5)
 
 
       Der kombinierte Verbrauch des ARI 345 ist mit ca. 5,6 kWh sehr niedrig. Durch ein zusätzliches Solarpanel, welches für rund 30 Kilometer mehr Reichweite sorgt, ist das Fahrzeug noch sparsamer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 1,68 €.
@@ -78,7 +80,7 @@ content:
 
       Das ARI 345 ist vergleichsweise günstig. Die Preise für die Pritsche starten bei 6.995 €. Der Koffer ist ab 7.395€  und der Food Truck ab 12.725 € erhältlich. Auf das Fahrzeug gibt es 6 Monate Garantie und auf die Batterie 18 Monate Gewährleistung.
     title: Preise & Garantie
-    image: /images/dsc_0071.png
+    image: /images/ari-345-lastentrike-mit-kippbarer-pritsche.jpg
   - content: >-
       ### Fazit
 
@@ -89,9 +91,7 @@ content:
       Das ARI 345 Koffer ist eine gute Wahl für Lieferfirmen oder Dienstleister. Mit dem neusten Food Truck-Aufbau finden sich zudem auch zahlreiche Einsatzmöglichkeiten im gastronomischen Bereich. Die Anschaffungskosten des Fahrzeugs sind dabei vergleichsweise niedrig.
 
 
-      ## Gesamtpunktzahl:
-
-
-      4 Sterne
+      #### Gesamtbewertung: 4,0
     title: Fazit
+    image: /images/ari-345-lastentrike-pritsche-mit-europalette.jpg
 ---

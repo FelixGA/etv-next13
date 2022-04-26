@@ -9,7 +9,7 @@ export default function fahrzeuge(props) {
   const [getContent, SetGetContent] = useState(props.page);
   const [getCarsReview, SetCarsReview] = useState(props.carsreviews);
   const { state, dispatch } = useStore();
-  console.log("CAAARRSS", sortedCars);
+  // console.log("CAAARRSS", sortedCars);
   /* ᴄᴀʀs ranking ғɪʟᴛᴇʀ */
   useEffect(() => {
     SetSortedCars(

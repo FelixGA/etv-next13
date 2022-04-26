@@ -17,11 +17,11 @@ const NewsLetter = ({ getMarkdownContext }) => {
   const onSubmit = async (data, e) => {
     e.preventDefault();
     "data", data;
-    console.log("mydata", data);
+    // console.log("mydata", data);
 
     try {
       const result = await axios.post(`/api/handleNewsletter`, data);
-      console.log("result", result);
+      // console.log("result", result);
     } catch (err) {
       console.log("error", err.response.data.message);
     }

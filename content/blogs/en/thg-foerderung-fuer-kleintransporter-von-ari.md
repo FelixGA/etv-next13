@@ -9,7 +9,6 @@ description: Halter eines ARI 458 oder ARI 901 können jetzt dank THG-Förderung
   einen jährlichen Zusatzverdienst erzielen.
 contentHeading:
   content: ""
-  image: null
 ---
 Käufer eines Elektrofahrzeugs von Ari Motors aus Borna bei Leipzig können vom Treibhausgasminderungsgesetz profitieren. Kooperationspartner ist Emovy, der den Emissionshandel für den Kunden abwickelt. Halter eines Ari 458 oder 901 können durch die Vermittlung ihrer THG-Quote in diesem Jahr 375 bzw. 565 Euro verdienen. Da die THG-Quote jährlich gehandelt werden kann, kann das Geld über den gesamten Zulassungszeitraum generiert werden.
 

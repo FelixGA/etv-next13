@@ -3,6 +3,7 @@ title: Aixam Pro e-Truck
 slug: aixam-pro-etruck-testbericht-von-elektrotransporter-vergleich
 relatedCars: aixam-pro-etruck-pritsche
 youtubeLink: https://www.youtube.com/watch?v=Fw_1SbR63SU
+category: Koffer
 publishedAt: 03/17/2022
 description: >
   Der Aixam Pro e-Truck ist ein leichter Elektrotransporter der Fahrzeugklasse
