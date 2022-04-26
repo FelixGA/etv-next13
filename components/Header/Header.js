@@ -9,15 +9,15 @@ import { useRouter } from "next/router";
 
 const variants = {
   enter: {
-    x: 1000,
+    y: -1000,
     opacity: 0,
   },
   center: {
-    x: 0,
+    y: 0,
     opacity: 1,
   },
   exit: {
-    x: 1000,
+    y: -1000,
     opacity: 0,
   },
 };
@@ -27,7 +27,7 @@ const Header = () => {
   const router = useRouter();
   return (
     <div className="relative print:hidden ">
-      <div className="sticky top-0 z-30 flex flex-row items-center justify-between w-full h-20 bg-blue-darker sm:h-24 2xl:px-40">
+      <div className="sticky top-0 z-40 flex flex-row items-center justify-between w-full h-20 bg-blue-darker sm:h-24 2xl:px-40">
         <Link href={`/`} passHref>
           <div
             className="flex flex-row pl-2 cursor-pointer sm:pl-4 "
@@ -73,7 +73,7 @@ const Header = () => {
               />
             </div>
             <div className="flex items-center pl-2 ">
-              <p className="pt-1 text-xs text-white md:text-sm xl:text-lg">
+              <p className="pt-1 text-xs text-white md:text-sm xl:text-lg ">
                 ELEKTROTRANSPORTER
                 <br />
                 VERGLEICH

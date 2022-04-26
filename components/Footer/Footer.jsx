@@ -91,13 +91,25 @@ const Footer = ({ blogs, reviews }) => {
           </div>
           <div className="flex justify-between w-24 pt-6 pb-8 lg:w-40 sm:pl-4">
             <div className="cursor-pointer">
-              <BsFacebook size={25} fill="#fff" />
+              <Link href="https://www.facebook.com/ARIMotorsElektrofahrzeuge">
+                <a target="_blank">
+                  <BsFacebook size={25} fill="#fff" />
+                </a>
+              </Link>
             </div>
             <div className="cursor-pointer">
-              <BsLinkedin size={25} fill="#fff" />
+              <Link href="https://www.linkedin.com/company/ari-motors-gmbh/mycompany/">
+                <a target="_blank">
+                  <BsLinkedin size={25} fill="#fff" />
+                </a>
+              </Link>
             </div>
             <div className="cursor-pointer">
-              <BsYoutube size={25} fill="#fff" />
+              <Link href="https://www.youtube.com/c/ARIMotorsGmbH">
+                <a target="_blank">
+                  <BsYoutube size={25} fill="#fff" />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
