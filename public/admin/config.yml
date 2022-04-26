@@ -199,13 +199,7 @@ collections:
         multiple: false
         i18n: duplicate
         required: true
-        options:
-          [
-            "neuigkeiten",
-            "foerderung",
-            "haeufig_gestellte_fragen",
-            "referenzen",
-          ]
+        options: ["neuigkeiten", "foerderung", "hersteller", "umwelt"]
       # - label: "post related vehicles"
       #   name: "vehicle"
       #   widget: "relation"

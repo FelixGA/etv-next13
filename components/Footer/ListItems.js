@@ -1,7 +1,11 @@
 import Link from "next/link";
 
 const ListItems = (props) => {
-  props.itemsList;
+  // let itemsList = [
+  //   ...new Set(props.itemsList.map((blog) => blog.title.split(/[\s-]+/)[0])),
+  // ];
+  // console.log(itemsList);
+
   return (
     <ul className="flex flex-col sm:pb-4 text-[#b1a7a7] items-center sm:items-start ">
       {props.itemsList
@@ -9,14 +13,17 @@ const ListItems = (props) => {
           <li className="flex items-center justify-between my-2 " key={index}>
             <Link
               href={
-                blog.category === "rechtlichesundkontakt"
-                  ? `/${blog.slug}`
-                  : blog.category === "referenzen"
-                  ? `/magazin/${blog.slug}`
-                  : `/magazin/reviews/${blog.slug}`
+                // blog.category === "rechtlichesundkontakt"
+                `/${blog.slug}`
+                //   : blog === "neuigkeiten"
+                //   ? `/magazin/${blog}`
+                //   : `www.${blog}`
+                //  : `/magazin/reviews/${blog.slug}`
               }
             >
-              <a className="text-sm text-left sm:text-lg">{blog.title}</a>
+              <a className="text-sm text-left sm:text-lg">
+                {blog.title ? blog.title : blog}
+              </a>
             </Link>
           </li>
         ))
