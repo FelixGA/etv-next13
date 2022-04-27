@@ -12,7 +12,7 @@ relatedBlogs:
     Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
-relatedReviews: ari-458-koffer
+relatedReviews: ari-458-testbericht-von-elektrotransporter-vergleich
 description: Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI
   Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen
   Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
