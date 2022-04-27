@@ -56,6 +56,9 @@ export default function Form(props) {
       >
         <div className="w-full">
           <TextInput
+            style={`${
+              errors.firstName ? "xs:mr-2 focus:border-red-500" : "xs:mr-2"
+            }`}
             placeholder={"z.B. Max Muster"}
             register={register}
             label={"Name:"}
@@ -102,6 +105,7 @@ export default function Form(props) {
         </div>
         <div className="w-full">
           <TextInput
+            style={`${errors.emailInput ? " focus:border-red-500" : ""}`}
             placeholder={"z.B. max@muster.com"}
             register={register}
             label={"Email:"}
@@ -124,6 +128,7 @@ export default function Form(props) {
         </div>
         <div className="w-full">
           <TextArea
+            style={`${errors.message ? " focus:border-red-500" : ""}`}
             placeholder={"z.B. 030 - 123 45 67"}
             register={register}
             label={"Nachricht:"}

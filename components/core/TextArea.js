@@ -27,7 +27,7 @@ export default function TextArea({
         {label}
       </label>
       <textarea
-        className={`${style} bg-grey-lighter focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block ${
+        className={`${style} bg-grey-lighter focus:outline-none focus:ring focus:border-blue-darker focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block ${
           width ? `${width}` : "flex-grow"
         }`}
         htmlFor={id}
