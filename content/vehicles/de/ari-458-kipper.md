@@ -3,7 +3,7 @@ title: ARI 458 Kipper
 name: ari-458-kipper
 price: 17590
 relatedBlogs: beispiel
-relatedReviews: ari-458-koffer
+relatedReviews: ari-458-testbericht-von-elektrotransporter-vergleich
 description: Der ARI 458 Kipper bietet eine offene Ladefläche mit Seitenwänden,
   welche in den beiden Größen jeweils 1,56 m² bzw. 1,86 m² beträgt. Für die
   Sicherung der Ladung sind zudem Verzurr-Ösen sowie eine stabile Plane für das
