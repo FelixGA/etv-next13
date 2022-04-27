@@ -40,28 +40,28 @@ content:
     title: Laderaum & Flexibilität
     image: /images/citroen-ejumpy-laderaum.jpg
   - content: >-
-      ### Antrieb & Aufladung (2/5)
+      ### Antrieb & Aufladung (4/5)
 
 
-      Technisch gibt es den Addax MT in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und einer Leistung von 8kW. Dieses Modell ist mit einem Lithium-Ionen-Akku mit 10,2 kWh ausgestattet und erreicht eine Höchstgeschwindigkeit von 58 Km/h. Laut Hersteller soll diese Variante eine Reichweite von 80 Kilometer erreichen. Als MT15 wird der Elektrotransporter von einem 72 Volt-Motor angetrieben, der 12 KW leistet. In dieser Variante übernimmt ebenfalls ein LiFePO4-Akku die Arbeit. Die Kapazität liegt hier aber bei 14,4 kWh, wodurch die Reichweite des Addax auf 132 Kilometer (WLTP) steigen soll. Auch die Höchstgeschwindigkeit liegt hier mit 70 Km/h über der des MT10. Leider liegen jedoch keine Angaben darüber vor, wie lange eine Vollladung des jeweiligen Akkus benötigt.
-    title: Antrieb & Aufladung (2/5)
-    image: /images/addax_motors_kühlkoffer.jpg
+      Angetrieben wird der Citroen eJumpy von einem 100 kW Elektromotor, der ein Drehmoment von 260 Nm bereitstellt und den Citroen in ungefähr 12 Sekunden von 0 auf 100 km/h bringt. Wie meist bei Elektrofahrzeugen erfolgt die Kraftübertragung stufenlos. Die Höchstgeschwindigkeit beträgt bei allen Versionen bei 130 km/h. 
+
+
+      Der Citroen eJumpy ist mit zwei Akku-Varianten erhältlich: Der 50 kWh-Akku ermöglicht maximale Reichweiten um die 230 Kilometer. Für eine 11 kW Wechselstrom-Wallbox gibt Citroen die volle Aufladungszeit mit 4 Stunden und 45 Minuten an. Außerdem ist eine Schnellladefunktion für eine 100 kW Gleichstrom-Wallbox verfügbar, welche die Ladung von 0 auf 80% in gerade einmal 32 Minuten erledigen soll.
+
+
+      Der größere Akku mit 75 kWh Kapazität soll über eine maximale Reichweite von rund 320 Kilometer liegen ermöglichen, was sehr beachtlich ist für ein Fahrzeug dieser Größe. Allerdings dürften solche Strecken nur ohne Zuladung und mit wenig Steigung zu schaffen sein. Die Ladezeiten liegen hier bei rund 7 Stunden für die Wallbox und rund 48 Minuten für die 80-prozentige Schnellaufladung.
+    title: Antrieb & Aufladung
+    image: /images/citroen-ejumpy-ladeanschluss.jpg
   - content: >-
-      ### Komfort & Ausstattung (2/5)
+      ### Komfort & Ausstattung (4/5)
 
 
-      Das Fahrzeug ist sehr einfach ausgestattet, um eine simple Bedienung zu garantieren und den Akku nicht unnötig zu belasten. Die Ausstattungsliste setzt auf nützliche Helfer wie eine Servolenkung (optional) für einfaches Handling, eine Anhängerkupplung (ebenfalls optional) oder eine serienmäßige Scheibenwaschanlage für die Frontscheibe. Für den Einsatz in der kalten Jahreszeit lohnt es sich, den Aufpreis für eine Heizung und einen Satz Winterreifen zu zahlen. 
+      Die Basisversion des eJumpy heisst “Control” und verfügt bereits serienmäßig über ABS, einen Doppel-Airbag, eine praktische Berganfahrhilfe sowie eine Zentralverriegelung. Für rund 1.500 Euro mehr bekommt man die Ausstattungslinie “Club”, welche zusätzlich über eine Audioanlage, eine akustische Einparkhilfe, Klimaanlage sowie Regen- und Lichtsensor verfügt. 
 
 
-      In der Mitte der Fahrerkabine findet sich das Armaturenbrett mit Bedienfelder in der Mitte wie beispielsweise Fahrmodi-Schalter oder Berganfahrassistent. Darüber ist das Kontrolldisplay mit Kilometeranzeige, Betriebsstundenzähler und Batterieladeanzeige. 
-
-
-      Optional ist ein Radio mit Bluetooth, AUX und Freisprecheinrichtung sowie eine Rückfahrkamera verfügbar. Unter der Ladefläche kann das Fahrzeugchassis mit zwei Boxen ausgestattet werden. In diesen findet beispielsweise ein Ladegerät mit 220 Volt Stecker, ein Dieseltank für die Webasto Heizung oder ein Wassertank für die Wisch/Wasch-Anlage Platz. In den Boxen kann jedoch auch zusätzliches Werkzeug verstaut werden.
-
-
-      Ebenso lässt sich am Addax für einen Aufpreis ein Hochdruckreiniger,ein Bewässerungskit oder ein Laubsauger (Eliet TL 450 Pro 9 HP) integrieren.
-    title: Komfort & Ausstattung (2/5)
-    image: /images/addax_innenraum.jpg
+      Für Handwerker und Baustellen empfiehlt sich das Paket “Worker”, welches etwa 3.000 Euro über dem Basismodell liegt. Dieses beinhaltet ein “Baustellen-Paket” mit erhöhter Bodenfreiheit und einem Motorschutz sowie einer erhöhten Nutzlast von rund 1.150 Kilogramm. Und eine sogenannte “Grip Control” verhindert das Durchdrehen der Räder auf unbefestigtem Untergrund. Zusätzliche praktische Extras für den eJumpy beinhalten eine Anhängerkupplung (480 Euro), eine zusätzliche linke Schiebetür (370 Euro) sowie eine verglaste Trennwand (ab 150 Euro).
+    title: Komfort & Ausstattung
+    image: /images/citroen-ejumpy-fahrmodus.jpg
   - content: >-
       ### Bedienung und Fahrbetrieb
 
