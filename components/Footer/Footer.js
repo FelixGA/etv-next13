@@ -118,6 +118,8 @@ const Footer = ({ blogs, reviews }) => {
               </ul>
             </div>
           </div>
+          {/* only for RECHTLICHES & KONTAKT
+           */}
           <div className="flex flex-col items-center justify-center sm:items-start sm:w-40">
             <h3 className="flex items-center justify-center text-sm font-bold tracking-wider text-white w-52 md:justify-start sm:items-end h-14 sm:text-md">
               {`Rechtliches & Kontakt`.toUpperCase()}

@@ -4,8 +4,13 @@ import RatingBox from "../../components/repeated/RatingBox";
 import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
-const Articles = ({ carItem, getTestReview, getCarsReview }) => {
-  // (getBlogContext[0].title);
+const Articles = ({
+  carItem,
+  getTestReview,
+  getCarsReview,
+  getBlogContext,
+}) => {
+  console.log(getBlogContext);
 
   return (
     <>
@@ -50,12 +55,12 @@ const Articles = ({ carItem, getTestReview, getCarsReview }) => {
       </div>
       {/* other articles section */}
       {/* First Article */}
-      {/* <div className=" flex lg:flex-row-reverse flex-col w-full lg:p-18 justify-center items-center  p-4 ">
+      <div className=" flex lg:flex-row-reverse flex-col w-full lg:p-18 justify-center items-center  p-4 ">
         <div className="w-full p-4 lg:w-1/2 lg:p-12 print:hidden">
-          {carItem?.src && (
+          {getBlogContext?.src && (
             <Image
-              src={carItem?.src}
-              alt={carItem?.title}
+              src={getBlogContext?.src}
+              alt={getBlogContext?.title}
               width={195}
               height={140}
               layout="responsive"
@@ -65,10 +70,10 @@ const Articles = ({ carItem, getTestReview, getCarsReview }) => {
           )}
         </div>
         <div className="w-full p-2 lg:w-1/2 flex flex-col flex-wrap">
-          <h3>Text-Bild-Element mit Text links</h3>
-          <p>{carItem?.description}</p>
+          <h3>{getBlogContext?.title}</h3>
+          <p>{getBlogContext?.description}</p>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

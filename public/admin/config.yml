@@ -184,7 +184,16 @@ collections:
           hint: "slug",
           mySchemaProperty: "my-schema-property",
         }
-
+      - label: "related Cars"
+        name: "relatedCars"
+        required: true
+        widget: "relation"
+        i18n: duplicate
+        collection: "vehicles"
+        search_fields: ["title"]
+        display_fields: ["title"]
+        value_field: "name"
+        hint: "Wahl, welches Auto relevant ist"
       - {
           label: "Youtube Link",
           name: "youtubeLink",
@@ -278,7 +287,7 @@ collections:
         collection: "blogs"
         search_fields: ["title"]
         display_fields: ["title"]
-        value_field: "contentHeading"
+        value_field: "slug"
       - label: "related reviews"
         name: "relatedReviews"
         required: false
