@@ -133,7 +133,7 @@ relatedBlogs: >-
 
 
   4,4
-relatedReviews: vw-abt-e-transporter
+relatedReviews: vw-abt-e-transporter-testbericht-von-elektrotransporter-vergleich
 description: Der VW ABT e-Transporter ist ein elektrischer Kastenwagen der
   Fahrzeugklasse N1, der eine Zuladung von mehr als 1.000 Kilogramm aufnehmen
   kann und mit 90 km/h bzw. 120 km/h Höchstgeschwindigkeit verfügbar ist.
