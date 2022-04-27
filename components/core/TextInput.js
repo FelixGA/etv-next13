@@ -18,7 +18,7 @@ export default function TextInput({
         {label}
       </label>
       <input
-        className={`${style} bg-grey-lighter focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block flex-grow"
+        className={`${style} bg-grey-lighter focus:outline-none focus:ring focus:border-blue-darker focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block flex-grow"
         }`}
         content-type={type}
         // required

@@ -98,16 +98,16 @@ const Footer = ({ blogs, reviews }) => {
               </Link>
             </div>
             <div className="cursor-pointer">
-              <Link href="https://www.linkedin.com/company/ari-motors-gmbh/mycompany/">
+              <Link href="https://www.youtube.com/c/ARIMotorsGmbH">
                 <a target="_blank">
-                  <BsLinkedin size={25} fill="#fff" />
+                  <BsYoutube size={30} fill="#fff" />
                 </a>
               </Link>
             </div>
             <div className="cursor-pointer">
-              <Link href="https://www.youtube.com/c/ARIMotorsGmbH">
+              <Link href="https://www.linkedin.com/company/ari-motors-gmbh/mycompany/">
                 <a target="_blank">
-                  <BsYoutube size={25} fill="#fff" />
+                  <BsLinkedin size={25} fill="#fff" />
                 </a>
               </Link>
             </div>
