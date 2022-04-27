@@ -3,7 +3,7 @@ title: Mercedes-Benz eVito Kastenwagen
 name: mercedes-benz-evito
 price: 45990
 relatedBlogs: nur beispiel
-relatedReviews: ""
+relatedReviews: mercedes-benz-evito-testbericht-von-elektrotransporter-vergleich
 description: Der Mercedes-Benz eVito Kastenwagen ist ein Elektrotransporter,
   welcher in zwei Fahrzeuglängen erhältlich ist. Das Fahrzeug erreicht eine
   Höchstgeschwindigkeit von 80 km/h bzw. 120 km/h optional und kann rund 900
