@@ -25,7 +25,7 @@ content:
 
       Seit 2020 ist die elektrische Version Citroen eJumpy auf dem Markt. Der Kastenwagen ist elektrisch in zwei Längen erhältlich: 4,95 Meter (M) sowie 5,30 Meter (XL). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität, welche natürlich unterschiedliche Reichweiten ermöglichen. Der Citroen eJumpy ist auch als Kombi erhältlich, mit Sitzen und Fenstern im Fond. Hier soll es aber um die Kastenwagen-Version gehen.
     title: Konzept & Fahrzeugvarianten
-    image: /images/citroen-ejumpy-heckansicht.jpg
+    image: ""
   - content: >-
       ### Laderaum & Flexibilität (3/5)
 
