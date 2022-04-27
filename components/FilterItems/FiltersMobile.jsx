@@ -11,7 +11,7 @@ import PriceInputs from "./PriceInputs";
 
 const variants = {
   enter: {
-    y: -1000,
+    y: -500,
     opacity: 0,
   },
   center: {
@@ -19,7 +19,7 @@ const variants = {
     opacity: 1,
   },
   exit: {
-    y: -1000,
+    y: -500,
     opacity: 0,
   },
 };
@@ -39,9 +39,9 @@ function FiltersMobile() {
     SetUserInputMaxPrice(e.target.value);
   };
   return (
-    <div className="absolute z-20 bg-white w-full shadow-lg">
+    <div className="absolute z-20 w-full bg-white shadow-lg">
       <div className="flex flex-col bg-white ">
-        <div className="shadow-dropdown w-full ">
+        <div className="w-full shadow-dropdown ">
           <div
             className={
               clicked
@@ -52,7 +52,7 @@ function FiltersMobile() {
               setClicked(!clicked);
             }}
           >
-            <div className="flex-1 flex">
+            <div className="flex flex-1">
               <div className="w-3.5 my-auto ml-6">
                 <Image
                   src={filterImage}
@@ -63,7 +63,7 @@ function FiltersMobile() {
                   layout="responsive"
                 />
               </div>
-              <span className="ml-4 font-black my-auto text-sm text-blue-darker">
+              <span className="my-auto ml-4 text-sm font-black text-blue-darker">
                 {/* Alle Filter anzeigen */}
                 Alle Filter anzeigen
               </span>
@@ -92,7 +92,7 @@ function FiltersMobile() {
             transition={{ type: "tween", duration: 0.1 }}
           >
             {priceFilterData.map((item) => (
-              <div className="relative  " key={item.id}>
+              <div className="relative " key={item.id}>
                 <Sort />
                 <FilterItemMobile item={item} />
                 <AnimatePresence initial={false}>
@@ -103,7 +103,7 @@ function FiltersMobile() {
                       animate="center"
                       exit="exit"
                       transition={{ type: "tween", duration: 0.1 }}
-                      className="flex flex-col relative"
+                      className="relative flex flex-col"
                     >
                       <PriceInputs />
                     </motion.div>
