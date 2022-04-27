@@ -16,7 +16,7 @@ export default function kontakt(props) {
     <div className="relative flex flex-col items-center ">
       <Head page={props.page} />
 
-      <div className="flex flex-col w-full px-48 mx-auto lg:flex-row">
+      <div className="flex flex-col w-full mx-auto 2xl:px-48 lg:flex-row">
         {router.pathname == "/kontakt" ? (
           <div className="flex flex-col justify-center w-full ">
             <div className="hidden mb-12 lg:block">
