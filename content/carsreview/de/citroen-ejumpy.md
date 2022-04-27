@@ -5,34 +5,40 @@ relatedCars: citroen-e-jumpy
 youtubeLink: https://www.youtube.com/watch?v=C0o0u7WIV8k
 category: Kasten
 publishedAt: 04/11/2022
-description: "Der Addax MT ist ein Elektro-Kleintransporter der Fahrzeugklasse
-  N1 und verfügt über eine maximale Nutzlast von 1000 Kilogramm und eine
-  Anhängelast von 2000 Kilogramm.     "
-src: /images/addax_motors_mulde.jpg
+description: >
+  Der Citroen eJumpy ist ein Elektrotransporter der Fahrzeugklasse N1 mit einer
+  Höchstgeschwindigkeit von 130 km/h und einer maximalen Nutzlast von rund 925
+  Kilogramm.
+src: /images/citroen-ejumpy-frontansicht.jpg
 content:
+  - content: Der Citroen eJumpy ist ein Elektrotransporter der Fahrzeugklasse N1 mit
+      einer Höchstgeschwindigkeit von 130 km/h und einer maximalen Nutzlast von
+      rund 925 Kilogramm.
+    title: Einleitung
+    image: ""
   - content: >-
       ### Konzept & Fahrzeugvarianten
 
 
-      Addax ist ein belgischer Hersteller, der sich auf Nutzfahrzeuge für Unternehmen und Gemeinden spezialisiert hat. Der Addax MT ist mit einer offenen sowie einer geschlossenen Frachtbox verfügbar, welche entweder mit klappbaren Seitenwänden oder mit einem hohen Gitteraufbau versehen ist. Des Weiteren sind auch Aufbauten wie Pritsche, Kipper, Koffer, Kühlkoffer sowie kippbarer Container erhältlich. Das Fahrzeug ist baugleich zum Stama Maestro des dänischen Anbieters GMR.
+      Im Jahr 1995 begann die Produktion des Citroen Jumpy, welcher vom PSA-Konzern entwickelt wurde und mit dem Peugeot Expert und dem Fiat Scudo zwei Schwestermodelle besaß. Auch die zweite Generation ab 2007 war ein Gemeinschaftsprojekt der drei Hersteller. Dies änderte sich aber mit der dritten Generation, die seit 2016 auf dem Markt ist. Diese ist auch in Zusammenarbeit mit Toyota entstanden, wodurch der Jumpy gleich drei Geschwister hat: den Peugeot Expert, den Toyota Proace sowie den Opel Vivaro.
 
 
-      Technisch gibt es den Addax MT ebenso wie den Stama Maestro in zwei Getriebeversionen.
+      Seit 2020 ist die elektrische Version Citroen eJumpy auf dem Markt. Der Kastenwagen ist elektrisch in zwei Längen erhältlich: 4,95 Meter (M) sowie 5,30 Meter (XL). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität, welche natürlich unterschiedliche Reichweiten ermöglichen. Der Citroen eJumpy ist auch als Kombi erhältlich, mit Sitzen und Fenstern im Fond. Hier soll es aber um die Kastenwagen-Version gehen.
     title: Konzept & Fahrzeugvarianten
-    image: /images/addax_motors_pritsche.jpg
+    image: /images/citroen-ejumpy-heckansicht.jpg
   - content: >-
-      ### Laderaum & Flexibilität (4/5)
+      ### Laderaum & Flexibilität (3/5)
 
 
-      Der Addax ist 3,65 Meter lang bei einem Radstand von 2,04 Meter. Die Breite des Fahrzeuges beträgt 1,50 Meter, womit es auch für engere Parkanlagen geeignet ist. Ohne Warnleuchte hat die Kabine Höhe von 1,99 Meter, welches auch bei hohem Gitteraufbau die Gesamthöhe des Fahrzeugs ist.
+      Bereits in der kürzeren Variante M hat der Citroen eJumpy ein Ladevolumen von maximal 5.800 Liter. Der Stauraum kann über zwei geteilte, seitlich schwenkende Hecktüren oder eine nach oben schwingende Heckklappe beladen werden. Außerdem ist eine seitliche Schiebetür serienmäßig vorhanden. Der Laderaum hat beim eJumpy M eine Länge von rund 2,41 Meter, die Breite liegt bei maximal 1,62 Meter und die Ladung kann bis zu 1,33 Meter hoch geladen werden. Bei der größeren Versionen ändert sich vor allem die Länge des Laderaums: als Jumpy XL liegt diese bei 2,76 Meter. Dadurch entsteht ein Ladevolumen von maximal 6.600 Liter.
 
 
-      Hinter der Fahrerkabine befindet sich das 2,15 Meter lange Chassis, welches mit den verschiedenen Aufbauten ausgestattet werden kann. Außerdem kann der Kunde wählen, ob die Pritsche über klappbare, flache Seitenwände oder über hohe Gitterwände verfügen soll. Ersteres ist für den Transport von Gütern und Arbeitsgeräten praktisch, während zweiteres ideal als Laubgitter ist. Genaue Angaben über die Ladefläche gibt es vom Hersteller nicht. Diese dürfte aber angesichts der Maße bei rund 3 m² liegen. Die Nutzlast liegt bei 565-2000 Kilogramm je nach Konfiguration. 
+      Die Nutzlast des Citroen eJumpy liegt bei den allen Modellen bei rund 925 Kilogramm. Allerdings gibt es die 50 kWh-Version mit einer optionalen erhöhten Nutzlast, welche dann bei rund 1.150 Kilogramm liegt. Die Anhängelast ist bei allen Modellen gleich: 1.000 Kilogramm für gebremste, 750 Kilogramm für ungebremste Anhänger.
 
 
-      Neben der Pritschen-Version mit Laubgitter ist das Fahrzeug auch als Kipper, Koffer, kippbarer Container, Kühlwagen oder auch als blankes Fahrgestell verfügbar. Das Fahrzeug ist außerdem auch als kurzer Heckkipper mit seitlich abklappbaren Bordwänden verfügbar.  Der Raum zwischen Fahrerkabine und Ladefläche wird hier durch eine praktische Werkzeugbox ergänzt.
-    title: Laderaum & Flexibilität (4/5)
-    image: /images/addax.png
+      Andere Aufbauten wie ein Koffer oder eine Pritsche sind für den eJumpy nicht verfügbar.
+    title: Laderaum & Flexibilität
+    image: /images/citroen-ejumpy-laderaum.jpg
   - content: >-
       ### Antrieb & Aufladung (2/5)
 
@@ -83,10 +89,9 @@ content:
       ### Fazit
 
 
-      Der Addax MT eignet sich dank seiner Wendigkeit und den Aufbautypen besonders für Landschaftsbaubetriebe und Kommunen zur Pflege von Grünanlagen und Parks, aber auch als Baustellenfahrzeug oder für den Betrieb in Werkshallen. Während die Ausstattung sehr minimal ist, punktet der Addax mit seiner Wendigkeit und den vielen Aufbauvarianten.
+      Der Citroen eJumpy ist ein Elektrotransporter der Fahrzeugklasse N1 mit einer Höchstgeschwindigkeit von 130 km/h und einer maximalen Nutzlast von rund 925 Kilogramm.
 
 
       #### Gesamtnote: 2,6
-    title: "Fazit "
-    image: /images/addax_26_pritsche.jpg
+    title: Fazit
 ---
