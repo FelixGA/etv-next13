@@ -6,6 +6,7 @@ relatedBlogs:
   title: ""
   content: ""
   image: ""
+relatedReviews: aixam-pro-etruck-testbericht-von-elektrotransporter-vergleich
 description: >-
   Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen”
   mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein
