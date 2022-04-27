@@ -36,7 +36,7 @@ function FiltersDesktop() {
                   animate="center"
                   exit="exit"
                   transition={{ type: "tween", duration: 0.1 }}
-                  className="flex flex-col ml-8 relative "
+                  className="relative flex flex-col ml-8 "
                 >
                   <PriceInputs />
                 </motion.div>

@@ -43,7 +43,7 @@ export default function caradvisor(props) {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center w-full px-4 bg-white xl:px-40 lg:flex-row justify-evenly">
+      <div className="flex flex-col items-center w-full px-4 bg-white xl:px-40 md:flex-row justify-evenly">
         <div className="w-full px-2 py-4">
           <div className="w-full border shadow-lg ">
             <Image
@@ -54,7 +54,7 @@ export default function caradvisor(props) {
               objectFit="contain"
             />
           </div>
-          <h3 className="h-16 pt-2 lg:text-2xl xl:text-2xl">
+          <h3 className="pt-2 sm:h-16 2xl:h-8 lg:text-2xl xl:text-2xl">
             1. Wunschfahrzeug konfigurieren
           </h3>
           <p className="h-48 xl:pt-4">
@@ -74,7 +74,7 @@ export default function caradvisor(props) {
               objectFit="contain"
             />
           </div>
-          <h3 className="h-16 pt-2 lg:text-2xl">
+          <h3 className="pt-2 sm:h-16 2xl:h-8 lg:text-2xl">
             2. Vorgeschlagene Fahrzeuge vergleichen
           </h3>
           <p className="h-48 xl:pt-4 ">
@@ -93,7 +93,7 @@ export default function caradvisor(props) {
               objectFit="contain"
             />
           </div>
-          <h3 className="h-16 pt-2 lg:text-2xl">
+          <h3 className="pt-2 sm:h-16 2xl:h-8 lg:text-2xl">
             3. Kostenloses Angebot erhalten
           </h3>
           <p className="h-48 xl:pt-4">

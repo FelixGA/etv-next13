@@ -1,4 +1,5 @@
 const CarDimentions = ({ vehichleDimentions }) => {
+  console.log(vehichleDimentions);
   /* calculations */
   // let loadingspace = parseFloat(
   //   (carItem?.loadingVolume.valueheight *

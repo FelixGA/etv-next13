@@ -25,20 +25,24 @@ const TechnicalDetails = ({ carItem }) => {
     ];
     SetBasics(basics);
     const details = [
-      carItem.subsidies,
+      { key: "Guarantee:", value: " " },
       carItem.batteryGuarantee,
       carItem.guarantee,
       carItem.availability,
+
+      carItem.seats,
+      { key: "Akku:", value: " " },
       carItem.batteryCapacityLithium,
       carItem.batteryCapacityBlei,
       carItem.batteryIncluded,
       carItem.consumption,
-      carItem.seats,
+      carItem.subsidies,
     ];
 
     SetDetails(details);
     const vehichleDimentions = [
-      carItem.carSizes,
+      /* carItem.carSizes, */
+      { key: "Fahrzeugmaße" },
       carItem.loadingVolumeHeight,
       carItem.loadingVolumeLength,
       carItem.wheelbase,
