@@ -61,37 +61,40 @@ content:
 
       Für Handwerker und Baustellen empfiehlt sich das Paket “Worker”, welches etwa 3.000 Euro über dem Basismodell liegt. Dieses beinhaltet ein “Baustellen-Paket” mit erhöhter Bodenfreiheit und einem Motorschutz sowie einer erhöhten Nutzlast von rund 1.150 Kilogramm. Und eine sogenannte “Grip Control” verhindert das Durchdrehen der Räder auf unbefestigtem Untergrund. Zusätzliche praktische Extras für den eJumpy beinhalten eine Anhängerkupplung (480 Euro), eine zusätzliche linke Schiebetür (370 Euro) sowie eine verglaste Trennwand (ab 150 Euro).
     title: Komfort & Ausstattung
-    image: /images/citroen-ejumpy-fahrmodus.jpg
+    image: /images/citroen-ejumpy-innenraum.jpg
   - content: >-
       ### Bedienung und Fahrbetrieb
 
 
-      Durch die kompakten Außenmaße eignet sich das Fahrzeug besonders  für schmale Wege in Grünanlagen oder Parks. Mit einem Wendekreis von 4,5 Metern lässt sich das Fahrzeug stets bequem wenden. Die Große Frontscheibe bringt dabei eine gute Verkehrsübersicht. 
+      Durch die kompakten Außenmaße eignet sich das Fahrzeug besonders  für schmale Wege in Der eJumpy ist ein recht luxuriöser Kastenwagen, dessen Fahrerkabine sehr komfortabel und hochwertig ist. Die Anzeigen sind fast alle digital und auch sonst mutet das Armaturenbrett sehr modern an. Der Transporter wirkt dadurch weniger wie ein robuster Handwerker-Kastenwagen und mehr wie ein komfortabler Kleinbus. Etwas gewöhnungsbedürftig ist der Fahrmodus-Schalter, der nur mit einem Finger bedient werden kann, wodurch die Auswahl etwas hakelig ist.
 
 
-      Die Bedieneinheit für den Kipper findet sich unterhalb der Ladefläche und kann über einen Schlüssel gestartet werden.
+      Auf der Straße macht der Citroen eJumpy eine gute Figur. Die 260 Nm brauchen für ihre Entfaltung nicht wie beim Verbrennermotor einen konkreten Drehzahlbereich, sondern sind direkt vorhanden. Dadurch beschleunigt der Elektrotransporter mehr als ordentlich und ist dank 100 kW Leistung auch auf Landstraßen flott unterwegs. Und auch die Autobahn ist kein Hindernis, allerdings ist das Fahrzeug bei 100 km/h abgeriegelt.
     title: Bedienung und Fahrbetrieb
-    image: /images/addax.jpg
+    image: /images/citroen-ejumpy-heckansicht.jpg
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt (2/5)
 
 
-      Der Verbrauch des Fahrzeugs liegt laut Hersteller bei rund 12 kWh. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 Kilometer Fahrt 3,60 €.
-    title: Umwelt (3/5)
+      Der kombinierte Verbrauch des Citroen eJumpy liegt bei 24,9 kWh pro 100 km. Das Fahrzeug verbraucht damit deutlich mehr als andere Modelle seiner Größe. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 7,47 €.
+    title: Umwelt
   - content: >-
-      ### Preise & Garantie (2/5)
+      ### Preise & Garantie (4/5)
 
 
-      Die Preise für den Addax MT beginnen bei rund 35.450 Euro. Ein konkretes Angebot für ein spezielles Modell können Interessenten auf Anfrage beim Unternehmen erhalten. Im Preis enthalten ist das Akkupaket, auf welches der Hersteller eine Gewährleistung von 5 Jahren gibt. Auf das Fahrzeug gibt der Hersteller eine Garantie von 2 Jahren.
+      Die Preise für den Citroen eJumpy beginnen bei 35.250 Euro netto für den eJumpy M mit 50 kWh-Akku und Basisausstattung. Die Variante mit einer Akkukapazität von 75 kWh kostet exakt 5.000 Euro mehr. Der eJumpy XL mit 5,30 Meter Länge ist ab 36.330 Euro netto verfügbar, ab 40.880 Euro mit dem größeren Akku. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
+
+
+      Citroen bietet auf den Fahrzeugakku eine Garantie von stolzen 8 Jahren bzw. 160.000 Kilometer. Für das Fahrzeug gelten wie üblich bei Citroen eine Herstellergarantie von 2 Jahren ohne Kilometerbeschränkung.
     title: Preise & Garantie (2/5)
-    image: /images/addax_koffer.jpg
+    image: ""
   - content: >-
       ### Fazit
 
 
-      Der Citroen eJumpy ist ein Elektrotransporter der Fahrzeugklasse N1 mit einer Höchstgeschwindigkeit von 130 km/h und einer maximalen Nutzlast von rund 925 Kilogramm.
+      Der Citroen eJumpy ist ein recht hochwertiger Kastenwagen, welcher zudem mit einer recht hohen Reichweite punktet. Der Laderaum ist sehr geräumig und einfach beladbar und es gibt viele praktische Ausstattungsdetails für den Berufsalltag, wodurch der eJumpy speziell für Lieferanten und Handwerker sehr interessant sein dürfte. Allerdings ist das Fahrzeug nicht gerade günstig. Die eJumpy-Modelle kosten 8.000 bis 10.000 Euro netto mehr als das vergleichbare Verbrenner-Modell. Dadurch könnte das Fahrzeug für einige Interessenten schlich nicht erschwinglich sein.
 
 
-      #### Gesamtnote: 2,6
+      #### Gesamtnote: 3,4
     title: Fazit
 ---
