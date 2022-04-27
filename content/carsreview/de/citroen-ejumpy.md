@@ -1,9 +1,9 @@
 ---
 title: Citroen eJumpy
 slug: citroen-ejumpy
-relatedCars: addax-mt-pritsche
-youtubeLink: https://www.youtube.com/watch?v=tTpUFu3Stzg
-category: Kipper
+relatedCars: citroen-e-jumpy
+youtubeLink: https://www.youtube.com/watch?v=C0o0u7WIV8k
+category: Kasten
 publishedAt: 04/11/2022
 description: "Der Addax MT ist ein Elektro-Kleintransporter der Fahrzeugklasse
   N1 und verfügt über eine maximale Nutzlast von 1000 Kilogramm und eine
