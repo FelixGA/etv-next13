@@ -1,26 +1,23 @@
-import Head from "../../components/core/Head";
+import Head from "../../../components/core/Head";
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
-import Blog from "../../components/Blog/Blog";
-import BlogHeader from "../../components/Blog/BlogHeader";
+import Blog from "../../../components/Blog/Blog";
+import BlogHeader from "../../../components/Blog/BlogHeader";
 
 export default function reviews(props) {
-  const [getBlogs, SetGetBlogs] = useState(props.blogs);
-  const [getTestReview, SetTestReview] = useState(props.carsreviews);
+  const [getBlogs, SetGetBlogs] = useState(
+    props.blogs.filter((item) => item.category === "neuigkeiten")
+  );
 
   useEffect(() => {
-    SetGetBlogs(props.blogs);
-    SetTestReview(props.carsreviews);
+    SetGetBlogs(props.blogs.filter((item) => item.category === "neuigkeiten"));
   }, [props]);
   return (
     <>
       {" "}
       <Head page={props.page} />
-      <h2 className="px-4 pt-8 pb-2 text-blue-dark font-bold text-4xl text-center">
-        Testberichte
-      </h2>
-      <BlogHeader getBlogs={getTestReview} />
-      <Blog getBlogs={getTestReview} />
+      <BlogHeader getBlogs={getBlogs} />
+      <Blog getBlogs={getBlogs} />
     </>
   );
 }
