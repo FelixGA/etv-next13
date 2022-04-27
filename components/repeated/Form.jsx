@@ -52,7 +52,7 @@ export default function Form(props) {
         // action="https://api.vercel.com/v6/deployments"
         method="POST"
         onSubmit={handleSubmit(onSubmit, onError)}
-        className="flex flex-col px-4 mt-4 bg-white rounded-md shadow-lg"
+        className="flex flex-col px-4 my-4 bg-white shadow-lg xs:rounded-md"
       >
         <div className="w-full">
           <TextInput

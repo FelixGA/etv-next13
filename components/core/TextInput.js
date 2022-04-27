@@ -14,7 +14,7 @@ export default function TextInput({
 
   return (
     <div className="flex flex-col mb-4">
-      <label htmlFor={id} className="py-2 font-bold text-blue-lighter">
+      <label htmlFor={id} className="font-bold sm:py-2 text-blue-lighter">
         {label}
       </label>
       <input
