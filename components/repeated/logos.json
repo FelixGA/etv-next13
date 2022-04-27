@@ -19,13 +19,13 @@
   },
   {
     "src": "/images/logos/man-Logo.png",
-    "sizes": "24x24",
+    "sizes": "48x48",
     "type": "image/png",
     "alt": "Man-logo"
   },
   {
     "src": "/images/logos/Nissan-Logo.jpg",
-    "sizes": "24x24",
+    "sizes": "48x48",
     "type": "image/png",
     "alt": "Nissan-Logo"
   },
@@ -44,7 +44,7 @@
   },
   {
     "src": "/images/logos/Renault-Logo.png",
-    "sizes": "24x24",
+    "sizes": "48x48",
     "type": "image/png",
     "alt": "Renault-Logo"
   }
