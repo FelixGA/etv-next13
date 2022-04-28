@@ -19,7 +19,7 @@ content:
       E-Transporter
 
 
-      Mit dem Kaufberater finden Sie im Handumdrehen den E-Transporter, der genau zu Ihren Ansprüchen passt. Einfach Wunsch-Transporter konfigurieren. Vorgeschlagene Fahrzeuge vergleichen & kostenloses Angebot anfordern. 
+      Mit dem Kaufberater finden Sie in Nullkommanix den E-Transporter, der genau zu Ihren Ansprüchen passt. Einfach Wunsch-Transporter konfigurieren. Vorgeschlagene Fahrzeuge vergleichen & kostenloses Angebot anfordern. 
 
 
       Einfach, schnell und garantiert treffsicher. Probieren Sie´s aus!
