@@ -22,7 +22,7 @@ export default function FunnelBox({ currentFilter, redirecter }) {
               });
             }}
             key={index}
-            className="flex flex-col items-center justify-center w-32 h-32 m-2 bg-white border shadow-lg cursor-pointer sm:w-40 lg:w-56 lg:h-56 xl:w-64 sm:h-40 xl:h-64 sm:mb-8 hover:scale-110"
+            className="flex flex-col items-center justify-center w-32 h-32 m-2 transition bg-white cursor-pointer shadow-dropdown sm:w-40 lg:w-56 lg:h-56 xl:w-64 sm:h-40 xl:h-64 sm:mb-8 hover:scale-110"
           >
             <div className="w-24 h-24 pt-4 sm:w-36 lg:w-44 lg:h-44 xl:w-60 sm:h-36 xl:h-60">
               <Image

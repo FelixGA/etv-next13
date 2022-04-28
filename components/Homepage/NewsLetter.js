@@ -72,7 +72,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
                 : setSend(false);
             }}
             type="submit"
-            className="px-6 mt-2 font-bold text-white rounded-md bg-blue-dark xs:mt-0 hover:bg-blue-light text-md sm:rounded-r-lg sm:rounded-none h-14"
+            className="px-6 mt-2 font-bold text-white rounded-md bg-blue-dark xs:mt-0 transition hover:bg-blue-light text-md sm:rounded-r-lg sm:rounded-none h-14"
           >
             anmelden
           </button>

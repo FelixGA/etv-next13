@@ -201,7 +201,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
             {/* BUTTON */}
             <div className="flex lg:justify-around justify-between items-start lg:items-center flex-wrap w-full lg:w-[14vw]">
               <button
-                className="w-full px-2 text-sm font-bold text-white rounded-lg bg-blue-dark hover:bg-blue-light h-14 "
+                className="w-full px-2 text-sm font-bold text-white transition rounded-lg bg-blue-dark hover:bg-blue-light h-14"
                 onClick={() => {
                   dispatch({
                     type: "price",

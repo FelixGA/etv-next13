@@ -15,7 +15,7 @@ const TopSlider = ({ getContent, getCars }) => {
           }}
           className={
             getCars.length >= 4
-              ? " hidden xl:flex items-center pl-1 hover:scale-125 bg-white"
+              ? " hidden xl:flex items-center pl-1 hover:scale-125 bg-white transition"
               : "hidden"
           }
         >
@@ -33,7 +33,7 @@ const TopSlider = ({ getContent, getCars }) => {
           >
             <TopSliderCard
               displayedCars={getCars}
-               displayedCars={getCars?.sort(
+              displayedCars={getCars?.sort(
                 (a, b) => a.rating.value - b.rating.value
               )}
             />
@@ -44,7 +44,7 @@ const TopSlider = ({ getContent, getCars }) => {
           onClick={() => (container.current.scrollLeft += 293)}
           className={
             getCars.length >= 4
-              ? "xl:flex items-center hidden pr-1 hover:scale-125"
+              ? "xl:flex items-center hidden pr-1 hover:scale-125 transition"
               : "hidden"
           }
         >
