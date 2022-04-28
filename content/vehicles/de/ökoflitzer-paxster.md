@@ -3,6 +3,8 @@ title: Ökoflitzer Paxster
 name: ökoflitzer-paxster
 price: 14000
 relatedBlogs: nur beispiel
+relatedReviews: nme-cargo-van-testbericht-von-elektrotransporter-vergleich
+
 description: mmmmm
 src: /images/paxter-bild.jpg
 category: Koffer

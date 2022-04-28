@@ -75,15 +75,15 @@ export async function getStaticProps(context) {
 
   /* get related reviews*/
   let carsreviews = await getContent("carsreview", context.locale);
-  let carsreview = carsreviews.find(
+  let carsreview = carsreviews?.find(
     (item) =>
-      vehicle.relatedReviews.slice(0, -45) == item.relatedCars ||
-      item.relatedCars.includes(vehicle.relatedReviews.slice(0, -45))
+      vehicle?.relatedReviews?.slice(0, -45) == item.relatedCars ||
+      item?.relatedCars.includes(vehicle?.relatedReviews.slice(0, -45))
   )
     ? carsreviews.find(
         (item) =>
-          vehicle.relatedReviews.slice(0, -45) == item.relatedCars ||
-          item.relatedCars.includes(vehicle.relatedReviews.slice(0, -45))
+          vehicle?.relatedReviews?.slice(0, -45) == item.relatedCars ||
+          item?.relatedCars.includes(vehicle?.relatedReviews.slice(0, -45))
       )
     : null;
 
