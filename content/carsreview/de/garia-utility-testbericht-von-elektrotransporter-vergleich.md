@@ -1,5 +1,5 @@
 ---
-title: Garia Utility Testbericht von Elektrotransporter-Vergleich
+title: Garia Utility
 slug: garia-utility-testbericht-von-elektrotransporter-vergleich
 relatedCars: garia-utility-city-sc-pritsche
 youtubeLink: https://www.youtube.com/watch?v=VkRooJ9ZhhY

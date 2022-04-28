@@ -37,7 +37,7 @@ export default function BlogHeader({ getBlogs }) {
             )}
           </Link>
         ))}
-      <LinkTile category={posts} />
+      <LinkTile category={posts} getBlogs={getBlogs} />
     </div>
   );
 }

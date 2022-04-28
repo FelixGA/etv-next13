@@ -4,14 +4,14 @@ import RatingBox from "../../components/repeated/RatingBox";
 import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
-const Articles = ({ carItem, getTestReview, getCarsReview }) => {
-  // (getBlogContext[0].title);
-
+const Articles = ({
+  carItem,
+  getTestReview,
+  getCarsReview,
+  getBlogContext,
+}) => {
   return (
     <>
-      <div
-      // className={styles.mdxstyles}
-      ></div>
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
         <div className=" lg:w-1/3 w-full m-auto relative ">
           <Image
@@ -49,26 +49,34 @@ const Articles = ({ carItem, getTestReview, getCarsReview }) => {
         </div>
       </div>
       {/* other articles section */}
-      {/* First Article */}
-      {/* <div className=" flex lg:flex-row-reverse flex-col w-full lg:p-18 justify-center items-center  p-4 ">
-        <div className="w-full p-4 lg:w-1/2 lg:p-12 print:hidden">
-          {carItem?.src && (
-            <Image
-              src={carItem?.src}
-              alt={carItem?.title}
-              width={195}
-              height={140}
-              layout="responsive"
-              objectFit="cover"
-              className="rounded-l-lg"
-            />
-          )}
+      {/* First Article */}{" "}
+      <div className=" bg-white flex lg:flex-row-reverse flex-col w-full p-4 lg:p-18">
+        {getBlogContext?.src && (
+          <div className="lg:w-1/3 w-full m-auto relative print:hidden">
+            <Link href={`/magazin/${getBlogContext?.slug}`} passHref>
+              <a target="_blank">
+                <Image
+                  src={getBlogContext?.src}
+                  alt={getBlogContext?.title}
+                  width={195}
+                  height={140}
+                  layout="responsive"
+                  objectFit="cover"
+                  className="rounded-l-lg"
+                />
+              </a>
+            </Link>
+          </div>
+        )}
+        <div className=" lg:w-2/3 flex flex-col flex-wrap lg:px-6">
+          <h3 className="w-full py-4 text-black-darkest text-2xl font-bold ">
+            <Link href={`/magazin/${getBlogContext?.slug}`}>
+              <a target="_blank">{getBlogContext?.title}</a>
+            </Link>
+          </h3>
+          <p>{getBlogContext?.description}</p>
         </div>
-        <div className="w-full p-2 lg:w-1/2 flex flex-col flex-wrap">
-          <h3>Text-Bild-Element mit Text links</h3>
-          <p>{carItem?.description}</p>
-        </div>
-      </div> */}
+      </div>
     </>
   );
 };

@@ -3,13 +3,46 @@ import { BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
 import Link from "next/link";
 import ListItems from "./ListItems";
 import footerWords from "../../data/footerData";
-
+import { useState, useEffect } from "react";
 const Footer = ({ blogs, reviews }) => {
-  reviews;
-
   /*  select blogs upon category */
 
-  const magazine = blogs?.filter((blog) => blog.category !== "referenzen");
+  // const magazine = blogs?.filter((blog) => blog.category !== "referenzen");
+  const [reviewsList, setReviewsList] = useState([
+    ...new Set(reviews?.map((blog) => blog.title.split(/[\s-]+/)[0])),
+  ]);
+  const [magazineList, setMagazineList] = useState([
+    ...new Set(
+      blogs
+        ?.filter((blog) => blog.category !== "referenzen")
+        .map((blog) => blog.category)
+    ),
+  ]);
+
+  // console.log([
+  //   ...new Set(
+  //     blogs
+  //       ?.filter((blog) => blog.category !== "referenzen")
+  //       .map((blog) => blog.category)
+  //   ),
+  // ]);
+  // console.log([
+  //   ...new Set(reviews?.map((blog) => blog.title.split(/[\s-]+/)[0])),
+  // ]);
+  useEffect(() => {
+    setReviewsList([
+      ...new Set(reviews?.map((blog) => blog.title.split(/[\s-]+/)[0])),
+    ]);
+    setMagazineList([
+      ...new Set([
+        ...new Set(
+          blogs
+            ?.filter((blog) => blog.category !== "referenzen")
+            .map((blog) => blog.category)
+        ),
+      ]),
+    ]);
+  }, [reviews, blogs]);
   const rights = [
     {
       slug: "impressum",
@@ -40,7 +73,24 @@ const Footer = ({ blogs, reviews }) => {
               </Link>
             </h3>
             <div className="pt-4">
-              <ListItems itemsList={reviews} />
+              <ul className="flex flex-col sm:pb-4 text-[#b1a7a7] items-center sm:items-start ">
+                {reviewsList
+                  ?.map((blog, index) => (
+                    <li
+                      className="flex items-center justify-between my-2 "
+                      key={index}
+                    >
+                      <Link href={`/${blog}`}>
+                        <a className="text-sm text-left sm:text-lg">
+                          {blog.title ? blog.title : blog}
+                        </a>
+                      </Link>
+                    </li>
+                  ))
+                  .splice(0, 5)}
+              </ul>
+
+              {/* <ListItems itemsList={reviewsList} /> */}
             </div>
           </div>
           <div className="flex flex-col justify-start sm:w-40 ">
@@ -50,9 +100,26 @@ const Footer = ({ blogs, reviews }) => {
               </Link>
             </h3>
             <div className="pt-4">
-              <ListItems itemsList={magazine} />
+              <ul className="flex flex-col sm:pb-4 text-[#b1a7a7] items-center sm:items-start ">
+                {magazineList
+                  ?.map((blog, index) => (
+                    <li
+                      className="flex items-center justify-between my-2 "
+                      key={index}
+                    >
+                      <Link href={`/${blog}`}>
+                        <a className="text-sm text-left sm:text-lg">
+                          {blog.title ? blog.title : blog}
+                        </a>
+                      </Link>
+                    </li>
+                  ))
+                  .splice(0, 5)}
+              </ul>
             </div>
           </div>
+          {/* only for RECHTLICHES & KONTAKT
+           */}
           <div className="flex flex-col items-center justify-center sm:items-start sm:w-40">
             <h3 className="flex items-center justify-center text-sm font-bold tracking-wider text-white w-52 md:justify-start sm:items-end h-14 sm:text-md">
               {`Rechtliches & Kontakt`.toUpperCase()}

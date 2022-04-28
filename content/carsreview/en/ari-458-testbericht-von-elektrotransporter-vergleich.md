@@ -1,5 +1,5 @@
 ---
-title: ARI 458 Testbericht von Elektrotransporter-Vergleich
+title: ARI 458
 slug: ari-458-testbericht-von-elektrotransporter-vergleich
 relatedCars: ari-458-koffer-elektrischer-kleintransporter
 youtubeLink: https://www.youtube.com/watch?v=s7Vpp2pYBG4&list=PLmjRcMALs3P-QlHQfthmCPL3aRr6dT9mx

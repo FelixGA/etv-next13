@@ -1,30 +1,35 @@
-import Head from "../../components/core/Head";
+// const paths = pages.map((page) => ({
+//   params: { category: page.attributes.path.substring(9) },
+// }));
+import Head from "../../../components/core/Head";
 import { useState, useEffect } from "react";
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
-import TopSlider from "../../components/Sliders/TopSlider";
+import { serialize } from "next-mdx-remote/serialize";
 import getSlugs from "/utils/getSlugs";
-import BlogPost from "../../components/Blog/BlogPost";
-
-export default function Blogs(props) {
+import ReviewPost from "../../../components/Blog/ReviewPost";
+import BlogPost from "../../../components/Blog/BlogPost";
+export default function Reviews(props) {
   /* getBlogContext hook for the ONE car that it is displayed */
   const [relatedVehicles, SetRelatedVehicles] = useState(props.vehicles);
   const [getBlogContext, SetGetBlogContext] = useState(props.blog);
+  const [getMdxContent, SetGetMdxContent] = useState(props.getTestReview);
+  const [getCarsReview, SetGetCarsReview] = useState(props.carsreview);
+  const [getCarsReviews, SetGetCarsReviews] = useState(props.carsreviews);
   const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
   useEffect(() => {
     setValueFromUseEffect(props.params.blogtitle);
     SetRelatedVehicles(props.vehicles);
-    SetGetBlogContext(props.blog);
+    SetGetMdxContent(props.getTestReview);
+    SetGetCarsReview(props.carsreview);
+    SetGetCarsReviews(props.carsreviews);
   }, [props]);
-
+  66666, props.getTestReview;
   return (
     <>
-      <Head page={props.blog} />
-
+      {" "}
+      <Head page={props.getTestReview} />
       <BlogPost getBlogContext={getBlogContext} />
-
-      {/* slider  */}
-      {/* <TopSlider getCars={relatedVehicles} /> */}
     </>
   );
 }

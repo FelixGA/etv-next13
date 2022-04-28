@@ -32,7 +32,6 @@ export default function Details(props) {
     SetTestReview(props.getTestReview);
     SetCarsReview(props.carsreview);
   }, [props]);
-  //console.log("getCarsReview", getCarsReview);
 
   return (
     <>
@@ -76,31 +75,15 @@ export async function getStaticProps(context) {
 
   /* get related reviews*/
   let carsreviews = await getContent("carsreview", context.locale);
-  /*  console.log(
-    carsreviews.map(
-      (item) =>
-        "RELATION FROM REVIEW  " +
-        item.relatedCars +
-        "   AND THE SLUG   " +
-        item.slug
-    )
-  );
-  console.log(context.params.cartitle); */
-  // let carsreview = await getContentBySlug(
-  //   "carsreview",
-  //   context.params.cartitle,
-  //   context.locale
-  // );
-
-  let carsreview = carsreviews.find(
+  let carsreview = carsreviews?.find(
     (item) =>
-      context.params.cartitle == item.relatedCars ||
-      context.params.cartitle.includes(item.slug)
+      vehicle?.relatedReviews?.slice(0, -45) == item.relatedCars ||
+      item?.relatedCars.includes(vehicle?.relatedReviews.slice(0, -45))
   )
     ? carsreviews.find(
         (item) =>
-          context.params.cartitle == item.relatedCars ||
-          context.params.cartitle.includes(item.slug)
+          vehicle?.relatedReviews?.slice(0, -45) == item.relatedCars ||
+          item?.relatedCars.includes(vehicle?.relatedReviews.slice(0, -45))
       )
     : null;
 
@@ -122,13 +105,16 @@ export async function getStaticProps(context) {
   let blogs = await getContent("blogs", context.locale);
   /* get related blog */
   let relatedBlog = blogs.find(
-    (item, index) => item.category === vehicle.category
+    (item) =>
+      item.slug == vehicle.relatedBlogs ||
+      item.slug.includes(vehicle.relatedBlogs)
   )
-    ? blogs.find((item, index) => item.slug === context.params.cartitle)
-    : blogs.find(
-        (item, index) =>
-          item.slug === "thg-foerderung-fuer-kleintransporter-von-ari"
-      );
+    ? blogs.find(
+        (item) =>
+          item.slug == vehicle.relatedBlogs ||
+          item.slug.includes(vehicle.relatedBlogs)
+      )
+    : null;
 
   if (!vehicle) {
     return {
