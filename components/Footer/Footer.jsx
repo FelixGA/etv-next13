@@ -3,7 +3,7 @@ import { BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
 import Link from "next/link";
 import ListItems from "./ListItems";
 import footerWords from "../../data/footerData";
-
+import { useState, useEffect } from "react";
 const Footer = ({ blogs, reviews }) => {
   /*  select blogs upon category */
 

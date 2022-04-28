@@ -2,14 +2,14 @@
 //   params: { category: page.attributes.path.substring(9) },
 // }));
 import Head from "../../../components/core/Head";
-import { useState, useEffect } from "react";
+
 import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
 import { serialize } from "next-mdx-remote/serialize";
 import getSlugs from "/utils/getSlugs";
 import ReviewPost from "../../../components/Blog/ReviewPost";
 import BlogPost from "../../../components/Blog/BlogPost";
-
+import { useState, useEffect } from "react";
 export default function Reviews(props) {
   /* getBlogContext hook for the ONE car that it is displayed */
   const [relatedVehicles, SetRelatedVehicles] = useState(props.vehicles);
