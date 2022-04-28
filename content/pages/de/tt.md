@@ -15,10 +15,14 @@ content:
       Beste Testberichte
   - name: eAutoAdvisor
     markdown: >-
-      ## Elektrotransporter Kaufberater
+      ## Elektrotransporter- Kaufberater: Ihr Navi auf dem Weg zum richtigen
+      E-Transporter
 
 
-      Hier steht ein Text der Lust macht den Kauf­ber­ater (= euer nor­maler Fun­nel) zu be­nutzen. Hier kön­nten so Dinge ste­hen wie: In weni­gen schrit­ten zum per­fek­ten E-Trans­porter für Ihre Ansprüche.
+      Mit dem Kaufberater finden Sie im Handumdrehen den E-Transporter, der perfekt zu Ihren Ansprüchen passt. Einfach Wunsch-Kriterien festlegen. Auswahl anzeigen lassen. In Ruhe vergleichen und kostenloses Angebot anfordern. Einfach, schnell und garantiert treffsicher! 
+
+
+      Probieren Sie´s aus!
     details: jetzt neu
   - name: substities
     markdown: >-
