@@ -108,7 +108,7 @@ const Header = () => {
           <Link href="/caradvisor" passHref>
             <a>
               <div
-                className="items-center hidden text-sm font-bold rounded cursor-pointer bg-yellow-light hover:bg-orange-lighter text-grey-darker md:flex justify-evenly h-9 w-28 xs:w-36 "
+                className="items-center hidden text-sm font-bold transition rounded cursor-pointer bg-yellow-light hover:bg-orange-lighter text-grey-darker md:flex justify-evenly h-9 w-28 xs:w-36 "
                 onClick={() => {
                   dispatch({
                     type: "rangeLithium",

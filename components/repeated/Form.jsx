@@ -52,7 +52,7 @@ export default function Form(props) {
         // action="https://api.vercel.com/v6/deployments"
         method="POST"
         onSubmit={handleSubmit(onSubmit, onError)}
-        className="flex flex-col px-4 my-4 bg-white shadow-lg xs:rounded-md"
+        className="flex flex-col px-4 my-4 bg-white shadow-dropdown xs:rounded-md"
       >
         <div className="w-full">
           <TextInput
@@ -208,7 +208,7 @@ export default function Form(props) {
                 : setSend(false);
             }}
             type="submit"
-            className="flex-grow py-2 mb-0 text-white rounded-lg bg-blue-darker hover:bg-blue-light"
+            className="flex-grow py-2 mb-0 text-white rounded-lg bg-blue-darker hover:bg-blue-light transition"
           >
             Unverbindlich und kostenlos anfragen
           </button>
