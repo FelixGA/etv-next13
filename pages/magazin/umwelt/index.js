@@ -3,6 +3,7 @@ import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import Blog from "../../../components/Blog/Blog";
 import BlogHeader from "../../../components/Blog/BlogHeader";
+import LinkTile from "../../../components/Blog/LinkTile";
 
 export default function reviews(props) {
   const [getBlogs, SetGetBlogs] = useState(
@@ -14,9 +15,13 @@ export default function reviews(props) {
   }, [props]);
   return (
     <>
-      {" "}
       <Head page={props.page} />
-      <BlogHeader getBlogs={getBlogs} />
+      <div className="hidden lg:block">
+        <BlogHeader getBlogs={getBlogs} />
+      </div>
+      <div className="lg:hidden">
+        <LinkTile getBlogs={getBlogs} />
+      </div>
       <Blog getBlogs={getBlogs} />
     </>
   );

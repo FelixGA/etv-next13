@@ -20,6 +20,7 @@ export default function Blogs(props) {
   return (
     <>
       <Head page={props.blog} />
+
       <BlogPost getBlogContext={getBlogContext} />
 
       {/* slider  */}

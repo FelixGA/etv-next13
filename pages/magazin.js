@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Blog from "../components/Blog/Blog";
 import Link from "next/link";
 import BlogHeader from "../components/Blog/BlogHeader";
+import LinkTile from "../components/Blog/LinkTile";
 
 export default function magazin(props) {
   const [getBlogs, SetGetBlogs] = useState(props.blogs);
@@ -16,7 +17,12 @@ export default function magazin(props) {
   return (
     <div>
       <Head page={props.page} />
-      <BlogHeader getBlogs={getBlogs} />
+      <div className="hidden lg:block">
+        <BlogHeader getBlogs={getBlogs} />
+      </div>
+      <div className="lg:hidden">
+        <LinkTile getBlogs={getBlogs} />
+      </div>
       <h1 className="px-4 pt-8 pb-2 text-blue-dark font-bold text-4xl text-center">
         Magazin
       </h1>
