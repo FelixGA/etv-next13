@@ -1,6 +1,6 @@
 import { useStore } from "../store";
 import { motion, AnimatePresence } from "framer-motion";
-import { filtersData, priceFilterData } from "../repeated/filtersData";
+import { filtersData, priceFilterData } from "../../data/filtersData";
 import FilterItemDesktop from "./FilterItemDesktop";
 import PriceInputs from "./PriceInputs";
 
