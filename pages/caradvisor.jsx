@@ -3,6 +3,7 @@ import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import Funnel from "../components/Caradvisor/Funnel";
 import Image from "next/image";
+import data from "../data/stepsData";
 export default function caradvisor(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
 
@@ -28,7 +29,7 @@ export default function caradvisor(props) {
       </div>
       <div className="items-center justify-around hidden h-12 bg-green-lighter lg:flex">
         <div className="">
-          <p className="w-full text-base text-white lg:text-base 2xl:text-xl">
+          <p className="w-full text-lg text-white 2xl:text-xl">
             ✔️ über 10 Jahre Erfahrung mit KFZ
           </p>
         </div>
@@ -44,64 +45,21 @@ export default function caradvisor(props) {
         </div>
       </div>
       <div className="flex flex-col items-center w-full px-4 py-8 bg-white xl:px-40 md:flex-row justify-evenly">
-        <div className="w-full px-4 py-4 mb-4 shadow-dropdown">
-          <div className="w-full ">
-            <Image
-              src="/images/ETV-IconsWunschfahrzeug.png"
-              width={300}
-              height={300}
-              layout="responsive"
-              objectFit="contain"
-            />
+        {data.map((item) => (
+          <div className="w-full px-4 py-4 mb-4 shadow-dropdown" key={item.id}>
+            <div className="w-full ">
+              <Image
+                src={item.image}
+                width={300}
+                height={300}
+                layout="responsive"
+                objectFit="contain"
+              />
+            </div>
+            <h3 className="pt-2 sm:h-10 xl:text-2xl ">{item.title}</h3>
+            <p className="h-48 text-lg xl:pt-4">{item.description}</p>
           </div>
-          <h3 className="pt-2 sm:h-10 xl:text-2xl ">
-            1. Wunschfahrzeug konfigurieren
-          </h3>
-          <p className="h-32 text-lg xl:pt-4">
-            Geben Sie in 3 Schritten die Anforderungen für Ihren
-            Elektrotransporter an: Aufbauart, Reichweite und Zuladung!
-            Anschließend erhalten Sie eine Übersicht über für Sie geeignete
-            Fahrzeuge.
-          </p>
-        </div>
-        <div className="w-full px-4 py-4 mb-4 shadow-dropdown">
-          <div className="w-full ">
-            <Image
-              src="/images/ETV-IconsVergleichen.png"
-              width={300}
-              height={300}
-              layout="responsive"
-              objectFit="contain"
-            />
-          </div>
-          <h3 className="pt-2 sm:h-10 xl:text-2xl">
-            2. Vorgeschlagene Fahrzeuge vergleichen
-          </h3>
-          <p className="h-32 text-lg xl:pt-4 ">
-            Vergleichen Sie in Ruhe die vorgeschlagenen Elektrotransporter. In
-            der Übersicht finden Sie alle Daten sowie die Preise der für Sie
-            geeigneten Fahrzeuge.
-          </p>
-        </div>
-        <div className="w-full px-4 py-4 mb-4 shadow-dropdown">
-          <div className="w-full ">
-            <Image
-              src="/images/ETV-IconsAngebote.png"
-              width={300}
-              height={300}
-              layout="responsive"
-              objectFit="contain"
-            />
-          </div>
-          <h3 className="pt-2 sm:h-10 xl:text-2xl">
-            3. Kostenloses Angebot erhalten
-          </h3>
-          <p className="h-32 text-lg xl:pt-4">
-            Erhalten Sie ein unverbindliches und vollkommen kostenloses Angebot
-            für das von Ihnen gewählte Fahrzeug. Dieses wird Ihnen ganz einfach
-            per Mail zugesandt.
-          </p>
-        </div>
+        ))}
       </div>
     </div>
   );

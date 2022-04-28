@@ -2,6 +2,7 @@ import Image from "next/image";
 import { BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
 import Link from "next/link";
 import ListItems from "./ListItems";
+import footerWords from "../../data/footerData";
 
 const Footer = ({ blogs, reviews }) => {
   reviews;
@@ -64,47 +65,57 @@ const Footer = ({ blogs, reviews }) => {
 
         <div className="flex flex-col items-center px-4 pt-4 lg:pl-0 sm:items-start lg:w-1/4 lg:pt-8 md:px-8">
           <div className="flex flex-row items-center justify-center w-full sm:justify-start">
-            <div className="w-1/5 md:w-[9%] lg:w-[33%] xl:w-[20%] ">
-              <Image
-                className=""
-                src="/images/etv-logo-final-white.png"
-                width={60}
-                height={40}
-                objectFit="contain"
-                layout="responsive"
-              />
+            <div className="w-1/5 md:w-[9%] lg:w-[33%] xl:w-[20%] text-white ">
+              <Link href={"/"}>
+                <a>
+                  <Image
+                    className=""
+                    src="/images/etv-logo-final-white.png"
+                    width={60}
+                    height={40}
+                    objectFit="contain"
+                    layout="responsive"
+                  />
+                </a>
+              </Link>
             </div>
             <div className="w-fit sm:w-1/2">
-              <p className="pr-4 text-xs font-bold text-white sm:pr-0 sm:text-md">
-                ELEKTROTRANSPORTER
-                <br />
-                VERGLEICH
-              </p>
+              <Link href={"/"}>
+                <a>
+                  <p className="pr-4 text-xs font-bold text-white cursor-pointer sm:pr-0 sm:text-md">
+                    ELEKTROTRANSPORTER
+                    <br />
+                    VERGLEICH
+                  </p>
+                </a>
+              </Link>
             </div>
           </div>
           <div className="flex w-full">
             <p className=" text-[#b1a7a7] pt-4 text-center sm:text-left w-full text-xs lg:text-sm xl:text-lg">
-              ✔ unabhängig<span className="pl-2">✔ schnell</span>
-              <span className="pl-2"> ✔ immer</span>
-              aktuell
+              {footerWords.map((item, index) => (
+                <span className="pl-2" key={index}>
+                  {item}
+                </span>
+              ))}
             </p>
           </div>
-          <div className="flex justify-between w-24 pt-6 pb-8 lg:w-40 sm:pl-4">
-            <div className="cursor-pointer">
+          <div className="flex justify-between pt-6 pb-8 w-28 lg:w-40 sm:pl-4">
+            <div className="transition cursor-pointer hover:scale-110">
               <Link href="https://www.facebook.com/ARIMotorsElektrofahrzeuge">
                 <a target="_blank">
                   <BsFacebook size={25} fill="#fff" />
                 </a>
               </Link>
             </div>
-            <div className="cursor-pointer">
+            <div className="transition cursor-pointer hover:scale-110">
               <Link href="https://www.youtube.com/c/ARIMotorsGmbH">
                 <a target="_blank">
                   <BsYoutube size={30} fill="#fff" />
                 </a>
               </Link>
             </div>
-            <div className="cursor-pointer">
+            <div className="transition cursor-pointer hover:scale-110">
               <Link href="https://www.linkedin.com/company/ari-motors-gmbh/mycompany/">
                 <a target="_blank">
                   <BsLinkedin size={25} fill="#fff" />

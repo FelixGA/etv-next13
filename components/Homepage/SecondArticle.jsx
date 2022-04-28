@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function SecondArticle({ getMarkdownContext, getContent }) {
   return (
-    <div className="blog-article-two bg-grey-lightest flex px-8 pb-8 pt-4 flex-col md:flex-row">
+    <div className="flex flex-col px-8 pt-4 pb-8 blog-article-two bg-grey-lightest md:flex-row">
       <div className="w-full sm:w-[76%] mx-auto md:w-full relative xl:pl-10 sm:pt-10 lg:pt-2 md:pb-10 lg:pb-4 xl:mt-10 ">
         <Image
           src="/images/shweinFull.png"
@@ -16,16 +16,16 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
         />
       </div>
       <div className="md:pt-10 2xl:pt-48 xl:px-12 xl:pl-20 sm:pl-4">
-        {/* <h2 className="text-grey-darkest text-2xl font-bold ">
+        {/* <h2 className="text-2xl font-bold text-grey-darkest ">
            dfg
           </h2> */}
-        <div className="tracking-wide font-bold text-blue-lighter px-1 xs:px-2 pb-6 xl:pr-36">
+        <div className="px-1 pb-6 font-bold tracking-wide text-blue-lighter xs:px-2 xl:pr-36">
           {<MDXRemote {...getMarkdownContext.substities} />}
         </div>
 
         <Link href="/magazin/foerderungen">
           <a className="bg-yellow-500 ">
-            <button className="bg-blue-dark no-select hover:bg-blue-light text-white font-bold py-4 px-6  mb-5 lg:mt-20 text-sm rounded-md ">
+            <button className="px-6 py-4 mb-5 text-sm font-bold text-white transition rounded-md bg-blue-dark no-select hover:bg-blue-light lg:mt-20 ">
               Mehr erfahren
             </button>
           </a>
