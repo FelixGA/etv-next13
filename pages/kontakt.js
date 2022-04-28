@@ -18,7 +18,7 @@ export default function kontakt(props) {
 
       <div className="flex flex-col w-full mx-auto 2xl:px-48 lg:flex-row">
         {router.pathname == "/kontakt" ? (
-          <div className="flex flex-col justify-center w-full pb-48 mt-20">
+          <div className="flex flex-col justify-center w-full lg:mt-20 lg:pb-48">
             <div className="hidden lg:block">
               <Image
                 src="/images/frage.jpeg"
@@ -31,7 +31,7 @@ export default function kontakt(props) {
             <p
               className={
                 router.pathname == "/kontakt"
-                  ? "text-base lg:text-lg font-bold w-full px-4 pt-4"
+                  ? "text-base lg:text-xl font-bold w-full px-4 pt-4"
                   : "hidden"
               }
             >
