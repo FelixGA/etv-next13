@@ -172,7 +172,7 @@ export default function Form(props) {
               <input
                 id="confirm"
                 type="checkbox"
-                className="w-3 h-3 mr-1"
+                className="w-3 h-3 mr-1 sm:w-4 sm:h-4"
                 /* onClick={() => setCheckedStatus(true)}
               checked={checkedStatus} */
                 {...field}

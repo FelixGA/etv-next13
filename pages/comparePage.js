@@ -98,7 +98,7 @@ export default function comparePage(props) {
           <div className="">
             <ActiveFilterBlock />
           </div>
-          <div className="xl:pr-2 2xl:pr-40">
+          <div className="mb-10 xl:pr-2 2xl:pr-40">
             <ResultList sortedCars={sortedCars} />
           </div>
         </div>
