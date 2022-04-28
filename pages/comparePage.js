@@ -84,11 +84,11 @@ export default function comparePage(props) {
   }, [props.vehicles, state.activeSortValues]);
 
   return (
-    <div>
+    <div className="relative">
       <Head page={props.page} />
 
       <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
-        <div className="hidden mt-24 bg-white  md:block">
+        <div className="hidden mt-24 bg-white md:block">
           <FiltersDesktop />
         </div>
         <div className="flex md:hidden ">
@@ -98,7 +98,7 @@ export default function comparePage(props) {
           <div className="">
             <ActiveFilterBlock />
           </div>
-          <div className="xl:pr-2 2xl:pr-40">
+          <div className="mb-10 xl:pr-2 2xl:pr-40">
             <ResultList sortedCars={sortedCars} />
           </div>
         </div>

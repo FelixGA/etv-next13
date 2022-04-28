@@ -133,7 +133,7 @@ relatedBlogs: >-
 
 
   4,4
-relatedReviews: toyota-proace-electric
+relatedReviews: toyota-proace-electric-testbericht-von-elektrotransporter-vergleich
 description: Der Toyota Proace Electric ist ein Kastenwagen, welcher in zwei
   Ladelängen erhältlich ist. Der Elektrotransporter erreicht in allen Varianten
   eine Höchstgeschwindigkeit von 130 km/h und kann rund 1.000 Kilogramm zuladen.

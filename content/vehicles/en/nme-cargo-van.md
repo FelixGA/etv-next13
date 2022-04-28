@@ -3,7 +3,7 @@ title: NME Cargo Van
 name: nme-cargo-van
 price: 27000
 relatedBlogs: nur beispiel
-relatedReviews: nme-cargo-van
+relatedReviews: nme-cargo-van-testbericht-von-elektrotransporter-vergleich
 description: Der Cargo Van der österreichischen Firma NME ist ein elektrischer
   Kastenwagen, der bis zu 1.000 Kilogramm Nutzlast aufnehmen kann und eine
   Höchstgeschwindigkeit von 90 km/h erreicht.

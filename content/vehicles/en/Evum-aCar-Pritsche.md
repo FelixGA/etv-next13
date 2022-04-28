@@ -12,7 +12,7 @@ relatedBlogs:
     Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
-relatedReviews: aixam-pro-etruck-testbericht-von-elektrotransporter-vergleich
+relatedReviews: streetscooter-testbericht-von-elektrotransporter-vergleich
 description: Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von
   der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit
   Kofferaufbau im Umlauf und kann reichlich 1.000 Kilogramm Nutzlast aufnehmen.

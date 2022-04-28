@@ -3,7 +3,7 @@ title: Tropos Able XT1
 name: tropos-able-xt1
 price: 27000
 relatedBlogs: beispiel
-relatedReviews: ""
+relatedReviews: tropos-able-xt-testbericht-von-elektrotransporter-vergleich
 description: Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e
   mit einer Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in
   zwei Akku-Varianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.

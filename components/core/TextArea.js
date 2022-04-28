@@ -17,14 +17,18 @@ export default function TextArea({
   router.pathname == "/kontakt" ? (required = true) : (required = false);
   return (
     <div
-      className={router.pathname == "/kontakt" ? "text-left mb-4" : "hidden"}
+      className={
+        router.pathname == "/kontakt"
+          ? "text-left mb-4 flex flex-col flex-grow"
+          : "hidden"
+      }
     >
-      <label htmlFor={id} className="text-blue-lighter font-bold py-2">
+      <label htmlFor={id} className="py-2 font-bold text-blue-lighter">
         {label}
       </label>
       <textarea
-        className={`${style} bg-grey-lighter focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block ${
-          width ? `${width}` : "w-64 xs:w-96"
+        className={`${style} bg-grey-lighter focus:outline-none focus:ring focus:border-blue-darker focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block ${
+          width ? `${width}` : "flex-grow"
         }`}
         htmlFor={id}
         rows={4}

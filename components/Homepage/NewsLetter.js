@@ -17,11 +17,11 @@ const NewsLetter = ({ getMarkdownContext }) => {
   const onSubmit = async (data, e) => {
     e.preventDefault();
     "data", data;
-    console.log("mydata", data);
+    // console.log("mydata", data);
 
     try {
       const result = await axios.post(`/api/handleNewsletter`, data);
-      console.log("result", result);
+      // console.log("result", result);
     } catch (err) {
       console.log("error", err.response.data.message);
     }
@@ -31,8 +31,8 @@ const NewsLetter = ({ getMarkdownContext }) => {
   const onError = (errors, e) => console.log("errors", errors, e);
 
   return (
-    <div className="newsletter-container flex flex-col justify-center flex-wrap items-center p-10 bg-grey-lightest">
-      <div className="flex flex-col justify-center custom-text px-4 pb-4 text-grey-darker ">
+    <div className="flex flex-col flex-wrap items-center justify-center p-10 newsletter-container bg-grey-lightest">
+      <div className="flex flex-col justify-center px-4 py-4 xl:w-[1000px] custom-text text-grey-darker">
         <MDXRemote {...getMarkdownContext.newsletter} />
       </div>
       <div>
@@ -60,7 +60,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
               required: true,
               pattern: emailRegex,
             })}
-            className="h-14 text-lg rounded-sm w-48 sm:w-full placeholder:pl-2"
+            className="w-48 text-lg rounded-sm h-14 sm:w-full placeholder:pl-2"
           />
           <p className="text-red-500">
             {errors.emailInput && "Email ist erforderlich"}
@@ -72,7 +72,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
                 : setSend(false);
             }}
             type="submit"
-            className="bg-blue-dark mt-2 xs:mt-0 hover:bg-blue-light text-white font-bold px-6 text-md rounded-md sm:rounded-r-lg sm:rounded-none h-14"
+            className="px-6 mt-2 font-bold text-white rounded-md bg-blue-dark xs:mt-0 hover:bg-blue-light text-md sm:rounded-r-lg sm:rounded-none h-14"
           >
             anmelden
           </button>

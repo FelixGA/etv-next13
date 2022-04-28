@@ -13,25 +13,26 @@ export default function kontakt(props) {
   }, [props]);
 
   return (
-    <div className="relative flex flex-col items-center">
+    <div className="relative flex flex-col items-center ">
       <Head page={props.page} />
 
-      <div className="flex">
+      <div className="flex flex-col w-full mx-auto 2xl:px-48 lg:flex-row">
         {router.pathname == "/kontakt" ? (
-          <div className="flex flex-col lg:mb-36 sm:pt-8">
-            <div className="hidden w-2/3 mb-12 lg:block">
+          <div className="flex flex-col justify-center w-full lg:mt-20 lg:pb-48">
+            <div className="hidden lg:block">
               <Image
                 src="/images/frage.jpeg"
-                width={400}
-                height={300}
+                width={500}
+                height={400}
                 layout="responsive"
                 objectFit="contain"
               />
             </div>
             <p
               className={
-                router.pathname == "/kontakt" &&
-                "text-md font-bold w-full text-left pt-4 pl-4 pr-4 lg:w-2/3 hidden lg:block"
+                router.pathname == "/kontakt"
+                  ? "text-base lg:text-xl font-bold w-full px-4 pt-4"
+                  : "hidden"
               }
             >
               Haben Sie Fragen oder Anregungen zu unserer Webseite oder möchten
@@ -42,7 +43,11 @@ export default function kontakt(props) {
         ) : (
           <div className="hidden"></div>
         )}
-        <Form open={open} setOpen={setOpen} />
+        <div className="w-full">
+          <div className="flex-grow ">
+            <Form open={open} setOpen={setOpen} />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -133,7 +133,7 @@ relatedBlogs: >-
 
 
   4,4
-relatedReviews: opel-vivaro-e
+relatedReviews: opel-vivaro-e-testbericht-von-elektrotransporter-vergleich
 description: Der Opel Vivaro-E Cargo ist ein Kastenwagen, welcher in zwei
   Ladelängen erhältlich ist. Der Elektrotransporter erreicht in allen Varianten
   eine Höchstgeschwindigkeit von 130 km/h und kann rund 900 Kilogramm zuladen.

@@ -15,6 +15,7 @@ const ResultList = (props) => {
       !state?.rangeLithiums ||
       !state?.maxSpeeds ||
       !state?.chargingTimeLithiums ||
+      !state?.categorys ||
       props.sortedCars?.length === 0
     )
       return;

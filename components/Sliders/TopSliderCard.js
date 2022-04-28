@@ -48,12 +48,12 @@ const TopSliderCard = (props) => {
               <div className="flex flex-row pb-8">
                 <div className="pb-2">
                   <span className="relative pl-3 text-sm font-black tracking-widest bottom-1 ">
-                    {/* {caritem.rating.value} */} 5
+                    {caritem?.rating.value}
                   </span>
                 </div>
                 <div className="">
                   <span className="relative bottom-1 pl-2.5 font-black text-sm ">
-                    {/*  {caritem.rating.key} */} gut
+                    {caritem?.rating.key}
                   </span>
                 </div>
               </div>

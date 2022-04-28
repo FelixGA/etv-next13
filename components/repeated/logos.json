@@ -6,10 +6,10 @@
     "alt": "Aixam-logo"
   },
   {
-    "src": "/images/logos/Streetscooter-Logo.jpg",
+    "src": "/images/logos/Citroen-Logo.png",
     "sizes": "24x24",
     "type": "image/png",
-    "alt": "Streetscooter-logo"
+    "alt": "Citroen-Logo"
   },
   {
     "src": "/images/logos/NM-E-Logo.jpg",
@@ -19,13 +19,13 @@
   },
   {
     "src": "/images/logos/man-Logo.png",
-    "sizes": "24x24",
+    "sizes": "48x48",
     "type": "image/png",
     "alt": "Man-logo"
   },
   {
     "src": "/images/logos/Nissan-Logo.jpg",
-    "sizes": "24x24",
+    "sizes": "48x48",
     "type": "image/png",
     "alt": "Nissan-Logo"
   },
@@ -44,7 +44,7 @@
   },
   {
     "src": "/images/logos/Renault-Logo.png",
-    "sizes": "24x24",
+    "sizes": "48x48",
     "type": "image/png",
     "alt": "Renault-Logo"
   }

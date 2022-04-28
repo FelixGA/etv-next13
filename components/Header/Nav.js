@@ -11,8 +11,8 @@ const Nav = () => {
   return (
     <div className={router.pathname == "/caradvisor" ? "hidden" : "w-full"}>
       <nav className="">
-        <ul className="flex justify-around items-center flex-1 text-[#b1a7a7] text-lg xl:text-xl font-bold">
-          <li>
+        <ul className="flex justify-around items-center flex-1 text-[#b1a7a7] text-lg xl:text-xl font-bold ">
+          <li className="hover:text-white">
             <Link href="/">
               <a
                 className="text-[#ffffff]"
@@ -52,7 +52,7 @@ const Nav = () => {
               </a>
             </Link>
           </li>
-          <li>
+          <li className="hover:text-white">
             <Link href="/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich">
               <a
                 onClick={() => {
@@ -63,7 +63,7 @@ const Nav = () => {
               </a>
             </Link>
           </li>
-          <li className="">
+          <li className="hover:text-white">
             <Link href="/comparePage">
               <a
                 onClick={() => {
@@ -74,7 +74,7 @@ const Nav = () => {
               </a>
             </Link>
           </li>
-          <li>
+          <li className="hover:text-white">
             <Link href="/magazin">
               <a
                 onClick={() => {
@@ -85,7 +85,7 @@ const Nav = () => {
               </a>
             </Link>
           </li>
-          <li>
+          <li className="hover:text-white">
             <Link href="/kontakt">
               <a
                 onClick={() => {

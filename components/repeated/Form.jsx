@@ -45,207 +45,206 @@ export default function Form(props) {
 
   return (
     <>
-      <div
-        className={
-          !send
-            ? "flex justify-center flex-col lg:flex-row items-center "
-            : "hidden"
-        }
+      {/* FORM */}
+
+      <form
+        /* action="/action_page.php" */
+        // action="https://api.vercel.com/v6/deployments"
+        method="POST"
+        onSubmit={handleSubmit(onSubmit, onError)}
+        className="flex flex-col px-4 my-4 bg-white shadow-lg xs:rounded-md"
       >
-        <p
+        <div className="w-full">
+          <TextInput
+            style={`${
+              errors.firstName ? "xs:mr-2 focus:border-red-500" : "xs:mr-2"
+            }`}
+            placeholder={"z.B. Max Muster"}
+            register={register}
+            label={"Name:"}
+            id={"name"}
+            type={"string"}
+            pattern={fullNameRegex}
+            registerData={"firstName"}
+            required={true}
+          />
+        </div>
+        <div className="w-full">
+          <TextInput
+            placeholder={"ihr Firmenname"}
+            register={register}
+            label={"Firma:"}
+            id={"firma"}
+            type={"string"}
+            registerData={"firma"}
+          />
+        </div>
+        <div className="flex flex-col justify-center w-full xs:flex-row">
+          <div className="xs:w-1/2 ">
+            <TextInput
+              style={"xs:mr-2"}
+              placeholder={"z.B. 10115"}
+              register={register}
+              label={"Postleitzahl:"}
+              id={"zipcode"}
+              type={"string"}
+              registerData={"zipcode"}
+            />
+          </div>
+          <div className="xs:w-1/2">
+            <TextInput
+              style={"xs:ml-2"}
+              placeholder={"z.B. Berlin"}
+              register={register}
+              label={"Ort:"}
+              id={"city"}
+              type={"string"}
+              registerData={"city"}
+            />
+          </div>
+        </div>
+        <div className="w-full">
+          <TextInput
+            style={`${errors.emailInput ? " focus:border-red-500" : ""}`}
+            placeholder={"z.B. max@muster.com"}
+            register={register}
+            label={"Email:"}
+            id={"emailInput"}
+            type={"string"}
+            registerData={"emailInput"}
+            required={true}
+            pattern={emailRegex}
+          />
+        </div>
+        <div className="w-full">
+          <TextInput
+            placeholder={"z.B. 030 - 123 45 67"}
+            register={register}
+            label={"Telefon:"}
+            id={"phone"}
+            type={"number"}
+            registerData={"phone"}
+          />
+        </div>
+        <div className="w-full">
+          <TextArea
+            style={`${errors.message ? " focus:border-red-500" : ""}`}
+            placeholder={"z.B. 030 - 123 45 67"}
+            register={register}
+            label={"Nachricht:"}
+            id={"message"}
+            type={"textarea"}
+            registerData={"message"}
+            carItem={props.carItem}
+            required={true}
+          />
+        </div>
+        <div className="w-64 text-black lg:w-full">
+          <p className="text-red-500">
+            {errors.firstName && "Name ist erforderlich"}
+          </p>
+          <p className="text-red-500">
+            {errors.firma && "Firma ist erforderlich"}
+          </p>
+          <p className="text-red-500">
+            {errors.zipcode && "Postleitzahl ist erforderlich"}
+          </p>
+          <p className="text-red-500">
+            {errors.location && "Ort ist erforderlich"}
+          </p>
+          <p className="text-red-500">
+            {errors.emailInput && "Email ist erforderlich"}
+          </p>
+          <p> {errors.phone && "Phone ist erforderlich"}</p>
+          <p className="text-red-500">
+            {errors.message && "Message ist erforderlich"}
+          </p>
+          <p className="text-red-500">
+            {errors.checkbox && "Bitte stimmen Sie den Nutzungsbedingungen zu."}
+          </p>
+        </div>
+        <div className="flex-grow pb-4 ">
+          <Controller
+            name="checkbox"
+            control={control}
+            rules={{ required: true }}
+            render={({ field }) => (
+              <input
+                id="confirm"
+                type="checkbox"
+                className="w-3 h-3 mr-1 sm:w-4 sm:h-4"
+                /* onClick={() => setCheckedStatus(true)}
+              checked={checkedStatus} */
+                {...field}
+              />
+            )}
+          />{" "}
+          <label htmlFor="confirm" className="text-sm">
+            Ja, ich stimme der{" "}
+            <span className="font-bold text-blue-dark">
+              <Link href={"/impressum"}>
+                <a>Datenschutzerklärung</a>
+              </Link>
+            </span>{" "}
+            und den{" "}
+            <span className="font-bold text-blue-dark">
+              <Link href={"/allgemeineGeschaeftsbedingungen"}>
+                <a>AGBs</a>
+              </Link>
+            </span>{" "}
+            zu (Widerruf jederzeit möglich).
+          </label>{" "}
+        </div>
+        <div className="flex w-full pb-4">
+          <button
+            onClick={() => {
+              !errors.emailInput &&
+              !errors.firstName &&
+              watch().firstName.length > 0 &&
+              watch().emailInput.length > 0 &&
+              watch().message &&
+              watch().checkbox
+                ? setSend(true)
+                : setSend(false);
+            }}
+            type="submit"
+            className="flex-grow py-2 mb-0 text-white rounded-lg bg-blue-darker hover:bg-blue-light"
+          >
+            Unverbindlich und kostenlos anfragen
+          </button>
+        </div>
+        {/* IMAGES */}
+
+        <div
           className={
-            router.pathname !== "/kontakt"
-              ? "hidden"
-              : "text-md font-bold w-[80%] text-left lg:hidden p-4"
+            router.pathname == "/kontakt"
+              ? "justify-center items-center relative flex"
+              : "hidden"
           }
         >
-          Haben Sie Fragen oder Anregungen zu unserer Webseite oder möchten uns
-          etwas mitteilen? Dann nutzen Sie unser Kontaktformular für Ihr
-          Anliegen!
-        </p>
-        <div className="flex items-center justify-center">
-          <form
-            /* action="/action_page.php" */
-            // action="https://api.vercel.com/v6/deployments"
-            method="POST"
-            onSubmit={handleSubmit(onSubmit, onError)}
-            className="flex flex-col pt-0 pb-4 pl-4 pr-4 bg-white rounded-md shadow-lg sm:p-8"
-          >
-            <TextInput
-              placeholder={"z.B. Max Muster"}
-              register={register}
-              label={"Name:"}
-              id={"name"}
-              type={"string"}
-              pattern={fullNameRegex}
-              registerData={"firstName"}
-              required={true}
+          {/* medal siegel image */}
+          <div className="w-14">
+            <Image
+              src="/images/siegel2.png"
+              width={166}
+              height={166}
+              layout="responsive"
+              objectFit="contain"
             />
-            <TextInput
-              placeholder={"ihr Firmenname"}
-              register={register}
-              label={"Firma:"}
-              id={"firma"}
-              type={"string"}
-              registerData={"firma"}
+          </div>
+          {/* medal dsvgo image */}
+          <div className="relative w-28 ">
+            <Image
+              src="/images/siegel.png"
+              width={166}
+              height={166}
+              layout="responsive"
+              objectFit="contain"
             />
-            <div className="flex justify-between w-64 xs:w-96">
-              <TextInput
-                width={"w-28 xs:w-44"}
-                placeholder={"z.B. 10115"}
-                register={register}
-                label={"Postleitzahl:"}
-                id={"zipcode"}
-                type={"string"}
-                registerData={"zipcode"}
-              />
-              <TextInput
-                width={"w-28 xs:w-44"}
-                placeholder={"z.B. Berlin"}
-                register={register}
-                label={"Ort:"}
-                id={"city"}
-                type={"string"}
-                registerData={"city"}
-              />
-            </div>
-            <TextInput
-              placeholder={"z.B. max@muster.com"}
-              register={register}
-              label={"Email:"}
-              id={"emailInput"}
-              type={"string"}
-              registerData={"emailInput"}
-              required={true}
-              pattern={emailRegex}
-            />
-            <TextInput
-              placeholder={"z.B. 030 - 123 45 67"}
-              register={register}
-              label={"Telefon:"}
-              id={"phone"}
-              type={"number"}
-              registerData={"phone"}
-            />
-
-            <TextArea
-              placeholder={"z.B. 030 - 123 45 67"}
-              register={register}
-              label={"Nachricht:"}
-              id={"message"}
-              type={"textarea"}
-              registerData={"message"}
-              carItem={props.carItem}
-              required={true}
-            />
-
-            <div className="w-64 text-black lg:w-full">
-              <p className="text-red-500">
-                {errors.firstName && "Name ist erforderlich"}
-              </p>
-              <p className="text-red-500">
-                {errors.firma && "Firma ist erforderlich"}
-              </p>
-              <p className="text-red-500">
-                {errors.zipcode && "Postleitzahl ist erforderlich"}
-              </p>
-              <p className="text-red-500">
-                {errors.location && "Ort ist erforderlich"}
-              </p>
-              <p className="text-red-500">
-                {errors.emailInput && "Email ist erforderlich"}
-              </p>
-              <p> {errors.phone && "Phone ist erforderlich"}</p>
-              <p className="text-red-500">
-                {errors.message && "Message ist erforderlich"}
-              </p>
-              <p className="text-red-500">
-                {errors.checkbox &&
-                  "Bitte stimmen Sie den Nutzungsbedingungen zu."}
-              </p>
-            </div>
-            <div className="w-64 pb-4 xs:w-96">
-              <Controller
-                name="checkbox"
-                control={control}
-                rules={{ required: true }}
-                render={({ field }) => (
-                  <input
-                    id="confirm"
-                    type="checkbox"
-                    className="w-3 h-3 mr-1"
-                    /* onClick={() => setCheckedStatus(true)}
-              checked={checkedStatus} */
-                    {...field}
-                  />
-                )}
-              />{" "}
-              <label htmlFor="confirm" className="text-sm">
-                Ja, ich stimme der{" "}
-                <span className="font-bold text-blue-dark">
-                  <Link href={"/impressum"}>
-                    <a>Datenschutzerklärung</a>
-                  </Link>
-                </span>{" "}
-                und den{" "}
-                <span className="font-bold text-blue-dark">
-                  <Link href={"/allgemeineGeschaeftsbedingungen"}>
-                    <a>AGBs</a>
-                  </Link>
-                </span>{" "}
-                zu (Widerruf jederzeit möglich).
-              </label>{" "}
-            </div>
-
-            <button
-              onClick={() => {
-                !errors.emailInput &&
-                !errors.firstName &&
-                watch().firstName.length > 0 &&
-                watch().emailInput.length > 0 &&
-                watch().message &&
-                watch().checkbox
-                  ? setSend(true)
-                  : setSend(false);
-              }}
-              type="submit"
-              className="w-64 h-auto py-2 mb-0 text-white rounded-lg bg-blue-darker hover:bg-blue-light xs:w-96 sm:mb-8"
-            >
-              Unverbindlich und kostenlos anfragen
-            </button>
-            {/* IMAGES */}
-
-            <div
-              className={
-                router.pathname == "/kontakt"
-                  ? "justify-center items-center relative left-6 flex"
-                  : "hidden"
-              }
-            >
-              {/* medal siegel image */}
-              <div className="w-14">
-                <Image
-                  src="/images/siegel2.png"
-                  width={166}
-                  height={166}
-                  layout="responsive"
-                  objectFit="contain"
-                />
-              </div>
-              {/* medal dsvgo image */}
-              <div className="relative w-28 ">
-                <Image
-                  src="/images/siegel.png"
-                  width={166}
-                  height={166}
-                  layout="responsive"
-                  objectFit="contain"
-                />
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
-      </div>
+      </form>
+
       <div
         className={
           send ? "flex h-fit justify-center items-center w-full " : "hidden"
@@ -256,8 +255,10 @@ export default function Form(props) {
           <br />
           Hier können Sie gleich alle
           <Link href={"/comparePage"}>
-            <a className="pt-4 pb-4 text-blue-500">
-              Elektrotransporter sofort vergleichen.
+            <a className="pt-4 pb-4 text-blue-600">
+              <span className="pl-2">
+                Elektrotransporter sofort vergleichen.
+              </span>
             </a>
           </Link>
         </p>

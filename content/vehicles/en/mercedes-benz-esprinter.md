@@ -3,7 +3,7 @@ title: Mercedes-Benz eSprinter
 name: mercedes-benz-esprinter
 price: 54090
 relatedBlogs: nur beispiel
-relatedReviews: mercedes-benz-esprinter
+relatedReviews: mercedes-benz-esprinter-testbericht-von-elektrotransporter-vergleich
 description: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
   Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und rund
   eine Tonne Nutzlast aufnehmen kann.
