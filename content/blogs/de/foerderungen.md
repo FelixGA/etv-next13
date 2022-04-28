@@ -1,6 +1,6 @@
 ---
 publishedAt: 03/10/2022
-src: /images/shweinfull.png
+src: /images/whatsapp-image-2022-04-27-at-22.26.12.jpeg
 contentText:
   title: ""
   content: ""
@@ -38,7 +38,8 @@ contentText7:
   content: ""
   image: /images/Arrow-right-512.png
   totalscore: ""
-title: Förderungen für Elektrotransporter
+title: "Lohnenswert: Diese Förderungen für Elektrotransporter machen den
+  Einstieg in die E-Mobilität jetzt noch einfacher!"
 content: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -172,9 +173,8 @@ content: >-
   4,4
 youtubeLink: ""
 category: foerderung
-description: Förderungen für Elektrotransporter Text Text Text Text Text Text
-  Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
-  Text Text Text
+description: Es gibt verschiedene Förderungen für Elektrotransporter, welche den
+  Einstieg in die E-Mobilität noch lukrativer machen.
 ---
 
 # Text über Förderungen
