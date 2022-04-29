@@ -1,11 +1,11 @@
 ---
 title: Ökoflitzer Paxster
 name: ökoflitzer-paxster
-price: 14000
+price: 17839
 relatedBlogs: nur beispiel
-relatedReviews: nme-cargo-van-testbericht-von-elektrotransporter-vergleich
-
-description: mmmmm
+relatedReviews: oekoflitzer-paxster-testbericht-von-elektrotransporter-vergleich
+description: Der Ökoflitzer Paxster ist ein kompaktes elektrisches Nutzfahrzeug
+  der Klasse L6e, welches speziell für den Lieferverkehr entwickelt wurde.
 src: /images/paxter-bild.jpg
 category: Koffer
 typeClass: L6E
@@ -15,8 +15,8 @@ loadingWeight:
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 0
-  baseUnit: "-"
+  value: 421
+  baseUnit: kg
 maxSpeed:
   key: km/h
   value: 45
@@ -28,13 +28,13 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 95
+  value: 60
   baseUnit: km
-  maxValue: 0
+  maxValue: 100
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
-  value: 0
-  baseUnit: "-"
+  value: 9
+  baseUnit: h
 chargingTimeLithium:
   key: Ladezeit Typ2-Kabel
   value: 0
@@ -49,15 +49,15 @@ batteryCapacityBlei:
   baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: 9,2
+  value: 9.2
   baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "0"
-  baseUnit: "-"
+  value: "6"
+  baseUnit: kwh
 power:
   key: Leistung
   value: "4"
@@ -66,8 +66,8 @@ seats:
   key: Sitzplätze
   value: 1
 rating:
-  key: Befriedigend
-  value: 3
+  key: Gut
+  value: 3.2
 guarantee:
   key: Garantie Fahrzeug
   value: 0
@@ -85,16 +85,16 @@ batteryGuarantee:
   baseUnit: "-"
 loadingHeight:
   key: Ladehöhe
-  value: 0
+  value: 720
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: "0"
-  baseUnit: "-"
+  value: 0,63
+  baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: "0"
-  baseUnit: "-"
+  value: 0,6
+  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -104,15 +104,15 @@ carSizes:
   baseUnit: mm
   valuelength: 2320
   valueheight: 1860
-  valuewheelbase: 0
+  valuewheelbase: 1530
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 0
+  valueheight: 1045
   width: Breite
-  valuewidth: 0
-  valuelength: 0
+  valuewidth: 975
+  valuelength: 620
   length: Länge
   baseUnit: mm
 carSizesLength:
@@ -129,20 +129,19 @@ carSizesHeight:
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "0"
+  value: "620"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "0"
+  value: "975"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
+  value: "1045"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "0"
+  value: "1530"
   baseUnit: mm
 ---
-
-mmm
+Der Ökoflitzer Paxster ist ein kompaktes elektrisches Nutzfahrzeug der Klasse L6e, welches speziell für den Lieferverkehr entwickelt wurde. Das Fahrzeug schafft Reichweiten von 40-100 Kilometern bei einer Höchstgeschwindigkeit von 45 km/h.
