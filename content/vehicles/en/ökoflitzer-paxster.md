@@ -5,7 +5,9 @@ price: 17839
 relatedBlogs: nur beispiel
 relatedReviews: oekoflitzer-paxster-testbericht-von-elektrotransporter-vergleich
 description: Der Ökoflitzer Paxster ist ein kompaktes elektrisches Nutzfahrzeug
-  der Klasse L6e, welches speziell für den Lieferverkehr entwickelt wurde.
+  der Klasse L6e, welches speziell für den Lieferverkehr entwickelt wurde. Das
+  Fahrzeug schafft Reichweiten von 40-100 Kilometern bei einer
+  Höchstgeschwindigkeit von 45 km/h.
 src: /images/paxter-bild.jpg
 loadingWeight:
   key: Nutzlast
@@ -72,7 +74,7 @@ guarantee:
   baseUnit: "-"
 availability:
   key: Verfügbarkeit
-  value: keine Angabe
+  value: "-"
 subsidies:
   key: Förderhöhe
   value: 0
@@ -142,4 +144,4 @@ wheelbase:
   value: "1530"
   baseUnit: mm
 ---
-Der Ökoflitzer Paxster ist ein kompaktes elektrisches Nutzfahrzeug der Klasse L6e, welches speziell für den Lieferverkehr entwickelt wurde. Das Fahrzeug schafft Reichweiten von 40-100 Kilometern bei einer Höchstgeschwindigkeit von 45 km/h.
+Der Ökoflitzer Paxster ist ein kompaktes elektrisches Nutzfahrzeug der Klasse L6e, welches speziell für den Lieferverkehr entwickelt wurde.
