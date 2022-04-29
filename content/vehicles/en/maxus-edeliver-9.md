@@ -36,4 +36,36 @@ loadingHeight:
 loadingVolumeTotal:
   value: 9,7
   baseUnit: m3
+carSizes:
+  valueheight: 2525
+  valuewidth: 2062
+  valuelength: 5546
+  valuewheelbase: 3366
+  baseUnit: mm
+loadingVolume:
+  valueheight: 1792
+  valuewidth: 1800
+  valuelength: 3019
+  baseUnit: mm
+carSizesLength:
+  value: "5546"
+  baseUnit: mm
+carSizesWidth:
+  value: "2062"
+  baseUnit: mm
+carSizesHeight:
+  value: "2525"
+  baseUnit: mm
+loadingVolumeLength:
+  value: "3019"
+  baseUnit: mm
+loadingVolumeWidth:
+  value: "1800"
+  baseUnit: mm
+loadingVolumeHeight:
+  value: "1792"
+  baseUnit: mm
+wheelbase:
+  value: "3366"
+  baseUnit: mm
 ---

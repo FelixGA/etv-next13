@@ -102,48 +102,48 @@ carSizes:
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1780
+  valuewidth: 2062
   baseUnit: mm
-  valuelength: 4550
-  valueheight: 1900
-  valuewheelbase: 2910
+  valuelength: 5546
+  valueheight: 2525
+  valuewheelbase: 3366
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1220
+  valueheight: 1792
   width: Breite
-  valuewidth: 1665
-  valuelength: 2180
+  valuewidth: 1800
+  valuelength: 3019
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "4550"
+  value: "5546"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1780"
+  value: "2062"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1900"
+  value: "2525"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "2180"
+  value: "3019"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1665"
+  value: "1800"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "1220"
+  value: "1792"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "2910"
+  value: "3366"
   baseUnit: mm
 ---
 Der Maxus eDeliver 9 ist ein Elektrotransporter der Klasse N1 sowie N2, der in zwei Fahrzeuglängen erhältlich ist und maximal 1.275  Kilogramm Nutzlast aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit von 100 km/h.
