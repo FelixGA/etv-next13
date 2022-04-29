@@ -6,7 +6,7 @@ src: /images/medal.png
 content:
   - name: header
     markdown: Hier finden Sie den **passenden Elektrotransporter** für Ihre Ansprüche.
-    details: "Folgen Sie uns:"
+    details: unabhängig, schnell, immer aktuell
   - name: compareBox
     markdown: Reichweite, Preis, Nutzlast
     details: Jetzt vergleichen!
