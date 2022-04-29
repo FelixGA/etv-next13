@@ -74,7 +74,7 @@ guarantee:
   baseUnit: "-"
 availability:
   key: Verfügbarkeit
-  value: keine Angabe
+  value: "-"
 subsidies:
   key: Förderhöhe
   value: 0
