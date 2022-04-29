@@ -19,10 +19,10 @@ content:
       E-Transporter
 
 
-      Mit dem Kaufberater finden Sie im Handumdrehen den E-Transporter, der genau zu Ihren Ansprüchen passt. Einfach Wunsch-Transporter konfigurieren. Vorgeschlagene Fahrzeuge vergleichen & kostenloses Angebot anfordern. 
+      Mit dem Kaufberater finden Sie ganz schnell den passenden E-Transporter. Einfach Wunsch-Kriterien eingeben. Vorgeschlagene Fahrzeuge vergleichen & kostenloses Angebot anfordern. 
 
 
-      Einfach, schnell und treffsicher. Probieren Sie´s aus!
+       Probieren Sie´s aus!
     details: jetzt neu
   - name: substities
     markdown: >-
