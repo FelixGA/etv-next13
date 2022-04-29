@@ -21,7 +21,7 @@ curbweight:
   baseUnit: kg
 maxSpeed:
   key: km/h
-  value: 120
+  value: 100
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
@@ -30,9 +30,9 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 150
+  value: 165
   baseUnit: km
-  maxValue: 240
+  maxValue: 196
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
@@ -51,25 +51,25 @@ batteryCapacityBlei:
   baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "35"
+  value: 52
   baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "24"
+  value: 30,2
   baseUnit: kWh
 power:
   key: Leistung
-  value: "90"
+  value: "70"
   baseUnit: kW
 seats:
   key: Sitzplätze
-  value: 2
+  value: 3
 rating:
-  key: Gut
-  value: 3.6
+  key: Befriedigend
+  value: 3.4
 guarantee:
   key: Garantie Fahrzeug
   value: 5
