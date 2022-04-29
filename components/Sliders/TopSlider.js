@@ -24,7 +24,7 @@ const TopSlider = ({ getContent, getCars }) => {
 
         <div className="print:hidden flex flex-col w-full xl:w-[1200px]">
           <h2 className="relative px-6 pb-4 mt-4 text-3xl font-black tracking-wide text-left no-select text-black-dark">
-            Beste Testberichte
+            Jetzt vergleichen!
           </h2>
 
           <div
@@ -32,7 +32,6 @@ const TopSlider = ({ getContent, getCars }) => {
             ref={container}
           >
             <TopSliderCard
-              displayedCars={getCars}
               displayedCars={getCars?.sort(
                 (a, b) => a.rating.value - b.rating.value
               )}

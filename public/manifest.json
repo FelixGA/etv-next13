@@ -3,7 +3,6 @@
   "short_name": "ETV",
   "display": "minimal-ui",
   "orientation": "portrait",
-  "purpose": "any maskable",
   "theme_color": "#2A3C80",
   "background_color": "#FFFFFF",
   "start_url": "/",

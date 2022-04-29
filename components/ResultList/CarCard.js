@@ -3,17 +3,18 @@ import { useState, useEffect } from "react";
 import CarCardDetailsDesktop from "./CarCardDetailsDesktop";
 import CarCardDetailsMobile from "./CarCardDetailsMobile";
 import { useStore } from "../store";
-
 import Link from "next/link";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import MobileTestResult from "../repeated/MobileTestResult";
 import ButtonCompare from "../repeated/ButtonCompare";
 import ButtonAnfragen from "../repeated/ButtonAnfragen";
+import usePrice from "../../hooks/usePrice";
 
 function CarCard({ carItem }) {
   /* HOOKS */
   const { state, dispatch } = useStore();
   const [showDetails, setShowDetails] = useState(false);
+  const price = usePrice(carItem?.price);
 
   return (
     <div className="mb-4 overflow-hidden border-t shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter lg:rounded-xl">
@@ -57,7 +58,7 @@ function CarCard({ carItem }) {
           {/* PRICE + MOBILE RATING BOX start*/}
           <div className="">
             <p className="pb-2 text-xl font-black text-right text-green-light xl:text-2xl md:pr-2 2xl:mt-4">
-              ab {carItem.price} €
+              ab {price}
             </p>
             <div className="pb-2 lg:hidden sm:pb-0 ">
               {/* {mobileRatingBox} */}

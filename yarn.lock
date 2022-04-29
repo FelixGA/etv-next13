@@ -2569,7 +2569,7 @@ eslint-plugin-import@2.25.2:
     has "^1.0.3"
     is-core-module "^2.7.0"
     is-glob "^4.0.3"
-    minimatch "^3.0.4"
+    minimatch "^3.1.2"
     object.values "^1.1.5"
     resolve "^1.20.0"
     tsconfig-paths "^3.11.0"

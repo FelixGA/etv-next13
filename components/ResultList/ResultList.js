@@ -1,4 +1,4 @@
-import CarCard from "../../components/ResultList/CarCard";
+import CarCard from "./CarCard.js";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";
 
