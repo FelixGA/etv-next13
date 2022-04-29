@@ -20,22 +20,28 @@ content:
       ### **Konzept & Fahrzeugvarianten**
 
 
-      Der chinesische SAIC-Konzern ist einer der größten Fahrzeughersteller der Welt mit verschiedenen Marken, unter anderem MG Rover. Eine weitere Marke ist Maxus, die besonders für SUVs und Nutzfahrzeuge bekannt ist. Im Bereich der Elektrotransporter hat Maxus neben dem großen EV 80 auch den eDeliver 3 im Angebot, einen Kastenwagen in zwei Längen, der speziell auf Lieferfirmen abzielt.
+      Der chinesische SAIC-Konzern ist einer der größten Fahrzeughersteller der Welt mit verschiedenen Marken, unter anderem MG Rover. Eine weitere Marke ist Maxus, die besonders für SUVs und Nutzfahrzeuge bekannt ist. Im Bereich der Elektrotransporter hat Maxus neben dem großen EV 80 und dem eDeliver 3 auch den großen eDeliver 9 im Angebot. 
 
 
-      Der Maxus eDeliver 3 ist in zwei Längen erhältlich: L1 hat eine Länge von 4,55 Meter, während die Version L2 stolze 60 Zentimeter länger ist. Der Kunde hat zudem die Wahl zwischen zwei Akku-Versionen mit Kapazitäten von 35 bzw. 50 kWh. Beides sind Lithium-Ionen-Batterien.
+      Der eDeliver 9 ist ein großer Kastenwagen, bei dem der Kunde zwischen verschiedenen Fahrzeugmaßen wählen kann. Der Maxus eDeliver 9 ist in zwei Längen erhältlich: Der L2 hat eine Länge von 5,55 Meter, während die Langversion L3 ganze 5,94 Meter misst. Zudem ist das Fahrzeug in zwei Höhen verfügbar: als H2 mit 2,53 Meter Fahrzeughöhe sowie als H3 mit nochmal rund 20 Zentimeter mehr. 
+
+
+      Beim Akku stehen je nach Größe bis zu drei Varianten zur Auswahl: mit 52, 72 sowie 89 kWh Kapazität. Dadurch variiert die Reichweite des Fahrzeugs natürlich je nach Akku-Version.
     title: Konzept & Fahrzeugvarianten
-    image: /images/maxus-edeliver-3-laderaum.jpg
-  - content: >-
-      ### Laderaum & Flexibilität (3/5)
-
-
-      In der Kurzversion L1 hat der Laderaum eine Länge von 2,18 Meter, wodurch eine Ladevolumen von 4.800 Liter zur Verfügung steht. Als L2 können Waren und Güter bis zu einer Länge von 2,77 Meter verstaut werden. Insgesamt besitzt der lange Elektrotransporter ein Ladevolumen von 6.300 Liter. Die Beladung wird über zwei Flügeltüren im Heck sowie eine seitliche Schiebetür vollzogen, die Ladekante ist mit 54 Zentimeter angenehm niedrig.
-
-
-      Die Zuladung variiert nach Länge des Fahrzeugs: während die kurze Version mit 50 kWh-Akku 830 Kilogramm aufnehmen kann, sind es in der Langversion 865 Kilogramm. Die Anhängelast beträgt 750 Kilogramm gebremst und zwischen 945 und 1015 Kilogramm mit einem ungebremsten Hänger.
-    title: Laderaum & Flexibilität
     image: ""
+  - content: >-
+      ### Laderaum & Flexibilität (4/5)
+
+
+      In der kleinen Version L2H2 hat der Maxus eDeliver 9 Ladelänge von 3,02 Meter. Mit einer Breite von maximal 1,80 Meter und einer Ladehöhe von 1,79 Meter steht so bereits ein Ladevolumen von stattlichen 9.700 Liter zur Verfügung. In der längeren Version ist der Laderaum 3,41 Meter lang, während in der Hochdach-Version die Höhe des Laderaums auf 2,02 Meter steigt. So steht bei der größten Version L3H3 ein Ladevolumen von 12.500 Liter zur Verfügung. Die Beladung kann über zwei hintere Flügeltüren sowie eine seitliche Schiebetür mit einer Breite von 1,27 Meter erledigt werden.
+
+
+      Die Zuladung variiert nach Akku und Größe des Fahrzeugs. Umso höher die Akku-Kapazität, umso geringer die Nutzlast. Die niedrigste Nutzlast von 725 Kilogramm hat so die L3H3-Version mit 89 kWh Akku-Kapazität. Am meisten zuladen kann der Maxus eDeliver 9 als L2H2 mit dem kleinsen 52 kWh-Akku. Hier sind 1,125 Kilogramm Nutzlast möglich. Außerdem ist eine Version der Fahrzeugklasse N2 verfügbar, welche 1.275 Kilogramm Gewicht aufnehmen kann, aber nicht mit einem PKW-Führerschein gefahren werden kann.
+
+
+      Die Anhängelast beträgt 750 Kilogramm gebremst und zwischen 1.400 und 1.500 Kilogramm mit einem ungebremsten Hänger.
+    title: Laderaum & Flexibilität
+    image: /images/maxus-edeliver-9-laderaum.jpg
   - content: >-
       ### Antrieb & Aufladung (4/5)
 
