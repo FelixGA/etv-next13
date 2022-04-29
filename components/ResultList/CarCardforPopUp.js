@@ -1,9 +1,12 @@
 import Image from "next/image";
 
 import { AiOutlineClose } from "react-icons/ai";
+import usePrice from "../../hooks/usePrice";
 import { useStore } from "../store";
 function CarCardforPopUp(props) {
   const { state, dispatch } = useStore();
+  const price = usePrice(props.selectedCar?.price);
+
   return (
     <div className="w-[80%] md:w-full relative ">
       <div className="relative w-16 md:w-full">
@@ -29,9 +32,7 @@ function CarCardforPopUp(props) {
       </div> */}
 
       <div className="absolute hidden md:flex md:bottom-6 lg:bottom-1 right-2 ">
-        <p className="text-lg font-black text-white">
-          {`ab ${props.selectedCar.price} €`}
-        </p>
+        <p className="text-lg font-black text-white">{`ab ${price}`}</p>
       </div>
       <div
         className="absolute cursor-pointer top-1 right-1"

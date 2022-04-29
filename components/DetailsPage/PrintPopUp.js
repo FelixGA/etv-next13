@@ -1,8 +1,11 @@
+import usePrice from "../../hooks/usePrice";
 import ButtonAnfragen from "../repeated/ButtonAnfragen";
 import ButtonCompare from "../repeated/ButtonCompare";
+// import usePrice from "/hooks/usePrice";
 
 const PrintPopUp = (props) => {
   let carItem = props.carItem;
+  const price = usePrice(props.carItem?.price);
   return (
     <div className="sticky flex items-center justify-end flex-1 h-24 mt-8 lg:z-10 lg:bottom-0 md:h-36 xl:h-40 bg-grey-lighter print:hidden">
       <div className="flex items-center justify-between w-full lg:w-3/4">
@@ -28,7 +31,7 @@ const PrintPopUp = (props) => {
         >
           <div className="pt-1 pb-2  md:pb-0 md:pt-0 md:mr-6 md:mb-2">
             <p className="text-xl font-black text-green-700 md:text-2xl xl:text-3xl ">
-              ab {carItem?.price} €
+              ab {price}
             </p>
           </div>
           <div className="pb-1 mr-2  md:mr-6">

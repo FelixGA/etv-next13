@@ -4,7 +4,7 @@ import getContentBySlug from "/utils/getContentBySlug";
 import getContent from "/utils/getContent";
 import TopSlider from "../../components/Sliders/TopSlider";
 import Articles from "../../components/DetailsPage/Articles";
-import PrintPopUp from "../../components/DetailsPage/PrintPopUp";
+import PrintPopUp from "../../components/DetailsPage/PrintPopUp.js";
 import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
 import { serialize } from "next-mdx-remote/serialize";
 import getSlugs from "/utils/getSlugs";

@@ -5,82 +5,132 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/activeCompare</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/activeCompare" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/allgemeineGeschaeftsbedingungen</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/allgemeineGeschaeftsbedingungen" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/api/auth</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/api/auth" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/api/callback</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/api/callback" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/api/handleForm</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/api/handleForm" />
     </url>
     <url>
+        <loc>https://www.elektrotransporter-vergleich.com/api/handleNewsletter</loc>
+        <lastmod>2022-04-28</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/api/handleNewsletter" />
+    </url>
+    <url>
         <loc>https://www.elektrotransporter-vergleich.com/caradvisor</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/caradvisor" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/comparePage</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/comparePage" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/datenschutzerklaerung</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/datenschutzerklaerung" />
     </url>
     <url>
+        <loc>https://www.elektrotransporter-vergleich.com/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich</loc>
+        <lastmod>2022-04-28</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich" />
+    </url>
+    <url>
         <loc>https://www.elektrotransporter-vergleich.com/impressum</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/impressum" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/kontakt</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/kontakt" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/magazin/[blogtitle]</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin/[blogtitle]" />
     </url>
     <url>
+        <loc>https://www.elektrotransporter-vergleich.com/magazin/foerderung/[blogtitle]</loc>
+        <lastmod>2022-04-28</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin/foerderung/[blogtitle]" />
+    </url>
+    <url>
+        <loc>https://www.elektrotransporter-vergleich.com/magazin/foerderung</loc>
+        <lastmod>2022-04-28</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin/foerderung" />
+    </url>
+    <url>
+        <loc>https://www.elektrotransporter-vergleich.com/magazin/hersteller/[blogtitle]</loc>
+        <lastmod>2022-04-28</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin/hersteller/[blogtitle]" />
+    </url>
+    <url>
+        <loc>https://www.elektrotransporter-vergleich.com/magazin/hersteller</loc>
+        <lastmod>2022-04-28</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin/hersteller" />
+    </url>
+    <url>
+        <loc>https://www.elektrotransporter-vergleich.com/magazin/neuigkeiten/[blogtitle]</loc>
+        <lastmod>2022-04-28</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin/neuigkeiten/[blogtitle]" />
+    </url>
+    <url>
+        <loc>https://www.elektrotransporter-vergleich.com/magazin/neuigkeiten</loc>
+        <lastmod>2022-04-28</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin/neuigkeiten" />
+    </url>
+    <url>
         <loc>https://www.elektrotransporter-vergleich.com/magazin/reviews/[reviewtitle]</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin/reviews/[reviewtitle]" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/magazin/reviews</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin/reviews" />
     </url>
     <url>
+        <loc>https://www.elektrotransporter-vergleich.com/magazin/umwelt/[blogtitle]</loc>
+        <lastmod>2022-04-28</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin/umwelt/[blogtitle]" />
+    </url>
+    <url>
+        <loc>https://www.elektrotransporter-vergleich.com/magazin/umwelt</loc>
+        <lastmod>2022-04-28</lastmod>
+		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin/umwelt" />
+    </url>
+    <url>
         <loc>https://www.elektrotransporter-vergleich.com/magazin</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/magazin" />
     </url>
     <url>
         <loc>https://www.elektrotransporter-vergleich.com/transporter/[cartitle]</loc>
-        <lastmod>2022-04-06</lastmod>
+        <lastmod>2022-04-28</lastmod>
 		<xhtml:link rel="alternate" hreflang="de" href="https://www.elektrotransporter-vergleich.com/transporter/[cartitle]" />
     </url>
 </urlset>

@@ -8,7 +8,7 @@ export default function FirstArticle({ getMarkdownContext, getContent }) {
       <div className="flex flex-col flex-1 pt-4  xl:flex-1">
         <div className="pt-4 xl:pt-24">
           <div className="flex items-center justify-center w-24 h-10 font-bold text-white rounded no-select bg-orange-light">
-            Jetzt neue
+            Jetzt neu
           </div>
           {/* <h2 className="text-2xl font-bold text-grey-darkest">
               {getContent.content[2].name}

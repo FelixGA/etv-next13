@@ -1,3 +1,3 @@
-const footerWords = ["✔ unabhängig", "✔ schnell", "✔ immeraktuell"];
+const footerWords = ["Folgen Sie uns:"];
 
 export default footerWords;
