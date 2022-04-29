@@ -3,7 +3,7 @@ title: Maxus eDeliver 9
 name: maxus-edeliver-9
 price: 56490
 relatedBlogs: nur beispiel
-relatedReviews: ""
+relatedReviews: maxus-edeliver-9
 description: Der Maxus eDeliver 9 ist ein Elektrotransporter der Klasse N1 sowie
   N2, der in zwei Fahrzeuglängen erhältlich ist und maximal 1.275  Kilogramm
   Nutzlast aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit
