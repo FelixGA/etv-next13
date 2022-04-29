@@ -2,6 +2,7 @@
 title: Goupil G6 Koffer
 name: goupil-g6-koffer
 price: 58.973
+relatedBlogs: beispiel  bitte nicht ändern
 relatedReviews: goupil-g6-testbericht-von-elektrotransporter-vergleich
 description: Der Goupil G6 ist ein Elektro-Transporter der Kategorie N1 mit
   einer Reichweite in der Praxis von 110 Kilometer.
