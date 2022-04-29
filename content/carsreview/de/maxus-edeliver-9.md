@@ -5,15 +5,16 @@ relatedCars: maxus-edeliver-9
 youtubeLink: https://www.youtube.com/watch?v=xv6BkrIbOF0
 category: Kasten
 publishedAt: 04/01/2022
-description: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der
-  in zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
-  aufnehmen kann.
-src: /images/Maxus-eDeliver-3-Front-2-300x200.jpg
+description: Der Maxus eDeliver 9 ist ein Elektrotransporter der Klasse N1 sowie
+  N2, der in zwei Fahrzeuglängen erhältlich ist und maximal 1.275  Kilogramm
+  Nutzlast aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit
+  von 100 km/h.
+src: /images/maxus-edeliver9_frontansicht_0.jpg
 content:
-  - content: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der in
-      zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
-      aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit von
-      120 km/h.
+  - content: Der Maxus eDeliver 9 ist ein Elektrotransporter der Klasse N1 sowie N2,
+      der in zwei Fahrzeuglängen erhältlich ist und maximal 1.275  Kilogramm
+      Nutzlast aufnehmen kann. Er erreicht eine abgeriegelte
+      Höchstgeschwindigkeit von 100 km/h.
     title: Einleitung
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
