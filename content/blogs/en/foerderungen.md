@@ -9,8 +9,8 @@ contentHeading:
   title: ""
   content: ""
   image: ""
-slug: foerderungen
 relatedCars: ari-458-food-truck-elektrisches-gastro-mobil
+slug: foerderungen
 vehicle:
   key: gut
   value: 4,0

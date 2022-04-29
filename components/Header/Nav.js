@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useStore } from "../store";
+import navbarData from "../../data/navbarData";
 
 const Nav = () => {
   const [isActive, setIsActive] = useState(false);
+  const [selected, SetSelected] = useState("Start");
   const router = useRouter();
   const { dispatch } = useStore();
   // (router.pathname);
@@ -12,11 +14,28 @@ const Nav = () => {
     <div className={router.pathname == "/caradvisor" ? "hidden" : "w-full"}>
       <nav className="">
         <ul className="flex justify-around items-center flex-1 text-[#b1a7a7] text-lg xl:text-xl font-bold ">
-          <li className="transition hover:text-white">
-            <Link href="/">
-              <a
-                className="text-[#ffffff]"
-                onClick={() => {
+          {navbarData.map((item, index) => (
+            <li
+              className={
+                router.pathname == item.path
+                  ? "transition hover:text-white text-white"
+                  : "transition hover:text-white "
+              } /*   */
+              key={item.id}
+            >
+              <Link href={item.path}>
+                <a
+                  onClick={() => {
+                    setIsActive(false);
+                  }}
+                >
+                  {item.title}
+                </a>
+              </Link>
+            </li>
+          ))}
+
+          {/* onClick={() => {
                   setIsActive(false);
                   dispatch({
                     type: "mobileNavActive",
@@ -46,56 +65,7 @@ const Nav = () => {
                     type: "chargingTimeLithium",
                     data: [],
                   });
-                }}
-              >
-                Start
-              </a>
-            </Link>
-          </li>
-          <li className="transition hover:text-white">
-            <Link href="/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich">
-              <a
-                onClick={() => {
-                  setIsActive(false);
-                }}
-              >
-                Transporter
-              </a>
-            </Link>
-          </li>
-          <li className="transition hover:text-white">
-            <Link href="/comparePage">
-              <a
-                onClick={() => {
-                  setIsActive(false);
-                }}
-              >
-                Transporter-Vergleich
-              </a>
-            </Link>
-          </li>
-          <li className="transition hover:text-white">
-            <Link href="/magazin">
-              <a
-                onClick={() => {
-                  setIsActive(false);
-                }}
-              >
-                Magazin
-              </a>
-            </Link>
-          </li>
-          <li className="transition hover:text-white">
-            <Link href="/kontakt">
-              <a
-                onClick={() => {
-                  setIsActive(false);
-                }}
-              >
-                Kontakt
-              </a>
-            </Link>
-          </li>
+                }}   */}
         </ul>
       </nav>
     </div>

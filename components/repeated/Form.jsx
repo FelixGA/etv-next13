@@ -52,7 +52,11 @@ export default function Form(props) {
         // action="https://api.vercel.com/v6/deployments"
         method="POST"
         onSubmit={handleSubmit(onSubmit, onError)}
-        className="flex flex-col px-4 my-4 bg-white shadow-dropdown xs:rounded-md"
+        className={
+          router.pathname !== "/kontakt"
+            ? "flex flex-col bg-white mx-1 px-1"
+            : "flex flex-col px-4 my-4 bg-white shadow-dropdown xs:rounded-md"
+        }
       >
         <div className="w-full">
           <TextInput
@@ -94,6 +98,7 @@ export default function Form(props) {
           <div className="xs:w-1/2">
             <TextInput
               style={"xs:ml-2"}
+              extraStyle={"pl-2"}
               placeholder={"z.B. Berlin"}
               register={register}
               label={"Ort:"}
@@ -163,7 +168,7 @@ export default function Form(props) {
             {errors.checkbox && "Bitte stimmen Sie den Nutzungsbedingungen zu."}
           </p>
         </div>
-        <div className="flex-grow pb-4 ">
+        <div className="flex-grow px-1 pb-4">
           <Controller
             name="checkbox"
             control={control}
@@ -195,7 +200,7 @@ export default function Form(props) {
             zu (Widerruf jederzeit möglich).
           </label>{" "}
         </div>
-        <div className="flex w-full pb-4">
+        <div className="flex w-full px-1 pb-4">
           <button
             onClick={() => {
               !errors.emailInput &&
@@ -208,7 +213,7 @@ export default function Form(props) {
                 : setSend(false);
             }}
             type="submit"
-            className="flex-grow py-2 mb-0 text-white rounded-lg bg-blue-darker hover:bg-blue-light transition"
+            className="flex-grow py-2 text-white transition rounded-lg bg-blue-darker hover:bg-blue-light"
           >
             Unverbindlich und kostenlos anfragen
           </button>

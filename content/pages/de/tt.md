@@ -5,25 +5,19 @@ description: ttaetgweth SEO SEO SEO
 src: /images/medal.png
 content:
   - name: header
-    markdown: |-
-      Hier finden Sie den **passenden Elektrotransporter,**\
-      genau für Ihre Ansprüche
+    markdown: Hier finden Sie den **passenden Elektrotransporter** für Ihre Ansprüche.
     details: ✔ unabhängig ✔ schnell ✔ immer aktuell
   - name: compareBox
     markdown: Reichweite, Preis, Nutzlast
-    details: |
-      Beste Testberichte
+    details: Jetzt vergleichen!
   - name: eAutoAdvisor
     markdown: >-
       ## Elektrotransporter- Kaufberater: Ihr Navi auf dem Weg zum perfekten
       E-Transporter
 
 
-      Mit dem Kaufberater finden Sie im Handumdrehen den E-Transporter, der genau zu Ihren Ansprüchen passt. Einfach Wunsch-Transporter konfigurieren. Vorgeschlagene Fahrzeuge vergleichen & kostenloses Angebot anfordern. 
-
-
-      Einfach, schnell und treffsicher. Probieren Sie´s aus!
-    details: jetzt neu
+      Mit dem Kaufberater finden Sie schnell und zuverlässig den passenden E-Transporter. Einfach Wunsch-Kriterien eingeben. Fahrzeuge vergleichen & Angebot anfordern. Gleich ausprobieren!
+    details: Jetzt neu!
   - name: substities
     markdown: >-
       ## Förderungen für Elektrotransporter EN
@@ -37,7 +31,7 @@ content:
       ## Zum Newsletter anmelden
 
 
-      Wir versenden in regelmäßigen Abständen einen Newsletter mit aktuellen Themen und Neuigkeiten rund um Elektrotransporter. Natürlich werden kein Spam-Mails von uns verschickt und Sie können sich jederzeit von dem Newsletter abmelden!
+      Wir versenden in regelmäßigen Abständen einen Newsletter mit aktuellen Themen und Neuigkeiten rund um Elektrotransporter. Natürlich verschicken wir keine Spam-Mails und  Sie können sich jederzeit von unserem Newsletter abmelden!
     details: Beliebte Kategorien
 ---
 .

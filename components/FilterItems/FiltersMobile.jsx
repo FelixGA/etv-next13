@@ -4,7 +4,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
 import { useStore } from "../store";
 import filterImage from "../../public/images/filter-icon.png";
-import { filtersData, priceFilterData } from "../repeated/filtersData";
+import { filtersData, priceFilterData } from "../../data/filtersData";
 import FilterItemMobile from "./FilterItemMobile";
 import Sort from "../SortItems/Sort";
 import PriceInputs from "./PriceInputs";

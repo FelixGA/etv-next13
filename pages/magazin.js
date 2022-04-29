@@ -6,6 +6,7 @@ import Blog from "../components/Blog/Blog";
 import Link from "next/link";
 import BlogHeader from "../components/Blog/BlogHeader";
 import LinkTile from "../components/Blog/LinkTile";
+import Blog2 from "../components/Blog/Blog2";
 
 export default function magazin(props) {
   const [getBlogs, SetGetBlogs] = useState(props.blogs);
@@ -23,10 +24,10 @@ export default function magazin(props) {
       <div className="lg:hidden">
         <LinkTile getBlogs={getBlogs} />
       </div>
-      <h1 className="px-4 pt-8 pb-2 text-blue-dark font-bold text-4xl text-center">
+      <h1 className="px-4 pt-8 pb-2 text-4xl font-bold text-center text-blue-dark">
         Magazin
       </h1>
-      <div className="px-4 pt-8 pb-2 flex items-center justify-center text-blue-dark font-bold text-2xl text-center">
+      <div className="flex items-center justify-center px-4 pt-8 pb-2 text-2xl font-bold text-center text-blue-dark">
         <Link href="/magazin/reviews">
           <a>TESTBERICHTE</a>
         </Link>

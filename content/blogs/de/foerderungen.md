@@ -9,8 +9,8 @@ contentHeading:
   title: ""
   content: ""
   image: ""
-slug: foerderungen
 relatedCars: ari-458-food-truck-elektrisches-gastro-mobil
+slug: foerderungen
 vehicle:
   key: gut
   value: 4,0
@@ -175,7 +175,7 @@ content: >-
 youtubeLink: ""
 category: foerderung
 description: Es gibt verschiedene Förderungen für Elektrotransporter, welche den
-  Einstieg in die E-Mobilität noch lukrativer machen.
+  Einstieg in die E-Mobilität noch lohnenswerter machen.
 ---
 
 # Text über Förderungen

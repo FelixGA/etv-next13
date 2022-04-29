@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+
 export default function TextInput({
   register,
   label,
@@ -7,18 +9,27 @@ export default function TextInput({
   style,
   pattern,
   registerData,
-  width,
+  extraStyle,
   required,
 }) {
   const fullNameRegex = RegExp(/^[a-zA-Z ]{2,30}$/);
-
+  const router = useRouter();
   return (
-    <div className="flex flex-col mb-4">
-      <label htmlFor={id} className="font-bold sm:py-2 text-blue-lighter">
+    <div
+      className={
+        router.pathname == "/kontakt"
+          ? "flex flex-col py-2"
+          : "flex flex-col py-1 px-1"
+      }
+    >
+      <label
+        htmlFor={id}
+        className={`${extraStyle} font-bold sm:py-2 text-blue-lighter`}
+      >
         {label}
       </label>
       <input
-        className={`${style} bg-grey-lighter focus:outline-none focus:ring focus:border-blue-darker focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block flex-grow"
+        className={`${style}  bg-grey-lighter focus:outline-none focus:ring focus:border-blue-darker focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block flex-grow"
         }`}
         content-type={type}
         // required

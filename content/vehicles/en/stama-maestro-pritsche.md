@@ -12,9 +12,6 @@ description: >-
 
 
   Technisch gibt es den Stama Maestro in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und als MT15 mit  72 Volt-Motor angetrieben. Beide Versionen sind mit Lithium-Ionen-Akkus zur Energiespeicherung ausgestattet, die eine Kapazität von 10,2 kWh bzw. 14,4 kWh besitzen.
-
-
-  Der Stama Maestro besitzt eine EU-Typengenehmigung und kann somit in allen EU-Staaten auf öffentlichen Straßen bewegt werden.
 src: /images/stama-maestro-front-1024x683.jpg
 loadingWeight:
   key: Nutzlast

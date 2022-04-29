@@ -15,7 +15,11 @@ relatedBlogs:
 relatedReviews: evum-a-car-testbericht-von-elektrotransporter-vergleich
 description: Nach vielen Jahren der Entwicklung und einer mehrmonatigen
   Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A-Car
-  nun seit Juni 2020 auf dem Markt.
+  nun seit Juni 2020 auf dem Markt. Ursprünglich wurde der kräftige
+  Elektrotransporter für Entwicklungs- und Schwellenländern entwickelt, wo er in
+  der Landwirtschaft und der Industrie zum Einsatz kommen sollte. Während der
+  Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen
+  Markt attraktiv sein könnte.
 src: /images/evum-intralogistik-03.jpg
 category: Koffer
 typeClass: N1
@@ -95,12 +99,12 @@ batteryGuarantee:
   baseUnit: "-"
 loadingHeight:
   key: Ladehöhe
-  value: 0
-  baseUnit: "-"
+  value: 924
+  baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: "0"
-  baseUnit: "-"
+  value: 1,01
+  baseUnit: m3
 loadingArea:
   key: Ladefläche
   value: 2,86
@@ -119,7 +123,7 @@ carSizes:
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 0
+  valueheight: 352
   width: Breite
   valuewidth: 1608
   valuelength: 1778
@@ -147,8 +151,8 @@ loadingVolumeWidth:
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
-  baseUnit: "-"
+  value: "352"
+  baseUnit: mm
 wheelbase:
   key: Radstand
   value: "2596"

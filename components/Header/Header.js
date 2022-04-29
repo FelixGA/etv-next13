@@ -22,7 +22,6 @@ const variants = {
   },
 };
 const Header = () => {
-  const [hamState, setHamState] = useState(false);
   const { state, dispatch } = useStore();
   const router = useRouter();
   return (

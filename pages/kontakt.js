@@ -15,12 +15,13 @@ export default function kontakt(props) {
   return (
     <div className="relative flex flex-col items-center ">
       <Head page={props.page} />
-      <div>
-        <p className="pt-8 text-3xl font-bold lg:pb-4">Kontaktieren Sie uns!</p>
-      </div>
+
       <div className="flex flex-col w-full mx-auto 2xl:px-48 lg:flex-row">
         {router.pathname == "/kontakt" ? (
-          <div className="flex flex-col justify-center w-full lg:mt-20 lg:pb-48">
+          <div className="flex flex-col justify-center w-full pt-8 lg:pb-48">
+            <div className="mb-12 text-center">
+              <p className="text-3xl font-bold ">Kontaktieren Sie uns!</p>
+            </div>
             <div className="hidden lg:block">
               <Image
                 src="/images/frage.jpeg"
@@ -33,7 +34,7 @@ export default function kontakt(props) {
             <p
               className={
                 router.pathname == "/kontakt"
-                  ? "text-base lg:text-xl w-full px-4 pt-4 text-center sm:text-left"
+                  ? "text-base lg:text-xl w-full px-4 pt-2 text-center sm:text-left"
                   : "hidden"
               }
             >
