@@ -8,11 +8,10 @@ content:
     markdown: |-
       Hier finden Sie den **passenden Elektrotransporter,**\
       genau für Ihre Ansprüche
-    details: ✔ unabhängig ✔ schnell ✔ immer aktuell
+    details: "Folgen Sie uns:"
   - name: compareBox
     markdown: Reichweite, Preis, Nutzlast
-    details: |
-      Beste Testberichte
+    details: Jetzt vergleichen!
   - name: eAutoAdvisor
     markdown: >-
       ## Elektrotransporter Kaufberater
