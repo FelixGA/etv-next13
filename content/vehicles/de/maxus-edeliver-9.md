@@ -10,14 +10,14 @@ description: Der Maxus eDeliver 9 ist ein Elektrotransporter der Klasse N1 sowie
   von 100 km/h.
 src: /images/maxus-edeliver9_frontansicht_0.jpg
 category: Kasten
-typeClass: N1
+typeClass: N1N2
 loadingWeight:
   key: Nutzlast
-  value: 830
+  value: 1125
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 1445
+  value: 2375
   baseUnit: kg
 maxSpeed:
   key: km/h
