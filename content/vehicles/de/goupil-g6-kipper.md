@@ -147,4 +147,4 @@ wheelbase:
   value: "3450"
   baseUnit: mm
 ---
-Der Goupil G6 ist ein Elektro-Transporter der Kategorie N1 mit einer Reichweite in der Praxis von 110 Kilometer.  Die maximale Zuladung des Fahrzeugs liegt bei 1150 Kilogramm und die maximale Höchstgeschwindigkeit liegt bei 80 km/h. Das Fahrzeug des französischen Herstellers verfügt über 3 Sitzplätze.
+Der Goupil G6 ist ein Elektro-Transporter der Kategorie N1 mit einer Reichweite in der Praxis von 110 Kilometer.
