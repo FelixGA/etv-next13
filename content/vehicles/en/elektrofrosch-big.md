@@ -2,6 +2,8 @@
 title: Elektrofrosch BIG
 name: elektrofrosch-big
 price: 2665
+relatedBlogs:
+  content: ""
 relatedReviews: elektrofrosch-big-testbericht-von-elektrotransporter-vergleich
 description: Der BIG von Elektrofrosch ist ein Lastentrike der Kategorie L2e mit
   einer maximalen Nutzlast von 370 kg und einer Höchstgeschwindigkeit von 42
