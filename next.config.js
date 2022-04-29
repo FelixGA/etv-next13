@@ -9,6 +9,7 @@ module.exports = withPWA({
   },
   images: {
     domains: ["elektrotransporter-vergleich.de"],
+    formats: ["image/avif", "image/webp"],
   },
   i18n: {
     // locales: ["de", "en"],

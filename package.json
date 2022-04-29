@@ -11,32 +11,32 @@
     "postbuild": "node next-sitemap"
   },
   "dependencies": {
-    "@next/mdx": "^12.1.0",
+    "@next/mdx": "^12.1.5",
     "@sergeymyssak/nextjs-sitemap": "^2.0.3",
-    "@tailwindcss/line-clamp": "^0.3.1",
-    "axios": "^0.26.1",
-    "express": "^4.17.3",
-    "framer-motion": "^6.2.3",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "axios": "^0.27.2",
+    "express": "^4.18.0",
+    "framer-motion": "^6.3.3",
     "gray-matter": "^4.0.3",
-    "next": "12.1.0",
-    "next-mdx-remote": "^4.0.0",
-    "next-pwa": "^5.4.6",
-    "pipedrive": "^13.2.8",
+    "next": "12.1.5",
+    "next-mdx-remote": "^4.0.3",
+    "next-pwa": "^5.5.2",
+    "pipedrive": "^13.3.2",
     "pipedrive-api": "^0.1.21",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-hook-form": "^7.29.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-hook-form": "^7.30.0",
     "react-icons": "^4.3.1",
     "tailwind-scrollbar-hide": "^1.1.7",
-    "tailwindcss": "^3.0.23",
-    "vercel": "^24.0.1"
+    "tailwindcss": "^3.0.24",
+    "vercel": "^24.1.0"
   },
   "devDependencies": {
     "@openlab/vercel-netlify-cms-github": "^1.1.1",
-    "autoprefixer": "^10.4.2",
-    "eslint": "8.11.0",
-    "eslint-config-next": "12.1.0",
-    "postcss": "^8.4.6",
-    "sharp": "^0.30.3"
+    "autoprefixer": "^10.4.5",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5",
+    "postcss": "^8.4.12",
+    "sharp": "^0.30.4"
   }
 }
