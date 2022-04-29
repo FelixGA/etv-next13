@@ -64,7 +64,7 @@ const Footer = ({ blogs, reviews }) => {
 
   return (
     <>
-      <footer className="px-4 bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around print:hidden">
+      <footer className="px-4 shadow-2xl bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around print:hidden">
         <nav className="flex flex-col justify-around xl:justify-evenly sm:flex-row items-center sm:items-start w-full lg:w-[60%] xl:w-[50%] pb-4 sm:pb-8 ">
           <div className="flex flex-col justify-start sm:w-40 ">
             <h3 className="flex items-end justify-center text-sm font-bold tracking-wider sm:justify-start h-14 sm:text-md">

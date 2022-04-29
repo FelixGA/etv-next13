@@ -60,9 +60,7 @@ export default function Form(props) {
       >
         <div className="w-full">
           <TextInput
-            style={`${
-              errors.firstName ? "xs:mr-2 focus:border-red-500" : "xs:mr-2"
-            }`}
+            style={`${errors.firstName ? " focus:border-red-500" : ""}`}
             placeholder={"z.B. Max Muster"}
             register={register}
             label={"Name:"}
@@ -86,7 +84,7 @@ export default function Form(props) {
         <div className="flex flex-col justify-center w-full xs:flex-row">
           <div className="xs:w-1/2 ">
             <TextInput
-              style={"xs:mr-2"}
+              style={"sm:mr-2"}
               placeholder={"z.B. 10115"}
               register={register}
               label={"Postleitzahl:"}
