@@ -1,7 +1,7 @@
 ---
 title: VW e-Crafter
 name: vw-e-crafter
-price: 53.9
+price: 53900
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
