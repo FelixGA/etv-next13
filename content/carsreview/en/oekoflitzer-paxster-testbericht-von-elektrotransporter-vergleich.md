@@ -1,6 +1,7 @@
 ---
 title: Ökoflitzer Paxster
 slug: oekoflitzer-paxster-testbericht-von-elektrotransporter-vergleich
+relatedCars: ari-345-koffer
 youtubeLink: https://www.youtube.com/watch?v=t3qEuUJE2S4
 publishedAt: 04/29/2022
 description: >

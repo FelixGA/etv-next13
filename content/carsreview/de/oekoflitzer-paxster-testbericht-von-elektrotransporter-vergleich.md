@@ -68,7 +68,7 @@ content:
 
       Der kombinierte Verbrauch liegt bei 6 kWh pro 100 Kilometer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 Kilometer bei 1,80 €.
     title: Umwelt
-    image: /images/paxter_rot.jpeg
+    image: /images/paxter-bild.jpg
   - content: >-
       ### Preise & Garantie (2/5)
 
