@@ -4,8 +4,12 @@ name: garia-utility-city-sc-pritsche
 price: 29312
 relatedBlogs: beispiel
 relatedReviews: garia-utility-testbericht-von-elektrotransporter-vergleich
-description: Der Garia Utility ist Elektro-Kleintransporter der Fahrzeugklasse
-  L7e mit einer Nutzlast von von knapp 700 Kilogramm in der Version City.
+description: >-
+  Der Garia Utility ist Elektro-Kleintransporter der Fahrzeugklasse L7e mit
+  einer Nutzlast von von knapp 700 Kilogramm in der Version City.
+
+
+  Garia war lange Zeit vor allem als Hersteller von elektrischen Golf-Carts bekannt. Mit dem Garia Utility hat das dänische Unternehmen aber seit 2015 auch einen Elektrotransporter im Angebot.
 src: /images/garia-utility-sc-cargo.jpeg
 category: Pritsche
 typeClass: L7E
