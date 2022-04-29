@@ -108,10 +108,10 @@ carSizes:
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1665
+  valueheight: 1900
   width: Breite
-  valuewidth: 1220
-  valuelength: 2180
+  valuewidth: 1700
+  valuelength: 2786
   length: Länge
   baseUnit: mm
 carSizesLength:
