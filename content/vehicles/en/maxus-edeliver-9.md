@@ -30,4 +30,10 @@ seats:
   value: 3
 rating:
   value: 3.4
+loadingHeight:
+  value: 0
+  baseUnit: "-"
+loadingVolumeTotal:
+  value: 9,7
+  baseUnit: m3
 ---

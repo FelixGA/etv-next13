@@ -87,11 +87,11 @@ batteryGuarantee:
   baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
-  value: 540
-  baseUnit: mm
+  value: 0
+  baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 4,80
+  value: 9,7
   baseUnit: m3
 loadingArea:
   key: Ladefläche
