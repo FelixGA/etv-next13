@@ -46,50 +46,52 @@ content:
       ### Antrieb & Aufladung (4/5)
 
 
-      Den Antrieb beim Maxus eDeliver 3 übernimmt ein 90 kW-Elektromotor, der ein Drehmoment von 250 Nm bereitstellen kann. Damit erreicht der E-Transporter eine Höchstgeschwindigkeit von 120 km/h, die elektronisch abgeregelt ist, um die Reichweite nicht zu sehr einzuschränken.
+      Den Motor des Maxus eDeliver 9 ist ein Elektromotor, der eine Spitzenleistung von 150 kW und eine Dauerleistung von 70 kW leistet. Das Drehmoment liegt bei kräftigen 310 Nm. Damit erreicht der E-Transporter eine Höchstgeschwindigkeit von 100 km/h, die elektronisch abgeregelt ist, um die Reichweite nicht zu sehr einzuschränken. Die N2-Version kann nur 90 km/h schnell fahren.
 
 
-      Die mögliche Reichweite unterscheidet sich natürlich deutlich bei den beiden Akku-Varianten. Die kombinierte WLTP-Reichweite liegt bei der 35 kWh-Version zwischen 150 und 158 Kilometer, mit großem Akku sind 230 bis 240 Kilometer möglich. Die Verbrauchsangaben liegen zwischen 23,6 und 25,3 kWh auf 100 Kilometer.
+      Die mögliche Reichweite unterscheidet sich je nach Akku-Variante. Kombiniert liegen die WLTP-Reichweiten laut Maxus zwischen 165 Kilometer (L3H3 mit 52 kWh-Akku) und ganzen 296 Kilometer als L3H2 mit großem 89 kWh-Batterie.
 
 
-      Bei den Ladezeiten auf 80% gibt Maxus 6 Stunden für die kleine Batterie und 8 Stunden für die 53 kWh-Variante an. Mit einem Gleichstrom-Schnellladeanschluss soll diese Aufladung in nur 45 Minuten möglich sein.
+      Die Ladezeit gibt der Hersteller je nach Kapazität mit 6 bis 9 Stunden an einer 11 kW-Wallbox an. An einer Schnellladesäule mit Gleichstrom können die Elektrotransporter in ungefähr 36 bis 45 Minuten von 20 auf 80% Ladekapazität gebracht werden.
     title: Antrieb & Aufladung
-    image: /images/maxus-edeliver3-motor.jpg
+    image: /images/maxus-edeliver-9-engine.jpg
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
 
-      Der Maxus eDeliver 3 ist ein recht luxuriös ausgestatteter Transporter, der bereits serienmäßig mit einer manuellen Klimaanlage, einem Bordcomputer, einem Radio mit Bluetooth-Funktion und einer Sitzheizung zum Kunden kommt und somit für Lieferfahrer viel Komfort bietet. Die Rückfahrkamera und die Berganfahrhilfe sind weitere kostenlose Details, die den Alltag im eDeliver 3 für Gewerbetreibende deutlich erleichtern sollten. Zusätzliche Optionen sind hingegen rar, so ist nur eine Metallic-Lackierung gegen Aufpreis zu bekommen.
+      Der Maxus eDeliver 9 kommt nur in einer Ausstattungsvariante zum Kunden. Diese ist allerdings sehr umfangreich und beinhaltet bereits Einparkhilfen vorn wie hinten, eine Klimaanlage sowie einen 10-Zoll-Touchscreen mit Rückfahrkamera. Auch mehrere Airbags, ein Spurwechselassistent sowie eine Berganfahrhilfe sind serienmäßig mit dabei. Optional ist neben einer Metallic-Lackierung noch das Plus-Paket erhältlich, zu dem u.a. eine Sitzheizung, ein Notbremsassistent sowie Digitalradio DAB+ gehören.
     title: Komfort & Ausstattung
+    image: /images/maxus-edeliver-9-interior.jpg
   - content: >-
       ### Bedienung & Fahrbetrieb
 
 
-      Der Maxus eDeliver 3 hat dank der hohen Sitzposition eine gute Übersicht, allerdings ist wie bei den meisten geschlossenen Kastenwagen die Übersicht eingeschränkt. Die Ladekante ist mit 54 Zentimeter angenehm niedrig, wodurch sich der Elektrotransporter einfach per Heck- oder Seitentür beladen lässt. Ein Flottenmanagement-System wird derzeit nicht angeboten.
+      Der Maxus eDeliver 9 hat dank der hohen Sitzposition eine gute Übersicht. Zwar ist wie bei den meisten Kastenwagen durch die fehlenden Heckfenster die Übersicht eingeschränkt, die serienmäßige Rückfahrkamera hilft hier allerdings immens. Auch der große Touchscreen mit Smartphone-Anbindung hilft im täglichen Arbeitseinsatz. Ein Flottenmanagement-System wird derzeit nicht angeboten.
     title: Bedienung & Fahrbetrieb
-    image: /images/maxus-edliever3-innenraum.jpg
+    image: ""
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt (2/5)
 
 
-      Der Energieverbrauch wird bei der 50 kWh-Version mit rund 23 kWh auf 100 Kilometer angegeben. Dies entspricht bei 30 Cent pro kWh ungefähr 6,90 Euro Energiekosten. Ein Solarmodul für eine erweiterte Reichweite wird derzeit leider nicht angeboten.
+      Der Energieverbrauch des Maxus eDeliver 9 liegt je nach Akku und Größe zwischen 30,2 kWh (L2H2 mit kleinem Akku) und 33,2 kWh (große N2-Version). Bei einem Strompreis von 30 Cent pro kWh entstehen so Energiekosten von rund 9 bis 10 Euro auf 100 Kilometer. Eine Solaranlage für eine erweiterte Reichweite wird nicht angeboten.
     title: Umwelt
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie (3/5)
 
 
-      Der Maxus eDeliver 3 startet bei 34.990 Euro für die kurze Version mit kleinem Akku, das Topmodell (L2 mit 53 kWh-Akku) kostet exakt 5.000 Euro mehr. Das ist sicher nicht billig, allerdings bekommt man dafür einen leistungsstarken Elektrotransporter mit umfangreicher Ausstattung. Außerdem ist die Herstellergarantie auf das Fahrzeug mit 5 Jahren bzw. 100.000 Kilometer sehr großzügig. Auf den Lithium-Ionen-Akku gibt es sogar 8 Jahre bzw. 160.000 Kilometer Garantie.
+      Die Preise des Maxus eDeliver 9 startet bei 54.690 Euro netto für L2H2-Version mit kleinem Akku, das Topmodell L3H3 60.990 Euro. Für die größeren Akkus muss dann jeweils 8.000 Euro (72 kWh) bzw. 15.000 Euro (89 kWh) netto draufgezahlt werden. Für ein Fahrzeug dieser Größe und Leistungsfähigkeit sicher kein Schnäppchen, aber zumindest angemessen. Außerdem ist die Herstellergarantie auf das Fahrzeug mit 5 Jahren bzw. 100.000 Kilometer sehr großzügig. Auf den Lithium-Ionen-Akku gibt es sogar 8 Jahre bzw. 160.000 Kilometer Garantie.
     title: Preise & Garantie
+    image: /images/maxus_edeliver9_702.jpg
   - content: >-
       ### Fazit
 
 
-      Mit dem eDeliver 3 hat Maxus einen kräftigen und komfortablen Kastenwagen im Angebot, der außerdem mit ordentlicher Reichweite und viel Stauraum aufwartet. Wirklich günstig ist er dadurch zwar nicht, allerdings immer noch rund 10.000 Euro preiswerter als ein Mercedes-Benz eVito. Allein das dürfte schon genug Anreiz für einige Käufer sein.
+      Der Maxus eDeliver 9 ist ein leistungsstarker Elektrotransporter mit bis zu 12,5 m³ Stauraum und mehr als einer Tonne Nutzlast. Dank verschiedener Akkuvarianten und Fahrzeuggrößen kann das Fahrzeug zudem auf die Anforderungen des Unternehmens abgestimmt werden. Die recht umfangreiche Ausstattung sorgt zudem für komfortables Fahren. 
 
 
       ### Gesamtpunktzahl:
 
 
-      3,6 Sterne
+      3,4 Sterne
     title: Fazit
 ---
