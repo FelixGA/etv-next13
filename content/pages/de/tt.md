@@ -31,7 +31,7 @@ content:
       ## Zum Newsletter anmelden
 
 
-      Wir versenden in regelmäßigen Abständen einen Newsletter mit aktuellen Themen und Neuigkeiten rund um Elektrotransporter. Natürlich werden kein Spam-Mails von uns verschickt und Sie können sich jederzeit von dem Newsletter abmelden!
+      Wir versenden in regelmäßigen Abständen einen Newsletter mit aktuellen Themen und Neuigkeiten rund um Elektrotransporter. Natürlich verschicken wir keine Spam-Mails und  Sie können sich jederzeit von unserem Newsletter abmelden!
     details: Beliebte Kategorien
 ---
 .
