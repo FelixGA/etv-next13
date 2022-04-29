@@ -6,7 +6,7 @@ src: /images/medal.png
 content:
   - name: header
     markdown: Hier finden Sie den **passenden Elektrotransporter** für Ihre Ansprüche.
-    details: ✔ unabhängig ✔ schnell ✔ immer aktuell
+    details: unabhängig, schnell, immer aktuell
   - name: compareBox
     markdown: Reichweite, Preis, Nutzlast
     details: Jetzt vergleichen!
@@ -16,7 +16,7 @@ content:
       E-Transporter
 
 
-      Mit dem Kaufberater finden Sie ganz schnell den passenden E-Transporter. Einfach Wunsch-Kriterien eingeben. Vorgeschlagene Fahrzeuge vergleichen & Angebot anfordern. Gleich ausprobieren!
+      Mit dem Kaufberater finden Sie schnell und zuverlässig den passenden E-Transporter. Einfach Wunsch-Kriterien eingeben. Fahrzeuge vergleichen & Angebot anfordern. Gleich ausprobieren!
     details: Jetzt neu!
   - name: substities
     markdown: >-
