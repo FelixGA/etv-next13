@@ -1,6 +1,7 @@
 ---
 title: Goupil G6 Testbericht von Elektrotransporter-Vergleich
 slug: goupil-g6-testbericht-von-elektrotransporter-vergleich
+relatedCars: alke-atx-340-e-pritsche
 youtubeLink: https://www.youtube.com/watch?v=ogacSbGthM8
 category: Pritsche
 publishedAt: 02/24/2022
