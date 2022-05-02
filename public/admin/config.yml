@@ -52,6 +52,46 @@ collections:
               widget: "markdown",
               required: false,
             }
+  - label: "Brands"
+    name: "brands"
+    identifier_field: path
+    folder: "content/brands"
+    create: true
+    i18n: true
+
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Path", name: "path", widget: "string", i18n: duplicate }
+      - label: "Description-SEO"
+        name: "description"
+        widget: "text"
+        i18n: true
+      - {
+          label: Logo-Image,
+          name: src,
+          widget: image,
+          i18n: duplicate,
+          choose_url: false,
+          required: true,
+        }
+      - {
+          label: "Website Link",
+          name: "websiteLink",
+          widget: "string",
+          default: "bitte auffuelen",
+          i18n: duplicate,
+          required: true,
+        }
+      - {
+          label: "Content",
+          name: "content",
+          widget: "markdown",
+          summary: "{{fields.name}}",
+          default: "hier steht dn text",
+          i18n: true,
+          required: true,
+        }
+
   - label: "Cars-Reviews"
     name: "carsreviews"
 

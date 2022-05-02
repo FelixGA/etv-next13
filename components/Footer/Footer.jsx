@@ -4,13 +4,13 @@ import Link from "next/link";
 import ListItems from "./ListItems";
 import footerWords from "../../data/footerData";
 import { useState, useEffect } from "react";
-const Footer = ({ blogs, reviews }) => {
+const Footer = ({ blogs, reviews, brands }) => {
   /*  select blogs upon category */
-
+  // console.log(brands);
   // const magazine = blogs?.filter((blog) => blog.category !== "referenzen");
-  const [reviewsList, setReviewsList] = useState([
-    ...new Set(reviews?.map((blog) => blog.title.split(/[\s-]+/)[0])),
-  ]);
+  // const [reviewsList, setReviewsList] = useState([
+  //   ...new Set(vehicles?.map((blog) => blog.title.split(/[\s-]+/)[0])),
+  // ]);
   const [magazineList, setMagazineList] = useState([
     ...new Set(
       blogs
@@ -30,9 +30,9 @@ const Footer = ({ blogs, reviews }) => {
   //   ...new Set(reviews?.map((blog) => blog.title.split(/[\s-]+/)[0])),
   // ]);
   useEffect(() => {
-    setReviewsList([
-      ...new Set(reviews?.map((blog) => blog.title.split(/[\s-]+/)[0])),
-    ]);
+    // setReviewsList([
+    //   ...new Set(vehicles?.map((blog) => blog.title.split(/[\s-]+/)[0])),
+    // ]);
     setMagazineList([
       ...new Set([
         ...new Set(
@@ -42,7 +42,7 @@ const Footer = ({ blogs, reviews }) => {
         ),
       ]),
     ]);
-  }, [reviews, blogs]);
+  }, [brands, blogs]);
   const rights = [
     {
       slug: "impressum",
@@ -73,20 +73,20 @@ const Footer = ({ blogs, reviews }) => {
               </Link>
             </h3>
             <div className="pt-4 ">
-              <ul className="flex flex-row flex-wrap sm:pb-4 text-[#b1a7a7] items-center md:items-start ">
-                {reviewsList?.map((blog, index) => (
+              {/* <ul className="flex flex-row flex-wrap sm:pb-4 text-[#b1a7a7] items-center md:items-start ">
+                {brands?.map((blog, index) => (
                   <li
                     className="flex items-center justify-between my-2 pr-6"
                     key={index}
                   >
-                    <Link href={`/${blog}`}>
+                    <Link href={`/fahrzeuge/${blog}`}>
                       <a className="text-sm text-left sm:text-lg">
                         {blog.title ? blog.title : blog}
                       </a>
                     </Link>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
 
               {/* <ListItems itemsList={reviewsList} /> */}
             </div>
