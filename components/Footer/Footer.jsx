@@ -139,21 +139,21 @@ const Footer = ({ blogs, brands }) => {
           </div>
           <div className="flex justify-between pt-6 pb-8 w-28 lg:w-40 sm:pl-4">
             <div className="transition cursor-pointer hover:scale-110">
-              <Link href="https://www.facebook.com/ARIMotorsElektrofahrzeuge">
+              <Link href="https://www.facebook.com">
                 <a target="_blank">
                   <BsFacebook size={25} fill="#fff" />
                 </a>
               </Link>
             </div>
             <div className="transition cursor-pointer hover:scale-110">
-              <Link href="https://www.youtube.com/c/ARIMotorsGmbH">
+              <Link href="https://www.youtube.com">
                 <a target="_blank">
                   <BsYoutube size={30} fill="#fff" />
                 </a>
               </Link>
             </div>
             <div className="transition cursor-pointer hover:scale-110">
-              <Link href="https://www.linkedin.com/company/ari-motors-gmbh/mycompany/">
+              <Link href="https://www.linkedin.com">
                 <a target="_blank">
                   <BsLinkedin size={25} fill="#fff" />
                 </a>

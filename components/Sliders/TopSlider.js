@@ -15,20 +15,22 @@ const TopSlider = ({ getContent, getCars }) => {
           }}
           className={
             getCars.length >= 4
-              ? " hidden xl:flex items-center pl-1 hover:scale-125 bg-white transition"
+              ? " hidden xl:flex items-center hover:scale-110 bg-white transition relative"
               : "hidden"
           }
         >
-          <FaArrowCircleLeft size={40} color="#243280" />
+          <div className="absolute top-64 right-10">
+            <FaArrowCircleLeft size={40} color="#243280" />
+          </div>
         </div>
 
-        <div className="print:hidden flex flex-col w-full xl:w-[1200px]">
+        <div className="print:hidden flex flex-col w-full xl:w-[1220px] ">
           <h2 className="relative px-6 pb-4 mt-4 text-3xl font-black tracking-wide text-left no-select text-black-dark">
             Jetzt vergleichen!
           </h2>
 
           <div
-            className="grid grid-flow-col gap-2 auto-cols-[minmax(287px,_1fr)] overflow-x-scroll scrollbar-hide p-2 snap-x "
+            className="grid grid-flow-col gap-4 auto-cols-[minmax(293px,_1fr)] overflow-x-scroll scrollbar-hide p-2 snap-x "
             ref={container}
           >
             <TopSliderCard
@@ -43,11 +45,13 @@ const TopSlider = ({ getContent, getCars }) => {
           onClick={() => (container.current.scrollLeft += 293)}
           className={
             getCars.length >= 4
-              ? "xl:flex items-center hidden pr-1 hover:scale-125 transition"
+              ? "xl:flex items-center hidden pr-1 hover:scale-110 transition relative"
               : "hidden"
           }
         >
-          <FaArrowCircleRight size={40} color="#243280" />
+          <div className="absolute top-64 left-10">
+            <FaArrowCircleRight size={40} color="#243280" />
+          </div>
         </div>
       </div>
       <div className="flex items-center justify-center">

@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BsMegaphone, BsTruck } from "react-icons/bs";
+import { ImCoinEuro } from "react-icons/im";
+import { MdOutlineChatBubbleOutline } from "react-icons/md";
 // import FAQIcon from "../../icons/FAQIcon.js";
 // import FundingIcon from "../../icons/FundingIcon.js";
 // import ReferencesIcon from "../../icons/ReferencesIcon.js";
@@ -11,40 +14,43 @@ export default function LinkTile({ category, getBlogs }) {
 
   return (
     <div className="min-h-[250px] bg-gradient-to-t from-blue-dark to-blue-light text-white flex flex-col items-start justify-evenly object-contain">
-      <div className="flex flex-row items-center pl-8 font-bold w-full hover:translate-x-2 duration-100">
-        {/* <ReferencesIcon className="w-6 h-6" /> */}
-        <Link href="/magazin/haeufiggestelltefragen">
+      <Link href="/magazin/haeufiggestelltefragen">
+        <div className="flex flex-row items-center w-full pl-8 font-bold duration-100 cursor-pointer hover:translate-x-2">
+          
+          {/* <ReferencesIcon className="w-6 h-6" /> */}
+          <MdOutlineChatBubbleOutline size={25} />
           <a className="mx-6">Häufig gestellte Fragen</a>
-        </Link>
-      </div>
+        </div>
+      </Link>{" "}
+      <Link href="/magazin/hersteller">
+        <div className="flex flex-row items-center w-full pl-8 font-bold duration-150 cursor-pointer hover:translate-x-2">
+          {/* <NewsIcon className="w-6 h-6 text-white fill-current" /> */}
+          <BsTruck size={25} />
 
-      <div className="flex flex-row items-center pl-8 font-bold w-full hover:translate-x-2 duration-100">
-        {/* <NewsIcon className="w-6 h-6 text-white fill-current" /> */}
-        <Link href="/magazin/hersteller">
           <a className="mx-6">Hersteller</a>
-        </Link>
-      </div>
-
-      <div className="flex flex-row items-center pl-8 font-bold w-full hover:translate-x-2 duration-100">
-        {/* <FundingIcon className="w-6 h-6" /> */}
-        <Link href="/magazin/neuigkeiten">
+        </div>
+      </Link>
+      <Link href="/magazin/neuigkeiten">
+        <div className="flex flex-row items-center w-full pl-8 font-bold duration-100 cursor-pointer hover:translate-x-2">
+          {/* <FundingIcon className="w-6 h-6" /> */}
+          <BsMegaphone size={25} />
           <a className="mx-6">Neuigkeiten</a>
-        </Link>
-      </div>
-
-      <div className="flex items-center pl-8 font-bold w-full hover:translate-x-2 duration-100">
-        {/* <FAQIcon className="w-6 h-6" /> */}
-        <Link href="/magazin/foerderung">
+        </div>
+      </Link>
+      <Link href="/magazin/foerderung">
+        <div className="flex items-center w-full pl-8 font-bold duration-100 cursor-pointer hover:translate-x-2">
+          {/* <FAQIcon className="w-6 h-6" /> */}
+          <ImCoinEuro size={25} />
           <a className="mx-6">Förderung</a>
-        </Link>
-      </div>
+        </div>
+      </Link>
     </div>
   );
 }
 // {
 //   categories.map((category, index) => (
 //     <div
-//       className="flex flex-row items-center pl-8 font-bold w-full hover:translate-x-2 duration-100"
+//       className="flex flex-row items-center w-full pl-8 font-bold duration-100 hover:translate-x-2"
 //       key={index}
 //     >
 //       {/* <ReferencesIcon className="w-6 h-6" /> */}

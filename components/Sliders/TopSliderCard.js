@@ -4,8 +4,11 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 
 const TopSliderCard = (props) => {
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
-    <div className="relative snap-center lg:snap-start " key={index}>
-      <div className="px-6">
+    <div
+      className="relative pb-2 border rounded-sm shadow-dropdown snap-center lg:snap-start"
+      key={index}
+    >
+      <div className="">
         <div className="w-full ">
           <Link href={`/transporter/${caritem.name}`} passHref>
             <a>
@@ -30,7 +33,7 @@ const TopSliderCard = (props) => {
             </a>
           </Link>
           <div className="slider__item-text">
-            <p className="text-sm text-center font-Inter text-blue-lighter line-clamp-2">
+            <p className="px-2 text-sm text-center font-Inter text-blue-lighter line-clamp-2">
               {caritem.description}
             </p>
           </div>
@@ -63,7 +66,7 @@ const TopSliderCard = (props) => {
           <div className="flex items-center justify-center w-full mt-8 text-center ">
             <Link href={`/transporter/${caritem.name}`}>
               <a className="pr-4 text-xs text-center visited:text-blue-darker text-blue-darker">
-                Mehr erfahren
+                Jetzt vergleichen
               </a>
             </Link>
 

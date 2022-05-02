@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import Sidebar from "../Blog/SideBar";
 
 export default function Blog({ getBlogs }) {
   const router = useRouter();
@@ -11,53 +12,47 @@ export default function Blog({ getBlogs }) {
       {/* <Head page={page} /> */}
       <div className="grid justify-center grid-cols-1 xl:grid-cols-[auto,_250px] gap-5 2xl:mx-48 cursor-pointer">
         <div className="w-full ">
-          {getBlogs.map((post, index) => (
-            <Link href={`magazin/${post.slug}`} passHref>
-              <div
-                className="relative flex flex-col my-10 overflow-hidden transition delay-100 bg-white shadow-xl sm:flex-row hover:scale-105 hover:z-10"
-                key={index}
-              >
-                <div className="w-[350px] h-[250px]">
-                  {post.src && (
-                    <a className="relative w-full">
-                      <Image
-                        src={post.src}
-                        alt={post.title}
-                        width={300}
-                        height={214}
-                        objectFit="cover"
-                        layout="responsive"
-                        priority={index < 4 ? true : false}
-                      />
-                    </a>
-                  )}
+          {getBlogs
+            .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
+            .map((post, index) => (
+              <Link href={`magazin/${post.slug}`} passHref>
+                <div
+                  className="relative flex flex-col my-10 overflow-hidden transition delay-100 bg-white shadow-xl sm:flex-row hover:scale-105 hover:z-10"
+                  key={index}
+                >
+                  <div className="w-[350px] h-[250px]">
+                    {post.src && (
+                      <a className="relative w-full">
+                        <Image
+                          src={post.src}
+                          alt={post.title}
+                          width={300}
+                          height={214}
+                          objectFit="cover"
+                          layout="responsive"
+                          priority={index < 4 ? true : false}
+                        />
+                      </a>
+                    )}
+                  </div>
+                  <div className="flex flex-col flex-1 p-4 justify-evenly">
+                    <p>{new Date(post.publishedAt).toLocaleDateString()}</p>
+                    <p className="pb-2 text-xl font-bold text-green-dark">
+                      {post.title}
+                    </p>
+                    <p className="hidden md:line-clamp-4 md:block">
+                      {/* {post?.contentHeading?.content
+                    ? post.contentHeading.content
+                    : post.description} */}
+                      {post.description}{" "}
+                    </p>
+                  </div>
                 </div>
-                <div className="flex flex-col flex-1 p-4 justify-evenly">
-                  <p>Date</p>
-                  <p className="pb-2 text-xl font-bold text-green-dark">
-                    {post.title}
-                  </p>
-                  <p className="hidden md:line-clamp-4 md:block">
-                    {post?.contentHeading?.content
-                      ? post.contentHeading.content
-                      : post.description}
-                  </p>
-                </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
         </div>
-        <div className="w-full">
-          <div className="w-[250px] h-[250px] border my-8 shadow-dropdown">
-            test
-          </div>
-          <div className="w-[250px] h-[250px] border my-8 shadow-dropdown">
-            test
-          </div>
-          <div className="w-[250px] h-[250px] border my-8 shadow-dropdown">
-            test
-          </div>
-        </div>
+
+        <Sidebar />
       </div>
 
       {/* <div className="grid w-full max-w-screen-xl px-6 py-6 mx-auto md:px-0">
