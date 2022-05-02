@@ -21,7 +21,7 @@ const ListItems = (props) => {
                 //  : `/magazin/reviews/${blog.slug}`
               }
             >
-              <a className="text-sm text-center sm:text-lg">
+              <a className="text-sm text-center sm:text-left sm:text-lg">
                 {blog.title ? blog.title : blog}
               </a>
             </Link>

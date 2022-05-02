@@ -15,7 +15,7 @@ function ButtonAnfragen({ carItem }) {
   return (
     <>
       <Modal open={open} setOpen={setOpen}>
-        <div className="w-[280px] xs:w-96 sm:w-[360px]">
+        <div className="w-full">
           <Form open={open} setOpen={setOpen} carItem={carItem} />
         </div>
       </Modal>
