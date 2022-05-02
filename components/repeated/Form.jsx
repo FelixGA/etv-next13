@@ -45,7 +45,7 @@ export default function Form(props) {
   const onError = (errors, e) => console.log("errors", errors, e);
 
   return (
-    <>
+    <div className="w-full">
       <div className={send ? "hidden" : ""}>
         {/* FORM */}
 
@@ -263,7 +263,7 @@ export default function Form(props) {
           <br />
           Hier können Sie gleich alle
           <Link href={"/comparePage"}>
-            <a className="pt-4 pb-4 text-blue-600">
+            <a className="py-4 text-blue-600">
               <span className="pl-2">
                 Elektrotransporter sofort vergleichen.
               </span>
@@ -272,12 +272,19 @@ export default function Form(props) {
         </p>
 
         <div className="relative px-2 text-center">
-          <div className="absolute bg-red-500 -top-14 right-6">
-            <AiOutlineClose size={25} />
+          <div
+            className={
+              router.path == "/kontakt"
+                ? "absolute bg-blue-dark -top-14 right-6"
+                : "hidden"
+            }
+            onClick={() => setSend(false)}
+          >
+            <AiOutlineClose size={25} color="#fff" />
           </div>
         </div>
         {props.children}
       </div>
-    </>
+    </div>
   );
 }
