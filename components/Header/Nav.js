@@ -21,12 +21,45 @@ const Nav = () => {
                   ? "transition hover:text-white text-white"
                   : "transition hover:text-white "
               } /*   */
-              key={item.id}
+              key={index}
             >
               <Link href={item.path}>
                 <a
                   onClick={() => {
                     setIsActive(false);
+                    if (index == 0) {
+                      {
+                        setIsActive(false);
+                        dispatch({
+                          type: "mobileNavActive",
+                          data: false,
+                        });
+                        dispatch({
+                          type: "rangeLithium",
+                          data: [],
+                        });
+                        dispatch({
+                          type: "loadingWeight",
+                          data: [],
+                        });
+                        dispatch({
+                          type: "price",
+                          data: [],
+                        });
+                        dispatch({
+                          type: "maxSpeed",
+                          data: [],
+                        });
+                        dispatch({
+                          type: "category",
+                          data: [],
+                        });
+                        dispatch({
+                          type: "chargingTimeLithium",
+                          data: [],
+                        });
+                      }
+                    }
                   }}
                 >
                   {item.title}

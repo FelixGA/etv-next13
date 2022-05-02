@@ -4,11 +4,12 @@ import Link from "next/link";
 
 export default function Blog({ getBlogs }) {
   const router = useRouter();
-  // console.log(getBlogs, "getblogs");
+  // console.log(getBlogs, "getBlogs[3]");
+
   return (
     <>
       {/* <Head page={page} /> */}
-      <div className="grid justify-center grid-cols-1 xl:grid-cols-[auto,_250px] gap-5 2xl:mx-48">
+      <div className="grid justify-center grid-cols-1 xl:grid-cols-[auto,_250px] gap-5 2xl:mx-48 cursor-pointer">
         <div className="w-full ">
           {getBlogs.map((post, index) => (
             <Link href={`magazin/${post.slug}`} passHref>

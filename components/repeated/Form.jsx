@@ -54,15 +54,13 @@ export default function Form(props) {
         onSubmit={handleSubmit(onSubmit, onError)}
         className={
           router.pathname !== "/kontakt"
-            ? "flex flex-col bg-white mx-1 px-1"
-            : "flex flex-col px-4 my-4 bg-white shadow-dropdown xs:rounded-md"
+            ? "flex flex-col bg-white mx-1 px-1 "
+            : "flex flex-col px-4 my-4 bg-white shadow-dropdown xs:rounded-md mb-20"
         }
       >
         <div className="w-full">
           <TextInput
-            style={`${
-              errors.firstName ? "xs:mr-2 focus:border-red-500" : "xs:mr-2"
-            }`}
+            style={`${errors.firstName ? " focus:border-red-500" : ""}`}
             placeholder={"z.B. Max Muster"}
             register={register}
             label={"Name:"}
@@ -86,7 +84,7 @@ export default function Form(props) {
         <div className="flex flex-col justify-center w-full xs:flex-row">
           <div className="xs:w-1/2 ">
             <TextInput
-              style={"xs:mr-2"}
+              style={"sm:mr-2"}
               placeholder={"z.B. 10115"}
               register={register}
               label={"Postleitzahl:"}
@@ -110,7 +108,7 @@ export default function Form(props) {
         </div>
         <div className="w-full">
           <TextInput
-            style={`${errors.emailInput ? " focus:border-red-500" : ""}`}
+            style={`${errors.emailInput ? " focus:border-red-500 " : ""}`}
             placeholder={"z.B. max@muster.com"}
             register={register}
             label={"Email:"}

@@ -25,7 +25,7 @@ const TopSliderCard = (props) => {
           <Link href={`/transporter/${caritem.name}`}>
             <a>
               <h3 className="mt-8 mb-4 text-xl font-black tracking-wide text-center text-black-dark line-clamp-1">
-                {caritem.name}
+                {caritem.title}
               </h3>
             </a>
           </Link>

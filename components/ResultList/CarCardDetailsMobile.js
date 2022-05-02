@@ -14,10 +14,10 @@ function CarCardDetailsMobile({ carItem }) {
         <div className="flex flex-col justify-between flex-1 mb-0 text-sm xl:mb-2">
           <div className="flex flex-row flex-1 py-1 ">
             <div className="flex flex-row justify-between flex-1 border-b">
-              <div className="w-3/4 font-bold leading-7 text-grey-dark xs:w-2/5">
+              <div className="w-[65%] font-bold leading-7 text-grey-dark ">
                 {carItem?.loadingWeight.key}:
               </div>
-              <div className="flex items-end w-1/4 pl-2 font-bold leading-7 text-blue-dark xs:w-2/5">
+              <div className="flex items-end w-[35%] pl-2 font-bold leading-7 text-blue-dark ">
                 {carItem?.loadingWeight.value}
                 {carItem?.loadingWeight.baseUnit}
               </div>
@@ -25,10 +25,10 @@ function CarCardDetailsMobile({ carItem }) {
           </div>
           <div className="flex flex-row flex-1 py-1">
             <div className="flex flex-row justify-between flex-1 border-b">
-              <div className="w-3/4 font-bold leading-7 text-grey-dark xs:w-2/5">
+              <div className="font-bold leading-7 text-grey-dark w-[65%]">
                 {carItem?.maxSpeed.key}
               </div>
-              <div className="flex items-end w-1/4 pl-2 font-bold leading-7 text-blue-dark xs:w-2/5">
+              <div className="flex items-end w-[35%] pl-2 font-bold leading-7 text-blue-dark">
                 {carItem?.maxSpeed.value}
                 {carItem?.maxSpeed.baseUnit}
               </div>
@@ -38,12 +38,12 @@ function CarCardDetailsMobile({ carItem }) {
         <div className="flex flex-col justify-between flex-1 text-sm xm:w-1/2 ">
           <div className="flex flex-row flex-1 py-1">
             <div className="flex flex-row justify-between flex-1 border-b">
-              <div className="w-3/4 font-bold leading-7 text-grey-dark xs:w-2/5">
+              <div className="w-[65%] font-bold leading-7 text-grey-dark">
                 {carItem?.rangeLithium.value
                   ? carItem?.rangeLithium.key
                   : carItem?.range230V.key}
               </div>
-              <div className="flex items-end w-1/4 pl-2 font-bold leading-7 text-blue-dark xs:w-2/5 ">
+              <div className="flex items-end w-[35%] pl-2 font-bold leading-7 text-blue-dark ">
                 {range.maxValue
                   ? `${range.value}-${range.maxValue}`
                   : range.value}
@@ -53,13 +53,13 @@ function CarCardDetailsMobile({ carItem }) {
           </div>
           <div className="flex flex-row flex-1 py-1 ">
             <div className="flex flex-row justify-between flex-1 border-b">
-              <div className="w-3/4 font-bold leading-7 text-grey-dark xs:w-2/5">
+              <div className="w-[65%] font-bold leading-7 text-grey-dark">
                 {carItem?.chargingTimeLithium.key
                   ? carItem?.chargingTimeLithium.key
                   : carItem?.chargingTime230V.key}
                 :
               </div>
-              <div className="flex items-end w-1/4 pl-2 font-bold leading-7 text-blue-dark xs:w-2/5">
+              <div className="flex items-end w-[35%] pl-2 font-bold leading-7 text-blue-dark">
                 {carItem?.chargingTimeLithium.value
                   ? carItem?.chargingTimeLithium.value
                   : carItem?.chargingTime230V.value}
