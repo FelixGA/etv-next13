@@ -19,7 +19,7 @@ export default function kontakt(props) {
       <div className="flex flex-col w-full mx-auto 2xl:px-48 lg:flex-row">
         {router.pathname == "/kontakt" ? (
           <div className="flex flex-col justify-center w-full pt-8 lg:pb-48">
-            <div className="mb-12 text-center">
+            <div className="mb-2 text-center lg:mb-12">
               <p className="text-3xl font-bold ">Kontaktieren Sie uns!</p>
             </div>
             <div className="hidden lg:block">

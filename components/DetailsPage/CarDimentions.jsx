@@ -1,16 +1,4 @@
 const CarDimentions = ({ vehichleDimentions }) => {
-  console.log(vehichleDimentions);
-  /* calculations */
-  // let loadingspace = parseFloat(
-  //   (carItem?.loadingVolume.valueheight *
-  //     carItem?.loadingVolume.valuewidth *
-  //     carItem?.loadingVolume.valuelength) /
-  //     1000000000
-  // ).toFixed(2);
-  // let truckBed = parseFloat(
-  //   (carItem?.loadingVolume.valuewidth * carItem?.loadingVolume.valuelength) /
-  //     1000000
-  // ).toFixed(2);
   return (
     <section className="w-full lg:w-1/3 ">
       <h3 className="pt-8 pb-4 pl-4 text-2xl font-bold leading-7 text-blue-extra">

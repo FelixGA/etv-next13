@@ -15,20 +15,6 @@ export default function comparePage(props) {
   useEffect(() => {
     SetSortedCars(props.vehicles);
 
-    /* ɢᴇᴛ ʀᴇsᴜʟᴛs ᴜᴘᴏɴ ᴄᴀᴛᴇɢᴏʀʏ */
-    // const getPritsche = props.vehicles?.filter(
-    //   (item) => item.category === "Pritsche"
-    // );
-    // const getKipper = props.vehicles?.filter(
-    //   (item) => item.category === "Kipper"
-    // );
-    // const getKoffer = props.vehicles?.filter(
-    //   (item) => item.category === "Koffer"
-    // );
-    // const getKasten = props.vehicles?.filter(
-    //   (item) => item.category === "Kasten"
-    // );
-
     /* PRICE SORTING */
     const getCarslowestPrice = props.vehicles
       ?.sort((a, b) => parseFloat(a.price) * 1 - parseFloat(b.price) * 1)
@@ -86,9 +72,9 @@ export default function comparePage(props) {
   return (
     <div className="relative">
       <Head page={props.page} />
-
-      <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)] bg-white relative">
-        <div className="hidden mt-24 bg-white md:block">
+      <div> </div>
+      <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)]  relative ">
+        <div className="hidden mt-24 md:block">
           <FiltersDesktop />
         </div>
         <div className="flex md:hidden ">

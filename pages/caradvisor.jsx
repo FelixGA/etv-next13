@@ -44,7 +44,7 @@ export default function caradvisor(props) {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center w-full px-4 py-8 bg-white xl:px-40 md:flex-row justify-evenly">
+      <div className="flex flex-col items-center w-full gap-8 px-4 py-8 bg-white xl:px-40 md:flex-row justify-evenly">
         {data.map((item) => (
           <div className="w-full px-4 py-4 mb-4 shadow-dropdown" key={item.id}>
             <div className="w-full ">

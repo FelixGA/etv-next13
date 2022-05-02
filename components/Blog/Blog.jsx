@@ -3,11 +3,12 @@ import { useRouter } from "next/router";
 
 export default function Blog({ getBlogs }) {
   const router = useRouter();
-  // console.log(getBlogs, "getblogs");
+  // console.log(getBlogs, "getBlogs[3]");
+
   return (
     <>
       {/* <Head page={page} /> */}
-      <div className="grid justify-center grid-cols-1 xl:grid-cols-[auto,_250px] gap-5 2xl:mx-48">
+      <div className="grid justify-center grid-cols-1 xl:grid-cols-[auto,_250px] gap-5 2xl:mx-48 cursor-pointer">
         <div className="w-full ">
           {getBlogs.map((post, index) => (
             <div
@@ -30,14 +31,15 @@ export default function Blog({ getBlogs }) {
                 )}
               </div>
               <div className="flex flex-col flex-1 p-4 justify-evenly">
-                <p>Date</p>
+                <p>{new Date(post.publishedAt).toLocaleDateString()}</p>
                 <p className="pb-2 text-xl font-bold text-green-dark">
                   {post.title}
                 </p>
                 <p className="hidden md:line-clamp-4 md:block">
-                  {post?.contentHeading?.content
+                  {/* {post?.contentHeading?.content
                     ? post.contentHeading.content
-                    : post.description}
+                    : post.description} */}
+                  {post.description}{" "}
                 </p>
               </div>
             </div>
