@@ -76,13 +76,13 @@ content:
     title: Umwelt
     image: /images/g62.png
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie (2/5)
 
 
       Der Preis des Fahrzeuges ist dennoch vergleichsweise hoch. Der Netto-Listenpreis für das Chassis – also ohne Aufbauten – beträgt 58.973,12 Euro. 
 
 
-      Zur Garantie und Gewährleistung macht der Hersteller keine Angaben.
+      Die Garantie beträgt bei Goupil 2 Jahre auf das Fahrzeug und 3 zusätzliche Jahre  auf die Batterie.
     title: Preise & Garantie
     image: /images/g6_10.jpeg
   - content: >-
@@ -92,7 +92,7 @@ content:
       Der Hersteller bietet neben den Standard-Versionen auf Anfrage viele verschiedene Aufbauten an. Die interessante Architektur des Chassis ermöglicht niedrige Ladekantenhöhen und dadurch unkompliziertes Arbeiten. Der Preis des Fahrzeugs schlägt jedoch ordentlich zu buche. Ebenso lässt sich über die Optik des Fahrzeuges streiten. 
 
 
-      #### Gesamtbewertung: 3,0
+      #### Gesamtbewertung: 3,2
     title: Fazit
     image: ""
 ---

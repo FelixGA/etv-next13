@@ -1,7 +1,7 @@
 ---
 title: Goupil G6 Koffer
 name: goupil-g6-koffer
-price: 58.973
+price: 58973
 relatedBlogs: beispiel  bitte nicht ändern
 relatedReviews: goupil-g6-testbericht-von-elektrotransporter-vergleich
 description: Der Goupil G6 ist ein Elektro-Transporter der Kategorie N1 mit
@@ -70,7 +70,7 @@ seats:
   value: 3
 rating:
   key: Befriedigend
-  value: 3
+  value: 3.2
 guarantee:
   key: Garantie Fahrzeug
   value: 0
