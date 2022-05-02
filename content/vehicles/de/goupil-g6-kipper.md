@@ -1,7 +1,7 @@
 ---
 title: Goupil G6 Kipper
 name: goupil-g6-kipper
-price: 58.973
+price: 58973
 relatedBlogs: beispiel  bitte nicht ändern
 relatedReviews: goupil-g6-testbericht-von-elektrotransporter-vergleich
 description: Der Goupil G6 ist ein Elektro-Transporter der Kategorie N1 mit
