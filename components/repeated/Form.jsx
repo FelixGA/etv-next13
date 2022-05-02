@@ -6,6 +6,7 @@ import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 
 export default function Form(props) {
   const router = useRouter();
@@ -40,221 +41,225 @@ export default function Form(props) {
       console.log("error", err.response.data.message);
     }
   };
-  const [send, setSend] = useState("");
+  const [send, setSend] = useState(false);
   const onError = (errors, e) => console.log("errors", errors, e);
 
   return (
     <>
-      {/* FORM */}
+      <div className={send ? "hidden" : ""}>
+        {/* FORM */}
 
-      <form
-        /* action="/action_page.php" */
-        // action="https://api.vercel.com/v6/deployments"
-        method="POST"
-        onSubmit={handleSubmit(onSubmit, onError)}
-        className={
-          router.pathname !== "/kontakt"
-            ? "flex flex-col bg-white mx-1 px-1 "
-            : "flex flex-col px-4 my-4 bg-white shadow-dropdown xs:rounded-md mb-20"
-        }
-      >
-        <div className="w-full">
-          <TextInput
-            style={`${errors.firstName ? " focus:border-red-500" : ""}`}
-            placeholder={"z.B. Max Muster"}
-            register={register}
-            label={"Name:"}
-            id={"name"}
-            type={"string"}
-            pattern={fullNameRegex}
-            registerData={"firstName"}
-            required={true}
-          />
-        </div>
-        <div className="w-full">
-          <TextInput
-            placeholder={"ihr Firmenname"}
-            register={register}
-            label={"Firma:"}
-            id={"firma"}
-            type={"string"}
-            registerData={"firma"}
-          />
-        </div>
-        <div className="flex flex-col justify-center w-full xs:flex-row">
-          <div className="xs:w-1/2 ">
-            <TextInput
-              style={"sm:mr-2"}
-              placeholder={"z.B. 10115"}
-              register={register}
-              label={"Postleitzahl:"}
-              id={"zipcode"}
-              type={"string"}
-              registerData={"zipcode"}
-            />
-          </div>
-          <div className="xs:w-1/2">
-            <TextInput
-              style={"xs:ml-2"}
-              extraStyle={"pl-2"}
-              placeholder={"z.B. Berlin"}
-              register={register}
-              label={"Ort:"}
-              id={"city"}
-              type={"string"}
-              registerData={"city"}
-            />
-          </div>
-        </div>
-        <div className="w-full">
-          <TextInput
-            style={`${errors.emailInput ? " focus:border-red-500 " : ""}`}
-            placeholder={"z.B. max@muster.com"}
-            register={register}
-            label={"Email:"}
-            id={"emailInput"}
-            type={"string"}
-            registerData={"emailInput"}
-            required={true}
-            pattern={emailRegex}
-          />
-        </div>
-        <div className="w-full">
-          <TextInput
-            placeholder={"z.B. 030 - 123 45 67"}
-            register={register}
-            label={"Telefon:"}
-            id={"phone"}
-            type={"number"}
-            registerData={"phone"}
-          />
-        </div>
-        <div className="w-full">
-          <TextArea
-            style={`${errors.message ? " focus:border-red-500" : ""}`}
-            placeholder={"z.B. 030 - 123 45 67"}
-            register={register}
-            label={"Nachricht:"}
-            id={"message"}
-            type={"textarea"}
-            registerData={"message"}
-            carItem={props.carItem}
-            required={true}
-          />
-        </div>
-        <div className="w-64 text-black lg:w-full">
-          <p className="text-red-500">
-            {errors.firstName && "Name ist erforderlich"}
-          </p>
-          <p className="text-red-500">
-            {errors.firma && "Firma ist erforderlich"}
-          </p>
-          <p className="text-red-500">
-            {errors.zipcode && "Postleitzahl ist erforderlich"}
-          </p>
-          <p className="text-red-500">
-            {errors.location && "Ort ist erforderlich"}
-          </p>
-          <p className="text-red-500">
-            {errors.emailInput && "Email ist erforderlich"}
-          </p>
-          <p> {errors.phone && "Phone ist erforderlich"}</p>
-          <p className="text-red-500">
-            {errors.message && "Message ist erforderlich"}
-          </p>
-          <p className="text-red-500">
-            {errors.checkbox && "Bitte stimmen Sie den Nutzungsbedingungen zu."}
-          </p>
-        </div>
-        <div className="flex-grow px-1 pb-4">
-          <Controller
-            name="checkbox"
-            control={control}
-            rules={{ required: true }}
-            render={({ field }) => (
-              <input
-                id="confirm"
-                type="checkbox"
-                className="w-3 h-3 mr-1 sm:w-4 sm:h-4"
-                /* onClick={() => setCheckedStatus(true)}
-              checked={checkedStatus} */
-                {...field}
-              />
-            )}
-          />{" "}
-          <label htmlFor="confirm" className="text-sm">
-            Ja, ich stimme der{" "}
-            <span className="font-bold text-blue-dark">
-              <Link href={"/impressum"}>
-                <a>Datenschutzerklärung</a>
-              </Link>
-            </span>{" "}
-            und den{" "}
-            <span className="font-bold text-blue-dark">
-              <Link href={"/allgemeineGeschaeftsbedingungen"}>
-                <a>AGBs</a>
-              </Link>
-            </span>{" "}
-            zu (Widerruf jederzeit möglich).
-          </label>{" "}
-        </div>
-        <div className="flex w-full px-1 pb-4">
-          <button
-            onClick={() => {
-              !errors.emailInput &&
-              !errors.firstName &&
-              watch().firstName.length > 0 &&
-              watch().emailInput.length > 0 &&
-              watch().message &&
-              watch().checkbox
-                ? setSend(true)
-                : setSend(false);
-            }}
-            type="submit"
-            className="flex-grow py-2 text-white transition rounded-lg bg-blue-darker hover:bg-blue-light"
-          >
-            Unverbindlich und kostenlos anfragen
-          </button>
-        </div>
-        {/* IMAGES */}
-
-        <div
+        <form
+          /* action="/action_page.php" */
+          // action="https://api.vercel.com/v6/deployments"
+          method="POST"
+          onSubmit={handleSubmit(onSubmit, onError)}
           className={
-            router.pathname == "/kontakt"
-              ? "justify-center items-center relative flex"
-              : "hidden"
+            router.pathname !== "/kontakt"
+              ? "flex flex-col bg-white mx-1 px-1 "
+              : "flex flex-col px-4 my-4 bg-white shadow-dropdown xs:rounded-md mb-20"
           }
         >
-          {/* medal siegel image */}
-          <div className="w-14">
-            <Image
-              src="/images/siegel2.png"
-              width={166}
-              height={166}
-              layout="responsive"
-              objectFit="contain"
+          <div className="w-full">
+            <TextInput
+              style={`${errors.firstName ? " focus:border-red-500" : ""}`}
+              placeholder={"z.B. Max Muster"}
+              register={register}
+              label={"Name:"}
+              id={"name"}
+              type={"string"}
+              pattern={fullNameRegex}
+              registerData={"firstName"}
+              required={true}
             />
           </div>
-          {/* medal dsvgo image */}
-          <div className="relative w-28 ">
-            <Image
-              src="/images/siegel.png"
-              width={166}
-              height={166}
-              layout="responsive"
-              objectFit="contain"
+          <div className="w-full">
+            <TextInput
+              placeholder={"ihr Firmenname"}
+              register={register}
+              label={"Firma:"}
+              id={"firma"}
+              type={"string"}
+              registerData={"firma"}
             />
           </div>
-        </div>
-      </form>
+          <div className="flex flex-col justify-center w-full xs:flex-row">
+            <div className="xs:w-1/2 ">
+              <TextInput
+                style={"sm:mr-2"}
+                placeholder={"z.B. 10115"}
+                register={register}
+                label={"Postleitzahl:"}
+                id={"zipcode"}
+                type={"string"}
+                registerData={"zipcode"}
+              />
+            </div>
+            <div className="xs:w-1/2">
+              <TextInput
+                style={"xs:ml-2"}
+                extraStyle={"pl-2"}
+                placeholder={"z.B. Berlin"}
+                register={register}
+                label={"Ort:"}
+                id={"city"}
+                type={"string"}
+                registerData={"city"}
+              />
+            </div>
+          </div>
+          <div className="w-full">
+            <TextInput
+              style={`${errors.emailInput ? " focus:border-red-500 " : ""}`}
+              placeholder={"z.B. max@muster.com"}
+              register={register}
+              label={"Email:"}
+              id={"emailInput"}
+              type={"string"}
+              registerData={"emailInput"}
+              required={true}
+              pattern={emailRegex}
+            />
+          </div>
+          <div className="w-full">
+            <TextInput
+              placeholder={"z.B. 030 - 123 45 67"}
+              register={register}
+              label={"Telefon:"}
+              id={"phone"}
+              type={"number"}
+              registerData={"phone"}
+            />
+          </div>
+          <div className="w-full">
+            <TextArea
+              style={`${errors.message ? " focus:border-red-500" : ""}`}
+              placeholder={"z.B. 030 - 123 45 67"}
+              register={register}
+              label={"Nachricht:"}
+              id={"message"}
+              type={"textarea"}
+              registerData={"message"}
+              carItem={props.carItem}
+              required={true}
+            />
+          </div>
+          <div className="w-64 text-black lg:w-full">
+            <p className="text-red-500">
+              {errors.firstName && "Name ist erforderlich"}
+            </p>
+            <p className="text-red-500">
+              {errors.firma && "Firma ist erforderlich"}
+            </p>
+            <p className="text-red-500">
+              {errors.zipcode && "Postleitzahl ist erforderlich"}
+            </p>
+            <p className="text-red-500">
+              {errors.location && "Ort ist erforderlich"}
+            </p>
+            <p className="text-red-500">
+              {errors.emailInput && "Email ist erforderlich"}
+            </p>
+            <p> {errors.phone && "Phone ist erforderlich"}</p>
+            <p className="text-red-500">
+              {errors.message && "Message ist erforderlich"}
+            </p>
+            <p className="text-red-500">
+              {errors.checkbox &&
+                "Bitte stimmen Sie den Nutzungsbedingungen zu."}
+            </p>
+          </div>
+          <div className="flex-grow px-1 pb-4">
+            <Controller
+              name="checkbox"
+              control={control}
+              rules={{ required: true }}
+              render={({ field }) => (
+                <input
+                  id="confirm"
+                  type="checkbox"
+                  className="w-3 h-3 mr-1 sm:w-4 sm:h-4"
+                  /* onClick={() => setCheckedStatus(true)}
+              checked={checkedStatus} */
+                  {...field}
+                />
+              )}
+            />{" "}
+            <label htmlFor="confirm" className="text-sm">
+              Ja, ich stimme der{" "}
+              <span className="font-bold text-blue-dark">
+                <Link href={"/impressum"}>
+                  <a>Datenschutzerklärung</a>
+                </Link>
+              </span>{" "}
+              und den{" "}
+              <span className="font-bold text-blue-dark">
+                <Link href={"/allgemeineGeschaeftsbedingungen"}>
+                  <a>AGBs</a>
+                </Link>
+              </span>{" "}
+              zu (Widerruf jederzeit möglich).
+            </label>{" "}
+          </div>
+          <div className="flex w-full px-1 pb-4">
+            <button
+              onClick={() => {
+                !errors.emailInput &&
+                !errors.firstName &&
+                watch().firstName.length > 0 &&
+                watch().emailInput.length > 0 &&
+                watch().message &&
+                watch().checkbox
+                  ? setSend(true)
+                  : setSend(false);
+              }}
+              type="submit"
+              className="flex-grow py-2 text-white transition rounded-lg bg-blue-darker hover:bg-blue-light"
+            >
+              Unverbindlich und kostenlos anfragen
+            </button>
+          </div>
+          {/* IMAGES */}
 
+          <div
+            className={
+              router.pathname == "/kontakt"
+                ? "justify-center items-center relative flex"
+                : "hidden"
+            }
+          >
+            {/* medal siegel image */}
+            <div className="w-14">
+              <Image
+                src="/images/siegel2.png"
+                width={166}
+                height={166}
+                layout="responsive"
+                objectFit="contain"
+              />
+            </div>
+            {/* medal dsvgo image */}
+            <div className="relative w-28 ">
+              <Image
+                src="/images/siegel.png"
+                width={166}
+                height={166}
+                layout="responsive"
+                objectFit="contain"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
       <div
         className={
-          send ? "flex h-fit justify-center items-center w-full " : "hidden"
+          send
+            ? "flex sm:h-[calc(100vh-200px)] justify-center items-center w-full "
+            : "hidden"
         }
       >
-        <p className="w-full px-8 mt-4 sm:p-8 sm:w-2/3 sm:text-lg">
-          Vielen Dank für Ihre Nachricht. Wir melden uns umgehend bei Ihnen.{" "}
+        <p className="w-full px-8 py-8 bg-white border rounded-sm shadow-dropdown sm:p-8 sm:text-lg">
+          Vielen Dank für Ihre Nachricht. Wir melden uns umgehend bei Ihnen.
           <br />
           Hier können Sie gleich alle
           <Link href={"/comparePage"}>
@@ -265,6 +270,13 @@ export default function Form(props) {
             </a>
           </Link>
         </p>
+
+        <div className="relative px-2 text-center">
+          <div className="absolute bg-red-500 -top-14 right-6">
+            <AiOutlineClose size={25} />
+          </div>
+        </div>
+        {props.children}
       </div>
     </>
   );
