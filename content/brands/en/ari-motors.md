@@ -1,6 +1,6 @@
 ---
 title: ARI MOTORS
-path: ari-motors
+slug: ari-motors
 description: bitte auffuellen
 src: /images/logo-ari-motors-rgb-flat.png
 websiteLink: https://www.ari-motors.com/
