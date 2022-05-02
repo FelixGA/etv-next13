@@ -54,8 +54,8 @@ export default function Form(props) {
         onSubmit={handleSubmit(onSubmit, onError)}
         className={
           router.pathname !== "/kontakt"
-            ? "flex flex-col bg-white mx-1 px-1"
-            : "flex flex-col px-4 my-4 bg-white shadow-dropdown xs:rounded-md"
+            ? "flex flex-col bg-white mx-1 px-1 "
+            : "flex flex-col px-4 my-4 bg-white shadow-dropdown xs:rounded-md mb-20"
         }
       >
         <div className="w-full">
@@ -108,7 +108,7 @@ export default function Form(props) {
         </div>
         <div className="w-full">
           <TextInput
-            style={`${errors.emailInput ? " focus:border-red-500" : ""}`}
+            style={`${errors.emailInput ? " focus:border-red-500 " : ""}`}
             placeholder={"z.B. max@muster.com"}
             register={register}
             label={"Email:"}
