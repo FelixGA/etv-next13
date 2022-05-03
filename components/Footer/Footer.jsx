@@ -4,45 +4,16 @@ import Link from "next/link";
 import ListItems from "./ListItems";
 import footerWords from "../../data/footerData";
 import { useState, useEffect } from "react";
-const Footer = ({ blogs, reviews }) => {
-  /*  select blogs upon category */
+const Footer = ({ blogs, brands }) => {
+  const magazineList = [
+    { category: "Hersteller", slug: "hersteller" },
+    { category: "Neuigkeiten", slug: "neuigkeiten" },
+    { category: "Förderung", slug: "foerderung" },
 
-  // const magazine = blogs?.filter((blog) => blog.category !== "referenzen");
-  const [reviewsList, setReviewsList] = useState([
-    ...new Set(reviews?.map((blog) => blog.title.split(/[\s-]+/)[0])),
-  ]);
-  const [magazineList, setMagazineList] = useState([
-    ...new Set(
-      blogs
-        ?.filter((blog) => blog.category !== "referenzen")
-        .map((blog) => blog.category)
-    ),
-  ]);
+    { category: "Häufig gestellte Fragen", slug: "haeufiggestelltefragen" },
+  ];
 
-  // console.log([
-  //   ...new Set(
-  //     blogs
-  //       ?.filter((blog) => blog.category !== "referenzen")
-  //       .map((blog) => blog.category)
-  //   ),
-  // ]);
-  // console.log([
-  //   ...new Set(reviews?.map((blog) => blog.title.split(/[\s-]+/)[0])),
-  // ]);
-  useEffect(() => {
-    setReviewsList([
-      ...new Set(reviews?.map((blog) => blog.title.split(/[\s-]+/)[0])),
-    ]);
-    setMagazineList([
-      ...new Set([
-        ...new Set(
-          blogs
-            ?.filter((blog) => blog.category !== "referenzen")
-            .map((blog) => blog.category)
-        ),
-      ]),
-    ]);
-  }, [reviews, blogs]);
+  useEffect(() => {}, [brands, blogs]);
   const rights = [
     {
       slug: "impressum",
@@ -51,7 +22,7 @@ const Footer = ({ blogs, reviews }) => {
     },
     { slug: "kontakt", title: "Kontakt", category: "rechtlichesundkontakt" },
     {
-      slug: "datenschutzerklaerung",
+      slug: "dataprotection",
       title: "Datenschutzerklärung",
       category: "rechtlichesundkontakt",
     },
@@ -65,29 +36,27 @@ const Footer = ({ blogs, reviews }) => {
   return (
     <>
       <footer className="px-4 shadow-2xl bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around print:hidden">
-        <nav className="flex flex-col justify-around xl:justify-evenly sm:flex-row items-center sm:items-start w-full lg:w-[60%] xl:w-[50%] pb-4 sm:pb-8 ">
-          <div className="flex flex-col justify-start sm:w-40 ">
+        <nav className="flex flex-col justify-around xl:justify-evenly sm:flex-row items-center sm:items-start w-full lg:w-3/4 pb-4 sm:pb-8 ">
+          <div className="flex flex-col justify-start w-full md:w-1/3">
             <h3 className="flex items-end justify-center text-sm font-bold tracking-wider sm:justify-start h-14 sm:text-md">
-              <Link href="/comparePage">
+              <Link href="/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich">
                 <a className="text-white">{`Transporter`.toUpperCase()}</a>
               </Link>
             </h3>
-            <div className="pt-4">
-              <ul className="flex flex-col sm:pb-4 text-[#b1a7a7] items-center sm:items-start ">
-                {reviewsList
-                  ?.map((blog, index) => (
-                    <li
-                      className="flex items-center justify-between my-2 "
-                      key={index}
-                    >
-                      <Link href={`/${blog}`}>
-                        <a className="text-sm text-left sm:text-lg">
-                          {blog.title ? blog.title : blog}
-                        </a>
-                      </Link>
-                    </li>
-                  ))
-                  .splice(0, 5)}
+            <div className="pt-4 ">
+              <ul className="flex flex-row flex-wrap sm:pb-4 text-[#b1a7a7] items-center md:items-start ">
+                {brands?.map((blog, index) => (
+                  <li
+                    className="flex items-center justify-between my-2 pr-6"
+                    key={index}
+                  >
+                    <Link href={`/fahrzeuge/${blog}`}>
+                      <a className="text-sm text-left sm:text-lg">
+                        {blog.title ? blog.title : blog}
+                      </a>
+                    </Link>
+                  </li>
+                ))}
               </ul>
 
               {/* <ListItems itemsList={reviewsList} /> */}
@@ -102,14 +71,14 @@ const Footer = ({ blogs, reviews }) => {
             <div className="pt-4">
               <ul className="flex flex-col sm:pb-4 text-[#b1a7a7] items-center sm:items-start ">
                 {magazineList
-                  ?.map((blog, index) => (
+                  ?.map((blogCateg, index) => (
                     <li
                       className="flex items-center justify-between my-2 "
                       key={index}
                     >
-                      <Link href={`/${blog}`}>
+                      <Link href={`/magazin/${blogCateg.slug}`}>
                         <a className="text-sm text-left sm:text-lg">
-                          {blog.title ? blog.title : blog}
+                          {blogCateg.category}
                         </a>
                       </Link>
                     </li>
@@ -129,7 +98,8 @@ const Footer = ({ blogs, reviews }) => {
             </div>
           </div>
         </nav>
-
+        {/* logos and media
+         */}
         <div className="flex flex-col items-center px-4 pt-4 lg:pl-0 sm:items-start lg:w-1/4 lg:pt-8 md:px-8">
           <div className="flex flex-row items-center justify-center w-full sm:justify-start">
             <div className="w-1/5 md:w-[9%] lg:w-[33%] xl:w-[20%] text-white ">

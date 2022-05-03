@@ -10,7 +10,7 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
         <Link href={`/transporter/${carItem.name}`}>
           <a>
             <h3 className="flex pt-8 pb-4 text-2xl font-bold leading-7 title sm:text-3xl text-black-darkest ">
-              {carItem.title}
+              {carItem.title.split("-").join(" ")}
             </h3>
           </a>
         </Link>
@@ -21,7 +21,7 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
           {carItem.description}
           {getCarsReview && (
             <Link
-              href={`/magazin/reviews/${
+              href={`/magazin/transporter/${
                 getCarsReview?.find(
                   (item) =>
                     item.slug == carItem?.relatedReviews ||
