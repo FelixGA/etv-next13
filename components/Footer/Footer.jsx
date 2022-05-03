@@ -22,7 +22,7 @@ const Footer = ({ blogs, brands }) => {
     },
     { slug: "kontakt", title: "Kontakt", category: "rechtlichesundkontakt" },
     {
-      slug: "datenschutzerklaerung",
+      slug: "dataprotection",
       title: "Datenschutzerklärung",
       category: "rechtlichesundkontakt",
     },
