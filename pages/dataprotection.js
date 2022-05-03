@@ -8,7 +8,7 @@ export default function dataprotection(props) {
   return (
     <div className="flex flex-col justify-between mx-6 py-6 text-center text-sm leading-8 bg-grey-lightest lg:mx-36 lg:pl-16 lg:text-2xl lg:h-screen lg:text-left 2xl:mx-72">
       <Head page={props.page} />
-      wrgsdte
+      <MDXRemote {...getContent.dataprotection} />
     </div>
   );
 }
@@ -18,7 +18,10 @@ export async function getStaticProps(context) {
   let blogs = await getContent("blogs", context.locale);
 
   const page = pages.find((page) => page.path === "/dataprotection");
-
+  const dataprotection = await serialize(
+    page.content.find((content) => content.name === "Datenschutzerklärung")
+      .markdown
+  );
   if (!page) {
     return {
       notFound: true,
@@ -28,7 +31,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       page,
-
+      context: { dataprotection },
       blogs,
     },
   };

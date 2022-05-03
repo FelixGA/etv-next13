@@ -72,6 +72,7 @@ export async function getStaticProps(context) {
   vehicles = vehicles
     .filter((item, index) => item.category === vehicle.category)
     .slice(0, 4);
+  let brands = await getContent("brands", context.locale);
 
   /* get related reviews*/
   let carsreviews = await getContent("carsreview", context.locale);
@@ -132,6 +133,7 @@ export async function getStaticProps(context) {
       carsreviews,
       params: context.params,
       blogs,
+      brands,
     },
   };
 }
