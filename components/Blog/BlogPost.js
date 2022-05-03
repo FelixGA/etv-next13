@@ -27,6 +27,7 @@ export default function BlogPost({ getBlogContext }) {
         <div className="relative grid lg:grid-cols-[auto,_250px]">
           <div className={`${styles.blogmarkdown} lg:pr-8`}>
             <MDXRemote {...getBlogContext.source} />
+            <div className="bg-red-500">test</div>
           </div>
           <div className="relative bottom-28">
             <SideBar />
