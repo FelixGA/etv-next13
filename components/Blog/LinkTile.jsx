@@ -15,7 +15,7 @@ export default function LinkTile({ category, getBlogs }) {
   return (
     <div className="min-h-[250px] bg-gradient-to-t from-blue-dark to-blue-light text-white flex flex-col items-start justify-evenly object-contain">
       <Link href="/magazin/umwelt">
-        <div className="flex flex-row items-center w-full pl-8 font-bold duration-100 cursor-pointer hover:translate-x-2">
+        <div className="flex flex-row items-center pl-8 font-bold duration-100 cursor-pointer w-fit hover:translate-x-2">
           {" "}
           {/* <ReferencesIcon className="w-6 h-6" /> */}
           <MdOutlineChatBubbleOutline size={25} />
