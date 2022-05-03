@@ -46,12 +46,7 @@ collections:
         fields:
           - { label: "Name", name: "name", widget: "string", i18n: duplicate }
           - { label: "Markdown", name: "markdown", widget: "markdown" }
-          - {
-              label: "Details",
-              name: "details",
-              widget: "markdown",
-              required: false,
-            }
+
   - label: "Brands"
     name: "brands"
     identifier_field: slug
