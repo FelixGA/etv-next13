@@ -46,12 +46,58 @@ collections:
         fields:
           - { label: "Name", name: "name", widget: "string", i18n: duplicate }
           - { label: "Markdown", name: "markdown", widget: "markdown" }
-          - {
-              label: "Details",
-              name: "details",
-              widget: "markdown",
-              required: false,
-            }
+
+  - label: "Brands"
+    name: "brands"
+    identifier_field: slug
+    slug: "{{fields.slug}}"
+    folder: "content/brands"
+    create: true
+    i18n: true
+
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+
+      - label: "Description-SEO"
+        name: "description"
+        widget: "text"
+        i18n: true
+      - {
+          label: Logo-Image,
+          name: src,
+          widget: image,
+          i18n: duplicate,
+          choose_url: false,
+          required: true,
+        }
+      - {
+          label: "slug(SOS! WRITE ME WHENEVER YOU RENAME IT-ANGELOS-)",
+          name: "slug",
+          widget: "string",
+          default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
+          i18n: duplicate,
+          required: true,
+          # update: true,
+          create: true,
+        }
+      - {
+          label: "Website Link",
+          name: "websiteLink",
+          widget: "string",
+          default: "bitte auffuelen",
+          i18n: duplicate,
+          required: true,
+        }
+      - {
+          label: "Content",
+          name: "content",
+          widget: "markdown",
+          summary: "{{fields.name}}",
+          default: "hier steht dn text",
+          i18n: true,
+          required: true,
+        }
+
   - label: "Cars-Reviews"
     name: "carsreviews"
 
@@ -208,7 +254,8 @@ collections:
         multiple: false
         i18n: duplicate
         required: true
-        options: ["neuigkeiten", "foerderung", "hersteller", "umwelt"]
+        options:
+          ["neuigkeiten", "foerderung", "hersteller", "häufig gestellte Fragen"]
       # - label: "post related vehicles"
       #   name: "vehicle"
       #   widget: "relation"
