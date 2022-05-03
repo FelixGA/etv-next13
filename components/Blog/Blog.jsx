@@ -20,7 +20,7 @@ export default function Blog({ getBlogs }) {
                   className="relative flex flex-col items-center my-10 overflow-hidden transition delay-100 bg-white shadow-xl sm:flex-row hover:scale-105 hover:z-10"
                   key={index}
                 >
-                  <div className="w-[90%] h-[250px]">
+                  <div className="w-[350px] h-[250px]">
                     {post.src && (
                       <a className="relative w-full">
                         <Image

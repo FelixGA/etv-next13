@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useStore } from "../store";
+
 import { useRouter } from "next/router";
 
 import Form from "./Form";
@@ -13,9 +13,9 @@ function ButtonAnfragen({ carItem }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
+    <div className="flex">
       <Modal open={open} setOpen={setOpen}>
-        <div className="w-full">
+        <div className="flex-grow bg-white max-w-[90vw]">
           <Form open={open} setOpen={setOpen} carItem={carItem} />
         </div>
       </Modal>
@@ -34,7 +34,7 @@ function ButtonAnfragen({ carItem }) {
       >
         Jetzt anfragen
       </button>
-    </>
+    </div>
   );
 }
 export default ButtonAnfragen;
