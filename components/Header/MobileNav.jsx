@@ -65,21 +65,7 @@ function MobileNav() {
             </a>
           </Link>
         </li>
-        <li className="">
-          <Link href="fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich">
-            <a
-              onClick={() => {
-                dispatch({
-                  type: "mobileNavActive",
-                  data: !state?.mobileNavActives,
-                });
-              }}
-            >
-              {" "}
-              Transporter
-            </a>
-          </Link>
-        </li>
+
         <li className="w-full text-center md:text-left">
           <Link href="/comparePage">
             <a

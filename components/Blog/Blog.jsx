@@ -20,7 +20,7 @@ export default function Blog({ getBlogs }) {
                   className="relative flex flex-col items-center my-10 overflow-hidden transition delay-100 bg-white shadow-xl sm:flex-row hover:scale-105 hover:z-10"
                   key={index}
                 >
-                  <div className="w-[350px] h-[250px]">
+                  <div className="w-[90%] h-[250px]">
                     {post.src && (
                       <a className="relative w-full">
                         <Image
@@ -35,11 +35,11 @@ export default function Blog({ getBlogs }) {
                       </a>
                     )}
                   </div>
-                  <div className="flex flex-col flex-1 w-[75%] p-4 px-8 lg:w-full justify-evenly">
-                    <p className="pt-2">
+                  <div className="flex flex-col flex-1 flex-grow px-4 py-4 lg:w-full justify-evenly">
+                    <p className="">
                       {new Date(post.publishedAt).toLocaleDateString()}
                     </p>
-                    <p className="py-2 text-xl font-bold text-green-dark">
+                    <p className="py-2 text-xl font-bold text-blue-dark">
                       {post.title}
                     </p>
                     <p className="hidden md:line-clamp-4 md:block">

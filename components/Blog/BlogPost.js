@@ -3,7 +3,7 @@ import styles from "./BlogPost.module.css";
 import { MDXRemote } from "next-mdx-remote";
 import SideBar from "../Blog/SideBar";
 export default function BlogPost({ getBlogContext }) {
-  console.log(getBlogContext);
+  // console.log(getBlogContext);
   return (
     <div className="flex flex-col flex-1 pb-4 lg:pb-8 lg:px-48">
       <div>
