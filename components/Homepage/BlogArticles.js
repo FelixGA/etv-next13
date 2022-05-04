@@ -6,7 +6,7 @@ const BlogArticles = ({ getMarkdownContext, getContent }) => {
       <div className="">
         <FirstArticle getMarkdownContext={getMarkdownContext} />
       </div>
-      <div className="mt-8 2xl:px-56">
+      <div className="mt-12 2xl:px-56">
         <SecondArticle getMarkdownContext={getMarkdownContext} />
       </div>
     </div>
