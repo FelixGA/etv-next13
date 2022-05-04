@@ -231,8 +231,8 @@ collections:
           mySchemaProperty: "my-schema-property",
         }
       - label: "related Cars"
+        required: false
         name: "relatedCars"
-        required: true
         widget: "relation"
         i18n: duplicate
         collection: "vehicles"

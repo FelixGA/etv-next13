@@ -15,7 +15,7 @@ export default function Blog({ getBlogs }) {
           {getBlogs
             .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
             .map((post, index) => (
-              <Link href={`magazin/${post.slug}`} passHref>
+              <Link href={`${post.category}/${post.slug}`} passHref>
                 <div
                   className="relative flex flex-col items-center my-10 overflow-hidden transition delay-100 bg-white shadow-xl sm:flex-row hover:scale-105 hover:z-10"
                   key={index}

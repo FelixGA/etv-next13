@@ -12,9 +12,9 @@ export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
   const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
-  const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
+  const [getBrands, SetGetBrands] = useState(props.brands);
   useEffect(() => {
-    SetTestReviews(props.carsreviews);
+    SetGetBrands(props.brands);
     SetGetCars(props.vehicles);
     SetGetContent(props.page);
     SetGetMarkdownContext(props.context);
@@ -27,6 +27,7 @@ export default function Home(props) {
       <HeroSection
         getContent={getContent}
         getMarkdownContext={getMarkdownContext}
+        getBrands={getBrands}
       />
       <TopSlider getCars={getCars} getContent={getContent} />
       <BlogArticles getMarkdownContext={getMarkdownContext} />
@@ -40,7 +41,6 @@ export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   let blogs = await getContent("blogs", context.locale);
-  let carsreviews = await getContent("carsreview", context.locale);
   let brands = await getContent("brands", context.locale);
   const page = pages.find((page) => page.path === "/");
   /* mdxs for the homepage articles */
@@ -65,7 +65,6 @@ export async function getStaticProps(context) {
   return {
     props: {
       context: { header, eAutoAdvisor, substities, newsletter },
-      carsreviews,
       page,
       vehicles,
       blogs,

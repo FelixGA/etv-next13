@@ -6,7 +6,6 @@ import Form from "./repeated/Form";
 
 export default function Layout(props) {
   const [blogs, setBlogs] = useState(props.blogs);
-
   const [brands, setBrands] = useState(props.brands);
   const { state, dispatch } = useStore();
   // const [valueFromUseEffect, setValueFromUseEffect] = useState(null);

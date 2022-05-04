@@ -16,7 +16,6 @@ export default function Reviews(props) {
   const [getBlogContext, SetGetBlogContext] = useState(props.blog);
   const [getMdxContent, SetGetMdxContent] = useState(props.getTestReview);
   const [getCarsReview, SetGetCarsReview] = useState(props.carsreview);
-  const [getCarsReviews, SetGetCarsReviews] = useState(props.carsreviews);
   const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
   useEffect(() => {
     setValueFromUseEffect(props.params.blogtitle);
@@ -57,7 +56,7 @@ export async function getStaticProps(context) {
 
   /* get all blogs*/
   let blogs = await getContent("blogs", context.locale);
-  let carsreviews = await getContent("carsreview", context.locale);
+  let brands = await getContent("brands", context.locale);
 
   return {
     props: {
@@ -65,7 +64,7 @@ export async function getStaticProps(context) {
       blog,
       blogs,
       params: context.params,
-      carsreviews,
+      brands,
     },
   };
 }

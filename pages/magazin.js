@@ -10,10 +10,8 @@ import Blog2 from "../components/Blog/Blog2";
 
 export default function magazin(props) {
   const [getBlogs, SetGetBlogs] = useState(props.blogs);
-  const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
   useEffect(() => {
     SetGetBlogs(props.blogs);
-    SetTestReviews(props.carsreviews);
   }, [props]);
   return (
     <div>
@@ -27,11 +25,7 @@ export default function magazin(props) {
       <h1 className="px-4 pt-8 pb-2 text-4xl font-bold text-center text-blue-dark">
         Magazin
       </h1>
-      <div className="flex items-center justify-center px-4 pt-8 pb-2 text-2xl font-bold text-center text-blue-dark">
-        <Link href="/magazin/reviews">
-          <a>TESTBERICHTE</a>
-        </Link>
-      </div>
+
       <Blog getBlogs={getBlogs} />
     </div>
   );
@@ -42,7 +36,7 @@ export async function getStaticProps(context) {
 
   let blogs = await getContent("blogs", context.locale);
   const page = pages.find((page) => page.path === "/magazin");
-  let carsreviews = await getContent("carsreview", context.locale);
+  let brands = await getContent("brands", context.locale);
 
   if (!page) {
     return {
@@ -53,9 +47,8 @@ export async function getStaticProps(context) {
   return {
     props: {
       page,
-
+      brands,
       blogs,
-      carsreviews,
     },
   };
 }
