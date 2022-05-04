@@ -36,7 +36,7 @@ content:
       ### Antrieb und Aufladung (4/5)
 
 
-      Am Heck des Fahrzeugs arbeitet ein 4 kW starker Hinterradantrieb, der das Fahrzeug auf maximal 45 km/h beschleunigt. Die Reichweiten des Fahrzeugs variieren je nach Akkupaket zwischen 40 und 100 km. Der kleinste Lithium-Ionen-Akku mit 100 Ah und 5,1 kWh schafft 40 - 60 km. Die mittlere Variante mit 180 Ah und 8,2 kWh kommt  auf 55 - 85 km. Das größte Akkupaket kommt mit 9,2 kWh auf 60 - 100 km.
+      Am Heck des Fahrzeugs arbeitet ein 4 kW starker Hinterradantrieb, der das Fahrzeug auf maximal 45 km/h beschleunigt. Der Paxster ist zudem ebenso mit einer Höchstgeschwindigkeit von 60 km/h verfügbar. Die Reichweiten des Fahrzeugs variieren je nach Akkupaket zwischen 40 und 100 km. Der kleinste Lithium-Ionen-Akku mit 100 Ah und 5,1 kWh schafft 40 - 60 km. Die mittlere Variante mit 180 Ah und 8,2 kWh kommt  auf 55 - 85 km. Das größte Akkupaket kommt mit 9,2 kWh auf 60 - 100 km.
 
 
       Der Akku lässt sich je nach Größe in 5-6 oder 9-10 Stunden bequem an einer Haushaltssteckdose aufladen.
@@ -73,7 +73,7 @@ content:
       ### Preise & Garantie (2/5)
 
 
-      Auf Händler-Websites findet sich der Paxster für 17.839 € mit dem großen Akkupaket. Für eine genaue Preisauskunft empfiehlt sich jedoch wie immer eine direkte Anfrage beim Hersteller. Wer sich nicht sicher ist, ob sich das Fahrzeug für das eigene Unternehmen eignet, kann bei Ökoflitzer eine  vierwöchige Testphase wahrnehmen. Diese ist bei Abholung in Dresden sogar kostenlos. Bei Lieferung des Fahrzeugs fällt eine Logistikpauschale an.
+      Auf Händler-Websites findet sich der Paxster für 17.839 € mit dem großen Akkupaket. Für eine genaue Preisauskunft empfiehlt sich jedoch wie immer eine direkte Anfrage beim Hersteller. Auf die Batterie gibt Ökoflitzer 5 Jahre Garantie. Wer sich nicht sicher ist, ob sich das Fahrzeug für das eigene Unternehmen eignet, kann bei Ökoflitzer eine  vierwöchige Testphase wahrnehmen. Diese ist bei Abholung in Dresden sogar kostenlos. Bei Lieferung des Fahrzeugs fällt eine Logistikpauschale an.
     title: Preise & Garantie
     image: /images/paxter-paxmove.jpg
   - content: >-
