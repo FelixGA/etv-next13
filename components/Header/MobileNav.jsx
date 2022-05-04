@@ -20,8 +20,8 @@ function MobileNav() {
     });
   }, [router.pathname]);
   return (
-    <div className="flex flex-col items-center w-full h-screen bg-blue-darker z-90">
-      <ul className="flex flex-col items-center sm:items-start sm:pl-16 flex-1 h-[90%] pb-20 justify-evenly text-[#928888] text-2xl ">
+    <div className="flex flex-col items-center w-full bg-gradient-to-b from-blue-darker to-blue-dark z-90 h-[calc(100vh-70px)]">
+      <ul className="flex flex-col items-center flex-1 gap-20 justify-center text-[#928888] text-2xl ">
         <li className="">
           <Link href="/">
             <a

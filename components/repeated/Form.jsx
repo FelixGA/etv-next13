@@ -45,7 +45,7 @@ export default function Form(props) {
   const onError = (errors, e) => console.log("errors", errors, e);
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-3 rounded-lg">
       <div className={send ? "hidden" : ""}>
         {/* FORM */}
 
@@ -56,8 +56,8 @@ export default function Form(props) {
           onSubmit={handleSubmit(onSubmit, onError)}
           className={
             router.pathname !== "/kontakt"
-              ? "flex flex-col bg-white mx-1 px-1 "
-              : "flex flex-col px-4 my-4 bg-white shadow-dropdown xs:rounded-md mb-20"
+              ? "flex flex-col bg-white  px-1 "
+              : "flex flex-col px-4  bg-white shadow-dropdown xs:rounded-md mb-20"
           }
         >
           <div className="w-full">
@@ -254,11 +254,11 @@ export default function Form(props) {
       <div
         className={
           send
-            ? "flex sm:h-[calc(100vh-200px)] justify-center items-center w-full "
+            ? "flex sm:h-[calc(100vh-200px)] justify-center items-center w-full"
             : "hidden"
         }
       >
-        <p className="w-full px-8 py-8 bg-white border rounded-sm shadow-dropdown sm:p-8 sm:text-lg">
+        <p className="w-full px-8 py-8 mx-2 bg-white border rounded-sm shadow-dropdown sm:text-lg">
           Vielen Dank für Ihre Nachricht. Wir melden uns umgehend bei Ihnen.
           <br />
           Hier können Sie gleich alle
@@ -271,7 +271,7 @@ export default function Form(props) {
           </Link>
         </p>
 
-        <div className="relative px-2 text-center">
+        {/* <div className="relative px-2 text-center">
           <div
             className={
               router.path == "/kontakt"
@@ -282,7 +282,7 @@ export default function Form(props) {
           >
             <AiOutlineClose size={25} color="#fff" />
           </div>
-        </div>
+        </div> */}
         {props.children}
       </div>
     </div>
