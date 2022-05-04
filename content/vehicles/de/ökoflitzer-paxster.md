@@ -76,15 +76,15 @@ guarantee:
   baseUnit: "-"
 availability:
   key: Verfügbarkeit
-  value: "-"
+  value: 10-14 Wochen
 subsidies:
   key: Förderhöhe
   value: 0
   baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
-  value: 0
-  baseUnit: "-"
+  value: 5
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
   value: 720
