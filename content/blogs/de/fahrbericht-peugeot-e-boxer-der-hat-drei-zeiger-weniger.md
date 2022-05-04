@@ -1,14 +1,14 @@
 ---
+publishedAt: 11/20/2021
+src: /images/ampnet_photo_20211118_204568.jpg
+contentHeading:
+  content: ""
 title: "Fahrbericht Peugeot e-Boxer: Der hat drei Zeiger weniger"
 slug: fahrbericht-peugeot-e-boxer-der-hat-drei-zeiger-weniger
 youtubeLink: ""
-category: neuigkeiten
-publishedAt: 11/20/2021
-src: /images/ampnet_photo_20211118_204568.jpg
+category: hersteller
 description: Mit dem Peugeot Boxer reagiert Peugeot auf die wachsende Nachfrage
   nach Alternativen zu Dieseltransportern.
-contentHeading:
-  content: ""
 ---
 [](https://www.e-medienportal.net/artikel/detail/57973#ampnet-carousel)Die Zeit läuft gegen die leichten Nutzfahrzeuge – wenigstens in den Innenstädten, die von einer wachsenden Zahl der Stadtverwaltungen zu Umweltzonen umgewidmet werden, in denen die vertrauten Diesel-Transporter dann nicht mehr fahren sollen. Kein Wunder, dass die Elektrifizierung in diesem Segment schnell voranschreitet. Peugeot hat jetzt mit der Markteinführung des elektrisch angetriebenen Boxer seine gesamte Transporter-Modellpalette elektrifiziert.
 

@@ -53,8 +53,8 @@ export default function activeCompare(props) {
   return (
     <div className="main-wrapper 2xl:px-40">
       <Head page={props.page} />
-      <div className="pt-8 pb-6 px-4">
-        <h1 className="font-bold text-blue-extra text-2xl lg:text-4xl">
+      <div className="px-4 pt-8 pb-6">
+        <h1 className="text-2xl font-bold text-blue-extra lg:text-4xl">
           Ihre Auswahl im Detailvergleich
         </h1>
       </div>
@@ -62,7 +62,7 @@ export default function activeCompare(props) {
       <div
         className={comparedCars.length > 1 ? "pl-4 block lg:hidden" : "hidden"}
       >
-        <button className="mb-8 text-sm w-52 h-10 rounded-md text-blue-darker bg-grey-lighter">
+        <button className="h-10 mb-8 text-sm rounded-md w-52 text-blue-darker bg-grey-lighter">
           <Link href="/comparePage">
             <a className="visited:text-blue-darker">
               « zurück zur Ergebnisliste
@@ -71,9 +71,9 @@ export default function activeCompare(props) {
         </button>
       </div>
       {/* KEYS AND ITEMS FOR COMPARE */}
-      <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
+      <div className="grid grid-flow-col pb-20 overflow-x-scroll scrollbar-hide">
         <div className="w-full">
-          <div className="grid grid-flow-col overflow-x-scroll scrollbar-hide">
+          <div className="relative grid grid-flow-col overflow-x-scroll scrollbar-hide">
             <ActiveCompareImages comparedCars={comparedCars} />
           </div>
 

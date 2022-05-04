@@ -1,14 +1,14 @@
 ---
+publishedAt: 01/19/2022
+src: /images/ampnet_photo_20220119_206316.jpg
+contentHeading:
+  content: ""
 title: Ford E-Transit kommt im Mai auf den Markt
 slug: ford-e-transit-kommt-im-mai-auf-den-markt
 youtubeLink: ""
-category: neuigkeiten
-publishedAt: 01/19/2022
-src: /images/ampnet_photo_20220119_206316.jpg
+category: hersteller
 description: Der Transporter "E-Transit" von Ford kommt im Mai auf den Markt und
   wird als Kastenwagen und als Fahrgestell  angeboten.
-contentHeading:
-  content: ""
 ---
 Bei Ford kann ab sofort der E-Transit bestellt werden. Der Transporter kommt im Mai auf den Markt und wird zunächst als Kastenwagen, Kastenwagen Doppelkabine und als Fahrgestell Einzelkabine angeboten. Es wird den Elektromotor in zwei Leistungsstufen mit 135 kW (184 PS) und 198 kW (269 PS) geben. Die WLTP-Normreichweite liegt bei bis zu 317 Kilometern. Der Einstiegspreis beträgt bei 55.845 Euro netto für den Kastenwagen bzw. rund 66.456 Euro brutto. das Fahrgestell ist etwa 2500 Euro günstiger.
 

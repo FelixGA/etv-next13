@@ -7,7 +7,7 @@ const TopSlider = ({ getContent, getCars }) => {
   const container = useRef();
   // const style = { color: "black" };
   return (
-    <div className="relative">
+    <div className="relative pb-8">
       <div className="flex justify-center overflow-hidden ">
         <div
           onClick={(e) => {
@@ -24,13 +24,22 @@ const TopSlider = ({ getContent, getCars }) => {
           </div>
         </div>
 
-        <div className="print:hidden flex flex-col w-full xl:w-[1220px] ">
+        <div className="relative print:hidden flex flex-col w-full xl:w-[1220px] ">
           <h2 className="relative px-6 pb-4 mt-4 text-3xl font-black tracking-wide text-left no-select text-black-dark">
-            Jetzt vergleichen!
+            Jetzt vergleichen!{" "}
           </h2>
+          <div className="absolute z-50 w-10 p-1 bg-white  rounded-full top-4 left-[300px] 2xl:hidden">
+            <Image
+              src="/images/swipe.gif"
+              width={100}
+              height={100}
+              layout="responsive"
+              objectFit="contain"
+            ></Image>
+          </div>
 
           <div
-            className="grid grid-flow-col gap-4 auto-cols-[minmax(293px,_1fr)] overflow-x-scroll scrollbar-hide p-2 snap-x "
+            className="grid grid-flow-col gap-4 auto-cols-[minmax(293px,_1fr)] overflow-x-scroll scrollbar-hide pt-2 px-2 snap-x "
             ref={container}
           >
             <TopSliderCard
@@ -54,17 +63,16 @@ const TopSlider = ({ getContent, getCars }) => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center">
-        <div className="relative top-0 block w-18 xl:hidden">
-          <Image
-            src="/images/swipe.gif"
-            width={80}
-            height={80}
-            layout="responsive"
-            objectFit="contain"
-          ></Image>
-        </div>
-      </div>
+
+      {/* <div className="relative w-12  bottom-[455px] left-4 2xl:hidden rounded-full bg-white border selection:border-gray-50 p-1">
+        <Image
+          src="/images/swipe.gif"
+          width={100}
+          height={100}
+          layout="responsive"
+          objectFit="contain"
+        ></Image>
+      </div> */}
     </div>
   );
 };
