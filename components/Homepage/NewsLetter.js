@@ -60,7 +60,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
               required: true,
               pattern: emailRegex,
             })}
-            className="w-48 text-lg rounded-sm h-14 sm:w-full placeholder:pl-2"
+            className="w-48 pl-2 text-lg rounded-sm xs:w-64 h-14 sm:w-full "
           />
           <p className="text-red-500">
             {errors.emailInput && "Email ist erforderlich"}

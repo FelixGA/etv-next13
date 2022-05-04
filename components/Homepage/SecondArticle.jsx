@@ -1,6 +1,7 @@
 import { MDXRemote } from "next-mdx-remote";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../Homepage/firstArticle.module.css";
 
 export default function SecondArticle({ getMarkdownContext, getContent }) {
   return (
@@ -19,7 +20,9 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
         {/* <h2 className="text-2xl font-bold text-grey-darkest ">
            dfg
           </h2> */}
-        <div className="px-1 pb-6 font-bold tracking-wide text-blue-lighter xs:px-2 xl:pr-36">
+        <div
+          className={`${styles.article} "px-1 pb-6 font-bold tracking-wide text-blue-lighter xs:px-2 xl:pr-36"`}
+        >
           {<MDXRemote {...getMarkdownContext.substities} />}
         </div>
 

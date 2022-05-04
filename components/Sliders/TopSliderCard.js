@@ -5,7 +5,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 const TopSliderCard = (props) => {
   const getDisplayedCars = props?.displayedCars?.map((caritem, index) => (
     <div
-      className="relative pb-2 border rounded-sm shadow-dropdown snap-center lg:snap-start"
+      className="relative pb-4 border rounded-sm shadow-dropdown snap-center lg:snap-start"
       key={index}
     >
       <div className="">
