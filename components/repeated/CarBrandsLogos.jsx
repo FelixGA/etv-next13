@@ -1,12 +1,16 @@
-import logos from "./logos.json";
+// import logos from "./logos.json";
 import Image from "next/image";
-export default function CarBrandsLogos() {
+import Link from "next/link";
+
+export default function CarBrandsLogos(props) {
   return (
     <div className="flex flex-wrap justify-around icons-container pt-14 lg:pt-10">
-      {logos.map((logo, index) => (
-        <i className="m-2 lg:my-10 lg:scale-125" key={index}>
-          <Image src={logo.src} alt={logo.alt} width={48} height={48} />
-        </i>
+      {props.getBrands.map((brand, index) => (
+        <Link href={`/fahrzeuge/${brand.slug}`}>
+          <i className="m-2 lg:my-10 lg:scale-125" key={index}>
+            <Image src={brand.src} alt={brand.title} width={56} height={48} />
+          </i>
+        </Link>
       ))}
     </div>
   );
