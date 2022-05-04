@@ -221,7 +221,7 @@ collections:
           required: true,
         }
       - {
-          label: "slug(SOS! WRITE ME WHENEVER YOU RENAME IT-ANGELOS-)",
+          label: "slug(SOS!! WRITE ME WHEN YOU RENAME IT-ANGELOS-)",
           name: "slug",
           widget: slug,
           default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
