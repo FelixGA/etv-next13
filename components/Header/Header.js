@@ -86,7 +86,7 @@ const Header = () => {
         <AnimatePresence initial={false}>
           {state?.mobileNavActives && (
             <motion.div
-              className="absolute right-0 w-full lg:hidden sm:w-96 top-18 z-90 "
+              className="absolute w-full h-screen top-20 lg:hidden sm:w-96 z-90"
               variants={variants}
               initial="enter"
               animate="center"
