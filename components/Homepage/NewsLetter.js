@@ -31,7 +31,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
   const onError = (errors, e) => console.log("errors", errors, e);
 
   return (
-    <div className="flex flex-col flex-wrap items-center justify-center p-10 newsletter-container bg-grey-lightest">
+    <div className="flex flex-col flex-wrap items-center justify-center px-10 pt-6 pb-12 newsletter-container bg-grey-lightest">
       <div className="flex flex-col justify-center px-4 py-4 xl:w-[1000px] custom-text text-grey-darker">
         <MDXRemote {...getMarkdownContext.newsletter} />
       </div>
@@ -72,7 +72,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
                 : setSend(false);
             }}
             type="submit"
-            className="px-6 mt-2 font-bold text-white rounded-md bg-blue-dark xs:mt-0 transition hover:bg-blue-light text-md sm:rounded-r-lg sm:rounded-none h-14"
+            className="px-6 mt-2 font-bold text-white transition rounded-md bg-blue-dark xs:mt-0 hover:bg-blue-light text-md sm:rounded-r-lg sm:rounded-none h-14"
           >
             anmelden
           </button>
