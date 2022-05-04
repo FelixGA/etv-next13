@@ -10,6 +10,7 @@ const Articles = ({
   getCarsReview,
   getBlogContext,
 }) => {
+  console.log(getBlogContext);
   return (
     <>
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
@@ -29,12 +30,23 @@ const Articles = ({
         </div>
         <div className=" lg:w-2/3 flex flex-col flex-wrap lg:px-6">
           <h3 className="w-full py-4 text-black-darkest text-2xl font-bold ">
-            Testbericht {carItem.title}
+            Testbericht von {carItem.title}
           </h3>
           <div>
-            {getTestReview ? <MDXRemote {...getTestReview[0]} /> : "kommt bald"}
+            {getTestReview ? (
+              <div>
+                {getTestReview.map((review) => (
+                  <div key={review.id}>
+                    <MDXRemote {...review} />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              "kommt bald"
+            )}
           </div>
-          {getCarsReview && (
+          {/* BUTTON */}
+          {/* {getCarsReview && (
             <Link href={`/magazin/reviews/${getCarsReview?.slug}`}>
               <a target="_blank" className="text-blue-500">
                 <button
@@ -45,11 +57,11 @@ const Articles = ({
                 </button>
               </a>
             </Link>
-          )}
+          )} */}
         </div>
       </div>
       {/* other articles section */}
-      {/* First Article */}{" "}
+
       <div className=" bg-white flex lg:flex-row-reverse flex-col w-full p-4 lg:p-18">
         {getBlogContext?.src && (
           <div className="lg:w-1/3 w-full m-auto relative print:hidden">
@@ -75,6 +87,9 @@ const Articles = ({
             </Link>
           </h3>
           <p>{getBlogContext?.description}</p>
+          <p>
+            <MDXRemote {...getBlogContext.source} />
+          </p>
         </div>
       </div>
     </>
