@@ -12,18 +12,23 @@ content:
 
       Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als „Daten“ bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen sowie innerhalb externer Onlinepräsenzen, wie z.B. unserer Social-Media-Profile (nachfolgend zusammenfassend bezeichnet als „Onlineangebot“). Die verwendeten Begriffe sind nicht geschlechtsspezifisch.
     name: Datenschutzerklärung
-  - name: Verantwortlicher
-    markdown: |-
+  - markdown: >-
       ## Verantwortlicher
+
 
       „Car Compare UG“ i.G.
 
+
       Paul Thiede
+
       Ernst-Mey-Str. 15
+
       04229 Leipzig
 
+
       E-Mail-Adresse: Info@elektrotransportervergleich.de.
-  - markdown: >-
+
+
       ## Übersicht der Verarbeitungen
 
 
@@ -124,7 +129,7 @@ content:
       **Speicherdauer:** Sofern wir Ihnen keine expliziten Angaben zur Speicherdauer von permanenten Cookies mitteilen (z. B. im Rahmen eines sog. Cookie-Opt-Ins), gehen Sie bitte davon aus, dass die Speicherdauer bis zu zwei Jahre betragen kann.
 
 
-      **Allgemeine Hinweise zum Widerruf und Widerspruch (Opt-Out)** Abhängig davon, ob die Verarbeitung auf Grundlage einer Einwilligung oder gesetzlichen Erlaubnis erfolgt, haben Sie jederzeit die Möglichkeit, eine erteilte Einwilligung zu widerrufen oder der Verarbeitung Ihrer Daten durch Cookie-Technologien zu widersprechen (zusammenfassend als „Opt-Out“ bezeichnet). Sie können Ihren Widerspruch zunächst mittels der Einstellungen Ihres Browsers erklären, z.B., indem Sie die Nutzung von Cookies deaktivieren (wobei hierdurch auch die Funktionsfähigkeit unseres Onlineangebotes eingeschränkt werden kann). Ein Widerspruch gegen den Einsatz von Cookies zu Zwecken des Onlinemarketings kann auch mittels einer Vielzahl von Diensten, vor allem im Fall des Trackings, über die Webseiten [`https://optout.aboutads.info`](https://optout.aboutads.info/)` `und [`https://www.youronlinechoices.com/`](https://www.youronlinechoices.com/)` ` erklärt werden. Daneben können Sie weitere Widerspruchshinweise im Rahmen der Angaben zu den eingesetzten Dienstleistern und Cookies erhalten.
+      **Allgemeine Hinweise zum Widerruf und Widerspruch (Opt-Out)** Abhängig davon, ob die Verarbeitung auf Grundlage einer Einwilligung oder gesetzlichen Erlaubnis erfolgt, haben Sie jederzeit die Möglichkeit, eine erteilte Einwilligung zu widerrufen oder der Verarbeitung Ihrer Daten durch Cookie-Technologien zu widersprechen (zusammenfassend als „Opt-Out“ bezeichnet). Sie können Ihren Widerspruch zunächst mittels der Einstellungen Ihres Browsers erklären, z.B., indem Sie die Nutzung von Cookies deaktivieren (wobei hierdurch auch die Funktionsfähigkeit unseres Onlineangebotes eingeschränkt werden kann). Ein Widerspruch gegen den Einsatz von Cookies zu Zwecken des Onlinemarketings kann auch mittels einer Vielzahl von Diensten, vor allem im Fall des Trackings, über die Webseiten [`https://optout.aboutads.info`](https://optout.aboutads.info/)und [`https://www.youronlinechoices.com/`](https://www.youronlinechoices.com/) erklärt werden. Daneben können Sie weitere Widerspruchshinweise im Rahmen der Angaben zu den eingesetzten Dienstleistern und Cookies erhalten.
 
 
       **Verarbeitung von Cookie-Daten auf Grundlage einer Einwilligung**: Wir setzen ein Verfahren zum Cookie-Einwilligungs-Management ein, in dessen Rahmen die Einwilligungen der Nutzer in den Einsatz von Cookies, bzw. der im Rahmen des Cookie-Einwilligungs-Management-Verfahrens genannten Verarbeitungen und Anbieter eingeholt sowie von den Nutzern verwaltet und widerrufen werden können. Hierbei wird die Einwilligungserklärung gespeichert, um deren Abfrage nicht erneut wiederholen zum müssen und die Einwilligung entsprechend der gesetzlichen Verpflichtung nachweisen zu können. Die Speicherung kann serverseitig und/oder in einem Cookie (sogenanntes Opt-In-Cookie, bzw. mithilfe vergleichbarer Technologien) erfolgen, um die Einwilligung einem Nutzer, bzw. dessen Gerät zuordnen zu können. Vorbehaltlich individueller Angaben zu den Anbietern von Cookie-Management-Diensten, gelten die folgenden Hinweise: Die Dauer der Speicherung der Einwilligung kann bis zu zwei Jahren betragen. Hierbei wird ein pseudonymer Nutzer-Identifikator gebildet und mit dem Zeitpunkt der Einwilligung, Angaben zur Reichweite der Einwilligung (z. B. welche Kategorien von Cookies und/oder Diensteanbieter) sowie dem Browser, System und verwendeten Endgerät gespeichert.
@@ -211,7 +216,7 @@ content:
 
       * **Google Analytics:** Reichweitenmessung und Webanalyse; Dienstanbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, Mutterunternehmen: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA; 
 
-      * ``[`https://marketingplatform.google.com/intl/de/about/analytics/`](https://marketingplatform.google.com/intl/de/about/analytics/)`; Datenschutzerklärung: `[`https://policies.google.com/privacy`](https://policies.google.com/privacy)`.`
+      * ``[`https://marketingplatform.google.com/intl/de/about/analytics/`](https://marketingplatform.google.com/intl/de/about/analytics/)`; Datenschutzerklärung:`[`https://policies.google.com/privacy`](https://policies.google.com/privacy)`.`
 
 
       ## Änderung und Aktualisierung der Datenschutzerklärung
