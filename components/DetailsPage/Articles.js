@@ -4,13 +4,7 @@ import RatingBox from "../../components/repeated/RatingBox";
 import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
-const Articles = ({
-  carItem,
-  getTestReview,
-  getCarsReview,
-  getBlogContext,
-}) => {
-  console.log(getBlogContext);
+const Articles = ({ carItem, getTestReview, getBlogContext }) => {
   return (
     <>
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
@@ -45,7 +39,6 @@ const Articles = ({
               "kommt bald"
             )}
           </div>
-          {/* BUTTON */}
           {/* {getCarsReview && (
             <Link href={`/magazin/reviews/${getCarsReview?.slug}`}>
               <a target="_blank" className="text-blue-500">
@@ -61,7 +54,7 @@ const Articles = ({
         </div>
       </div>
       {/* other articles section */}
-
+      {/* First Article */}{" "}
       <div className=" bg-white flex lg:flex-row-reverse flex-col w-full p-4 lg:p-18">
         {getBlogContext?.src && (
           <div className="lg:w-1/3 w-full m-auto relative print:hidden">
@@ -81,15 +74,18 @@ const Articles = ({
           </div>
         )}
         <div className=" lg:w-2/3 flex flex-col flex-wrap lg:px-6">
-          <h3 className="w-full py-4 text-black-darkest text-2xl font-bold ">
-            <Link href={`/magazin/${getBlogContext?.slug}`}>
+          <h3 className="w-full py-4 text-black-darkest text-2xl font-bold">
+            <Link
+              href={`/magazin/${getBlogContext?.category}/${getBlogContext?.slug}`}
+            >
               <a target="_blank">{getBlogContext?.title}</a>
             </Link>
           </h3>
-          <p>{getBlogContext?.description}</p>
-          <p>
-            <MDXRemote {...getBlogContext.source} />
-          </p>
+          {getBlogContext?.title ? (
+            <p>
+              <MDXRemote {...getBlogContext.source} />
+            </p>
+          ) : null}
         </div>
       </div>
     </>
