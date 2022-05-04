@@ -50,7 +50,7 @@ const Footer = ({ blogs, brands }) => {
                     className="flex items-center justify-between pr-6 my-2"
                     key={index}
                   >
-                    <Link href={`/fahrzeuge/${blog}`}>
+                    <Link href={`/fahrzeuge/${blog.slug}`}>
                       <a className="text-sm text-left sm:text-lg">
                         {blog.title ? blog.title : blog}
                       </a>

@@ -6,11 +6,7 @@ import Head from "../components/core/Head";
 import { useRouter } from "next/router";
 export default function kontakt(props) {
   const [open, setOpen] = useState(true);
-  const [getTestReviews, SetTestReviews] = useState(props.carsreviews);
   const router = useRouter();
-  useEffect(() => {
-    SetTestReviews(props.carsreviews);
-  }, [props]);
 
   return (
     <div className="relative flex flex-col items-center ">
@@ -61,7 +57,7 @@ export async function getStaticProps(context) {
   //let vehicles = await getContent("vehicles", context.locale);
   let blogs = await getContent("blogs", context.locale);
   const page = pages.find((page) => page.path === "/kontakt");
-  let carsreviews = await getContent("carsreview", context.locale);
+  let brands = await getContent("brands", context.locale);
   if (!page) {
     return {
       notFound: true,
@@ -71,8 +67,8 @@ export async function getStaticProps(context) {
   return {
     props: {
       page,
-      carsreviews,
       blogs,
+      brands,
     },
   };
 }

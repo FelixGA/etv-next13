@@ -60,7 +60,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
               required: true,
               pattern: emailRegex,
             })}
-            className="w-48 pl-2 text-lg rounded-sm xs:w-64 h-14 sm:w-full "
+            className="w-48 pl-2 text-lg rounded-sm h-14 sm:w-full "
           />
           <p className="text-red-500">
             {errors.emailInput && "Email ist erforderlich"}
@@ -72,7 +72,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
                 : setSend(false);
             }}
             type="submit"
-            className="px-6 mt-2 font-bold text-white transition rounded-md bg-blue-dark xs:mt-0 hover:bg-blue-light text-md sm:rounded-r-lg sm:rounded-none h-14"
+            className="px-6 mt-2 font-bold text-white transition rounded-md bg-blue-dark xs:mt-0 hover:bg-blue-light text-md sm:rounded-r-lg xs:rounded-l-none h-14"
           >
             anmelden
           </button>

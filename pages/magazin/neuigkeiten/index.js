@@ -33,7 +33,7 @@ export async function getStaticProps(context) {
   let vehicles = await getContent("vehicles", context.locale);
   const page = pages.find((page) => page.path === "/magazin");
   let blogs = await getContent("blogs", context.locale);
-  let carsreviews = await getContent("carsreview", context.locale);
+  let brands = await getContent("brands", context.locale);
 
   if (!page) {
     return {
@@ -47,7 +47,8 @@ export async function getStaticProps(context) {
       posts,
       vehicles,
       blogs,
-      carsreviews,
+
+      brands,
     },
   };
 }

@@ -8,7 +8,7 @@ import OptionItem from "./OptionItem";
 
 //import filtersData from "../filtersData.json";
 //
-const HeroSection = ({ getContent, getMarkdownContext }) => {
+const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
   const { state, dispatch } = useStore();
 
   const details = [
@@ -240,7 +240,7 @@ const HeroSection = ({ getContent, getMarkdownContext }) => {
           </div>
         </div>
 
-        <CarBrandsLogos />
+        <CarBrandsLogos getBrands={getBrands} />
       </div>
     </div>
   );

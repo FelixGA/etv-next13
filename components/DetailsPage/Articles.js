@@ -4,12 +4,7 @@ import RatingBox from "../../components/repeated/RatingBox";
 import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
-const Articles = ({
-  carItem,
-  getTestReview,
-  getCarsReview,
-  getBlogContext,
-}) => {
+const Articles = ({ carItem, getTestReview, getBlogContext }) => {
   return (
     <>
       <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
@@ -29,12 +24,22 @@ const Articles = ({
         </div>
         <div className=" lg:w-2/3 flex flex-col flex-wrap lg:px-6">
           <h3 className="w-full py-4 text-black-darkest text-2xl font-bold ">
-            Testbericht {carItem.title}
+            Testbericht von {carItem.title}
           </h3>
           <div>
-            {getTestReview ? <MDXRemote {...getTestReview[0]} /> : "kommt bald"}
+            {getTestReview ? (
+              <div>
+                {getTestReview.map((review) => (
+                  <div key={review.id}>
+                    <MDXRemote {...review} />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              "kommt bald"
+            )}
           </div>
-          {getCarsReview && (
+          {/* {getCarsReview && (
             <Link href={`/magazin/reviews/${getCarsReview?.slug}`}>
               <a target="_blank" className="text-blue-500">
                 <button
@@ -45,7 +50,7 @@ const Articles = ({
                 </button>
               </a>
             </Link>
-          )}
+          )} */}
         </div>
       </div>
       {/* other articles section */}
@@ -69,12 +74,18 @@ const Articles = ({
           </div>
         )}
         <div className=" lg:w-2/3 flex flex-col flex-wrap lg:px-6">
-          <h3 className="w-full py-4 text-black-darkest text-2xl font-bold ">
-            <Link href={`/magazin/${getBlogContext?.slug}`}>
+          <h3 className="w-full py-4 text-black-darkest text-2xl font-bold">
+            <Link
+              href={`/magazin/${getBlogContext?.category}/${getBlogContext?.slug}`}
+            >
               <a target="_blank">{getBlogContext?.title}</a>
             </Link>
           </h3>
-          <p>{getBlogContext?.description}</p>
+          {getBlogContext?.title ? (
+            <p>
+              <MDXRemote {...getBlogContext.source} />
+            </p>
+          ) : null}
         </div>
       </div>
     </>
