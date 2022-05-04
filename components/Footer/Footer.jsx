@@ -36,7 +36,7 @@ const Footer = ({ blogs, brands }) => {
   return (
     <>
       <footer className="px-4 shadow-2xl bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around print:hidden">
-        <nav className="flex flex-col justify-around xl:justify-evenly sm:flex-row items-center sm:items-start w-full lg:w-3/4 pb-4 sm:pb-8 ">
+        <nav className="flex flex-col items-center justify-around w-full pb-4 xl:justify-evenly sm:flex-row sm:items-start lg:w-3/4 sm:pb-8 ">
           <div className="flex flex-col justify-start w-full md:w-1/3">
             <h3 className="flex items-end justify-center text-sm font-bold tracking-wider sm:justify-start h-14 sm:text-md">
               <Link href="/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich">
@@ -47,7 +47,7 @@ const Footer = ({ blogs, brands }) => {
               <ul className="flex flex-row flex-wrap sm:pb-4 text-[#b1a7a7] items-center md:items-start ">
                 {brands?.map((blog, index) => (
                   <li
-                    className="flex items-center justify-between my-2 pr-6"
+                    className="flex items-center justify-between pr-6 my-2"
                     key={index}
                   >
                     <Link href={`/fahrzeuge/${blog.slug}`}>
@@ -129,15 +129,15 @@ const Footer = ({ blogs, brands }) => {
             </div>
           </div>
           <div className="flex w-full">
-            <p className=" text-[#b1a7a7] pt-4 text-center sm:text-left w-full text-xs lg:text-sm xl:text-lg">
+            <p className="w-full pt-6 pb-2 pl-0 text-xs text-center text-white lg:pl-4 sm:text-left lg:text-lg xl:text-lg">
               {footerWords.map((item, index) => (
-                <span className="pl-2" key={index}>
+                <span className="" key={index}>
                   {item}
                 </span>
               ))}
             </p>
           </div>
-          <div className="flex justify-between pt-6 pb-8 w-28 lg:w-40 sm:pl-4">
+          <div className="flex justify-between pt-2 pb-8 w-28 lg:w-40 sm:pl-4">
             <div className="transition cursor-pointer hover:scale-110">
               <Link href="https://www.facebook.com">
                 <a target="_blank">
