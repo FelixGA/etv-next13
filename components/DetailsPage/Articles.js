@@ -7,8 +7,8 @@ import { MDXRemote } from "next-mdx-remote";
 const Articles = ({ carItem, getTestReview, getBlogContext }) => {
   return (
     <>
-      <div className="bg-grey-lighter flex lg:flex-row flex-col w-full p-4 lg:p-18">
-        <div className=" lg:w-1/3 w-full m-auto relative ">
+      <div className="relative flex flex-col p-4 border-4 print:hidden bg-grey-lighter lg:flex-row 2xl:px-44">
+        <div className="relative w-full m-auto lg:w-1/3">
           <Image
             src={carItem?.src}
             alt={carItem?.title}
@@ -18,15 +18,15 @@ const Articles = ({ carItem, getTestReview, getBlogContext }) => {
             objectFit="contain"
             className="rounded-l-lg"
           />
-          <div className="flex absolute bottom-0 right-0 md:p-4 scale-75">
+          <div className="absolute bottom-0 right-0 flex scale-75 md:p-4">
             <RatingBox carItem={carItem} />
           </div>
         </div>
-        <div className=" lg:w-2/3 flex flex-col flex-wrap lg:px-6">
-          <h3 className="w-full py-4 text-black-darkest text-2xl font-bold ">
+        <div className="flex flex-col flex-wrap lg:w-2/3 lg:px-6">
+          <h3 className="w-full py-4 text-2xl font-bold text-black-darkest ">
             Testbericht von {carItem.title}
           </h3>
-          <div>
+          <div className="">
             {getTestReview ? (
               <div>
                 {getTestReview.map((review) => (
@@ -44,7 +44,7 @@ const Articles = ({ carItem, getTestReview, getBlogContext }) => {
               <a target="_blank" className="text-blue-500">
                 <button
                   // disabled={getTestReview ? true : false}
-                  className="bg-blue-dark h-14 w-48 my-6 flex justify-center items-center text-white print:hidden rounded-md"
+                  className="flex items-center justify-center w-48 my-6 text-white rounded-md bg-blue-dark h-14 print:hidden"
                 >
                   Testbericht lesen
                 </button>
@@ -55,9 +55,9 @@ const Articles = ({ carItem, getTestReview, getBlogContext }) => {
       </div>
       {/* other articles section */}
       {/* First Article */}{" "}
-      <div className=" bg-white flex lg:flex-row-reverse flex-col w-full p-4 lg:p-18">
+      <div className="flex flex-col w-full p-4 bg-white lg:flex-row-reverse lg:p-18 print:hidden">
         {getBlogContext?.src && (
-          <div className="lg:w-1/3 w-full m-auto relative print:hidden">
+          <div className="relative w-full m-auto lg:w-1/3 print:hidden">
             <Link href={`/magazin/${getBlogContext?.slug}`} passHref>
               <a target="_blank">
                 <Image
@@ -73,8 +73,8 @@ const Articles = ({ carItem, getTestReview, getBlogContext }) => {
             </Link>
           </div>
         )}
-        <div className=" lg:w-2/3 flex flex-col flex-wrap lg:px-6">
-          <h3 className="w-full py-4 text-black-darkest text-2xl font-bold">
+        <div className="flex flex-col flex-wrap lg:w-2/3 lg:px-6">
+          <h3 className="w-full py-4 text-2xl font-bold text-black-darkest">
             <Link
               href={`/magazin/${getBlogContext?.category}/${getBlogContext?.slug}`}
             >
