@@ -1,10 +1,23 @@
 import TopSliderCard from "../Sliders/TopSliderCard";
 import Image from "next/image";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+
 // import Script from "next/script";
-import { useState, useRef } from "react";
-const TopSlider = ({ getContent, getCars }) => {
+import { useState, useRef, useEffect } from "react";
+
+const TopSlider = ({ getBlogContext, getCars }) => {
   const container = useRef();
+  // const style = { color: "black" };
+
+  const [sliderData, setSliderData] = useState(
+    getBlogContext ? [getBlogContext].concat(getCars) : getCars
+  );
+
+  // useEffect(() => {
+  //   setSliderData([
+  //     ...getCars.filter((car) => car.slug !== getBlogContext.slug),
+  //   ]);
+  // }, [getCars]);
   // const style = { color: "black" };
   return (
     <div className="relative pb-8">
@@ -26,7 +39,7 @@ const TopSlider = ({ getContent, getCars }) => {
 
         <div className="relative print:hidden flex flex-col w-full xl:w-[1220px] ">
           <h2 className="relative px-6 pb-4 mt-4 text-3xl font-black tracking-wide text-left no-select text-black-dark">
-            Jetzt vergleichen!{" "}
+            Jetzt vergleichen!
           </h2>
           <div className="absolute z-20 w-10 p-1 bg-white rounded-full top-4 left-[300px] 2xl:hidden">
             <Image
@@ -42,11 +55,7 @@ const TopSlider = ({ getContent, getCars }) => {
             className="grid grid-flow-col gap-4 auto-cols-[minmax(293px,_1fr)] overflow-x-scroll scrollbar-hide pt-2 px-2 snap-x "
             ref={container}
           >
-            <TopSliderCard
-              displayedCars={getCars?.sort(
-                (a, b) => a.rating.value - b.rating.value
-              )}
-            />
+            <TopSliderCard getCars={sliderData} />
           </div>
         </div>
 

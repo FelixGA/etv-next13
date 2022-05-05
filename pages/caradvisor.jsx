@@ -6,12 +6,13 @@ import Image from "next/image";
 import data from "../data/stepsData";
 export default function caradvisor(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
+  const [getBrands, SetGetBrands] = useState(props.brands);
 
   return (
     <div className=" bg-blue-extralight">
       <Head page={props.page} />
 
-      <Funnel getCars={getCars} />
+      <Funnel getCars={getCars} getBrands={getBrands} />
       <div className="relative flex justify-between 2xl:h-36">
         {/* human image */}
         <div className="absolute bottom-0 right-0 hidden w-44 xl:w-64 2xl:w-96 2xl:right-6 2xl:block">
