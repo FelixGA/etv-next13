@@ -61,14 +61,7 @@ export async function getStaticProps(context) {
     (car) =>
       car.name.split(/[\s-]+/)[0] == context.params.brand.split(/[\s-]+/)[0]
   );
-
-  /*  get the vehicles from this brand*/
-  // vehicles = Object.entries(vehicles).map(([key, value]) => {
-  //   return value;
-  // });
-  // vehicles = vehicles
-  //   .filter((item, index) => item.category === vehicle.category)
-  //   .slice(0, 4);
+  let brands = await getContent("brands", context.locale);
 
   if (!brand) {
     return {
@@ -79,6 +72,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       brand,
+      brands,
       vehicles,
       sortedCars,
       params: context.params,
