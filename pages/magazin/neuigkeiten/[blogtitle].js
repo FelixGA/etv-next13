@@ -15,16 +15,13 @@ export default function Reviews(props) {
   const [relatedVehicles, SetRelatedVehicles] = useState(props.vehicles);
   const [getBlogContext, SetGetBlogContext] = useState(props.blog);
   const [getMdxContent, SetGetMdxContent] = useState(props.getTestReview);
-  const [getCarsReview, SetGetCarsReview] = useState(props.carsreview);
+
   const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
   useEffect(() => {
     setValueFromUseEffect(props.params.blogtitle);
     SetRelatedVehicles(props.vehicles);
     SetGetMdxContent(props.getTestReview);
-    SetGetCarsReview(props.carsreview);
-    SetGetCarsReviews(props.carsreviews);
   }, [props]);
-  66666, props.getTestReview;
   return (
     <>
       {" "}

@@ -22,7 +22,6 @@ export default function Reviews(props) {
     SetRelatedVehicles(props.vehicles);
     SetGetMdxContent(props.getTestReview);
   }, [props]);
-  66666, props.getTestReview;
   return (
     <>
       {" "}

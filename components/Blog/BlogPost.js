@@ -11,7 +11,7 @@ export default function BlogPost({ getBlogContext }) {
           {getBlogContext?.src && (
             <Image
               src={getBlogContext?.src}
-              alt={getBlogContext?.title}
+              alt={getBlogContext?.slug}
               width={195}
               height={50}
               layout="responsive"

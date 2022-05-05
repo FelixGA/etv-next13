@@ -10,9 +10,9 @@ export default function reviews(props) {
     props.blogs.filter((item) => item.category === "hersteller")
   );
 
-  useEffect(() => {
-    SetGetBlogs(props.blogs.filter((item) => item.category === "hersteller"));
-  }, [props]);
+  // useEffect(() => {
+  //   SetGetBlogs(props.blogs.filter((item) => item.category === "hersteller"));
+  // }, [props]);
   return (
     <>
       <Head page={props.page} />

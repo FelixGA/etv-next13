@@ -9,10 +9,8 @@ const TopSlider = ({ getBlogContext, getCars }) => {
   const container = useRef();
   // const style = { color: "black" };
 
-  console.log("context", getBlogContext);
-  console.log("cars", getCars);
   const [sliderData, setSliderData] = useState(
-    [getBlogContext].concat(getCars)
+    getBlogContext ? [getBlogContext].concat(getCars) : getCars
   );
 
   // useEffect(() => {
@@ -57,7 +55,7 @@ const TopSlider = ({ getBlogContext, getCars }) => {
             className="grid grid-flow-col gap-4 auto-cols-[minmax(293px,_1fr)] overflow-x-scroll scrollbar-hide pt-2 px-2 snap-x "
             ref={container}
           >
-            <TopSliderCard displayedCars={sliderData} />
+            <TopSliderCard getCars={sliderData} />
           </div>
         </div>
 
