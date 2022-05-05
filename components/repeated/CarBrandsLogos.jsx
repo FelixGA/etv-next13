@@ -1,4 +1,4 @@
-// import logos from "./logos.json";
+import logos from "./logos.json";
 import Image from "next/image";
 import Link from "next/link";
 
