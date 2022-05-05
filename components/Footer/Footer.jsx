@@ -44,10 +44,10 @@ const Footer = ({ blogs, brands }) => {
               </Link>
             </h3>
             <div className="pt-4 ">
-              <ul className="flex flex-row flex-wrap sm:pb-4 text-[#b1a7a7] items-center md:items-start ">
+              <ul className="flex  flex-col flex-wrap sm:pb-4 text-[#b1a7a7] items-center md:items-start justify-center">
                 {brands?.map((blog, index) => (
                   <li
-                    className="flex items-center justify-between pr-6 my-2"
+                    className="flex items-center justify-between my-2"
                     key={index}
                   >
                     <Link href={`/fahrzeuge/${blog.slug}`}>
