@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { useStore } from "../store";
+import navbarData from "../../data/navbarData";
 
 function MobileNav() {
   const router = useRouter();
@@ -20,135 +21,61 @@ function MobileNav() {
     });
   }, [router.pathname]);
   return (
-    <div className="flex flex-col items-center w-full h-full bg-gradient-to-b from-blue-darker to-blue-dark z-90">
-      <ul className="flex flex-col items-center flex-1 gap-14 justify-center text-[#928888] text-3xl pb-24 tracking-widest">
-        <li className="">
-          <Link href="/">
-            <a
-              className="text-[#ffffff]"
-              onClick={() => {
-                dispatch({
-                  type: "mobileNavActive",
-                  data: !state?.mobileNavActives,
-                });
-                dispatch({
-                  type: "mobileNavActive",
-                  data: false,
-                });
-                dispatch({
-                  type: "rangeLithium",
-                  data: [],
-                });
-                dispatch({
-                  type: "loadingWeight",
-                  data: [],
-                });
-                dispatch({
-                  type: "price",
-                  data: [],
-                });
-                dispatch({
-                  type: "maxSpeed",
-                  data: [],
-                });
-                dispatch({
-                  type: "category",
-                  data: [],
-                });
-                dispatch({
-                  type: "chargingTimeLithium",
-                  data: [],
-                });
-              }}
-            >
-              Start
-            </a>
-          </Link>
-        </li>
-
-        <li className="w-full text-center md:text-left">
-          <Link href="/comparePage">
-            <a
-              className=""
-              onClick={() => {
-                dispatch({
-                  type: "mobileNavActive",
-                  data: !state?.mobileNavActives,
-                });
-              }}
-            >
-              Transporter-
-              <br />
-              Vergleich
-            </a>
-          </Link>
-        </li>
-        <li className="">
-          <Link href="/caradvisor">
-            <a
-              onClick={() => {
-                dispatch({
-                  type: "mobileNavActive",
-                  data: !state?.mobileNavActives,
-                });
-                dispatch({
-                  type: "rangeLithium",
-                  data: [],
-                });
-                dispatch({
-                  type: "loadingWeight",
-                  data: [],
-                });
-                dispatch({
-                  type: "price",
-                  data: [],
-                });
-                dispatch({
-                  type: "maxSpeed",
-                  data: [],
-                });
-                dispatch({
-                  type: "category",
-                  data: [],
-                });
-                dispatch({
-                  type: "chargingTimeLithium",
-                  data: [],
-                });
-              }}
-            >
-              Kaufberater
-            </a>
-          </Link>
-        </li>
-        <li className="">
-          <Link href="/magazin">
-            <a
-              onClick={() => {
-                dispatch({
-                  type: "mobileNavActive",
-                  data: !state?.mobileNavActives,
-                });
-              }}
-            >
-              Magazin
-            </a>
-          </Link>
-        </li>
-        <li className="">
-          <Link href="/kontakt">
-            <a
-              onClick={() => {
-                dispatch({
-                  type: "mobileNavActive",
-                  data: !state?.mobileNavActives,
-                });
-              }}
-            >
-              Kontakt
-            </a>
-          </Link>
-        </li>
+    <div className="flex flex-col items-center w-full h-full pt-24 bg-gradient-to-b from-blue-darker to-blue-dark z-90">
+      <ul className="flex flex-col items-center gap-14 justify-center text-[#928888] text-3xl tracking-widest ">
+        {navbarData.map((item, index) => (
+          <li
+            className={
+              router.pathname == item.path
+                ? "transition duration-100 text-white font-bold text-2xl"
+                : "transition duration-100 font-bold w-full text-center md:text-left text-2xl"
+            } /*   */
+            key={index}
+          >
+            <Link href={item.path}>
+              <a
+                onClick={() => {
+                  setIsActive(false);
+                  if (index == 0) {
+                    {
+                      setIsActive(false);
+                      dispatch({
+                        type: "mobileNavActive",
+                        data: false,
+                      });
+                      dispatch({
+                        type: "rangeLithium",
+                        data: [],
+                      });
+                      dispatch({
+                        type: "loadingWeight",
+                        data: [],
+                      });
+                      dispatch({
+                        type: "price",
+                        data: [],
+                      });
+                      dispatch({
+                        type: "maxSpeed",
+                        data: [],
+                      });
+                      dispatch({
+                        type: "category",
+                        data: [],
+                      });
+                      dispatch({
+                        type: "chargingTimeLithium",
+                        data: [],
+                      });
+                    }
+                  }
+                }}
+              >
+                {item.title}
+              </a>
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

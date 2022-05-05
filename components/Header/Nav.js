@@ -13,7 +13,7 @@ const Nav = () => {
   return (
     <div className={router.pathname == "/caradvisor" ? "hidden" : "w-full"}>
       <nav className="">
-        <ul className="flex justify-around items-center flex-1 text-[#b1a7a7] text-lg xl:text-xl font-bold ">
+        <ul className="flex items-center justify-around flex-1 text-lg font-bold text-grey-nav xl:text-xl ">
           {navbarData.map((item, index) => (
             <li
               className={

@@ -60,6 +60,7 @@ module.exports = {
           darkest: "#212121",
           superdark: "#030F1C",
           border: "#D0DDEA",
+          nav: "#b1a7a7",
         },
         yellow: {
           lightest: "",
