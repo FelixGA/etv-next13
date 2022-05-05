@@ -7,7 +7,7 @@ import { MDXRemote } from "next-mdx-remote";
 const Articles = ({ carItem, getTestReview, getBlogContext }) => {
   return (
     <>
-      <div className="relative flex flex-col p-4 border-4 bg-grey-lighter lg:flex-row 2xl:px-44">
+      <div className="relative flex flex-col p-4 border-4 print:hidden bg-grey-lighter lg:flex-row 2xl:px-44">
         <div className="relative w-full m-auto lg:w-1/3">
           <Image
             src={carItem?.src}
@@ -55,7 +55,7 @@ const Articles = ({ carItem, getTestReview, getBlogContext }) => {
       </div>
       {/* other articles section */}
       {/* First Article */}{" "}
-      <div className="flex flex-col w-full p-4 bg-white lg:flex-row-reverse lg:p-18">
+      <div className="flex flex-col w-full p-4 bg-white lg:flex-row-reverse lg:p-18 print:hidden">
         {getBlogContext?.src && (
           <div className="relative w-full m-auto lg:w-1/3 print:hidden">
             <Link href={`/magazin/${getBlogContext?.slug}`} passHref>
