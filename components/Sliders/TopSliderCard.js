@@ -86,7 +86,7 @@ const TopSliderCard = (props) => {
                   }
                 >
                   <a className="pr-4 text-xs text-center visited:text-blue-darker text-blue-darker">
-                    Mehr ehrfahren
+                    Jetzt vergleichen
                   </a>
                 </Link>
 

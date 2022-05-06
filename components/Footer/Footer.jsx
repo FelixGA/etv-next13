@@ -100,7 +100,7 @@ const Footer = ({ blogs, brands }) => {
         </nav>
         {/* logos and media
          */}
-        <div className="flex flex-col items-center px-4 pt-4 lg:pl-0 sm:items-start lg:w-1/4 lg:pt-8 md:px-8">
+        <div className="flex flex-col items-center px-4 pt-4 lg:pl-0 xl:pl-4 sm:items-start lg:w-1/4 lg:pt-8 md:px-8">
           <div className="flex flex-row items-center justify-center w-full sm:justify-start">
             <div className="w-1/5 md:w-[9%] lg:w-[33%] xl:w-[20%] text-white ">
               <Link href={"/"}>
