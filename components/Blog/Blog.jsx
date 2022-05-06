@@ -15,7 +15,7 @@ export default function Blog({ getBlogs }) {
             .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
             .map((post, index) => (
               <Link
-                href={`magazin/${post.category}/${post.slug}`}
+                href={`/magazin/${post.category}/${post.slug}`}
                 passHref
                 key={index}
               >
