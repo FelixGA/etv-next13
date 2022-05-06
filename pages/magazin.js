@@ -25,8 +25,9 @@ export default function magazin(props) {
       <h1 className="px-4 pt-8 pb-2 text-4xl font-bold text-center text-blue-dark">
         Magazin
       </h1>
-
-      <Blog getBlogs={getBlogs} />
+      <div>
+        <Blog getBlogs={getBlogs} />
+      </div>
     </div>
   );
 }
