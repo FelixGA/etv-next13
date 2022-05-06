@@ -32,7 +32,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
 
   return (
     <div className="flex flex-col flex-wrap items-center justify-center px-10 pt-6 pb-12 newsletter-container bg-grey-lightest">
-      <div className="flex flex-col justify-center px-4 py-4 xl:w-[1000px] custom-text text-grey-darker">
+      <div className="flex flex-col justify-center sm:px-4 py-4 xl:w-[1000px] custom-text text-grey-darker">
         <MDXRemote {...getMarkdownContext.newsletter} />
       </div>
       <div>
@@ -60,7 +60,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
               required: true,
               pattern: emailRegex,
             })}
-            className="w-48 pl-2 text-lg rounded-sm h-14 sm:w-full "
+            className="pl-2 text-lg rounded-sm w-52 h-14 sm:w-full "
           />
           <p className="text-red-500">
             {errors.emailInput && "Email ist erforderlich"}
