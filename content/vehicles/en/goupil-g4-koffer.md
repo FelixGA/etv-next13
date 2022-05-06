@@ -1,6 +1,8 @@
 ---
 title: Goupil G4 Koffer
 name: goupil-g4-koffer
+relatedBlogs: beispiel  bitte nicht ändern
+relatedReviews: goupil-g4-testbericht-von-elektrotransporter-vergleich
 description: Der Goupil G4 ist ein Elektro-Kleintransporter der Kategorie L7e
   mit Traktionsbatterie oder N1 mit einer Lithiumbatterie. Die praxiserprobte
   Reichweite liegt zwischen 35 bis 90 Kilometer (je nach Akku). Die maximale
