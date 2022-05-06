@@ -15,15 +15,17 @@ export default function magazin(props) {
   return (
     <div>
       <Head page={props.page} />
+
       <div className="hidden lg:block">
         <BlogHeader getBlogs={props.blogs} />
       </div>
-      <div className="lg:hidden">
-        <LinkTile getBlogs={getBlogs} />
-      </div>
-      <h1 className="px-4 pt-8 pb-2 text-4xl font-bold text-center text-blue-dark">
+      <h1 className="px-4 pt-8 pb-8 text-4xl font-bold text-center text-blue-dark">
         Magazin
       </h1>
+      <div className=" lg:hidden">
+        <LinkTile getBlogs={getBlogs} />
+      </div>
+
       <div>
         <Blog getBlogs={getBlogs} />
       </div>
