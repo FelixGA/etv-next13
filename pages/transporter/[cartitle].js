@@ -24,6 +24,7 @@ export default function Details(props) {
   const [getBlogContext, SetGetBlogContext] = useState(props.relatedBlog);
   /* to make the Page change after clicking next/link */
   const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
+  const [getBlogs, SetGetBlogs] = useState(props.blogs);
   useEffect(() => {
     setValueFromUseEffect(props.params.cartitle);
     SetGetCars(props.vehicles);
@@ -31,6 +32,7 @@ export default function Details(props) {
     SetGetBlogContext(props.relatedBlog);
     SetTestReview(props.getTestReview);
     SetCarsReview(props.carsreview);
+    SetGetBlogs(props.blogs);
   }, [props]);
 
   return (

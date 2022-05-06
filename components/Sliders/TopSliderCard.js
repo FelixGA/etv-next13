@@ -6,7 +6,7 @@ const TopSliderCard = (props) => {
   return props?.getCars
     ? props?.getCars?.map((sliderItem, index) => (
         <div
-          className="relative pb-4 border rounded-sm shadow-dropdown snap-center lg:snap-start "
+          className="relative pb-4 border rounded-sm shadow-dropdown snap-center lg:snap-start h-[470px]"
           key={index}
         >
           <div className="">
@@ -47,7 +47,13 @@ const TopSliderCard = (props) => {
                 </a>
               </Link>
               <div className="slider__item-text">
-                <p className="px-2 text-sm text-center font-Inter text-blue-lighter line-clamp-2">
+                <p
+                  className={
+                    !sliderItem?.rating
+                      ? "px-2 text-sm text-center font-Inter text-blue-lighter line-clamp-5"
+                      : "px-2 text-sm text-center font-Inter text-blue-lighter line-clamp-2"
+                  }
+                >
                   {sliderItem?.description}
                 </p>
               </div>
@@ -77,7 +83,7 @@ const TopSliderCard = (props) => {
                   </div>
                 </div>
               ) : null}
-              <div className="flex items-center justify-center w-full mt-8 text-center ">
+              <div className="absolute flex items-center justify-center w-full mt-8 text-center bottom-6 ">
                 <Link
                   href={
                     sliderItem?.name
@@ -86,7 +92,7 @@ const TopSliderCard = (props) => {
                   }
                 >
                   <a className="pr-4 text-xs text-center visited:text-blue-darker text-blue-darker">
-                    Jetzt vergleichen
+                    {sliderItem?.name ? "Jetzt vergleichen" : "Mehr erfahren"}
                   </a>
                 </Link>
 

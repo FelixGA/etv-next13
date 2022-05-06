@@ -13,11 +13,9 @@ const TopSlider = ({ getBlogContext, getCars }) => {
     getBlogContext ? [getBlogContext].concat(getCars) : getCars
   );
 
-  // useEffect(() => {
-  //   setSliderData([
-  //     ...getCars.filter((car) => car.slug !== getBlogContext.slug),
-  //   ]);
-  // }, [getCars]);
+  useEffect(() => {
+    setSliderData(getBlogContext ? [getBlogContext].concat(getCars) : getCars);
+  }, [getCars]);
   // const style = { color: "black" };
   return (
     <div className="relative pb-8">

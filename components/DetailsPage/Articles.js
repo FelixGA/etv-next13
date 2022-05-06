@@ -7,7 +7,7 @@ import { MDXRemote } from "next-mdx-remote";
 const Articles = ({ carItem, getTestReview, getBlogContext }) => {
   return (
     <>
-      <div className="relative flex flex-col p-4 border-4 print:hidden bg-grey-lighter lg:flex-row 2xl:px-44">
+      <div className="relative flex flex-col p-4 print:hidden bg-grey-lighter lg:flex-row 2xl:px-44">
         <div className="relative w-full m-auto lg:w-1/3">
           <Image
             src={carItem?.src}
@@ -23,14 +23,14 @@ const Articles = ({ carItem, getTestReview, getBlogContext }) => {
           </div>
         </div>
         <div className="flex flex-col flex-wrap lg:w-2/3 lg:px-6">
-          <h3 className="w-full py-4 text-2xl font-bold text-black-darkest ">
+          <h3 className="w-full py-4 mt-4 text-2xl font-bold text-black-darkest">
             Testbericht von {carItem.title}
           </h3>
           <div className="">
             {getTestReview ? (
               <div>
-                {getTestReview.map((review) => (
-                  <div key={review.id}>
+                {getTestReview.map((review, index) => (
+                  <div key={index} className="mb-8">
                     <MDXRemote {...review} />
                   </div>
                 ))}
@@ -55,11 +55,11 @@ const Articles = ({ carItem, getTestReview, getBlogContext }) => {
       </div>
       {/* other articles section */}
       {/* First Article */}{" "}
-      <div className="flex flex-col w-full p-4 bg-white lg:flex-row-reverse lg:p-18 print:hidden">
+      <div className="flex flex-col w-full p-4 mt-8 mb-4 bg-white lg:flex-row-reverse 2xl:px-44 print:hidden">
         {getBlogContext?.src && (
-          <div className="relative w-full m-auto lg:w-1/3 print:hidden">
+          <div className="relative w-full m-auto mt-4 mr-4 border-t lg:w-1/2 print:hidden lg:rounded-r-md">
             <Link href={`/magazin/${getBlogContext?.slug}`} passHref>
-              <a target="_blank">
+              <a target="_blank ">
                 <Image
                   src={getBlogContext?.src}
                   alt={getBlogContext?.title}
@@ -67,14 +67,14 @@ const Articles = ({ carItem, getTestReview, getBlogContext }) => {
                   height={140}
                   layout="responsive"
                   objectFit="cover"
-                  className="rounded-l-lg"
+                  className=" lg:rounded-r-md"
                 />
               </a>
             </Link>
           </div>
         )}
-        <div className="flex flex-col flex-wrap lg:w-2/3 lg:px-6">
-          <h3 className="w-full py-4 text-2xl font-bold text-black-darkest">
+        <div className="flex flex-col flex-wrap pl-4 lg:w-1/2">
+          <h3 className="w-full pt-2 pb-4 text-2xl font-bold text-black-darkest">
             <Link
               href={`/magazin/${getBlogContext?.category}/${getBlogContext?.slug}`}
             >
@@ -82,9 +82,9 @@ const Articles = ({ carItem, getTestReview, getBlogContext }) => {
             </Link>
           </h3>
           {getBlogContext?.title ? (
-            <p>
+            <div className="pr-8 ">
               <MDXRemote {...getBlogContext.source} />
-            </p>
+            </div>
           ) : null}
         </div>
       </div>
