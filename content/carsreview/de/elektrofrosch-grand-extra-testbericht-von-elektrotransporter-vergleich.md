@@ -1,7 +1,7 @@
 ---
 title: Elektrofrosch Grand Extra
 slug: elektrofrosch-grand-extra-testbericht-von-elektrotransporter-vergleich
-relatedCars: ari-345-koffer
+relatedCars: elektrofrosch-grand-extra
 youtubeLink: https://www.youtube.com/watch?v=uI7APkrKDuE
 category: Pritsche
 publishedAt: 05/06/2022
@@ -46,7 +46,7 @@ content:
     image: /images/ef-grand-extra32.jpg
     title: Bedienung & Fahrbetrieb
   - content: >-
-      ### Umwelt (1/5)
+      ### Umwelt (3/5)
 
 
       Zum Verbrauch macht der Hersteller leider keine Angaben. Laut Elektrofrosch kosten 100 Kilometer Fahrt mit dem Grand Extra 2€. Bei angenommenen 30 Cent pro Kilowattstunde liegt der Verbrauch bei schätzungsweise 6,6 kWh.
@@ -66,7 +66,7 @@ content:
       Das Fahrzeug ist zwar wirklich günstig, aber auch sehr simpel ausgestattet. Leider macht der Händler kaum Angaben zu technischen Daten des Grand Extra. Das Lastentrike  eignet sich wohl am besten für den Einsatz auf Privatgelände oder auf dem Land. Möglich Einsatzfelder des Fahrzeugs sind Landwirtschafts-, Bau- oder Handwerksbetriebe. Für Lieferdienste im urbanen Raum eignet sich die wohl Pritsche weniger.
 
 
-      #### Gesamtbewertung: 2
+      #### Gesamtbewertung: 2,4
     title: Fazit
     image: ""
 ---

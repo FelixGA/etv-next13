@@ -1,7 +1,7 @@
 ---
 title: Elektrofrosch Grand Extra
 slug: elektrofrosch-grand-extra-testbericht-von-elektrotransporter-vergleich
-relatedCars: ari-345-koffer
+relatedCars: elektrofrosch-grand-extra
 youtubeLink: https://www.youtube.com/watch?v=uI7APkrKDuE
 publishedAt: 05/06/2022
 description: "Der Elektrofrosch Grand Extra ist ein Lastentrike der Kategorie
