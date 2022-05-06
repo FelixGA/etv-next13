@@ -14,11 +14,12 @@ export default function Blog({ getBlogs }) {
           {getBlogs
             .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
             .map((post, index) => (
-              <Link href={`magazin/${post.category}/${post.slug}`} passHref>
-                <div
-                  className="relative flex flex-col items-center my-10 overflow-hidden transition delay-100 bg-white shadow-xl sm:flex-row hover:scale-105 hover:z-10"
-                  key={index}
-                >
+              <Link
+                href={`magazin/${post.category}/${post.slug}`}
+                passHref
+                key={index}
+              >
+                <div className="relative flex flex-col items-center my-10 overflow-hidden transition delay-100 bg-white shadow-xl sm:flex-row hover:scale-105 hover:z-10">
                   <div className="w-[350px] h-[250px]">
                     {post.src && (
                       <a className="relative w-full">

@@ -11,7 +11,7 @@ export default function BlogPost({ getBlogContext }) {
           {getBlogContext?.src && (
             <Image
               src={getBlogContext?.src}
-              alt={getBlogContext?.slug}
+              alt={getBlogContext?.title}
               width={195}
               height={50}
               layout="responsive"
@@ -20,7 +20,7 @@ export default function BlogPost({ getBlogContext }) {
             />
           )}
         </div>
-        <p className="text-blue-dark">{getBlogContext.publishedAt}</p>
+        <div className="text-blue-dark">{getBlogContext.publishedAt}</div>
         <h2 className="w-1/2 py-8 text-4xl font-bold text-blue-dark">
           {getBlogContext?.title}
         </h2>

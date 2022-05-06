@@ -6,7 +6,7 @@ const TopSliderCard = (props) => {
   return props?.getCars
     ? props?.getCars?.map((sliderItem, index) => (
         <div
-          className="relative pb-4 border rounded-sm shadow-dropdown snap-center lg:snap-start"
+          className="relative pb-4 border rounded-sm shadow-dropdown snap-center lg:snap-start "
           key={index}
         >
           <div className="">

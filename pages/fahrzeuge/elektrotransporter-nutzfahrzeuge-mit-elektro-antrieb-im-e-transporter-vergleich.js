@@ -43,7 +43,7 @@ export default function fahrzeuge(props) {
           />
         </div>
         <div className="px-4 2xl:px-48">
-          <p className="py-4 text-xl">{getContent.description}</p>
+          <div className="py-4 text-xl">{getContent.description}</div>
         </div>
         <div className="2xl:px-48">
           <FahrzeugeResultList
