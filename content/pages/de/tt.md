@@ -9,7 +9,7 @@ content:
     details: ✔ unabhängig ✔ schnell ✔ immer aktuell
   - name: compareBox
     markdown: Reichweite, Preis, Nutzlast
-    details: Jetzt vergleichen!
+    details: gleichen!
   - name: eAutoAdvisor
     markdown: >-
       ## Elektrotransporter- Kaufberater: Ihr Navi auf dem Weg zum perfekten
@@ -32,4 +32,5 @@ content:
       Wir versenden in regelmäßigen Abständen einen Newsletter mit aktuellen Themen und Neuigkeiten rund um Elektrotransporter. Natürlich verschicken wir keine Spam-Mails und  Sie können sich jederzeit von unserem Newsletter abmelden!
     details: Beliebte Kategorien
 ---
+
 .

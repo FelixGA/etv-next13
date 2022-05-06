@@ -86,7 +86,7 @@ const TopSliderCard = (props) => {
                   }
                 >
                   <a className="pr-4 text-xs text-center visited:text-blue-darker text-blue-darker">
-                    Mehr ehrfahren
+                    {sliderItem?.name ? "Jetzt vergleichen" : "Mehr erfahren"}
                   </a>
                 </Link>
 
