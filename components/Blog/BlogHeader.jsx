@@ -28,9 +28,9 @@ export default function BlogHeader({ getBlogs }) {
                   priority
                 />
 
-                <div className="absolute bottom-0 px-2 bg-blue-dark bg-opacity-80 w-full text-white flex xl:min-h-[6em] flex-col justify-between">
+                <div className="absolute bottom-0 pl-2 pt-1 bg-blue-dark bg-opacity-80 w-full text-white flex xl:min-h-[6em] flex-col justify-between">
                   {post.title}
-                  <p className="text-white ">
+                  <p className="pb-1 text-white">
                     {categories[index]}
                     {new Date(post.publishedAt).toLocaleDateString(options)}
                   </p>
