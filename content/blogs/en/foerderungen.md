@@ -172,7 +172,7 @@ content: >-
 
   4,4
 youtubeLink: ""
-category: foerderung
+category: subsidies
 description: Förderungen für Elektrotransporter Text Text Text Text Text Text
   Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
   Text Text Text

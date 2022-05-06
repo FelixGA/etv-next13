@@ -6,11 +6,11 @@ import footerWords from "../../data/footerData";
 import { useState, useEffect } from "react";
 const Footer = ({ blogs, brands }) => {
   const magazineList = [
-    { category: "Hersteller", slug: "hersteller" },
-    { category: "Neuigkeiten", slug: "neuigkeiten" },
-    { category: "Förderung", slug: "foerderung" },
+    { category: "Hersteller", slug: "manufacturer" },
+    { category: "Neuigkeiten", slug: "news" },
+    { category: "Förderung", slug: "subsidies" },
 
-    { category: "Häufig gestellte Fragen", slug: "haeufiggestelltefragen" },
+    { category: "Häufig gestellte Fragen", slug: "frequentlyaskedquestions" },
   ];
 
   useEffect(() => {}, [brands, blogs]);
@@ -27,7 +27,7 @@ const Footer = ({ blogs, brands }) => {
       category: "rechtlichesundkontakt",
     },
     {
-      slug: "allgemeineGeschaeftsbedingungen",
+      slug: "termsofservice",
       title: "Allgemeine Geschäftsbedingungen",
       category: "rechtlichesundkontakt",
     },

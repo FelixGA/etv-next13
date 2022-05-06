@@ -255,7 +255,7 @@ collections:
         i18n: duplicate
         required: true
         options:
-          ["neuigkeiten", "foerderung", "hersteller", "häufig gestellte Fragen"]
+          ["news", "subsidies", "manufacturer", "frequently asked questions"]
       # - label: "post related vehicles"
       #   name: "vehicle"
       #   widget: "relation"

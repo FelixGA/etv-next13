@@ -148,7 +148,7 @@ content: >-
 
   4,4
 youtubeLink: ""
-category: foerderung
+category: subsidies
 description: Es gibt verschiedene Förderungen für Elektrotransporter, welche den
   Einstieg in die E-Mobilität noch lohnenswerter machen.
 ---
