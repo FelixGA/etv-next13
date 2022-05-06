@@ -2,6 +2,8 @@
 title: Elektrofrosch Grand Extra
 name: elektrofrosch-grand-extra
 price: 3637
+relatedBlogs:
+  content: ""
 relatedReviews: elektrofrosch-grand-extra-testbericht-von-elektrotransporter-vergleich
 description: Der Elektrofrosch Grand Extra ist ein Lastentrike der Kategorie L2e
   mit einer maximalen Nutzlast von 370 kg und einer Höchstgeschwindigkeit von 45
