@@ -20,7 +20,7 @@ import Router from "next/router";
 import { useRouter } from "next/router";
 import CarBrandsLogos from "../repeated/CarBrandsLogos";
 
-export default function Funnel({ getContent }) {
+export default function Funnel({ getContent, getBrands }) {
   const router = useRouter();
   const filtersData = [
     {
@@ -197,7 +197,7 @@ export default function Funnel({ getContent }) {
               Wir suchen das passende Fahrzeug für Sie.
             </h3>
             <div className="w-[90%] lg:w-full lg:scale-125 m-auto ">
-              <CarBrandsLogos />
+              <CarBrandsLogos getBrands={getBrands} />
             </div>
             <div className="flex justify-center ">
               <Image

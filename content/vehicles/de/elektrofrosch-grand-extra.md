@@ -1,23 +1,23 @@
 ---
-title: Ökoflitzer Paxster
-name: ökoflitzer-paxster
-price: 17839
-relatedBlogs: nur beispiel
-relatedReviews: oekoflitzer-paxster-testbericht-von-elektrotransporter-vergleich
-description: Der Ökoflitzer Paxster ist ein kompaktes elektrisches Nutzfahrzeug
-  der Klasse L6e, welches speziell für den Lieferverkehr entwickelt wurde. Das
-  Fahrzeug schafft Reichweiten von 40-100 Kilometern bei einer
-  Höchstgeschwindigkeit von 45 km/h.
-src: /images/paxter-bild.jpg
-category: Koffer
-typeClass: L6E
+title: Elektrofrosch Grand Extra
+name: elektrofrosch-grand-extra
+price: 3637
+relatedBlogs:
+  content: ""
+relatedReviews: elektrofrosch-grand-extra-testbericht-von-elektrotransporter-vergleich
+description: Der Elektrofrosch Grand Extra ist ein Lastentrike der Kategorie L2e
+  mit einer maximalen Nutzlast von 370 kg und einer Höchstgeschwindigkeit von 45
+  km/h.
+src: /images/ef-grand-extra31.jpg
+category: Pritsche
+typeClass: L2E
 loadingWeight:
   key: Nutzlast
-  value: 200
+  value: 370
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 421
+  value: 272
   baseUnit: kg
 maxSpeed:
   key: km/h
@@ -25,125 +25,125 @@ maxSpeed:
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
+  value: 50
+  baseUnit: km
+  maxValue: 68
+rangeLithium:
+  key: Reichweite Lithium Akku
   value: 0
   baseUnit: "-"
   maxValue: 0
-rangeLithium:
-  key: Reichweite Lithium Akku
-  value: 60
-  baseUnit: km
-  maxValue: 100
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
-  value: 9
+  value: 7
   baseUnit: h
 chargingTimeLithium:
-  key: Ladezeit Typ2-Kabel
+  key: Ladezeit Typ2 Ladekabel
   value: 0
-  baseUnit: "-"
+  baseUnit: h
 chargingTimeFast:
-  key: Schnellladezeit
+  key: Schnellladung
   value: 0
-  baseUnit: "-"
+  baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: "0"
+  value: 0
   baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: 9.2
-  baseUnit: kWh
+  value: "0"
+  baseUnit: "-"
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "6"
+  value: 6,6
   baseUnit: kwh
 power:
   key: Leistung
-  value: "4"
-  baseUnit: kW
+  value: min-1,5/max-4,2
+  baseUnit: kw
 seats:
   key: Sitzplätze
-  value: 1
+  value: 2
 rating:
-  key: Gut
-  value: 3.2
+  key: ungenügend
+  value: 2.4
 guarantee:
   key: Garantie Fahrzeug
   value: 0
   baseUnit: "-"
 availability:
   key: Verfügbarkeit
-  value: 10-14 Wochen
+  value: 3-6 Monate
 subsidies:
   key: Förderhöhe
   value: 0
   baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
-  value: 5
-  baseUnit: Jahre
+  value: 0
+  baseUnit: "-"
 loadingHeight:
   key: Ladehöhe
-  value: 720
-  baseUnit: mm
+  value: 0
+  baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 0,63
-  baseUnit: m3
+  value: "0"
+  baseUnit: "-"
 loadingArea:
   key: Ladefläche
-  value: 0,6
-  baseUnit: m2
+  value: "0"
+  baseUnit: "-"
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1180
+  valuewidth: 1070
   baseUnit: mm
-  valuelength: 2320
-  valueheight: 1860
-  valuewheelbase: 1530
+  valuelength: 2970
+  valueheight: 1690
+  valuewheelbase: 2000
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1045
+  valueheight: 0
   width: Breite
-  valuewidth: 975
-  valuelength: 620
+  valuewidth: 0
+  valuelength: 0
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "2320"
+  value: "2970"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1180"
+  value: "1070"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1860"
+  value: "1690"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "620"
-  baseUnit: mm
+  value: "0"
+  baseUnit: "-"
 loadingVolumeWidth:
   key: Breite
-  value: "975"
-  baseUnit: mm
+  value: "0"
+  baseUnit: "-"
 loadingVolumeHeight:
   key: Höhe
-  value: "1045"
-  baseUnit: mm
+  value: "0"
+  baseUnit: "-"
 wheelbase:
   key: Radstand
-  value: "1530"
-  baseUnit: mm
+  value: "0"
+  baseUnit: "-"
 ---
-Der Ökoflitzer Paxster ist ein kompaktes elektrisches Nutzfahrzeug der Klasse L6e, welches speziell für den Lieferverkehr entwickelt wurde.
+Der Elektrofrosch Grand Extra ist ein Lastentrike der Kategorie L2e mit einer maximalen Nutzlast von 370 kg und einer Höchstgeschwindigkeit von 45 km/h.

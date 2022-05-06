@@ -50,7 +50,7 @@ export default function Details(props) {
         getCarsReview={getCarsReview}
       />
       {/* slider  */}
-      <TopSlider getCars={getCars} />
+      <TopSlider getCars={getCars} getBlogContext={getBlogContext} />
       {/*sticky popup  */}
       <PrintPopUp carItem={carItem} />
     </>
@@ -71,6 +71,7 @@ export async function getStaticProps(context) {
   });
   vehicles = vehicles
     .filter((item, index) => item.category === vehicle.category)
+    .filter((item, index) => item.name !== context.params.cartitle)
     .slice(0, 4);
   let brands = await getContent("brands", context.locale);
 

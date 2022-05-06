@@ -1,10 +1,7 @@
 ---
-publishedAt: 03/10/2022
+publishedAt: 03/01/2022
 src: /images/whatsapp-image-2022-04-27-at-22.26.12.jpeg
-contentText:
-  title: ""
-  content: ""
-  image: ""
+
 contentHeading:
   title: ""
   content: ""
@@ -14,29 +11,7 @@ slug: foerderungen
 vehicle:
   key: gut
   value: 4,0
-contentText2:
-  content: ""
-  title: ""
-  image: ""
-contentText3:
-  content: ""
-  title: ""
-  image: ""
-contentText4:
-  title: ""
-  content: ""
-  image: ""
-contentText5:
-  title: ""
-  content: ""
-  image: ""
-contentText6:
-  title: ""
-  content: ""
-  image: ""
-contentText7:
-  title: ""
-  content: ""
+
   image: /images/Arrow-right-512.png
   totalscore: ""
 title: "Lohnenswert: Diese Förderungen für Elektrotransporter machen den

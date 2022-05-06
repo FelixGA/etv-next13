@@ -5,7 +5,6 @@ import Sidebar from "../Blog/SideBar";
 
 export default function Blog({ getBlogs }) {
   const router = useRouter();
-  // console.log(getBlogs, "getBlogs[3]");
 
   return (
     <>
@@ -25,7 +24,7 @@ export default function Blog({ getBlogs }) {
                       <a className="relative w-full">
                         <Image
                           src={post.src}
-                          alt={post.title}
+                          alt={post.slug}
                           width={300}
                           height={214}
                           objectFit="cover"
@@ -43,10 +42,7 @@ export default function Blog({ getBlogs }) {
                       {post.title}
                     </p>
                     <p className="hidden md:line-clamp-4 md:block">
-                      {/* {post?.contentHeading?.content
-                    ? post.contentHeading.content
-                    : post.description} */}
-                      {post.description}{" "}
+                      {post.description}
                     </p>
                   </div>
                 </div>

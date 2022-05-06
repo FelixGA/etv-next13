@@ -1,44 +1,43 @@
 ---
-title: Ökoflitzer Paxster
-name: ökoflitzer-paxster
-price: 17839
-relatedBlogs: nur beispiel
-relatedReviews: oekoflitzer-paxster-testbericht-von-elektrotransporter-vergleich
-description: Der Ökoflitzer Paxster ist ein kompaktes elektrisches Nutzfahrzeug
-  der Klasse L6e, welches speziell für den Lieferverkehr entwickelt wurde. Das
-  Fahrzeug schafft Reichweiten von 40-100 Kilometern bei einer
-  Höchstgeschwindigkeit von 45 km/h.
-src: /images/paxter-bild.jpg
-category: Koffer
-typeClass: L6E
+title: Goupil G4 Pritsche
+name: goupil-g4-pritsche
+price: 23630
+relatedReviews: goupil-g4-testbericht-von-elektrotransporter-vergleich
+description: Der Goupil G4 ist ein Elektro-Kleintransporter der Kategorie L7e
+  mit Traktionsbatterie oder N1 mit einer Lithiumbatterie. Die praxiserprobte
+  Reichweite liegt zwischen 35 bis 90 Kilometer (je nach Akku). Die maximale
+  Zuladung des Fahrzeugs liegt bei 1200 Kilogramm und die maximale
+  Höchstgeschwindigkeit bei 50 km/h. Das Fahrzeug bietet Platz für 2 Personen.
+src: /images/g4-2100x2400-1-1344x1536.jpeg
+category: Pritsche
 loadingWeight:
   key: Nutzlast
-  value: 200
+  value: 1200
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 421
+  value: 582
   baseUnit: kg
 maxSpeed:
   key: km/h
-  value: 45
+  value: 50
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
-  value: 0
-  baseUnit: "-"
-  maxValue: 0
+  value: 50
+  baseUnit: km
+  maxValue: 85
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 60
+  value: 80
   baseUnit: km
-  maxValue: 100
+  maxValue: 120
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
-  value: 9
+  value: 6
   baseUnit: h
 chargingTimeLithium:
-  key: Ladezeit Typ2-Kabel
+  key: Ladezeit Typ2 Ladekabel
   value: 0
   baseUnit: "-"
 chargingTimeFast:
@@ -47,36 +46,36 @@ chargingTimeFast:
   baseUnit: "-"
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: "0"
-  baseUnit: "-"
+  value: 8.6
+  baseUnit: kWh
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: 9.2
+  value: 9
   baseUnit: kWh
 batteryIncluded:
-  value: ja
+  value: keine Angabe
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "6"
-  baseUnit: kwh
+  value: "8"
+  baseUnit: kWh
 power:
   key: Leistung
-  value: "4"
+  value: "10"
   baseUnit: kW
 seats:
   key: Sitzplätze
-  value: 1
+  value: 2
 rating:
   key: Gut
   value: 3.2
 guarantee:
   key: Garantie Fahrzeug
-  value: 0
-  baseUnit: "-"
+  value: 2
+  baseUnit: Jahre
 availability:
   key: Verfügbarkeit
-  value: 10-14 Wochen
+  value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
@@ -87,63 +86,63 @@ batteryGuarantee:
   baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
-  value: 720
+  value: 697
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 0,63
+  value: 0,61
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 0,6
+  value: 2,60
   baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1180
+  valuewidth: 1305
   baseUnit: mm
-  valuelength: 2320
-  valueheight: 1860
-  valuewheelbase: 1530
+  valuelength: 3582
+  valueheight: 1893
+  valuewheelbase: 2022
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1045
+  valueheight: 235
   width: Breite
-  valuewidth: 975
-  valuelength: 620
+  valuewidth: 1215
+  valuelength: 2140
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "2320"
+  value: "3582"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1180"
+  value: "1305"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1860"
+  value: "1893"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "620"
+  value: "2140"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "975"
+  value: "1215"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "1045"
+  value: "235"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "1530"
+  value: "2022"
   baseUnit: mm
 ---
-Der Ökoflitzer Paxster ist ein kompaktes elektrisches Nutzfahrzeug der Klasse L6e, welches speziell für den Lieferverkehr entwickelt wurde.
+Der Goupil G4 ist ein Elektro-Kleintransporter der Kategorie L7e mit Traktionsbatterie oder N1 mit einer Lithiumbatterie.
