@@ -233,6 +233,8 @@ Der Antrag auf die „Umweltprämie“ kann direkt nach erfolgter Zulassung übe
 
 ### Übersicht benötigter Unterlagen:
 
+<br />
+
 **Bei Kauf:**
 
 * Rechnung
@@ -242,7 +244,7 @@ Der Antrag auf die „Umweltprämie“ kann direkt nach erfolgter Zulassung übe
 
 **Bei Leasing:**
 
-*  Leasingvertrag 
+* Leasingvertrag 
 * Zulassungsbescheinigung Teil II
 * Kalkulation der Leasingraten
 * verbindliche Bestellung
