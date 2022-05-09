@@ -302,7 +302,7 @@ Erfreulicherweise gibt es zudem einige Kommunen, die in Sachen E-Mobilität und 
 
 <br />
 
-So haben zum Beispiel die Städte München, Limburg und Regensburg eigene Förderprogramme entwickelt, welche den Kauf eines Elektrofahrzeugs – vom elektrischen Lastenbike bis hin zum großen E-Transporter - finanziell unterstützen.
+So haben zum Beispiel die Städte **München**, **Limburg** und **Regensburg** eigene Förderprogramme entwickelt, welche den Kauf eines Elektrofahrzeugs – vom elektrischen Lastenbike bis hin zum großen E-Transporter - finanziell unterstützen.
 
 <br />
 

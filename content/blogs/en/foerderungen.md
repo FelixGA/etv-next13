@@ -196,7 +196,7 @@ Diese „Umweltprämie“, auch bekannt als Umweltbonus oder Elektroprämie, wir
 
 <br />
 
- Ob und in welcher Höhe die Umweltprämie ausgezahlt wird, ist abhängig vom:
+Ob und in welcher Höhe die Umweltprämie ausgezahlt wird, ist abhängig vom:
 
 <br />
 
@@ -260,6 +260,8 @@ Der Antrag auf die „Umweltprämie“ kann direkt nach erfolgter Zulassung übe
 
 ### Übersicht benötigter Unterlagen:
 
+<br />
+
 **Bei Kauf:**
 
 * Rechnung
@@ -269,7 +271,7 @@ Der Antrag auf die „Umweltprämie“ kann direkt nach erfolgter Zulassung übe
 
 **Bei Leasing:**
 
-*  Leasingvertrag 
+* Leasingvertrag 
 * Zulassungsbescheinigung Teil II
 * Kalkulation der Leasingraten
 * verbindliche Bestellung
@@ -327,7 +329,7 @@ Erfreulicherweise gibt es zudem einige Kommunen, die in Sachen E-Mobilität und 
 
 <br />
 
-So haben zum Beispiel die Städte München, Limburg und Regensburg eigene Förderprogramme entwickelt, welche den Kauf eines Elektrofahrzeugs – vom elektrischen Lastenbike bis hin zum großen E-Transporter - finanziell unterstützen.
+So haben zum Beispiel die Städte **München**, **Limburg** und **Regensburg** eigene Förderprogramme entwickelt, welche den Kauf eines Elektrofahrzeugs – vom elektrischen Lastenbike bis hin zum großen E-Transporter - finanziell unterstützen.
 
 <br />
 
