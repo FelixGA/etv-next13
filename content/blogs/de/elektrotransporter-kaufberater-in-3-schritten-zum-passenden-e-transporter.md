@@ -3,7 +3,7 @@ title: "Elektrotransporter-Kaufberater: In 3 Schritten zum passenden E-Transport
 slug: elektrotransporter-kaufberater-in-3-schritten-zum-passenden-e-transporter
 relatedCars: ari-458-koffer-elektrischer-kleintransporter
 youtubeLink: ""
-category: neuigkeiten
+category: news
 publishedAt: 05/04/2022
 src: /images/whatsapp-image-2022-05-03-at-12.49.10.jpeg
 description: Der Elektrotransporter-Kaufberater hilft Ihnen, schnell und einfach

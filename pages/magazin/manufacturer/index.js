@@ -5,13 +5,13 @@ import Blog from "../../../components/Blog/Blog";
 import BlogHeader from "../../../components/Blog/BlogHeader";
 import LinkTile from "../../../components/Blog/LinkTile";
 
-export default function reviews(props) {
+export default function manufacturer(props) {
   const [getBlogs, SetGetBlogs] = useState(
-    props.blogs.filter((item) => item.category === "hersteller")
+    props.blogs.filter((item) => item.category === "manufacturer")
   );
 
   // useEffect(() => {
-  //   SetGetBlogs(props.blogs.filter((item) => item.category === "hersteller"));
+  //   SetGetBlogs(props.blogs.filter((item) => item.category === "manufacturer"));
   // }, [props]);
   return (
     <>

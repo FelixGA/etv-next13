@@ -10,7 +10,7 @@ import getSlugs from "/utils/getSlugs";
 import ReviewPost from "../../../components/Blog/ReviewPost";
 import BlogPost from "../../../components/Blog/BlogPost";
 import { useState, useEffect } from "react";
-export default function Reviews(props) {
+export default function news(props) {
   /* getBlogContext hook for the ONE car that it is displayed */
   const [relatedVehicles, SetRelatedVehicles] = useState(props.vehicles);
   const [getBlogContext, SetGetBlogContext] = useState(props.blog);

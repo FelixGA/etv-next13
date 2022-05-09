@@ -6,7 +6,7 @@ contentHeading:
 title: Der Opel Rocks-e wird zum Lieferfahrzeug
 slug: der-opel-rocks-e-wird-zum-lieferfahrzeug
 youtubeLink: ""
-category: hersteller
+category: manufacturer
 description: Opel hat sein Elektrokleinfahrzeug Rocks-e zum Lieferwagen
   umgerüstet. Jetzt kann es auch Pakete, Pizza & Getränke liefern.
 ---

@@ -6,7 +6,7 @@ contentHeading:
 title: Die Post trennt sich von Streetscooter
 slug: die-post-trennt-sich-von-streetscooter
 youtubeLink: ""
-category: hersteller
+category: manufacturer
 description: Die Deutsche Post trennt sich von ihrer Firma "Streetscooter" und
   will sich künftig nur noch um  Bestandsfahrzeuge kümmern.
 ---

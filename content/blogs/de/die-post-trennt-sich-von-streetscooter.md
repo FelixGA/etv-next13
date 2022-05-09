@@ -6,10 +6,11 @@ contentHeading:
 title: Die Post trennt sich von Streetscooter
 slug: die-post-trennt-sich-von-streetscooter
 youtubeLink: ""
-category: hersteller
+category: manufacturer
 description: Die Deutsche Post trennt sich von ihrer Firma "Streetscooter" und
   will sich künftig nur noch um  Bestandsfahrzeuge kümmern.
 ---
+
 Die Deutsche Post trennt sich von ihrer Firma Streetscooter. Wie DHL heute mitteilte, werden die Rechte und das Know-how zur Produktion der bekannten Elektrotransporter an das internationale Firmenkonsortium Odin Automotive in Luxemburg verkauft. Die beiden Paketzustellfahrzeuge Work und Work L mit acht bzw. 13 Kubikmetern Ladevolumen sollen weitergebaut werden.
 
 Die Deutsche Post DHL wird Minderheitseigentümer von Odin und behält die Streetscooter GmbH. Sie wird mit ihren 300 Beschäftigten weiter als Zulieferer von Fahrzeugteilen und Batterien arbeiten. Der Konzern will seine Elektroflotte auf 21.500 Streetscooter ausbauen. Anschließend soll sich die GmbH ausschließlich auf die Wartung und Pflege der Bestandsfahrzeuge konzentrieren.\

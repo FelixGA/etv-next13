@@ -1,6 +1,6 @@
 ---
 title: allgemeineGeschaeftsbedingungen
-path: /allgemeineGeschaeftsbedingungen
+path: /termsofservice
 description: allgemeine Geschäftsbedingungen
 content:
   - markdown: "# text"
