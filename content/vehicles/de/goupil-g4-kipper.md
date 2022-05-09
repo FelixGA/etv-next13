@@ -1,6 +1,6 @@
 ---
-title: Goupil G4 Pritsche
-name: goupil-g4-pritsche
+title: Goupil G4 Kipper
+name: goupil-g4-kipper
 price: 23630
 relatedBlogs: beispiel  bitte nicht ändern
 relatedReviews: goupil-g4-testbericht-von-elektrotransporter-vergleich
@@ -9,8 +9,9 @@ description: Der Goupil G4 ist ein Elektro-Kleintransporter der Kategorie L7e
   Reichweite liegt zwischen 35 bis 90 Kilometer (je nach Akku). Die maximale
   Zuladung des Fahrzeugs liegt bei 1200 Kilogramm und die maximale
   Höchstgeschwindigkeit bei 50 km/h. Das Fahrzeug bietet Platz für 2 Personen.
-src: /images/g4-2100x2400-1-1344x1536.jpeg
-category: Pritsche
+src: /images/goupil_g4_kipper.jpeg
+category: Kipper
+typeClass: L7E
 loadingWeight:
   key: Nutzlast
   value: 1200

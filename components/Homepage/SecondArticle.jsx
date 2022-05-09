@@ -1,14 +1,14 @@
 import { MDXRemote } from "next-mdx-remote";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../Homepage/firstArticle.module.css";
+import styles from "../Homepage/secondArticle.module.css";
 
 export default function SecondArticle({ getMarkdownContext, getContent }) {
   return (
-    <div className="flex flex-col px-8 pt-10 pb-8 blog-article-two bg-grey-lightest md:flex-row">
-      <div className="w-full sm:w-[76%] mx-auto md:w-full relative xl:pl-10 sm:pt-10 lg:pt-2 md:pb-10 lg:pb-4 xl:mt-10 ">
+    <div className="flex flex-col px-8 mt-4 blog-article-two bg-grey-lightest md:flex-row lg:h-80 ">
+      <div className="w-full sm:w-[76%] mx-auto md:w-[50%] relative xl:pl-10  md:pb-10 lg:pb-4  ">
         <Image
-          src="/images/shweinFull.png"
+          src="/images/whatsapp-image-2022-04-27-at-22.26.12.jpeg"
           width={300}
           height={300}
           className="blog-article-two-image"
@@ -16,12 +16,12 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
           objectFit="contain"
         />
       </div>
-      <div className="md:pt-10 2xl:pt-48 xl:px-12 xl:pl-20 sm:pl-4">
+      <div className=" xl:px-12 xl:pl-20 sm:pl-4">
         {/* <h2 className="text-2xl font-bold text-grey-darkest ">
            dfg
           </h2> */}
         <div
-          className={`${styles.article} "px-1 pb-6 font-bold tracking-wide text-blue-lighter xs:px-2 xl:pr-36"`}
+          className={`${styles.secondArticle} "px-1  font-bold tracking-wide text-blue-lighter xs:px-2 xl:pr-36"`}
         >
           {<MDXRemote {...getMarkdownContext.substities} />}
         </div>

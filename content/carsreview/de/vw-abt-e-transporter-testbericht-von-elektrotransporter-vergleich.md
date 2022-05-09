@@ -36,7 +36,7 @@ content:
     title: Laderaum & Flexibilität
     image: ""
   - content: >-
-      ### Antrieb & Aufladung (2/5)
+      ### Antrieb & Aufladung (3/5)
 
 
       Der von ABT verbaute Elektromotor hat eine Leistung von 83 kW und ein maximales Drehmoment von 200 Nm. So kommt der e-Transporter 6.1 ordentlich vom Fleck, ohne allerdings besonders flott unterwegs zu sein. Serienmäßig ist das Fahrzeug auf eine Höchstgeschwindigkeit von 90 Km/h begrenzt, die optional auf 120 Km/h erweitert werden kann. 
@@ -46,7 +46,7 @@ content:
     title: Antrieb & Aufladung
     image: /images/abt-e-t-6.1-grill.jpg
   - content: >-
-      ### Komfort & Ausstattung (3/5)
+      ### Komfort & Ausstattung (4/5)
 
 
       Da es sich um reine Umbauten der Verbrenner-Modelle handelt, basiert auch die Ausstattung des e-Transporters 6.1 auf den herkömmlichen T6-Versionen. Während das Fahrzeug somit zwar serienmäßig über Helferlein wie elektrische Fensterheber verfügt, ist eine Klimaanlage leider nicht einmal gegen Aufpreis erhältlich.
