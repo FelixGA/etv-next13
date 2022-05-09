@@ -200,7 +200,7 @@ Diese „Umweltprämie“, auch bekannt als Umweltbonus oder Elektroprämie, wir
 
 <br />
 
-*  Gewicht
+* Gewicht
 * der Antriebsart
 * den Anschaffungskosten (Nettolistenpreis max. 65.000 Euro)
 * sowie ggf. von der Leasing-Dauer
@@ -211,11 +211,7 @@ des gewählten Nutzfahrzeuges.
 
 <br />
 
-### Kurzübersicht zur Förderung elektrischer Neufahrzeuge:
-
-<br />
-
-Einen umfassenderen Überblick über die Höhe der Umweltprämie sowie den jeweiligen Hersteller- und Bundesanteil – gestaffelt nach Nettolistenpreisen – finden Sie z.B. [hier](https://www.karabag.de/magazin/artikel/e-transporter-foerderung).
+Einen umfassenden Überblick über die Höhe der Umweltprämie sowie den jeweiligen Hersteller- und Bundesanteil – gestaffelt nach Nettolistenpreisen – finden Sie z.B. [hier](https://www.karabag.de/magazin/artikel/e-transporter-foerderung).
 
 <br />
 
@@ -258,15 +254,27 @@ Dabei gelten diese Voraussetzungen:
 
 <br />
 
- Der Antrag auf die „Umweltprämie“ kann direkt nach erfolgter Zulassung über ein [Online-Formular](https://fms.bafa.de/BafaFrame/fems) beim BAFA gestellt werden.
+Der Antrag auf die „Umweltprämie“ kann direkt nach erfolgter Zulassung über ein [Online-Formular](https://fms.bafa.de/BafaFrame/fems) beim BAFA gestellt werden.
 
 <br />
 
 ### Übersicht benötigter Unterlagen:
 
+**Bei Kauf:**
+
+* Rechnung
+* Zulassungsbescheinigung Teil II (Fahrzeugbrief)
+
 <br />
 
+**Bei Leasing:**
 
+*  Leasingvertrag 
+* Zulassungsbescheinigung Teil II
+* Kalkulation der Leasingraten
+* verbindliche Bestellung
+
+<br />
 
 Nach erfolgreicher Prüfung fließt die Fördersumme direkt auf das Konto des Käufers oder Leasenden.
 
