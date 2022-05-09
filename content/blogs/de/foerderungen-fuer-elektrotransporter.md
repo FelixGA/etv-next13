@@ -1,8 +1,19 @@
 ---
-title: VW ABT e-Transporter 6.1
-name: vw-abt-e-transporter
-price: 44990
-relatedBlogs: >-
+title: Diese Förderungen für Elektrotransporter gibt es jetzt!
+publishedAt: 03/01/2022
+src: /images/whatsapp-image-2022-04-27-at-22.26.12.jpeg
+contentHeading:
+  title: ""
+  content: ""
+  image: ""
+slug: foerderungen-fuer-elektrotransporter
+relatedCars: ari-458-food-truck-elektrisches-gastro-mobil
+vehicle:
+  key: gut
+  value: 4,0
+  image: /images/Arrow-right-512.png
+  totalscore: ""
+content: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
 
@@ -133,146 +144,186 @@ relatedBlogs: >-
 
 
   4,4
-relatedReviews: vw-abt-e-transporter-testbericht-von-elektrotransporter-vergleich
-description: Der VW ABT e-Transporter ist ein elektrischer Kastenwagen der
-  Fahrzeugklasse N1, der eine Zuladung von mehr als 1.000 Kilogramm aufnehmen
-  kann und mit 90 km/h bzw. 120 km/h Höchstgeschwindigkeit verfügbar ist.
-src: /images/abte_t6.1_front_3.jpg
-category: Kasten
-typeClass: N1
-loadingWeight:
-  key: Nutzlast
-  value: 1096
-  baseUnit: kg
-curbweight:
-  key: Leergewicht
-  value: 0
-  baseUnit: "-"
-maxSpeed:
-  key: km/h
-  value: 90
-  baseUnit: km/h
-range230V:
-  key: Reichweite SLA Blei
-  value: 0
-  baseUnit: "-"
-  maxValue: 0
-rangeLithium:
-  key: Reichweite Lithium Akku
-  value: 106
-  baseUnit: km
-  maxValue: 138
-chargingTime230V:
-  key: Ladezeit 230-V-Steckdose
-  value: 0
-  baseUnit: "-"
-chargingTimeLithium:
-  key: Ladezeit Typ2 Ladekabel
-  value: 5
-  baseUnit: h
-chargingTimeFast:
-  key: Schnellladezeit
-  value: 0
-  baseUnit: "-"
-batteryCapacityBlei:
-  key: Kapazität SLA Akku
-  value: "-"
-  baseUnit: "-"
-batteryCapacityLithium:
-  key: Kapazität Lithium Akku
-  value: 37,3
-  baseUnit: kWh
-batteryIncluded:
-  value: keine Angabe
-  key: Batterie inklusive
-consumption:
-  key: "Verbrauch "
-  value: 31,0
-  baseUnit: kWh
-power:
-  key: Leistung
-  value: "83"
-  baseUnit: kW
-seats:
-  key: Sitzplätze
-  value: 2
-rating:
-  key: Befriedigend
-  value: 2.8
-guarantee:
-  key: Garantie Fahrzeug
-  value: 2
-  baseUnit: Jahre
-availability:
-  key: Verfügbarkeit
-  value: keine Angabe
-subsidies:
-  key: Förderhöhe
-  value: 0
-  baseUnit: "-"
-batteryGuarantee:
-  key: Batterie-Garantie
-  value: 8
-  baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: "-"
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 6,5
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: "0"
-  baseUnit: m2
-carSizes:
-  width: Breite
-  length: Länge
-  height: Höhe
-  wheelbase: Radstand
-  valuewidth: 0
-  baseUnit: mm
-  valuelength: 0
-  valueheight: 0
-  valuewheelbase: 0
-  key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1410
-  width: Breite
-  valuewidth: 1700
-  valuelength: 2724
-  length: Länge
-  baseUnit: mm
-carSizesLength:
-  value: "0"
-  key: Länge
-  baseUnit: mm
-carSizesWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-carSizesHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
-loadingVolumeLength:
-  key: Länge
-  value: "0"
-  baseUnit: mm
-loadingVolumeWidth:
-  key: Breite
-  value: "0"
-  baseUnit: mm
-loadingVolumeHeight:
-  key: Höhe
-  value: "0"
-  baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "0"
-  baseUnit: mm
+youtubeLink: ""
+
+category: subsidies
+description: Beim Kauf eines Elektrotransporters können verschiedene Förderungen
+  in Anspruch genommen werden. Erfahren Sie, welche.
+
 ---
-Der VW ABT e-Transporter ist ein elektrischer Kastenwagen der Fahrzeugklasse N1, der eine Zuladung von mehr als 1.000 Kilogramm aufnehmen kann und mit 90 km/h bzw. 120 km/h Höchstgeschwindigkeit verfügbar ist.
+Sie denken darüber nach, sich einen Elektrotransporter zu kaufen? Oder Ihre Flotte auf E-Mobilität umzustellen? Dann können Sie von verschiedenen Förderungen profitieren, mit denen Bund und Länder den Umstieg auf [klimafreundliche Nutzfahrzeuge](https://www.klimafreundliche-nutzfahrzeuge.de/gesamtkonzept/) vorantreiben wollen. Welche Förderungen für Elektrotransporter es gibt, wem diese zustehen und wo sie beantragt werden können, das erfahren Sie in diesem Artikel.
+
+<br />
+
+## 1) Förderungen auf Bundesebene - Die Umweltprämie
+
+<br />
+
+Die Bundesregierung hat bis zum Jahr 2025 insgesamt 1,6 Mrd. Euro bereitgestellt, um die Anschaffung von elektrischen oder umgerüsteten Nutzfahrzeugen zu fördern. Käufer oder Leasende eines E-Transporters der Fahrzeugklassen M1 und N1 können sich deshalb auf bis zu 9000 Euro Förderung freuen.
+
+<br />
+
+Diese „Umweltprämie“, auch bekannt als Umweltbonus oder Elektroprämie, wird zum Teil durch die Bundesregierung (max. 6000 Euro) und zum Teil durch den Hersteller (max. 3000 Euro) ausgeschüttet.
+
+<br />
+
+### Höhe der Umweltprämie
+
+<br />
+
+Ob und in welcher Höhe die Umweltprämie ausgezahlt wird, ist abhängig vom:
+
+<br />
+
+* Gewicht
+* der Antriebsart
+* den Anschaffungskosten (Nettolistenpreis max. 65.000 Euro)
+* sowie ggf. von der Leasing-Dauer
+
+<br />
+
+des gewählten Nutzfahrzeuges.
+
+<br />
+
+Einen umfassenden Überblick über die Höhe der Umweltprämie sowie den jeweiligen Hersteller- und Bundesanteil – gestaffelt nach Nettolistenpreisen – finden Sie z.B. [hier](https://www.karabag.de/magazin/artikel/e-transporter-foerderung).
+
+<br />
+
+## Empfänger der Umweltprämie
+
+<br />
+
+### Käufer und Leasende eines neuen Elektrofahrzeugs
+
+<br />
+
+Die maximale Förderhöhe von 9000 Euro wird beim Kauf eines Elektro- oder Hybridfahrzeuges sowie bei einer Leasing-Dauer von mindestens 24 Monaten gewährt. Bei kürzeren Leasing-Verträgen staffelt sich die Prämie.
+
+<br />
+
+Das Bundesamt für Wirtschaft und Ausfuhrkontrolle [(BAFA)](https://www.bafa.de/DE/Energie/Energieeffizienz/Elektromobilitaet/elektromobilitaet_node.html) hat hierzu eine [Liste der förderfähigen E-Fahrzeuge](https://www.bafa.de/SharedDocs/Downloads/DE/Energie/emob_liste_foerderfaehige_fahrzeuge.pdf?__blob=publicationFile&v=182) erstellt. Diese kann online abgerufen werden und verschafft einen Überblick darüber, welche Fahrzeugmodelle gefördert werden.
+
+<br />
+
+### Halter eines elektrischen Gebrauchtwagens
+
+<br />
+
+Auch für elektrische Gebrauchtwagen kann die Umweltprämie in Anspruch genommen werden.
+
+<br />
+
+Dabei gelten diese Voraussetzungen:
+
+<br />
+
+* Erstzulassung nach dem 04.11.2019
+* Erstzulassung liegt maximal 12 Monate zurück
+* Max. 15.000 km Laufleistung (hierzu bitte: [Nachweispaket für Gebrauchtwagen](https://www.bafa.de/SharedDocs/Downloads/DE/Energie/emob_formular_emob_gwa.pdf;jsessionid=C421B2C81F885A16D9B146491AA83DA8.2_cid387?__blob=publicationFile&v=7) ausfüllen)
+* zuvor keine weitere Förderung beantragt
+
+<br />
+
+## Antrag auf Umweltprämie
+
+<br />
+
+Der Antrag auf die „Umweltprämie“ kann direkt nach erfolgter Zulassung über ein [Online-Formular](https://fms.bafa.de/BafaFrame/fems) beim BAFA gestellt werden.
+
+<br />
+
+### Übersicht benötigter Unterlagen:
+
+<br />
+
+**Bei Kauf:**
+
+* Rechnung
+* Zulassungsbescheinigung Teil II (Fahrzeugbrief)
+
+<br />
+
+**Bei Leasing:**
+
+* Leasingvertrag 
+* Zulassungsbescheinigung Teil II
+* Kalkulation der Leasingraten
+* verbindliche Bestellung
+
+<br />
+
+Nach erfolgreicher Prüfung fließt die Fördersumme direkt auf das Konto des Käufers oder Leasenden.
+
+<br />
+
+### Zusatzvorteil – Wegfall Kfz-Steuer
+
+<br />
+
+Ein weiterer Vorteil beim Kauf eines Elektrofahrzeugs ist der Wegfall der Kfz-Steuer für die ersten zehn Jahre nach der Erstzulassung (bis 2031). Dies gilt auch rückwirkend für alle Neuzulassungen ab dem 01.01.2016.
+
+<br />
+
+### Sonderabschreibungen:  
+
+<br />
+
+Seit Ende 2019 gilt zudem für elektrische Liefer- und Nutzfahrzeuge eine einmalige Sonderabschreibung von 50%, welche zur regulären Abschreibung von 16,7 % (über eine Laufzeit von 6 Jahren) hinzugerechnet werden kann. Diese Regelung ist vorerst bis Ende 2030 befristet.
+
+<br />
+
+## 2) Förderungen auf Landesebene
+
+<br />
+
+Neben der Förderung durch die Bundesregierung gibt es zudem verschiedene Förderungen auf Länderebene.
+
+<br />
+
+Davon profitieren auch Käufer eines Elektrotransporters der leichteren Fahrzeugklassen (z.B. L7e), welche vom Anspruch auf die Umweltprämie bisher leider ausgeschlossen sind.
+
+<br />
+
+### Übersicht über Förderungen einzelner Bundesländer
+
+<br />
+
+* [Berlin – Programm „Wirtschaftsnahe Elektromobilität“](https://www.ibb-business-team.de/welmo/foerderung/): bis zu 5.000 Euro
+* [Thüringen – Programm „E-Mobil Invest“](https://www.aufbaubank.de/Foerderprogramme/e-mobilinvest): 40% der Investitionssumme bzw. maximal 12.000 Euro
+* [Nordrhein-Westfalen – Programm „ElektroMobilität NRW“](https://www.elektromobilitaet.nrw/): 40% des Kaufpreises bzw. maximal 30.000 Euro
+* [Baden-Württemberg – Programm „BW-e-Gutschein“](https://www.l-bank.de/produkte/finanzhilfen/bw-e-gutschein.html): bis zu 1.000 Euro 
+
+<br />
+
+## 3) Förderungen auf kommunaler Ebene
+
+<br />
+
+Erfreulicherweise gibt es zudem einige Kommunen, die in Sachen E-Mobilität und Förderung nachhaltiger Mobilitätskonzepte mit bestem Beispiel vorangehen!
+
+<br />
+
+So haben zum Beispiel die Städte **München**, **Limburg** und **Regensburg** eigene Förderprogramme entwickelt, welche den Kauf eines Elektrofahrzeugs – vom elektrischen Lastenbike bis hin zum großen E-Transporter - finanziell unterstützen.
+
+<br />
+
+**Informieren Sie sich dazu hier:**
+
+<br />
+
+* [München – Programm „München emobil“](https://www.muenchen.de/rathaus/Stadtverwaltung/Referat-fuer-Gesundheit-und-Umwelt/Klimaschutz_und_Energie/Elektromobilitaet/Foerderprogramm_Elektromobilitaet): 25% des Netto-Preises bzw. maximal 3.500 Euro
+* [Regensburg – Programm „Regensburg effizient“](https://www.greendeal-regensburg.de/foerderprogramm-regensburg-effizient/elektromobilitaet/): bis zu 3.000 Euro
+* [Limburg – Programm „Limburg elektrisiert“](https://www.limburg.de/Mobilit%C3%A4t-Verkehr/Elektromobilit%C3%A4t-/Limburg-elektrisiert.php?object=tx,3251.5&ModID=7&FID=3252.425.1&NavID=3252.202&La=1): bis zu 600 Euro
+
+<br />
+
+Sie sehen, die Liste möglicher Förderungen für den Kauf eines Elektrotransporters kann sich sehen lassen und wächst stetig weiter.
+
+Gern halten wir Sie über neue Fördermöglichkeiten auf dieser Seite auf dem Laufenden. Schauen Sie also immer wieder einmal vorbei!
+
+<br />
+
+Sie wollen jetzt diese Förderungen nutzen und einen Elektrotransporter finden, der zu Ihren Ansprüchen passt?
+
+Dann nutzen Sie gleich unseren kostenlosen Elektrotransporter-Kaufberater und finden Sie schnell und einfach den richtigen E-Transporter!
