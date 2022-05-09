@@ -5,11 +5,11 @@ import styles from "../Homepage/secondArticle.module.css";
 
 export default function SecondArticle({ getMarkdownContext, getContent }) {
   return (
-    <div className="flex flex-col px-8 mt-4 blog-article-two bg-grey-lightest md:flex-row lg:h-80 ">
-      <div className="w-full sm:w-[76%] mx-auto md:w-[50%] relative xl:pl-10  md:pb-10 lg:pb-4  ">
+    <div className="flex flex-col px-8 blog-article-two bg-grey-lightest md:flex-row lg:h-fit ">
+      <div className="relative w-full pt-4 md:pt-0 lg:w-1/2">
         <Image
           src="/images/whatsapp-image-2022-04-27-at-22.26.12.jpeg"
-          width={300}
+          width={400}
           height={300}
           className="blog-article-two-image"
           layout="responsive"
@@ -21,14 +21,14 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
            dfg
           </h2> */}
         <div
-          className={`${styles.secondArticle} "px-1  font-bold tracking-wide text-blue-lighter xs:px-2 xl:pr-36"`}
+          className={`${styles.secondArticle} "px-1 pl-4 font-bold tracking-wide text-blue-lighter xs:px-2 xl:pr-36"`}
         >
           {<MDXRemote {...getMarkdownContext.substities} />}
         </div>
 
         <Link href="/magazin/foerderung">
           <a className="">
-            <button className="px-6 py-4 mb-5 ml-1 text-sm font-bold text-white transition rounded-md bg-blue-dark no-select hover:bg-blue-light lg:mt-6 ">
+            <button className="px-6 py-4 mt-6 mb-8 text-sm font-bold text-white transition rounded-md bg-blue-dark no-select hover:bg-blue-light ">
               Mehr erfahren
             </button>
           </a>
