@@ -169,7 +169,7 @@ Diese „Umweltprämie“, auch bekannt als Umweltbonus oder Elektroprämie, wir
 
 <br />
 
- Ob und in welcher Höhe die Umweltprämie ausgezahlt wird, ist abhängig vom:
+Ob und in welcher Höhe die Umweltprämie ausgezahlt wird, ist abhängig vom:
 
 <br />
 
