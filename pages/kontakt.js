@@ -30,7 +30,7 @@ export default function kontakt(props) {
             <p
               className={
                 router.pathname == "/kontakt"
-                  ? "text-base lg:text-xl w-full px-4 pt-2 text-center sm:text-left"
+                  ? "text-base lg:text-xl w-full px-4 py-2 text-center sm:text-left"
                   : "hidden"
               }
             >
