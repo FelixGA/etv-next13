@@ -2,6 +2,7 @@
 title: Goupil G4 Pritsche
 name: goupil-g4-pritsche
 price: 23630
+relatedBlogs: beispiel  bitte nicht ändern
 relatedReviews: goupil-g4-testbericht-von-elektrotransporter-vergleich
 description: Der Goupil G4 ist ein Elektro-Kleintransporter der Kategorie L7e
   mit Traktionsbatterie oder N1 mit einer Lithiumbatterie. Die praxiserprobte
