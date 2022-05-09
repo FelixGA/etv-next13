@@ -5,9 +5,9 @@ import styles from "../Homepage/firstArticle.module.css";
 export default function FirstArticle({ getMarkdownContext, getContent }) {
   // (<MDXRemote {...getMarkdownContext.eAutoAdvisor} />);
   return (
-    <div className="flex px-8 xl:px-16 2xl:pl-72 2xl:pr-52">
+    <div className="flex px-8 xl:px-16 2xl:pl-72 2xl:pr-52 h-80">
       <div className="flex flex-col flex-1 pt-4 xl:flex-1">
-        <div className=" xl:pt-24">
+        <div className="">
           <div className="flex items-center justify-center w-24 h-10 font-bold text-white rounded no-select bg-orange-light">
             Jetzt neu
           </div>
@@ -32,8 +32,8 @@ export default function FirstArticle({ getMarkdownContext, getContent }) {
       <div className="hidden no-select xl:flex">
         <Image
           src="/images/kaufberaterCar.png"
-          width={800}
-          height={650}
+          width={600}
+          height={450}
           className="blog-article-two-image"
           objectFit="contain"
         />
