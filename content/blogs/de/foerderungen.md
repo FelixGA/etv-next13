@@ -153,7 +153,7 @@ Sie denken darüber nach, sich einen Elektrotransporter zu kaufen? Oder Ihre Flo
 
 <br />
 
-## Förderungen auf Bundesebene - Die Umweltprämie
+## 1) Förderungen auf Bundesebene - Die Umweltprämie
 
 <br />
 
@@ -223,7 +223,7 @@ Dabei gelten diese Voraussetzungen:
 
 <br />
 
-##  Antrag auf Umweltprämie
+## Antrag auf Umweltprämie
 
 <br />
 
@@ -294,7 +294,7 @@ Davon profitieren auch Käufer eines Elektrotransporters der leichteren Fahrzeug
 
 <br />
 
-## 3)   Förderungen auf kommunaler Ebene
+## 3) Förderungen auf kommunaler Ebene
 
 <br />
 
