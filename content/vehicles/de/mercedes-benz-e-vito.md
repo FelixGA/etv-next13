@@ -1,113 +1,111 @@
 ---
-title: Efa-S E35
-name: efa-s-e-35-d
-price: 0
+title: Mercedes-Benz eVito Kastenwagen
+name: mercedes-benz-e-vito
+price: 45990
 relatedBlogs: nur beispiel
-relatedReviews: efa-s-e-35-testbericht-von-elektrotransporter-vergleich
-description: Efa-S steht für “Elektro-Fahrzeuge Schwaben” und bezeichnet ein
-  Stuttgarter Unternehmen, welches sich auf die Elektro-Umrüstung von
-  gebrauchten Fahrzeugen mit Verbrennungsmotor spezialisiert hat. Mit dem E35
-  hat das Unternehmen im Jahr 2019 sein erstes Neufahrzeug vorgestellt. Den
-  Efa-S E35 gibt es als 3,5-Tonner (Fahrzeugklasse N1) sowie als 4,25-Tonner
-  (N2).
-src: /images/efa-s-e35-plane.jpg
-category: Pritsche
-typeClass: N1N2
+relatedReviews: mercedes-benz-evito-testbericht-von-elektrotransporter-vergleich
+description: Der Mercedes-Benz eVito Kastenwagen ist ein Elektrotransporter,
+  welcher in zwei Fahrzeuglängen erhältlich ist. Das Fahrzeug erreicht eine
+  Höchstgeschwindigkeit von 80 km/h bzw. 120 km/h optional und kann rund 900
+  Kilogramm Nutzlast aufnehmen.
+src: /images/mb-e-vito-front.jpg
+category: Kasten
+typeClass: N1
 loadingWeight:
   key: Nutzlast
-  value: 900
+  value: 888
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 0
-  baseUnit: "-"
+  value: 2184
+  baseUnit: keine Angabe
 maxSpeed:
   key: km/h
-  value: 88
+  value: 80
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
-  baseUnit: "-"
+  baseUnit: keine Angabe
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 200
+  value: 314
   baseUnit: km
-  maxValue: 0
+  maxValue: 314
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: "-"
+  baseUnit: keine Angabe
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 0
-  baseUnit: "-"
+  value: 6.5
+  baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
-  value: 0
-  baseUnit: "-"
+  value: 1
+  baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
-  baseUnit: "-"
+  baseUnit: " keine Angabe"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "80"
-  baseUnit: kWh
+  value: "60"
+  baseUnit: kwh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "0"
-  baseUnit: "-"
+  value: 21,5
+  baseUnit: keine Angabe
 power:
   key: Leistung
-  value: min-110/max-110
-  baseUnit: kW
+  value: "85"
+  baseUnit: kw
 seats:
   key: Sitzplätze
-  value: 3
+  value: 2
 rating:
   key: Befriedigend
-  value: 3
+  value: 3.4
 guarantee:
   key: Garantie Fahrzeug
-  value: 0
-  baseUnit: "-"
+  value: 2
+  baseUnit: keine Angabe
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: "-"
+  baseUnit: keine Angabe
 batteryGuarantee:
   key: Garantie Akku
   value: 0
-  baseUnit: "-"
+  baseUnit: keine Angabe
 loadingHeight:
   key: Ladehöhe
-  value: 950
+  value: 0
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 0,00
+  value: 4,63
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 6,42
+  value: "0"
   baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 0
-  baseUnit: "-"
-  valuelength: 0
-  valueheight: 0
+  valuewidth: 1928
+  baseUnit: keine Angabe
+  valuelength: 5140
+  valueheight: 1941
   valuewheelbase: 0
   key: Fahrzeugmaße
 loadingVolume:
@@ -115,38 +113,38 @@ loadingVolume:
   height: Höhe
   valueheight: 0
   width: Breite
-  valuewidth: 2078
-  valuelength: 3090
+  valuewidth: 0
+  valuelength: 2831
   length: Länge
-  baseUnit: "-"
+  baseUnit: mm
 carSizesLength:
-  value: "0"
+  value: "5140"
   key: Länge
-  baseUnit: "-"
+  baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "0"
-  baseUnit: "-"
+  value: "1928"
+  baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "0"
-  baseUnit: "-"
+  value: "1941"
+  baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "3090"
+  value: "2831"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "2078"
+  value: "0"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
   value: "0"
-  baseUnit: "-"
+  baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "0"
-  baseUnit: "-"
+  value: "3200"
+  baseUnit: mm
 ---
 
-Der Efa-S-35 D ist ein großer Transporter mit Elektromotor, den es in den Versionen Pritsche, Koffer, Planenaufbau & Kasten gibt.
+Der Maxus EV 80 ist ein großer Elektrotransporter, der als Kastenwagen 910 Kilogramm Nutzlast aufnehmen kann und eine Höchstgeschwindigkeit von 100 km/h erreicht. Das Fahrzeug ist ebenso als Chassis-Version ohne Aufbau verfügbar.

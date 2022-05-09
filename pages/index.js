@@ -56,6 +56,7 @@ export async function getStaticProps(context) {
   const newsletter = await serialize(
     page.content.find((content) => content.name === "newsletter").markdown
   );
+
   if (!page) {
     return {
       notFound: true,

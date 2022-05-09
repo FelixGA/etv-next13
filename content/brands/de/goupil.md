@@ -2,7 +2,7 @@
 title: Goupil
 description: Goupil ist ein französischer Hersteller von elektrischen
   Nutzfahrzeugen, welche auf Basis von Gabelstaplern entwickelt werden.
-src: /images/goupil-logo.svg
+src: /images/goupil-logo-2019-vf.png
 slug: goupil
 websiteLink: "https://goupil.de/ "
 content: >-

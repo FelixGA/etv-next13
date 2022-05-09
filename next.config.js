@@ -46,3 +46,21 @@ module.exports = withPWA({
     ];
   },
 });
+// different slugs for transporter
+//https://elektrotransporter-vergleich.de/transporter/garia-utility/
+//             zu https://elektrotransporter-vergleich.de/transporter/garia-utility-pritsche/
+//https://elektrotransporter-vergleich.de/transporter/aixam-pro-e-truck/
+//             zu https://elektrotransporter-vergleich.de/transporter/aixam-pro-etruck-pritsche/
+//https://elektrotransporter-vergleich.de/transporter/tropos-able-xr/
+//             zu https://elektrotransporter-vergleich.de/transporter/tropos-able-xr-xt1/
+//https://elektrotransporter-vergleich.de/transporter/tropos-able/
+//             zu https://elektrotransporter-vergleich.de/transporter/tropos-able-xr-xt2/
+//https://elektrotransporter-vergleich.de/transporter/alke-divaco-atx-340e/
+//             zu  https://elektrotransporter-vergleich.de/transporter/alke-atx-340-e-pritsche/
+//https://elektrotransporter-vergleich.de/transporter/renault-master-z-e/
+//             zu   https://elektrotransporter-vergleich.de//transporter/renault-master-e-tech
+//https://elektrotransporter-vergleich.de/transporter/stama-maestro/
+//             zu   https://elektrotransporter-vergleich.de//transporter/stama-maestro-pritsche
+
+//https://elektrotransporter-vergleich.de/transporter/stama-maestro/
+//             zu   https://elektrotransporter-vergleich.de//transporter/stama-maestro-pritsche
