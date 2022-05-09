@@ -3,12 +3,19 @@ import Link from "next/link";
 import RatingBox from "../../components/repeated/RatingBox";
 import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
+import { FaArrowCircleLeft } from "react-icons/fa";
+import { AiOutlineStar } from "react-icons/ai";
 
-const Articles = ({ carItem, getTestReview, getBlogContext }) => {
+const Articles = ({
+  getCarsReview,
+  carItem,
+  getTestReview,
+  getBlogContext,
+}) => {
   return (
     <>
-      <div className="relative flex flex-col p-4 print:hidden bg-grey-lighter lg:flex-row 2xl:px-44">
-        <div className="relative w-full m-auto lg:w-1/3">
+      <div className="relative flex flex-col justify-center p-4 print:hidden bg-grey-lighter lg:flex-row 2xl:px-44">
+        {/*      <div className="relative w-full m-auto lg:w-1/3">
           <Image
             src={carItem?.src}
             alt={carItem?.title}
@@ -21,7 +28,7 @@ const Articles = ({ carItem, getTestReview, getBlogContext }) => {
           <div className="absolute bottom-0 right-0 flex scale-75 md:p-4">
             <RatingBox carItem={carItem} />
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col flex-wrap lg:w-2/3 lg:px-6">
           <h3 className="w-full py-4 mt-4 text-2xl font-bold text-black-darkest">
             Testbericht von {carItem.title}
@@ -31,7 +38,35 @@ const Articles = ({ carItem, getTestReview, getBlogContext }) => {
               <div>
                 {getTestReview.map((review, index) => (
                   <div key={index} className="mb-8">
-                    <MDXRemote {...review} />
+                    {/*     <MDXRemote {...review} /> */}
+                  </div>
+                ))}
+                {/* rg */}
+                {getCarsReview.content.map((infos, index) => (
+                  <div key={index} className="relative mb-8">
+                    <div className="relative left-0 flex ">
+                      <h2>{infos.title}</h2>
+
+                      <div className="pt-1 pl-1">
+                        <AiOutlineStar size={25} color="#FFAB00" />
+                      </div>
+                    </div>
+
+                    <MDXRemote {...getTestReview[index]} />
+
+                    {infos?.image && (
+                      <div className="w-full">
+                        <Image
+                          src={infos.image}
+                          alt="ff"
+                          width={195}
+                          height={140}
+                          layout="responsive"
+                          objectFit="contain"
+                          className="rounded-l-lg"
+                        />
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
