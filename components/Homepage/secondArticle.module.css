@@ -7,8 +7,14 @@
   padding-top: 48px;
 }
 
-.secondArticle h2 {
-  @media screen (max-width: 600px) {
-    padding-top: 24px;
+@media screen and (min-width: 200px) {
+  .secondArticle h2 {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .secondArticle h2 {
+    padding-top: 30px;
   }
 }
