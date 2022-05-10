@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import RatingBox from "../../components/repeated/RatingBox";
-import styles from "./Details.module.css";
+import styles from "./Articles.module.css";
 import { MDXRemote } from "next-mdx-remote";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { AiOutlineStar } from "react-icons/ai";
+import StarsRating from "../repeated/StarsRating";
 
 const Articles = ({
   getCarsReview,
@@ -14,7 +15,7 @@ const Articles = ({
 }) => {
   return (
     <>
-      <div className="relative flex flex-col justify-center p-4 print:hidden bg-grey-lighter lg:flex-row 2xl:px-44">
+      <div className="relative flex flex-col justify-center p-4 print:hidden bg-grey-lighter lg:flex-row ">
         {/*      <div className="relative w-full m-auto lg:w-1/3">
           <Image
             src={carItem?.src}
@@ -29,13 +30,14 @@ const Articles = ({
             <RatingBox carItem={carItem} />
           </div>
         </div> */}
+
         <div className="flex flex-col flex-wrap lg:w-2/3 lg:px-6">
-          <h3 className="w-full py-4 mt-4 text-2xl font-bold text-black-darkest">
+          <h3 className="w-full mt-4 text-2xl font-bold text-black-darkest">
             Testbericht von {carItem.title}
           </h3>
           <div className="">
             {getTestReview ? (
-              <div>
+              <div className="mb-8">
                 {getTestReview.map((review, index) => (
                   <div key={index} className="mb-8">
                     {/*     <MDXRemote {...review} /> */}
@@ -43,12 +45,15 @@ const Articles = ({
                 ))}
                 {/* rg */}
                 {getCarsReview.content.map((infos, index) => (
-                  <div key={index} className="relative mb-8">
-                    <div className="relative left-0 flex ">
-                      <h2>{infos.title}</h2>
+                  <div
+                    key={index}
+                    className={`${styles.articles} "relative mb-8"`}
+                  >
+                    <div className="relative top-0 left-0 flex flex-col xs:flex-row ">
+                      <h2 className="pt-2 xs:py-4">{infos.title}</h2>
 
-                      <div className="pt-1 pl-1">
-                        <AiOutlineStar size={25} color="#FFAB00" />
+                      <div className="py-1 xs:pt-5 xs:pl-2 ">
+                        <StarsRating stars={3.5} />
                       </div>
                     </div>
 
@@ -59,11 +64,10 @@ const Articles = ({
                         <Image
                           src={infos.image}
                           alt="ff"
-                          width={195}
-                          height={140}
+                          width={200}
+                          height={150}
                           layout="responsive"
                           objectFit="contain"
-                          className="rounded-l-lg"
                         />
                       </div>
                     )}
