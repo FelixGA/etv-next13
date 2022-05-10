@@ -1,5 +1,5 @@
 ---
-title: "ARI 345 "
+title: ARI 345
 slug: ari-345-testbericht-von-elektrotransporter-vergleich
 relatedCars: ari-345-koffer
 youtubeLink: https://www.youtube.com/watch?v=OJ4xza2e1P0&list=PLmjRcMALs3P_flqX9VLxK3FNra6vv4OzC
@@ -18,6 +18,7 @@ content:
       Das ARI 345 ist aktuell eines der kompaktesten Fahrzeuge des in Borna ansässigen Unternehmens ARI Motors. Das Lastenmoped ist in den Aufbau-Varianten Pritsche, Koffer, Kipper und Food Truck verfügbar. Das ARI 345 bietet Platz für eine Person. Durch seine kompakten Außenmaße ist das Lastenmoped vor allem für kurze Wege sowie den innerstädtischen Einsatz geeignet.
     image: /images/ari-345-koffer-mit-geöffneter-seitenklappe-und-solarpanel.jpg
     title: Konzept & Fahrzeugvarianten
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (4/5)
 
@@ -37,6 +38,7 @@ content:
       Neben diesen Standard-Aufbauten hat sich das Unternehmen vor allem auf individuelle Kundenlösungen spezialisiert. So sind auch Sonderanfertigungen möglich. Potentiellen Einsatzfeldern sind keine Grenzen gesetzt.
     image: /images/ari-345-fahrzeugvarianten.jpg
     title: LADERAUM
+    stars: 4
   - content: >-
       ### Antrieb und Aufladung (4/5)
 
@@ -50,6 +52,7 @@ content:
       Das Lastentrike kann an einer klassischen 230-V-Haushaltssteckdose mit 16Ah Sicherung in 5-6 Stunden vollständig geladen werden. Eine extra Wallbox ist nicht nötig.
     image: /images/dsc_0269.jpg
     title: Antrieb und Aufladung (4/5)
+    stars: 4
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
@@ -60,6 +63,7 @@ content:
       Optional kann das Lastenmoped auch mit einem Rammschutz, einem drei- oder vierteiligen Laubgitter oder einem Leiterträger ausgerüstet werden. Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist erhältlich.
     image: /images/ari-345-tacho-anzeige.jpg
     title: Komfort & Ausstattung (4/5)
+    stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -67,6 +71,7 @@ content:
       Das Fahrzeug kommt auf eine Steigfähigkeit von 18% und wird dadurch auch im bergigen Gelände keine Probleme bekommen. Gebremst wird das Lasten-Trike über 3 hydraulische Scheibenbremsen. Durch den Heckantrieb liegt das Gewicht im hinteren Bereich des Fahrzeuges. So wird vor allem mit Beladung ein optimaler Fahrkomfort ermöglicht. Gefedert wird das Fahrzeug vorne über eine Federgabel mit Stoßdämpfern und hinten über Blattfedern. So lässt sich mit dem ARI 345 auch in unwegsamen Gelände arbeiten. Durch die Fahrerkabine und einen Dreipunktgurt ist es zudem nicht notwendig, während der Fahrt einen Helm zu tragen.
     image: /images/ari-345-lastentrike-koffer-front.jpg
     title: Bedienung & Fahrbetrieb
+    stars: 0
   - content: >-
       ### Umwelt (4/5)
 
@@ -74,6 +79,7 @@ content:
       Der kombinierte Verbrauch des ARI 345 ist mit ca. 5,6 kWh sehr niedrig. Durch ein zusätzliches Solarpanel, welches für rund 30 Kilometer mehr Reichweite sorgt, ist das Fahrzeug noch sparsamer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 1,68 €.
     title: Umwelt
     image: /images/ari-345-koffer-mit-solarpanel-nahansicht.jpg
+    stars: 4
   - content: >-
       ### Preise & Garantie (4/5)
 
@@ -81,6 +87,7 @@ content:
       Das ARI 345 ist vergleichsweise günstig. Die Preise für die Pritsche starten bei 6.995 €. Der Koffer ist ab 7.395€  und der Food Truck ab 12.725 € erhältlich. Auf das Fahrzeug gibt es 6 Monate Garantie und auf die Batterie 18 Monate Gewährleistung.
     title: Preise & Garantie
     image: /images/ari-345-lastentrike-mit-kippbarer-pritsche.jpg
+    stars: 4
   - content: >-
       ### Fazit
 
@@ -94,4 +101,5 @@ content:
       #### Gesamtbewertung: 4,0
     title: Fazit
     image: /images/ari-345-lastentrike-pritsche-mit-europalette.jpg
+    stars: 4
 ---

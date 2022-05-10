@@ -20,6 +20,7 @@ content:
       Technisch gibt es den Addax MT ebenso wie den Stama Maestro in zwei Getriebeversionen.
     title: Konzept & Fahrzeugvarianten
     image: /images/addax_motors_pritsche.jpg
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (4/5)
 
@@ -33,6 +34,7 @@ content:
       Neben der Pritschen-Version mit Laubgitter ist das Fahrzeug auch als Kipper, Koffer, kippbarer Container, Kühlwagen oder auch als blankes Fahrgestell verfügbar. Das Fahrzeug ist außerdem auch als kurzer Heckkipper mit seitlich abklappbaren Bordwänden verfügbar.  Der Raum zwischen Fahrerkabine und Ladefläche wird hier durch eine praktische Werkzeugbox ergänzt.
     title: Laderaum & Flexibilität (4/5)
     image: /images/addax.png
+    stars: 4
   - content: >-
       ### Antrieb & Aufladung (2/5)
 
@@ -40,6 +42,7 @@ content:
       Technisch gibt es den Addax MT in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und einer Leistung von 8kW. Dieses Modell ist mit einem Lithium-Ionen-Akku mit 10,2 kWh ausgestattet und erreicht eine Höchstgeschwindigkeit von 58 Km/h. Laut Hersteller soll diese Variante eine Reichweite von 80 Kilometer erreichen. Als MT15 wird der Elektrotransporter von einem 72 Volt-Motor angetrieben, der 12 KW leistet. In dieser Variante übernimmt ebenfalls ein LiFePO4-Akku die Arbeit. Die Kapazität liegt hier aber bei 14,4 kWh, wodurch die Reichweite des Addax auf 132 Kilometer (WLTP) steigen soll. Auch die Höchstgeschwindigkeit liegt hier mit 70 Km/h über der des MT10. Leider liegen jedoch keine Angaben darüber vor, wie lange eine Vollladung des jeweiligen Akkus benötigt.
     title: Antrieb & Aufladung (2/5)
     image: /images/addax_motors_kühlkoffer.jpg
+    stars: 2
   - content: >-
       ### Komfort & Ausstattung (2/5)
 
@@ -56,6 +59,7 @@ content:
       Ebenso lässt sich am Addax für einen Aufpreis ein Hochdruckreiniger,ein Bewässerungskit oder ein Laubsauger (Eliet TL 450 Pro 9 HP) integrieren.
     title: Komfort & Ausstattung (2/5)
     image: /images/addax_innenraum.jpg
+    stars: 0
   - content: >-
       ### Bedienung und Fahrbetrieb
 
@@ -66,12 +70,14 @@ content:
       Die Bedieneinheit für den Kipper findet sich unterhalb der Ladefläche und kann über einen Schlüssel gestartet werden.
     title: Bedienung und Fahrbetrieb
     image: /images/addax.jpg
+    stars: 0
   - content: >-
       ### Umwelt (3/5)
 
 
       Der Verbrauch des Fahrzeugs liegt laut Hersteller bei rund 12 kWh. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 Kilometer Fahrt 3,60 €.
     title: Umwelt (3/5)
+    stars: 3
   - content: >-
       ### Preise & Garantie (2/5)
 
@@ -79,6 +85,7 @@ content:
       Die Preise für den Addax MT beginnen bei rund 35.450 Euro. Ein konkretes Angebot für ein spezielles Modell können Interessenten auf Anfrage beim Unternehmen erhalten. Im Preis enthalten ist das Akkupaket, auf welches der Hersteller eine Gewährleistung von 5 Jahren gibt. Auf das Fahrzeug gibt der Hersteller eine Garantie von 2 Jahren.
     title: Preise & Garantie (2/5)
     image: /images/addax_koffer.jpg
+    stars: 2
   - content: >-
       ### Fazit
 
@@ -89,4 +96,5 @@ content:
       #### Testurteil: 2,6
     title: "Fazit "
     image: /images/addax_26_pritsche.jpg
+    stars: 5
 ---

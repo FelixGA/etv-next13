@@ -13,6 +13,8 @@ const Articles = ({
   getTestReview,
   getBlogContext,
 }) => {
+  /* GET THE STAR */
+  console.log(getCarsReview.content[2].stars);
   return (
     <>
       <div className="relative flex flex-col justify-center p-4 print:hidden bg-grey-lighter lg:flex-row 2xl:px-44">

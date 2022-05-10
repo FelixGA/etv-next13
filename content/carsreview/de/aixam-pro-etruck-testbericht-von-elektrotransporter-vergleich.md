@@ -17,6 +17,7 @@ content:
       erreicht und in zwei Aufbauvarianten erhältlich ist. Die Zuladung liegt
       bei 327 Kilogramm.
     title: Einleitung
+    stars: 0
   - content: >-
       ### Konzept & Fahrzeugvarianten
 
@@ -27,6 +28,7 @@ content:
       Der Elektrotransporter  in zwei Aufbautypen verfügbar: als Pritsche sowie mit Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem Gelände konzipiert.
     image: /images/aixam-pro-etruck-koffer.jpeg
     title: Konzept & Fahrzeugvarianten
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (3/5)
 
@@ -37,6 +39,7 @@ content:
       Als Pritsche ist der Aixam Pro neun Zentimeter kürzer als der “Van”, hat aber sonst die gleichen Außenmaße. Die Ladefläche hat hier eine Länge von 1,40 Meter und eine Breite von 1,47 Meter, wodurch sich Platz für rund 2m² Güter und Waren ergibt. Das Leergewicht inklusive Akku gibt der Hersteller für beide Versionen mit 440 Kilogramm an, während die Nutzlast bei 327 Kilogramm liegt. Die Anhängelast liegt bei 187 Kilogramm.
     image: /images/aixam-pro-van-laderaum.jpg
     title: Laderaum & Flexibilität
+    stars: 3
   - content: >-
       ### Antrieb & Aufladung (2/5)
 
@@ -47,6 +50,7 @@ content:
       Die Energiespeicherung erfolgt per Lithium-Ionen-Batterien mit einer Spannung von 48 V und einer Kapazität von 7,26 kWh. Die Reichweite liegt damit im Durchschnitt laut Hersteller bei 95 Kilometer, womit sich der Aixam Pro eher für den Stadtverkehr oder kurze Überlandstrecken eignet. Die Aufladung erfolgt über einen 220 Volt-Stecker. Leider gibt es keine Angaben darüber, wieviel Zeit es beansprucht, die Batterien wieder voll aufzuladen.
     image: /images/aixam-pro-van-heck.jpg
     title: Antrieb & Aufladung
+    stars: 2
   - content: >-
       ### Komfort & Ausstattung (3/5)
 
@@ -54,6 +58,7 @@ content:
       Der Aixam Pro ist sehr einfach ausgestattet. Eine Servolenkung ist ebenso wenig erhältlich wie eine Klimaanlage, während elektrische Fensterheber sowie eine Zentralverriegelung Aufpreis kosten. Auch ein Radio kostet zusätzliches Geld, ist dann aber immerhin mit mit USB-Port und Bluetooth-Funktion ausgestattet.
     image: ""
     title: Komfort & Ausstattung
+    stars: 3
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -61,6 +66,7 @@ content:
       Der Aixam Pro ist sehr klein und dadurch auch sehr wendig. In kleinen Gassen oder auf engen Fabrikgeländen ist er wohl am besten aufgehoben. Zwar ist ein Fenster in der Kabinenrückwand serienmäßig dabei, Fenster in den Hecktüren kosten allerdings extra. Und bei vollem Laderaum nutzen auch diese auch nicht viel. Optional ist dafür aber eine Rückfahrkamera erhältlich, die beim Rangieren der Koffer-Version unterstützt.
     image: /images/aixam-pro-innen.jpg
     title: Bedienung & Fahrbetrieb
+    stars: 0
   - content: >-
       ### Umwelt (4/5)
 
@@ -68,6 +74,7 @@ content:
       Konkrete Verbrauchsangaben zu den Aixam Pro e-Trucks gibt es nicht. Die Reichweite von 95 Kilometer bei einer Akku-Kapazität von 7,26 kWh spricht aber für einen Verbrauch von rund 8 kWh auf 100 Kilometer, also sehr niedrig. So kommt man mit 2,40 Euro Energiekosten rund 100 Kilometer weit bei einem Strompreis von 30 Cent pro kWh. Eine Solaranlage ist nicht verfügbar.
     title: Umwelt
     image: ""
+    stars: 4
   - content: >-
       ### Preise & Garantie (3/5)
 
@@ -75,6 +82,7 @@ content:
       Die Preise für das Fahrzeug betragen in der Basisausstattung ab Werk 19.690 Euro für die Pritsche und 20.490 Euro als “Van”. Die Batterie ist mit im Preis enthalten und muss nicht extra gemietet werden. Aixam gibt eine Garantie von 2 Jahren auf das Fahrzeug, unabhängig vom Kilometerstand.
     title: Preise & Garantie
     image: /images/aixam-pro-etruck-boutique.jpg
+    stars: 0
   - content: >-
       ### Fazit
 
@@ -87,4 +95,5 @@ content:
 
       3 Sterne
     title: Fazit
+    stars: 3
 ---
