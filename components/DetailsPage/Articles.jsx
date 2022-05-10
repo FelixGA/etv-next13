@@ -14,7 +14,6 @@ const Articles = ({
   getBlogContext,
 }) => {
   /* GET THE STAR */
-  console.log(getCarsReview.content[2].stars);
   return (
     <>
       <div className="relative flex flex-col justify-center p-4 print:hidden bg-grey-lighter lg:flex-row ">
@@ -39,13 +38,8 @@ const Articles = ({
           <div className="">
             {getTestReview ? (
               <div className="mb-8">
-                {getTestReview.map((review, index) => (
-                  <div key={index} className="mb-8">
-                    {/*     <MDXRemote {...review} /> */}
-                  </div>
-                ))}
                 {/* rg */}
-                {getCarsReview.content.map((infos, index) => (
+                {getCarsReview?.content?.map((infos, index) => (
                   <div
                     key={index}
                     className={`${styles.articles} "relative mb-8"`}
@@ -54,9 +48,7 @@ const Articles = ({
                       <h2 className="pt-2 xs:py-4">{infos.title}</h2>
 
                       <div className="py-1 xs:pt-5 xs:pl-2 ">
-                        {infos.stars ? (
-                          <StarsRating stars={infos.stars} />
-                        ) : null}
+                        {infos.stars ? <StarsRating stars={1} /> : null}
                       </div>
                     </div>
 

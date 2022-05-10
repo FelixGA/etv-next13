@@ -5,7 +5,6 @@ const StarsRating = ({ stars }) => {
   const [fullStar, setFullStar] = useState(0);
   const [halfStar, setHalfStar] = useState(0);
   const [emptyStar, setEmptyStar] = useState(0);
-  console.log(stars);
   useEffect(() => {
     Number.isInteger(stars)
       ? (setFullStar(stars), setEmptyStar(5 - stars))
