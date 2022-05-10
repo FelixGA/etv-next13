@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import RatingBox from "../../components/repeated/RatingBox";
+import RatingBox from "../repeated/RatingBox";
 import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 import { FaArrowCircleLeft } from "react-icons/fa";
-import { AiOutlineStar } from "react-icons/ai";
+
+import StarsRating from "../repeated/StarsRating";
 
 const Articles = ({
   getCarsReview,
@@ -46,9 +47,8 @@ const Articles = ({
                   <div key={index} className="relative mb-8">
                     <div className="relative left-0 flex ">
                       <h2>{infos.title}</h2>
-
-                      <div className="pt-1 pl-1">
-                        <AiOutlineStar size={25} color="#FFAB00" />
+                      <div>
+                        <StarsRating />
                       </div>
                     </div>
 
