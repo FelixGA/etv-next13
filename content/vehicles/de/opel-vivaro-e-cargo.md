@@ -1,6 +1,6 @@
 ---
 title: Opel Vivaro-E Cargo
-name: opel-vivaro-e
+name: opel-vivaro-e-cargo
 price: 37490
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich

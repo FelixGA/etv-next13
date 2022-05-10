@@ -33,7 +33,7 @@ export default function Form(props) {
   const onSubmit = async (data, e) => {
     e.preventDefault();
     "data", data;
-    // console.log(data);
+    
 
     try {
       const result = await axios.post(`/api/handleForm`, data);

@@ -17,6 +17,7 @@ content:
       erreicht und in zwei Aufbauvarianten erhältlich ist. Die Zuladung liegt
       bei 327 Kilogramm.
     title: Einleitung
+    stars: 0
   - content: >-
       ### Konzept & Fahrzeugvarianten
 
@@ -27,6 +28,7 @@ content:
       Die beliebte Modellreihe ATX ist in unterschiedlichsten Varianten mit einer Nutzlast von 620 bis 1630 kg erhältlich. Der Alké ist in dutzenden Aufbau-Variationen verfügbar. Von der herkömmlichen Pritsche bis zum Salzstreufahrzeug, von der Kühlbox bis zum Modul „Streetfood-Fahrzeug“: Alkè bietet hier für so ziemlich jeden Industriezweig etwas an.
     image: /images/elektrotransporter-mit-kipper-alke.jpg
     title: Konzept & Fahrzeugvarianten
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (5/5)
 
@@ -37,6 +39,7 @@ content:
       Eine konkrete Nutzlast gibt es beim Alkè nicht, da diese aufgrund der vielen Aufbauten nicht konkret festlegbar ist. Stattdessen gibt der Hersteller eine sogenannte „Traglast mit Chassis“ an. Hier muss also noch die gewählte Kabine sowie der jeweilige Aufbau mit eingerechnet werden, um auf die Nutzlast zu kommen. Die Traglast reicht von 620 Kilogramm bis zu 1630  Kilogramm. Die Anhängelast beträgt für öffentliche Straßen 2 Tonnen mit einem gebremsten Anhänger. Außerhalb des StVO-Wirkungsbereich dürfen bis zu 4,5 Tonnen an die ATX Fahrzeuge gehangen werden. So lassen sich auch mehrere Anhänger problemlos von A nach B bewegen.
     image: /images/muellabfuhr-elektrofahrzeugen-alke.jpg
     title: Laderaum & Flexibilität
+    stars: 5
   - content: >-
       ### Antrieb & Aufladung (3/5)
 
@@ -50,6 +53,7 @@ content:
       Durch ein integriertes Batterieladegerät kann das Fahrzeug an herkömmlichen Steckdosen aufgeladen werden. Die Kosten einer Aufladung gibt Alkè für die kleinste Kapazität mit 2 Euro an und auch die Zeitdauer variiert. Während der Gel-Akku ungefähr 11 Stunden zur vollen Aufladung benötigt, beträgt die Ladezeit mit Blei-Batterie ca. 8 Stunden. Die Lithium-Ionen-Akkus sind mit normaler Ladung in 3,5 Stunden (10 kWH) bzw. 6,5 Stunden (20 kWh) voll, während eine Schnelllademöglichkeit diese Zeit auf 1,5 sowie etwas mehr als 2,5 Stunden senkt.
     image: /images/akku-blei-saeure-14kwh-elektrofahrzeuge-alke.jpg
     title: Antrieb & Aufladung
+    stars: 1
   - content: >-
       ### Komfort & Ausstattung (3/5)
 
@@ -60,6 +64,7 @@ content:
       Bei den funktionalen Ausstattungsoptionen für die verschiedenen Transport-Aufbauten sprengt die Liste an Konfigurationen und Zubehör so manchen Rahmen. Hier gibt es unzählige Kombinationsmöglichkeiten an Elementen. Wenn man sich erst einmal für eine der viele Lösung entschieden hat, können außerdem nützliche Extras wie eine Anhängerkupplung oder ein Hydraulikbausatz am Heck der Kabine dazu geordert werden.
     image: /images/alke-innenraum.jpg
     title: Komfort & Ausstattung
+    stars: 3
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -67,6 +72,7 @@ content:
       Durch die kompakten Außenmaße eignet sich das Fahrzeug für zahlreiche Einsatzorte. Mit einer maximale Steigfähigkeit von 35% eignet sich das Fahrzeug auch im bergigen Gelände. Die große Frontscheibe ermöglicht zudem stets eine optimale Verkehrsbericht. In der Mittelkonsole befindet sich der Tachometer und alle anderen Bedieneinheiten. Leider findet sich dennoch wenig Staufläche im Innenraum der Fahrerkabine.
     image: /images/alke-atx-pritsche.jpg
     title: Bedienung & Fahrbetrieb
+    stars: 0
   - content: >-
       ### Umwelt (4/5)
 
@@ -74,6 +80,7 @@ content:
       Der Verbrauch liegt je nach Batterie bei 7,5 oder 12 kwh für die Gel-Batterien oder 9 beziehungsweise 13 kwh für die Blei-Säure-Batterie. Die Lithium-Akkus kommen auf einen Verbrauch von 9 oder 18,5 kwh. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke zwischen 2,25 und 5,55 €. Trotz der vielfältigen Ausstattungen macht der Hersteller keine Angaben zu einem zusätzlichen Solarmodul.
     title: Umwelt
     image: /images/elektro-kuehltransporter-alke.jpg
+    stars: 4
   - content: >-
       ### Preise & Garantie (3/5)
 
@@ -81,6 +88,7 @@ content:
       Da die ATX-Serie für Industrie und gewerbliche Kunden konzipiert ist und die Anzahl an Aufbauarten sehr hoch ist, gibt es keine offiziellen Preislisten für das Fahrzeug. Hier müssen sich Kunden mit ihren konkreten Vorstellungen an die Vertriebspartner wenden.  Diese erstellen dann ein Angebot, dessen Preis von der Aufbauart, den Ausstattungsdetails und der Stückzahl abhängig ist. Der Netto-Listenpreis beträgt für den ATX 310 E beispielsweise  23.500€. Der Startpreis für den ATX 340 E liegt bei 27.000 €.
     title: Preise & Garantie
     image: /images/elektro-gelaendewagen-atx330e.jpeg
+    stars: 3
   - content: >-
       ### Fazit
 
@@ -91,4 +99,5 @@ content:
       #### Gesamtnote: 3,6
     title: Fazit
     image: /images/atx.jpeg
+    stars: 5
 ---

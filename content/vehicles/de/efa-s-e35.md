@@ -1,111 +1,113 @@
 ---
-title: Mercedes-Benz eVito Kastenwagen
-name: mercedes-benz-evito
-price: 45990
+title: Efa-S E35
+name: efa-s-e35
+price: 0
 relatedBlogs: nur beispiel
-relatedReviews: mercedes-benz-evito-testbericht-von-elektrotransporter-vergleich
-description: Der Mercedes-Benz eVito Kastenwagen ist ein Elektrotransporter,
-  welcher in zwei Fahrzeuglängen erhältlich ist. Das Fahrzeug erreicht eine
-  Höchstgeschwindigkeit von 80 km/h bzw. 120 km/h optional und kann rund 900
-  Kilogramm Nutzlast aufnehmen.
-src: /images/mb-e-vito-front.jpg
-category: Kasten
-typeClass: N1
+relatedReviews: efa-s-e-35-testbericht-von-elektrotransporter-vergleich
+description: Efa-S steht für “Elektro-Fahrzeuge Schwaben” und bezeichnet ein
+  Stuttgarter Unternehmen, welches sich auf die Elektro-Umrüstung von
+  gebrauchten Fahrzeugen mit Verbrennungsmotor spezialisiert hat. Mit dem E35
+  hat das Unternehmen im Jahr 2019 sein erstes Neufahrzeug vorgestellt. Den
+  Efa-S E35 gibt es als 3,5-Tonner (Fahrzeugklasse N1) sowie als 4,25-Tonner
+  (N2).
+src: /images/efa-s-e35-plane.jpg
+category: Pritsche
+typeClass: N1N2
 loadingWeight:
   key: Nutzlast
-  value: 888
+  value: 900
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 2184
-  baseUnit: keine Angabe
+  value: 0
+  baseUnit: "-"
 maxSpeed:
   key: km/h
-  value: 80
+  value: 88
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 314
+  value: 200
   baseUnit: km
-  maxValue: 314
+  maxValue: 0
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 6.5
-  baseUnit: h
+  value: 0
+  baseUnit: "-"
 chargingTimeFast:
   key: Schnellladezeit
-  value: 1
-  baseUnit: h
+  value: 0
+  baseUnit: "-"
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
-  baseUnit: " keine Angabe"
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "60"
-  baseUnit: kwh
+  value: "80"
+  baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: 21,5
-  baseUnit: keine Angabe
+  value: "0"
+  baseUnit: "-"
 power:
   key: Leistung
-  value: "85"
-  baseUnit: kw
+  value: min-110/max-110
+  baseUnit: kW
 seats:
   key: Sitzplätze
-  value: 2
+  value: 3
 rating:
   key: Befriedigend
-  value: 3.4
+  value: 3
 guarantee:
   key: Garantie Fahrzeug
-  value: 2
-  baseUnit: keine Angabe
+  value: 0
+  baseUnit: "-"
 availability:
   key: Verfügbarkeit
   value: keine Angabe
 subsidies:
   key: Förderhöhe
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
   value: 0
-  baseUnit: keine Angabe
+  baseUnit: "-"
 loadingHeight:
   key: Ladehöhe
-  value: 0
+  value: 950
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 4,63
+  value: 0,00
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: "0"
+  value: 6,42
   baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1928
-  baseUnit: keine Angabe
-  valuelength: 5140
-  valueheight: 1941
+  valuewidth: 0
+  baseUnit: "-"
+  valuelength: 0
+  valueheight: 0
   valuewheelbase: 0
   key: Fahrzeugmaße
 loadingVolume:
@@ -113,37 +115,38 @@ loadingVolume:
   height: Höhe
   valueheight: 0
   width: Breite
-  valuewidth: 0
-  valuelength: 2831
+  valuewidth: 2078
+  valuelength: 3090
   length: Länge
-  baseUnit: mm
+  baseUnit: "-"
 carSizesLength:
-  value: "5140"
+  value: "0"
   key: Länge
-  baseUnit: mm
+  baseUnit: "-"
 carSizesWidth:
   key: Breite
-  value: "1928"
-  baseUnit: mm
+  value: "0"
+  baseUnit: "-"
 carSizesHeight:
   key: Höhe
-  value: "1941"
-  baseUnit: mm
+  value: "0"
+  baseUnit: "-"
 loadingVolumeLength:
   key: Länge
-  value: "2831"
+  value: "3090"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "0"
+  value: "2078"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
   value: "0"
-  baseUnit: mm
+  baseUnit: "-"
 wheelbase:
   key: Radstand
-  value: "3200"
-  baseUnit: mm
+  value: "0"
+  baseUnit: "-"
 ---
-Der Maxus EV 80 ist ein großer Elektrotransporter, der als Kastenwagen 910 Kilogramm Nutzlast aufnehmen kann und eine Höchstgeschwindigkeit von 100 km/h erreicht. Das Fahrzeug ist ebenso als Chassis-Version ohne Aufbau verfügbar.
+
+Der Efa-S-35 D ist ein großer Transporter mit Elektromotor, den es in den Versionen Pritsche, Koffer, Planenaufbau & Kasten gibt.

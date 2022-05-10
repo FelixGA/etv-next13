@@ -24,10 +24,13 @@ export default function BlogPost({ getBlogContext }) {
         <h2 className="w-1/2 py-8 text-4xl font-bold text-blue-dark">
           {getBlogContext?.title}
         </h2>
-        <div className="relative grid lg:grid-cols-[auto,_250px]">
+        <div className="relative grid list-disc lg:grid-cols-[auto,_250px]">
           <div className={`${styles.blogmarkdown} lg:pr-8`}>
             <MDXRemote {...getBlogContext.source} />
-            <div className="bg-red-500">test</div>
+            {/*  <div className="bg-red-500">
+              PLACE FOR THE 3 ARTICLES{" "}
+            
+            </div> */}
           </div>
           <div className="relative bottom-28">
             <SideBar />

@@ -2,23 +2,24 @@ import { promises as fs } from "fs";
 import path from "path";
 import { serialize } from "next-mdx-remote/serialize";
 import matter from "gray-matter";
+import remarkGfm from "remark-gfm";
+import fg from "fast-glob";
 
 export default async function getContent(name, locale) {
   try {
-    const dir = path.join(
-      process.cwd(),
-      `/content/${name}/${locale ? `${locale}/` : ""}`
-    );
-    const filenames = await fs.readdir(dir);
+    const dir = path.join(process.cwd(), `/content/${name}/${locale}`);
+    const filenames = await fg([`${dir}/*.md`], {
+      dot: true,
+    });
     let content = filenames.map(async (filename) => {
-      const source = await fs.readFile(path.join(dir, filename));
+      const source = await fs.readFile(filename);
       const { content, data } = matter(source);
+      data.locale = locale;
       let mdxSource;
       if (content) {
         mdxSource = await serialize(content, {
           mdxOptions: {
-            remarkPlugins: [],
-            rehypePlugins: [],
+            remarkPlugins: [remarkGfm],
           },
           scope: data,
         });

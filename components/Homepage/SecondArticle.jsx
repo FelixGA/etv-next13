@@ -26,7 +26,7 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
           {<MDXRemote {...getMarkdownContext.substities} />}
         </div>
 
-        <Link href="/magazin/foerderung">
+        <Link href="/magazin/subsidies">
           <a className="">
             <button className="px-6 py-4 mt-6 mb-8 text-sm font-bold text-white transition rounded-md bg-blue-dark no-select hover:bg-blue-light ">
               Mehr erfahren

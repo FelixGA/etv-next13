@@ -1,6 +1,6 @@
 ---
 title: Efa-S E35
-name: efa-s-e-35-d
+name: efa-s-e35
 price: 0
 relatedBlogs: nur beispiel
 relatedReviews: efa-s-e-35-testbericht-von-elektrotransporter-vergleich

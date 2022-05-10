@@ -18,6 +18,7 @@ content:
       Die möglichen Aufbauten teilen sich in vier Oberkategorien auf: Koffer, Pritsche, Kipper sowie Individualaufbauten. Zu Individualaufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer, Laubgitteraufbau, Food Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI 458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert. Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus für große Strecken.
     image: /images/ari-458-gruppenbilder-21-.jpg
     title: Konzept & Fahrzeugvarianten
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (4/5)
 
@@ -40,6 +41,7 @@ content:
       Die Nutzlast der 458er-Reihe liegt bei rund 530 Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450 Kilogramm möglich.
     image: /images/ari-458-food-truck-heckansicht-1-.jpg
     title: LADERAUM
+    stars: 4
   - content: >-
       ### Antrieb und Aufladung (4/5)
 
@@ -56,6 +58,7 @@ content:
       Die Aufladung erfolgt über handelsübliche 220-V-Steckdosen mit Schuko-Stecker. ARI Motors liefert optional außerdem einen Typ-2-Adapter für die Aufladung an öffentlichen Ladesäulen mit. Die Aufladung mit 220 Volt dauert bei vollkommener Entladung rund 6 Stunden, während ein voller Akku per Schnellladung in 4 Stunden erreicht werden kann. Der ARI 458 nutzt auch die Selbstaufladung in Form von Rekuperation, die allerdings hier nicht direkt mit der Bremsanlage verbunden ist.
     image: /images/dsc_0269.jpg
     title: Antrieb und Aufladung (4/5)
+    stars: 4
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
@@ -69,6 +72,7 @@ content:
       Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist verfügbar. Für sperrige Güter, wie etwa Leitern, sind ein Dachgepäckträger sowie eine Leiterklappe im hinteren Bereich des Kofferdach praktisch. Eine Anhängerkupplung ist ebenso erhältlich, allerdings darf der ARI 458 bisher nur auf Werks- und Privatgelände mit Anhänger gefahren werden.
     image: /images/ari-458-innenraum-fahrerplatz.jpg
     title: Komfort & Ausstattung (4/5)
+    stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -88,6 +92,7 @@ content:
       Die Wendigkeit des kompakten Transporters ist gerade in engen Innenstädten sowie Werkshallen von Vorteil. Für einfacheres Rangieren bei niedrigen Geschwindigkeiten bietet sich die optional verfügbare Servolenkung an. Positiv fällt auch das Glasdach auf, welches ein besseres Raumgefühl erzeugt und gerade an sonnigen Tagen einen angenehmen Effekt hat. Natürlich kann man bei heftiger Sonneneinstrahlung dies auch durch ein Rollo abdecken.
     image: /images/ARI-458-Kipper-L-Heck-300x199.jpg
     title: Bedienung & Fahrbetrieb
+    stars: 0
   - content: >-
       ### Umwelt (⅘)
 
@@ -95,6 +100,7 @@ content:
       Innerorts liegt der Verbrauch des Ari 458 bei 6,2 kWh und außerorts bei 8,0 kWh. Das Fahrzeug kommt dadurch auf einen niedrigen kombinierten Verbrauch von 7,1 kWh. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 2,13 €.
     title: Umwelt
     image: /images/ari-458-kofferaufbau-mit-solarpanel.jpg
+    stars: 3
   - content: >-
       ### Preise & Garantie (4/5)
 
@@ -105,6 +111,7 @@ content:
       Das Fahrzeug kommt mit einer Herstellergarantie von 6 Monaten sowie einer Gewährleistung über eine Zeit von 2 Jahren. Auf die Lithium-Batterie haben Kunden einen Garantieanspruch von 4 Jahren bzw. 60.000 Kilometer.
     title: Preise & Garantie
     image: /images/ari-458-mit-planenaufbau.jpg
+    stars: 4
   - content: >-
       ### Fazit
 
@@ -118,4 +125,5 @@ content:
       4,4
     title: Fazit
     image: /images/ari-458-kipper-l-mit-laubgitter.jpg
+    stars: 4.4
 ---

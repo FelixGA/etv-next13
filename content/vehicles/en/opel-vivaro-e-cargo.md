@@ -1,7 +1,7 @@
 ---
-title: VW ABT e-Transporter 6.1
-name: vw-abt-e-transporter
-price: 44990
+title: Opel Vivaro-E Cargo
+name: opel-vivaro-e-cargo
+price: 37490
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -133,24 +133,22 @@ relatedBlogs: >-
 
 
   4,4
-relatedReviews: vw-abt-e-transporter-testbericht-von-elektrotransporter-vergleich
-description: Der VW ABT e-Transporter ist ein elektrischer Kastenwagen der
-  Fahrzeugklasse N1, der eine Zuladung von mehr als 1.000 Kilogramm aufnehmen
-  kann und mit 90 km/h bzw. 120 km/h Höchstgeschwindigkeit verfügbar ist.
-src: /images/abte_t6.1_front_3.jpg
-category: Kasten
-typeClass: N1
+relatedReviews: opel-vivaro-e-testbericht-von-elektrotransporter-vergleich
+description: Der Opel Vivaro-E Cargo ist ein Kastenwagen, welcher in zwei
+  Ladelängen erhältlich ist. Der Elektrotransporter erreicht in allen Varianten
+  eine Höchstgeschwindigkeit von 130 km/h und kann rund 900 Kilogramm zuladen.
+src: /images/opel-vivaro-e-cargo-front.jpg
 loadingWeight:
   key: Nutzlast
-  value: 1096
+  value: 928
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 0
-  baseUnit: "-"
+  value: 1937
+  baseUnit: kg
 maxSpeed:
   key: km/h
-  value: 90
+  value: 130
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
@@ -159,46 +157,46 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 106
+  value: 231
   baseUnit: km
-  maxValue: 138
+  maxValue: 329
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 0
   baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 5
+  value: 7
   baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
-  value: 0
-  baseUnit: "-"
+  value: 1
+  baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
   baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: 37,3
+  value: "50"
   baseUnit: kWh
 batteryIncluded:
-  value: keine Angabe
+  value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: 31,0
+  value: 21,7-26,1
   baseUnit: kWh
 power:
   key: Leistung
-  value: "83"
+  value: "100"
   baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Befriedigend
-  value: 2.8
+  key: Gut
+  value: 3.6
 guarantee:
   key: Garantie Fahrzeug
   value: 2
@@ -217,10 +215,10 @@ batteryGuarantee:
 loadingHeight:
   key: Ladehöhe
   value: 0
-  baseUnit: "-"
+  baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 6,5
+  value: 5,8
   baseUnit: m3
 loadingArea:
   key: Ladefläche
@@ -231,48 +229,49 @@ carSizes:
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 0
+  valuewidth: 2010
   baseUnit: mm
-  valuelength: 0
-  valueheight: 0
-  valuewheelbase: 0
+  valuelength: 4959
+  valueheight: 1895
+  valuewheelbase: 3275
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1410
+  valueheight: 1220
   width: Breite
-  valuewidth: 1700
-  valuelength: 2724
+  valuewidth: 1628
+  valuelength: 2077
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "0"
+  value: "4959"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "0"
+  value: "2010"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "0"
+  value: "1895"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "0"
+  value: "2077"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "0"
+  value: "1628"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
+  value: "1220"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "0"
+  value: "3275"
   baseUnit: mm
 ---
-Der VW ABT e-Transporter ist ein elektrischer Kastenwagen der Fahrzeugklasse N1, der eine Zuladung von mehr als 1.000 Kilogramm aufnehmen kann und mit 90 km/h bzw. 120 km/h Höchstgeschwindigkeit verfügbar ist.
+
+Der Opel Vivaro-E Cargo ist ein Kastenwagen, welcher in zwei Ladelängen erhältlich ist. Der Elektrotransporter erreicht in allen Varianten eine Höchstgeschwindigkeit von 130 km/h und kann rund 900 Kilogramm zuladen.

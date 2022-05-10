@@ -19,21 +19,12 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
       <div className="flex flex-col-reverse lg:flex-row-reverse">
         <p className="pb-4 pl-0 text-lg lg:pl-8 ">
           {carItem.description}
-          {getCarsReview && (
-            <Link
-              href={`/magazin/transporter/${
-                getCarsReview?.find(
-                  (item) =>
-                    item.slug == carItem?.relatedReviews ||
-                    carItem?.relatedReviews?.includes(item.slug)
-                )?.slug
-              }`}
-            >
-              <a className="pl-2 text-blue-dark">
-                Lesen Sie hier den gesamten Beitrag zum Fahrzeug!
-              </a>
-            </Link>
-          )}
+
+          <Link href={`/transporter/${carItem.name}`}>
+            <a className="pl-2 text-blue-dark">
+              Lesen Sie hier den gesamten Beitrag zum Fahrzeug!
+            </a>
+          </Link>
         </p>
         <div className="flex items-center justify-center pb-4 ">
           <Link href={`/transporter/${carItem.name}`} passHref>

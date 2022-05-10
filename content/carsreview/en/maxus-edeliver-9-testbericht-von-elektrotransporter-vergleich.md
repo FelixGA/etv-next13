@@ -1,21 +1,18 @@
 ---
 title: Maxus eDeliver 9
-slug: maxus-edeliver-9
 relatedCars: maxus-edeliver-9
-youtubeLink: https://www.youtube.com/watch?v=xv6BkrIbOF0
-category: Kasten
 publishedAt: 04/01/2022
 description: Der Maxus eDeliver 9 ist ein Elektrotransporter der Klasse N1 sowie
   N2, der in zwei Fahrzeuglängen erhältlich ist und maximal 1.275  Kilogramm
   Nutzlast aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit
   von 100 km/h.
-src: /images/maxus-edeliver9_frontansicht_0.jpg
 content:
   - content: Der Maxus eDeliver 9 ist ein Elektrotransporter der Klasse N1 sowie N2,
       der in zwei Fahrzeuglängen erhältlich ist und maximal 1.275  Kilogramm
       Nutzlast aufnehmen kann. Er erreicht eine abgeriegelte
       Höchstgeschwindigkeit von 100 km/h.
     title: Einleitung
+    stars: 0
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
@@ -29,6 +26,7 @@ content:
       Beim Akku stehen je nach Größe bis zu drei Varianten zur Auswahl: mit 52, 72 sowie 89 kWh Kapazität. Dadurch variiert die Reichweite des Fahrzeugs natürlich je nach Akku-Version.
     title: Konzept & Fahrzeugvarianten
     image: ""
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (4/5)
 
@@ -42,6 +40,7 @@ content:
       Die Anhängelast beträgt 750 Kilogramm gebremst und zwischen 1.400 und 1.500 Kilogramm mit einem ungebremsten Hänger.
     title: Laderaum & Flexibilität
     image: /images/maxus-edeliver-9-laderaum.jpg
+    stars: 4
   - content: >-
       ### Antrieb & Aufladung (4/5)
 
@@ -55,6 +54,7 @@ content:
       Die Ladezeit gibt der Hersteller je nach Kapazität mit 6 bis 9 Stunden an einer 11 kW-Wallbox an. An einer Schnellladesäule mit Gleichstrom können die Elektrotransporter in ungefähr 36 bis 45 Minuten von 20 auf 80% Ladekapazität gebracht werden.
     title: Antrieb & Aufladung
     image: /images/maxus-edeliver-9-engine.jpg
+    stars: 1
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
@@ -62,6 +62,7 @@ content:
       Der Maxus eDeliver 9 kommt nur in einer Ausstattungsvariante zum Kunden. Diese ist allerdings sehr umfangreich und beinhaltet bereits Einparkhilfen vorn wie hinten, eine Klimaanlage sowie einen 10-Zoll-Touchscreen mit Rückfahrkamera. Auch mehrere Airbags, ein Spurwechselassistent sowie eine Berganfahrhilfe sind serienmäßig mit dabei. Optional ist neben einer Metallic-Lackierung noch das Plus-Paket erhältlich, zu dem u.a. eine Sitzheizung, ein Notbremsassistent sowie Digitalradio DAB+ gehören.
     title: Komfort & Ausstattung
     image: /images/maxus-edeliver-9-interior.jpg
+    stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -69,12 +70,14 @@ content:
       Der Maxus eDeliver 9 hat dank der hohen Sitzposition eine gute Übersicht. Zwar ist wie bei den meisten Kastenwagen durch die fehlenden Heckfenster die Übersicht eingeschränkt, die serienmäßige Rückfahrkamera hilft hier allerdings immens. Auch der große Touchscreen mit Smartphone-Anbindung hilft im täglichen Arbeitseinsatz. Ein Flottenmanagement-System wird derzeit nicht angeboten.
     title: Bedienung & Fahrbetrieb
     image: ""
+    stars: 0
   - content: >-
       ### Umwelt (2/5)
 
 
       Der Energieverbrauch des Maxus eDeliver 9 liegt je nach Akku und Größe zwischen 30,2 kWh (L2H2 mit kleinem Akku) und 33,2 kWh (große N2-Version). Bei einem Strompreis von 30 Cent pro kWh entstehen so Energiekosten von rund 9 bis 10 Euro auf 100 Kilometer. Eine Solaranlage für eine erweiterte Reichweite wird nicht angeboten.
     title: Umwelt
+    stars: 2
   - content: >-
       ### Preise & Garantie (3/5)
 
@@ -82,6 +85,7 @@ content:
       Die Preise des Maxus eDeliver 9 startet bei 54.690 Euro netto für L2H2-Version mit kleinem Akku, das Topmodell L3H3 60.990 Euro. Für die größeren Akkus muss dann jeweils 8.000 Euro (72 kWh) bzw. 15.000 Euro (89 kWh) netto draufgezahlt werden. Für ein Fahrzeug dieser Größe und Leistungsfähigkeit sicher kein Schnäppchen, aber zumindest angemessen. Außerdem ist die Herstellergarantie auf das Fahrzeug mit 5 Jahren bzw. 100.000 Kilometer sehr großzügig. Auf den Lithium-Ionen-Akku gibt es sogar 8 Jahre bzw. 160.000 Kilometer Garantie.
     title: Preise & Garantie
     image: /images/maxus_edeliver9_702.jpg
+    stars: 3
   - content: >-
       ### Fazit
 
@@ -94,4 +98,5 @@ content:
 
       3,4 Sterne
     title: Fazit
+    stars: 3.4
 ---
