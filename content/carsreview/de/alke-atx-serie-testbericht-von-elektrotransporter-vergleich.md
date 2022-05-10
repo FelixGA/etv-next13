@@ -99,5 +99,5 @@ content:
       #### Gesamtnote: 3,6
     title: Fazit
     image: /images/atx.jpeg
-    stars: 5
+    stars: 3.6
 ---
