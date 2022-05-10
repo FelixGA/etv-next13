@@ -5,6 +5,7 @@ import styles from "./Details.module.css";
 import { MDXRemote } from "next-mdx-remote";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { AiOutlineStar } from "react-icons/ai";
+import StarsRating from "../repeated/StarsRating";
 
 const Articles = ({
   getCarsReview,
@@ -29,6 +30,7 @@ const Articles = ({
             <RatingBox carItem={carItem} />
           </div>
         </div> */}
+        <StarsRating stars={2.5} />
         <div className="flex flex-col flex-wrap lg:w-2/3 lg:px-6">
           <h3 className="w-full py-4 mt-4 text-2xl font-bold text-black-darkest">
             Testbericht von {carItem.title}
