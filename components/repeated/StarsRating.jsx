@@ -25,7 +25,7 @@ const StarsRating = () => {
       } else {
         console.log(`${x} is not a number`);
         setEmptyStar(1);
-      }
+      } 
       setSumOfStars(fullStar + halfStar);
       return console.log(sumOfStars);
     }
@@ -48,18 +48,29 @@ const StarsRating = () => {
   const [sumOfStars, setSumOfStars] = useState(0);
 
   const ratingCount = (stars) => {
-    // console.log(Number.isInteger(stars));
     let result;
-    Number.isInteger(stars) ? setSumOfStars(stars) : setHalfStar(1);
 
-    setSumOfStars(setFullStar(stars - 1));
+    // check if value is INT
+    Number.isInteger(stars)
+      ? setFullStar(stars) && console.log(fullStar, "full stars")
+      : setHalfStar(1) && setFullStar(Math.floor(stars) - 1);
+
+    setSumOfStars(fullStar - halfStar);
 
     result = sumOfStars;
-
+    setEmptyStar(5 - sumOfStars);
+    // console.log(fullStar, "full stars");
+    console.log(halfStar, "half stars");
+    console.log(emptyStar, "empty stars");
+    console.log(`${sumOfStars} sum of stars`);
     return `${sumOfStars}`;
   };
 
-  console.log(`${ratingCount(3.5)}, ${Math.ceil(fullStar)}, ${halfStar}`);
+  useEffect(() => {
+    ratingCount(4);
+  }, []);
+
+  // console.log(` ${Math.ceil(fullStar)}, ${halfStar}`);
 
   return (
     <div className="flex pt-1 pl-2">
