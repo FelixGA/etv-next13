@@ -30,7 +30,7 @@ content:
     title: Konzept & Fahrzeugvarianten
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität
 
 
       Als Koffer-Version “Van” hat der Aixam Pro einen Radstand von 2,52 Meter und ist exakt 3 Meter lang und 1,50 Meter breit. Der Laderaum ist einzig über zwei seitlich öffnende Türen im Heck zugänglich und hat eine Ladehöhe von 1,40 Meter. Der Kofferraum hat eine Länge von 1,35 Meter und kommt auf ein Gesamtvolumen von 2,8m³. 
@@ -41,7 +41,7 @@ content:
     title: Laderaum & Flexibilität
     stars: 3
   - content: >-
-      ### Antrieb & Aufladung (2/5)
+      ### Antrieb & Aufladung
 
 
       Unter der Haube beider Aixam Pro Elektrotransporter arbeitet ein Synchron-Permanentmagnet-Motor, der eine Nennleistung von 6 kW sowie eine Spitzenleistung von rund 9 kW generiert. Das Drehmoment beträgt 50 Nm. Der Aixam Pro hat ein Automatikgetriebe und kann eine Höchstgeschwindigkeit von 45 Km/h erreichen, was auch den Grenzwert für Fahrzeuge der Kategorie L6e darstellt.
@@ -52,7 +52,7 @@ content:
     title: Antrieb & Aufladung
     stars: 2
   - content: >-
-      ### Komfort & Ausstattung (3/5)
+      ### Komfort & Ausstattung
 
 
       Der Aixam Pro ist sehr einfach ausgestattet. Eine Servolenkung ist ebenso wenig erhältlich wie eine Klimaanlage, während elektrische Fensterheber sowie eine Zentralverriegelung Aufpreis kosten. Auch ein Radio kostet zusätzliches Geld, ist dann aber immerhin mit mit USB-Port und Bluetooth-Funktion ausgestattet.
@@ -68,7 +68,7 @@ content:
     title: Bedienung & Fahrbetrieb
     stars: 0
   - content: >-
-      ### Umwelt (4/5)
+      ### Umwelt
 
 
       Konkrete Verbrauchsangaben zu den Aixam Pro e-Trucks gibt es nicht. Die Reichweite von 95 Kilometer bei einer Akku-Kapazität von 7,26 kWh spricht aber für einen Verbrauch von rund 8 kWh auf 100 Kilometer, also sehr niedrig. So kommt man mit 2,40 Euro Energiekosten rund 100 Kilometer weit bei einem Strompreis von 30 Cent pro kWh. Eine Solaranlage ist nicht verfügbar.
@@ -76,13 +76,13 @@ content:
     image: ""
     stars: 4
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Die Preise für das Fahrzeug betragen in der Basisausstattung ab Werk 19.690 Euro für die Pritsche und 20.490 Euro als “Van”. Die Batterie ist mit im Preis enthalten und muss nicht extra gemietet werden. Aixam gibt eine Garantie von 2 Jahren auf das Fahrzeug, unabhängig vom Kilometerstand.
     title: Preise & Garantie
     image: /images/aixam-pro-etruck-boutique.jpg
-    stars: 0
+    stars: 3
   - content: >-
       ### Fazit
 
