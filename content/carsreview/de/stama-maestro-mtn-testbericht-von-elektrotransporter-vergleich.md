@@ -42,7 +42,7 @@ content:
     image: /images/stama-maestro-kipperpritsche.png
     stars: 3
   - content: >-
-      ### Antrieb & Aufladung (2/5)
+      ### Antrieb & Aufladung
 
 
       Technisch gibt es den Stama Maestro in zwei Versionen: Zum einen mit einer Getriebeübersetzung: 8.8:1 und einer Höchstgeschwindigkeit von 70 km/h und zum anderen mit der Übersetzung: 12.5:1 sowie einer Höchstgeschwindigkeit von 55 km/h. Beide Versionen verfügen über einen 72V-Motor mit einer Leistung von 9 kW.
@@ -56,7 +56,7 @@ content:
     image: /images/stama-maestro-tacho.png
     stars: 2
   - content: >-
-      ### Komfort & Ausstattung (2/5)
+      ### Komfort & Ausstattung
 
 
       Das Fahrzeug ist sehr einfach ausgestattet, um eine simple Bedienung zu garantieren und den Akku nicht unnötig zu belasten. Die Ausstattungsliste setzt auf nützliche Helfer wie eine Servolenkung (optional) für einfaches Handling, eine Anhängerkupplung (ebenfalls optional) oder eine serienmäßige Scheibenwaschanlage für die Frontscheibe. Für den Einsatz in der kalten Jahreszeit lohnt es sich, den Aufpreis für eine Heizung und einen Satz Winterreifen zu zahlen. 
@@ -84,7 +84,7 @@ content:
     image: https://de.gmr.dk/admin/public/getimage.ashx?image=/Files/Images/STAMA/MAESTRO/STAMA-MT-10-10_.JPG&crop=0&Width=1200
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Der Verbrauch des Fahrzeugs liegt laut Hersteller bei rund 12 kWh. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 Kilometer Fahrt 3,60 €.
@@ -92,13 +92,13 @@ content:
     image: https://de.gmr.dk/admin/public/getimage.ashx?image=/Files/Images/STAMA/MAESTRO/MT10-Havn-24_.JPG&crop=0&Width=1200
     stars: 3
   - content: >-
-      ### Preise & Garantie (2/5)
+      ### Preise & Garantie
 
 
       Die Preise für den Stama Maestro ohne Aufbau beginnen für beide Getriebe-Versionen bei 35.450,- zzgl. Mwst. Ein konkretes Angebot für ein spezielles Modell können Interessenten auf Anfrage beim Unternehmen erhalten. Im Preis enthalten ist das Lithium-Ionen-Akkupaket, auf welches der Hersteller eine Garantie von 5 Jahren gibt. Über die Dauer eine Fahrzeuggarantie gibt es leider keine Angaben.
     title: Preise & Garantie (2/5)
     image: /images/stama-maestro.png
-    stars: 4
+    stars: 2
   - content: >-
       ### Fazit
 
