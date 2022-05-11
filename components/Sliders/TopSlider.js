@@ -4,6 +4,21 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 // import Script from "next/script";
 import { useState, useRef, useEffect } from "react";
+const sellingRanking = {
+  "ari-458-pritsche": 13,
+  /* "Piaggo Porter": 12, */
+  "alke-atx-340-e-pritsche": 11,
+  "evum-a-car-pritsche": 10,
+  "Addax MT": 9,
+  "Citroen eJumpy": 8,
+  "Aixam Pro e-Truck": 7,
+  "opel-vivaro-e-cargo": 6,
+  "ari-458-koffer": 5,
+  "vw-abt-e-caddy": 4,
+  "efa-s-e35": 3,
+  "garia-utility-park-ec-pritsche": 2,
+  /* "Renault Kangoo Z.E": 1, */
+};
 
 const TopSlider = ({ getBlogContext, getCars }) => {
   const container = useRef();
@@ -12,7 +27,14 @@ const TopSlider = ({ getBlogContext, getCars }) => {
   const [sliderData, setSliderData] = useState(
     getBlogContext ? [getBlogContext].concat(getCars) : getCars
   );
-
+  /* console.log(
+    sliderData.sort((a, b) => sellingRanking[a.name] - sellingRanking[b.name])
+  ); */
+  console.log(
+    sliderData?.sort(
+      (a, b) => 1 - (sellingRanking[a.name] ? sellingRanking[a.name] : 0)
+    )
+  );
   useEffect(() => {
     setSliderData(getBlogContext ? [getBlogContext].concat(getCars) : getCars);
   }, [getCars]);
@@ -53,7 +75,17 @@ const TopSlider = ({ getBlogContext, getCars }) => {
             className="grid grid-flow-col gap-4 auto-cols-[minmax(293px,_1fr)] overflow-x-scroll scrollbar-hide pt-2 px-2 snap-x "
             ref={container}
           >
-            <TopSliderCard getCars={sliderData} />
+            <TopSliderCard
+              getCars={
+                sliderData
+                /*  .sort((a, b) =>
+                sellingRanking[b.name]
+                  ? sellingRanking[b.name]
+                  : 0 - sellingRanking[a.name]
+                  ? sellingRanking[a.name]
+                  : 0 )*/
+              }
+            />
           </div>
         </div>
 

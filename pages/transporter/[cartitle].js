@@ -82,7 +82,7 @@ export async function getStaticProps(context) {
   let carsreview = carsreviews?.find(
     (item) =>
       vehicle?.relatedReviews?.slice(0, -45) == item.relatedCars ||
-      item?.relatedCars.includes(vehicle?.relatedReviews.slice(0, -45))
+      item?.relatedCars?.includes(vehicle?.relatedReviews.slice(0, -45))
   )
     ? carsreviews.find(
         (item) =>
