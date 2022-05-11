@@ -30,7 +30,7 @@ content:
     title: Konzept & Fahrzeugvarianten
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (5/5)
+      ### Laderaum & Flexibilität
 
 
       Aufgrund der vielen Aufbauvarianten ist ein Gesamtüberblick über die Transportmöglichkeiten des Alkè ATX 340E kaum möglich. Da Alkè die Lademaße auf Basis der Pritsche angibt, soll das Hauptaugenmerk hier auf dieser Version liegen. Je nach Radstand hat der ATX so eine Ladeflächenlänge von 1,80 Meter bzw. 2,00 Meter. Die maximal nutzbare Breite beträgt laut Hersteller 1,50 Meter. Die Kabinenhöhe liegt bei 1,89 Meter, was auch der Fahrzeughöhe entspricht, solange der Aufbau die Kabine nicht überragt.
@@ -41,7 +41,7 @@ content:
     title: Laderaum & Flexibilität
     stars: 5
   - content: >-
-      ### Antrieb & Aufladung (3/5)
+      ### Antrieb & Aufladung
 
 
       Der Heckantrieb des Fahrzeugs leistet 14 kW und erzeugt ein maximales Drehmoment von 113 Nm. Die Höchstgeschwindigkeit von 44 km/h zeigt deutlich, dass der ATX 340E eher für Großbaustellen, Werksgelände und Industrieanlagen konzipiert wurde als für das Absolvieren langer Strecken. Mit der leistungsstärksten Batterie gibt Alkè eine maximale Steigfähigkeit von 35% an, womit auch unwegsame Gelände bewältigt werden können.
@@ -53,9 +53,9 @@ content:
       Durch ein integriertes Batterieladegerät kann das Fahrzeug an herkömmlichen Steckdosen aufgeladen werden. Die Kosten einer Aufladung gibt Alkè für die kleinste Kapazität mit 2 Euro an und auch die Zeitdauer variiert. Während der Gel-Akku ungefähr 11 Stunden zur vollen Aufladung benötigt, beträgt die Ladezeit mit Blei-Batterie ca. 8 Stunden. Die Lithium-Ionen-Akkus sind mit normaler Ladung in 3,5 Stunden (10 kWH) bzw. 6,5 Stunden (20 kWh) voll, während eine Schnelllademöglichkeit diese Zeit auf 1,5 sowie etwas mehr als 2,5 Stunden senkt.
     image: /images/akku-blei-saeure-14kwh-elektrofahrzeuge-alke.jpg
     title: Antrieb & Aufladung
-    stars: 1
+    stars: 3
   - content: >-
-      ### Komfort & Ausstattung (3/5)
+      ### Komfort & Ausstattung
 
 
       Da die Alkè ATX-Serie speziell für den Einsatz in der Industrie konzipiert ist, hält sich die Ausstattung des Fahrgastbereichs in Grenzen. Hier wurde ganz klar auf Funktionalität und Einfachheit Wert gelegt und weniger auf den Komfort der Mitfahrenden. Optional sind allerdings trotzdem angenehme Extras wie eine Rückfahrkamera, ein Radio mit USB-Anschluss und Bluetooth-Funktion sowie eine Klimaanlage verfügbar.
@@ -74,7 +74,7 @@ content:
     title: Bedienung & Fahrbetrieb
     stars: 0
   - content: >-
-      ### Umwelt (4/5)
+      ### Umwelt
 
 
       Der Verbrauch liegt je nach Batterie bei 7,5 oder 12 kwh für die Gel-Batterien oder 9 beziehungsweise 13 kwh für die Blei-Säure-Batterie. Die Lithium-Akkus kommen auf einen Verbrauch von 9 oder 18,5 kwh. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke zwischen 2,25 und 5,55 €. Trotz der vielfältigen Ausstattungen macht der Hersteller keine Angaben zu einem zusätzlichen Solarmodul.
@@ -82,7 +82,7 @@ content:
     image: /images/elektro-kuehltransporter-alke.jpg
     stars: 4
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Da die ATX-Serie für Industrie und gewerbliche Kunden konzipiert ist und die Anzahl an Aufbauarten sehr hoch ist, gibt es keine offiziellen Preislisten für das Fahrzeug. Hier müssen sich Kunden mit ihren konkreten Vorstellungen an die Vertriebspartner wenden.  Diese erstellen dann ein Angebot, dessen Preis von der Aufbauart, den Ausstattungsdetails und der Stückzahl abhängig ist. Der Netto-Listenpreis beträgt für den ATX 310 E beispielsweise  23.500€. Der Startpreis für den ATX 340 E liegt bei 27.000 €.
