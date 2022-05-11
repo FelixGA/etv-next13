@@ -21,7 +21,7 @@ content:
     image: /images/goupil-g2_.jpg
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität
 
 
       Der Goupil G2 Kofferaufbau verfügt über eine Länge von ca 1,20 m, eine Höhe von rund 1 m und eine Breite von rund 1,10 m. Das Ladevolumen beträgt hier rund 1,32 m3. Die Ladehöhe des Fahrzeugs beträgt 78cm. 
@@ -35,7 +35,7 @@ content:
     image: https://goupil.de/wp-content/uploads/2021/02/ISEKI_Goupil-frankenstein-1920x1280-1.jpg
     stars: 3
   - content: >-
-      ### Antrieb & Aufladung (3/5)
+      ### Antrieb & Aufladung
 
 
       Der Motor kommt vom Hersteller Mahle und verfügt über eine Spannung von 48 V. Die Leistung liegt bei 5,1 kW mit einem maximalen Drehmoment von 57 Nm. Angetrieben wird das Fahrzeug über einen Heckantrieb.
@@ -49,7 +49,7 @@ content:
     image: https://goupil.de/wp-content/uploads/2021/02/2019-5987-ISEKI_Goupil-G2-2100x1400-2.jpg
     stars: 3
   - content: >-
-      ### Komfort & Ausstattung (1/5)
+      ### Komfort & Ausstattung
 
 
       Die Serienausstattung des Goupil G2 ist relativ spartanisch. Dennoch verfügt das Fahrzeug über eine beheizbare Windschutzscheibe, LED-Scheinwerfer, eine 12V- und USB-Steckdose und verstellbare Sitze. Optional können beispielsweise Bluetooth-Lautsprecher, eine 900-W-Heizung, eine Anhängerkupplung oder eine Rundumwarnleuchte integriert werden. 
@@ -68,23 +68,23 @@ content:
     image: https://goupil.de/wp-content/uploads/2021/02/GOUPIL-G2_Outdoor_Neuss_Meerbusch-2100x1036-3.jpg
     stars: 0
   - content: >-
-      ### Umwelt (1/5) 
+      ### Umwelt
 
 
       Zum Verbrauch des Fahrzeugs finden sich keine Angaben. Ebenso ist nicht erkenntlich, ob das Fahrzeug mit einem zusätzlichen Solar-Modul ausgestattet werden kann.
-    title: "Umwelt (1/5) "
+    title: Umwelt
     stars: 1
   - content: >-
-      ### Preise & Garantie (2/5)
+      ### Preise & Garantie
 
 
       Der Hersteller macht in Sachen Preis keine Angaben. Auf der Website eines Händlers findet sich die Pritschen-Version des Goupil G2 ab 19.700€ zzgl. Mehrwertsteuer. Der Preis für einen Kofferaufbau mit einem Lithium-Akku, lag auf Händleranfrage bei rund 23.000 €. Die Preise können hier je nach Konfigurationen und Händler jedoch variieren.
 
 
       Die Garantie beträgt  2 Jahre auf das Fahrzeug und 3 zusätzliche Jahre  auf die Batterie.
-    title: Preise & Garantie (2/5 Punkte)
+    title: Preise & Garantie
     image: /images/goupil-g2-pritsche.jpg
-    stars: 0
+    stars: 2
   - content: >-
       ### Fazit
 
