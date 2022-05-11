@@ -73,7 +73,7 @@ content:
       Das Fahrzeug ist zwar wirklich günstig, aber auch sehr simpel ausgestattet. Leider macht der Händler kaum Angaben zu technischen Daten des Grand Extra. Das Lastentrike  eignet sich wohl am besten für den Einsatz auf Privatgelände oder auf dem Land. Möglich Einsatzfelder des Fahrzeugs sind Landwirtschafts-, Bau- oder Handwerksbetriebe. Für Lieferdienste im urbanen Raum eignet sich die wohl Pritsche weniger.
 
 
-      #### Gesamtbewertung: 2,4
+      #### Testurteil: 2,4
     title: Fazit
     image: ""
     stars: 2.4
