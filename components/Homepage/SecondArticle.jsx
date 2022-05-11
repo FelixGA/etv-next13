@@ -21,7 +21,7 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
            dfg
           </h2> */}
         <div
-          className={`${styles.secondArticle} "px-1 pl-4 font-bold tracking-wide text-blue-lighter xs:px-2 xl:pr-36"`}
+          className={`${styles.secondArticle} "px-1 lg:pl-4 font-bold tracking-wide text-blue-lighter xs:px-2 xl:pr-36"`}
         >
           {<MDXRemote {...getMarkdownContext.substities} />}
         </div>
