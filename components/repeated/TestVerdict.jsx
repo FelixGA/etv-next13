@@ -4,15 +4,17 @@ import StarsRating from "./StarsRating";
 
 const TestVerdict = () => {
   return (
-    <div className="flex flex-col w-[260px] ">
+    <div className="flex flex-col w-[230px]  xs:w-[270px] pt-4">
       <div className="text + stars + icon flex justify-between relative">
         <div className="text + stars">
-          <p className="text-2xl font-extrabold text-blue-darker">TESTURTEIL</p>
-          <div className="pl-3 scale-[120%]">
+          <p className="text-xl font-extrabold xs:text-2xl text-blue-darker">
+            TESTURTEIL
+          </p>
+          <div className="xs:pl-3 xs:scale-[120%]">
             <StarsRating stars={3} />
           </div>
         </div>
-        <div className="absolute -right-0 w-[115px] -top-5">
+        <div className="absolute right-0 xs:right-4 w-[115px] -top-6">
           <Image
             src="/images/etv-logo-final.png"
             alt="test"
@@ -23,10 +25,12 @@ const TestVerdict = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col">
-        <p className="text-lg">
-          elektrotransporter-vergleich.de{" "}
-          <span className="text-3xl text-[#3FA535]">✓</span>
+      <div className="flex flex-col pt-2">
+        <p className="relative xs:text-xs">
+          ELEKTROTRANSPORTER-VERGLEICH.DE
+          <span className="absolute xs:-top-3 top-4 text-3xl text-[#3FA535]">
+            ✓
+          </span>
         </p>
         <p className="text-sm text-grey-nav">Testbericht 435 von 05/2022</p>
       </div>
