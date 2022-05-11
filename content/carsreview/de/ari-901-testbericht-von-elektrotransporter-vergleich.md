@@ -90,7 +90,7 @@ content:
       Der ARI 901 ist ein vielseitiger Elektrotransporter mit einer vergleichsweise hohen Reichweite. Je nach Aufbau eignet er sich speziell für Dienstleister (Kastenwagen), Liefer- und Transportfirmen (Kofferaufbau) sowie Handwerks- und Baubetrieben (Pritsche, Kipper). Für Garten- und Landschaftsbaubetriebe bietet der Hersteller ebenso praktische Aufbauten (Pritsche mit Laubgitter). Mit einem Startpreis von 35.995€ ist das Fahrzeug vergleichsweise günstig. Der Kunde erhält dafür jedoch kein Luxus-Fahrzeug, sondern ein praktisches Arbeitswerkzeug mit einem auf das Wichtigste reduzierten Innenraum.
 
 
-      #### Gesamtnote: 4
+      #### Testurteil: 4
     title: Fazit
     stars: 4
 ---
