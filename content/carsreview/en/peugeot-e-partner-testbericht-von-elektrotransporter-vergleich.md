@@ -69,6 +69,7 @@ content:
       Serienmäßig ist in den Elektro-Modellen die “Peugeot Connect Box”, welche mit einem GPS-Modul und Notfallbatterie ausgestattet ist. Ein Flottenmanagement-System wird für den Peugeot e-Partner leider nicht angeboten, allerdings kann das Fahrzeug über die optionale “My Peugeot”-App entriegelt oder vorgewärmt werden. Auch lässt sich so aus der Ferne der Ladevorgang überprüfen und planen.
     title: Bedienung & Fahrbetrieb
     image: /images/peugeot-e-partner-innenraum.jpg
+    stars: 0
   - content: >-
       ### Umwelt
 
