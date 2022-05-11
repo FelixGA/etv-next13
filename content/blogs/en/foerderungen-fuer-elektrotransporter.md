@@ -176,7 +176,6 @@ category: subsidies
 description: Beim Kauf eines Elektrotransporters können verschiedene Förderungen
   in Anspruch genommen werden. Erfahren Sie, welche.
 ---
-
 Sie denken darüber nach, sich einen Elektrotransporter zu kaufen? Oder Ihre Flotte auf E-Mobilität umzustellen? Dann können Sie von verschiedenen Förderungen profitieren, mit denen Bund und Länder den Umstieg auf [klimafreundliche Nutzfahrzeuge](https://www.klimafreundliche-nutzfahrzeuge.de/gesamtkonzept/) vorantreiben wollen. Welche Förderungen für Elektrotransporter es gibt, wem diese zustehen und wo sie beantragt werden können, das erfahren Sie in diesem Artikel.
 
 <br />
@@ -201,10 +200,10 @@ Ob und in welcher Höhe die Umweltprämie ausgezahlt wird, ist abhängig vom:
 
 <br />
 
-- Gewicht
-- der Antriebsart
-- den Anschaffungskosten (Nettolistenpreis max. 65.000 Euro)
-- sowie ggf. von der Leasing-Dauer
+* Gewicht
+* der Antriebsart
+* den Anschaffungskosten (Nettolistenpreis max. 65.000 Euro)
+* sowie ggf. von der Leasing-Dauer
 
 <br />
 
@@ -216,11 +215,11 @@ Einen umfassenden Überblick über die Höhe der Umweltprämie sowie den jeweili
 
 <br />
 
-## Empfänger der Umweltprämie
+### Empfänger der Umweltprämie
 
 <br />
 
-### Käufer und Leasende eines neuen Elektrofahrzeugs
+#### Käufer und Leasende eines neuen Elektrofahrzeugs
 
 <br />
 
@@ -232,7 +231,7 @@ Das Bundesamt für Wirtschaft und Ausfuhrkontrolle [(BAFA)](https://www.bafa.de/
 
 <br />
 
-### Halter eines elektrischen Gebrauchtwagens
+#### Halter eines elektrischen Gebrauchtwagens
 
 <br />
 
@@ -244,14 +243,14 @@ Dabei gelten diese Voraussetzungen:
 
 <br />
 
-- Erstzulassung nach dem 04.11.2019
-- Erstzulassung liegt maximal 12 Monate zurück
-- Max. 15.000 km Laufleistung (hierzu bitte: [Nachweispaket für Gebrauchtwagen](https://www.bafa.de/SharedDocs/Downloads/DE/Energie/emob_formular_emob_gwa.pdf;jsessionid=C421B2C81F885A16D9B146491AA83DA8.2_cid387?__blob=publicationFile&v=7) ausfüllen)
-- zuvor keine weitere Förderung beantragt
+* Erstzulassung nach dem 04.11.2019
+* Erstzulassung liegt maximal 12 Monate zurück
+* Max. 15.000 km Laufleistung (hierzu bitte: [Nachweispaket für Gebrauchtwagen](https://www.bafa.de/SharedDocs/Downloads/DE/Energie/emob_formular_emob_gwa.pdf;jsessionid=C421B2C81F885A16D9B146491AA83DA8.2_cid387?__blob=publicationFile&v=7) ausfüllen)
+* zuvor keine weitere Förderung beantragt
 
 <br />
 
-##  Antrag auf Umweltprämie
+### Antrag auf Umweltprämie
 
 <br />
 
@@ -259,23 +258,23 @@ Der Antrag auf die „Umweltprämie“ kann direkt nach erfolgter Zulassung übe
 
 <br />
 
-### Übersicht benötigter Unterlagen:
+#### Übersicht benötigter Unterlagen:
 
 <br />
 
 **Bei Kauf:**
 
-- Rechnung
-- Zulassungsbescheinigung Teil II (Fahrzeugbrief)
+* Rechnung
+* Zulassungsbescheinigung Teil II (Fahrzeugbrief)
 
 <br />
 
 **Bei Leasing:**
 
-- Leasingvertrag
-- Zulassungsbescheinigung Teil II
-- Kalkulation der Leasingraten
-- verbindliche Bestellung
+* Leasingvertrag 
+* Zulassungsbescheinigung Teil II
+* Kalkulation der Leasingraten
+* verbindliche Bestellung
 
 <br />
 
@@ -315,14 +314,14 @@ Davon profitieren auch Käufer eines Elektrotransporters der leichteren Fahrzeug
 
 <br />
 
-- [Berlin – Programm „Wirtschaftsnahe Elektromobilität“](https://www.ibb-business-team.de/welmo/foerderung/): bis zu 5.000 Euro
-- [Thüringen – Programm „E-Mobil Invest“](https://www.aufbaubank.de/Foerderprogramme/e-mobilinvest): 40% der Investitionssumme bzw. maximal 12.000 Euro
-- [Nordrhein-Westfalen – Programm „ElektroMobilität NRW“](https://www.elektromobilitaet.nrw/): 40% des Kaufpreises bzw. maximal 30.000 Euro
-- [Baden-Württemberg – Programm „BW-e-Gutschein“](https://www.l-bank.de/produkte/finanzhilfen/bw-e-gutschein.html): bis zu 1.000 Euro
+* [Berlin – Programm „Wirtschaftsnahe Elektromobilität“](https://www.ibb-business-team.de/welmo/foerderung/): bis zu 5.000 Euro
+* [Thüringen – Programm „E-Mobil Invest“](https://www.aufbaubank.de/Foerderprogramme/e-mobilinvest): 40% der Investitionssumme bzw. maximal 12.000 Euro
+* [Nordrhein-Westfalen – Programm „ElektroMobilität NRW“](https://www.elektromobilitaet.nrw/): 40% des Kaufpreises bzw. maximal 30.000 Euro
+* [Baden-Württemberg – Programm „BW-e-Gutschein“](https://www.l-bank.de/produkte/finanzhilfen/bw-e-gutschein.html): bis zu 1.000 Euro 
 
 <br />
 
-## 3)   Förderungen auf kommunaler Ebene
+## 3) Förderungen auf kommunaler Ebene
 
 <br />
 
@@ -338,9 +337,9 @@ So haben zum Beispiel die Städte **München**, **Limburg** und **Regensburg** e
 
 <br />
 
-- [München – Programm „München emobil“](https://www.muenchen.de/rathaus/Stadtverwaltung/Referat-fuer-Gesundheit-und-Umwelt/Klimaschutz_und_Energie/Elektromobilitaet/Foerderprogramm_Elektromobilitaet): 25% des Netto-Preises bzw. maximal 3.500 Euro
-- [Regensburg – Programm „Regensburg effizient“](https://www.greendeal-regensburg.de/foerderprogramm-regensburg-effizient/elektromobilitaet/): bis zu 3.000 Euro
-- [Limburg – Programm „Limburg elektrisiert“](https://www.limburg.de/Mobilit%C3%A4t-Verkehr/Elektromobilit%C3%A4t-/Limburg-elektrisiert.php?object=tx,3251.5&ModID=7&FID=3252.425.1&NavID=3252.202&La=1): bis zu 600 Euro
+* [München – Programm „München emobil“](https://www.muenchen.de/rathaus/Stadtverwaltung/Referat-fuer-Gesundheit-und-Umwelt/Klimaschutz_und_Energie/Elektromobilitaet/Foerderprogramm_Elektromobilitaet): 25% des Netto-Preises bzw. maximal 3.500 Euro
+* [Regensburg – Programm „Regensburg effizient“](https://www.greendeal-regensburg.de/foerderprogramm-regensburg-effizient/elektromobilitaet/): bis zu 3.000 Euro
+* [Limburg – Programm „Limburg elektrisiert“](https://www.limburg.de/Mobilit%C3%A4t-Verkehr/Elektromobilit%C3%A4t-/Limburg-elektrisiert.php?object=tx,3251.5&ModID=7&FID=3252.425.1&NavID=3252.202&La=1): bis zu 600 Euro
 
 <br />
 
