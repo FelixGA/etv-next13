@@ -65,7 +65,7 @@ content:
       Für weitere Aufpreise sind Sonderausstattungen wie ein Rückfahrwarner, Sitzheizung, Unterfahrschutz, eine abnehmbare Anhängerkupplung und vieles mehr verfügbar.
     image: /images/evum-a-car-innenraum.png
     title: Komfort & Ausstattung
-    stars: 2
+    stars: 3
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -100,8 +100,8 @@ content:
       Das Evum A-Car ist in der Hinsicht besonders, dass es die Elektromobilität erstmals von der Straße runter in Offroad-Gebiet trägt. Mit dem Allradantrieb und der hohen Bodenfreiheit ist der Evum definitiv auch für die Landwirtschaft oder Forstbetriebe interessant. Auch ansonsten mach das Fahrzeug einiges her und dürfte dank umfangreicher Ausstattung und flexiblen Aufbauvarianten nicht nur in Entwicklungs- und Schwellenländern seine Abnehmer finden. Die Ausstattung in der Basisversion ist jedoch verglichen mit dem Preis eher dürftig. 
 
 
-      #### Testurteil: 3,2
+      #### Testurteil: 3,4
     title: Fazit
     image: /images/evum-landwirtschaft-03.jpg
-    stars: 3.2
+    stars: 3.4
 ---
