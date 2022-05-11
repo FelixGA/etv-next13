@@ -24,7 +24,7 @@ curbweight:
   value: 336
   baseUnit: kg
 maxSpeed:
-  key: Höchstgeschwindigkeit
+  key: km/h
   value: 45
   baseUnit: km/h
 range230V:
