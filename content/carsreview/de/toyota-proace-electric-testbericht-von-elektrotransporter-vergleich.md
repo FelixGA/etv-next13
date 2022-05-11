@@ -29,7 +29,7 @@ content:
     image: /images/71932-toyota-proace-verso-164.jpg
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität
 
 
       Bereits in der kürzeren Variante L1 hat der Toyota Proace Electric ein Ladevolumen von rund 5.800 Liter. Der Stauraum kann über zwei geteilte, seitlich schwenkende Hecktüren oder eine nach oben schwingende Heckklappe beladen werden. Außerdem ist eine seitliche Schiebetür serienmäßig vorhanden. Der Laderaum hat hier eine Länge von rund 2,51 Meter, die Breite liegt bei maximal 1,63 Meter und die Ladung kann bis zu 1,40 Meter hoch geladen werden. Bei der größeren Versionen ändert sich vor allem die Länge des Laderaums: als L2 liegt diese bei 3,67 Meter. Dadurch entsteht ein Ladevolumen von mehr als 8.000 Liter.
@@ -38,9 +38,9 @@ content:
       Die Nutzlast des Toyota Proace Electric liegt bei 1001 Kilogramm, optional kann diese auf rund 1.200 Kilogramm erhöht werden. Die Anhängelast ist bei allen Modellen gleich: 1.000 Kilogramm für gebremste, 750 Kilogramm für ungebremste Anhänger.
     title: Laderaum & Flexibilität
     image: /images/71923-toyota-proace-verso-152.jpg
-    stars: 2
+    stars: 3
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       Angetrieben wird der Toyota Proace Electric wie seine Geschwister von einem 100 kW Elektromotor, der ein Drehmoment von 260 Nm bereitstellt und den Elektrotransporter in ungefähr 12 Sekunden von 0 auf 100 km/h bringt. Wie meist bei Elektrofahrzeugen erfolgt die Kraftübertragung stufenlos. Die Höchstgeschwindigkeit beträgt bei allen Versionen bei 130 km/h.
@@ -54,7 +54,7 @@ content:
     image: /images/71905-toyota-proace-verso-135.jpg
     stars: 4
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       Die Basisversion des Toyota Proace Electric heißt “Basis” und verfügt bereits serienmäßig über ABS, einen Doppel-Airbag, eine praktische Berganfahrhilfe sowie eine Zentralverriegelung. Für rund 1.500 Euro mehr bekommt man die Ausstattungslinie “Comfort”, welche zusätzlich über zusätzliche Komfortausstattung verfügt. Weitere Ausstattungsvarianten sind nicht verfügbar.
@@ -75,14 +75,14 @@ content:
     image: /images/71852-toyota-proace-verso-082.jpg
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Der Energieverbrauch des Toyota Proace Electric liegt kombiniert laut Toyota bei 25,1 kWh auf 100 km. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke also rund 7,50 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
     stars: 3
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Die Preise für den Toyota Proace Electric beginnen bei 35.250 Euro netto für den L1 Basis mit 50 kWh-Akku und Basisausstattung. Als „Comfort“ kostet der Proace etwas mehr als 1.000 Euro netto mehr. Die Langversion L2 ist nur als Variante „Comfort“ ab rund 37.400 Euro netto erhältlich. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
