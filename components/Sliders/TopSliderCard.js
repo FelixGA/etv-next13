@@ -85,7 +85,7 @@ const TopSliderCard = (props) => {
                 </div>
               ) : null} */}
               <div className="flex justify-center pt-8">
-                <StarsRating stars={sliderItem?.rating.value} />
+                <StarsRating stars={5} />
               </div>
               <div className="absolute flex items-center justify-center w-full mt-8 text-center bottom-6 ">
                 <Link
