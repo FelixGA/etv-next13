@@ -16,6 +16,7 @@ content:
       zwei Akkuvarianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben
       werden.
     title: Einleitung
+    stars: 0
   - content: >-
       ### Konzept & Fahrzeugvarianten
 
@@ -29,8 +30,9 @@ content:
       Der Tropos Able zielt auf Kunden wie Städte und Kommunen sowie Handwerk und Industrie ab. So gibt es in mit in zwei Aufbauvarianten: der Koffer-Version mit einem Ladevolumen von rund 3.300 Liter sowie als Pritsche mit einer Ladefläche von knapp drei Quadratmetern. In beiden Fällen besitzt das Fahrzeug eine Breite von 1,40 Meter. Weitere Aufbauvarianten sind laut Tropos auch möglich.
     image: /images/tropos-able-koffer-seite.jpg
     title: Konzept & Fahrzeugvarianten
+    stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (4/5)
+      ### Laderaum & Flexibilität
 
 
       Der Koffer des Tropos Able hat eine Länge von 2,20 Meter, eine Höhe von 1,15 Meter und ist 1,35 Meter breit. Dadurch ergibt sich ein Ladevolumen von knapp 3.300 Liter, welches durch geteilte Hecktüren sowie eine seitliche Klapptür (rechts) be- und entladbar ist. Als Pritschenwagen hat die Ladefläche die gleichen Maße, abgesehen natürlich von der Höhe. Die Bodenplatte bildet eine 18mm dicke Siebdruckplatte, welche mit 4 Zurr-Ringen versehen ist.
@@ -39,8 +41,9 @@ content:
       Gegen Aufpreis ist der Able auch mit einem Transportgestell verfügbar, welches zum Beispiel mit einem Laubgitter für Landschaftsbaubetriebe geliefert werden kann. Auch eine Plane mit Gestell kann auf Basis dessen aufgebaut werden und erweitert somit den Einsatzbereich des Tropos. Die Nutzlast des Tropos Able liegt je nach Ausstattung bei maximal 580 Kilogramm beim XT1 sowie bis zu 700 Kilogramm beim XT2, wobei hier noch kein Fahrer mit eingerechnet ist. Optional ist eine Anhängekupplung verfügbar, die maximal 300 Kilogramm ziehen kann.
     image: /images/tropos-able-kipper.jpg
     title: Laderaum & Flexibilität
+    stars: 4
   - content: >-
-      ### Antrieb & Aufladung (3/5)
+      ### Antrieb & Aufladung
 
 
       Der Antrieb des Tropos Able wird von einem 10 kW-Elektromotor übernommen. Während die XT1-Modelle eine maximale Höchstgeschwindigkeit von 65 km/h erreichen, kann der Able als XT2  maximal 85 Km/h fahren. Der Antrieb erfolgt über die Hinterachse, um auch bei hoher Beladung eine sichere Straßenlage zu ermöglichen.
@@ -52,13 +55,15 @@ content:
       Die Aufladung erfolgt bei allen Versionen über einen handelsüblichen 230 Volt-Stecker. Leider finden sich keine offiziellen Angaben oder auch Praxisberichte dazu, wieviel Zeit eine Aufladung des Tropos Able in Anspruch nimmt. Für etwas längere Reichweite sorgt eine Rekuperation der Bremsenergie, welche den Akku während der Fahrt wieder auflädt.
     image: /images/tropos-able-heck.jpg
     title: Antrieb & Aufladung
+    stars: 3
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       In der Serienausstattung des Elektrotransporter finden sich einige nützliche Helfer für den Alltagsgebrauch. So sind die Modelle mit einem Radio mit Multifunktions-Touchscreen ausgestattet, welches ebenso eine Bluetooth-Freisprechfunktion für das Telefonieren sowie einen USB-Anschluss besitzt. Die Rückfahrkamera ist besonders praktisch für die Rücksicht bei den Kofferaufbauten und bei beladener Pritsche. Und eine Servolenkung vereinfacht Lenkmanöver bei niedriger Geschwindigkeit. Auch ABS sowie eine Berganfahrhilfe sind bereits serienmäßig verbaut.
     image: ""
     title: Komfort & Ausstattung
+    stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -69,20 +74,23 @@ content:
       Als Zusatzausstattung ist eine Databox erhältlich, mit der man mehrere Able-Fahrzeuge vernetzten kann, um beispielsweise das Flottenmanagement zu optimieren oder das sogenannte „Internet der Dinge“ auf die Fahrzeuge des Bestandes anzuwenden. Für Kommunen bietet Tropos an, den Able ab Werk mit oranger Folierung (inklusive rot-weißer Streifen) zu bekleben. Auch an das eigene Firmendesign angelehnte Folierungen sind gegen Aufpreis möglich.
     image: /images/tropos-able-xl.jpg
     title: Bedienung & Fahrbetrieb
+    stars: 0
   - content: >-
-      ### Umwelt (4/5)
+      ### Umwelt
 
 
       Den Energieverbrauch gibt Tropos mit 12,7 - 11,1 kWh (XT1) bzw. 13,4 - 11,9 kWh (XT2) auf 100 km an. Ein Verbrauch von 12 kWh pro 100 km würde bei Strompreisen von 30 Cent pro kWh zu Energiekosten von 3,60 Euro pro 100 km führen. Ein Solarmodul für mehr Reichweite ist nicht verfügbar.
     title: Umwelt
     image: ""
+    stars: 4
   - content: >-
-      ### Preise & Garantie (2/5)
+      ### Preise & Garantie
 
 
       Genaue Preise gibt es für den Tropos Able XT derzeit nur auf Anfrage. Aber da das vorherige Modell XT mit 13 kWh-Lithium-Ionen-Akku bei 25.700 Euro und als 26 kWh-Variante bei 30.700 Euro startete, dürften die heutigen Preise noch höher liegen. Damit ist der Tropos definitiv kein Schnäppchen. Der Akku ist allerdings immer mit im Preis inbegriffen und kann nicht dazu gemietet werden. Die Garantie auf das Fahrzeug beträgt 2 Jahre, auf die Batterie gibt es 5 Jahre.
     title: Preise & Garantie
     image: ""
+    stars: 2
   - content: >-
       ### Fazit
 
@@ -90,9 +98,7 @@ content:
       Der Tropos Able ist ein leichter Elektrotransporter, der speziell für Kommunen sowie Industrie und Handwerk geeignet ist. Durch sein hohes Gewicht scheint er für den Landschaftsbau allerdings weniger geeignet. Trotz seiner geringen Außenmaße ergeben sich je nach Aufbau praktische Transportlösungen mit einer guten Raumausnutzung. Durch die drei angebotenen Batterie-Varianten kann der Kunde außerdem zwischen einem niedrigerem Preis und einer höheren Reichweite abwägen.
 
 
-      ## Gesamtpunktzahl:
-
-
-      3,4 Sterne
+      #### Testurteil: 3,4 Sterne
     title: Fazit
+    stars: 3.4
 ---
