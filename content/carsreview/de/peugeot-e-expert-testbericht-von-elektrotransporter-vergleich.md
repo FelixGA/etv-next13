@@ -28,7 +28,7 @@ content:
     image: /images/peugeot-e-expert-laderaum.jpg
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität
 
 
       Bereits in der kürzeren Variante hat der Peugeot e-Expert ein Ladevolumen von maximal 5.800 Liter. Der Stauraum kann über zwei geteilte, seitlich schwenkende Hecktüren oder eine nach oben schwingende Heckklappe beladen werden. Außerdem ist eine seitliche Schiebetür serienmäßig vorhanden. Der Laderaum hat beim e-Expert eine Länge von rund 2,41 Meter, die Breite liegt bei maximal 1,62 Meter und die Ladung kann bis zu 1,33 Meter hoch geladen werden. Bei der größeren Versionen ändert sich vor allem die Länge des Laderaums: als großere-Expert liegt diese bei 2,76 Meter. Dadurch entsteht ein Ladevolumen von maximal 6.600 Liter.
@@ -39,7 +39,7 @@ content:
     image: ""
     stars: 3
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       Angetrieben wird der Peugeot e-Expert von einem 100 kW Elektromotor, der ein Drehmoment von 260 Nm bereitstellt und den Peugeot in ungefähr 12 Sekunden von 0 auf 100 km/h bringt. Wie meist bei Elektrofahrzeugen erfolgt die Kraftübertragung stufenlos. Die Höchstgeschwindigkeit beträgt bei allen Versionen bei 130 km/h. 
@@ -51,9 +51,9 @@ content:
       Der größere Akku mit 75 kWh Kapazität soll über eine maximale Reichweite von rund 320 Kilometer liegen ermöglichen, was sehr beachtlich ist für ein Fahrzeug dieser Größe. Allerdings dürften solche Strecken nur ohne Zuladung und mit wenig Steigung zu schaffen sein. Die Ladezeiten liegen hier bei rund 20 Stunden für die Wallbox und rund 45 Minuten für die 80-prozentige Schnellaufladung.
     title: Antrieb & Aufladung
     image: /images/peugeot-e-expert-ladeanschluss.jpg
-    stars: 5
+    stars: 4
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       Die Basisversion des Peugeot e-Expert heisst “Pro” und verfügt bereits serienmäßig über ABS, einen Doppel-Airbag, eine praktische Berganfahrhilfe sowie eine Zentralverriegelung. Für rund 2.000 Euro mehr bekommt man die Ausstattungslinie “Premium”, welche zusätzlich über eine Audioanlage, eine akustische Einparkhilfe, Klimaanlage sowie Regen- und Lichtsensor verfügt. 
@@ -75,14 +75,14 @@ content:
     image: /images/peugeot-e-expert-innenraum.jpg
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Der Energieverbrauch des Peugeot e-Expert wird nicht konkret angegeben, dürfte aber ähnlich seinen GEschwistermodellen um die 25 kWh auf 100 km liegen. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke so circka 7,50 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
     stars: 3
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Die Preise für den Peugeot e-Expert beginnen bei 36.190 Euro netto für den e-Expert L2 mit 50 kWh-Akku und Basisausstattung. Die Variante mit einer Akkukapazität von 75 kWh kostet rund 5.000 Euro mehr. Der e-Expert L3 mit 5,30 Meter Länge ist ab 37.830 Euro netto verfügbar, ab 42.380 Euro mit dem größeren Akku. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
@@ -91,7 +91,7 @@ content:
       Peugeot bietet auf den Fahrzeugakku eine Garantie von stolzen 8 Jahren bzw. 160.000 Kilometer. Für das Fahrzeug gelten wie üblich bei Peugeot eine Herstellergarantie von 2 Jahren ohne Kilometerbeschränkung.
     title: Preise & Garantie
     image: /images/peugeot-e-expert-heck.jpg
-    stars: 5
+    stars: 3
   - content: >-
       ### Fazit
 
