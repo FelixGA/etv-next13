@@ -96,5 +96,5 @@ content:
       #### Testurteil: 2,6
     title: "Fazit "
     image: /images/addax_26_pritsche.jpg
-    stars: 5
+    stars: 2.6
 ---
