@@ -21,6 +21,7 @@ content:
       Im Gegensatz zum Verbrenner-Crafter ist der e-Crafter nur in einer Größe erhältlich. Diese entspricht der Version L3H3 und hat eine Länge von 5,99 Meter sowie eine Fahrzeughöhe von 2,59 Meter. Auch beim Akku ist kein Wahl möglich. Der Kunde kann sich allerdings entscheiden, ob er die N1-Version mit maximal 3,5 Tonnen Gewicht oder die N2-Version mit maximal 4,25 Tonnen erwerben möchte. Dadurch ändern sich auch die Nutzlast sowie der benötigte Führerschein.
     title: Konzept & Fahrzeugvarianten
     image: /images/VW-e-Crafter-Front-300x225.jpg
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (2/5)
 
@@ -34,6 +35,7 @@ content:
       Serienmäßig bietet VW keine weiteren Aufbau-Varianten an. Allerdings arbeitet der Konzern mit verschiedenen Partnern zusammen um individuelle Transportlösungen wie beispielsweise eine Kipper-, eine Minibus- oder Paketfahrzeug-Version anzubieten.
     title: Laderaum & Flexibilität
     image: /images/vw-e-crafter-laderaum.jpeg
+    stars: 2
   - content: >-
       ### Antrieb & Aufladung (3/5)
 
@@ -47,6 +49,7 @@ content:
       Die Aufladung soll laut VW über eine 7,2 kW-Wallbox in 5 Stunden und 20 Minuten machbar sein. Eine Schnellladefunktion mit 40 kW Leistung soll das Fahrzeug in 45 Minuten auf 80% der Vollladung bringen.
     title: Antrieb & Aufladung
     image: /images/vw-e-crafter-elektromotor.jpeg
+    stars: 3
   - content: >-
       ### Komfort & Ausstattung (5/5)
 
@@ -54,6 +57,7 @@ content:
       Um die Wünsche der Zielgruppe mit in den e-Crafter einfliessen zu lassen, wurden einige Fahrzeuge vor Markteinführung an Tester verteilt. Die Analyse ergab, dass die Zielgruppe durchschnittlich 70 bis 100 Kilometer pro Tag zurücklegen, mit 50 bis 100 Zwischenstopps. Deshalb hat sich VW dafür entschieden, den e-Crafter mit viel serienmäßiger Komfort-Ausstattung zum Kunden zu bringen. So ist das Fahrzeug ab Werk mit einem Navigationssystem, einer Klimaanlage, einer Rückfahrkamera mit Parkpilot, einer Berganfahrhilfe einer beheizbaren Frontscheibe sowie einer Sitzheizung ausgestattet. Damit dürfte das Fahrzeug ohne jegliche Zusatzkosten den Traum jedes Auslieferungsfahrer darstellen. Das Fahrzeug lässt sich außerdem mit verschiedene Assistenzsystemen wie Sensorbasierter Flankenschutz, Seitenwind-Assistent, Spurhalteassitent, Automatische Distanzregelung ACC und das Umfeldbeobachtungssystem “Front Assist” ausstatten.
     title: Komfort & Ausstattung
     image: /images/vw-e-crafter-innenraum.jpeg
+    stars: 5
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -64,6 +68,7 @@ content:
       Für Transportunternehmen mit mehreren Fahrer:innen und Fahrzeugen bietet VW zudem das Flotten-Management-System “Connect Fleet” an. Hier können Flottenmanager den Überblick über alle Fahrzeuge im Einsatz behalten. Zudem lassen sich Belege und das Fahrtenbuch per App bereits auf der Tour bearbeiten.
     title: Bedienung & Fahrbetrieb
     image: ""
+    stars: 0
   - content: >-
       ### Umwelt (3/5)
 
@@ -71,6 +76,7 @@ content:
       Der Energieverbrauch des VW e-Crafter liegt kombiniert bei rund 29 kWh auf 100 km. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke rund 8,70 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
     image: /images/e-crafter.jpg
+    stars: 3
   - content: >-
       ### Preise & Garantie (5/5)
 
@@ -81,6 +87,7 @@ content:
       Volkswagen gibt grundsätzlich eine Herstellergarantie von 2 Jahren auf das Fahrzeug, welche auf maximal 5 Jahre verlängert werden kann. Auf den Akku gibt es sogar 8 Jahre bzw. 160.000 Kilometer Garantie bei korrektem Gebrauch und solange die Kapazität der Batterie über 70% liegt.
     title: Preise & Garantie
     image: ""
+    stars: 5
   - content: >-
       ### Fazit
 
@@ -88,6 +95,7 @@ content:
       Der VW e-Crafter war mit der erste der großen Elektro-Liefertransporter auf dem deutschen Markt. Mit seinem großen Platzangebot, seiner Nutzlast bis zu 1,72 Tonnen und der extrem komfortablen Ausstattung macht er ordentlich was her. Und seit der Preis deutlich gesenkt wurde, dürfte der Kaufanreiz noch mehr gestiegen sein. Gerade für den urbanen Lieferverkehr stellt das Fahrzeug eine echte elektrische Alternative dar.
 
 
-      ### Gesamtpunktzahl: 3,6
+      #### Testurteil: 3,6
     title: Fazit
+    stars: 3.6
 ---
