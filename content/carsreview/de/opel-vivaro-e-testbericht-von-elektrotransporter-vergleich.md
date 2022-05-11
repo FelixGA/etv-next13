@@ -16,6 +16,7 @@ content:
       erhältlich ist. Der Elektrotransporter erreicht in allen Varianten eine
       Höchstgeschwindigkeit von 130 km/h und kann rund 900 Kilogramm zuladen.
     title: Einleitung
+    stars: 0
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
@@ -26,6 +27,7 @@ content:
       Seit 2020 ist die elektrische Version Opel Vivaro auf dem Markt. Der Kastenwagen Vivaro-E Cargo ist elektrisch in zwei Längen erhältlich: 4,96 Meter (M) sowie 5,31 Meter (L). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität, welche natürlich unterschiedliche Reichweiten ermöglichen. Der Opel Vivaro-E ist auch mit Doppelkabine sowie als Kombi erhältlich, mit Sitzen und Fenstern im Fond. Hier soll es aber um die Kastenwagen-Version gehen.
     title: Konzept & Fahrzeugvarianten
     image: /images/opel-vivaro-e-cargo.jpg
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (3/5)
 
@@ -36,6 +38,7 @@ content:
       Die Nutzlast des Opel Vivaro-E Cargo liegt bei den allen Modellen bei etwas mehr als 900 Kilogramm. Allerdings gibt es die 50 kWh-Version mit einer optionalen erhöhten Nutzlast, wodurch dann rund 200 Kilogramm mehr zugeladen werden können. Die Anhängelast ist bei allen Modellen gleich: 1.000 Kilogramm für gebremste, 750 Kilogramm für ungebremste Anhänger.
     title: Laderaum & Flexibilität
     image: ""
+    stars: 5
   - content: >-
       ### Antrieb & Aufladung (4/5)
 
@@ -49,6 +52,7 @@ content:
       Der größere Akku mit 75 kWh Kapazität soll über eine maximale Reichweite von rund 320 Kilometer liegen ermöglichen, was sehr beachtlich ist für ein Fahrzeug dieser Größe. Allerdings dürften solche Strecken nur ohne Zuladung und mit wenig Steigung zu schaffen sein. Die Ladezeiten liegen hier bei rund 7 Stunden für die Wallbox und rund 48 Minuten für die 80-prozentige Schnellaufladung.
     title: Antrieb & Aufladung
     image: /images/opel-vivaro-e-cargo-antrieb.jpg
+    stars: 5
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
@@ -58,6 +62,7 @@ content:
 
       Leider gibt es bei elektrischen Vivaro nicht wie beim Schwestermodell Citroen Jumpy eine speziell für Baustellen ausgerüstete Variante mit erhöhter Bodenfreiheit und einem Motorschutz sowie einer erhöhten Nutzlast von rund 1.150 Kilogramm. Allerdings sind gegen Aufpreis Optionen wie Bodenplatte aus Holz im Laderaum und eine Trennwand erhältlich.
     title: Komfort & Ausstattung
+    stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -68,12 +73,14 @@ content:
       Auf der Straße macht der Opel Vivaro-E Cargo eine gute Figur. Die 260 Nm brauchen für ihre Entfaltung nicht wie beim Verbrennermotor einen konkreten Drehzahlbereich, sondern sind direkt vorhanden. Dadurch beschleunigt der Elektrotransporter mehr als ordentlich und ist dank 100 kW Leistung auch auf Landstraßen flott unterwegs. Und auch die Autobahn ist kein Hindernis, allerdings ist das Fahrzeug bei 130 km/h abgeriegelt.
     title: Bedienung & Fahrbetrieb
     image: /images/opel-vivaro-e-cargo-innenraum.jpg
+    stars: 0
   - content: >-
       ### Umwelt (3/5)
 
 
       Der Energieverbrauch des Opel Vivaro-E liegt kombiniert laut Hersteller zwischen 21,7 und 26,1 kWh auf 100 km. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke so zwischen 6,60 und 7,80 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
+    stars: 3
   - content: >-
       ### Preise & Garantie (3/5)
 
@@ -84,6 +91,7 @@ content:
       Opel bietet auf den Fahrzeugakku eine Garantie von stolzen 8 Jahren bzw. 160.000 Kilometer. Für das Fahrzeug gelten wie üblich bei Citroen eine Herstellergarantie von 2 Jahren ohne Kilometerbeschränkung.
     title: Preise & Garantie
     image: /images/opel-vivaro-e-cargo-ladung.jpg
+    stars: 5
   - content: >-
       ### Fazit
 
@@ -91,9 +99,7 @@ content:
       Der Opel Vivaro-E Cargo ist ein recht hochwertiger Kastenwagen, welcher zudem mit einer recht hohen Reichweite punktet. Der Laderaum ist sehr geräumig und einfach beladbar und es gibt viele praktische Ausstattungsdetails für den Berufsalltag, wodurch der Vivaro-E Cargo speziell für Lieferanten und Handwerker sehr interessant sein dürfte. Allerdings ist das Fahrzeug nicht gerade günstig. Die Vivaro-Modelle mit Elektroantrieb kosten 8.000 bis 10.000 Euro netto mehr als das vergleichbare Verbrenner-Modell. Dadurch könnte das Fahrzeug für einige Interessenten schlich nicht erschwinglich sein.
 
 
-      ### Gesamtpunktzahl:
-
-
-      3,6 Sterne
+      #### Testurteil: 3,6
     title: Fazit
+    stars: 3.6
 ---
