@@ -20,7 +20,7 @@ content:
     image: ""
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (4/5)
+      ### Laderaum & Flexibilität
 
 
       Der ARI 901 Kastenwagen hat bei seinen Maßen von 2,30 m Länge x 1,44 m Breite und 1,30 m Höhe ein Ladevolumen von 4,3 m³. Die Ladekantenhöhe beträgt hier 75 cm. 
@@ -39,15 +39,15 @@ content:
     image: /images/07-ari-901-mit-kofferaufbau-laderaum.jpg
     stars: 4
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       Der Elektromotor des Transporters arbeitet mit einer Leistung von 60 Kw bei einer Spannung von 320 V. Der Heckantrieb des ARI 901 erreicht eine Höchstgeschwindigkeit von 100 km/h. Bei der Batterien handelt es sich um einen Lithium-Ionen-Akku, mit einer Kapazität von 40 kWh, wodurch das Fahrzeug laut Hersteller eine Reichweite von rund 250 Kilometer erreicht. Gegen Aufpreis kann auf dem Dach ein zusätzliches Solarmodul installiert werden, welches je nach Aufbauvariante rund 40 bis 100 Kilometer (bei optimaler Sonneneinstrahlung) mehr Reichweite ermöglicht.
     title: Antrieb & Aufladung
     image: ""
-    stars: 0
+    stars: 4
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       Die kompakte Außenmaße des ARI 901 mit 4,43 m Länge, 1,62 m Breite und einer Höhe von 1,94 m Höhe (Kastenwagen) sind vergleichsweise kompakt und erleichtern so beispielsweise engens Rangieren oder das Parken im Parkhaus. 
@@ -69,18 +69,18 @@ content:
     image: /images/02-ari-901-seitenansicht.jpg
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Der kombinierte Verbrauch des ARI 901 ist mit 16 kwh pro 100 Kilometer vergleichsweise niedrig. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 4,80 €.
     title: Umwelt
     stars: 3
   - content: >-
-      ### Preise & Garantie (5/5)
+      ### Preise & Garantie
 
 
       Der 901 startet als Kastenwagen oder Pritsche bei 35.995 € zzgl. Mehrwertsteuer und ist dabei preiswerter als die Konkurrenz. Die Koffer-Version ist bereits ab 38.995€  und die Kipper-Version ab 40.995 € zzgl. Mehrwertsteuer erhältlich. Das Fahrzeug  kommt zudem mit einer Herstellergarantie von 6 Monaten sowie einer Gewährleistung über eine Zeit von 1,5 Jahren.
-    title: Preise & Garantie (2/5)
+    title: Preise & Garantie
     image: /images/10-ari-901-kastenwagen-seitenansicht.jpg
     stars: 5
   - content: >-
@@ -90,7 +90,7 @@ content:
       Der ARI 901 ist ein vielseitiger Elektrotransporter mit einer vergleichsweise hohen Reichweite. Je nach Aufbau eignet er sich speziell für Dienstleister (Kastenwagen), Liefer- und Transportfirmen (Kofferaufbau) sowie Handwerks- und Baubetrieben (Pritsche, Kipper). Für Garten- und Landschaftsbaubetriebe bietet der Hersteller ebenso praktische Aufbauten (Pritsche mit Laubgitter). Mit einem Startpreis von 35.995€ ist das Fahrzeug vergleichsweise günstig. Der Kunde erhält dafür jedoch kein Luxus-Fahrzeug, sondern ein praktisches Arbeitswerkzeug mit einem auf das Wichtigste reduzierten Innenraum.
 
 
-      #### Testurteil: 4
+      #### Testurteil: 4,0
     title: Fazit
     stars: 4
 ---
