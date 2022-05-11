@@ -20,7 +20,7 @@ content:
     title: Konzept & Fahrzeugvarianten
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (4/5)
+      ### Laderaum & Flexibilität
 
 
       Für Lieferdienste und Lastentransporte ist der ARI 458 mit Kofferaufbau sehr gut geeignet. Kunden haben hier die Wahl zwischen den drei Größen, welche ein Ladevolumen von 1,45 m3 (Basisversion), 2,05 m3 („L“) sowie 2,77 m3 bei der „XL“-Version besitzen. Bei der Höhe variieren die Koffer-Aufbauten zwischen 95, 110 und 130 cm. Die Ladekantenhöhe des ARI 458 ist mit 68 cm angenehm niedrig.
@@ -40,10 +40,10 @@ content:
 
       Die Nutzlast der 458er-Reihe liegt bei rund 530 Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450 Kilogramm möglich.
     image: /images/ari-458-food-truck-heckansicht-1-.jpg
-    title: LADERAUM
+    title: Laderaum & Flexibilität
     stars: 4
   - content: >-
-      ### Antrieb und Aufladung (4/5)
+      ### Antrieb und Aufladung
 
 
       Den Antrieb des ARI 458 übernimmt ein Wechselstrommotor mit einer Kraft von 7,5 kW, welcher den Elektrotransporter auf eine Höchstgeschwindigkeit von 78 Km/h beschleunigt. Die Kraft wird auf die Hinterachse übertragen, auf welcher bei Beladung auch das meiste Gewicht liegt. Damit soll auch unter Vollladung eine gute Straßenlage garantiert werden.
@@ -57,10 +57,10 @@ content:
 
       Die Aufladung erfolgt über handelsübliche 220-V-Steckdosen mit Schuko-Stecker. ARI Motors liefert optional außerdem einen Typ-2-Adapter für die Aufladung an öffentlichen Ladesäulen mit. Die Aufladung mit 220 Volt dauert bei vollkommener Entladung rund 6 Stunden, während ein voller Akku per Schnellladung in 4 Stunden erreicht werden kann. Der ARI 458 nutzt auch die Selbstaufladung in Form von Rekuperation, die allerdings hier nicht direkt mit der Bremsanlage verbunden ist.
     image: /images/dsc_0269.jpg
-    title: Antrieb und Aufladung (4/5)
+    title: Antrieb und Aufladung
     stars: 4
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       Der ARI 458 ist durch seine geringen Maße besonders für den Einsatz im engen Stadtverkehr sowie verwinkelten Parkanlagen und Werksgeländen geeignet. Er bietet ein üppiges Ladevolumen bei hoher Wendigkeit, ohne viel Platz zu beanspruchen. Bei eingelegtem Rückwärtsgang erklingt ein Warnton und die Sicht nach hinten wird durch eine Rückfahrkamera erleichtert, was besonders mit Kofferaufbau sehr nützlich ist.
@@ -71,7 +71,7 @@ content:
 
       Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist verfügbar. Für sperrige Güter, wie etwa Leitern, sind ein Dachgepäckträger sowie eine Leiterklappe im hinteren Bereich des Kofferdach praktisch. Eine Anhängerkupplung ist ebenso erhältlich, allerdings darf der ARI 458 bisher nur auf Werks- und Privatgelände mit Anhänger gefahren werden.
     image: /images/ari-458-innenraum-fahrerplatz.jpg
-    title: Komfort & Ausstattung (4/5)
+    title: Komfort & Ausstattung
     stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
@@ -94,15 +94,15 @@ content:
     title: Bedienung & Fahrbetrieb
     stars: 0
   - content: >-
-      ### Umwelt (⅘)
+      ### Umwelt
 
 
       Innerorts liegt der Verbrauch des Ari 458 bei 6,2 kWh und außerorts bei 8,0 kWh. Das Fahrzeug kommt dadurch auf einen niedrigen kombinierten Verbrauch von 7,1 kWh. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 2,13 €.
     title: Umwelt
     image: /images/ari-458-kofferaufbau-mit-solarpanel.jpg
-    stars: 3
+    stars: 4
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie
 
 
       In Sachen Preis ist der ARI 458 im Segment der Elektrotransporter wohl ungeschlagen. So liegt der Grundpreis der Pritschen-Version bei 13.700 Euro. Selbst mit dem „XL“-Koffer kostet das Fahrzeug mit 17.290 Euro weitaus weniger als vergleichbare Fahrzeuge der Konkurrenz. Die für Baustellen und Handwerker geeignete Kipper-Variante beginnt ab 16.400 Euro. Die Preise für das Verkaufsfahrzeug und den Food Truck starten bei 17.150 und 19.430 Euro. Der Kühlkoffer-Aufbau ist ab 19.900 Euro auf dem Markt verfügbar.
@@ -119,10 +119,7 @@ content:
       Die Einsatzmöglichkeiten des ARI 458 sind zahlreich. Je nach Aufbau ist er speziell für Liefer- und Transportbetriebe (Kofferaufbau) und Handwerks- und Baubetriebe (Pritsche und Kipper) interessant. Bei den Individualaufbauten gibt es zudem für Garten- und Landschaftsbaubetriebe praktische Varianten. Neben der Vielseitigkeit liegen die Vorteile des ARI 458 in der guten Raumnutzung, der intuitiven Bedienung sowie den niedrigen Preisen ab 13.700 Euro. Natürlich erhält der Kunde dafür kein Luxusfahrzeug, sondern einen effizienten Elektrotransporter mit sehr guter Raumnutzung und individuell anpassbaren Ausstattungs- und Funktionsmöglichkeiten.
 
 
-      ## Gesamtbewertung:
-
-
-      4,4
+      #### Testurteil: 4,4
     title: Fazit
     image: /images/ari-458-kipper-l-mit-laubgitter.jpg
     stars: 4.4
