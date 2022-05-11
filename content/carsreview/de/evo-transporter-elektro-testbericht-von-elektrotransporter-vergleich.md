@@ -90,10 +90,7 @@ content:
       Der EVO ist dank der verschiedenen Aufbau-Varianten vielfältig einsetzbar, vom Straßenbau bis zur Landschaftspflege. Sein kleiner Wendekreis ist zudem nützlich in engen Innenstädten und Parkanlagen. Die Ausstattung des Fahrzeugs ist recht umfangreich. Die Reichweite ist leider erst mit der teuersten Akku-Variante höher als 100 Kilometer, weshalb der EVO nicht für große Strecken geeignet ist.
 
 
-      ### Gesamtpunktzahl:
-
-
-      3 Sterne
+      #### Testurteil: 3,0
     title: Fazit
     stars: 3
 ---
