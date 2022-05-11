@@ -91,5 +91,5 @@ content:
 
       #### Testurteil: 2,4
     title: Fazit
-    stars: 5
+    stars: 2.4
 ---
