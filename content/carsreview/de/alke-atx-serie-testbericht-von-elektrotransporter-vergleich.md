@@ -96,7 +96,7 @@ content:
       Die Alkè ATX-Serie bietet robuste Elektrofahrzeuge, deren hohe Belastbarkeit sowie vielfältigen Aufbau-Variationen für einige Bereiche in der Industrie sehr interessant sein dürften. Hier finden sich viele Lösungen und Kombinationen für Gewerbe und Unternehmen aller Art. Mit der hohen Anhängelast und Steigfähigkeit sind diese auch für schwierige Gelände und schwere Anforderung konzipiert. Leider sind Informationen zu manchen Fahrzeugdetails jedoch schwer einzusehen.
 
 
-      #### Gesamtbewertung: 3,6
+      #### Testurteil: 3,6
     title: Fazit
     image: /images/atx.jpeg
     stars: 3.6
