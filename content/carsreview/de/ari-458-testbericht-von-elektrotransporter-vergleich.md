@@ -119,10 +119,7 @@ content:
       Die Einsatzmöglichkeiten des ARI 458 sind zahlreich. Je nach Aufbau ist er speziell für Liefer- und Transportbetriebe (Kofferaufbau) und Handwerks- und Baubetriebe (Pritsche und Kipper) interessant. Bei den Individualaufbauten gibt es zudem für Garten- und Landschaftsbaubetriebe praktische Varianten. Neben der Vielseitigkeit liegen die Vorteile des ARI 458 in der guten Raumnutzung, der intuitiven Bedienung sowie den niedrigen Preisen ab 13.700 Euro. Natürlich erhält der Kunde dafür kein Luxusfahrzeug, sondern einen effizienten Elektrotransporter mit sehr guter Raumnutzung und individuell anpassbaren Ausstattungs- und Funktionsmöglichkeiten.
 
 
-      ## Gesamtbewertung:
-
-
-      4,4
+      #### Testurteil: 4,4
     title: Fazit
     image: /images/ari-458-kipper-l-mit-laubgitter.jpg
     stars: 4.4
