@@ -98,10 +98,7 @@ content:
       Der Efa-S ist in Sachen Ladevolumen sowie Motorleistung ein Schwergewicht. Mehr als 10.000 Liter Laderaum und ein Drehmoment von bis zu 730 Nm sind eine ordentliche Ansage. Zudem scheint der Stuttgarter Hersteller dank leistungsstarken Akkus eine vernünftige Reichweite für den 3,5-Tonner bereitstellen zu können.
 
 
-      ### Gesamtpunktzahl:
-
-
-      3,2 Sterne
+      #### Testurteil: 3,2 Sterne
     title: Fazit
     stars: 3.2
 ---
