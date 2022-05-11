@@ -35,8 +35,8 @@ const Footer = ({ blogs, brands }) => {
 
   return (
     <>
-      <footer className="px-4 shadow-2xl bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around print:hidden">
-        <nav className="flex flex-col items-center justify-around w-full pb-4 xl:justify-evenly sm:flex-row sm:items-start lg:w-3/4 sm:pb-8 ">
+      <footer className="print:hidden print:shadow-none shadow-2xl px-4 bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around">
+        <nav className="flex flex-col items-center justify-around w-full pb-4 xl:justify-evenly sm:flex-row sm:items-start lg:w-3/4 sm:pb-8 print:hidden ">
           <div className="flex flex-col justify-start w-full md:w-1/3">
             <h3 className="flex items-end justify-center text-sm font-bold tracking-wider sm:justify-start h-14 sm:text-md">
               <Link href="/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich">
@@ -44,7 +44,7 @@ const Footer = ({ blogs, brands }) => {
               </Link>
             </h3>
             <div className="flex justify-center pt-4 md:justify-start">
-              <ul className="flex flex-col flex-wrap pb-4 text-[#b1a7a7] items-center md:items-start justify-center w-48">
+              <ul className="flex flex-col flex-wrap pb-4 text-[#b1a7a7] items-center md:items-start justify-center w-48 print:hidden">
                 {brands?.map((blog, index) => (
                   <li
                     className="flex items-center justify-between my-2"
@@ -100,9 +100,9 @@ const Footer = ({ blogs, brands }) => {
         </nav>
         {/* logos and media
          */}
-        <div className="flex flex-col items-center px-4 pt-4 lg:pl-0 xl:pl-4 sm:items-start lg:w-1/4 lg:pt-8 md:px-8">
-          <div className="flex flex-row items-center justify-center w-full sm:justify-start">
-            <div className="w-1/5 md:w-[9%] lg:w-[33%] xl:w-[20%] text-white ">
+        <div className="flex flex-col items-center px-4 pt-4 lg:pl-0 xl:pl-4 sm:items-start lg:w-1/4 lg:pt-8 md:px-8 print:hidden">
+          <div className="flex flex-row items-center justify-center w-full sm:justify-start print:hidden">
+            <div className="w-1/5 md:w-[9%] lg:w-[33%] xl:w-[20%] text-white print:hidden">
               <Link href={"/"}>
                 <a>
                   <Image
@@ -116,7 +116,7 @@ const Footer = ({ blogs, brands }) => {
                 </a>
               </Link>
             </div>
-            <div className="w-fit sm:w-1/2">
+            <div className="w-fit sm:w-1/2 print:hidden">
               <Link href={"/"}>
                 <a>
                   <p className="pr-4 text-xs font-bold text-white cursor-pointer sm:pr-0 sm:text-md">
@@ -128,7 +128,7 @@ const Footer = ({ blogs, brands }) => {
               </Link>
             </div>
           </div>
-          <div className="flex w-full">
+          <div className="flex w-full print:hidden">
             <p className="w-full pt-6 pb-2 pl-0 text-xs text-center text-white lg:pl-4 sm:text-left lg:text-lg xl:text-lg">
               {footerWords.map((item, index) => (
                 <span className="" key={index}>
@@ -162,8 +162,8 @@ const Footer = ({ blogs, brands }) => {
           </div>
         </div>
       </footer>
-      <div className="w-full h-[1px] bg-[#b1a7a7]"></div>
-      <div className="flex items-center justify-center h-16 text-xs text-white bg-blue-darker sm:text-lg sm:h-20 ">
+      <div className="w-full h-[1px] bg-[#b1a7a7] print:hidden"></div>
+      <div className="flex items-center justify-center h-16 text-xs text-white bg-blue-darker sm:text-lg sm:h-20 print:hidden ">
         &copy; 2022 Elektrotransporter Vergleich
       </div>
     </>

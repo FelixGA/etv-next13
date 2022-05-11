@@ -100,7 +100,7 @@ content:
       Der Hersteller bietet neben den Standard-Versionen auf Anfrage viele verschiedene Aufbauten an. Die interessante Architektur des Chassis ermöglicht niedrige Ladekantenhöhen und dadurch unkompliziertes Arbeiten. Der Preis des Fahrzeugs schlägt jedoch ordentlich zu buche. Ebenso lässt sich über die Optik des Fahrzeuges streiten. 
 
 
-      #### Gesamtbewertung: 3,2
+      #### Testurteil: 3,2
     title: Fazit
     image: ""
     stars: 3.2

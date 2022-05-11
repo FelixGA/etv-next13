@@ -88,10 +88,7 @@ content:
       Mit dem eDeliver 3 hat Maxus einen kräftigen und komfortablen Kastenwagen im Angebot, der außerdem mit ordentlicher Reichweite und viel Stauraum aufwartet. Wirklich günstig ist er dadurch zwar nicht, allerdings immer noch rund 10.000 Euro preiswerter als ein Mercedes-Benz eVito. Allein das dürfte schon genug Anreiz für einige Käufer sein.
 
 
-      ### Gesamtpunktzahl:
-
-
-      3,6 Sterne
+      #### Testurteil: 3,6
     title: Fazit
     stars: 3.6
 ---

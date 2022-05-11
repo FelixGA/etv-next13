@@ -15,6 +15,7 @@ content:
       der Fahrzeugklasse N1, der zwischen 900 und 1.050 Kilogramm Nutzlast
       aufnehmen kann und 100 km/h Höchstgeschwindigkeit erreicht.
     title: Einleitung
+    stars: 0
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
@@ -25,6 +26,7 @@ content:
       Während der Master mit Verbrennungsmotor auch als Pritsche, Kipper, mit Kofferaufbau und zur Personenbeförderung („Combi“ und „Bus“) erhältlich ist, gibt es den Master Z.E. nur als Kastenwagen oder mit reinem Plattformfahrgestell für individuelle Aufbauten. Als Kastenwagen gibt es ihn in drei Längen: 5,08 Meter (L1), 5,58 Meter (L2) sowie ganze 6,27 Meter (L3). Bei der kurzen Version kann der Kunde außerdem zwischen zwei Höhen wählen: 2,31 Meter (H1) und 2,50 Meter (H2). Die längeren Modelle sind nur mit hoher Karosserie verfügbar. In der Fahrerkabine können bis zu drei Personen befördert werden, eine Doppelkabine ist in der Elektro-Variante leider nicht verfügbar.
     title: Konzept & Fahrzeugvarianten
     image: ""
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (3/5)
 
@@ -38,6 +40,7 @@ content:
       Sollte der Kunde den Master E-Tech mit reinem Plattformfahrgestell kaufen, um einen individuellen Aufbau montieren zu lassen, hat er die Wahl zwischen zwei Radstand-Längen. Deren Nutzlast liegt bei 1.280 bzw. 1.302 Kilogramm, bei denen aber natürlich noch der zusätzliche Aufbau mit einberechnet werden muss.
     title: Laderaum & Flexibilität
     image: /images/renault-master-seite.jpg
+    stars: 3
   - content: >-
       ### Antrieb & Aufladung (2/5)
 
@@ -51,6 +54,7 @@ content:
       Die Aufladung erfolgt über eine Ladesäule, Schuko-Stecker oder Wallbox. Laut des Laderechners von Renault dauert eine 100%ige Aufladung zwischen knapp 6 Stunden (Ladestation mit 22kW (3x32A)) und fast 20 Stunden bei einer Schuko-Ladung mit 2,3kW (10A).
     title: Antrieb & Aufladung
     image: /images/renault-master-durchsichtig.jpg
+    stars: 2
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
@@ -61,6 +65,7 @@ content:
       Über das Multimedia-System „R-Link Evolution“ kann der Fahrer bequem die Steuerung von Telefon, Navigation und Radio übernehmen. Dies ist über Touchscreen oder Spracheingabe möglich, um die Ablenkung beim Fahren zu minimieren. Eine Freisprechfunktion ermöglicht das Telefonieren ohne motorische Einschränkungen. Mit dem zusätzlich verfügbaren „MY Z.E. Connect“-Paket kann der Kunde außerdem online auf den Ladestatus des Fahrzeugs zugreifen und der “Z.E. Pass” ermöglicht den Zugriff auf bestimmte Ladestationen und das Zahlen per dazugehöriger Karte oder Smartphone-App.
     title: Komfort & Ausstattung
     image: /images/renault-master-innen.jpg
+    stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -68,12 +73,14 @@ content:
       Das Rangieren mit dem großen Transporter wird durch Parksensoren hinten sowie eine Rückfahrkamera erleichtert, welche über den Innenspiegel oder das Navigationssystem übertragen wird. Eine Berganfahrhilfe unterstützt den Fahrer außerdem beim Starten des Fahrzeugs an Steigungen. Ein Flottenmanagement-System ist leider nicht verfügbar.
     title: Bedienung & Fahrbetrieb
     image: ""
+    stars: 0
   - content: >-
       ### Umwelt (3/5)
 
 
       Der Verbrauch liegt offiziell bei rund 21,0 kWh auf 100 Kilometer. Dies scheint allerdings nur mit wenig Beladung und mit vorsichtigem Gasfuß möglich. Die WLTP-Reichweite von 120 Kilometer ergibt bei einer Akkukapazität einen ungefähren Energieverbrauch von 27,5 kWh auf 100 Kilometer. Bei 30 Cent pro kWh würden die Kosten auf 100 Kilometer also zwischen 6,30 Euro und 8,25 Euro liegen.
     title: Umwelt
+    stars: 1
   - content: >-
       ### Preise & Garantie (3/5)
 
@@ -81,6 +88,7 @@ content:
       Die Preise für den Renault Master E-Tech beginnen als Kastenwagen bei 54.900 Euro netto für die Version “L1H1”. Ein detaillierte Preisliste ist leider nur auf Anfrage zu erhalten. Im Gegensatz zum Kangoo E-Tech ist hier die Batterie mit im Preis enthalten und muss nicht dazu gemietet werden. Auf Neufahrzeuge gibt Renault eine Garantie von 2 Jahren, welche gegen Aufpreis verlängert werden kann.
     title: Preise & Garantie
     image: /images/renault-master-heck-lade.jpg
+    stars: 1
   - content: >-
       ### Fazit
 
@@ -88,9 +96,7 @@ content:
       Der Renault Master E-Tech ist als Kastenwagen einer der größten Elektrotransporter. Das üppige Raumvolumen und die großen Ladeöffnungen sind ideal, um sperrige Güter oder Möbel zu be- und entladen. So bietet sich der Master E-Tech als Fahrzeug für Umzugsunternehmen und Lieferdienste mit großen Waren an. Durch sein höheres Gewicht ist die Reichweite geringer als zum Beispiel beim Kangoo E-Tech, weshalb sich das Fahrzeug eher für kurze Strecken und den Stadtverkehr eignet. Praktische Ausstattungen zur Ladungssicherung und Kommunikation erleichtern die Arbeit bei der Fahrt und dem Warentransport.  
 
 
-      ### Gesamtpunktzahl:
-
-
-      3,0 Sterne
+      #### Testurteil: 3,0
     title: Fazit
+    stars: 3
 ---

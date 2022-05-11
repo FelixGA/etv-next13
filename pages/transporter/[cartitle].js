@@ -9,6 +9,7 @@ import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
 import { serialize } from "next-mdx-remote/serialize";
 import getSlugs from "/utils/getSlugs";
 import BasicInfo from "../../components/DetailsPage/BasicInfo";
+import PrintPreview from "../../components/core/PrintPreview";
 
 export default function Details(props) {
   /* getCars hook for the slider */
@@ -37,24 +38,34 @@ export default function Details(props) {
 
   return (
     <>
-      <Head page={props.vehicle} />
-      {/* image and rating section */}
-      <div className="2xl:px-40">
-        <BasicInfo carItem={carItem} />
-        {/* technical details section */}
-        <TechnicalDetails carItem={carItem} />
-        {/* description and articles section */}
+      <div className=" print:hidden">
+        <Head page={props.vehicle} />
+        {/* image and rating section */}
+        <div className="2xl:px-40">
+          <BasicInfo carItem={carItem} />
+          {/* technical details section */}
+          <TechnicalDetails carItem={carItem} />
+          {/* description and articles section */}
+        </div>
+        <Articles
+          carItem={carItem}
+          getBlogContext={getBlogContext}
+          getTestReview={getTestReview}
+          getCarsReview={getCarsReview}
+        />
+        {/* slider  */}
+        <TopSlider getCars={getCars} getBlogContext={getBlogContext} />
+        {/*sticky popup  */}
+        <PrintPopUp carItem={carItem} />
       </div>
-      <Articles
-        carItem={carItem}
-        getBlogContext={getBlogContext}
-        getTestReview={getTestReview}
-        getCarsReview={getCarsReview}
-      />
-      {/* slider  */}
-      <TopSlider getCars={getCars} getBlogContext={getBlogContext} />
-      {/*sticky popup  */}
-      <PrintPopUp carItem={carItem} />
+      <div className="print:block hidden">
+        <PrintPreview
+          carItem={carItem}
+          getBlogContext={getBlogContext}
+          getTestReview={getTestReview}
+          getCarsReview={getCarsReview}
+        />
+      </div>
     </>
   );
 }

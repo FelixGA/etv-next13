@@ -94,7 +94,7 @@ content:
       Der Garia Utility ist ein praktischer Elektro-Transporter, der besonders durch die vielfältigen Aufbau-Möglichkeiten und der recht hohen Zuladung für ein L7e-Fahrzeug punktet. Er eignet sich speziell für enges Gelände und Städte. Aber auch in Wiesen und Wäldern lässt er sich problemlos einsetzen. Auf große Fahrt kann man mit dem Garia Utility aufgrund der geringen Höchstgeschwindigkeiten und Reichweiten allerdings nicht gehen.
 
 
-      ### Gesamtbewertung:  2,8
+      #### Testurteil:  2,8
     title: Fazit
     image: /images/garia-utility-vehicle-park-15.jpeg
     stars: 2.8

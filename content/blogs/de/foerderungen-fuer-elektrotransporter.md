@@ -145,11 +145,9 @@ content: >-
 
   4,4
 youtubeLink: ""
-
 category: subsidies
 description: Beim Kauf eines Elektrotransporters können verschiedene Förderungen
   in Anspruch genommen werden. Erfahren Sie, welche.
-
 ---
 Sie denken darüber nach, sich einen Elektrotransporter zu kaufen? Oder Ihre Flotte auf E-Mobilität umzustellen? Dann können Sie von verschiedenen Förderungen profitieren, mit denen Bund und Länder den Umstieg auf [klimafreundliche Nutzfahrzeuge](https://www.klimafreundliche-nutzfahrzeuge.de/gesamtkonzept/) vorantreiben wollen. Welche Förderungen für Elektrotransporter es gibt, wem diese zustehen und wo sie beantragt werden können, das erfahren Sie in diesem Artikel.
 
@@ -190,11 +188,11 @@ Einen umfassenden Überblick über die Höhe der Umweltprämie sowie den jeweili
 
 <br />
 
-## Empfänger der Umweltprämie
+### Empfänger der Umweltprämie
 
 <br />
 
-### Käufer und Leasende eines neuen Elektrofahrzeugs
+#### Käufer und Leasende eines neuen Elektrofahrzeugs
 
 <br />
 
@@ -206,7 +204,7 @@ Das Bundesamt für Wirtschaft und Ausfuhrkontrolle [(BAFA)](https://www.bafa.de/
 
 <br />
 
-### Halter eines elektrischen Gebrauchtwagens
+#### Halter eines elektrischen Gebrauchtwagens
 
 <br />
 
@@ -225,7 +223,7 @@ Dabei gelten diese Voraussetzungen:
 
 <br />
 
-## Antrag auf Umweltprämie
+### Antrag auf Umweltprämie
 
 <br />
 
@@ -233,7 +231,7 @@ Der Antrag auf die „Umweltprämie“ kann direkt nach erfolgter Zulassung übe
 
 <br />
 
-### Übersicht benötigter Unterlagen:
+#### Übersicht benötigter Unterlagen:
 
 <br />
 

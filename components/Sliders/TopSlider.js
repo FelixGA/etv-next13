@@ -30,11 +30,7 @@ const TopSlider = ({ getBlogContext, getCars }) => {
   /* console.log(
     sliderData.sort((a, b) => sellingRanking[a.name] - sellingRanking[b.name])
   ); */
-  console.log(
-    sliderData?.sort(
-      (a, b) => 1 - (sellingRanking[a.name] ? sellingRanking[a.name] : 0)
-    )
-  );
+  console.log();
   useEffect(() => {
     setSliderData(getBlogContext ? [getBlogContext].concat(getCars) : getCars);
   }, [getCars]);
@@ -76,15 +72,14 @@ const TopSlider = ({ getBlogContext, getCars }) => {
             ref={container}
           >
             <TopSliderCard
-              getCars={
-                sliderData
-                /*  .sort((a, b) =>
-                sellingRanking[b.name]
-                  ? sellingRanking[b.name]
-                  : 0 - sellingRanking[a.name]
-                  ? sellingRanking[a.name]
-                  : 0 )*/
-              }
+              getCars={sliderData
+                ?.sort((a, b) =>
+                  a.slug === b.slug ? 0 : a.slug < b.slug ? -1 : 1
+                )
+                .sort(
+                  (a, b) =>
+                    1 - (sellingRanking[a.name] ? sellingRanking[a.name] : 0)
+                )}
             />
           </div>
         </div>

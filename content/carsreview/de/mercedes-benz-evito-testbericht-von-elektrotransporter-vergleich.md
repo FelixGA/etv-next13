@@ -16,6 +16,7 @@ content:
       Höchstgeschwindigkeit von 80 km/h bzw. 120 km/h optional und kann rund 900
       Kilogramm Nutzlast aufnehmen.
     title: Einleitung
+    stars: 0
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
@@ -26,6 +27,7 @@ content:
       Der Mercedes-Benz eVito ist ein reiner Kastenwagen ohne hintere Fenster und bietet Platz für zwei bzw. drei Personen. Für mehr Sitzplätze gibt es allerdings inzwischen den eVito Tourer. Es gibt den Transporter mit einem Elektromotor mit 85 kW Leistung, welcher von einem 41 kWh-Batterie versorgt wird. Im Gegensatz zu vielen anderen Herstellern gibt es hier keine Auswahl zwischen verschiedenen Akku-Kapazitäten und damit auch Reichweiten.
     title: Konzept & Fahrzeugvarianten
     image: /images/mb-e-vito-laderaum-1-1024x683.jpg
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (3/5)
 
@@ -39,6 +41,7 @@ content:
       Die Nutzlast liegt laut Mercedes-Benz bei 888 Kilogramm für die kürzere der beiden Varianten sowie 853 Kilogramm für den „extralangen“ eVito. Diese Angaben sind allerdings ohne Fahrer und mögliche Mitfahrer berechnet und verringern sich natürlich je nach Personenanzahl. Der Elektro-Transporter hat eine Dachlast von 150 Kilogramm.
     title: Laderaum & Flexibilität
     image: ""
+    stars: 5
   - content: >-
       ### Antrieb & Aufladung (4/5)
 
@@ -52,6 +55,7 @@ content:
       Die Aufladung erfolgt über einen Ladestecker Typ 2 an einer Wallbox oder einer öffentlichen Ladestation. Bei einer Ladeleistung von 11 kW kann der eVito laut Mercedes-Benz in 6,5 Stunden voll geladen werden. Außerdem ist nun serienmäßig eine Schnellladefunktion verbaut, mit der das Fahrzeug in 50 Minuten (50 kW) auf 80% der Aufladung gebracht werden soll.
     title: Antrieb & Aufladung
     image: /images/mb-e-vito-stecker-1-1024x683.jpg
+    stars: 4
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
@@ -62,6 +66,7 @@ content:
       In Sachen Entertainment-Systeme bietet Mercedes-Benz gleich mehrere Optionen für den eVito, allerdings keine ohne Aufpreis. Das preiswerteste Modell kostet 570 Euro extra und verfügt über nützliche Funktionen wie Bluetooth (für eine Freisprechfunktion), USB-Anschluss oder einen SD-Speicherkarten-Steckplatz. Für ein größeres Display mit Navigation muss der Kunde allerdings schon etwas tiefer in die Tasche greifen.
     title: Komfort & Ausstattung
     image: /images/mb-e-vito-innen-1-1024x683.jpg
+    stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -69,12 +74,14 @@ content:
       Der Mercedes-Benz eVito ist durch seine kompakten Maße und die hohe Sitzposition recht übersichtlich, wobei die Kastenwagen-Version durch fehlende Fenster im Laderaum natürlich etwas weniger Rundumsicht bietet. Gegen Aufpreis gibt es ein Assistenzsystem-Paket, welches für zusätzliche Sicherheit sorgt. Ebenfalls als Sonderausstattung ist ein sogenanntes “Easy Cargo”-paket, welches das Be- und Entladen erleichtern soll.
     title: Bedienung & Fahrbetrieb
     image: ""
+    stars: 0
   - content: >-
       ### Umwelt (3/5)
 
 
       Der Energieverbrauch des eVito von Mercedes-Benz liegt laut Hersteller bei rund 21,5 kWh auf 100 km. Bei 30 Cent pro Kilowattstunde ergeben 100 km Fahrstrecke somit Kosten von rund 6,45 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
+    stars: 3
   - content: >-
       ### Preise & Garantie (4/5)
 
@@ -85,6 +92,7 @@ content:
       Der Hersteller bietet eine Garantie von 24 Monaten auf das Fahrzeug. Zusätzlich lassen sich „ServiceCare“-Pakete gegen einen monatlichen Betrag buchen, welche dem Kunden einen Rundum-Service in Sachen Wartung und dem Austausch von Verschleißteilen bieten. Diese können je nach Laufleistung angepasst werden.
     title: Preise & Garantie
     image: /images/mb-e-vito-seite-1-1024x683.jpg
+    stars: 5
   - content: >-
       ### Fazit
 
@@ -92,9 +100,7 @@ content:
       Der eVito von Mercedes-Benz ist gegenüber dem großen Transporter Sprinter zwar kompakt, bietet dank seiner Länge aber trotzdem ein hohes Raumvolumen. Die bis zu 6.600 Liter Beladungskapazität dürften für einige Lieferanten und Handwerksbetriebe interessant sein. Der Stuttgarter E-Transporter bietet auch einen hohen Komfort im Vergleich zu einigen auf Funktionalität abzielenden Konkurrenz-Modellen. Negativ fällt hier aber ins Gewicht, dass viele Ausstattungsoptionen extra bezahlt werden müssen.
 
 
-      ### Gesamtpunktzahl:
-
-
-      3,4 Sterne
+      #### Testurteil: 3,4 Sterne
     title: Fazit
+    stars: 3.4
 ---

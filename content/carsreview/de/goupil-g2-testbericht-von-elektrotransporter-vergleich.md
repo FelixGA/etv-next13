@@ -92,7 +92,7 @@ content:
       Der Goupil G2 eignet sich durch seine kompakten Außenmaßen speziell für werksinternen Verkehr, Kommunen oder Dienstleister. Die maximale Höchstgeschwindigkeit ist mit 30 km/h jedoch niedriger als bei der Konkurrenz und so sollte für längere Routen wohl auf andere Fahrzeuge zurückgegriffen werden. Für den Einsatz auf dem Firmen- oder Werksgelände ist der G2 jedoch bestens geeignet. Durch die drei angebotenen Batterie-Varianten kann der Kunde außerdem zwischen einem niedrigeren Preis oder einer höheren Reichweite abwägen. Dennoch ist das Fahrzeug bezogen auf seine Größe relativ teuer.
 
 
-      #### Gesamtbewertung: 2,0
+      #### Testurteil: 2,0
     title: Fazit
     stars: 2
 ---

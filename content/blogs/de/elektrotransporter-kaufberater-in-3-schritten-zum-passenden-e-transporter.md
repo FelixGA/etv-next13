@@ -9,14 +9,15 @@ src: /images/whatsapp-image-2022-05-03-at-12.49.10.jpeg
 description: Der Elektrotransporter-Kaufberater hilft Ihnen, schnell und einfach
   den richtigen E-Transporter für Ihre Ansprüche zu finden.
 ---
-
 Die Suche nach dem richtigen Elektrotransporter für Ihr Unternehmen, Ihre Firma oder Kommune ist keine einfache Aufgabe. Vieles muss bedacht und bei der Entscheidung berücksichtigt werden, z.B.
 
-- das zukünftige Einsatzgebiet des Transporters,
-- die Anzahl der Personen, die ihn fahren werden,
-- der geeignete Aufbau (Koffer, Plane, Kipper etc.)
-- die Ansprüche an Zuladung, Reichweite, Ausstattung
-- und natürlich der Preis.
+<br />
+
+* das zukünftige Einsatzgebiet des Transporters,
+* die Anzahl der Personen, die ihn fahren werden,
+* der geeignete Aufbau (Koffer, Plane, Kipper etc.)
+* die Ansprüche an Zuladung, Reichweite, Ausstattung
+* und natürlich der Preis.
 
 <br />
 
@@ -52,10 +53,10 @@ Dazu legen Sie einfach per Mausklick folgende Kriterien fest:
 
 <br />
 
-- gewünschte Aufbauart (z.B. Koffer, Kipper, Pritsche, Plane)
-- erforderliche Reichweite
-- Zuladung
-- und Preisklasse.
+* gewünschte Aufbauart (z.B. Koffer, Kipper, Pritsche, Plane)
+* erforderliche Reichweite
+* Zuladung
+* und Preisklasse.
 
 <br />
 

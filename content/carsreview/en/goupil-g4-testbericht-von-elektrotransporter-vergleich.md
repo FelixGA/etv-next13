@@ -1,6 +1,7 @@
 ---
 title: Goupil G4
 slug: goupil-g4-testbericht-von-elektrotransporter-vergleich
+relatedCars: goupil-g2-pritsche
 youtubeLink: https://www.youtube.com/watch?v=KVqXBGdAbqc
 publishedAt: 04/04/2022
 description: >

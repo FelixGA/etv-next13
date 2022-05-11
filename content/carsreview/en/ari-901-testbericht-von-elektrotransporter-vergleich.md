@@ -1,15 +1,11 @@
 ---
 title: ARI 901
-slug: ari-901-testbericht-von-elektrotransporter-vergleich
 relatedCars: ari-901-kastenwagen
-youtubeLink: https://www.youtube.com/watch?v=dAltIHc8d9s
-category: Kasten
 publishedAt: 04/11/2022
 description: >
   Der ARI 901 ist ein Elektrotransporter der Fahrzeugklasse N1 mit einer
   Höchstgeschwindigkeit von 100 km/h und einer maximalen Zuladung von 900
   Kilogramm.
-src: /images/ari-901-koffer.jpg
 content:
   - content: >-
       ### Konzept & Fahrzeugvarianten
