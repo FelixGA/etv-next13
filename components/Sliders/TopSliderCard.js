@@ -11,7 +11,7 @@ const TopSliderCard = (props) => {
           key={index}
         >
           <div className="">
-            <div className="w-full ">
+            <div className="w-full">
               <Link
                 href={
                   sliderItem?.name
@@ -84,8 +84,8 @@ const TopSliderCard = (props) => {
                   </div>
                 </div>
               ) : null} */}
-              <div>
-                <StarsRating />
+              <div className="flex justify-center pt-8">
+                <StarsRating stars={sliderItem?.rating.value} />
               </div>
               <div className="absolute flex items-center justify-center w-full mt-8 text-center bottom-6 ">
                 <Link

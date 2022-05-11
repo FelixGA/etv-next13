@@ -1,4 +1,4 @@
-import Image from "next/image";
+import StartsRating from "../repeated/StarsRating";
 import image from "../../public/images/reichweite@2x.png";
 import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
@@ -7,7 +7,7 @@ import Link from "next/link";
 
 import { useRouter } from "next/router";
 import CarCardProps from "./CarCardProps";
-import RatingBox from "../repeated/RatingBox";
+// import RatingBox from "../repeated/RatingBox";
 
 function CarCardDetailsDesktop({ carItem }) {
   // let carItem = props.carItem;
@@ -53,8 +53,12 @@ function CarCardDetailsDesktop({ carItem }) {
         </div>
 
         <div className="items-center justify-center flex-1 hidden 2xl:flex">
-          <div className="w-24">
-            <RatingBox carItem={carItem} />
+          {/* <RatingBox carItem={carItem} /> */}
+          <div className="flex flex-col items-center h-32 border-2 w-28 justify-evenly">
+            <p>rating</p>{" "}
+            <div className="scale-75 ">
+              <StartsRating stars={carItem?.rating.value} />
+            </div>
           </div>
         </div>
       </div>
