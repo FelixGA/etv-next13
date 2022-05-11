@@ -66,7 +66,7 @@ content:
       In Sachen Entertainment-Systeme bietet Mercedes-Benz gleich mehrere Optionen für den eVito, allerdings keine ohne Aufpreis. Das preiswerteste Modell kostet 570 Euro extra und verfügt über nützliche Funktionen wie Bluetooth (für eine Freisprechfunktion), USB-Anschluss oder einen SD-Speicherkarten-Steckplatz. Für ein größeres Display mit Navigation muss der Kunde allerdings schon etwas tiefer in die Tasche greifen.
     title: Komfort & Ausstattung
     image: /images/mb-e-vito-innen-1-1024x683.jpg
-    stars: 4
+    stars: 5
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -100,7 +100,7 @@ content:
       Der eVito von Mercedes-Benz ist gegenüber dem großen Transporter Sprinter zwar kompakt, bietet dank seiner Länge aber trotzdem ein hohes Raumvolumen. Die bis zu 6.600 Liter Beladungskapazität dürften für einige Lieferanten und Handwerksbetriebe interessant sein. Der Stuttgarter E-Transporter bietet auch einen hohen Komfort im Vergleich zu einigen auf Funktionalität abzielenden Konkurrenz-Modellen. Negativ fällt hier aber ins Gewicht, dass viele Ausstattungsoptionen extra bezahlt werden müssen.
 
 
-      #### Testurteil: 3,4 Sterne
+      #### Testurteil: 3,6 Sterne
     title: Fazit
-    stars: 3.4
+    stars: 1
 ---
