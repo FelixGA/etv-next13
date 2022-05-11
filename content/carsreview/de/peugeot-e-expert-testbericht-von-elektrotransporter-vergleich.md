@@ -15,6 +15,7 @@ content:
       Längen angeboten ist und über 900 Kilogramm Nutzlast aufnehmen kann. Die
       Höchstgeschwindigkeit liegt bei 130 km/h.
     title: Einleitung
+    stars: 0
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
@@ -25,6 +26,7 @@ content:
       Seit 2020 ist die elektrische Version Peugeot Expert auf dem Markt. Der Kastenwagen ist elektrisch in zwei Längen erhältlich: 4,95 Meter sowie 5,30 Meter. Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität, welche natürlich unterschiedliche Reichweiten ermöglichen. Der Peugeot e-Expert ist auch als Kombi erhältlich, mit Sitzen und Fenstern im Fond. Hier soll es aber um die Kastenwagen-Version gehen.
     title: Konzept & Fahrzeugvarianten
     image: /images/peugeot-e-expert-laderaum.jpg
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (3/5)
 
@@ -35,6 +37,7 @@ content:
       Die Nutzlast des Peugeot e-Expert liegt bei den allen Modellen bei etwas über 900 Kilogramm. Allerdings gibt es die 50 kWh-Version mit einer optionalen erhöhten Nutzlast, welche dann bei rund 1.150 Kilogramm liegt. Die Anhängelast ist bei allen Modellen gleich: 1.000 Kilogramm für gebremste, 750 Kilogramm für ungebremste Anhänger.
     title: Laderaum & Flexibilität
     image: ""
+    stars: 3
   - content: >-
       ### Antrieb & Aufladung (4/5)
 
@@ -48,6 +51,7 @@ content:
       Der größere Akku mit 75 kWh Kapazität soll über eine maximale Reichweite von rund 320 Kilometer liegen ermöglichen, was sehr beachtlich ist für ein Fahrzeug dieser Größe. Allerdings dürften solche Strecken nur ohne Zuladung und mit wenig Steigung zu schaffen sein. Die Ladezeiten liegen hier bei rund 20 Stunden für die Wallbox und rund 45 Minuten für die 80-prozentige Schnellaufladung.
     title: Antrieb & Aufladung
     image: /images/peugeot-e-expert-ladeanschluss.jpg
+    stars: 5
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
@@ -58,6 +62,7 @@ content:
       Leider gibt es bei Peugeot nicht wie beim Schwestermodell Citroen Jumpy eine speziell für Baustellen ausgerüstete Variante mit erhöhter Bodenfreiheit und einem Motorschutz sowie einer erhöhten Nutzlast von rund 1.150 Kilogramm. Allerdings sind gegen Aufpreis Optionen wie Bodenplatte aus Holz im Laderaum und eine Anhängerkupplung mit Anhängerstabilisierung erhältlich.
     title: Komfort & Ausstattung
     image: ""
+    stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -68,12 +73,14 @@ content:
       Auf der Straße macht der Peugeot e-Expert eine gute Figur. Die 260 Nm brauchen für ihre Entfaltung nicht wie beim Verbrennermotor einen konkreten Drehzahlbereich, sondern sind direkt vorhanden. Dadurch beschleunigt der Elektrotransporter mehr als ordentlich und ist dank 100 kW Leistung auch auf Landstraßen flott unterwegs. Und auch die Autobahn ist kein Hindernis, allerdings ist das Fahrzeug bei 100 km/h abgeriegelt.
     title: Bedienung & Fahrbetrieb
     image: /images/peugeot-e-expert-innenraum.jpg
+    stars: 0
   - content: >-
       ### Umwelt (3/5)
 
 
       Der Energieverbrauch des Peugeot e-Expert wird nicht konkret angegeben, dürfte aber ähnlich seinen GEschwistermodellen um die 25 kWh auf 100 km liegen. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke so circka 7,50 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
+    stars: 3
   - content: >-
       ### Preise & Garantie (3/5)
 
@@ -84,6 +91,7 @@ content:
       Peugeot bietet auf den Fahrzeugakku eine Garantie von stolzen 8 Jahren bzw. 160.000 Kilometer. Für das Fahrzeug gelten wie üblich bei Peugeot eine Herstellergarantie von 2 Jahren ohne Kilometerbeschränkung.
     title: Preise & Garantie
     image: /images/peugeot-e-expert-heck.jpg
+    stars: 5
   - content: >-
       ### Fazit
 
@@ -91,9 +99,7 @@ content:
       Der Peugeot e-Expert ist wie seine Geschwister ein recht hochwertiger Kastenwagen, welcher zudem mit einer recht hohen Reichweite punktet. Der Laderaum ist sehr geräumig und einfach beladbar und es gibt viele praktische Ausstattungsdetails für den Berufsalltag, wodurch der Kastenwagen speziell für Lieferanten und Handwerker sehr interessant sein dürfte. Allerdings ist das Fahrzeug nicht gerade günstig. Die e-Expert-Modelle kosten 8.000 bis 10.000 Euro netto mehr als das vergleichbare Verbrenner-Modell. Dadurch könnte das Fahrzeug für einige Interessenten schlich nicht erschwinglich sein.
 
 
-      ### Gesamtpunktzahl:
-
-
-      3,6 Sterne
+      #### Testurteil: 3,6 Sterne
     title: Fazit
+    stars: 3.6
 ---
