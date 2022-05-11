@@ -17,6 +17,7 @@ content:
       Das Berliner Unternehmen hat sich zum Ziel gesetzt, sehr simple und somit auch günstige Fahrzeuge für jedermann anzubieten. Der Elektrofrosch BIG ist einer von mehreren Elektro-Kleintransportern des Unternehmens. Das Lastentrike ist so simpel wie möglich gehalten und verfügt über einen  Sitzplatz. Möchte eine zweite Person mitfahren, kann eine zusätzliche Sitzbank an der Rückwand der Pritsche nach unten geklappt werden. Diese Sitzmöglichkeit ist jedoch nicht im öffentlichen Straßenverkehr zulässig. Beim BIG handelt es sich zusätzlich um eine Erweiterung des Elektrofrosch Basis-Fahrzeugs. Der BIG verfügt so im Gegensatz zum Basisfahrzeug über eine rund 1,80 m hohe Fahrerkabine.
     image: /images/elektrofrosch-big-6.jpeg
     title: Konzept & Fahrzeugvarianten
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (1/5)
 
@@ -79,6 +80,7 @@ content:
       Der Preis für den 25er - CABIN  liegt bei 2.490€ inkl. Mwst. und ohne Kabine bei 2.390€ inkl. Mwst. Das Basisfahrzeug des Lastenmopeds ohne Kabine kostet 3.190 € inkl. Mehrwertsteuer.
     title: Preise & Garantie
     image: /images/elektrofrosch-6836-scaled.jpeg
+    stars: 3
   - content: >-
       ### Fazit
 
@@ -86,7 +88,7 @@ content:
       Das Fahrzeug ist zwar wirklich günstig, aber auch sehr simpel und spartanisch ausgestattet. Leider macht der Händler wenig Angaben zu technischen Daten des Fahrzeugs. Das Lastentrike  eignet sich wohl am besten für den Einsatz auf Privatgelände oder auf dem Land. Möglich Einsatzfelder des Fahrzeugs sind Landwirtschafts-, Bau- oder Handwerksbetriebe. Für Lieferdienste im urbanen Raum eignet sich die Pritsche weniger.
 
 
-      #### Gesamtbewertung: 1,6
+      #### Testurteil: 1,6
     title: Fazit
     stars: 1.6
     image: ""
