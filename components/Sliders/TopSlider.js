@@ -36,7 +36,7 @@ const TopSlider = ({ getBlogContext, getCars }) => {
         </div>
 
         <div className="relative print:hidden flex flex-col w-full xl:w-[1220px] ">
-          <h2 className="relative px-6 pb-4 mt-4 text-3xl font-black tracking-wide text-left no-select text-black-dark">
+          <h2 className="relative px-6 pb-4 text-3xl font-black tracking-wide text-left no-select text-black-dark">
             Jetzt vergleichen!
           </h2>
           <div className="absolute  w-10 p-1 bg-white rounded-full top-4 left-[300px] 2xl:hidden">
