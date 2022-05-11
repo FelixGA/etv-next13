@@ -14,6 +14,7 @@ content:
       Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und
       rund eine Tonne Nutzlast aufnehmen kann.
     title: Einleitung
+    stars: 0
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
@@ -24,6 +25,7 @@ content:
       Im Gegensatz zu den vier verschiedenen Längen des herkömmlichen Sprinters ist die Elektro-Version nur in einer 6,09 Meter langen Ausführung mit Hochdach erhältlich. Eine Auswahl gibt es deshalb nur bei der Batterie. Hier kann zwischen einer nutzbaren Kapazität von 35 kWh und 47 kWh gewählt werden, wodurch eine Durchschnittsreichweite von 120 bzw. 158 Kilometern erreicht werden soll.
     title: Konzept & Fahrzeugvarianten
     image: /images/mb-esprinter-laderaum.jpg
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (4/5)
 
@@ -34,6 +36,7 @@ content:
       Die Nutzlast des Mercedes-Benz eSprinter ist abhängig von der Akku-Kapazität. Da das zulässige Gesamtgewicht bei 3,5 Tonnen liegt, führt das höhere Gewicht des 47 kWh-Akkus zu einer niedrigeren Zuladung von 848 Kilogramm. Mit der leichteren 35 kWh-Batterie darf der eSprinter hingegen bis zu 1.001 Kilogramm zuladen. Auf dem Dach des Elektro-Transporters dürfen zudem maximal 150 Kilogramm mitgeführt werden.
     title: Laderaum & Flexibilität
     image: ""
+    stars: 4
   - content: >-
       ### Antrieb & Aufladung (4/5)
 
@@ -47,6 +50,7 @@ content:
       Die Aufladung kann per Haushaltssteckdose, Wallbox oder Ladestation mit Wechsel- oder Gleichstrom erfolgen. Eine Vollladung per Wechselstrom mit 7,4 kW soll in rund 6 Stunden (35 kWh) bzw. etwa 8 Stunden (47 kWh) erledigt sein. Bei der Aufladung über eine Gleichstrom-Ladestation mit optional verfügbaren 80 kW soll der Akku laut Hersteller in gerade einmal 20 Minuten von 10% auf 80% gebracht werden.
     title: Antrieb & Aufladung
     image: /images/mb-esprinter-anschluss-2.jpg
+    stars: 4
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
@@ -57,6 +61,7 @@ content:
       So sind optional Helfer wie ein Rückfahrkamera und ein Totwinkel-Assistent verfügbar, welche bei der Größe und Unübersichtlichkeit des Fahrzeugs nützlich sein können. Weitere Extras sind zum Beispiel eine Klimaanlage sowie ein LED-Lichtband zur Beleuchtung des Laderaums. Auch ein dritter Sitzplatz in der Kabine ist gegen Aufpreis verfügbar.
     title: Komfort & Ausstattung
     image: /images/mb-esprinter-innenraum.jpg
+    stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -67,12 +72,14 @@ content:
       Für Fuhrpark-Manager bietet das Fahrzeug aber viel praktische Unterstützung. So können die eSprinter einer Flotte zum Beispiel auch vom Fuhrparkmanager per App geöffnet werden, ohne dass der Mitarbeiter einen Schlüssel benötigt. So werden Fahrzeugwechsel bei vielen Fahrern vereinfacht. Außerdem können via Smartphone alle Transporter der Flotte jederzeit in Echtzeit verfolgt und mit neuen Aufträgen versorgt werden.
     title: Bedienung & Fahrbetrieb
     image: ""
+    stars: 0
   - content: >-
       ### Umwelt (3/5)
 
 
       Mit der kleineren Hochvoltbatterie von 35 kWh soll der eSprinter ca. 37,1 kWh auf 100 Kilometer verbrauchen. Bei der größeren Version mit 47 kWh liegt der Verbrauch interessanterweise niedriger bei nur 32,5 kWh / 100 Km. Damit soll das Fahrzeug knapp 160 Kilometer weit fahren können. Ein Solarmodul für mehr Reichweite wird derzeit nicht angeboten.
     title: Umwelt
+    stars: 3
   - content: >-
       ### Preise & Garantie (3/5)
 
@@ -83,6 +90,7 @@ content:
       Mit dem größeren 47 kWh-Akku kostet das Fahrzeug mindestens 61.310 Euro netto. In allen Angeboten ist der Akku mit enthalten und muss nicht gemietet werden. Wie auf alle Transporter gibt Mercedes-Benz auch auf den eSprinter eine Neufahrzeug-Garantie von 24 Monaten, welche ohne Kilometerbegrenzung gilt.
     title: Preise & Garantie
     image: /images/mb-esprinter-heck.jpg
+    stars: 3
   - content: >-
       ### Fazit
 
@@ -90,9 +98,7 @@ content:
       Der Mercedes-Benz eSprinter ist besonders durch seinen riesigen Laderaum von 11 m³ für den Waren- und Gütertransport von großen Lademengen interessant. Aber auch in Sachen Komfort ist das Fahrzeug anderen Nutzfahrzeugen überlegen. Die Elektroversion bietet sich aber vorerst nur für den Stadtverkehr oder kürzere Überlandstrecken an, da die angegeben Reichweiten mit Ladung wohl nicht zu erreichen sind.
 
 
-      ### Gesamtpunktzahl:
-
-
-      3,4 Sterne
+      #### Testurteil: 3,4 Sterne
     title: Fazit
+    stars: 3.4
 ---
