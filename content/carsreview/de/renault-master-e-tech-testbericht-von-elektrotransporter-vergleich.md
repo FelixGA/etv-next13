@@ -28,7 +28,7 @@ content:
     image: ""
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität
 
 
       Dank seiner üppigen Maße besitzt der Master E-Tech natürlich auch innen viel Platz. So stehen selbst in der kleinsten Version (L1H1) bis zu 7,75 m³ Ladevolumen bei einer maximalen Ladelänge von 2,58 Meter zur Verfügung. Das größte Modell (L3H2) bietet ganze 12,48 m³ Raum für Ladung bei einer Ladelänge von 3,73 Meter. Bei der Zuladung verhält es sich entgegengesetzt: Die kleinste Version hat mit 1.053 Kilogramm die höchste Nutzlast, während der größte Master mit 900 Kilogramm am wenigsten Gewicht zuladen kann.
@@ -42,7 +42,7 @@ content:
     image: /images/renault-master-seite.jpg
     stars: 3
   - content: >-
-      ### Antrieb & Aufladung (2/5)
+      ### Antrieb & Aufladung
 
 
       Der Elektroantrieb des Renault Master E-Tech ist auf Basis des R75-Motors aus dem ZOE entwickelt und hat eine Leistung von 57 kW sowie ein maximales Drehmoment von 225 Nm. Die Kraftübertragung erfolgt über ein stufenloses Automatikgetriebe. Die Höchstgeschwindigkeit des Elektro-Transporters liegt bei 100 Km/h. 
@@ -56,7 +56,7 @@ content:
     image: /images/renault-master-durchsichtig.jpg
     stars: 2
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       Der Renault Master E-Tech ist mit seinem hohen Ladevolumen ein echter Packesel. Damit die Ladung gut gesichert werden kann, befinden sich neben einem rutschfesten Boden je nach Version auch acht bis zwölf Verzurrösen im Heck. Um die Beladung an verschiedenen Ladeplattformen zu vereinfachen, können die Hecktüren bis 270 Grad geöffnet werden, wo sie per Magnet an den Seitenwänden befestigt werden können.
@@ -75,20 +75,20 @@ content:
     image: ""
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Der Verbrauch liegt offiziell bei rund 21,0 kWh auf 100 Kilometer. Dies scheint allerdings nur mit wenig Beladung und mit vorsichtigem Gasfuß möglich. Die WLTP-Reichweite von 120 Kilometer ergibt bei einer Akkukapazität einen ungefähren Energieverbrauch von 27,5 kWh auf 100 Kilometer. Bei 30 Cent pro kWh würden die Kosten auf 100 Kilometer also zwischen 6,30 Euro und 8,25 Euro liegen.
     title: Umwelt
-    stars: 1
+    stars: 3
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Die Preise für den Renault Master E-Tech beginnen als Kastenwagen bei 54.900 Euro netto für die Version “L1H1”. Ein detaillierte Preisliste ist leider nur auf Anfrage zu erhalten. Im Gegensatz zum Kangoo E-Tech ist hier die Batterie mit im Preis enthalten und muss nicht dazu gemietet werden. Auf Neufahrzeuge gibt Renault eine Garantie von 2 Jahren, welche gegen Aufpreis verlängert werden kann.
     title: Preise & Garantie
     image: /images/renault-master-heck-lade.jpg
-    stars: 1
+    stars: 3
   - content: >-
       ### Fazit
 

@@ -24,18 +24,18 @@ content:
 
       Das Fahrzeug ist nur als Pritsche erhältlich. Kofferaufbauten bietet der Hersteller unter anderen Modellreihen an. Die Nutzlast des Lastenmopeds liegt offiziell bei 370 Kilogramm. Die Abmessungen der Ladefläche der Pritsche gibt der Hersteller leider nicht an. Die 3 seitlichen Bordwände können ebenso wie beim Elektrofrosch BIG alle nach unten geklappt werden. Dies ermöglicht mehr Staufläche und so können auch sperrige Gegenstände einfacher transportiert werden. Die Ladefläche ist zudem per Hand kippbar. Dies ist jedoch nur mit leichtem Materialien wie beispielsweise Grünschnitt möglich. Wer Bauschutt abkippen möchte, wird sicherlich seine Probleme bekommen. Die Pritsche des Elektrofrosch lässt sich außerdem durch einen Planenaufbau ergänzen.
     image: /images/ef-grand-extra20.jpg
-    title: LADERAUM
+    title: Laderaum & Flexibilität
     stars: 1
   - content: >-
-      ### Antrieb und Aufladung (2/5)
+      ### Antrieb und Aufladung
 
 
       Das Fahrzeug wird angetrieben von einem 1,5 bis 4,2 kW starken Elektromotor. Die Höchstgeschwindigkeit des Trikes liegt bei 45 km/h und die maximale Reichweite beträgt laut Hersteller 70 km. Die 60-V-Blei-Batterie, lädt an einer Haushaltssteckdose in etwa 7 Stunden. Mit einem Typ2-Adapter lässt sich das Fahrzeug  ebenso an einer Ladesäule aufladen.
     image: ""
-    title: Antrieb und Aufladung (2/5)
-    stars: 0
+    title: Antrieb und Aufladung
+    stars: 2
   - content: >-
-      ### Komfort & Ausstattung (3/5)
+      ### Komfort & Ausstattung
 
 
       Die Kabine des Grand Extra ist beheizt und schützt den Fahrer vollständig gegen Regen und Wind. Ein kleines Dachfenster bringt Licht und Luft von oben. Ebenso serienmäßig ist eine Rückfahrkamera, welche optimales Rangieren ermöglicht. Für einen Aufpreis von 195 € bekommt der Kunde auch einen Satz wintertaugliche Reifen zum Fahrzeug. Ebenso ist ein Planenaufbau für 199 € und Schneeketten für 129 € Aufpreis erhältlich.
@@ -51,7 +51,7 @@ content:
     title: Bedienung & Fahrbetrieb
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Zum Verbrauch macht der Hersteller leider keine Angaben. Laut Elektrofrosch kosten 100 Kilometer Fahrt mit dem Grand Extra 2€. Bei angenommenen 30 Cent pro Kilowattstunde liegt der Verbrauch bei schätzungsweise 6,6 kWh.
@@ -59,13 +59,13 @@ content:
     image: ""
     stars: 3
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Der Preis des Elektrofrosch Grand Extra liegt bei 4.490 inklusive Mehrwertsteuer. Ohne Mehrwertsteuer kostet das Fahrzeug 3.636,90 €. Die Lieferzeit gibt Elektrofrosch mit 3-6 Monate an. Zur Garantie auf Fahrzeug und Batterie macht der Hersteller jedoch leider ebenso keine Angaben.
     title: Preise & Garantie
     image: /images/ef-grand-extra19.jpg
-    stars: 1
+    stars: 3
   - content: >-
       ### Fazit
 

@@ -32,7 +32,7 @@ content:
     image: ""
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (4/5)
+      ### Laderaum & Flexibilität
 
 
       In der kleinen Version L2H2 hat der Maxus eDeliver 9 Ladelänge von 3,02 Meter. Mit einer Breite von maximal 1,80 Meter und einer Ladehöhe von 1,79 Meter steht so bereits ein Ladevolumen von stattlichen 9.700 Liter zur Verfügung. In der längeren Version ist der Laderaum 3,41 Meter lang, während in der Hochdach-Version die Höhe des Laderaums auf 2,02 Meter steigt. So steht bei der größten Version L3H3 ein Ladevolumen von 12.500 Liter zur Verfügung. Die Beladung kann über zwei hintere Flügeltüren sowie eine seitliche Schiebetür mit einer Breite von 1,27 Meter erledigt werden.
@@ -46,7 +46,7 @@ content:
     image: /images/maxus-edeliver-9-laderaum.jpg
     stars: 4
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       Den Motor des Maxus eDeliver 9 ist ein Elektromotor, der eine Spitzenleistung von 150 kW und eine Dauerleistung von 70 kW leistet. Das Drehmoment liegt bei kräftigen 310 Nm. Damit erreicht der E-Transporter eine Höchstgeschwindigkeit von 100 km/h, die elektronisch abgeregelt ist, um die Reichweite nicht zu sehr einzuschränken. Die N2-Version kann nur 90 km/h schnell fahren.
@@ -58,9 +58,9 @@ content:
       Die Ladezeit gibt der Hersteller je nach Kapazität mit 6 bis 9 Stunden an einer 11 kW-Wallbox an. An einer Schnellladesäule mit Gleichstrom können die Elektrotransporter in ungefähr 36 bis 45 Minuten von 20 auf 80% Ladekapazität gebracht werden.
     title: Antrieb & Aufladung
     image: /images/maxus-edeliver-9-engine.jpg
-    stars: 1
+    stars: 4
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       Der Maxus eDeliver 9 kommt nur in einer Ausstattungsvariante zum Kunden. Diese ist allerdings sehr umfangreich und beinhaltet bereits Einparkhilfen vorn wie hinten, eine Klimaanlage sowie einen 10-Zoll-Touchscreen mit Rückfahrkamera. Auch mehrere Airbags, ein Spurwechselassistent sowie eine Berganfahrhilfe sind serienmäßig mit dabei. Optional ist neben einer Metallic-Lackierung noch das Plus-Paket erhältlich, zu dem u.a. eine Sitzheizung, ein Notbremsassistent sowie Digitalradio DAB+ gehören.
@@ -76,14 +76,14 @@ content:
     image: ""
     stars: 0
   - content: >-
-      ### Umwelt (2/5)
+      ### Umwelt
 
 
       Der Energieverbrauch des Maxus eDeliver 9 liegt je nach Akku und Größe zwischen 30,2 kWh (L2H2 mit kleinem Akku) und 33,2 kWh (große N2-Version). Bei einem Strompreis von 30 Cent pro kWh entstehen so Energiekosten von rund 9 bis 10 Euro auf 100 Kilometer. Eine Solaranlage für eine erweiterte Reichweite wird nicht angeboten.
     title: Umwelt
     stars: 2
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Die Preise des Maxus eDeliver 9 startet bei 54.690 Euro netto für L2H2-Version mit kleinem Akku, das Topmodell L3H3 60.990 Euro. Für die größeren Akkus muss dann jeweils 8.000 Euro (72 kWh) bzw. 15.000 Euro (89 kWh) netto draufgezahlt werden. Für ein Fahrzeug dieser Größe und Leistungsfähigkeit sicher kein Schnäppchen, aber zumindest angemessen. Außerdem ist die Herstellergarantie auf das Fahrzeug mit 5 Jahren bzw. 100.000 Kilometer sehr großzügig. Auf den Lithium-Ionen-Akku gibt es sogar 8 Jahre bzw. 160.000 Kilometer Garantie.

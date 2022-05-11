@@ -29,7 +29,7 @@ content:
     image: /images/maxus-ev80-chassis.jpg
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität
 
 
       Der Maxus EV 80 hat eine Länge von 5,70 Meter und eine Breite von 2,00 Meter sowie einen Radstand von 3,85 Meter. In Sachen Fahrzeughöhe kann der Kunde zwischen zwei Varianten wählen: Dem “H2 Mitteldach” mit 2,35 Meter und dem “H2 Hochdach” mit 2,55 Meter Höhe. Dadurch ergeben sich natürlich auch unterschiedliche Laderaumhöhen von 1,74 Meter und 1,94 Meter. Mit der Laderaumlänge von 3,15 Meter und einer Breite von 1,80 Meter ergibt sich so ein Gesamtvolumen von 10,2 m³ für das “Mitteldach” sowie 11,5 m³ für die “Hochdach”-Variante. 
@@ -38,9 +38,9 @@ content:
       Die Be- und Entladung erfolgt über zwei geteilte Hecktüren und eine seitliche Schiebetür, wobei die Ladekante mit 56 Zentimetern auf der für diese Fahrzeuge üblichen Höhe liegt. Die Nutzlast beträgt 955 Kilogramm für die niedrigere Variante und 885 Kilogramm für den “Hochdach”-Maxus. Die niedrigere Nutzlast der größeren Variante liegt am höheren Leergewicht und der 3,5-Tonnen-Grenze. Mit der optional verfügbaren Anhängerkupplung darf der EV 80 gebremste Anhänger bis 1.200 Kilogramm und ungebremste bis 750 Kilogramm ziehen.
     title: Laderaum & Flexibilität
     image: /images/maxus-ev80-kasten-laderaum.jpg
-    stars: 0
+    stars: 3
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       Der Elektromotor des Maxus EV 80 leistet satte 100 kW bei einem maximalen Drehmoment von 320 Nm. Der Maxus EV 80 hat also ordentlich Kraft unter der Haube. Das bereits leer 2,5 Tonnen wiegende Fahrzeug wird dadurch in 24 Sekunden von 0 auf 100 Km/h gebracht und erreicht eine Höchstgeschwindigkeit von 100 Km/h. 
@@ -51,7 +51,7 @@ content:
     image: ""
     stars: 4
   - content: >-
-      ### Komfort & Ausstattung (3/5)
+      ### Komfort & Ausstattung
 
 
       An sich ist die Ausstattung des Maxus EV 80 sehr umfangreich. Ohne Aufpreis sind bereits eine Klimaanlage, Doppelairbags, ESP, elektrische Fensterheber und ein Radio mit MP3-Funktion enthalten. Letzteres kann gegen Aufpreis noch mit einem 10-Zoll-Monitor versehen werden.
@@ -66,19 +66,19 @@ content:
     image: /images/maxus-ev80-innenraum.jpg
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Konkrete Angabe zum Energieverbrauch des Maxus EV 80 gibtes nicht. Die Reichweite von 154 Kilometer mit einem 56 kWh-Akku entspricht aber einem ungefähren Verbrauch von 27,5 kWh auf 100 Kilometer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke also rund 8,25 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
     stars: 3
   - content: >-
-      ### Preise & Garantie (5/5)
+      ### Preise & Garantie
 
 
       Die Preise für den Maxus EV 80 sind leider nicht offen einsehbar, der Einstiegspreis des Fahrzeugs liegt aber bei 39.990 Euro netto, immerhin rund 20.000 Euro weniger als ein vergleichbarer Renault Master Z.E. Der EV 80 kann außerdem gemietet werden für monatlich 700 Euro aufwärts. Bei der Garantie zeigt sich der chinesische Hersteller recht großzügig. Neben einer dreijährigen Fahrzeuggarantie gibt es ganze 5 Jahre auf das Akkupaket. Sollte das Fahrzeug allerdings vorher die 100.000 Kilometer überschreiten, verfallen beide Garantien.
     title: Preise & Garantie
-    stars: 1
+    stars: 5
   - content: >-
       ### Fazit
 

@@ -29,7 +29,7 @@ content:
     image: /images/mb-e-vito-laderaum-1-1024x683.jpg
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität
 
 
       Dank seiner üppigen Fahrzeuglänge bietet der Elektro-Transporter natürlich auch ein hohes Raumvolumen. Dieses reicht von 6.000 Liter bzw. 6.600 Liter als „Extralang“. Auch die Laderaumlänge ist mit 2,83 Meter sowie 3,06 Meter dementsprechend großzügig. Dadurch bietet sich der Mercedes-Benz eVito besonders für Lieferfirmen mit Platzbedarf für große und sperrige Ladung an.
@@ -41,9 +41,9 @@ content:
       Die Nutzlast liegt laut Mercedes-Benz bei 888 Kilogramm für die kürzere der beiden Varianten sowie 853 Kilogramm für den „extralangen“ eVito. Diese Angaben sind allerdings ohne Fahrer und mögliche Mitfahrer berechnet und verringern sich natürlich je nach Personenanzahl. Der Elektro-Transporter hat eine Dachlast von 150 Kilogramm.
     title: Laderaum & Flexibilität
     image: ""
-    stars: 5
+    stars: 3
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       Den Antrieb des Mercedes-Benz eVito übernimmt ein Elektromotor mit einer Nennleistung von 85 kW, dessen Dauerleistung der Hersteller mit 70 kW angibt. Diese wird über ein Automatikgetriebe auf die Vorderachse übertragen. Das maximale Drehmoment beträgt 295 Nm, während die Höchstgeschwindigkeit in drei Stufen wählbar ist. Für städtische Unternehmen dürfte die Basisversion mit maximal 80 Km/h vollkommen ausreichen, während sich bei vielen Überlandfahrten die Varianten mit 100 Km/h bzw. 120 Km/h anbieten. Bei solchen Geschwindigkeit reduziert sich natürlich die Reichweite deutlich.
@@ -57,7 +57,7 @@ content:
     image: /images/mb-e-vito-stecker-1-1024x683.jpg
     stars: 4
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       Im Vergleich zu preiswerteren Elektro-Nutzfahrzeugen ist der Mercedes-Benz eVito bereits in der Basisversion weniger spartanisch. Außerdem kann er mit vielen Details ausgestattet werden, die den Komfort des Fahrers erhöhen. Gegen Aufpreis sind so neben einer Klimaanlage und Sitzheizung auch Komfortsitze erhältlich. Allerdings sei angemerkt, dass einige der vielen Ausstattungsoptionen die Reichweite beeinträchtigen können. In dieser Hinsicht interessant sind aber die verschiedenen Rekuperationsstufen, die der Fahrer wählen und so die Reichweite beeinflussen kann.
@@ -76,14 +76,14 @@ content:
     image: ""
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Der Energieverbrauch des eVito von Mercedes-Benz liegt laut Hersteller bei rund 21,5 kWh auf 100 km. Bei 30 Cent pro Kilowattstunde ergeben 100 km Fahrstrecke somit Kosten von rund 6,45 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
     stars: 3
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie
 
 
       Die Preise des Mercedes-Benz eVito beginnen bei 45.990,00 € („Lang“) sowie 47.470,00 € („Extralang“). Der Lithium-Ionen-Akku ist mit im Preis enthalten und kann nicht gemietet werden. Da viele für Unternehmen nützliche Helfer allerdings Aufpreis kosten, dürften die wenigsten Kunden diese Anschaffungskosten einhalten.
@@ -92,7 +92,7 @@ content:
       Der Hersteller bietet eine Garantie von 24 Monaten auf das Fahrzeug. Zusätzlich lassen sich „ServiceCare“-Pakete gegen einen monatlichen Betrag buchen, welche dem Kunden einen Rundum-Service in Sachen Wartung und dem Austausch von Verschleißteilen bieten. Diese können je nach Laufleistung angepasst werden.
     title: Preise & Garantie
     image: /images/mb-e-vito-seite-1-1024x683.jpg
-    stars: 5
+    stars: 4
   - content: >-
       ### Fazit
 

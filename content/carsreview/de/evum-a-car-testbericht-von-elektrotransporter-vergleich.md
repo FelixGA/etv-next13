@@ -22,7 +22,7 @@ content:
     title: Konzept & Fahrzeugvarianten
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (3/5 Punkten)
+      ### Laderaum & Flexibilität
 
 
       Durch seine hohe Bodenfreiheit und den großen Rädern wirkt das Evum A-Car fast wie ein LKW der Sorte Unimog von Mercedes-Benz. Gleichzeitig ist er mit 4 Metern Länge aber doch recht kompakt. Das Fahrzeug ist in den Aufbauvarianten Pritsche, Koffer und Dreiseitenkipper verfügbar. Die Laderaummaße des Kofferaufbaus liegen bei rund 1,79 m x 1,54 m x 1,10 m. Der Aufbau besitzt dadurch ein Ladevolumen von 3,03 m3 .
@@ -39,10 +39,10 @@ content:
 
       Zu weiteren Aufbauten und Individuallösungen macht der Hersteller keine Angaben.
     image: /images/acar-lastmile-02-210412.jpg
-    title: LADERAUM
+    title: Laderaum & Flexibilität
     stars: 3
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       Den Antrieb übernimmt ein Elektromotor mit 20 kW Leistung, welche gleichmäßig auf die zwei Achsen verteilt wird. Damit kann das Evum A-Car eine Höchstgeschwindigkeit von 70 Km/h erreichen. Als Energiespeicher fungiert ein Lithium-Ionen-Akku mit einer Betriebsspannung von 48 Volt und eine Kapazität von 16,5 kWh. Die Reichweite soll damit in der Standard-Version 110 Kilometer betragen. 
@@ -56,7 +56,7 @@ content:
     title: "Antrieb & Aufladung "
     stars: 4
   - content: >-
-      ### Komfort & Ausstattung (2/5)
+      ### Komfort & Ausstattung
 
 
       Aktuell ist das Evum A-Car in den Versionen Basis und Select verfügbar. In der “Basis”-Version ist das Fahrzeug sehr spartanisch ausgestattet und kommt ohne Extras wie einer Heizung, einem Radio oder einer Zentralverriegelung mit Funkfernbedienung zum Kunden. Diese Dinge können in der Select-Version für einen Aufpreis von 6900 Euro zusätzlich erworben werden. Ebenso enthält die Select Version eine integrierte Standheizung, eine Telematikeinheit und eine externe Steckdose (3 kW, 220 V). 
@@ -78,7 +78,7 @@ content:
     title: Bedienung & Fahrbetrieb
     stars: 0
   - content: >-
-      ### Umwelt (⅘)
+      ### Umwelt
 
 
       Das Fahrzeug kommt bezogen auf die Fahrzeuggröße auf einen niedrigen kombinierten Verbrauch von 15,9 kWh/ 100 km. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 4,77 €. Über ein zusätzliches Solarmodul auf dem Dach des Fahrzeugs gibt es keine Angaben.
@@ -86,7 +86,7 @@ content:
     image: /images/acar-kommunal-4.jpeg
     stars: 4
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Grundsätzlich beginnen die Preis des Evum A-Car bei 31.490 Euro ohne Mehrwertsteuer in der Basisversion. Dieser Preis gilt allerdings für die Version ohne Aufbau. In der “Select”-Version ist das Fahrzeug ab 38.390 Euro erhältlich. Mit den Aufbauten kommen zusätzlich 1.590 Euro (Pritsche), 3.580 Euro (Pritsche mit Planenaufbau) oder 5.990 Euro (Koffer) hinzu. Mit Kipperaufbau kostet das Fahrzeug 45.380 Euro zzgl. Mehrwertsteuer. Interessant für Kommunen ist das “Kommunalpaket” mit oranger Folierung, Rundumleuchte und Reflektoren für 1.380 Euro (wie immer ohne MwSt.). Über die Dauer einer Fahrzeug- und Batterie-Garantie gibt es leider keinerlei Angaben.
