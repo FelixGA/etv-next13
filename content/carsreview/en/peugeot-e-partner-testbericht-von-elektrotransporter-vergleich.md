@@ -15,6 +15,7 @@ content:
       Fahrzeugklasse N1, der eine Zuladung von 542 und 728 Kilogramm aufnehmen
       kann und eine Höchstgeschwindigkeit von 130 km/h erreicht.
     title: Einleitung
+    stars: 0
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
@@ -25,8 +26,9 @@ content:
       Das Fahrzeug ist in zwei Fahrzeuglängen erhältlich: als 4,40 Meter lange L1-Version sowie als L2 mit 25 Zentimeter mehr Länge, die natürlich auch dem Ladevolumen zu Gute kommt Auswahlmöglichkeiten bei der Art oder Größe der Akkus gibt es leider nicht.
     title: Konzept & Fahrzeugvarianten
     image: ""
+    stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität
 
 
       In der kürzeren L1-Version hat der Peugeot e-Partner eine Ladelänge von 1,82 Meter. Die Breite der Ladefläche variiert zwischen 1,53 Meter und 1,73 Meter, während die Höhe des Laderaums 1,20 Meter beträgt. So entsteht ein Laderaum von 3.300 Liter, welches mit der optionalen Multiflex-Doppelbeifahrersitzbank auf 3.800 Liter erweitert werden kann.
@@ -38,8 +40,9 @@ content:
       Die Nutzlast liegt standardmäßig bei 542 (L1) bzw. 548 Kilogramm (L2) und kann gegen Aufpreis auf 720 bzw. 728 Kilogramm erhöht werden. Zudem kann ein ungebremster Anhänger mit einem maximalen Gewicht von 750 Kilogramm angehangen werden.
     title: Laderaum & Flexibilität
     image: /images/peugeot-e-partner-heckansicht-strasse.jpg
+    stars: 3
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       Angetrieben wird der Peugeot e-Partner von einem Elektromotor mit 100 kW Spitzenleistung angetrieben. Dessen Dauerleistung liegt laut Hersteller bei 57 kW und er kann ein Drehmoment von 260 Nm entwickeln. Die Höchstgeschwindigkeit wird elektronisch bei 130 km/h abgeriegelt.
@@ -48,12 +51,14 @@ content:
       Als Energiespeicher agiert ein Lithium-Ionen-Akku mit eine Kapazität von 50 kWh. Damit soll das Fahrzeug eine Reichweite von 254 bis 278 Kilometer erreichen. Diese Wegstrecke ist allerdings eher unrealistisch mit Zuladung und normalem Stadtverkehr zu erreichen. Die Aufladung soll mit einer Haushaltssteckdose rund 31 Stunden, mit einer 11 kW-Wallbox rund 5 Stunden dauern. An einer DC-Schnellladesäule soll das Fahrzeug zudem in nur 30 Minuten von 0 auf 100 % Ladung gebracht werden können.
     title: Antrieb & Aufladung
     image: /images/peugeot-e-partner-antrieb.jpg
+    stars: 4
   - content: >-
-      ### Komfort & Ausstattung (3/5)
+      ### Komfort & Ausstattung
 
 
       Serienmäßig kommt der Peugeot e-Partner in der Variante “Pro” bereits mit einer Berganfahrhilfe, elektrischen Fensterhebern vorn sowie einer Audioanlage mit Touchscreen zum Kunden. Auch ABS, ESP sowie elektrisch einstellbare und beheizbare Außenspiegel sind gratis mit dabei. Die höhere Ausstattungsvariante “Premium” hat zudem eine Klimaanlage sowie die “Peugeot Connect Box”. Für Gewerbetreibende würde sich zudem das “Grip”-Paket mit vielen praktischen Optionen lohnen, allerdings ist ausgerechnet dieses nicht für die elektrische Version erhältlich.
     title: Komfort & Ausstattung
+    stars: 3
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -65,13 +70,14 @@ content:
     title: Bedienung & Fahrbetrieb
     image: /images/peugeot-e-partner-innenraum.jpg
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Der Verbrauch des Peugeot e-Partner wird mit 22,4 - 19,7 kWh vom Hersteller angegeben. Dies entspricht Energiekosten von rund 6,00 bis 6,60 Euro auf 100 Kilometer bei einem Strompreis von 30 Cent pro Kilowattstunde. Ein Solarmodul für eine erweiterte Reiche wird nicht angeboten.
     title: Umwelt
+    stars: 3
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie
 
 
       Die Preise des Peugeot e-Partner beginnen bei 28.990 Euro netto für die Kurzversion in der “Pro”-Ausstattungslinie. Als besser ausgestattete “Premium”-Version ist der Elektrotransporter ab 30.380 Euro zzgl. MwSt. verfügbar. Die längere Version L2 ist nur in der Basisversion erhältlich. Diese kostet mindestens 31.540 Euro netto.
@@ -80,6 +86,7 @@ content:
       Auf das Fahrzeug gibt Peugeot 2 Jahre Herstellergarantie, beim Akku sind es sogar 6 Jahre bzw. 160.000 Kilometer, bezogen auf 70% Ladekapazität. Gegen Durchrostung sind alle Peugeot-Nutzfahrzeuge auf 5 Jahre abgesichert.
     title: Preise & Garantie
     image: /images/peugeot-e-partner-heckansicht.jpg
+    stars: 4
   - content: >-
       ### Fazit
 
@@ -92,4 +99,5 @@ content:
 
       3,4 Sterne
     title: Fazit
+    stars: 3.4
 ---
