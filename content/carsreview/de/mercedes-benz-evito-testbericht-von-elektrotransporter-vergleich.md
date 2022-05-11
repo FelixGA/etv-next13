@@ -102,5 +102,5 @@ content:
 
       #### Testurteil: 3,6 Sterne
     title: Fazit
-    stars: 1
+    stars: 3.6
 ---
