@@ -20,7 +20,7 @@ content:
     title: Konzept & Fahrzeugvarianten
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (4/5)
+      ### Laderaum & Flexibilität
 
 
       Das ARI 345 Pritsche ist in drei Größen mit Ladeflächen von 1,42 m², 1,53 m² und 1,79 m² verfügbar. Die Höhe der Ladebordwand liegt bei 25 cm. Die Ladekantenhöhe bei allen Aufbauten beträgt 56cm. 
@@ -37,10 +37,10 @@ content:
 
       Neben diesen Standard-Aufbauten hat sich das Unternehmen vor allem auf individuelle Kundenlösungen spezialisiert. So sind auch Sonderanfertigungen möglich. Potentiellen Einsatzfeldern sind keine Grenzen gesetzt.
     image: /images/ari-345-fahrzeugvarianten.jpg
-    title: LADERAUM
+    title: Laderaum & Flexibilität
     stars: 4
   - content: >-
-      ### Antrieb und Aufladung (4/5)
+      ### Antrieb und Aufladung
 
 
       Das ARI 345 wird angetrieben über einen 3 KW starken Permanent-Magnet-Synchron-Motor am Heck des Fahrzeugs. Das Automatik-Getriebe bietet auch Fahrern mit wenig Moped-Erfahrung eine einfache Bedienung.
@@ -51,10 +51,10 @@ content:
 
       Das Lastentrike kann an einer klassischen 230-V-Haushaltssteckdose mit 16Ah Sicherung in 5-6 Stunden vollständig geladen werden. Eine extra Wallbox ist nicht nötig.
     image: /images/dsc_0269.jpg
-    title: Antrieb und Aufladung (4/5)
+    title: Antrieb und Aufladung
     stars: 4
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       Der Elektro-Kleintransporter verfügt serienmäßig über FM-Radio mit MP3, Bluetooth und Rückfahrkamera sowie eine LCD-Batterie-Kapazitätsanzeige und Tachometer. Ebenso ist ein USB-Anschluss ins Cockpit integriert, über welchen beispielsweise ein Smartphone geladen werden kann. 
@@ -62,7 +62,7 @@ content:
 
       Optional kann das Lastenmoped auch mit einem Rammschutz, einem drei- oder vierteiligen Laubgitter oder einem Leiterträger ausgerüstet werden. Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist erhältlich.
     image: /images/ari-345-tacho-anzeige.jpg
-    title: Komfort & Ausstattung (4/5)
+    title: Komfort & Ausstattung
     stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
@@ -73,7 +73,7 @@ content:
     title: Bedienung & Fahrbetrieb
     stars: 0
   - content: >-
-      ### Umwelt (4/5)
+      ### Umwelt
 
 
       Der kombinierte Verbrauch des ARI 345 ist mit ca. 5,6 kWh sehr niedrig. Durch ein zusätzliches Solarpanel, welches für rund 30 Kilometer mehr Reichweite sorgt, ist das Fahrzeug noch sparsamer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 1,68 €.
@@ -81,7 +81,7 @@ content:
     image: /images/ari-345-koffer-mit-solarpanel-nahansicht.jpg
     stars: 4
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie
 
 
       Das ARI 345 ist vergleichsweise günstig. Die Preise für die Pritsche starten bei 6.995 €. Der Koffer ist ab 7.395€  und der Food Truck ab 12.725 € erhältlich. Auf das Fahrzeug gibt es 6 Monate Garantie und auf die Batterie 18 Monate Gewährleistung.
