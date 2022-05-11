@@ -29,7 +29,7 @@ content:
     image: ""
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität
 
 
       Bereits in der kürzeren Variante M hat der Citroen eJumpy ein Ladevolumen von maximal 5.800 Liter. Der Stauraum kann über zwei geteilte, seitlich schwenkende Hecktüren oder eine nach oben schwingende Heckklappe beladen werden. Außerdem ist eine seitliche Schiebetür serienmäßig vorhanden. Der Laderaum hat beim eJumpy M eine Länge von rund 2,41 Meter, die Breite liegt bei maximal 1,62 Meter und die Ladung kann bis zu 1,33 Meter hoch geladen werden. Bei der größeren Versionen ändert sich vor allem die Länge des Laderaums: als Jumpy XL liegt diese bei 2,76 Meter. Dadurch entsteht ein Ladevolumen von maximal 6.600 Liter.
@@ -43,7 +43,7 @@ content:
     image: /images/citroen-ejumpy-laderaum.jpg
     stars: 3
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       Angetrieben wird der Citroen eJumpy von einem 100 kW Elektromotor, der ein Drehmoment von 260 Nm bereitstellt und den Citroen in ungefähr 12 Sekunden von 0 auf 100 km/h bringt. Wie meist bei Elektrofahrzeugen erfolgt die Kraftübertragung stufenlos. Die Höchstgeschwindigkeit beträgt bei allen Versionen bei 130 km/h. 
@@ -57,7 +57,7 @@ content:
     image: /images/citroen-ejumpy-ladeanschluss.jpg
     stars: 4
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       Die Basisversion des eJumpy heisst “Control” und verfügt bereits serienmäßig über ABS, einen Doppel-Airbag, eine praktische Berganfahrhilfe sowie eine Zentralverriegelung. Für rund 1.500 Euro mehr bekommt man die Ausstattungslinie “Club”, welche zusätzlich über eine Audioanlage, eine akustische Einparkhilfe, Klimaanlage sowie Regen- und Lichtsensor verfügt. 
@@ -79,14 +79,14 @@ content:
     image: /images/citroen-ejumpy-heckansicht.jpg
     stars: 0
   - content: >-
-      ### Umwelt (2/5)
+      ### Umwelt
 
 
       Der kombinierte Verbrauch des Citroen eJumpy liegt bei 24,9 kWh pro 100 km. Das Fahrzeug verbraucht damit deutlich mehr als andere Modelle seiner Größe. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 7,47 €.
     title: Umwelt
     stars: 2
   - content: >-
-      ### Preise & Garantie (2/5)
+      ### Preise & Garantie
 
 
       Die Preise für den Citroen eJumpy beginnen bei 35.250 Euro netto für den eJumpy M mit 50 kWh-Akku und Basisausstattung. Die Variante mit einer Akkukapazität von 75 kWh kostet exakt 5.000 Euro mehr. Der eJumpy XL mit 5,30 Meter Länge ist ab 36.330 Euro netto verfügbar, ab 40.880 Euro mit dem größeren Akku. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
