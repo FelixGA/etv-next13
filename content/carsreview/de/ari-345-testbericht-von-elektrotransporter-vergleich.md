@@ -98,7 +98,7 @@ content:
       Das ARI 345 Koffer ist eine gute Wahl für Lieferfirmen oder Dienstleister. Mit dem neusten Food Truck-Aufbau finden sich zudem auch zahlreiche Einsatzmöglichkeiten im gastronomischen Bereich. Die Anschaffungskosten des Fahrzeugs sind dabei vergleichsweise niedrig.
 
 
-      #### Gesamtbewertung: 4,0
+      #### Testurteil: 4,0
     title: Fazit
     image: /images/ari-345-lastentrike-pritsche-mit-europalette.jpg
     stars: 4
