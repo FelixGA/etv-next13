@@ -11,7 +11,10 @@
 .blogmarkdown h2,
 .blogmarkdown li,
 .blogmarkdown h1 {
-  @apply text-black;
+  @apply text-black 
+}
+.blogmarkdown li {
+  @apply list-disc ml-4;
 }
 .blogmarkdown p {
   @apply text-black;

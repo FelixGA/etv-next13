@@ -9,7 +9,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import getSlugs from "/utils/getSlugs";
 import ReviewPost from "../../../components/Blog/ReviewPost";
 import BlogPost from "../../../components/Blog/BlogPost";
-export default function Reviews(props) {
+export default function subsidies(props) {
   /* getBlogContext hook for the ONE car that it is displayed */
   const [relatedVehicles, SetRelatedVehicles] = useState(props.vehicles);
   const [getBlogContext, SetGetBlogContext] = useState(props.blog);
@@ -21,7 +21,6 @@ export default function Reviews(props) {
     SetRelatedVehicles(props.vehicles);
     SetGetMdxContent(props.getTestReview);
   }, [props]);
-
   return (
     <>
       {" "}
@@ -53,7 +52,7 @@ export async function getStaticProps(context) {
 
   /* get all blogs*/
   let blogs = await getContent("blogs", context.locale);
-  let brands = await getContent("brands", context.locale);
+  let carsreviews = await getContent("carsreview", context.locale);
 
   return {
     props: {
@@ -61,7 +60,7 @@ export async function getStaticProps(context) {
       blog,
       blogs,
       params: context.params,
-      brands,
+      carsreviews,
     },
   };
 }

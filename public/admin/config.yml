@@ -187,6 +187,19 @@ collections:
               i18n: true,
               required: false,
             }
+          - {
+              label: "Bewertung-Sterne",
+              name: "stars",
+              widget: "number",
+              value_type: "float",
+              i18n: false,
+              default: 0,
+              min: 0,
+              max: 5,
+              hint: "Bitte geben Sie nur eine Zahl der Sterne ein, zum Beispiel 3 oder 3,3, NICHT 3/5",
+              # step: 2,
+              required: true,
+            }
 
           - {
               label: "Content",
@@ -255,7 +268,7 @@ collections:
         i18n: duplicate
         required: true
         options:
-          ["neuigkeiten", "foerderung", "hersteller", "häufig gestellte Fragen"]
+          ["news", "subsidies", "manufacturer", "frequently asked questions"]
       # - label: "post related vehicles"
       #   name: "vehicle"
       #   widget: "relation"

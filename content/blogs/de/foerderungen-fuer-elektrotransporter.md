@@ -1,45 +1,18 @@
 ---
+title: Diese Förderungen für Elektrotransporter gibt es jetzt!
 publishedAt: 03/01/2022
 src: /images/whatsapp-image-2022-04-27-at-22.26.12.jpeg
-contentText:
-  title: ""
-  content: ""
-  image: ""
 contentHeading:
   title: ""
   content: ""
   image: ""
-slug: foerderungen
+slug: foerderungen-fuer-elektrotransporter
 relatedCars: ari-458-food-truck-elektrisches-gastro-mobil
 vehicle:
   key: gut
   value: 4,0
-contentText2:
-  content: ""
-  title: ""
-  image: ""
-contentText3:
-  content: ""
-  title: ""
-  image: ""
-contentText4:
-  title: ""
-  content: ""
-  image: ""
-contentText5:
-  title: ""
-  content: ""
-  image: ""
-contentText6:
-  title: ""
-  content: ""
-  image: ""
-contentText7:
-  title: ""
-  content: ""
   image: /images/Arrow-right-512.png
   totalscore: ""
-title: Diese Förderungen für Elektrotransporter gibt es jetzt!
 content: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -172,7 +145,7 @@ content: >-
 
   4,4
 youtubeLink: ""
-category: foerderung
+category: subsidies
 description: Beim Kauf eines Elektrotransporters können verschiedene Förderungen
   in Anspruch genommen werden. Erfahren Sie, welche.
 ---
@@ -215,11 +188,11 @@ Einen umfassenden Überblick über die Höhe der Umweltprämie sowie den jeweili
 
 <br />
 
-## Empfänger der Umweltprämie
+### Empfänger der Umweltprämie
 
 <br />
 
-### Käufer und Leasende eines neuen Elektrofahrzeugs
+#### Käufer und Leasende eines neuen Elektrofahrzeugs
 
 <br />
 
@@ -231,7 +204,7 @@ Das Bundesamt für Wirtschaft und Ausfuhrkontrolle [(BAFA)](https://www.bafa.de/
 
 <br />
 
-### Halter eines elektrischen Gebrauchtwagens
+#### Halter eines elektrischen Gebrauchtwagens
 
 <br />
 
@@ -250,7 +223,7 @@ Dabei gelten diese Voraussetzungen:
 
 <br />
 
-##  Antrag auf Umweltprämie
+### Antrag auf Umweltprämie
 
 <br />
 
@@ -258,7 +231,7 @@ Der Antrag auf die „Umweltprämie“ kann direkt nach erfolgter Zulassung übe
 
 <br />
 
-### Übersicht benötigter Unterlagen:
+#### Übersicht benötigter Unterlagen:
 
 <br />
 
@@ -321,7 +294,7 @@ Davon profitieren auch Käufer eines Elektrotransporters der leichteren Fahrzeug
 
 <br />
 
-## 3)   Förderungen auf kommunaler Ebene
+## 3) Förderungen auf kommunaler Ebene
 
 <br />
 

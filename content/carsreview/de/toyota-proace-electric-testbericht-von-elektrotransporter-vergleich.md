@@ -16,6 +16,7 @@ content:
       Varianten eine Höchstgeschwindigkeit von 130 km/h und kann rund 1.000
       Kilogramm zuladen.
     title: Einleitung
+    stars: 0
   - content: >-
       ### **Konzept & Fahrzeugvarianten**
 
@@ -26,6 +27,7 @@ content:
       Seit 2021 ist die elektrische Version des Toyota Proace auf dem Markt. Der Kastenwagen ist elektrisch in zwei Längen erhältlich: 4,95 Meter sowie 5,30 Meter. Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität, welche natürlich unterschiedliche Reichweiten ermöglichen. Der Toyota Proace ist auch als Kombi („Verso“) erhältlich, mit Sitzen und Fenstern im Fond. Hier soll es aber um die Kastenwagen-Version gehen.
     title: Konzept & Fahrzeugvarianten
     image: /images/71932-toyota-proace-verso-164.jpg
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (3/5)
 
@@ -36,6 +38,7 @@ content:
       Die Nutzlast des Toyota Proace Electric liegt bei 1001 Kilogramm, optional kann diese auf rund 1.200 Kilogramm erhöht werden. Die Anhängelast ist bei allen Modellen gleich: 1.000 Kilogramm für gebremste, 750 Kilogramm für ungebremste Anhänger.
     title: Laderaum & Flexibilität
     image: /images/71923-toyota-proace-verso-152.jpg
+    stars: 2
   - content: >-
       ### Antrieb & Aufladung (4/5)
 
@@ -49,6 +52,7 @@ content:
       Der größere Akku mit 75 kWh Kapazität soll über eine maximale Reichweite von rund 330 Kilometer liegen ermöglichen, was sehr beachtlich ist für ein Fahrzeug dieser Größe. Allerdings dürften solche Strecken nur ohne Zuladung und mit wenig Steigung zu schaffen sein. Die Ladezeiten liegen hier bei rund 7 Stunden für die Wallbox und rund 48 Minuten für die 80-prozentige Schnellaufladung.
     title: Antrieb & Aufladung
     image: /images/71905-toyota-proace-verso-135.jpg
+    stars: 4
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
@@ -58,6 +62,7 @@ content:
 
       Leider gibt es bei elektrischen Vivaro nicht wie beim Schwestermodell Citroen Jumpy eine speziell für Baustellen ausgerüstete Variante mit erhöhter Bodenfreiheit und einem Motorschutz sowie einer erhöhten Nutzlast von rund 1.150 Kilogramm. Allerdings sind gegen Aufpreis Optionen wie Bodenplatte aus Holz im Laderaum und eine Trennwand erhältlich.
     title: Komfort & Ausstattung
+    stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -68,12 +73,14 @@ content:
       Auf der Straße macht der Toyota Proace Electric eine gute Figur. Die 260 Nm brauchen für ihre Entfaltung nicht wie beim Verbrennermotor einen konkreten Drehzahlbereich, sondern sind direkt vorhanden. Dadurch beschleunigt der Elektrotransporter mehr als ordentlich und ist dank 100 kW Leistung auch auf Landstraßen flott unterwegs. Und auch die Autobahn ist kein Hindernis, allerdings ist das Fahrzeug bei 100 km/h abgeriegelt.
     title: Bedienung & Fahrbetrieb
     image: /images/71852-toyota-proace-verso-082.jpg
+    stars: 0
   - content: >-
       ### Umwelt (3/5)
 
 
       Der Energieverbrauch des Toyota Proace Electric liegt kombiniert laut Toyota bei 25,1 kWh auf 100 km. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke also rund 7,50 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
+    stars: 3
   - content: >-
       ### Preise & Garantie (3/5)
 
@@ -84,6 +91,7 @@ content:
       Toyota bietet auf den Fahrzeugakku eine Garantie von stolzen 8 Jahren bzw. 160.000 Kilometer . Für das Fahrzeug gelten wie üblich bei Toyota eine Herstellergarantie von 3 Jahren bzw. 100.000 Kilometer
     title: Preise & Garantie
     image: /images/71846-toyota-proace-verso-077.jpg
+    stars: 3
   - content: >-
       ### Fazit
 
@@ -91,9 +99,7 @@ content:
       Wie seine Geschwistermodelle ist der Toyota Proace Electric ist ein recht hochwertiger Kastenwagen, welcher zudem mit einer recht hohen Reichweite punktet. Auch die Akku-Garantie ist sehr bemerkenswert. Der Laderaum ist sehr geräumig und einfach beladbar und es gibt viele praktische Ausstattungsdetails, wodurch der eJumpy speziell für Lieferanten und HandProacewerker sehr interessant sein dürfte. Allerdings ist das Fahrzeug nicht gerade günstig. Die -Modelle kosten 8.000 bis 10.000 Euro netto mehr als das vergleichbare Verbrenner-Modell. Dadurch könnte das Fahrzeug für einige Interessenten schlich nicht erschwinglich sein.
 
 
-      ### Gesamtpunktzahl:
-
-
-      3,6 Sterne
+      #### Testurteil: 3,6
     title: Fazit
+    stars: 3.6
 ---

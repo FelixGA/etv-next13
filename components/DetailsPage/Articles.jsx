@@ -13,6 +13,7 @@ const Articles = ({
   getTestReview,
   getBlogContext,
 }) => {
+  /* GET THE STAR */
   return (
     <>
       <div className="relative flex flex-col justify-center p-4 print:hidden bg-grey-lighter lg:flex-row ">
@@ -30,7 +31,6 @@ const Articles = ({
             <RatingBox carItem={carItem} />
           </div>
         </div> */}
-
         <div className="flex flex-col flex-wrap lg:w-2/3 lg:px-6">
           <h3 className="w-full mt-4 text-2xl font-bold text-black-darkest">
             Testbericht von {carItem.title}
@@ -38,13 +38,8 @@ const Articles = ({
           <div className="">
             {getTestReview ? (
               <div className="mb-8">
-                {getTestReview.map((review, index) => (
-                  <div key={index} className="mb-8">
-                    {/*     <MDXRemote {...review} /> */}
-                  </div>
-                ))}
                 {/* rg */}
-                {getCarsReview.content.map((infos, index) => (
+                {getCarsReview?.content?.map((infos, index) => (
                   <div
                     key={index}
                     className={`${styles.articles} "relative mb-8"`}
@@ -53,7 +48,7 @@ const Articles = ({
                       <h2 className="pt-2 xs:py-4">{infos.title}</h2>
 
                       <div className="py-1 xs:pt-5 xs:pl-2 ">
-                        <StarsRating stars={3.5} />
+                        {infos.stars ? <StarsRating stars={1} /> : null}
                       </div>
                     </div>
 

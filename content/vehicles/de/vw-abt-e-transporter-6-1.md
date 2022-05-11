@@ -1,6 +1,6 @@
 ---
 title: VW ABT e-Transporter 6.1
-name: vw-abt-e-transporter
+name: vw-abt-e-transporter-6-1
 price: 44990
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich

@@ -17,6 +17,7 @@ content:
       Das Berliner Unternehmen hat sich zum Ziel gesetzt, sehr simple und somit auch günstige Fahrzeuge für jedermann anzubieten. Der Elektrofrosch BIG ist einer von mehreren Elektro-Kleintransportern des Unternehmens. Das Lastentrike ist so simpel wie möglich gehalten und verfügt über einen  Sitzplatz. Möchte eine zweite Person mitfahren, kann eine zusätzliche Sitzbank an der Rückwand der Pritsche nach unten geklappt werden. Diese Sitzmöglichkeit ist jedoch nicht im öffentlichen Straßenverkehr zulässig. Beim BIG handelt es sich zusätzlich um eine Erweiterung des Elektrofrosch Basis-Fahrzeugs. Der BIG verfügt so im Gegensatz zum Basisfahrzeug über eine rund 1,80 m hohe Fahrerkabine.
     image: /images/elektrofrosch-big-6.jpeg
     title: Konzept & Fahrzeugvarianten
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (1/5)
 
@@ -27,6 +28,7 @@ content:
       Die Ladefläche ist zudem per Hand kippbar. Dies ist jedoch nur mit leichtem Materialien wie beispielsweise Grünschnitt möglich. Wer Bauschutt abkippen möchte, wird sicherlich seine Probleme bekommen.
     image: /images/elektrofrosch-big-3.jpeg
     title: LADERAUM
+    stars: 1
   - content: >-
       ### Antrieb und Aufladung (2/5)
 
@@ -37,6 +39,7 @@ content:
       Das Fahrzeug ist zusätzlich auch in einer gedrosselten Version mit 25 km/h Höchstgeschwindigkeit als 25er CABIN erhältlich.
     image: ""
     title: Antrieb und Aufladung (4/5)
+    stars: 4
   - content: >-
       ### Komfort & Ausstattung (1/5)
 
@@ -47,6 +50,7 @@ content:
       Für einen Aufpreis von 195 € bekommt der Kunde auch einen Satz Winterreifen zum Fahrzeug. Ebenso ist ein Planenaufbau für 199 € Aufpreis erhältlich.
     image: /images/elektrofrosch-6806-scaled.jpeg
     title: Komfort & Ausstattung (4/5)
+    stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -57,12 +61,14 @@ content:
       Der Hersteller gibt die Steigfähigkeit mit 27% an. Das Fahrzeug lässt sich demnach auch im bergigen Gelände einsetzen. Zusätzlich bietet das Lastenmoped eine kleinen Stauraum unter der Sitzfläche für beispielsweise Werkzeug.
     image: /images/img_0132-copy.jpeg
     title: Bedienung & Fahrbetrieb
+    stars: 0
   - content: >-
       ### Umwelt (1/5)
 
 
       Zum Verbrauch macht der Hersteller leider keine Angaben. Ebenso wenig zur Kapazität der Batterie.
     title: Umwelt
+    stars: 3
     image: ""
   - content: >-
       ### Preise & Garantie (3/5)
@@ -74,6 +80,7 @@ content:
       Der Preis für den 25er - CABIN  liegt bei 2.490€ inkl. Mwst. und ohne Kabine bei 2.390€ inkl. Mwst. Das Basisfahrzeug des Lastenmopeds ohne Kabine kostet 3.190 € inkl. Mehrwertsteuer.
     title: Preise & Garantie
     image: /images/elektrofrosch-6836-scaled.jpeg
+    stars: 3
   - content: >-
       ### Fazit
 
@@ -81,7 +88,8 @@ content:
       Das Fahrzeug ist zwar wirklich günstig, aber auch sehr simpel und spartanisch ausgestattet. Leider macht der Händler wenig Angaben zu technischen Daten des Fahrzeugs. Das Lastentrike  eignet sich wohl am besten für den Einsatz auf Privatgelände oder auf dem Land. Möglich Einsatzfelder des Fahrzeugs sind Landwirtschafts-, Bau- oder Handwerksbetriebe. Für Lieferdienste im urbanen Raum eignet sich die Pritsche weniger.
 
 
-      #### Gesamtbewertung: 1,6
+      #### Testurteil: 1,6
     title: Fazit
+    stars: 1.6
     image: ""
 ---

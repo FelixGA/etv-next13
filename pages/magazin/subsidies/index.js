@@ -5,13 +5,13 @@ import Blog from "../../../components/Blog/Blog";
 import BlogHeader from "../../../components/Blog/BlogHeader";
 import LinkTile from "../../../components/Blog/LinkTile";
 
-export default function reviews(props) {
+export default function subsidies(props) {
   const [getBlogs, SetGetBlogs] = useState(
-    props.blogs.filter((item) => item.category === "neuigkeiten")
+    props.blogs.filter((item) => item.category === "subsidies")
   );
 
   useEffect(() => {
-    SetGetBlogs(props.blogs.filter((item) => item.category === "neuigkeiten"));
+    SetGetBlogs(props.blogs.filter((item) => item.category === "subsidies"));
   }, [props]);
   return (
     <>
@@ -47,7 +47,6 @@ export async function getStaticProps(context) {
       posts,
       vehicles,
       blogs,
-
       brands,
     },
   };

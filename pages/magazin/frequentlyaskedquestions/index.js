@@ -5,13 +5,17 @@ import Blog from "../../../components/Blog/Blog";
 import BlogHeader from "../../../components/Blog/BlogHeader";
 import LinkTile from "../../../components/Blog/LinkTile";
 
-export default function reviews(props) {
+export default function frequentlyaskedquestions(props) {
   const [getBlogs, SetGetBlogs] = useState(
-    props.blogs.filter((item) => item.category === "umwelt")
+    props.blogs.filter((item) => item.category === "frequently asked questions")
   );
 
   useEffect(() => {
-    SetGetBlogs(props.blogs.filter((item) => item.category === "umwelt"));
+    SetGetBlogs(
+      props.blogs.filter(
+        (item) => item.category === "frequently asked questions"
+      )
+    );
   }, [props]);
   return (
     <>

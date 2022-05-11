@@ -6,10 +6,11 @@ contentHeading:
 title: "Fahrbericht Peugeot e-Boxer: Der hat drei Zeiger weniger"
 slug: fahrbericht-peugeot-e-boxer-der-hat-drei-zeiger-weniger
 youtubeLink: ""
-category: hersteller
+category: manufacturer
 description: Mit dem Peugeot Boxer reagiert Peugeot auf die wachsende Nachfrage
   nach Alternativen zu Dieseltransportern.
 ---
+
 [](https://www.e-medienportal.net/artikel/detail/57973#ampnet-carousel)Die Zeit läuft gegen die leichten Nutzfahrzeuge – wenigstens in den Innenstädten, die von einer wachsenden Zahl der Stadtverwaltungen zu Umweltzonen umgewidmet werden, in denen die vertrauten Diesel-Transporter dann nicht mehr fahren sollen. Kein Wunder, dass die Elektrifizierung in diesem Segment schnell voranschreitet. Peugeot hat jetzt mit der Markteinführung des elektrisch angetriebenen Boxer seine gesamte Transporter-Modellpalette elektrifiziert.
 
 Der e-Boxer steht nun neben dem kompakten e-Partner und dem e-Expert bei den Händlern und erreicht mit der großen 70-kWh-Batterie eine Reichweite von bis zu 247 Kilometern (nach WLTP). Der kleinere und 37 kWh liefernde Energiespeicher reicht für 116 Kilometer. Das klingt nicht gerade überwältigend, doch die meisten Transporter sind im Durchschnitt weniger als 200 Kilometer am Tag auf Tour.\

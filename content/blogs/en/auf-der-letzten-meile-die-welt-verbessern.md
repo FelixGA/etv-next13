@@ -6,10 +6,11 @@ contentHeading:
 title: Auf der letzten Meile die Welt verbessern
 slug: auf-der-letzten-meile-die-welt-verbessern
 youtubeLink: ""
-category: hersteller
+category: manufacturer
 description: Der vollelektrische Transporter "Sustaineer" gilt als
   Nachhaltigkeitspionier von Mercedes Benz und trägt zum Klimaschutz bei.
 ---
+
 Die Transporter für die letzte Meile – sie fallen jedem täglich auf. Gut, wenn die klimaneutral führen, selbst grünen Strom produzierten und die Luftqualität um sich herum auch noch verbessern könnten. Genau das sind Ziele des Technologieträgers von Mercedes-Benz mit dem sinnigen Namen „Sustaineer“ von „sustainability pioneer“. Mit dem Nachhaltigkeitspionier gibt Mercedes-Benz Vans einen Ausblick, wie Nachhaltigkeit im urbanen Lieferverkehr der Zukunft aussehen kann.
 
 Der vollelektrische Transporter auf Basis des Mercedes‑Benz eSprinter bündelt eine Vielzahl von Lösungen zur Verbesserung der Lebensqualität in Städten, zur Ressourcenschonung und Klimaschutz sowie für mehr Gesundheit und Sicherheit für Fahrer und andere Verkehrsteilnehmer. Hierzu zählen unter anderem Feinstaubfilter an Frontmodul und Unterboden, ein Solar-Panel auf dem Dach, Bauteile aus Recyclingmaterialien sowie eine körpernahe Heizung. Die technischen Lösungen des Technologieträgers wurden mit Blick auf einen möglichen Serieneinsatz konzipiert.\

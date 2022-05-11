@@ -6,7 +6,7 @@ contentHeading:
 title: Neuer Opel Movano ab sofort bestellbar
 slug: neuer-opel-movano-ab-sofort-bestellbar
 youtubeLink: ""
-category: hersteller
+category: manufacturer
 description: Der elektrische Opel Movano ist der größte Transporter im
   Nutzfahrzeugprogramm von Opel und ab sofort bestellbar.
 ---

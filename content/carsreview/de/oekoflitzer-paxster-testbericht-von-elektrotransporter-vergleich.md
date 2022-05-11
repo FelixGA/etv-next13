@@ -19,6 +19,7 @@ content:
       Der Paxster wurde laut dem norwegischen Hersteller eigens für die Zustellung entwickelt und bietet dabei hohen Fahrkomfort. Das Zustellgut sei stets leicht zu erreichen. Die Wendigkeit des Paxster, und dessen kompakte Außenmaße von 2,32 m Länge, 1,18 Breit und 1,86m Höhe ermöglichen so optimales Arbeiten. Das kleine Elektrofahrzeug schafft  dabei Zuladungen von  200 bis zu 240 Kilogramm.
     image: /images/_rom1527.jpeg
     title: Konzept & Fahrzeugvarianten
+    stars: 0
   - content: >-
       ### Laderaum & Flexibilität (2/5)
 
@@ -32,6 +33,7 @@ content:
       Das Fahrzeug wird ebenso als Paxster Cargo XL mit mehr als 2 m3 Ladevolumen hergestellt. Das Elektrofahrzeug kann dann sogar eine Europalette laden.
     image: /images/paxster.webp
     title: LADERAUM
+    stars: 4
   - content: >-
       ### Antrieb und Aufladung (4/5)
 
@@ -42,6 +44,7 @@ content:
       Der Akku lässt sich je nach Größe in 5-6 oder 9-10 Stunden bequem an einer Haushaltssteckdose aufladen.
     image: /images/tanken.jpeg
     title: Antrieb und Aufladung (4/5)
+    stars: 5
   - content: >-
       ### Komfort & Ausstattung (4/5)
 
@@ -55,6 +58,7 @@ content:
       Der deutsche Händler Ökoflitzer bietet zudem den Paxmove Paxster an. Dabei handelt es sich um eine Kombination des Fahrzeugs mit zwei 32 Zoll Full-HD-Displays für moderne Out-of-Home-Werbung.
     image: /images/paxster-innenraum.webp
     title: Komfort & Ausstattung (4/5)
+    stars: 5
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -62,6 +66,7 @@ content:
       Die kompakten Außenmaße des Fahrzeugs eignen sich für direktes Anfahren von Briefkästen. Verlässt der Fahrer oder die Fahrerin den Sitzplatz, stoppt das Fahrzeug automatisch den Fahrbetrieb. Die robuste Fahrerkabine mit hohen Panoramafenstern sorgt für sichere  Fahrt und bietet optimale Verkehrsübersicht. Die großen Räder und ein langer Federweg ermöglichen mit dem Paxster auch auf Kopfsteinpflaster einen angenehmen Fahrkomfort.
     image: /images/paxter_rot_hinten.jpg
     title: Bedienung & Fahrbetrieb
+    stars: 0
   - content: >-
       ### Umwelt (4/5)
 
@@ -69,6 +74,7 @@ content:
       Der kombinierte Verbrauch liegt bei 6 kWh pro 100 Kilometer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 Kilometer bei 1,80 €.
     title: Umwelt
     image: /images/paxter-bild.jpg
+    stars: 5
   - content: >-
       ### Preise & Garantie (2/5)
 
@@ -76,6 +82,7 @@ content:
       Auf Händler-Websites findet sich der Paxster für 17.839 € mit dem großen Akkupaket. Für eine genaue Preisauskunft empfiehlt sich jedoch wie immer eine direkte Anfrage beim Hersteller. Auf die Batterie gibt Ökoflitzer 5 Jahre Garantie. Wer sich nicht sicher ist, ob sich das Fahrzeug für das eigene Unternehmen eignet, kann bei Ökoflitzer eine  vierwöchige Testphase wahrnehmen. Diese ist bei Abholung in Dresden sogar kostenlos. Bei Lieferung des Fahrzeugs fällt eine Logistikpauschale an.
     title: Preise & Garantie
     image: /images/paxter-paxmove.jpg
+    stars: 5
   - content: >-
       ### Fazit
 
@@ -83,7 +90,8 @@ content:
       Das Fahrzeug eignet sich optimal als Zustellfahrzeug für Post-Sendungen, Zeitungen oder Kleingut. Das optimale Einsatzgebiet des Paxster ist der Stadtrand mit einer mittleren Zustelldichte. Sicherlich hat das Fahrzeug auch potential für gastronomische Lieferdienste, wie beispielsweise Pizzerien. Neben diesen Bereichen ist das Einsatzfeld des Paxsters durch seinen Aufbau jedoch beschränkt. Ebenso ist der Preis bezogen auf die Fahrzeuggröße relativ hoch. 
 
 
-      #### Gesamtbewertung: 3,2
+      #### Testurteil: 3,2
     title: Fazit
     image: ""
+    stars: 3.2
 ---
