@@ -63,7 +63,7 @@ content:
       Optional kann das Lastenmoped auch mit einem Rammschutz, einem drei- oder vierteiligen Laubgitter oder einem Leiterträger ausgerüstet werden. Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist erhältlich.
     image: /images/ari-345-tacho-anzeige.jpg
     title: Komfort & Ausstattung
-    stars: 4
+    stars: 3
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -98,8 +98,8 @@ content:
       Das ARI 345 Koffer ist eine gute Wahl für Lieferfirmen oder Dienstleister. Mit dem neusten Food Truck-Aufbau finden sich zudem auch zahlreiche Einsatzmöglichkeiten im gastronomischen Bereich. Die Anschaffungskosten des Fahrzeugs sind dabei vergleichsweise niedrig.
 
 
-      #### Testurteil: 4,0
+      #### Testurteil: 3,8
     title: Fazit
     image: /images/ari-345-lastentrike-pritsche-mit-europalette.jpg
-    stars: 4
+    stars: 3.8
 ---
