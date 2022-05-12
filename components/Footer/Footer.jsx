@@ -44,7 +44,7 @@ const Footer = ({ blogs, brands }) => {
               </Link>
             </h3>
             <div className="flex justify-center pt-4 md:justify-start">
-              <ul className="flex flex-col flex-wrap pb-4 text-[#b1a7a7] items-center md:items-start justify-center w-48">
+              <ul className="flex flex-col flex-wrap pb-4 text-[#b1a7a7] items-center md:items-start justify-center w-48 print:hidden">
                 {brands?.map((blog, index) => (
                   <li
                     className="flex items-center justify-between my-2"
@@ -116,7 +116,7 @@ const Footer = ({ blogs, brands }) => {
                 </a>
               </Link>
             </div>
-            <div className="w-fit sm:w-1/2">
+            <div className="w-fit sm:w-1/2 print:hidden">
               <Link href={"/"}>
                 <a>
                   <p className="pr-4 text-xs font-bold text-white cursor-pointer sm:pr-0 sm:text-md">

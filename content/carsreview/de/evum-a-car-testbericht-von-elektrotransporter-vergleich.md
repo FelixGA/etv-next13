@@ -8,7 +8,7 @@ publishedAt: 04/06/2022
 description: Nach vielen Jahren der Entwicklung und einer mehrmonatigen
   Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A-Car
   nun seit Juni 2020 auf dem Markt.
-src: /images/evum-intralogistik-03.jpg
+src: /images/evum-intralogistik-01.jpg
 content:
   - content: >-
       ### Konzept & Fahrzeugvarianten
@@ -52,7 +52,7 @@ content:
 
 
       Der Verbrauch liegt mit 17,5-19,6 kWh bezogen auf die Fahrzeuggröße in einem annehmbaren Bereich.
-    image: https://evum-motors.com/wp-content/uploads/2020/12/Header-F%C3%B6rderungen-Variante-2-1.jpg
+    image: /images/header-förderungen-variante-2-1.jpg
     title: "Antrieb & Aufladung "
     stars: 4
   - content: >-

@@ -1,7 +1,7 @@
 const CarDimentions = ({ vehichleDimentions }) => {
   return (
     <section className="w-full lg:w-1/3 ">
-      <h3 className="pt-8 pb-4 pl-4 text-2xl font-bold leading-7 text-blue-extra">
+      <h3 className="pt-8 pb-4 pl-4 text-2xl font-bold leading-7 text-blue-extra print:text-[10px] print:p-0">
         Maße{" "}
       </h3>
       <div className="flex flex-col w-full text-blue-extra ">
@@ -15,13 +15,13 @@ const CarDimentions = ({ vehichleDimentions }) => {
             <p
               className={
                 index == 0 || index == 5
-                  ? "w-1/2 py-1 font-bold flex items-center pl-4 h-14"
-                  : "w-1/2 py-1 flex items-center pl-4 h-14"
+                  ? "w-1/2 py-1 font-bold flex items-center pl-4 h-14 print:h-auto"
+                  : "w-1/2 py-1 flex items-center pl-4 h-14 print:p-0 print:h-auto "
               }
             >
               {item.key}:
             </p>
-            <p className="flex items-center w-1/2 py-1 pl-4 lg:border-r-2 border-grey-light">
+            <p className="flex items-center w-1/2 py-1 pl-4 lg:border-r-2 border-grey-light print:p-0">
               {item.value} {index === 0 || index === 5 ? " " : item.baseUnit}
             </p>
           </div>

@@ -50,7 +50,7 @@ const Articles = ({
 
                       <div className="py-1 xs:pt-5 xs:pl-2 ">
                         {infos.stars ? (
-                          <StarsRating stars={carItem?.rating.value} />
+                          <StarsRating stars={infos.stars} />
                         ) : null}
                       </div>
                     </div>
