@@ -1,18 +1,18 @@
 function RatingBox(props) {
   return (
-    <div className="border-2 border-black-darkest flex flex-col text-sm h-28 justify-between items-center bg-white">
-      <p className=" flex flex-col justify-center w-full">
-        <span className=" flex flex-1 bg-orange-dark text-white font-bold text-xs justify-center items-center h-6 ">
+    <div className="flex flex-col items-center justify-between text-sm bg-white border-2 border-black-darkest h-28">
+      <p className="flex flex-col justify-center w-full ">
+        <span className="flex items-center justify-center flex-1 h-6 text-xs font-bold text-white bg-orange-dark">
           TEST
         </span>
-        <span className="flex justify-center text-grey-dark text-xs font-bold pt-2 ">
+        <span className="flex justify-center pt-2 text-xs font-bold text-grey-dark ">
           ERGEBNIS
         </span>
       </p>
-      <p className=" font-bold text-grey-darkest custom-text pb-2">
+      <p className="pb-2 font-bold text-grey-darkest custom-text">
         <span className="text-2xl">{props.carItem?.rating.value}</span>
         <br />
-        <span className="text-xs px-2">{props.carItem?.rating.key}</span>
+        <span className="px-2 text-xs">{props.carItem?.rating.key}</span>
       </p>
     </div>
   );

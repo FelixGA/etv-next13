@@ -2,6 +2,17 @@
 title: Evum A-Car Kipper
 name: evum-a-car-kipper
 price: 38480
+relatedBlogs:
+  title: " Konzept & Fahrzeugvarianten"
+  content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
+    Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den erhältlichen
+    Individual-Aufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer,
+    Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI
+    458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert.
+    Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
+    für große Strecken."
+  image: /images/ari-458-food-truck-5-.jpg
+relatedReviews: evum-a-car-testbericht-von-elektrotransporter-vergleich
 description: Nach vielen Jahren der Entwicklung und einer mehrmonatigen
   Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A-Car
   nun seit Juni 2020 auf dem Markt. Ursprünglich wurde der kräftige
@@ -69,7 +80,7 @@ seats:
   value: 2
 rating:
   key: Gut
-  value: 3.2
+  value: 3.4
 guarantee:
   key: Garantie Fahrzeug
   value: 0

@@ -27,7 +27,7 @@ content:
     image: /images/mb-esprinter-laderaum.jpg
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (4/5)
+      ### Laderaum & Flexibilität
 
 
       Der Mercedes-Benz eSprinter ist für ein hohes Ladevolumen konzipiert, welches mit stolzen 11,0 m³ dementsprechend üppig ausfällt. Auch die Laderaumlänge von 3,27 Meter ist länger als so manches Fahrzeug und sorgt dafür, dass der eSprinter auch extrem sperrige Ladung aufnehmen kann. Die Zuladung erfolg über hohe Flügeltüren im Heck oder eine seitliche Schiebetür auf der rechten Seite. Die Höhe der Ladekante liegt bei 61,5 Zentimeter. Außerdem kann man über einen optional verfügbaren “Heckauftritt” bequem in den Laderaum einsteigen und somit das Be- und Entladen deutlich erleichtern.
@@ -38,7 +38,7 @@ content:
     image: ""
     stars: 4
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       Wie beim eVito übernimmt auch im eSprinter ein asynchroner Elektromotor mit einer Leistung von 85 kW den Antrieb auf die Vorderachse. Dieser entwickelt ein maximales Drehmoment von 295 Nm und kann das Fahrzeug auf bis zu 120 Km/h bringen. Die Höchstgeschwindigkeit in der Standard-Version allerdings bei 80 Km/h abgeriegelt und kann optional auf 100 Km/h oder eben 120 Km/h hochgesetzt werden. Jedoch dürfte bei solchen Geschwindigkeiten die Reichweite deutlich geringer ausfallen.
@@ -52,7 +52,7 @@ content:
     image: /images/mb-esprinter-anschluss-2.jpg
     stars: 4
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       Wie sein Geschwisterchen eVito ist auch der eSprinter recht komfortabel ausgestattet im Vergleich zu Nutzfahrzeugen anderer Hersteller. Als Serienausstattung sind bereits eine Sitzheizung für den Fahrer, ein digitales Radio (DAB) sowie ein elektronisches Stabilitätsprogramm (ESP) integriert. Bei der verfügbaren Zusatzausstattung bietet Mercedes-Benz viele Optionen für den Stadtverkehr an, da der eSprinter wohl bevorzugt in dieser Umgebung genutzt werden wird.
@@ -61,7 +61,7 @@ content:
       So sind optional Helfer wie ein Rückfahrkamera und ein Totwinkel-Assistent verfügbar, welche bei der Größe und Unübersichtlichkeit des Fahrzeugs nützlich sein können. Weitere Extras sind zum Beispiel eine Klimaanlage sowie ein LED-Lichtband zur Beleuchtung des Laderaums. Auch ein dritter Sitzplatz in der Kabine ist gegen Aufpreis verfügbar.
     title: Komfort & Ausstattung
     image: /images/mb-esprinter-innenraum.jpg
-    stars: 4
+    stars: 5
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -74,14 +74,14 @@ content:
     image: ""
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Mit der kleineren Hochvoltbatterie von 35 kWh soll der eSprinter ca. 37,1 kWh auf 100 Kilometer verbrauchen. Bei der größeren Version mit 47 kWh liegt der Verbrauch interessanterweise niedriger bei nur 32,5 kWh / 100 Km. Damit soll das Fahrzeug knapp 160 Kilometer weit fahren können. Ein Solarmodul für mehr Reichweite wird derzeit nicht angeboten.
     title: Umwelt
     stars: 3
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Beim eSprinter setzt Mercedes-Benz vermehrt auf das Leasing des Fahrzeugs. So ist der große Elektro-Transporter laut Hersteller ab 299 Euro im Monat erhältlich. Beim Kaufpreis startet der eSprinter als 35 kWh-Version bei einem Listenpreis von 54.090 Euro, wodurch sich ein Kaufpreis inklusive Mehrwertsteuer von 64.367,10 Euro ergibt. 
@@ -98,7 +98,7 @@ content:
       Der Mercedes-Benz eSprinter ist besonders durch seinen riesigen Laderaum von 11 m³ für den Waren- und Gütertransport von großen Lademengen interessant. Aber auch in Sachen Komfort ist das Fahrzeug anderen Nutzfahrzeugen überlegen. Die Elektroversion bietet sich aber vorerst nur für den Stadtverkehr oder kürzere Überlandstrecken an, da die angegeben Reichweiten mit Ladung wohl nicht zu erreichen sind.
 
 
-      #### Testurteil: 3,4 Sterne
+      #### Testurteil: 3,6
     title: Fazit
-    stars: 3.4
+    stars: 4
 ---

@@ -6,6 +6,7 @@ import { MDXRemote } from "next-mdx-remote";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { AiOutlineStar } from "react-icons/ai";
 import StarsRating from "../repeated/StarsRating";
+import TestVerdict from "../repeated/TestVerdict";
 
 const Articles = ({
   getCarsReview,
@@ -48,7 +49,9 @@ const Articles = ({
                       <h2 className="pt-2 xs:py-4">{infos.title}</h2>
 
                       <div className="py-1 xs:pt-5 xs:pl-2 ">
-                        {infos.stars ? <StarsRating stars={1} /> : null}
+                        {infos.stars ? (
+                          <StarsRating stars={infos.stars} />
+                        ) : null}
                       </div>
                     </div>
 
@@ -86,6 +89,9 @@ const Articles = ({
             </Link>
           )} */}
         </div>
+      </div>
+      <div className="flex justify-center">
+        <TestVerdict />
       </div>
       {/* other articles section */}
       {/* First Article */}{" "}

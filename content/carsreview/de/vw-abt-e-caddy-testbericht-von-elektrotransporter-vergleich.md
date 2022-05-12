@@ -37,7 +37,7 @@ content:
     image: /images/vw-e-crafter-laderaum.jpeg
     stars: 2
   - content: >-
-      ### Antrieb & Aufladung (3/5)
+      ### Antrieb & Aufladung
 
 
       Unter der Haube arbeitet beim größten VW Transporter ein Elektromotor mit einer Spitzenleistung von 100 kW. Als Dauerleistung stehen 50 kW zur Verfügung. Das Drehmoment liegt bei 290 Nm, wodurch der e-Crafter auch beladen gut von der Stelle kommen sollte. Die Höchstgeschwindigkeit des Frontantriebs liegt bei 90 km/h abgeregelt. Da das Fahrzeug aber speziell für den urbanen Lieferbetrieb entwickelt wurde, dürfte Autobahnfahrten eher zur Seltenheit gehören.
@@ -51,7 +51,7 @@ content:
     image: /images/vw-e-crafter-elektromotor.jpeg
     stars: 3
   - content: >-
-      ### Komfort & Ausstattung (5/5)
+      ### Komfort & Ausstattung
 
 
       Um die Wünsche der Zielgruppe mit in den e-Crafter einfliessen zu lassen, wurden einige Fahrzeuge vor Markteinführung an Tester verteilt. Die Analyse ergab, dass die Zielgruppe durchschnittlich 70 bis 100 Kilometer pro Tag zurücklegen, mit 50 bis 100 Zwischenstopps. Deshalb hat sich VW dafür entschieden, den e-Crafter mit viel serienmäßiger Komfort-Ausstattung zum Kunden zu bringen. So ist das Fahrzeug ab Werk mit einem Navigationssystem, einer Klimaanlage, einer Rückfahrkamera mit Parkpilot, einer Berganfahrhilfe einer beheizbaren Frontscheibe sowie einer Sitzheizung ausgestattet. Damit dürfte das Fahrzeug ohne jegliche Zusatzkosten den Traum jedes Auslieferungsfahrer darstellen. Das Fahrzeug lässt sich außerdem mit verschiedene Assistenzsystemen wie Sensorbasierter Flankenschutz, Seitenwind-Assistent, Spurhalteassitent, Automatische Distanzregelung ACC und das Umfeldbeobachtungssystem “Front Assist” ausstatten.
@@ -70,7 +70,7 @@ content:
     image: ""
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Der Energieverbrauch des VW e-Crafter liegt kombiniert bei rund 29 kWh auf 100 km. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke rund 8,70 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
@@ -78,7 +78,7 @@ content:
     image: /images/e-crafter.jpg
     stars: 3
   - content: >-
-      ### Preise & Garantie (5/5)
+      ### Preise & Garantie
 
 
       Als der VW eCrafter auf den Markt kam, kostet er mindestens 69.500 Euro netto. Angesichts der Größe und Ausstattung kein wirklicher Wucher, trotzdem war es vielen Fuhrpark-Leitern zu teuer. Seit dem Modelljahr 2020 ist der e-Crafter deshalb ab 53.900 Euro zu haben und macht damit dem eSprinter von Mercedes.-Benz ordentlich Konkurrenz.

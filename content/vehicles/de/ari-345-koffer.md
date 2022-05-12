@@ -24,7 +24,7 @@ curbweight:
   value: 336
   baseUnit: kg
 maxSpeed:
-  key: Höchstgeschwindigkeit
+  key: km/h
   value: 45
   baseUnit: km/h
 range230V:
@@ -72,8 +72,8 @@ seats:
   key: Sitzplätze
   value: 1
 rating:
-  key: Gut
-  value: 2
+  key: "Testurteil "
+  value: 3.8
 guarantee:
   key: Garantie Fahrzeug
   value: 6

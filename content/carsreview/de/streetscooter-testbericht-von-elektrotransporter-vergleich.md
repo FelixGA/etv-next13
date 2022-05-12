@@ -31,7 +31,7 @@ content:
     image: /images/streetscooter-fabrik.jpg
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (4/5)
+      ### Laderaum & Flexibilität
 
 
       Die kürzere Version „Work“ hat als Transporter bereits ein Ladevolumen von 4300 Liter. Da der Koffer-Aufbau über den Rädern aufgebaut ist, beeinträchtigen hier auch keine Radkästen das Volumen oder die Beladung. Neben den geteilten Hecktüren ist der Streetscooter außerdem über eine seitliche Schiebetür rechts beladbar, was gerade für Paketzusteller sehr praktisch ist. Die Nutzlast lag bei beiden Aufbauten (Pick-Up und Koffer) bei 720 Kilogramm für die 20 kWh-Version sowie 585 Kilogramm für den 40 kWh-Akku.
@@ -43,9 +43,9 @@ content:
       Derzeit wird allerdings nur noch die klassische Streetscooter-Version mit Koffer-Aufbau und einer Nutzlast von 1.014 Kilogramm angeboten.
     title: Laderaum & Flexibilität
     image: /images/streetscooter-heckansicht.jpg
-    stars: 5
+    stars: 4
   - content: >-
-      ### Antrieb & Aufladung (3/5)
+      ### Antrieb & Aufladung
 
 
       Angetrieben wird der Streetscooter von einer sogenannten „Permanenterregten Synchronmaschine“. Diese erzeugt eine Leistung von 51 kW, welche über ein einstufiges Getriebe mit Differential auf die Vorderachse übertragen wird. Der Elektromotor hat ein maximales Drehmoment von 200 Nm und bringt das Fahrzeug auf eine Höchstgeschwindigkeit von 100 km/h.
@@ -57,9 +57,9 @@ content:
       Die Aufladung erfolgt über einen AC-Typ-2-Ladeanschluss, 3-phasig mit 11 kW, welcher auch Mode 3-kompatibel ist. Über eine herkömmliche 220V-Steckdose dauert die Aufladung des Fahrzeugs rund 16 Stunden, während eine Schnellladung laut Hersteller in rund 3 Stunden möglich ist.
     title: Antrieb & Aufladung
     image: /images/streetscooterladeanschluss.jpg
-    stars: 4
+    stars: 3
   - content: >-
-      ### Komfort & Ausstattung (3/5)
+      ### Komfort & Ausstattung
 
 
       Da der Streetscooter grundsätzlich für den Lieferdienst DHL entwickelt wurde, ist er in der Koffer-Variante natürlich auch für diese Art Nutzung am besten geeignet. Das große Ladevolumen sowie die zweiseitige Beladungs-Möglichkeit machen ihn zu einem praktischen Fahrzeug, um Dinge mehrmals am Tag zu be- und entladen. Für den oft engen Stadtverkehr ist es zudem praktisch, dass der Transporter über eine Rückfahrkamera verfügt, wodurch das Rangieren deutlich vereinfacht wird. Diese entfällt natürlich beim Pick-Up, welcher auch eher für Tätigkeiten im Bereich des Baus und Handwerks geeignet ist. In Sachen Komfort-Ausstattung ist bei dem Streetscooter natürlich nicht viel zu holen, da das Fahrzeug als reines Nutzfahrzeug konzipiert wurde.
@@ -74,14 +74,14 @@ content:
     image: ""
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Genaue Angaben über den Verbrauch des Streetscooters gibt es nicht mehr, allerdings wurden anfangs Angaben von rund 18 kWh auf 100 Kilometer für den NEFZ-Zyklus kommuniziert. Der wirkliche Verbrauch dürfte aber auch bei wenig Beladung höher liegen. Eine Solaranlage zur Verlängerung der Reichweite ist leider nicht erhältlich.
     title: Umwelt
     stars: 3
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Die Preise des Streetscooter beginnen bei 39.990 Euro netto. Detaillierte Preise sind allerdings nur auf Anfrage erhältlich. Die Kurzversion „Work“ war zuletzt ab 42.750 Euro netto erhältlich, während die Preise für den „Work L“ bei 47.650 Euro begonnen haben. Für den „Pure“ muss ebenfalls eine konkrete Anfrage beim Hersteller erfolgen, sicherlich weil diese an andere Unternehmen zum Weiterbau verkauft werden. Dadurch gibt es unterschiedliche Anforderungen an das Modell und der Preis ist wohl auch von der Anzahl der bestellten Fahrzeuge abhängig. Auf die Batterie gibt der Hersteller eine Garantie von 6 Jahren bzw. 120.000 Kilometer.

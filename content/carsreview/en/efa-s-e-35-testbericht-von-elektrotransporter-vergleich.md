@@ -34,7 +34,7 @@ content:
     image: /images/efa-s-e35-kasten.jpg
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (4/5)
+      ### Laderaum & Flexibilität
 
 
       Die Karosserie des E 35 basiert auf der “GAZelle” (siehe Bild) von GAZ, welche als Pritsche eine Länge von 5,63 Meter und einen Radstand von 3,15 Meter besitzt. Die üppigen Maße resultieren in einer großen Ladefläche von 3,09 Meter (Länge) mal 2.08 Meter (Breite) mit einer Gesamtfläche von knapp 6,5 m². Die Ladekante der Pritsche befindet 95 Zentimeter über dem Boden.
@@ -48,7 +48,7 @@ content:
     image: /images/gazelle-seite.jpg
     stars: 4
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       In Sachen Elektroantrieb hat Efa-S viel Erfahrung und stattet den umgebauten GAZ mit viel Kraft aus. So leistet der E-Motor 110 kW und liefert ein maximales Drehmoment von beachtlichen 730 Nm. DIe Höchstgeschwindigkeit wird elektronisch begrenzt und liegt bei 88 Km/h.
@@ -62,7 +62,7 @@ content:
     image: /images/efa-s-e35-pritsche.jpg
     stars: 4
   - content: >-
-      ### Komfort & Ausstattung (3/5)
+      ### Komfort & Ausstattung
 
 
       Infos über die konkrete Ausstattung liefert Efa-S nicht. Allerdings kann man davon ausgehen kann, dass diese aber der “GAZelle” gleicht. Somit dürfte das Fahrzeug über eine Zentralverriegelung, elektrische Fensterheber und einen Tempomat zu verfügen. Auch eine Klimaanlage sowie ein Multimedia-System mit Touchscreen und USB-Anschluss dürften erhältlich sein.
@@ -77,14 +77,14 @@ content:
     image: /images/gazelle-pritsche.jpg
     stars: 0
   - content: >-
-      ### Umwelt (2/5)
+      ### Umwelt
 
 
       Konkrete Verbrauchsangabe gibt es nicht beim Efa-s E35. Eine Reichweite von 200 Kilometern bei einem 80 kWh-Akku entspricht ungefähr einem Verbrauch von 40 kWh auf 100 Kilometer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke also ca. 12,00 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
     stars: 2
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Eine offizielle Preisliste gibt es nicht und konkrete Angebote gibt es nur auf Anfrage. Allerdings findet man im Netz Angebote des Typs für einen Neupreis von bis zu 90.000 Euro. Immerhin kann das Fahrzeug aber als 4,25-Tonner eine Förderung von bis zu 50% der Preisdifferenz zu einem herkömmlichen Antrieb erhalten. Laut Hersteller können hier Zuschüsse von bis zu 30.000 Euro erreicht werden.
@@ -98,10 +98,7 @@ content:
       Der Efa-S ist in Sachen Ladevolumen sowie Motorleistung ein Schwergewicht. Mehr als 10.000 Liter Laderaum und ein Drehmoment von bis zu 730 Nm sind eine ordentliche Ansage. Zudem scheint der Stuttgarter Hersteller dank leistungsstarken Akkus eine vernünftige Reichweite für den 3,5-Tonner bereitstellen zu können.
 
 
-      ### Gesamtpunktzahl:
-
-
-      3,2 Sterne
+      #### Testurteil: 3,2 Sterne
     title: Fazit
     stars: 3.2
 ---

@@ -1,7 +1,5 @@
 ---
-title: ARI 458 Pritsche
-name: ari-458-pritsche
-price: 14790
+title: Evum A-Car Pritsche
 relatedBlogs:
   title: " Konzept & Fahrzeugvarianten"
   content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
@@ -12,147 +10,148 @@ relatedBlogs:
     Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
-relatedReviews: ari-458-testbericht-von-elektrotransporter-vergleich
-description: Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI
-  Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen
-  Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
-src: /images/ari_458_pritsche_frontansicht_6e125d42d4.jpg
-category: Pritsche
-typeClass: L7E
+relatedReviews: evum-a-car-testbericht-von-elektrotransporter-vergleich
+description: Nach vielen Jahren der Entwicklung und einer mehrmonatigen
+  Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A-Car
+  nun seit Juni 2020 auf dem Markt. Ursprünglich wurde der kräftige
+  Elektrotransporter für Entwicklungs- und Schwellenländern entwickelt, wo er in
+  der Landwirtschaft und der Industrie zum Einsatz kommen sollte. Während der
+  Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen
+  Markt attraktiv sein könnte.
+src: /images/evum-intralogistik-03.jpg
 loadingWeight:
   key: Nutzlast
-  value: 531
+  value: 1014
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 604
+  value: 1200
   baseUnit: kg
 maxSpeed:
   key: km/h
-  value: 78
+  value: 70
   baseUnit: km/h
 range230V:
-  key: Reichweite SLA Akku
-  value: 120
-  baseUnit: km
-  maxValue: 120
+  key: Reichweite SLA Blei
+  value: 0
+  baseUnit: "-"
+  maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 150
+  value: 110
   baseUnit: km
-  maxValue: 495
+  maxValue: 110
 chargingTime230V:
-  key: Ladezeit 230-V
-  value: 6
-  baseUnit: h
+  key: Ladezeit 230-V-Steckdose
+  value: 6.5
+  baseUnit: Stunden
 chargingTimeLithium:
-  key: Ladezeit Typ 2 Ladekabel
-  value: 6
-  baseUnit: h
-chargingTimeFast:
-  key: Schnell-Ladezeit
+  key: Ladezeit Typ2
   value: 2
-  baseUnit: h
+  baseUnit: Stunden
+chargingTimeFast:
+  key: Schnellladezeit
+  value: 0
+  baseUnit: "-"
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  baseUnit: "- "
   value: 0
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "10"
+  value: 16.5
   baseUnit: kWh
 batteryIncluded:
-  key: Akku inklusive
   value: ja
+  key: Batterie inklusive
 consumption:
-  key: Verbrauch
-  value: 7,5
+  key: "Verbrauch "
+  value: 15,9
   baseUnit: kWh
 power:
   key: Leistung
-  value: 7,5
-  baseUnit: kWh
+  value: "20"
+  baseUnit: kW
 seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
-  value: 3.8
+  key: Testurteil
+  value: 3.4
 guarantee:
   key: Garantie Fahrzeug
-  value: 6
-  baseUnit: Monate
+  value: 0
+  baseUnit: "-"
 availability:
   key: Verfügbarkeit
-  value: 14-16 Wochen
+  value: keine Angabe
 subsidies:
   key: Förderhöhe
-  baseUnit: Euro
-  value: 1
+  value: 0
+  baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
-  value: 48
-  baseUnit: Monate
+  value: 0
+  baseUnit: "-"
 loadingHeight:
   key: Ladehöhe
-  value: 10
-  baseUnit: cm
+  value: 924
+  baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
+  value: 1,01
   baseUnit: m3
-  value: 0,38
 loadingArea:
   key: Ladefläche
-  value: "235"
-  baseUnit: m2
+  value: 2,86
+  baseUnit: m²
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1300
+  valuewidth: 1500
   baseUnit: mm
-  valuelength: 3150
-  valueheight: 1600
-  valuewheelbase: 2300
+  valuelength: 4000
+  valueheight: 2000
+  valuewheelbase: 2596
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 250
+  valueheight: 352
   width: Breite
-  valuewidth: 1160
+  valuewidth: 1608
+  valuelength: 1778
   length: Länge
-  valuelength: 1320
   baseUnit: mm
 carSizesLength:
-  value: "3150"
+  value: "4000"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1600"
+  value: "1500"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1300"
+  value: "2000"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "1320"
+  value: "1778"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1160"
+  value: "1608"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "250"
+  value: "352"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "2300"
+  value: "2596"
   baseUnit: mm
 ---
-
-Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.
+Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A-Car nun seit Juni 2020 auf dem Markt.

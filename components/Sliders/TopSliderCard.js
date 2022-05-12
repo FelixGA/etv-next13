@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineArrowRight } from "react-icons/hi";
+import StarsRating from "../repeated/StarsRating";
 
 const TopSliderCard = (props) => {
   return props?.getCars
@@ -10,7 +11,7 @@ const TopSliderCard = (props) => {
           key={index}
         >
           <div className="">
-            <div className="w-full ">
+            <div className="w-full">
               <Link
                 href={
                   sliderItem?.name
@@ -57,8 +58,8 @@ const TopSliderCard = (props) => {
                   {sliderItem?.description}
                 </p>
               </div>
-              {sliderItem?.rating ? (
-                <div className="flex w-48 h-12 m-auto mt-8 border border-blue-lighter">
+              {/* {sliderItem?.rating ? (
+                <div className="flex w-48 h-12 m-auto mt-8 bg-red-500 border border-blue-lighter">
                   <div className="flex items-center justify-center w-16 h-full text-xs text-white bg-orange-dark">
                     <span className="font-bold"> TEST</span>
                   </div>
@@ -82,7 +83,10 @@ const TopSliderCard = (props) => {
                     </div>
                   </div>
                 </div>
-              ) : null}
+              ) : null} */}
+              <div className="flex justify-center pt-8">
+                <StarsRating stars={5} />
+              </div>
               <div className="absolute flex items-center justify-center w-full mt-8 text-center bottom-6 ">
                 <Link
                   href={

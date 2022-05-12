@@ -28,7 +28,7 @@ content:
     title: Konzept & Fahrzeugvarianten
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (4/5)
+      ### Laderaum & Flexibilität
 
 
       Der Goupil G6 VAN verfügt über eine Höhe von rund 2 m mit einem Koffer-Volumen von 9 m3. Die Brutto-Nutzlast des Fahrzeugs liegt bei 800 kg. 
@@ -45,7 +45,7 @@ content:
     title: Laderaum & Flexibilität
     stars: 4
   - content: >-
-      ### Antrieb & Aufladung (3/5)
+      ### Antrieb & Aufladung
 
 
       Das Fahrzeug verfügt über einen Frontantrieb und Differentialgetriebe. Der Motor kommt vom Hersteller Nidec und verfügt über eine Spannung von 67 V AC, Die Leistung liegt bei 35 kW mit einem maximalen Drehmoment von 182 Nm.
@@ -56,7 +56,7 @@ content:
     title: Antrieb & Aufladung
     stars: 3
   - content: >-
-      ### Komfort & Ausstattung (3/5)
+      ### Komfort & Ausstattung
 
 
       Der G6 hat verfügt über ein hochauflösendes LCD-Farbdisplay, Licht- und Regensensor, LED-Leuchten, eine Heizung, USB-Anschluss im Innenraum. Zudem verfügt das Fahrzeug über eine Servolenkung, elektrische Fensterheber sowie elektrisch beheizte, verstellbare und klappbare Außenspiegel.
@@ -75,15 +75,15 @@ content:
     title: Bedienung & Fahrbetrieb
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Der Verbrauch des Fahrzeuges liegt mit 19,2 kWh/100 km bezogen auf die Fahrzeuggröße in einem annehmbaren Bereich. Das Nachrüsten von energiesparenden Solar-Panels ist nicht möglich. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke 5,76 €.
     title: Umwelt
     image: /images/g62.png
-    stars: 0
+    stars: 3
   - content: >-
-      ### Preise & Garantie (2/5)
+      ### Preise & Garantie
 
 
       Der Preis des Fahrzeuges ist dennoch vergleichsweise hoch. Der Netto-Listenpreis für das Chassis – also ohne Aufbauten – beträgt 58.973,12 Euro. 

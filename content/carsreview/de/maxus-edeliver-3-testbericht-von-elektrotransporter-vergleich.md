@@ -28,7 +28,7 @@ content:
     image: /images/maxus-edeliver-3-laderaum.jpg
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität
 
 
       In der Kurzversion L1 hat der Laderaum eine Länge von 2,18 Meter, wodurch eine Ladevolumen von 4.800 Liter zur Verfügung steht. Als L2 können Waren und Güter bis zu einer Länge von 2,77 Meter verstaut werden. Insgesamt besitzt der lange Elektrotransporter ein Ladevolumen von 6.300 Liter. Die Beladung wird über zwei Flügeltüren im Heck sowie eine seitliche Schiebetür vollzogen, die Ladekante ist mit 54 Zentimeter angenehm niedrig.
@@ -37,9 +37,9 @@ content:
       Die Zuladung variiert nach Länge des Fahrzeugs: während die kurze Version mit 50 kWh-Akku 830 Kilogramm aufnehmen kann, sind es in der Langversion 865 Kilogramm. Die Anhängelast beträgt 750 Kilogramm gebremst und zwischen 945 und 1015 Kilogramm mit einem ungebremsten Hänger.
     title: Laderaum & Flexibilität
     image: ""
-    stars: 1
+    stars: 3
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       Den Antrieb beim Maxus eDeliver 3 übernimmt ein 90 kW-Elektromotor, der ein Drehmoment von 250 Nm bereitstellen kann. Damit erreicht der E-Transporter eine Höchstgeschwindigkeit von 120 km/h, die elektronisch abgeregelt ist, um die Reichweite nicht zu sehr einzuschränken.
@@ -53,7 +53,7 @@ content:
     image: /images/maxus-edeliver3-motor.jpg
     stars: 4
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       Der Maxus eDeliver 3 ist ein recht luxuriös ausgestatteter Transporter, der bereits serienmäßig mit einer manuellen Klimaanlage, einem Bordcomputer, einem Radio mit Bluetooth-Funktion und einer Sitzheizung zum Kunden kommt und somit für Lieferfahrer viel Komfort bietet. Die Rückfahrkamera und die Berganfahrhilfe sind weitere kostenlose Details, die den Alltag im eDeliver 3 für Gewerbetreibende deutlich erleichtern sollten. Zusätzliche Optionen sind hingegen rar, so ist nur eine Metallic-Lackierung gegen Aufpreis zu bekommen.
@@ -68,19 +68,19 @@ content:
     image: /images/maxus-edliever3-innenraum.jpg
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Der Energieverbrauch wird bei der 50 kWh-Version mit rund 23 kWh auf 100 Kilometer angegeben. Dies entspricht bei 30 Cent pro kWh ungefähr 6,90 Euro Energiekosten. Ein Solarmodul für eine erweiterte Reichweite wird derzeit leider nicht angeboten.
     title: Umwelt
-    stars: 2
+    stars: 3
   - content: >-
-      ### Preise & Garantie (4/5)
+      ### Preise & Garantie
 
 
       Der Maxus eDeliver 3 startet bei 34.990 Euro für die kurze Version mit kleinem Akku, das Topmodell (L2 mit 53 kWh-Akku) kostet exakt 5.000 Euro mehr. Das ist sicher nicht billig, allerdings bekommt man dafür einen leistungsstarken Elektrotransporter mit umfangreicher Ausstattung. Außerdem ist die Herstellergarantie auf das Fahrzeug mit 5 Jahren bzw. 100.000 Kilometer sehr großzügig. Auf den Lithium-Ionen-Akku gibt es sogar 8 Jahre bzw. 160.000 Kilometer Garantie.
     title: Preise & Garantie
-    stars: 1
+    stars: 4
   - content: >-
       ### Fazit
 

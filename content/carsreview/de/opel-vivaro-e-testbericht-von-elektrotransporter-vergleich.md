@@ -29,7 +29,7 @@ content:
     image: /images/opel-vivaro-e-cargo.jpg
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (3/5)
+      ### Laderaum & Flexibilität
 
 
       Der Stauraum kann über zwei geteilte, seitlich schwenkende Hecktüren oder eine nach oben schwingende Heckklappe beladen werden. Außerdem ist eine seitliche Schiebetür serienmäßig vorhanden. Der Laderaum hat beim Vivaro-E Cargo M eine Länge von rund 2,41 Meter, die Breite liegt bei maximal 1,62 Meter und die Ladung kann bis zu 1,33 Meter hoch geladen werden. So sind bis zu 5.800 Liter Ladevolumen verfügbar. Bei der großen Version ändert sich vor allem die Länge des Laderaums: als Vivaro-E Cargo L liegt diese bei 2,76 Meter. Dadurch entsteht ein Ladevolumen von maximal 6.600 Liter.
@@ -38,9 +38,9 @@ content:
       Die Nutzlast des Opel Vivaro-E Cargo liegt bei den allen Modellen bei etwas mehr als 900 Kilogramm. Allerdings gibt es die 50 kWh-Version mit einer optionalen erhöhten Nutzlast, wodurch dann rund 200 Kilogramm mehr zugeladen werden können. Die Anhängelast ist bei allen Modellen gleich: 1.000 Kilogramm für gebremste, 750 Kilogramm für ungebremste Anhänger.
     title: Laderaum & Flexibilität
     image: ""
-    stars: 5
+    stars: 3
   - content: >-
-      ### Antrieb & Aufladung (4/5)
+      ### Antrieb & Aufladung
 
 
       Angetrieben wird der Opel Vivaro-E Cargo von einem 100 kW Elektromotor, der ein Drehmoment von 260 Nm bereitstellt und den Citroen in ungefähr 12 Sekunden von 0 auf 100 km/h bringt. Wie meist bei Elektrofahrzeugen erfolgt die Kraftübertragung stufenlos. Die Höchstgeschwindigkeit beträgt bei allen Versionen bei 130 km/h. 
@@ -52,9 +52,9 @@ content:
       Der größere Akku mit 75 kWh Kapazität soll über eine maximale Reichweite von rund 320 Kilometer liegen ermöglichen, was sehr beachtlich ist für ein Fahrzeug dieser Größe. Allerdings dürften solche Strecken nur ohne Zuladung und mit wenig Steigung zu schaffen sein. Die Ladezeiten liegen hier bei rund 7 Stunden für die Wallbox und rund 48 Minuten für die 80-prozentige Schnellaufladung.
     title: Antrieb & Aufladung
     image: /images/opel-vivaro-e-cargo-antrieb.jpg
-    stars: 5
+    stars: 4
   - content: >-
-      ### Komfort & Ausstattung (4/5)
+      ### Komfort & Ausstattung
 
 
       In der Basisversion verfügt der Vivaro-E bereits serienmäßig über ABS, einen Doppel-Airbag, eine praktische Berganfahrhilfe sowie ein Radio mit Bluetooth-Funktion. Optionales Zubehör beinhaltet z.B. eine Einparkhilfe mit Signalton, ein Multifunktionslenkrad sowie ein Multimedia-Radio.
@@ -75,14 +75,14 @@ content:
     image: /images/opel-vivaro-e-cargo-innenraum.jpg
     stars: 0
   - content: >-
-      ### Umwelt (3/5)
+      ### Umwelt
 
 
       Der Energieverbrauch des Opel Vivaro-E liegt kombiniert laut Hersteller zwischen 21,7 und 26,1 kWh auf 100 km. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke so zwischen 6,60 und 7,80 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
     stars: 3
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Die Preise für den Opel Vivaro-E Cargo beginnen bei 37.490 Euro netto für den Vivaro-E Cargo M mit 50 kWh-Akku und Basisausstattung. Die länger Variante Cargo M liegt etwas darüber. Der Akku mit einer höheren Kapazität von 75 kWh hat eine Aufpreis von rund 5.000 Euro. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
@@ -91,7 +91,7 @@ content:
       Opel bietet auf den Fahrzeugakku eine Garantie von stolzen 8 Jahren bzw. 160.000 Kilometer. Für das Fahrzeug gelten wie üblich bei Citroen eine Herstellergarantie von 2 Jahren ohne Kilometerbeschränkung.
     title: Preise & Garantie
     image: /images/opel-vivaro-e-cargo-ladung.jpg
-    stars: 5
+    stars: 3
   - content: >-
       ### Fazit
 

@@ -22,33 +22,33 @@ content:
     image: /images/g4-01-chassis-1200px-900x636.jpg
     stars: 0
   - content: >-
-      ### Laderaum & Flexibilität (4/5)
+      ### Laderaum & Flexibilität
 
 
       Der Goupil G4 kann mit verschiedenen Aufbauten versehen werden. Neben Standard-Aufbauten wie Pritsche, Koffer oder Kipper bietet Goupil auch spezialisierte Schlüssellösungen, wie beispielsweise Müllcontainer, Wäschewagen,  Bewässerungs- oder  Hochdruckreinigung-Aufbauten an. Genauere Angaben zu den Sonderanfertigungen macht der Hersteller jedoch nicht. 
 
 
       Die Ladefläche des Fahrzeugs beträgt bei einer Länge von rund 2,14 m und 1,22 m Breite - 2,61 m2. Die Kofferversion kommt auf ein Ladevolumen von schätzungsweise 2,71 m3. Die Aufbauten des Fahrzeugs können außerdem durch beispielsweise einen Hochdruckreiniger, einen Laubsammler oder eine Aufbewahrungsbox ergänzt werden.
-    title: Laderaum & Flexibilität (4/5 Punkte)
+    title: Laderaum & Flexibilität
     image: /images/g4-varianten-1280px-900x290.jpg
     stars: 3
   - content: >-
-      ### Antrieb & Aufladung (3/5)
+      ### Antrieb & Aufladung
 
 
       Angetrieben wird das Fahrzeug über einen 10 kW starken Motor von Schabmüller mit einer Spannung von 48 Volt. Die Höchstgeschwindigkeit des Fahrzeugs liegt bei 50 km/h. Unbeladen schafft der G4 Gefälle von bis zu 30% und beladen bis 15 %. 
 
 
       Beim Akku können Kundinnen und Kunden zwischen 3 verschiedene Bleibatterien und 2 unterschiedlichen Lithium-Akkus wählen. ​​Zur Auswahl stehen 3 Traktions-Batteriepacks (8,6 kWh - 50 km Reichweite, 11,5 kWh - 65 km, 15,4 kWh - 85 km) und 2 Lithium-Batteriepacks mit 9 kWh (40-60 km) oder 13,8 kWh (70-90 km)  Leistung. Jede dieser Batterie-Varianten kann über eine Haushaltssteckdose geladen werden (230 V). Die Lithium-Batterien bieten darüber hinaus die Möglichkeit der Zwischenladung und sind komplett wartungsfrei. Die Aufladung dauert an einer 230V-Steckdose 6 Stunden.
-    title: Antrieb & Aufladung (3/5 Punkte)
+    title: Antrieb & Aufladung
     image: /images/g4-batterie-1000px.jpg
-    stars: 2
+    stars: 3
   - content: >-
       ### Komfort & Ausstattung (2/5)
 
 
       Die Fahrerkabine ist relativ spartanisch gestaltet. In der Mitte des Armaturenbretts sitzt ein LCD-Farbdisplay mit allen wichtigen Informationen zum Fahrzeug-Status. Serienmäßig kommt das Fahrzeug außerdem mit einstellbaren Komfortsitzen, Windschutzscheibenheizung mit Enteisungsfunktion, Scheibenwischer und Scheibenwaschanlage, LED-Tagfahrlicht, Nebelschlussleuchte und Rückfahrlicht zum Kunden. Auf Wunsch kann das Fahrzeug mit zusätzlichen Rundumleuchten oder Warntafeln für den Baustellenbereich ausgestattet werden.
-    title: Komfort & Ausstattung (2/5 Punkte)
+    title: Komfort & Ausstattung
     image: /images/g4-interieur-1200px.jpg
     stars: 2
   - content: >-
@@ -60,19 +60,19 @@ content:
     image: /images/10956_goupil_g4-1920x1280-1.jpg
     stars: 0
   - content: >-
-      ### Umwelt (4/5) 
+      ### Umwelt
 
 
       Der kombinierte Stromverbrauch liegt gemäß NEFZ-Norm bei 8,0 kWh auf 100 Kilometer. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 Kilometer Fahrt 2,40 €.
-    title: Umwelt (4/5)
+    title: Umwelt
     image: /images/g4.png
-    stars: 2
+    stars: 4
   - content: >-
-      ### Preise & Garantie (3/5)
+      ### Preise & Garantie
 
 
       Die Preise für den G4 beginnen mit einer 8,6 kWh-Traktionsbatterie bei 23.630 €. Die Preise für das Fahrzeug mit Lithium-Batterie starten bei 32.429 €. Die Garantie beträgt bei Goupil 2 Jahre auf das Fahrzeug und 3 zusätzliche Jahre  auf die Batterie. Für genaue Preise empfiehlt sich jedoch eine konkrete Anfrage bei einem Händler.
-    title: Preise & Garantie (3/5 Punkte)
+    title: Preise & Garantie
     image: /images/goupil-g4.jpg
     stars: 3
   - content: >-
