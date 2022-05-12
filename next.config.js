@@ -186,8 +186,10 @@ module.exports = withPWA({
         permanent: true,
       },
       {
+
         source: "/fahrzeuge/citroen-ejumpy/",
         destination: "/transporter/citroen-e-jumpy/",
+
         permanent: true,
       },
       {
