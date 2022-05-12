@@ -8,7 +8,8 @@ module.exports = withPWA({
     disable: process.env.NODE_ENV === "development",
   },
   images: {
-    domains: ["elektrotransporter-vergleich.de"],
+    domains: ["preview-elektrotransporter-vergleich.vercel.app"],
+    /*    domains: ["elektrotransporter-vergleich.de"], */
     formats: ["image/avif", "image/webp"],
   },
   i18n: {
