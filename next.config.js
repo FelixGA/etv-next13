@@ -43,7 +43,7 @@ module.exports = withPWA({
         permanent: true,
       },
       //                       hersteller
-      /*      {
+      {
         source: "/ari-motors-elektrotransporter",
         destination: "/fahrzeuge/ari-motors",
         permanent: true,
@@ -258,7 +258,7 @@ module.exports = withPWA({
         source: "/fahrzeuge/toyota-proace-electric",
         destination: "/transporter/toyota-proace-electric",
         permanent: true,
-      }, */
+      },
     ];
   },
 });
