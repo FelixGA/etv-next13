@@ -14,18 +14,19 @@ export default function frequentlyaskedquestions(props) {
   const [relatedVehicles, SetRelatedVehicles] = useState(props.vehicles);
   const [getBlogContext, SetGetBlogContext] = useState(props.blog);
   const [getMdxContent, SetGetMdxContent] = useState(props.getTestReview);
-
+  const [suggestions, setSuggestions] = useState(props.suggestions);
   const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
   useEffect(() => {
     setValueFromUseEffect(props.params.blogtitle);
     SetRelatedVehicles(props.vehicles);
     SetGetMdxContent(props.getTestReview);
+    setSuggestions(props.suggestions);
   }, [props]);
 
   return (
     <>
       <Head page={props.getTestReview} />
-      <BlogPost getBlogContext={getBlogContext} />
+      <BlogPost getBlogContext={getBlogContext} suggestions={suggestions} />
     </>
   );
 }
@@ -53,7 +54,7 @@ export async function getStaticProps(context) {
   /* get all blogs*/
   let blogs = await getContent("blogs", context.locale);
   let brands = await getContent("brands", context.locale);
-
+  let suggestions = blogs?.sort(() => 0.5 - Math.random()).slice(0, 3);
   return {
     props: {
       vehicles,
@@ -61,6 +62,7 @@ export async function getStaticProps(context) {
       blogs,
       params: context.params,
       brands,
+      suggestions,
     },
   };
 }

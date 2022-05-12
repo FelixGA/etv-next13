@@ -50,7 +50,7 @@ const BasicInfo = ({ carItem }) => {
                 <div className="flex flex-col items-center h-32 border-2 w-28 justify-evenly">
                   <p>rating</p>{" "}
                   <div className="scale-75 ">
-                    <StarsRating stars={carItem?.rating.value} />
+                    <StarsRating stars={5} />
                   </div>
                 </div>
               </div>

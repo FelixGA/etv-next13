@@ -95,7 +95,7 @@ const Articles = ({
       </div>
       {/* other articles section */}
       {/* First Article */}{" "}
-      <div className="flex flex-col w-full p-4 mt-4 mb-4 bg-white lg:flex-row-reverse 2xl:px-44 print:hidden">
+      <div className="flex flex-col w-full bg-white lg:flex-row-reverse 2xl:px-44 print:hidden">
         {getBlogContext?.src && (
           <div className="relative w-full m-auto mt-4 mr-4 border-t lg:w-1/2 print:hidden lg:rounded-r-md">
             <Link href={`/magazin/${getBlogContext?.slug}`} passHref>

@@ -51,7 +51,7 @@ const Footer = ({ blogs, brands }) => {
                     key={index}
                   >
                     <Link href={`/fahrzeuge/${blog.slug}`}>
-                      <a className="text-sm text-left sm:text-lg">
+                      <a className="text-sm text-left text-white sm:text-lg">
                         {blog.title ? blog.title : blog}
                       </a>
                     </Link>

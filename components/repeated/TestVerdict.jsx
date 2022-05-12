@@ -26,11 +26,9 @@ const TestVerdict = () => {
         </div>
       </div>
       <div className="flex flex-col pt-2">
-        <p className="relative xs:text-xs">
+        <p className="relative xs:text-xs text-xxs">
           ELEKTROTRANSPORTER-VERGLEICH.DE
-          <span className="absolute xs:-top-3 top-4 text-3xl text-[#3FA535]">
-            ✓
-          </span>
+          <span className="absolute -top-3 text-3xl text-[#3FA535]">✓</span>
         </p>
         <p className="text-sm text-grey-nav">Testbericht 435 von 05/2022</p>
       </div>
