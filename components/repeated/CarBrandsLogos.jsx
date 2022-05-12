@@ -51,7 +51,7 @@ export default function Trustimages({ getBrands }) {
   }, [tick, showCount, getBrands]);
 
   return (
-    <div className="flex justify-center mt-8 overflow-hidden bg-white filter-gray">
+    <div className="flex justify-center mt-8 overflow-hidden filter-gray">
       {shownImages?.map((image, index) => (
         <div className="mx-4 my-8 lg:my-12" key={index}>
           <Image
