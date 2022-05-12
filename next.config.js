@@ -17,7 +17,8 @@ module.exports = withPWA({
     defaultLocale: "de",
     domains: [
       {
-        domain: "elektrotransporter-vergleich.de",
+        // domain: "elektrotransporter-vergleich.de",
+        domain: "preview-elektrotransporter-vergleich.vercel.app",
         defaultLocale: "de",
       },
     ],
@@ -36,17 +37,17 @@ module.exports = withPWA({
         permanent: false,
         destination: "/ie11_fallback.html",
       },
-      {
+      /*   {
         source: "/magazin/foerderungen-fuer-elektrotransporter",
         destination: "/magazin/subsidies/foerderungen-fuer-elektrotransporter",
         permanent: true,
-      },
+      }, */
       {
-        source: "/transporter/tropos-able-xr/",
-        destination: "/transporter/tropos-able-xr-xt1",
+        source: "/transporter/tropos-able-xr",
+        destination: "/transporter/tropos-able-xt1",
         permanent: true,
       },
-      {
+      /*   {
         source: "/transporter/tropos-able/",
         destination: "/transporter/tropos-able-xr-xt2/",
         permanent: true,
@@ -228,7 +229,7 @@ module.exports = withPWA({
         source: "/fahrzeuge/toyota-proace-electric/",
         destination: "/transporter/toyota-proace-electric/",
         permanent: true,
-      },
+      }, */
     ];
   },
 });

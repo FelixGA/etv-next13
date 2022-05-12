@@ -37,7 +37,7 @@ export async function getStaticProps(context) {
     context.params.blogtitle,
     context.locale
   );
-
+  console.log(blog);
   let vehicles = await getContent("vehicles", context.locale);
 
   /*  get the cars from this category for the slider */
