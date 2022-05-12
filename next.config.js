@@ -8,8 +8,7 @@ module.exports = withPWA({
     disable: process.env.NODE_ENV === "development",
   },
   images: {
-    domains: ["preview-elektrotransporter-vergleich.vercel.app"],
-    /*    domains: ["elektrotransporter-vergleich.de"], */
+    domains: ["elektrotransporter-vergleich.de"],
     formats: ["image/avif", "image/webp"],
   },
   i18n: {
@@ -18,8 +17,8 @@ module.exports = withPWA({
     defaultLocale: "de",
     domains: [
       {
-        // domain: "elektrotransporter-vergleich.de",
-        domain: "preview-elektrotransporter-vergleich.vercel.app",
+        domain: "elektrotransporter-vergleich.de",
+
         defaultLocale: "de",
       },
     ],
@@ -43,7 +42,7 @@ module.exports = withPWA({
         destination: "/magazin/subsidies/foerderungen-fuer-elektrotransporter",
         permanent: true,
       },
-      // hersteller
+      //                       hersteller
       {
         source: "/ari-motors-elektrotransporter",
         destination: "/fahrzeuge/ari-motors",
@@ -65,7 +64,7 @@ module.exports = withPWA({
         permanent: true,
       },
       {
-        source: "volkswagen-elektrotransporter",
+        source: "/volkswagen-elektrotransporter",
         destination: "/fahrzeuge/volkswagen",
         permanent: true,
       },
