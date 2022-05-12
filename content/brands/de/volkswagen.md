@@ -3,7 +3,7 @@ title: VW
 description: Die Volkswagen Aktiengesellschaft (abgekürzt VW AG) ist ein
   deutscher Automobilhersteller mit Sitz im niedersächsischen Wolfsburg.
 src: /images/volkswagen-logo.png
-slug: vw
+slug: volkswagen
 websiteLink: https://www.volkswagen-nutzfahrzeuge.de/de.html
 content: >-
   ### Überblick 

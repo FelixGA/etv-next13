@@ -15,5 +15,5 @@ content: >-
 
 
 
-  Das Unternehmen stellt hauptsächlich Kleinwagen her. Die aktuellen Modelle des Herstellers sind der Aixam Emotion, der eAixam, das Minauto und der Aixam Pro.
+  Das Unternehmen stellt hauptsächlich Kleinwagen her. Die aktuellen Modelle des Herstellers sind der Aixam Emotion, der eAixam Emotion, das Minauto und der Aixam Pro.
 ---
