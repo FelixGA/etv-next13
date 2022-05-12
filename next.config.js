@@ -65,7 +65,7 @@ module.exports = withPWA({
         permanent: true,
       },
       {
-        source: "volkswagen-elektrotransporter",
+        source: "/volkswagen-elektrotransporter",
         destination: "/fahrzeuge/volkswagen",
         permanent: true,
       },
