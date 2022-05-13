@@ -133,7 +133,7 @@ relatedBlogs: >-
 
 
   4,4
-relatedReviews: ""
+relatedReviews: vw-ecrafter-testbericht-von-elektrotransporter-vergleich
 description: Der VW e-Crafter ist der größte Elektrotransporter aus dem Hause
   Volkswagen. Er verfügt über 3 Sitzplätze und eine maximale
   Höchstgeschwindigkeit von 90 km/h. Die maximale Nutzlast beträgt in der

@@ -1,7 +1,7 @@
 ---
 title: Elektrofrosch BIG
 slug: elektrofrosch-big-testbericht-von-elektrotransporter-vergleich
-relatedCars: ari-345-koffer
+relatedCars: elektrofrosch-big
 youtubeLink: " https://www.youtube.com/watch?v=pfdLruzhgxs"
 category: Pritsche
 publishedAt: 04/29/2022

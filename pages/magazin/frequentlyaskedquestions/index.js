@@ -7,14 +7,12 @@ import LinkTile from "../../../components/Blog/LinkTile";
 
 export default function frequentlyaskedquestions(props) {
   const [getBlogs, SetGetBlogs] = useState(
-    props.blogs.filter((item) => item.category === "frequently asked questions")
+    props.blogs.filter((item) => item.category === "frequentlyaskedquestions")
   );
 
   useEffect(() => {
     SetGetBlogs(
-      props.blogs.filter(
-        (item) => item.category === "frequently asked questions"
-      )
+      props.blogs.filter((item) => item.category === "frequentlyaskedquestions")
     );
   }, [props]);
   return (

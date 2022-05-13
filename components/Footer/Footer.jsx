@@ -35,7 +35,7 @@ const Footer = ({ blogs, brands }) => {
 
   return (
     <>
-      <footer className="px-4 shadow-2xl bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around print:hidden">
+      <footer className="px-4 shadow-2xl bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around ">
         <nav className="flex flex-col items-center justify-around w-full pb-4 xl:justify-evenly sm:flex-row sm:items-start lg:w-3/4 sm:pb-8 print:hidden">
           <div className="flex flex-col justify-start w-full md:w-1/3">
             <h3 className="flex items-end justify-center text-sm font-bold tracking-wider sm:justify-start h-14 sm:text-md">
@@ -162,7 +162,10 @@ const Footer = ({ blogs, brands }) => {
           </div>
         </div>
       </footer>
-      <div className="w-full h-[1px] bg-[#b1a7a7]"></div>
+      <div
+        className="w-full h-[1px] bg-[#b1a7a7] print:hidden
+"
+      ></div>
       <div className="flex items-center justify-center h-16 text-xs text-white bg-blue-darker sm:text-lg sm:h-20 print:hidden">
         &copy; 2022 Elektrotransporter Vergleich
       </div>

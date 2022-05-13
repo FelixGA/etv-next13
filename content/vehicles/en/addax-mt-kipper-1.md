@@ -10,4 +10,6 @@ loadingWeight:
 curbweight:
   value: 886
   baseUnit: kg
+rating:
+  value: 2.6
 ---
