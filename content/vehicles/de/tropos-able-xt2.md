@@ -9,7 +9,7 @@ description: Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e
   zwei Akku-Varianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
 src: /images/tropos-able.jpg
 category: Pritsche
-typeClass: N1
+typeClass: L7E
 loadingWeight:
   key: Nutzlast
   value: 700
