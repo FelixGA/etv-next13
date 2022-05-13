@@ -7,9 +7,9 @@ import tileYoutube from "/public/images/ETV Rectangle3.jpg";
 const data = [
   { href: "/downloads", image: tileCatalogue, alt: "Catalogue" },
   {
-    href: "https://www.youtube.com/c/ARIMotorsGmbH/featured",
+    href: "/caradvisor",
     image: tileYoutube,
-    alt: "YouTube",
+    alt: "Kaufberater",
   },
   {
     href: "https://www.facebook.com/ARIMotorsElektrofahrzeuge/",

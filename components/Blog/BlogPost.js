@@ -21,14 +21,14 @@ export default function BlogPost(props) {
           )}
         </div>
         <div className="text-blue-dark">{props.getBlogContext.publishedAt}</div>
-        <h2 className="w-1/2 py-8 text-4xl font-bold text-blue-dark">
+        <h2 className="w-full py-8 pl-2 font-bold lg:w-2/3 lg:text-4xl text-blue-dark lg:pl-0">
           {props.getBlogContext?.title}
         </h2>
         <div className="relative grid list-disc lg:grid-cols-[auto,_250px]">
           <div className={`${styles.blogmarkdown} lg:pr-8`}>
             <MDXRemote {...props.getBlogContext.source} />
             <div className="mt-8 text-blue-darker">
-              <p className="">Das könnte Sie auch interessieren:</p>
+              <p className="xs:px-0">Das könnte Sie auch interessieren:</p>
               <Teasers teasers={props.suggestions} />{" "}
             </div>
           </div>

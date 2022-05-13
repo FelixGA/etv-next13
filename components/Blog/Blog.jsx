@@ -35,11 +35,11 @@ export default function Blog({ getBlogs }) {
                       </a>
                     )}
                   </div>
-                  <div className="flex flex-col flex-1 px-4 py-4 lg:w-full justify-evenly">
-                    <p className="">
+                  <div className="flex flex-col flex-1 w-full px-4 py-4 justify-evenly">
+                    <p className="flex-grow ">
                       {new Date(post.publishedAt).toLocaleDateString()}
                     </p>
-                    <p className="py-2 text-xl font-bold text-blue-dark">
+                    <p className="flex-grow py-2 text-xl font-bold text-blue-dark">
                       {post.title}
                     </p>
                     <p className="hidden md:line-clamp-4 md:block">

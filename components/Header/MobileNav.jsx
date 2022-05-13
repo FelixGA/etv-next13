@@ -27,8 +27,8 @@ function MobileNav() {
           <li
             className={
               router.pathname == item.path
-                ? "transition duration-100 text-white font-bold text-2xl"
-                : "transition duration-100 font-bold w-full text-center md:text-left text-2xl"
+                ? "transition duration-100 text-white font-bold text-2xl text-center md:text-left"
+                : "transition duration-100 font-bold text-center md:text-left text-2xl"
             } /*   */
             key={index}
           >
