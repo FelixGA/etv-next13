@@ -74,7 +74,6 @@ collections:
           label: "slug(SOS! WRITE ME WHENEVER YOU RENAME IT-ANGELOS-)",
           name: "slug",
           widget: "string",
-          default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
           i18n: duplicate,
           required: true,
           # update: true,
@@ -119,7 +118,6 @@ collections:
           label: "slug(SOS! WRITE ME WHENEVER YOU RENAME IT-ANGELOS-)",
           name: "slug",
           widget: "string",
-          default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
           i18n: duplicate,
           required: true,
           # update: true,
@@ -234,14 +232,13 @@ collections:
           required: true,
         }
       - {
-          label: "slug(SOS!! WRITE ME WHEN YOU RENAME IT-ANGELOS-)",
+          label: "slug(SOS! WRITE ME WHENEVER YOU RENAME IT-ANGELOS-)",
           name: "slug",
-          widget: slug,
-          default: "es sollte das gleich mit der `name` Angabe von dem Auto sein",
+          widget: "string",
           i18n: duplicate,
           required: true,
-          hint: "slug",
-          mySchemaProperty: "my-schema-property",
+          # update: true,
+          create: true,
         }
       - label: "related Cars"
         required: false

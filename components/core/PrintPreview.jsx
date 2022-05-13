@@ -50,16 +50,16 @@ export default function PrintPreview({
           <h3 className="print:text-[12px]  ">
             Testbericht von {carItem.title}
           </h3>
-          <div className="bg-red-600 w-full">
+          <div className="bg-red-600 w-96">
             {getTestReview ? (
               <div className="">
                 {/* rg */}
                 {getCarsReview?.content?.map((infos, index) => (
-                  <div key={index} className={`${styles.articles} "relative "`}>
-                    <div className="relative top-0 left-0 flex flex-col">
+                  <div key={index} className={`${styles.articles} " "`}>
+                    <div className="flex">
                       <h2 className=" print:text-[10px] ">{infos.title}</h2>
 
-                      <div className="scale-50 ">
+                      <div className="">
                         {infos.stars ? (
                           <StarsRating stars={infos.stars} />
                         ) : null}
