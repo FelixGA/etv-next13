@@ -4,6 +4,8 @@ relatedBlogs: beispiel
 relatedReviews: tropos-able-xt-testbericht-von-elektrotransporter-vergleich
 src: /images/tropos-kipper-01-768x360.jpg
 category: Kipper
+rating:
+  value: 3
 loadingVolumeTotal:
   value: "0"
   baseUnit: "-"
