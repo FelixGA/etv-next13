@@ -1,6 +1,6 @@
 ---
 title: Welche Vorteile hat der Kauf eines Elektrotransporters für mich?
-slug: es sollte das gleich mit der `name` Angabe von dem Auto sein
+slug: welche-vorteile-hat-der-kauf-eines-elektrotransporters-fuer-mich
 youtubeLink: ""
 category: frequently asked questions
 publishedAt: 05/13/2022
