@@ -117,3 +117,11 @@ table th {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
+@media print {
+
+  .no-print,
+  footer * {
+    display: none !important;
+  }
+}
