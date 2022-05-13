@@ -9,7 +9,7 @@ export default function Blog({ getBlogs }) {
   return (
     <>
       {/* <Head page={page} /> */}
-      <div className="grid justify-center grid-cols-1 xl:grid-cols-[auto,_250px] gap-5 2xl:mx-48 cursor-pointer">
+      <div className="grid justify-center grid-cols-1 2xl:grid-cols-[auto,_250px] gap-5 2xl:mx-48 cursor-pointer">
         <div className="w-full ">
           {getBlogs
             .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))

@@ -13,7 +13,7 @@ export default function BlogHeader({ getBlogs }) {
   // console.log("BlogHeader.jsx: posts: ", posts);
   return (
     <>
-      {getBlogs?.length >= 4 && (
+      {getBlogs && (
         <div className="hidden w-full grid-cols-4 mx-auto border-t-8 border-b-8 border-t-blue-light lg:grid max-w-screen-2xl border-b-blue-light">
           {posts.slice(0, 4).map((post, index) => (
             <Link href={`/magazin/${post.category}/${post.slug}`} key={index}>

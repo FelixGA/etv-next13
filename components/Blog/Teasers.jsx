@@ -8,7 +8,7 @@ export default function Teasers({ teasers }) {
       <div className="grid grid-rows-3 gap-5 md:grid-rows-1 md:grid-cols-3 md:gap-2">
         {teasers?.map((teaser, index) => (
           <div key={index}>
-            <Link href={`/${teaser.category}/${teaser.slug}`}>
+            <Link href={`/magazin/${teaser.category}/${teaser.slug}`}>
               <a>
                 {teaser.title && (
                   <Image
