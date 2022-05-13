@@ -1,7 +1,11 @@
 ---
 name: tropos-able-xt1-koffer
+relatedBlogs: beispiel
+relatedReviews: tropos-able-xt-testbericht-von-elektrotransporter-vergleich
 src: /images/tropos-able-koffer-seite.jpg
 category: Koffer
+rating:
+  value: 3
 loadingVolumeTotal:
   value: 3,42
   baseUnit: m3
