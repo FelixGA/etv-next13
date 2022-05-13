@@ -1,7 +1,7 @@
 ---
-title: VW e-Crafter
-name: vw-e-crafter
-price: 53900
+title: Nissan e-NV 200
+name: nissan-e-nv-200
+price: 28660
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -133,25 +133,22 @@ relatedBlogs: >-
 
 
   4,4
-relatedReviews: vw-ecrafter-testbericht-von-elektrotransporter-vergleich
-description: Der VW e-Crafter ist der größte Elektrotransporter aus dem Hause
-  Volkswagen. Er verfügt über 3 Sitzplätze und eine maximale
-  Höchstgeschwindigkeit von 90 km/h. Die maximale Nutzlast beträgt in der
-  Kategorie N1 bis zu 982 kg.
-src: /images/VW-e-Crafter-Front-300x225.jpg
-category: Kasten
-typeClass: N1
+relatedReviews: peugeot-e-expert-testbericht-von-elektrotransporter-vergleich
+description: Der Nissan e-NV 200 ist ein Elektotransporter der Klasse N1der
+  Platz für bis zu 7 Personen bietet und über eine maximalen Nutzlast von 667
+  Kilogramm verfügt.
+src: /images/env-200.jpg
 loadingWeight:
   key: Nutzlast
-  value: 982
+  value: 667
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 2499
+  value: 0
   baseUnit: "-"
 maxSpeed:
   key: km/h
-  value: 90
+  value: 123
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
@@ -160,20 +157,20 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 120
+  value: 200
   baseUnit: km
-  maxValue: 173
+  maxValue: 275
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 17
   baseUnit: h
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 5.3
+  value: 8.5
   baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
-  value: 0.75
+  value: 1
   baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
@@ -188,21 +185,21 @@ batteryIncluded:
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "29"
+  value: 20,6
   baseUnit: kWh
 power:
   key: Leistung
-  value: "85"
+  value: "80"
   baseUnit: kW
 seats:
   key: Sitzplätze
-  value: 3
+  value: 7
 rating:
-  key: Gut
-  value: 3.6
+  key: Sterne
+  value: 3.4
 guarantee:
   key: Garantie Fahrzeug
-  value: 2
+  value: 5
   baseUnit: Jahre
 availability:
   key: Verfügbarkeit
@@ -217,63 +214,63 @@ batteryGuarantee:
   baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
-  value: 570
-  baseUnit: mm
+  value: 0
+  baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 11,76
+  value: 3,47
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 6,32
+  value: 2,55
   baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 2040
+  valuewidth: 1755
   baseUnit: mm
-  valuelength: 5986
-  valueheight: 2590
-  valuewheelbase: 3640
+  valuelength: 4560
+  valueheight: 2011
+  valuewheelbase: 2725
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1881
+  valueheight: 1360
   width: Breite
-  valuewidth: 1832
-  valuelength: 3444
+  valuewidth: 1500
+  valuelength: 1701
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "5986"
+  value: "4560"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "2040"
+  value: "1755"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "2590"
+  value: "2011"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "3450"
+  value: "1701"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1832"
+  value: "1500"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "1881"
+  value: "1360"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "3640"
+  value: "2725"
   baseUnit: mm
 ---
-Der VW e-Crafter ist der größte Elektrotransporter aus dem Hause Volkswagen. Er verfügt über 3 Sitzplätze und eine maximale Höchstgeschwindigkeit von 90 km/h.
+Der Nissan e-NV 200 ist ein Elektotransporter der Klasse N1der Platz für bis zu 7 Personen bietet und über eine maximalen Nutzlast von 667 Kilogramm verfügt.

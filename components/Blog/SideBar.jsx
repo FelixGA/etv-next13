@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import tileCatalogue from "/public/images/unnamed.png";
-import tileFacebook from "/public/images/unnamed.png";
-import tileYoutube from "/public/images/unnamed.png";
+import tileCatalogue from "/public/images/ETV Rectangle.jpg";
+import tileFacebook from "/public/images/ETV Rectangle2.jpg";
+import tileYoutube from "/public/images/ETV Rectangle3.jpg";
 
 const data = [
   { href: "/downloads", image: tileCatalogue, alt: "Catalogue" },
@@ -24,16 +24,18 @@ export default function SideBar(props) {
       {data.map((tile) => (
         <Link href={tile.href} key={tile.href}>
           <a
-            className="flex flex-row my-10 overflow-hidden transition transform hover:scale-105"
+            className="flex flex-row my-10 overflow-hidden transition transform hover:scale-105 w-80"
             rel="noreferrer"
           >
-            <Image
-              src={tile.image}
-              alt={tile.alt}
-              width={250}
-              height={250}
-              objectFit="cover"
-            />
+            {
+              <Image
+                src={tile.image}
+                alt={tile.alt}
+                width={500}
+                height={392}
+                objectFit="cover"
+              />
+            }
           </a>
         </Link>
       ))}

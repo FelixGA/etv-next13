@@ -1,6 +1,6 @@
 ---
-title: VW e-Crafter
-name: vw-e-crafter
+title: MAN eTGE
+name: man-etge
 price: 53900
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
@@ -133,12 +133,10 @@ relatedBlogs: >-
 
 
   4,4
-relatedReviews: vw-ecrafter-testbericht-von-elektrotransporter-vergleich
-description: Der VW e-Crafter ist der größte Elektrotransporter aus dem Hause
-  Volkswagen. Er verfügt über 3 Sitzplätze und eine maximale
-  Höchstgeschwindigkeit von 90 km/h. Die maximale Nutzlast beträgt in der
-  Kategorie N1 bis zu 982 kg.
-src: /images/VW-e-Crafter-Front-300x225.jpg
+relatedReviews: ""
+description: Der MAN TGE basiert auf dem nahezu baugleichen VW Crafter der
+  zweiten Generation.
+src: /images/man-etge-gelb-1024x768.jpg
 category: Kasten
 typeClass: N1
 loadingWeight:
@@ -148,7 +146,7 @@ loadingWeight:
 curbweight:
   key: Leergewicht
   value: 2499
-  baseUnit: "-"
+  baseUnit: kg
 maxSpeed:
   key: km/h
   value: 90
@@ -160,9 +158,9 @@ range230V:
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 120
+  value: 110
   baseUnit: km
-  maxValue: 173
+  maxValue: 115
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
   value: 17
@@ -188,17 +186,17 @@ batteryIncluded:
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: "29"
+  value: "30"
   baseUnit: kWh
 power:
   key: Leistung
-  value: "85"
+  value: "100"
   baseUnit: kW
 seats:
   key: Sitzplätze
   value: 3
 rating:
-  key: Gut
+  key: Sterne
   value: 3.6
 guarantee:
   key: Garantie Fahrzeug
@@ -276,4 +274,6 @@ wheelbase:
   value: "3640"
   baseUnit: mm
 ---
-Der VW e-Crafter ist der größte Elektrotransporter aus dem Hause Volkswagen. Er verfügt über 3 Sitzplätze und eine maximale Höchstgeschwindigkeit von 90 km/h.
+Der MAN TGE basiert auf dem nahezu baugleichen VW Crafter der zweiten Generation. Mehr als 30 Jahre war der Volkswagen LT der große “Lasten-Transporter” des deutschen Autokonzerns. Seit dem Jahr 2006 ist der Nachfolger namens Crafter auf dem Markt. Die zweite und aktuelle Generation ist seit 2016 verfügbar, seit 2018 als elektrischer e-Crafter. Damit war VW der Konkurrenz wie Renault und Sprinter vorraus.
+
+Im Gegensatz zum Verbrenner-TGE ist der elektrische MAN eTGE nur in einer Größe erhältlich. Diese entspricht der Version L3H3 und hat eine Länge von 5,99 Meter sowie eine Fahrzeughöhe von 2,59 Meter.

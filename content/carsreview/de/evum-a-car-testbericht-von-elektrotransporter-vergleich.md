@@ -1,7 +1,7 @@
 ---
 title: Evum A-Car
 slug: evum-a-car-testbericht-von-elektrotransporter-vergleich
-relatedCars: evum-a-car-testbericht-von-elektrotransporter-vergleich
+relatedCars: evum-a-car-kipper
 youtubeLink: https://www.youtube.com/watch?v=6UhB-lkSbYU
 category: Pritsche
 publishedAt: 04/06/2022
