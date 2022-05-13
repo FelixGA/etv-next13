@@ -1,14 +1,14 @@
 ---
-title: Addax MT Kipper
-name: addax-mt-kipper
+title: Addax MT Koffer
+name: addax-mt-koffer
 price: 35450
 relatedBlogs: beispiel
 relatedReviews: addax-mt-testbericht-von-elektrotransporter-vergleich
 description: Der Addax MT ist ein Elektro-Kleintransporter der Fahrzeugklasse N1
   und verfügt über eine maximale Nutzlast von 1000 Kilogramm und eine
   Anhängelast von 2000 Kilogramm.
-src: /images/addax_motors_pritsche.jpg
-category: Kipper
+src: /images/addax_koffer.jpg
+category: Koffer
 typeClass: N1
 loadingWeight:
   key: Nutzlast
@@ -86,15 +86,15 @@ batteryGuarantee:
   baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
-  value: 75
-  baseUnit: cm
+  value: 635
+  baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 0,75
+  value: 4,32
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 2,99
+  value: 2,92
   baseUnit: m2
 carSizes:
   width: Breite
@@ -110,10 +110,10 @@ carSizes:
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 250
+  valueheight: 1480
   width: Breite
   valuewidth: 1390
-  valuelength: 2150
+  valuelength: 2100
   length: Länge
   baseUnit: mm
 carSizesLength:
@@ -130,7 +130,7 @@ carSizesHeight:
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "2150"
+  value: "2100"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
@@ -138,7 +138,7 @@ loadingVolumeWidth:
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "250"
+  value: "1480"
   baseUnit: mm
 wheelbase:
   key: Radstand
