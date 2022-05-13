@@ -55,8 +55,8 @@ export default function Form(props) {
           onSubmit={handleSubmit(onSubmit, onError)}
           className={
             router.pathname !== "/kontakt"
-              ? "flex flex-col bg-white  px-1 "
-              : "flex flex-col px-4  bg-white shadow-dropdown xs:rounded-md mb-20"
+              ? "flex flex-col bg-white px-4 "
+              : "flex flex-col px-4  bg-white shadow-dropdown rounded-md mb-20"
           }
         >
           <div className="w-full">
@@ -238,7 +238,7 @@ export default function Form(props) {
               />
             </div>
             {/* medal dsvgo image */}
-            <div className="relative w-28 ">
+            <div className="relative w-28 left-6">
               <Image
                 src="/images/siegel.png"
                 width={166}
