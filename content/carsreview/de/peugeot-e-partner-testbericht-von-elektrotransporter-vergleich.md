@@ -58,7 +58,7 @@ content:
 
       Serienmäßig kommt der Peugeot e-Partner in der Variante “Pro” bereits mit einer Berganfahrhilfe, elektrischen Fensterhebern vorn sowie einer Audioanlage mit Touchscreen zum Kunden. Auch ABS, ESP sowie elektrisch einstellbare und beheizbare Außenspiegel sind gratis mit dabei. Die höhere Ausstattungsvariante “Premium” hat zudem eine Klimaanlage sowie die “Peugeot Connect Box”. Für Gewerbetreibende würde sich zudem das “Grip”-Paket mit vielen praktischen Optionen lohnen, allerdings ist ausgerechnet dieses nicht für die elektrische Version erhältlich.
     title: Komfort & Ausstattung
-    stars: 3
+    stars: 4
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -95,10 +95,7 @@ content:
       Der Peugeot e-Partner ist ein kompakter Elektrotransporter, der besonders für den urbanen Lieferbetrieb geeignet ist. Zwar wird die Reichweite mit rund 250 Kilometer angegeben, es ist aber sehr unwahrscheinlich, dass diese in der Realität eingehalten werden kann. Dank des komfortablen Innenraums und der guten Ausstattung kommt das Fahrzeug recht hochwertig daher, gleichzeitig können bis zu 4,4 m³ Ladung aufgenommen werden. 
 
 
-      ### Gesamtpunktzahl:
-
-
-      3,4 Sterne
+      #### Testurteil: 3,6 Sterne
     title: Fazit
-    stars: 3.4
+    stars: 3.6
 ---
