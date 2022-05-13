@@ -5,7 +5,7 @@ export default function Teasers({ teasers }) {
   //   console.log(teasers);
   return (
     <div>
-      <div className="grid grid-rows-3 gap-5 md:grid-rows-1 md:grid-cols-3 md:gap-2">
+      <div className="grid grid-rows-3 gap-5 pl-2 sm:pl-0 md:grid-rows-1 md:grid-cols-3 md:gap-2">
         {teasers?.map((teaser, index) => (
           <div key={index}>
             <Link href={`/magazin/${teaser.category}/${teaser.slug}`}>
@@ -22,7 +22,6 @@ export default function Teasers({ teasers }) {
               </a>
             </Link>
             <p className="font-medium text-white ">{teaser.title}</p>
-            <p className="text-red-500">test</p>
           </div>
         ))}
       </div>
