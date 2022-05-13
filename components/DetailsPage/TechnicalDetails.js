@@ -55,76 +55,15 @@ const TechnicalDetails = ({ carItem }) => {
       carItem.loadingArea,
     ];
 
-    // const vehichleDimentions = [
-    //   { key: carItem.carSizes.key },
-    //   {
-    //     value: carItem.carSizes.valueheight + " " + carItem.carSizes.baseUnit,
-    //     key: carItem.carSizes.height,
-    //   },
-    //   {
-    //     value: carItem.carSizes.valuewidth + " " + carItem.carSizes.baseUnit,
-    //     key: carItem.carSizes.width,
-    //   },
-    //   {
-    //     value: carItem.carSizes.valuelength + " " + carItem.carSizes.baseUnit,
-    //     key: carItem.carSizes.length,
-    //   },
-    //   {
-    //     key: carItem.carSizes.wheelbase,
-    //     value: carItem.carSizes.valuewheelbase + " mm",
-    //   },
-
-    //   { key: carItem.loadingVolume.key },
-
-    //   {
-    //     value:
-    //       carItem.loadingVolume.valueheight + " " + carItem.carSizes.baseUnit,
-    //     key: carItem.loadingVolume.height,
-    //   },
-    //   {
-    //     value:
-    //       carItem.loadingVolume.valuewidth + " " + carItem.carSizes.baseUnit,
-    //     key: carItem.loadingVolume.width,
-    //   },
-    //   {
-    //     value:
-    //       carItem.loadingVolume.valuelength + " " + carItem.carSizes.baseUnit,
-    //     key: carItem.loadingVolume.length,
-    //   },
-
-    //   {
-    //     key: carItem.loadingArea.key,
-    //     value: carItem.loadingArea.value + " " + carItem.loadingArea.baseUnit,
-    //   },
-    //   {
-    //     key: carItem.loadingVolumeTotal.key,
-    //     value:
-    //       carItem.loadingVolumeTotal.value +
-    //       " " +
-    //       carItem.loadingVolumeTotal.baseUnit,
-    //   },
-    // ];
-
     SetVehichleDimentions(vehichleDimentions);
   }, [carItem]);
 
-  /* calculations */
-  // let loadingspace = parseFloat(
-  //   (carItem?.loadingVolume.valueheight *
-  //     carItem?.loadingVolume.valuewidth *
-  //     carItem?.loadingVolume.valuelength) /
-  //     1000000
-  // ).toFixed(2);
-  // let truckBed = parseFloat(
-  //   (carItem?.loadingVolume.valuewidth * carItem?.loadingVolume.valuelength) /
-  //     1000
-  // ).toFixed(2);
   return (
-    <div className="flex flex-col items-start justify-center w-full pt-8 pb-16 lg:pt-12 lg:px-4 ">
-      <h3 className="pl-4 text-3xl font-bold text-blue-extra lg:text-4xl">
+    <div className="flex flex-col items-start justify-center w-full pt-8 pb-16 lg:pt-12 lg:px-4 print:p-0">
+      <h3 className="pl-4 text-3xl font-bold text-blue-extra lg:text-4xl print:text-[10px] print:p-0">
         Technische Daten
       </h3>
-      <div className="flex flex-col w-full lg:flex-row">
+      <div className="flex flex-col w-full lg:flex-row print:flex-row print:text-[10px] print:p-0">
         <Basics basics={basics} carItem={carItem} />
         <CarDimentions
           vehichleDimentions={vehichleDimentions}

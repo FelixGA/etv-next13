@@ -7,9 +7,9 @@ relatedReviews: tropos-able-xt-testbericht-von-elektrotransporter-vergleich
 description: Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e
   mit einer Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in
   zwei Akku-Varianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
-src: /images/tropos-able-bunt.jpg
-category: Koffer
-typeClass: N1
+src: /images/tropos-able.jpg
+category: Pritsche
+typeClass: L7E
 loadingWeight:
   key: Nutzlast
   value: 700
@@ -68,7 +68,7 @@ seats:
   value: 2
 rating:
   key: Gut
-  value: 3.4
+  value: 3
 guarantee:
   key: Garantie Fahrzeug
   value: 2
@@ -90,12 +90,12 @@ loadingHeight:
   baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 3,3
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
   value: "0"
   baseUnit: "-"
+loadingArea:
+  key: Ladefläche
+  value: 2,97
+  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -110,7 +110,7 @@ carSizes:
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1150
+  valueheight: 0
   width: Breite
   valuewidth: 1350
   valuelength: 2200
@@ -138,7 +138,7 @@ loadingVolumeWidth:
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "1150"
+  value: "0"
   baseUnit: mm
 wheelbase:
   key: Radstand

@@ -1,7 +1,5 @@
 ---
 title: Evum A-Car Pritsche
-name: evum-a-car-pritsche
-price: 33080
 relatedBlogs:
   title: " Konzept & Fahrzeugvarianten"
   content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
@@ -21,8 +19,7 @@ description: Nach vielen Jahren der Entwicklung und einer mehrmonatigen
   Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen
   Markt attraktiv sein könnte.
 src: /images/evum-intralogistik-03.jpg
-category: Koffer
-typeClass: N1
+category: Pritsche
 loadingWeight:
   key: Nutzlast
   value: 1014
@@ -80,8 +77,8 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Befriedigend
-  value: 3.2
+  key: Testurteil
+  value: 3.4
 guarantee:
   key: Garantie Fahrzeug
   value: 0

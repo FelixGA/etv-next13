@@ -8,7 +8,7 @@ description: Der ARI 458 Food Truck ist ein elektrischer Kleintransporter mit
   Gastro-Aufbau. Er kann  individuell gestaltet und an verschiedene
   Gastrokonzepte angepasst werden.
 src: /images/ari-458-food-truck-5-.jpg
-category: Kasten
+category: Koffer
 typeClass: L7E
 loadingWeight:
   key: Nutzlast
@@ -67,8 +67,8 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Sehr gut
-  value: 1
+  key: "Testurteil "
+  value: 3.8
 guarantee:
   key: Garantie Fahrzeug
   value: 6

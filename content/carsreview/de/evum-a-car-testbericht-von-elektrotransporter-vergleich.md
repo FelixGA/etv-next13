@@ -8,7 +8,7 @@ publishedAt: 04/06/2022
 description: Nach vielen Jahren der Entwicklung und einer mehrmonatigen
   Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A-Car
   nun seit Juni 2020 auf dem Markt.
-src: /images/evum-intralogistik-03.jpg
+src: /images/evum-intralogistik-01.jpg
 content:
   - content: >-
       ### Konzept & Fahrzeugvarianten
@@ -52,7 +52,7 @@ content:
 
 
       Der Verbrauch liegt mit 17,5-19,6 kWh bezogen auf die Fahrzeuggröße in einem annehmbaren Bereich.
-    image: https://evum-motors.com/wp-content/uploads/2020/12/Header-F%C3%B6rderungen-Variante-2-1.jpg
+    image: /images/header-förderungen-variante-2-1.jpg
     title: "Antrieb & Aufladung "
     stars: 4
   - content: >-
@@ -65,7 +65,7 @@ content:
       Für weitere Aufpreise sind Sonderausstattungen wie ein Rückfahrwarner, Sitzheizung, Unterfahrschutz, eine abnehmbare Anhängerkupplung und vieles mehr verfügbar.
     image: /images/evum-a-car-innenraum.png
     title: Komfort & Ausstattung
-    stars: 2
+    stars: 3
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -100,8 +100,8 @@ content:
       Das Evum A-Car ist in der Hinsicht besonders, dass es die Elektromobilität erstmals von der Straße runter in Offroad-Gebiet trägt. Mit dem Allradantrieb und der hohen Bodenfreiheit ist der Evum definitiv auch für die Landwirtschaft oder Forstbetriebe interessant. Auch ansonsten mach das Fahrzeug einiges her und dürfte dank umfangreicher Ausstattung und flexiblen Aufbauvarianten nicht nur in Entwicklungs- und Schwellenländern seine Abnehmer finden. Die Ausstattung in der Basisversion ist jedoch verglichen mit dem Preis eher dürftig. 
 
 
-      #### Testurteil: 3,2
+      #### Testurteil: 3,4
     title: Fazit
     image: /images/evum-landwirtschaft-03.jpg
-    stars: 3.2
+    stars: 3.4
 ---

@@ -68,7 +68,7 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
+  key: Befriedigend
   value: 3.2
 guarantee:
   key: Garantie Fahrzeug

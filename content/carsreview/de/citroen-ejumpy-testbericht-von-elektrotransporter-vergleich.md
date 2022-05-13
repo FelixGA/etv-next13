@@ -66,7 +66,7 @@ content:
       Für Handwerker und Baustellen empfiehlt sich das Paket “Worker”, welches etwa 3.000 Euro über dem Basismodell liegt. Dieses beinhaltet ein “Baustellen-Paket” mit erhöhter Bodenfreiheit und einem Motorschutz sowie einer erhöhten Nutzlast von rund 1.150 Kilogramm. Und eine sogenannte “Grip Control” verhindert das Durchdrehen der Räder auf unbefestigtem Untergrund. Zusätzliche praktische Extras für den eJumpy beinhalten eine Anhängerkupplung (480 Euro), eine zusätzliche linke Schiebetür (370 Euro) sowie eine verglaste Trennwand (ab 150 Euro).
     title: Komfort & Ausstattung
     image: /images/citroen-ejumpy-innenraum.jpg
-    stars: 4
+    stars: 5
   - content: >-
       ### Bedienung und Fahrbetrieb
 
@@ -103,7 +103,7 @@ content:
       Der Citroen eJumpy ist ein recht hochwertiger Kastenwagen, welcher zudem mit einer recht hohen Reichweite punktet. Der Laderaum ist sehr geräumig und einfach beladbar und es gibt viele praktische Ausstattungsdetails für den Berufsalltag, wodurch der eJumpy speziell für Lieferanten und Handwerker sehr interessant sein dürfte. Allerdings ist das Fahrzeug nicht gerade günstig. Die eJumpy-Modelle kosten 8.000 bis 10.000 Euro netto mehr als das vergleichbare Verbrenner-Modell. Dadurch könnte das Fahrzeug für einige Interessenten schlich nicht erschwinglich sein.
 
 
-      #### Testurteil: 3,4
+      #### Testurteil: 3,6
     title: Fazit
-    stars: 3.4
+    stars: 3.6
 ---

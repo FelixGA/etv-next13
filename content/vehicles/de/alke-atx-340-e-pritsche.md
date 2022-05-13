@@ -1,5 +1,5 @@
 ---
-title: Alke ATX 340 E
+title: Alke ATX 340 E Pritsche
 name: alke-atx-340-e-pritsche
 price: 27000
 relatedBlogs: beispiel
@@ -68,7 +68,7 @@ seats:
   value: 2
 rating:
   key: Gut
-  value: 3.8
+  value: 3.6
 guarantee:
   key: Garantie Fahrzeug
   value: 0
