@@ -1,5 +1,5 @@
 ---
-title: Alke ATX 340 E
+title: Alke ATX 340 E Pritsche
 name: alke-atx-340-e-pritsche
 price: 27000
 relatedBlogs: beispiel
