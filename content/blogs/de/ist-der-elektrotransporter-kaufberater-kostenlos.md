@@ -1,13 +1,14 @@
 ---
 title: Ist der Elektrotransporter-Kaufberater kostenlos?
-slug: es sollte das gleich mit der `name` Angabe von dem Auto sein
+slug: ist-der-elektrotransporter-kaufberater-kostenlos
 youtubeLink: ""
-category: frequently asked questions
+category: frequentlyaskedquestions
 publishedAt: 05/13/2022
 src: /images/kaufberaterCar.png
 description: Der Elektrotransporter-Kaufberater ist kostenlos und hilft Ihnen,
   schnell den richtigen E-Transporter zu finden.
 ---
+
 Ja, das Nutzen unseres Portals und des Elektrotransporters-Kaufberaters ist für Sie vollkommen kostenlos und unverbindlich.
 
 <br />
@@ -28,12 +29,12 @@ Auf [„Elektrotransporter-Vergleich“](https://preview-elektrotransporter-verg
 
 <br />
 
-* umfangreiche technische Daten für ein müheloses Vergleichen verfügbarer E-Transporter
-* realistische Fotos der Fahrzeuge, damit Sie sich ein Bild von Ihren Favoriten machen können
-* anschauliche Testberichte zu einzelnen Modellen für einen realistischeren Abgleich mit persönlichen Ansprüchen
-* Links zu Fahrzeugvideos für lebendigere Eindrücke Ihrer bevorzugten Modelle
-* hilfreiche Blogartikel zu verwandten Themen, wie z.B. zur Förderung eines Elektrotransporters oder zur Funktionsweise des Elektrotransporter-Kaufberaters.
-* ein unverbindliches Angebot zu Ihrem Wunschfahrzeug.
+- umfangreiche technische Daten für ein müheloses Vergleichen verfügbarer E-Transporter
+- realistische Fotos der Fahrzeuge, damit Sie sich ein Bild von Ihren Favoriten machen können
+- anschauliche Testberichte zu einzelnen Modellen für einen realistischeren Abgleich mit persönlichen Ansprüchen
+- Links zu Fahrzeugvideos für lebendigere Eindrücke Ihrer bevorzugten Modelle
+- hilfreiche Blogartikel zu verwandten Themen, wie z.B. zur Förderung eines Elektrotransporters oder zur Funktionsweise des Elektrotransporter-Kaufberaters.
+- ein unverbindliches Angebot zu Ihrem Wunschfahrzeug.
 
 <br />
 
@@ -43,8 +44,8 @@ Seien Sie also eingeladen, sich unverbindlich und kostenfrei:
 
 1. [ über verfügbare Elektrotransporter zu informieren](https://preview-elektrotransporter-vergleich.vercel.app/),
 2. [ verschiedene Modelle zu vergleichen](https://preview-elektrotransporter-vergleich.vercel.app/comparePage),
-3.  [hilfreiche Zusatzinformationen zu beschaffen](https://preview-elektrotransporter-vergleich.vercel.app/magazin) &
-4.  [den passenden Elektrotransporter für Ihre Ansprüche zu finden!](https://preview-elektrotransporter-vergleich.vercel.app/caradvisor) 
+3. [hilfreiche Zusatzinformationen zu beschaffen](https://preview-elektrotransporter-vergleich.vercel.app/magazin) &
+4. [den passenden Elektrotransporter für Ihre Ansprüche zu finden!](https://preview-elektrotransporter-vergleich.vercel.app/caradvisor)
 
 <br />
 

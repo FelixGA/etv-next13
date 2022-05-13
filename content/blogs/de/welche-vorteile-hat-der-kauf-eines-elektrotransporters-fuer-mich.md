@@ -2,7 +2,7 @@
 title: Welche Vorteile hat der Kauf eines Elektrotransporters für mich?
 slug: welche-vorteile-hat-der-kauf-eines-elektrotransporters-fuer-mich
 youtubeLink: ""
-category: frequently asked questions
+category: frequentlyaskedquestions
 publishedAt: 05/13/2022
 src: /images/addax_motors_mulde.jpg
 description: Das Kaufen oder Leasen eines Elektrotransporters bringt viele
