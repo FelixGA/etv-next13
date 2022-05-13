@@ -196,7 +196,7 @@ seats:
   value: 2
 rating:
   key: Befriedigend
-  value: 2.8
+  value: 3
 guarantee:
   key: Garantie Fahrzeug
   value: 0

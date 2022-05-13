@@ -197,8 +197,8 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Testurteil
-  value: 2.8
+  key: Sterne
+  value: 3
 guarantee:
   key: Garantie Fahrzeug
   value: 0
