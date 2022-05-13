@@ -5,7 +5,7 @@ youtubeLink: ""
 category: frequently asked questions
 publishedAt: 05/13/2022
 src: /images/kaufberaterCar.png
-description: Der Elektrotransporter-Kaufberaters ist kostenlos und hilft Ihnen,
+description: Der Elektrotransporter-Kaufberater ist kostenlos und hilft Ihnen,
   schnell den richtigen E-Transporter zu finden.
 ---
 Ja, das Nutzen unseres Portals und des Elektrotransporters-Kaufberaters ist für Sie vollkommen kostenlos und unverbindlich.
