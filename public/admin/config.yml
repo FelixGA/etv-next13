@@ -268,7 +268,7 @@ collections:
         i18n: duplicate
         required: true
         options:
-          ["news", "subsidies", "manufacturer", "frequently asked questions"]
+          ["news", "subsidies", "manufacturer", "frequentlyaskedquestions"]
       # - label: "post related vehicles"
       #   name: "vehicle"
       #   widget: "relation"
