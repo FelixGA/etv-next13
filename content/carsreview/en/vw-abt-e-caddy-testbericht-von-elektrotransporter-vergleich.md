@@ -1,7 +1,7 @@
 ---
 title: MAN eTGE
 slug: man-etge-testbericht-von-elektrotransporter-vergleich
-relatedCars: vw-abt-e-caddy
+relatedCars: man-etge
 youtubeLink: https://www.youtube.com/watch?v=XZq9sD3G2CE
 category: Kasten
 publishedAt: 05/13/2022
