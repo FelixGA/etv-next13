@@ -1,7 +1,11 @@
 ---
 name: alke-atx-340-e-koffer
+relatedBlogs: beispiel
+relatedReviews: alke-atx-serie-testbericht-von-elektrotransporter-vergleich
 src: /images/alke-koffer.jpg
 category: Koffer
+rating:
+  value: 3.6
 loadingVolumeTotal:
   value: 2,81
   baseUnit: m3
