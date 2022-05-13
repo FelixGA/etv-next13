@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote";
 import CarBrandsLogos from "../repeated/CarBrandsLogos";
 import OptionItem from "./OptionItem";
+import styles from "../HeroSection/HeroSection.module.css";
 
 //import filtersData from "../filtersData.json";
 //
@@ -123,16 +124,26 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
             />
           </div>
           {/* TITLE AND DESC */}
-          <div className="py-2 pb-2 main-heading-text lg:flex lg:flex-col lg:justify-evenly sm:py-10 ">
-            <h1 className="pt-4 pb-4 text-3xl text-center xl:text-4xl">
+          <div className="px-2 py-2 pb-2 main-heading-text lg:flex lg:flex-col lg:justify-evenly sm:py-10 xs:px-2 sm:px-0">
+            <h1 className="pt-4 pb-4 text-2xl text-left sm:text-3xl xl:text-4xl">
               {getContent.title}
             </h1>
-            <div className="pb-4 text-xl text-center text-grey-darker sm:text-2xl lg:text-3xl">
+            <div
+              className={`${styles.mainHeading}"pb-4 text-xl text-grey-darker sm:text-2xl lg:text-3xl "`}
+            >
               <MDXRemote {...getMarkdownContext.header} />
             </div>
 
-            <p className="px-3 text-sm font-bold text-center text-blue-extra xl:text-2xl">
-              {getContent.content[0].details}
+            <p className="hidden pt-4 text-sm font-bold text-left text-blue-extra xl:text-2xl sm:block">
+              <span>
+                <span className="mr-2 text-[#6C6BB3]">✔</span>unabhängig
+              </span>
+              <span className="pl-8">
+                <span className="mr-2 text-[#6C6BB3]">✔</span> schnell
+              </span>
+              <span className="pl-8">
+                <span className="mr-2 text-[#6C6BB3]">✔</span> immer aktuell
+              </span>
             </p>
           </div>
         </div>
