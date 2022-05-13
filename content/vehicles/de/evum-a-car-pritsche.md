@@ -21,7 +21,7 @@ description: Nach vielen Jahren der Entwicklung und einer mehrmonatigen
   Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen
   Markt attraktiv sein könnte.
 src: /images/evum-intralogistik-03.jpg
-category: Koffer
+category: Pritsche
 typeClass: N1
 loadingWeight:
   key: Nutzlast
