@@ -1,6 +1,7 @@
 ---
 title: "Nissan e-NV 200 "
 slug: nissan-e-nv-200-testbericht-von-elektrotransporter-vergleich
+relatedCars: nme-cargo-van
 youtubeLink: https://www.youtube.com/watch?v=6wXO61urBh4
 publishedAt: 05/13/2022
 description: "Der Nissan e-NV 200 ist ein Elektotransporter der Klasse N1der
