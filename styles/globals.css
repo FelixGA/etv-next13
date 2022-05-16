@@ -3,9 +3,11 @@
 @layer base {
   html,
   body {
-    font-family: "Inter";
+    @apply font-custom text-grey-dark h-full;
     color: #666666;
-    height: 100%;
+  }
+  img {
+    transition: 0.3s;
   }
 
   h1 {
@@ -119,7 +121,6 @@ table th {
 }
 
 @media print {
-
   .no-print,
   footer * {
     display: none !important;
