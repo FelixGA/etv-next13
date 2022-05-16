@@ -8,7 +8,7 @@ publishedAt: 04/01/2022
 description: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der
   in zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
   aufnehmen kann.
-src: /images/Maxus-eDeliver-3-Front-2-300x200.jpg
+src: /images/edeliver-3-.jpeg
 content:
   - content: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der in
       zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
