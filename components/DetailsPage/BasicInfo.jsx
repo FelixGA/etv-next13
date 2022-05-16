@@ -6,7 +6,7 @@ import Image from "next/image";
 import StarsRating from "../repeated/StarsRating";
 const BasicInfo = ({ carItem }) => {
   return (
-    <div className="flex flex-col w-full p-4 lg:flex-row lg:pt-12 lg:px-24">
+    <div className="flex flex-col w-full p-4 lg:flex-row lg:pt-12">
       <div className="flex flex-col justify-start w-full lg:w-1/2 print:w-1/2">
         <div className="pb-4 lg:w-64 lg:pb-8">
           <button className="w-48 h-10 text-sm bg-white border rounded-md print:hidden text-blue-darker">
@@ -45,8 +45,6 @@ const BasicInfo = ({ carItem }) => {
                 {carItem.title}
               </h2>
               <div className="px-2 w-36 md:px-4 print:hidden">
-               
-
                 <div className="flex flex-col items-center h-32 border-2 w-28 justify-evenly">
                   <p>rating</p>{" "}
                   <div className="scale-75 ">

@@ -26,6 +26,7 @@ const TopSlider = ({ getBlogContext, getCars }) => {
   const [sliderData, setSliderData] = useState(
     getBlogContext ? [getBlogContext].concat(getCars) : getCars
   );
+
   useEffect(() => {
     setSliderData(getBlogContext ? [getBlogContext].concat(getCars) : getCars);
   }, [getCars]);
