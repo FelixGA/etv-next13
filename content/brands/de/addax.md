@@ -32,7 +32,7 @@ content: >-
 
 
 
-  Addax bietet eine komplett elektrische Modellpalette mit niedrigen Betriebskosten für Unternehmen an. Dazu zählen die Modelle MTN, MTX und MT. Diese unterscheiden sich vor allem durch unterschiedliche Fahrgestell-Längen und Reichweiten. Optisch und technisch sind die Fahrzeuge sonst weitestgehend identisch. 
+  Addax bietet eine komplett elektrische Modellpalette mit niedrigen Betriebskosten für Unternehmen an. Dazu zählen die Modelle MTN, MTX und MT. Diese unterscheiden sich vor allem durch unterschiedliche Fahrgestell-Längen, Nutzlasten und Reichweiten. Optisch und technisch sind die Fahrzeuge sonst weitestgehend identisch. 
 
 
   <br/>
