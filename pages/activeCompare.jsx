@@ -48,7 +48,7 @@ export default function activeCompare(props) {
   const { state, dispatch } = useStore();
 
   let comparedCars = state?.autoForComparisons?.map((el) => el.auto);
-  // console.log(comparedCars);
+  console.log(comparedCars);
 
   return (
     <div className="main-wrapper 2xl:px-40">
@@ -78,7 +78,11 @@ export default function activeCompare(props) {
           </div>
 
           <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)]">
-            <ActiveCompareEntries keys={allKeys} comparedCars={comparedCars} />
+            <ActiveCompareEntries
+              /*   stars={comparedCars} */
+              keys={allKeys}
+              comparedCars={comparedCars}
+            />
           </div>
           <div className="grid grid-flow-col auto-cols-[minmax(160px,_1fr)]">
             <ActiveCompareSizes keys={carSizes} comparedCars={comparedCars} />
