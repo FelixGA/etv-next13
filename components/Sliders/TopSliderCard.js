@@ -25,11 +25,10 @@ const TopSliderCard = (props) => {
                     <Image
                       className="rounded-sm "
                       src={sliderItem.src}
-                      alt="picture"
+                      alt={sliderItem.name}
                       objectFit="cover"
                       width={380}
                       height={270}
-                      layout="responsive"
                     />
                   )}
                 </a>
