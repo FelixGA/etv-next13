@@ -133,7 +133,7 @@ relatedBlogs: >-
 
 
   4,4
-relatedReviews: ""
+relatedReviews: man-etge-testbericht-von-elektrotransporter-vergleich
 description: Der MAN TGE basiert auf dem nahezu baugleichen VW Crafter der
   zweiten Generation.
 src: /images/man-etge-gelb-1024x768.jpg

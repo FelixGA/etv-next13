@@ -133,7 +133,7 @@ relatedBlogs: >-
 
 
   4,4
-relatedReviews: citroen-ejumpy
+relatedReviews: citroen-ejumpy-testbericht-von-elektrotransporter-vergleich
 description: "Der Citroen eJumpy ist seit 2020 auf dem Markt. Der elektrische
   Kastenwagen ist in zwei Längen erhältlich: 4,95 Meter (M) sowie 5,30 Meter
   (XL). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75
@@ -198,7 +198,7 @@ seats:
   key: Sitzplätze
   value: 3
 rating:
-  key: Gut
+  key: Sterne
   value: 3.6
 guarantee:
   key: Garantie Fahrzeug
