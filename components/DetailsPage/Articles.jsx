@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import RatingBox from "../../components/repeated/RatingBox";
+
 import styles from "./Articles.module.css";
 import { MDXRemote } from "next-mdx-remote";
 import { FaArrowCircleLeft } from "react-icons/fa";
