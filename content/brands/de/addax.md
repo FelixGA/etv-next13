@@ -24,7 +24,7 @@ content: >-
   <br/>
 
 
-  Addax bietet eine komplett elektrische Modellpalette mit niedrigen Betriebskosten für Unternehmen an. Dazu zählen die Modelle MTN, MTX und MT. Diese unterscheiden sich vor allem durch unterschiedliche Fahrgestell-Längen, Nutzlasten und Reichweiten. Optisch und technisch sind die Fahrzeuge sonst weitestgehend identisch. 
+  Addax bietet eine komplett elektrische Modellpalette mit niedrigen Betriebskosten für Unternehmen an. Dazu zählen die Modelle MTN, MTX und MT. Diese unterscheiden sich vor allem durch unterschiedliche Fahrgestell-Längen, Nutzlasten und Reichweiten. Optisch und technisch sind die Fahrzeuge sonst weitestgehend identisch. Die Fahrzeuge sind zudem baugleich mit dem Stama Maestro des dänischen Anbieters GMR.
 
 
   <br/>
