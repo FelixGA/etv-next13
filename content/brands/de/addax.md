@@ -9,7 +9,11 @@ content: >-
   #### Überblick 
 
 
+
+
   <br/>
+
+
 
 
   Addax Motors ist ein Hersteller von Elektro-Nutzfahrzeugen, die komplett in Belgien gefertigt werden. Die Fahrzeuge werden mit einer hochmodernen 4G-Überwachung ausgestattet, die sich für eine Ferndiagnose der Fahrzeuge eignet. So können Probleme behoben werden, bevor sie Ausfälle verursachen. 
@@ -21,7 +25,11 @@ content: >-
   #### Modellpalette 
 
 
+
+
   <br/>
+
+
 
 
   Addax bietet eine komplett elektrische Modellpalette mit niedrigen Betriebskosten für Unternehmen an. Dazu zählen die Modelle MTN, MTX und MT. Diese unterscheiden sich vor allem durch unterschiedliche Fahrgestell-Längen und Reichweiten. Optisch und technisch sind die Fahrzeuge sonst weitestgehend identisch. 
@@ -33,7 +41,11 @@ content: >-
   #### Aufbauvarianten 
 
 
+
+
   <br/>
+
+
 
 
   Addax bietet verschiedene Aufbauten für unterschiedliche Branchen an. Das Elektrofahrzeug ist als Kipper-Pritsche, Koffer, Kühlkoffer oder Muldenkipper verfügbar. Ebenso lässt sich die Pritsche auch durch einen Planenaufbau ergänzen. 
