@@ -3,7 +3,7 @@ title: ARI 901 Pritsche
 name: ari-901-pritsche
 price: 35995
 relatedBlogs: nur beispiel
-relatedReviews: ari-901
+relatedReviews: ari-901-testbericht-von-elektrotransporter-vergleich
 description: Der ARI 901 Pritsche ist ein leistungsstarker Elektrotransporter
   der Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung aufnehmen. Das
   Fahrzeug eignet sich speziell für den Einsatz bei Lieferanten, Baufirmen,
@@ -70,7 +70,7 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
+  key: Sterne
   value: 3.6
 guarantee:
   key: Garantie Fahrzeug
