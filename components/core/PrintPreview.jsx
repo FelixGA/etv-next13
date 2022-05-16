@@ -22,7 +22,7 @@ export default function PrintPreview({
 }) {
   // console.log(carItem);
   return (
-    <div className="w-screen print:text-[8px] flex flex-col ">
+    <div className="w-screen flex flex-col flex-wrap">
       {/* header */}
       <div className="w-screen h-[50px] text-lg text-white flex justify-between bg-blue-darker mb-2">
         <h2 className="text-white">Fahrzeugübersicht</h2>
@@ -34,24 +34,24 @@ export default function PrintPreview({
           <img src="/images/etv-logo-final.png" alt="test" />
         </div>
       </div>
-      <div className="w-screen flex flex-col">
-        {/* details , price  etc */}
-
-        <div className="flex w-full flex-col h-screen flex-wrap">
+      {/* main page */}
+      <div className="w-screen flex flex-col flex-wrap">
+        <div className="flex w-full h-screen flex-col flex-wrap">
+          {/* details , price  etc */}
           {/* basics photo etc */}
-          <div className="flex w-1/4 ">
+          <div className="flex w-1/4 h-auto">
             <img
               src={carItem?.src}
               alt={carItem?.title}
-              className="mr-8  w-full object-cover"
+              className="mr-8 object-cover"
             />
 
             <div className="flex flex-col w-3/4">
               <div className="flex flex-col justify-between  ">
                 <h3 className="font-bold w-full">{carItem?.title}</h3>
               </div>
-              <div className="flex flex-row print:text-[14px] ">
-                <div className="flex flex-col mx-2">
+              <div className="flex ">
+                <div className="flex mx-2">
                   <img
                     src="/images/etv-logo-final.png"
                     alt={carItem?.title}
@@ -66,7 +66,7 @@ export default function PrintPreview({
                   <img
                     src={carItem?.src}
                     alt={carItem?.title}
-                    className="mr-8  w-full object-cover"
+                    className="mr-8 w-full object-cover"
                   />
                   <p className="text-blue-dark">
                     {carItem?.chargingTimeLithium.value}
@@ -113,33 +113,45 @@ export default function PrintPreview({
             </div>
           </div>
           {/* texh details */}
-          <div className="flex w-full">
-            <div className="flex  w-full flex-wrap scale-125 mx-auto my-4 ">
+          <div className="flex h-2/4">
+            <div className="flex flex-wrap w-screen">
               <TechnicalDetails carItem={carItem} />
             </div>
           </div>
           {/* test fazit */}
-          <div className="flex w-1/2 print:text-[8px] justify-between ">
+          <div className="flex justify-between h-1/4 ">
             {getTestReview && (
               <div className="flex w-3/4">
                 {/* rg */}
-                {getCarsReview?.content
-                  ?.map((infos, index) => (
-                    <div key={index} className={`${styles.fazit} " "`}>
-                      <div className="flex">
-                        <h2 className=" print:text-[10px]">{infos.title}</h2>
 
-                        <div className="scale-50">
-                          {infos.stars ? (
-                            <StarsRating stars={infos.stars} />
-                          ) : null}
-                        </div>
-                      </div>
+                <div className={`${styles.fazit} " "`}>
+                  <div className="flex">
+                    <h2 className=" print:text-[10px]">
+                      {
+                        getCarsReview?.content[
+                          getCarsReview?.content.length - 1
+                        ].title
+                      }
+                    </h2>
 
-                      <MDXRemote {...getTestReview[index]} />
+                    <div className="scale-50">
+                      {getCarsReview?.content[getCarsReview?.content.length - 1]
+                        .stars ? (
+                        <StarsRating
+                          stars={
+                            getCarsReview?.content[
+                              getCarsReview?.content.length - 1
+                            ].stars
+                          }
+                        />
+                      ) : null}
                     </div>
-                  ))
-                  .splice(getCarsReview?.content.length - 1)}
+                  </div>
+
+                  <MDXRemote
+                    {...getTestReview[getCarsReview?.content.length - 1]}
+                  />
+                </div>
               </div>
             )}
           </div>
