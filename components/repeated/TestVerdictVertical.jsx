@@ -8,7 +8,7 @@ const TestVerdictVertical = ({ stars }) => {
       <div className="relative text + stars + icon ">
         <div className="text + stars flex flex-col ">
           <div className="flex justify-center">
-            <p className="text-[20px] font-extrabold text-blue-darker">
+            <p className="text-[20px] font-extrabold  text-blue-darker">
               TESTURTEIL
             </p>
           </div>
