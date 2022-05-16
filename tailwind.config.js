@@ -4,6 +4,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      custom: ["Inter", "sans-serif"],
+    },
+
     extend: {
       gridTemplateColumns: {
         "auto-fit": "repeat(auto-fit, minmax(130px, 1fr))",
@@ -40,32 +44,28 @@ module.exports = {
         "configurator-card-selected": `0 0 0 4px ${theme(
           "colors.green.light"
         )}`,
+        gifShadow: "0px 0px 10px 0px rgba(239, 84, 36, 0.3)",
         header: "0 2px 24px 0 rgba(0,0,0,0.5)",
         dropdown: "0 2px 6px 0 rgba(44,63,83,0.25)",
+        dropdown2: "2px 2px 6px 1px rgba(44,63,83,0.25)",
+        test: "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px",
+        angelos1: "0 0 0 1px #243280;",
       }),
       blur: {
         xs: "2px",
       },
-      /*  filter: {
-
-      } */
       colors: {
-        // white: {
-        //   lightest: "",
-        //   lighter: "",
-        //   light: "#F2F9FF",
-        //   dark: "",
-        //   darker: "",
-        //   darkest: "",
-        // },
         grey: {
           lightest: "#F2F2F2",
           lighter: "#E7EDF3",
           light: "#CCCCCC",
           dark: "#6e6e6e",
           darker: "#4e4e4e",
+          moredark: "#415264",
           darkest: "#212121",
+          superdark: "#030F1C",
           border: "#D0DDEA",
+          nav: "#b1a7a7",
         },
         yellow: {
           lightest: "",
@@ -83,15 +83,8 @@ module.exports = {
           dark: "#243280",
           darker: "#1F1E80",
           darkest: "#5A3DF5",
-          extra: "#2c3f53",
-        },
-        black: {
-          lightest: "#415264",
-          lighter: "",
-          light: "",
-          dark: "#030F1C",
-          darker: "",
-          darkest: "",
+          extra: "#2C3F53",
+          extrablue: "#706FB6",
         },
         orange: {
           lightest: "",
@@ -103,27 +96,24 @@ module.exports = {
         },
         green: {
           lightest: "",
-          lighter: "",
+          lighter: "#6AB578",
           light: "#0B8E78",
           dark: "",
           darker: "",
           darkest: "",
         },
       },
-
       spacing: {
         18: "4.5rem",
       },
-      zIndex: {},
       zIndex: {
         "-20": "-20",
         "-10": "-10",
       },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [require("tailwind-scrollbar-hide")],
-  // plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
+  plugins: [
+    require("tailwind-scrollbar-hide"),
+    require("@tailwindcss/line-clamp"),
+  ],
 };

@@ -2,11 +2,11 @@ import Image from "next/image";
 
 function CarCardProps(props) {
   /*   let imagesForProp = [image, image2, image3, image4]; */
-  // console.log(props.details);
+
   return (
-    <div className=" pl-8 flex h-20 items-center ">
+    <div className="flex items-center h-20 pl-2 xl:pl-4">
       <div className="rounded-full bg-[#E7EEF2] ">
-        <div className="p-2 rounded-full w-12 h-12 ">
+        <div className="w-12 h-12 p-2 rounded-full">
           <Image
             src={props.image}
             alt={props.details?.key}
@@ -17,12 +17,15 @@ function CarCardProps(props) {
           />
         </div>
       </div>
-      <div className="flex flex-col flex-1 justify-center text-sm pl-4 ">
-        <div className="text-blue-dark font-bold ">{props.details?.key}</div>
-        <div className="text-grey-dark font-bold ">
-          {props.details?.value} 
-          {/* {props.details?.type}  */}
-          kg
+      <div className="flex flex-col justify-center flex-1 text-sm lg:pl-2 ">
+        <div className="font-bold text-blue-dark ">{props.details?.key}</div>
+        <div className="font-bold text-grey-dark ">
+          {props.details?.value ? props.details?.value : "-"}
+          {props.details?.maxValue &&
+          props.details?.maxValue !== props.details?.value
+            ? ` - ${props.details?.maxValue} `
+            : " "}
+          {props.details?.baseUnit}
         </div>
       </div>
     </div>

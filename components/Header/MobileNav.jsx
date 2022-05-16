@@ -1,68 +1,81 @@
-import { useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { useState, useEffect, useLayoutEffect, useRef } from "react";
+import { useRouter } from "next/router";
+import { useStore } from "../store";
+import navbarData from "../../data/navbarData";
 
-function MobileNav(props) {
+function MobileNav() {
+  const router = useRouter();
+  const { state, dispatch } = useStore();
+
+  const firstUpdate = useRef(true);
+  useLayoutEffect(() => {
+    if (firstUpdate.current) {
+      firstUpdate.current = false;
+      return;
+    }
+
+    dispatch({
+      type: "mobileNavActive",
+      data: false,
+    });
+  }, [router.pathname]);
   return (
-    <div className="relative bg-blue-darker w-full  h-screen   ">
-      <ul className="flex flex-col items-center sm:items-start sm:pl-16  w-full   h-3/4 justify-evenly text-grey-dark text-3xl pt-8">
-        <li className="">
-          <Link href="/">
-            <a
-              className="text-[#E7E8EC]"
-              onClick={() => {
-                setIsActive(false);
-              }}
-            >
-              Start
-            </a>
-          </Link>
-        </li>
-        <li className="">
-          <Link href="/Leichttransporter">
-            <a
-              onClick={() => {
-                setIsActive(false);
-              }}
-            >
-              Leichttransporter
-            </a>
-          </Link>
-        </li>
-        <li className="">
-          <Link href="/comparePage">
-            <a
-              onClick={() => {
-                setIsActive(false);
-              }}
-            >
-              {" "}
-              Transporter
-            </a>
-          </Link>
-        </li>
-        <li className="">
-          <Link href="/Magazin">
-            <a
-              onClick={() => {
-                setIsActive(false);
-              }}
-            >
-              Magazin
-            </a>
-          </Link>
-        </li>
-        <li className="">
-          <Link href="/Kontakt">
-            <a
-              onClick={() => {
-                setIsActive(false);
-              }}
-            >
-              Kontakt
-            </a>
-          </Link>
-        </li>
+    <div className="flex flex-col items-center w-full h-full pt-24 bg-gradient-to-b from-blue-darker to-blue-dark z-90">
+      <ul className="flex flex-col items-center gap-14 justify-center text-[#928888] text-3xl tracking-widest ">
+        {navbarData.map((item, index) => (
+          <li
+            className={
+              router.pathname == item.path
+                ? "transition duration-100 text-white font-bold text-2xl text-center md:text-left"
+                : "transition duration-100 font-bold text-center md:text-left text-2xl"
+            } /*   */
+            key={index}
+          >
+            <Link href={item.path}>
+              <a
+                onClick={() => {
+                  setIsActive(false);
+                  if (index == 0) {
+                    {
+                      setIsActive(false);
+                      dispatch({
+                        type: "mobileNavActive",
+                        data: false,
+                      });
+                      dispatch({
+                        type: "rangeLithium",
+                        data: [],
+                      });
+                      dispatch({
+                        type: "loadingWeight",
+                        data: [],
+                      });
+                      dispatch({
+                        type: "price",
+                        data: [],
+                      });
+                      dispatch({
+                        type: "maxSpeed",
+                        data: [],
+                      });
+                      dispatch({
+                        type: "category",
+                        data: [],
+                      });
+                      dispatch({
+                        type: "chargingTimeLithium",
+                        data: [],
+                      });
+                    }
+                  }
+                }}
+              >
+                {item.title}
+              </a>
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

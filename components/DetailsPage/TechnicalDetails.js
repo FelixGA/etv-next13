@@ -1,95 +1,78 @@
-import { v4 as uuidv4 } from "uuid";
 import { useState, useEffect } from "react";
+import Basics from "./Basics";
+import CarDimentions from "./CarDimentions";
+import Details from "./Details";
+
 const TechnicalDetails = ({ carItem }) => {
   const [basics, SetBasics] = useState([]);
   const [vehichleDimentions, SetVehichleDimentions] = useState([]);
+  const [details, SetDetails] = useState([]);
+  "carItem", carItem;
 
   /* to get the new data in case they are updated */
   /* get two subsets of the car properties to map them */
   useEffect(() => {
     const basics = [
-      carItem.Range230V,
-      carItem.loadingWeight,
+      carItem.range230V,
+      carItem.rangeLithium,
       carItem.maxSpeed,
-      carItem.chargingTime230V[0],
-      carItem.subsidies,
-      carItem.chargingTime230V[2],
-      carItem.batteryGarantie,
+      carItem.chargingTimeLithium,
+      carItem.chargingTime230V,
+      carItem.chargingTimeFast,
+      carItem.power,
+      carItem.loadingWeight,
+      carItem.curbweight,
+    ];
+    SetBasics(basics);
+    const details = [
+      { key: "Guarantee:", value: " " },
+      carItem.batteryGuarantee,
       carItem.guarantee,
+      carItem.availability,
+
+      carItem.seats,
+      { key: "Akku:", value: " " },
+      carItem.batteryCapacityLithium,
+      carItem.batteryCapacityBlei,
+      carItem.batteryIncluded,
+      carItem.consumption,
+      carItem.subsidies,
     ];
 
-    SetBasics(basics);
+    SetDetails(details);
     const vehichleDimentions = [
-      carItem.loadingHeight,
-      carItem.loadingVolume,
-      carItem.seats,
-      carItem.height,
-      carItem.width,
-      carItem.length,
+      /* carItem.carSizes, */
+      { key: "Fahrzeugmaße" },
+      carItem.loadingVolumeHeight,
+      carItem.loadingVolumeLength,
       carItem.wheelbase,
-      carItem.loadArea,
-      carItem.curbWeight,
+      carItem.loadingVolumeWidth,
+      carItem.loadingVolume,
+      carItem.carSizesHeight,
+      carItem.carSizesLength,
+      carItem.carSizesWidth,
+      carItem.loadingVolumeTotal,
+      carItem.loadingArea,
     ];
 
     SetVehichleDimentions(vehichleDimentions);
   }, [carItem]);
 
   return (
-    <div className="w-full flex flex-col justify-center items-start lg:pt-12  px-4 py-8 lg:px-24  ">
-      <h3 className="text-black-darkest font-bold py-2 lg:text-3xl for-print	">
+    <div className="flex flex-col items-start justify-center w-full pt-8 pb-16 lg:pt-12 lg:px-4 print:p-0 print:h-auto">
+      <h3 className="pl-4 text-3xl font-bold text-blue-extra lg:text-4xl print:text-[8px]  print:p-0">
         Technische Daten
       </h3>
-      <div className="flex flex-col w-full lg:flex-row">
-        <section className="w-full lg:w-1/2 lg:px-2">
-          <h3 className="text-black-darkest font-bold pt-8 pb-4">Grundlagen</h3>
-          <div className="flex flex-col w-full text-[#2C3F53] lg:pr-6">
-            <div
-              className="
-                 flex flex-row w-full bg-[#F2F5F8] "
-            >
-              <p className="w-1/2 py-1 ">Class:</p>
-              <p className="w-1/2 py-1">{carItem.typeClass}</p>
-            </div>
-            {basics?.map((item, index) => (
-              <div
-                key={index}
-                className={
-                  index % 2 !== 0
-                    ? "flex flex-row w-full bg-[#F2F5F8] "
-                    : "flex flex-row w-full "
-                }
-              >
-                <p className="w-1/2 py-1">{item.key}</p>
-                <p className="w-1/2 py-1">
-                  {item.value} {item.baseUnit} {item.type}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-        <section className="w-full lg:w-1/2 lg:px-2 lg:pl-6 ">
-          <h3 className="text-black-darkest font-bold pt-8 pb-4">
-            Fahrzeug Maße{" "}
-          </h3>
-          <div className="flex flex-col w-full text-[#2C3F53] ">
-            {vehichleDimentions?.map((item, index) => (
-              <div
-                key={uuidv4()}
-                className={
-                  index % 2 == 0
-                    ? "flex flex-row w-full bg-[#F2F5F8] "
-                    : "flex flex-row w-full "
-                }
-              >
-                <p className="w-1/2 py-1">{item.key}</p>
-                <p className="w-1/2 py-1">
-                  {item.value} {item.baseUnit}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
+      <div className="flex flex-col w-full lg:flex-row print:flex-row print:text-[8px]  print:p-0">
+        <Basics basics={basics} carItem={carItem} />
+        <CarDimentions
+          vehichleDimentions={vehichleDimentions}
+          carItem={carItem}
+        />
+        <Details details={details} carItem={carItem} />
       </div>
+      {/* <div className="flex flex-col w-full m-auto lg:w-1/2 ">
+      </div> */}
     </div>
   );
 };

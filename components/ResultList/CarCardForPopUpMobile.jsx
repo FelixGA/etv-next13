@@ -5,24 +5,20 @@ import { useStore } from "../store";
 
 function CarCardForPopUpMobile(props) {
   const { state, dispatch } = useStore();
-  const myLoader = ({ src }) => {
-    return src;
-  };
+
   return (
     <div className="grid grid-cols-3  ">
-      <div className="relative w-20 sm:w-28 mx-2">
+      <div className="relative w-16 sm:w-28 mx-2 mt-1  ">
         <Image
-          className=" md:rounded-md brightness-50"
-          loader={myLoader}
-          src={`http://localhost:1337${props.selectedCar.pic}`}
+          className=" rounded-sm brightness-[0.75]"
+          src={props.selectedCar.pic}
           alt="picture"
           objectFit="cover"
-          width={228.97}
-          height={111}
+          width={380}
+          height={250}
           layout="responsive"
-          unoptimized={true}
         />
-        <p className="text-sm text-white text-center">
+        <p className="text-sm text-white text-center line-clamp-2">
           {props.selectedCar.title}
         </p>
         <div

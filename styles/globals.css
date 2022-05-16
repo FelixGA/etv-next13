@@ -3,26 +3,23 @@
 @layer base {
   html,
   body {
-    font-family: "Inter";
+    @apply font-custom text-grey-dark h-full;
     color: #666666;
-    height: 100%;
+  }
+  img {
+    transition: 0.3s;
   }
 
   h1 {
-    @apply text-blue-dark text-3xl md:text-3xl font-bold;
+    @apply text-3xl font-bold text-blue-dark md:text-3xl;
   }
 
   h2 {
-    @apply text-blue-dark text-xl md:text-2xl;
+    @apply text-xl text-blue-dark md:text-2xl;
   }
 
   h3 {
-    @apply text-blue-dark text-lg md:text-xl;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
+    @apply text-lg text-blue-dark md:text-xl;
   }
 }
 /* for print */
@@ -36,21 +33,27 @@
   .filter-grid {
     grid-template-columns: repeat(auto-fill, minmax(184px, 230px));
   }
+  .no-select {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 }
 
 @tailwind utilities;
 
 /* FROM HERE WE GIVE css for reference  */
 
-header {
-  background-color: #2a3c80;
-}
 a:visited {
-  color: white;
+  /* color: white; */
 }
 
 .select {
-  @apply rounded-lg  bg-white text-base cursor-pointer  items-center;
+  @apply items-center text-base bg-white rounded-lg cursor-pointer;
   /* min-width: 15ch;
   max-width: 20ch; */
   display: grid;
@@ -76,15 +79,50 @@ select:focus {
 .logo {
   filter: contrast(900%);
 }
-.gmsou {
-  box-shadow: 0 0 0 1px #243280;
-}
 .custom-text {
   text-align: center;
 }
 .forz {
   z-index: -98;
-  background: linear-gradient(0.25turn, #f2f9ff, #dbe0e4, #dbe0e4);
+  background: linear-gradient(0.25turn, #f0f7fb, #f6faff, #e0f1ff);
+
   filter: hue-rotate(260deg);
   filter: saturate(3.5);
+}
+/*  table */
+table {
+  width: 100%;
+  overflow: auto;
+  text-align: left;
+}
+
+@media only screen and (max-width: 640px) {
+  table {
+    table-layout: fixed;
+    width: 200%;
+  }
+}
+
+tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media print {
+  .no-print,
+  footer * {
+    display: none !important;
+  }
 }

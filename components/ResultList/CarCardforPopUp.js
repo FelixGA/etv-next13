@@ -1,47 +1,41 @@
 import Image from "next/image";
 
 import { AiOutlineClose } from "react-icons/ai";
+import usePrice from "../../hooks/usePrice";
 import { useStore } from "../store";
 function CarCardforPopUp(props) {
   const { state, dispatch } = useStore();
-
-  const myLoader = ({ src }) => {
-    return src;
-  };
+  const price = usePrice(props.selectedCar?.price);
 
   return (
     <div className="w-[80%] md:w-full relative ">
-      <div className="w-16 md:min-w-36 md:w-full">
+      <div className="relative w-16 md:w-full">
         <Image
           className=" md:rounded-md brightness-50"
-          loader={myLoader}
-          src={`http://localhost:3000/${props.selectedCar.pic}`}
+          src={props.selectedCar.pic}
           alt="picture"
-          objectFit="cover"
+          objectFit="fill"
           width={228.97}
-          height={111}
+          height={125}
           layout="responsive"
-          unoptimized={true}
         />
+        <div className="absolute items-center justify-center hidden md:flex top-1 left-1">
+          <h4 className="text-base font-black text-white  lg:text-lg">
+            {props.selectedCar.title}
+          </h4>
+        </div>
       </div>
-      {/* <div className="flex  w-full md:hidden">
-        <p className="text-white text-center	pt-2">
+      {/* <div className="flex w-full md:hidden">
+        <p className="pt-2 text-center text-white">
           Das kann nen langen Namen haben X153
         </p>
       </div> */}
 
-      <div className="absolute hidden md:flex bottom-[85px] lg:bottom-20 left-2 items-center justify-center">
-        <h4 className="mt-4 lg:mt-10 text-md lg:text-lg font-black text-white  ">
-          {props.selectedCar.title}
-        </h4>
-      </div>
-      <div className="absolute hidden md:flex md:bottom-6 lg:bottom-4 right-2 ">
-        <p className="text-white font-black text-lg">
-          {`ab ${props.selectedCar.price} €`}
-        </p>
+      <div className="absolute hidden md:flex md:bottom-6 lg:bottom-1 right-2 ">
+        <p className="text-lg font-black text-white">{`ab ${price}`}</p>
       </div>
       <div
-        className="absolute top-1 right-1 cursor-pointer"
+        className="absolute cursor-pointer top-1 right-1"
         onClick={() => {
           dispatch({
             type: "disabledButton",

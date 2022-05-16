@@ -1,17 +1,15 @@
 import Image from "next/image";
 import { useState } from "react";
-import filterImage from "../../public/images/filter-icon.png";
-import TruncateFilterMobile from "./TruncateFilterMobile";
 import { MdKeyboardArrowDown } from "react-icons/md";
+
 import { useStore } from "../store";
 import SortDesktop from "../SortItems/SortDesktop";
 import ActiveFilterEntry from "./ActiveFilterEntry";
+import filterImage from "../../public/images/filter-icon.png";
 
 function FilterBlock() {
   const { state, dispatch } = useStore();
   const [truncate, setTruncate] = useState(false);
-  const [clicked, setClicked] = useState(true);
-  const [rotateIt, setRotateIt] = useState(false);
 
   return (
     <div className=" w-full min-w-fit relative">
@@ -24,7 +22,7 @@ function FilterBlock() {
           }
           onClick={() => {
             setTruncate(!truncate);
-            setRotateIt(!rotateIt);
+            // setRotateIt(!rotateIt);
           }}
         >
           <div className="w-full  flex flex-row">
@@ -39,17 +37,16 @@ function FilterBlock() {
                 width={8}
                 height={8}
                 layout="responsive"
-                unoptimized={true}
               />
             </div>
-            <span className="ml-2 font-black   my-auto text-sm text-blue-darker">
+            <span className="ml-2 font-black  my-auto text-sm text-blue-darker">
               Alle Filter anzeigen
             </span>
           </div>
 
           <div
             className={
-              rotateIt
+              truncate
                 ? "flex items-center w-8 mr-5 my-auto transition transform rotate-180 origin-center	"
                 : "flex items-center w-8 mr-5 my-auto transition transform rotate-0 origin-center	 "
             }
@@ -64,9 +61,9 @@ function FilterBlock() {
             }
           >
             {/* FILTERS ON MOBILE VIEW */}
-            <div className="relative  bg-red-500 z-20">
+            {/* <div className="relative z-20">
               <TruncateFilterMobile />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -85,15 +82,14 @@ function FilterBlock() {
         <div
           className="hidden md:flex flex-row items-start mt-10 absolute right-2 w-fit   cursor-pointer "
           onClick={() => {
-            setClicked(!clicked);
-            setRotateIt(!rotateIt);
+            setTruncate(!truncate);
           }}
         >
           <h4 className=" ">{`Sortieren nach: ${state?.activeSortValues}`} </h4>
 
           <div
             className={
-              rotateIt
+              truncate
                 ? "flex items-center justify-center w-6 h-4 mt-1  transition transform rotate-180 origin-center	"
                 : "flex items-center justify-center w-6 h-4  mt-1 transition transform rotate-0 origin-center	 "
             }
@@ -102,7 +98,7 @@ function FilterBlock() {
           </div>
         </div>
         {/* SORT DESKTOP */}
-        <div className={clicked ? "hidden" : "flex  absolute top-16 right-4 "}>
+        <div className={truncate ? "hidden" : "flex  absolute top-16 right-4 "}>
           <SortDesktop />
         </div>
       </div>

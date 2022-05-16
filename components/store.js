@@ -5,17 +5,19 @@ const reducer = (state, action) => {
     /* filter */
     case "price":
       return { ...state, prices: action.data };
-    case "Range230V":
-      return { ...state, Range230Vs: action.data };
+    case "rangeLithium":
+      return { ...state, rangeLithiums: action.data };
     case "loadingWeight":
       return { ...state, loadingWeights: action.data };
     case "maxSpeed":
       return { ...state, maxSpeeds: action.data };
-    case "chargingTime230V":
-      return { ...state, chargingTime230Vs: action.data };
-
+    case "chargingTimeLithium":
+      return { ...state, chargingTimeLithiums: action.data };
     case "category":
       return { ...state, categorys: action.data };
+
+    /*  */
+
     case "truncate":
       return { ...state, truncates: action.data };
     /* sorting state */
@@ -29,19 +31,24 @@ const reducer = (state, action) => {
 
     case "disabledButton":
       return { ...state, disabledButtons: action.data };
+
     case "maximalThree":
       return { ...state, maximalThrees: action.data };
+    /*  states for navbar */
+    case "mobileNavActive":
+      return { ...state, mobileNavActives: action.data };
     default:
       return;
   }
 };
 
 const initialState = {
+  mobileNavActive: false,
   prices: [],
-  Range230Vs: [],
+  rangeLithiums: [],
   loadingWeights: [],
   maxSpeeds: [],
-  chargingTime230Vs: [],
+  chargingTimeLithiums: [],
   categorys: [],
   truncates: "",
   /*  states for comparison popup */
@@ -50,7 +57,7 @@ const initialState = {
   disabledButtons: "",
   maximalThrees: "",
   /* sorting state */
-  activeSortValues: "Niedrigster Preis",
+  activeSortValues: [{ sortCategory: "Niedrigster Preis", sortType: "lowest" }],
 };
 
 const StoreContext = createContext(initialState);

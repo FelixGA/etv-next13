@@ -6,7 +6,6 @@ import image5 from "../../public/images/more-svgrepo-com.png";
 
 import image6 from "../../public/images/ladezeit@2x.png";
 
-
 import Image from "next/image";
 import { useState } from "react";
 import FilterItemMobile from "./FilterItemMobile";
@@ -25,7 +24,7 @@ function TruncateFilter() {
   const filtersData = [
     {
       id: 1,
-      category: "Range230Vs",
+      category: "rangeLithiums",
       title: "Reichweite",
       image: image,
       options: [
@@ -33,25 +32,25 @@ function TruncateFilter() {
           value: 150,
           name: "ab 150 km",
           id: 1,
-          categoryName: "Range230V",
+          categoryName: "rangeLithium",
         },
         {
           id: 2,
           name: "ab 200 km",
           value: 200,
-          categoryName: "Range230V",
+          categoryName: "rangeLithium",
         },
         {
           id: 3,
           name: "ab 250 km",
           value: 250,
-          categoryName: "Range230V",
+          categoryName: "rangeLithium",
         },
         {
           id: 4,
           name: "ab 500 km",
           value: 500,
-          categoryName: "Range230V",
+          categoryName: "rangeLithium",
         },
       ],
     },
@@ -124,39 +123,39 @@ function TruncateFilter() {
     {
       id: 5,
       title: "Ladenzeit",
-      category: "chargingTime230Vs",
+      category: "chargingTimeLithiums",
       image: image6,
       options: [
         {
           name: "ab 1 Stunde",
           value: 1,
           id: 1,
-          categoryName: "chargingTime230V",
+          categoryName: "chargingTimeLithium",
         },
         {
           name: "ab 10 Stunde",
           value: 10,
           id: 2,
-          categoryName: "chargingTime230V",
+          categoryName: "chargingTimeLithium",
         },
         {
           name: "ab 20 Stunde",
           value: 20,
           id: 3,
-          categoryName: "chargingTime230V",
+          categoryName: "chargingTimeLithium",
         },
         {
           name: "ab 40 Stunde",
           value: 40,
           id: 4,
-          categoryName: "chargingTime230V",
+          categoryName: "chargingTimeLithium",
         },
       ],
     },
     {
       id: 4,
       title: "Aufbautyp",
-      category: "categorys",
+      category: "category",
       image: image5,
       options: [
         {
@@ -205,7 +204,7 @@ function TruncateFilter() {
     <div className="absolute z-10 bg-white w-full ">
       <div className="flex flex-col mt-2  ">
         <div>
-          <Sort />
+          <Sort getContent={getContent} />
         </div>
         {/* Preis */}
         <div
@@ -227,7 +226,6 @@ function TruncateFilter() {
                   width={24}
                   height={28}
                   layout="responsive"
-                  unoptimized={true}
                 />
               </div>
               <div className="my-auto pl-4">
@@ -259,7 +257,7 @@ function TruncateFilter() {
       </div>
       <div
         className={
-          state?.truncates == "price" ? " flex flex-col ml-4 mt-2" : "hidden"
+          state?.truncates == "price" ? "flex flex-col ml-4 mt-2 " : "hidden"
         }
       >
         <div className="">

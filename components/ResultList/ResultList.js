@@ -1,7 +1,6 @@
-import CarCard from "../../components/ResultList/CarCard";
+import CarCard from "./CarCard.js";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";
-import { v4 as uuidv4 } from "uuid";
 
 import ButtonForAlleTransporter from "../../components/Sliders/ButtonForAlleTransporter";
 const ResultList = (props) => {
@@ -10,9 +9,25 @@ const ResultList = (props) => {
 
   /* useEffect to apply the filters */
   useEffect(() => {
-    if (!state?.prices || !state?.loadingWeights || !state?.Range230Vs || !state?.maxSpeeds || !state?.chargingTime230Vs || props.sortedCars?.length === 0)
+    if (
+      !state?.prices ||
+      !state?.loadingWeights ||
+      !state?.rangeLithiums ||
+      !state?.maxSpeeds ||
+      !state?.chargingTimeLithiums ||
+      !state?.categorys ||
+      props.sortedCars?.length === 0
+    )
       return;
+
     let filteredCars = props.sortedCars?.filter((car) => {
+      let rangeval = car.rangeLithium.value;
+      let chargingTimeval = car.chargingTimeLithium.value;
+      //declaring the right range and charging time according to the battery
+      car.rangeLithium.value == 0 ? (rangeval = car.range230V.value) : null;
+      car.chargingTimeLithium.value == 0
+        ? (chargingTimeval = car.chargingTime230V.value)
+        : null;
       if (
         state?.prices?.length > 0 &&
         state?.prices?.every(
@@ -25,14 +40,15 @@ const ResultList = (props) => {
         state?.loadingWeights?.length > 0 &&
         state?.loadingWeights?.every(
           (entry) =>
-            entry.min > car.loadingWeight.value || entry.max < car.loadingWeight.value
+            entry.min > car.loadingWeight.value ||
+            entry.max < car.loadingWeight.value
         )
       )
         return false;
       if (
-        state?.Range230Vs?.length > 0 &&
-        state?.Range230Vs?.every(
-          (entry) => entry.min > car.Range230V.value || entry.max < car.Range230V.value
+        state?.rangeLithiums?.length > 0 &&
+        state?.rangeLithiums?.every(
+          (entry) => entry.min > rangeval || entry.max < rangeval
         )
       )
         return false;
@@ -45,11 +61,9 @@ const ResultList = (props) => {
       )
         return false;
       if (
-        state?.chargingTime230Vs?.length > 0 &&
-        state?.chargingTime230Vs?.every(
-          (entry) =>
-            entry.min > car.chargingTime230V.value ||
-            entry.max < car.chargingTime230V.value
+        state?.chargingTimeLithiums?.length > 0 &&
+        state?.chargingTimeLithiums?.every(
+          (entry) => entry.min > chargingTimeval || entry.max < chargingTimeval
         )
       )
         return false;
@@ -66,16 +80,16 @@ const ResultList = (props) => {
   }, [
     state?.prices,
     state?.loadingWeights,
-    state?.Range230Vs,
+    state?.rangeLithiums,
     state?.maxSpeeds,
-    state?.chargingTime230Vs,
+    state?.chargingTimeLithiums,
     state?.categorys,
     props.sortedCars,
   ]);
   /* ɢᴇᴛ pop up for not meeting criteria */
   const showMoreMessage = (
     <div className="mx-auto">
-      <p className="text-base md:text-xl text-black-darkest">
+      <p className="px-4 pt-4 text-center md:text-xl text-black-darkest">
         Ist ihr gesuchter Transporter nicht dabei?
       </p>
 
@@ -83,18 +97,18 @@ const ResultList = (props) => {
     </div>
   );
   /* ɢᴇᴛ the cars upon filters */
-  
-  const getdisplayedCars = shownCars?.map((caritem, index) => {
+
+  const getdisplayedCars = shownCars?.map((carItem, index) => {
     return (
-      <div className="container-product" key={index}>
-        <div className="product-icon"></div>
-        <CarCard caritem={caritem} />
+      <div className="w-full container-product md:pl-4" key={index}>
+        {/* <div className="product-icon"></div> */}
+        <CarCard carItem={carItem} />
       </div>
     );
   });
 
   return (
-    <div className="flex flex-col w-full   lg:w-full lg:m-2 bg-grey-extra lg:bg-white">
+    <div className="flex flex-col flex-1 lg:w-full lg:bg-white">
       {shownCars?.length === 0 ? showMoreMessage : getdisplayedCars}
     </div>
   );

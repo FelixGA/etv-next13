@@ -1,0 +1,34 @@
+.articles h3 {
+  display: none;
+}
+.flexbox h3,
+.fazit h3 {
+  display: none;
+}
+.articles p {
+  padding-bottom: 16px;
+}
+.flexbox p, .fazit p {
+  padding-bottom: 6px;
+  
+}
+
+.fazit {
+width: 100%;
+margin-left: 2.5rem /* 40px */;
+}
+.flexbox {
+  /* height: 500px;
+  width: 500px; */
+  /* display: grid;
+  grid-template-columns: 2; */
+  /* width: 45%; */
+
+  height: auto!important;
+
+
+
+ 
+}
+
+
