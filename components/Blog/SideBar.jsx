@@ -7,9 +7,9 @@ import tileYoutube from "/public/images/ETV Rectangle3.jpg";
 const data = [
   { href: "/downloads", image: tileCatalogue, alt: "Catalogue" },
   {
-    href: "https://www.youtube.com/c/ARIMotorsGmbH/featured",
+    href: "/caradvisor",
     image: tileYoutube,
-    alt: "YouTube",
+    alt: "Kaufberater",
   },
   {
     href: "https://www.facebook.com/ARIMotorsElektrofahrzeuge/",
@@ -24,7 +24,7 @@ export default function SideBar(props) {
       {data.map((tile) => (
         <Link href={tile.href} key={tile.href}>
           <a
-            className="flex flex-row my-10 overflow-hidden transition transform hover:scale-105 w-80"
+            className="flex flex-row my-10 overflow-hidden transition transform shadow-xl hover:scale-105 w-80"
             rel="noreferrer"
           >
             {

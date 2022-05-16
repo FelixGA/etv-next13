@@ -1,5 +1,5 @@
 ---
-title: ARI MOTORS
+title: ARI Motors
 description: Die ARI Motors GmbH ist Anbieter des aktuell kleinsten
   Elektro-Transporters mit Straßenzulassung in Deutschland.
 src: /images/logo-ari-motors-rgb-flat.png

@@ -9,7 +9,7 @@ export default function Blog({ getBlogs }) {
   return (
     <>
       {/* <Head page={page} /> */}
-      <div className="grid justify-center grid-cols-1 2xl:grid-cols-[auto,_250px] gap-5 2xl:mx-48 cursor-pointer">
+      <div className="grid justify-center grid-cols-1 2xl:grid-cols-[auto,_320px] gap-5 2xl:mx-48 cursor-pointer  ">
         <div className="w-full ">
           {getBlogs
             .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
@@ -19,7 +19,7 @@ export default function Blog({ getBlogs }) {
                 passHref
                 key={index}
               >
-                <div className="relative flex flex-col items-center my-10 overflow-hidden transition delay-100 bg-white border-t shadow-xl border-t-blue-extralight sm:flex-row hover:scale-105 hover:z-10">
+                <div className="relative flex flex-col items-center my-10 overflow-hidden transition delay-100 border-t shadow-xl border-t-blue-extralight sm:flex-row hover:scale-105 hover:z-10">
                   <div className="w-[350px] h-[250px]">
                     {post.src && (
                       <a className="relative w-full">
@@ -35,11 +35,11 @@ export default function Blog({ getBlogs }) {
                       </a>
                     )}
                   </div>
-                  <div className="flex flex-col flex-1 px-4 py-4 lg:w-full justify-evenly">
-                    <p className="">
+                  <div className="flex flex-col flex-1 w-full px-4 py-4 justify-evenly">
+                    <p className="flex-grow ">
                       {new Date(post.publishedAt).toLocaleDateString()}
                     </p>
-                    <p className="py-2 text-xl font-bold text-blue-dark">
+                    <p className="flex-grow py-2 text-xl font-bold text-blue-dark">
                       {post.title}
                     </p>
                     <p className="hidden md:line-clamp-4 md:block">

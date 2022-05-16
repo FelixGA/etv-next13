@@ -33,7 +33,6 @@ export default function Form(props) {
   const onSubmit = async (data, e) => {
     e.preventDefault();
     "data", data;
-    
 
     try {
       const result = await axios.post(`/api/handleForm`, data);
@@ -56,8 +55,8 @@ export default function Form(props) {
           onSubmit={handleSubmit(onSubmit, onError)}
           className={
             router.pathname !== "/kontakt"
-              ? "flex flex-col bg-white  px-1 "
-              : "flex flex-col px-4  bg-white shadow-dropdown xs:rounded-md mb-20"
+              ? "flex flex-col bg-white px-4 "
+              : "flex flex-col px-4  bg-white shadow-dropdown rounded-md mb-20"
           }
         >
           <div className="w-full">
@@ -162,7 +161,7 @@ export default function Form(props) {
             </p>
             <p> {errors.phone && "Phone ist erforderlich"}</p>
             <p className="text-red-500">
-              {errors.message && "Message ist erforderlich"}
+              {errors.message && "Nachricht ist erforderlich"}
             </p>
             <p className="text-red-500">
               {errors.checkbox &&
@@ -214,7 +213,7 @@ export default function Form(props) {
                   : setSend(false);
               }}
               type="submit"
-              className="flex-grow py-2 text-white transition rounded-lg bg-blue-darker hover:bg-blue-light"
+              className="flex-grow px-2 py-2 text-white transition rounded-lg bg-blue-darker hover:bg-blue-light"
             >
               Unverbindlich und kostenlos anfragen
             </button>
@@ -239,7 +238,7 @@ export default function Form(props) {
               />
             </div>
             {/* medal dsvgo image */}
-            <div className="relative w-28 ">
+            <div className="relative w-28 left-6">
               <Image
                 src="/images/siegel.png"
                 width={166}

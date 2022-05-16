@@ -10,14 +10,17 @@ import { useRouter } from "next/router";
 const variants = {
   enter: {
     y: -5000,
+
     opacity: 0,
   },
   center: {
     y: 0,
+
     opacity: 1,
   },
   exit: {
     y: -5000,
+
     opacity: 0,
   },
 };

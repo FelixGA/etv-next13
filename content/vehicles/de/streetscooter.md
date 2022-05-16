@@ -3,7 +3,6 @@ title: Streetscooter
 name: streetscooter
 price: 39990
 relatedBlogs: thg-foerderung-fuer-kleintransporter-von-ari
-
 relatedReviews: streetscooter-testbericht-von-elektrotransporter-vergleich
 description: Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von
   der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit
@@ -68,7 +67,7 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Befriedigend
+  key: Sterne
   value: 3.2
 guarantee:
   key: Garantie Fahrzeug
