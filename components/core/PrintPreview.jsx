@@ -7,7 +7,7 @@ import CarCardProps from "../ResultList/CarCardProps";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import RatingBox from "../../components/repeated/RatingBox";
+
 import styles from "../DetailsPage/Articles.module.css";
 import { MDXRemote } from "next-mdx-remote";
 import { FaArrowCircleLeft } from "react-icons/fa";
