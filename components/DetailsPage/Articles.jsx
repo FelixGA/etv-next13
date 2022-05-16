@@ -3,8 +3,7 @@ import Link from "next/link";
 
 import styles from "./Articles.module.css";
 import { MDXRemote } from "next-mdx-remote";
-import { FaArrowCircleLeft } from "react-icons/fa";
-import { AiOutlineStar } from "react-icons/ai";
+
 import StarsRating from "../repeated/StarsRating";
 import TestVerdict from "../repeated/TestVerdict";
 
@@ -18,20 +17,6 @@ const Articles = ({
   return (
     <>
       <div className="relative flex flex-col justify-center p-4 print:hidden bg-grey-lighter lg:flex-row ">
-        {/*      <div className="relative w-full m-auto lg:w-1/3">
-          <Image
-            src={carItem?.src}
-            alt={carItem?.title}
-            width={195}
-            height={140}
-            layout="responsive"
-            objectFit="contain"
-            className="rounded-l-lg"
-          />
-          <div className="absolute bottom-0 right-0 flex scale-75 md:p-4">
-            <RatingBox carItem={carItem} />
-          </div>
-        </div> */}
         <div className="flex flex-col flex-wrap lg:w-2/3 lg:px-6">
           <h3 className="w-full mt-4 text-2xl font-bold text-black-darkest">
             Testbericht von {carItem.title}
