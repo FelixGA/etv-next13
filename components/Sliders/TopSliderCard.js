@@ -51,39 +51,13 @@ const TopSliderCard = (props) => {
                 <p
                   className={
                     !sliderItem?.rating
-                      ? "px-2 text-sm text-center font-Inter text-blue-lighter line-clamp-5"
-                      : "px-2 text-sm text-center font-Inter text-blue-lighter line-clamp-2"
+                      ? "px-2 text-sm text-center font-Inter text-blue-light line-clamp-5"
+                      : "px-2 text-sm text-center font-Inter text-blue-light line-clamp-2"
                   }
                 >
                   {sliderItem?.description}
                 </p>
               </div>
-              {/* {sliderItem?.rating ? (
-                <div className="flex w-48 h-12 m-auto mt-8 bg-red-500 border border-blue-lighter">
-                  <div className="flex items-center justify-center w-16 h-full text-xs text-white bg-orange-dark">
-                    <span className="font-bold"> TEST</span>
-                  </div>
-                  <div className="flex flex-col justify-center w-full ">
-                    <div className="pt-10 ">
-                      <span className="text-xxs tracking-widest pl-2.5">
-                        ERGEBNIS
-                      </span>
-                    </div>
-                    <div className="flex flex-row pb-8">
-                      <div className="pb-2">
-                        <span className="relative pl-3 text-sm font-black tracking-widest bottom-1 ">
-                          {sliderItem?.rating.value}
-                        </span>
-                      </div>
-                      <div className="">
-                        <span className="relative bottom-1 pl-2.5 font-black text-sm ">
-                          {sliderItem?.rating.key}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ) : null} */}
               {sliderItem?.rating && (
                 <div className="flex justify-center pt-8">
                   <StarsRating stars={sliderItem?.rating.value} />

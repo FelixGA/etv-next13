@@ -1,5 +1,6 @@
 import FirstArticle from "./FiirstArticle";
 import SecondArticle from "./SecondArticle";
+
 const BlogArticles = ({ getMarkdownContext, getContent }) => {
   return (
     <div className=" lg:flex lg:flex-col h-fit">
