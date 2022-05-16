@@ -76,7 +76,7 @@ const Articles = ({
         </div>
       </div>
       <div className="flex justify-center">
-        <TestVerdict />
+        <TestVerdict stars={carItem?.rating.value} />
       </div>
       {/* other articles section */}
       {/* First Article */}{" "}

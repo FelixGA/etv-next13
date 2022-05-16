@@ -1,11 +1,9 @@
 import TestResult from "../repeated/TestResult";
 import { useState, useEffect } from "react";
-
+import StarsRating from "../repeated/StarsRating";
 
 export default function ActiveCompareEntries({ keys, comparedCars }) {
   const [entries, setEntries] = useState([]);
-  // console.log(comparedCars);
-  let testResultArr = comparedCars.map((test) => test.rating);
 
   useEffect(() => {
     if (!keys?.length > 0 || !comparedCars?.length > 0) return;
@@ -57,24 +55,28 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
       {entries.map((entry, index) => (
         <div key={index} className="relative h-full min-w-[160px]">
           {index == 0 ? (
-            <div className="flex items-end pb-1 flex-1 bg-white h-18 pl-4 lg:pl-8">
-              <h3 className="text-blue-extra text-2xl font-bold pb-2">
+            <div className="flex items-end flex-1 pb-1 pl-4 bg-white h-18 lg:pl-8">
+              <h3 className="pb-2 text-2xl font-bold text-blue-extra">
                 Grundlagen
               </h3>
             </div>
           ) : (
-            <div className="pt-1 lg:pt-4 flex items-center h-18 lg:pl-8 pb-2">
-              <TestResult testResultArr={testResultArr[index - 1]} />
+            <div className="flex items-center pt-1 pb-2 lg:pt-4 h-18 lg:pl-8">
+              <StarsRating
+                /* stars={testResultArr[index - 1]} */ stars={
+                  comparedCars[index - 1].rating.value
+                }
+              />
             </div>
           )}
           {/* ADDS THE CLASS TYPE AS FIRST LINE */}
           {index == 0 ? (
-            <div className="flex items-center  flex-1 bg-grey-lighter h-12 pl-4 lg:pl-8 ">
-              <p className="text-blue-extra text-sm lg:text-lg">Klasse</p>
+            <div className="flex items-center flex-1 h-12 pl-4 bg-grey-lighter lg:pl-8 ">
+              <p className="text-sm text-blue-extra lg:text-lg">Klasse</p>
             </div>
           ) : (
-            <div className="flex items-center  flex-1 bg-grey-lighter h-12 pl-4 lg:pl-8">
-              <p className="text-blue-extra text-sm lg:text-lg ">
+            <div className="flex items-center flex-1 h-12 pl-4 bg-grey-lighter lg:pl-8">
+              <p className="text-sm text-blue-extra lg:text-lg ">
                 {" "}
                 {comparedCars[index - 1].typeClass}
               </p>
@@ -90,7 +92,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
                   : "bg-white flex items-center h-12"
               }`}
             >
-              <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
+              <p className="pl-4 text-sm text-blue-extra lg:text-lg lg:pl-8">
                 {value || "-"}
               </p>
             </div>

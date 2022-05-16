@@ -58,7 +58,7 @@ export default function Details(props) {
         {/*sticky popup  */}
         <PrintPopUp carItem={carItem} />
       </div>
-      <div className="print:block hidden">
+      <div className="hidden print:block">
         <PrintPreview
           carItem={carItem}
           getBlogContext={getBlogContext}
@@ -84,8 +84,7 @@ export async function getStaticProps(context) {
   });
   vehicles = vehicles
     .filter((item, index) => item.category === vehicle.category)
-    .filter((item, index) => item.name !== context.params.cartitle)
-    .slice(0, 4);
+    .filter((item, index) => item.name !== context.params.cartitle);
   let brands = await getContent("brands", context.locale);
 
   /* get related reviews*/

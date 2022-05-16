@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { useRouter } from "next/router";
 import CarCardProps from "./CarCardProps";
+import TestVerdictVertical from "../repeated/TestVerdictVertical";
 
 function CarCardDetailsDesktop({ carItem }) {
   const router = useRouter();
@@ -50,13 +51,10 @@ function CarCardDetailsDesktop({ carItem }) {
           <CarCardProps details={carItem?.maxSpeed} image={image3} />
         </div>
 
-        <div className="items-center justify-center flex-1 hidden 2xl:flex">
-         
-          <div className="flex flex-col items-center h-32 border-2 w-28 justify-evenly">
-            <p>rating</p>{" "}
-            <div className="scale-75 ">
-              <StartsRating stars={carItem?.rating.value} />
-            </div>
+        <div className="relative items-center justify-center flex-1 hidden 2xl:flex">
+          <div className="relative bottom-1 flex flex-col items-center w-36 h-40 scale-[88%] justify-evenly">
+            {/* <StartsRating stars={carItem?.rating.value} /> */}
+            <TestVerdictVertical stars={carItem?.rating.value} />
           </div>
         </div>
       </div>

@@ -30,7 +30,6 @@ const TopSlider = ({ getBlogContext, getCars }) => {
   /* console.log(
     sliderData.sort((a, b) => sellingRanking[a.name] - sellingRanking[b.name])
   ); */
-  console.log();
   useEffect(() => {
     setSliderData(getBlogContext ? [getBlogContext].concat(getCars) : getCars);
   }, [getCars]);
