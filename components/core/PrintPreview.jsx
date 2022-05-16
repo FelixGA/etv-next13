@@ -1,8 +1,8 @@
 import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
-import image from "../../public/images/reichweite@2x.png";
-import image2 from "../../public/images/zuladung@2x.png";
-import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
-import image4 from "../../public/images/ladezeit@2x.png";
+import image from "/public/images/reichweite@2x.png";
+import image2 from "/public/images/zuladung@2x.png";
+import image3 from "/public/images/hoechstgeschwindigkeit@2x.png";
+import image4 from "/public/images/ladezeit@2x.png";
 import CarCardProps from "../ResultList/CarCardProps";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -24,7 +24,7 @@ export default function PrintPreview({
   return (
     <div className="w-screen print:text-[8px] flex flex-col ">
       {/* header */}
-      <div className="w-screen h-[50px] text-lg text-white flex justify-between bg-blue-darker mb-4">
+      <div className="w-screen h-[50px] text-lg text-white flex justify-between bg-blue-darker mb-2">
         <h2 className="text-white">Fahrzeugübersicht</h2>
         <div className=" w-[90px]">
           <img src="/images/etv-logo-final.png" />
@@ -34,8 +34,10 @@ export default function PrintPreview({
           <img src="/images/etv-logo-final.png" alt="test" />
         </div>
       </div>
-      <div className="w-screen flex">
-        <div className="flex w-1/2 flex-col flex-wrap">
+      <div className="w-screen flex flex-col">
+        {/* details , price  etc */}
+
+        <div className="flex w-full flex-col h-screen flex-wrap">
           {/* basics photo etc */}
           <div className="flex w-1/4 ">
             <img
@@ -50,30 +52,55 @@ export default function PrintPreview({
               </div>
               <div className="flex flex-row print:text-[14px] ">
                 <div className="flex flex-col mx-2">
+                  <img
+                    src="/images/etv-logo-final.png"
+                    alt={carItem?.title}
+                    className="mr-8  w-full object-cover"
+                  />
                   <p className="text-blue-dark">
                     {carItem?.rangeLithium.value}
-                  </p>{" "}
-                  Reichweite{" "}
+                  </p>
+                  Reichweite
                 </div>
                 <div className="flex flex-col mx-2">
+                  <img
+                    src={carItem?.src}
+                    alt={carItem?.title}
+                    className="mr-8  w-full object-cover"
+                  />
                   <p className="text-blue-dark">
                     {carItem?.chargingTimeLithium.value}
                   </p>
-                  Ladezeit{" "}
+                  Ladezeit
                 </div>
                 <div className="flex flex-col mx-2">
+                  <img
+                    src={carItem?.src}
+                    alt={carItem?.title}
+                    className="mr-8  w-full object-cover"
+                  />
                   <p className="text-blue-dark">
                     {carItem?.loadingWeight.value}
-                  </p>{" "}
-                  Zuladung{" "}
+                  </p>
+                  Zuladung
                 </div>
                 <div className="flex flex-col mx-2">
+                  <img
+                    src={carItem?.src}
+                    alt={carItem?.title}
+                    className="mr-8  w-full object-cover"
+                  />
                   <p className="text-blue-dark">{carItem?.maxSpeed.value}</p>
-                  V-Max{" "}
+                  V-Max
                 </div>
                 <div className="flex flex-col mx-2">
+                  <img
+                    src={carItem?.src}
+                    alt={carItem?.title}
+                    className="mr-8  w-full object-cover"
+                  />
                   <p className="text-blue-dark">{carItem?.category}</p>
-                  Kategorie{" "}
+                  Kategorie
                 </div>
               </div>
               <div className="flex flex-row  ">
@@ -87,7 +114,7 @@ export default function PrintPreview({
           </div>
           {/* texh details */}
           <div className="flex w-full">
-            <div className="flex flex-wrap print:text-[8px] ">
+            <div className="flex  w-full flex-wrap scale-125 mx-auto my-4 ">
               <TechnicalDetails carItem={carItem} />
             </div>
           </div>
@@ -115,57 +142,65 @@ export default function PrintPreview({
                   .splice(getCarsReview?.content.length - 1)}
               </div>
             )}
-            <div className=" ml-4 flex w-1/4 h-auto">
-              <TestVerdict />
-            </div>
           </div>
         </div>
 
         {/* test bericht */}
-        <div className="flex w-1/2 print:text-[8px]">
-          <div className="flex flex-col flex-wrap">
-            <div className="">
-              {getTestReview && (
-                <div className="grid grid-cols-2 gap-4 auto-rows-min	">
-                  {/* rg */}
-                  {getCarsReview?.content
-                    ?.map((infos, index) => (
-                      <div
-                        key={index}
-                        className={`${styles.flexbox} "bg-green-500"`}
-                      >
-                        <div className="flex">
-                          <h2 className=" print:text-[12px] leading-4">
-                            {infos.title}
-                          </h2>
+        <div className="flex w-full h-screen print:text-[10px] flex-col my-2 flex-wrap ">
+          <div className="flex flex-row flex-wrap justify-around">
+            {getTestReview && (
+              <div className={`${styles.containerLeft}`}>
+                {/* rg */}
+                {getCarsReview?.content
+                  ?.map((infos, index) => (
+                    <div key={index} className={`${styles.flexbox}`}>
+                      <div className="flex items-center justify-start">
+                        <h2 className=" print:text-[12px] leading-4">
+                          {infos.title}
+                        </h2>
 
-                          <div className="scale-50">
-                            {infos.stars ? (
-                              <StarsRating stars={infos.stars} />
-                            ) : null}
-                          </div>
-                        </div>
-                        <div className="h-auto">
-                          <MDXRemote {...getTestReview[index]} />
+                        <div className="scale-50">
+                          {infos.stars ? (
+                            <StarsRating stars={infos.stars} />
+                          ) : null}
                         </div>
                       </div>
-                    ))
-                    .splice(0, getCarsReview?.content.length - 1)}
+                      <div className="h-auto">
+                        <MDXRemote {...getTestReview[index]} />
+                      </div>
+                    </div>
+                  ))
+                  .slice(0, 3)}
+              </div>
+            )}
+            {getTestReview && (
+              <div className={`${styles.containerRight}`}>
+                {/* rg */}
+                {getCarsReview?.content
+                  ?.map((infos, index) => (
+                    <div key={index} className={`${styles.flexbox}`}>
+                      <div className="flex items-center justify-start">
+                        <h2 className=" print:text-[12px] leading-4">
+                          {infos.title}
+                        </h2>
+
+                        <div className="scale-50">
+                          {infos.stars ? (
+                            <StarsRating stars={infos.stars} />
+                          ) : null}
+                        </div>
+                      </div>
+                      <div className="h-auto">
+                        <MDXRemote {...getTestReview[index]} />
+                      </div>
+                    </div>
+                  ))
+                  .slice(4, getCarsReview?.content.length - 1)}
+                <div className=" m-auto">
+                  <TestVerdict />
                 </div>
-              )}
-            </div>
-            {/* {getCarsReview && (
-            <Link href={`/magazin/reviews/${getCarsReview?.slug}`}>
-              <a target="_blank" className="text-blue-500">
-                <button
-                  // disabled={getTestReview ? true : false}
-                  className="flex items-center justify-center w-48 my-6 text-white rounded-md bg-blue-dark h-14 print:hidden"
-                >
-                  Testbericht lesen
-                </button>
-              </a>
-            </Link>
-          )} */}
+              </div>
+            )}
           </div>
         </div>
       </div>

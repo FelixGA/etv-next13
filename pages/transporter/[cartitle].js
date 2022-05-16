@@ -84,8 +84,7 @@ export async function getStaticProps(context) {
   });
   vehicles = vehicles
     .filter((item, index) => item.category === vehicle.category)
-    .filter((item, index) => item.name !== context.params.cartitle)
-    .slice(0, 4);
+    .filter((item, index) => item.name !== context.params.cartitle);
   let brands = await getContent("brands", context.locale);
 
   /* get related reviews*/
@@ -101,8 +100,8 @@ export async function getStaticProps(context) {
           item?.relatedCars.includes(vehicle?.relatedReviews.slice(0, -45)) */
       )
     : null;
-  console.log(vehicle?.relatedReviews == carsreviews[7].slug);
-
+  /*  console.log(vehicle?.relatedReviews);
+  console.log(carsreviews.map((it) => it.slug)); */
   /* catching errors in case there is no carsreview yet */
   let getTestReview = null;
 
