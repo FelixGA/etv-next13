@@ -51,7 +51,7 @@ function CarCardDetailsDesktop({ carItem }) {
         </div>
 
         <div className="items-center justify-center flex-1 hidden 2xl:flex">
-          {/* <RatingBox carItem={carItem} /> */}
+         
           <div className="flex flex-col items-center h-32 border-2 w-28 justify-evenly">
             <p>rating</p>{" "}
             <div className="scale-75 ">

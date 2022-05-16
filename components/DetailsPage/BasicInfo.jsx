@@ -45,7 +45,7 @@ const BasicInfo = ({ carItem }) => {
                 {carItem.title}
               </h2>
               <div className="px-2 w-36 md:px-4 print:hidden">
-                {/* <RatingBox carItem={carItem} /> */}
+               
 
                 <div className="flex flex-col items-center h-32 border-2 w-28 justify-evenly">
                   <p>rating</p>{" "}
