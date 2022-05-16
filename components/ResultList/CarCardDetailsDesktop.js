@@ -7,10 +7,8 @@ import Link from "next/link";
 
 import { useRouter } from "next/router";
 import CarCardProps from "./CarCardProps";
-// import RatingBox from "../repeated/RatingBox";
 
 function CarCardDetailsDesktop({ carItem }) {
-  // let carItem = props.carItem;
   const router = useRouter();
 
   return (

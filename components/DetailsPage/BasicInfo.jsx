@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CarCardDetailsMobile from "../../components/ResultList/CarCardDetailsMobile";
 import CarCardDetailsDesktop from "../../components/ResultList/CarCardDetailsDesktop";
-import RatingBox from "../../components/repeated/RatingBox";
+
 import Image from "next/image";
 import StarsRating from "../repeated/StarsRating";
 const BasicInfo = ({ carItem }) => {
