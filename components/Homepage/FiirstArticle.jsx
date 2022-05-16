@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "../Homepage/firstArticle.module.css";
 export default function FirstArticle({ getMarkdownContext, getContent }) {
   // (<MDXRemote {...getMarkdownContext.eAutoAdvisor} />);
+
   return (
     <div className="flex px-8 xl:px-16 2xl:pl-72 2xl:pr-52 h-fit lg:h-64 xl:h-80">
       <div className="flex flex-col flex-1 pt-4 xl:flex-1">
@@ -34,7 +35,7 @@ export default function FirstArticle({ getMarkdownContext, getContent }) {
           src="/images/kaufberaterCar.png"
           width={600}
           height={450}
-          className="blog-article-two-image"
+          alt="blog-article-two-image"
           objectFit="contain"
         />
       </div>

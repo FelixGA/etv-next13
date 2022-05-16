@@ -69,7 +69,7 @@ const Header = () => {
                 src="/images/etv-logo-final-white.png"
                 width={80}
                 height={60}
-                className="logo"
+                alt="logo"
                 objectFit="cover"
                 layout="responsive"
               />

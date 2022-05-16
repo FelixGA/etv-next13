@@ -22,18 +22,15 @@ const sellingRanking = {
 
 const TopSlider = ({ getBlogContext, getCars }) => {
   const container = useRef();
-  // const style = { color: "black" };
 
   const [sliderData, setSliderData] = useState(
     getBlogContext ? [getBlogContext].concat(getCars) : getCars
   );
-  /* console.log(
-    sliderData.sort((a, b) => sellingRanking[a.name] - sellingRanking[b.name])
-  ); */
+
   useEffect(() => {
     setSliderData(getBlogContext ? [getBlogContext].concat(getCars) : getCars);
   }, [getCars]);
-  // const style = { color: "black" };
+
   return (
     <div className="relative pb-8">
       <div className="flex justify-center overflow-hidden ">
@@ -61,6 +58,7 @@ const TopSlider = ({ getBlogContext, getCars }) => {
               src="/images/swipe.gif"
               width={100}
               height={100}
+              alt="swipe"
               layout="responsive"
               objectFit="contain"
             ></Image>
@@ -96,16 +94,6 @@ const TopSlider = ({ getBlogContext, getCars }) => {
           </div>
         </div>
       </div>
-
-      {/* <div className="relative w-12  bottom-[455px] left-4 2xl:hidden rounded-full bg-white border selection:border-gray-50 p-1">
-        <Image
-          src="/images/swipe.gif"
-          width={100}
-          height={100}
-          layout="responsive"
-          objectFit="contain"
-        ></Image>
-      </div> */}
     </div>
   );
 };

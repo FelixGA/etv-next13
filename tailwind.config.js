@@ -4,6 +4,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      custom: ["Inter", "sans-serif"],
+    },
+
     extend: {
       gridTemplateColumns: {
         "auto-fit": "repeat(auto-fit, minmax(130px, 1fr))",
