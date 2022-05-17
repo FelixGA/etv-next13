@@ -97,9 +97,6 @@ content:
 
 
       Wie seine Geschwistermodelle ist der Toyota Proace Electric ist ein recht hochwertiger Kastenwagen, welcher zudem mit einer recht hohen Reichweite punktet. Auch die Akku-Garantie ist sehr bemerkenswert. Der Laderaum ist sehr geräumig und einfach beladbar und es gibt viele praktische Ausstattungsdetails, wodurch der eJumpy speziell für Lieferanten und HandProacewerker sehr interessant sein dürfte. Allerdings ist das Fahrzeug nicht gerade günstig. Die -Modelle kosten 8.000 bis 10.000 Euro netto mehr als das vergleichbare Verbrenner-Modell. Dadurch könnte das Fahrzeug für einige Interessenten schlich nicht erschwinglich sein.
-
-
-      #### Testurteil: 3,8 Sterne
     title: Fazit
     stars: 3.8
 ---

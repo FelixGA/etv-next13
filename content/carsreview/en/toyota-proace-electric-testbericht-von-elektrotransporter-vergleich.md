@@ -62,7 +62,7 @@ content:
 
       Leider gibt es bei elektrischen Vivaro nicht wie beim Schwestermodell Citroen Jumpy eine speziell für Baustellen ausgerüstete Variante mit erhöhter Bodenfreiheit und einem Motorschutz sowie einer erhöhten Nutzlast von rund 1.150 Kilogramm. Allerdings sind gegen Aufpreis Optionen wie Bodenplatte aus Holz im Laderaum und eine Trennwand erhältlich.
     title: Komfort & Ausstattung
-    stars: 4
+    stars: 5
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -97,9 +97,6 @@ content:
 
 
       Wie seine Geschwistermodelle ist der Toyota Proace Electric ist ein recht hochwertiger Kastenwagen, welcher zudem mit einer recht hohen Reichweite punktet. Auch die Akku-Garantie ist sehr bemerkenswert. Der Laderaum ist sehr geräumig und einfach beladbar und es gibt viele praktische Ausstattungsdetails, wodurch der eJumpy speziell für Lieferanten und HandProacewerker sehr interessant sein dürfte. Allerdings ist das Fahrzeug nicht gerade günstig. Die -Modelle kosten 8.000 bis 10.000 Euro netto mehr als das vergleichbare Verbrenner-Modell. Dadurch könnte das Fahrzeug für einige Interessenten schlich nicht erschwinglich sein.
-
-
-      #### Testurteil: 3,6
     title: Fazit
-    stars: 3.6
+    stars: 3.8
 ---

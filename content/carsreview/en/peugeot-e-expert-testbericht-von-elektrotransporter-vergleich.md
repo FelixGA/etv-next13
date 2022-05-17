@@ -97,9 +97,6 @@ content:
 
 
       Der Peugeot e-Expert ist wie seine Geschwister ein recht hochwertiger Kastenwagen, welcher zudem mit einer recht hohen Reichweite punktet. Der Laderaum ist sehr geräumig und einfach beladbar und es gibt viele praktische Ausstattungsdetails für den Berufsalltag, wodurch der Kastenwagen speziell für Lieferanten und Handwerker sehr interessant sein dürfte. Allerdings ist das Fahrzeug nicht gerade günstig. Die e-Expert-Modelle kosten 8.000 bis 10.000 Euro netto mehr als das vergleichbare Verbrenner-Modell. Dadurch könnte das Fahrzeug für einige Interessenten schlich nicht erschwinglich sein.
-
-
-      #### Testurteil: 3,6 Sterne
     title: Fazit
     stars: 3.6
 ---

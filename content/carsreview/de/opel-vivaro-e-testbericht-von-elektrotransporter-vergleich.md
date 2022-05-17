@@ -97,9 +97,6 @@ content:
 
 
       Der Opel Vivaro-E Cargo ist ein recht hochwertiger Kastenwagen, welcher zudem mit einer recht hohen Reichweite punktet. Der Laderaum ist sehr geräumig und einfach beladbar und es gibt viele praktische Ausstattungsdetails für den Berufsalltag, wodurch der Vivaro-E Cargo speziell für Lieferanten und Handwerker sehr interessant sein dürfte. Allerdings ist das Fahrzeug nicht gerade günstig. Die Vivaro-Modelle mit Elektroantrieb kosten 8.000 bis 10.000 Euro netto mehr als das vergleichbare Verbrenner-Modell. Dadurch könnte das Fahrzeug für einige Interessenten schlich nicht erschwinglich sein.
-
-
-      #### Testurteil: 3,6
     title: Fazit
     stars: 3.6
 ---

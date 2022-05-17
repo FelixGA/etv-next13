@@ -96,9 +96,6 @@ content:
 
 
       Der Mercedes-Benz eSprinter ist besonders durch seinen riesigen Laderaum von 11 m³ für den Waren- und Gütertransport von großen Lademengen interessant. Aber auch in Sachen Komfort ist das Fahrzeug anderen Nutzfahrzeugen überlegen. Die Elektroversion bietet sich aber vorerst nur für den Stadtverkehr oder kürzere Überlandstrecken an, da die angegeben Reichweiten mit Ladung wohl nicht zu erreichen sind.
-
-
-      #### Testurteil: 3,6
     title: Fazit
     stars: 4
 ---
