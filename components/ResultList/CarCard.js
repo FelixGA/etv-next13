@@ -5,10 +5,11 @@ import CarCardDetailsMobile from "./CarCardDetailsMobile";
 import { useStore } from "../store";
 import Link from "next/link";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import MobileTestResult from "../repeated/MobileTestResult";
+
 import ButtonCompare from "../repeated/ButtonCompare";
 import ButtonAnfragen from "../repeated/ButtonAnfragen";
 import usePrice from "../../hooks/usePrice";
+import StarsRating from "../repeated/StarsRating";
 
 function CarCard({ carItem }) {
   /* HOOKS */
@@ -18,7 +19,7 @@ function CarCard({ carItem }) {
 
   return (
     <div className="mb-4 overflow-hidden border-t shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter lg:rounded-xl">
-      <div className="flex sm:flex-row">
+      <div className="relative flex sm:flex-row">
         <div className="relative flex flex-col justify-between flex-1 pl-2 lg:pl-0">
           <Link href={`/transporter/${carItem.name}`}>
             <a>
@@ -51,7 +52,7 @@ function CarCard({ carItem }) {
           <CarCardDetailsDesktop carItem={carItem} />
         </div>
         {/* DIVIDER start*/}
-        <div className=" hidden 2xl:block w-[1px] h-32 mt-16 bg-grey-border mr-4"></div>
+        <div className="relative top-6 hidden 2xl:block w-[1px] h-32 mt-16 bg-grey-border mr-4"></div>
         {/* DIVIDER end */}
         {/* CONTAINER FOR PRICE AND BUTTONS start */}
         <div className="flex flex-col items-end justify-center px-4 pt-4 mb-4 lg:justify-between sm:w-fit xl:items-center">
@@ -60,15 +61,15 @@ function CarCard({ carItem }) {
             <p className="pb-2 text-xl font-black text-right text-green-light xl:text-2xl md:pr-2 2xl:mt-4">
               ab {price}
             </p>
-            <div className="pb-2 lg:hidden sm:pb-0 ">
+            <div className="pb-2 xl:mt-8 2xl:hidden sm:pb-0">
               {/* {mobileRatingBox} */}
-              <MobileTestResult carItem={carItem} />
+              <StarsRating stars={carItem?.rating.value} />
             </div>
           </div>
 
           {/* PRICE + MOBILE RATING BOX end*/}
           {/* BUTTONS start */}
-          <div className="flex flex-col justify-end flex-1 sm:justify-center">
+          <div className="relative flex flex-col justify-end flex-1 2xl:right-2 sm:justify-center">
             <div className="pb-1">
               <ButtonAnfragen carItem={carItem.title} />
             </div>

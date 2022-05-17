@@ -11,7 +11,7 @@ export default function SecondArticle({ getMarkdownContext, getContent }) {
           src="/images/whatsapp-image-2022-04-27-at-22.26.12.jpeg"
           width={400}
           height={300}
-          className="blog-article-two-image"
+          alt="blog-article-two-image"
           layout="responsive"
           objectFit="contain"
         />

@@ -1,7 +1,7 @@
 ---
-title: datenschutzerklaerung
+title: Datenschutzerklärung
 path: /dataprotection
-description: datenschutzerklaerung
+description: Datenschutzerklärung
 src: /images/medal.png
 content:
   - markdown: >-

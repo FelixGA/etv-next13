@@ -106,10 +106,10 @@ const Footer = ({ blogs, brands }) => {
               <Link href={"/"}>
                 <a>
                   <Image
-                    className=""
                     src="/images/etv-logo-final-white.png"
                     width={60}
                     height={40}
+                    alt="logo-footer"
                     objectFit="contain"
                     layout="responsive"
                   />
@@ -118,8 +118,8 @@ const Footer = ({ blogs, brands }) => {
             </div>
             <div className="w-fit sm:w-1/2 print:hidden">
               <Link href={"/"}>
-                <a>
-                  <p className="pr-4 text-xs font-bold text-white cursor-pointer sm:pr-0 sm:text-base">
+                <a aria-label="home">
+                  <p className="pr-4 text-xs font-bold text-white cursor-pointer sm:pr-0 sm:text-md">
                     ELEKTROTRANSPORTER
                     <br />
                     VERGLEICH
@@ -140,21 +140,21 @@ const Footer = ({ blogs, brands }) => {
           <div className="flex justify-between pt-2 pb-8 w-28 lg:w-40 sm:pl-4">
             <div className="transition cursor-pointer hover:scale-110">
               <Link href="https://www.facebook.com">
-                <a target="_blank">
+                <a aria-label="facebook" target="_blank">
                   <BsFacebook size={25} fill="#fff" />
                 </a>
               </Link>
             </div>
             <div className="transition cursor-pointer hover:scale-110">
               <Link href="https://www.youtube.com">
-                <a target="_blank">
+                <a aria-label="youtube" target="_blank">
                   <BsYoutube size={30} fill="#fff" />
                 </a>
               </Link>
             </div>
             <div className="transition cursor-pointer hover:scale-110">
               <Link href="https://www.linkedin.com">
-                <a target="_blank">
+                <a aria-label="linkedin" target="_blank">
                   <BsLinkedin size={25} fill="#fff" />
                 </a>
               </Link>

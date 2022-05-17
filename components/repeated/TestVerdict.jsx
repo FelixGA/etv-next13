@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import StarsRating from "./StarsRating";
 
-const TestVerdict = () => {
+const TestVerdict = ({ stars }) => {
   return (
     <div className="flex flex-col w-[230px]  xs:w-[270px] pt-4">
       <div className="text + stars + icon flex justify-between relative">
@@ -11,7 +11,7 @@ const TestVerdict = () => {
             TESTURTEIL
           </p>
           <div className="xs:pl-3 xs:scale-[120%]">
-            <StarsRating stars={3} />
+            <StarsRating stars={stars} />
           </div>
         </div>
         <div className="absolute right-0 xs:right-4 w-[115px] -top-6">

@@ -58,7 +58,7 @@ export default function Details(props) {
         {/*sticky popup  */}
         <PrintPopUp carItem={carItem} />
       </div>
-      <div className="print:block hidden">
+      <div className="hidden print:block">
         <PrintPreview
           carItem={carItem}
           getBlogContext={getBlogContext}
@@ -90,18 +90,21 @@ export async function getStaticProps(context) {
   /* get related reviews*/
   let carsreviews = await getContent("carsreview", context.locale);
   let carsreview = carsreviews?.find(
-    (item) => vehicle?.relatedReviews == item.slug
-    /*  ||
-      item?.relatedCars?.includes(vehicle?.relatedReviews.slice(0, -45)) */
+    (item) =>
+      vehicle?.relatedReviews == item.slug ||
+      item?.relatedCars?.includes(vehicle?.relatedReviews.slice(0, -45))
   )
     ? carsreviews.find(
-        (item) => vehicle?.relatedReviews == item.slug
-        /*   ||
-          item?.relatedCars.includes(vehicle?.relatedReviews.slice(0, -45)) */
+        (item) =>
+          vehicle?.relatedReviews == item.slug ||
+          item?.relatedCars.includes(vehicle?.relatedReviews.slice(0, -45))
       )
     : null;
-  /*  console.log(vehicle?.relatedReviews);
-  console.log(carsreviews.map((it) => it.slug)); */
+  /* console.log("ALL REVIEWS", vehicle?.relatedReviews);
+  console.log(
+    "ALL SLUGS",
+    carsreviews.map((it) => it.slug)
+  ); */
   /* catching errors in case there is no carsreview yet */
   let getTestReview = null;
 
