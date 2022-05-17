@@ -87,9 +87,6 @@ content:
 
 
       Man merkt, dass der VW ABT e-Transporter 6.1 kein eigen entwickeltes Elektrofahrzeug ist, sondern ein umgebauter Verbrenner-T6. Dadurch ist er nicht nur deutlich teurer als das herkömmliche Fahrzeug, sondern basiert auch auf dessen Technik. Im Falle des Doppelkupplungsgetriebes ist das eher unglücklich. Auch in Sachen Reichweite kann das Fahrzeug nicht mit der aktuellen Konkurrenz mithalten. Es ist daher fraglich, ob der e-Transporter wirklich viele Käufer überzeugen kann.
-
-
-      #### Testurteil: 2,4
     title: Fazit
     stars: 2.4
 ---
