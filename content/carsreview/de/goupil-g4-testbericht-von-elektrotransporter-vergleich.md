@@ -79,10 +79,7 @@ content:
       ### Fazit
 
 
-      Der Goupil G4 eignet sich für diverse Einsatzfelder. Die Pritschen- beziehungsweise Kipper-Version ist perfekt für Baufirmen oder Landschaftsgärtner. Die Koffer-Version eignet sich für Lieferunternehmen, Handwerker oder Dienstleister. Die zusätzlichen Aufbauten erweitern zudem das Einsatzspektrum. Ebenso lässt sich der Goupil G4 in der Intralogistik auf Werksgeländen einsetzen. Dank der 50 km/h Höchstgeschwindigkeit lässt er sich im Gegensatz zum kleineren G2 auch problemlos im Stadtverkehr bewegen. 
-
-
-      #### Testurteil: 3,2
+      Der Goupil G4 eignet sich für diverse Einsatzfelder. Die Pritschen- beziehungsweise Kipper-Version ist perfekt für Baufirmen oder Landschaftsgärtner. Die Koffer-Version eignet sich für Lieferunternehmen, Handwerker oder Dienstleister. Die zusätzlichen Aufbauten erweitern zudem das Einsatzspektrum. Ebenso lässt sich der Goupil G4 in der Intralogistik auf Werksgeländen einsetzen. Dank der 50 km/h Höchstgeschwindigkeit lässt er sich im Gegensatz zum kleineren G2 auch problemlos im Stadtverkehr bewegen.
     title: Fazit
     image: /images/g4-2100x2400-1-1344x1536.jpeg
     stars: 3.2
