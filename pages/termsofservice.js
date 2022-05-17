@@ -10,7 +10,7 @@ export default function termsofservice(props) {
     SetGetContent(props.context);
   }, [props]);
   return (
-    <div className="flex flex-col flex-wrap justify-between py-6 mx-6 text-sm leading-8 text-center bg-grey-lightest lg:mx-36 lg:pl-16 lg:text-2xl lg:text-left 2xl:mx-72">
+    <div className="flex flex-col flex-wrap justify-between mx-6 py-6 text-center text-sm leading-8 bg-grey-lightest lg:mx-36 lg:pl-16 lg:text-2xl  lg:text-left 2xl:mx-72">
       <Head page={props.page} />
       <MDXRemote {...getContent.termsofservice} />
     </div>

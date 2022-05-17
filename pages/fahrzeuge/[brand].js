@@ -46,7 +46,7 @@ export default function Details(props) {
           </div>
 
           <div className="px-4 2xl:px-48">
-            <div className="py-4 text-xl">
+            <div className="py-4 text-xl ">
               {props.getContext ? <MDXRemote {...props.getContext} /> : null}
             </div>
           </div>
