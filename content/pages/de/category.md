@@ -1,6 +1,6 @@
 ---
 title: category
 path: /category
-description: seo
+description: Kategorien
 src: /images/Arrow-right-512.png
 ---
