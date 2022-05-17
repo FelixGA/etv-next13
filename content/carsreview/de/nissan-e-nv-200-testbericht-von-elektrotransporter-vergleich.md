@@ -105,9 +105,6 @@ content:
 
 
       Für Unternehmen mit viel Überlandfahrten ist der e-NV200 weniger geeignet, da die vom Hersteller angegebene Reichweite mit Vorsicht zu genießen ist und gerade mit Beladung deutlich sinken dürfte. Mit der Kleinbus-Version “Evalia” bietet Nissan außerdem eine Alternative für Firmen an, die eher ein Fahrzeug für die Personenbeförderung benötigen, aber trotzdem im “Notfall” Platz für Waren haben möchten.
-
-
-      #### Testurteil: 3,4 Sterne
     title: Fazit
     stars: 3.2
 ---

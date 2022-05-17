@@ -96,9 +96,6 @@ content:
 
 
       Der Tropos Able ist ein leichter Elektrotransporter, der speziell für Kommunen sowie Industrie und Handwerk geeignet ist. Durch sein hohes Gewicht scheint er für den Landschaftsbau allerdings weniger geeignet. Trotz seiner geringen Außenmaße ergeben sich je nach Aufbau praktische Transportlösungen mit einer guten Raumausnutzung. Durch die drei angebotenen Batterie-Varianten kann der Kunde außerdem zwischen einem niedrigerem Preis und einer höheren Reichweite abwägen.
-
-
-      #### Testurteil: 3 Sterne
     title: Fazit
     stars: 3
 ---

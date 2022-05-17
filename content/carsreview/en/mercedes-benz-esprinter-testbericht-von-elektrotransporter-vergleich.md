@@ -61,7 +61,7 @@ content:
       So sind optional Helfer wie ein Rückfahrkamera und ein Totwinkel-Assistent verfügbar, welche bei der Größe und Unübersichtlichkeit des Fahrzeugs nützlich sein können. Weitere Extras sind zum Beispiel eine Klimaanlage sowie ein LED-Lichtband zur Beleuchtung des Laderaums. Auch ein dritter Sitzplatz in der Kabine ist gegen Aufpreis verfügbar.
     title: Komfort & Ausstattung
     image: /images/mb-esprinter-innenraum.jpg
-    stars: 4
+    stars: 5
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -96,9 +96,6 @@ content:
 
 
       Der Mercedes-Benz eSprinter ist besonders durch seinen riesigen Laderaum von 11 m³ für den Waren- und Gütertransport von großen Lademengen interessant. Aber auch in Sachen Komfort ist das Fahrzeug anderen Nutzfahrzeugen überlegen. Die Elektroversion bietet sich aber vorerst nur für den Stadtverkehr oder kürzere Überlandstrecken an, da die angegeben Reichweiten mit Ladung wohl nicht zu erreichen sind.
-
-
-      #### Testurteil: 3,4 Sterne
     title: Fazit
-    stars: 3.4
+    stars: 4
 ---
