@@ -52,7 +52,7 @@ function CarCardDetailsDesktop({ carItem }) {
         </div>
 
         <div className="relative items-center justify-center flex-1 hidden 2xl:flex">
-          <div className="relative bottom-1 flex flex-col items-center w-36 h-40 scale-[88%] justify-evenly">
+          <div className="relative bottom-1 flex flex-col items-center w-36 h-40 scale-75 2xl:scale-[83%] justify-evenly">
             {/* <StartsRating stars={carItem?.rating.value} /> */}
             <TestVerdictVertical stars={carItem?.rating.value} />
           </div>
