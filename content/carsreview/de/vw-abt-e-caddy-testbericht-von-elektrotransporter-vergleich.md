@@ -89,9 +89,6 @@ content:
 
 
       Der VW e-Crafter war mit der erste der großen Elektro-Liefertransporter auf dem deutschen Markt. Mit seinem großen Platzangebot, seiner Nutzlast bis zu 1,72 Tonnen und der extrem komfortablen Ausstattung macht er ordentlich was her. Der MAN eTGE steht dem in nichts nacht. Gerade für den urbanen Lieferverkehr stellt das Fahrzeug eine echte elektrische Alternative dar.
-
-
-      #### Testurteil: 3,6
     title: Fazit
     stars: 3.6
 ---
