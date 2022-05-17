@@ -86,9 +86,6 @@ content:
 
 
       Das Fahrzeug ist zwar wirklich günstig, aber auch sehr simpel und spartanisch ausgestattet. Leider macht der Händler wenig Angaben zu technischen Daten des Fahrzeugs. Das Lastentrike  eignet sich wohl am besten für den Einsatz auf Privatgelände oder auf dem Land. Möglich Einsatzfelder des Fahrzeugs sind Landwirtschafts-, Bau- oder Handwerksbetriebe. Für Lieferdienste im urbanen Raum eignet sich die Pritsche weniger.
-
-
-      #### Testurteil: 1,6
     title: Fazit
     stars: 1.6
     image: ""
