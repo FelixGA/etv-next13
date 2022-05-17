@@ -82,9 +82,6 @@ content:
 
 
       Mit dem e-Caddy haben VW und ABT einen Elektrotransporter auf dem Markt, der dank cleverer Akku-Verbauung mit einem hohen Ladevolumen punkten kann. Auch die Reichweiten sind für ein Fahrzeug dieser Leistung recht ordentlich. Dass das Fahrzeug nur als Leasingmodell verfügbar ist, könnte allerdings  manche potenziellen Kunden abschrecken.
-
-
-      #### Testurteil: 3 Sterne
     title: Fazit
     stars: 3
 ---
