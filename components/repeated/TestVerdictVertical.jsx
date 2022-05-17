@@ -4,7 +4,7 @@ import StarsRating from "./StarsRating";
 
 const TestVerdictVertical = ({ stars }) => {
   return (
-    <div className="relative w-full h-full border-2 rounded-sm">
+    <div className="relative w-full h-full bg-white border-2 rounded-sm">
       <div className="relative text + stars + icon ">
         <div className="text + stars flex flex-col ">
           <div className="flex justify-center">
@@ -24,7 +24,7 @@ const TestVerdictVertical = ({ stars }) => {
             height={120}
             objectFit="contain"
           />
-          <span className="absolute bottom-2 left-[95px] text-[70px] text-[#3FA535]">
+          <span className="absolute bottom-2 left-[92px] text-[70px] text-[#3FA535]">
             ✓
           </span>
         </div>
