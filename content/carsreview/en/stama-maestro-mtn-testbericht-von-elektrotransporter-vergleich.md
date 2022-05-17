@@ -103,10 +103,7 @@ content:
       ### Fazit
 
 
-      Der Stama Maestro eignet sich dank seiner Wendigkeit und den Aufbautypen besonders für Landschaftsbaubetriebe und Kommunen zur Pflege von Grünanlagen und Parks. Als reines Lieferfahrzeug eignet sich der Mestro wohl eher weniger. Während die Ausstattung sehr minimal ist und selbst eine Heizung Aufpreis kostet, punktet der Stama mit einer Garantie von 5 Jahren auf die Akkus. Der Preis ist bezogen auf die Fahrzeuggröße und Einsatzmöglichkeiten jedoch relativ hoch. 
-
-
-      #### Testurteil: 2,4
+      Der Stama Maestro eignet sich dank seiner Wendigkeit und den Aufbautypen besonders für Landschaftsbaubetriebe und Kommunen zur Pflege von Grünanlagen und Parks. Als reines Lieferfahrzeug eignet sich der Mestro wohl eher weniger. Während die Ausstattung sehr minimal ist und selbst eine Heizung Aufpreis kostet, punktet der Stama mit einer Garantie von 5 Jahren auf die Akkus. Der Preis ist bezogen auf die Fahrzeuggröße und Einsatzmöglichkeiten jedoch relativ hoch.
     title: Fazit
     image: /images/stama-maestro-laubgitter.png
     stars: 2.4
