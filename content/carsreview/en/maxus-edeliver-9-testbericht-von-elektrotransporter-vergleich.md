@@ -90,10 +90,7 @@ content:
       ### Fazit
 
 
-      Der Maxus eDeliver 9 ist ein leistungsstarker Elektrotransporter mit bis zu 12,5 m³ Stauraum und mehr als einer Tonne Nutzlast. Dank verschiedener Akkuvarianten und Fahrzeuggrößen kann das Fahrzeug zudem auf die Anforderungen des Unternehmens abgestimmt werden. Die recht umfangreiche Ausstattung sorgt zudem für komfortables Fahren. 
-
-
-      #### Testurteil: 3,4
+      Der Maxus eDeliver 9 ist ein leistungsstarker Elektrotransporter mit bis zu 12,5 m³ Stauraum und mehr als einer Tonne Nutzlast. Dank verschiedener Akkuvarianten und Fahrzeuggrößen kann das Fahrzeug zudem auf die Anforderungen des Unternehmens abgestimmt werden. Die recht umfangreiche Ausstattung sorgt zudem für komfortables Fahren.
     title: Fazit
     stars: 3.4
 ---
