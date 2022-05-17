@@ -9,12 +9,13 @@ import { useState, useEffect } from "react";
 import FiltersMobile from "../components/FilterItems/FiltersMobile";
 
 export default function comparePage(props) {
-  const [sortedCars, SetSortedCars] = useState([]);
+  const [sortedCars, setSortedCars] = useState([]);
+  const [getBrands, setGetBrands] = useState([]);
 
   const { state, dispatch } = useStore();
   useEffect(() => {
-    SetSortedCars(props.vehicles);
-
+    setSortedCars(props.vehicles);
+    setGetBrands(props.brands);
     /* PRICE SORTING */
     const getCarslowestPrice = props.vehicles
       ?.sort((a, b) => parseFloat(a.price) * 1 - parseFloat(b.price) * 1)
@@ -45,27 +46,27 @@ export default function comparePage(props) {
       .map((item) => item);
 
     /* initial value */
-    SetSortedCars(getCarslowestPrice);
+    setSortedCars(getCarslowestPrice);
 
     /* ɢᴇᴛ ʀᴇsᴜʟᴛs from sorting */
     if (state?.activeSortValues[0]?.sortType === "lowest") {
-      SetSortedCars(getCarslowestPrice);
+      setSortedCars(getCarslowestPrice);
     }
     if (state?.activeSortValues[0]?.sortType === "highest") {
-      SetSortedCars(getCarshighestPrice);
+      setSortedCars(getCarshighestPrice);
     }
 
     if (state?.activeSortValues[0]?.sortType === "highestWeight") {
-      SetSortedCars(getCarslightest);
+      setSortedCars(getCarslightest);
     }
     if (state?.activeSortValues[0]?.sortType == "highestRange") {
-      SetSortedCars(getCarsByRange);
+      setSortedCars(getCarsByRange);
     }
     if (state?.activeSortValues[0]?.sortType === "highestVmax") {
-      SetSortedCars(getCarsBymaxSpeed);
+      setSortedCars(getCarsBymaxSpeed);
     }
     if (state?.activeSortValues[0]?.sortType === "chargingTimeLithium") {
-      SetSortedCars(getCarsfastest);
+      setSortedCars(getCarsfastest);
     }
   }, [props.vehicles, state.activeSortValues]);
 
@@ -75,10 +76,10 @@ export default function comparePage(props) {
       <div> </div>
       <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)]  relative ">
         <div className="hidden mt-24 md:block">
-          <FiltersDesktop />
+          <FiltersDesktop getBrands={getBrands} />
         </div>
         <div className="flex md:hidden ">
-          <FiltersMobile />
+          <FiltersMobile getBrands={getBrands} />
         </div>
         <div className="heading+sorting+content mt-10 md:mt-20">
           <div className="">

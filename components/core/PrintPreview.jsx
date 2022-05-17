@@ -20,7 +20,6 @@ export default function PrintPreview({
   getTestReview,
   getCarsReview,
 }) {
-  // console.log(carItem);
   return (
     <div className="w-screen flex flex-col flex-wrap">
       <div className="h-screen">
@@ -151,8 +150,22 @@ export default function PrintPreview({
                   </div>
                 )}
               </div>
-              <div className="flex w-1/3 bg-blue-lightest text-white">
-                sfrdtbgdrf
+              <div className="flex w-1/3 items-center">
+                <ul className="w-full p-2">
+                  {getCarsReview.content.map((item, index) =>
+                    item.stars ? (
+                      <li
+                        className={
+                          index == getCarsReview.content.length - 1
+                            ? "w-full flex justify-between text-blue-dark"
+                            : "w-full flex justify-between "
+                        }
+                      >
+                        <p> {item.title}</p> <p> {item.stars}/5</p>
+                      </li>
+                    ) : null
+                  )}
+                </ul>
               </div>
             </div>
           </div>

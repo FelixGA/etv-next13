@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { filtersData, priceFilterData } from "../../data/filtersData";
 import FilterItemDesktop from "./FilterItemDesktop";
 import PriceInputs from "./PriceInputs";
+import FilterBrandItemDesktop from "./FilterBrandItemDesktop";
 
 const variants = {
   enter: {
@@ -19,9 +20,9 @@ const variants = {
   },
 };
 
-function FiltersDesktop() {
+function FiltersDesktop({ getBrands }) {
   const { state, dispatch } = useStore();
-
+  console.log(getBrands);
   return (
     <div className="xl:ml-2 2xl:ml-40 ">
       <div className="">
@@ -50,6 +51,11 @@ function FiltersDesktop() {
           <FilterItemDesktop item={item} />
         </div>
       ))}
+      <div className="bg-white">
+        <FilterBrandItemDesktop item={getBrands} />
+        {/*  {item.title} */}
+      </div>
+      )
     </div>
   );
 }

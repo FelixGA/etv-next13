@@ -25,7 +25,7 @@ const TechnicalDetails = ({ carItem }) => {
     ];
     SetBasics(basics);
     const details = [
-      { key: "Guarantee:", value: " " },
+      { key: "Garantie:", value: " " },
       carItem.batteryGuarantee,
       carItem.guarantee,
       carItem.availability,
