@@ -211,42 +211,42 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
             </div>
             {/* BUTTON */}
             <div className="flex lg:justify-around justify-between items-start lg:items-center flex-wrap w-full lg:w-[14vw]">
-              <button
-                className="w-full px-2 text-sm font-bold text-white transition rounded-lg bg-blue-dark hover:bg-blue-light h-14"
-                onClick={() => {
-                  dispatch({
-                    type: "price",
-                    data: [
-                      {
-                        min: Number(choosePrice.split("-")[0]),
-                        max: Number(choosePrice.split("-")[1]),
-                      },
-                    ],
-                  });
-                  dispatch({
-                    type: "rangeLithium",
-                    data: [
-                      {
-                        min: Number(chooseRange),
-                        max: 100000,
-                      },
-                    ],
-                  });
-                  dispatch({
-                    type: "loadingWeight",
-                    data: [
-                      {
-                        min: Number(chooseWeight),
-                        max: 100000,
-                      },
-                    ],
-                  });
-                }}
-              >
-                <Link href="/comparePage">
+              <Link href="/comparePage">
+                <button
+                  className="w-full px-2 text-sm font-bold text-white transition rounded-lg bg-blue-dark hover:bg-blue-light h-14"
+                  onClick={() => {
+                    dispatch({
+                      type: "price",
+                      data: [
+                        {
+                          min: Number(choosePrice.split("-")[0]),
+                          max: Number(choosePrice.split("-")[1]),
+                        },
+                      ],
+                    });
+                    dispatch({
+                      type: "rangeLithium",
+                      data: [
+                        {
+                          min: Number(chooseRange),
+                          max: 100000,
+                        },
+                      ],
+                    });
+                    dispatch({
+                      type: "loadingWeight",
+                      data: [
+                        {
+                          min: Number(chooseWeight),
+                          max: 100000,
+                        },
+                      ],
+                    });
+                  }}
+                >
                   <a className="py-10 text-lg">Jetzt vergleichen</a>
-                </Link>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

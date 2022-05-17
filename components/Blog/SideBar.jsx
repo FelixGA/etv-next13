@@ -20,7 +20,7 @@ const data = [
 
 export default function SideBar(props) {
   return (
-    <div className="hidden mr-2 lg:block xl:mr-0">
+    <div className="hidden mr-2 lg:block xl:mr-0 ">
       {data.map((tile) => (
         <Link href={tile.href} key={tile.href}>
           <a
