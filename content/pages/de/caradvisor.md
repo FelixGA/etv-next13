@@ -1,7 +1,7 @@
 ---
-title: caradvisor
+title: Kaufberater
 path: /caradvisor
 description: |
-  caradvisor...
+  Kaufberater
 src: /images/berater.png
 ---
