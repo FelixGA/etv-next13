@@ -8,13 +8,13 @@
 .articles p {
   padding-bottom: 16px;
 }
-.flexbox p, .fazit p {
+.flexbox p {
   padding-bottom: 6px;
   
 }
 
 .fazit {
-width: 100%;
+
 margin-left: 2.5rem /* 40px */;
 font-size:10px
 }

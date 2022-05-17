@@ -59,11 +59,11 @@ const TechnicalDetails = ({ carItem }) => {
   }, [carItem]);
 
   return (
-    <div className="flex flex-col items-start justify-center w-full pt-8 pb-16 lg:pt-12 lg:px-4 print:py-1">
-      <h3 className="pl-4 text-3xl font-bold text-blue-extra lg:text-4xl print:text-base">
+    <div className="flex flex-col items-start justify-center w-full pt-8 pb-16 lg:pt-12 lg:px-4 ">
+      <h3 className="pl-4 text-3xl font-bold text-blue-extra lg:text-4xl print:h-0 print:hidden">
         Technische Daten
       </h3>
-      <div className="flex flex-col w-full lg:flex-row print:flex-row">
+      <div className="flex flex-col w-full lg:flex-row print:flex-row ">
         <Basics basics={basics} carItem={carItem} />
         <CarDimentions
           vehichleDimentions={vehichleDimentions}

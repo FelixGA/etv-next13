@@ -23,31 +23,27 @@ export default function PrintPreview({
   // console.log(carItem);
   return (
     <div className="w-screen flex flex-col flex-wrap">
-      {/* header */}
       <div className="h-screen">
-        <div className="w-screen h-[50px] text-lg text-white flex justify-between bg-blue-darker mb-2">
-          <h2 className="text-white">Fahrzeugübersicht</h2>
-          <div className=" w-[90px]">
-            <img src="/images/etv-logo-final.png" />
-          </div>
-          <h2 className="text-white">Testbericht</h2>
-          <div className=" w-[90px]">
-            <img src="/images/etv-logo-final.png" alt="test" />
-          </div>
-        </div>
         {/* main page */}
-        <div className="w-screen flex flex-col flex-wrap">
-          <div className="flex w-full h-screen flex-col flex-wrap">
+        <div className="w-screen flex h-screen flex-col flex-wrap">
+          {/*header */}
+          <div className="w-screen h-[5vh] text-lg text-white flex justify-between bg-blue-darker mb-1">
+            <h2 className="text-white">Fahrzeugübersicht</h2>
+            <div className=" w-[90px]">
+              <img src="/images/etv-logo-final.png" />
+            </div>
+          </div>
+          <div className="flex w-full flex-col flex-wrap  ">
             {/* details , price  etc */}
             {/* basics photo etc */}
-            <div className="flex w-1/4 h-auto">
+            <div className="flex w-64 h-32">
               <img
                 src={carItem?.src}
                 alt={carItem?.title}
-                className="mr-8 object-cover"
+                className="mr-4 object-cover"
               />
 
-              <div className="flex flex-col w-3/4">
+              <div className="flex flex-col ">
                 <div className="flex flex-col justify-between  ">
                   <h3 className="font-bold w-full">{carItem?.title}</h3>
                 </div>
@@ -114,20 +110,18 @@ export default function PrintPreview({
               </div>
             </div>
             {/* texh details */}
-            <div className="flex h-2/4">
+            <div className="flex h-[50vh]">
               <div className="flex flex-wrap w-screen">
                 <TechnicalDetails carItem={carItem} />
               </div>
             </div>
             {/* test fazit */}
-            <div className="flex justify-end mt-auto bg-red-200">
-              {getTestReview && (
-                <div className="flex ">
-                  {/* rg */}
-
-                  <div className={`${styles.fazit}`}>
-                    <div className="">
-                      <h2 className=" print:text-[10px]">
+            <div className="flex  h-[18vh] mt-[14vh]">
+              <div className="flex w-2/3 items-center pl-1">
+                {getTestReview && (
+                  <div className={`${styles.flexbox}`}>
+                    <div className="flex items-center justify-start ">
+                      <h2 className=" print:text-[12px]">
                         {
                           getCarsReview?.content[
                             getCarsReview?.content.length - 1
@@ -149,18 +143,22 @@ export default function PrintPreview({
                         ) : null}
                       </div>
                     </div>
-
-                    <MDXRemote
-                      {...getTestReview[getCarsReview?.content.length - 1]}
-                    />
+                    <div className="h-auto print:text-[11px]">
+                      <MDXRemote
+                        {...getTestReview[getCarsReview?.content.length - 1]}
+                      />
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
+              </div>
+              <div className="flex w-1/3 bg-blue-lightest text-white">
+                sfrdtbgdrf
+              </div>
             </div>
           </div>
         </div>
       </div>
-      {/* test bericht */}
+      {/* AB HEREEEEEEEEEEEEEEEEEEEEEEEE   test bericht */}
       <div className="flex w-full h-screen print:text-[10px] flex-col my-2 flex-wrap ">
         {/* header */}
         <div className="w-screen h-[50px] text-lg text-white flex justify-between bg-blue-darker mb-2">
