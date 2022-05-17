@@ -1,7 +1,7 @@
 ---
-title: impressum
+title: Impressum
 path: /impressum
-description: impressum
+description: Impressum
 src: /images/medal.png
 content:
   - markdown: >-

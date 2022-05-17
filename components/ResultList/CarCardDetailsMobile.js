@@ -77,7 +77,7 @@ function CarCardDetailsMobile({ carItem }) {
       >
         <Link href={`/transporter/${carItem?.name}`}>
           <a className="px-4 py-2 m-4 border-2 rounded border-blue-darker text-blue-darker visited:text-blue-dark w-fit">
-            Zur Productseite
+            Zur Produktseite
           </a>
         </Link>
       </div>

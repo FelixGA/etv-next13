@@ -1,6 +1,6 @@
 ---
-title: detailspage
+title: Detailseite
 path: /detailspage
-description: for seo
+description: Detailseite
 src: /images/Arrow-right-512.png
 ---

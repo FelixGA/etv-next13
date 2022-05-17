@@ -30,3 +30,6 @@
 .blogmarkdown li {
   @apply ml-8 list-disc;
 }
+.blogmarkdown a {
+  @apply text-blue-light;
+}

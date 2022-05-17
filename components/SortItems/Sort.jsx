@@ -83,7 +83,7 @@ function Sort({ getContent }) {
               <BsSortDown size={20} fill="#1F1E80" />
             </div>
             <div className="pl-4 my-auto ">
-              <h4 className="py-3  font-bold text-blue-dark text-md">
+              <h4 className="py-3  font-bold text-blue-dark text-base">
                 {/* {getContent?.content[2].name} ↬{" "} */}
                 {state?.activeSortValues[0]?.sortCategory}
               </h4>

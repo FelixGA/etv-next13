@@ -1,6 +1,6 @@
 ---
-title: activecompare
+title: Detailvergleich
 path: /activecompare
-description: for seo
+description: Ihre Auswahl im Detailvergleich
 src: /images/medal.png
 ---

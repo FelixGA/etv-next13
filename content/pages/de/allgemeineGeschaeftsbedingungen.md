@@ -1,7 +1,7 @@
 ---
-title: allgemeineGeschaeftsbedingungen
+title: AllgemeineGeschaeftsbedingungen
 path: /termsofservice
-description: allgemeine Geschäftsbedingungen
+description: Allgemeine Geschäftsbedingungen
 src: /images/medal.png
 content:
   - markdown: >-
