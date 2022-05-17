@@ -4,15 +4,16 @@ import Image from "next/image";
 const Logo = () => {
   return (
     <div className="flex flex-row items-center justify-center w-full sm:justify-start print:hidden">
-      <div className="relative text-white w-fit">
+      <div className="relative ">
         <Link href={"/"}>
-          <a className="relative ">
+          <a className="relative block w-14">
             <Image
-              src="/images/ETV Favicon128x128@4x.png"
+              src="/images/ETV Favicon128x128@4x (1).png"
               width={60}
-              height={40}
+              height={50}
               alt="logo-footer"
               objectFit="contain"
+              layout="responsive"
             />
           </a>
         </Link>
@@ -20,7 +21,7 @@ const Logo = () => {
       <div className="w-fit print:hidden">
         <Link href={"/"}>
           <a aria-label="home">
-            <p className="pt-1 pl-4 text-xs font-bold text-white cursor-pointer xs:pl-0 sm:pr-0 sm:text-xxs">
+            <p className="text-xs font-bold text-white cursor-pointer xs:pl-0 sm:pr-0 sm:text-xxs">
               ELEKTROTRANSPORTER
               <br />
               VERGLEICH

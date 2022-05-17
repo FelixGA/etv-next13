@@ -37,19 +37,19 @@ const Footer = ({ blogs, brands }) => {
   return (
     <>
       <footer className="px-4 shadow-2xl bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around ">
-        <nav className="flex flex-col items-center justify-around w-full my-4 lg:mr-14 xl:justify-evenly sm:flex-row sm:items-start lg:w-3/4 sm:pb-8 print:hidden">
-          <div className="flex flex-col justify-start w-fit ">
+        <nav className="flex flex-col items-center w-full my-4 justify-evenly lg:mr-14 xl:justify-evenly sm:flex-row sm:items-start lg:w-3/4 sm:pb-8 print:hidden">
+          <div className="flex flex-col w-fit">
             <h3 className="flex items-end justify-center text-sm font-bold tracking-wider sm:justify-start h-14 sm:text-base">
               <Link href="/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich">
                 <a className="text-white ">{`Transporter`.toUpperCase()}</a>
               </Link>
             </h3>
-            <div className="flex justify-center pt-6 md:justify-start">
-              <ul className="grid  lg:grid-rows-4 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))]  xl:grid-cols-[repeat(auto-fit,_minmax(180px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden  ">
+            <div className="pt-6 ">
+              <ul className="grid lg:grid-rows-4 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(180px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden">
                 {brands?.map((blog, index) => (
-                  <li className="h-[43px]" key={index}>
+                  <li className="h-[43px]  " key={index}>
                     <Link href={`/fahrzeuge/${blog.slug}`}>
-                      <a className="flex items-center justify-between text-sm text-center w-36 sm:text-lg lg:text-left ">
+                      <a className="flex justify-center w-full text-sm md:justify-start sm:text-lg">
                         {blog.title ? blog.title : blog}
                       </a>
                     </Link>
