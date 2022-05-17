@@ -45,7 +45,7 @@ const Footer = ({ blogs, brands }) => {
               </Link>
             </h3>
             <div className="pt-6 ">
-              <ul className="grid lg:grid-rows-4 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(180px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden">
+              <ul className="grid lg:grid-rows-5 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(180px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden">
                 {brands?.map((blog, index) => (
                   <li className="h-[43px]  " key={index}>
                     <Link href={`/fahrzeuge/${blog.slug}`}>
