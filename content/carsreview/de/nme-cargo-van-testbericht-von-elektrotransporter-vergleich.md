@@ -84,9 +84,6 @@ content:
 
 
       Der von NME vertriebene Cargo Van auf Basis von Dongfeng ist ein sehr geräumiger und funktionaler Kastenwagen, der besonders in der Lieferbranche dank seines Preises so manchen Interessenten finden dürfte. Luxus oder extrem hohe Qualität ist nicht zu erwarten, dafür aber ein praktischer Lastesel.
-
-
-      #### Testurteil: 3,2 Sterne
     title: Fazit
     stars: 3.2
 ---
