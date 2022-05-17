@@ -141,7 +141,7 @@ function ActiveFilterEntry(props) {
               layout="responsive"
             />
           </div>
-          <div className="text-md">{item.value}</div>
+          <div className="text-base">{item.value}</div>
 
           <div
             onClick={() => {

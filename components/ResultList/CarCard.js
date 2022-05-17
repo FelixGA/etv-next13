@@ -12,7 +12,6 @@ import usePrice from "../../hooks/usePrice";
 import StarsRating from "../repeated/StarsRating";
 
 function CarCard({ carItem }) {
-  console.log(carItem);
   /* HOOKS */
   const { state, dispatch } = useStore();
   const [showDetails, setShowDetails] = useState(false);

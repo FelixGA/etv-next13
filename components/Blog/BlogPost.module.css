@@ -31,6 +31,7 @@
   @apply ml-8 list-disc;
 }
 
+
 .blogmarkdown span {
   padding-left: 8px;
 }
@@ -40,3 +41,8 @@
     padding-left: 0px;
   }
 }
+
+.blogmarkdown a {
+  @apply text-blue-light;
+}
+

@@ -67,7 +67,7 @@ export default function ActiveCompareSizes({ keys, comparedCars }) {
                       <p className="h-16 font-bold text-blue-extra pl-4 lg:pl-8 pt-5 text-2xl ">
                         Maße
                       </p>
-                      <p className="bg-grey-lighter h-14 font-bold text-blue-extra pl-4 lg:pl-8 pt-4 text-md">
+                      <p className="bg-grey-lighter h-14 font-bold text-blue-extra pl-4 lg:pl-8 pt-4 text-base">
                         Laderaummaße:
                       </p>
                     </>
@@ -82,7 +82,7 @@ export default function ActiveCompareSizes({ keys, comparedCars }) {
               {index == 4 && (
                 <div className="col-span-full row-span-full">
                   {colIndex == 0 ? (
-                    <p className="h-14 font-bold text-blue-extra pl-4 lg:pl-8 pt-4 text-md">
+                    <p className="h-14 font-bold text-blue-extra pl-4 lg:pl-8 pt-4 text-base">
                       Fahrzeugmaße:
                     </p>
                   ) : (
