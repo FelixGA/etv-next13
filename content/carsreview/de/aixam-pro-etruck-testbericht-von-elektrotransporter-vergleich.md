@@ -88,9 +88,6 @@ content:
 
 
       Der Aixam Pro e-Truck ist ein sehr kleiner und dafür recht geräumiger Elektrotransporter, der als Koffer-Variante für Lieferdienste, Handwerksbetriebe und den Warentransport im Einzelhandel interessant sein könnte. Die Pritsche dürfte speziell für Landschaftsbaubetriebe und kleinere Baustellen geeignet sein. Die recht geringe Reichweite könnte allerdings für so manche Einschränkung sorgen und die minimale Ausstattung lässt leider so manchen Wunsch offen.
-
-
-      #### Testurteil: 3,0
     title: Fazit
     stars: 3
 ---
