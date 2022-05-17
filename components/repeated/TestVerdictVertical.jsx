@@ -24,9 +24,9 @@ const TestVerdictVertical = ({ stars }) => {
             height={120}
             objectFit="contain"
           />
-          <FcCheckmark />
-          <div className="absolute bottom-1 left-[92px] text-[70px] text-[#3FA535]">
-            ✓
+
+          <div className="absolute bottom-10 left-[98px] ">
+            <FcCheckmark size={50} />
           </div>
         </div>
       </div>
