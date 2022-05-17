@@ -1,5 +1,6 @@
 ---
-title: magazin
+title: Magazin
 path: /magazin
-description: magazin
+description: "Hier finden Sie Neuigkeiten und Wissenswertes aus der Welt der
+  Elektromobilität. "
 ---
