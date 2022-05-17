@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import { FcCheckmark } from "react-icons/fc";
 import StarsRating from "./StarsRating";
 
 const TestVerdictVertical = ({ stars }) => {
@@ -24,9 +24,10 @@ const TestVerdictVertical = ({ stars }) => {
             height={120}
             objectFit="contain"
           />
-          <span className="absolute bottom-2 left-[92px] text-[70px] text-[#3FA535]">
+          <FcCheckmark />
+          <div className="absolute bottom-1 left-[92px] text-[70px] text-[#3FA535]">
             ✓
-          </span>
+          </div>
         </div>
       </div>
       <div className="absolute flex justify-center w-full px-8 bottom-1">
