@@ -4,6 +4,7 @@ import Link from "next/link";
 import ListItems from "./ListItems";
 import footerWords from "../../data/footerData";
 import { useState, useEffect } from "react";
+import Logo from "../repeated/Logo";
 const Footer = ({ blogs, brands }) => {
   const magazineList = [
     { category: "Hersteller", slug: "manufacturer" },
@@ -36,22 +37,19 @@ const Footer = ({ blogs, brands }) => {
   return (
     <>
       <footer className="px-4 shadow-2xl bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around ">
-        <nav className="flex flex-col items-center justify-around w-full pb-4 xl:justify-evenly sm:flex-row sm:items-start lg:w-3/4 sm:pb-8 print:hidden">
-          <div className="flex flex-col justify-start w-full md:w-1/3">
+        <nav className="flex flex-col items-center justify-around w-full my-4 lg:mr-14 xl:justify-evenly sm:flex-row sm:items-start lg:w-3/4 sm:pb-8 print:hidden">
+          <div className="flex flex-col justify-start w-fit ">
             <h3 className="flex items-end justify-center text-sm font-bold tracking-wider sm:justify-start h-14 sm:text-base">
               <Link href="/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich">
-                <a className="text-white">{`Transporter`.toUpperCase()}</a>
+                <a className="text-white ">{`Transporter`.toUpperCase()}</a>
               </Link>
             </h3>
-            <div className="flex justify-center pt-4 md:justify-start">
-              <ul className="flex flex-col flex-wrap pb-4 text-[#b1a7a7] items-center md:items-start justify-center w-48 print:hidden">
+            <div className="flex justify-center pt-6 md:justify-start">
+              <ul className="grid  lg:grid-rows-4 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))]  xl:grid-cols-[repeat(auto-fit,_minmax(180px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden  ">
                 {brands?.map((blog, index) => (
-                  <li
-                    className="flex items-center justify-between my-2"
-                    key={index}
-                  >
+                  <li className="h-[43px]" key={index}>
                     <Link href={`/fahrzeuge/${blog.slug}`}>
-                      <a className="text-sm text-left sm:text-lg">
+                      <a className="flex items-center justify-between text-sm text-center w-36 sm:text-lg lg:text-left ">
                         {blog.title ? blog.title : blog}
                       </a>
                     </Link>
@@ -62,7 +60,7 @@ const Footer = ({ blogs, brands }) => {
               {/* <ListItems itemsList={reviewsList} /> */}
             </div>
           </div>
-          <div className="flex flex-col justify-start sm:w-40 ">
+          <div className="flex flex-col justify-start sm:w-40 md:w-1/6 ">
             <h3 className="flex items-end justify-center text-sm font-bold tracking-wider sm:justify-start h-14 sm:text-base">
               <Link href="/magazin">
                 <a className="text-white">{`Magazin`.toUpperCase()}</a>
@@ -89,7 +87,7 @@ const Footer = ({ blogs, brands }) => {
           </div>
           {/* only for RECHTLICHES & KONTAKT
            */}
-          <div className="flex flex-col items-center justify-center sm:items-start sm:w-40">
+          <div className="flex flex-col items-center justify-center sm:items-start sm:w-40 md:w-1/6">
             <h3 className="flex items-center justify-center text-sm font-bold tracking-wider text-white w-52 md:justify-start sm:items-end h-14 sm:text-base">
               {`Rechtliches & Kontakt`.toUpperCase()}
             </h3>
@@ -100,36 +98,10 @@ const Footer = ({ blogs, brands }) => {
         </nav>
         {/* logos and media
          */}
-        <div className="flex flex-col items-center px-4 pt-4 lg:pl-0 xl:pl-4 sm:items-start lg:w-1/4 lg:pt-8 md:px-8">
-          <div className="flex flex-row items-center justify-center w-full sm:justify-start print:hidden">
-            <div className="w-1/5 md:w-[9%] lg:w-[33%] xl:w-[20%] text-white ">
-              <Link href={"/"}>
-                <a>
-                  <Image
-                    src="/images/etv-logo-final-white.png"
-                    width={60}
-                    height={40}
-                    alt="logo-footer"
-                    objectFit="contain"
-                    layout="responsive"
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className="w-fit sm:w-1/2 print:hidden">
-              <Link href={"/"}>
-                <a aria-label="home">
-                  <p className="pr-4 text-xs font-bold text-white cursor-pointer sm:pr-0 sm:text-md">
-                    ELEKTROTRANSPORTER
-                    <br />
-                    VERGLEICH
-                  </p>
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div className="flex w-full print:hidden">
-            <p className="w-full pt-6 pb-2 pl-0 text-xs text-center text-white lg:pl-4 sm:text-left lg:text-lg xl:text-lg">
+        <div className="flex flex-col items-center px-4 pt-4 lg:pl-0 xl:pl-4 sm:items-start md:w-1/6 lg:pt-12 ">
+          <Logo />
+          <div className="flex justify-center w-full print:hidden">
+            <p className="pt-6 pb-2 pl-0 text-xs text-center text-white w-[300px] sm:text-left lg:text-lg xl:text-lg">
               {footerWords.map((item, index) => (
                 <span className="" key={index}>
                   {item}
@@ -137,22 +109,22 @@ const Footer = ({ blogs, brands }) => {
               ))}
             </p>
           </div>
-          <div className="flex justify-between pt-2 pb-8 w-28 lg:w-40 sm:pl-4">
-            <div className="transition cursor-pointer hover:scale-110">
+          <div className="flex justify-start pt-2 pb-8 w-28 lg:w-40 ">
+            <div className="p-1 transition cursor-pointer hover:scale-110">
               <Link href="https://www.facebook.com">
                 <a aria-label="facebook" target="_blank">
                   <BsFacebook size={25} fill="#fff" />
                 </a>
               </Link>
             </div>
-            <div className="transition cursor-pointer hover:scale-110">
+            <div className="p-1 transition cursor-pointer hover:scale-110 ">
               <Link href="https://www.youtube.com">
                 <a aria-label="youtube" target="_blank">
                   <BsYoutube size={30} fill="#fff" />
                 </a>
               </Link>
             </div>
-            <div className="transition cursor-pointer hover:scale-110">
+            <div className="p-1 transition cursor-pointer hover:scale-110 ">
               <Link href="https://www.linkedin.com">
                 <a aria-label="linkedin" target="_blank">
                   <BsLinkedin size={25} fill="#fff" />
