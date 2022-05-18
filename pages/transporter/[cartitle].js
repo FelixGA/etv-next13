@@ -100,11 +100,7 @@ export async function getStaticProps(context) {
           item?.relatedCars.includes(vehicle?.relatedReviews.slice(0, -45))
       )
     : null;
-  /* console.log("ALL REVIEWS", vehicle?.relatedReviews);
-  console.log(
-    "ALL SLUGS",
-    carsreviews.map((it) => it.slug)
-  ); */
+
   /* catching errors in case there is no carsreview yet */
   let getTestReview = null;
 

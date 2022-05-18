@@ -149,12 +149,6 @@ category: subsidies
 description: Beim Kauf eines Elektrotransporters können verschiedene Förderungen
   in Anspruch genommen werden. Erfahren Sie, welche.
 ---
-| Tables   | Are           | Cool  |
-| -------- | ------------- | ----- |
-| col 1 is | left-aligned  | $1600 |
-| col 2 is | centered      | $12   |
-| col 3 is | right-aligned | $1    |
-
 Sie denken darüber nach, sich einen Elektrotransporter zu kaufen? Oder Ihre Flotte auf E-Mobilität umzustellen? Dann können Sie von verschiedenen Förderungen profitieren, mit denen Bund und Länder den Umstieg auf [klimafreundliche Nutzfahrzeuge](https://www.klimafreundliche-nutzfahrzeuge.de/gesamtkonzept/) vorantreiben wollen. Welche Förderungen für Elektrotransporter es gibt, wem diese zustehen und wo sie beantragt werden können, das erfahren Sie in diesem Artikel.
 
 <br />
