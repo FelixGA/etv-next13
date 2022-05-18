@@ -61,15 +61,15 @@ function CarCard({ carItem }) {
             <p className="pb-2 text-xl font-black text-right text-green-light xl:text-2xl md:pr-2 2xl:mt-4">
               ab {price}
             </p>
-            <div className="pb-2 xl:mt-8 2xl:hidden sm:pb-0">
-              {/* {mobileRatingBox} */}
-              <StarsRating stars={carItem?.rating.value} />
-            </div>
           </div>
 
           {/* PRICE + MOBILE RATING BOX end*/}
           {/* BUTTONS start */}
           <div className="relative flex flex-col justify-end flex-1 2xl:right-2 sm:justify-center">
+            <div className="pb-2 xl:mt-8 2xl:hidden sm:pb-0">
+              {/* {mobileRatingBox} */}
+              <StarsRating stars={carItem?.rating.value} />
+            </div>
             <div className="pb-1">
               <ButtonAnfragen carItem={carItem.title} />
             </div>

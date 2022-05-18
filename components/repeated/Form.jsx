@@ -187,13 +187,13 @@ export default function Form(props) {
             <label htmlFor="confirm" className="text-sm">
               Ja, ich stimme der{" "}
               <span className="font-bold text-blue-dark">
-                <Link href={"/impressum"}>
+                <Link href={"/dataprotection"}>
                   <a>Datenschutzerklärung</a>
                 </Link>
               </span>{" "}
               und den{" "}
               <span className="font-bold text-blue-dark">
-                <Link href={"/allgemeineGeschaeftsbedingungen"}>
+                <Link href={"/termsofservice"}>
                   <a>AGBs</a>
                 </Link>
               </span>{" "}
