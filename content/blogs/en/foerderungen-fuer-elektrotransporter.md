@@ -1,10 +1,7 @@
 ---
+title: Diese Förderungen für Elektrotransporter gibt es jetzt!
 publishedAt: 03/01/2022
 src: /images/whatsapp-image-2022-04-27-at-22.26.12.jpeg
-contentText:
-  title: ""
-  content: ""
-  image: ""
 contentHeading:
   title: ""
   content: ""
@@ -14,32 +11,8 @@ relatedCars: ari-458-food-truck-elektrisches-gastro-mobil
 vehicle:
   key: gut
   value: 4,0
-contentText2:
-  content: ""
-  title: ""
-  image: ""
-contentText3:
-  content: ""
-  title: ""
-  image: ""
-contentText4:
-  title: ""
-  content: ""
-  image: ""
-contentText5:
-  title: ""
-  content: ""
-  image: ""
-contentText6:
-  title: ""
-  content: ""
-  image: ""
-contentText7:
-  title: ""
-  content: ""
   image: /images/Arrow-right-512.png
   totalscore: ""
-title: Diese Förderungen für Elektrotransporter gibt es jetzt!
 content: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
@@ -176,6 +149,12 @@ category: subsidies
 description: Beim Kauf eines Elektrotransporters können verschiedene Förderungen
   in Anspruch genommen werden. Erfahren Sie, welche.
 ---
+| Tables   | Are           | Cool  |
+| -------- | ------------- | ----- |
+| col 1 is | left-aligned  | $1600 |
+| col 2 is | centered      | $12   |
+| col 3 is | right-aligned | $1    |
+
 Sie denken darüber nach, sich einen Elektrotransporter zu kaufen? Oder Ihre Flotte auf E-Mobilität umzustellen? Dann können Sie von verschiedenen Förderungen profitieren, mit denen Bund und Länder den Umstieg auf [klimafreundliche Nutzfahrzeuge](https://www.klimafreundliche-nutzfahrzeuge.de/gesamtkonzept/) vorantreiben wollen. Welche Förderungen für Elektrotransporter es gibt, wem diese zustehen und wo sie beantragt werden können, das erfahren Sie in diesem Artikel.
 
 <br />

@@ -1,6 +1,6 @@
 ---
 title: "Ford E-Transit und Ford Pro: Start in die elektrische Zukunft"
-slug: es sollte das gleich mit der `name` Angabe von dem Auto sein
+slug: ford-e-transit-und-ford-pro-start-in-die-elektrische-zukunft
 youtubeLink: ""
 category: hersteller
 publishedAt: 04/29/2022
@@ -8,6 +8,7 @@ src: /images/ampnet_photo_20220429_209619.jpg
 description: Mit dem Ford Transit reagiert der europäische Markenführer auf die
   wachsende Nachfrage nach elektrischen Nutzfahrzeugen.
 ---
+
 Die Elektrowelle rollt und reißt vor allem die leichten Nutzfahrzeuge mit sich. So gut wie alle Hersteller haben inzwischen ihre Flotte elektrifiziert, und nun folgt mit dem Ford Transit auch der europäische Marktführer mit einem „Stecker“-Modell. Offensichtlich genau zur richtigen Zeit, denn bereits vor der offiziellen Markteinführung haben schon 5000 Unternehmen den in der Türkei gebauten Transporter bestellt. Gleichzeitig startet jetzt auch in Deutschland das neue Dienstleistungsangebot Ford Pro, in dem der Hersteller alle mit dem Betrieb der Fahrzeuge verbundenen Serviceangebote bündelt.
 
 Der neue elektrische Transit kommt mit einer Batteriekapazität von 68 kWh und einer Reichweite von 317 Kilometern auf den Markt. Die Antriebe leisten zwischen 135 kW (184 PS) und 198 kW (269 PS). Die Preisliste beginnt bei 55.845 Euro netto (brutto: 66.456 Euro). Auch der E-Transit wird als Kastenwagen mit Einzel- oder Doppelkabine und als Fahrgestell mit Einzelkabine angeboten. Insgesamt 25 Varianten sind verfügbar. Handwerker werden die Onboard-Steckdose zu schätzen wissen, mit der sie ihre elektrischen Geräte auf Baustellen nutzen können. Daneben arbeitet Ford Pro mit 200 Unternehmen zusammen, um dem Kunden eine maßgeschneiderte Aufbau-Lösung anzubieten.\
