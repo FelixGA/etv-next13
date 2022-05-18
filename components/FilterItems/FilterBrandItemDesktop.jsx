@@ -4,6 +4,7 @@ import FilterBrandCheckbox from "./FilterBrandCheckbox";
 import { useStore } from "../store";
 import { motion, AnimatePresence } from "framer-motion";
 import image from "../../public/images/ETV-IconsVergleichen.png";
+import { useState } from "react";
 const variants = {
   enter: {
     y: -1000,
@@ -31,9 +32,11 @@ const variants = {
 function FilterBrandItemDesktop({ item }) {
   // const item = props.item;
   const { state, dispatch } = useStore();
+  const [selectedBrands, setSelectedBrands] = useState([]);
 
   /* to render the four ranges */
-
+  /*   console.log(0, selectedBrands.length);
+   */
   return (
     <>
       {/* truncate state */}
@@ -66,7 +69,7 @@ function FilterBrandItemDesktop({ item }) {
             {/* for the green ✔️ */}
             <span
               className={
-                state.brands.length > 0
+                state.brands.length > 0 || selectedBrands.length > 0
                   ? "flex text-green-700 text-xl h-6"
                   : "hidden"
               }
@@ -100,9 +103,16 @@ function FilterBrandItemDesktop({ item }) {
             {item.map((checkbox, index) => (
               <div
                 onClick={() => {
+                  if (selectedBrands.includes(checkbox.slug)) {
+                    setSelectedBrands(
+                      selectedBrands.filter((item) => item !== checkbox.slug)
+                    );
+                  } else {
+                    setSelectedBrands([...selectedBrands, checkbox.slug]);
+                  }
                   dispatch({
                     type: "brand",
-                    data: [{ name: checkbox.title, slugi: checkbox.slug }],
+                    data: selectedBrands,
                   });
                 }}
                 key={index}
@@ -110,7 +120,7 @@ function FilterBrandItemDesktop({ item }) {
               >
                 <FilterBrandCheckbox
                   checkbox={checkbox}
-                  name={checkbox.title}
+                  selectedBrands={selectedBrands}
                   /*   value={checkbox.value}
                   id={checkbox.id}
                   category={item.category}
@@ -124,7 +134,6 @@ function FilterBrandItemDesktop({ item }) {
                 </label>
               </div>
             ))}
-            )
           </motion.div>
         )}
       </AnimatePresence>

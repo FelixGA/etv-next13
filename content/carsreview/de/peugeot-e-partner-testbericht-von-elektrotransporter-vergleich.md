@@ -92,10 +92,7 @@ content:
       ### Fazit
 
 
-      Der Peugeot e-Partner ist ein kompakter Elektrotransporter, der besonders für den urbanen Lieferbetrieb geeignet ist. Zwar wird die Reichweite mit rund 250 Kilometer angegeben, es ist aber sehr unwahrscheinlich, dass diese in der Realität eingehalten werden kann. Dank des komfortablen Innenraums und der guten Ausstattung kommt das Fahrzeug recht hochwertig daher, gleichzeitig können bis zu 4,4 m³ Ladung aufgenommen werden. 
-
-
-      #### Testurteil: 3,6 Sterne
+      Der Peugeot e-Partner ist ein kompakter Elektrotransporter, der besonders für den urbanen Lieferbetrieb geeignet ist. Zwar wird die Reichweite mit rund 250 Kilometer angegeben, es ist aber sehr unwahrscheinlich, dass diese in der Realität eingehalten werden kann. Dank des komfortablen Innenraums und der guten Ausstattung kommt das Fahrzeug recht hochwertig daher, gleichzeitig können bis zu 4,4 m³ Ladung aufgenommen werden.
     title: Fazit
     stars: 3.6
 ---

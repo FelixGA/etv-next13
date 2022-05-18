@@ -50,8 +50,9 @@ export default function Blog({ getBlogs }) {
               </Link>
             ))}
         </div>
-
+        {/* <div className="hidden border-4 3xl:block"> */}
         <Sidebar />
+        {/* </div> */}
       </div>
 
       {/* <div className="grid w-full max-w-screen-xl px-6 py-6 mx-auto md:px-0">

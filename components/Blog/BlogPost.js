@@ -20,20 +20,24 @@ export default function BlogPost(props) {
             />
           )}
         </div>
-        <div className="text-blue-dark">{props.getBlogContext.publishedAt}</div>
-        <h2 className="w-full py-8 pl-2 font-bold lg:w-2/3 lg:text-4xl text-blue-dark lg:pl-0">
+        <div className="px-1 text-blue-dark lg:px-0">
+          {props.getBlogContext.publishedAt}
+        </div>
+        <h2 className="w-full py-8 pl-2 font-bold lg:text-4xl text-blue-dark lg:pl-0">
           {props.getBlogContext?.title}
         </h2>
-        <div className="relative grid list-disc lg:grid-cols-[auto,_250px]">
+        <div className="relative grid list-disc 2xl:grid-cols-[auto,_320px] lg:px-0 px-2">
           <div className={`${styles.blogmarkdown} lg:pr-8`}>
             <MDXRemote {...props.getBlogContext.source} />
             <div className="mt-8 text-blue-darker">
-              <p className="xs:px-0">Das könnte Sie auch interessieren:</p>
-              <Teasers teasers={props.suggestions} />{" "}
+              <span className="">Das könnte Sie auch interessieren:</span>
+              <div className="">
+                <Teasers teasers={props.suggestions} />
+              </div>
             </div>
           </div>
 
-          <div className="relative bottom-28">
+          <div className="relative hidden bottom-28 2xl:block">
             <SideBar />
           </div>
         </div>

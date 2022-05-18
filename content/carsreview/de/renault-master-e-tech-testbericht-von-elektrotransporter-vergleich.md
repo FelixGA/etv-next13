@@ -93,10 +93,7 @@ content:
       ### Fazit
 
 
-      Der Renault Master E-Tech ist als Kastenwagen einer der größten Elektrotransporter. Das üppige Raumvolumen und die großen Ladeöffnungen sind ideal, um sperrige Güter oder Möbel zu be- und entladen. So bietet sich der Master E-Tech als Fahrzeug für Umzugsunternehmen und Lieferdienste mit großen Waren an. Durch sein höheres Gewicht ist die Reichweite geringer als zum Beispiel beim Kangoo E-Tech, weshalb sich das Fahrzeug eher für kurze Strecken und den Stadtverkehr eignet. Praktische Ausstattungen zur Ladungssicherung und Kommunikation erleichtern die Arbeit bei der Fahrt und dem Warentransport.  
-
-
-      #### Testurteil: 3,0
+      Der Renault Master E-Tech ist als Kastenwagen einer der größten Elektrotransporter. Das üppige Raumvolumen und die großen Ladeöffnungen sind ideal, um sperrige Güter oder Möbel zu be- und entladen. So bietet sich der Master E-Tech als Fahrzeug für Umzugsunternehmen und Lieferdienste mit großen Waren an. Durch sein höheres Gewicht ist die Reichweite geringer als zum Beispiel beim Kangoo E-Tech, weshalb sich das Fahrzeug eher für kurze Strecken und den Stadtverkehr eignet. Praktische Ausstattungen zur Ladungssicherung und Kommunikation erleichtern die Arbeit bei der Fahrt und dem Warentransport.
     title: Fazit
     stars: 3
 ---

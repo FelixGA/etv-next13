@@ -84,9 +84,6 @@ content:
 
 
       Wie viele Fahrzeuge chinesischer Hersteller versucht auch der Maxus EV 80 mit hoher Funktionalität und einem niedrigen Preis die Konkurrenz zu überholen. Seine kräftiger Elektromotor, das hohe Ladevolumen und die preiswerte Anschaffung sind sicherlich für viele größere Unternehmen sehr attraktiv. Für innerstädtische und kleinere Betriebe dürfte das Fahrzeug aber wohl zu groß und ungelenkig sein.
-
-
-      #### Testurteil: 3,6
     title: Fazit
     stars: 3.6
 ---

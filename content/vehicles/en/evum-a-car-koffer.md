@@ -13,13 +13,10 @@ relatedBlogs:
     für große Strecken."
   image: /images/ari-458-food-truck-5-.jpg
 relatedReviews: evum-a-car-testbericht-von-elektrotransporter-vergleich
-description: Nach vielen Jahren der Entwicklung und einer mehrmonatigen
-  Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A-Car
-  nun seit Juni 2020 auf dem Markt. Ursprünglich wurde der kräftige
-  Elektrotransporter für Entwicklungs- und Schwellenländern entwickelt, wo er in
-  der Landwirtschaft und der Industrie zum Einsatz kommen sollte. Während der
-  Entstehungsphase wurde aber klar, dass das Fahrzeug auch für den europäischen
-  Markt attraktiv sein könnte.
+description: Das Evum A-Car ist ein Elektrotransporter mit Allradantrieb der
+  Kategorie N1. Die Höchstgeschwindigkeit des Fahrzeugs liegt bei 70 km/h und
+  die maximale Nutzlast bei rund einer Tonne. Das Fahrzeug ist im Rahmen eines
+  Forschungsprojekts der Technischen Universität München entwickelt worden.
 src: /images/acar-lastmile-08-210412.jpeg
 loadingWeight:
   key: Nutzlast
@@ -78,7 +75,7 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
+  key: Sterne
   value: 3.4
 guarantee:
   key: Garantie Fahrzeug
@@ -156,4 +153,4 @@ wheelbase:
   value: "2596"
   baseUnit: mm
 ---
-Nach vielen Jahren der Entwicklung und einer mehrmonatigen Verschiebung des Produktionsstarts durch die Corona-Krise, ist das Evum A-Car nun seit Juni 2020 auf dem Markt.
+Das Evum A-Car ist ein Elektrotransporter mit Allradantrieb der Kategorie N1. Die Höchstgeschwindigkeit des Fahrzeugs liegt bei 70 km/h und die maximale Nutzlast bei rund einer Tonne.

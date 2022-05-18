@@ -61,7 +61,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
               </h3>
             </div>
           ) : (
-            <div className="flex items-center pt-1 pb-2 lg:pt-4 h-18 lg:pl-8">
+            <div className="flex items-center pt-1 pb-2 scale-75 lg:pt-4 h-18 lg:pl-8 2xl:pl-4 lg:scale-95">
               <StarsRating
                 /* stars={testResultArr[index - 1]} */ stars={
                   comparedCars[index - 1].rating.value
@@ -71,13 +71,12 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
           )}
           {/* ADDS THE CLASS TYPE AS FIRST LINE */}
           {index == 0 ? (
-            <div className="flex items-center flex-1 h-12 pl-4 bg-grey-lighter lg:pl-8 ">
+            <div className="flex items-center flex-1 h-12 pl-4 bg-grey-lighter lg:pl-10 ">
               <p className="text-sm text-blue-extra lg:text-lg">Klasse</p>
             </div>
           ) : (
-            <div className="flex items-center flex-1 h-12 pl-4 bg-grey-lighter lg:pl-8">
+            <div className="flex items-center flex-1 h-12 pl-4 bg-grey-lighter lg:pl-10 2xl:pl-8">
               <p className="text-sm text-blue-extra lg:text-lg ">
-                {" "}
                 {comparedCars[index - 1].typeClass}
               </p>
             </div>
@@ -92,7 +91,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
                   : "bg-white flex items-center h-12"
               }`}
             >
-              <p className="pl-4 text-sm text-blue-extra lg:text-lg lg:pl-8">
+              <p className="pl-4 text-sm text-blue-extra lg:text-lg lg:pl-10 2xl:pl-8">
                 {value || "-"}
               </p>
             </div>

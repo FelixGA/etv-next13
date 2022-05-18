@@ -22,7 +22,6 @@ const variants = {
 
 function FiltersDesktop({ getBrands }) {
   const { state, dispatch } = useStore();
-  console.log(getBrands);
   return (
     <div className="xl:ml-2 2xl:ml-40 ">
       <div className="">
@@ -51,11 +50,10 @@ function FiltersDesktop({ getBrands }) {
           <FilterItemDesktop item={item} />
         </div>
       ))}
-      <div className="bg-white">
+      {/*  <div className="bg-white">
         <FilterBrandItemDesktop item={getBrands} />
-        {/*  {item.title} */}
-      </div>
-      )
+      
+      </div> */}
     </div>
   );
 }

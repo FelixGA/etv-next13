@@ -1,7 +1,7 @@
 ---
 title: Streetscooter
 slug: streetscooter-testbericht-von-elektrotransporter-vergleich
-relatedCars: maxus-edeliver-3
+relatedCars: streetscooter
 youtubeLink: https://www.youtube.com/watch?v=fcjYIzGqs4s
 category: Koffer
 publishedAt: 04/01/2022
@@ -93,9 +93,6 @@ content:
 
 
       Mit dem Streetscooter hat die Deutsche Post ein Fahrzeug speziell für ihre Bedürfnisse entwickelt. Dies macht das Fahrzeug aber auch für andere Unternehmen praktisch. Während die Koffer-Version ideal für Auslieferungen von großer und auch sperriger Ladung ist, bietet der Pick-Up für Bauunternehmen eine umweltfreundliche Alternative zu herkömmlichen Fahrzeugen. Es ist deshalb schade, dass der Streetscooter finanziell leider ein deutliches Minusgeschäft war und quasi nicht mehr frei verkauft wird.
-
-
-      #### Testurteil: 3,2
     title: Fazit
     stars: 3.2
 ---

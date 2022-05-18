@@ -5,10 +5,10 @@ export default function Teasers({ teasers }) {
   //   console.log(teasers);
   return (
     <div>
-      <div className="grid grid-rows-3 gap-5 pl-2 sm:pl-0 md:grid-rows-1 md:grid-cols-3 md:gap-2">
+      <div className="grid grid-rows-3 gap-5 pl-2 sm:pl-0 md:grid-rows-1 md:grid-cols-3 md:gap-2 ">
         {teasers?.map((teaser, index) => (
-          <div key={index}>
-            <Link href={`/magazin/${teaser.category}/${teaser.slug}`}>
+          <Link href={`/magazin/${teaser.category}/${teaser.slug}`} key={index}>
+            <div className="border cursor-pointer shadow-dropdown">
               <a>
                 {teaser.title && (
                   <Image
@@ -20,9 +20,10 @@ export default function Teasers({ teasers }) {
                   />
                 )}
               </a>
-            </Link>
-            <p className="font-medium text-white ">{teaser.title}</p>
-          </div>
+
+              <h3 className="pl-2 text-base">{teaser.title}</h3>
+            </div>
+          </Link>
         ))}
       </div>
     </div>

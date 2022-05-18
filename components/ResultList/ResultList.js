@@ -16,7 +16,8 @@ const ResultList = (props) => {
       !state?.maxSpeeds ||
       !state?.chargingTimeLithiums ||
       !state?.categorys ||
-      props.sortedCars?.length === 0
+      /*       !state?.brands ||
+       */ props.sortedCars?.length === 0
     )
       return;
 
@@ -72,6 +73,15 @@ const ResultList = (props) => {
         !state?.categorys?.some((entry) => entry.min == car.category)
       )
         return false;
+      /*  if (
+        state?.brands?.length > 0 &&
+        !state?.brands?.some((entry) => entry == car.name.split(/[\s-]+/)[0])
+      )
+        return false; */
+      /* let sortedCars = vehicles.filter(
+   (car) =>
+     car.name.split(/[\s-]+/)[0] == context.params.brand.split(/[\s-]+/)[0]
+ ); */
 
       return true;
     });
@@ -84,6 +94,7 @@ const ResultList = (props) => {
     state?.maxSpeeds,
     state?.chargingTimeLithiums,
     state?.categorys,
+    /*    state?.brands, */
     props.sortedCars,
   ]);
   /* ɢᴇᴛ pop up for not meeting criteria */

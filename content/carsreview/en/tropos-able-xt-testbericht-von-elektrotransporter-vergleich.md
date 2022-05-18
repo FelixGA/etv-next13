@@ -41,7 +41,7 @@ content:
       Gegen Aufpreis ist der Able auch mit einem Transportgestell verfügbar, welches zum Beispiel mit einem Laubgitter für Landschaftsbaubetriebe geliefert werden kann. Auch eine Plane mit Gestell kann auf Basis dessen aufgebaut werden und erweitert somit den Einsatzbereich des Tropos. Die Nutzlast des Tropos Able liegt je nach Ausstattung bei maximal 580 Kilogramm beim XT1 sowie bis zu 700 Kilogramm beim XT2, wobei hier noch kein Fahrer mit eingerechnet ist. Optional ist eine Anhängekupplung verfügbar, die maximal 300 Kilogramm ziehen kann.
     image: /images/tropos-able-kipper.jpg
     title: Laderaum & Flexibilität
-    stars: 4
+    stars: 3
   - content: >-
       ### Antrieb & Aufladung
 
@@ -63,7 +63,7 @@ content:
       In der Serienausstattung des Elektrotransporter finden sich einige nützliche Helfer für den Alltagsgebrauch. So sind die Modelle mit einem Radio mit Multifunktions-Touchscreen ausgestattet, welches ebenso eine Bluetooth-Freisprechfunktion für das Telefonieren sowie einen USB-Anschluss besitzt. Die Rückfahrkamera ist besonders praktisch für die Rücksicht bei den Kofferaufbauten und bei beladener Pritsche. Und eine Servolenkung vereinfacht Lenkmanöver bei niedriger Geschwindigkeit. Auch ABS sowie eine Berganfahrhilfe sind bereits serienmäßig verbaut.
     image: ""
     title: Komfort & Ausstattung
-    stars: 4
+    stars: 3
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -96,9 +96,6 @@ content:
 
 
       Der Tropos Able ist ein leichter Elektrotransporter, der speziell für Kommunen sowie Industrie und Handwerk geeignet ist. Durch sein hohes Gewicht scheint er für den Landschaftsbau allerdings weniger geeignet. Trotz seiner geringen Außenmaße ergeben sich je nach Aufbau praktische Transportlösungen mit einer guten Raumausnutzung. Durch die drei angebotenen Batterie-Varianten kann der Kunde außerdem zwischen einem niedrigerem Preis und einer höheren Reichweite abwägen.
-
-
-      #### Testurteil: 3,4 Sterne
     title: Fazit
-    stars: 3.4
+    stars: 3
 ---

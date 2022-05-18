@@ -91,9 +91,6 @@ content:
 
 
       Der Addax MT eignet sich dank seiner Wendigkeit und den Aufbautypen besonders für Landschaftsbaubetriebe und Kommunen zur Pflege von Grünanlagen und Parks, aber auch als Baustellenfahrzeug oder für den Betrieb in Werkshallen. Während die Ausstattung sehr minimal ist, punktet der Addax mit seiner Wendigkeit und den vielen Aufbauvarianten.
-
-
-      #### Testurteil: 2,6
     title: "Fazit "
     image: /images/addax_26_pritsche.jpg
     stars: 2.6

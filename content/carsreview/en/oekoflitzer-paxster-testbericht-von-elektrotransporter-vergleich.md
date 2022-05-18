@@ -57,7 +57,7 @@ content:
       Der deutsche Händler Ökoflitzer bietet zudem den Paxmove Paxster an. Dabei handelt es sich um eine Kombination des Fahrzeugs mit zwei 32 Zoll Full-HD-Displays für moderne Out-of-Home-Werbung.
     image: /images/paxster-innenraum.webp
     title: Komfort & Ausstattung
-    stars: 4
+    stars: 3
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -86,11 +86,8 @@ content:
       ### Fazit
 
 
-      Das Fahrzeug eignet sich optimal als Zustellfahrzeug für Post-Sendungen, Zeitungen oder Kleingut. Das optimale Einsatzgebiet des Paxster ist der Stadtrand mit einer mittleren Zustelldichte. Sicherlich hat das Fahrzeug auch potential für gastronomische Lieferdienste, wie beispielsweise Pizzerien. Neben diesen Bereichen ist das Einsatzfeld des Paxsters durch seinen Aufbau jedoch beschränkt. Ebenso ist der Preis bezogen auf die Fahrzeuggröße relativ hoch. 
-
-
-      #### Testurteil: 3,2
+      Das Fahrzeug eignet sich optimal als Zustellfahrzeug für Post-Sendungen, Zeitungen oder Kleingut. Das optimale Einsatzgebiet des Paxster ist der Stadtrand mit einer mittleren Zustelldichte. Sicherlich hat das Fahrzeug auch potential für gastronomische Lieferdienste, wie beispielsweise Pizzerien. Neben diesen Bereichen ist das Einsatzfeld des Paxsters durch seinen Aufbau jedoch beschränkt. Ebenso ist der Preis bezogen auf die Fahrzeuggröße relativ hoch.
     title: Fazit
     image: ""
-    stars: 3.2
+    stars: 3
 ---
