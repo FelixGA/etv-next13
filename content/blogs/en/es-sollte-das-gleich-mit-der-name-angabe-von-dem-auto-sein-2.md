@@ -1,6 +1,6 @@
 ---
 title: Der Aufbau des Sevic V500e kann schnell gewechselt werden
-slug: es sollte das gleich mit der `name` Angabe von dem Auto sein
+slug: der-aufbau-des-sevic-v500e-kann-schnell-gewechselt-werden
 youtubeLink: ""
 category: hersteller
 publishedAt: 05/01/2022
