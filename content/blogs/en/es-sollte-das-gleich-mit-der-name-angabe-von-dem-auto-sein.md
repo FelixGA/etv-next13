@@ -5,7 +5,8 @@ youtubeLink: ""
 category: hersteller
 publishedAt: 04/29/2022
 src: /images/ampnet_photo_20220429_209619.jpg
-description: bitte auffuelen
+description: Mit dem Ford Transit reagiert der europäische Markenführer auf die
+  wachsende Nachfrage nach elektrischen Nutzfahrzeugen.
 ---
 Die Elektrowelle rollt und reißt vor allem die leichten Nutzfahrzeuge mit sich. So gut wie alle Hersteller haben inzwischen ihre Flotte elektrifiziert, und nun folgt mit dem Ford Transit auch der europäische Marktführer mit einem „Stecker“-Modell. Offensichtlich genau zur richtigen Zeit, denn bereits vor der offiziellen Markteinführung haben schon 5000 Unternehmen den in der Türkei gebauten Transporter bestellt. Gleichzeitig startet jetzt auch in Deutschland das neue Dienstleistungsangebot Ford Pro, in dem der Hersteller alle mit dem Betrieb der Fahrzeuge verbundenen Serviceangebote bündelt.
 
