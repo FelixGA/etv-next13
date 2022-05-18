@@ -16,7 +16,7 @@ const TestVerdictVertical = ({ stars }) => {
             <StarsRating stars={stars} />
           </div>
         </div>
-        <div className="relative flex justify-center right-2 bottom-4 w-28 ">
+        <div className="relative flex justify-center right-3 bottom-4 w-28 ">
           <Image
             src="/images/etv-logo-final.png"
             alt="test"
@@ -25,7 +25,7 @@ const TestVerdictVertical = ({ stars }) => {
             objectFit="contain"
           />
 
-          <div className="absolute bottom-10 left-[98px] ">
+          <div className="absolute bottom-10 left-[95px] sm:left-[100px] scale-75 sm:scale-100">
             <FcCheckmark size={50} />
           </div>
         </div>

@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useStore } from "../store";
 import { useRouter } from "next/router";
+import Logo_SVG from "../repeated/Logo_SVG.js";
 
 const variants = {
   enter: {
@@ -64,22 +65,20 @@ const Header = () => {
               });
             }}
           >
-            <div className="w-16 mt-2 logo-container xl:w-28 ">
-              <Image
-                src="/images/etv-logo-final-white.png"
-                width={80}
-                height={60}
-                alt="logo"
-                objectFit="cover"
-                layout="responsive"
-              />
+            <div className="w-[80px] pt-1">
+              <Logo_SVG />
             </div>
-            <div className="flex items-center pl-2 ">
-              <p className="pt-1 text-xs text-white md:text-sm xl:text-lg ">
-                ELEKTROTRANSPORTER
-                <br />
-                VERGLEICH
-              </p>
+            <div className="flex flex-col">
+              <div className="flex items-center tracking-wide">
+                <p className="pl-2 text-xs font-semibold text-white md:text-sm xl:text-lg">
+                  ELEKTROTRANSPORTER
+                </p>
+              </div>
+              <div className="relative flex items-center tracking-wide">
+                <p className="relative pl-2 text-xs font-semibold text-white bottom-1 md:text-sm xl:text-lg">
+                  VERGLEICH
+                </p>
+              </div>
             </div>
           </div>
         </Link>
