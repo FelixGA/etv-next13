@@ -36,7 +36,7 @@ const Footer = ({ blogs, brands }) => {
 
   return (
     <>
-      <footer className="px-4 shadow-2xl bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around ">
+      <footer className="px-2 shadow-2xl xl:px-4 bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around ">
         <nav className="flex flex-col items-center w-full my-4 justify-evenly lg:mr-14 xl:justify-evenly sm:flex-row sm:items-start lg:w-3/4 sm:pb-8 print:hidden">
           <div className="flex flex-col w-fit">
             <h3 className="flex items-end justify-center text-sm font-bold tracking-wider sm:justify-start h-14 sm:text-base">
@@ -88,7 +88,7 @@ const Footer = ({ blogs, brands }) => {
           {/* only for RECHTLICHES & KONTAKT
            */}
           <div className="flex flex-col items-center justify-center sm:items-start sm:w-40 md:w-1/6">
-            <h3 className="flex items-center justify-center text-sm font-bold tracking-wider text-white w-52 md:justify-start sm:items-end h-14 sm:text-base">
+            <h3 className="flex items-center justify-center text-sm font-bold tracking-wider text-white w-52 xl:w-full md:justify-start sm:items-end h-14 sm:text-base">
               {`Rechtliches & Kontakt`.toUpperCase()}
             </h3>
             <div className="sm:pt-4">
