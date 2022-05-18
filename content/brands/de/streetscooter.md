@@ -3,7 +3,7 @@ title: StreetScooter
 description: StreetScooter ist ein deutscher Hersteller von Elektrofahrzeugen
   mit Sitz in Aachen. Bis 2021 war das Unternehmen eine hundertprozentige
   Tochtergesellschaft der Deutschen Post.
-src: /images/streetscooter-logo.jpeg
+src: /images/streetscooter-logo.svg
 slug: streetscooter
 websiteLink: https://www.streetscooter.com/de/
 content: >-

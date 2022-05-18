@@ -6,7 +6,7 @@ function FilterCheckboxMobile(props) {
   return (
     <>
       <input
-        className=" appearance-none w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5  "
+        className=" appearance-none w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  after:content-['✔'] after:relative after:left-1 after:bottom-0.5  "
         type="checkbox"
         checked={
           state[props.category].map((el) => el.min).join(" ") == props.value
