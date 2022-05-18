@@ -36,7 +36,7 @@ const Footer = ({ blogs, brands }) => {
 
   return (
     <>
-      <footer className="px-4 shadow-2xl bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around ">
+      <footer className="px-2 shadow-2xl xl:px-4 bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around ">
         <nav className="flex flex-col items-center w-full my-4 justify-evenly lg:mr-14 xl:justify-evenly sm:flex-row sm:items-start lg:w-3/4 sm:pb-8 print:hidden">
           <div className="flex flex-col w-fit">
             <h3 className="flex items-end justify-center text-sm font-bold tracking-wider sm:justify-start h-14 sm:text-base">
@@ -88,7 +88,7 @@ const Footer = ({ blogs, brands }) => {
           {/* only for RECHTLICHES & KONTAKT
            */}
           <div className="flex flex-col items-center justify-center sm:items-start sm:w-40 md:w-1/6">
-            <h3 className="flex items-center justify-center text-sm font-bold tracking-wider text-white w-52 md:justify-start sm:items-end h-14 sm:text-base">
+            <h3 className="flex items-center justify-center text-sm font-bold tracking-wider text-white w-52 xl:w-full md:justify-start sm:items-end h-14 sm:text-base">
               {`Rechtliches & Kontakt`.toUpperCase()}
             </h3>
             <div className="sm:pt-4">
@@ -98,8 +98,11 @@ const Footer = ({ blogs, brands }) => {
         </nav>
         {/* logos and media
          */}
-        <div className="flex flex-col items-center px-4 pt-4 lg:pl-0 xl:pl-4 sm:items-start md:w-1/6 lg:pt-12 ">
-          <Logo />
+        <div className="relative flex flex-col items-center px-4 pt-4 lg:pl-0 xl:pl-4 sm:items-start md:w-1/6 lg:pt-12 ">
+          <div className="relative right-2">
+            <Logo />
+          </div>
+
           <div className="flex justify-center w-full print:hidden">
             <p className="pt-6 pb-2 pl-0 text-xs text-center text-white w-[300px] sm:text-left lg:text-lg xl:text-lg">
               {footerWords.map((item, index) => (
@@ -138,8 +141,8 @@ const Footer = ({ blogs, brands }) => {
         className="w-full h-[1px] bg-[#b1a7a7] print:hidden
 "
       ></div>
-      <div className="flex items-center justify-center h-16 text-xs text-white bg-blue-darker sm:text-lg sm:h-20 print:hidden">
-        &copy; 2022 Elektrotransporter Vergleich
+      <div className="flex items-center justify-center h-16 text-xs tracking-wider text-white bg-blue-darker sm:text-lg sm:h-20 print:hidden">
+        &copy; 2022 Elektrotransporter-Vergleich.de
       </div>
     </>
   );

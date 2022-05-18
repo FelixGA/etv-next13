@@ -4,6 +4,7 @@ import CarCardDetailsDesktop from "../../components/ResultList/CarCardDetailsDes
 
 import Image from "next/image";
 import StarsRating from "../repeated/StarsRating";
+import TestVerdictVertical from "../repeated/TestVerdictVertical";
 const BasicInfo = ({ carItem }) => {
   return (
     <div className="flex flex-col w-full p-4 lg:flex-row lg:pt-12">
@@ -44,12 +45,9 @@ const BasicInfo = ({ carItem }) => {
               <h2 className="w-full pb-2 text-2xl font-bold tracking-wide text-blue-extra sm:text-2xl">
                 {carItem.title}
               </h2>
-              <div className="px-2 w-36 md:px-4 print:hidden">
-                <div className="flex flex-col items-center h-32 border-2 w-28 justify-evenly">
-                  <p>rating</p>{" "}
-                  <div className="scale-75 ">
-                    <StarsRating stars={5} />
-                  </div>
+              <div className=" print:hidden">
+                <div className="scale-90 ">
+                  <TestVerdictVertical stars={carItem?.rating.value} />
                 </div>
               </div>
             </div>
