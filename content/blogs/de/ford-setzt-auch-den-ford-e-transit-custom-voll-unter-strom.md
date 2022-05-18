@@ -1,6 +1,6 @@
 ---
 title: Ford setzt auch den Ford E-Transit Custom voll unter Strom
-slug: ford-setzt-auch-den-transit-custom-voll-unter-strom
+slug: ford-setzt-auch-den-ford-e-transit-custom-voll-unter-strom
 youtubeLink: ""
 category: hersteller
 publishedAt: 05/09/2022
