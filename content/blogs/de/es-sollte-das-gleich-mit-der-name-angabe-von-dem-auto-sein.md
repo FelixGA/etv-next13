@@ -1,6 +1,6 @@
 ---
 title: "Ford E-Transit und Ford Pro: Start in die elektrische Zukunft"
-slug: es sollte das gleich mit der `name` Angabe von dem Auto sein
+slug: ford-e-transit-und-ford-pro-start-in-die-elektrische-zukunft
 youtubeLink: ""
 category: hersteller
 publishedAt: 04/29/2022
