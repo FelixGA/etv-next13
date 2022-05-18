@@ -15,6 +15,8 @@ const reducer = (state, action) => {
       return { ...state, chargingTimeLithiums: action.data };
     case "category":
       return { ...state, categorys: action.data };
+    case "brand":
+      return { ...state, brands: action.data };
 
     /*  */
 
@@ -50,6 +52,7 @@ const initialState = {
   maxSpeeds: [],
   chargingTimeLithiums: [],
   categorys: [],
+  brands: [],
   truncates: "",
   /*  states for comparison popup */
   autoForComparisons: [],

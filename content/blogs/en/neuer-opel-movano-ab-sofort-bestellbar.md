@@ -5,7 +5,6 @@ contentHeading:
   content: ""
 title: Neuer Opel Movano ab sofort bestellbar
 slug: neuer-opel-movano-ab-sofort-bestellbar
-relatedCars: aixam-pro-etruck-van
 youtubeLink: ""
 category: manufacturer
 description: Der elektrische Opel Movano ist der größte Transporter im
