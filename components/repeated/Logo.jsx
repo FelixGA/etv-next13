@@ -6,11 +6,11 @@ const Logo = () => {
     <div className="flex flex-row items-center justify-center w-full sm:justify-start print:hidden">
       <div className="relative ">
         <Link href={"/"}>
-          <a className="relative block w-14">
+          <a className="relative block w-20">
             <Image
               src="/images/ETV Favicon128x128@4x (1).png"
-              width={60}
-              height={50}
+              width={80}
+              height={70}
               alt="logo-footer"
               objectFit="contain"
               layout="responsive"
@@ -21,7 +21,7 @@ const Logo = () => {
       <div className="w-fit print:hidden">
         <Link href={"/"}>
           <a aria-label="home">
-            <p className="text-xs font-bold text-white cursor-pointer xs:pl-0 sm:pr-0 sm:text-xxs">
+            <p className="pb-1 text-xs font-bold tracking-wider text-white cursor-pointer sm:text-xxs">
               ELEKTROTRANSPORTER
               <br />
               VERGLEICH

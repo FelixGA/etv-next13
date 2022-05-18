@@ -98,8 +98,11 @@ const Footer = ({ blogs, brands }) => {
         </nav>
         {/* logos and media
          */}
-        <div className="flex flex-col items-center px-4 pt-4 lg:pl-0 xl:pl-4 sm:items-start md:w-1/6 lg:pt-12 ">
-          <Logo />
+        <div className="relative flex flex-col items-center px-4 pt-4 lg:pl-0 xl:pl-4 sm:items-start md:w-1/6 lg:pt-12 ">
+          <div className="relative right-2">
+            <Logo />
+          </div>
+
           <div className="flex justify-center w-full print:hidden">
             <p className="pt-6 pb-2 pl-0 text-xs text-center text-white w-[300px] sm:text-left lg:text-lg xl:text-lg">
               {footerWords.map((item, index) => (
@@ -138,8 +141,8 @@ const Footer = ({ blogs, brands }) => {
         className="w-full h-[1px] bg-[#b1a7a7] print:hidden
 "
       ></div>
-      <div className="flex items-center justify-center h-16 text-xs text-white bg-blue-darker sm:text-lg sm:h-20 print:hidden">
-        &copy; 2022 Elektrotransporter Vergleich
+      <div className="flex items-center justify-center h-16 text-xs tracking-wider text-white bg-blue-darker sm:text-lg sm:h-20 print:hidden">
+        &copy; 2022 Elektrotransporter-Vergleich.de
       </div>
     </>
   );

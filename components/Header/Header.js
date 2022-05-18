@@ -64,18 +64,18 @@ const Header = () => {
               });
             }}
           >
-            <div className="w-16 mt-2 logo-container xl:w-28 ">
+            <div className="w-16 logo-container xl:w-28 ">
               <Image
-                src="/images/etv-logo-final-white.png"
-                width={80}
-                height={60}
+                src="/images/ETV Favicon128x128@4x (1).png"
+                width={70}
+                height={70}
                 alt="logo"
-                objectFit="cover"
+                objectFit="contain"
                 layout="responsive"
               />
             </div>
-            <div className="flex items-center pl-2 ">
-              <p className="pt-1 text-xs text-white md:text-sm xl:text-lg ">
+            <div className="flex items-center tracking-wide">
+              <p className="pb-1 text-xs font-semibold text-white md:text-sm xl:text-lg">
                 ELEKTROTRANSPORTER
                 <br />
                 VERGLEICH
