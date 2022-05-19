@@ -1,20 +1,43 @@
 .secondArticle p {
-  padding-top: 16px;
+  padding-top: 8px;
+  padding-left: 20px;
   color: #6f89a5;
 }
 
+.secondArticle button {
+  margin-left: 16px;
+  padding-top: 25px;
+}
+
 .secondArticle h2 {
-  padding-top: 48px;
+  padding-top: 16px;
+  padding-left: 20px;
 }
 
 @media screen and (min-width: 200px) {
   .secondArticle h2 {
-    padding-top: 20px;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .secondArticle p {
+    padding-top: 8px;
+    padding-left: 0px;
+    color: #6f89a5;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   .secondArticle h2 {
-    padding-top: 30px;
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+  .secondArticle p {
+    padding-top: 8px;
+    padding-left: 16px;
+    color: #6f89a5;
+  }
+  .secondArticle button {
+    margin-left: 16px;
+    padding-top: 25px;
   }
 }

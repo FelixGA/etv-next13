@@ -5,7 +5,7 @@ export default function Teasers({ teasers }) {
   //   console.log(teasers);
   return (
     <div>
-      <div className="grid grid-rows-3 gap-5 pl-2 sm:pl-0 md:grid-rows-1 md:grid-cols-3 md:gap-2 ">
+      <div className="grid grid-rows-3 gap-5 md:grid-rows-1 md:grid-cols-3 md:gap-2 ">
         {teasers?.map((teaser, index) => (
           <Link href={`/magazin/${teaser.category}/${teaser.slug}`} key={index}>
             <div className="border cursor-pointer shadow-dropdown">

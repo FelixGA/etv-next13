@@ -5,10 +5,8 @@ description: ttaetgweth SEO SEO SEO
 src: /images/medal.png
 content:
   - name: header
-    markdown: |-
-      Hier finden Sie den **passenden Elektrotransporter,**
-
-      genau für Ihre Ansprüche
+    markdown: Schnell & einfach den **passenden Elektrotransporter** für Ihre
+      Ansprüche finden!
     details: ✔ unabhängig ✔ schnell ✔ immer aktuell
   - name: compareBox
     markdown: Reichweite, Preis, Nutzlast
