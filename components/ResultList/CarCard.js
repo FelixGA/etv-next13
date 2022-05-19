@@ -66,7 +66,7 @@ function CarCard({ carItem }) {
           {/* PRICE + MOBILE RATING BOX end*/}
           {/* BUTTONS start */}
           <div className="relative flex flex-col justify-end flex-1 2xl:right-2 sm:justify-center">
-            <div className="pb-2 xl:mt-8 2xl:hidden sm:pb-0">
+            <div className="flex justify-center pb-2 sm:scale-[140%] xl:mt-8 2xl:hidden ">
               {/* {mobileRatingBox} */}
               <StarsRating stars={carItem?.rating.value} />
             </div>
