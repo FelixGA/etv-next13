@@ -83,6 +83,17 @@ const NewsLetter = ({ getMarkdownContext }) => {
             {errors.emailInput && "Email ist erforderlich"}
           </p>
         </div>
+        <div
+          className={
+            send && !errors.emailInput
+              ? "flex h-fit justify-center items-center w-full "
+              : "hidden"
+          }
+        >
+          <p className="w-full px-8 mt-4 sm:p-8 sm:w-2/3 sm:text-lg">
+            Vielen Dank! Das Formular wurde erfolgreich übermittelt.
+          </p>
+        </div>
       </div>
     </div>
   );
