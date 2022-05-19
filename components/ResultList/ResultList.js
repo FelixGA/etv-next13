@@ -88,7 +88,9 @@ const ResultList = (props) => {
         return false;
       if (
         state?.brands?.length > 0 &&
-        !state?.brands?.some((entry) => entry == car.name.split(/[\s-]+/)[0])
+        !state?.brands?.some(
+          (entry) => entry.split(/[\s-]+/)[0] == car.name.split(/[\s-]+/)[0]
+        )
       )
         return false;
       return true;

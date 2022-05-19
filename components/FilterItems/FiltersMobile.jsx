@@ -8,6 +8,7 @@ import { filtersData, priceFilterData } from "../../data/filtersData";
 import FilterItemMobile from "./FilterItemMobile";
 import Sort from "../SortItems/Sort";
 import PriceInputs from "./PriceInputs";
+import FilterBrandItemMobile from "./FilterBrandItemMobile";
 
 const variants = {
   enter: {
@@ -24,7 +25,7 @@ const variants = {
   },
 };
 
-function FiltersMobile() {
+function FiltersMobile({ getBrands }) {
   /* UseStates */
   const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
   const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
@@ -116,6 +117,9 @@ function FiltersMobile() {
                 <FilterItemMobile item={item} />
               </div>
             ))}
+            <div className="bg-white">
+              <FilterBrandItemMobile item={getBrands} />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
