@@ -33,7 +33,7 @@ const Header = () => {
       <div className="sticky top-0 z-40 flex flex-row items-center justify-between w-full h-20 bg-blue-darker sm:h-24 2xl:px-40">
         <Link href={`/`} passHref>
           <div
-            className="flex flex-row pl-2 cursor-pointer sm:pl-4 "
+            className="flex flex-row pl-2 cursor-pointer sm:mt-1 sm:pl-4"
             onClick={() => {
               dispatch({
                 type: "mobileNavActive",
@@ -65,17 +65,17 @@ const Header = () => {
               });
             }}
           >
-            <div className="w-[80px] pt-1">
+            <div className="w-[50px] sm:w-[80px] ml-2 sm:ml-0 sm:mt-1">
               <Logo_SVG />
             </div>
-            <div className="flex flex-col">
-              <div className="flex items-center tracking-wide">
-                <p className="pl-2 text-xs font-semibold text-white md:text-sm xl:text-lg">
+            <div className="flex flex-col ">
+              <div className="relative flex items-center tracking-wide ">
+                <p className="relative pl-2 font-semibold text-white text-xxs sm:text-sm lg:text-lg sm:top-1 lg:top-0">
                   ELEKTROTRANSPORTER
                 </p>
               </div>
               <div className="relative flex items-center tracking-wide">
-                <p className="relative pl-2 text-xs font-semibold text-white bottom-1 md:text-sm xl:text-lg">
+                <p className="relative pl-2 font-semibold text-white text-xxs sm:text-sm sm:top-2 lg:-top-1 lg:text-lg">
                   VERGLEICH
                 </p>
               </div>
@@ -88,7 +88,7 @@ const Header = () => {
         <AnimatePresence initial={false}>
           {state?.mobileNavActives && (
             <motion.div
-              className="absolute w-full h-screen top-20 lg:hidden sm:w-96 z-90"
+              className="absolute right-0 w-full h-screen top-20 lg:hidden sm:w-96 z-90"
               variants={variants}
               initial="enter"
               animate="center"
