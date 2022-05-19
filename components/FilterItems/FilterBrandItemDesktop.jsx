@@ -4,7 +4,7 @@ import FilterBrandCheckbox from "./FilterBrandCheckbox";
 import { useStore } from "../store";
 import { motion, AnimatePresence } from "framer-motion";
 import image from "../../public/images/ETV-IconsVergleichen.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 const variants = {
   enter: {
     y: -1000,
@@ -35,8 +35,7 @@ function FilterBrandItemDesktop({ item }) {
   const [selectedBrands, setSelectedBrands] = useState([]);
 
   /* to render the four ranges */
-  /*   console.log(0, selectedBrands.length);
-   */
+
   return (
     <>
       {/* truncate state */}
@@ -103,16 +102,17 @@ function FilterBrandItemDesktop({ item }) {
             {item.map((checkbox, index) => (
               <div
                 onClick={() => {
-                  if (selectedBrands.includes(checkbox.slug)) {
-                    setSelectedBrands(
-                      selectedBrands.filter((item) => item !== checkbox.slug)
-                    );
-                  } else {
-                    setSelectedBrands([...selectedBrands, checkbox.slug]);
-                  }
                   dispatch({
                     type: "brand",
-                    data: selectedBrands,
+                    /*   data: selectedBrands, */
+                    data: state?.brands.includes(checkbox.slug)
+                      ? [
+                          ...state?.brands,
+                          state?.brands.filter(
+                            (item) => item !== checkbox.slug
+                          ),
+                        ]
+                      : [...state?.brands, checkbox.slug],
                   });
                 }}
                 key={index}
@@ -120,7 +120,8 @@ function FilterBrandItemDesktop({ item }) {
               >
                 <FilterBrandCheckbox
                   checkbox={checkbox}
-                  selectedBrands={selectedBrands}
+                  /*                   selectedBrands={state?.brands}
+                   */ setSelectedBrands={setSelectedBrands}
                   /*   value={checkbox.value}
                   id={checkbox.id}
                   category={item.category}
