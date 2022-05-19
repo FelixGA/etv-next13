@@ -113,21 +113,21 @@ const Footer = ({ blogs, brands }) => {
             </p>
           </div>
           <div className="flex justify-start pt-2 pb-8 w-28 lg:w-40 ">
-            <div className="p-1 transition cursor-pointer hover:scale-110">
+            <div className="p-2 transition cursor-pointer hover:scale-110">
               <Link href="https://www.facebook.com">
                 <a aria-label="facebook" target="_blank">
                   <BsFacebook size={25} fill="#fff" />
                 </a>
               </Link>
             </div>
-            <div className="p-1 transition cursor-pointer hover:scale-110 ">
+            <div className="p-2 transition cursor-pointer hover:scale-110 ">
               <Link href="https://www.youtube.com">
                 <a aria-label="youtube" target="_blank">
                   <BsYoutube size={30} fill="#fff" />
                 </a>
               </Link>
             </div>
-            <div className="p-1 transition cursor-pointer hover:scale-110 ">
+            <div className="p-2 transition cursor-pointer hover:scale-110 ">
               <Link href="https://www.linkedin.com">
                 <a aria-label="linkedin" target="_blank">
                   <BsLinkedin size={25} fill="#fff" />
