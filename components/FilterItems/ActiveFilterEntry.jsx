@@ -202,7 +202,7 @@ function ActiveFilterEntry(props) {
             });
           }}
         >
-          alle Filter loschen
+          alle Filter löschen
         </div>
       </div>
     </div>

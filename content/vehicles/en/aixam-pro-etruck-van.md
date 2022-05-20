@@ -1,5 +1,5 @@
 ---
-title: Aixam-pro-Etruck-van
+title: Aixam Pro eTruck
 name: aixam-pro-etruck-van
 price: 19990
 relatedBlogs:
@@ -76,7 +76,7 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Befriedigend
+  key: Sterne
   value: 3
 guarantee:
   key: Garantie Fahrzeug

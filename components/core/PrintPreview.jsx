@@ -1,17 +1,12 @@
 import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
-import image from "/public/images/reichweite@2x.png";
-import image2 from "/public/images/zuladung@2x.png";
-import image3 from "/public/images/hoechstgeschwindigkeit@2x.png";
-import image4 from "/public/images/ladezeit@2x.png";
+
 import CarCardProps from "../ResultList/CarCardProps";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 import styles from "../DetailsPage/Articles.module.css";
 import { MDXRemote } from "next-mdx-remote";
-import { FaArrowCircleLeft } from "react-icons/fa";
-import { AiOutlineStar } from "react-icons/ai";
+
 import StarsRating from "../repeated/StarsRating";
 import TestVerdict from "../repeated/TestVerdict";
 export default function PrintPreview({
@@ -26,85 +21,104 @@ export default function PrintPreview({
         {/* main page */}
         <div className="w-screen flex h-screen flex-col flex-wrap">
           {/*header */}
-          <div className="w-screen h-[5vh] text-lg text-white flex justify-between bg-blue-darker mb-1">
+          <div className="w-screen h-[5vh] text-lg text-white flex justify-evenly items-center bg-blue-darker mb-1">
             <h2 className="text-white">Fahrzeugübersicht</h2>
-            <div className=" w-[90px]">
-              <img src="/images/etv-logo-final.png" />
+            <div className="flex">
+              <img
+                src="/images/etv-logo-final-white.png"
+                alt="logo"
+                className=" w-[90px]"
+              />
+              <div className="flex items-center pl-2 ">
+                <p className="pt-1 text-xs text-white md:text-sm xl:text-lg ">
+                  ELEKTROTRANSPORTER
+                  <br />
+                  VERGLEICH
+                </p>
+              </div>
             </div>
           </div>
-          <div className="flex w-full flex-col flex-wrap  ">
+          <div className="flex w-screen flex-col flex-wrap ">
             {/* details , price  etc */}
             {/* basics photo etc */}
-            <div className="flex w-64 h-32">
+            <div className="flex h-32">
               <img
                 src={carItem?.src}
                 alt={carItem?.title}
-                className="mr-4 object-cover"
+                className="mr-4 object-cover w-1/3"
               />
 
-              <div className="flex flex-col ">
+              <div className="flex flex-col w-2/3">
                 <div className="flex flex-col justify-between  ">
                   <h3 className="font-bold w-full">{carItem?.title}</h3>
-                </div>
-                <div className="flex ">
-                  <div className="flex mx-2">
-                    <img
-                      src="/images/etv-logo-final.png"
-                      alt={carItem?.title}
-                      className="mr-8  w-full object-cover"
-                    />
-                    <p className="text-blue-dark">
-                      {carItem?.rangeLithium.value}
+
+                  <div className="flex">
+                    <div className="flex flex-col mx-2 w-1/6">
+                      <img
+                        src="/images/reichweite.png"
+                        alt={carItem?.rangeLithium.key}
+                        className="mr-8 w-14 h-12 object-cover"
+                      />
+                      <p className="text-blue-dark font-bold">
+                        {carItem?.rangeLithium.value}{" "}
+                        {carItem?.rangeLithium.baseUnit}
+                      </p>
+                      {carItem?.rangeLithium.key.split(" ")[0]}
+                    </div>
+                    <div className="flex flex-col mx-2 w-1/6">
+                      <img
+                        src="/images/ladezeit.png"
+                        alt={carItem?.title}
+                        className="mr-8 w-14 h-12 object-cover"
+                      />
+                      <p className="text-blue-dark font-bold">
+                        {carItem?.chargingTimeLithium.value}{" "}
+                        {carItem?.chargingTimeLithium.baseUnit}
+                      </p>
+                      {carItem?.chargingTimeLithium.key.split(" ")[0]}
+                    </div>
+                    <div className="flex flex-col mx-2 w-1/6">
+                      <img
+                        src="/images/zuladung.png"
+                        alt={carItem?.loadingWeight.key}
+                        className="mr-8 w-14 h-12 object-fit-contain"
+                      />
+                      <p className="text-blue-dark font-bold">
+                        {carItem?.loadingWeight.value}{" "}
+                        {carItem?.loadingWeight.baseUnit}
+                      </p>
+                      {carItem?.loadingWeight.key}
+                    </div>
+                    <div className="flex flex-col mx-2 w-1/6">
+                      <img
+                        src="/images/hoechstgeschwindigkeit.png"
+                        alt={carItem?.maxSpeed.keye}
+                        className="mr-8 w-14 h-12 object-cover"
+                      />
+                      <p className="text-blue-dark font-bold">
+                        {carItem?.maxSpeed.value} {carItem?.maxSpeed.baseUnit}
+                      </p>
+                      {carItem?.maxSpeed.key}
+                    </div>
+                    <div className="flex flex-col mx-2 w-1/6">
+                      <img
+                        src="/images/aufbautype.png"
+                        alt={carItem?.title}
+                        className="mr-8 w-14 h-12 object-cover"
+                      />
+                      <p className="text-blue-dark font-bold">
+                        {carItem?.category}
+                      </p>
+                      Kategorie
+                    </div>
+                  </div>
+                  <div className="flex w-full justify-start items-center ">
+                    preis <br />
+                    (brutto)
+                    <p className="text-yellow-600 font-bold pl-8 print:text-2xl">
+                      {carItem?.price} €
                     </p>
-                    Reichweite
                   </div>
-                  <div className="flex flex-col mx-2">
-                    <img
-                      src={carItem?.src}
-                      alt={carItem?.title}
-                      className="mr-8 w-full object-cover"
-                    />
-                    <p className="text-blue-dark">
-                      {carItem?.chargingTimeLithium.value}
-                    </p>
-                    Ladezeit
-                  </div>
-                  <div className="flex flex-col mx-2">
-                    <img
-                      src={carItem?.src}
-                      alt={carItem?.title}
-                      className="mr-8  w-full object-cover"
-                    />
-                    <p className="text-blue-dark">
-                      {carItem?.loadingWeight.value}
-                    </p>
-                    Zuladung
-                  </div>
-                  <div className="flex flex-col mx-2">
-                    <img
-                      src={carItem?.src}
-                      alt={carItem?.title}
-                      className="mr-8  w-full object-cover"
-                    />
-                    <p className="text-blue-dark">{carItem?.maxSpeed.value}</p>
-                    V-Max
-                  </div>
-                  <div className="flex flex-col mx-2">
-                    <img
-                      src={carItem?.src}
-                      alt={carItem?.title}
-                      className="mr-8  w-full object-cover"
-                    />
-                    <p className="text-blue-dark">{carItem?.category}</p>
-                    Kategorie
-                  </div>
-                </div>
-                <div className="flex flex-row  ">
-                  preis <br />
-                  (brutto)
-                  <p className="text-yellow-600 font-bold pl-2 print:text-[16px]">
-                    {carItem?.price} €
-                  </p>
                 </div>
               </div>
             </div>
@@ -174,10 +188,10 @@ export default function PrintPreview({
       {/* AB HEREEEEEEEEEEEEEEEEEEEEEEEE   test bericht */}
       <div className="flex w-full h-screen print:text-[10px] flex-col my-2 flex-wrap ">
         {/* header */}
-        <div className="w-screen h-[50px] text-lg text-white flex justify-between bg-blue-darker mb-2">
+        <div className="w-screen h-[50px] text-lg text-white flex justify-evenly items-center bg-blue-darker mb-2">
           <h2 className="text-white">Testbericht</h2>
           <div className=" w-[90px]">
-            <img src="/images/etv-logo-final.png" alt="test" />
+            <img src="/images/etv-logo-final-white.png" alt="logo" />
           </div>
         </div>
         <div className="flex flex-row flex-wrap justify-around">

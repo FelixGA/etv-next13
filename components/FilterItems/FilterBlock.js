@@ -10,7 +10,6 @@ import filterImage from "../../public/images/filter-icon.png";
 function FilterBlock() {
   const { state, dispatch } = useStore();
   const [truncate, setTruncate] = useState(false);
-
   return (
     <div className=" w-full min-w-fit relative">
       <div className="bg-[#Fff]  shadow-dropdown md:hidden  w-full z-40">
@@ -75,7 +74,7 @@ function FilterBlock() {
       {/* HEADING + SORTING */}
       <div className="flex flex-row flex-1 justify-between relative ">
         <div className="mt-10 relative bottom-2 md:bottom-10 2xl:bottom-2  w-fit ">
-          <h1 className="pl-3 text-2xl text-black-dark ">
+          <h1 className="pl-3 text-2xl text-black-dark">
             Die besten E-Transporter nach Ihrer Auswahl
           </h1>
         </div>
