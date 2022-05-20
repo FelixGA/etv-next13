@@ -11,7 +11,7 @@ import StarsRating from "../repeated/StarsRating";
 import TestVerdict from "../repeated/TestVerdict";
 export default function PrintPreview({
   carItem,
-  getBlogContext,
+
   getTestReview,
   getCarsReview,
 }) {
@@ -156,30 +156,34 @@ export default function PrintPreview({
                         ) : null}
                       </div>
                     </div>
-                    <div className="h-auto print:text-[11px]">
-                      <MDXRemote
-                        {...getTestReview[getCarsReview?.content.length - 1]}
-                      />
-                    </div>
+                    {getTestReview && (
+                      <div className="h-auto print:text-[11px]">
+                        <MDXRemote
+                          {...getTestReview[getCarsReview?.content.length - 1]}
+                        />
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
               <div className="flex w-1/3 items-center">
-                <ul className="w-full p-2">
-                  {getCarsReview.content.map((item, index) =>
-                    item.stars ? (
-                      <li
-                        className={
-                          index == getCarsReview.content.length - 1
-                            ? "w-full flex justify-between text-blue-dark"
-                            : "w-full flex justify-between "
-                        }
-                      >
-                        <p> {item.title}</p> <p> {item.stars}/5</p>
-                      </li>
-                    ) : null
-                  )}
-                </ul>
+                {getTestReview && (
+                  <ul className="w-full p-2">
+                    {getCarsReview.content.map((item, index) =>
+                      item.stars ? (
+                        <li
+                          className={
+                            index == getCarsReview.content.length - 1
+                              ? "w-full flex justify-between text-blue-dark"
+                              : "w-full flex justify-between "
+                          }
+                        >
+                          <p> {item.title}</p> <p> {item.stars}/5</p>
+                        </li>
+                      ) : null
+                    )}
+                  </ul>
+                )}
               </div>
             </div>
           </div>
@@ -212,9 +216,11 @@ export default function PrintPreview({
                         ) : null}
                       </div>
                     </div>
-                    <div className="h-auto">
-                      <MDXRemote {...getTestReview[index]} />
-                    </div>
+                    {getTestReview && (
+                      <div className="h-auto">
+                        <MDXRemote {...getTestReview[index]} />
+                      </div>
+                    )}
                   </div>
                 ))
                 .slice(0, 3)}

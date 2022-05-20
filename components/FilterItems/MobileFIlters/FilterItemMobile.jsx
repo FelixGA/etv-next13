@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useStore } from "../store";
+import { useStore } from "../../store";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 import { motion, AnimatePresence } from "framer-motion";

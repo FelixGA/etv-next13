@@ -61,7 +61,6 @@ export default function Details(props) {
       <div className="hidden print:block">
         <PrintPreview
           carItem={carItem}
-          getBlogContext={getBlogContext}
           getTestReview={getTestReview}
           getCarsReview={getCarsReview}
         />
