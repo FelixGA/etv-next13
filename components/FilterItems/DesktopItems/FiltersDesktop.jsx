@@ -1,8 +1,8 @@
-import { useStore } from "../store";
+import { useStore } from "../../store";
 import { motion, AnimatePresence } from "framer-motion";
-import { filtersData, priceFilterData } from "../../data/filtersData";
+import { filtersData, priceFilterData } from "../../../data/filtersData";
 import FilterItemDesktop from "./FilterItemDesktop";
-import PriceInputs from "./PriceInputs";
+import PriceInputs from "../PriceInputs";
 import FilterBrandItemDesktop from "./FilterBrandItemDesktop";
 
 const variants = {
@@ -50,10 +50,9 @@ function FiltersDesktop({ getBrands }) {
           <FilterItemDesktop item={item} />
         </div>
       ))}
-      {/*  <div className="bg-white">
+      <div className="bg-white">
         <FilterBrandItemDesktop item={getBrands} />
-      
-      </div> */}
+      </div>
     </div>
   );
 }

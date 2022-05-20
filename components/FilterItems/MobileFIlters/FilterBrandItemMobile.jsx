@@ -1,10 +1,12 @@
 import Image from "next/image";
-import { useStore } from "../store";
+import { useStore } from "../../store";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 import { motion, AnimatePresence } from "framer-motion";
+import image from "../../../public/images/ETV-IconsVergleichen.png";
 
 import FilterCheckboxMobile from "./FilterCheckboxMobile";
+import FilterBrandCheckboxMobile from "./FilterBrandCheckboxMobile";
 
 const variants = {
   enter: {
@@ -21,7 +23,7 @@ const variants = {
   },
 };
 
-function FilterItemMobile({ item }) {
+function FilterBrandItemMobile({ item }) {
   const { state, dispatch } = useStore();
   /* to render the four ranges */
   return (
@@ -39,7 +41,7 @@ function FilterItemMobile({ item }) {
           <div className="flex flex-row  ">
             <div className="w-6 h-6 ml-4 ">
               <Image
-                src={item.image}
+                src={image}
                 alt="picture"
                 objectFit="cover"
                 width={24}
@@ -48,13 +50,13 @@ function FilterItemMobile({ item }) {
               />
             </div>
             <div className="pl-4 my-auto ">
-              <h4 className=" font-bold text-blue-darker">{item.title}</h4>
+              <h4 className=" font-bold text-blue-darker">Hersteller</h4>
             </div>
           </div>
           <div className="flex flex-row">
             <span
               className={
-                state[item.category].length > 0
+                state.brands.length > 0
                   ? "flex text-green-700 text-xl h-6 "
                   : "hidden"
               }
@@ -90,33 +92,44 @@ function FilterItemMobile({ item }) {
               exit="exit"
               transition={{ type: "Inertia", duration: 0.1 }}
             >
-              {item.options.map((checkbox, index) => (
+              <p
+                className="text-sm cursor-pointer ml-auto pr-4"
+                onClick={() => {
+                  dispatch({
+                    type: "brand",
+                    data: [],
+                  });
+                }}
+              >
+                alle löschen
+              </p>
+              {item.map((checkbox, index) => (
                 <div
                   onClick={() => {
                     dispatch({
-                      type: checkbox.categoryName,
-                      data:
-                        checkbox.categoryName == "price"
-                          ? [{ min: checkbox.value, max: checkbox.max }]
-                          : [{ min: checkbox.value, max: 100000 }],
+                      type: "brand",
+                      /*   data: selectedBrands, */
+                      data: state?.brands.includes(checkbox.slug)
+                        ? [
+                            ...state?.brands.filter(
+                              (brand) => brand !== checkbox.slug
+                            ),
+                            checkbox.slug,
+                          ]
+                        : [...state?.brands, checkbox.slug],
                     });
                   }}
                   key={index}
                   className="mt-1 flex flex-row py-2 "
                 >
-                  <FilterCheckboxMobile
+                  <FilterBrandCheckboxMobile
                     checkbox={checkbox}
-                    name={checkbox.categoryName}
-                    value={checkbox.value}
-                    id={checkbox.id}
-                    category={item.category}
-                    key={checkbox.value}
-                  ></FilterCheckboxMobile>
+                  ></FilterBrandCheckboxMobile>
                   <label
-                    forhtml="categories"
+                    forhtml={checkbox.title}
                     className="inline-flex items-center cursor-pointer pl-5 tracking-wide text-lg text-blue-extra"
                   >
-                    {checkbox.name}
+                    {checkbox.title}
                   </label>
                 </div>
               ))}
@@ -128,4 +141,4 @@ function FilterItemMobile({ item }) {
   );
 }
 
-export default FilterItemMobile;
+export default FilterBrandItemMobile;

@@ -1,10 +1,10 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
-import FilterBrandCheckbox from "./FilterBrandCheckbox";
-import { useStore } from "../store";
+import FilterBrandCheckbox from "../FilterBrandCheckbox";
+import { useStore } from "../../store";
 import { motion, AnimatePresence } from "framer-motion";
-import image from "../../public/images/ETV-IconsVergleichen.png";
-import { useState } from "react";
+import image from "../../../public/images/ETV-IconsVergleichen.png";
+import { useState, useEffect } from "react";
 const variants = {
   enter: {
     y: -1000,
@@ -32,11 +32,9 @@ const variants = {
 function FilterBrandItemDesktop({ item }) {
   // const item = props.item;
   const { state, dispatch } = useStore();
-  const [selectedBrands, setSelectedBrands] = useState([]);
 
   /* to render the four ranges */
-  /*   console.log(0, selectedBrands.length);
-   */
+
   return (
     <>
       {/* truncate state */}
@@ -69,7 +67,7 @@ function FilterBrandItemDesktop({ item }) {
             {/* for the green ✔️ */}
             <span
               className={
-                state.brands.length > 0 || selectedBrands.length > 0
+                state.brands.length > 0
                   ? "flex text-green-700 text-xl h-6"
                   : "hidden"
               }
@@ -100,32 +98,37 @@ function FilterBrandItemDesktop({ item }) {
           >
             {/* RENDERING THE FOUR RANGES */}
             {/* MAKE SPREAd operation with state */}
+            <p
+              className="text-sm cursor-pointer ml-auto pr-4"
+              onClick={() => {
+                dispatch({
+                  type: "brand",
+                  data: [],
+                });
+              }}
+            >
+              alle löschen
+            </p>
             {item.map((checkbox, index) => (
               <div
                 onClick={() => {
-                  if (selectedBrands.includes(checkbox.slug)) {
-                    setSelectedBrands(
-                      selectedBrands.filter((item) => item !== checkbox.slug)
-                    );
-                  } else {
-                    setSelectedBrands([...selectedBrands, checkbox.slug]);
-                  }
                   dispatch({
                     type: "brand",
-                    data: selectedBrands,
+                    /*   data: selectedBrands, */
+                    data: state?.brands.includes(checkbox.slug)
+                      ? [
+                          ...state?.brands.filter(
+                            (brand) => brand !== checkbox.slug
+                          ),
+                          checkbox.slug,
+                        ]
+                      : [...state?.brands, checkbox.slug],
                   });
                 }}
                 key={index}
                 className="flex py-2 mt-4 cursor-pointer last-of-type:pb-4 last-of-type:shadow-sm"
               >
-                <FilterBrandCheckbox
-                  checkbox={checkbox}
-                  selectedBrands={selectedBrands}
-                  /*   value={checkbox.value}
-                  id={checkbox.id}
-                  category={item.category}
-                  key={checkbox.value} */
-                ></FilterBrandCheckbox>
+                <FilterBrandCheckbox checkbox={checkbox}></FilterBrandCheckbox>
                 <label
                   forhtml={checkbox.title}
                   className="inline-flex items-center pl-5 text-lg text-blue-extra "

@@ -16,11 +16,23 @@ const ResultList = (props) => {
       !state?.maxSpeeds ||
       !state?.chargingTimeLithiums ||
       !state?.categorys ||
-      /*       !state?.brands ||
-       */ props.sortedCars?.length === 0
+      !state?.brands ||
+      props.sortedCars?.length === 0
     )
       return;
+    /*   if (state?.brands?.length > 0) {
+      let filteredCarsUponBrand = props.sortedCars.filter((car) => {
+        return state.brands.filter((brand) => brand.includes(car.brand));
+      }); */
 
+    /*  filteredCars = filteredCars.filter((car, index) => {
+
+        return car.name.split(/[\s-]+/)[0] == state?.brands.split(/[\s-]+/)[0];
+      }); */
+    /* let sortedCars = vehicles.filter(
+   (car) =>
+     car.name.split(/[\s-]+/)[0] == context.params.brand.split(/[\s-]+/)[0]
+ ); */
     let filteredCars = props.sortedCars?.filter((car) => {
       let rangeval = car.rangeLithium.value;
       let chargingTimeval = car.chargingTimeLithium.value;
@@ -73,16 +85,13 @@ const ResultList = (props) => {
         !state?.categorys?.some((entry) => entry.min == car.category)
       )
         return false;
-      /*  if (
+      if (
         state?.brands?.length > 0 &&
-        !state?.brands?.some((entry) => entry == car.name.split(/[\s-]+/)[0])
+        !state?.brands?.some(
+          (entry) => entry.split(/[\s-]+/)[0] == car.name.split(/[\s-]+/)[0]
+        )
       )
-        return false; */
-      /* let sortedCars = vehicles.filter(
-   (car) =>
-     car.name.split(/[\s-]+/)[0] == context.params.brand.split(/[\s-]+/)[0]
- ); */
-
+        return false;
       return true;
     });
 
@@ -94,7 +103,7 @@ const ResultList = (props) => {
     state?.maxSpeeds,
     state?.chargingTimeLithiums,
     state?.categorys,
-    /*    state?.brands, */
+    state?.brands,
     props.sortedCars,
   ]);
   /* ɢᴇᴛ pop up for not meeting criteria */
@@ -113,6 +122,7 @@ const ResultList = (props) => {
     return (
       <div className="w-full container-product md:pl-4" key={index}>
         {/* <div className="product-icon"></div> */}
+
         <CarCard carItem={carItem} />
       </div>
     );

@@ -6,11 +6,16 @@ import { serialize } from "next-mdx-remote/serialize";
 export default function dataprotection(props) {
   const [getContent, SetGetContent] = useState(props.context);
   return (
-    <div className="flex flex-col flex-wrap justify-between mx-6 py-6 text-center text-sm leading-8 bg-grey-lightest lg:mx-36 lg:pl-16 lg:text-2xl  lg:text-left 2xl:mx-72">
+    <>
       <Head page={props.page} />
-      <MDXRemote {...getContent.datenschutzerklarung} />
-      <MDXRemote {...getContent.alles} />
-    </div>
+
+      <div className="flex flex-col justify-between mx-6 py-6 text-center text-sm leading-8 bg-grey-lightest lg:mx-36 lg:pl-16 lg:text-2xl  lg:text-left 2xl:mx-72 lineBreakClass">
+        <MDXRemote {...getContent.datenschutzerklarung} />
+      </div>
+      <div className="flex flex-col justify-between mx-6 py-6 text-center text-sm leading-8 bg-grey-lightest lg:mx-36 lg:pl-16 lg:text-2xl lg:text-left 2xl:mx-72 lineBreakClass">
+        <MDXRemote {...getContent.alles} />
+      </div>
+    </>
   );
 }
 

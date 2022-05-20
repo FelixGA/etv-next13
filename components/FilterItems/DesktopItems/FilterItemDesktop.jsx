@@ -1,7 +1,7 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
-import FilterCheckbox from "./FilterCheckbox";
-import { useStore } from "../store";
+import FilterCheckbox from "../FilterCheckbox";
+import { useStore } from "../../store";
 import { motion, AnimatePresence } from "framer-motion";
 
 const variants = {
