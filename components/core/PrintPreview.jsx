@@ -167,21 +167,23 @@ export default function PrintPreview({
                 )}
               </div>
               <div className="flex w-1/3 items-center">
-                <ul className="w-full p-2">
-                  {getCarsReview.content.map((item, index) =>
-                    item.stars ? (
-                      <li
-                        className={
-                          index == getCarsReview.content.length - 1
-                            ? "w-full flex justify-between text-blue-dark"
-                            : "w-full flex justify-between "
-                        }
-                      >
-                        <p> {item.title}</p> <p> {item.stars}/5</p>
-                      </li>
-                    ) : null
-                  )}
-                </ul>
+                {getTestReview && (
+                  <ul className="w-full p-2">
+                    {getCarsReview.content.map((item, index) =>
+                      item.stars ? (
+                        <li
+                          className={
+                            index == getCarsReview.content.length - 1
+                              ? "w-full flex justify-between text-blue-dark"
+                              : "w-full flex justify-between "
+                          }
+                        >
+                          <p> {item.title}</p> <p> {item.stars}/5</p>
+                        </li>
+                      ) : null
+                    )}
+                  </ul>
+                )}
               </div>
             </div>
           </div>
