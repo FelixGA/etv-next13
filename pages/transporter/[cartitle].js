@@ -62,7 +62,6 @@ export default function Details(props) {
         {carItem && getTestReview && getCarsReview && (
           <PrintPreview
             carItem={carItem}
-            getBlogContext={getBlogContext}
             getTestReview={getTestReview}
             getCarsReview={getCarsReview}
           />

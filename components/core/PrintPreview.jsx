@@ -11,7 +11,7 @@ import StarsRating from "../repeated/StarsRating";
 import TestVerdict from "../repeated/TestVerdict";
 export default function PrintPreview({
   carItem,
-  getBlogContext,
+
   getTestReview,
   getCarsReview,
 }) {
@@ -156,11 +156,13 @@ export default function PrintPreview({
                         ) : null}
                       </div>
                     </div>
-                    <div className="h-auto print:text-[11px]">
-                      <MDXRemote
-                        {...getTestReview[getCarsReview?.content.length - 1]}
-                      />
-                    </div>
+                    {getTestReview && (
+                      <div className="h-auto print:text-[11px]">
+                        <MDXRemote
+                          {...getTestReview[getCarsReview?.content.length - 1]}
+                        />
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
@@ -212,9 +214,11 @@ export default function PrintPreview({
                         ) : null}
                       </div>
                     </div>
-                    <div className="h-auto">
-                      <MDXRemote {...getTestReview[index]} />
-                    </div>
+                    {getTestReview && (
+                      <div className="h-auto">
+                        <MDXRemote {...getTestReview[index]} />
+                      </div>
+                    )}
                   </div>
                 ))
                 .slice(0, 3)}
