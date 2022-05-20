@@ -1,10 +1,12 @@
 import Image from "next/image";
-import { useStore } from "../store";
+import { useStore } from "../../store";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 import { motion, AnimatePresence } from "framer-motion";
+import image from "../../../public/images/ETV-IconsVergleichen.png";
 
 import FilterCheckboxMobile from "./FilterCheckboxMobile";
+import FilterBrandCheckboxMobile from "./FilterBrandCheckboxMobile";
 
 const variants = {
   enter: {
@@ -39,7 +41,7 @@ function FilterBrandItemMobile({ item }) {
           <div className="flex flex-row  ">
             <div className="w-6 h-6 ml-4 ">
               <Image
-                src={item.image}
+                src={image}
                 alt="picture"
                 objectFit="cover"
                 width={24}
@@ -120,9 +122,9 @@ function FilterBrandItemMobile({ item }) {
                   key={index}
                   className="mt-1 flex flex-row py-2 "
                 >
-                  <FilterCheckboxMobile
+                  <FilterBrandCheckboxMobile
                     checkbox={checkbox}
-                  ></FilterCheckboxMobile>
+                  ></FilterBrandCheckboxMobile>
                   <label
                     forhtml={checkbox.title}
                     className="inline-flex items-center cursor-pointer pl-5 tracking-wide text-lg text-blue-extra"
