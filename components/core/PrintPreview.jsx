@@ -1,9 +1,5 @@
 import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
 
-import CarCardProps from "../ResultList/CarCardProps";
-import { useEffect, useState } from "react";
-import Link from "next/link";
-
 import styles from "../DetailsPage/Articles.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
@@ -16,7 +12,7 @@ export default function PrintPreview({
   getCarsReview,
 }) {
   return (
-    <div className="w-screen flex flex-col flex-wrap">
+    <div className="w-screen flex flex-col flex-wrap printpreview">
       <div className="h-screen">
         {/* main page */}
         <div className="w-screen flex h-screen flex-col flex-wrap">
@@ -60,8 +56,10 @@ export default function PrintPreview({
                         className="mr-8 w-14 h-12 object-cover"
                       />
                       <p className="text-blue-dark font-bold">
-                        {carItem?.rangeLithium.value}{" "}
-                        {carItem?.rangeLithium.baseUnit}
+                        {carItem?.rangeLithium.value
+                          ? carItem?.rangeLithium.value
+                          : carItem?.range230V.value}{" "}
+                        km{" "}
                       </p>
                       {carItem?.rangeLithium.key.split(" ")[0]}
                     </div>
@@ -72,7 +70,9 @@ export default function PrintPreview({
                         className="mr-8 w-14 h-12 object-cover"
                       />
                       <p className="text-blue-dark font-bold">
-                        {carItem?.chargingTimeLithium.value}{" "}
+                        {carItem?.chargingTimeLithium.value
+                          ? carItem?.chargingTimeLithium.value
+                          : carItem?.chargingTime230V.value}{" "}
                         {carItem?.chargingTimeLithium.baseUnit}
                       </p>
                       {carItem?.chargingTimeLithium.key.split(" ")[0]}
@@ -172,6 +172,7 @@ export default function PrintPreview({
                     {getCarsReview.content.map((item, index) =>
                       item.stars ? (
                         <li
+                          key={index}
                           className={
                             index == getCarsReview.content.length - 1
                               ? "w-full flex justify-between text-blue-dark"
@@ -192,12 +193,24 @@ export default function PrintPreview({
       {/* AB HEREEEEEEEEEEEEEEEEEEEEEEEE   test bericht */}
       <div className="flex w-full h-screen print:text-[10px] flex-col my-2 flex-wrap ">
         {/* header */}
-        <div className="w-screen h-[50px] text-lg text-white flex justify-evenly items-center bg-blue-darker mb-2">
+        <div className="w-screen h-[5vh] text-lg text-white flex justify-evenly items-center bg-blue-darker mb-1">
           <h2 className="text-white">Testbericht</h2>
-          <div className=" w-[90px]">
-            <img src="/images/etv-logo-final-white.png" alt="logo" />
+          <div className="flex">
+            <img
+              src="/images/etv-logo-final-white.png"
+              alt="logo"
+              className=" w-[90px]"
+            />
+            <div className="flex items-center pl-2 ">
+              <p className="pt-1 text-xs text-white md:text-sm xl:text-lg ">
+                ELEKTROTRANSPORTER
+                <br />
+                VERGLEICH
+              </p>
+            </div>
           </div>
         </div>
+
         <div className="flex flex-row flex-wrap justify-around">
           {getTestReview && (
             <div className={`${styles.containerLeft}`}>
