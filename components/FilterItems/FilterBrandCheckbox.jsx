@@ -1,4 +1,8 @@
+import { useStore } from "../store";
+
 function FilterBrandCheckbox(props) {
+  const { state, dispatch } = useStore();
+
   return (
     <>
       <input
@@ -7,9 +11,7 @@ function FilterBrandCheckbox(props) {
         name={props.checkbox.slug}
         /* CHECKING WHICH CHECKBOX IS ACTIVE UPON THE name */
 
-        checked={props.selectedBrands.some(
-          (brand) => brand === props.checkbox.slug
-        )}
+        checked={state?.brands.some((brand) => brand === props.checkbox.slug)}
         onChange={() => {
           return null;
         }}

@@ -50,10 +50,9 @@ function FiltersDesktop({ getBrands }) {
           <FilterItemDesktop item={item} />
         </div>
       ))}
-      {/*  <div className="bg-white">
+      <div className="bg-white">
         <FilterBrandItemDesktop item={getBrands} />
-      
-      </div> */}
+      </div>
     </div>
   );
 }

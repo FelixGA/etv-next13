@@ -27,6 +27,7 @@ function ActiveFilterBlock({ getContent }) {
           <h1 className="pl-4 text-2xl md:text-3xl text-blue-extra pt-8 pb-4">
             Die besten E-Transporter nach Ihrer Auswahl
           </h1>
+          {/*   <p> Hersteller: {state?.brands} </p> */}
         </div>
         <div
           className="hidden md:flex right-2 cursor-pointer justify-between items-end "
