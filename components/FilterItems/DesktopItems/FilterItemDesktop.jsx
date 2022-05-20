@@ -1,10 +1,9 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
-import FilterBrandCheckbox from "./FilterBrandCheckbox";
-import { useStore } from "../store";
+import FilterCheckbox from "../FilterCheckbox";
+import { useStore } from "../../store";
 import { motion, AnimatePresence } from "framer-motion";
-import image from "../../public/images/ETV-IconsVergleichen.png";
-import { useState, useEffect } from "react";
+
 const variants = {
   enter: {
     y: -1000,
@@ -29,7 +28,7 @@ const variants = {
 //   "Aufbautyp",
 // ];
 
-function FilterBrandItemDesktop({ item }) {
+function FilterItemDesktop({ item }) {
   // const item = props.item;
   const { state, dispatch } = useStore();
 
@@ -43,7 +42,7 @@ function FilterBrandItemDesktop({ item }) {
         onClick={() => {
           dispatch({
             type: "truncate",
-            data: state?.truncates !== "brands" ? "brands" : "",
+            data: state?.truncates !== item.title ? item.title : "",
           });
         }}
       >
@@ -51,8 +50,8 @@ function FilterBrandItemDesktop({ item }) {
           <div className="flex items-center justify-center pl-8">
             <div className="w-8 h-full">
               <Image
-                src={image}
-                alt="hersteller logo"
+                src={item.image}
+                alt="picture"
                 objectFit="cover"
                 width={24}
                 height={28}
@@ -60,14 +59,13 @@ function FilterBrandItemDesktop({ item }) {
               />
             </div>
             <div className="pl-4 my-auto text-xxs lg:text-base">
-              <h4 className="font-bold text-blue-darker">Hersteller</h4>
+              <h4 className="font-bold text-blue-darker">{item.title}</h4>
             </div>
           </div>
           <div className="flex">
-            {/* for the green ✔️ */}
             <span
               className={
-                state.brands.length > 0
+                state[item.category].length > 0
                   ? "flex text-green-700 text-xl h-6"
                   : "hidden"
               }
@@ -87,7 +85,7 @@ function FilterBrandItemDesktop({ item }) {
         </div>
       </div>
       <AnimatePresence initial={false}>
-        {state?.truncates == "brands" && (
+        {state?.truncates == item.title && (
           <motion.div
             variants={variants}
             initial="enter"
@@ -97,43 +95,33 @@ function FilterBrandItemDesktop({ item }) {
             className="flex flex-col ml-8 -z-50"
           >
             {/* RENDERING THE FOUR RANGES */}
-            {/* MAKE SPREAd operation with state */}
-            <p
-              className="text-sm cursor-pointer ml-auto pr-4"
-              onClick={() => {
-                dispatch({
-                  type: "brand",
-                  data: [],
-                });
-              }}
-            >
-              alle löschen
-            </p>
-            {item.map((checkbox, index) => (
+            {item.options.map((checkbox, index) => (
               <div
                 onClick={() => {
                   dispatch({
-                    type: "brand",
-                    /*   data: selectedBrands, */
-                    data: state?.brands.includes(checkbox.slug)
-                      ? [
-                          ...state?.brands.filter(
-                            (brand) => brand !== checkbox.slug
-                          ),
-                          checkbox.slug,
-                        ]
-                      : [...state?.brands, checkbox.slug],
+                    type: checkbox.categoryName,
+                    data:
+                      checkbox.categoryName == "price"
+                        ? [{ min: checkbox.value, max: checkbox.max }]
+                        : [{ min: checkbox.value, max: 100000 }],
                   });
                 }}
                 key={index}
                 className="flex py-2 mt-4 cursor-pointer last-of-type:pb-4 last-of-type:shadow-sm"
               >
-                <FilterBrandCheckbox checkbox={checkbox}></FilterBrandCheckbox>
+                <FilterCheckbox
+                  checkbox={checkbox}
+                  name={checkbox.categoryName}
+                  value={checkbox.value}
+                  id={checkbox.id}
+                  category={item.category}
+                  key={checkbox.value}
+                ></FilterCheckbox>
                 <label
-                  forhtml={checkbox.title}
+                  forhtml={checkbox.name}
                   className="inline-flex items-center pl-5 text-lg text-blue-extra "
                 >
-                  {checkbox.title}
+                  {checkbox.name}
                 </label>
               </div>
             ))}
@@ -144,4 +132,4 @@ function FilterBrandItemDesktop({ item }) {
   );
 }
 
-export default FilterBrandItemDesktop;
+export default FilterItemDesktop;

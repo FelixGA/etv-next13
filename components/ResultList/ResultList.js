@@ -24,7 +24,6 @@ const ResultList = (props) => {
       let filteredCarsUponBrand = props.sortedCars.filter((car) => {
         return state.brands.filter((brand) => brand.includes(car.brand));
       }); */
-    console.log("on ResaultLisrt", state?.brands);
 
     /*  filteredCars = filteredCars.filter((car, index) => {
 

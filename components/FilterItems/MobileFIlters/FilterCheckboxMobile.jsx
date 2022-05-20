@@ -1,4 +1,4 @@
-import { useStore } from "../store";
+import { useStore } from "../../store";
 
 function FilterCheckboxMobile(props) {
   const { state, dispatch } = useStore();
