@@ -29,7 +29,7 @@ function FilterBrandItemMobile({ item }) {
   return (
     <div className="bg-white border-b">
       <div
-        className=" cursor-pointer bg-white"
+        className="bg-white cursor-pointer "
         onClick={() => {
           dispatch({
             type: "truncate",
@@ -37,8 +37,8 @@ function FilterBrandItemMobile({ item }) {
           });
         }}
       >
-        <div className="flex flex-row justify-between border-b py-4 flex-1 bg-white">
-          <div className="flex flex-row  ">
+        <div className="flex flex-row justify-between flex-1 py-4 bg-white border-b">
+          <div className="flex flex-row ">
             <div className="w-6 h-6 ml-4 ">
               <Image
                 src={image}
@@ -50,7 +50,7 @@ function FilterBrandItemMobile({ item }) {
               />
             </div>
             <div className="pl-4 my-auto ">
-              <h4 className=" font-bold text-blue-darker">Hersteller</h4>
+              <h4 className="font-bold text-blue-darker">Hersteller</h4>
             </div>
           </div>
           <div className="flex flex-row">
@@ -78,7 +78,7 @@ function FilterBrandItemMobile({ item }) {
       <div
         className={
           state?.truncates == item.title
-            ? "flex flex-col ml-4 mt-2 mb-2"
+            ? "relative flex flex-col ml-4 mt-2 mb-2"
             : "hidden"
         }
       >
@@ -93,7 +93,7 @@ function FilterBrandItemMobile({ item }) {
               transition={{ type: "Inertia", duration: 0.1 }}
             >
               <p
-                className="text-sm cursor-pointer ml-auto pr-4"
+                className="absolute right-0 w-24 pr-4 text-sm cursor-pointer "
                 onClick={() => {
                   dispatch({
                     type: "brand",
@@ -120,14 +120,14 @@ function FilterBrandItemMobile({ item }) {
                     });
                   }}
                   key={index}
-                  className="mt-1 flex flex-row py-2 "
+                  className="flex flex-row py-2 mt-1 "
                 >
                   <FilterBrandCheckboxMobile
                     checkbox={checkbox}
                   ></FilterBrandCheckboxMobile>
                   <label
                     forhtml={checkbox.title}
-                    className="inline-flex items-center cursor-pointer pl-5 tracking-wide text-lg text-blue-extra"
+                    className="inline-flex items-center pl-5 text-lg tracking-wide cursor-pointer text-blue-extra"
                   >
                     {checkbox.title}
                   </label>
