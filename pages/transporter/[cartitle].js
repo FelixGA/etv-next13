@@ -59,14 +59,11 @@ export default function Details(props) {
         <PrintPopUp carItem={carItem} />
       </div>
       <div className="hidden print:block">
-        {carItem && getBlogContext && getTestReview && getCarsReview && (
-          <PrintPreview
-            carItem={carItem}
-            getBlogContext={getBlogContext}
-            getTestReview={getTestReview}
-            getCarsReview={getCarsReview}
-          />
-        )}
+        <PrintPreview
+          carItem={carItem}
+          getTestReview={getTestReview}
+          getCarsReview={getCarsReview}
+        />
       </div>
     </>
   );
