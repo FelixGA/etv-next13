@@ -104,7 +104,7 @@ const Footer = ({ blogs, brands }) => {
           </div>
 
           <div className="flex justify-center w-full print:hidden">
-            <p className="pt-6 pb-2 pl-0 text-xs text-center text-white w-[300px] sm:text-left lg:text-lg xl:text-lg">
+            <p className="pt-6 pb-2 lg:pl-2 text-xs text-center text-white w-[300px] sm:text-left lg:text-lg xl:text-lg">
               {footerWords.map((item, index) => (
                 <span className="" key={index}>
                   {item}
@@ -112,7 +112,7 @@ const Footer = ({ blogs, brands }) => {
               ))}
             </p>
           </div>
-          <div className="flex justify-start pt-2 pb-8 w-28 lg:w-40 ">
+          <div className="flex justify-start pt-2 pb-8 mr-2 sm:mr-0 w-28 lg:w-40">
             <div className="p-2 transition cursor-pointer hover:scale-110">
               <Link href="https://www.facebook.com">
                 <a aria-label="facebook" target="_blank">
