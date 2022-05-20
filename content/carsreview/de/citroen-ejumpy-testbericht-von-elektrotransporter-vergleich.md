@@ -1,5 +1,5 @@
 ---
-title: Citroen eJumpy
+title: Citroën eJumpy
 slug: citroen-ejumpy-testbericht-von-elektrotransporter-vergleich
 relatedCars: citroen-e-jumpy
 youtubeLink: https://www.youtube.com/watch?v=C0o0u7WIV8k

@@ -1,5 +1,5 @@
 ---
-title: Citroen eJumpy
+title: Citroën eJumpy
 name: citroen-e-jumpy
 price: 37830
 relatedBlogs: >-

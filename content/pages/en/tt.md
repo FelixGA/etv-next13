@@ -26,7 +26,7 @@ content:
       ## Förderungen für Elektrotransporter
 
 
-      Im Rah­men der angestrebten En­ergiewende ist seit 2016 eine bun­desweite Förderung der Elek­tro­mo­bil­ität durch die so­ge­nan­nte “Umwelt­prämie” möglich, welche den Kauf rein elek­trischer Fahrzeuge fi­nanziell un­ter­stützt.
+      Es gibt verschiedene Förderungen für Elektrotransporter. Informieren Sie sich hier, welche für Sie in Frage kommen!
   - name: newsletter
     markdown: >-
       ## Zum Newsletter anmelden
