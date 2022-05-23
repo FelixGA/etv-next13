@@ -21,6 +21,7 @@
     "next": "12.1.5",
     "next-mdx-remote": "^4.0.3",
     "next-pwa": "^5.5.2",
+    "objects-to-csv-file": "^1.0.1",
     "pipedrive": "^13.3.2",
     "pipedrive-api": "^0.1.21",
     "react": "18.1.0",

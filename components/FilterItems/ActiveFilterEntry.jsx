@@ -5,7 +5,6 @@ import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
 import image5 from "../../public/images/ladezeit@2x.png";
 import image6 from "../../public/images/more-svgrepo-com.png";
-import usePrice from "../../hooks/usePrice";
 
 import { AiOutlineClose } from "react-icons/ai";
 import { useStore } from "../store";
