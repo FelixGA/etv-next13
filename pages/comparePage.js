@@ -24,6 +24,12 @@ export default function comparePage(props) {
       ?.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
       .map((item) => item);
     //
+    // alphabetical sorting
+    const getCarsAlphabetical = props.vehicles
+      ?.sort(function (a, b) {
+        return a.name === b.name ? 0 : a.name < b.name ? -1 : 1;
+      })
+      .map((item) => item);
     // /* cᴀʀs ᴡᴇɪɢʜᴛ ғɪʟᴛᴇʀ */
     const getCarslightest = props.vehicles
       ?.sort((a, b) => b.loadingWeight.value - a.loadingWeight.value)
@@ -45,8 +51,10 @@ export default function comparePage(props) {
       .map((item) => item);
 
     /* initial value */
-    setSortedCars(getCarslowestPrice);
-
+    setSortedCars(getCarsAlphabetical);
+    if (state?.activeSortValues[0]?.sortType === "alphabetical") {
+      setSortedCars(getCarsAlphabetical);
+    }
     /* ɢᴇᴛ ʀᴇsᴜʟᴛs from sorting */
     if (state?.activeSortValues[0]?.sortType === "lowest") {
       setSortedCars(getCarslowestPrice);

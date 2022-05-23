@@ -5,12 +5,15 @@ import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
 import image5 from "../../public/images/ladezeit@2x.png";
 import image6 from "../../public/images/more-svgrepo-com.png";
+import usePrice from "../../hooks/usePrice";
+
 import { AiOutlineClose } from "react-icons/ai";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";
 function ActiveFilterEntry(props) {
   const { state, dispatch } = useStore();
   const [filterData, setFilterData] = useState([]);
+
   useEffect(() => {
     if (
       state?.prices.length ||
@@ -18,7 +21,8 @@ function ActiveFilterEntry(props) {
       state?.loadingWeights.length ||
       state?.maxSpeeds.length ||
       state?.chargingTimeLithiums.length ||
-      state?.categorys.length
+      state?.categorys.length ||
+      state?.brands.length
     ) {
       props.setShowAll(true);
     }
@@ -28,7 +32,8 @@ function ActiveFilterEntry(props) {
       !state?.loadingWeights.length &&
       !state?.maxSpeeds.length &&
       !state?.chargingTimeLithiums.length &&
-      !state?.categorys.length
+      !state?.categorys.length &&
+      !state?.brands.length
     ) {
       props.setShowAll(false);
     }
@@ -37,7 +42,18 @@ function ActiveFilterEntry(props) {
       {
         id: 1,
         value: state?.prices.length
-          ? state?.prices.map((el) => el.min + "-" + el.max).join("") + "€"
+          ? state?.prices
+              .map(
+                (el) =>
+                  (el.min > 999
+                    ? el.min.toString().slice(0, -3) +
+                      el.min.toString().slice(el.min.length, -3)
+                    : el.min) +
+                  "-" +
+                  el.max.toString().slice(0, -3) +
+                  el.max.toString().slice(el.max.length, -3)
+              )
+              .join("") + "€"
           : null,
 
         image: image4,

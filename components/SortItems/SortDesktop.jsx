@@ -1,22 +1,20 @@
 import { useState, useEffect } from "react";
 import { useStore } from "../store";
 const sortBy2 = [
-  // {
-  //   sortCategory: "Niedrigster Preis",
-  //   sortType: 1,
-  // },
+  {
+    sortCategory: "Alphabet",
+    sortType: "alphabetical",
+  },
   {
     sortCategory: "Niedrigster Preis",
     sortType: "lowest",
   },
+
   {
     sortCategory: "Höchster Preis",
     sortType: "highest",
   },
-  // {
-  //   sortCategory: sortingCate[3],
-  //   sortType: "bestseller",
-  // },
+
   {
     sortCategory: "Beste Ladenzeit",
     sortType: "chargingTimeLithium",
@@ -61,7 +59,7 @@ function SortDesktop() {
               className="mt-1 flex flex-row py-2 mr-4 "
             >
               <input
-                className=" appearance-none w-6 h-6 tex text-xl border border-[#7D94AE] rounded-lg text-white checked:text-black checked:bg-blue-dark  after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
+                className=" appearance-none w-6 h-6 tex text-xl border border-[#7D94AE] rounded-lg text-white checked:text-white checked:bg-blue-dark  after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
                 onChange={() => {
                   return null;
                 }}
