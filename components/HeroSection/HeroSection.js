@@ -125,7 +125,7 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
           </div>
           {/* TITLE AND DESC */}
           <div className="px-2 py-2 pb-2 main-heading-text lg:flex lg:flex-col lg:justify-evenly sm:py-10 xs:px-2 sm:px-0">
-            <h1 className="pt-4 pb-4 text-2xl text-left sm:text-3xl xl:text-4xl">
+            <h1 className="pt-4 pb-4 text-2xl text-center sm:text-left sm:text-3xl xl:text-4xl">
               {getContent.title}
             </h1>
             <div
