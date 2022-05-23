@@ -129,12 +129,12 @@ export default function PrintPreview({
               </div>
             </div>
             {/* test fazit */}
-            <div className="flex  h-[18vh] mt-[14vh]">
+            <div className="flex  h-[16vh] mt-[15vh] justify-end items-end">
               <div className="flex w-2/3 items-center pl-1">
                 {getTestReview && (
                   <div className={`${styles.flexbox}`}>
                     <div className="flex items-center justify-start ">
-                      <h2 className=" print:text-[12px]">
+                      <h2 className=" print:text-[10px]">
                         {
                           getCarsReview?.content[
                             getCarsReview?.content.length - 1
@@ -157,7 +157,7 @@ export default function PrintPreview({
                       </div>
                     </div>
                     {getTestReview && (
-                      <div className="h-auto print:text-[11px]">
+                      <div className="h-auto print:text-[10px]">
                         <MDXRemote
                           {...getTestReview[getCarsReview?.content.length - 1]}
                         />
@@ -166,7 +166,7 @@ export default function PrintPreview({
                   </div>
                 )}
               </div>
-              <div className="flex w-1/3 items-center">
+              <div className="flex w-1/3 items-center print:text-[12px]">
                 {getTestReview && (
                   <ul className="w-full p-2">
                     {getCarsReview.content.map((item, index) =>
