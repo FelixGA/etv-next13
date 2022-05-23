@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@next/mdx": "^12.1.5",
+    "@phntms/next-gtm": "^0.1.0",
     "@sergeymyssak/nextjs-sitemap": "^2.0.3",
     "@tailwindcss/line-clamp": "^0.4.0",
     "axios": "^0.27.2",

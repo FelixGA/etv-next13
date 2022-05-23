@@ -43,6 +43,7 @@ export default function MyApp({ Component, pageProps }) {
         />
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"></link>
       </Head>
+      <TrackingHeadScript id="GTM-K6PQ4G9" disable={true} />
       <ErrorBoundary>
         <StoreProvider>
           <Layout {...pageProps}>
