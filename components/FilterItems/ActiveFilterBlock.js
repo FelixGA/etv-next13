@@ -11,7 +11,7 @@ function ActiveFilterBlock({ getContent }) {
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <div className="w-full relative">
+    <div className="relative w-full">
       {/* ACTIVE FILTERS */}
       <div
         className={
@@ -24,18 +24,18 @@ function ActiveFilterBlock({ getContent }) {
       {/* HEADING + SORTING */}
       <div className="flex justify-between 2xl:pr-40">
         <div className={showAll ? "w-full " : "flex items-center flex-1 "}>
-          <h1 className="pl-4 text-2xl md:text-3xl text-blue-extra pt-8 pb-4">
+          <h1 className="pb-4 pl-4 mt-8 text-2xl md:text-3xl text-blue-extra">
             Die besten E-Transporter nach Ihrer Auswahl
           </h1>
           {/*   <p> Hersteller: {state?.brands} </p> */}
         </div>
         <div
-          className="hidden md:flex right-2 cursor-pointer justify-between items-end "
+          className="items-end justify-between hidden cursor-pointer md:flex right-2 "
           onClick={() => {
             setClicked(!clicked);
           }}
         >
-          <div className="relative flex justify-center items-center xl:pr-0">
+          <div className="relative flex items-center justify-center xl:pr-0">
             <h4 className="sort-heading w-fit">
               {` Sortieren nach:
                ${state?.activeSortValues[0]?.sortCategory}`}

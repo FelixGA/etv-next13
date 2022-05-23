@@ -99,7 +99,7 @@ function FilterBrandItemDesktop({ item }) {
             {/* RENDERING THE FOUR RANGES */}
             {/* MAKE SPREAd operation with state */}
             <p
-              className="text-sm cursor-pointer ml-auto pr-4"
+              className="pr-4 ml-auto text-sm cursor-pointer "
               onClick={() => {
                 dispatch({
                   type: "brand",

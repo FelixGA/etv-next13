@@ -61,7 +61,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
               </h3>
             </div>
           ) : (
-            <div className="flex items-center pt-1 pb-2 scale-75 lg:pt-4 h-18 lg:pl-8 2xl:pl-4 lg:scale-95">
+            <div className="flex items-center pb-2 scale-75 pt-7 h-18 lg:pl-8 2xl:pl-4 lg:scale-95">
               <StarsRating
                 /* stars={testResultArr[index - 1]} */ stars={
                   comparedCars[index - 1].rating.value

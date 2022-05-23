@@ -46,7 +46,7 @@ function FilterItemDesktop({ item }) {
           });
         }}
       >
-        <div className="flex items-center justify-between flex-1 py-4 bg-white border-b ">
+        <div className="flex items-center justify-between flex-1 py-4 border-b">
           <div className="flex items-center justify-center pl-8">
             <div className="w-8 h-full">
               <Image

@@ -23,7 +23,7 @@ const variants = {
 function FiltersDesktop({ getBrands }) {
   const { state, dispatch } = useStore();
   return (
-    <div className="xl:ml-2 2xl:ml-40 ">
+    <div className="shadow-sm xl:ml-2 2xl:ml-40">
       <div className="">
         {priceFilterData.map((item, index) => (
           <div className="relative bg-white" key={index}>
