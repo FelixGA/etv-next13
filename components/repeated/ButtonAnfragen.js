@@ -15,7 +15,7 @@ function ButtonAnfragen({ carItem }) {
   return (
     <div className="flex">
       <Modal open={open} setOpen={setOpen}>
-        <div className="flex-grow bg-white max-w-[90vw]">
+        <div className="">
           <Form open={open} setOpen={setOpen} carItem={carItem} />
         </div>
       </Modal>
