@@ -18,16 +18,28 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#317EFB" />
         <link rel="manifest" href="/manifest.json" />
         <link
-          href="/images/icon-16x16.png"
+          href="/images/fav/ETV Favicon16x16@4x.png"
           rel="icon"
           type="image/png"
           sizes="16x16"
         />
         <link
-          href="/images/icon-32x32.png"
+          href="/images/fav/ETV Favicon32x32@4x.png"
           rel="icon"
           type="image/png"
           sizes="32x32"
+        />
+        <link
+          href="/images/fav/ETV Favicon64x64@4x.png"
+          rel="icon"
+          type="image/png"
+          sizes="64x64"
+        />
+        <link
+          href="/images/fav/ETV Favicon128x128@4x.png"
+          rel="icon"
+          type="image/png"
+          sizes="128x128"
         />
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"></link>
       </Head>

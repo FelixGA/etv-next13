@@ -4,7 +4,7 @@ import Logo_SVG from "../repeated/Logo_SVG.js";
 
 const Logo = () => {
   return (
-    <div className="flex flex-row items-center justify-center w-full pl-2 sm:justify-start print:hidden">
+    <div className="flex flex-row items-center justify-center w-full pl-4 sm:justify-start print:hidden">
       <div className="relative ">
         <Link href={"/"}>
           <a className="relative block w-12 2xl:w-16">

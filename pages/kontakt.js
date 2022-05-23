@@ -14,7 +14,7 @@ export default function kontakt(props) {
 
       <div className="flex flex-col w-full mx-auto 2xl:px-48 lg:flex-row">
         {router.pathname == "/kontakt" ? (
-          <div className="flex flex-col justify-center w-full pt-8 lg:pb-48">
+          <div className="relative flex flex-col justify-center w-full pt-8 lg:pb-48">
             <div className="mb-2 text-center lg:mb-12">
               <p className="text-3xl font-bold ">Kontaktieren Sie uns!</p>
             </div>
@@ -30,7 +30,7 @@ export default function kontakt(props) {
             <p
               className={
                 router.pathname == "/kontakt"
-                  ? "text-base lg:text-xl w-full px-4 py-2 text-center sm:text-left"
+                  ? " text-base lg:text-xl w-full px-4 py-2 text-center sm:text-left "
                   : "hidden"
               }
             >

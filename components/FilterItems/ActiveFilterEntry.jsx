@@ -100,7 +100,7 @@ function ActiveFilterEntry(props) {
         id: 6,
         value:
           state?.categorys.length || state?.categorys == undefined
-            ? state?.categorys.map((el) => "Type " + el.min).join("")
+            ? state?.categorys.map((el) => "Typ " + el.min).join("")
             : null,
         image: image6,
       },
