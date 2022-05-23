@@ -79,7 +79,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
               : null
           }
         >
-          <p className="text-red-500">
+          <p className="text-red-500 sm:pl-2">
             {errors.emailInput && "Email ist erforderlich"}
           </p>
         </div>
