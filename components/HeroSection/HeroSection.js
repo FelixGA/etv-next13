@@ -70,22 +70,22 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
       options: [
         {
           id: "1",
-          name: "ab:100kg",
+          name: "ab 100kg",
           value: "100",
         },
         {
           id: "2",
-          name: "ab:250kg",
+          name: "ab 250kg",
           value: "250",
         },
         {
           id: "3",
-          name: "ab:450kg",
+          name: "ab 450kg",
           value: "450",
         },
         {
           id: "4",
-          name: "ab:500kg",
+          name: "ab 500kg",
           value: "500",
         },
       ],
