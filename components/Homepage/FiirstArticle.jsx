@@ -27,7 +27,7 @@ export default function FirstArticle({ getMarkdownContext, getContent }) {
           </a>
         </Link>
       </div>
-      <div className="hidden w-fit no-select xl:block">
+      <div className="hidden scale-125 w-fit no-select xl:block">
         <Image
           src="/images/kaufberaterCar.png"
           width={600}
