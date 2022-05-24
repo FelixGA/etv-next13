@@ -73,3 +73,5 @@ export async function getStaticProps(context) {
     },
   };
 }
+
+export const cars = [1, 2, 3];
