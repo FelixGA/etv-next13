@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-const CarInfoCard = ({ carItem, getCarsReview }) => {
+const CarInfoCard = ({ carItem, getCarsReview, objectFit }) => {
   const router = useRouter();
   return (
     <div className="px-4 xl:px-0">
@@ -41,7 +41,7 @@ const CarInfoCard = ({ carItem, getCarsReview }) => {
                   alt={carItem.title}
                   width={240}
                   height={159}
-                  objectFit="contain"
+                  objectFit="cover"
                   layout="responsive"
                 />
               )}

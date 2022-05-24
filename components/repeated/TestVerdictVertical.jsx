@@ -1,8 +1,21 @@
 import Image from "next/image";
 import { FcCheckmark } from "react-icons/fc";
 import StarsRating from "./StarsRating";
+const TestVerdictVertical = ({ rev, reviewDate, getAllReviews, carItem }) => {
+  rev = getAllReviews
+    .map((item, index) => {
+      let res;
+      carItem?.relatedReviews == item.slug ? (res = index) : null;
+      return res;
+    })
+    .find((value) => value != undefined);
+  /* date */
+  reviewDate =
+    getAllReviews.find((item) => item.slug == carItem?.relatedReviews)
+      .publishedAt || 22;
 
-const TestVerdictVertical = ({ stars }) => {
+  reviewDate = reviewDate.slice(-2);
+  console.log(typeof reviewDate);
   return (
     <div className="relative w-full h-full bg-white border-2 rounded-sm">
       <div className="relative text + stars + icon ">
@@ -13,7 +26,7 @@ const TestVerdictVertical = ({ stars }) => {
             </p>
           </div>
           <div className="flex justify-center">
-            <StarsRating stars={stars} />
+            <StarsRating stars={carItem.rating.value} />
           </div>
         </div>
         <div className="relative flex justify-center right-3 bottom-4 w-28 ">
@@ -33,8 +46,8 @@ const TestVerdictVertical = ({ stars }) => {
       <div className="absolute flex justify-center w-full px-8 bottom-1">
         <p className=" xs:text-[10px] text-xxs">
           ELEKTROTRANSPORTER-VERGLEICH.DE
+          <span className="pl-3">{`${rev + 101}/${reviewDate}`}</span>
         </p>
-        {/* <p className="text-sm text-grey-nav">Testbericht 435 von 05/2022</p> */}
       </div>
     </div>
   );

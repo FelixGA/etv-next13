@@ -5,7 +5,13 @@ import CarCardDetailsDesktop from "../../components/ResultList/CarCardDetailsDes
 import Image from "next/image";
 import StarsRating from "../repeated/StarsRating";
 import TestVerdictVertical from "../repeated/TestVerdictVertical";
-const BasicInfo = ({ carItem }) => {
+const BasicInfo = ({
+  carItem,
+  getBlogContext,
+  getTestReview,
+  getCarsReview,
+  getAllReviews,
+}) => {
   return (
     <div className="flex flex-col w-full p-4 lg:flex-row lg:pt-12">
       <div className="flex flex-col justify-start w-full lg:w-1/2 print:w-1/2">
@@ -35,7 +41,10 @@ const BasicInfo = ({ carItem }) => {
             {carItem.title}
           </h2>
 
-          <CarCardDetailsDesktop carItem={carItem} />
+          <CarCardDetailsDesktop
+            carItem={carItem}
+            getAllReviews={getAllReviews}
+          />
         </div>
 
         {/* MOBILE VERSION DETAILS TABLE */}
@@ -47,7 +56,10 @@ const BasicInfo = ({ carItem }) => {
               </h2>
               <div className=" print:hidden">
                 <div className="scale-90 ">
-                  <TestVerdictVertical stars={carItem?.rating.value} />
+                  <TestVerdictVertical
+                    carItem={carItem}
+                    getAllReviews={getAllReviews}
+                  />
                 </div>
               </div>
             </div>
