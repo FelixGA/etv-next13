@@ -44,7 +44,7 @@ export default function fahrzeuge(props) {
           />
         </div>
         <div className="px-4 2xl:px-48">
-          <div className="py-4 text-xl ">
+          <div className="p-4 text-xl ">
             {getContent.description}
             <Link href="/caradvisor">
               <a className="relative text-blue-dark">Probieren Sie es aus!</a>

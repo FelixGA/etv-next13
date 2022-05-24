@@ -10,12 +10,16 @@ const FahrzeugeResultList = ({ sortedCars, getCarsReview }) => {
   const { state, dispatch } = useStore();
 
   return (
-    <div className="flex flex-col flex-1 lg:w-full lg:bg-white">
+    <div className="flex flex-col flex-1 mb-10 lg:w-full lg:bg-white">
       {sortedCars
         ?.map((carItem, index) => {
           return (
             <div className="flex flex-col mt-4 lg:flex-row" key={index}>
-              <CarInfoCard carItem={carItem} getCarsReview={getCarsReview} />
+              <CarInfoCard
+                carItem={carItem}
+                getCarsReview={getCarsReview}
+                objectFit={"cover"}
+              />
             </div>
           );
         })

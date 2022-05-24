@@ -12,7 +12,17 @@ const Articles = ({
   carItem,
   getTestReview,
   getBlogContext,
+  getAllReviews,
 }) => {
+  let reviewDate = getCarsReview.publishedAt;
+  let rev = getAllReviews
+    .map((item, index) => {
+      let res;
+      carItem?.relatedReviews == item.slug ? (res = index) : null;
+      return res;
+    })
+    .find((value) => value != undefined);
+
   /* GET THE STAR */
   return (
     <>
@@ -76,7 +86,11 @@ const Articles = ({
         </div>
       </div>
       <div className="flex justify-center">
-        <TestVerdict stars={carItem?.rating.value} />
+        <TestVerdict
+          stars={carItem?.rating.value}
+          rev={rev}
+          reviewDate={reviewDate}
+        />
       </div>
       {/* other articles section */}
       {/* First Article */}{" "}

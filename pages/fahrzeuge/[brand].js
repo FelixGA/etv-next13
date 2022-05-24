@@ -29,23 +29,29 @@ export default function Details(props) {
             Nutzfahrzeuge mit Elektro Antrieb im E-Transporter Vergleich
           </h1>
 
-          <div className="w-3/5 mx-auto my-4 ">
+          <div className="relative w-3/5 mx-auto my-8 text-center cursor-pointer">
             <Link href={`${getBrand.websiteLink}`} passHref>
-              <a>
-                <Image
-                  src={getBrand.src}
-                  alt={getBrand.title}
-                  width={150}
-                  height={30}
-                  layout="responsive"
-                  objectFit="contain"
-                />
-                <p className="cursor-pointer">{getBrand.websiteLink}</p>
-              </a>
+              <Image
+                src={getBrand.src}
+                alt={getBrand.title}
+                width={150}
+                height={30}
+                layout="responsive"
+                objectFit="contain"
+              />
             </Link>
           </div>
 
           <div className="px-4 2xl:px-48">
+            <Link href={`${getBrand.websiteLink}`} passHref>
+              <a className="inline-block pt-4 my-4 text-2xl cursor-pointer text-blue-darker">
+                <span className="text-[#666666] font-bold">
+                  Hersteller-Website:
+                </span>{" "}
+                {getBrand.websiteLink}
+              </a>
+            </Link>
+            ´
             <div className="py-4 text-xl ">
               {props.getContext ? <MDXRemote {...props.getContext} /> : null}
             </div>
