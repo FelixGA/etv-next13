@@ -23,7 +23,8 @@ const Details = ({ details }) => {
             {item.key}
           </p>
           <p className="flex items-center w-1/2 py-1 pl-4 h-14 text-blue-extra ">
-            {item.value ? item.value : "-"} {item.value ? item.baseUnit : ""}
+            {!item.value || item.value == "0" ? " " : item.value}{" "}
+            {item.value ? item.baseUnit : "-"}
           </p>
         </div>
       ))}
