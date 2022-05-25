@@ -27,7 +27,7 @@ content:
 
       Die Ladefläche ist zudem per Hand kippbar. Dies ist jedoch nur mit leichtem Materialien wie beispielsweise Grünschnitt möglich. Wer Bauschutt abkippen möchte, wird sicherlich seine Probleme bekommen.
     image: /images/elektrofrosch-big-3.jpeg
-    title: "### Laderaum & Flexibilität"
+    title: Laderaum & Flexibilität
     stars: 1
   - content: >-
       ### Antrieb und Aufladung
@@ -38,7 +38,7 @@ content:
 
       Das Fahrzeug ist zusätzlich auch in einer gedrosselten Version mit 25 km/h Höchstgeschwindigkeit als 25er CABIN erhältlich.
     image: ""
-    title: Antrieb und Aufladun
+    title: Antrieb und Aufladung
     stars: 2
   - content: >-
       ### Komfort & Ausstattung
