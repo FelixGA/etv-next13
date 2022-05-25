@@ -21,7 +21,7 @@ export default function Teasers({ teasers }) {
                 )}
               </a>
 
-              <h3 className="pl-2 text-base">{teaser.title}</h3>
+              <h3 className="px-2 pb-2 text-base">{teaser.title}</h3>
             </div>
           </Link>
         ))}
