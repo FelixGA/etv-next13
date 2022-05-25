@@ -115,7 +115,7 @@ function ActiveFilterEntry(props) {
         id: 6,
         value:
           state?.categorys.length || state?.categorys == undefined
-            ? state?.categorys.map((el) => "Type: " + el.min).join("")
+            ? state?.categorys.map((el) => "Typ " + el.min).join("")
             : null,
         image: image6,
       },
@@ -141,12 +141,12 @@ function ActiveFilterEntry(props) {
         <div
           className={
             item.value !== null
-              ? " flex-1 h-10 py-2  bg-grey-lighter flex justify-between items-center "
+              ? "flex-1 h-10 py-2  bg-grey-lighter flex justify-between items-center "
               : "hidden"
           }
           key={item.id}
         >
-          <div className="imageWrapper w-6 ml-2">
+          <div className="w-6 ml-2 ">
             <Image
               src={item.image}
               alt="picture"
@@ -188,7 +188,7 @@ function ActiveFilterEntry(props) {
         }
       >
         <div
-          className="text-sm  cursor-pointer"
+          className="text-sm cursor-pointer"
           onClick={() => {
             props.setShowAll(!props.showAll);
             dispatch({

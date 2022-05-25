@@ -14,3 +14,10 @@
 .mainHeading h1 {
   text-align: left;
 }
+
+@media screen and (max-width: 600px) {
+  .mainHeading p {
+    text-align: center;
+    width: 100%;
+  }
+}

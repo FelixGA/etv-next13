@@ -17,12 +17,13 @@ const NewsLetter = ({ getMarkdownContext }) => {
   } = useForm();
   const onSubmit = async (data, e) => {
     e.preventDefault();
-    "data", data;
-    // console.log("mydata", data);
+
+    !errors.emailInput ? setSend(true) : setSend(false);
+
+    console.log(!errors.emailInput);
 
     try {
       const result = await axios.post(`/api/handleNewsletter`, data);
-      // console.log("result", result);
     } catch (err) {
       console.log("error", err.response.data.message);
     }
@@ -57,15 +58,8 @@ const NewsLetter = ({ getMarkdownContext }) => {
             required={true}
             pattern={emailRegex}
           />
-          {/* <p className="text-red-200">
-            {errors.emailInput && "Email ist erforderlich"}
-          </p> */}
+
           <button
-            onClick={() => {
-              !errors.emailInput && watch().emailInput.length > 0
-                ? setSend(true)
-                : setSend(false);
-            }}
             type="submit"
             className="relative px-6 text-base font-bold text-white transition rounded-md lg:top-3 xs:mt-2 bg-blue-dark lg:mt-6 hover:bg-blue-light sm:rounded-r-lg xs:rounded-l-none h-14"
           >
@@ -79,7 +73,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
               : null
           }
         >
-          <p className="text-red-500">
+          <p className="text-red-500 sm:pl-3">
             {errors.emailInput && "Email ist erforderlich"}
           </p>
         </div>
@@ -90,7 +84,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
               : "hidden"
           }
         >
-          <p className="w-full px-8 mt-4 sm:p-8 sm:w-2/3 sm:text-lg">
+          <p className="w-full px-8 mt-4 sm:p-8 sm:text-lg">
             Vielen Dank! Das Formular wurde erfolgreich übermittelt.
           </p>
         </div>

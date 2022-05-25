@@ -251,13 +251,9 @@ export default function Form(props) {
         </form>
       </div>
       <div
-        className={
-          send
-            ? "flex sm:h-[calc(100vh-200px)] justify-center items-center w-full"
-            : "hidden"
-        }
+        className={send ? "flex justify-center items-center w-full" : "hidden"}
       >
-        <p className="w-full px-8 py-8 mx-2 bg-white border rounded-sm shadow-dropdown sm:text-lg">
+        <p className="px-8 py-8 bg-white border rounded-sm shadow-dropdown sm:text-lg">
           Vielen Dank für Ihre Nachricht. Wir melden uns umgehend bei Ihnen.
           <br />
           Hier können Sie gleich alle

@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import StarsRating from "./StarsRating";
 
-const TestVerdict = ({ stars }) => {
+const TestVerdict = ({ stars, rev, reviewDate }) => {
   return (
     <div className="flex flex-col w-[230px]  xs:w-[270px] pt-4">
       <div className="text + stars + icon flex justify-between relative">
@@ -30,7 +30,9 @@ const TestVerdict = ({ stars }) => {
           ELEKTROTRANSPORTER-VERGLEICH.DE
           <span className="absolute -top-3 text-3xl text-[#3FA535]">✓</span>
         </p>
-        <p className="text-sm text-grey-nav">Testbericht 435 von 05/2022</p>
+        <p className="text-sm text-grey-nav">{`Testbericht ${
+          rev + 101
+        } von ${reviewDate}`}</p>
       </div>
     </div>
   );
