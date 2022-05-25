@@ -14,13 +14,14 @@ import PrintPreview from "../../components/core/PrintPreview";
 export default function Details(props) {
   /* getCars hook for the slider */
   const [getCars, SetGetCars] = useState(props.vehicles);
-
   /* carItem hook for the ONE car that it is displayed */
   const [carItem, SetCarItem] = useState(props.vehicle);
   /* for the "TestBericht" part  */
   const [getTestReview, SetTestReview] = useState(props.getTestReview);
   /* for the "Testbericht" part  */
   const [getCarsReview, SetCarsReview] = useState(props.carsreview);
+  /* for all reviews "Testbericht" part  */
+  const [getAllReviews, SetGetAllReviews] = useState(props.carsreviews);
   /* the content for the future related blogs  */
   const [getBlogContext, SetGetBlogContext] = useState(props.relatedBlog);
   /* to make the Page change after clicking next/link */
@@ -34,15 +35,21 @@ export default function Details(props) {
     SetTestReview(props.getTestReview);
     SetCarsReview(props.carsreview);
     SetGetBlogs(props.blogs);
+    SetGetAllReviews(props.carsreviews);
   }, [props]);
-
+  console.log(getAllReviews);
   return (
     <>
       <div className=" print:hidden">
         <Head page={props.vehicle} />
         {/* image and rating section */}
         <div className="2xl:px-40">
-          <BasicInfo carItem={carItem} />
+          <BasicInfo
+            carItem={carItem}
+            getTestReview={getTestReview}
+            getCarsReview={getCarsReview}
+            getAllReviews={getAllReviews}
+          />
           {/* technical details section */}
           <TechnicalDetails carItem={carItem} />
           {/* description and articles section */}
@@ -52,6 +59,7 @@ export default function Details(props) {
           getBlogContext={getBlogContext}
           getTestReview={getTestReview}
           getCarsReview={getCarsReview}
+          getAllReviews={getAllReviews}
         />
         {/* slider  */}
         <TopSlider getCars={getCars} getBlogContext={getBlogContext} />

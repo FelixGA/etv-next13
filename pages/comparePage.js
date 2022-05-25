@@ -10,11 +10,15 @@ import FiltersDesktop from "../components/FilterItems/DesktopItems/FiltersDeskto
 export default function comparePage(props) {
   const [sortedCars, setSortedCars] = useState([]);
   const [getBrands, setGetBrands] = useState([]);
-
+  /* .find(
+    (item) => vehicle?.relatedReviews == item.slug
+  ) */
+  const [getCarsReviews, setGetCarsReviews] = useState([]);
   const { state, dispatch } = useStore();
   useEffect(() => {
     setSortedCars(props.vehicles);
     setGetBrands(props.brands);
+    setGetCarsReviews(props.carsreviews);
     /* PRICE SORTING */
     const getCarslowestPrice = props.vehicles
       ?.sort((a, b) => parseFloat(a.price) * 1 - parseFloat(b.price) * 1)
@@ -76,7 +80,6 @@ export default function comparePage(props) {
       setSortedCars(getCarsfastest);
     }
   }, [props.vehicles, state.activeSortValues]);
-
   return (
     <div className="relative">
       <Head page={props.page} />
@@ -93,7 +96,10 @@ export default function comparePage(props) {
             <ActiveFilterBlock />
           </div>
           <div className="mb-10 xl:pr-2 2xl:pr-40">
-            <ResultList sortedCars={sortedCars} />
+            <ResultList
+              sortedCars={sortedCars}
+              getCarsReviews={getCarsReviews}
+            />
           </div>
         </div>
         <div className="col-span-full ">

@@ -27,6 +27,10 @@ const variants = {
 };
 
 function FiltersMobile({ getBrands }) {
+<<<<<<< HEAD
+=======
+  // console.log(getBrands);
+>>>>>>> 2ac5ff1522665a8113c1aac91246e1ac897dc2a2
   /* UseStates */
   const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
   const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);

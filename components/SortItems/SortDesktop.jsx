@@ -38,8 +38,8 @@ function SortDesktop() {
   const [isChecked, setIsChecked] = useState("");
 
   return (
-    <div className="hidden md:flex items-center bg-white border rounded-md mt-2 z-10 w-64 xl:mr-0">
-      <div className="flex flex-col pl-4 items-start">
+    <div className="z-10 items-center hidden w-64 mt-2 bg-white border rounded-md md:flex xl:mr-0">
+      <div className="flex flex-col items-start pl-4">
         {SortArray.map((rank, index) => {
           return (
             <div
@@ -56,7 +56,7 @@ function SortDesktop() {
                 });
               }}
               key={index}
-              className="mt-1 flex flex-row py-2 mr-4 "
+              className="flex flex-row py-2 mt-1 mr-4 "
             >
               <input
                 className=" appearance-none w-6 h-6 tex text-xl border border-[#7D94AE] rounded-lg text-white checked:text-white checked:bg-blue-dark  after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
@@ -70,7 +70,7 @@ function SortDesktop() {
               ></input>
               <label
                 forhtml={rank?.sortCategory}
-                className="inline-flex items-center cursor-pointer pl-5 text-lg tracking-wide text-blue-extra "
+                className="inline-flex items-center pl-5 text-lg tracking-wide cursor-pointer text-blue-extra "
               >
                 {rank?.sortCategory}
               </label>

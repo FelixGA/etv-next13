@@ -9,10 +9,10 @@ export default function dataprotection(props) {
     <>
       <Head page={props.page} />
 
-      <div className="flex flex-col justify-between mx-6 py-6 text-center text-sm leading-8 bg-grey-lightest lg:mx-36 lg:pl-16 lg:text-2xl  lg:text-left 2xl:mx-72 lineBreakClass">
+      <div className="flex flex-col justify-between px-4 py-6 mx-2 text-sm leading-8 text-center bg-grey-lightest lg:mx-36 lg:pl-16 lg:text-2xl lg:text-left 2xl:mx-72 lineBreakClass">
         <MDXRemote {...getContent.datenschutzerklarung} />
       </div>
-      <div className="flex flex-col justify-between mx-6 py-6 text-center text-sm leading-8 bg-grey-lightest lg:mx-36 lg:pl-16 lg:text-2xl lg:text-left 2xl:mx-72 lineBreakClass">
+      <div className="flex flex-col justify-between px-4 py-6 mx-2 text-sm leading-8 text-center bg-grey-lightest lg:mx-36 lg:pl-16 lg:text-2xl lg:text-left 2xl:mx-72 lineBreakClass">
         <MDXRemote {...getContent.alles} />
       </div>
     </>
