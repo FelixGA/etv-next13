@@ -1,1 +1,0 @@
-exports.names = ["John", "Mary"];
