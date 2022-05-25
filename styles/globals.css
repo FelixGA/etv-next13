@@ -48,9 +48,9 @@
 
 /* FROM HERE WE GIVE css for reference  */
 
-a:visited {
-  /* color: white; */
-}
+/* a:visited {
+   color: white; 
+} */
 
 .select {
   @apply items-center text-base bg-white rounded-lg cursor-pointer;
@@ -128,4 +128,7 @@ table th {
 }
 .lineBreakClass p, code, h1,h2,h3,h4,h5,h6 {
 overflow-wrap: break-word;
+}
+.printpreview {
+  print-color-adjust: exact;
 }

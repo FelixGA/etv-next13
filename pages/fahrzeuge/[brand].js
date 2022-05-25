@@ -16,8 +16,8 @@ export default function Details(props) {
   /* for the "brand" */
   const [getBrand, SetGetBrand] = useState(props.brand);
   useEffect(() => {
-    // SetGetBrand(props.brand);
-    // SetSortedCars(props.sortedCars);
+    SetGetBrand(props.brand);
+    SetSortedCars(props.sortedCars);
   }, [props]);
   return (
     <>
