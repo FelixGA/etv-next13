@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import ErrorBoundary from "../components/ErrorBoundary";
 import Head from "next/head";
 import { StoreProvider } from "/components/store";
+import { TrackingHeadScript } from "@phntms/react-gtm";
 import "/styles/globals.css";
 import App from "next/app";
 
@@ -9,6 +10,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <TrackingHeadScript id="GTM-K6PQ4G9" disable={true} />
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
@@ -43,6 +45,7 @@ export default function MyApp({ Component, pageProps }) {
         />
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"></link>
       </Head>
+
       <ErrorBoundary>
         <StoreProvider>
           <Layout {...pageProps}>

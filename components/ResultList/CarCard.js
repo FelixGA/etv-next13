@@ -11,12 +11,13 @@ import ButtonAnfragen from "../repeated/ButtonAnfragen";
 import usePrice from "../../hooks/usePrice";
 import StarsRating from "../repeated/StarsRating";
 
-function CarCard({ carItem }) {
+function CarCard({ carItem, rev, reviewDate, getAllReviews }) {
+  const objectFit = "cover";
   /* HOOKS */
   const { state, dispatch } = useStore();
   const [showDetails, setShowDetails] = useState(false);
   const price = usePrice(carItem?.price);
-
+  console.log(getAllReviews);
   return (
     <div className="mb-4 overflow-hidden border-t shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter lg:rounded-xl">
       <div className="relative flex sm:flex-row">
@@ -49,7 +50,12 @@ function CarCard({ carItem }) {
         </div>
 
         <div className=" hidden lg:flex lg:my-auto lg:w-[45%]">
-          <CarCardDetailsDesktop carItem={carItem} />
+          <CarCardDetailsDesktop
+            carItem={carItem}
+            rev={rev}
+            reviewDate={reviewDate}
+            getAllReviews={getAllReviews}
+          />
         </div>
         {/* DIVIDER start*/}
         <div className="relative top-6 hidden 2xl:block w-[1px] h-32 mt-16 bg-grey-border mr-4"></div>

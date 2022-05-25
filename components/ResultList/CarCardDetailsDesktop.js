@@ -9,9 +9,10 @@ import { useRouter } from "next/router";
 import CarCardProps from "./CarCardProps";
 import TestVerdictVertical from "../repeated/TestVerdictVertical";
 
-function CarCardDetailsDesktop({ carItem }) {
+function CarCardDetailsDesktop({ carItem, rev, reviewDate, getAllReviews }) {
   const router = useRouter();
-
+  /*   let reviewDate = getCarsReview.publishedAt;
+   */
   return (
     <div className="flex flex-col justify-center w-full h-52 xl:h-64">
       <Link href={`/transporter/${carItem?.name}`}>
@@ -54,7 +55,10 @@ function CarCardDetailsDesktop({ carItem }) {
         <div className="relative items-center justify-center flex-1 hidden 2xl:flex">
           <div className="relative bottom-1 flex flex-col items-center w-36 h-40 scale-75 2xl:scale-[83%] justify-evenly">
             {/* <StartsRating stars={carItem?.rating.value} /> */}
-            <TestVerdictVertical stars={carItem?.rating.value} />
+            <TestVerdictVertical
+              carItem={carItem}
+              getAllReviews={getAllReviews}
+            />
           </div>
         </div>
       </div>

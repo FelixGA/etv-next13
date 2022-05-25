@@ -123,7 +123,22 @@ const ResultList = (props) => {
       <div className="w-full container-product md:pl-4" key={index}>
         {/* <div className="product-icon"></div> */}
 
-        <CarCard carItem={carItem} />
+        <CarCard
+          carItem={carItem}
+          getAllReviews={props.getCarsReviews}
+          /* rev={props.getCarsReview
+            .map((item, index) => {
+              let res;
+              carItem?.relatedReviews == item.slug ? (res = index) : null;
+              return res;
+            })
+            .find((value) => value != undefined)}
+          reviewDate={
+            props.getCarsReview.find(
+              (item) => item.slug == carItem?.relatedReviews
+            ).publishedAt || 22
+          } */
+        />
       </div>
     );
   });
