@@ -27,6 +27,10 @@ function Sort({ getContent }) {
 
   const sortBy2 = [
     {
+      sortCategory: "Alphabet",
+      sortType: "alphabetical",
+    },
+    {
       sortCategory: "Niedrigster Preis",
       sortType: "lowest",
     },
@@ -34,10 +38,6 @@ function Sort({ getContent }) {
       sortCategory: "Höchster Preis",
       sortType: "highest",
     },
-    // {
-    //   sortCategory: sortingCate[3],
-    //   sortType: "bestseller",
-    // },
     {
       sortCategory: "Beste Ladenzeit",
       sortType: "chargingTimeLithium",
@@ -50,13 +50,9 @@ function Sort({ getContent }) {
       sortCategory: "Höchste Reichweite",
       sortType: "highestRange",
     },
-    // {
-    //   sortCategory: sortingCate[7],
-    //   sortType: "highestVmax",
-    // },
   ];
   useEffect(() => {
-    //lowest price as in initial state
+    //Alphabet price as in initial state
     dispatch({
       type: "activeSortValue",
       data: [
@@ -72,18 +68,18 @@ function Sort({ getContent }) {
   return (
     <div className="block md:hidden ">
       <div
-        className=" cursor-pointer"
+        className="cursor-pointer "
         onClick={() => {
           setTruncate(!truncate);
         }}
       >
-        <div className="flex justify-between border-b-2 py-1 ">
+        <div className="flex justify-between py-1 border-b-2">
           <div className="flex ">
-            <div className="ml-5 my-auto">
+            <div className="my-auto ml-5">
               <BsSortDown size={20} fill="#1F1E80" />
             </div>
             <div className="pl-4 my-auto ">
-              <h4 className="py-3  font-bold text-blue-dark text-base">
+              <h4 className="py-3 text-base font-bold text-blue-dark">
                 {/* {getContent?.content[2].name} ↬{" "} */}
                 {state?.activeSortValues[0]?.sortCategory}
               </h4>
@@ -127,7 +123,7 @@ function Sort({ getContent }) {
                     });
                   }}
                   key={rank.sortCategory}
-                  className="mt-1 flex flex-row py-2 mr-4"
+                  className="flex flex-row py-2 mt-1 mr-4"
                 >
                   <input
                     className="appearance-none w-6 h-6 text-xl border border-[#7D94AE] rounded-lg text-white checked:bg-blue-dark  checked:text-white after:content-['✔'] after:relative after:left-1 after:bottom-0.5 "
@@ -141,7 +137,7 @@ function Sort({ getContent }) {
                   ></input>
                   <label
                     forhtml={rank?.sortCategory}
-                    className="inline-flex items-center cursor-pointer pl-5 text-lg tracking-wide text-blue-extra"
+                    className="inline-flex items-center pl-5 text-lg tracking-wide cursor-pointer text-blue-extra"
                   >
                     {rank?.sortCategory}
                   </label>
