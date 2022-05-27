@@ -1,22 +1,20 @@
 import { useState, useEffect } from "react";
 import { useStore } from "../store";
 const sortBy2 = [
-  // {
-  //   sortCategory: "Niedrigster Preis",
-  //   sortType: 1,
-  // },
+  {
+    sortCategory: "Alphabet",
+    sortType: "alphabetical",
+  },
   {
     sortCategory: "Niedrigster Preis",
     sortType: "lowest",
   },
+
   {
     sortCategory: "Höchster Preis",
     sortType: "highest",
   },
-  // {
-  //   sortCategory: sortingCate[3],
-  //   sortType: "bestseller",
-  // },
+
   {
     sortCategory: "Beste Ladenzeit",
     sortType: "chargingTimeLithium",

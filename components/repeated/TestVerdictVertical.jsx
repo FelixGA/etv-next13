@@ -15,21 +15,21 @@ const TestVerdictVertical = ({ rev, reviewDate, getAllReviews, carItem }) => {
       .publishedAt || 22;
 
   reviewDate = reviewDate.slice(-2);
-  console.log(typeof reviewDate);
+
   return (
     <div className="relative w-full h-full bg-white border-2 rounded-sm">
       <div className="relative text + stars + icon ">
         <div className="text + stars flex flex-col ">
           <div className="flex justify-center">
-            <p className="text-[20px] font-extrabold  text-blue-darker">
+            <p className="text-[19px] font-extrabold pt-1 text-blue-darker">
               TESTURTEIL
             </p>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center scale-95">
             <StarsRating stars={carItem.rating.value} />
           </div>
         </div>
-        <div className="relative flex justify-center right-3 bottom-4 w-28 ">
+        <div className="relative flex justify-center right-3 bottom-3 w-28 ">
           <Image
             src="/images/etv-logo-final.png"
             alt="test"

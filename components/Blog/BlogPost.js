@@ -23,7 +23,7 @@ export default function BlogPost(props) {
         <div className="px-1 text-blue-dark lg:px-0">
           {props.getBlogContext.publishedAt}
         </div>
-        <h2 className="w-full py-8 pl-2 font-bold lg:text-4xl text-blue-dark lg:pl-0">
+        <h2 className="px-2 py-8 font-bold lg:text-3xl text-blue-dark lg:pl-0">
           {props.getBlogContext?.title}
         </h2>
         <div className="relative grid list-disc 2xl:grid-cols-[auto,_320px] lg:px-0 px-2">

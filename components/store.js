@@ -60,7 +60,7 @@ const initialState = {
   disabledButtons: "",
   maximalThrees: "",
   /* sorting state */
-  activeSortValues: [{ sortCategory: "Niedrigster Preis", sortType: "lowest" }],
+  activeSortValues: [{ sortCategory: "Alphabet", sortType: "alphabetical" }],
 };
 
 const StoreContext = createContext(initialState);
