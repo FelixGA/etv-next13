@@ -44,7 +44,7 @@ export default function Details(props) {
 
           <div className="px-4 2xl:px-48">
             <Link href={`${getBrand.websiteLink}`} passHref>
-              <a className="inline-block pt-4 my-4 text-2xl cursor-pointer text-blue-darker">
+              <a className="inline-block pt-4 my-4 text-lg cursor-pointer sm:text-2xl text-blue-darker">
                 <span className="text-[#666666] font-bold">
                   Hersteller-Website:
                 </span>{" "}

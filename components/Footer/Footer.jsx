@@ -4,6 +4,7 @@ import Link from "next/link";
 import ListItems from "./ListItems";
 import footerWords from "../../data/footerData";
 import { useState, useEffect } from "react";
+
 import Logo from "../repeated/Logo";
 const Footer = ({ blogs, brands }) => {
   const magazineList = [
@@ -13,8 +14,11 @@ const Footer = ({ blogs, brands }) => {
 
     { category: "Häufig gestellte Fragen", slug: "frequentlyaskedquestions" },
   ];
+  const [getBrands, setGetBrands] = useState(brands);
 
-  useEffect(() => {}, [brands, blogs]);
+  useEffect(() => {
+    setGetBrands(brands);
+  }, [brands, blogs]);
   const rights = [
     {
       slug: "impressum",
