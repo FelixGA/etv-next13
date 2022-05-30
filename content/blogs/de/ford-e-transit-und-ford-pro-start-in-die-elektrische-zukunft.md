@@ -2,7 +2,7 @@
 title: "Ford E-Transit und Ford Pro: Start in die elektrische Zukunft"
 slug: ford-e-transit-und-ford-pro-start-in-die-elektrische-zukunft
 youtubeLink: ""
-category: hersteller
+category: manufacturer
 publishedAt: 04/29/2022
 src: /images/ampnet_photo_20220429_209619.jpg
 description: Mit dem Ford Transit reagiert der europäische Markenführer auf die
