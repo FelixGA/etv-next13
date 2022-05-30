@@ -35,7 +35,11 @@ export default function TextArea({
         {...register(registerData, {
           required: required,
         })}
-        defaultValue={carItem ? carItem : null}
+        defaultValue={
+          carItem
+            ? `${carItem}  , file:///etv/elektrotransporter-vergleich/public/images/${carItem}.pdf`
+            : null
+        }
         type={type}
         id={id}
       ></textarea>

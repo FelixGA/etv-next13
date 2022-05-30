@@ -97,3 +97,4 @@ async function writeFile2(filetype, data) {
   fs.writeFileSync(`${filename}.csv`, utf16buffer);
   fs.writeFileSync(`${filename}.txt`, utf16buffer);
 }
+

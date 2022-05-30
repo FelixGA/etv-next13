@@ -20,11 +20,7 @@ export default function fahrzeuge(props) {
     SetCarsReview(props.carsreviews);
     SetGetContent(props.page);
   }, [props.vehicles]);
-  // console.log(
-  //   props.vehicles.map(
-  //     (car) => `${car.title} ________________ ${car.relatedReviews}`
-  //   )
-  // );
+
   return (
     <div className="w-full">
       <Head page={props.page} />
@@ -67,6 +63,7 @@ export async function getStaticProps(context) {
   let vehicles = await getContent("vehicles", context.locale);
   let blogs = await getContent("blogs", context.locale);
   let carsreviews = await getContent("carsreview", context.locale);
+  let brands = await getContent("brands", context.locale);
 
   const page = pages.find(
     (page) =>
@@ -86,6 +83,7 @@ export async function getStaticProps(context) {
       posts,
       page,
       blogs,
+      brands,
 
       carsreviews,
     },
