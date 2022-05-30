@@ -23,27 +23,29 @@ function ActiveFilterBlock({ getContent }) {
 
       {/* HEADING + SORTING */}
       <div className="flex justify-between 2xl:pr-40">
-        <div className={showAll ? "w-full " : "flex items-center flex-1 "}>
-          <h1 className="pb-4 pl-4 mt-8 text-2xl md:text-3xl text-blue-extra">
+        <div
+          className={
+            showAll ? "w-full" : "relative flex items-center w-full h-24"
+          }
+        >
+          <h1 className="absolute pl-4 mt-4 text-xl sm:text-2xl lg:text-3xl text-blue-extra">
             Die besten E-Transporter nach Ihrer Auswahl
           </h1>
           {/*   <p> Hersteller: {state?.brands} </p> */}
         </div>
         <div
-          className="items-end justify-between hidden cursor-pointer md:flex right-2 "
+          className="items-end justify-between hidden cursor-pointer md:flex"
           onClick={() => {
             setClicked(!clicked);
           }}
         >
-          <div className="relative flex items-center justify-center xl:pr-0">
-            <h4 className="sort-heading w-fit">
+          <div className="relative flex items-center justify-center xl:pr-0 ">
+            <h4 className="sort-heading">
               {` Sortieren nach:
                ${state?.activeSortValues[0]?.sortCategory}`}
             </h4>
             {/* SORT DESKTOP */}
-            <div
-              className={clicked ? "hidden" : "flex absolute top-4 right-0 "}
-            >
+            <div className={clicked ? "hidden" : "flex absolute top-4 right-0"}>
               <SortDesktop />
             </div>
             <div

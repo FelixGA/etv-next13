@@ -37,14 +37,14 @@ export default function ActiveCompareImages({ comparedCars }) {
       {comparedCars.length ? (
         comparedCars.map((item, index) => (
           <div
-            className="relative h-full bg-grey-lighter p-4 sm:pl-10 min-w-[160px]"
+            className="relative h-full bg-grey-lighter p-4 sm:pl-10 md:pl-4 min-w-[160px]"
             key={index}
           >
-            <div className="relative cursor-pointer ">
+            <div className="relative cursor-pointer">
               <Link href={`/transporter/${item.name}`}>
                 <a>
                   <Image
-                    className=" rounded-md md:rounded-lg brightness-[0.7] "
+                    className="rounded-md md:rounded-lg brightness-[0.7] "
                     src={item.src}
                     alt="picture"
                     objectFit="cover"
