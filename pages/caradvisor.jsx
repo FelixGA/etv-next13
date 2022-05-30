@@ -41,10 +41,10 @@ export default function caradvisor(props) {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center w-full gap-8 px-4 py-8 bg-white xl:px-40 md:flex-row justify-evenly">
+      <div className="flex flex-col w-full gap-8 px-4 py-8 bg-white xl:px-40 md:flex-row justify-evenly">
         {data.map((item) => (
           <div className="w-full px-4 py-4 mb-4 shadow-dropdown" key={item.id}>
-            <div className="w-full ">
+            <div className="block ">
               <Image
                 src={item.image}
                 width={300}
@@ -53,8 +53,8 @@ export default function caradvisor(props) {
                 objectFit="contain"
               />
             </div>
-            <h3 className="pt-2 sm:h-10 xl:text-2xl ">{item.title}</h3>
-            <p className="h-48 text-lg xl:pt-4">{item.description}</p>
+            <h3 className="pt-2 sm:h-fit xl:text-2xl">{item.title}</h3>
+            <p className="pt-2 text-lg xl:pt-4">{item.description}</p>
           </div>
         ))}
       </div>
