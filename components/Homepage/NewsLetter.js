@@ -61,7 +61,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
 
           <button
             type="submit"
-            className="relative px-6 text-base font-bold text-white transition rounded-md lg:top-3 xs:mt-2 bg-blue-dark lg:mt-6 hover:bg-blue-light sm:rounded-r-lg xs:rounded-l-none h-14"
+            className="relative px-6 text-base font-bold text-white transition rounded-md lg:top-3 xs:mt-4 bg-blue-dark lg:mt-6 hover:bg-blue-light sm:rounded-r-lg xs:rounded-l-none h-14"
           >
             Anmelden
           </button>
