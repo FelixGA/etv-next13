@@ -30,18 +30,16 @@ module.exports = async (request, response, stageId = 238) => {
         request.body.zipcode ? request.body.zipcode : ""
       }
      , ${request.body.message}
-     
-
-      
-
-      
-      
-     
-      `,
+ `,
+      c4f78672fa0a3a246610b8a6b143af85088c466c: `https://www.elektrotransporter-vergleich.de/sheets/${request.body.message.replace(
+        /\s/g,
+        ""
+      )}.pdf`,
     });
   } catch (error) {
     console.log("error is", error);
   }
+  // c4f78672fa0a3a246610b8a6b143af85088c466c: "skata",
   // console.log("deal", deal);
   response.send(deal.success);
   return deal;
