@@ -78,7 +78,7 @@ const Footer = ({ blogs, brands }) => {
                 {magazineList
                   ?.map((blogCateg, index) => (
                     <li
-                      className="flex items-center justify-between my-2 "
+                      className="flex items-center justify-between h-[43px] "
                       key={index}
                     >
                       <Link href={`/magazin/${blogCateg.slug}`}>

@@ -91,7 +91,7 @@ export default function comparePage(props) {
         <div className="flex md:hidden ">
           <FiltersMobile getBrands={getBrands} />
         </div>
-        <div className="heading+sorting+content mt-10 md:mt-20">
+        <div className="heading+sorting+content mt-10 md:mt-20 ">
           <div className="">
             <ActiveFilterBlock />
           </div>
