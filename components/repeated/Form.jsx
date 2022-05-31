@@ -47,7 +47,7 @@ export default function Form(props) {
     <div className="w-full mt-3 rounded-lg">
       <div className={send ? "hidden" : ""}>
         {/* FORM */}
-
+        <a href="/sheets/test.pdf">test</a>
         <form
           /* action="/action_page.php" */
           // action="https://api.vercel.com/v6/deployments"

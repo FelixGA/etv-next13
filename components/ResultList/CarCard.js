@@ -17,7 +17,6 @@ function CarCard({ carItem, rev, reviewDate, getAllReviews }) {
   const { state, dispatch } = useStore();
   const [showDetails, setShowDetails] = useState(false);
   const price = usePrice(carItem?.price);
-  console.log(getAllReviews);
   return (
     <div className="mb-4 overflow-hidden border-t shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter lg:rounded-xl">
       <div className="relative flex sm:flex-row">
