@@ -59,7 +59,7 @@ function FilterBrandItemDesktop({ item }) {
                 layout="responsive"
               />
             </div>
-            <div className="pl-4 my-auto text-xxs lg:text-base">
+            <div className="pl-4 my-auto text-xs lg:text-base">
               <h4 className="font-bold text-blue-darker">Hersteller</h4>
             </div>
           </div>
