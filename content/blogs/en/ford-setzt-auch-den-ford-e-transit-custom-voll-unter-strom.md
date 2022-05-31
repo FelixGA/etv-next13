@@ -2,7 +2,7 @@
 title: Ford setzt auch den Ford E-Transit Custom voll unter Strom
 slug: ford-setzt-auch-den-ford-e-transit-custom-voll-unter-strom
 youtubeLink: ""
-category: hersteller
+category: manufacturer
 publishedAt: 05/09/2022
 src: /images/ampnet_photo_20220509_209847.jpg
 description: Mit dem E-Transit Custom plant Ford dem E-Transit 2023 ein weiteres

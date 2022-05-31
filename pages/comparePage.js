@@ -84,14 +84,14 @@ export default function comparePage(props) {
     <div className="relative">
       <Head page={props.page} />
       <div> </div>
-      <div className="grid grid-cols-1 md:grid-cols-[30%_minmax(70%,_1fr)]  relative ">
+      <div className="grid grid-cols-1 sm:grid-cols-[35%_minmax(65%,_1fr)] lg:grid-cols-[30%_minmax(70%,_1fr)] relative ">
         <div className="hidden mt-24 md:block">
           <FiltersDesktop getBrands={getBrands} />
         </div>
         <div className="flex md:hidden ">
           <FiltersMobile getBrands={getBrands} />
         </div>
-        <div className="heading+sorting+content mt-10 md:mt-20">
+        <div className="heading+sorting+content mt-10 md:mt-20 ">
           <div className="">
             <ActiveFilterBlock />
           </div>

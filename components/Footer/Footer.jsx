@@ -4,6 +4,7 @@ import Link from "next/link";
 import ListItems from "./ListItems";
 import footerWords from "../../data/footerData";
 import { useState, useEffect } from "react";
+
 import Logo from "../repeated/Logo";
 const Footer = ({ blogs, brands }) => {
   const magazineList = [
@@ -13,8 +14,11 @@ const Footer = ({ blogs, brands }) => {
 
     { category: "Häufig gestellte Fragen", slug: "frequentlyaskedquestions" },
   ];
+  const [getBrands, setGetBrands] = useState(brands);
 
-  useEffect(() => {}, [brands, blogs]);
+  useEffect(() => {
+    setGetBrands(brands);
+  }, [brands, blogs]);
   const rights = [
     {
       slug: "impressum",
@@ -36,16 +40,16 @@ const Footer = ({ blogs, brands }) => {
 
   return (
     <>
-      <footer className="px-2 shadow-2xl xl:px-4 bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-around ">
-        <nav className="flex flex-col justify-around w-full my-4 xl:justify-between sm:flex-row sm:items-start lg:w-3/4 sm:pb-8 print:hidden">
+      <footer className="px-2 shadow-2xl xl:px-4 bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-between ">
+        <nav className="flex flex-col justify-around my-4 xl:justify-between sm:flex-row sm:items-start lg:w-[80%] sm:pb-8 print:hidden lg:pl-8">
           <div className="flex flex-col ">
-            <h3 className="flex items-end justify-center text-sm font-bold tracking-wider sm:justify-start h-14 xl:text-base">
+            <h3 className="flex items-end justify-center text-xs font-bold tracking-wider sm:justify-start h-14 xl:text-base">
               <Link href="/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich">
                 <a className="text-white ">{`Transporter`.toUpperCase()}</a>
               </Link>
             </h3>
             <div className="pt-6 ">
-              <ul className="grid lg:grid-rows-6 2xl:grid-rows-5 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(180px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden">
+              <ul className="grid lg:grid-rows-5 2xl:grid-rows-5 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(155px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden">
                 {brands?.map((blog, index) => (
                   <li
                     className="h-[43px] lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
@@ -64,7 +68,7 @@ const Footer = ({ blogs, brands }) => {
             </div>
           </div>
           <div className="flex flex-col justify-start sm:w-40 md:w-1/6 ">
-            <h3 className="flex items-end justify-center text-sm font-bold tracking-wider sm:justify-start h-14 xl:text-base">
+            <h3 className="flex items-end justify-center text-xs font-bold tracking-wider sm:justify-start h-14 xl:text-base">
               <Link href="/magazin">
                 <a className="text-white">{`Magazin`.toUpperCase()}</a>
               </Link>
@@ -74,7 +78,7 @@ const Footer = ({ blogs, brands }) => {
                 {magazineList
                   ?.map((blogCateg, index) => (
                     <li
-                      className="flex items-center justify-between my-2 "
+                      className="flex items-center justify-between h-[43px] "
                       key={index}
                     >
                       <Link href={`/magazin/${blogCateg.slug}`}>
@@ -91,7 +95,7 @@ const Footer = ({ blogs, brands }) => {
           {/* only for RECHTLICHES & KONTAKT
            */}
           <div className="flex flex-col items-center justify-center lg:mr-8 sm:items-start sm:w-40 md:w-1/6">
-            <h3 className="flex items-center justify-center text-sm font-bold tracking-wider text-white w-52 xl:w-full md:justify-start sm:items-end h-14 xl:text-base">
+            <h3 className="flex items-center justify-center text-xs font-bold tracking-wider text-white xl:w-full md:justify-start sm:items-end h-14 xl:text-base">
               {`Rechtliches & Kontakt`.toUpperCase()}
             </h3>
             <div className="sm:pt-4">
@@ -101,13 +105,13 @@ const Footer = ({ blogs, brands }) => {
         </nav>
         {/* logos and media
          */}
-        <div className="relative flex flex-col items-center px-4 pt-4 lg:pl-0 xl:pl-4 sm:items-start md:w-1/6 lg:pt-12 ">
-          <div className="relative right-2">
+        <div className="relative flex flex-col items-center w-full px-4 pt-4 mx-auto md:pl-0 xl:pl-4 sm:items-start md:w-1/6 lg:pt-12">
+          <div className="relative right-2 sm:right-14 lg:right-2">
             <Logo />
           </div>
 
-          <div className="flex justify-center w-full print:hidden">
-            <p className="pt-6 pb-2 lg:pl-2 text-xs text-center text-white w-[300px] sm:text-left lg:text-lg xl:text-lg">
+          <div className="flex justify-center w-full md:justify-start print:hidden">
+            <p className="pt-6 pb-2 text-xs text-white lg:pl-2 sm:text-left lg:text-lg xl:text-lg">
               {footerWords.map((item, index) => (
                 <span className="" key={index}>
                   {item}
@@ -115,27 +119,29 @@ const Footer = ({ blogs, brands }) => {
               ))}
             </p>
           </div>
-          <div className="flex justify-start pt-2 pb-8 mr-2 sm:mr-0 w-28 lg:w-40">
-            <div className="p-2 transition cursor-pointer hover:scale-110">
-              <Link href="https://www.facebook.com">
-                <a aria-label="facebook" target="_blank">
-                  <BsFacebook size={25} fill="#fff" />
-                </a>
-              </Link>
-            </div>
-            <div className="p-2 transition cursor-pointer hover:scale-110 ">
-              <Link href="https://www.youtube.com">
-                <a aria-label="youtube" target="_blank">
-                  <BsYoutube size={30} fill="#fff" />
-                </a>
-              </Link>
-            </div>
-            <div className="p-2 transition cursor-pointer hover:scale-110 ">
-              <Link href="https://www.linkedin.com">
-                <a aria-label="linkedin" target="_blank">
-                  <BsLinkedin size={25} fill="#fff" />
-                </a>
-              </Link>
+          <div className="relative md:right-6 lg:right-0">
+            <div className="flex justify-start pt-2 pb-8 mr-2f sm:justify-center sm:mr-0">
+              <div className="p-2 transition cursor-pointer hover:scale-110">
+                <Link href="https://www.facebook.com">
+                  <a aria-label="facebook" target="_blank">
+                    <BsFacebook size={25} fill="#fff" />
+                  </a>
+                </Link>
+              </div>
+              <div className="p-2 transition cursor-pointer hover:scale-110 ">
+                <Link href="https://www.youtube.com">
+                  <a aria-label="youtube" target="_blank">
+                    <BsYoutube size={30} fill="#fff" />
+                  </a>
+                </Link>
+              </div>
+              <div className="p-2 transition cursor-pointer hover:scale-110 ">
+                <Link href="https://www.linkedin.com">
+                  <a aria-label="linkedin" target="_blank">
+                    <BsLinkedin size={25} fill="#fff" />
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

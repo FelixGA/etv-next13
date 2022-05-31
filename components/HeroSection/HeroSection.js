@@ -129,7 +129,7 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
               {getContent.title}
             </h1>
             <div
-              className={`${styles.mainHeading}"pb-4 text-xl text-grey-darker sm:text-2xl lg:text-3xl "`}
+              className={`${styles.mainHeading} "pb-4 text-xl text-grey-darker sm:text-2xl lg:text-3xl"`}
             >
               <MDXRemote {...getMarkdownContext.header} />
             </div>
