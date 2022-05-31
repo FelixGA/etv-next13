@@ -13,6 +13,7 @@ export default function TextArea({
   required,
   carItem,
 }) {
+  console.log("carItem", carItem);
   const router = useRouter();
   router.pathname == "/kontakt" ? (required = true) : (required = false);
   return (
@@ -35,11 +36,7 @@ export default function TextArea({
         {...register(registerData, {
           required: required,
         })}
-        defaultValue={
-          carItem
-            ? `${carItem}  , file:///etv/elektrotransporter-vergleich/public/images/${carItem}.pdf`
-            : null
-        }
+        defaultValue={carItem ? carItem : null}
         type={type}
         id={id}
       ></textarea>

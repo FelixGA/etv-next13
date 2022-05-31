@@ -37,7 +37,6 @@ export default function Details(props) {
     SetGetBlogs(props.blogs);
     SetGetAllReviews(props.carsreviews);
   }, [props]);
-  console.log(getAllReviews);
   return (
     <>
       <div className=" print:hidden">
