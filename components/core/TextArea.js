@@ -13,7 +13,6 @@ export default function TextArea({
   required,
   carItem,
 }) {
-  console.log("carItem", carItem);
   const router = useRouter();
   router.pathname == "/kontakt" ? (required = true) : (required = false);
   return (
