@@ -27,7 +27,6 @@ const variants = {
 };
 
 function FiltersMobile({ getBrands }) {
-
   /* UseStates */
   const [userInputMinPrice, SetUserInputMinPrice] = useState(0);
   const [userInputMaxPrice, SetUserInputMaxPrice] = useState(99000);
