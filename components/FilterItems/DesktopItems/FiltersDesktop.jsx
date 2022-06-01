@@ -7,15 +7,15 @@ import FilterBrandItemDesktop from "./FilterBrandItemDesktop";
 
 const variants = {
   enter: {
-    y: -1000,
+    height: 0,
     opacity: 0,
   },
   center: {
-    y: 0,
+    height: "100%",
     opacity: 1,
   },
   exit: {
-    y: -1000,
+    height: 0,
     opacity: 0,
   },
 };

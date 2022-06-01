@@ -10,18 +10,15 @@ import Logo_SVG from "../repeated/Logo_SVG.js";
 
 const variants = {
   enter: {
-    y: -5000,
-
+    height: 0,
     opacity: 0,
   },
   center: {
-    y: 0,
-
+    height: "100vh",
     opacity: 1,
   },
   exit: {
-    y: -5000,
-
+    height: 0,
     opacity: 0,
   },
 };
@@ -88,7 +85,7 @@ const Header = () => {
         <AnimatePresence initial={false}>
           {state?.mobileNavActives && (
             <motion.div
-              className="absolute right-0 w-full h-screen top-20 lg:hidden sm:w-96 z-90"
+              className="absolute right-0 w-full h-0 top-20 lg:hidden sm:w-96 z-90"
               variants={variants}
               initial="enter"
               animate="center"
