@@ -27,7 +27,7 @@ export default function BlogPost(props) {
           {props.getBlogContext?.title}
         </h2>
         <div className="relative grid list-disc 2xl:grid-cols-[auto,_320px] lg:px-0 px-2">
-          <div className={`${styles.blogmarkdown} lg:pr-8`}>
+          <div className={`${styles.blogmarkdown} lg:pr-8 `}>
             <MDXRemote {...props.getBlogContext.source} />
             <div className="mt-8 text-blue-darker">
               <span className="">Das könnte Sie auch interessieren:</span>
