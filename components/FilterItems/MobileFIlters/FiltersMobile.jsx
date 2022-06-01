@@ -41,58 +41,58 @@ function FiltersMobile({ getBrands }) {
     SetUserInputMaxPrice(e.target.value);
   };
   return (
-    <div className="absolute z-20 w-full bg-white shadow-lg">
-      <div className="flex flex-col bg-white ">
-        <div className="w-full shadow-dropdown ">
-          <div
-            className={
-              clicked
-                ? "h-14 shadow-dropdown flex justify-between align-middle border-b "
-                : "h-14 shadow-dropdown flex justify-between align-middle "
-            }
-            onClick={() => {
-              setClicked(!clicked);
-            }}
-          >
-            <div className="flex flex-1">
-              <div className="w-3.5 my-auto ml-6">
-                <Image
-                  src={filterImage}
-                  alt="filter icon"
-                  objectFit="cover"
-                  width={8}
-                  height={8}
-                  layout="responsive"
-                />
-              </div>
-              <span className="my-auto ml-4 text-sm font-black text-blue-darker">
-                {/* Alle Filter anzeigen */}
-                Alle Filter anzeigen
-              </span>
-            </div>
-
+    <AnimatePresence initial={false}>
+      <motion.div
+        className="absolute z-20 w-full bg-white shadow-lg"
+        variants={variants}
+        initial="enter"
+        animate="center"
+        exit="exit"
+        transition={{ type: "tween", duration: 0.1 }}
+      >
+        <div className="flex flex-col bg-white ">
+          <div className="w-full shadow-dropdown ">
             <div
               className={
                 clicked
-                  ? "flex items-center w-8 mr-5 my-auto transition transform rotate-180 origin-center	"
-                  : "flex items-center w-8 mr-5 my-auto transition transform rotate-0 origin-center	 "
+                  ? "h-14 shadow-dropdown flex justify-between align-middle border-b "
+                  : "h-14 shadow-dropdown flex justify-between align-middle "
               }
+              onClick={() => {
+                setClicked(!clicked);
+              }}
             >
-              <MdKeyboardArrowDown size={28} />
+              <div className="flex flex-1">
+                <div className="w-3.5 my-auto ml-6">
+                  <Image
+                    src={filterImage}
+                    alt="filter icon"
+                    objectFit="cover"
+                    width={8}
+                    height={8}
+                    layout="responsive"
+                  />
+                </div>
+                <span className="my-auto ml-4 text-sm font-black text-blue-darker">
+                  {/* Alle Filter anzeigen */}
+                  Alle Filter anzeigen
+                </span>
+              </div>
+
+              <div
+                className={
+                  clicked
+                    ? "flex items-center w-8 mr-5 my-auto transition transform rotate-180 origin-center	"
+                    : "flex items-center w-8 mr-5 my-auto transition transform rotate-0 origin-center	 "
+                }
+              >
+                <MdKeyboardArrowDown size={28} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <AnimatePresence initial={false}>
         {clicked && (
-          <motion.div
-            className={clicked ? "block " : "hidden"}
-            variants={variants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{ type: "tween", duration: 0.1 }}
-          >
+          <div className={clicked ? "block " : "hidden"}>
             {priceFilterData.map((item) => (
               <div className="relative " key={item.id}>
                 <Sort />
@@ -121,10 +121,10 @@ function FiltersMobile({ getBrands }) {
             <div className="bg-white">
               <FilterBrandItemMobile item={getBrands} />
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
-    </div>
+      </motion.div>
+    </AnimatePresence>
   );
 }
 
