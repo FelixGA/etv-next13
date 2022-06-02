@@ -8,15 +8,15 @@ import FilterCheckboxMobile from "./FilterCheckboxMobile";
 
 const variants = {
   enter: {
-    y: -500,
+    height: 0,
     opacity: 0,
   },
   center: {
-    y: 0,
+    height: "100%",
     opacity: 1,
   },
   exit: {
-    y: -500,
+    height: 0,
     opacity: 0,
   },
 };
@@ -27,7 +27,7 @@ function FilterItemMobile({ item }) {
   return (
     <div className="bg-white border-b">
       <div
-        className=" cursor-pointer bg-white"
+        className="bg-white cursor-pointer "
         onClick={() => {
           dispatch({
             type: "truncate",
@@ -35,8 +35,8 @@ function FilterItemMobile({ item }) {
           });
         }}
       >
-        <div className="flex flex-row justify-between border-b py-4 flex-1 bg-white">
-          <div className="flex flex-row  ">
+        <div className="flex flex-row justify-between flex-1 py-4 bg-white border-b">
+          <div className="flex flex-row ">
             <div className="w-6 h-6 ml-4 ">
               <Image
                 src={item.image}
@@ -48,7 +48,7 @@ function FilterItemMobile({ item }) {
               />
             </div>
             <div className="pl-4 my-auto ">
-              <h4 className=" font-bold text-blue-darker">{item.title}</h4>
+              <h4 className="font-bold text-blue-darker">{item.title}</h4>
             </div>
           </div>
           <div className="flex flex-row">
@@ -102,7 +102,7 @@ function FilterItemMobile({ item }) {
                     });
                   }}
                   key={index}
-                  className="mt-1 flex flex-row py-2 "
+                  className="flex flex-row py-2 mt-1 "
                 >
                   <FilterCheckboxMobile
                     checkbox={checkbox}
@@ -114,7 +114,7 @@ function FilterItemMobile({ item }) {
                   ></FilterCheckboxMobile>
                   <label
                     forhtml="categories"
-                    className="inline-flex items-center cursor-pointer pl-5 tracking-wide text-lg text-blue-extra"
+                    className="inline-flex items-center pl-5 text-lg tracking-wide cursor-pointer text-blue-extra"
                   >
                     {checkbox.name}
                   </label>

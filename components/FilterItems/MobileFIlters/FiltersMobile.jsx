@@ -13,15 +13,15 @@ import PriceInputs from "../PriceInputs";
 
 const variants = {
   enter: {
-    y: -500,
+    height: 0,
     opacity: 0,
   },
   center: {
-    y: 0,
+    height: "100%",
     opacity: 1,
   },
   exit: {
-    y: -500,
+    height: 0,
     opacity: 0,
   },
 };
@@ -47,8 +47,8 @@ function FiltersMobile({ getBrands }) {
           <div
             className={
               clicked
-                ? "h-14 shadow-dropdown flex justify-between align-middle border-b "
-                : "h-14 shadow-dropdown flex justify-between align-middle "
+                ? "h-14 shadow-md flex justify-between align-middle border-b "
+                : "h-14 shadow-md flex justify-between align-middle "
             }
             onClick={() => {
               setClicked(!clicked);

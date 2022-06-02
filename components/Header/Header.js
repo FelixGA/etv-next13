@@ -1,7 +1,7 @@
 import Nav from "../Header/Nav";
 import MobileNav from "./MobileNav";
 import Image from "next/image";
-import { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useStore } from "../store";
@@ -10,18 +10,15 @@ import Logo_SVG from "../repeated/Logo_SVG.js";
 
 const variants = {
   enter: {
-    y: -5000,
-
+    height: 0,
     opacity: 0,
   },
   center: {
-    y: 0,
-
+    height: "100vh",
     opacity: 1,
   },
   exit: {
-    y: -5000,
-
+    height: 0,
     opacity: 0,
   },
 };
@@ -88,7 +85,7 @@ const Header = () => {
         <AnimatePresence initial={false}>
           {state?.mobileNavActives && (
             <motion.div
-              className="absolute right-0 w-full h-screen top-20 lg:hidden sm:w-96 z-90"
+              className="absolute right-0 w-full h-0 top-20 lg:hidden sm:w-96 z-90"
               variants={variants}
               initial="enter"
               animate="center"
@@ -174,11 +171,14 @@ const Header = () => {
             }
           ></div>
         </div> */}
-        <div className="menu">
+        <div className={!state?.mobileNavActives ? "menu" : "hidden"}>
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
         </div>
+        <span className={!state?.mobileNavActives ? "hidden" : "block pr-0.5"}>
+          <AiOutlineClose size={26} fill=" #fff" />
+        </span>
       </div>
     </div>
   );
