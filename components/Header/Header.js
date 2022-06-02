@@ -1,7 +1,7 @@
 import Nav from "../Header/Nav";
 import MobileNav from "./MobileNav";
 import Image from "next/image";
-import { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useStore } from "../store";
@@ -171,11 +171,14 @@ const Header = () => {
             }
           ></div>
         </div> */}
-        <div className="menu">
+        <div className={!state?.mobileNavActives ? "menu" : "hidden"}>
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
         </div>
+        <span className={!state?.mobileNavActives ? "hidden" : "block pr-0.5"}>
+          <AiOutlineClose size={26} fill=" #fff" />
+        </span>
       </div>
     </div>
   );

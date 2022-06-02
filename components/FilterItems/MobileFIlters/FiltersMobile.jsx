@@ -47,8 +47,8 @@ function FiltersMobile({ getBrands }) {
           <div
             className={
               clicked
-                ? "h-14 shadow-dropdown flex justify-between align-middle border-b "
-                : "h-14 shadow-dropdown flex justify-between align-middle "
+                ? "h-14 shadow-md flex justify-between align-middle border-b "
+                : "h-14 shadow-md flex justify-between align-middle "
             }
             onClick={() => {
               setClicked(!clicked);
