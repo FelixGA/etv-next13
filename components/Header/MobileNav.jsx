@@ -45,7 +45,7 @@ function MobileNav() {
           animate="center"
           exit="exit"
           transition={{ type: "tween" }}
-          className="relative z-30 flex flex-col items-center justify-center w-full pb-24 bg-gradient-to-b from-blue-darker to-blue-dark"
+          className="relative z-30 flex flex-col items-center justify-center w-full pb-32 bg-gradient-to-b from-blue-darker to-blue-dark"
         >
           <motion.ul
             className=" flex flex-col gap-14 justify-center text-[#928888] text-2xl tracking-widest "
