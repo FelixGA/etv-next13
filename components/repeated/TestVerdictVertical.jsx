@@ -17,7 +17,7 @@ const TestVerdictVertical = ({ rev, reviewDate, getAllReviews, carItem }) => {
   reviewDate = reviewDate.slice(-2);
 
   return (
-    <div className="relative w-full h-full bg-white border-2 rounded-sm">
+    <div className="relative w-[150px] xs:w-full h-full bg-white border-2 rounded-sm mx-auto xs:mx-0">
       <div className="relative text + stars + icon ">
         <div className="text + stars flex flex-col ">
           <div className="flex justify-center">
