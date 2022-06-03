@@ -34,10 +34,10 @@ const BasicInfo = ({
           className="rounded-md lg:rounded-none lg:rounded-l-md"
         />
       </div>
-      <div className="flex flex-col pt-1 lg:w-1/2">
+      <div className="flex flex-col pt-4 lg:pt-16 lg:w-1/2">
         {/* DESKTOP VERSION FOR DETAILS TABLE*/}
         <div className="flex-col justify-start hidden px-8 pb-2 lg:flex ">
-          <h2 className="hidden p-2 text-3xl font-black lg:block text-blue-extra">
+          <h2 className="hidden p-2 text-3xl font-black 2xl:text-4xl lg:block text-blue-extra">
             {carItem.title}
           </h2>
 
@@ -50,7 +50,7 @@ const BasicInfo = ({
         {/* MOBILE VERSION DETAILS TABLE */}
         <div className="flex flex-col w-full my-4 lg:hidden">
           <div className="flex flex-row justify-between flex-1 lg:hidden">
-            <div className="flex w-full ">
+            <div className="flex flex-col w-full xs:flex-row">
               <h2 className="w-full pb-2 text-2xl font-bold tracking-wide text-blue-extra sm:text-2xl">
                 {carItem.title}
               </h2>

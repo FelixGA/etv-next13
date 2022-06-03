@@ -124,7 +124,7 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
             />
           </div>
           {/* TITLE AND DESC */}
-          <div className="px-2 py-2 pb-2 main-heading-text lg:flex lg:flex-col lg:justify-evenly sm:py-10 xs:px-2 sm:px-0">
+          <div className="px-2 py-2 pb-2 main-heading-text lg:flex lg:flex-col lg:justify-evenly sm:py-10 md:pb-0 xs:px-2 sm:px-0">
             <h1 className="pt-4 pb-4 text-2xl text-center sm:text-left sm:text-3xl xl:text-4xl">
               {getContent.title}
             </h1>
@@ -135,14 +135,16 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
             </div>
 
             <p className="hidden pt-4 text-sm font-bold text-left text-blue-extra xl:text-2xl sm:block">
-              <span>
-                <span className="mr-2 text-[#6C6BB3]">✔</span>unabhängig
+              <span className="inline-block text-xl xl:text-2xl xl:pb-10">
+                <span className="mr-2 text-[#6C6BB3] text-xl ">✔</span>
+                unabhängig
               </span>
-              <span className="pl-8">
-                <span className="mr-2 text-[#6C6BB3]">✔</span> schnell
+              <span className="pl-8 text-xl xl:text-2xl">
+                <span className="mr-2 text-[#6C6BB3] text-xl">✔</span> schnell
               </span>
-              <span className="pl-8">
-                <span className="mr-2 text-[#6C6BB3]">✔</span> immer aktuell
+              <span className="pl-8 text-xl xl:text-2xl">
+                <span className="mr-2 text-[#6C6BB3] text-xl">✔</span> immer
+                aktuell
               </span>
             </p>
           </div>
@@ -244,7 +246,9 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
                     });
                   }}
                 >
-                  <a className="py-10 text-lg">Jetzt vergleichen</a>
+                  <a className="py-10 text-base xl:text-lg">
+                    Jetzt vergleichen
+                  </a>
                 </button>
               </Link>
             </div>
