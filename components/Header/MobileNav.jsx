@@ -45,15 +45,22 @@ function MobileNav() {
           animate="center"
           exit="exit"
           transition={{ type: "tween" }}
-          className="flex flex-col items-center justify-center w-full pb-24 bg-gradient-to-b from-blue-darker to-blue-dark z-90"
+          className="relative z-30 flex flex-col items-center justify-center w-full pb-24 bg-gradient-to-b from-blue-darker to-blue-dark"
         >
-          <ul className="flex flex-col gap-14 justify-center text-[#928888] text-2xl tracking-widest ">
+          <motion.ul
+            className=" flex flex-col gap-14 justify-center text-[#928888] text-2xl tracking-widest "
+            variants={variants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ type: "tween" }}
+          >
             {navbarData.map((item, index) => (
               <li
                 className={
                   router.pathname == item.path
-                    ? "transition duration-100 text-white font-bold text-xl md:text-2xl text-center md:text-left"
-                    : "transition duration-100 font-bold text-center md:text-left text-xl md:text-2xl"
+                    ? " text-white font-bold text-xl md:text-2xl text-center md:text-left "
+                    : " font-bold text-center md:text-left text-xl md:text-2xl "
                 }
                 key={index}
               >
@@ -101,7 +108,7 @@ function MobileNav() {
                 </Link>
               </li>
             ))}
-          </ul>
+          </motion.ul>
         </motion.div>
       )}
     </AnimatePresence>
