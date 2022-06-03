@@ -10,16 +10,16 @@ import Logo_SVG from "../repeated/Logo_SVG.js";
 
 const variants = {
   enter: {
-    height: 0,
-    opacity: 0,
+    /*  height: 0, */
+    /*   opacity: 0, */
   },
   center: {
-    height: "100vh",
-    opacity: 1,
+    /*  height: "100vh", */
+    /* opacity: 1, */
   },
   exit: {
-    height: 0,
-    opacity: 0,
+    /*  height: 0, */
+    /*   opacity: 0, */
   },
 };
 const Header = () => {
@@ -82,20 +82,20 @@ const Header = () => {
         <div className="hidden lg:block w-[50%]">
           <Nav />
         </div>
-        <AnimatePresence initial={false}>
-          {state?.mobileNavActives && (
-            <motion.div
-              className="absolute right-0 w-full h-0 top-20 lg:hidden sm:w-96 z-90"
-              variants={variants}
+        {/* <AnimatePresence initial={false}> */}
+        {/*    {state?.mobileNavActives && ( */}
+        <div
+          className="absolute right-0 w-full top-20 lg:hidden sm:w-96 z-90"
+          /*  variants={variants}
               initial="enter"
               animate="center"
               exit="exit"
-              transition={{ type: "tween" }}
-            >
-              <MobileNav />
-            </motion.div>
-          )}
-        </AnimatePresence>
+              transition={{ type: "tween" }} */
+        >
+          <MobileNav />
+        </div>
+        {/*  )} */}
+        {/*   </AnimatePresence> */}
         {/* BUTTON */}
 
         <div
