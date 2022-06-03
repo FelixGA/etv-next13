@@ -12,7 +12,7 @@ const Header = () => {
   const { state, dispatch } = useStore();
   const router = useRouter();
   return (
-    <div className="relative shadow-card print:hidden z-90">
+    <div className="relative shadow-card print:hidden ">
       <div className="sticky top-0 z-40 flex flex-row items-center justify-between w-full h-20 bg-blue-darker sm:h-24 2xl:px-40">
         <Link href={`/`} passHref>
           <div
@@ -69,7 +69,7 @@ const Header = () => {
           <Nav />
         </div>
 
-        <div className="absolute right-0 w-full top-20 lg:hidden sm:w-96 z-90">
+        <div className="absolute right-0 w-full top-20 lg:hidden sm:w-96 ">
           <MobileNav />
         </div>
 
