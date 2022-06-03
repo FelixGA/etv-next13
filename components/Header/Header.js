@@ -8,20 +8,6 @@ import { useStore } from "../store";
 import { useRouter } from "next/router";
 import Logo_SVG from "../repeated/Logo_SVG.js";
 
-const variants = {
-  enter: {
-    /*  height: 0, */
-    /*   opacity: 0, */
-  },
-  center: {
-    /*  height: "100vh", */
-    /* opacity: 1, */
-  },
-  exit: {
-    /*  height: 0, */
-    /*   opacity: 0, */
-  },
-};
 const Header = () => {
   const { state, dispatch } = useStore();
   const router = useRouter();
@@ -82,20 +68,11 @@ const Header = () => {
         <div className="hidden lg:block w-[50%]">
           <Nav />
         </div>
-        {/* <AnimatePresence initial={false}> */}
-        {/*    {state?.mobileNavActives && ( */}
-        <div
-          className="absolute right-0 w-full top-20 lg:hidden sm:w-96 z-90"
-          /*  variants={variants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{ type: "tween" }} */
-        >
+
+        <div className="absolute right-0 w-full top-20 lg:hidden sm:w-96 z-90">
           <MobileNav />
         </div>
-        {/*  )} */}
-        {/*   </AnimatePresence> */}
+
         {/* BUTTON */}
 
         <div
@@ -162,15 +139,6 @@ const Header = () => {
             : "ham-menu-container absolute right-4 sm:top-9 top-7 lg:hidden z-40 "
         }
       >
-        {/* <div className="relative" onClick={() => setHamState(!hamState)}>
-          <div
-            className={
-              hamState
-                ? "relative after:content-[''] after:w-6 after:bg-white after:h-[3px] after:absolute after:top-2 before:content-[''] before:w-6 before:bg-white before:h-[3px] before:absolute before:top-4 bg-white h-[3px] w-6"
-                : "relative after:content-[''] after:w-6 after:bg-white after:h-[3px] after:absolute after:top-2 before:content-[''] before:w-6 before:bg-white before:h-[3px] before:absolute before:top-4 bg-white h-[3px] w-6 before:rotate-45 -rotate-90"
-            }
-          ></div>
-        </div> */}
         <div className={!state?.mobileNavActives ? "menu" : "hidden"}>
           <div className="line"></div>
           <div className="line"></div>
