@@ -7,7 +7,7 @@ export default function Teasers({ teasers }) {
       <div className="grid grid-rows-3 gap-5 md:grid-rows-1 md:grid-cols-3 md:gap-2 ">
         {teasers?.map((teaser, index) => (
           <Link href={`/magazin/${teaser.category}/${teaser.slug}`} key={index}>
-            <div className="border cursor-pointer shadow-dropdown">
+            <div className="transition duration-200 border cursor-pointer shadow-dropdown hover:scale-[103%]">
               <a>
                 {teaser.title && (
                   <Image
