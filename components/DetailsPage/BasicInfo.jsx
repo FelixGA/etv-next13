@@ -5,6 +5,7 @@ import CarCardDetailsDesktop from "../../components/ResultList/CarCardDetailsDes
 import Image from "next/image";
 import StarsRating from "../repeated/StarsRating";
 import TestVerdictVertical from "../repeated/TestVerdictVertical";
+import TestVerdict from "../repeated/TestVerdict";
 const BasicInfo = ({
   carItem,
   getBlogContext,
@@ -55,12 +56,18 @@ const BasicInfo = ({
                 {carItem.title}
               </h2>
               <div className=" print:hidden">
-                <div className="scale-90 ">
+                {/*  <div className="scale-70 ">
                   <TestVerdictVertical
                     carItem={carItem}
                     getAllReviews={getAllReviews}
                   />
-                </div>
+                </div> */}
+                {/* <div>
+                  <TestVerdict
+                    carItem={carItem}
+                    getAllReviews={getAllReviews}
+                  />
+                </div> */}
               </div>
             </div>
           </div>

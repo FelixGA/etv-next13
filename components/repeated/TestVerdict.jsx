@@ -2,7 +2,21 @@ import Image from "next/image";
 import React from "react";
 import StarsRating from "./StarsRating";
 
-const TestVerdict = ({ stars, rev, reviewDate }) => {
+const TestVerdict = ({ rev, reviewDate, getAllReviews, carItem }) => {
+  // console.log(stars);
+  rev = getAllReviews
+    .map((item, index) => {
+      let res;
+      carItem?.relatedReviews == item.slug ? (res = index) : null;
+      return res;
+    })
+    .find((value) => value != undefined);
+  /* date */
+  reviewDate =
+    getAllReviews.find((item) => item.slug == carItem?.relatedReviews)
+      .publishedAt || 22;
+
+  reviewDate = reviewDate.slice(-2);
   return (
     <div className="flex flex-col w-[230px] xs:w-[270px] pt-8">
       <div className="text + stars + icon flex justify-between relative">
@@ -11,7 +25,7 @@ const TestVerdict = ({ stars, rev, reviewDate }) => {
             TESTURTEIL
           </p>
           <div className="xs:pl-3 xs:scale-[120%]">
-            <StarsRating stars={stars} />
+            <StarsRating stars={carItem.rating.value} />
           </div>
         </div>
         <div className="absolute right-0 xs:right-4 w-[115px] -top-6">
