@@ -5,7 +5,7 @@ import styles from "./Articles.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
 import StarsRating from "../repeated/StarsRating";
-import TestVerdict from "../repeated/TestVerdict";
+// import TestVerdict from "../repeated/TestVerdict";
 
 const Articles = ({
   getCarsReview,
@@ -85,13 +85,13 @@ const Articles = ({
           )} */}
         </div>
       </div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <TestVerdict
           stars={carItem?.rating.value}
           rev={rev}
           reviewDate={reviewDate}
         />
-      </div>
+      </div> */}
       {/* other articles section */}
       {/* First Article */}{" "}
       <div className="flex flex-col w-full bg-white lg:flex-row-reverse 2xl:px-44 print:hidden">

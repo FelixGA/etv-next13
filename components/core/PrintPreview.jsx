@@ -4,7 +4,7 @@ import styles from "../DetailsPage/Articles.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
 import StarsRating from "../repeated/StarsRating";
-import TestVerdict from "../repeated/TestVerdict";
+// import TestVerdict from "../repeated/TestVerdict";
 export default function PrintPreview({
   carItem,
 
@@ -263,7 +263,7 @@ export default function PrintPreview({
                 ))
                 .slice(4, getCarsReview?.content.length - 1)}
               <div className=" m-auto">
-                <TestVerdict stars={carItem?.rating.value} />
+                {/* <TestVerdict stars={carItem?.rating.value} /> */}
               </div>
             </div>
           )}

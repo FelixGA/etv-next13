@@ -2,9 +2,8 @@ import Image from "next/image";
 import React from "react";
 import StarsRating from "./StarsRating";
 
-const TestVerdict = ({ rev, reviewDate, getAllReviews, carItem }) => {
-  // console.log(stars);
-  rev = getAllReviews
+const TestVerdict = ({ reviewDate, getAllReviews, carItem }) => {
+  let rev = getAllReviews
     .map((item, index) => {
       let res;
       carItem?.relatedReviews == item.slug ? (res = index) : null;
