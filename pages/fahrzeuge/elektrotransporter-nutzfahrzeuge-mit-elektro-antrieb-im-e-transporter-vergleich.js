@@ -22,10 +22,10 @@ export default function fahrzeuge(props) {
   }, [props.vehicles]);
 
   return (
-    <div className="w-full">
+    <div className="px-4 2xl:px-64">
       <Head page={props.page} />
-      <div className="2xl:px-48">
-        <h1 className="px-4 pt-8 pb-4 text-2xl leading-9 tracking-wider text-center text-black lg:text-left lg:text-4xl xl:pt-12 2xl:px-48">
+      <div className="leading-loose">
+        <h1 className="flex justify-center pt-8 pb-4 text-2xl text-black xs:text-center lg:text-4xl xl:text-5xl xl:pt-12">
           Elektro-Transporter – {sortedCars.length} {getContent.title}
         </h1>
 
@@ -39,15 +39,17 @@ export default function fahrzeuge(props) {
             objectFit="contain"
           />
         </div>
-        <div className="px-4 2xl:px-48">
-          <div className="p-4 text-xl ">
+        <div className="">
+          <div className="py-4 text-xl ">
             {getContent.description}
             <Link href="/caradvisor">
-              <a className="relative text-blue-dark">Probieren Sie es aus!</a>
+              <a className="relative font-bold text-blue-dark">
+                Probieren Sie es aus!
+              </a>
             </Link>
           </div>
         </div>
-        <div className="px-4 2xl:px-48">
+        <div className="">
           <FahrzeugeResultList
             sortedCars={sortedCars}
             getCarsReview={getCarsReview}
