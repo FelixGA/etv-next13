@@ -1,3 +1,5 @@
+//                      ADD  "type": "module", TO THE PACKAGE.JSON FILE TO RUN IT
+
 import pipedrive from "pipedrive";
 import FuzzySearch from "fuzzy-search";
 let defaultClient = pipedrive.ApiClient.instance;
