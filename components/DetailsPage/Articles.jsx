@@ -87,8 +87,8 @@ const Articles = ({
       </div>
       <div className="flex justify-center">
         <TestVerdict
-          stars={carItem?.rating.value}
-          rev={rev}
+          carItem={carItem}
+          getAllReviews={getAllReviews}
           reviewDate={reviewDate}
         />
       </div>

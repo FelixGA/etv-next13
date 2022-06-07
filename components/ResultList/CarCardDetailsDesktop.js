@@ -28,7 +28,7 @@ function CarCardDetailsDesktop({ carItem, rev, reviewDate, getAllReviews }) {
           </h3>
         </a>
       </Link>
-      <div className="grid w-full grid-cols-2 2xl:grid-cols-3">
+      <div className="grid w-full grid-cols-2 px-2 2xl:grid-cols-2 3xl:grid-cols-3">
         <div className="flex flex-col justify-between h-48 py-4 ">
           <CarCardProps
             details={
@@ -52,7 +52,7 @@ function CarCardDetailsDesktop({ carItem, rev, reviewDate, getAllReviews }) {
           <CarCardProps details={carItem?.maxSpeed} image={image3} />
         </div>
 
-        <div className="relative items-center justify-center flex-1 hidden 2xl:flex">
+        <div className="relative items-center justify-center flex-1 hidden 3xl:flex">
           <div className="relative bottom-1 flex flex-col items-center w-36 h-40 scale-75 2xl:scale-[83%] justify-evenly">
             {/* <StartsRating stars={carItem?.rating.value} /> */}
             <TestVerdictVertical

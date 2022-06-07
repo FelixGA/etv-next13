@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { FcCheckmark } from "react-icons/fc";
 import StarsRating from "./StarsRating";
-const TestVerdictVertical = ({ rev, reviewDate, getAllReviews, carItem }) => {
-  rev = getAllReviews
+const TestVerdictVertical = ({ reviewDate, getAllReviews, carItem }) => {
+  let rev = getAllReviews
     .map((item, index) => {
       let res;
       carItem?.relatedReviews == item.slug ? (res = index) : null;
@@ -15,9 +15,9 @@ const TestVerdictVertical = ({ rev, reviewDate, getAllReviews, carItem }) => {
       .publishedAt || 22;
 
   reviewDate = reviewDate.slice(-2);
-
+  console.log(rev);
   return (
-    <div className="relative w-[150px] xs:w-full h-full bg-white border-2 rounded-sm mx-auto xs:mx-0">
+    <div className="relative w-[150px] xs:min-w-[150px] h-full bg-white border-2 rounded-sm mx-auto xs:mx-0">
       <div className="relative text + stars + icon ">
         <div className="text + stars flex flex-col ">
           <div className="flex justify-center">
