@@ -7,6 +7,8 @@ import { useState, useEffect } from "react";
 
 import Logo from "../repeated/Logo";
 const Footer = ({ blogs, brands }) => {
+  let iconSize = [20, 25];
+
   const magazineList = [
     { category: "Hersteller", slug: "manufacturer" },
     { category: "Neuigkeiten", slug: "news" },
@@ -106,12 +108,12 @@ const Footer = ({ blogs, brands }) => {
         {/* logos and media
          */}
         <div className="relative flex flex-col items-center w-full px-4 pt-4 mx-auto md:pl-0 xl:pl-4 sm:items-start md:w-1/6 lg:pt-12">
-          <div className="relative right-2 sm:right-14 lg:right-2">
+          <div className="relative scale-90 right-2 sm:right-14 lg:right-4 xl:right-2 xl:scale-100">
             <Logo />
           </div>
 
-          <div className="flex justify-center w-full md:justify-start print:hidden">
-            <p className="pt-6 pb-2 text-xs text-white lg:pl-2 sm:text-left lg:text-lg xl:text-lg">
+          <div className="flex justify-center w-full print:hidden lg:justify-start">
+            <p className="pt-6 pb-2 text-xs text-white lg:pl-2 lg:text-base xl:text-lg">
               {footerWords.map((item, index) => (
                 <span className="" key={index}>
                   {item}
@@ -119,23 +121,23 @@ const Footer = ({ blogs, brands }) => {
               ))}
             </p>
           </div>
-          <div className="relative md:right-6 lg:right-0">
-            <div className="flex justify-start pt-2 pb-8 mr-2f sm:justify-center sm:mr-0">
-              <div className="p-2 transition cursor-pointer hover:scale-110">
+          <div className="relative ">
+            <div className="flex justify-start pt-2 pb-8 mr-2 sm:justify-center sm:mr-0">
+              <div className="p-2 transition scale-90 cursor-pointer xl:scale-100 hover:scale-110">
                 <Link href="https://www.facebook.com">
                   <a aria-label="facebook" target="_blank">
                     <BsFacebook size={25} fill="#fff" />
                   </a>
                 </Link>
               </div>
-              <div className="p-2 transition cursor-pointer hover:scale-110 ">
+              <div className="p-2 transition scale-90 cursor-pointer hover:scale-110 xl:scale-100">
                 <Link href="https://www.youtube.com">
                   <a aria-label="youtube" target="_blank">
                     <BsYoutube size={30} fill="#fff" />
                   </a>
                 </Link>
               </div>
-              <div className="p-2 transition cursor-pointer hover:scale-110 ">
+              <div className="p-2 transition scale-90 cursor-pointer hover:scale-110 xl:scale-100">
                 <Link href="https://www.linkedin.com">
                   <a aria-label="linkedin" target="_blank">
                     <BsLinkedin size={25} fill="#fff" />

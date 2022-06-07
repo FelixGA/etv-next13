@@ -4,7 +4,7 @@ import StarsRating from "./StarsRating";
 
 const TestVerdict = ({ stars, rev, reviewDate }) => {
   return (
-    <div className="flex flex-col w-[230px]  xs:w-[270px] pt-4">
+    <div className="flex flex-col w-[230px] xs:w-[270px] pt-8">
       <div className="text + stars + icon flex justify-between relative">
         <div className="text + stars">
           <p className="text-xl font-extrabold xs:text-2xl text-blue-darker">

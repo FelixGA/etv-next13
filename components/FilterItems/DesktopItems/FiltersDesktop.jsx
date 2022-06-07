@@ -7,15 +7,15 @@ import FilterBrandItemDesktop from "./FilterBrandItemDesktop";
 
 const variants = {
   enter: {
-    y: -1000,
+    height: 0,
     opacity: 0,
   },
   center: {
-    y: 0,
+    height: "100%",
     opacity: 1,
   },
   exit: {
-    y: -1000,
+    height: 0,
     opacity: 0,
   },
 };
@@ -23,37 +23,37 @@ const variants = {
 function FiltersDesktop({ getBrands }) {
   const { state, dispatch } = useStore();
   return (
-    <div className="shadow-sm xl:ml-2 2xl:ml-40">
-      <div className="">
-        {priceFilterData.map((item, index) => (
-          <div className="relative bg-white" key={index}>
-            <FilterItemDesktop item={item} />
-            <AnimatePresence initial={false}>
+    <AnimatePresence initial={false}>
+      <motion.div
+        className="shadow-sm xl:ml-2 2xl:ml-40"
+        variants={variants}
+        initial="enter"
+        animate="center"
+        exit="exit"
+        transition={{ type: "tween", duration: 0.1 }}
+      >
+        <div className="">
+          {priceFilterData.map((item, index) => (
+            <div className="relative bg-white" key={index}>
+              <FilterItemDesktop item={item} />
               {state?.truncates == item.title && (
-                <motion.div
-                  variants={variants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                  transition={{ type: "tween", duration: 0.1 }}
-                  className="relative flex flex-col ml-8 "
-                >
+                <div className="relative flex flex-col ml-8 ">
                   <PriceInputs />
-                </motion.div>
+                </div>
               )}
-            </AnimatePresence>
+            </div>
+          ))}
+        </div>
+        {filtersData.map((item, index) => (
+          <div className="bg-white" key={index}>
+            <FilterItemDesktop item={item} />
           </div>
         ))}
-      </div>
-      {filtersData.map((item, index) => (
-        <div className="bg-white" key={index}>
-          <FilterItemDesktop item={item} />
+        <div className="bg-white">
+          <FilterBrandItemDesktop item={getBrands} />
         </div>
-      ))}
-      <div className="bg-white">
-        <FilterBrandItemDesktop item={getBrands} />
-      </div>
-    </div>
+      </motion.div>
+    </AnimatePresence>
   );
 }
 export default FiltersDesktop;

@@ -324,4 +324,4 @@ Gern halten wir Sie über neue Fördermöglichkeiten auf dieser Seite auf dem La
 
 Sie wollen jetzt diese Förderungen nutzen und einen Elektrotransporter finden, der zu Ihren Ansprüchen passt?
 
-Dann nutzen Sie gleich unseren kostenlosen Elektrotransporter-Kaufberater und finden Sie schnell und einfach den richtigen E-Transporter!
+[Dann nutzen Sie gleich unseren kostenlosen Elektrotransporter-Kaufberater und finden Sie schnell und einfach den richtigen E-Transporter!](https://www.elektrotransporter-vergleich.de/caradvisor)

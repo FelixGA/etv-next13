@@ -17,7 +17,7 @@
 }
 
 .markdown a {
-  @apply text-blue-dark font-bold;
+  @apply font-bold text-blue-light;
 }
 .markdown p {
   display: -webkit-box;

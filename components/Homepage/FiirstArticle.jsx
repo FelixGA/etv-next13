@@ -6,7 +6,7 @@ export default function FirstArticle({ getMarkdownContext, getContent }) {
   // (<MDXRemote {...getMarkdownContext.eAutoAdvisor} />);
 
   return (
-    <div className="flex px-4 2xl:px-60 ">
+    <div className="flex px-6 2xl:px-60 ">
       <div className="flex flex-col">
         <div className="">
           <div className="flex items-center justify-center w-24 h-10 font-bold text-white rounded no-select bg-orange-light">

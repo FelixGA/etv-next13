@@ -4,7 +4,7 @@ import image2 from "../../public/images/zuladung@2x.png";
 import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
 import image5 from "../../public/images/ladezeit@2x.png";
-import image6 from "../../public/images/more-svgrepo-com.png";
+import image6 from "../../public/images/aufbautype.png";
 
 import { AiOutlineClose } from "react-icons/ai";
 import { useStore } from "../store";
