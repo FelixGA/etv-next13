@@ -10,7 +10,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <TrackingHeadScript id="G-XN4BS8SB6C" disable={true} />
+        <TrackingHeadScript id="G-XN4BS8SB6C" disable={false} />
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
