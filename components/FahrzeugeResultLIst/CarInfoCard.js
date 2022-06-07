@@ -4,12 +4,12 @@ import { useRouter } from "next/router";
 const CarInfoCard = ({ carItem, getCarsReview, objectFit }) => {
   const router = useRouter();
   return (
-    <div className="px-4 xl:px-0">
+    <div className="">
       {/* TITLE */}
       <div className="">
         <Link href={`/transporter/${carItem.name}`}>
           <a>
-            <h3 className="flex pt-8 pb-4 text-2xl font-bold leading-7 title sm:text-3xl text-black-darkest ">
+            <h3 className="flex pt-8 pb-4 text-2xl font-semibold leading-7 title sm:text-3xl text-black-darkest ">
               {carItem.title.split("-").join(" ")}
             </h3>
           </a>
@@ -21,7 +21,7 @@ const CarInfoCard = ({ carItem, getCarsReview, objectFit }) => {
           {carItem.description}
 
           <Link href={`/transporter/${carItem.name}`}>
-            <a className="pl-2 text-blue-dark">
+            <a className="pl-2 font-semibold text-blue-dark">
               Lesen Sie hier den gesamten Beitrag zum Fahrzeug!
             </a>
           </Link>
