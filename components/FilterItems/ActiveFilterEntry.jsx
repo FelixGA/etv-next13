@@ -46,11 +46,13 @@ function ActiveFilterEntry(props) {
                 (el) =>
                   (el.min > 999
                     ? el.min.toString().slice(0, -3) +
-                      el.min.toString().slice(el.min.length, -3)
+                      "." +
+                      el.min.toString().slice(-3)
                     : el.min) +
                   "-" +
                   el.max.toString().slice(0, -3) +
-                  el.max.toString().slice(el.max.length, -3)
+                  "." +
+                  el.max.toString().slice(-3)
               )
               .join("") + "€"
           : null,
