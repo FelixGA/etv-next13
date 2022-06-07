@@ -4,7 +4,7 @@ import styles from "../DetailsPage/Articles.module.css";
 import { MDXRemote } from "next-mdx-remote";
 
 import StarsRating from "../repeated/StarsRating";
-// import TestVerdict from "../repeated/TestVerdict";
+import TestVerdict from "../repeated/TestVerdict";
 export default function PrintPreview({
   carItem,
 
@@ -12,10 +12,10 @@ export default function PrintPreview({
   getCarsReview,
 }) {
   return (
-    <div className="w-screen flex flex-col flex-wrap printpreview">
+    <div className="flex flex-col flex-wrap w-screen printpreview">
       <div className="h-screen">
         {/* main page */}
-        <div className="w-screen flex h-screen flex-col flex-wrap">
+        <div className="flex flex-col flex-wrap w-screen h-screen">
           {/*header */}
           <div className="w-screen h-[5vh] text-lg text-white flex justify-evenly items-center bg-blue-darker mb-1">
             <h2 className="text-white">Fahrzeugübersicht</h2>
@@ -34,28 +34,28 @@ export default function PrintPreview({
               </div>
             </div>
           </div>
-          <div className="flex w-screen flex-col flex-wrap ">
+          <div className="flex flex-col flex-wrap w-screen ">
             {/* details , price  etc */}
             {/* basics photo etc */}
             <div className="flex h-32">
               <img
                 src={carItem?.src}
                 alt={carItem?.title}
-                className="mr-4 object-cover w-1/3"
+                className="object-cover w-1/3 mr-4"
               />
 
               <div className="flex flex-col w-2/3">
-                <div className="flex flex-col justify-between  ">
-                  <h3 className="font-bold w-full">{carItem?.title}</h3>
+                <div className="flex flex-col justify-between ">
+                  <h3 className="w-full font-bold">{carItem?.title}</h3>
 
                   <div className="flex">
-                    <div className="flex flex-col mx-2 w-1/6">
+                    <div className="flex flex-col w-1/6 mx-2">
                       <img
                         src="/images/reichweite.png"
                         alt={carItem?.rangeLithium.key}
-                        className="mr-8 w-14 h-12 object-cover"
+                        className="object-cover h-12 mr-8 w-14"
                       />
-                      <p className="text-blue-dark font-bold">
+                      <p className="font-bold text-blue-dark">
                         {carItem?.rangeLithium.value
                           ? carItem?.rangeLithium.value
                           : carItem?.range230V.value}{" "}
@@ -63,13 +63,13 @@ export default function PrintPreview({
                       </p>
                       {carItem?.rangeLithium.key.split(" ")[0]}
                     </div>
-                    <div className="flex flex-col mx-2 w-1/6">
+                    <div className="flex flex-col w-1/6 mx-2">
                       <img
                         src="/images/ladezeit.png"
                         alt={carItem?.title}
-                        className="mr-8 w-14 h-12 object-cover"
+                        className="object-cover h-12 mr-8 w-14"
                       />
-                      <p className="text-blue-dark font-bold">
+                      <p className="font-bold text-blue-dark">
                         {carItem?.chargingTimeLithium.value
                           ? carItem?.chargingTimeLithium.value
                           : carItem?.chargingTime230V.value}{" "}
@@ -77,45 +77,45 @@ export default function PrintPreview({
                       </p>
                       {carItem?.chargingTimeLithium.key.split(" ")[0]}
                     </div>
-                    <div className="flex flex-col mx-2 w-1/6">
+                    <div className="flex flex-col w-1/6 mx-2">
                       <img
                         src="/images/zuladung.png"
                         alt={carItem?.loadingWeight.key}
-                        className="mr-8 w-14 h-12 object-fit-contain"
+                        className="h-12 mr-8 w-14 object-fit-contain"
                       />
-                      <p className="text-blue-dark font-bold">
+                      <p className="font-bold text-blue-dark">
                         {carItem?.loadingWeight.value}{" "}
                         {carItem?.loadingWeight.baseUnit}
                       </p>
                       {carItem?.loadingWeight.key}
                     </div>
-                    <div className="flex flex-col mx-2 w-1/6">
+                    <div className="flex flex-col w-1/6 mx-2">
                       <img
                         src="/images/hoechstgeschwindigkeit.png"
                         alt={carItem?.maxSpeed.keye}
-                        className="mr-8 w-14 h-12 object-cover"
+                        className="object-cover h-12 mr-8 w-14"
                       />
-                      <p className="text-blue-dark font-bold">
+                      <p className="font-bold text-blue-dark">
                         {carItem?.maxSpeed.value} {carItem?.maxSpeed.baseUnit}
                       </p>
                       {carItem?.maxSpeed.key}
                     </div>
-                    <div className="flex flex-col mx-2 w-1/6">
+                    <div className="flex flex-col w-1/6 mx-2">
                       <img
                         src="/images/aufbautype.png"
                         alt={carItem?.title}
-                        className="mr-8 w-14 h-12 object-cover"
+                        className="object-cover h-12 mr-8 w-14"
                       />
-                      <p className="text-blue-dark font-bold">
+                      <p className="font-bold text-blue-dark">
                         {carItem?.category}
                       </p>
                       Kategorie
                     </div>
                   </div>
-                  <div className="flex w-full justify-start items-center ">
+                  <div className="flex items-center justify-start w-full ">
                     preis <br />
                     (brutto)
-                    <p className="text-yellow-600 font-bold pl-8 print:text-2xl">
+                    <p className="pl-8 font-bold text-yellow-600 print:text-2xl">
                       {carItem?.price} €
                     </p>
                   </div>
@@ -130,7 +130,7 @@ export default function PrintPreview({
             </div>
             {/* test fazit */}
             <div className="flex  h-[16vh] mt-[15vh] justify-end items-end">
-              <div className="flex w-2/3 items-center pl-1">
+              <div className="flex items-center w-2/3 pl-1">
                 {getTestReview && (
                   <div className={`${styles.flexbox}`}>
                     <div className="flex items-center justify-start ">
@@ -262,9 +262,9 @@ export default function PrintPreview({
                   </div>
                 ))
                 .slice(4, getCarsReview?.content.length - 1)}
-              <div className=" m-auto">
-                {/* <TestVerdict stars={carItem?.rating.value} /> */}
-              </div>
+              {/* <div className="m-auto ">
+                <TestVerdict stars={carItem?.rating.value} />
+              </div> */}
             </div>
           )}
         </div>

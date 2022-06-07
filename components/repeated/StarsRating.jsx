@@ -14,7 +14,7 @@ const StarsRating = ({ stars }) => {
         setEmptyStar(4 - Math.floor(stars)),
         setHalfStar(1));
   }, [stars]);
-  console.log(stars);
+
   return (
     <div className="flex">
       {[...Array(fullStar)].map((e, i) => (
