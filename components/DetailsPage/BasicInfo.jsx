@@ -51,7 +51,7 @@ const BasicInfo = ({
         {/* MOBILE VERSION DETAILS TABLE */}
         <div className="flex flex-col w-full my-4 lg:hidden">
           <div className="flex justify-center">
-            <h2 className="w-full pb-2 text-2xl font-bold tracking-wide text-blue-extra sm:text-2xl">
+            <h2 className="w-full pb-2 text-2xl font-bold tracking-wide text-center xs:text-3xl md:text-left text-blue-extra ">
               {carItem.title}
             </h2>
             <div className="hidden scale-90 sm:block">

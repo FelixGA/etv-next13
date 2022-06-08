@@ -65,7 +65,7 @@ const TopSlider = ({ getBlogContext, getCars }) => {
           </div>
 
           <div
-            className="grid grid-flow-col gap-4 auto-cols-[minmax(293px,_1fr)] overflow-x-scroll scrollbar-hide pt-2 px-2 snap-x "
+            className="grid grid-flow-col gap-4 auto-cols-[minmax(293px,_1fr)] overflow-x-scroll scrollbar-hide pt-2 snap-x "
             ref={container}
           >
             <TopSliderCard

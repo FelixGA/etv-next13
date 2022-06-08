@@ -7,7 +7,7 @@ const TopSliderCard = (props) => {
   return props?.getCars
     ? props?.getCars?.map((sliderItem, index) => (
         <div
-          className="relative pb-4 border rounded-sm shadow-dropdown snap-center lg:snap-start h-[470px]"
+          className="relative pb-4 border rounded-sm shadow-dropdown hover:scale-[101%] snap-center lg:snap-start h-[470px] ease-in-out duration-100 transition"
           key={index}
         >
           <div className="">
