@@ -15,7 +15,7 @@ const TestVerdictVertical = ({ reviewDate, getAllReviews, carItem }) => {
       .publishedAt || 22;
 
   reviewDate = reviewDate.slice(-2);
-  console.log(rev);
+
   return (
     <div className="relative w-[150px] xs:min-w-[150px] h-full bg-white border-2 rounded-sm mx-auto xs:mx-0">
       <div className="relative text + stars + icon ">

@@ -27,13 +27,14 @@ export default function FirstArticle({ getMarkdownContext, getContent }) {
           </a>
         </Link>
       </div>
-      <div className="hidden scale-125 w-fit no-select xl:block">
+      <div className="relative hidden min-w-[400px] no-select xl:block">
         <Image
           src="/images/kaufberaterCar.png"
-          width={600}
-          height={450}
+          width={500}
+          height={380}
           alt="blog-article-two-image"
           objectFit="contain"
+          layout="responsive"
         />
       </div>
     </div>
