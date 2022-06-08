@@ -98,7 +98,7 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
   return (
     <div className="relative overflow-hidden">
       <div className="absolute hidden w-full lg:block h-[400px] forz border-black-darkest ">
-        <div className="w-full text-right opacity-20">
+        <div className="w-full text-right opacity-20 ">
           <Image
             src="/images/main.jpeg"
             width={1000}
