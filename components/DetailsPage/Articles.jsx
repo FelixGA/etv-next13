@@ -87,7 +87,7 @@ const Articles = ({
           )} */}
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center my-8">
         <TestVerdict
           carItem={carItem}
           getAllReviews={getAllReviews}
@@ -96,39 +96,41 @@ const Articles = ({
       </div>
       {/* other articles section */}
       {/* First Article */}{" "}
-      <div className="flex flex-col w-full bg-white lg:flex-row-reverse 2xl:px-44 print:hidden">
-        {getBlogContext?.src && (
-          <div className="relative w-full px-4 pt-4 m-auto mr-4 border-t lg:border-none lg:w-1/2 print:hidden lg:rounded-r-md">
-            <Link href={`/magazin/${getBlogContext?.slug}`} passHref>
-              <a target="_blank ">
-                <Image
-                  src={getBlogContext?.src}
-                  alt={getBlogContext?.title}
-                  width={195}
-                  height={140}
-                  layout="responsive"
-                  objectFit="cover"
-                  className=" lg:rounded-r-md"
-                />
-              </a>
-            </Link>
-          </div>
-        )}
-        <div className="flex flex-col flex-wrap lg:w-1/2">
-          <h3 className="w-full px-4 pt-8 pb-4 text-2xl font-bold lg:pt-2 text-black-darkest">
-            <Link
-              href={`/magazin/${getBlogContext?.category}/${getBlogContext?.slug}`}
-            >
-              <a target="_blank">{getBlogContext?.title}</a>
-            </Link>
-          </h3>
-          {getBlogContext?.title ? (
-            <div className={`${styles.articles} "mb-8 lg:pr-8"`}>
-              <MDXRemote {...getBlogContext.source} />
+      {getBlogContext?.src && (
+        <div className="flex flex-col w-full bg-white lg:flex-row-reverse 2xl:px-44 print:hidden">
+          {getBlogContext?.src && (
+            <div className="relative w-full px-4 pt-4 m-auto mr-4 border-t lg:border-none lg:w-1/2 print:hidden lg:rounded-r-md">
+              <Link href={`/magazin/${getBlogContext?.slug}`} passHref>
+                <a target="_blank ">
+                  <Image
+                    src={getBlogContext?.src}
+                    alt={getBlogContext?.title}
+                    width={195}
+                    height={140}
+                    layout="responsive"
+                    objectFit="cover"
+                    className=" lg:rounded-r-md"
+                  />
+                </a>
+              </Link>
             </div>
-          ) : null}
+          )}
+          <div className="flex flex-col flex-wrap lg:w-1/2">
+            <h3 className="w-full px-4 pt-8 pb-4 text-2xl font-bold lg:pt-2 text-black-darkest">
+              <Link
+                href={`/magazin/${getBlogContext?.category}/${getBlogContext?.slug}`}
+              >
+                <a target="_blank">{getBlogContext?.title}</a>
+              </Link>
+            </h3>
+            {getBlogContext?.title ? (
+              <div className={`${styles.articles} "mb-8 lg:pr-8"`}>
+                <MDXRemote {...getBlogContext.source} />
+              </div>
+            ) : null}
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 };
