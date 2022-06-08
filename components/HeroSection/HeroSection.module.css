@@ -46,9 +46,9 @@
 }
 @media screen and (min-width: 600px) {
   .mainHeading p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: left;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
   }
 }
 @media screen and (min-width: 1000px) {
