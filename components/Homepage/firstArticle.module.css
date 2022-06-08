@@ -8,3 +8,15 @@
   padding-top: 24px;
   width: 75%;
 }
+
+@media screen and (min-width: 910px) {
+  .article h2 {
+    margin-top: 10px;
+  }
+  .article p {
+    width: 100%;
+  }
+  .article button {
+    margin-top: 2.5rem;
+  }
+}
