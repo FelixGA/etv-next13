@@ -7,7 +7,7 @@ export default function FunnelBox({ currentFilter, redirecter }) {
   const { state, dispatch } = useStore();
 
   return !redirecter ? (
-    <div className="flex flex-wrap w-[90%] md:w-full justify-center pb-10 lg:pb-12 ">
+    <div className="flex flex-wrap w-[90%] md:w-full justify-center pb-10 lg:pb-12">
       {currentFilter.options.map((item, index) => {
         return (
           <div

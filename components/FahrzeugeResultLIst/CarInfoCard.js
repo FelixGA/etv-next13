@@ -17,7 +17,7 @@ const CarInfoCard = ({ carItem, getCarsReview, objectFit }) => {
       </div>
       {/* IMAGE + TEXT + LINK */}
       <div className="flex flex-col-reverse lg:flex-row-reverse">
-        <p className="pb-4 pl-0 text-lg lg:pl-8 ">
+        <p className="pb-4 pl-0 text-xl lg:pl-8 ">
           {carItem.description}
 
           <Link href={`/transporter/${carItem.name}`}>

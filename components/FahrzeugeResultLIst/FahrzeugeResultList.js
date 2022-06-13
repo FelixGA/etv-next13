@@ -6,8 +6,15 @@ import Link from "next/link";
 import Image from "next/image";
 import CarInfoCard from "./CarInfoCard";
 import Funnel from "../Caradvisor/Funnel";
-const FahrzeugeResultList = ({ sortedCars, getCarsReview }) => {
+import CompareTool from "../repeated/CompareTool";
+const FahrzeugeResultList = ({
+  sortedCars,
+  getCarsReview,
+  getContent,
+  getMarkdownContext,
+}) => {
   const { state, dispatch } = useStore();
+  // console.log(getContent, "getcontent from FahrzeugeResultList");
 
   return (
     <div className="flex flex-col flex-1 mb-10 lg:w-full lg:bg-white">
@@ -24,7 +31,10 @@ const FahrzeugeResultList = ({ sortedCars, getCarsReview }) => {
           );
         })
         .slice(0, 5)}
-      <Funnel />
+      {/* <CompareTool
+        getContent={getContent}
+        getMarkdownContext={getMarkdownContext}
+      /> */}
       {sortedCars
         ?.map((carItem, index) => {
           return (

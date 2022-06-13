@@ -2,6 +2,8 @@ import { useStore } from "../../components/store";
 import Head from "../../components/core/Head";
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
+import { serialize } from "next-mdx-remote/serialize";
+
 import Image from "next/image";
 import Link from "next/link";
 import FahrzeugeResultList from "../../components/FahrzeugeResultLIst/FahrzeugeResultList";
@@ -9,8 +11,11 @@ export default function fahrzeuge(props) {
   const [sortedCars, SetSortedCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
   const [getCarsReview, SetCarsReview] = useState(props.carsreviews);
+  const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
+
   const { state, dispatch } = useStore();
   // console.log("CAAARRSS", sortedCars);
+  // console.log(getContent, "from long named page");
   /* ᴄᴀʀs ranking ғɪʟᴛᴇʀ */
   useEffect(() => {
     SetSortedCars(
@@ -19,7 +24,8 @@ export default function fahrzeuge(props) {
 
     SetCarsReview(props.carsreviews);
     SetGetContent(props.page);
-  }, [props.vehicles]);
+    SetGetMarkdownContext(props.context);
+  }, [props]);
 
   return (
     <div className="px-4 2xl:px-64">
@@ -53,6 +59,8 @@ export default function fahrzeuge(props) {
           <FahrzeugeResultList
             sortedCars={sortedCars}
             getCarsReview={getCarsReview}
+            getContent={getContent}
+            getMarkdownContext={getMarkdownContext}
           />
         </div>
       </div>
@@ -73,6 +81,19 @@ export async function getStaticProps(context) {
       "/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich"
   );
 
+  // const header = await serialize(
+  //   page.content.find((content) => content.name === "header").markdown
+  // );
+  // const eAutoAdvisor = await serialize(
+  //   page.content.find((content) => content.name === "eAutoAdvisor").markdown
+  // );
+  // const substities = await serialize(
+  //   page.content.find((content) => content.name === "substities").markdown
+  // );
+  // const newsletter = await serialize(
+  //   page.content.find((content) => content.name === "newsletter").markdown
+  // );
+
   if (!pages) {
     return {
       notFound: true,
@@ -81,6 +102,7 @@ export async function getStaticProps(context) {
 
   return {
     props: {
+      // context: { header, eAutoAdvisor, substities, newsletter },
       vehicles,
       posts,
       page,

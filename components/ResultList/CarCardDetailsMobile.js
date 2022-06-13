@@ -10,7 +10,7 @@ function CarCardDetailsMobile({ carItem }) {
   carItem.rangeLithium.value == 0 ? (range = carItem.range230V) : null;
   return (
     <div className="flex flex-col justify-between flex-1 lg:hidden">
-      <div className="flex flex-col justify-between pt-4 lg:px-2 print:hidden">
+      <div className="flex flex-col justify-between px-2 pt-4 print:hidden">
         <div className="flex flex-col justify-between flex-1 mb-0 text-sm xl:mb-2">
           <div className="flex flex-row flex-1 py-1 ">
             <div className="flex flex-row justify-between flex-1 border-b">

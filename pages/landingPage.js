@@ -7,6 +7,7 @@ import TopSlider from "../components/Sliders/TopSlider";
 import Funnel from "../components/Caradvisor/Funnel";
 import NewsLetter from "../components/Homepage/NewsLetter";
 import { useState, useEffect } from "react";
+import CompareTool from "../components/repeated/CompareTool";
 
 export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
@@ -24,14 +25,26 @@ export default function Home(props) {
       <Head page={props.page} />
 
       {/* state?.mobileNavActives */}
-      <HeroSection
+      {/* { <HeroSection
         getContent={getContent}
         getMarkdownContext={getMarkdownContext}
         getBrands={getBrands}
-      />
-      <TopSlider getCars={getCars} getContent={getContent} />
+      />} */}
+      <div className="mt-8 sm:mt-0">
+        <CompareTool getContent={getContent} />
+      </div>
+      <div className="2xl:my-24 2xl:scale-125">
+        <Funnel
+          getCars={getCars}
+          getContent={getContent}
+          getBrands={getBrands}
+        />
+      </div>
       <BlogArticles getMarkdownContext={getMarkdownContext} />
-      <Funnel getCars={getCars} getContent={getContent} getBrands={getBrands} />
+      {/* <Funnel getCars={getCars} getContent={getContent} getBrands={getBrands} /> */}
+      <div className="my-10">
+        <TopSlider getCars={getCars} getContent={getContent} />
+      </div>
       <NewsLetter getMarkdownContext={getMarkdownContext} />
     </>
   );
