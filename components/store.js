@@ -39,9 +39,7 @@ const reducer = (state, action) => {
     /*  states for navbar */
     case "mobileNavActive":
       return { ...state, mobileNavActives: action.data };
-    /* state for content */
-    case "compareContent":
-      return { ...state, compareContents: action.data };
+
     default:
       return;
   }
@@ -64,8 +62,6 @@ const initialState = {
   maximalThrees: "",
   /* sorting state */
   activeSortValues: [{ sortCategory: "Alphabet", sortType: "alphabetical" }],
-  /* get content state */
-  compareContents: [],
 };
 
 const StoreContext = createContext(initialState);

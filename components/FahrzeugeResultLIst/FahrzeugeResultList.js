@@ -14,8 +14,6 @@ const FahrzeugeResultList = ({
   getMarkdownContext,
 }) => {
   const { state, dispatch } = useStore();
-  // console.log(state);
-  // console.log(getContent, "getcontent from FahrzeugeResultList");
 
   return (
     <div className="flex flex-col flex-1 mb-10 lg:w-full lg:bg-white">
@@ -32,17 +30,11 @@ const FahrzeugeResultList = ({
           );
         })
         .slice(0, 5)}
-      {/* <CompareTool /> */}
+      {/* <div className="mt-8 mb-6 lg:mt-24 lg:mb-16"><CompareTool /></div> */}
       {sortedCars
         ?.map((carItem, index) => {
           return (
             <div className="flex flex-col mt-4 lg:flex-row" key={index}>
-              {/* {index == 10 && (
-              <div className="w-full border-4 ">
-                <Funnel />
-              </div>
-            )} */}
-
               <CarInfoCard carItem={carItem} getCarsReview={getCarsReview} />
             </div>
           );
@@ -53,12 +45,6 @@ const FahrzeugeResultList = ({
         ?.map((carItem, index) => {
           return (
             <div className="flex flex-col mt-4 lg:flex-row" key={index}>
-              {/* {index == 10 && (
-              <div className="w-full border-4 ">
-                <Funnel />
-              </div>
-            )} */}
-
               <CarInfoCard carItem={carItem} getCarsReview={getCarsReview} />
             </div>
           );

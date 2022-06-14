@@ -162,18 +162,18 @@ export default function Funnel({ getContent, getBrands }) {
   ];
   const { state, dispatch } = useStore();
   const [currentFilter, setCurrentFilter] = useState(filtersData[0]);
-  const [redirecter, setRedDirecter] = useState(false);
+  const [redirecter, setRedirecter] = useState(false);
   useEffect(() => {
     if (!state) return;
     if (redirecter && router.pathname == "/caradvisor") {
       /*  here is the solution! */
       Router.push("/comparePage");
-      setRedDirecter(false);
+      setRedirecter(false);
     }
-    state.categorys.length > 0 ? setCurrentFilter(filtersData[1]) : null;
-    state.rangeLithiums.length > 0 ? setCurrentFilter(filtersData[2]) : null;
-    state.loadingWeights.length > 0 ? setCurrentFilter(filtersData[3]) : null;
-    state.prices.length > 0 ? setRedDirecter(true) : null;
+    state?.categorys.length > 0 ? setCurrentFilter(filtersData[1]) : null;
+    state?.rangeLithiums.length > 0 ? setCurrentFilter(filtersData[2]) : null;
+    state?.loadingWeights.length > 0 ? setCurrentFilter(filtersData[3]) : null;
+    state?.prices.length > 0 ? setRedirecter(true) : null;
   }, [
     state?.prices,
     state?.loadingWeights,

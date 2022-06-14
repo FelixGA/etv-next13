@@ -17,7 +17,7 @@ export default function fahrzeuge(props) {
   /* ᴄᴀʀs ranking ғɪʟᴛᴇʀ */
   useEffect(() => {
     if (!props.page || !dispatch) return;
-    // console.log(props.page.content, "bla bla");
+
     dispatch({
       type: "compareContent",
       data: props.page.content,
@@ -32,7 +32,6 @@ export default function fahrzeuge(props) {
     SetGetMarkdownContext(props.context);
   }, [props, dispatch]);
 
-  console.log(state?.compareContents, "test");
   return (
     <div className="px-4 2xl:px-64">
       <Head page={props.page} />
@@ -87,10 +86,6 @@ export async function getStaticProps(context) {
       "/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich"
   );
 
-  const compareBox = await serialize(
-    page.content.find((content) => content.name === "compareBox").markdown
-  );
-
   if (!pages) {
     return {
       notFound: true,
@@ -99,7 +94,6 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      context: { compareBox },
       page,
       vehicles,
       posts,
