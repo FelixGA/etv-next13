@@ -10,5 +10,7 @@ description: >+
   Sie idealen Elektro-Transporter finden. 
 
 src: /images/etv-wortbild-logo.png
-content: []
+content:
+  - name: compareBox
+    markdown: Reichweite, Preis, Nutzlast
 ---
