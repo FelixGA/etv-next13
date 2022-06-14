@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useStore } from "../../components/store";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -88,8 +88,10 @@ const details = [
 ];
 const CompareTool = ({ getContent, getMarkdownContext }) => {
   // console.log(getContent, "from compare tool");
+
   const router = useRouter();
   const { state, dispatch } = useStore();
+  // console.log(state?.compareContents);
   const [choosePrice, setChoosePrice] = useState(details[0].options[0].value);
   const [chooseRange, setChooseRange] = useState(details[1].options[0].value);
   const [chooseWeight, setChooseWeight] = useState(details[2].options[0].value);
@@ -125,7 +127,7 @@ const CompareTool = ({ getContent, getMarkdownContext }) => {
           </div>
           <div className="h-14 lg:w-68 w-full my-4 pt-2 shadow-angelos1 text-base rounded-sm bg-white lg:w-[14vw]	tracking-wide">
             <label className="flex flex-row justify-between px-2 text-left">
-              {getContent.content[1].markdown.split(", ")[1]}
+              {getContent?.content[1].markdown.split(", ")[1]}
               <div className="relative top-6">▼</div>
             </label>
             <div className="m-1 ">
@@ -146,7 +148,7 @@ const CompareTool = ({ getContent, getMarkdownContext }) => {
           {/* weight */}
           <div className="h-14 lg:w-[14vw] w-full my-4 pt-2 shadow-angelos1 text-base rounded-sm bg-white ">
             <label className="flex flex-row justify-between px-2 text-left">
-              {getContent.content[1].markdown.split(", ")[2]}
+              {getContent?.content[1].markdown.split(", ")[2]}
               <div className="relative top-6">▼</div>
             </label>
 

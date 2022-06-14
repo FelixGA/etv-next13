@@ -6,34 +6,38 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import TopSlider from "../components/Sliders/TopSlider";
 import Funnel from "../components/Caradvisor/Funnel";
 import NewsLetter from "../components/Homepage/NewsLetter";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { useStore } from "../components/store";
 
 export default function Home(props) {
-  const [getCars, SetGetCars] = useState(props.vehicles);
-  const [getContent, SetGetContent] = useState(props.page);
-  const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
-  const [getBrands, SetGetBrands] = useState(props.brands);
+  const { state, dispatch } = useStore();
+  console.log(state, "index");
   useEffect(() => {
-    SetGetBrands(props.brands);
-    SetGetCars(props.vehicles);
-    SetGetContent(props.page);
-    SetGetMarkdownContext(props.context);
-  }, [props]);
-  // console.log(getContent, "from index.js");
+    if (!props.page || !dispatch) return;
+    console.log(props.page.content, "testtest");
+    dispatch({
+      type: "compareContent",
+      data: props.page.content,
+    });
+  }, [props.page, dispatch]);
+  console.log(state.compareContent, "from index");
   return (
     <>
       <Head page={props.page} />
 
-      {/* state?.mobileNavActives */}
       <HeroSection
-        getContent={getContent}
-        getMarkdownContext={getMarkdownContext}
-        getBrands={getBrands}
+        getContent={props.page}
+        getMarkdownContext={props.context}
+        getBrands={props.brands}
       />
-      <TopSlider getCars={getCars} getContent={getContent} />
-      <BlogArticles getMarkdownContext={getMarkdownContext} />
-      <Funnel getCars={getCars} getContent={getContent} getBrands={getBrands} />
-      <NewsLetter getMarkdownContext={getMarkdownContext} />
+      <TopSlider getCars={props.vehicles} getContent={props.page} />
+      <BlogArticles getMarkdownContext={props.context} />
+      <Funnel
+        getCars={props.vehicles}
+        getContent={props.page}
+        getBrands={props.brands}
+      />
+      <NewsLetter getMarkdownContext={props.context} />
     </>
   );
 }
