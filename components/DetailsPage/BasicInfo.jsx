@@ -5,6 +5,7 @@ import CarCardDetailsDesktop from "../../components/ResultList/CarCardDetailsDes
 import Image from "next/image";
 import StarsRating from "../repeated/StarsRating";
 import TestVerdictVertical from "../repeated/TestVerdictVertical";
+import TestVerdict from "../repeated/TestVerdict";
 const BasicInfo = ({
   carItem,
   getBlogContext,
@@ -49,23 +50,23 @@ const BasicInfo = ({
 
         {/* MOBILE VERSION DETAILS TABLE */}
         <div className="flex flex-col w-full my-4 lg:hidden">
-          <div className="flex flex-row justify-between flex-1 lg:hidden">
-            <div className="flex flex-col w-full xs:flex-row">
-              <h2 className="w-full pb-2 text-2xl font-bold tracking-wide text-blue-extra sm:text-2xl">
-                {carItem.title}
-              </h2>
-              <div className=" print:hidden">
-                <div className="scale-90 ">
-                  <TestVerdictVertical
-                    carItem={carItem}
-                    getAllReviews={getAllReviews}
-                  />
-                </div>
-              </div>
+          <div className="flex justify-center">
+            <h2 className="w-full pb-2 text-2xl font-bold tracking-wide text-center xs:text-3xl md:text-left text-blue-extra ">
+              {carItem.title}
+            </h2>
+            <div className="hidden scale-90 sm:block">
+              <TestVerdictVertical
+                carItem={carItem}
+                getAllReviews={getAllReviews}
+              />
             </div>
           </div>
+
+          <div className="flex justify-center sm:hidden print:hidden lg:hidden">
+            <TestVerdict carItem={carItem} getAllReviews={getAllReviews} />
+          </div>
+
           <div>
-            {" "}
             <CarCardDetailsMobile carItem={carItem} />
           </div>
         </div>

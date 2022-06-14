@@ -97,39 +97,38 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
 
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute justify-end hidden w-full lg:flex h-[400px] forz border-black-darkest">
-        <div className="relative w-1/2 2xl:bottom-8 2xl:right-0 xl:top-24 2xl:top-2 xl:left-8 lg:scale-150 lg:top-36 opacity-30 2xl:scale-100">
+      <div className="absolute hidden w-full lg:block h-[400px] forz border-black-darkest ">
+        <div className="w-full text-right opacity-20 ">
           <Image
             src="/images/main.jpeg"
-            width={1200}
-            height={490}
+            width={1000}
+            height={400}
             alt="Kleintransporter"
-            objectFit="cover"
-            layout="responsive"
+            objectFit="contain"
             className=""
           />
         </div>
       </div>
       <div className="m-4 mt-0 hero-section-container lg:w-3/4 lg:m-auto">
-        <div className="relative flex justify-center flex-1 main-heading-container lg:text-xl">
+        <div className="relative flex justify-center flex-1 main-heading-container lg:text-xl lg:h-[350px]">
           {/* IMAGE */}
-          <div className="hidden w-3/5 m-auto sm:block sm:p-8 sm:w-80 xs:m-0 ">
+          <div className="relative items-center hidden pl-4 pr-8 w-fit sm:flex">
             <Image
-              className="scale-75 sm:scale-90"
+              alt="medal"
+              className=""
               src="/images/siegel2.png"
-              width={166}
-              height={166}
+              width={250}
+              height={250}
               objectFit="contain"
-              layout="responsive"
             />
           </div>
           {/* TITLE AND DESC */}
-          <div className="px-2 py-2 pb-2 main-heading-text lg:flex lg:flex-col lg:justify-evenly sm:py-10 md:pb-0 xs:px-2 sm:px-0">
+          <div className="px-2 py-2 pb-2 mb-10 main-heading-text lg:flex lg:flex-col lg:justify-evenly sm:py-10 md:pb-0 xs:px-2 sm:px-0">
             <h1 className="pt-4 pb-4 text-2xl text-center sm:text-left sm:text-3xl xl:text-4xl">
               {getContent.title}
             </h1>
             <div
-              className={`${styles.mainHeading} "pb-4 text-xl text-grey-darker sm:text-2xl lg:text-3xl"`}
+              className={`${styles.mainHeading} "pb-4 text-xl text-grey-darker sm:text-2xl lg:text-3xl "`}
             >
               <MDXRemote {...getMarkdownContext.header} />
             </div>
@@ -150,7 +149,7 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
           </div>
         </div>
         {/* COMPARE TOOL */}
-        <div className="relative bottom-0 pt-5 pb-4 border rounded-md lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border-blue-dark top-2 md:top-10 lg:top-6 xl:bottom-6">
+        <div className="relative pt-5 pb-4 border rounded-md lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border-blue-dark ">
           {/* comaprison-input-container */}
           <div className="mx-2 comaprison-input-container lg:items-center lg:flex lg:flex-row lg:justify-evenly lg:flex-1 ">
             {/* PRICE AND RANGE */}

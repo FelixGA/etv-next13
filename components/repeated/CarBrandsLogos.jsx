@@ -1,21 +1,3 @@
-// import logos from "./logos.json";
-// import Image from "next/image";
-// import Link from "next/link";
-
-// export default function CarBrandsLogos({ getBrands }) {
-//   return (
-//     <div className="flex flex-wrap justify-around icons-container">
-//       {getBrands?.map((brand, index) => (
-//         <Link href={`/fahrzeuge/${brand.slug}`} key={index}>
-//           <i className=" lg:scale-125">
-//             <Image src={brand.src} alt={brand.title} width={56} height={48} />
-//           </i>
-//         </Link>
-//       ))}
-//     </div>
-//   );
-// }
-
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import useMedia from "/hooks/useMedia";
@@ -53,7 +35,7 @@ export default function Trustimages({ getBrands }) {
   return (
     <div className="flex justify-center mt-8 overflow-hidden filter-gray">
       {shownImages?.map((image, index) => (
-        <div className="mx-4 my-8 lg:my-12" key={index}>
+        <div className="mx-4 my-8 lg:my-24" key={index}>
           <Image
             className="filter grayscale"
             src={image.src}

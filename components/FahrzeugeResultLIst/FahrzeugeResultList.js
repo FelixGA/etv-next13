@@ -23,7 +23,23 @@ const FahrzeugeResultList = ({ sortedCars, getCarsReview }) => {
             </div>
           );
         })
-        .slice(0, 10)}
+        .slice(0, 5)}
+      <Funnel />
+      {sortedCars
+        ?.map((carItem, index) => {
+          return (
+            <div className="flex flex-col mt-4 lg:flex-row" key={index}>
+              {/* {index == 10 && (
+              <div className="w-full border-4 ">
+                <Funnel />
+              </div>
+            )} */}
+
+              <CarInfoCard carItem={carItem} getCarsReview={getCarsReview} />
+            </div>
+          );
+        })
+        .slice(6, 10)}
       <Funnel />
       {sortedCars
         ?.map((carItem, index) => {

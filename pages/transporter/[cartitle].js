@@ -53,6 +53,7 @@ export default function Details(props) {
           <TechnicalDetails carItem={carItem} />
           {/* description and articles section */}
         </div>
+
         <Articles
           carItem={carItem}
           getBlogContext={getBlogContext}

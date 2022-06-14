@@ -3,7 +3,7 @@
 @layer base {
   html,
   body {
-    @apply font-custom text-grey-dark h-full;
+    @apply h-full font-custom text-grey-dark;
     color: #666666;
   }
   img {
@@ -83,11 +83,10 @@ select:focus {
   text-align: center;
 }
 .forz {
-  z-index: -98;
-  background: linear-gradient(0.25turn, #f0f7fb, #f6faff, #e0f1ff);
+  background: linear-gradient(0.3turn, #f9fdff, #ffffff, #ddfffb);
 
-  filter: hue-rotate(260deg);
-  filter: saturate(3.5);
+  filter: hue-rotate(180deg);
+  filter: saturate(3);
 }
 /*  table */
 table {
@@ -126,8 +125,15 @@ table th {
     display: none !important;
   }
 }
-.lineBreakClass p, code, h1,h2,h3,h4,h5,h6 {
-overflow-wrap: break-word;
+.lineBreakClass p,
+code,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
 .printpreview {
   print-color-adjust: exact;
