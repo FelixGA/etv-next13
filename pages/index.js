@@ -11,16 +11,16 @@ import { useStore } from "../components/store";
 
 export default function Home(props) {
   const { state, dispatch } = useStore();
-  console.log(state, "index");
+  // console.log(state, "index");
   useEffect(() => {
     if (!props.page || !dispatch) return;
-    console.log(props.page.content, "testtest");
+    // console.log(props.page.content, "testtest");
     dispatch({
       type: "compareContent",
       data: props.page.content,
     });
   }, [props.page, dispatch]);
-  console.log(state.compareContent, "from index");
+  // console.log(state.compareContent, "from index");
   return (
     <>
       <Head page={props.page} />

@@ -2,6 +2,7 @@ import { useStore } from "../../components/store";
 import Head from "../../components/core/Head";
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
+import { serialize } from "next-mdx-remote/serialize";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -16,7 +17,7 @@ export default function fahrzeuge(props) {
   /* ᴄᴀʀs ranking ғɪʟᴛᴇʀ */
   useEffect(() => {
     if (!props.page || !dispatch) return;
-    console.log(props.page.content, "bla bla");
+    // console.log(props.page.content, "bla bla");
     dispatch({
       type: "compareContent",
       data: props.page.content,
@@ -86,6 +87,10 @@ export async function getStaticProps(context) {
       "/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich"
   );
 
+  const compareBox = await serialize(
+    page.content.find((content) => content.name === "compareBox").markdown
+  );
+
   if (!pages) {
     return {
       notFound: true,
@@ -94,6 +99,7 @@ export async function getStaticProps(context) {
 
   return {
     props: {
+      context: { compareBox },
       page,
       vehicles,
       posts,

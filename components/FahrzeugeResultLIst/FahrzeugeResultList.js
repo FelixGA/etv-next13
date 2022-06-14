@@ -14,8 +14,8 @@ const FahrzeugeResultList = ({
   getMarkdownContext,
 }) => {
   const { state, dispatch } = useStore();
-  console.log(state);
-  console.log(getContent, "getcontent from FahrzeugeResultList");
+  // console.log(state);
+  // console.log(getContent, "getcontent from FahrzeugeResultList");
 
   return (
     <div className="flex flex-col flex-1 mb-10 lg:w-full lg:bg-white">
