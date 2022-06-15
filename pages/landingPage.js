@@ -24,30 +24,21 @@ export default function Home(props) {
     <>
       <Head page={props.page} />
 
-      {/* state?.mobileNavActives */}
       <div className="mt-8 lg:mt-0">
-        <CompareTool getContent={getContent} />
+        <CompareTool />
       </div>
 
       <HeroSectionB
-        getContent={getContent}
-        getMarkdownContext={getMarkdownContext}
-        getBrands={getBrands}
+        getContent={props.page}
+        getMarkdownContext={props.context}
+        getBrands={props.brands}
       />
 
-      {/*  <div className="2xl:my-24 2xl:scale-125">
-        <Funnel
-          getCars={getCars}
-          getContent={getContent}
-          getBrands={getBrands}
-        />
-      </div> */}
-      <BlogArticles getMarkdownContext={getMarkdownContext} />
-      {/* <Funnel getCars={getCars} getContent={getContent} getBrands={getBrands} /> */}
+      <BlogArticles getMarkdownContext={props.context} />
       <div className="my-10">
-        <TopSlider getCars={getCars} getContent={getContent} />
+        <TopSlider getCars={props.vehicles} getContent={props.page} />
       </div>
-      <NewsLetter getMarkdownContext={getMarkdownContext} />
+      <NewsLetter getMarkdownContext={props.context} />
     </>
   );
 }

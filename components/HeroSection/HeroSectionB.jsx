@@ -7,7 +7,7 @@ import CarBrandsLogos from "../repeated/CarBrandsLogos";
 import OptionItem from "./OptionItem";
 import styles from "../HeroSection/HeroSection.module.css";
 import CompareTool from "../repeated/CompareTool";
-import Funnel from "../Caradvisor/Funnel";
+import FunnelTest from "../Caradvisor/FunnelTest";
 
 //import filtersData from "../filtersData.json";
 //
@@ -114,7 +114,7 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
       <div className="m-4 mt-0 hero-section-container lg:w-3/4 lg:m-auto">
         <div className="relative flex justify-center flex-1 main-heading-container lg:text-xl lg:h-[350px]">
           <div className="">
-            <Funnel />
+            <FunnelTest />
           </div>
         </div>
         <div className="lg:pt-8 2xl:scale-[115%]">
