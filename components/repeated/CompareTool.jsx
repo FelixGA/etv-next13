@@ -99,7 +99,7 @@ const CompareTool = ({ getContent, getMarkdownContext }) => {
         className={
           router.pathname == "/"
             ? "relative pt-5 pb-4 border rounded-md lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border-blue-dark"
-            : "relative pt-5 pb-4 border rounded-md lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-20 border-blue-dark"
+            : "relative pt-5 pb-4 border rounded-md lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-20 border-blue-dark mx-4 lg:mx-0"
         }
       >
         {/* comaprison-input-container */}

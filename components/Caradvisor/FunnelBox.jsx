@@ -1,13 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "../store";
+import { useRouter } from "next/router";
 
 import Router from "next/router";
 export default function FunnelBox({ currentFilter, redirecter }) {
   const { state, dispatch } = useStore();
+  const router = useRouter();
 
   return !redirecter ? (
-    <div className="flex flex-wrap w-[90%] md:w-full justify-center pb-10 lg:pb-12">
+    <div
+      className={
+        router.pathname == "/landingPage"
+          ? "flex flex-wrap w-[90%] md:w-full justify-center  lg:pb-12"
+          : "flex flex-wrap w-[90%] md:w-full justify-center pb-10 lg:pb-12"
+      }
+    >
       {currentFilter.options.map((item, index) => {
         return (
           <div

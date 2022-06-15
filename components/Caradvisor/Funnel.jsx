@@ -187,7 +187,13 @@ export default function Funnel({ getContent, getBrands }) {
   ]);
 
   return (
-    <div className="flex flex-col flex-1 ">
+    <div
+      className={
+        router.pathname == "/landingPage"
+          ? "flex flex-col flex-1 sm:px-8 lg:pb-8 bg-white sm:mt-8"
+          : "flex flex-col flex-1"
+      }
+    >
       <div className="flex flex-col items-center justify-center flex-1">
         {!redirecter ? (
           <h2 className="flex items-center mx-12 mt-4 text-xl font-bold text-center sm:text-3xl text-black-dark h-28 sm:mx-4">

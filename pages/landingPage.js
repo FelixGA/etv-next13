@@ -2,7 +2,7 @@ import Head from "../components/core/Head";
 import getContent from "/utils/getContent";
 import { serialize } from "next-mdx-remote/serialize";
 import BlogArticles from "../components/Homepage/BlogArticles";
-import HeroSection from "../components/HeroSection/HeroSection";
+import HeroSectionB from "../components/HeroSection/HeroSectionB";
 import TopSlider from "../components/Sliders/TopSlider";
 import Funnel from "../components/Caradvisor/Funnel";
 import NewsLetter from "../components/Homepage/NewsLetter";
@@ -25,21 +25,23 @@ export default function Home(props) {
       <Head page={props.page} />
 
       {/* state?.mobileNavActives */}
-      {/* { <HeroSection
+      <div className="mt-8 lg:mt-0">
+        <CompareTool getContent={getContent} />
+      </div>
+
+      <HeroSectionB
         getContent={getContent}
         getMarkdownContext={getMarkdownContext}
         getBrands={getBrands}
-      />} */}
-      <div className="mt-8 sm:mt-0">
-        <CompareTool getContent={getContent} />
-      </div>
-      <div className="2xl:my-24 2xl:scale-125">
+      />
+
+      {/*  <div className="2xl:my-24 2xl:scale-125">
         <Funnel
           getCars={getCars}
           getContent={getContent}
           getBrands={getBrands}
         />
-      </div>
+      </div> */}
       <BlogArticles getMarkdownContext={getMarkdownContext} />
       {/* <Funnel getCars={getCars} getContent={getContent} getBrands={getBrands} /> */}
       <div className="my-10">
