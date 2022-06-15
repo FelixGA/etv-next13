@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 const CarInfoCard = ({ carItem, getCarsReview, objectFit }) => {
   const router = useRouter();
   return (
-    <div className="">
+    <div className="px-4 2xl:px-0">
       {/* TITLE */}
       <div className="">
         <Link href={`/transporter/${carItem.name}`}>
