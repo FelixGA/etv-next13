@@ -9,7 +9,16 @@ const arrayFoReviews = require("./arrayForReviews.js");
 main();
 async function main() {
   let carsData = [];
-
+  // console.log(
+  //   arrayForCars.cars
+  //     .filter((car) => car.chargingTimeFast.value !== 0)
+  //     .map((car) => `${car.title} ${car.chargingTimeFast.value} h`)
+  // );
+  // console.log(
+  //   arrayForCars.cars
+  //     .filter((car) => car.subsidies.value !== 0)
+  //     .map((car) => `${car.title} ${car.subsidies.value} EU`)
+  // );
   arrayForCars.cars.map((car, index) => {
     let entry = {};
     entry.category = car.category;
@@ -18,7 +27,16 @@ async function main() {
     entry.price = formatPrice(car.price);
     // for the photo
     entry.image = car.src.substring(8);
-
+    entry.image = entry.image.replace(/\//g, "-");
+    entry.subsidies = `${entry?.subsidies?.value || " "} ${
+      entry?.subsidies?.unit || " "
+    }`;
+    entry.batteryGuarantee = `${entry?.batteryGuarantee?.value || " "} ${
+      entry?.batteryGuarantee?.unit || " "
+    }`;
+    entry.chargingTimeFast = `${entry?.chargingTimeFast?.value || " "} ${
+      entry?.chargingTimeFast?.unit || " "
+    }`;
     // leasing
     const netto = car.price;
     let zins = 0.039;
@@ -31,25 +49,26 @@ async function main() {
       (1 - help48);
     entry.leasingRate = formatPrice(leasingRate48, "de");
 
-    // body key value pairs
-    for (const [key, value] of Object.entries(car)) {
-      if (value?.value) {
-        entry = {
-          ...entry,
-          [key]: `${value.value} ${value?.baseUnit || 0}`,
-        };
-      }
-    }
-
     // extras
     for (const [key, value] of Object.entries(car)) {
       if (value?.maxValue) {
         entry = {
           ...entry,
-          [key]: `${value.maxValue} ${value?.baseUnit || ""}`,
+          [key]: `${value.value}-${value.maxValue} ${value?.baseUnit || ""}`,
         };
       }
     }
+
+    // body key value pairs
+    for (const [key, value] of Object.entries(car)) {
+      if (value?.value) {
+        entry = {
+          ...entry,
+          [key]: `${value.value} ${value?.baseUnit || " "}`,
+        };
+      }
+    }
+
     //  review part
     entry.reviewNumber = index + 101 + "";
 
@@ -61,65 +80,60 @@ async function main() {
       (review) => review.slug == car.relatedReviews
     ).slug;
 
-    entry.konzeptFahrzeugvarianten ==
-      arrayFoReviews.reviews.find((review) => review.slug == car.relatedReviews)
-        .content[0].content;
+    entry.KonzeptFahrzeugvarianten = arrayFoReviews.reviews
+      .find((review) => review.slug == car.relatedReviews)
+      .content[0].content.replace(/### Konzept & Fahrzeugvarianten\n/g, " ");
     entry.starsKonzeptFahrzeugvarianten = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[0].stars;
     //
-    entry.laderaumFlexibilität = arrayFoReviews.reviews.find(
-      (review) => review.slug == car.relatedReviews
-    ).content[1].content;
-    entry.laderaumFlexibilität = arrayFoReviews.reviews.find(
-      (review) => review.slug == car.relatedReviews
-    ).content[1].stars;
-    //
-    entry.laderaumFlexibilität = arrayFoReviews.reviews.find(
-      (review) => review.slug == car.relatedReviews
-    ).content[1].content;
-    entry.starsLaderaumFlexibilität = arrayFoReviews.reviews.find(
+    entry.laderaumFlexibilitaet = arrayFoReviews.reviews
+      .find((review) => review.slug == car.relatedReviews)
+      .content[1].content.replace(/### Laderaum & Flexibilität\n/g, " ");
+
+    entry.laderaumFlexibilitaet = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[1].stars;
+
     //
-    entry.antriebAufladung = arrayFoReviews.reviews.find(
-      (review) => review.slug == car.relatedReviews
-    ).content[2].content;
+    entry.antriebAufladung = arrayFoReviews.reviews
+      .find((review) => review.slug == car.relatedReviews)
+      .content[2].content.replace(/### Antrieb und Aufladung\n/g, " ");
     entry.starsantriebAufladung = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[2].stars;
     //
-    entry.komfortAusstattung = arrayFoReviews.reviews.find(
-      (review) => review.slug == car.relatedReviews
-    ).content[3].content;
+    entry.komfortAusstattung = arrayFoReviews.reviews
+      .find((review) => review.slug == car.relatedReviews)
+      .content[3].content.replace(/### Komfort & Ausstattung\n/g, " ");
     entry.starskomfortAusstattung = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[3].stars;
     //
-    entry.bedienungUndFahrbetrieb = arrayFoReviews.reviews.find(
-      (review) => review.slug == car.relatedReviews
-    ).content[4].content;
+    entry.bedienungUndFahrbetrieb = arrayFoReviews.reviews
+      .find((review) => review.slug == car.relatedReviews)
+      .content[4].content.replace(/### Bedienung & Fahrbetrieb\n/g, " ");
     entry.starsbedienungUndFahrbetrieb = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[4].stars;
     //
-    entry.umwelt = arrayFoReviews.reviews.find(
-      (review) => review.slug == car.relatedReviews
-    ).content[5].content;
+    entry.umwelt = arrayFoReviews.reviews
+      .find((review) => review.slug == car.relatedReviews)
+      .content[5].content.replace(/### Umwelt\n/g, " ");
     entry.starsumwelt = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[5].stars;
     //
-    entry.preiseGarantie = arrayFoReviews.reviews.find(
-      (review) => review.slug == car.relatedReviews
-    ).content[6].content;
+    entry.preiseGarantie = arrayFoReviews.reviews
+      .find((review) => review.slug == car.relatedReviews)
+      .content[6].content.replace(/### Preise & Garantie\n/g, " ");
     entry.starspreiseGarantie = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[6].stars;
     //
-    entry.fazit = arrayFoReviews.reviews.find(
-      (review) => review.slug == car.relatedReviews
-    ).content[7].content;
+    entry.fazit = arrayFoReviews.reviews
+      .find((review) => review.slug == car.relatedReviews)
+      .content[7].content.replace(/### Fazit\n/g, " ");
     entry.gesamt = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[7].stars;
@@ -160,8 +174,10 @@ async function main() {
 /*  writing */
 /*  writing */
 async function writeFile(filetype, data) {
+  //    console.log(data[19]);
+
   const csv = new ObjectsToCsv(data);
-  console.log(data[2]);
+
   const filename = `./pdf-export-${filetype}-autosETV`;
   const file = await csv.toDisk(`${filename}.csv`, {
     delimiter: "\t",
@@ -170,6 +186,9 @@ async function writeFile(filetype, data) {
   fs.writeFileSync(`${filename}.csv`, utf16buffer);
   fs.writeFileSync(`${filename}.txt`, utf16buffer);
 }
+//
+
+//
 // async function writeFile2(filetype, data) {
 //   const csv = new ObjectsToCsv(data);
 //   // console.log(csv);

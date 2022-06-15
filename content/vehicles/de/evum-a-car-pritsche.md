@@ -71,7 +71,7 @@ consumption:
   baseUnit: kWh
 power:
   key: Leistung
-  value: "20"
+  value: 20
   baseUnit: kW
 seats:
   key: Sitzplätze
@@ -155,4 +155,5 @@ wheelbase:
   value: "2596"
   baseUnit: mm
 ---
+
 Das Evum A-Car ist ein Elektrotransporter mit Allradantrieb der Kategorie N1. Die Höchstgeschwindigkeit des Fahrzeugs liegt bei 70 km/h und die maximale Nutzlast bei rund einer Tonne.
