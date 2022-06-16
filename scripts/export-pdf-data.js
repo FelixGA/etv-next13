@@ -26,17 +26,8 @@ async function main() {
     entry.modelName = car.title;
     entry.price = formatPrice(car.price);
     // for the photo
-    entry.image = car.src.substring(8);
-    entry.image = entry.image.replace(/\//g, "-");
-    entry.subsidies = `${entry?.subsidies?.value || " "} ${
-      entry?.subsidies?.unit || " "
-    }`;
-    entry.batteryGuarantee = `${entry?.batteryGuarantee?.value || " "} ${
-      entry?.batteryGuarantee?.unit || " "
-    }`;
-    entry.chargingTimeFast = `${entry?.chargingTimeFast?.value || " "} ${
-      entry?.chargingTimeFast?.unit || " "
-    }`;
+    entry["@image"] = `.${car.src}`;
+
     // leasing
     const netto = car.price;
     let zins = 0.039;
@@ -58,7 +49,27 @@ async function main() {
         };
       }
     }
-
+    //
+    entry.subsidies = `${entry?.subsidies?.value || " "} ${
+      entry?.subsidies?.unit || " "
+    }`;
+    entry.batteryGuarantee = `${entry?.batteryGuarantee?.value || " "} ${
+      entry?.batteryGuarantee?.unit || " "
+    }`;
+    entry.guarantee = `${entry?.guarantee?.value || " "} ${
+      entry?.guarantee?.unit || " "
+    }`;
+    entry.rangeLithium = `${
+      entry?.rangeLithium?.value
+        ? entry?.rangeLithium?.value
+        : "230V" + " " + car?.range230V?.value + " " + car?.range230V?.baseUnit
+    } ${entry?.rangeLithium?.unit || " "}`;
+    entry.range230V = `${entry?.range230V?.value || " "} ${
+      entry?.range230V?.unit || " "
+    }`;
+    entry.chargingTimeFast = `${entry?.chargingTimeFast?.value || " "} ${
+      entry?.chargingTimeFast?.unit || " "
+    }`;
     // body key value pairs
     for (const [key, value] of Object.entries(car)) {
       if (value?.value) {
@@ -82,58 +93,75 @@ async function main() {
 
     entry.KonzeptFahrzeugvarianten = arrayFoReviews.reviews
       .find((review) => review.slug == car.relatedReviews)
-      .content[0].content.replace(/### Konzept & Fahrzeugvarianten\n/g, " ");
+      .content[0].content.replace(/### Konzept & Fahrzeugvarianten\n/g, " ")
+      .replace(/###/g, " ")
+      .replace(/\n/g, " ");
+
     entry.starsKonzeptFahrzeugvarianten = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[0].stars;
     //
     entry.laderaumFlexibilitaet = arrayFoReviews.reviews
       .find((review) => review.slug == car.relatedReviews)
-      .content[1].content.replace(/### Laderaum & Flexibilität\n/g, " ");
+      .content[1].content.replace(/### Laderaum & Flexibilität\n/g, " ")
+      .replace(/###/g, " ")
+      .replace(/\n/g, " ");
 
-    entry.laderaumFlexibilitaet = arrayFoReviews.reviews.find(
+    entry.starsladeraumFlexibilitaet = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[1].stars;
 
     //
     entry.antriebAufladung = arrayFoReviews.reviews
       .find((review) => review.slug == car.relatedReviews)
-      .content[2].content.replace(/### Antrieb und Aufladung\n/g, " ");
+      .content[2].content.replace(/### Antrieb und Aufladung\n/g, " ")
+      .replace(/###/g, " ")
+      .replace(/\n/g, " ");
     entry.starsantriebAufladung = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[2].stars;
     //
     entry.komfortAusstattung = arrayFoReviews.reviews
       .find((review) => review.slug == car.relatedReviews)
-      .content[3].content.replace(/### Komfort & Ausstattung\n/g, " ");
+      .content[3].content.replace(/### Komfort & Ausstattung\n/g, " ")
+      .replace(/###/g, " ")
+      .replace(/\n/g, " ");
     entry.starskomfortAusstattung = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[3].stars;
     //
     entry.bedienungUndFahrbetrieb = arrayFoReviews.reviews
       .find((review) => review.slug == car.relatedReviews)
-      .content[4].content.replace(/### Bedienung & Fahrbetrieb\n/g, " ");
+      .content[4].content.replace(/### Bedienung & Fahrbetrieb\n/g, " ")
+      .replace(/###/g, " ")
+      .replace(/\n/g, " ");
     entry.starsbedienungUndFahrbetrieb = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[4].stars;
     //
     entry.umwelt = arrayFoReviews.reviews
       .find((review) => review.slug == car.relatedReviews)
-      .content[5].content.replace(/### Umwelt\n/g, " ");
+      .content[5].content.replace(/### Umwelt\n/g, " ")
+      .replace(/###/g, " ")
+      .replace(/\n/g, " ");
     entry.starsumwelt = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[5].stars;
     //
     entry.preiseGarantie = arrayFoReviews.reviews
       .find((review) => review.slug == car.relatedReviews)
-      .content[6].content.replace(/### Preise & Garantie\n/g, " ");
+      .content[6].content.replace(/### Preise & Garantie\n/g, " ")
+      .replace(/###/g, " ")
+      .replace(/\n/g, " ");
     entry.starspreiseGarantie = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[6].stars;
     //
     entry.fazit = arrayFoReviews.reviews
       .find((review) => review.slug == car.relatedReviews)
-      .content[7].content.replace(/### Fazit\n/g, " ");
+      .content[7].content.replace(/### Fazit\n/g, " ")
+      .replace(/###/g, " ")
+      .replace(/\n/g, " ");
     entry.gesamt = arrayFoReviews.reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[7].stars;
@@ -174,7 +202,7 @@ async function main() {
 /*  writing */
 /*  writing */
 async function writeFile(filetype, data) {
-  //    console.log(data[19]);
+  console.log(data[13]);
 
   const csv = new ObjectsToCsv(data);
 
