@@ -30,7 +30,7 @@ function ActiveFilterBlock({ getContent }) {
             className={
               showAll
                 ? "pl-4 mt-0 pb-2 md:mt-4 text-xl sm:text-2xl lg:text-3xl text-blue-extra"
-                : "pl-4 mt-6 pb-2 text-xl sm:text-2xl lg:text-3xl text-blue-extra"
+                : "pl-4 mt-6 pb-4 sm:pb-2 text-xl sm:text-2xl lg:text-3xl text-blue-extra py-4 sm:py-0"
             }
           >
             Die besten E-Transporter nach Ihrer Auswahl

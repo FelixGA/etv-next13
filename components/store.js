@@ -39,6 +39,7 @@ const reducer = (state, action) => {
     /*  states for navbar */
     case "mobileNavActive":
       return { ...state, mobileNavActives: action.data };
+
     default:
       return;
   }

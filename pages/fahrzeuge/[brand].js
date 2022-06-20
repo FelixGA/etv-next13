@@ -29,7 +29,7 @@ export default function Details(props) {
             Nutzfahrzeuge mit Elektro Antrieb im E-Transporter Vergleich
           </h1>
 
-          <div className="relative w-3/5 mx-auto my-8 text-center cursor-pointer">
+          <div className="relative w-3/5 mx-auto my-6 text-center cursor-pointer">
             <Link href={`${getBrand.websiteLink}`} passHref>
               <Image
                 src={getBrand.src}

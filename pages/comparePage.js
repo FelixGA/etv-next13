@@ -79,7 +79,7 @@ export default function comparePage(props) {
     if (state?.activeSortValues[0]?.sortType === "chargingTimeLithium") {
       setSortedCars(getCarsfastest);
     }
-  }, [props.vehicles, state.activeSortValues]);
+  }, [props.vehicles, state?.activeSortValues]);
   return (
     <div className="relative">
       <Head page={props.page} />

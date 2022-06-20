@@ -20,7 +20,7 @@ import Router from "next/router";
 import { useRouter } from "next/router";
 import CarBrandsLogos from "../repeated/CarBrandsLogos";
 
-export default function Funnel({ getContent, getBrands }) {
+export default function Funnel({ getBrands }) {
   const router = useRouter();
   const filtersData = [
     {
@@ -162,30 +162,39 @@ export default function Funnel({ getContent, getBrands }) {
   ];
   const { state, dispatch } = useStore();
   const [currentFilter, setCurrentFilter] = useState(filtersData[0]);
-  const [redirecter, setRedDirecter] = useState(false);
+  const [redirecter, setRedirecter] = useState(false);
   useEffect(() => {
+    // console.log(state);
+    if (!state?.loadingWeights || !state?.rangeLithiums || !state?.prices)
+      return;
     if (redirecter && router.pathname == "/caradvisor") {
       /*  here is the solution! */
       Router.push("/comparePage");
-      setRedDirecter(false);
+      setRedirecter(false);
     }
     state.categorys.length > 0 ? setCurrentFilter(filtersData[1]) : null;
     state.rangeLithiums.length > 0 ? setCurrentFilter(filtersData[2]) : null;
     state.loadingWeights.length > 0 ? setCurrentFilter(filtersData[3]) : null;
-    state.prices.length > 0 ? setRedDirecter(true) : null;
+    state.prices.length > 0 ? setRedirecter(true) : null;
   }, [
+    state?.categorys,
     state?.prices,
     state?.loadingWeights,
     state?.rangeLithiums,
     state?.maxSpeeds,
     state?.chargingTimeLithiums,
-    state?.categorys,
-
     redirecter,
   ]);
-
+  // console.log("state?.categorys", state?.categorys);
+  // console.log("state?.rangeLithiums", state?.rangeLithiums);
   return (
-    <div className="flex flex-col flex-1 ">
+    <div
+      className={
+        router.pathname == "/landingPage"
+          ? "flex flex-col flex-1 sm:px-8 lg:pb-8 bg-white sm:mt-8"
+          : "flex flex-col flex-1"
+      }
+    >
       <div className="flex flex-col items-center justify-center flex-1">
         {!redirecter ? (
           <h2 className="flex items-center mx-12 mt-4 text-xl font-bold text-center sm:text-3xl text-black-dark h-28 sm:mx-4">
