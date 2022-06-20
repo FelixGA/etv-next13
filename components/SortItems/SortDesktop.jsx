@@ -38,8 +38,8 @@ function SortDesktop() {
   const [isChecked, setIsChecked] = useState("");
 
   return (
-    <div className="z-10 items-center hidden w-64 mt-2 bg-white border rounded-md md:flex xl:mr-0">
-      <div className="flex flex-col items-start pl-4">
+    <div className="z-10 items-center hidden w-64 mt-2 border rounded-md md:flex xl:mr-0">
+      <div className="flex flex-col items-start pl-4 bg-white">
         {SortArray.map((rank, index) => {
           return (
             <div

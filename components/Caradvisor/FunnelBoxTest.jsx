@@ -4,7 +4,7 @@ import { useStore } from "../store";
 import { useRouter } from "next/router";
 
 import Router from "next/router";
-export default function FunnelBox({ currentFilter, redirecter }) {
+export default function FunnelBoxTest({ currentFilter, redirecter }) {
   const { state, dispatch } = useStore();
   const router = useRouter();
 
@@ -12,7 +12,7 @@ export default function FunnelBox({ currentFilter, redirecter }) {
     <div
       className={
         router.pathname == "/landingPage"
-          ? "flex flex-wrap w-[90%] md:w-full justify-center  lg:pb-12"
+          ? "grid grid-cols-2 md:grid-cols-4 bg-white xl:pb-12 gap-4"
           : "flex flex-wrap w-[90%] md:w-full justify-center pb-10 lg:pb-12"
       }
     >
@@ -30,9 +30,9 @@ export default function FunnelBox({ currentFilter, redirecter }) {
               });
             }}
             key={index}
-            className="flex flex-col items-center justify-center w-32 h-32 m-2 transition bg-white cursor-pointer shadow-dropdown sm:w-40 lg:w-56 lg:h-56 xl:w-64 sm:h-40 xl:h-64 sm:mb-8 hover:scale-110"
+            className="flex flex-col items-center justify-center transition bg-white cursor-pointer w-28 h-28 shadow-dropdown sm:w-40 lg:w-44 lg:h-4w-44 xl:w-56 sm:h-40 xl:h-56 sm:mb-8 hover:scale-110 2xl:w-72 2xl:h-72"
           >
-            <div className="w-24 h-24 pt-4 sm:w-36 lg:w-44 lg:h-44 xl:w-60 sm:h-36 xl:h-60">
+            <div className="w-24 h-24 pt-4 sm:w-32 lg:w-40 lg:h-40 xl:w-52 sm:h-32 xl:h-52 2xl:w-60 2xl:h-60">
               <Image
                 src={item.image}
                 alt="picture"

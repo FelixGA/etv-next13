@@ -30,7 +30,9 @@ export default function BlogPost(props) {
           <div className={`${styles.blogmarkdown} lg:pr-8 `}>
             <MDXRemote {...props.getBlogContext.source} />
             <div className="mt-8 text-blue-darker">
-              <span className="">Das könnte Sie auch interessieren:</span>
+              <span className="inline-block py-2">
+                Das könnte Sie auch interessieren:
+              </span>
               <div className="">
                 <Teasers teasers={props.suggestions} />
               </div>

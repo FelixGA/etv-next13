@@ -1,47 +1,22 @@
-import Head from "../components/core/Head";
+import React from "react";
+import CompareTool from "../components/repeated/CompareTool";
 import getContent from "/utils/getContent";
 import { serialize } from "next-mdx-remote/serialize";
-import BlogArticles from "../components/Homepage/BlogArticles";
-import HeroSectionB from "../components/HeroSection/HeroSectionB";
-import TopSlider from "../components/Sliders/TopSlider";
-import Funnel from "../components/Caradvisor/Funnel";
-import NewsLetter from "../components/Homepage/NewsLetter";
 import { useState, useEffect } from "react";
-import CompareTool from "../components/repeated/CompareTool";
 
-export default function Home(props) {
-  const [getCars, SetGetCars] = useState(props.vehicles);
+const testPage = (props) => {
   const [getContent, SetGetContent] = useState(props.page);
-  const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
-  const [getBrands, SetGetBrands] = useState(props.brands);
   useEffect(() => {
-    SetGetBrands(props.brands);
-    SetGetCars(props.vehicles);
     SetGetContent(props.page);
-    SetGetMarkdownContext(props.context);
   }, [props]);
   return (
-    <>
-      <Head page={props.page} />
-
-      <div className="mt-8 lg:mt-0">
-        <CompareTool />
-      </div>
-
-      <HeroSectionB
-        getContent={props.page}
-        getMarkdownContext={props.context}
-        getBrands={props.brands}
-      />
-
-      <BlogArticles getMarkdownContext={props.context} />
-      <div className="my-10">
-        <TopSlider getCars={props.vehicles} getContent={props.page} />
-      </div>
-      <NewsLetter getMarkdownContext={props.context} />
-    </>
+    <div>
+      <CompareTool getContent={getContent} />
+    </div>
   );
-}
+};
+
+export default testPage;
 
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);

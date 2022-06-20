@@ -14,7 +14,7 @@ export default function TextInput({
 }) {
   const fullNameRegex = RegExp(/^[a-zA-Z ]{2,30}$/);
   const router = useRouter();
-  return router.pathname == "/" ? (
+  return router.pathname == "/" || "/landingPage" ? (
     <div className="relative mt-8 text-lg rounded-sm lg:pl-2 w-52 h-14 sm:w-full">
       <label
         htmlFor={id}

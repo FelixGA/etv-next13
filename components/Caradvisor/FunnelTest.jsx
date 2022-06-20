@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useStore } from "../store";
-import FunnelBox from "./FunnelBox";
 import { useState, useEffect } from "react";
 import weight250 from "../../public/images/weight250.png";
 import weight100 from "../../public/images/weight100.jpg";
@@ -19,8 +18,9 @@ import ButtonForAlleTransporter from "../Sliders/ButtonForAlleTransporter";
 import Router from "next/router";
 import { useRouter } from "next/router";
 import CarBrandsLogos from "../repeated/CarBrandsLogos";
+import FunnelBoxTest from "./FunnelBoxTest";
 
-export default function Funnel({ getContent, getBrands }) {
+export default function FunnelTest({ getContent, getBrands }) {
   const router = useRouter();
   const filtersData = [
     {
@@ -190,13 +190,13 @@ export default function Funnel({ getContent, getBrands }) {
     <div
       className={
         router.pathname == "/landingPage"
-          ? "flex flex-col flex-1 sm:px-8 lg:pb-8 bg-white sm:mt-8"
+          ? "flex flex-col flex-1 sm:px-8 xl:pb-8 bg-white sm:mt-8"
           : "flex flex-col flex-1"
       }
     >
       <div className="flex flex-col items-center justify-center flex-1">
         {!redirecter ? (
-          <h2 className="flex items-center mx-12 mt-4 text-xl font-bold text-center sm:text-3xl text-black-dark h-28 sm:mx-4">
+          <h2 className="flex items-center mx-12 my-4 text-xl font-bold text-center sm:text-3xl text-black-dark h-28 sm:mx-4">
             {currentFilter.title}
           </h2>
         ) : (
@@ -218,8 +218,11 @@ export default function Funnel({ getContent, getBrands }) {
             </div>
           </div>
         )}
-        <div className="flex justify-center">
-          <FunnelBox currentFilter={currentFilter} redirecter={redirecter} />
+        <div className="">
+          <FunnelBoxTest
+            currentFilter={currentFilter}
+            redirecter={redirecter}
+          />
         </div>
       </div>
       <div className={!redirecter ? "hidden" : "visible"}>
