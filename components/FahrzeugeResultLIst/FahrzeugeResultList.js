@@ -1,5 +1,5 @@
 import { useStore } from "../store";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import ButtonForAlleTransporter from "../Sliders/ButtonForAlleTransporter";
 import Link from "next/link";
@@ -12,9 +12,8 @@ const FahrzeugeResultList = ({
   getCarsReview,
   getContent,
   getMarkdownContext,
+  getBrands,
 }) => {
-  const { state, dispatch } = useStore();
-
   return (
     <div className="flex flex-col flex-1 mb-10 lg:w-full lg:bg-white">
       {sortedCars
@@ -30,7 +29,9 @@ const FahrzeugeResultList = ({
           );
         })
         .slice(0, 5)}
-      {/* <div className="mt-8 mb-6 lg:mt-24 lg:mb-16"><CompareTool /></div> */}
+      <div className="mt-8 mb-6 lg:mt-24 lg:mb-16">
+        <CompareTool />
+      </div>
       {sortedCars
         ?.map((carItem, index) => {
           return (
@@ -40,7 +41,7 @@ const FahrzeugeResultList = ({
           );
         })
         .slice(6, 10)}
-      <Funnel />
+      <Funnel getBrands={getBrands} />
       {sortedCars
         ?.map((carItem, index) => {
           return (

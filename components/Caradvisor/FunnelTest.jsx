@@ -164,7 +164,6 @@ export default function FunnelTest({ getContent, getBrands }) {
   const [currentFilter, setCurrentFilter] = useState(filtersData[0]);
   const [redirecter, setRedirecter] = useState(false);
   useEffect(() => {
-    console.log(state);
     if (!state) return;
     if (redirecter && router.pathname == "/caradvisor") {
       /*  here is the solution! */

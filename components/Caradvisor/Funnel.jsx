@@ -20,7 +20,7 @@ import Router from "next/router";
 import { useRouter } from "next/router";
 import CarBrandsLogos from "../repeated/CarBrandsLogos";
 
-export default function Funnel({ getContent, getBrands }) {
+export default function Funnel({ getBrands }) {
   const router = useRouter();
   const filtersData = [
     {
@@ -165,27 +165,28 @@ export default function Funnel({ getContent, getBrands }) {
   const [redirecter, setRedirecter] = useState(false);
   useEffect(() => {
     // console.log(state);
-    if (!state) return;
+    if (!state?.loadingWeights || !state?.rangeLithiums || !state?.prices)
+      return;
     if (redirecter && router.pathname == "/caradvisor") {
       /*  here is the solution! */
       Router.push("/comparePage");
       setRedirecter(false);
     }
-    state?.categorys.length > 0 ? setCurrentFilter(filtersData[1]) : null;
-    state?.rangeLithiums.length > 0 ? setCurrentFilter(filtersData[2]) : null;
-    state?.loadingWeights.length > 0 ? setCurrentFilter(filtersData[3]) : null;
-    state?.prices.length > 0 ? setRedirecter(true) : null;
+    state.categorys.length > 0 ? setCurrentFilter(filtersData[1]) : null;
+    state.rangeLithiums.length > 0 ? setCurrentFilter(filtersData[2]) : null;
+    state.loadingWeights.length > 0 ? setCurrentFilter(filtersData[3]) : null;
+    state.prices.length > 0 ? setRedirecter(true) : null;
   }, [
+    state?.categorys,
     state?.prices,
     state?.loadingWeights,
     state?.rangeLithiums,
     state?.maxSpeeds,
     state?.chargingTimeLithiums,
-    state?.categorys,
-
     redirecter,
   ]);
-
+  // console.log("state?.categorys", state?.categorys);
+  // console.log("state?.rangeLithiums", state?.rangeLithiums);
   return (
     <div
       className={

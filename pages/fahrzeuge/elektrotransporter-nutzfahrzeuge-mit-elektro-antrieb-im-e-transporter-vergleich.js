@@ -13,15 +13,16 @@ export default function fahrzeuge(props) {
   const [getContent, SetGetContent] = useState(props.page);
   const [getCarsReview, SetCarsReview] = useState(props.carsreviews);
   const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
+  const [getBrands, SetGetBrands] = useState(props.brands);
 
   /* ᴄᴀʀs ranking ғɪʟᴛᴇʀ */
   useEffect(() => {
-    if (!props.page || !dispatch) return;
+    // if (!props.page || !dispatch) return;
 
-    dispatch({
-      type: "compareContent",
-      data: props.page.content,
-    });
+    // dispatch({
+    //   type: "compareContent",
+    //   data: props.page.content,
+    // });
 
     SetSortedCars(
       props.vehicles.sort((a, b) => a.rating.value - b.rating.value)
@@ -30,6 +31,7 @@ export default function fahrzeuge(props) {
     SetCarsReview(props.carsreviews);
     SetGetContent(props.page);
     SetGetMarkdownContext(props.context);
+    SetGetBrands(props.brands);
   }, [props, dispatch]);
 
   return (
@@ -66,6 +68,7 @@ export default function fahrzeuge(props) {
             getCarsReview={getCarsReview}
             getContent={getContent}
             getMarkdownContext={getMarkdownContext}
+            getBrands={getBrands}
           />
         </div>
       </div>

@@ -202,7 +202,7 @@ async function main() {
 /*  writing */
 /*  writing */
 async function writeFile(filetype, data) {
-  console.log(data[13]);
+ 
 
   const csv = new ObjectsToCsv(data);
 

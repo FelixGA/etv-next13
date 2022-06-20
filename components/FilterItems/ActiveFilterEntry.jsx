@@ -5,6 +5,7 @@ import image3 from "../../public/images/hoechstgeschwindigkeit@2x.png";
 import image4 from "../../public/images/reichweitecopy@2x.png";
 import image5 from "../../public/images/ladezeit@2x.png";
 import image6 from "../../public/images/aufbautype.png";
+import image7 from "../../public/images/ETV-IconsVergleichen.png";
 
 import { AiOutlineClose } from "react-icons/ai";
 import { useStore } from "../store";
@@ -129,7 +130,7 @@ function ActiveFilterEntry(props) {
             return {
               id: 1,
               value: el,
-              image: image6,
+              image: image7,
             };
           })
         : null

@@ -15,10 +15,6 @@ export default function Home(props) {
   useEffect(() => {
     if (!props.page || !dispatch) return;
     // console.log(props.page.content, "testtest");
-    dispatch({
-      type: "compareContent",
-      data: props.page.content,
-    });
   }, [props.page, dispatch]);
   // console.log(state.compareContent, "from index");
   return (

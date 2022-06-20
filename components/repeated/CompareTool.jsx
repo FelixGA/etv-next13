@@ -86,13 +86,14 @@ const details = [
     ],
   },
 ];
-const CompareTool = ({ getContent, getMarkdownContext }) => {
+const CompareTool = () => {
   const router = useRouter();
   const { state, dispatch } = useStore();
 
   const [choosePrice, setChoosePrice] = useState(details[0].options[0].value);
   const [chooseRange, setChooseRange] = useState(details[1].options[0].value);
   const [chooseWeight, setChooseWeight] = useState(details[2].options[0].value);
+  console.log(state?.prices);
   return (
     <div>
       <div
