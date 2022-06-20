@@ -6,12 +6,13 @@ import { MDXRemote } from "next-mdx-remote";
 import CarBrandsLogos from "../repeated/CarBrandsLogos";
 import OptionItem from "./OptionItem";
 import styles from "../HeroSection/HeroSection.module.css";
+import CompareTool from "../repeated/CompareTool";
 
 //import filtersData from "../filtersData.json";
 //
 const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
   const { state, dispatch } = useStore();
-
+  // console.log(getContent, "from HeroSection");
   const details = [
     {
       category: "Price",
@@ -149,11 +150,11 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
           </div>
         </div>
         {/* COMPARE TOOL */}
-        <div className="relative pt-5 pb-4 border rounded-md lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border-blue-dark ">
-          {/* comaprison-input-container */}
+        <>
+          <CompareTool getContent={getContent} />
+        </>
+        {/* <div className="relative pt-5 pb-4 border rounded-md lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border-blue-dark ">
           <div className="mx-2 comaprison-input-container lg:items-center lg:flex lg:flex-row lg:justify-evenly lg:flex-1 ">
-            {/* PRICE AND RANGE */}
-
             <div className="h-14 lg:w-68  w-full pt-2 shadow-angelos1 text-base rounded-sm bg-white lg:w-[14vw]">
               <label className="flex flex-row justify-between px-2 text-left ">
                 {getContent.content[1].markdown.split(", ")[0]}
@@ -189,9 +190,6 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
               </div>
             </div>
 
-            {/* Weight and button */}
-
-            {/* weight */}
             <div className="h-14 lg:w-[14vw] w-full my-4 pt-2 shadow-angelos1 text-base rounded-sm bg-white ">
               <label className="flex flex-row justify-between px-2 text-left">
                 {getContent.content[1].markdown.split(", ")[2]}
@@ -210,7 +208,7 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
                 </select>
               </div>
             </div>
-            {/* BUTTON */}
+
             <div className="flex lg:justify-around justify-between items-start lg:items-center flex-wrap w-full lg:w-[14vw]">
               <Link href="/comparePage">
                 <button
@@ -252,7 +250,7 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <CarBrandsLogos getBrands={getBrands} />
       </div>

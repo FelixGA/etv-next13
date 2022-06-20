@@ -2,24 +2,37 @@ import { useStore } from "../../components/store";
 import Head from "../../components/core/Head";
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
+import { serialize } from "next-mdx-remote/serialize";
+
 import Image from "next/image";
 import Link from "next/link";
 import FahrzeugeResultList from "../../components/FahrzeugeResultLIst/FahrzeugeResultList";
 export default function fahrzeuge(props) {
+  const { state, dispatch } = useStore();
   const [sortedCars, SetSortedCars] = useState(props.vehicles);
   const [getContent, SetGetContent] = useState(props.page);
   const [getCarsReview, SetCarsReview] = useState(props.carsreviews);
-  const { state, dispatch } = useStore();
-  // console.log("CAAARRSS", sortedCars);
+  const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
+  const [getBrands, SetGetBrands] = useState(props.brands);
+
   /* ᴄᴀʀs ranking ғɪʟᴛᴇʀ */
   useEffect(() => {
+    // if (!props.page || !dispatch) return;
+
+    // dispatch({
+    //   type: "compareContent",
+    //   data: props.page.content,
+    // });
+
     SetSortedCars(
       props.vehicles.sort((a, b) => a.rating.value - b.rating.value)
     );
 
     SetCarsReview(props.carsreviews);
     SetGetContent(props.page);
-  }, [props.vehicles]);
+    SetGetMarkdownContext(props.context);
+    SetGetBrands(props.brands);
+  }, [props, dispatch]);
 
   return (
     <div className="px-4 2xl:px-64">
@@ -53,6 +66,9 @@ export default function fahrzeuge(props) {
           <FahrzeugeResultList
             sortedCars={sortedCars}
             getCarsReview={getCarsReview}
+            getContent={getContent}
+            getMarkdownContext={getMarkdownContext}
+            getBrands={getBrands}
           />
         </div>
       </div>
@@ -81,12 +97,11 @@ export async function getStaticProps(context) {
 
   return {
     props: {
+      page,
       vehicles,
       posts,
-      page,
       blogs,
       brands,
-
       carsreviews,
     },
   };

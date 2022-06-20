@@ -21,6 +21,7 @@ function PriceInputs() {
           <input
             type="number"
             id="min"
+            min="0"
             onChange={changeHandleMin}
             name="min"
             placeholder="min €"

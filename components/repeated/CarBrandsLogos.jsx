@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import useMedia from "/hooks/useMedia";
+import { useRouter } from "next/router";
 
 export default function Trustimages({ getBrands }) {
   const [tick, setTick] = useState(0);
   const [showCount, setShowCount] = useState(1);
   const [shownImages, setShownImages] = useState([]);
   const { md } = useMedia();
+  const router = useRouter();
 
   // set number of shown images depending on viewport
   useEffect(() => {
@@ -33,7 +35,13 @@ export default function Trustimages({ getBrands }) {
   }, [tick, showCount, getBrands]);
 
   return (
-    <div className="flex justify-center mt-8 overflow-hidden filter-gray">
+    <div
+      className={
+        router.pathname == "/"
+          ? "flex justify-center mt-8 overflow-hidden filter-gray"
+          : "flex justify-center mt-4 md:mt-0 lg:mt-8 2xl:mt-16 overflow-hidden filter-gray"
+      }
+    >
       {shownImages?.map((image, index) => (
         <div className="mx-4 my-8 lg:my-24" key={index}>
           <Image

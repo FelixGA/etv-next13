@@ -2,11 +2,12 @@ import Head from "../components/core/Head";
 import getContent from "/utils/getContent";
 import { serialize } from "next-mdx-remote/serialize";
 import BlogArticles from "../components/Homepage/BlogArticles";
-import HeroSection from "../components/HeroSection/HeroSection";
+import HeroSectionB from "../components/HeroSection/HeroSectionB";
 import TopSlider from "../components/Sliders/TopSlider";
 import Funnel from "../components/Caradvisor/Funnel";
 import NewsLetter from "../components/Homepage/NewsLetter";
 import { useState, useEffect } from "react";
+import CompareTool from "../components/repeated/CompareTool";
 
 export default function Home(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
@@ -22,17 +23,19 @@ export default function Home(props) {
   return (
     <>
       <Head page={props.page} />
-
-      {/* state?.mobileNavActives */}
-      <HeroSection
-        getContent={getContent}
-        getMarkdownContext={getMarkdownContext}
-        getBrands={getBrands}
+      <div className="mt-8 lg:mt-0">
+        <CompareTool />
+      </div>
+      <HeroSectionB
+        getContent={props.page}
+        getMarkdownContext={props.context}
+        getBrands={props.brands}
       />
-      <TopSlider getCars={getCars} getContent={getContent} />
-      <BlogArticles getMarkdownContext={getMarkdownContext} />
-      <Funnel getCars={getCars} getContent={getContent} getBrands={getBrands} />
-      <NewsLetter getMarkdownContext={getMarkdownContext} />
+      <div className="mb-10">
+        <TopSlider getCars={props.vehicles} getContent={props.page} />
+      </div>
+      <BlogArticles getMarkdownContext={props.context} />
+      <NewsLetter getMarkdownContext={props.context} />
     </>
   );
 }
