@@ -165,6 +165,7 @@ export default function Funnel({ getBrands }) {
   const [redirecter, setRedirecter] = useState(false);
   useEffect(() => {
     // console.log(state);
+
     if (!state?.loadingWeights || !state?.rangeLithiums || !state?.prices)
       return;
     if (redirecter && router.pathname == "/caradvisor") {
@@ -185,6 +186,38 @@ export default function Funnel({ getBrands }) {
     state?.chargingTimeLithiums,
     redirecter,
   ]);
+  useEffect(() => {
+    if (
+      router.pathname ==
+        "/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich" ||
+      router.pathname == "/"
+    ) {
+      dispatch({
+        type: "rangeLithium",
+        data: [],
+      });
+      dispatch({
+        type: "loadingWeight",
+        data: [],
+      });
+      dispatch({
+        type: "price",
+        data: [],
+      });
+      dispatch({
+        type: "maxSpeed",
+        data: [],
+      });
+      dispatch({
+        type: "category",
+        data: [],
+      });
+      dispatch({
+        type: "chargingTimeLithium",
+        data: [],
+      });
+    }
+  }, [router.pathname]);
   // console.log("state?.categorys", state?.categorys);
   // console.log("state?.rangeLithiums", state?.rangeLithiums);
   return (
