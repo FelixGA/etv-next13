@@ -109,7 +109,7 @@ const CompareTool = ({ getContent, getMarkdownContext }) => {
           <div className="h-14 lg:w-68  w-full pt-2 shadow-angelos1 text-base rounded-sm bg-white lg:w-[14vw]">
             <label className="flex flex-row justify-between px-2 text-left ">
               Reichweite
-              <div className="relative top-6">▼</div>
+              <div className="relative top-5">▼</div>
             </label>
             <div className="m-1 ">
               <select
@@ -126,7 +126,7 @@ const CompareTool = ({ getContent, getMarkdownContext }) => {
           <div className="h-14 lg:w-68 w-full my-4 pt-2 shadow-angelos1 text-base rounded-sm bg-white lg:w-[14vw]	tracking-wide">
             <label className="flex flex-row justify-between px-2 text-left">
               Preis
-              <div className="relative top-6">▼</div>
+              <div className="relative top-5">▼</div>
             </label>
             <div className="m-1 ">
               <select
@@ -147,7 +147,7 @@ const CompareTool = ({ getContent, getMarkdownContext }) => {
           <div className="h-14 lg:w-[14vw] w-full my-4 pt-2 shadow-angelos1 text-base rounded-sm bg-white ">
             <label className="flex flex-row justify-between px-2 text-left">
               Nutzlast
-              <div className="relative top-6">▼</div>
+              <div className="relative top-5">▼</div>
             </label>
 
             <div className="m-1 ">
