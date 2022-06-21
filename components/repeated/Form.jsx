@@ -55,7 +55,7 @@ export default function Form(props) {
           className={
             router.pathname !== "/kontakt"
               ? "flex flex-col bg-white px-4 "
-              : "flex flex-col px-4  bg-white shadow-dropdown rounded-md mb-20"
+              : "flex flex-col px-4 bg-white shadow-dropdown rounded-md mb-20"
           }
         >
           <div className="w-full">
