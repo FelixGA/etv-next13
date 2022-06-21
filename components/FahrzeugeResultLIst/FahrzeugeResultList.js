@@ -1,5 +1,6 @@
 import { useStore } from "../store";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 import ButtonForAlleTransporter from "../Sliders/ButtonForAlleTransporter";
 import Link from "next/link";
@@ -14,6 +15,10 @@ const FahrzeugeResultList = ({
   getMarkdownContext,
   getBrands,
 }) => {
+  const { state, dispatch } = useStore();
+  const router = useRouter();
+  console.log(router.pathname);
+
   return (
     <div className="flex flex-col flex-1 mb-10 lg:w-full lg:bg-white">
       {sortedCars
