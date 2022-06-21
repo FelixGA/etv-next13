@@ -8,9 +8,40 @@ import Funnel from "../components/Caradvisor/Funnel";
 import NewsLetter from "../components/Homepage/NewsLetter";
 import { useEffect } from "react";
 import { useStore } from "../components/store";
+import { useRouter } from "next/router";
 
 export default function Home(props) {
   const { state, dispatch } = useStore();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.pathname == "/") {
+      dispatch({
+        type: "rangeLithium",
+        data: [],
+      });
+      dispatch({
+        type: "loadingWeight",
+        data: [],
+      });
+      dispatch({
+        type: "price",
+        data: [],
+      });
+      dispatch({
+        type: "maxSpeed",
+        data: [],
+      });
+      dispatch({
+        type: "category",
+        data: [],
+      });
+      dispatch({
+        type: "chargingTimeLithium",
+        data: [],
+      });
+    }
+  }, [router.pathname]);
   // console.log(state, "index");
   useEffect(() => {
     if (!props.page || !dispatch) return;

@@ -163,10 +163,14 @@ export default function Funnel({ getBrands }) {
   const { state, dispatch } = useStore();
   const [currentFilter, setCurrentFilter] = useState(filtersData[0]);
   const [redirecter, setRedirecter] = useState(false);
+
   useEffect(() => {
     // console.log(state);
+
     if (!state?.loadingWeights || !state?.rangeLithiums || !state?.prices)
       return;
+    if (router.pathname === "/") return;
+
     if (redirecter && router.pathname == "/caradvisor") {
       /*  here is the solution! */
       Router.push("/comparePage");
@@ -185,6 +189,9 @@ export default function Funnel({ getBrands }) {
     state?.chargingTimeLithiums,
     redirecter,
   ]);
+  console.log(router.pathname);
+  console.log(state.categorys, state.prices);
+
   // console.log("state?.categorys", state?.categorys);
   // console.log("state?.rangeLithiums", state?.rangeLithiums);
   return (
