@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import TextInput from "../core/TextInput";
+import TextInputNewsletter from "../core/TextInputNewsletter";
 const NewsLetter = ({ getMarkdownContext }) => {
   const emailRegex = RegExp(
     /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
@@ -47,7 +48,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
               : "flex flex-col xs:flex-row mt-4 relative"
           }
         >
-          <TextInput
+          <TextInputNewsletter
             style={`${errors.emailInput && " focus:border-red-500 "}`}
             placeholder={"z.B. max@muster.com"}
             register={register}
