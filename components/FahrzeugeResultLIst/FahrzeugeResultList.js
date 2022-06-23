@@ -45,7 +45,7 @@ const FahrzeugeResultList = ({
             </div>
           );
         })
-        .slice(6, 10)}
+        .slice(6, 11)}
       <Funnel getBrands={getBrands} />
       {sortedCars
         ?.map((carItem, index) => {
@@ -55,7 +55,7 @@ const FahrzeugeResultList = ({
             </div>
           );
         })
-        .slice(11)}
+        .slice(12)}
     </div>
   );
 };
