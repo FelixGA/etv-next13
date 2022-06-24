@@ -135,6 +135,3 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-.printpreview {
-  print-color-adjust: exact;
-}
