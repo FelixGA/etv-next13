@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { trackEvent } from "@phntms/next-gtm";
 import { useRouter } from "next/router";
 
 import Form from "./Form";
@@ -21,7 +21,16 @@ function ButtonAnfragen({ carItem }) {
       </Modal>
 
       <button
+        id="jetzt anfragen"
         onClick={() => {
+          trackEvent({
+            event: "ari-458-pritsche-conversion",
+            data: {
+              action: "ari-458-pritsche-conversion",
+              category: "ARI 458 Pritsche",
+              label: "conversion",
+            },
+          });
           setDisabled(true);
           setOpen(true);
         }}

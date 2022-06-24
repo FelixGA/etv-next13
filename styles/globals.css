@@ -88,6 +88,13 @@ select:focus {
   filter: hue-rotate(180deg);
   filter: saturate(3);
 }
+.forz2 {
+  background: linear-gradient(0.3turn, #daeffa, #ffffff, #ddfffb);
+
+  filter: hue-rotate(180deg);
+  filter: saturate(3);
+}
+
 /*  table */
 table {
   width: 100%;

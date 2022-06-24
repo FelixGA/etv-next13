@@ -12,7 +12,7 @@ export default function FunnelBoxTest({ currentFilter, redirecter }) {
     <div
       className={
         router.pathname == "/landingPage"
-          ? "grid grid-cols-2 md:grid-cols-4 bg-white xl:pb-12 gap-4"
+          ? "grid grid-cols-2 md:grid-cols-4 bg-white xl:pb-12 gap-4 scale-90"
           : "flex flex-wrap w-[90%] md:w-full justify-center pb-10 lg:pb-12"
       }
     >
