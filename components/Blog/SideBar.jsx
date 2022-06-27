@@ -6,7 +6,7 @@ import tileYoutube from "/public/images/ETV Rectangle3.jpg";
 
 const data = [
   {
-    href: "http://localhost:3000/sheets/ETVBroschuere.pdf",
+    href: "https://www.elektrotransporter-vergleich.de/sheets/ETVBroschuere.pdf",
     image: tileCatalogue,
     alt: "Catalogue",
   },
