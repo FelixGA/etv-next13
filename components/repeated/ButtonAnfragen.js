@@ -26,7 +26,7 @@ function ButtonAnfragen({ carItem }) {
           trackEvent({
             event: "ari_458_conversion",
             data: {
-              action: "conversion",
+              action: "ari_458_conversion",
               category: "Test category",
               label: "conversion",
             },
