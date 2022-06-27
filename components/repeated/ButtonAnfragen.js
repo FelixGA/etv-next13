@@ -19,15 +19,15 @@ function ButtonAnfragen({ carItem }) {
           <Form open={open} setOpen={setOpen} carItem={carItem} />
         </div>
       </Modal>
-
+      "dadasdas"
       <button
         id="jetzt anfragen"
         onClick={() => {
           trackEvent({
-            event: "ari-458-pritsche-conversion",
+            event: "purchase",
             data: {
-              action: "ari-458-pritsche-conversion",
-              category: "ARI 458 Pritsche",
+              action: "conversion",
+              category: "Test category",
               label: "conversion",
             },
           });
