@@ -17,7 +17,7 @@ const PrintPopUp = ({ carItem }) => {
               onClick={() =>
                 window
                   .open(
-                    `http://localhost:3000/sheets/${carItem.title}.pdf`,
+                    `https://www.elektrotransporter-vergleich.de/sheets/${carItem.title}.pdf`,
                     "_blank"
                   )
                   .print()
