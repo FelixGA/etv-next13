@@ -24,10 +24,10 @@ function ButtonAnfragen({ carItem }) {
         id="jetzt anfragen"
         onClick={() => {
           trackEvent({
-            event: "ari-458-pritsche-conversion",
+            event: "ari_458_conversion",
             data: {
-              action: "ari-458-pritsche-conversion",
-              category: "ARI 458 Pritsche",
+              action: "ari_458_conversion",
+              category: "Test category",
               label: "conversion",
             },
           });
