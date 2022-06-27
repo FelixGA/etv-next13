@@ -24,7 +24,7 @@ function ButtonAnfragen({ carItem }) {
         id="jetzt anfragen"
         onClick={() => {
           trackEvent({
-            event: "purchase",
+            event: "ari_458_conversion",
             data: {
               action: "conversion",
               category: "Test category",
