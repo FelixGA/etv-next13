@@ -25,15 +25,17 @@ const BasicInfo = ({
             </Link>
           </button>
         </div>
-        <Image
-          src={carItem?.src}
-          alt={carItem?.title}
-          width={195}
-          height={140}
-          layout="responsive"
-          objectFit="cover"
-          className="rounded-md lg:rounded-none lg:rounded-l-md"
-        />
+        <div className="w-full">
+          <Image
+            src={carItem?.src}
+            alt={carItem?.title}
+            width={195}
+            height={140}
+            layout="responsive"
+            objectFit="cover"
+            className="rounded-md lg:rounded-none lg:rounded-l-md"
+          />
+        </div>
       </div>
       <div className="flex flex-col pt-4 lg:pt-16 lg:w-1/2">
         {/* DESKTOP VERSION FOR DETAILS TABLE*/}
