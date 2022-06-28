@@ -44,7 +44,7 @@ export default function Form(props) {
   const onError = (errors, e) => console.log("errors", errors, e);
 
   return (
-    <div className="w-full mt-3 rounded-lg">
+    <div className="w-64 mt-3 rounded-lg xs:w-full">
       <div className={send ? "hidden" : ""}>
         {/* FORM */}
         <form
@@ -58,6 +58,16 @@ export default function Form(props) {
               : "flex flex-col px-4 bg-white shadow-dropdown rounded-md mb-20"
           }
         >
+          {router.pathname !== "/kontakt" ? (
+            <div className="flex justify-center pt-6 ">
+              <p className="font-bold text-center sm:text-xl text-blue-lighter">
+                Jetzt kostenfreies Angebot erhalten!
+              </p>
+            </div>
+          ) : (
+            ""
+          )}
+
           <div className="w-full">
             <TextInput
               style={`${errors.firstName ? " focus:border-red-500" : ""}`}
