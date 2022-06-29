@@ -15,7 +15,7 @@ export default function TextInput({
   const fullNameRegex = RegExp(/^[a-zA-Z ]{2,30}$/);
   const router = useRouter();
   return router.pathname == "/" ? (
-    <div className="relative mt-6 text-lg rounded-sm lg:pl-2 w-52 h-14 sm:w-full">
+    <div className="relative mt-6 text-lg rounded-sm lg:pl-2 w-52 sm:w-full">
       <label
         htmlFor={id}
         className={`${extraStyle} relative sm:bottom-6 lg:bottom-8 md:bottom-11 bottom-11 font-bold sm:py-2 text-blue-lighter pl-1`}
