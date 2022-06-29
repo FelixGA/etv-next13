@@ -6,7 +6,6 @@ import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { AiOutlineClose } from "react-icons/ai";
 
 export default function Form(props) {
   const router = useRouter();
@@ -36,6 +35,7 @@ export default function Form(props) {
 
     try {
       const result = await axios.post(`/api/handleForm`, data);
+      if (send) router.push("/thank-you");
     } catch (err) {
       console.log("error", err.response.data.message);
     }
@@ -187,8 +187,6 @@ export default function Form(props) {
                   id="confirm"
                   type="checkbox"
                   className="w-3 h-3 mr-1 sm:w-4 sm:h-4"
-                  /* onClick={() => setCheckedStatus(true)}
-              checked={checkedStatus} */
                   {...field}
                 />
               )}
@@ -258,36 +256,6 @@ export default function Form(props) {
             </div>
           </div>
         </form>
-      </div>
-      <div
-        className={send ? "flex justify-center items-center w-full" : "hidden"}
-      >
-        <p className="px-8 py-8 bg-white border rounded-sm shadow-dropdown sm:text-lg">
-          Vielen Dank für Ihre Nachricht. Wir melden uns umgehend bei Ihnen.
-          <br />
-          Hier können Sie gleich alle
-          <Link href={"/comparePage"}>
-            <a className="py-4 text-blue-600">
-              <span className="pl-2">
-                Elektrotransporter sofort vergleichen.
-              </span>
-            </a>
-          </Link>
-        </p>
-
-        {/* <div className="relative px-2 text-center">
-          <div
-            className={
-              router.path == "/kontakt"
-                ? "absolute bg-blue-dark -top-14 right-6"
-                : "hidden"
-            }
-            onClick={() => setSend(false)}
-          >
-            <AiOutlineClose size={25} color="#fff" />
-          </div>
-        </div> */}
-        {props.children}
       </div>
     </div>
   );
