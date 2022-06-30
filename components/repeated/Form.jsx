@@ -44,7 +44,7 @@ export default function Form(props) {
   const onError = (errors, e) => console.log("errors", errors, e);
 
   return (
-    <div className="w-64 mt-3 rounded-lg xs:w-full">
+    <div className="w-full px-4 mt-3 rounded-lg">
       <div className={send ? "hidden" : ""}>
         {/* FORM */}
         <form
