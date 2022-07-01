@@ -8,7 +8,10 @@ publishedAt: 03/02/2022
 description: >
   Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer
   zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen Zuladung von
-  450 Kilogramm. 
+  450 Kilogramm. Er ist mit verschiedenen Aufbauten erhältlich und eignet sich
+  besonders für kurze Wege und innerstädtischen Verkehr. Mit einem zusätzlichen
+  Reichweiten-Paket bewältigt er jedoch mühelos auch längere Strecken und
+  Überlandfahrten.
 src: /images/ari-458-koffer-3-.jpg
 content:
   - content: >-
@@ -72,7 +75,7 @@ content:
       Weitere erhältliche Ausstattungsoptionen sind ein Satz Winterreifen und eine orangefarbene Rundumleuchte. Auch eine orangefarbene Folierung mit rot-weißer Bestreifung für den Baustellenbereich ist verfügbar. Für sperrige Güter, wie etwa Leitern, sind ein Dachgepäckträger sowie eine Leiterklappe im hinteren Bereich des Kofferdach praktisch. Eine Anhängerkupplung ist ebenso erhältlich, allerdings darf der ARI 458 bisher nur auf Werks- und Privatgelände mit Anhänger gefahren werden.
     image: /images/ari-458-innenraum-fahrerplatz.jpg
     title: Komfort & Ausstattung
-    stars: 4
+    stars: 3
   - content: >-
       ### Bedienung & Fahrbetrieb
 
@@ -117,10 +120,7 @@ content:
 
 
       Die Einsatzmöglichkeiten des ARI 458 sind zahlreich. Je nach Aufbau ist er speziell für Liefer- und Transportbetriebe (Kofferaufbau) und Handwerks- und Baubetriebe (Pritsche und Kipper) interessant. Bei den Individualaufbauten gibt es zudem für Garten- und Landschaftsbaubetriebe praktische Varianten. Neben der Vielseitigkeit liegen die Vorteile des ARI 458 in der guten Raumnutzung, der intuitiven Bedienung sowie den niedrigen Preisen ab 13.700 Euro. Natürlich erhält der Kunde dafür kein Luxusfahrzeug, sondern einen effizienten Elektrotransporter mit sehr guter Raumnutzung und individuell anpassbaren Ausstattungs- und Funktionsmöglichkeiten.
-
-
-      #### Testurteil: 4,4
     title: Fazit
     image: /images/ari-458-kipper-l-mit-laubgitter.jpg
-    stars: 4.4
+    stars: 3.8
 ---
