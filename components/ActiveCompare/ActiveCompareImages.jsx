@@ -64,12 +64,11 @@ export default function ActiveCompareImages({ comparedCars }) {
         ))
       ) : (
         <p className="absolute px-4 text-lg top-24">
-          Sie haben keine Autos zum Vergleich ausgewählt. Zurück zu den
-          Ergebnissen{" "}
+          Sie haben keine Autos zum Vergleich ausgewählt.
           <Link href="/comparePage">
             <a className="visited:text-blue-darker">
-              <span className="font-bold text-blue-dark">
-                zurück zur Ergebnisliste
+              <span className="pl-2 font-bold text-blue-dark">
+                Zurück zur Ergebnisliste
               </span>
             </a>
           </Link>

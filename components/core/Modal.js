@@ -16,7 +16,7 @@ export default function Modal(props) {
               </p> */}
               <div
                 onClick={() => props.setOpen(false)}
-                className="absolute right-1 top-4"
+                className="absolute right-5 top-4"
               >
                 <AiOutlineClose size={18} />
               </div>
