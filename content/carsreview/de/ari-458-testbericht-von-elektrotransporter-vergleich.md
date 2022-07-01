@@ -8,7 +8,7 @@ publishedAt: 03/02/2022
 description: >
   Der ARI 458 ist ein Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer
   zulässigen Höchstgeschwindigkeit von 80 km/h und einer maximalen Zuladung von
-  450 Kilogramm. 
+  450 Kilogramm.
 src: /images/ari-458-koffer-3-.jpg
 content:
   - content: >-
