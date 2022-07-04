@@ -14,7 +14,7 @@ export default function TextInputNewsletter({
 }) {
   const fullNameRegex = RegExp(/^[a-zA-Z ]{2,30}$/);
   const router = useRouter();
-  return router.pathname == "/" || "/landingPage" ? (
+  return router.pathname == "/" || "/home" ? (
     <div className="relative mt-8 text-lg rounded-sm lg:pl-2 w-52 h-14 sm:w-full">
       <label
         htmlFor={id}
