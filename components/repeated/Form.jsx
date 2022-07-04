@@ -44,7 +44,7 @@ export default function Form(props) {
   const onError = (errors, e) => console.log("errors", errors, e);
 
   return (
-    <div className="w-full px-4 mt-3 ">
+    <div className="px-4 mt-3">
       <div className={send ? "hidden" : ""}>
         {/* FORM */}
         <form
@@ -54,7 +54,7 @@ export default function Form(props) {
           onSubmit={handleSubmit(onSubmit, onError)}
           className={
             router.pathname !== "/kontakt"
-              ? "flex flex-col bg-white px-4 rounded-sm"
+              ? "flex flex-col bg-white px-4 rounded-sm w-screen md:w-full md:mx-auto"
               : "flex flex-col px-4 bg-white shadow-dropdown rounded-md mb-20"
           }
         >

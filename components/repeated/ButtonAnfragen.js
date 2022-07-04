@@ -23,14 +23,6 @@ function ButtonAnfragen({ carItem }) {
       <button
         id="jetzt anfragen"
         onClick={() => {
-          trackEvent({
-            event: "ari_458_conversion",
-            data: {
-              action: "ari_458_conversion",
-              category: "Test category",
-              label: "conversion",
-            },
-          });
           setDisabled(true);
           setOpen(true);
         }}
