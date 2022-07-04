@@ -188,7 +188,7 @@ export default function FunnelTest({ getContent, getBrands }) {
   return (
     <div
       className={
-        router.pathname == "/landingPage"
+        router.pathname == "/home"
           ? "flex flex-col flex-1  xl:pb-4 bg-white sm:mt-4"
           : "flex flex-col flex-1"
       }
