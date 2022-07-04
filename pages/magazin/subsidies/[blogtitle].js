@@ -26,7 +26,7 @@ export default function subsidies(props) {
   return (
     <>
       {" "}
-      <Head page={props.getTestReview} />
+      <Head page={props.blogtitle} />
       <BlogPost getBlogContext={getBlogContext} suggestions={suggestions} />
     </>
   );

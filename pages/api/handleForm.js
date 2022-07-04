@@ -14,6 +14,9 @@ module.exports = async (request, response, stageId = 238) => {
   //   api.apiClient.authentications.api_key
   // );
   let deal;
+
+  const encoded = encodeURI(request.body.message);
+
   try {
     deal = await api.addDeal({
       title: `ETV ${request.body.firstName} ${
@@ -31,16 +34,13 @@ module.exports = async (request, response, stageId = 238) => {
       }
      , ${request.body.message}
  `,
-      c4f78672fa0a3a246610b8a6b143af85088c466c: `https://www.elektrotransporter-vergleich.de/sheets/${request.body.message.replace(
-        /\s/g,
-        ""
-      )}.pdf`,
+      c4f78672fa0a3a246610b8a6b143af85088c466c: `https://www.elektrotransporter-vergleich.de/sheets/${encoded}.pdf`,
     });
   } catch (error) {
     console.log("error is", error);
   }
   // c4f78672fa0a3a246610b8a6b143af85088c466c: "skata",
-  // console.log("deal", deal);
+  //console.log("deal", deal);
   response.send(deal.success);
   return deal;
 };

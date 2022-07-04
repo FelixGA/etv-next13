@@ -27,7 +27,7 @@ export default function news(props) {
   return (
     <>
       {" "}
-      <Head page={props.getTestReview} />
+      <Head page={props.blogtitle} />
       <BlogPost getBlogContext={getBlogContext} suggestions={suggestions} />
     </>
   );
