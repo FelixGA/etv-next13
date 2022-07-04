@@ -37,13 +37,16 @@ export default function Trustimages({ getBrands }) {
   return (
     <div
       className={
-        router.pathname == "/"
-          ? "flex justify-center mt-8 overflow-hidden filter-gray"
-          : "flex justify-center mt-4 md:mt-0 lg:mt-8 2xl:mt-16 overflow-hidden filter-gray"
+        router.pathname == "/home"
+          ? "flex justify-center overflow-hidden filter-gray"
+          : "flex justify-center mt-8 overflow-hidden filter-gray"
       }
     >
       {shownImages?.map((image, index) => (
-        <div className="mx-4 my-8 lg:my-24" key={index}>
+        <div
+          className={router.pathname == "/home" ? "p-8" : "mx-4 my-8 lg:my-24"}
+          key={index}
+        >
           <Image
             className="filter grayscale"
             src={image.src}

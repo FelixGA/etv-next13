@@ -12,7 +12,7 @@ export default function FunnelBox({ currentFilter, redirecter }) {
     <div
       className={
         router.pathname == "/home"
-          ? "flex flex-wrap w-[90%] md:w-full justify-center  lg:pb-12"
+          ? "flex flex-wrap w-[90%] md:w-full justify-center lg:pb-12"
           : "flex flex-wrap w-[90%] md:w-full justify-center pb-10 lg:pb-12"
       }
     >

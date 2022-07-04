@@ -112,12 +112,12 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
         </div>
       </div>
       <div className="m-4 mt-0 hero-section-container lg:w-3/4 lg:m-auto">
-        <div className="relative flex justify-center flex-1 main-heading-container lg:text-xl lg:h-[350px]">
+        <div className="relative flex justify-center flex-1 main-heading-container lg:text-xl ">
           <div className="">
             <FunnelTest />
           </div>
         </div>
-        <div className="lg:pt-8 2xl:scale-[115%]">
+        <div className="2xl:scale-[115%]">
           <CarBrandsLogos getBrands={getBrands} />
         </div>
       </div>

@@ -189,11 +189,11 @@ export default function FunnelTest({ getContent, getBrands }) {
     <div
       className={
         router.pathname == "/home"
-          ? "flex flex-col flex-1  xl:pb-4 bg-white sm:mt-4"
+          ? "flex flex-col flex-1 bg-white sm:mt-4"
           : "flex flex-col flex-1"
       }
     >
-      <div className="flex flex-col items-center justify-center flex-1">
+      <div className="flex flex-col items-center justify-center flex-1 min-h-[400px]">
         {!redirecter ? (
           <h2 className="flex items-center mx-12 my-4 text-xl font-bold text-center sm:text-3xl text-black-dark h-28 sm:mx-4">
             {currentFilter.title}
