@@ -45,7 +45,7 @@ export async function getStaticProps(context) {
   let vehicles = await getContent("vehicles", context.locale);
   let blogs = await getContent("blogs", context.locale);
   let brands = await getContent("brands", context.locale);
-  const page = pages.find((page) => page.path === "/");
+  const page = pages.find((page) => page.path === "/home");
   /* mdxs for the homepage articles */
   const header = await serialize(
     page.content.find((content) => content.name === "header").markdown

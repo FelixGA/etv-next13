@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 const BlogArticles = ({ getMarkdownContext, getContent }) => {
   const router = useRouter();
 
-  return router.pathname !== "/landingPage" ? (
+  return router.pathname !== "/home" ? (
     <div className=" lg:flex lg:flex-col h-fit">
       <div className="">
         <FirstArticle getMarkdownContext={getMarkdownContext} />
