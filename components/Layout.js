@@ -2,7 +2,6 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { useStore } from "../components/store";
 import { useState, useEffect } from "react";
-import Form from "./repeated/Form";
 
 export default function Layout(props) {
   const [blogs, setBlogs] = useState(props.blogs);

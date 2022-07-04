@@ -6,7 +6,7 @@ export default function Modal(props) {
       {props.open && (
         <>
           <div
-            className="fixed inset-0 z-40 backdrop-blur-sm bg-grey-darkest bg-opacity-30 "
+            className="fixed inset-0 z-40 backdrop-blur-sm bg-grey-darkest bg-opacity-30"
             onClick={() => props.setOpen(false)}
           />
           <div className="fixed z-50 flex flex-col overflow-y-hidden transform -translate-x-1/2 -translate-y-1/2 rounded-sm top-1/2 left-1/2">
