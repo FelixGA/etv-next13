@@ -6,7 +6,13 @@ const defaultClient = pipedrive.ApiClient.instance;
 let apiToken = defaultClient.authentications.api_key;
 apiToken.apiKey = "f7bd272970fd0a0e33611f38cdb3fc7bf41b7c75";
 
-module.exports = async (request, response, stageId = 238) => {
+module.exports = async (
+  request,
+  person,
+  organization,
+  response,
+  stageId = 238
+) => {
   //   console.log("response", response);
   const api = new pipedrive.DealsApi();
   // console.log(
@@ -15,24 +21,26 @@ module.exports = async (request, response, stageId = 238) => {
   // );
   let deal;
 
-  const encoded = encodeURI(request.body.message);
-
+  // console.log("person", person);
+  const encoded = encodeURI(request.message);
   try {
     deal = await api.addDeal({
-      title: `ETV ${request.body.firstName} ${
-        request.body.message ? request.body.message.substring(0, 20) : "Auto"
+      title: `ETV ${request.firstName} ${
+        request.message ? request.message.substring(0, 20) : "Auto"
       }`,
+      person_id: person.id,
+      // org_id: organization.id,
       stage_id: stageId,
       // summery
       fb07b001b07303f14b2ca37cd10cf492a60d3399: `Name:
-      ${request.body.firstName ? request.body.firstName : "No Name"}} 
-      Firma: ${request.body.firma ? request.body.firma : "Keine Angabe"}
-      Phone: ${request.body.phone ? request.body.phone : "Keine Angabe"}
-      email: ${request.body.emailInput}
-      location: ${request.body.city ? request.body.city : ""}, ${
-        request.body.zipcode ? request.body.zipcode : ""
+      ${request.firstName ? request.firstName : "No Name"}} 
+      Firma: ${request.firma ? request.firma : "Keine Angabe"}
+      Phone: ${request.phone ? request.phone : "Keine Angabe"}
+      email: ${request.emailInput}
+      location: ${request.city ? request.city : ""}, ${
+        request.zipcode ? request.zipcode : ""
       }
-     , ${request.body.message}
+     , ${request.message}
  `,
       c4f78672fa0a3a246610b8a6b143af85088c466c: `https://www.elektrotransporter-vergleich.de/sheets/${encoded}.pdf`,
     });
@@ -40,7 +48,6 @@ module.exports = async (request, response, stageId = 238) => {
     console.log("error is", error);
   }
   // c4f78672fa0a3a246610b8a6b143af85088c466c: "skata",
-  //console.log("deal", deal);
-  response.send(deal.success);
+  // response.send(deal.success);
   return deal;
 };
