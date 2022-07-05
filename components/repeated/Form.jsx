@@ -34,7 +34,8 @@ export default function Form(props) {
     "data", data;
 
     try {
-      const result = await axios.post(`/api/handleForm`, data);
+      const result = await axios.post(`/api/contact`, data);
+      // const result = await axios.post(`/api/handleForm`, data);
       if (send) router.push("/thank-you");
     } catch (err) {
       console.log("error", err.response.data.message);
