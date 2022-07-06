@@ -34,7 +34,10 @@ export default function Form(props) {
     "data", data;
 
     try {
-      const result = await axios.post(`/api/contact`, data);
+      const result = await axios.post(
+        `/api/contact`,
+        data.firma.length > 0 ? data : { ...data, firma: "Privat" }
+      );
       // const result = await axios.post(`/api/handleForm`, data);
       if (send) router.push("/thank-you");
     } catch (err) {
