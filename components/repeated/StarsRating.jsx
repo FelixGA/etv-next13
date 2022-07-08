@@ -13,7 +13,7 @@ const StarsRating = ({ stars }) => {
       : (setFullStar(Math.floor(stars)),
         setEmptyStar(4 - Math.floor(stars)),
         setHalfStar(1));
-  }, [stars]);
+  }, []);
 
   return (
     <div className="flex">
