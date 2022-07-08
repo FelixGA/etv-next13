@@ -5,7 +5,11 @@ import tileFacebook from "/public/images/ETV Rectangle2.jpg";
 import tileYoutube from "/public/images/ETV Rectangle3.jpg";
 
 const data = [
-  { href: "/downloads", image: tileCatalogue, alt: "Catalogue" },
+  {
+    href: "https://www.elektrotransporter-vergleich.de/sheets/ETVBroschuere.pdf",
+    image: tileCatalogue,
+    alt: "Catalogue",
+  },
   {
     href: "/caradvisor",
     image: tileYoutube,
@@ -26,6 +30,8 @@ export default function SideBar(props) {
           <a
             className="flex flex-row my-10 overflow-hidden transition transform shadow-xl hover:scale-105 w-80"
             rel="noreferrer"
+            download={tile.href}
+            target="_blank"
           >
             {
               <Image

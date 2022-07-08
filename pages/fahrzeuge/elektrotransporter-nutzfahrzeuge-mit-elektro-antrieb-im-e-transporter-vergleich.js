@@ -17,13 +17,6 @@ export default function fahrzeuge(props) {
 
   /* ᴄᴀʀs ranking ғɪʟᴛᴇʀ */
   useEffect(() => {
-    // if (!props.page || !dispatch) return;
-
-    // dispatch({
-    //   type: "compareContent",
-    //   data: props.page.content,
-    // });
-
     SetSortedCars(
       props.vehicles.sort((a, b) => a.rating.value - b.rating.value)
     );

@@ -10,9 +10,9 @@ export default function manufacturer(props) {
     props.blogs.filter((item) => item.category === "manufacturer")
   );
 
-  // useEffect(() => {
-  //   SetGetBlogs(props.blogs.filter((item) => item.category === "manufacturer"));
-  // }, [props]);
+  useEffect(() => {
+    SetGetBlogs(props.blogs.filter((item) => item.category === "manufacturer"));
+  }, [props]);
   return (
     <>
       <Head page={props.page} />

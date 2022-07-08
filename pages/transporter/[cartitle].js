@@ -9,7 +9,6 @@ import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
 import { serialize } from "next-mdx-remote/serialize";
 import getSlugs from "/utils/getSlugs";
 import BasicInfo from "../../components/DetailsPage/BasicInfo";
-import PrintPreview from "../../components/core/PrintPreview";
 
 export default function Details(props) {
   /* getCars hook for the slider */
@@ -65,13 +64,6 @@ export default function Details(props) {
         <TopSlider getCars={getCars} getBlogContext={getBlogContext} />
         {/*sticky popup  */}
         <PrintPopUp carItem={carItem} />
-      </div>
-      <div className="hidden print:block">
-        <PrintPreview
-          carItem={carItem}
-          getTestReview={getTestReview}
-          getCarsReview={getCarsReview}
-        />
       </div>
     </>
   );
