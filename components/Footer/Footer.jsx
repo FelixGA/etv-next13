@@ -51,7 +51,7 @@ const Footer = ({ blogs, brands }) => {
               </Link>
             </h3>
             <div className="pt-6 ">
-              <ul className="grid lg:grid-rows-6 2xl:grid-rows-5 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(155px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden">
+              <ul className="grid lg:grid-rows-6 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(155px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden">
                 {brands?.map((blog, index) => (
                   <li
                     className="h-[43px] lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "

@@ -35,13 +35,13 @@ const stageFInder = async (potentialStage) => {
       });
       //here search your result
       result = searcher.search(potentialStage);
-      console.log(
-        "result:",
-        result.map(
-          (stage) =>
-            `id:${stage.id} :${stage.name} IN PIPELINE: ${stage.pipeline_name}`
-        )
-      );
+      // console.log(
+      //   "result:",
+      //   result.map(
+      //     (stage) =>
+      //       `id:${stage.id} :${stage.name} IN PIPELINE: ${stage.pipeline_name}`
+      //   )
+      // );
     })
     .catch((error) => {
       console.error(error);
