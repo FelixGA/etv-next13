@@ -189,8 +189,8 @@ export default function Funnel({ getBrands }) {
     state?.chargingTimeLithiums,
     redirecter,
   ]);
-  console.log(router.pathname);
-  console.log(state.categorys, state.prices);
+  // console.log(router.pathname);
+  // console.log(state.categorys, state.prices);
 
   // console.log("state?.categorys", state?.categorys);
   // console.log("state?.rangeLithiums", state?.rangeLithiums);
