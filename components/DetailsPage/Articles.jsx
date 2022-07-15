@@ -15,20 +15,13 @@ const Articles = ({
   getAllReviews,
 }) => {
   let reviewDate = getCarsReview.publishedAt;
-  let rev = getAllReviews
-    .map((item, index) => {
-      let res;
-      carItem?.relatedReviews == item.slug ? (res = index) : null;
-      return res;
-    })
-    .find((value) => value != undefined);
 
   /* GET THE STAR */
   return (
     <>
       <div className="relative flex flex-col justify-center py-4 print:hidden bg-grey-lighter lg:flex-row ">
-        <div className="flex flex-col flex-wrap xl:px-40">
-          <h3 className="w-full px-4 mt-4 text-2xl font-bold text-black-darkest">
+        <div className="flex flex-col flex-wrap xl:px-56 2xl:px-72">
+          <h3 className="w-full px-4 mt-4 text-3xl font-bold text-black-darkest">
             Testbericht von {carItem.title}
           </h3>
           <div className="">
@@ -38,14 +31,14 @@ const Articles = ({
                 {getCarsReview?.content?.map((infos, index) => (
                   <div
                     key={index}
-                    className={`${styles.articles} "relative mb-8"`}
+                    className={`${styles.articles} "relative mb-8 "`}
                   >
                     <div className="relative top-0 left-0 flex flex-col xs:flex-row ">
                       <h2 className="px-4 pt-2 font-bold xs:py-4">
                         {infos.title}
                       </h2>
 
-                      <div className="px-4 py-2 xs:pt-5 xs:pl-2 ">
+                      <div className="px-4 py-2 xs:pt-5 xs:pl-2">
                         {infos.stars ? (
                           <StarsRating stars={infos.stars} />
                         ) : null}
@@ -73,18 +66,6 @@ const Articles = ({
               "kommt bald"
             )}
           </div>
-          {/* {getCarsReview && (
-            <Link href={`/magazin/reviews/${getCarsReview?.slug}`}>
-              <a target="_blank" className="text-blue-500">
-                <button
-                  // disabled={getTestReview ? true : false}
-                  className="flex items-center justify-center w-48 my-6 text-white rounded-md bg-blue-dark h-14 print:hidden"
-                >
-                  Testbericht lesen
-                </button>
-              </a>
-            </Link>
-          )} */}
         </div>
       </div>
       <div className="flex justify-center my-8">
@@ -97,7 +78,7 @@ const Articles = ({
       {/* other articles section */}
       {/* First Article */}{" "}
       {getBlogContext?.src && (
-        <div className="flex flex-col w-full bg-white lg:flex-row-reverse 2xl:px-44 print:hidden">
+        <div className="flex flex-col w-full bg-white lg:flex-row-reverse 2xl:px-56 print:hidden">
           {getBlogContext?.src && (
             <div className="relative w-full px-4 pt-4 m-auto mr-4 border-t lg:border-none lg:w-1/2 print:hidden lg:rounded-r-md">
               <Link href={`/magazin/${getBlogContext?.slug}`} passHref>

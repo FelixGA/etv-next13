@@ -28,7 +28,7 @@ export default function SideBar(props) {
       {data.map((tile) => (
         <Link href={tile.href} key={tile.href}>
           <a
-            className="flex flex-row my-10 overflow-hidden transition transform shadow-xl hover:scale-105 w-80"
+            className="relative flex flex-row my-10 overflow-hidden transition transform shadow-xl hover:scale-105"
             rel="noreferrer"
             download={tile.href}
             target="_blank"
