@@ -70,7 +70,7 @@ export default function activeCompare(props) {
         </button>
       </div>
       {/* KEYS AND ITEMS FOR COMPARE */}
-      <div className="grid grid-flow-col pb-20 overflow-x-scroll scrollbar-hide">
+      <div className="grid grid-flow-col pb-20 overflow-x-scroll scrollbar-hide ">
         <div className="w-full">
           <div className="relative grid grid-flow-col overflow-x-scroll scrollbar-hide">
             <ActiveCompareImages comparedCars={comparedCars} />
