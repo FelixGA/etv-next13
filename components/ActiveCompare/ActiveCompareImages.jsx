@@ -24,6 +24,7 @@ export default function ActiveCompareImages({ comparedCars }) {
               objectFit="contain"
               width={380}
               height={250}
+              layout="responsive"
             ></Image>
 
             <div className="lg:absolute lg:top-0 left-4">
@@ -50,6 +51,7 @@ export default function ActiveCompareImages({ comparedCars }) {
                     objectFit="cover"
                     width={380}
                     height={250}
+                    layout="responsive"
                   ></Image>
 
                   <div className="lg:absolute lg:top-0 left-4">

@@ -16,6 +16,7 @@ export default function Teasers({ teasers }) {
                     width={600}
                     height={300}
                     objectFit="cover"
+                    layout="responsive"
                   />
                 )}
               </a>
