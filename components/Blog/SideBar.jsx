@@ -11,7 +11,7 @@ const data = [
     alt: "Catalogue",
   },
   {
-    href: "/caradvisor",
+    href: "https://www.elektrotransporter-vergleich.de/caradvisor",
     image: tileYoutube,
     alt: "Kaufberater",
   },
@@ -31,7 +31,6 @@ export default function SideBar(props) {
             className="relative flex flex-row my-10 overflow-hidden transition transform shadow-xl hover:scale-105"
             rel="noreferrer"
             download={tile.href}
-            target="_blank"
           >
             {
               <Image
