@@ -20,7 +20,7 @@ const Articles = ({
   return (
     <>
       <div className="relative flex flex-col justify-center py-4 print:hidden bg-grey-lighter lg:flex-row ">
-        <div className="flex flex-row flex-col flex-wrap my-10 overflow-hidden transition transform shadow-xl xl:px-56relative hover:scale-105 2xl:px-72">
+        <div className="flex flex-col flex-wrap xl:px-72">
           <h3 className="w-full px-4 mt-4 text-3xl font-bold text-black-darkest">
             Testbericht von {carItem.title}
           </h3>
