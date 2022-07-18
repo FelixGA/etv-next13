@@ -27,20 +27,17 @@ export default function SideBar(props) {
     <div className="hidden mr-2 lg:block xl:mr-0 ">
       {data.map((tile) => (
         <Link href={tile.href} key={tile.href}>
-          <a
-            className="relative flex flex-row my-10 overflow-hidden transition transform shadow-xl hover:scale-105"
-            rel="noreferrer"
-            download={tile.href}
-          >
-            {
+          <a className="" rel="noreferrer" download={tile.href}>
+            <div className="h-[250px] w-[320px] hover:scale-105 transition transform overflow-hidden shadow-xl my-10">
               <Image
                 src={tile.image}
                 alt={tile.alt}
-                width={500}
-                height={392}
+                width={320}
+                height={250}
                 objectFit="cover"
+                layout="responsive"
               />
-            }
+            </div>
           </a>
         </Link>
       ))}

@@ -99,7 +99,7 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
   return (
     <div className="relative overflow-hidden">
       <div className="absolute hidden w-full lg:flex h-[400px] forz border-black-darkest justify-end">
-        <div className="w-[1000px] opacity-20  ">
+        <div className="w-[1000px] opacity-20  h-[400px]">
           <Image
             src="/images/main.jpeg"
             width={1000}
@@ -107,6 +107,7 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
             alt="Kleintransporter"
             objectFit="contain"
             layout="responsive"
+            priority
           />
         </div>
       </div>
