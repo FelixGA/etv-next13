@@ -20,9 +20,10 @@ export default function caradvisor(props) {
       <Funnel getCars={getCars} getBrands={getBrands} />
       <div className="relative flex justify-between 2xl:h-36">
         {/* human image */}
-        <div className="absolute bottom-0 right-0 hidden w-44 xl:w-64 2xl:w-96 2xl:right-6 2xl:block">
+        <div className="absolute bottom-0 right-0 hidden w-44 xl:w-52 2xl:w-72 2xl:right-2 2xl:block ">
           <Image
             src="/images/beraterNew.png"
+            alt="kaufberater"
             width={450}
             height={600}
             layout="responsive"
