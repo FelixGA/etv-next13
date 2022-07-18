@@ -98,29 +98,29 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
 
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute hidden w-full lg:block h-[400px] forz border-black-darkest ">
-        <div className="w-full text-right opacity-20 ">
+      <div className="absolute hidden w-full lg:flex h-[400px] forz border-black-darkest justify-end">
+        <div className="w-[1000px] opacity-20  ">
           <Image
             src="/images/main.jpeg"
             width={1000}
             height={400}
             alt="Kleintransporter"
             objectFit="contain"
-            className=""
+            layout="responsive"
           />
         </div>
       </div>
       <div className="m-4 mt-0 hero-section-container lg:w-3/4 lg:m-auto">
-        <div className="relative flex justify-center flex-1 main-heading-container lg:text-xl lg:h-[350px]">
+        <div className="relative flex justify-center flex-1 main-heading-container lg:text-xl lg:h-[350px] ">
           {/* IMAGE */}
-          <div className="relative items-center hidden pl-4 pr-8 w-fit sm:flex">
+          <div className="relative w-[250px] h-[250px] hidden md:block self-center pt-10 2xl:pt-0 px-4 2xl:px-2">
             <Image
               alt="medal"
-              className=""
               src="/images/siegel2.png"
               width={250}
               height={250}
               objectFit="contain"
+              layout="responsive"
             />
           </div>
           {/* TITLE AND DESC */}
