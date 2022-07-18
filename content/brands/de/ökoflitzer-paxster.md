@@ -5,7 +5,7 @@ description: Paxster ist ein norwegischer Hersteller von 100% elektrischen
   einer effizienteren Verteilung von Post, Zeitungen, Paketen, Lebensmitteln und
   Speisen beitragen sollen.
 src: /images/paxster-logo.jpeg
-slug: ökoflitzer paxster
+slug: ökoflitzer-paxster
 websiteLink: https://paxster.no/
 content: >-
   ### Überblick 
