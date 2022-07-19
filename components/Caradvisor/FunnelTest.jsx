@@ -20,7 +20,7 @@ import { useRouter } from "next/router";
 import CarBrandsLogos from "../repeated/CarBrandsLogos";
 import FunnelBoxTest from "./FunnelBoxTest";
 
-export default function FunnelTest({ getContent, getBrands }) {
+export default function FunnelTest({ getBrands, test }) {
   const router = useRouter();
   const filtersData = [
     {
@@ -165,9 +165,9 @@ export default function FunnelTest({ getContent, getBrands }) {
   const [redirecter, setRedirecter] = useState(false);
   useEffect(() => {
     if (!state) return;
-    if (redirecter && router.pathname == "/caradvisor") {
+    if (redirecter && router.pathname == "/caradvisorFunnel") {
       /*  here is the solution! */
-      Router.push("/comparePage");
+      Router.push("/thank-you-funnel");
       setRedirecter(false);
     }
     state?.categorys.length > 0 ? setCurrentFilter(filtersData[1]) : null;
@@ -218,6 +218,7 @@ export default function FunnelTest({ getContent, getBrands }) {
           </div>
         )}
         <div className="">
+          <h3>{test}</h3>
           <FunnelBoxTest
             currentFilter={currentFilter}
             redirecter={redirecter}

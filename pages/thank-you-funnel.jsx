@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import getContent from "/utils/getContent";
 
-const thankYouOffer = (props) => {
+const thankYouFunnel = (props) => {
   return (
     <div className="h-[47vh] flex items-center justify-center px-8">
       <h2>
@@ -23,7 +23,7 @@ const thankYouOffer = (props) => {
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   //let vehicles = await getContent("vehicles", context.locale);
-  const page = pages.find((page) => page.path === "/thank-you-offer");
+  const page = pages.find((page) => page.path === "/thank-you-funnel");
   let brands = await getContent("brands", context.locale);
   if (!page) {
     return {
@@ -39,4 +39,4 @@ export async function getStaticProps(context) {
     },
   };
 }
-export default thankYouOffer;
+export default thankYouFunnel;

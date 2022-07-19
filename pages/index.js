@@ -72,7 +72,7 @@ export default function Home(props) {
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
-  let blogs = await getContent("blogs", context.locale);
+
   let brands = await getContent("brands", context.locale);
   const page = pages.find((page) => page.path === "/");
   /* mdxs for the homepage articles */
@@ -100,7 +100,6 @@ export async function getStaticProps(context) {
       context: { header, eAutoAdvisor, substities, newsletter },
       page,
       vehicles,
-      blogs,
       brands,
     },
   };

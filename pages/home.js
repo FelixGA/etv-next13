@@ -26,11 +26,7 @@ export default function Home(props) {
       <div className="mt-8 lg:mt-0">
         <CompareTool />
       </div>
-      <HeroSectionB
-        getContent={props.page}
-        getMarkdownContext={props.context}
-        getBrands={props.brands}
-      />
+      <HeroSectionB getBrands={props.brands} />
       <div className="mb-10">
         <TopSlider getCars={props.vehicles} getContent={props.page} />
       </div>
@@ -43,7 +39,6 @@ export default function Home(props) {
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
-  let blogs = await getContent("blogs", context.locale);
   let brands = await getContent("brands", context.locale);
   const page = pages.find((page) => page.path === "/home");
   /* mdxs for the homepage articles */
@@ -71,7 +66,6 @@ export async function getStaticProps(context) {
       context: { header, eAutoAdvisor, substities, newsletter },
       page,
       vehicles,
-      blogs,
       brands,
     },
   };
