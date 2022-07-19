@@ -7,11 +7,11 @@ import { useState, useEffect } from "react";
 const thankYouFunnel = (props) => {
   const router = useRouter();
 
-  useEffect(() => {
+  setTimeout(() => {
     if (router.pathname == "/thank-you-funnel") {
       router.push("/comparePage");
     }
-  }, [router]);
+  }, "1500");
 
   return (
     <div className="h-[47vh] flex items-center justify-center px-8">
