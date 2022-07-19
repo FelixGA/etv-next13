@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "../store";
 import { useRouter } from "next/router";
+import Form from "../../components/repeated/Form";
 
 import Router from "next/router";
 export default function FunnelBoxTest({ currentFilter, redirecter }) {
@@ -20,8 +21,8 @@ export default function FunnelBoxTest({ currentFilter, redirecter }) {
         return (
           <div
             onClick={() => {
-              item.categoryName === "category"
-                ? Router.push("/caradvisor")
+              item.categoryName === "category" /* ? <Form /> : null; */
+                ? Router.push("/caradvisorFunnel")
                 : null;
               dispatch({
                 type: item.categoryName,
