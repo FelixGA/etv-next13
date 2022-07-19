@@ -23,7 +23,7 @@ const thankYou = (props) => {
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   //let vehicles = await getContent("vehicles", context.locale);
-  const page = pages.find((page) => page.path === "/thank-you");
+  const page = pages.find((page) => page.path === "/thank-you-offer");
   let brands = await getContent("brands", context.locale);
   if (!page) {
     return {
