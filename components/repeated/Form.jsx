@@ -41,8 +41,10 @@ export default function Form(props) {
       // const result = await axios.post(`/api/handleForm`, data);
       if (send && router.pathname == "/kontakt") {
         router.push("/thank-you-kontakt");
-      } else {
+      } else if (send && router.pathname == "/caradvisor") {
         router.push("/thank-you-offer");
+      } else {
+        router.push("/thank-you-funnel");
       }
     } catch (err) {
       console.log("error", err.response.data.message);

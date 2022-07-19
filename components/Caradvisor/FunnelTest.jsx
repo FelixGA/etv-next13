@@ -19,8 +19,9 @@ import Router from "next/router";
 import { useRouter } from "next/router";
 import CarBrandsLogos from "../repeated/CarBrandsLogos";
 import FunnelBoxTest from "./FunnelBoxTest";
+import Form from "../repeated/Form";
 
-export default function FunnelTest({ getBrands, test }) {
+export default function FunnelTest({ getBrands, test, test2 }) {
   const router = useRouter();
   const filtersData = [
     {
@@ -163,6 +164,7 @@ export default function FunnelTest({ getBrands, test }) {
   const { state, dispatch } = useStore();
   const [currentFilter, setCurrentFilter] = useState(filtersData[0]);
   const [redirecter, setRedirecter] = useState(false);
+  const [form, setForm] = useState(false);
   useEffect(() => {
     if (!state) return;
     if (redirecter && router.pathname == "/caradvisorFunnel") {
@@ -173,7 +175,7 @@ export default function FunnelTest({ getBrands, test }) {
     state?.categorys.length > 0 ? setCurrentFilter(filtersData[1]) : null;
     state?.rangeLithiums.length > 0 ? setCurrentFilter(filtersData[2]) : null;
     state?.loadingWeights.length > 0 ? setCurrentFilter(filtersData[3]) : null;
-    state?.prices.length > 0 ? setRedirecter(true) : null;
+    state?.prices.length > 0 ? setForm(true) : null;
   }, [
     state?.prices,
     state?.loadingWeights,
@@ -181,53 +183,60 @@ export default function FunnelTest({ getBrands, test }) {
     state?.maxSpeeds,
     state?.chargingTimeLithiums,
     state?.categorys,
-
+    form,
     redirecter,
   ]);
 
   return (
-    <div
-      className={
-        router.pathname == "/home"
-          ? "flex flex-col flex-1 bg-white sm:mt-4"
-          : "flex flex-col flex-1"
-      }
-    >
-      <div className="flex flex-col items-center justify-center flex-1 min-h-[400px]">
-        {!redirecter ? (
-          <h2 className="flex items-center mx-12 my-4 text-xl font-bold text-center sm:text-3xl text-black-dark h-28 sm:mx-4">
-            {currentFilter.title}
-          </h2>
-        ) : (
-          <div className="px-4 pt-8">
-            <h3 className="text-xl text-center sm:text-3xl ">
-              Wir suchen das passende Fahrzeug für Sie.
-            </h3>
-            <div className="w-[90%] lg:w-full lg:scale-125 m-auto ">
-              <CarBrandsLogos getBrands={getBrands} />
-            </div>
-            <div className="flex justify-center ">
-              <Image
-                src="/images/loading.gif"
-                width={100}
-                height={100}
-                className="loading"
-                objectFit="contain"
+    <div>
+      {form ? (
+        <div className="flex justify-center w-full">
+          <Form />
+        </div>
+      ) : (
+        <div
+          className={
+            router.pathname == "/home"
+              ? "flex flex-col flex-1 bg-white sm:mt-4"
+              : "flex flex-col flex-1"
+          }
+        >
+          <div className="flex flex-col items-center justify-center flex-1 min-h-[400px]">
+            {!redirecter ? (
+              <h2 className="flex items-center mx-12 my-4 text-xl font-bold text-center sm:text-3xl text-black-dark h-28 sm:mx-4">
+                {currentFilter.title}
+              </h2>
+            ) : (
+              <div className="px-4 pt-8">
+                <h3 className="text-xl text-center sm:text-3xl ">
+                  Wir suchen das passende Fahrzeug für Sie.
+                </h3>
+                <div className="w-[90%] lg:w-full lg:scale-125 m-auto ">
+                  <CarBrandsLogos getBrands={getBrands} />
+                </div>
+                <div className="flex justify-center ">
+                  <Image
+                    src="/images/loading.gif"
+                    width={100}
+                    height={100}
+                    className="loading"
+                    objectFit="contain"
+                  />
+                </div>
+              </div>
+            )}
+            <div className="">
+              <FunnelBoxTest
+                currentFilter={currentFilter}
+                redirecter={redirecter}
               />
             </div>
           </div>
-        )}
-        <div className="">
-          <h3>{test}</h3>
-          <FunnelBoxTest
-            currentFilter={currentFilter}
-            redirecter={redirecter}
-          />
+          <div className={!redirecter ? "hidden" : "visible"}>
+            <ButtonForAlleTransporter />
+          </div>
         </div>
-      </div>
-      <div className={!redirecter ? "hidden" : "visible"}>
-        <ButtonForAlleTransporter />
-      </div>
+      )}
     </div>
   );
 }
