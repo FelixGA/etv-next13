@@ -42,7 +42,7 @@ export default function Form(props) {
       if (send && router.pathname == "/kontakt") {
         router.push("/thank-you-kontakt");
       } else {
-        router.push("/thank-you");
+        router.push("/thank-you-offer");
       }
     } catch (err) {
       console.log("error", err.response.data.message);

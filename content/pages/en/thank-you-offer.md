@@ -1,5 +1,5 @@
 ---
 title: thankyou
-path: /thank-you
+path: /thank-you-offer
 description: sf
 ---
