@@ -1,17 +1,13 @@
 import Image from "next/image";
-import { useState } from "react";
 import { useStore } from "../../components/store";
-import Link from "next/link";
-import { MDXRemote } from "next-mdx-remote";
+
 import CarBrandsLogos from "../repeated/CarBrandsLogos";
-import OptionItem from "./OptionItem";
-import styles from "../HeroSection/HeroSection.module.css";
-import CompareTool from "../repeated/CompareTool";
+
 import FunnelTest from "../Caradvisor/FunnelTest";
 
 //import filtersData from "../filtersData.json";
 //
-const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
+const HeroSectionB = ({ getBrands }) => {
   const { state, dispatch } = useStore();
   // console.log(getContent, "from HeroSection");
   const details = [
@@ -93,9 +89,6 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
       ],
     },
   ];
-  const [choosePrice, setChoosePrice] = useState(details[0].options[0].value);
-  const [chooseRange, setChooseRange] = useState(details[1].options[0].value);
-  const [chooseWeight, setChooseWeight] = useState(details[2].options[0].value);
 
   return (
     <div className="relative overflow-hidden">
@@ -114,7 +107,7 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
       <div className="m-4 mt-0 hero-section-container lg:w-3/4 lg:m-auto">
         <div className="relative flex justify-center flex-1 main-heading-container lg:text-xl ">
           <div className="">
-            <FunnelTest />
+            <FunnelTest test="test" />
           </div>
         </div>
         <div className="2xl:scale-[115%]">
@@ -124,4 +117,4 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
     </div>
   );
 };
-export default HeroSection;
+export default HeroSectionB;
