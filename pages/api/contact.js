@@ -4,14 +4,18 @@
 import handlePerson from "./handle-person";
 import handleOrganization from "./handle-organization";
 import handleForm from "./handleForm";
+import handleNewsletter from "./handleNewsletter";
+import handleKontakt from "./handleKontakt";
 
 export default async function handler(req, res) {
   try {
     const { body } = req;
     const organization = await handleOrganization(body);
+    console.log(body);
 
     const person = await handlePerson(body, organization);
-    await handleForm(body, person, organization);
+    if (3 === 1) await handleForm(body, person, organization);
+    else await handleKontakt(body, person, organization);
 
     res.status(200).json({ status: "ok" });
   } catch (e) {
