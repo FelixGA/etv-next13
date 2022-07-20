@@ -26,7 +26,7 @@ module.exports = async (
   try {
     deal = await api.addDeal({
       title: `ETV ${request.firstName} ${
-        request.message ? request.message.substring(0, 20) : "Auto"
+        request.message ? request.message.replace("stageId238", "") : "Auto"
       }`,
       person_id: person.id,
       // org_id: organization.id,
@@ -40,7 +40,7 @@ module.exports = async (
       location: ${request.city ? request.city : ""}, ${
         request.zipcode ? request.zipcode : ""
       }
-     , ${request.message}
+     , ${request.message.replace("stageId238", "")}
  `,
       c4f78672fa0a3a246610b8a6b143af85088c466c: `https://www.elektrotransporter-vergleich.de/sheets/${encoded}.pdf`,
     });

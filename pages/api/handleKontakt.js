@@ -24,9 +24,7 @@ module.exports = async (
   // console.log("person", person);
   try {
     deal = await api.addDeal({
-      title: `ETV ${request.firstName} ${
-        request.message ? request.message.substring(0, 20) : "Auto"
-      }`,
+      title: `ETV ${request.firstName} `,
       person_id: person.id,
       // org_id: organization.id,
       stage_id: stageId,
@@ -39,7 +37,7 @@ module.exports = async (
       location: ${request.city ? request.city : ""}, ${
         request.zipcode ? request.zipcode : ""
       }
-     , ${request.message}
+     , ${request.message.replace("stageId834", "")}
  `,
       c4f78672fa0a3a246610b8a6b143af85088c466c: `https://www.elektrotransporter-vergleich.de/sheets/ETVBroschuere.pdf`,
     });
