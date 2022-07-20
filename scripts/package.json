@@ -3,9 +3,10 @@
   "name": "scripts",
   "version": "1.0.0",
   "license": "Unlicense",
+  "type": "module",
  
   "scripts": {
-    
+    "type": "module",
     "flatten-images": "cd strapi-v4-migration; rm -rf images/* && flatten-directory --rootdir=\"downloads\" --outputdir=\"images\""
   },
   "dependencies": {

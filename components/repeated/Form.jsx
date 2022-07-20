@@ -1,4 +1,5 @@
 import TextArea from "../core/TextArea";
+import TextAreaContact from "../core/TextAreaContact";
 import TextInput from "../core/TextInput";
 import { useForm, Controller } from "react-hook-form";
 import Image from "next/image";
@@ -41,9 +42,9 @@ export default function Form(props) {
       // const result = await axios.post(`/api/handleForm`, data);
       if (send && router.pathname == "/kontakt") {
         router.push("/thank-you-kontakt");
-      } else if (send && router.pathname == "/caradvisor") {
+      } else if (send && router.pathname == "/comparePage") {
         router.push("/thank-you-offer");
-      } else {
+      } else if (router.pathname == "/caradvisorFunnel") {
         router.push("/thank-you-funnel");
       }
     } catch (err) {
@@ -150,17 +151,31 @@ export default function Form(props) {
             />
           </div>
           <div className="w-full">
-            <TextArea
-              style={`${errors.message ? " focus:border-red-500" : ""}`}
-              placeholder={"z.B. 030 - 123 45 67"}
-              register={register}
-              label={"Nachricht:"}
-              id={"message"}
-              type={"textarea"}
-              registerData={"message"}
-              carItem={props.carItem}
-              required={true}
-            />
+            {router.pathname == "/kontakt" ? (
+              <TextAreaContact
+                style={`${errors.message ? " focus:border-red-500" : ""}`}
+                placeholder={"z.B. 030 - 123 45 67"}
+                register={register}
+                label={"Nachricht:"}
+                id={"message"}
+                type={"textarea"}
+                registerData={"message"}
+                carItem={props.carItem}
+                required={true}
+              />
+            ) : (
+              <TextArea
+                style={`${errors.message ? " focus:border-red-500" : ""}`}
+                placeholder={"z.B. 030 - 123 45 67"}
+                register={register}
+                label={"Nachricht:"}
+                id={"message"}
+                type={"textarea"}
+                registerData={"message"}
+                carItem={props.carItem}
+                required={true}
+              />
+            )}
           </div>
           <div className="w-64 text-black lg:w-full">
             <p className="text-red-500">
