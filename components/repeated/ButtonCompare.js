@@ -33,12 +33,12 @@ function ButtonCompare(props) {
   /* VERGLEICHEN BUTTON INPUT */
 
   const buttonInput = (
-    <>
-      <span className="items-center justify-center hidden w-4 h-4 px-2 my-auto mr-2 font-bold bg-white rounded-full text-blue-dark md:flex">
-        &nbsp;+&nbsp;
-      </span>
-      <span className="my-auto">Vergleichen</span>
-    </>
+    <div className="flex items-center justify-center gap-2">
+      <div className="items-center justify-center hidden w-4 h-4 font-bold bg-white rounded-full text-blue-dark md:flex">
+        <span className="">+</span>
+      </div>
+      <span className="">Vergleichen</span>
+    </div>
   );
 
   return (

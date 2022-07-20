@@ -39,7 +39,13 @@ export default function Form(props) {
         data.firma.length > 0 ? data : { ...data, firma: "Privat" }
       );
       // const result = await axios.post(`/api/handleForm`, data);
-      if (send) router.push("/thank-you");
+      if (send && router.pathname == "/kontakt") {
+        router.push("/thank-you-kontakt");
+      } else if (send && router.pathname == "/caradvisor") {
+        router.push("/thank-you-offer");
+      } else {
+        router.push("/thank-you-funnel");
+      }
     } catch (err) {
       console.log("error", err.response.data.message);
     }
@@ -212,22 +218,41 @@ export default function Form(props) {
             </label>{" "}
           </div>
           <div className="flex w-full px-1 pb-4">
-            <button
-              onClick={() => {
-                !errors.emailInput &&
-                !errors.firstName &&
-                watch().firstName.length > 0 &&
-                watch().emailInput.length > 0 &&
-                watch().message &&
-                watch().checkbox
-                  ? setSend(true)
-                  : setSend(false);
-              }}
-              type="submit"
-              className="flex-grow px-2 py-2 text-white transition rounded-lg bg-blue-darker hover:bg-blue-light"
-            >
-              Unverbindlich und kostenlos anfragen
-            </button>
+            {router.pathname !== "/kontakt" ? (
+              <button
+                onClick={() => {
+                  !errors.emailInput &&
+                  !errors.firstName &&
+                  watch().firstName.length > 0 &&
+                  watch().emailInput.length > 0 &&
+                  watch().message &&
+                  watch().checkbox
+                    ? setSend(true)
+                    : setSend(false);
+                }}
+                type="submit"
+                className="flex-grow px-2 py-2 text-white transition rounded-lg bg-blue-darker hover:bg-blue-light"
+              >
+                Unverbindlich und kostenlos anfragen
+              </button>
+            ) : (
+              <button
+                onClick={() => {
+                  !errors.emailInput &&
+                  !errors.firstName &&
+                  watch().firstName.length > 0 &&
+                  watch().emailInput.length > 0 &&
+                  watch().message &&
+                  watch().checkbox
+                    ? setSend(true)
+                    : setSend(false);
+                }}
+                type="submit"
+                className="flex-grow px-2 py-2 text-white transition rounded-lg bg-blue-darker hover:bg-blue-light"
+              >
+                Nachricht senden
+              </button>
+            )}
           </div>
           {/* IMAGES */}
 

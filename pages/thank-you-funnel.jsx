@@ -1,8 +1,18 @@
 import React from "react";
 import Link from "next/link";
 import getContent from "/utils/getContent";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 
-const thankYou = (props) => {
+const thankYouFunnel = (props) => {
+  const router = useRouter();
+
+  setTimeout(() => {
+    if (router.pathname == "/thank-you-funnel") {
+      router.push("/comparePage");
+    }
+  }, "1500");
+
   return (
     <div className="h-[47vh] flex items-center justify-center px-8">
       <h2>
@@ -23,7 +33,7 @@ const thankYou = (props) => {
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   //let vehicles = await getContent("vehicles", context.locale);
-  const page = pages.find((page) => page.path === "/thank-you");
+  const page = pages.find((page) => page.path === "/thank-you-funnel");
   let brands = await getContent("brands", context.locale);
   if (!page) {
     return {
@@ -39,4 +49,4 @@ export async function getStaticProps(context) {
     },
   };
 }
-export default thankYou;
+export default thankYouFunnel;

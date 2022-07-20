@@ -20,7 +20,7 @@ const TopSliderCard = (props) => {
                 }
                 passHref
               >
-                <a>
+                <a className="w-[380px] h-[270px]">
                   {sliderItem.src && (
                     <Image
                       className="rounded-sm "
@@ -29,6 +29,7 @@ const TopSliderCard = (props) => {
                       objectFit="cover"
                       width={380}
                       height={270}
+                      layout="responsive"
                     />
                   )}
                 </a>

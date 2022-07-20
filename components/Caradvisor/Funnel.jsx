@@ -189,8 +189,8 @@ export default function Funnel({ getBrands }) {
     state?.chargingTimeLithiums,
     redirecter,
   ]);
-  console.log(router.pathname);
-  console.log(state.categorys, state.prices);
+  // console.log(router.pathname);
+  // console.log(state.categorys, state.prices);
 
   // console.log("state?.categorys", state?.categorys);
   // console.log("state?.rangeLithiums", state?.rangeLithiums);
@@ -215,13 +215,14 @@ export default function Funnel({ getBrands }) {
             <div className="w-[90%] lg:w-full lg:scale-125 m-auto ">
               <CarBrandsLogos getBrands={getBrands} />
             </div>
-            <div className="flex justify-center ">
+            <div className="w-24 mx-auto">
               <Image
                 src="/images/loading.gif"
                 width={100}
                 height={100}
                 className="loading"
                 objectFit="contain"
+                layout="responsive"
               />
             </div>
           </div>

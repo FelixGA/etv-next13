@@ -118,6 +118,7 @@ const Header = () => {
                     height={18}
                     layout="responsive"
                     objectFit="cover"
+                    alt="kaufberater"
                   />
                 </div>
                 <span className="pr-3 text-xs xs:text-base ">Kaufberater</span>

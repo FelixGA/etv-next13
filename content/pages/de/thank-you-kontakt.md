@@ -1,6 +1,6 @@
 ---
 title: thankyou
-path: /thank-you
+path: /thank-you-kontakt
 description: erh
 src: /images/medal.png
 ---

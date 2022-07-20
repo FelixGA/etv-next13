@@ -44,7 +44,11 @@ export default function Trustimages({ getBrands }) {
     >
       {shownImages?.map((image, index) => (
         <div
-          className={router.pathname == "/home" ? "p-8" : "mx-4 my-8 lg:my-24"}
+          className={
+            router.pathname == "/home"
+              ? "p-8"
+              : "mx-4 my-8 lg:my-24 w-[200px] h-[50px]"
+          }
           key={index}
         >
           <Image
@@ -54,6 +58,7 @@ export default function Trustimages({ getBrands }) {
             width={200}
             height={50}
             objectFit="contain"
+            layout="responsive"
           />
         </div>
       ))}

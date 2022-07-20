@@ -18,7 +18,9 @@ module.exports = {
         "auto-fill": "repeat(auto-fill, minmax(0, 1fr))",
       },
       screens: {
-        xs: "410px",
+        xs: "350px",
+        xxs: "280px",
+        xxxs: "200px",
       },
       backgroundImage: {
         "radial-green": "radial-gradient(circle, #00774c 0%, #004225 100%)",
