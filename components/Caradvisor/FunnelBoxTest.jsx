@@ -14,7 +14,7 @@ export default function FunnelBoxTest({ currentFilter, redirecter }) {
       className={
         router.pathname == "/home"
           ? "grid grid-cols-2 sm:grid-cols-4 bg-white gap-4 w-full scale-[85%]"
-          : "flex flex-wrap w-[90%] md:w-full justify-center pb-10 lg:pb-12"
+          : "grid grid-cols-2 sm:grid-cols-4  gap-4 w-full scale-[85%]"
       }
     >
       {currentFilter.options.map((item, index) => {
@@ -31,7 +31,7 @@ export default function FunnelBoxTest({ currentFilter, redirecter }) {
               });
             }}
             key={index}
-            className="flex flex-col items-center justify-center transition bg-white cursor-pointer w-28 h-28 shadow-dropdown sm:w-40 lg:w-44 lg:h-4w-44 xl:w-56 sm:h-40 xl:h-56 sm:mb-8 hover:scale-110 2xl:w-72 2xl:h-72"
+            className="flex flex-col items-center justify-center transition bg-white cursor-pointer shadow-dropdown sm:mb-8 hover:scale-110 min-w-[140px] lg:w-[190px] min-h-[140px] lg:h-[190px] md:w-[190px] md:h-[190px] xl:w-[220px] xl:h-[220px]"
           >
             <div className="w-full p-4">
               <Image
@@ -43,7 +43,7 @@ export default function FunnelBoxTest({ currentFilter, redirecter }) {
                 layout="responsive"
               />
             </div>
-            <p className="py-4 text-sm font-bold text-black lg:text-lg xl:text-xl">
+            <p className="py-4 text-sm font-bold text-center text-black lg:text-lg xl:text-xl">
               {item.name}
             </p>
           </div>
