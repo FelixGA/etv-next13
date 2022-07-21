@@ -11,7 +11,7 @@ module.exports = async (
   person,
   organization,
   response,
-  stageId = 238
+  stageId = 834
 ) => {
   //   console.log("response", response);
   const api = new pipedrive.DealsApi();
@@ -22,12 +22,9 @@ module.exports = async (
   let deal;
 
   // console.log("person", person);
-  const encoded = encodeURI(request.message);
   try {
     deal = await api.addDeal({
-      title: `ETV ${request.firstName} ${
-        request.message ? request.message.replace("stageId238", "") : "Auto"
-      }`,
+      title: `ETV ${request.firstName} `,
       person_id: person.id,
       // org_id: organization.id,
       stage_id: stageId,
@@ -40,14 +37,13 @@ module.exports = async (
       location: ${request.city ? request.city : ""}, ${
         request.zipcode ? request.zipcode : ""
       }
-     , ${request.message.replace("stageId238", "")}
+     , ${request.message.replace("stageId834", "")}
  `,
-      c4f78672fa0a3a246610b8a6b143af85088c466c: `https://www.elektrotransporter-vergleich.de/sheets/${encoded}.pdf`,
+      c4f78672fa0a3a246610b8a6b143af85088c466c: `https://www.elektrotransporter-vergleich.de/sheets/ETVBroschuere.pdf`,
     });
   } catch (error) {
     console.log("error is", error);
   }
-  // c4f78672fa0a3a246610b8a6b143af85088c466c: "skata",
   // response.send(deal.success);
   return deal;
 };

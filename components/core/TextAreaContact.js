@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
-import { useStore } from "../store";
 
-export default function TextArea({
+export default function TextAreaContact({
   register,
   label,
   id,
@@ -15,8 +14,6 @@ export default function TextArea({
   carItem,
 }) {
   const router = useRouter();
-  const { state, dispatch } = useStore();
-
   router.pathname == "/kontakt" ? (required = true) : (required = false);
   return (
     <div
@@ -38,20 +35,7 @@ export default function TextArea({
         {...register(registerData, {
           required: required,
         })}
-        defaultValue={
-          carItem
-            ? `${carItem} Request stageId238`
-            : state?.prices &&
-              state?.rangeLithiums &&
-              state?.categorys &&
-              state?.loadingWeights
-            ? `Transporter Anfrage mit: price: ${state?.prices[0].min}-${state?.prices[0].max},
-                Aufbautyp: ${state?.categorys[0].min},
-                Reichweite: ab ${state?.rangeLithiums[0].min} klm,
-                Zuladung:ab ${state?.loadingWeights[0].min} kg,
-                stageId834`
-            : null
-        }
+        defaultValue={carItem ? carItem : null}
         type={type}
         id={id}
       ></textarea>
