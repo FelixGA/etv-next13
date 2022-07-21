@@ -58,7 +58,11 @@ export default function Form(props) {
   const onError = (errors, e) => console.log("errors", errors, e);
 
   return (
-    <div className="px-4 mt-3">
+    <div
+      className={
+        !router.pathname == "/caradvisorFunnel" ? "px-4 mt-3" : "border mt-3"
+      }
+    >
       <div className={send ? "hidden" : ""}>
         {/* FORM */}
         <form
