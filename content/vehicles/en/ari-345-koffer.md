@@ -5,13 +5,10 @@ price: 7395
 relatedBlogs: ARI-345-Koffer
 relatedReviews: ari-345-testbericht-von-elektrotransporter-vergleich
 description: Der ARI 345 Koffer ist ein dreirädriges Lastenmoped mit offener
-  Fahrerkabine und einem geschlossenen Koffer-Aufbau. Das Fahrzeug ist in drei
-  Größen mit bis zu 1,49 Meter Ladelänge und knapp 2 m³ Ladevolumen erhältlich.
-  Das Fahrzeug kann bereits von Jugendlichen mit dem Mopedführerschein der
-  Klasse AM gefahren werden. Mit Kofferaufbau und 325 kg Nutzlast eignet sich
-  der ARI 345 speziell für den innerstädtischen Einsatz bei Lieferdiensten,
-  Handwerkern und Dienstleistern aller Art. Der Aufbau kann außerdem mit einer
-  Kühlanlage sowie zusätzlichen Seitentüren ausgestattet werden.
+  Fahrerkabine und geschlossenem Koffer-Aufbau. Das Fahrzeug ist in drei Größen
+  mit bis zu 1,49 Meter Ladelänge und knapp 2 m³ Ladevolumen erhältlich. Es kann
+  bereits von Jugendlichen mit dem Mopedführerschein der Klasse AM gefahren
+  werden.
 src: /images/ari-345-lastentrike-koffer-seitenansicht.jpg
 category: Koffer
 typeClass: L2E
