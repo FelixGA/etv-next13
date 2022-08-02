@@ -5,9 +5,8 @@ price: 36490
 relatedBlogs: nur beispiel
 relatedReviews: maxus-edeliver-3-testbericht-von-elektrotransporter-vergleich
 description: Der Maxus eDeliver 3 ist ein Elektrotransporter der Klasse N1, der
-  in zwei Fahrzeuglängen erhältlich ist und rund 850 Kilogramm Nutzlast
-  aufnehmen kann. Er erreicht eine abgeriegelte Höchstgeschwindigkeit von 120
-  km/h.
+  in zwei Fahrzeuglängen erhältlich ist und rund 850 kg Nutzlast aufnehmen kann.
+  Er erreicht eine abgeriegelte Höchstgeschwindigkeit von 120 km/h.
 src: /images/edeliver-3-.jpeg
 category: Kasten
 typeClass: N1
