@@ -6,7 +6,7 @@ relatedBlogs: beispiel
 relatedReviews: garia-utility-testbericht-von-elektrotransporter-vergleich
 description: Der Garia Utility ist ein Elektro-Kleintransporter der
   Fahrzeugklasse L7e mit einer Nutzlast von knapp 750 Kilogramm in der Version
-  "City". Er verfügt über zwei Sitzplätze und je nach Ausführung über eine
+  "Park". Er verfügt über zwei Sitzplätze und je nach Ausführung über eine
   Höchstgeschwindigkeit von 30-55 km/h.
 src: /images/garia-utility-ec-mech-cage-side.jpeg
 category: Pritsche
