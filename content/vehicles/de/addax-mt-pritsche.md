@@ -4,8 +4,8 @@ name: addax-mt-pritsche
 price: 35450
 relatedBlogs: beispiel
 relatedReviews: addax-mt-testbericht-von-elektrotransporter-vergleich
-description: Der Addax MT ist ein Elektro-Kleintransporter der Fahrzeugklasse N1
-  und verfügt über eine maximale Nutzlast von 1000 Kilogramm und eine
+description: Der Addax MT ist ein Elektro-Kleintransporter der Fahrzeugklasse
+  N1. Er verfügt über eine maximale Nutzlast von 1000 Kilogramm und eine
   Anhängelast von 2000 Kilogramm.
 src: /images/addax-mt-laubgitter-wiki.jpg
 category: Pritsche
