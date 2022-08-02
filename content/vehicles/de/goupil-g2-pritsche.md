@@ -5,10 +5,9 @@ price: 19700
 relatedBlogs: beispiel  bitte nicht ändern
 relatedReviews: goupil-g2-testbericht-von-elektrotransporter-vergleich
 description: Der Goupil G2 ist ein Elektro-Kleintransporter der Kategorie L7e
-  mit einer praxiserprobten Reichweite von 45 bis 100 Kilometer (je nach
-  Batterie).  Die maximale Zuladung des Fahrzeugs liegt bei 500 Kilogramm und
-  die maximale Höchstgeschwindigkeit bei 30 km/h. Das Fahrzeug bietet Platz für
-  2 Personen.
+  mit einer Reichweite von 45 bis 100 km (je nach Batterie).  Die maximale
+  Zuladung des Fahrzeugs liegt bei 500 Kilogramm und die maximale
+  Höchstgeschwindigkeit bei 30 km/h. Das Fahrzeug bietet Platz für 2 Personen.
 src: /images/goupil-g2.png
 category: Pritsche
 typeClass: L7E
