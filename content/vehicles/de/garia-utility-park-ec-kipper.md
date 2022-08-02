@@ -4,8 +4,10 @@ name: garia-utility-park-ec-kipper
 price: 30000
 relatedBlogs: beispiel
 relatedReviews: garia-utility-testbericht-von-elektrotransporter-vergleich
-description: Der Garia Utility ist Elektro-Kleintransporter der Fahrzeugklasse
-  L7e mit einer Nutzlast von von knapp 750 Kilogramm in der Version City.
+description: Der Garia Utility ist ein Elektro-Kleintransporter der
+  Fahrzeugklasse L7e mit einer Nutzlast von knapp 750 Kilogramm in der Version
+  "City". Er verfügt über zwei Sitzplätze und eine Höchstgeschwindigkeit von 45
+  km/h.
 src: /images/garia-utility-tilting-cargo-bed.jpeg
 category: Kipper
 typeClass: L7E
