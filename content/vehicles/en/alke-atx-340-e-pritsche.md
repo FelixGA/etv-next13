@@ -1,12 +1,12 @@
 ---
-title: Alke ATX 340 E
+title: Alke ATX 340 E Pritsche
 name: alke-atx-340-e-pritsche
 price: 27000
 relatedBlogs: beispiel
 relatedReviews: alke-atx-serie-testbericht-von-elektrotransporter-vergleich
-description: Der Alke ATX 340 E ist ein Elektrotansporter der Fahrzeugklasse N1
-  mit einer Höchstgeschwindigkeit von 44 km/h und je nach Akku variierenden
-  Reichweite von 90-150 Kilometern.
+description: Der Alke ATX 340 E ist ein Elektrotransporter der Fahrzeugklasse N1
+  mit einer Höchstgeschwindigkeit von 44 km/h und einer Reichweite von 90-150
+  Kilometern. Er  ist in verschiedenen Aufbauvarianten verfügbar.
 src: /images/alke-atx.jpg
 loadingWeight:
   key: Nutzlast
@@ -65,7 +65,7 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
+  key: Sterne
   value: 3.6
 guarantee:
   key: Garantie Fahrzeug
