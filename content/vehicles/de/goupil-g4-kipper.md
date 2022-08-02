@@ -4,7 +4,7 @@ name: goupil-g4-kipper
 price: 23630
 relatedBlogs: beispiel  bitte nicht ändern
 relatedReviews: goupil-g4-testbericht-von-elektrotransporter-vergleich
-description: Der Goupil G4 ist ein zweisitziger Elektro-Kleintransporter der
+description: Der Goupil G4 ist ein zweisitziger Elektro-Transporter der
   Kategorie L7e (mit Traktionsbatterie) oder N1 (mit Lithiumbatterie). Er
   verfügt - je nach Akku - über eine Reichweite von 35 bis 90 km, eine Zuladung
   von maximal 1200 kg und eine Höchstgeschwindigkeit von 50 km/h.
