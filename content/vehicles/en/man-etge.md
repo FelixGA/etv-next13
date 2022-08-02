@@ -134,7 +134,9 @@ relatedBlogs: >-
   4,4
 relatedReviews: man-etge-testbericht-von-elektrotransporter-vergleich
 description: Der MAN TGE basiert auf dem nahezu baugleichen VW Crafter der
-  zweiten Generation.
+  zweiten Generation. Der E-Transporter der Klasse N1 verfügt über 3 Sitzplätze,
+  90 km/h Höchstgeschwindigkeit und eine Reichweite von 110 km. Die Nutzlast des
+  Fahrzeugs beträgt 982 kg.
 src: /images/man-etge-gelb-1024x768.jpg
 loadingWeight:
   key: Nutzlast
