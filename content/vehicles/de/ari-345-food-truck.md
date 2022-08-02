@@ -5,13 +5,10 @@ price: 12750
 relatedBlogs:
   content: ""
 relatedReviews: ari-345-testbericht-von-elektrotransporter-vergleich
-description: Der ARI 345 Food Truck hat alles am Start, was Gastronomen und
-  Caterer brauchen, um Ihr Gastro-Unternehmen nachhaltig ins Rollen zu bringen.
-  Eine luftige Fahrerkabine, einen großen Verkaufstresen, elektrischen Antrieb
-  und - jede Menge Stauraum in Form von Schubladen und Fächern. Der Food Truck
-  auf drei Rädern ist individuell gestaltbar und kann an verschiedenste
-  Gastrokonzepte angepasst werden. Möglich sind zum Beispiel der Einbau eines
-  Kaffeetanks, eines Hot-Dog-Moduls oder einer Grillstation.
+description: Der ARI 345 Food Truck verfügt über eine luftige Fahrerkabine,
+  einen großen Verkaufstresen sowie verschiedene Schubladen und Fächer. Er ist
+  individuell gestaltbar und kann an verschiedenste Gastrokonzepte angepasst
+  werden.
 src: /images/ari-345-food-truck-heckansicht.jpg
 category: Koffer
 typeClass: L2E
