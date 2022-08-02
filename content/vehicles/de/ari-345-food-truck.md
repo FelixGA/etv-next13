@@ -5,10 +5,10 @@ price: 12750
 relatedBlogs:
   content: ""
 relatedReviews: ari-345-testbericht-von-elektrotransporter-vergleich
-description: Der ARI 345 Food Truck verfügt über eine luftige Fahrerkabine,
-  einen großen Verkaufstresen sowie verschiedene Schubladen und Fächer. Er ist
-  individuell gestaltbar und kann an verschiedenste Gastrokonzepte angepasst
-  werden.
+description: Der dreirädrige ARI 345 Food Truck verfügt über hoch klappbare
+  Flügeltüren, einen großen Verkaufstresen sowie verschiedene Schubladen und
+  Fächer. Er ist individuell gestaltbar und für verschiedenste Gastrokonzepte
+  geeignet.
 src: /images/ari-345-food-truck-heckansicht.jpg
 category: Koffer
 typeClass: L2E
