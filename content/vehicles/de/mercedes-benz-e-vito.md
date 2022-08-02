@@ -5,7 +5,7 @@ price: 45990
 relatedBlogs: nur beispiel
 relatedReviews: mercedes-benz-evito-testbericht-von-elektrotransporter-vergleich
 description: Der Mercedes-Benz eVito Kastenwagen ist ein Elektrotransporter der
-  Klasse N1, welcher in zwei Fahrzeuglängen erhältlich ist. Das Fahrzeug
+  Fahrzeugklasse N1, welcher in zwei Fahrzeuglängen erhältlich ist. Das Fahrzeug
   erreicht eine Höchstgeschwindigkeit von 80 bis 120 km/h und kann rund 900 kg
   Nutzlast aufnehmen.
 src: /images/mb-e-vito-front.jpg
