@@ -7,16 +7,11 @@ relatedBlogs:
   content: ""
   image: ""
 relatedReviews: aixam-pro-etruck-testbericht-von-elektrotransporter-vergleich
-description: >-
-  Aixam ist ein französischer Hersteller von sogenannten “Leichtkraftfahrzeugen”
-  mit einem Vertrieb in Deutschland. Mit dem Aixam Pro hat das Unternehmen ein
-  leichtes Nutzfahrzeug im Programm, welches mit Dieselmotoren (“D Truck”) sowie
-  Elektroantrieb (“e-Truck”) erhältlich ist. Die hier vorgestellte
-  Elektro-Version gehört zur EG-Fahrzeugkategorie L6e, welche Leichtfahrzeuge
-  bis zu einem Leergewicht von 425 Kilogramm (ohne Akkus) bezeichnet.
-
-
-  Der Elektrotransporter  in zwei Aufbautypen verfügbar: als Pritsche sowie mit Kofferaufbau (“Van”). Durch seine kleinen Außenmaße ist das Fahrzeug speziell für den Transport von Waren und Gerätschaften in engen Straßen und begrenztem Gelände konzipiert.
+description: Der Aixam Pro e-Truck ist ein leichtes Nutzfahrzeug mit
+  Elektroantrieb der Fahrzeugklasse L6e. Der  Elektrotransporter ist als
+  Pritsche sowie mit Kofferaufbau ("Van") verfügbar. Dank seiner kompakten Maße
+  eignet er sich speziell für den Einsatz in engen Straßen und auf beengtem
+  Gelände.
 src: /images/aixam-pro-etruck-koffer.jpeg
 category: Koffer
 typeClass: L6E
