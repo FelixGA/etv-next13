@@ -7,11 +7,10 @@ relatedBlogs:
   content: ""
   image: ""
 relatedReviews: aixam-pro-etruck-testbericht-von-elektrotransporter-vergleich
-description: Der Aixam Pro e-Truck ist ein leichtes Nutzfahrzeug mit
-  Elektroantrieb der Fahrzeugklasse L6e. Der  Elektrotransporter ist als
-  Pritsche sowie mit Kofferaufbau ("Van") verfügbar. Dank seiner kompakten Maße
-  eignet er sich speziell für den Einsatz in engen Straßen und auf beengtem
-  Gelände.
+description: Der Aixam Pro e-Truck ist ein leichtes Nutzfahrzeug der
+  Fahrzeugklasse L6e. Der  Elektrotransporter ist als Pritsche sowie mit
+  Kofferaufbau ("Van") verfügbar. Dank seiner kompakten Maße eignet er sich
+  speziell für den Einsatz in engen Straßen und auf beengtem Gelände.
 src: /images/aixam-pro-etruck-koffer.jpeg
 category: Koffer
 typeClass: L6E
