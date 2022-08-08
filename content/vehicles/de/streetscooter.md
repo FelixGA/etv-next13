@@ -6,7 +6,7 @@ relatedBlogs: thg-foerderung-fuer-kleintransporter-von-ari
 relatedReviews: streetscooter-testbericht-von-elektrotransporter-vergleich
 description: Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von
   der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit
-  Kofferaufbau im Umlauf und kann reichlich 1.000 Kilogramm Nutzlast aufnehmen.
+  Kofferaufbau im Umlauf und kann rund 1.000 kg Nutzlast aufnehmen.
 src: /images/streetscooter-front.jpg
 category: Koffer
 typeClass: N1

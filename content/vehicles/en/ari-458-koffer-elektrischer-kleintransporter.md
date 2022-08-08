@@ -5,7 +5,8 @@ price: 14100
 relatedBlogs: ari-458-koffer-elektrischer-kleintransporter
 relatedReviews: ari-458-testbericht-von-elektrotransporter-vergleich
 description: Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI
-  Motors mit 80 km/h Höchstgeschwindigkeit.
+  Motors mit 80 km/h Höchstgeschwindigkeit und vielfältigen Zusatzoptionen. Er
+  kann zwischen 531 und 648 kg zuladen und ist in drei Aufbaugrößen erhältlich.
 src: /images/ari-458-koffer-3-.jpg
 category: Koffer
 loadingWeight:
@@ -65,7 +66,7 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
+  key: Sterne
   value: 3.8
 guarantee:
   key: Garantie Fahrzeug
@@ -143,5 +144,4 @@ wheelbase:
   value: "2300"
   baseUnit: mm
 ---
-
-Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI Motors mit 80 km/h Höchstgeschwindigkeit.
+Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI Motors mit 80 km/h Höchstgeschwindigkeit. Dank optionaler Aufbauten lässt er sich an individuelle Transportbedürfnisse anpassen. Wenngleich er vor allem für den urbanen Verkehr konzipiert wurde, bewältigt er mit  zusätzlichem Reichweiten-Paket auch längere Strecken problemlos.

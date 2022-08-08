@@ -134,9 +134,9 @@ relatedBlogs: >-
 
   4,4
 relatedReviews: peugeot-e-expert-testbericht-von-elektrotransporter-vergleich
-description: Der Peugeot e-Expert ist ein elektrischer Kastenwagen, der in zwei
-  Längen angeboten ist und über 900 Kilogramm Nutzlast aufnehmen kann. Die
-  Höchstgeschwindigkeit liegt bei 130 km/h.
+description: Der Peugeot e-Expert ist ein elektrischer Kastenwagen der Klasse
+  N1, der in zwei Längen angeboten wird und über 900 kg Nutzlast aufnehmen kann.
+  Die Höchstgeschwindigkeit liegt bei 130 km/h.
 src: /images/peugeot-e-expert-front.jpg
 category: Kasten
 typeClass: N1

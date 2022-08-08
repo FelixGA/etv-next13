@@ -4,9 +4,9 @@ name: tropos-able-xt2-kipper
 price: 31000
 relatedBlogs: beispiel
 relatedReviews: tropos-able-xt-testbericht-von-elektrotransporter-vergleich
-description: Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e
-  mit einer Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in
-  zwei Akku-Varianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
+description: Der Tropos Able XT ist ein Leicht-Elektrotransporter der Klasse L7e
+  mit einer Nutzlast von bis zu 700 kg. Das Fahrzeug kann in zwei Akku-Varianten
+  mit 65 km/h bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
 src: /images/tropos-kipper-01-768x360.jpg
 category: Kipper
 typeClass: L7E

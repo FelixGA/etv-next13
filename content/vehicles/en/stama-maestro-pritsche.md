@@ -3,15 +3,10 @@ title: Stama Maestro Pritsche
 name: stama-maestro-pritsche
 relatedBlogs: nur beispiel
 relatedReviews: stama-maestro-mtn-testbericht-von-elektrotransporter-vergleich
-description: >-
-  Der Stama Maestro kam 2019 auf den Markt und ist das bisher größte Fahrzeug
-  des Herstellers. Außerdem ist er unter dem Namen Addax in Deutschland
-  verfügbar. Er ist mit fester oder hydraulisch kippbaren Pritsche verfügbar,
-  welche entweder mit klappbaren Seitenwänden oder mit einem hohen Gitteraufbau
-  versehen ist.
-
-
-  Technisch gibt es den Stama Maestro in zwei Versionen: Zum einen als MT10 mit 48 Volt-Motor und als MT15 mit  72 Volt-Motor angetrieben. Beide Versionen sind mit Lithium-Ionen-Akkus zur Energiespeicherung ausgestattet, die eine Kapazität von 10,2 kWh bzw. 14,4 kWh besitzen.
+description: Der Stama Maestro, in Deutschland unter dem Namen "Addax" geführt,
+  kam 2019 auf den Markt und ist das bisher größte Fahrzeug des Herstellers. Es
+  ist mit fester oder hydraulisch kippbarer Pritsche verfügbar, welche mit
+  klappbaren Seitenwänden oder einem hohen Gitteraufbau versehen ist.
 src: /images/stama-maestro-front-1024x683.jpg
 loadingWeight:
   key: Nutzlast
@@ -70,7 +65,7 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Ausreichend
+  key: Sterne
   value: 2.4
 guarantee:
   key: Garantie Fahrzeug

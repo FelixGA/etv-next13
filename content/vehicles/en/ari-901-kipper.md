@@ -5,11 +5,9 @@ price: 40995
 relatedBlogs: nur beispiel
 relatedReviews: ari-901-testbericht-von-elektrotransporter-vergleich
 description: Der ARI 901 Kipper ist ein leistungsstarker Elektrotransporter der
-  Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung aufnehmen. Das Fahrzeug
-  eignet sich speziell für den Einsatz bei Lieferanten, Baufirmen, Handwerkern,
-  Kommunen sowie Landschaftsbaubetrieben. Der ARI 901 Kipper ist in drei Größen
-  mit bis zu 5 m² Ladevolumen erhältlich. Die drei wählbaren Kipper-Größen
-  ermöglichen eine perfekte Anpassung an die Anforderung Ihres Unternehmens.
+  Fahrzeugklasse N1 mit rund 900 Kilogramm Zuladung. Er ist in drei Größen mit
+  bis zu 5m² Ladevolumen erhältlich und eignet sich für den Einsatz bei
+  Lieferanten, Baufirmen, Handwerkern oder Kommunen.
 src: /images/901-kipper.png
 category: Kipper
 loadingWeight:
