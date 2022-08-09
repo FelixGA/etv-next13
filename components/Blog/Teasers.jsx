@@ -2,11 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Teasers({ teasers }) {
+  console.log(teasers);
   return (
     <div>
       <div className="grid grid-rows-3 gap-5 md:grid-rows-1 md:grid-cols-3 md:gap-2 ">
-        {teasers?.map((teaser, index) => (
-          <Link href={`/magazin/${teaser.category}/${teaser.slug}`} key={index}>
+        {teasers?.map((teaser) => (
+          <Link
+            href={`/magazin/${teaser.category}/${teaser.slug}`}
+            key={teaser.slug}
+          >
             <div className="transition duration-200 border cursor-pointer shadow-dropdown hover:scale-[103%]">
               <a>
                 {teaser.title && (
