@@ -2,16 +2,15 @@ import React from "react";
 import Link from "next/link";
 import getContent from "/utils/getContent";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
 
 const thankYouFunnel = (props) => {
   const router = useRouter();
 
   setTimeout(() => {
-    if (router.pathname == "/thank-you-funnel") {
+    if (process.browser && router.pathname == "/thank-you-funnel") {
       router.push("/comparePage");
     }
-  }, "2000");
+  }, "1500");
 
   return (
     <div className="h-[47vh] flex items-center justify-center px-8">
