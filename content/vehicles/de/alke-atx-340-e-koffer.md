@@ -4,9 +4,10 @@ name: alke-atx-340-e-koffer
 price: 27000
 relatedBlogs: beispiel
 relatedReviews: alke-atx-serie-testbericht-von-elektrotransporter-vergleich
-description: Der Alke ATX 340 E ist ein Elektrotansporter der Fahrzeugklasse N1
-  mit einer Höchstgeschwindigkeit von 44 km/h und je nach Akku variierenden
-  Reichweite von 90-150 Kilometern.
+description: Der Alke ATX 340 E ist ein Elektrotransporter der Fahrzeugklasse N1
+  mit einer Höchstgeschwindigkeit von 44 km/h und einer Reichweite von 90-150
+  Kilometern. Er ist in zwei Aufbauvarianten erhältlich und kann bis zu 327 kg
+  zuladen.
 src: /images/alke-koffer.jpg
 category: Koffer
 typeClass: N1

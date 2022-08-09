@@ -4,13 +4,9 @@ name: ari-458-kipper
 price: 17590
 relatedBlogs: beispiel
 relatedReviews: ari-458-testbericht-von-elektrotransporter-vergleich
-description: Der ARI 458 Kipper bietet eine offene Ladefläche mit Seitenwänden,
-  welche in den beiden Größen jeweils 1,56 m² bzw. 1,86 m² beträgt. Für die
-  Sicherung der Ladung sind zudem Verzurr-Ösen sowie eine stabile Plane für das
-  Pritschen-Modell verfügbar. Die Nutzlast des ARI 458 Kipper liegt bei rund 530
-  Kilogramm, welche durch verschiedene Aufbauten leicht variieren kann. So sind
-  selbst mit einem Fahrer von 80 Kilogramm noch Beladungen von circa 450
-  Kilogramm möglich.
+description: Der ARI 458 Kipper ist ein elektrischer Kleintransporter, der über
+  eine offene Ladefläche mit Seitenwänden verfügt. Er kann bis zu 530 kg zuladen
+  und ist mit verschiedenen Aufbauten erhältlich.
 src: /images/ARI-458-Kipper-L-Heck-300x199.jpg
 category: Kipper
 loadingWeight:
@@ -70,7 +66,7 @@ seats:
   key: Sitzplätze
   value: 2
 rating:
-  key: Gut
+  key: "Testurteil "
   value: 3.8
 guarantee:
   key: Garantie Fahrzeug

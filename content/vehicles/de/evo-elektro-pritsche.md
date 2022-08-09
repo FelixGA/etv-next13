@@ -4,8 +4,9 @@ name: evo-elektro-pritsche
 price: 30000
 relatedBlogs: beispiel  bitte nicht ändern
 relatedReviews: evo-transporter-elektro-testbericht-von-elektrotransporter-vergleich
-description: Der EVO ist ein Transporter der Klasse N1 und eignet sich speziell
-  für den Einsatz in Städten, Parkanlagen und auf Friedhöfen.
+description: Der EVO ist ein Elektro-Transporter der Klasse N1 mit 825 kg
+  Nutzlast und 120 km Reichweite. Er eignet sich speziell für den Einsatz in
+  Städten, Parkanlagen und auf Friedhöfen.
 src: /images/evo-pritsche.jpg
 category: Pritsche
 typeClass: N1

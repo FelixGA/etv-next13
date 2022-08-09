@@ -14,9 +14,9 @@ relatedBlogs:
   image: /images/ari-458-food-truck-5-.jpg
 relatedReviews: evum-a-car-testbericht-von-elektrotransporter-vergleich
 description: Das Evum A-Car ist ein Elektrotransporter mit Allradantrieb der
-  Kategorie N1. Die Höchstgeschwindigkeit des Fahrzeugs liegt bei 70 km/h und
-  die maximale Nutzlast bei rund einer Tonne. Das Fahrzeug ist im Rahmen eines
-  Forschungsprojekts der Technischen Universität München entwickelt worden.
+  Kategorie N1. Das Fahrzeug verfügt über eine Höchstgeschwindigkeit von 70 km/h
+  und eine Nutzlast von rund einer Tonne. Entwickelt wurde es im Rahmen eines
+  Forschungsprojekts der Technischen Universität München.
 src: /images/acar-lastmile-08-210412.jpeg
 category: Koffer
 typeClass: N1

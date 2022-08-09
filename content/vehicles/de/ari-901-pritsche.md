@@ -5,12 +5,9 @@ price: 35995
 relatedBlogs: nur beispiel
 relatedReviews: ari-901-testbericht-von-elektrotransporter-vergleich
 description: Der ARI 901 Pritsche ist ein leistungsstarker Elektrotransporter
-  der Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung aufnehmen. Das
-  Fahrzeug eignet sich speziell für den Einsatz bei Lieferanten, Baufirmen,
-  Handwerkern, Kommunen sowie Landschaftsbaubetrieben. Das Fahrzeug ist in drei
-  Pritschen-Größen mit bis zu 5 m² Ladevolumen erhältlich. Die drei wählbaren
-  Pritschen-Größen ermöglichen eine perfekte Anpassungen an die Anforderung
-  Ihres Unternehmens.
+  der Fahrzeugklasse N1 mit rund 900 kg Zuladung.  Das Fahrzeug ist in drei
+  Pritschen-Größen mit bis zu 5 m² Ladevolumen erhältlich und eignet sich für
+  den Einsatz bei Lieferanten, Baufirmen, Handwerkern oder Kommunen.
 src: /images/ari-901-pritsche-in-kommunalorange.jpg
 category: Pritsche
 typeClass: N1

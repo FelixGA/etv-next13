@@ -4,9 +4,9 @@ name: renault-master-e-tech
 price: 54900
 relatedBlogs: nur beispiel
 relatedReviews: renault-master-e-tech-testbericht-von-elektrotransporter-vergleich
-description: Der Renault Master E-Tech (früher “Master Z.E.”) ist ein
-  Kastenwagen der Fahrzeugklasse N1, der zwischen 900 und 1.050 Kilogramm
-  Nutzlast aufnehmen kann und 100 km/h Höchstgeschwindigkeit erreicht.
+description: "Der Renault Master E-Tech (früher: “Master Z.E.”) ist ein
+  Kastenwagen der Fahrzeugklasse N1, der zwischen 900 und 1.050 kg Nutzlast
+  aufnehmen kann und 100 km/h Höchstgeschwindigkeit erreicht."
 src: /images/renault-master-front.jpg
 category: Kasten
 typeClass: N1

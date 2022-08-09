@@ -5,9 +5,9 @@ price: 53400
 relatedBlogs: nur beispiel
 relatedReviews: maxus-ev-80-testbericht-von-elektrotransporter-vergleich
 description: Der Maxus EV 80 ist ein großer Elektrotransporter, der als
-  Kastenwagen 910 Kilogramm Nutzlast aufnehmen kann und eine
-  Höchstgeschwindigkeit von 100 km/h erreicht. Das Fahrzeug ist ebenso als
-  Chassis-Version ohne Aufbau verfügbar.
+  Kastenwagen 910 kg Nutzlast aufnehmen kann und eine Höchstgeschwindigkeit von
+  100 km/h erreicht. Das Fahrzeug ist auch als Chassis-Version ohne Aufbau
+  verfügbar.
 src: /images/maxus-ev80-kasten-front.jpg
 loadingWeight:
   key: Nutzlast

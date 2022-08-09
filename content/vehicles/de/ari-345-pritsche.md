@@ -5,11 +5,10 @@ price: 6995
 relatedBlogs:
   content: ""
 relatedReviews: ari-345-testbericht-von-elektrotransporter-vergleich
-description: Der ARI 345 Pritsche ist ein dreirädriges Lastenmoped mit offener
-  Fahrerkabine und einer kippbaren Pickup-Ladefläche. Das Fahrzeug ist in drei
-  Größen mit bis zu 1,55 Meter Ladelänge und rund 1,8 m² Ladefläche erhältlich.
-  Das Lastenmoped kann bereits von Jugendlichen mit dem Mopedführerschein der
-  Klasse AM gefahren werden.
+description: Das ARI 345 Pritsche ist ein dreirädriges Lastenmoped mit offener
+  Fahrerkabine und kippbarer Ladefläche. Das Fahrzeug ist in drei Größen mit bis
+  zu 1,55 Meter Ladelänge und rund 1,8 m² Ladefläche erhältlich und kann mit dem
+  Mopedführerschein der Klasse AM gefahren werden.
 src: /images/ari-345-lastentrike-pritsche-mit-europalette.jpg
 category: Pritsche
 typeClass: L2E
