@@ -84,7 +84,6 @@ export async function getStaticProps(context) {
   vehicles = vehicles
     .filter((item, index) => item.category === vehicle.category)
     .filter((item, index) => item.name !== context.params.cartitle);
-  console.log(vehicles.length, "test");
   let brands = await getContent("brands", context.locale);
 
   /* get related reviews*/

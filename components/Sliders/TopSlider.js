@@ -21,7 +21,6 @@ const sellingRanking = {
 };
 
 const TopSlider = ({ getBlogContext, getCars }) => {
-  console.log(getCars);
   const container = useRef();
 
   const [sliderData, setSliderData] = useState(

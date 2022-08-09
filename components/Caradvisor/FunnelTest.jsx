@@ -171,7 +171,6 @@ export default function FunnelTest({ getBrands, test, test2 }) {
     if (redirecter && router.pathname == "/caradvisorFunnel") {
       /*  here is the solution! */
       Router.push("/thank-you-funnel");
-      console.log("funnel test");
       setRedirecter(false);
     }
     state?.categorys.length > 0 ? setCurrentFilter(filtersData[1]) : null;

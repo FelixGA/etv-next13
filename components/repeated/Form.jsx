@@ -42,16 +42,13 @@ export default function Form(props) {
       // const result = await axios.post(`/api/handleForm`, data);
       if (send && router.pathname == "/kontakt") {
         router.push("/thank-you-kontakt");
-        console.log(router.pathname);
       } else if (
         (send && router.pathname == "/comparePage") ||
         (send && router.pathname.includes("/transporter"))
       ) {
         router.push("/thank-you-offer");
-        console.log(router.pathname);
       } else if (router.pathname == "/caradvisorFunnel") {
         router.push("/thank-you-funnel");
-        console.log(router.pathname);
       }
     } catch (err) {
       console.log("error", err.response.data.message);
