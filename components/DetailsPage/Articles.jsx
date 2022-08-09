@@ -20,8 +20,8 @@ const Articles = ({
   return (
     <>
       <div className="relative flex flex-col justify-center py-4 print:hidden bg-grey-lighter lg:flex-row ">
-        <div className="flex flex-col flex-wrap xl:px-72">
-          <h3 className="w-full px-4 mt-4 text-3xl font-bold text-black-darkest">
+        <div className="flex flex-col flex-wrap lg:w-[50%] w-full">
+          <h3 className="w-full px-4 mt-4 text-2xl font-bold lg:text-3xl text-black-darkest">
             Testbericht von {carItem.title}
           </h3>
           <div className="">
@@ -34,18 +34,19 @@ const Articles = ({
                     className={`${styles.articles} "relative mb-8 "`}
                   >
                     <div className="relative top-0 left-0 flex flex-col xs:flex-row ">
-                      <h2 className="px-4 pt-2 font-bold xs:py-4">
+                      <h4 className="px-4 pt-2 font-bold lg:text-2xl xs:py-4 text-blue-dark">
                         {infos.title}
-                      </h2>
+                      </h4>
 
-                      <div className="px-4 py-2 xs:pt-5 xs:pl-2">
+                      <div className="px-4 pt-3 lg:pt-4 xl:pt-5 xs:pl-2">
                         {infos.stars ? (
                           <StarsRating stars={infos.stars} />
                         ) : null}
                       </div>
                     </div>
-
-                    <MDXRemote {...getTestReview[index]} />
+                    <div className="pt-2">
+                      <MDXRemote {...getTestReview[index]} />
+                    </div>
 
                     {infos?.image && (
                       <div className="block px-4">

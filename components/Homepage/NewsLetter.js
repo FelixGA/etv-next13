@@ -12,8 +12,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
   const {
     register,
     handleSubmit,
-    watch,
-    setValue,
+   
     formState: { errors },
   } = useForm();
   const onSubmit = async (data, e) => {

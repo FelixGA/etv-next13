@@ -14,7 +14,7 @@ content:
       „Car Compare UG“ i.G.
 
 
-      Paul Thiede
+      Tomas Pilous
 
 
       Petersteinweg 14,
@@ -35,7 +35,7 @@ content:
       ## Journalistisch-redaktionelle Angebote
 
 
-      Inhaltlich verantwortlich: Geschäftsführer Paul Thiede.
+      Inhaltlich verantwortlich: Geschäftsführer Tomas Pilous.
     name: Impressum
 ---
 # Impressum

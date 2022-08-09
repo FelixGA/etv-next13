@@ -1,4 +1,3 @@
-import TestResult from "../repeated/TestResult";
 import { useState, useEffect } from "react";
 import StarsRating from "../repeated/StarsRating";
 
@@ -42,12 +41,10 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
 
     entries[0].splice(9, 0, "Gesamtgewicht");
     for (let i = 1; i < comparedCars?.length + 1; i++) {
-      // console.log(comparedCars, "comparedCars");
       entries[i].splice(9, 0, totalWeight[i - 1]);
     }
 
     setEntries(entries);
-    // console.log(entries);
   }, [keys, comparedCars]);
 
   return (
@@ -62,11 +59,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
             </div>
           ) : (
             <div className="flex items-center pb-2 scale-75 pt-7 h-18 lg:pl-8 2xl:pl-4 lg:scale-95">
-              <StarsRating
-                /* stars={testResultArr[index - 1]} */ stars={
-                  comparedCars[index - 1].rating.value
-                }
-              />
+              <StarsRating stars={comparedCars[index - 1].rating.value} />
             </div>
           )}
           {/* ADDS THE CLASS TYPE AS FIRST LINE */}
@@ -92,7 +85,7 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
               }`}
             >
               <p className="pl-4 text-sm text-blue-extra lg:text-lg lg:pl-10 2xl:pl-8">
-                {/* value.includes(0 || "-") ? "-" : */ value || "-"}
+                {value || "-"}
               </p>
             </div>
           ))}

@@ -5,7 +5,7 @@ import image from "../../public/images/345-front-1-.jpg";
 export default function ActiveCompareImages({ comparedCars }) {
   return (
     <>
-      {/* PLACEHOLDER */}
+      {/* PLACEHOLDER TO MAKE THE LAYOUT EVEN*/}
       <div className="relative h-full bg-grey-lighter lg:pl-8 min-w-[160px] ">
         <button className="absolute hidden h-10 text-sm bg-white rounded-md w-52 text-blue-darker lg:block top-4 left-8">
           <Link href="/comparePage">
@@ -35,6 +35,8 @@ export default function ActiveCompareImages({ comparedCars }) {
           </a>
         </div>
       </div>
+
+      {/* REST OF CODE */}
       {comparedCars.length ? (
         comparedCars.map((item, index) => (
           <div

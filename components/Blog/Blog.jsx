@@ -8,7 +8,6 @@ export default function Blog({ getBlogs }) {
 
   return (
     <>
-      {/* <Head page={page} /> */}
       <div className="grid justify-center grid-cols-1 2xl:grid-cols-[auto,_320px] gap-5 2xl:mx-48 cursor-pointer  ">
         <div className="w-full ">
           {getBlogs
@@ -50,9 +49,7 @@ export default function Blog({ getBlogs }) {
               </Link>
             ))}
         </div>
-        {/* <div className="hidden border-4 3xl:block"> */}
         <Sidebar />
-        {/* </div> */}
       </div>
     </>
   );
