@@ -20,9 +20,8 @@ import { useRouter } from "next/router";
 import CarBrandsLogos from "../repeated/CarBrandsLogos";
 import FunnelBoxTest from "./FunnelBoxTest";
 import Form from "../repeated/Form";
-import Modal from "../core/Modal";
 
-export default function FunnelTest({ getBrands, test, test2 }) {
+export default function FunnelTest({ getBrands }) {
   const router = useRouter();
   const filtersData = [
     {
