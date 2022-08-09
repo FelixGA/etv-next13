@@ -10,7 +10,6 @@ export default function BlogHeader({ getBlogs }) {
   const router = useRouter();
   const [posts, setPosts] = useState(getBlogs);
   const [categories, setCategories] = useState([]);
-  // console.log("BlogHeader.jsx: posts: ", posts);
   return (
     <>
       {getBlogs && (

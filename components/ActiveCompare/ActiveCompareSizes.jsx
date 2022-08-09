@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 
 export default function ActiveCompareSizes({ keys, comparedCars }) {
   const [columns, setColumns] = useState([]);
-  // console.log(comparedCars);
   let testResultArr = comparedCars.map((test) => test.rating);
 
   useEffect(() => {
@@ -46,16 +45,6 @@ export default function ActiveCompareSizes({ keys, comparedCars }) {
     <>
       {columns.map((col, colIndex) => (
         <div key={colIndex} className="relative h-full min-w-[160px]  ">
-          {/* <p
-            className={
-              index == 0
-                ? "h-14 font-bold text-blue-extra pl-4 lg:pl-8 pt-4 text-2xl"
-                : "h-14 invisible"
-            }
-          >
-            Maße
-          </p> */}
-
           {/* ADDS THE CLASS TYPE AS FIRST LINE */}
 
           {col.map((value, index) => (
@@ -64,17 +53,17 @@ export default function ActiveCompareSizes({ keys, comparedCars }) {
                 <div className="col-span-full row-span-full" key={index}>
                   {colIndex == 0 ? (
                     <>
-                      <p className="h-16 font-bold text-blue-extra pl-4 lg:pl-8 pt-5 text-2xl ">
+                      <p className="h-16 pt-5 pl-4 text-2xl font-bold text-blue-extra lg:pl-8 ">
                         Maße
                       </p>
-                      <p className="bg-grey-lighter h-14 font-bold text-blue-extra pl-4 lg:pl-8 pt-4 text-base">
+                      <p className="pt-4 pl-4 text-base font-bold bg-grey-lighter h-14 text-blue-extra lg:pl-8">
                         Laderaummaße:
                       </p>
                     </>
                   ) : (
                     <>
-                      <p className="bg-white h-16 font-bold text-blue-extra pl-4 lg:pl-8 pt-4 text-2xl "></p>
-                      <p className="bg-grey-lighter h-14 font-bold text-blue-extra pl-4 lg:pl-8 pt-4 text-2xl "></p>
+                      <p className="h-16 pt-4 pl-4 text-2xl font-bold bg-white text-blue-extra lg:pl-8 "></p>
+                      <p className="pt-4 pl-4 text-2xl font-bold bg-grey-lighter h-14 text-blue-extra lg:pl-8 "></p>
                     </>
                   )}
                 </div>
@@ -82,11 +71,11 @@ export default function ActiveCompareSizes({ keys, comparedCars }) {
               {index == 4 && (
                 <div className="col-span-full row-span-full">
                   {colIndex == 0 ? (
-                    <p className="h-14 font-bold text-blue-extra pl-4 lg:pl-8 pt-4 text-base">
+                    <p className="pt-4 pl-4 text-base font-bold h-14 text-blue-extra lg:pl-8">
                       Fahrzeugmaße:
                     </p>
                   ) : (
-                    <p className="h-14 font-bold text-blue-extra pl-4 lg:pl-8 pt-4 text-2xl "></p>
+                    <p className="pt-4 pl-4 text-2xl font-bold h-14 text-blue-extra lg:pl-8 "></p>
                   )}
                 </div>
               )}
@@ -101,18 +90,7 @@ export default function ActiveCompareSizes({ keys, comparedCars }) {
                     : "bg-white flex items-center h-12 "
                 }`}
               >
-                {/* <div
-                className={
-                  value === "Fahrzeugmaße" || value === "Laderaum-Maße"
-                    ? "text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8 font-bold"
-                    : ""
-         
-                }
-                onClick={() => {
-                  ("value:", value);
-                }}
-              > */}
-                <p className="text-blue-extra text-sm lg:text-lg pl-4 lg:pl-8">
+                <p className="pl-4 text-sm text-blue-extra lg:text-lg lg:pl-8">
                   {value || "-"}
                 </p>
               </div>

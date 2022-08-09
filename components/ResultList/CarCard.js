@@ -37,8 +37,8 @@ function CarCard({ carItem, rev, reviewDate, getAllReviews }) {
                     className="rounded-l-md"
                     src={carItem.src}
                     alt={carItem.title}
-                    width={600}
-                    height={394}
+                    width={400}
+                    height={250}
                     objectFit="cover"
                     layout="responsive"
                   />
@@ -72,7 +72,6 @@ function CarCard({ carItem, rev, reviewDate, getAllReviews }) {
           {/* BUTTONS start */}
           <div className="relative flex flex-col justify-end flex-1 2xl:right-2 sm:justify-center">
             <div className="flex justify-center pb-2 md:scale-[140%] sm:scale-[100%] xl:mt-8 3xl:hidden ">
-              {/* {mobileRatingBox} */}
               <StarsRating stars={carItem?.rating.value} />
             </div>
             <div className="pb-1">

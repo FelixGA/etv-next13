@@ -156,7 +156,7 @@ function ActiveFilterEntry(props) {
         <div
           className={
             item.value !== null
-              ? "flex-1 h-10 py-2  bg-grey-lighter flex justify-between items-center "
+              ? "flex-1 h-10 py-2 bg-grey-lighter flex justify-between items-center "
               : "hidden"
           }
           key={index}

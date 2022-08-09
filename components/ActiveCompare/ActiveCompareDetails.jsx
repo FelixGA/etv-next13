@@ -39,9 +39,8 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
       entries.push(carValues);
     }
     /* Main keys push to position 8 for calculating the total weight */
-    // console.log(entries, "entries test");
+    
     setEntries(entries);
-    // console.log(entries);
   }, [keys, comparedCars]);
 
   return (
@@ -85,7 +84,6 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
             {index !== 0 ? (
               <ButtonAnfragen carItem={comparedCars[index - 1].title} />
             ) : (
-              // carItem={carItem}
               <div className="h-20 bg-grey-border"></div>
             )}
           </div>
