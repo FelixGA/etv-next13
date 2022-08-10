@@ -8,7 +8,11 @@ module.exports = withPWA({
     disable: process.env.NODE_ENV === "development",
   },
   images: {
-    domains: ["elektrotransporter-vergleich.de"],
+    domains: [
+      "elektrotransporter-vergleich.de",
+      "assets.vercel.com",
+      "goupil.de",
+    ],
     formats: ["image/avif", "image/webp"],
   },
   i18n: {
