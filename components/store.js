@@ -45,6 +45,7 @@ const reducer = (state, action) => {
   }
 };
 
+
 const initialState = {
   mobileNavActive: false,
   prices: [],
