@@ -51,12 +51,12 @@ function ActiveFilterEntry(props) {
                       "." +
                       el.min.toString().slice(-3)
                     : el.min) +
-                  "-" +
+                  " - " +
                   el.max.toString().slice(0, -3) +
                   "." +
                   el.max.toString().slice(-3)
               )
-              .join("") + "€"
+              .join("") + " €"
           : null,
 
         image: image4,
