@@ -20,7 +20,7 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
         {
           id: "1",
           name: "1-10000 €",
-          value: "0-10000 ",
+          value: "0-10000",
         },
         {
           id: "2",
