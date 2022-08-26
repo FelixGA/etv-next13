@@ -20,7 +20,7 @@ function CarCard({ carItem, rev, reviewDate, getAllReviews }) {
   return (
     <div className="mb-4 overflow-hidden border-t shadow-lg lg:shadow-none lg:border-2 lg:border-grey-lighter lg:rounded-xl">
       <div className="relative flex sm:flex-row">
-        <div className="relative flex flex-col justify-between flex-1 pl-2 lg:pl-0">
+        <div className="relative flex flex-col flex-1 pl-2 lg:pl-0">
           <Link href={`/transporter/${carItem.name}`}>
             <a>
               <h3 className="flex items-center py-2 text-xl font-bold leading-7 title text-black-darkest sm:pl-2 2xl:hidden">
