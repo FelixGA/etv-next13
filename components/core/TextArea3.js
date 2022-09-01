@@ -40,7 +40,7 @@ export default function TextArea({
         })}
         defaultValue={
           carItem
-            ? `${carItem}`
+            ? `${carItem.split(" ").join("_")}_Request_stageId238`
             : state?.prices &&
               state?.rangeLithiums &&
               state?.categorys &&
