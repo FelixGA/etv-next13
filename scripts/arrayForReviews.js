@@ -1,4 +1,5 @@
-exports.reviews = [
+// exports.reviews = [
+  export const reviews = [
   {
     title: "Addax-MT",
     slug: "addax-mt-testbericht-von-elektrotransporter-vergleich",

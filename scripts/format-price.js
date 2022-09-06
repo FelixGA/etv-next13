@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = (price, locale, rates) => {
+export default function (price, locale, rates) {
   const formattedPrice = new Intl.NumberFormat(locale, {
     style: "currency",
     currency: locale === "cs" ? "CZK" : "EUR",
