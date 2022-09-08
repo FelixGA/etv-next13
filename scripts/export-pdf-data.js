@@ -1,13 +1,20 @@
-const fs = require("fs");
-const ObjectsToCsv = require("objects-to-csv-file");
-const formatPrice = require("./format-price");
+import fs from 'fs';
+// const fs = require("fs");
+import ObjectsToCsv from 'objects-to-csv-file';
+// const ObjectsToCsv = require("objects-to-csv-file");
+import formatPrice from './format-price.js';
+// const formatPrice = require("./format-price");
+import getContent from './getContent.js';
 
 // the cars
-const arrayForCars = require("./arrayForCars.js");
-const arrayFoReviews = require("./arrayForReviews.js");
+// const arrayForCars = require("./arrayForCars.js");
+import {reviews} from './arrayForReviews.js';
+// const arrayFoReviews = require("./arrayForReviews.js");
 
 main();
 async function main() {
+  let arrayForCars = await getContent("vehicles", "de");
+  // console.log(arrayForCars);
   let carsData = [];
   // console.log(
   //   arrayForCars.cars
@@ -19,7 +26,8 @@ async function main() {
   //     .filter((car) => car.subsidies.value !== 0)
   //     .map((car) => `${car.title} ${car.subsidies.value} EU`)
   // );
-  arrayForCars.cars.map((car, index) => {
+  // arrayForCars.cars.map((car, index) => {
+  arrayForCars.map((car, index) => {
     let entry = {};
     entry.category = car.category;
     entry.typeClass = car.typeClass;
@@ -84,85 +92,85 @@ async function main() {
     entry.reviewNumber = index + 101 + "";
 
     //
-    entry.reviewdate = arrayFoReviews.reviews.find(
+    entry.reviewdate = reviews.find(
       (review) => review.slug == car.relatedReviews
     ).publishedAt;
-    entry.slug = arrayFoReviews.reviews.find(
+    entry.slug = reviews.find(
       (review) => review.slug == car.relatedReviews
     ).slug;
 
-    entry.KonzeptFahrzeugvarianten = arrayFoReviews.reviews
+    entry.KonzeptFahrzeugvarianten = reviews
       .find((review) => review.slug == car.relatedReviews)
       .content[0].content.replace(/### Konzept & Fahrzeugvarianten\n/g, " ")
       .replace(/###/g, " ")
       .replace(/\n/g, " ");
 
-    entry.starsKonzeptFahrzeugvarianten = arrayFoReviews.reviews.find(
+    entry.starsKonzeptFahrzeugvarianten = reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[0].stars;
     //
-    entry.laderaumFlexibilitaet = arrayFoReviews.reviews
+    entry.laderaumFlexibilitaet = reviews
       .find((review) => review.slug == car.relatedReviews)
       .content[1].content.replace(/### Laderaum & Flexibilität\n/g, " ")
       .replace(/###/g, " ")
       .replace(/\n/g, " ");
 
-    entry.starsladeraumFlexibilitaet = arrayFoReviews.reviews.find(
+    entry.starsladeraumFlexibilitaet = reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[1].stars;
 
     //
-    entry.antriebAufladung = arrayFoReviews.reviews
+    entry.antriebAufladung = reviews
       .find((review) => review.slug == car.relatedReviews)
       .content[2].content.replace(/### Antrieb und Aufladung\n/g, " ")
       .replace(/###/g, " ")
       .replace(/\n/g, " ");
-    entry.starsantriebAufladung = arrayFoReviews.reviews.find(
+    entry.starsantriebAufladung = reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[2].stars;
     //
-    entry.komfortAusstattung = arrayFoReviews.reviews
+    entry.komfortAusstattung = reviews
       .find((review) => review.slug == car.relatedReviews)
       .content[3].content.replace(/### Komfort & Ausstattung\n/g, " ")
       .replace(/###/g, " ")
       .replace(/\n/g, " ");
-    entry.starskomfortAusstattung = arrayFoReviews.reviews.find(
+    entry.starskomfortAusstattung = reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[3].stars;
     //
-    entry.bedienungUndFahrbetrieb = arrayFoReviews.reviews
+    entry.bedienungUndFahrbetrieb = reviews
       .find((review) => review.slug == car.relatedReviews)
       .content[4].content.replace(/### Bedienung & Fahrbetrieb\n/g, " ")
       .replace(/###/g, " ")
       .replace(/\n/g, " ");
-    entry.starsbedienungUndFahrbetrieb = arrayFoReviews.reviews.find(
+    entry.starsbedienungUndFahrbetrieb = reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[4].stars;
     //
-    entry.umwelt = arrayFoReviews.reviews
+    entry.umwelt = reviews
       .find((review) => review.slug == car.relatedReviews)
       .content[5].content.replace(/### Umwelt\n/g, " ")
       .replace(/###/g, " ")
       .replace(/\n/g, " ");
-    entry.starsumwelt = arrayFoReviews.reviews.find(
+    entry.starsumwelt = reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[5].stars;
     //
-    entry.preiseGarantie = arrayFoReviews.reviews
+    entry.preiseGarantie = reviews
       .find((review) => review.slug == car.relatedReviews)
       .content[6].content.replace(/### Preise & Garantie\n/g, " ")
       .replace(/###/g, " ")
       .replace(/\n/g, " ");
-    entry.starspreiseGarantie = arrayFoReviews.reviews.find(
+    entry.starspreiseGarantie = reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[6].stars;
     //
-    entry.fazit = arrayFoReviews.reviews
+    entry.fazit = reviews
       .find((review) => review.slug == car.relatedReviews)
       .content[7].content.replace(/### Fazit\n/g, " ")
       .replace(/###/g, " ")
       .replace(/\n/g, " ");
-    entry.gesamt = arrayFoReviews.reviews.find(
+    entry.gesamt = reviews.find(
       (review) => review.slug == car.relatedReviews
     ).content[7].stars;
 
@@ -170,33 +178,34 @@ async function main() {
 
     return car;
   });
-  // arrayFoReviews.reviews.map((review) => {
-  //   let entry = {};
-  //   entry.modelName = review.slug;
-  //   entry.image = review.src.substring(8);
-  //   entry.date = review.publishedAt;
+  reviews.map((review) => {
+    let entry = {};
+    let reviewsData = [];
+    entry.modelName = review.slug;
+    entry.image = review.src.substring(8);
+    entry.date = review.publishedAt;
 
-  //   entry.KonzeptFahrzeugvarianten = ` ${review.content[0].content}`;
-  //   entry.StarsKonzeptFahrzeugvarianten = ` ${review.content[0].stars}`;
-  //   entry.LaderaumFlexibilität = ` ${review.content[1].content}`;
-  //   entry.starsLaderaumFlexibilität = ` ${review.content[1].stars}`;
-  //   entry.antriebAufladung = ` ${review.content[2].content}`;
-  //   entry.starsAntriebAufladung = ` ${review.content[2].stars}`;
-  //   entry.komfortAusstattung = ` ${review.content[3].content}`;
-  //   entry.starsKomfortAusstattung = ` ${review.content[3].stars}`;
-  //   entry.bedienungUndFahrbetrieb = ` ${review.content[4].content}`;
-  //   entry.starsBedienungUndFahrbetrieb = ` ${review.content[4].stars}`;
-  //   entry.umwelt = ` ${review.content[5].content}`;
-  //   entry.starsUmwelt = ` ${review.content[5].stars}`;
-  //   entry.preiseGarantie = ` ${review.content[6].content}`;
-  //   entry.starsPreiseGarantie = ` ${review.content[6].stars}`;
-  //   entry.fazit = ` ${review.content[7].content}`;
-  //   entry.gesamt = ` ${review.content[7].stars}`;
-  //   reviewsData.push(entry);
-  //   return review;
-  // });
+    entry.KonzeptFahrzeugvarianten = ` ${review.content[0].content}`;
+    entry.StarsKonzeptFahrzeugvarianten = ` ${review.content[0].stars}`;
+    entry.LaderaumFlexibilität = ` ${review.content[1].content}`;
+    entry.starsLaderaumFlexibilität = ` ${review.content[1].stars}`;
+    entry.antriebAufladung = ` ${review.content[2].content}`;
+    entry.starsAntriebAufladung = ` ${review.content[2].stars}`;
+    entry.komfortAusstattung = ` ${review.content[3].content}`;
+    entry.starsKomfortAusstattung = ` ${review.content[3].stars}`;
+    entry.bedienungUndFahrbetrieb = ` ${review.content[4].content}`;
+    entry.starsBedienungUndFahrbetrieb = ` ${review.content[4].stars}`;
+    entry.umwelt = ` ${review.content[5].content}`;
+    entry.starsUmwelt = ` ${review.content[5].stars}`;
+    entry.preiseGarantie = ` ${review.content[6].content}`;
+    entry.starsPreiseGarantie = ` ${review.content[6].stars}`;
+    entry.fazit = ` ${review.content[7].content}`;
+    entry.gesamt = ` ${review.content[7].stars}`;
+    reviewsData.push(entry);
+    return review;
+  });
   await writeFile("datenblatt", carsData);
-  // reviewsData = [];
+  
 }
 /*  writing */
 /*  writing */

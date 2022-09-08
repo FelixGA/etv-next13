@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { trackEvent } from "@phntms/next-gtm";
 import { useRouter } from "next/router";
 
-import Form from "./Form";
+import FunnelForm from "./FunnelForm";
 import Modal from "../core/Modal";
 
 function ButtonAnfragen({ carItem }) {
@@ -16,7 +16,7 @@ function ButtonAnfragen({ carItem }) {
     <div className="flex">
       <Modal open={open} setOpen={setOpen}>
         <div className="">
-          <Form open={open} setOpen={setOpen} carItem={carItem} />
+          <FunnelForm open={open} setOpen={setOpen} carItem={carItem} />
         </div>
       </Modal>
 

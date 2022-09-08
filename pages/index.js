@@ -6,48 +6,9 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import TopSlider from "../components/Sliders/TopSlider";
 import Funnel from "../components/Caradvisor/Funnel";
 import NewsLetter from "../components/Homepage/NewsLetter";
-import { useEffect } from "react";
-import { useStore } from "../components/store";
-import { useRouter } from "next/router";
 
 export default function Home(props) {
-  const { state, dispatch } = useStore();
-  const router = useRouter();
 
-  useEffect(() => {
-    if (router.pathname == "/") {
-      dispatch({
-        type: "rangeLithium",
-        data: [],
-      });
-      dispatch({
-        type: "loadingWeight",
-        data: [],
-      });
-      dispatch({
-        type: "price",
-        data: [],
-      });
-      dispatch({
-        type: "maxSpeed",
-        data: [],
-      });
-      dispatch({
-        type: "category",
-        data: [],
-      });
-      dispatch({
-        type: "chargingTimeLithium",
-        data: [],
-      });
-    }
-  }, [router.pathname]);
-  // console.log(state, "index");
-  useEffect(() => {
-    if (!props.page || !dispatch) return;
-    // console.log(props.page.content, "testtest");
-  }, [props.page, dispatch]);
-  // console.log(state.compareContent, "from index");
   return (
     <>
       <Head page={props.page} />
@@ -57,7 +18,7 @@ export default function Home(props) {
         getMarkdownContext={props.context}
         getBrands={props.brands}
       />
-      <TopSlider getCars={props.vehicles} getContent={props.page} />
+      <TopSlider vehicles={props.vehicles} page={props.page} />
       <BlogArticles getMarkdownContext={props.context} />
       <Funnel
         getCars={props.vehicles}
@@ -72,6 +33,9 @@ export default function Home(props) {
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
+  // console.log(vehicles);
+  console.log(JSON.stringify(vehicles, null, 1));
+  // console.dir(vehicles, {'maxArrayLength' : null});
 
   let brands = await getContent("brands", context.locale);
   const page = pages.find((page) => page.path === "/");
