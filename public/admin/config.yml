@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ari-motors-team/elektrotransporter-vergleich
+  repo: FelixGA/elektrotransporter-vergleich
   branch: dev
   base_url: https://preview-elektrotransporter-vergleich.vercel.app
   auth_endpoint: api/auth
