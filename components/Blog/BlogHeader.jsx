@@ -24,6 +24,7 @@ export default function BlogHeader({ getBlogs }) {
                     src={post.src}
                     alt={post.slug}
                     objectFit="cover"
+                    // objectFit="contain"
                     layout="responsive"
                     priority
                   />
