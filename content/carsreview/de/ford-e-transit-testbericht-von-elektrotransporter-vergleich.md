@@ -1,7 +1,7 @@
 ---
 title: Ford E-Transit
 slug: ford-e-transit-testbericht-von-elektrotransporter-vergleich
-relatedCars: addax-mt-pritsche
+relatedCars: ford-e-transit-kastenwagen
 youtubeLink: https://www.youtube.com/watch?v=japkBrchr90
 category: Kasten
 publishedAt: 08/30/2022
