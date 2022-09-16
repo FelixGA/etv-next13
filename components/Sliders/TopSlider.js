@@ -62,8 +62,7 @@ const TopSlider = (props) => {
           >
             {props.vehicles?.sort(
                     (a, b) =>
-                     (sellingRanking[a.name] - sellingRanking[b.name])
-                  ).map(vehicle => (
+                     (sellingRanking[a.name] - sellingRanking[b.name])).map(vehicle => (
                 <TopSliderCard
                 vehicle={vehicle}
               />
