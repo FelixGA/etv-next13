@@ -70,7 +70,7 @@ In diesem Bereich bewerten wir den günstigsten Preis im Verhältnis zum Gesamta
 
 <br/>
 
-## Fazit
+### Fazit
 
 <br/>
 
