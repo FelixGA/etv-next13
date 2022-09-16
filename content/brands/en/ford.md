@@ -2,7 +2,7 @@
 title: Ford
 description: Die Ford Motor Company ist ein US-amerikanischer Autobauer mit
   Firmensitz in Dearborn, Michigan.
-src: /images/ford-logo.jpg
+src: /images/Ford_logo_flat.svg.png
 slug: ford
 websiteLink: https://www.ford.de/nutzfahrzeuge
 content: >-
