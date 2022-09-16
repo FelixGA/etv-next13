@@ -99,7 +99,7 @@ loadingHeight:
 loadingVolumeTotal:
   key: Ladevolumen
   value: 3,03
-  baseUnit: "-"
+  baseUnit: m³
 loadingArea:
   key: Ladefläche
   value: 2,74
