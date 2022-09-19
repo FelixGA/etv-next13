@@ -89,12 +89,13 @@ content:
     image: /images/ford-etransit-5.jpg
   - stars: 3
     content: Der Hersteller macht keine genauen Angaben zum Verbrauch des E-Transit.
-      In manchen Quellen finden sich Angaben zwischen 24,2 und 27,8 kWh/100 je
-      nach Einsatzort (für die L2H2-Version). Bei angenommenen 30 Cent pro
-      Kilowattstunde kosten dann 100 km Fahrstrecke 7,26 - 8,34 €. Über ein
-      zusätzliches Solarmodul für das Dach des Fahrzeugs gibt es keine Angaben.
-      Hier müssen Interessierte wahrscheinlich ebenso zu einem
-      Sonderfahrzeugbauer.
+      Auf manchen Websites finden sich Angaben von 19,2 kWh pro 100 Kilometer
+      (WLTP),  andere kommen wiederum in der Praxis auf Werte zwischen 24,2 und
+      27,8 kWh/100 km je nach Einsatzart (für die L2H2-Version). Bei
+      angenommenen 30 Cent pro Kilowattstunde kosten dann 100 km Fahrstrecke
+      7,26 - 8,34 €. Über ein zusätzliches Solarmodul für das Dach des Fahrzeugs
+      gibt es keine Angaben. Hier müssen Interessierte wahrscheinlich ebenso zu
+      einem Sonderfahrzeugbauer.
     title: "Umwelt "
     image: /images/ford-etransit.jpg
   - stars: 4
