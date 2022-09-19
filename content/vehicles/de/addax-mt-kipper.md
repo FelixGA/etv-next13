@@ -2,7 +2,7 @@
 title: Addax MT Kipper
 name: addax-mt-kipper
 price: 35450
-relatedBlogs: beispiel
+relatedBlogs: ari-bietet-zwei-modelle-als-food-truck-an
 relatedReviews: addax-mt-testbericht-von-elektrotransporter-vergleich
 description: Der Addax MT ist ein Elektro-Kleintransporter der Fahrzeugklasse
   N1. Er verfügt über eine maximale Nutzlast von 1000 Kilogramm und eine
