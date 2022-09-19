@@ -2,7 +2,7 @@
 title: Alke ATX 340 E Kipper
 name: alke-atx-340-e-kipper
 price: 27000
-relatedBlogs: beispiel
+relatedBlogs: e-works-mobility-liefert-sprinter-mit-245-elektro-ps
 relatedReviews: alke-atx-serie-testbericht-von-elektrotransporter-vergleich
 description: Der Alke ATX 340 E ist ein Elektrotransporter der Fahrzeugklasse N1
   mit einer Höchstgeschwindigkeit von 44 km/h und einer je nach Akku

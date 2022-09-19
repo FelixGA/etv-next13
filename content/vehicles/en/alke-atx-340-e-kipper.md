@@ -1,6 +1,6 @@
 ---
 name: alke-atx-340-e-kipper
-relatedBlogs: beispiel
+relatedBlogs: e-works-mobility-liefert-sprinter-mit-245-elektro-ps
 relatedReviews: alke-atx-serie-testbericht-von-elektrotransporter-vergleich
 src: /images/elektrotransporter-mit-kipper-alke.jpg
 category: Kipper
