@@ -2,6 +2,7 @@
 title: "Ford E-Transit Kastenwagen "
 name: ford-e-transit-kastenwagen
 price: 53145
+relatedBlogs: vorstellung-ford-e-transit-custom-handwerk-und-logistik-auf-leisen-sohlen
 relatedReviews: ford-e-transit-testbericht-von-elektrotransporter-vergleich
 description: Der Ford E-Transit ist ein Elektrotransporter mit mehr als 300
   Kilometern Reichweite und einer maximalen Höchstgeschwindigkeit von 130 km/h.
