@@ -2,7 +2,7 @@
 title: ARI 901 Kastenwagen
 name: ari-901-kastenwagen
 price: 35995
-relatedBlogs: nur beispiel
+relatedBlogs: thg-foerderung-fuer-kleintransporter-von-ari
 relatedReviews: ari-901-testbericht-von-elektrotransporter-vergleich
 description: Der ARI 901 mit Kofferaufbau ist ein leistungsstarker
   Elektrotransporter der Fahrzeugklasse N1 mit rund 900 Kilogramm Zuladung. Er
