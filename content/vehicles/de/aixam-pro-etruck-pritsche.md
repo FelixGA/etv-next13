@@ -2,7 +2,7 @@
 title: Aixam-pro-Etruck-pritsche
 name: aixam-pro-etruck-pritsche
 price: 19690
-relatedBlogs: beispiel
+relatedBlogs: der-ari-kuehlt-jetzt-auch
 relatedReviews: aixam-pro-etruck-testbericht-von-elektrotransporter-vergleich
 description: Der Aixam Pro e-Truck ist ein leichter Elektrotransporter der
   Fahrzeugklasse L6e. Er erreicht eine maximale Höchstgeschwindigkeit von 45
