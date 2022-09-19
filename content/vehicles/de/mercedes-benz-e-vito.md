@@ -2,7 +2,7 @@
 title: Mercedes-Benz eVito Kastenwagen
 name: mercedes-benz-e-vito
 price: 45990
-relatedBlogs: nur beispiel
+relatedBlogs: mercedes-benz-e-vito-mit-höherer-batteriekapazität
 relatedReviews: mercedes-benz-evito-testbericht-von-elektrotransporter-vergleich
 description: Der Mercedes-Benz eVito Kastenwagen ist ein Elektrotransporter der
   Fahrzeugklasse N1, welcher in zwei Fahrzeuglängen erhältlich ist. Das Fahrzeug
