@@ -1,7 +1,7 @@
 ---
 title: Nissan Townstar
 slug: nissan-townstar-testbericht-von-elektrotransporter-vergleich
-relatedCars: nissan-e-nv-200
+relatedCars: nissan-townstar
 youtubeLink: https://www.youtube.com/watch?v=f5ntg4_SWec
 publishedAt: 08/30/2022
 description: "Der Nissan Townstar ist ein Elektro-Kleintransporter der Klasse N1
