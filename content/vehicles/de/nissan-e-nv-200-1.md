@@ -1,44 +1,44 @@
 ---
-title: Mercedes-Benz eSprinter
-name: mercedes-benz-esprinter
-price: 54090
-relatedBlogs: e-works-mobility-liefert-sprinter-mit-245-elektro-ps
-relatedReviews: mercedes-benz-esprinter-testbericht-von-elektrotransporter-vergleich
-description: Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der
-  Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und rund
-  eine Tonne Nutzlast aufnehmen kann.
-src: /images/mb-esprinter-seite.jpg
+title: Nissan e-NV 200
+name: nissan-e-nv-200
+price: 28660
+relatedBlogs: ""
+relatedReviews: nissan-e-nv-200-testbericht-von-elektrotransporter-vergleich
+description: Der Nissan e-NV 200 ist ein Elektotransporter der Klasse N1der
+  Platz für bis zu 7 Personen bietet und über eine maximalen Nutzlast von 667
+  Kilogramm verfügt.
+src: /images/townstar-nissan.png
 category: Kasten
 typeClass: N1
 loadingWeight:
   key: Nutzlast
-  value: 1001
+  value: 667
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 2499
-  baseUnit: kg
+  value: 0
+  baseUnit: "-"
 maxSpeed:
   key: km/h
-  value: 80
+  value: 123
   baseUnit: km/h
 range230V:
-  key: Reichweite SLA Akku
+  key: Reichweite SLA Blei
   value: 0
   baseUnit: "-"
   maxValue: 0
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 92
+  value: 200
   baseUnit: km
-  maxValue: 158
+  maxValue: 275
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
-  value: 0
-  baseUnit: "-"
+  value: 17
+  baseUnit: h
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 6.5
+  value: 8.5
   baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
@@ -46,32 +46,32 @@ chargingTimeFast:
   baseUnit: h
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: 0
+  value: "-"
   baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "35"
+  value: 41
   baseUnit: kWh
 batteryIncluded:
   value: ja
   key: Batterie inklusive
 consumption:
   key: "Verbrauch "
-  value: 37,1
+  value: 20,6
   baseUnit: kWh
 power:
   key: Leistung
-  value: "85"
+  value: "80"
   baseUnit: kW
 seats:
   key: Sitzplätze
-  value: 2
+  value: 7
 rating:
   key: Sterne
-  value: 3.6
+  value: 3.4
 guarantee:
   key: Garantie Fahrzeug
-  value: 2
+  value: 5
   baseUnit: Jahre
 availability:
   key: Verfügbarkeit
@@ -81,68 +81,68 @@ subsidies:
   value: 0
   baseUnit: "-"
 batteryGuarantee:
-  key: Garantie Akku
-  value: 0
-  baseUnit: "-"
+  key: Batterie-Garantie
+  value: 8
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
   value: 0
   baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 11,0
+  value: 3,47
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: "0"
+  value: 2,55
   baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 2175
-  baseUnit: keine Angabe
-  valuelength: 6088
-  valueheight: 2687
-  valuewheelbase: 3924
+  valuewidth: 1755
+  baseUnit: mm
+  valuelength: 4560
+  valueheight: 2011
+  valuewheelbase: 2725
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 0
+  valueheight: 1360
   width: Breite
-  valuewidth: 1787
-  valuelength: 3272
+  valuewidth: 1500
+  valuelength: 1701
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "6088"
+  value: "4560"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "2175"
+  value: "1755"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "2687"
+  value: "2011"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "3272"
+  value: "1701"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1787"
+  value: "1500"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
-  baseUnit: "-"
+  value: "1360"
+  baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "3924"
+  value: "2725"
   baseUnit: mm
 ---
-Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und rund eine Tonne Nutzlast aufnehmen kann.
+Der Nissan e-NV 200 ist ein Elektotransporter der Klasse N1der Platz für bis zu 7 Personen bietet und über eine maximalen Nutzlast von 667 Kilogramm verfügt.

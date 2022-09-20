@@ -2,7 +2,7 @@
 title: ARI 901 Pritsche
 name: ari-901-pritsche
 price: 35995
-relatedBlogs: nur beispiel
+relatedBlogs: ari-bietet-zwei-modelle-als-food-truck-an
 relatedReviews: ari-901-testbericht-von-elektrotransporter-vergleich
 description: Der ARI 901 Pritsche ist ein leistungsstarker Elektrotransporter
   der Fahrzeugklasse N1 mit rund 900 kg Zuladung.  Das Fahrzeug ist in drei

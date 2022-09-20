@@ -1,6 +1,6 @@
 ---
 name: tropos-able-xt1-koffer
-relatedBlogs: beispiel
+relatedBlogs: der-aufbau-des-sevic-v500e-kann-schnell-gewechselt-werden
 relatedReviews: tropos-able-xt-testbericht-von-elektrotransporter-vergleich
 src: /images/tropos-able-koffer-seite.jpg
 category: Koffer

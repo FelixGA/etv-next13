@@ -1,6 +1,6 @@
 ---
 name: addax-mt-koffer
-relatedBlogs: beispiel
+relatedBlogs: ari-bietet-zwei-modelle-als-food-truck-an
 relatedReviews: addax-mt-testbericht-von-elektrotransporter-vergleich
 src: /images/addax_koffer.jpg
 category: Koffer
