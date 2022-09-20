@@ -1,7 +1,7 @@
 ---
 title: Nissan Townstar
 name: nissan-townstar
-price: 33.75
+price: 33750
 relatedBlogs: nissan-bringt-den-townstar-ev-nach-europa
 relatedReviews: nissan-townstar-testbericht-von-elektrotransporter-vergleich
 description: Der Nissan Townstar ist ein Elektro-Kleintransporter der Klasse N1
