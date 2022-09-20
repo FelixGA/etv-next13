@@ -2,27 +2,26 @@ import TopSliderCard from "../Sliders/TopSliderCard";
 import Image from "next/image";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
-import SwipeImage from "/public/images/swipe.gif"
+import SwipeImage from "/public/images/swipe.gif";
 
 const sellingRanking = {
-  "ari-458-pritsche": 13,
-  /* "Piaggo Porter": 12, */
-  "alke-atx-340-e-pritsche": 11,
-  "evum-a-car-pritsche": 10,
-  "Addax MT": 9,
-  "Citroen eJumpy": 8,
-  "Aixam Pro e-Truck": 7,
-  "opel-vivaro-e-cargo": 6,
-  "ari-458-koffer": 5,
-  "vw-abt-e-caddy": 4,
-  "efa-s-e35": 3,
-  "garia-utility-park-ec-pritsche": 2,
-  /* "Renault Kangoo Z.E": 1, */
+  "Elektrofrosch Grand Extra": 1,
+  "Aixam-pro-Etruck-pritsche": 2,
+  "Addax MT Koffer": 3,
+  "Alke ATX 340 E Pritsch": 4,
+  "Addax MT Kipper": 5,
+  "Streetsoccer": 6,
+  "ARI 458 Pritsche": 7,
+  "Addax MT Pritsche": 8,
+  "Peugeot E-Partner": 9,
+  "Evum A-Car Pritsche": 10,
+  "Opel Vivaro-E-Cargo": 11,
+  "Elektrofrosch": 12,
 };
 
 const TopSlider = (props) => {
   const container = useRef();
-
+  // console.log(props.vehicles);
 
   return (
     <div className="relative pb-8">
@@ -62,13 +61,22 @@ const TopSlider = (props) => {
           >
             {props.vehicles?.sort(
                     (a, b) =>
-                     (sellingRanking[a.name] - sellingRanking[b.name])
-                  ).map(vehicle  => (
+                    //  (sellingRanking[a.name] - sellingRanking[b.name])
+                     (sellingRanking[a.title] - sellingRanking[b.title])
+                  ).map((vehicle, index) => (
                 <TopSliderCard
                 vehicle={vehicle}
+                key={index}
               />
             ))}
-          
+
+            {/* {
+            sellingRanking.filter(auto) => {
+              if(auto === props.vehicles
+              .map((vehicle, index) => (
+                <TopSliderCard vehicle={vehicle} key={index} />
+              ))}
+              } */}
           </div>
         </div>
 
