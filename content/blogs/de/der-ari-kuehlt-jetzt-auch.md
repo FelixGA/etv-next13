@@ -4,7 +4,7 @@ slug: der-ari-kuehlt-jetzt-auch
 youtubeLink: bitte auffuelen
 category: manufacturer
 publishedAt: 08/03/2022
-src: /images/screenshot-2022-08-03-ari-901-kühlkoffer_emedienportal.png
+src: /images/ari-901-kühlkoffer.jpg
 description: ARI Motors nimmt den ARI 901 mit Kühlkofferaufbau in sein Angebot
   auf, wie das e-Medienportal berichtet.
 ---

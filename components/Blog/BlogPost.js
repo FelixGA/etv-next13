@@ -7,13 +7,15 @@ export default function BlogPost(props) {
   return (
     <div className="flex flex-col flex-1 pb-4 lg:pb-8 lg:px-48">
       <div>
-        <div className="relative w-full">
+        <div className="relative w-full bg-slate-100">
           {props.getBlogContext?.src && (
             <Image
               src={props.getBlogContext?.src}
               alt={props.getBlogContext?.title}
-              width={195}
-              height={50}
+              // width={195}
+              // height={50}
+              width={200}
+              height={90}
               layout="responsive"
               objectFit="cover"
               className="rounded-b-sm "

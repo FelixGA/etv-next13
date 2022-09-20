@@ -2,16 +2,7 @@
 title: ARI 458 Pritsche
 name: ari-458-pritsche
 price: 14790
-relatedBlogs:
-  title: " Konzept & Fahrzeugvarianten"
-  content: "Die möglichen Aufbauten teilen sich in vier Oberkategorien auf:
-    Koffer, Pritsche, Kipper sowie Individual-Aufbauten. Zu den erhältlichen
-    Individual-Aufbauten zählen beispielsweise Kühl- oder Tiefkühlkoffer,
-    Laubgitteraufbau, Food-Truck, Verkaufsfahrzeug und Alkoven-Aufbau. Der ARI
-    458 ist vor allem für kurze Wege und innerstädtischen Verkehr konzipiert.
-    Mit einem zusätzlichen Reichweiten-Paket eignet er sich aber auch durchaus
-    für große Strecken."
-  image: /images/ari-458-food-truck-5-.jpg
+relatedBlogs: elektrisch-schnee-und-eis-zu-leibe-ruecken
 relatedReviews: ari-458-testbericht-von-elektrotransporter-vergleich
 description: Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI
   Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen

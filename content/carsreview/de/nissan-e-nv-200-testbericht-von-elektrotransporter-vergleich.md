@@ -1,7 +1,7 @@
 ---
 title: "Nissan e-NV 200 "
 slug: nissan-e-nv-200-testbericht-von-elektrotransporter-vergleich
-relatedCars: nme-cargo-van
+relatedCars: nissan-e-nv-200
 youtubeLink: https://www.youtube.com/watch?v=6wXO61urBh4
 category: Kasten
 publishedAt: 05/13/2022

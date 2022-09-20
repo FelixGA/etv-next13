@@ -1,5 +1,5 @@
 ---
-relatedBlogs: thg-foerderung-fuer-kleintransporter-von-ari
+relatedBlogs: b-on-der-streetscooter-ist-wieder-zurueck
 relatedReviews: streetscooter-testbericht-von-elektrotransporter-vergleich
 rating:
   value: 3.2

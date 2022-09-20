@@ -2,7 +2,7 @@
 title: Tropos Able XT1 Koffer
 name: tropos-able-xt1-koffer
 price: 27000
-relatedBlogs: beispiel
+relatedBlogs: der-aufbau-des-sevic-v500e-kann-schnell-gewechselt-werden
 relatedReviews: tropos-able-xt-testbericht-von-elektrotransporter-vergleich
 description: Der Tropos Able XT ist ein Leicht-Elektrotransporter der Klasse L7e
   mit einer Nutzlast von bis zu 700 kg. Das Fahrzeug kann in zwei Akku-Varianten
