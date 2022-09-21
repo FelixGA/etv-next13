@@ -7,7 +7,7 @@ relatedReviews: nissan-e-nv-200-testbericht-von-elektrotransporter-vergleich
 description: Der Nissan e-NV 200 ist ein Elektotransporter der Klasse N1der
   Platz für bis zu 7 Personen bietet und über eine maximalen Nutzlast von 667
   Kilogramm verfügt.
-src: /images/townstar-nissan.png
+src: /images/env-200.jpg
 category: Kasten
 typeClass: N1
 loadingWeight:

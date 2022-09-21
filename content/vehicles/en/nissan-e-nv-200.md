@@ -3,13 +3,13 @@ title: Nissan Townstar
 name: nissan-townstar
 price: 33750
 relatedBlogs: nissan-bringt-den-townstar-ev-nach-europa
-relatedReviews: nissan-townstar-testbericht-von-elektrotransporter-vergleich
+relatedReviews: nissan-e-nv-200-testbericht-von-elektrotransporter-vergleich
 description: Der Nissan Townstar ist ein Elektro-Kleintransporter der Klasse N1
   mit 571 Kg Nutzlast beim 2-Tonner und 775 Kg beim 2,2-Tonner. Der Townstar ist
   als Transporter oder als mit bis zu 7 Sitzplätzen ausgestattete Hochdachkombi
   verfügbar. Das Fahrzeug wird das Vorgängermodell Nissan ENV-200 ersetzen und
   ist ab Herbst 2022 verfügbar.
-src: /images/townstar-nissan.png
+src: /images/env-200.jpg
 loadingWeight:
   key: Nutzlast
   value: 775
