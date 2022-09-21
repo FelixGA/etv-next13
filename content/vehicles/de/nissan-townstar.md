@@ -1,18 +1,20 @@
 ---
-title: Nissan e-NV 200
-name: nissan-e-nv-200
-price: 28660
-relatedBlogs: ""
-relatedReviews: nissan-e-nv-200-testbericht-von-elektrotransporter-vergleich
-description: Der Nissan e-NV 200 ist ein Elektotransporter der Klasse N1der
-  Platz für bis zu 7 Personen bietet und über eine maximalen Nutzlast von 667
-  Kilogramm verfügt.
+title: Nissan Townstar
+name: nissan-townstar
+price: 33750
+relatedBlogs: nissan-bringt-den-townstar-ev-nach-europa
+relatedReviews: nissan-townstar-testbericht-von-elektrotransporter-vergleich
+description: Der Nissan Townstar ist ein Elektro-Kleintransporter der Klasse N1
+  mit 571 Kg Nutzlast beim 2-Tonner und 775 Kg beim 2,2-Tonner. Der Townstar ist
+  als Transporter oder als mit bis zu 7 Sitzplätzen ausgestattete Hochdachkombi
+  verfügbar. Das Fahrzeug wird das Vorgängermodell Nissan ENV-200 ersetzen und
+  ist ab Herbst 2022 verfügbar.
 src: /images/townstar-nissan.png
 category: Kasten
 typeClass: N1
 loadingWeight:
   key: Nutzlast
-  value: 667
+  value: 775
   baseUnit: kg
 curbweight:
   key: Leergewicht
@@ -20,7 +22,7 @@ curbweight:
   baseUnit: "-"
 maxSpeed:
   key: km/h
-  value: 123
+  value: 130
   baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
@@ -31,26 +33,26 @@ rangeLithium:
   key: Reichweite Lithium Akku
   value: 200
   baseUnit: km
-  maxValue: 275
+  maxValue: 285
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
-  value: 17
-  baseUnit: h
+  value: 0
+  baseUnit: "-"
 chargingTimeLithium:
   key: Ladezeit Typ2 Ladekabel
-  value: 8.5
-  baseUnit: h
+  value: 0
+  baseUnit: "-"
 chargingTimeFast:
   key: Schnellladezeit
-  value: 1
-  baseUnit: h
+  value: 42
+  baseUnit: Min.
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"
   baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: 41
+  value: 45
   baseUnit: kWh
 batteryIncluded:
   value: ja
@@ -61,17 +63,17 @@ consumption:
   baseUnit: kWh
 power:
   key: Leistung
-  value: "80"
+  value: "89"
   baseUnit: kW
 seats:
   key: Sitzplätze
   value: 7
 rating:
   key: Sterne
-  value: 3.4
+  value: 3
 guarantee:
   key: Garantie Fahrzeug
-  value: 5
+  value: 8
   baseUnit: Jahre
 availability:
   key: Verfügbarkeit
@@ -82,67 +84,67 @@ subsidies:
   baseUnit: "-"
 batteryGuarantee:
   key: Batterie-Garantie
-  value: 8
-  baseUnit: Jahre
+  value: 160
+  baseUnit: km
 loadingHeight:
   key: Ladehöhe
-  value: 0
-  baseUnit: "-"
+  value: 634
+  baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 3,47
+  value: 3,3
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 2,55
+  value: 2,25
   baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1755
+  valuewidth: 1570
   baseUnit: mm
-  valuelength: 4560
-  valueheight: 2011
-  valuewheelbase: 2725
+  valuelength: 4486
+  valueheight: 1864
+  valuewheelbase: 2716
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1360
+  valueheight: 1215
   width: Breite
-  valuewidth: 1500
-  valuelength: 1701
+  valuewidth: 1248
+  valuelength: 1806
   length: Länge
   baseUnit: mm
 carSizesLength:
-  value: "4560"
+  value: "4486"
   key: Länge
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1755"
+  value: "1570"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "2011"
+  value: "1864"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "1701"
+  value: "1806"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1500"
+  value: "1248"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "1360"
+  value: "1215"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "2725"
+  value: "2716"
   baseUnit: mm
 ---
-Der Nissan e-NV 200 ist ein Elektotransporter der Klasse N1der Platz für bis zu 7 Personen bietet und über eine maximalen Nutzlast von 667 Kilogramm verfügt.
+Der Nissan Townstar ist ein Elektro-Kleintransporter der Klasse N1 mit 571 Kg Nutzlast beim 2-Tonner und 775 Kg beim 2,2-Tonner. Der Townstar ist als Transporter oder als mit bis zu 7 Sitzplätzen ausgestattete Hochdachkombi verfügbar. Das Fahrzeug wird das Vorgängermodell Nissan ENV-200 ersetzen und ist ab Herbst 2022 verfügbar.
