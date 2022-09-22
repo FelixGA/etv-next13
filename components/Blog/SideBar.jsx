@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import tileCatalogue from "/public/images/ETV Rectangle.jpg";
-import tileFacebook from "/public/images/ETV Rectangle2.jpg";
+import tileFoerderung from "/public/images/ETV Rectangle2.jpg";
 import tileYoutube from "/public/images/ETV Rectangle3.jpg";
 
 const data = [
@@ -16,9 +16,9 @@ const data = [
     alt: "Kaufberater",
   },
   {
-    href: "https://www.facebook.com/ARIMotorsElektrofahrzeuge/",
-    image: tileFacebook,
-    alt: "Facebook",
+    href: "https://www.elektrotransporter-vergleich.de/magazin/subsidies/foerderungen-fuer-elektrotransporter",
+    image: tileFoerderung,
+    alt: "Förderung",
   },
 ];
 
