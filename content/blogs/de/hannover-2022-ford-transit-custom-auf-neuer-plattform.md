@@ -5,8 +5,8 @@ youtubeLink: ""
 category: manufacturer
 publishedAt: 09/19/2022
 src: /images/ford-transit-e-custom_blau.jpg
-description: D﻿en Transit Custom gibt es jetzt auch als Elektroversion, in Kürze
-  zudem mit neuer Plattform mit niedrigerem Ladeboden.
+description: D﻿en Ford Transit Custom gibt es jetzt auch als Elektroversion, in
+  Kürze zudem mit neuer Plattform mit niedrigerem Ladeboden.
 ---
 Ford stellt auf der IAA Transportation in Hannover (–25.9.2022) den umfangreich modellgepflegten Transit Custom vor, den es erstmals auch als Plug-in-Hybrid sowie als vollelektrische Variante geben wird. Die Transporter-Baureihe bekommt zur zweiten Jahreshälfte 2023 eine neue Plattform mit einem niedrigeren Ladeboden und hinterer Einzelradaufhängung. Auf Wunsch steht ein „Mobile Office“-Paket zur Verfügung, bei dem sich das Lenkrad bis in die Waagrechte verstellen lässt und zum Beispiel als Tisch genutzt werden kann. Eine neue Variante bietet mit L-förmiger Trennwand bei bis zu fünf Sitzplätzen drei vorne, zwei in der zweiten Reihe eine maximale Laderaumlänge von bis zu drei Metern.
 
