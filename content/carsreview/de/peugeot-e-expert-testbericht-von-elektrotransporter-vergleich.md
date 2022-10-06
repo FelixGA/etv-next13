@@ -78,7 +78,7 @@ content:
       ### Umwelt
 
 
-      Der Energieverbrauch des Peugeot e-Expert wird nicht konkret angegeben, dürfte aber ähnlich seinen GEschwistermodellen um die 25 kWh auf 100 km liegen. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke so circka 7,50 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
+      Der Energieverbrauch des Peugeot e-Expert wird nicht konkret angegeben, dürfte aber ähnlich seinen GEschwistermodellen um die 25 kWh auf 100 km liegen. Bei angenommenen 30 Cent pro Kilowattstunde kosten 100 km Fahrstrecke so circa 7,50 €. Ein zusätzliches Solarmodul für mehr Reichweite wird nicht angeboten.
     title: Umwelt
     stars: 3
   - content: >-
