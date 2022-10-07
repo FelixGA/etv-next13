@@ -1,7 +1,7 @@
 ---
 title: VW ID. Buzz Cargo
 slug: vw-id-buzz-cargo-testbericht-von-elektrotransporter-vergleich
-relatedCars: vw-e-crafter
+relatedCars: vw-id-buzz-cargo
 youtubeLink: https://www.youtube.com/watch?v=gFUejZ2U0YY
 category: Kasten
 publishedAt: 10/07/2022
