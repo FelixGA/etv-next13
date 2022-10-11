@@ -1,6 +1,7 @@
 ---
-title: MAXUS kooperiert mit VanSelect für größere Auswahl an Auf- und Umbauten
-slug: maxus-kooperiert-mit-vanselect-fuer-groessere-auswahl-an-auf-und-umbauten
+title: "Aufbau-Ausbau: MAXUS kooperiert mit VanSelect für größere Auswahl an
+  Auf- und Umbauten"
+slug: aufbau-ausbau-maxus-kooperiert-mit-vanselect-fuer-groessere-auswahl-an-auf-und-umbauten
 youtubeLink: ""
 category: manufacturer
 publishedAt: 09/19/2022
