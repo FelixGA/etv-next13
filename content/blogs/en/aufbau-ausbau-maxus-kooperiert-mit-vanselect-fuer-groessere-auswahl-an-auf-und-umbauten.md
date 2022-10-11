@@ -1,6 +1,6 @@
 ---
 title: ein titel
-slug: aufbau-ausbau-maxus-kooperiert-mit-vanselect-fuer-groessere-auswahl-an-auf-und-umbauten
+slug: maxus-kooperiert-mit-vanselect-fuer-groessere-auswahl-an-auf-und-umbauten
 youtubeLink: ""
 category: manufacturer
 publishedAt: ""
