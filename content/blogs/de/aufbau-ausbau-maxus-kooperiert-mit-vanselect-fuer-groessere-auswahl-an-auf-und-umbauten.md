@@ -26,7 +26,7 @@ Maxus Händlern ist es damit möglich, über den VanSelect-Online-Konfigurator i
 
 Gerald Lautenschläger, Geschäftsführer der Maxomotive Deutschland GmbH, zeigt sich erfreut über die positiven Auswirkungen der Zusammenarbeit:
 
-\>﻿br />
+<﻿br />
 
 > „Wir erhalten sowohl online als auch real Zugriff auf vielseitige Lösungen unterschiedlicher Hersteller und können unseren Kunden einen genauen Überblick über die Möglichkeiten für unsere Transporter geben.”
 
