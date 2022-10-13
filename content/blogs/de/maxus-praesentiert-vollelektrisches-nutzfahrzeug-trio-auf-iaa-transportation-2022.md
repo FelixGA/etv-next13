@@ -35,7 +35,7 @@ Dritter im Bunde ist der MAXUS T90 EV, ein Elektro-Pick-up mit bequemer Doppelka
 
 Der Praktiker des Trios wird von einem 150 kW starkem E-Motor angetrieben und kann bis zu 925 kg Nutzlast aufnehmen. Eine 89 kWh große Batterie sorgt dafür, dass der Pick-up bis zu 330 km (WLTP kombiniert) fahren kann, ohne dass ein Ladestopp notwendig wird.
 
-\>﻿br />
+<﻿br />
 
 MAXUS hat damit drei Stromer auf einen Streich in sein Fahrzeug-Portfolio eingeführt. Jack Zhu, für Europa zuständiger Generalmanager des MAXUS Mutterkonzerns SAIC, sieht darin einen Beweis dafür, dass SAIC MAXUS „als eine der innovativsten und fortschrittlichsten Marken für elektrische Nutzfahrzeuge in Europa \[…] seine Führungsrolle in diesem Sektor ernst \[nimmt].“
 
