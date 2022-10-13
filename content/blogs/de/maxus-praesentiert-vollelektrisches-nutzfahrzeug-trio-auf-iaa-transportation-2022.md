@@ -37,7 +37,11 @@ Der Praktiker des Trios wird von einem 150 kW starkem E-Motor angetrieben und ka
 
 <﻿br />
 
-MAXUS hat damit drei Stromer auf einen Streich in sein Fahrzeug-Portfolio eingeführt. Jack Zhu, für Europa zuständiger Generalmanager des MAXUS Mutterkonzerns SAIC, sieht darin einen Beweis dafür, dass SAIC MAXUS „als eine der innovativsten und fortschrittlichsten Marken für elektrische Nutzfahrzeuge in Europa \[…] seine Führungsrolle in diesem Sektor ernst \[nimmt].“
+MAXUS hat damit drei Stromer auf einen Streich in sein Fahrzeug-Portfolio eingeführt. Jack Zhu, für Europa zuständiger Generalmanager des MAXUS Mutterkonzerns SAIC, sieht darin einen Beweis dafür, dass SAIC MAXUS: 
+
+<﻿br />
+
+> „als eine der innovativsten und fortschrittlichsten Marken für elektrische Nutzfahrzeuge in Europa \[…] seine Führungsrolle in diesem Sektor ernst \[nimmt].“
 
 <﻿br />
 
