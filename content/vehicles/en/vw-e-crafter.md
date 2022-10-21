@@ -145,7 +145,7 @@ loadingWeight:
 curbweight:
   key: Leergewicht
   value: 2499
-  baseUnit: "-"
+  baseUnit: kg
 maxSpeed:
   key: km/h
   value: 90

@@ -33,7 +33,7 @@ content:
 
       Die Ladefläche des Nissan Townstar ist knapp 1,8 m lang, 1,24 m breit und 1,21 m hoch. Das Fahrzeug kommt damit auf 3,3 m³ maximales Ladevolumen. Es lässt sich jedoch auch eine variable schwenkbare Trennwand einsetzen, welche das Ladevolumen auf 3,9 m³ erhöht. Durch die variable Trennwand und einen umklappbaren Beifahrersitz lassen sich zudem sperrige Gegenstände wie beispielsweise eine Leiter besser transportieren. Der Townstar ist zudem lang genug, um zwei Standard-Europaletten zu laden. Das Be- und Entladen des neuen Nissan ist dank der niedrigen Ladekante und des großen Laderaums unproblematisch. Das Dach des Small-Van kann außerdem über einen Dachgepäckträger ergänzt werden.
     title: Laderaum & Flexibilität
-    image: /images/nissan-townstar-van.jpg
+    image: /images/townstar_van.jpg
     stars: 2
   - content: >-
       ### Antrieb & Aufladung
@@ -41,7 +41,7 @@ content:
 
       Angetrieben wird das Fahrzeug von einem Elektromotor mit 89 kW Leistung (122 PS) und einer 45 kWh Batterie. Das Drehmoment beträgt 245 Nm. Das Fahrzeug arbeitet zudem mit effektiver Batteriekühlung. Die kombinierte Reichweite des Elektrotransporters liegt bei 300 km. Für das Laden mit Wechselstrom verfügt der Townstar über ein Bordladegerät mit wahlweise 11 oder 22 kW. Das Fahrzeug ist außerdem mit CCS-Ladetechnik ausgestattet, die 80 kW Ladeleistung an Gleichstrom-Schnellladesäulen ermöglicht. Über die Schnellladefunktion lässt sich das Fahrzeug in ca. 42 Min aufladen.
     title: Antrieb & Aufladung
-    image: /images/nissan-townstar-ladung.jpg
+    image: /images/townstar_van.jpeg
     stars: 4
   - content: >-
       ### Komfort & Ausstattung
@@ -55,7 +55,7 @@ content:
 
       Der Townstar kann außerdem durch einen Dachgepäckträger oder eine abnehmbare Anhängerkupplung ergänzt werden.
     title: Komfort & Ausstattung
-    image: /images/townstar-interior.png
+    image: /images/townstar_van7.jpg
     stars: 5
   - content: >-
       ### Bedienung & Fahrbetrieb
@@ -63,7 +63,7 @@ content:
 
       Der Nissan ist optional auch mit 2 Schiebetüren erhältlich, was das Be- und Entladen zusätzlich vereinfacht. Der optional klappbare Beifahrersitz gibt Ihnen die Wahl, einen Fahrgast mitzunehmen oder mehr Ladung zu verstauen. Der umgeklappte Sitz eignet sich auch als temporärer Arbeitstisch. Mit der Rückfahrkamera wird das Ankoppeln eines Anhängers zum Kinderspiel. Über die Smartphone-Halterung lassen sich Videotelefonate führen, Termine im Kalender prüfen oder E-Mails lesen.
     title: Bedienung & Fahrbetrieb
-    image: /images/nissan-townstar-innen.jpg
+    image: /images/townstar_van4.jpg
     stars: 0
   - content: >-
       ### Umwelt
@@ -72,6 +72,7 @@ content:
       Der Stromverbrauch in kWh pro 100 km liegt beim Nissan Townstar kombiniert bei  18,0 - 20,6. Mit diesem vergleichsweise hohen Verbrauch kosten 100 km Fahrstrecke bei angenommenen 30 Cent pro Kilowattstunde: 5,40 bis 6,18 €. Über ein zusätzliches Solarmodul auf dem Dach des Fahrzeugs gibt es keine Angaben.
     title: Umwelt
     stars: 2
+    image: /images/townstar_van5.jpg
   - content: >-
       ### Preise & Garantie
 
@@ -81,7 +82,7 @@ content:
 
       Nissan gibt auf den Townstar als Elektroversion eine Herstellergarantie von 8 Jahre auf das Fahrzeug und 160.000 km auf die Batterie.
     title: Preise & Garantie
-    image: /images/townstar-.jpg
+    image: /images/townstar_van2.jpg
     stars: 2
   - content: >-
       ### Fazit
