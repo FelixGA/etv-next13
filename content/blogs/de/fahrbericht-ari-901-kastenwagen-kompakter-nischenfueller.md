@@ -1,0 +1,25 @@
+---
+title: "Fahrbericht Ari 901 Kastenwagen: Kompakter Nischenfüller"
+slug: fahrbericht-ari-901-kastenwagen-kompakter-nischenfueller
+youtubeLink: ""
+category: manufacturer
+publishedAt: 11/04/2022
+src: /images/ampnet_photo_20221026_215894.jpg
+description: Der kompakte ARI 901 Kastenwagen mit E-Antrieb verfügt über eine
+  hohe Zuladung und ist als fahrbares Werkzeug konzipiert.
+---
+Er sieht nicht nur so aus, sondern ist es auch: Ein klassischer Transporter, der nur von den Dimensionen her etwas geschrumpft ist. 4,43 Meter misst der kleine Kastenwagen in der Länge und nicht einmal 1,70 Meter in der Breite, aber immerhin 1,94 Meter in der Höhe. Und vor allem ist der Ari 901 ganz zeitgemäß elektrisch unterwegs. Von seinen Abmessungen her und dem alternativen Antrieb füllt er im Markt eine Nische, die aktuell an Interesse gewinnen dürfte.
+
+Im Gegensatz zu den meisten anderen Elektrofahrzeugen ist der Ari nach der ersten Schlüsselumdrehung noch nicht fahr-, sondern nur startbereit. Wie bei einem klassischen Verbrenner muss das Schloss erst noch einmal bis zum Anschlag weitergedreht werden, ehe es losgehen kann. Dass das Piepen der bis 20 km/h aktiven Fußgängerwarnung auch deutlich bis in den Innenraum vordringt, mag der eine als störend empfinden, der andere als willkommene Rückmeldung interpretieren.\
+\
+Aufrüsten lässt sich der kleine Transporter unter anderem mit Klimaanlage und Infotainmentsystem von Kenwood, das vor allem Besitzer des Kastenwagens mit seiner Rückfahrkamera erfreut. Ganz dem Einsatzzweck und der für die Größe recht hohen Zuladung entsprechend geht es unbeladen wie bei vielen anderen leichten Nutzfahrzeugen etwas holperig zu, arbeitet hinten doch eine klassische Starrachse mit Blattfedern. Die Lenkung des 901 ist extrem leichtgängig und erleichtert den Einsatz im städtischen Lieferverkehr. Die Scheibe in der Trennwand spiegelt allerdings so stark, dass man sich schon die Nase plattdrücken muss, um in das Frachtabteil blicken zu können. Doch der Kastenaufbau mit zwei seitlichen Schiebetüren serienmäßig ist ohnehin eher die Ausnahme. Die Kunden, darunter auch Kommunen, schätzen an dem 1,63 Meter schmalen Nutzfahrzeug vor allem die Auswahlmöglichkeiten. Sie reichen vom Pritschenwagen über den Kofferaufbau und den Kipper bis hin zum Müllsammelfahrzeug.\
+\
+Im Handschuhfach findet sich ein USB-Kabel, zwei weitere USB-Anschlüsse und ein 12-Volt-Anschluss verbergen sich noch hinter einer Klappe in der Mittelkonsole. Die Flaschenhalter in den Türen sind ausreichend groß. Nachdenken könnte Ari über eine serienmäßige Handyhalterung, denn es bleibt als Ablage für das Smartphone eigentlich nur das sehr tief liegende Fach in der Mittelkonsole.\
+\
+Etwas ungewöhnlich ist der Drehzahlmesser anstatt des ansonsten bei E-Autos üblichen Powermeters. Er zeigt bei Höchstgeschwindigkeit 6400 Umdrehungen an und verweist auf die Wurzeln des Ari 901. Er wird in China vom Chery-Konzern als Karry Youyou auch mit Benzinmotoren angeboten. Dafür ersetzt eine Anzeige für die noch vorhandene Batterierestkapazität die klassische Tankuhr und hat analog dazu auch noch einen roten „Reservebereich“. Zudem findet sich nach Altvätersitte noch eine Handbremse zwischen den Sitzen, für die die im Zubehör angebotenen Schonbezüge durchaus eine Überlegung wert sind. Im Testfahrzeug zeigten sich an einer Stelle bereits leichte Abnutzungsspuren am Polster.\
+\
+Mit der Eco-Taste lässt sich noch ein wenig Energie sparen, wenn der Stromer spürbar zurückhaltender beschleunigt. Bei uns bewegte sich der kleine Transporter im Bereich von 16 bis 17 Kilowattstunden je 100 Kilometer. Die Verbrauchsanzeige macht allerdings keine Angaben hinter dem Komma. Bei etwas über 80 Prozent meldet der Bordcomputer noch eine Restreichweite von gut 200 Kilometern, bei 75 Prozent sind es 180. Etwas gewöhnungsbedürftig ist die sprichwörtliche Gedenksekunde beim Anfahren, die im Eco-Modus gefühlt noch eine halbe Sekunde länger ausfällt, da der Wagen nicht ganz so schnell an Tempo gewinnt. Mit einer angegebenen Spitzengeschwindigkeit von 100 km/h schwimmt der kleine Transporter aber auch im Landstraßenverkehr gut mit.\
+\
+Pkw-Komfort darf man von dem rollenden Werkzeug nicht erwarten, aber am Fahrverhalten des mit 15-Zoll-Reifen namens Sailun Touring bestückten Ari gibt es auch in Kurven nichts auszusetzen. Die subkompakte Bauweise bringt es allerdings mit sich, dass der Radkasten wie früher zum Teil in den Fußraum ragt. Hier muss der linke Fahrerfuß beim Erstkontakt mit dem 901 erst noch seinen Platz finden, was er dann am Ende aber auch tut: Da ein Kupplungspedal entfällt, lässt sich das Bein bequem am Innenkotflügel abstützen.\
+\
+Wir haben den kleinen Kerl nach recht kurzer Zeit bereits ein wenig ins Herz geschlossen. Und er bringt uns mit seiner 2,30 Meter langen Ladefläche rasch auf die Idee, ihn mit einfachen Mitteln in einen Microcamper zu verwandeln. Die mächtige Heckklappe böte sich zudem durchaus als festes Dach für eine Vorzelterweiterung an. (Jens Riedel/cen)
