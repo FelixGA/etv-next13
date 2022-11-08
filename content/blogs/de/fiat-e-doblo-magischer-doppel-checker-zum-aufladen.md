@@ -8,7 +8,7 @@ src: /images/20221024_f_edoblo_007-6359454cd6f59.jpeg
 description: Der Fiat E-Doblò ist als Transporter-Version für Gewerbetreibende &
   als Passagierversion für Familien verfügbar.
 ---
-FIAT erweitert sein Angebot um den Fiat Doblò, der unter dem Namen Fiat E-Doplò auch als vollelektrische Version erhältlich ist. Wie der Name bereits verrät, wohnen zwei Seelen in seiner Brust. Die eine schlägt für Gewerbetreibende aus Handwerk und Logistik. Die andere für Familien mit Kindern und Haustieren.
+FIAT erweitert sein Angebot um den Fiat Doblò, der unter dem Namen Fiat E-Doplò auch als vollelektrische Version erhältlich ist. Wie der Name verrät, wohnen zwei Seelen in seiner Brust. Die eine schlägt für Gewerbetreibende aus Handwerk und Logistik. Die andere für Familien mit Kindern und Haustieren.
 
 <﻿br />
 
