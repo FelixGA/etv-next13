@@ -144,5 +144,8 @@ wheelbase:
   key: Radstand
   value: "2040"
   baseUnit: mm
+youtubeId:
+  value: MW53d-2sueQ
+  key: YouTubeID
 ---
 Der Addax MT ist ein Elektro-Kleintransporter der Fahrzeugklasse N1 und verfügt über eine maximale Nutzlast von 1000 Kilogramm und eine Anhängelast von 2000 Kilogramm.

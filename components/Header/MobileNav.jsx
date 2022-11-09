@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState, useEffect, useLayoutEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { useStore } from "../store";
 import navbarData from "../../data/navbarData";
@@ -25,7 +25,7 @@ function MobileNav() {
   const { state, dispatch } = useStore();
 
   const firstUpdate = useRef(true);
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (firstUpdate.current) {
       firstUpdate.current = false;
       return;

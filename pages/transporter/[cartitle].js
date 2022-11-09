@@ -9,6 +9,9 @@ import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
 import { serialize } from "next-mdx-remote/serialize";
 import getSlugs from "/utils/getSlugs";
 import BasicInfo from "../../components/DetailsPage/BasicInfo";
+// import YouTube from "../../components/Video/YouTube";
+const YouTube = dynamic(() => import("../../components/Video/YouTube"), { ssr: false });
+import dynamic from "next/dynamic";
 
 export default function Details(props) {
   /* getCars hook for the slider */
@@ -26,6 +29,7 @@ export default function Details(props) {
   /* to make the Page change after clicking next/link */
   const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
   const [getBlogs, SetGetBlogs] = useState(props.blogs);
+
   useEffect(() => {
     setValueFromUseEffect(props.params.cartitle);
     SetGetCars(props.vehicles);
@@ -51,6 +55,13 @@ export default function Details(props) {
           {/* technical details section */}
           <TechnicalDetails carItem={carItem} />
           {/* description and articles section */}
+        </div>
+        <div className="grid w-full mb-8 place-items-center bg-vertical-grey md:mb-12">
+          <div className="grid grid-cols-1 gap-24 p-4 lg:grid-cols-2 md:px-16 md:py-24 max-w-screen-2xl ">
+            
+            <YouTube videoId="MW53d-2sueQ" />
+         
+          </div>
         </div>
 
         <Articles
