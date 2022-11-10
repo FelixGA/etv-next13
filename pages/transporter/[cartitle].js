@@ -64,6 +64,15 @@ export default function Details(props) {
           </div>
         </div>
 
+        {/* Youtube-Komponente  */}
+        {/* <div className="grid w-full mb-8 place-items-center bg-vertical-grey md:mb-12">
+          <div className="grid grid-cols-1 gap-24 p-4 lg:grid-cols-2 md:px-16 md:py-24 max-w-screen-2xl ">
+            
+            <YouTube videoId="https://www.youtube.com/watch?v=MW53d-2sueQ" />
+         
+          </div>
+        </div> */}
+
         <Articles
           carItem={carItem}
           getBlogContext={getBlogContext}

@@ -33,5 +33,5 @@ loadingVolumeHeight:
   value: "1480"
   baseUnit: mm
 youtubeId:
-  value: MW53d-2sueQ
+  value: https://www.youtube.com/watch?v=MW53d-2sueQ
 ---
