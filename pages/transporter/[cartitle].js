@@ -139,7 +139,7 @@ export async function getStaticProps(context) {
       notFound: true,
     };
   }
-
+  /* */
   return {
     props: {
       vehicle,
