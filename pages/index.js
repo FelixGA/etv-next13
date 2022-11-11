@@ -34,7 +34,7 @@ export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
   // console.log(vehicles);
-  console.log(JSON.stringify(vehicles, null, 1));
+  // console.log(JSON.stringify(vehicles, null, 1));
   // console.dir(vehicles, {'maxArrayLength' : null});
 
   let brands = await getContent("brands", context.locale);
