@@ -143,6 +143,8 @@ wheelbase:
   key: Radstand
   value: "2300"
   baseUnit: mm
+youtube:
+  id: U1z-nSHox7E
 ---
 
 Der ARI 458 Food Truck ist ein elektrischer Kleintransporter mit Gastro-Aufbau. Er kann individuell gestaltet und an verschiedene Gastrokonzepte angepasst werden.

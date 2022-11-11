@@ -1319,12 +1319,12 @@ collections:
               widget: "string",
               i18n: duplicate,
             }
-      - label: "youtubeid"
-        name: "youtubeId"
+      - label: "Youtube"
+        name: "youtube"
         widget: "object"
 
-        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        summary: "{{fields.heading}}"
         i18n: true
         fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
+          - { label: "Heading", name: "heading", required: false, widget: "string", i18n: true }
+          - { label: "ID", name: "id", required: false, widget: "string", i18n: duplicate }

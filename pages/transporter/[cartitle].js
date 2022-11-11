@@ -40,6 +40,7 @@ export default function Details(props) {
     SetGetBlogs(props.blogs);
     SetGetAllReviews(props.carsreviews);
   }, [props]);
+
   return (
     <>
       <div className=" print:hidden">
@@ -66,6 +67,15 @@ export default function Details(props) {
           </div>
         </div> */}
 
+        {/* Youtube-Komponente  */}
+        <div className="grid w-full mb-8 place-items-center bg-vertical-grey md:mb-12">
+          <div className="grid grid-cols-1 gap-24 p-4 lg:grid-cols-2 md:px-16 md:py-24 max-w-screen-2xl ">
+            
+             <YouTube videoId={props.vehicle?.youtube?.id} heading={props.vehicle?.youtube?.heading} />
+         
+          </div>
+        </div>
+
         <Articles
           carItem={carItem}
           getBlogContext={getBlogContext}
@@ -82,12 +92,17 @@ export default function Details(props) {
   );
 }
 
+// context parameter is object with keys: params, preview, locale
+// params contains route parameter 
+// locale ist die Ländersprache
+// hole props aus ...
 export async function getStaticProps(context) {
   let vehicle = await getContentBySlug(
     "vehicles",
     context.params.cartitle,
     context.locale
   );
+  // hole props aus content/vehicles
   let vehicles = await getContent("vehicles", context.locale);
 
   /*  get the first 4 from this category for the slider */
@@ -141,7 +156,8 @@ export async function getStaticProps(context) {
       notFound: true,
     };
   }
-  /* */
+
+  // stelle props für Components oben zu Verfügung
   return {
     props: {
       vehicle,

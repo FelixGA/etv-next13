@@ -1,20 +1,16 @@
-// import { useState } from "react";
-// import Image from "next/image";
-// import useTranslation from "/hooks/useTranslation";
 import YoutubePlayer from "react-youtube";
 
 export default function YouTube(props) {
-//   const [selected, setSelected] = useState(0);
-//   const ytChannel = useTranslation("YouTube-Kanal");
-
   return (
-    <div className="overflow-hidden">
-      <h2 className="text-green-dark mb-8">
-        Video
-      </h2>
-            
+    <>
+      {/* props.videoId ? <div className=""> <YoutubePlayer/>  </div> : Null */}
+      {props.videoId && (
+        <div className="overflow-hidden">
+          <h2 className="text-green-dark mb-8">{props.heading}</h2>
+
           <YoutubePlayer
             className="w-full h-52 sm:h-80 lg:h-96"
+            videoId={props.videoId}
             opts={{
               playerVars: {
                 showinfo: 0,
@@ -24,7 +20,8 @@ export default function YouTube(props) {
               },
             }}
           />
-      
-    </div>
+        </div>
+      )}
+    </>
   );
 }

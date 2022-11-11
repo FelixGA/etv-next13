@@ -32,6 +32,8 @@ loadingVolumeLength:
 loadingVolumeHeight:
   value: "1480"
   baseUnit: mm
+youtube:
+  id: ""
 youtubeId:
   value: https://www.youtube.com/watch?v=MW53d-2sueQ
 ---
