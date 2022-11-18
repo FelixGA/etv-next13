@@ -11,6 +11,7 @@
     "postbuild": "node next-sitemap"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.0.3",
     "@next/mdx": "^12.2.5",
     "@phntms/next-gtm": "^0.1.0",
     "@sergeymyssak/nextjs-sitemap": "^2.0.3",

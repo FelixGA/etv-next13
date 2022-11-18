@@ -28,7 +28,7 @@ export default function news(props) {
 }
 
 export async function getStaticProps(context) {
-  const pages = await getContent("pages", context.locale);
+  // const pages = await getContent("pages", context.locale);
   // const posts = await getContent("posts", context.locale);
   // let vehicles = await getContent("vehicles", context.locale);
   const page = pages.find((page) => page.path === "/magazin");
