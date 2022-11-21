@@ -917,10 +917,20 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@edge-runtime/format@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@edge-runtime/format/-/format-1.1.0.tgz#5a209221a8bae7791d6e465c480f146249d1e15f"
-  integrity sha512-MkLDDtPhXZIMx83NykdFmOpF7gVWIdd6GBHYb8V/E+PKWvD2pK/qWx9B30oN1iDJ2XBm0SGDjz02S8nDHI9lMQ==
+"@corex/deepmerge@^4.0.29":
+  version "4.0.29"
+  resolved "https://registry.yarnpkg.com/@corex/deepmerge/-/deepmerge-4.0.29.tgz#af9debf07d7f6b0d2a9d04a266abf2c1418ed2f6"
+  integrity sha512-q/yVUnqckA8Do+EvAfpy7RLdumnBy9ZsducMUtZTvpdbJC7azEf1hGtnYYxm0QfphYxjwggv6XtH64prvS1W+A==
+
+"@edge-runtime/format@^1.1.0-beta.32":
+  version "1.1.0-beta.33"
+  resolved "https://registry.yarnpkg.com/@edge-runtime/format/-/format-1.1.0-beta.33.tgz#bfba333b47167b0deb09b3df0d5e60d8c72d7c62"
+  integrity sha512-t34oTdZOqYSiguCGnt9GYzh9mrnhCHNRPGDvxt5PB5T3LZpSVk+vfSXRqpvTxy51sxQpxvTZry8QLC+E+Fm67w==
+
+"@edge-runtime/primitives@^1.1.0-beta.32", "@edge-runtime/primitives@^1.1.0-beta.34":
+  version "1.1.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@edge-runtime/primitives/-/primitives-1.1.0-beta.34.tgz#1920fad8ea03c0c3b677c77904ab1459e21ffe63"
+  integrity sha512-gFubu4qIqg1k6sOM2Ho/txFUE/vZCn057wGiY0NIQ8h6tySiUO5FULCaebPrp+Yfxb3ZCWqDLeWanQGFB3TYQQ==
 
 "@edge-runtime/primitives@2.0.0":
   version "2.0.0"
@@ -5253,6 +5263,14 @@ next-pwa@^5.5.5:
     terser-webpack-plugin "^5.3.3"
     workbox-webpack-plugin "^6.5.4"
     workbox-window "^6.5.4"
+
+next-sitemap@^3.1.32:
+  version "3.1.32"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.32.tgz#e4a7227cab23b5e5c68bc54d335b86d3ff1e05f8"
+  integrity sha512-jkIKpwLXpWWTPfmDO46+6nu4+qpar4CjvUwCR9rYZHWtzE/wFfaCVFKpGtFMl6MFjpu8GjiE6kWFEa7uF3bzzg==
+  dependencies:
+    "@corex/deepmerge" "^4.0.29"
+    minimist "^1.2.6"
 
 next@^12.3.1:
   version "12.3.3"
