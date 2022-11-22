@@ -6,9 +6,10 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import TopSlider from "../components/Sliders/TopSlider";
 import Funnel from "../components/Caradvisor/Funnel";
 import NewsLetter from "../components/Homepage/NewsLetter";
+import CookieConsent from "react-cookie-consent";
 
 export default function Home(props) {
-
+  
   return (
     <>
       <Head page={props.page} />
@@ -26,6 +27,17 @@ export default function Home(props) {
         getBrands={props.brands}
       />
       <NewsLetter getMarkdownContext={props.context} />
+      <CookieConsent
+        location="bottom"
+        buttonText="Sure"
+        cookieName="Cookie1"
+        style={{ background: "#2B373B" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+        expires={150}
+        enableDeclineButton
+      >
+        This website uses cookies to enhance the user experience.{" "}
+      </CookieConsent>
     </>
   );
 }
