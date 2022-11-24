@@ -9,10 +9,15 @@ export default function news(props) {
   const [getBlogs, SetGetBlogs] = useState(
     props.blogs.filter((item) => item.category === "news")
   );
-
+  
+  // console.log(props.pages);
+  
   useEffect(() => {
     SetGetBlogs(props.blogs.filter((item) => item.category === "news"));
   }, [props]);
+
+  // console.log(props.pages);
+
   return (
     <>
       <Head page={props.page} />
@@ -23,14 +28,18 @@ export default function news(props) {
         <LinkTile getBlogs={getBlogs} />
       </div>
       <Blog getBlogs={getBlogs} />
+
+      {/* {console.log(props.pages)} */}
     </>
   );
+  
 }
 
 export async function getStaticProps(context) {
-  // const pages = await getContent("pages", context.locale);
-  // const posts = await getContent("posts", context.locale);
-  // let vehicles = await getContent("vehicles", context.locale);
+
+  // speichere alles aus /content/pages/
+  const pages = await getContent("pages", context.locale);
+  // finde die page wo im object der path === "/magazin"
   const page = pages.find((page) => page.path === "/magazin");
   let blogs = await getContent("blogs", context.locale);
   let brands = await getContent("brands", context.locale);
@@ -43,12 +52,13 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      // page,
+      page,
       // posts,
       // vehicles,
       blogs,
-
       brands,
+      // pages
     },
   };
 }
+

@@ -12,7 +12,9 @@ export default async function getContent(name, locale) {
       dot: true,
     });
     let content = filenames.map(async (filename) => {
+      // console.log(filename);
       const source = await fs.readFile(filename);
+      // console.log(source);
       const { content, data } = matter(source);
       data.locale = locale;
       let mdxSource;
@@ -26,9 +28,11 @@ export default async function getContent(name, locale) {
       }
 
       if (name === "pages" && data.content?.length > 0) {
+        // console.log(data.content);
         let mdxPageContent = {};
         if (!data.content) return;
         for (let content of data.content) {
+          // console.log(content);
           const markdown = await serialize(content.markdown);
           mdxPageContent = { ...mdxPageContent, [content.name]: markdown };
         }
