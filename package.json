@@ -8,18 +8,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "node next-sitemap"
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^13.0.3",
     "@next/mdx": "^12.2.5",
     "@phntms/next-gtm": "^0.1.0",
-    "@sergeymyssak/nextjs-sitemap": "^2.0.3",
     "@tailwindcss/line-clamp": "^0.4.2",
     "axios": "^0.27.2",
     "express": "^4.18.0",
     "framer-motion": "^7.2.0",
-    "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "next": "^12.3.1",
     "next-mdx-remote": "^4.1.0",

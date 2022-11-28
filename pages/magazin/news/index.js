@@ -53,8 +53,6 @@ export async function getStaticProps(context) {
   return {
     props: {
       page,
-      // posts,
-      // vehicles,
       blogs,
       brands,
       // pages
