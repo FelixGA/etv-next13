@@ -87,7 +87,8 @@ const TopSlider = (props) => {
         <div
           onClick={() => (container.current.scrollLeft += 293)}
           className={
-            props.vehicles?.length >= 4
+            // props.vehicles?.length >= 4
+            sellingRanking.length >= 4
               ? "xl:flex items-center hidden pr-1 hover:scale-110 transition relative"
               : "hidden"
           }
