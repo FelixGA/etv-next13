@@ -1,12 +1,15 @@
 import Layout from "../components/Layout";
 import ErrorBoundary from "../components/ErrorBoundary";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { StoreProvider } from "/components/store";
 import { TrackingHeadScript } from "@phntms/react-gtm";
 import "/styles/globals.css";
 import App from "next/app";
 
 export default function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -49,7 +52,7 @@ export default function MyApp({ Component, pageProps }) {
       <ErrorBoundary>
         <StoreProvider>
           <Layout {...pageProps}>
-            <Component {...pageProps} />
+            <Component {...pageProps} key={router?.asPath} />
           </Layout>
         </StoreProvider>
       </ErrorBoundary>
