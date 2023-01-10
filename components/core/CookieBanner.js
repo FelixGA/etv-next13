@@ -22,7 +22,7 @@ export default function CookieBanner(props) {
           ARI Motors braucht für einzelne Datennutzungen Deine Einwilligung, um
           Dein Nutzererlebnis zu verbessern. Mit Klick auf "Akzeptieren" gibst
           Du diese Einwilligung. Unsere Datenschutzerklärung findest Du
-          <Link href="/datenschutz">
+          <Link href="/dataprotection">
             <a className="font-bold"> hier.</a>
           </Link>
         </p>
@@ -42,7 +42,7 @@ export default function CookieBanner(props) {
           name="accept"
           onClick={(e) => {
             setCookiesAccepted(true);
-            // enableTracking("G-XN4BS8SB6C", true);
+            // enableTracking("GTM-K6PQ4G9", true);
             window.location.reload(false)
           }}
         >

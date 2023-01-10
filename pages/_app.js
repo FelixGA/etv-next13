@@ -49,9 +49,9 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"></link>
       </Head>
 
-       {/* <TrackingHeadScript id="G-XN4BS8SB6C" disable={true} /> */}
+       {/* <TrackingHeadScript id="GTM-K6PQ4G9" disable={true} /> */}
       {cookiesAccepted&&(
-      <TrackingHeadScript id="G-XN4BS8SB6C" disable={false} />
+      <TrackingHeadScript id="GTM-K6PQ4G9" disable={false} />
       )}
 
       <ErrorBoundary>
