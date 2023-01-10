@@ -35,7 +35,7 @@ export default function Layout(props) {
     >
       <Header />
 
-      <main>
+      <main className="relative">
         {props.children}
         <Suspense>{cookiesAccepted === null && <CookieBanner />}</Suspense>
         </main>

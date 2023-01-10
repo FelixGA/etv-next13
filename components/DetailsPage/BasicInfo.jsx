@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CarCardDetailsMobile from "../../components/ResultList/CarCardDetailsMobile";
 import CarCardDetailsDesktop from "../../components/ResultList/CarCardDetailsDesktop";
-
+import {useState, useEffect} from "react";
 import Image from "next/image";
 import StarsRating from "../repeated/StarsRating";
 import TestVerdictVertical from "../repeated/TestVerdictVertical";
@@ -12,7 +12,9 @@ const BasicInfo = ({
   getTestReview,
   getCarsReview,
   getAllReviews,
+
 }) => {
+
   return (
     <div className="flex flex-col w-full p-4 lg:flex-row lg:pt-12">
       <div className="flex flex-col justify-start w-full lg:w-1/2 print:w-1/2">
@@ -24,6 +26,15 @@ const BasicInfo = ({
               </a>
             </Link>
           </button>
+          
+          {/* <button className="w-48 h-10 text-sm bg-white border rounded-md print:hidden text-blue-darker">
+            <Link href={`/fahrzeuge/${brand}.js`}>
+              <a className="visited:text-blue-darker">
+                « zurück zu Hersteller
+              </a>
+            </Link>
+          </button> */}
+
         </div>
         <div className="w-full">
           <Image

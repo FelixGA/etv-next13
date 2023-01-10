@@ -6,7 +6,6 @@ import { StoreProvider } from "/components/store";
 import { TrackingHeadScript } from "@phntms/react-gtm";
 import "/styles/globals.css";
 import useIdb from "/hooks/useIdb";
-import App from "next/app";
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter(); // neu
@@ -52,7 +51,7 @@ export default function MyApp({ Component, pageProps }) {
 
        {/* <TrackingHeadScript id="G-XN4BS8SB6C" disable={true} /> */}
       {cookiesAccepted&&(
-      <TrackingHeadScript id="G-XN4BS8SB6C" disable={true} />
+      <TrackingHeadScript id="G-XN4BS8SB6C" disable={false} />
       )}
 
       <ErrorBoundary>
