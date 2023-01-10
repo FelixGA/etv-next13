@@ -1,4 +1,5 @@
 import Head from "../components/core/Head";
+import dynamic from "next/dynamic";
 import getContent from "/utils/getContent";
 import { serialize } from "next-mdx-remote/serialize";
 import BlogArticles from "../components/Homepage/BlogArticles";
@@ -26,16 +27,13 @@ export default function Home(props) {
         getBrands={props.brands}
       />
       <NewsLetter getMarkdownContext={props.context} />
-    </>
+    </> 
   );
 }
 
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
-  // console.log(vehicles);
-  // console.log(JSON.stringify(vehicles, null, 1));
-  // console.dir(vehicles, {'maxArrayLength' : null});
 
   let brands = await getContent("brands", context.locale);
   const page = pages.find((page) => page.path === "/");

@@ -3,7 +3,7 @@ import Head from "../../components/core/Head";
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import { serialize } from "next-mdx-remote/serialize";
-
+ 
 import Image from "next/image";
 import Link from "next/link";
 import FahrzeugeResultList from "../../components/FahrzeugeResultLIst/FahrzeugeResultList";
