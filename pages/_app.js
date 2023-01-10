@@ -1,19 +1,20 @@
 import Layout from "../components/Layout";
 import ErrorBoundary from "../components/ErrorBoundary";
 import Head from "next/head";
-import { useRouter } from "next/router";
+import { useRouter } from "next/router"; // neu
 import { StoreProvider } from "/components/store";
 import { TrackingHeadScript } from "@phntms/react-gtm";
 import "/styles/globals.css";
+import useIdb from "/hooks/useIdb";
 import App from "next/app";
 
 export default function MyApp({ Component, pageProps }) {
-  const router = useRouter();
+  const router = useRouter(); // neu
+  const [cookiesAccepted, setCookiesAccepted] = useIdb("cookiesAccepted");
 
   return (
     <>
       <Head>
-        <TrackingHeadScript id="G-XN4BS8SB6C" disable={false} />
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
@@ -49,10 +50,16 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"></link>
       </Head>
 
+       {/* <TrackingHeadScript id="G-XN4BS8SB6C" disable={true} /> */}
+      {cookiesAccepted&&(
+      <TrackingHeadScript id="G-XN4BS8SB6C" disable={true} />
+      )}
+
       <ErrorBoundary>
         <StoreProvider>
           <Layout {...pageProps}>
-            <Component {...pageProps} key={router?.asPath} />
+            {/* <Component {...pageProps} /> */}
+            <Component {...pageProps} key={router?.asPath}/>
           </Layout>
         </StoreProvider>
       </ErrorBoundary>

@@ -1,12 +1,22 @@
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import dynamic from "next/dynamic";
 import { useStore } from "../components/store";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
+import useIdb from "/hooks/useIdb";
+
+const CookieBanner = dynamic(() => import("/components/core/CookieBanner"), {
+  suspense: true,
+});
 
 export default function Layout(props) {
   const [blogs, setBlogs] = useState(props.blogs);
   const [brands, setBrands] = useState(props.brands);
   const { state, dispatch } = useStore();
+  const [cookiesAccepted, setCookiesAccepted] = useIdb(
+    "cookiesAccepted",
+    null
+  );
   const [valueFromUseEffect, setValueFromUseEffect] = useState(null);
   useEffect(() => {
     setBrands(props.brands);
@@ -15,6 +25,7 @@ export default function Layout(props) {
   }, [props, valueFromUseEffect]);
 
   return (
+
     <div
       className={
         state?.mobileNavActives
@@ -24,7 +35,10 @@ export default function Layout(props) {
     >
       <Header />
 
-      <main>{props.children}</main>
+      <main>
+        {props.children}
+        <Suspense>{cookiesAccepted === null && <CookieBanner />}</Suspense>
+        </main>
       <Footer blogs={blogs} brands={brands} />
     </div>
   );
@@ -39,7 +53,6 @@ export async function getStaticProps(context) {
     props: {
       brands,
       blogs,
-
       params: context.params,
       vehicles,
     },
