@@ -1,11 +1,9 @@
-// import { useTransition } from "react";
 import Link from "next/link";
 import useIdb from "/hooks/useIdb";
-import { enableTracking } from "@phntms/next-gtm";
+// import { enableTracking } from "@phntms/next-gtm";
 import Button1 from "/components/core/Button1";
 
 export default function CookieBanner(props) {
-  // const [startTransition, isPending] = useTransition({ timeoutMs: 3000 });
   const [cookiesAccepted, setCookiesAccepted] = useIdb(
     "cookiesAccepted",
     null

@@ -1,8 +1,8 @@
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import { useState, useEffect, Suspense } from "react";
 import dynamic from "next/dynamic";
 import { useStore } from "../components/store";
-import { useState, useEffect, Suspense } from "react";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 import useIdb from "/hooks/useIdb";
 
 const CookieBanner = dynamic(() => import("/components/core/CookieBanner"), {
@@ -45,13 +45,13 @@ export default function Layout(props) {
 }
 export async function getStaticProps(context) {
   let blogs = await getContent("blogs", context.locale);
-
   let vehicles = await getContent("vehicles", context.locale);
   let brands = await getContent("brands", context.locale);
   // let page = await getContent("pages", context.locale);
   return {
     props: {
       brands,
+      // page,
       blogs,
       params: context.params,
       vehicles,
