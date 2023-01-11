@@ -1,11 +1,11 @@
-import Layout from "../components/Layout";
-import ErrorBoundary from "../components/ErrorBoundary";
 import Head from "next/head";
 import { useRouter } from "next/router"; // neu
+import { TrackingHeadScript } from "@phntms/next-gtm";
 import { StoreProvider } from "/components/store";
-import { TrackingHeadScript } from "@phntms/react-gtm";
-import "/styles/globals.css";
+import Layout from "../components/Layout";
+import ErrorBoundary from "../components/ErrorBoundary";
 import useIdb from "/hooks/useIdb";
+import "/styles/globals.css";
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter(); // neu
@@ -49,7 +49,7 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"></link>
       </Head>
 
-       {/* <TrackingHeadScript id="GTM-K6PQ4G9" disable={true} /> */}
+       {/* <TrackingHeadScript id="G-XN4BS8SB6C" disable={false} /> */}
       {cookiesAccepted&&(
       <TrackingHeadScript id="GTM-K6PQ4G9" disable={false} />
       )}
