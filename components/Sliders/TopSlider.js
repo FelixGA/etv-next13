@@ -9,14 +9,14 @@ const sellingRanking = [
   "Aixam-pro-Etruck-pritsche",
   "Addax MT Koffer",
   "Alke ATX 340 E Pritsche",
-  // "Addax MT Kipper",
-  // "Streetsoccer",
-  // "ARI 458 Pritsche",
-  // "Addax MT Pritsche",
-  // "Peugeot E-Partner",
-  // "Evum A-Car Pritsche",
-  // "Opel Vivaro-E-Cargo",
-  // "Elektrofrosch BIG"
+  "Addax MT Kipper",
+  "Streetsoccer",
+  "ARI 458 Pritsche",
+  "Addax MT Pritsche",
+  "Peugeot E-Partner",
+  "Evum A-Car Pritsche",
+  "Opel Vivaro-E-Cargo",
+  "Elektrofrosch BIG"
 ];
 
 const TopSlider = (props) => {
