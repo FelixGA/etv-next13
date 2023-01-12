@@ -11,6 +11,8 @@ export default function MyApp({ Component, pageProps }) {
   const router = useRouter(); // neu
   const [cookiesAccepted, setCookiesAccepted] = useIdb("cookiesAccepted");
 
+  console.log(Component);
+
   return (
     <>
       <Head>
@@ -51,7 +53,7 @@ export default function MyApp({ Component, pageProps }) {
 
        {/* <TrackingHeadScript id="G-XN4BS8SB6C" disable={false} /> */}
       {cookiesAccepted&&(
-      <TrackingHeadScript id="GTM-K6PQ4G9" disable={false} />
+      <TrackingHeadScript id="G-XN4BS8SB6C" disable={false} />
       )}
 
       <ErrorBoundary>

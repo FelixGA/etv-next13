@@ -70,17 +70,15 @@ const TopSlider = (props) => {
               />
             ))} */}
 
-            {
-            sellingRanking.map((auto) => (
-              props.vehicles?.map((car, index) => (
-                auto===car.title ? (
-                    <TopSliderCard vehicle={car} key={index} />
-                ) : (false)
+            {sellingRanking.map((auto) =>
+              props.vehicles?.map((car, index) =>
+                auto === car.title ? (
+                  <TopSliderCard vehicle={car} key={index} />
+                ) : (
+                  false
+                )
               )
-            )
-            )
-            )
-            }
+            )}
           </div>
         </div>
 
