@@ -54,7 +54,7 @@ export default function MyApp({ Component, pageProps }) {
        {/*GTM*/}
        {/* <TrackingHeadScript id="G-G35HVHE2CE" disable={false} /> */}
       {cookiesAccepted&&(
-      <TrackingHeadScript id="G-G35HVHE2CE" disable={false} />
+      <TrackingHeadScript id="GTM-TQRQV32" disable={false} />
       )}
 
       <ErrorBoundary>
