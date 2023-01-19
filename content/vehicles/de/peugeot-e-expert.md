@@ -1,7 +1,7 @@
 ---
 title: Peugeot E-Expert
 name: peugeot-e-expert
-price: 38300
+price: 36190
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 
