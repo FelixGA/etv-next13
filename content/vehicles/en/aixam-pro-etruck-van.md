@@ -1,7 +1,7 @@
 ---
 title: Aixam Pro eTruck
 name: aixam-pro-etruck-van
-price: 19990
+price: 22480
 relatedBlogs:
   title: ""
   content: ""
