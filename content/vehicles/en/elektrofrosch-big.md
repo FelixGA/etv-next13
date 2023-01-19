@@ -1,7 +1,7 @@
 ---
 title: Elektrofrosch BIG
 name: elektrofrosch-big
-price: 3290
+price: 2665
 relatedBlogs:
   content: ""
 relatedReviews: elektrofrosch-big-testbericht-von-elektrotransporter-vergleich
