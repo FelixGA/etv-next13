@@ -85,7 +85,7 @@ content:
       ### Preise & Garantie
 
 
-      Die Preise für den Peugeot e-Expert beginnen bei 38.300 Euro netto für den e-Expert L2 mit 50 kWh-Akku und Basisausstattung. Die Variante mit einer Akkukapazität von 75 kWh kostet rund 5.000 Euro mehr. Der e-Expert L3 mit 5,30 Meter Länge ist ab 39.800 Euro netto verfügbar, ab 44.800 Euro mit dem größeren Akku. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
+      Die Preise für den Peugeot e-Expert beginnen bei 36.190 Euro netto für den e-Expert L2 mit 50 kWh-Akku und Basisausstattung. Die Variante mit einer Akkukapazität von 75 kWh kostet rund 5.000 Euro mehr. Der e-Expert L3 mit 5,30 Meter Länge ist ab 37.830 Euro netto verfügbar, ab 42.380 Euro mit dem größeren Akku. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
 
 
       Peugeot bietet auf den Fahrzeugakku eine Garantie von stolzen 8 Jahren bzw. 160.000 Kilometer. Für das Fahrzeug gelten wie üblich bei Peugeot eine Herstellergarantie von 2 Jahren ohne Kilometerbeschränkung.
