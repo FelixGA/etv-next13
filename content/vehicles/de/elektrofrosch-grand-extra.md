@@ -1,7 +1,7 @@
 ---
 title: Elektrofrosch Grand Extra
 name: elektrofrosch-grand-extra
-price: 3637
+price: 4490
 relatedBlogs:
   content: ""
 relatedReviews: elektrofrosch-grand-extra-testbericht-von-elektrotransporter-vergleich
