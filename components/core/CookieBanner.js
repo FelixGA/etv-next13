@@ -42,7 +42,7 @@ export default function CookieBanner(props) {
           name="accept"
           onClick={(e) => {
             setCookiesAccepted(true);
-            // enableTracking("GTM-K6PQ4G9", true);
+            // enableTracking("GTM-TQRQV32", true);
             window.location.reload(false)
           }}
         >
