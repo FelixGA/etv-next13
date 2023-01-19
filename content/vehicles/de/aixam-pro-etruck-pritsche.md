@@ -1,7 +1,7 @@
 ---
-title: Aixam-pro-Etruck-pritsche
+title: Aixam Pro E-Truck Pritsche
 name: aixam-pro-etruck-pritsche
-price: 19690
+price: 21680
 relatedBlogs: der-ari-kuehlt-jetzt-auch
 relatedReviews: aixam-pro-etruck-testbericht-von-elektrotransporter-vergleich
 description: Der Aixam Pro e-Truck ist ein leichter Elektrotransporter der
