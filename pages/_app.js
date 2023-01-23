@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }) {
   const router = useRouter(); // neu
   const [cookiesAccepted, setCookiesAccepted] = useIdb("cookiesAccepted");
 
-  console.log(Component);
+  // console.log(Component);
 
   return (
     <>
