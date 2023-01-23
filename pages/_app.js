@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router"; // neu
-import { TrackingHeadScript } from "@phntms/next-gtm";
+// import { TrackingHeadScript } from "@phntms/next-gtm";
 import { StoreProvider } from "/components/store";
 import Layout from "../components/Layout";
 import ErrorBoundary from "../components/ErrorBoundary";
@@ -53,9 +53,9 @@ export default function MyApp({ Component, pageProps }) {
 
        {/*GTM*/}
        {/* <TrackingHeadScript id="G-G35HVHE2CE" disable={false} /> */}
-      {cookiesAccepted&&(
+      {/* {cookiesAccepted&&(
       <TrackingHeadScript id="GTM-TQRQV32" disable={false} />
-      )}
+      )} */}
 
       <ErrorBoundary>
         <StoreProvider>
