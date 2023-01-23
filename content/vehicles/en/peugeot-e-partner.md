@@ -1,7 +1,7 @@
 ---
 title: Peugeot E-Partner
 name: peugeot-e-partner
-price: 21290
+price: 28990
 relatedBlogs: >-
   # ARI 458 Testbericht von Elektrotransporter-Vergleich
 

@@ -1,7 +1,7 @@
 ---
 title: VW ID. Buzz Cargo
 name: vw-id-buzz-cargo
-price: 54430
+price: 45740
 relatedBlogs: der-vw-id-buzz-kann-bestellt-werden
 relatedReviews: vw-id-buzz-cargo-testbericht-von-elektrotransporter-vergleich
 description: Der VW ID. Buzz ist der erste vollelektrische Small-Van aus dem

@@ -1,7 +1,7 @@
 ---
 title: Opel Vivaro-E Cargo
 name: opel-vivaro-e-cargo
-price: 37490
+price: 39500
 relatedBlogs: der-opel-vivaro-e-bekommt-erstmals-eine-pritsche
 relatedReviews: opel-vivaro-e-testbericht-von-elektrotransporter-vergleich
 description: Der Opel Vivaro-E Cargo ist ein Kastenwagen, welcher in zwei

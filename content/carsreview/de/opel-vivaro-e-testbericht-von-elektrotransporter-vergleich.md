@@ -85,7 +85,7 @@ content:
       ### Preise & Garantie
 
 
-      Die Preise für den Opel Vivaro-E Cargo beginnen bei 37.490 Euro netto für den Vivaro-E Cargo M mit 50 kWh-Akku und Basisausstattung. Die länger Variante Cargo M liegt etwas darüber. Der Akku mit einer höheren Kapazität von 75 kWh hat eine Aufpreis von rund 5.000 Euro. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
+      Die Preise für den Opel Vivaro-E Cargo beginnen bei 39.500 Euro netto für den Vivaro-E Cargo M mit 50 kWh-Akku und Basisausstattung. Die länger Variante Cargo M liegt etwas darüber. Der Akku mit einer höheren Kapazität von 75 kWh hat eine Aufpreis von rund 5.000 Euro. Alle Batterien sind im Preis enthalten und müssen nicht dazu gemietet werden.
 
 
       Opel bietet auf den Fahrzeugakku eine Garantie von stolzen 8 Jahren bzw. 160.000 Kilometer. Für das Fahrzeug gelten wie üblich bei Citroen eine Herstellergarantie von 2 Jahren ohne Kilometerbeschränkung.
