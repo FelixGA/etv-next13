@@ -39,6 +39,6 @@ Die bisherigen Erkenntnisse sprechen zudem dafür, dass der Einbau von Filtermod
 
 Das Pilotprojekt wird im Rahmen der Initiative „Grünes Graz“ noch bis Mitte des Jahres 2023 fortgeführt und vom Institut für Energie- und Umwelttechnik in Duisburg begleitet.
 
-\>﻿br />
+<﻿br />
 
 Weitere Erkenntnisse werden mit Spannung erwartet!
