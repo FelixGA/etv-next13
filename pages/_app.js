@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router"; // neu
-import { TrackingHeadScript } from "@phntms/next-gtm";
+// import { TrackingHeadScript } from "@phntms/next-gtm";
 import { StoreProvider } from "/components/store";
 import Layout from "../components/Layout";
 import ErrorBoundary from "../components/ErrorBoundary";
@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }) {
   const router = useRouter(); // neu
   const [cookiesAccepted, setCookiesAccepted] = useIdb("cookiesAccepted");
 
-  console.log(Component);
+  // console.log(Component);
 
   return (
     <>
@@ -51,11 +51,11 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"></link>
       </Head>
 
-       {/*GTM*/}
-       {/* <TrackingHeadScript id="G-G35HVHE2CE" disable={false} /> */}
-      {cookiesAccepted&&(
+       <TrackingHeadScript id="GTM-TQRQV32" disable={false} /> 
+
+       {/* {cookiesAccepted&&(
       <TrackingHeadScript id="GTM-TQRQV32" disable={false} />
-      )}
+      )} */}
 
       <ErrorBoundary>
         <StoreProvider>
