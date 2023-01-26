@@ -32,7 +32,7 @@ export default function fahrzeuge(props) {
       <Head page={props.page} />
       <div className="leading-loose">
         <h1 className="flex justify-center pt-8 pb-4 text-2xl text-black xs:text-center lg:text-4xl xl:text-5xl xl:pt-12">
-          Elektro-Transporter – {sortedCars.length} {getContent.title}
+          Elektro-Transporter - {sortedCars.length} {getContent.title}
         </h1>
 
         <div className="w-3/5 mx-auto my-4 ">
