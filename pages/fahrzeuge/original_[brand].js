@@ -29,25 +29,10 @@ export default function Details(props) {
             Nutzfahrzeuge mit Elektro Antrieb im E-Transporter Vergleich
           </h1>
 
-          {/* *** Flexbox Link/Brand */}
-          <div className="flex mx-4 my-6 2xl:mx-48 cursor-pointer">
-            {/* *** Link */}
-            <div className="flex-auto w-3/4">
-              <Link href={`${getBrand.websiteLink}`} passHref>
-                <a
-                  target="_blank"
-                  className="inline-block pt-4 my-4 text-lg cursor-pointer sm:text-2xl text-blue-darker"
-                >
-                  <span className="text-[#666666] font-bold">
-                    Hersteller-Website:
-                  </span>{" "}
-                  {getBrand.websiteLink}
-                </a>
-              </Link>
-            </div>
-
-             {/* *** Brand */}
-            <div className="flex-auto w-1/4 pt-8">
+          {/* *** BEGINN neues div */}
+          <div className="flex">
+            {/* *** Brand */}
+            <div className="relative w-3/5 mx-auto my-6 text-center cursor-pointer">
               <Link href={`${getBrand.websiteLink}`} passHref>
                 <a target="_blank">
                   <Image
@@ -61,16 +46,28 @@ export default function Details(props) {
                 </a>
               </Link>
             </div>
-          </div>
 
-          {/* Text */}
-          <div className="px-4 2xl:px-48">
-            <div className="py-4 text-xl ">
-              {props.getContext ? <MDXRemote {...props.getContext} /> : null}
+            <div className="px-4 2xl:px-48">
+              <Link href={`${getBrand.websiteLink}`} passHref>
+                <a
+                  target="_blank"
+                  className="inline-block pt-4 my-4 text-lg cursor-pointer sm:text-2xl text-blue-darker"
+                >
+                  <span className="text-[#666666] font-bold">
+                    Hersteller-Website:
+                  </span>{" "}
+                  {getBrand.websiteLink}
+                </a>
+              </Link>
+
+              {/* Text */}
+              <div className="py-4 text-xl ">
+                {props.getContext ? <MDXRemote {...props.getContext} /> : null}
+              </div>
             </div>
-          </div>
+          </div> 
+          {/* ***ENDE neues div */}
 
-          {/* *** Liste */}
           <div className="2xl:px-48">
             <FahrzeugeResultList sortedCars={sortedCars} />
           </div>
