@@ -9,6 +9,7 @@ import TechnicalDetails from "../../components/DetailsPage/TechnicalDetails";
 import { serialize } from "next-mdx-remote/serialize";
 import getSlugs from "/utils/getSlugs";
 import BasicInfo from "../../components/DetailsPage/BasicInfo";
+import Image from "next/image";
 // import YouTube from "../../components/Video/YouTube";
 const YouTube = dynamic(() => import("../../components/Video/YouTube"), { ssr: false });
 import dynamic from "next/dynamic";
@@ -97,6 +98,7 @@ export default function Details(props) {
 // locale ist die Ländersprache
 // hole props aus ...
 export async function getStaticProps(context) {
+
   let vehicle = await getContentBySlug(
     "vehicles",
     context.params.cartitle,
