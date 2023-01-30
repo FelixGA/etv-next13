@@ -10,7 +10,7 @@ description: Der Stama Maestro, in Deutschland unter dem Namen "Addax" geführt,
   klappbaren Seitenwänden oder einem hohen Gitteraufbau versehen ist.
 src: /images/stama-maestro-front-1024x683.jpg
 category: Pritsche
-typeClass: L7E
+typeClass: N1
 loadingWeight:
   key: Nutzlast
   value: 1000
