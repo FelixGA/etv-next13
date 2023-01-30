@@ -8,6 +8,7 @@ description: Der Stama Maestro, in Deutschland unter dem Namen "Addax" geführt,
   ist mit fester oder hydraulisch kippbarer Pritsche verfügbar, welche mit
   klappbaren Seitenwänden oder einem hohen Gitteraufbau versehen ist.
 src: /images/stama-maestro-front-1024x683.jpg
+typeClass: N1
 loadingWeight:
   key: Nutzlast
   value: 1000
