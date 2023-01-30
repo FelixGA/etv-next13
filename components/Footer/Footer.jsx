@@ -69,6 +69,32 @@ const Footer = ({ blogs, brands }) => {
               {/* <ListItems itemsList={reviewsList} /> */}
             </div>
           </div>
+
+          {/* NEU */}
+          <div className="flex flex-col ">
+            <h3 className="flex items-end justify-center text-xs font-bold tracking-wider sm:justify-start h-14 xl:text-base">
+              <Link href="/fahrzeuge/leichtfahrzeuge-elektrotransporter">
+                <a className="text-white ">{`Leichtfahrzeuge`.toUpperCase()}</a>
+              </Link>
+            </h3>
+             {/* <div className="pt-6 ">
+              <ul className="grid lg:grid-rows-6 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(155px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden">
+                {brands?.map((blog, index) => (
+                  <li
+                    className="h-[43px] lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
+                    key={index}
+                  >
+                    <Link href={`/fahrzeuge/${blog.slug}`}>
+                      <a className="flex justify-center w-full text-sm md:justify-start xl:text-lg">
+                        {blog.title ? blog.title : blog}
+                      </a>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>  */}
+          </div>
+
           <div className="flex flex-col justify-start sm:w-40 md:w-1/6 ">
             <h3 className="flex items-end justify-center text-xs font-bold tracking-wider sm:justify-start h-14 xl:text-base">
               <Link href="/magazin">
