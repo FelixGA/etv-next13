@@ -8,6 +8,7 @@ import Image from "next/image";
 import CarInfoCard from "./CarInfoCard";
 import Funnel from "../Caradvisor/Funnel";
 import CompareTool from "../repeated/CompareTool";
+
 const FahrzeugeResultList = ({
   sortedCars,
   getCarsReview,
@@ -18,6 +19,7 @@ const FahrzeugeResultList = ({
   const { state, dispatch } = useStore();
   const router = useRouter();
   // console.log(router.pathname);
+  console.log(sortedCars);
 
   return (
     <div className="flex flex-col flex-1 mb-10 lg:w-full lg:bg-white">

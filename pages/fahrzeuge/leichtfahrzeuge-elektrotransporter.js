@@ -3,7 +3,6 @@ import Head from "../../components/core/Head";
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import { serialize } from "next-mdx-remote/serialize";
- 
 import Image from "next/image";
 import Link from "next/link";
 import FahrzeugeResultList from "../../components/FahrzeugeResultLIst/FahrzeugeResultList";
@@ -14,11 +13,14 @@ export default function fahrzeuge(props) {
   const [getCarsReview, SetCarsReview] = useState(props.carsreviews);
   const [getMarkdownContext, SetGetMarkdownContext] = useState(props.context);
   const [getBrands, SetGetBrands] = useState(props.brands);
-
+  
+  const result = sortedCars.filter((vehicle => vehicle.typeClass.startsWith('L' || 'l')));
+  console.log(result);
+  
   /* ᴄᴀʀs ranking ғɪʟᴛᴇʀ */
   useEffect(() => {
     SetSortedCars(
-      props.vehicles.sort((a, b) => a.rating.value - b.rating.value)
+      result.sort((a, b) => a.rating.value - b.rating.value)
     );
 
     SetCarsReview(props.carsreviews);
@@ -32,7 +34,7 @@ export default function fahrzeuge(props) {
       <Head page={props.page} />
       <div className="leading-loose">
         <h1 className="flex justify-center pt-8 pb-4 text-2xl text-black xs:text-center lg:text-4xl xl:text-5xl xl:pt-12">
-          Elektro-Leichtfahrzeuge - {sortedCars.length} {getContent.title}
+          Elektro-Leichtfahrzeuge - {result.length} {getContent.title}
         </h1>
 
         <div className="w-3/5 mx-auto my-4 ">
