@@ -15,7 +15,7 @@ export default function fahrzeuge(props) {
   const [getBrands, SetGetBrands] = useState(props.brands);
   
   const result = sortedCars.filter((vehicle => vehicle.typeClass.startsWith('L' || 'l')));
-  console.log(result);
+  // console.log(result);
   
   /* ᴄᴀʀs ranking ғɪʟᴛᴇʀ */
   useEffect(() => {
@@ -50,11 +50,11 @@ export default function fahrzeuge(props) {
         <div className="">
           <div className="py-4 text-xl ">
             {getContent.description}
-            <Link href="/caradvisor">
+            {/* <Link href="/caradvisor">
               <a className="relative font-bold text-blue-dark">
                 Probieren Sie es aus!
               </a>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="">
@@ -81,7 +81,7 @@ export async function getStaticProps(context) {
   const page = pages.find(
     (page) =>
       page.path ===
-      "/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich"
+      "/fahrzeuge/leichtfahrzeuge-elektrotransporter"
   );
 
   if (!pages) {

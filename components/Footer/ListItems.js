@@ -7,7 +7,7 @@ const ListItems = (props) => {
   // console.log(itemsList);
 
   return (
-    <ul className="flex flex-col pb-4 text-[#b1a7a7] items-center md:items-start  ">
+    <ul className="flex flex-col pb-4 text-[#b1a7a7] items-center sm:items-start  ">
       {props.itemsList
         ?.map((blog, index) => (
           <li

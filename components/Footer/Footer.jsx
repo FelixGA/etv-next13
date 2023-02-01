@@ -55,7 +55,7 @@ const Footer = ({ blogs, brands, vehicles }) => {
             </h3>
             <div className="pt-6 ">
               {/* <ul className="grid lg:grid-rows-6 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(155px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden"> */}
-              <ul className="grid lg:grid-template-columns: repeat(2, minmax(0, 1fr)) lg:grid-template-rows: repeat(6, minmax(0, 1fr)) lg:grid-flow-row text-[#b1a7a7] print:hidden">
+              <ul className="grid gap-x-2 lg:grid-cols-2 lg:grid-flow-row sm:justify-items-start text-[#b1a7a7] print:hidden">
                 {brands?.map((blog, index) => (
                   <li
                     className="h-[43px] lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
@@ -75,15 +75,15 @@ const Footer = ({ blogs, brands, vehicles }) => {
           </div>
 
           {/* NEU */}
-          <div className="flex flex-col ">
+          <div className="flex flex-col">
             <h3 className="flex items-end justify-center text-xs font-bold tracking-wider sm:justify-start h-14 xl:text-base">
               <Link href="/fahrzeuge/leichtfahrzeuge-elektrotransporter">
                 <a className="text-white ">{`Leichtfahrzeuge`.toUpperCase()}</a>
               </Link>
             </h3>
-            <div className="pt-6 ">
+            <div className="pt-6 lg:pr-4">
               {/* <ul className="grid lg:grid-rows-6 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(155px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden"> */}
-              <ul className="grid lg:grid-template-columns: repeat(2, minmax(0, 1fr)) lg:grid-template-rows: repeat(6, minmax(0, 1fr)) lg:grid-flow-row text-[#b1a7a7] print:hidden">
+              <ul className="grid gap-x-2 lg:gap-y-2 lg:grid-cols-2 lg:grid-flow-row sm:justify-items-start text-[#b1a7a7] print:hidden">
               {result?.map((leichtfahrzeug, index) => (
                   <li
                     className="h-[43px] lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
@@ -125,6 +125,7 @@ const Footer = ({ blogs, brands, vehicles }) => {
               </ul>
             </div>
           </div>
+
           {/* only for RECHTLICHES & KONTAKT
            */}
           <div className="flex flex-col items-center justify-center lg:mr-8 sm:items-start sm:w-40 md:w-1/6">
@@ -136,6 +137,7 @@ const Footer = ({ blogs, brands, vehicles }) => {
             </div>
           </div>
         </nav>
+
         {/* logos and media
          */}
         <div className="relative flex flex-col items-center w-full px-4 pt-4 mx-auto md:pl-0 xl:pl-4 sm:items-start md:w-1/6 lg:pt-12">

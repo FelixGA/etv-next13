@@ -19,7 +19,7 @@ const FahrzeugeResultList = ({
   const { state, dispatch } = useStore();
   const router = useRouter();
   // console.log(router.pathname);
-  console.log(sortedCars);
+  // console.log(sortedCars);
 
   return (
     <div className="flex flex-col flex-1 mb-10 lg:w-full lg:bg-white">

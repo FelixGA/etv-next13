@@ -39,7 +39,7 @@ export default function Trustimages({ getBrands }) {
       className={
         router.pathname == "/home"
           ? "flex justify-center overflow-hidden filter-gray"
-          : "flex justify-center mt-8 overflow-hidden filter-gray"
+          : "flex justify-center mt-8 lg:mt-0 overflow-hidden filter-gray"
       }
     >
       {shownImages?.map((image, index) => (
