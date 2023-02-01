@@ -10,7 +10,7 @@ description: Der Stama Maestro, in Deutschland unter dem Namen "Addax" geführt,
   klappbaren Seitenwänden oder einem hohen Gitteraufbau versehen ist.
 src: /images/stama-maestro-kipperpritsche.png
 category: Kipper
-typeClass: L7E
+typeClass: N1
 loadingWeight:
   key: Nutzlast
   value: 1000
