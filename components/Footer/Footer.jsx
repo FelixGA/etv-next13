@@ -54,7 +54,6 @@ const Footer = ({ blogs, brands, vehicles }) => {
               </Link>
             </h3>
             <div className="pt-6 ">
-              {/* <ul className="grid lg:grid-rows-6 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(155px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden"> */}
               <ul className="grid gap-x-2 gap-y-5 lg:grid-cols-2 lg:grid-flow-row sm:justify-items-start text-[#b1a7a7] print:hidden">
                 {brands?.map((blog, index) => (
                   <li
@@ -78,15 +77,13 @@ const Footer = ({ blogs, brands, vehicles }) => {
           <div className="flex flex-col">
             <h3 className="flex items-end justify-center text-xs font-bold tracking-wider sm:justify-start h-14 xl:text-base">
               <Link href="/fahrzeuge/leichtfahrzeuge-elektrotransporter">
-                <a className="text-white ">{`Leichtfahrzeuge`.toUpperCase()}</a>
+                <a className="text-white ">{`Leichttransporter`.toUpperCase()}</a>
               </Link>
             </h3>
             <div className="pt-6 lg:pr-4">
-              {/* <ul className="grid lg:grid-rows-6 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(155px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden"> */}
               <ul className="grid gap-x-2 gap-y-5 lg:grid-cols-2 lg:grid-flow-row sm:justify-items-start text-[#b1a7a7] print:hidden">
               {result?.map((leichtfahrzeug, index) => (
                   <li
-                    // className="h-[43px] lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
                     className="lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
                     key={index}
                   >
