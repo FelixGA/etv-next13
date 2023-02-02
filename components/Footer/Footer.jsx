@@ -55,10 +55,10 @@ const Footer = ({ blogs, brands, vehicles }) => {
             </h3>
             <div className="pt-6 ">
               {/* <ul className="grid lg:grid-rows-6 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(155px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden"> */}
-              <ul className="grid gap-x-2 lg:grid-cols-2 lg:grid-flow-row sm:justify-items-start text-[#b1a7a7] print:hidden">
+              <ul className="grid gap-x-2 gap-y-5 lg:grid-cols-2 lg:grid-flow-row sm:justify-items-start text-[#b1a7a7] print:hidden">
                 {brands?.map((blog, index) => (
                   <li
-                    className="h-[43px] lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
+                    className="lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
                     key={index}
                   >
                     <Link href={`/fahrzeuge/${blog.slug}`}>
@@ -83,10 +83,11 @@ const Footer = ({ blogs, brands, vehicles }) => {
             </h3>
             <div className="pt-6 lg:pr-4">
               {/* <ul className="grid lg:grid-rows-6 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(155px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden"> */}
-              <ul className="grid gap-x-2 lg:gap-y-2 lg:grid-cols-2 lg:grid-flow-row sm:justify-items-start text-[#b1a7a7] print:hidden">
+              <ul className="grid gap-x-2 gap-y-5 lg:grid-cols-2 lg:grid-flow-row sm:justify-items-start text-[#b1a7a7] print:hidden">
               {result?.map((leichtfahrzeug, index) => (
                   <li
-                    className="h-[43px] lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
+                    // className="h-[43px] lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
+                    className="lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
                     key={index}
                   >
                     <Link href={`/transporter/${leichtfahrzeug.name}`}>
