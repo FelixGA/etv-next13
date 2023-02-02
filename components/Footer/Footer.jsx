@@ -4,16 +4,15 @@ import Link from "next/link";
 import ListItems from "./ListItems";
 import footerWords from "../../data/footerData";
 import { useState, useEffect } from "react";
-
 import Logo from "../repeated/Logo";
-const Footer = ({ blogs, brands }) => {
+
+const Footer = ({ blogs, brands, vehicles }) => {
   let iconSize = [20, 25];
 
   const magazineList = [
     { category: "Hersteller", slug: "manufacturer" },
     { category: "Neuigkeiten", slug: "news" },
     { category: "Förderung", slug: "subsidies" },
-
     { category: "Häufig gestellte Fragen", slug: "frequentlyaskedquestions" },
   ];
   const [getBrands, setGetBrands] = useState(brands);
@@ -21,6 +20,10 @@ const Footer = ({ blogs, brands }) => {
   useEffect(() => {
     setGetBrands(brands);
   }, [brands, blogs]);
+
+  const result = vehicles?.filter((vehicle => vehicle.typeClass.startsWith('L' || 'l')));
+  // console.log(result);
+
   const rights = [
     {
       slug: "impressum",
@@ -51,10 +54,10 @@ const Footer = ({ blogs, brands }) => {
               </Link>
             </h3>
             <div className="pt-6 ">
-              <ul className="grid lg:grid-rows-6 lg:grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(155px,_1fr))] lg:grid-flow-col text-[#b1a7a7] print:hidden">
+              <ul className="grid gap-x-2 gap-y-5 lg:grid-cols-2 lg:grid-flow-row sm:justify-items-start text-[#b1a7a7] print:hidden">
                 {brands?.map((blog, index) => (
                   <li
-                    className="h-[43px] lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
+                    className="lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
                     key={index}
                   >
                     <Link href={`/fahrzeuge/${blog.slug}`}>
@@ -69,6 +72,32 @@ const Footer = ({ blogs, brands }) => {
               {/* <ListItems itemsList={reviewsList} /> */}
             </div>
           </div>
+
+          {/* NEU */}
+          <div className="flex flex-col">
+            <h3 className="flex items-end justify-center text-xs font-bold tracking-wider sm:justify-start h-14 xl:text-base">
+              <Link href="/fahrzeuge/leichtfahrzeuge-elektrotransporter">
+                <a className="text-white ">{`Leichttransporter`.toUpperCase()}</a>
+              </Link>
+            </h3>
+            <div className="pt-6 lg:pr-4">
+              <ul className="grid gap-x-2 gap-y-5 lg:grid-cols-2 lg:grid-flow-row sm:justify-items-start text-[#b1a7a7] print:hidden">
+              {result?.map((leichtfahrzeug, index) => (
+                  <li
+                    className="lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
+                    key={index}
+                  >
+                    <Link href={`/transporter/${leichtfahrzeug.name}`}>
+                      <a className="flex justify-center w-full text-sm md:justify-start xl:text-lg">
+                        {leichtfahrzeug.title ? leichtfahrzeug.title : leichtfahrzeug}
+                      </a>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div> 
+          </div>
+
           <div className="flex flex-col justify-start sm:w-40 md:w-1/6 ">
             <h3 className="flex items-end justify-center text-xs font-bold tracking-wider sm:justify-start h-14 xl:text-base">
               <Link href="/magazin">
@@ -94,6 +123,7 @@ const Footer = ({ blogs, brands }) => {
               </ul>
             </div>
           </div>
+
           {/* only for RECHTLICHES & KONTAKT
            */}
           <div className="flex flex-col items-center justify-center lg:mr-8 sm:items-start sm:w-40 md:w-1/6">
@@ -105,6 +135,7 @@ const Footer = ({ blogs, brands }) => {
             </div>
           </div>
         </nav>
+
         {/* logos and media
          */}
         <div className="relative flex flex-col items-center w-full px-4 pt-4 mx-auto md:pl-0 xl:pl-4 sm:items-start md:w-1/6 lg:pt-12">

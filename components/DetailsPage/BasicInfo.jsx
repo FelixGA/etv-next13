@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Router from "next/router";
 import CarCardDetailsMobile from "../../components/ResultList/CarCardDetailsMobile";
 import CarCardDetailsDesktop from "../../components/ResultList/CarCardDetailsDesktop";
 import {useState, useEffect} from "react";
@@ -19,21 +20,17 @@ const BasicInfo = ({
     <div className="flex flex-col w-full p-4 lg:flex-row lg:pt-12">
       <div className="flex flex-col justify-start w-full lg:w-1/2 print:w-1/2">
         <div className="pb-4 lg:w-64 lg:pb-8">
-          <button className="w-48 h-10 text-sm bg-white border rounded-md print:hidden text-blue-darker">
+          {/* <button className="w-48 h-10 text-sm bg-white border rounded-md print:hidden text-blue-darker">
             <Link href="/comparePage">
               <a className="visited:text-blue-darker">
                 « zurück zur Ergebnisliste
               </a>
             </Link>
-          </button>
-          
-          {/* <button className="w-48 h-10 text-sm bg-white border rounded-md print:hidden text-blue-darker">
-            <Link href={`/fahrzeuge/${brand}.js`}>
-              <a className="visited:text-blue-darker">
-                « zurück zu Hersteller
-              </a>
-            </Link>
           </button> */}
+          
+          <button onClick={() => Router.back()} className="w-48 h-10 text-sm bg-white border rounded-md print:hidden text-blue-darker">
+          zurück
+          </button>
 
         </div>
         <div className="w-full">

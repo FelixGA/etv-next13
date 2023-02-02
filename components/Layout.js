@@ -12,6 +12,7 @@ const CookieBanner = dynamic(() => import("/components/core/CookieBanner"), {
 export default function Layout(props) {
   const [blogs, setBlogs] = useState(props.blogs);
   const [brands, setBrands] = useState(props.brands);
+  const [vehicles, setVehicles] = useState(props.vehicles); //NEU
   const { state, dispatch } = useStore();
   const [cookiesAccepted, setCookiesAccepted] = useIdb(
     "cookiesAccepted",
@@ -22,6 +23,7 @@ export default function Layout(props) {
     setBrands(props.brands);
     setValueFromUseEffect(props.brands);
     setBlogs(props.blogs);
+    setVehicles(props.vehicles); //NEU
   }, [props, valueFromUseEffect]);
 
   return (
@@ -39,7 +41,7 @@ export default function Layout(props) {
         {props.children}
         <Suspense>{cookiesAccepted === null && <CookieBanner />}</Suspense>
         </main>
-      <Footer blogs={blogs} brands={brands} />
+      <Footer blogs={blogs} brands={brands} vehicles={vehicles}/>
     </div>
   );
 }
