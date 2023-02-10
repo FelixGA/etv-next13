@@ -1,6 +1,7 @@
 ---
 title: Renault Kangoo Rapid E-Tech
 slug: renault-kangoo-rapid-e-tech-testbericht-von-elektrotransporter-vergleich
+relatedCars: renault-kangoo-rapid-e-tech
 youtubeLink: https://www.youtube.com/watch?v=nmFiiI-E4zg
 publishedAt: 02/10/2023
 description: >
