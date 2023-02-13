@@ -1329,3 +1329,44 @@ collections:
         fields:
           - { label: "Heading", name: "heading", required: false, widget: "string", i18n: true }
           - { label: "ID", name: "id", required: false, widget: "string", i18n: duplicate }
+
+  - label: "Glossar"
+    name: "glossar"
+    identifier_field: slug
+    slug: "{{fields.slug}}"
+    folder: "content/glossar"
+    create: true
+    i18n: true
+
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+
+      - label: "Description-SEO"
+        name: "description"
+        widget: "text"
+        i18n: true
+      - {
+          label: "slug(SOS! WRITE ME WHENEVER YOU RENAME IT-ANGELOS-)",
+          name: "slug",
+          widget: "string",
+          i18n: duplicate,
+          required: true,
+          # update: true,
+          create: true,
+        }
+      - {
+          label: Image,
+          name: src,
+          widget: image,
+          i18n: duplicate,
+          allow_multiple: true,
+        }
+      - {
+          label: "Content",
+          name: "content",
+          widget: "markdown",
+          summary: "{{fields.name}}",
+          default: "hier steht dn text",
+          i18n: true,
+          required: true,
+        }
