@@ -111,7 +111,7 @@ carSizes:
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 950
+  valueheight: 95
   width: Breite
   valuewidth: 1160
   valuelength: 1230

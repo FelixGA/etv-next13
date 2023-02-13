@@ -8,6 +8,8 @@ const TechnicalDetails = ({ carItem }) => {
   const [vehichleDimentions, SetVehichleDimentions] = useState([]);
   const [details, SetDetails] = useState([]);
 
+  // console.log(carItem);
+
   /* to get the new data in case they are updated */
   /* get two subsets of the car properties to map them */
   useEffect(() => {

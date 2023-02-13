@@ -1,5 +1,6 @@
 ---
 title: Ökoflitzer Paxster
+leicht: true
 description: Paxster ist ein norwegischer Hersteller von 100% elektrischen
   Last-Mile-Zustellfahrzeugen, die laut Hersteller zu einer grüneren Umwelt und
   einer effizienteren Verteilung von Post, Zeitungen, Paketen, Lebensmitteln und
