@@ -1,4 +1,5 @@
 ---
+leicht: true
 src: /images/tropos-motors-logo.jpeg
 slug: tropos
 websiteLink: "https://troposmotors.com/ "

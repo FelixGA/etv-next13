@@ -1,5 +1,6 @@
 ---
 title: Aixam
+leicht: true
 description: Aixam ist ein französischer Automobilhersteller mit Sitz in
   Aix-les-Bains, Savoyen.
 src: /images/aixam-deutschland.png

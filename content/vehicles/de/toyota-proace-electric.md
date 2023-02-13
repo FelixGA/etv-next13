@@ -221,11 +221,11 @@ loadingHeight:
 loadingVolumeTotal:
   key: Ladevolumen
   value: 5,8
-  baseUnit: m3
+  baseUnit: m³
 loadingArea:
   key: Ladefläche
   value: "0"
-  baseUnit: m2
+  baseUnit: m²
 carSizes:
   width: Breite
   length: Länge
@@ -240,12 +240,12 @@ carSizes:
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1397
+  valueheight: 1.4
   width: Breite
-  valuewidth: 1636
-  valuelength: 2512
+  valuewidth: 1.63
+  valuelength: 2.5
   length: Länge
-  baseUnit: mm
+  baseUnit: m
 carSizesLength:
   value: "4959"
   key: Länge

@@ -58,6 +58,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
 
+      - {label: "Anbieter für Leichttransporter", name: "leicht", widget: "boolean", default: true}
       - label: "Description-SEO"
         name: "description"
         widget: "text"
