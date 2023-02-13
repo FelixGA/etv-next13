@@ -102,11 +102,11 @@ carSizes:
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1300
+  valuewidth: 12999
   baseUnit: mm
-  valuelength: 2820
-  valueheight: 1600
-  valuewheelbase: 1850
+  valuelength: 28199
+  valueheight: 16000
+  valuewheelbase: 18500
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
