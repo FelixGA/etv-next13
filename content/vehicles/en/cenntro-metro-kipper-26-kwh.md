@@ -1,44 +1,39 @@
 ---
-title: ARI 345 Koffer
-name: ari-345-koffer
-price: 7395
-relatedBlogs: ARI-345-Koffer
-relatedReviews: ari-345-testbericht-von-elektrotransporter-vergleich
-description: Das ARI 345 Koffer ist ein dreirädriges Lastenmoped mit offener
-  Fahrerkabine und geschlossenem Koffer-Aufbau. Es ist in drei Größen mit bis zu
-  1,49 Meter Ladelänge und knapp 2 m³ Ladevolumen erhältlich und kann mit dem
-  Mopedführerschein der Klasse AM gefahren werden.
-src: /images/ari-345-lastentrike-koffer-seitenansicht.jpg
-category: Koffer
-typeClass: L2E
+title: Cenntro Metro Kipper (26 kWh)
+name: cenntro-metro-kipper-26-kwh
+relatedBlogs: der-aufbau-des-sevic-v500e-kann-schnell-gewechselt-werden
+relatedReviews: cenntro-metro-testbericht-von-elektrotransporter-vergleich
+description: Der Cenntro Metro ist ein Leichtelektrotransporter der Klasse L7e
+  mit einer Nutzlast von bis zu 700 Kilogramm. Das Fahrzeug kann in zwei
+  Akkuvarianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
 loadingWeight:
   key: Nutzlast
-  value: 325
+  value: 580
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 336
-  baseUnit: kg
+  value: 0
+  baseUnit: "-"
 maxSpeed:
   key: km/h
-  value: 45
   baseUnit: km/h
+  value: 85
 range230V:
   key: Reichweite SLA Akku
-  value: 55
-  baseUnit: km
-  maxValue: 100
+  value: 0
+  maxValue: 0
+  baseUnit: "-"
 rangeLithium:
   key: Reichweite Lithium Akku
-  value: 0
+  value: 203
+  maxValue: 229
   baseUnit: km
-  maxValue: 100
 chargingTime230V:
   key: Ladezeit 230-V-Steckdose
-  value: 5
-  baseUnit: h
+  value: 0
+  baseUnit: "-"
 chargingTimeLithium:
-  key: Ladezeit Typ2 Ladekabel
+  key: Ladezeit Typ2-Kabel
   value: 0
   baseUnit: "-"
 chargingTimeFast:
@@ -47,33 +42,33 @@ chargingTimeFast:
   baseUnit: "-"
 batteryCapacityBlei:
   key: Kapazität SLA Akku
-  value: 3,24
-  baseUnit: " kwh"
+  value: 0
+  baseUnit: "-"
 batteryCapacityLithium:
   key: Kapazität Lithium Akku
-  value: "0"
-  baseUnit: "-"
+  value: 26
+  baseUnit: kWh
 batteryIncluded:
-  value: ja
   key: Batterie inklusive
+  value: ja
 consumption:
   key: "Verbrauch "
-  value: 5,6
+  value: 13,4
   baseUnit: kWh
 power:
   key: Leistung
-  value: min-0/max-3
-  baseUnit: kw
+  value: "10"
+  baseUnit: kW
 seats:
   key: Sitzplätze
-  value: 1
+  value: 2
 rating:
   key: Sterne
-  value: 3.8
+  value: 3
 guarantee:
   key: Garantie Fahrzeug
-  value: 6
-  baseUnit: Monate
+  value: 2
+  baseUnit: Jahre
 availability:
   key: Verfügbarkeit
   value: keine Angabe
@@ -83,68 +78,70 @@ subsidies:
   baseUnit: "-"
 batteryGuarantee:
   key: Garantie Akku
-  value: 0
-  baseUnit: "-"
+  value: 5
+  baseUnit: Jahre
 loadingHeight:
   key: Ladehöhe
-  value: 560
-  baseUnit: mm
+  value: 0
+  baseUnit: "-"
 loadingVolumeTotal:
   key: Ladevolumen
-  value: 1,36
+  value: 1,04
   baseUnit: m3
 loadingArea:
   key: Ladefläche
-  value: 1,43
+  value: 2,97
   baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 12999
+  valuewidth: 1400
   baseUnit: mm
-  valuelength: 28199
-  valueheight: 16000
-  valuewheelbase: 18500
+  valuelength: 3700
+  valueheight: 1900
+  valuewheelbase: 0
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 950
+  valueheight: 350
   width: Breite
-  valuewidth: 1160
-  valuelength: 1230
+  valuewidth: 1350
   length: Länge
+  valuelength: 2200
   baseUnit: mm
 carSizesLength:
-  value: "2820"
-  key: Länge
+  key: "Länge "
+  value: "3700"
   baseUnit: mm
 carSizesWidth:
   key: Breite
-  value: "1300"
+  value: "1400"
   baseUnit: mm
 carSizesHeight:
   key: Höhe
-  value: "1600"
+  value: "1900"
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "1230"
+  value: "2200"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1160"
+  value: "1350"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0095"
+  value: "350"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "1850"
-  baseUnit: mm
+  value: "0"
+  baseUnit: "-"
+youtube:
+  id: ""
+  heading: ""
 ---
-
-Das ARI 345 Koffer ist ein dreirädriges elektrisches Lastenmoped mit 45 km/h Höchstgeschwindigkeit und eignet sich ideal für innerstädtische Liefer-und Cateringdienste.
+Der Cenntro Metro ist ein Leichtelektrotransporter der Klasse L7e mit einer Nutzlast von bis zu 700 Kilogramm. Das Fahrzeug kann in zwei Akkuvarianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
