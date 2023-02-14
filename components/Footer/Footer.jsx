@@ -14,6 +14,7 @@ const Footer = ({ blogs, brands, vehicles }) => {
     { category: "Neuigkeiten", slug: "news" },
     { category: "Förderung", slug: "subsidies" },
     { category: "Häufig gestellte Fragen", slug: "frequentlyaskedquestions" },
+    { category: "Glossar", slug: "glossar" },
   ];
   const [getBrands, setGetBrands] = useState(brands);
 

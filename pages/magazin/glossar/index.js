@@ -5,17 +5,15 @@ import Blog from "../../../components/Blog/Blog";
 import BlogHeader from "../../../components/Blog/BlogHeader";
 import LinkTile from "../../../components/Blog/LinkTile";
 
-export default function frequentlyaskedquestions(props) {
+export default function glossar(props) {
   const [getBlogs, SetGetBlogs] = useState(
-    props.blogs.filter((item) => item.category === "frequentlyaskedquestions")
+    props.blogs.filter((item) => item.category === "glossar")
   );
 
-  console.log(props);
+// console.log(props);
 
   useEffect(() => {
-    SetGetBlogs(
-      props.blogs.filter((item) => item.category === "frequentlyaskedquestions")
-    );
+    SetGetBlogs(props.blogs.filter((item) => item.category === "glossar"));
   }, [props]);
   return (
     <>
@@ -32,9 +30,8 @@ export default function frequentlyaskedquestions(props) {
 }
 
 export async function getStaticProps(context) {
+  
   const pages = await getContent("pages", context.locale);
-  // const posts = await getContent("posts", context.locale);
-  // let vehicles = await getContent("vehicles", context.locale);
   const page = pages.find((page) => page.path === "/magazin");
   let blogs = await getContent("blogs", context.locale);
   let brands = await getContent("brands", context.locale);
@@ -47,9 +44,7 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      // page,
-      // posts,
-      // vehicles,
+      page,
       blogs,
       brands,
     },
