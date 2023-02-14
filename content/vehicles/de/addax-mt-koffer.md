@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 70
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 6350
+  baseUnit: mm
 title: Addax MT Koffer
 name: addax-mt-koffer
 price: 35450
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 886
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 70
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -84,38 +88,17 @@ batteryGuarantee:
   key: Garantie Akku
   value: 5
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 635
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 4,32
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 2,92
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1390
+  valuewidth: 13900
   baseUnit: mm
-  valuelength: 3741
-  valueheight: 1990
-  valuewheelbase: 2040
+  valuelength: 37410
+  valueheight: 19899
+  valuewheelbase: 20400
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1480
-  width: Breite
-  valuewidth: 1390
-  valuelength: 2100
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3741"
   key: Länge
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1390"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2040"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 14799
+  width: Breite
+  valuewidth: 13900
+  valuelength: 20999
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,9 +136,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "1480"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2040"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 4,32
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 2,92
+  baseUnit: m²
 ---
 Der Addax MT ist ein Elektro-Kleintransporter der Fahrzeugklasse N1 und verfügt über eine maximale Nutzlast von 1000 Kilogramm und eine Anhängelast von 2000 Kilogramm.

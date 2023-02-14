@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 80
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: "-"
 title: ARI 458 Food Truck
 name: ari-458-food-truck-elektrisches-gastro-mobil
 price: 19990
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 1
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 80
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 120
@@ -79,23 +83,11 @@ availability:
 subsidies:
   key: Förderhöhe
   baseUnit: Euro
-  value: 1
+  value: 0
 batteryGuarantee:
   key: Garantie Akku
   value: 48
   baseUnit: Monate
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: "-"
-loadingVolumeTotal:
-  key: Ladevolumen
-  baseUnit: m3
-  value: 2,15
-loadingArea:
-  key: Ladefläche
-  value: 1,72
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 1950
   valuewheelbase: 2300
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1250
-  width: Breite
-  valuewidth: 1300
-  length: Länge
-  valuelength: 1320
-  baseUnit: mm
 carSizesLength:
   value: "3150"
   key: Länge
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1250"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2300"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1250
+  width: Breite
+  valuewidth: 1300
+  length: Länge
+  valuelength: 1320
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,10 +136,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "1250"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2300"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  baseUnit: m³
+  value: 2,15
+loadingArea:
+  key: Ladefläche
+  value: 1,72
+  baseUnit: m²
 youtube:
   id: U1z-nSHox7E
   heading: YouTube-Video

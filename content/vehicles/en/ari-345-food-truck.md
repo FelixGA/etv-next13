@@ -88,34 +88,34 @@ batteryGuarantee:
   baseUnit: "-"
 loadingHeight:
   key: Ladehöhe
-  value: 560
+  value: 5600
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
   value: 2,15
-  baseUnit: m3
+  baseUnit: m³
 loadingArea:
   key: Ladefläche
   value: 1,72
-  baseUnit: m2
+  baseUnit: m²
 carSizes:
   width: Breite
   length: Länge
   height: Höhe
   wheelbase: Radstand
-  valuewidth: 1300
+  valuewidth: 12999
   baseUnit: mm
-  valuelength: 2820
-  valueheight: 1830
-  valuewheelbase: 1850
+  valuelength: 28200
+  valueheight: 18300
+  valuewheelbase: 18500
   key: Fahrzeugmaße
 loadingVolume:
   key: Laderaum-Maße
   height: Höhe
-  valueheight: 1250
+  valueheight: 12498
   width: Breite
-  valuewidth: 1300
-  valuelength: 1320
+  valuewidth: 13000
+  valuelength: 13199
   length: Länge
   baseUnit: mm
 carSizesLength:
@@ -132,19 +132,19 @@ carSizesHeight:
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "1320"
+  value: "13200"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "1300"
+  value: "13000"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "1250"
+  value: "12500"
   baseUnit: mm
 wheelbase:
   key: Radstand
-  value: "1850"
+  value: "18500"
   baseUnit: mm
 ---
 

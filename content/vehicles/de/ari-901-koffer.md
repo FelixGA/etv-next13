@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 100
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 76
+  baseUnit: cm
 title: ARI 901 Kofferaufbau
 name: ari-901-koffer
 price: 38995
@@ -20,10 +28,6 @@ curbweight:
   key: Leergewicht
   value: 1610
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 100
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -86,18 +90,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: keine Angabe
-loadingHeight:
-  key: Ladehöhe
-  value: 76
-  baseUnit: cm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 6,69
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 4,29
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -109,15 +101,6 @@ carSizes:
   valueheight: 2385
   valuewheelbase: 3050
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1560
-  width: Breite
-  valuewidth: 1500
-  valuelength: 2860
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "4910"
   key: Länge
@@ -129,6 +112,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "2385"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "3050"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1560
+  width: Breite
+  valuewidth: 1500
+  valuelength: 2860
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -142,10 +138,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "1560"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "3050"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 6,69
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 4,29
+  baseUnit: m²
 ---
 
 Der ARI 901 mit Kofferaufbau ist ein leistungsstarker Elektrotransporter der Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung aufnehmen. Das Fahrzeug eignet sich speziell für den Einsatz bei Lieferanten, Handwerkern, Baufirmen, Kommunen, Landschaftsbaubetrieben sowie Transportfirmen.
