@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 80
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 680
+  baseUnit: mm
 title: ARI 458 Koffer
 name: ari-458-koffer-elektrischer-kleintransporter
 price: 15100
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 604
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 80
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 120
@@ -84,18 +88,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 48
   baseUnit: Monate
-loadingHeight:
-  key: Ladehöhe
-  value: 680
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 1,49
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 1,57
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 1685
   valuewheelbase: 2300
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 950
-  width: Breite
-  valuewidth: 1160
-  valuelength: 1320
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3150"
   key: Länge
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1685"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2300"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 950
+  width: Breite
+  valuewidth: 1160
+  valuelength: 1320
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,9 +136,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "0095"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2300"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 1,49
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 1,57
+  baseUnit: m²
 ---
 Der ARI 458 Koffer ist ein elektrischer Kleintransporter von ARI Motors mit 80 km/h Höchstgeschwindigkeit. Dank optionaler Aufbauten lässt er sich an individuelle Transportbedürfnisse anpassen. Wenngleich er vor allem für den urbanen Verkehr konzipiert wurde, bewältigt er mit  zusätzlichem Reichweiten-Paket auch längere Strecken problemlos.

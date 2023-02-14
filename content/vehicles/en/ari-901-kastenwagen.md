@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 100
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 65
+  baseUnit: cm
 title: ARI 901 Kastenwagen
 name: ari-901-kastenwagen
 price: 35995
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 1625
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 100
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -84,18 +88,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: keine Angabe
-loadingHeight:
-  key: Ladehöhe
-  value: 65
-  baseUnit: cm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 4,31
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 3,31
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 1940
   valuewheelbase: 2800
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1300
-  width: Breite
-  valuewidth: 1440
-  valuelength: 2300
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "4430"
   key: Länge
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1940"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2800"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1300
+  width: Breite
+  valuewidth: 1440
+  valuelength: 2300
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,10 +136,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "1300"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2800"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 4,31
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 3,31
+  baseUnit: m²
 ---
 
 Der ARI 901 Kastenwagen ist ein leistungsstarker Elektrotransporter der Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung aufnehmen. Das Fahrzeug eignet sich speziell für den Einsatz bei Lieferanten, Handwerkern, Baufirmen, Kommunen, Landschaftsbaubetrieben sowie Transportfirmen.

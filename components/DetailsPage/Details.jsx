@@ -15,7 +15,7 @@ const Details = ({ details }) => {
         >
           <p
             className={
-              index == 0 || index == 5
+              index == 0 || index == 3 || index == 8
                 ? "w-1/2 py-1 font-bold flex items-center pl-4 h-14 "
                 : "w-1/2 py-1 flex items-center pl-4 h-14 "
             }

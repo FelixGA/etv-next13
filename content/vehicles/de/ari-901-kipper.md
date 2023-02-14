@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 100
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 76
+  baseUnit: cm
 title: ARI 901 Kipper
 name: ari-901-kipper
 price: 40995
@@ -19,10 +27,6 @@ curbweight:
   key: Leergewicht
   value: 1600
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 100
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -85,18 +89,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: keine Angabe
-loadingHeight:
-  key: Ladehöhe
-  value: 76
-  baseUnit: cm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 1,63
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 4,29
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -108,15 +100,6 @@ carSizes:
   valueheight: 1940
   valuewheelbase: 3050
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 380
-  width: Breite
-  valuewidth: 1500
-  valuelength: 2860
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "4910"
   key: Länge
@@ -128,6 +111,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1940"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2860"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 380
+  width: Breite
+  valuewidth: 1500
+  valuelength: 2860
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -141,10 +137,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "380"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2860"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 1,63
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 4,29
+  baseUnit: m²
 ---
 
 Der ARI 901 Kipper ist ein leistungsstarker Elektrotransporter der Fahrzeugklasse N1 und kann rund 900 Kilogramm Zuladung aufnehmen. Das Fahrzeug eignet sich speziell für den Einsatz bei Lieferanten, Baufirmen, Handwerkern, Kommunen sowie Landschaftsbaubetrieben. Der ARI 901 Kipper ist in drei Größen mit bis zu 5 m² Ladevolumen erhältlich. Die drei wählbaren Kipper-Größen ermöglichen eine perfekte Anpassungen an die Anforderung Ihres Unternehmens.

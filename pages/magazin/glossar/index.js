@@ -5,15 +5,15 @@ import Blog from "../../../components/Blog/Blog";
 import BlogHeader from "../../../components/Blog/BlogHeader";
 import LinkTile from "../../../components/Blog/LinkTile";
 
-export default function manufacturer(props) {
+export default function glossar(props) {
   const [getBlogs, SetGetBlogs] = useState(
-    props.blogs.filter((item) => item.category === "manufacturer")
+    props.blogs.filter((item) => item.category === "glossar")
   );
 
-  // console.log(props);
+// console.log(props);
 
   useEffect(() => {
-    SetGetBlogs(props.blogs.filter((item) => item.category === "manufacturer"));
+    SetGetBlogs(props.blogs.filter((item) => item.category === "glossar"));
   }, [props]);
   return (
     <>

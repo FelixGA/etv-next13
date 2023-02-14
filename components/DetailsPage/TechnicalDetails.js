@@ -21,6 +21,7 @@ const TechnicalDetails = ({ carItem }) => {
       carItem.chargingTime230V,
       carItem.chargingTimeFast,
       carItem.power,
+      carItem.seats,
       carItem.loadingWeight,
       carItem.curbweight,
     ];
@@ -29,14 +30,13 @@ const TechnicalDetails = ({ carItem }) => {
       { key: "Garantie:", value: " " },
       carItem.batteryGuarantee,
       carItem.guarantee,
-      carItem.availability,
-
-      carItem.seats,
       { key: "Akku:", value: " " },
       carItem.batteryCapacityLithium,
       carItem.batteryCapacityBlei,
       carItem.batteryIncluded,
       carItem.consumption,
+      { key: "Sonstiges:", value: " " },
+      carItem.availability,
       carItem.subsidies,
     ];
 
@@ -44,14 +44,14 @@ const TechnicalDetails = ({ carItem }) => {
     const vehichleDimentions = [
       /* carItem.carSizes, */
       { key: "Fahrzeugmaße" },
-      carItem.loadingVolumeHeight,
-      carItem.loadingVolumeLength,
-      carItem.wheelbase,
-      carItem.loadingVolumeWidth,
-      carItem.loadingVolume,
-      carItem.carSizesHeight,
       carItem.carSizesLength,
       carItem.carSizesWidth,
+      carItem.carSizesHeight,
+      carItem.wheelbase,
+      carItem.loadingVolume, // "Laderaum-Maße"
+      carItem.loadingVolumeLength,
+      carItem.loadingVolumeWidth,
+      carItem.loadingVolumeHeight,
       carItem.loadingVolumeTotal,
       carItem.loadingArea,
     ];

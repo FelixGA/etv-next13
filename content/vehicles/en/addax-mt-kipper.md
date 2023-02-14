@@ -1,4 +1,7 @@
 ---
+loadingHeight:
+  value: 635
+  baseUnit: mm
 name: addax-mt-koffer
 relatedBlogs: ari-bietet-zwei-modelle-als-food-truck-an
 relatedReviews: addax-mt-testbericht-von-elektrotransporter-vergleich
@@ -12,15 +15,6 @@ curbweight:
   baseUnit: kg
 rating:
   value: 2.6
-loadingHeight:
-  value: 635
-  baseUnit: mm
-loadingVolumeTotal:
-  value: 4,32
-  baseUnit: m3
-loadingArea:
-  value: 2,92
-  baseUnit: m2
 loadingVolume:
   valueheight: 1480
   valuewidth: 1390
@@ -32,6 +26,12 @@ loadingVolumeLength:
 loadingVolumeHeight:
   value: "1480"
   baseUnit: mm
+loadingVolumeTotal:
+  value: 0,75
+  baseUnit: m³
+loadingArea:
+  value: 2,99
+  baseUnit: m²
 youtube:
   id: ""
 youtubeId:
