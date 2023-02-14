@@ -10,8 +10,6 @@ export default function frequentlyaskedquestions(props) {
     props.blogs.filter((item) => item.category === "frequentlyaskedquestions")
   );
 
-  console.log(props);
-
   useEffect(() => {
     SetGetBlogs(
       props.blogs.filter((item) => item.category === "frequentlyaskedquestions")
