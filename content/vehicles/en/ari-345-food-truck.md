@@ -128,15 +128,15 @@ loadingVolume:
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
-  value: "13200"
+  value: "1320"
   baseUnit: mm
 loadingVolumeWidth:
   key: Breite
-  value: "13000"
+  value: "1300"
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "12500"
+  value: "1250"
   baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
