@@ -20,11 +20,11 @@ export default function FirstArticle({ getMarkdownContext, getContent }) {
           </div>
         </div>
         <Link href="/caradvisor">
-          <a className="relative">
+          <div className="relative">
             <button className="relative px-6 py-4 mt-8 text-sm font-bold text-white transition rounded-md bg-blue-dark no-select hover:bg-blue-light ">
               Zum Kaufberater
             </button>
-          </a>
+          </div>
         </Link>
       </div>
       <div className="w-fit">
