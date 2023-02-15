@@ -1,5 +1,6 @@
 ---
 title: Tropos
+leicht: true
 description: "Tropos Technologies, Inc.™ ist ein US-amerikanisches Unternehmen
   mit Hauptsitz im Silicon Valley, das sich auf die Fertigung von elektrischen
   Niedergeschwindigkeits-Fahrzeugen spezialisiert hat. "

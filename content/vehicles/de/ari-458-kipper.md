@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 80
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 71
+  baseUnit: cm
 title: ARI 458 Kipper
 name: ari-458-kipper
 price: 17590
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 1500
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 80
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 120
@@ -84,18 +88,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 48
   baseUnit: Monate
-loadingHeight:
-  key: Ladehöhe
-  value: 71
-  baseUnit: cm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 0,44
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 1,75
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 1600
   valuewheelbase: 2300
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 250
-  width: Breite
-  valuewidth: 1250
-  valuelength: 1400
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3150"
   key: Länge
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1600"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2300"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 250
+  width: Breite
+  valuewidth: 1250
+  valuelength: 1400
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,10 +136,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "250"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2300"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 0,44
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 1,75
+  baseUnit: m²
 ---
 
 Der ARI 458 Kipper ist ein elektrischer Kleintransporter mit kippbarer Ladefläche und 80 km/h Höchstgeschwindigkeit.

@@ -1,5 +1,6 @@
 ---
 title: Garia
+leicht: true
 description: 2015 expandierte das Unternehmen mit der Abteilung Garia Utility in
   den Bereich der elektrischen Nutzfahrzeuge.
 src: /images/garia-utility-logo.svg

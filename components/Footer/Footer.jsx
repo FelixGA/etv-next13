@@ -14,6 +14,7 @@ const Footer = ({ blogs, brands, vehicles }) => {
     { category: "Neuigkeiten", slug: "news" },
     { category: "Förderung", slug: "subsidies" },
     { category: "Häufig gestellte Fragen", slug: "frequentlyaskedquestions" },
+    { category: "Glossar", slug: "glossar" },
   ];
   const [getBrands, setGetBrands] = useState(brands);
 
@@ -21,8 +22,8 @@ const Footer = ({ blogs, brands, vehicles }) => {
     setGetBrands(brands);
   }, [brands, blogs]);
 
-  const result = vehicles?.filter((vehicle => vehicle.typeClass.startsWith('L' || 'l')));
-  // console.log(result);
+  const marken = brands?.filter(brand => brand.leicht? brand.leicht : 0);
+  // console.log(marken);
 
   const rights = [
     {
@@ -50,19 +51,19 @@ const Footer = ({ blogs, brands, vehicles }) => {
           <div className="flex flex-col ">
             <h3 className="flex items-end justify-center text-xs font-bold tracking-wider sm:justify-start h-14 xl:text-base">
               <Link href="/fahrzeuge/elektrotransporter-nutzfahrzeuge-mit-elektro-antrieb-im-e-transporter-vergleich">
-                <a className="text-white ">{`Transporter`.toUpperCase()}</a>
+                <a className="text-white ">{`Elektro Transporter`.toUpperCase()}</a>
               </Link>
             </h3>
             <div className="pt-6 ">
               <ul className="grid gap-x-2 gap-y-5 lg:grid-cols-2 lg:grid-flow-row sm:justify-items-start text-[#b1a7a7] print:hidden">
-                {brands?.map((blog, index) => (
+                {brands?.map((brand, index) => (
                   <li
                     className="lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
                     key={index}
                   >
-                    <Link href={`/fahrzeuge/${blog.slug}`}>
+                    <Link href={`/fahrzeuge/${brand.slug}`}>
                       <a className="flex justify-center w-full text-sm md:justify-start xl:text-lg">
-                        {blog.title ? blog.title : blog}
+                        {brand.title ? brand.title : brand}
                       </a>
                     </Link>
                   </li>
@@ -77,19 +78,19 @@ const Footer = ({ blogs, brands, vehicles }) => {
           <div className="flex flex-col">
             <h3 className="flex items-end justify-center text-xs font-bold tracking-wider sm:justify-start h-14 xl:text-base">
               <Link href="/fahrzeuge/leichtfahrzeuge-elektrotransporter">
-                <a className="text-white ">{`Leichttransporter`.toUpperCase()}</a>
+                <a className="text-white ">{`Elektro Leichttransporter`.toUpperCase()}</a>
               </Link>
             </h3>
             <div className="pt-6 lg:pr-4">
               <ul className="grid gap-x-2 gap-y-5 lg:grid-cols-2 lg:grid-flow-row sm:justify-items-start text-[#b1a7a7] print:hidden">
-              {result?.map((leichtfahrzeug, index) => (
+               {marken?.map((marke, index) => (
                   <li
                     className="lg:w-[110px] xl:w-[150px] 2xl:w-[200px] "
                     key={index}
                   >
-                    <Link href={`/transporter/${leichtfahrzeug.name}`}>
+                    <Link href={`/fahrzeuge/${marke.slug}`}>
                       <a className="flex justify-center w-full text-sm md:justify-start xl:text-lg">
-                        {leichtfahrzeug.title ? leichtfahrzeug.title : leichtfahrzeug}
+                        {marke.title ? marke.title : marke}
                       </a>
                     </Link>
                   </li>

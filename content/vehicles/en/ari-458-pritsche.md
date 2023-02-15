@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 78
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 10
+  baseUnit: cm
 title: ARI 458 Pritsche
 name: ari-458-pritsche
 price: 14790
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 604
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 78
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 120
@@ -84,18 +88,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 48
   baseUnit: Monate
-loadingHeight:
-  key: Ladehöhe
-  value: 10
-  baseUnit: cm
-loadingVolumeTotal:
-  key: Ladevolumen
-  baseUnit: m3
-  value: 0,38
-loadingArea:
-  key: Ladefläche
-  value: "235"
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 1600
   valuewheelbase: 2300
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 250
-  width: Breite
-  valuewidth: 1160
-  length: Länge
-  valuelength: 1320
-  baseUnit: mm
 carSizesLength:
   value: "3150"
   key: Länge
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1300"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2300"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 250
+  width: Breite
+  valuewidth: 1160
+  length: Länge
+  valuelength: 1320
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,10 +136,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "250"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2300"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  baseUnit: m³
+  value: 0,38
+loadingArea:
+  key: Ladefläche
+  value: "235"
+  baseUnit: m²
 ---
 
 Der ARI 458 Pritsche ist ein wendiger Elektrotransporter von ARI Motors. Er zeichnet sich durch eine hohe Nutzlast sowie einen sparsamen Verbrauch aus und kann mit Lithium-Akku bis zu 495 km Reichweite erzielen.

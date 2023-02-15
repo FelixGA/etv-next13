@@ -526,7 +526,6 @@ collections:
               i18n: duplicate,
               required: true,
             }
-
       - label: "chargingTime-230V"
         name: "chargingTime230V"
         required: true
@@ -721,6 +720,7 @@ collections:
               widget: "string",
               i18n: duplicate,
             }
+
       - label: "power"
         name: "power"
         required: true
@@ -898,7 +898,92 @@ collections:
               i18n: true,
               required: true,
             }
-     
+      - label: "loading-Height"
+        name: "loadingHeight"
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        required: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "number",
+              value_type: "float",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+      - label: "loading Volume in m3"
+        name: "loadingVolumeTotal"
+        widget: "object"
+        required: true
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
+
+      - label: "loading area in m2"
+        name: "loadingArea"
+        required: true
+        widget: "object"
+        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
+        i18n: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "Value",
+              name: "value",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              required: true,
+              widget: "string",
+              i18n: duplicate,
+            }
       - label: "Car-Sizes"
         name: "carSizes"
         required: true
@@ -911,6 +996,143 @@ collections:
               name: "key",
               widget: "string",
               i18n: true,
+              required: true,
+            }
+          - {
+              label: "height",
+              name: "height",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "height-Value",
+              name: "valueheight",
+              required: true,
+              widget: "number",
+              value_type: "float",
+              i18n: duplicate,
+            }
+
+          - {
+              label: "width",
+              name: "width",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "width-Value",
+              name: "valuewidth",
+              required: true,
+              widget: "number",
+              value_type: "float",
+              i18n: duplicate,
+            }
+
+          - {
+              label: "length",
+              name: "length",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "length-Value",
+              name: "valuelength",
+              widget: "number",
+              value_type: "float",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "wheelbase",
+              name: "wheelbase",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "wheelbase-Value",
+              name: "valuewheelbase",
+              widget: "number",
+              value_type: "float",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              widget: "string",
+              i18n: duplicate,
+              required: true,
+            }
+      - label: "loadingVolume"
+        name: "loadingVolume"
+        widget: "object"
+        summary: "{{fields.height}}: {{fields.width}}: {{fields.length}}"
+        i18n: true
+        required: true
+        fields:
+          - {
+              label: "Key",
+              name: "key",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "height",
+              name: "height",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "height-Value",
+              name: "valueheight",
+              widget: "number",
+              value_type: "float",
+              required: true,
+              i18n: duplicate,
+            }
+
+          - {
+              label: "width",
+              name: "width",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "width-Value",
+              name: "valuewidth",
+              widget: "number",
+              value_type: "float",
+              i18n: duplicate,
+              required: true,
+            }
+
+          - {
+              label: "length",
+              name: "length",
+              widget: "string",
+              i18n: true,
+              required: true,
+            }
+          - {
+              label: "length-Value",
+              name: "valuelength",
+              widget: "number",
+              value_type: "float",
+              i18n: duplicate,
+              required: true,
+            }
+          - {
+              label: "baseUnit",
+              name: "baseUnit",
+              widget: "string",
+              i18n: duplicate,
               required: true,
             }
       - label: "Car-Sizes-length"
@@ -997,36 +1219,7 @@ collections:
               widget: "string",
               i18n: duplicate,
             }
-      - label: "wheelbase"
-        name: "wheelbase"
-        widget: "object"
-        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
-        i18n: true
-        fields:
-          - { label: "Key", name: "key", widget: "string", i18n: true }
-          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
-          - {
-              label: "baseUnit",
-              name: "baseUnit",
 
-              widget: "string",
-              i18n: duplicate,
-            }
-
-      - label: "loadingVolume"
-        name: "loadingVolume"
-        widget: "object"
-        summary: "{{fields.height}}: {{fields.width}}: {{fields.length}}"
-        i18n: true
-        required: true
-        fields:
-          - {
-              label: "Key",
-              name: "key",
-              widget: "string",
-              i18n: true,
-              required: true,
-            }
       - label: "Loading-volume-length"
         name: "loadingVolumeLength"
         widget: "object"
@@ -1111,59 +1304,19 @@ collections:
               widget: "string",
               i18n: duplicate,
             }
-      - label: "loading Volume in m3"
-        name: "loadingVolumeTotal"
+      - label: "wheelbase"
+        name: "wheelbase"
         widget: "object"
-        required: true
+
         summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
         i18n: true
         fields:
-          - {
-              label: "Key",
-              name: "key",
-              widget: "string",
-              i18n: true,
-              required: true,
-            }
-          - {
-              label: "Value",
-              name: "value",
-              widget: "string",
-              i18n: duplicate,
-              required: true,
-            }
+          - { label: "Key", name: "key", widget: "string", i18n: true }
+          - { label: "Value", name: "value", widget: "string", i18n: duplicate }
           - {
               label: "baseUnit",
               name: "baseUnit",
-              required: true,
-              widget: "string",
-              i18n: duplicate,
-            }
-      - label: "loading area in m2"
-        name: "loadingArea"
-        required: true
-        widget: "object"
-        summary: "{{fields.key}}: {{fields.value}} {{fields.baseUnit}}"
-        i18n: true
-        fields:
-          - {
-              label: "Key",
-              name: "key",
-              widget: "string",
-              i18n: true,
-              required: true,
-            }
-          - {
-              label: "Value",
-              name: "value",
-              widget: "string",
-              i18n: duplicate,
-              required: true,
-            }
-          - {
-              label: "baseUnit",
-              name: "baseUnit",
-              required: true,
+
               widget: "string",
               i18n: duplicate,
             }

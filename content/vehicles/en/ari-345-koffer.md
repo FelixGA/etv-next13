@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 45
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 560
+  baseUnit: mm
 title: ARI 345 Koffer
 name: ari-345-koffer
 price: 7395
@@ -19,10 +27,6 @@ curbweight:
   key: Leergewicht
   value: 336
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 45
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 55
@@ -85,18 +89,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 560
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 1,36
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 1,43
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -106,17 +98,8 @@ carSizes:
   baseUnit: mm
   valuelength: 28199
   valueheight: 16000
-  valuewheelbase: 18500
+  valuewheelbase: 184
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 950
-  width: Breite
-  valuewidth: 1160
-  valuelength: 1230
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "2820"
   key: Länge
@@ -129,6 +112,19 @@ carSizesHeight:
   key: Höhe
   value: "1600"
   baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "1850"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 950
+  width: Breite
+  valuewidth: 11600
+  valuelength: 12299
+  length: Länge
+  baseUnit: mm
 loadingVolumeLength:
   key: Länge
   value: "1230"
@@ -139,12 +135,16 @@ loadingVolumeWidth:
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0095"
+  value: "950"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "1850"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 1,36
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 1,43
+  baseUnit: m²
 ---
 
 Das ARI 345 Koffer ist ein dreirädriges elektrisches Lastenmoped mit 45 km/h Höchstgeschwindigkeit und eignet sich ideal für innerstädtische Liefer-und Cateringdienste.
