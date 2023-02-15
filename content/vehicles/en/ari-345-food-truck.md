@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 45
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 5600
+  baseUnit: mm
 title: ARI 345 Food Truck
 name: ari-345-food-truck
 price: 12750
@@ -20,10 +28,6 @@ curbweight:
   key: Leergewicht
   value: 336
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 45
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 55
@@ -86,18 +90,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 5600
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 2,15
-  baseUnit: m³
-loadingArea:
-  key: Ladefläche
-  value: 1,72
-  baseUnit: m²
 carSizes:
   width: Breite
   length: Länge
@@ -109,15 +101,6 @@ carSizes:
   valueheight: 18300
   valuewheelbase: 18500
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 12498
-  width: Breite
-  valuewidth: 13000
-  valuelength: 13199
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "2820"
   key: Länge
@@ -129,6 +112,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1830"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "1850"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 12498
+  width: Breite
+  valuewidth: 13000
+  valuelength: 13199
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -142,10 +138,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "12500"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "18500"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 2,15
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 1,72
+  baseUnit: m²
 ---
 
 Das ARI 345 Food Truck ist ein elektrisches Lastenmoped mit Gastro-Aufbau mit 45 km/h Höchstgeschwindigkeit und 325 kg Zuladung. Es eignet sich ideal als strombetriebene Fahrzeugbasis für nachhaltig orientierte Gastronomen und Caterer.
