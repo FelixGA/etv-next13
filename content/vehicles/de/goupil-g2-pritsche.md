@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 30
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 780
+  baseUnit: mm
 title: Goupil G2 Pritsche
 name: goupil-g2-pritsche
 price: 19700
@@ -19,10 +27,6 @@ curbweight:
   key: Leergewicht
   value: 0
   baseUnit: "-"
-maxSpeed:
-  key: km/h
-  value: 30
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 45
@@ -85,18 +89,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 5
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 780
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: "0"
-  baseUnit: "-"
-loadingArea:
-  key: Ladefläche
-  value: 1,28
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -108,15 +100,6 @@ carSizes:
   valueheight: 1785
   valuewheelbase: 2215
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 0
-  width: Breite
-  valuewidth: 1000
-  valuelength: 1250
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3170"
   key: Länge
@@ -128,6 +111,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1785"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2215"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 0
+  width: Breite
+  valuewidth: 1000
+  valuelength: 1250
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -141,10 +137,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2215"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: "0"
+  baseUnit: "-"
+loadingArea:
+  key: Ladefläche
+  value: 1,28
+  baseUnit: m²
 ---
 
 Der Goupil ist ein Elektrotransporter der Klasse L7e mit 2 Sitzplätzen, 500 kg Nutzlast und 30 km/h Höchstgeschwindigkeit.
