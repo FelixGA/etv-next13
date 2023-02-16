@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 100
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: "-"
 title: Streetscooter
 name: streetscooter
 price: 39990
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 1786
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 100
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -84,18 +88,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 6
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: "-"
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 7,7
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: "0"
-  baseUnit: "-"
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 2312
   valuewheelbase: 3494
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1405
-  width: Breite
-  valuewidth: 1680
-  valuelength: 3165
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "5809"
   key: Länge
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "2312"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "3494"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1405
+  width: Breite
+  valuewidth: 1680
+  valuelength: 3165
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,10 +136,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "1405"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "3494"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 7,7
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: "0"
+  baseUnit: "-"
 ---
 
 Der Streetscooter ist ein elektrisches Nutzfahrzeug, welches von der Deutschen Post mitentwickelt wurde. Das Fahrzeug ist hauptsächlich mit Kofferaufbau im Umlauf und kann reichlich 1.000 Kilogramm Nutzlast aufnehmen.
