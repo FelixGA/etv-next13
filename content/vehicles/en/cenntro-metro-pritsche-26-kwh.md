@@ -7,6 +7,7 @@ relatedReviews: cenntro-metro-testbericht-von-elektrotransporter-vergleich
 description: Der Cenntro Metro ist ein Leichtelektrotransporter der Klasse L7e
   mit einer Nutzlast von bis zu 700 Kilogramm. Das Fahrzeug kann in zwei
   Akkuvarianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
+src: /images/cenntro-automotive-pritsche.jpeg
 category: Pritsche
 loadingWeight:
   key: Nutzlast
