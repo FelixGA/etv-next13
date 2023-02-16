@@ -7,4 +7,10 @@ src: /images/elektrotransporter-mit-kipper-alke.jpg
 category: Kipper
 rating:
   value: 3.6
+loadingVolumeTotal:
+  value: 0,75
+  baseUnit: m³
+loadingArea:
+  value: 2,70
+  baseUnit: m²
 ---

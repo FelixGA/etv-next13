@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 130
+  baseUnit: "km/h "
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: "-"
 title: "Ford E-Transit Kastenwagen "
 name: ford-e-transit-kastenwagen
 price: 53145
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 2725
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 130
-  baseUnit: "km/h "
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -84,18 +88,6 @@ batteryGuarantee:
   key: "Batterie Garantie "
   value: 8
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: "-"
-loadingVolumeTotal:
-  key: Ladevolumen
-  baseUnit: m3
-  value: 9,7
-loadingArea:
-  key: Ladefläche
-  value: 5,43
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 2533
   valuewheelbase: 3300
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  width: Breite
-  length: Länge
-  baseUnit: mm
-  valueheight: 1786
-  valuewidth: 1784
-  valuelength: 3044
 carSizesLength:
   key: Länge
   value: "5531"
@@ -128,6 +111,19 @@ carSizesHeight:
   key: Höhe
   value: "2533"
   baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "3300"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  width: Breite
+  length: Länge
+  baseUnit: mm
+  valueheight: 1786
+  valuewidth: 1784
+  valuelength: 3044
 loadingVolumeLength:
   key: Länge
   value: "3044"
@@ -140,9 +136,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "1786"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "3300"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  baseUnit: m³
+  value: 9,7
+loadingArea:
+  key: Ladefläche
+  value: 5,43
+  baseUnit: m²
 ---
 Der Ford E-Transit ist ein Elektrotransporter mit mehr als 300 Kilometern Reichweite und einer maximalen Höchstgeschwindigkeit von 130 km/h. Die maximale Nutzlast des Fahrzeugs beträgt bis zu 1.600 Kilogramm.

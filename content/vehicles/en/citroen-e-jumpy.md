@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 130
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 544
+  baseUnit: mm
 title: Citroen eJumpy
 name: citroen-e-jumpy
 price: 37830
@@ -149,10 +157,6 @@ curbweight:
   key: Leergewicht
   value: 1937
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 130
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -215,18 +219,6 @@ batteryGuarantee:
   key: Batterie-Garantie
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 544
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 5,19
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 3,90
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -238,15 +230,6 @@ carSizes:
   valueheight: 1877
   valuewheelbase: 3275
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1330
-  width: Breite
-  valuewidth: 1608
-  valuelength: 2410
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "4959"
   key: Länge
@@ -258,6 +241,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1877"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "3275"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1330
+  width: Breite
+  valuewidth: 1608
+  valuelength: 2410
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -271,10 +267,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "1330"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "3275"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 5,19
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 3,90
+  baseUnit: m²
 ---
 
 Der Citroen eJumpy ist seit 2020 auf dem Markt. Der elektrische Kastenwagen ist in zwei Längen erhältlich: 4,95 Meter (M) sowie 5,30 Meter (XL). Außerdem hat der Kunde die Wahl zwischen zwei Akkus mit 50 kWh bzw. 75 kWh Kapazität.

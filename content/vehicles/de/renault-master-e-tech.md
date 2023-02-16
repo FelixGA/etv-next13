@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 100
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 580
+  baseUnit: mm
 title: Renault Master E-Tech
 name: renault-master-e-tech
 price: 54900
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 0
   baseUnit: "-"
-maxSpeed:
-  key: km/h
-  value: 100
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -84,18 +88,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 8
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 580
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 7,75
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: "0"
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 2370
   valuewheelbase: 3182
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1700
-  width: Breite
-  valuewidth: 1765
-  valuelength: 2583
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "5075"
   key: Länge
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "2370"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "3182"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1700
+  width: Breite
+  valuewidth: 1765
+  valuelength: 2583
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,9 +136,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "1700"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "3182"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 7,75
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: "0"
+  baseUnit: m²
 ---
 Der Renault Master E-Tech (früher “Master Z.E.”) ist ein Kastenwagen der Fahrzeugklasse N1, der zwischen 900 und 1.050 Kilogramm Nutzlast aufnehmen kann und 100 km/h Höchstgeschwindigkeit erreicht.

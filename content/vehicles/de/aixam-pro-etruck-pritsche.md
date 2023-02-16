@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 45
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 750
+  baseUnit: mm
 title: Aixam Pro E-Truck Pritsche
 name: aixam-pro-etruck-pritsche
 price: 21680
@@ -19,10 +27,6 @@ curbweight:
   key: Leergewicht
   value: 440
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 45
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -85,18 +89,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 750
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 0,61
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 2,04
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -108,15 +100,6 @@ carSizes:
   valueheight: 1750
   valuewheelbase: 2252
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 300
-  width: Breite
-  valuewidth: 1465
-  valuelength: 1395
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "2911"
   key: Länge
@@ -128,6 +111,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1750"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2252"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 300
+  width: Breite
+  valuewidth: 1465
+  valuelength: 1395
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -141,9 +137,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "300"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2252"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 0,61
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 2,04
+  baseUnit: m²
 ---
 Der Aixam Pro e-Truck ist ein leichter Elektrotransporter der Fahrzeugklasse L6e, der eine maximale Höchstgeschwindigkeit von 45 km/h erreicht und in zwei Aufbauvarianten erhältlich ist. Die Zuladung liegt bei 327 Kilogramm.

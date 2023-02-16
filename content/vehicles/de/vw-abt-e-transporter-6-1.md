@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 90
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: "-"
 title: VW ABT e-Transporter 6.1
 name: vw-abt-e-transporter-6-1
 price: 44990
@@ -148,10 +156,6 @@ curbweight:
   key: Leergewicht
   value: 0
   baseUnit: "-"
-maxSpeed:
-  key: km/h
-  value: 90
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -214,18 +218,6 @@ batteryGuarantee:
   key: Batterie-Garantie
   value: 8
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: "-"
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 6,5
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: "0"
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -237,15 +229,6 @@ carSizes:
   valueheight: 0
   valuewheelbase: 0
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1410
-  width: Breite
-  valuewidth: 1700
-  valuelength: 2724
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "0"
   key: Länge
@@ -257,6 +240,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1410
+  width: Breite
+  valuewidth: 1700
+  valuelength: 2724
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -270,9 +266,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
-wheelbase:
-  key: Radstand
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 6,5
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
   value: "0"
-  baseUnit: mm
+  baseUnit: m²
 ---
 Der VW ABT e-Transporter ist ein elektrischer Kastenwagen der Fahrzeugklasse N1, der eine Zuladung von mehr als 1.000 Kilogramm aufnehmen kann und mit 90 km/h bzw. 120 km/h Höchstgeschwindigkeit verfügbar ist.

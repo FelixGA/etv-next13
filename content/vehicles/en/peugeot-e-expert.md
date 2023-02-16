@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 130
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 544
+  baseUnit: mm
 title: Peugeot E-Expert
 name: peugeot-e-expert
 price: 36190
@@ -146,10 +154,6 @@ curbweight:
   key: Leergewicht
   value: 1937
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 130
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -212,18 +216,6 @@ batteryGuarantee:
   key: Batterie-Garantie
   value: 8
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 544
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 5,8
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: "0"
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -235,15 +227,6 @@ carSizes:
   valueheight: 1895
   valuewheelbase: 3275
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1397
-  width: Breite
-  valuewidth: 1636
-  valuelength: 2512
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "4956"
   key: Länge
@@ -255,6 +238,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1895"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "3275"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1397
+  width: Breite
+  valuewidth: 1636
+  valuelength: 2512
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -268,9 +264,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "1397"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "3275"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 5,8
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: "0"
+  baseUnit: m²
 ---
 Der Peugeot e-Expert ist ein elektrischer Kastenwagen, der in zwei Längen angeboten ist und über 900 Kilogramm Nutzlast aufnehmen kann. Die Höchstgeschwindigkeit liegt bei 130 km/h.

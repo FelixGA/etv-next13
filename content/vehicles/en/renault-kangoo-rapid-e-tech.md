@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 135
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 635
+  baseUnit: mm
 title: Renault Kangoo Rapid E-Tech
 name: renault-kangoo-rapid-e-tech
 price: 33990
@@ -16,10 +24,6 @@ curbweight:
   key: Leergewicht
   value: 1694
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 135
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -82,18 +86,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 635
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 3,90
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 2,84
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -105,15 +97,6 @@ carSizes:
   valueheight: 1864
   valuewheelbase: 2716
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1115
-  width: Breite
-  valuewidth: 1570
-  valuelength: 1806
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "4486"
   key: Länge
@@ -125,6 +108,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1864"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2716"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1115
+  width: Breite
+  valuewidth: 1570
+  valuelength: 1806
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -138,9 +134,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "1115"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2716"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 3,90
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 2,84
+  baseUnit: m²
 ---
 Der Renault Kangoo Rapid E-Tech ist ein elektrischer Small-Van mit bis zu 230 Kilometern Reichweite und einer maximalen Zuladung von 526 Kilogramm. Die Höchstgeschwindigkeit beträgt 135 km/h.
