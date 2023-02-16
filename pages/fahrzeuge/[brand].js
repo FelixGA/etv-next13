@@ -24,7 +24,7 @@ export default function Details(props) {
       <div className="w-full px-2">
         {/* <Head page={props.page} /> */}
         <div className="2xl:px-40">
-          <h1 className="px-4 pt-8 pb-4 text-2xl leading-9 tracking-wider text-center text-black lg:text-left lg:text-4xl xl:pt-12 2xl:px-48">
+          <h1 className="px-4 pt-8 pb-4 text-2xl leading-9 tracking-wider text-center text-black lg:text-left lg:text-4xl xl:pt-12 2xl:px-40">
             {getBrand.title} Elektro-Transporter - {sortedCars.length}{" "}
             Nutzfahrzeuge mit Elektro Antrieb im E-Transporter Vergleich
           </h1>
