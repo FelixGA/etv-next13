@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 70
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 780
+  baseUnit: mm
 title: Stama Maestro Kipper
 name: stama-maestro-kipper
 price: 34250
@@ -19,10 +27,6 @@ curbweight:
   key: Leergewicht
   value: 600
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 70
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -85,18 +89,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 780
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 0,00
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 3,23
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -108,15 +100,6 @@ carSizes:
   valueheight: 2050
   valuewheelbase: 2027
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 0
-  width: Breite
-  valuewidth: 1500
-  valuelength: 2150
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3590"
   key: Länge
@@ -128,6 +111,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "2050"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2027"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 0
+  width: Breite
+  valuewidth: 1500
+  valuelength: 2150
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -141,10 +137,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2027"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 0,00
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 3,23
+  baseUnit: m²
 ---
 
 Der Stama Maestro, ein Elektrotransporter des dänischen Herstellers GMR, ist für die Pflege und Reinigung von Parks, Straßen und Anlagen konzipiert.
