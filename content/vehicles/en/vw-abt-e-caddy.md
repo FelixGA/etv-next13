@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 90
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 544
+  baseUnit: mm
 title: VW ABT e-Caddy
 name: vw-abt-e-caddy
 price: 29900
@@ -146,10 +154,6 @@ curbweight:
   key: Leergewicht
   value: 0
   baseUnit: "-"
-maxSpeed:
-  key: km/h
-  value: 90
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -212,18 +216,6 @@ batteryGuarantee:
   key: Batterie-Garantie
   value: 8
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 544
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 4,2
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: "0"
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -235,15 +227,6 @@ carSizes:
   valueheight: 0
   valuewheelbase: 0
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 0
-  width: Breite
-  valuewidth: 0
-  valuelength: 0
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "4880"
   key: Länge
@@ -255,6 +238,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "0"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 0
+  width: Breite
+  valuewidth: 0
+  valuelength: 0
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -268,9 +264,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
-wheelbase:
-  key: Radstand
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 4,2
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
   value: "0"
-  baseUnit: mm
+  baseUnit: m²
 ---
 Der VW ABT e-Caddy ist ein Kastenwagen der Fahrzeugklasse N1, der eine Zuladung von mehr als 500 Kilogramm aufnehmen kann und mit 90 km/h bzw. 120 km/h Höchstgeschwindigkeit verfügbar ist.
