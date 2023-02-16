@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  baseUnit: km/h
+  value: 85
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: "-"
 title: Cenntro Metro Pritsche (26 kWh)
 name: cenntro-metro-pritsche-26-kwh
 price: 31000
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 0
   baseUnit: "-"
-maxSpeed:
-  key: km/h
-  baseUnit: km/h
-  value: 85
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -84,18 +88,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 5
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: "-"
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 1,04
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 2,97
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 1900
   valuewheelbase: 0
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 350
-  width: Breite
-  valuewidth: 1350
-  length: Länge
-  valuelength: 2200
-  baseUnit: mm
 carSizesLength:
   key: "Länge "
   value: "3700"
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1900"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: "-"
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 350
+  width: Breite
+  valuewidth: 1350
+  length: Länge
+  valuelength: 2200
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,10 +136,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "350"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "0"
-  baseUnit: "-"
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 1,04
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 2,97
+  baseUnit: m²
 youtube:
   id: ""
   heading: ""
