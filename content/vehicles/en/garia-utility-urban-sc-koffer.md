@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 55
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 641
+  baseUnit: mm
 title: Garia Utility Urban SC Koffer
 name: garia-utility-urban-sc-koffer
 price: 29300
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 828
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 55
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 60
@@ -84,18 +88,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 641
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 1,87
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 1,53
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 1863
   valuewheelbase: 2117
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1222
-  width: Breite
-  valuewidth: 1214
-  valuelength: 1258
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3269"
   key: Länge
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1863"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2117"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1222
+  width: Breite
+  valuewidth: 1214
+  valuelength: 1258
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,9 +136,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "1222"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2117"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 1,87
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 1,53
+  baseUnit: m²
 ---
 Der Garia Utility Urban ist ein Elektro-Kleintransporter der Fahrzeugklasse N1 mit einer Nutzlast von von knapp 570 Kilogramm und einer Höchstgeschwindigkeit von 55 km/h.
