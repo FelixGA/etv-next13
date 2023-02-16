@@ -6,4 +6,10 @@ src: /images/goupil_g4_kipper.jpeg
 category: Kipper
 rating:
   value: 3.2
+loadingVolumeTotal:
+  value: 0,61
+  baseUnit: m³
+loadingArea:
+  value: 2,60
+  baseUnit: m²
 ---
