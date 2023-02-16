@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 130
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 634
+  baseUnit: mm
 title: Nissan Townstar
 name: nissan-townstar
 price: 33750
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 0
   baseUnit: "-"
-maxSpeed:
-  key: km/h
-  value: 130
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -84,18 +88,6 @@ batteryGuarantee:
   key: Batterie-Garantie
   value: 160
   baseUnit: km
-loadingHeight:
-  key: Ladehöhe
-  value: 634
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 3,3
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 2,25
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 1864
   valuewheelbase: 2716
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1215
-  width: Breite
-  valuewidth: 1248
-  valuelength: 1806
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "4486"
   key: Länge
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1864"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2716"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1215
+  width: Breite
+  valuewidth: 1248
+  valuelength: 1806
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,9 +136,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "1215"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2716"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 3,47
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 2,55
+  baseUnit: m²
 ---
 Der Nissan Townstar ist ein Elektro-Kleintransporter der Klasse N1 mit 571 Kg Nutzlast beim 2-Tonner und 775 Kg beim 2,2-Tonner. Der Townstar ist als Transporter oder als mit bis zu 7 Sitzplätzen ausgestattete Hochdachkombi verfügbar. Das Fahrzeug wird das Vorgängermodell Nissan ENV-200 ersetzen und ist ab Herbst 2022 verfügbar.
