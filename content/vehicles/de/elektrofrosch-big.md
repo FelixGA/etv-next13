@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 42
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: "-"
 title: Elektrofrosch BIG
 name: elektrofrosch-big
 price: 2665
@@ -19,10 +27,6 @@ curbweight:
   key: Leergewicht
   value: 0
   baseUnit: "-"
-maxSpeed:
-  key: km/h
-  value: 42
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 40
@@ -85,18 +89,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: "-"
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 0,54
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 2,18
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -108,15 +100,6 @@ carSizes:
   valueheight: 1785
   valuewheelbase: 2066
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 250
-  width: Breite
-  valuewidth: 1280
-  valuelength: 1700
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3070"
   key: Länge
@@ -128,6 +111,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1785"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2066"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 250
+  width: Breite
+  valuewidth: 1280
+  valuelength: 1700
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -141,9 +137,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "250"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2066"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 0,54
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 2,18
+  baseUnit: m²
 ---
 Der BIG von Elektrofrosch ist ein Lastentrike der Kategorie L2e mit einer maximalen Nutzlast von 370 kg und einer Höchstgeschwindigkeit von 42 km/h.
