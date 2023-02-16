@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 90
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 570
+  baseUnit: mm
 title: MAN eTGE
 name: man-etge
 relatedBlogs: >-
@@ -146,10 +154,6 @@ curbweight:
   key: Leergewicht
   value: 2499
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 90
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -212,18 +216,6 @@ batteryGuarantee:
   key: Batterie-Garantie
   value: 8
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 570
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 11,76
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 6,32
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -235,15 +227,6 @@ carSizes:
   valueheight: 2590
   valuewheelbase: 3640
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1881
-  width: Breite
-  valuewidth: 1832
-  valuelength: 3444
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "5986"
   key: Länge
@@ -255,6 +238,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "2590"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "3640"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1881
+  width: Breite
+  valuewidth: 1832
+  valuelength: 3444
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -268,10 +264,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "1881"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "3640"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 11,76
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 6,32
+  baseUnit: m²
 ---
 Der MAN TGE basiert auf dem nahezu baugleichen VW Crafter der zweiten Generation. Mehr als 30 Jahre war der Volkswagen LT der große “Lasten-Transporter” des deutschen Autokonzerns. Seit dem Jahr 2006 ist der Nachfolger namens Crafter auf dem Markt. Die zweite und aktuelle Generation ist seit 2016 verfügbar, seit 2018 als elektrischer e-Crafter. Damit war VW der Konkurrenz wie Renault und Sprinter vorraus.
 
