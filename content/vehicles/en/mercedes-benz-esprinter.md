@@ -132,15 +132,15 @@ loadingVolumeWidth:
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
-  baseUnit: "-"
+  value: "1899"
+  baseUnit: mm
 loadingVolumeTotal:
   key: Ladevolumen
   value: 11,0
   baseUnit: m³
 loadingArea:
   key: Ladefläche
-  value: "0"
+  value: 5,5
   baseUnit: m²
 ---
 Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und rund eine Tonne Nutzlast aufnehmen kann.
