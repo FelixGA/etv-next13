@@ -154,8 +154,8 @@ loadingWeight:
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 0
-  baseUnit: "-"
+  value: 1711
+  baseUnit: kg
 range230V:
   key: Reichweite SLA Blei
   value: 0
