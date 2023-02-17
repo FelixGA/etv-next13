@@ -131,6 +131,11 @@ relatedBlogs: >-
 
   4,4
 relatedReviews: vw-abt-e-transporter-testbericht-von-elektrotransporter-vergleich
+curbweight:
+  value: 2104
+  baseUnit: kg
+chargingTimeFast:
+  value: 45
 rating:
   value: 2.8
 loadingVolumeTotal:
