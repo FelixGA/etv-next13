@@ -13,7 +13,7 @@ const BasicInfo = ({
   getTestReview,
   getCarsReview,
   getAllReviews,
-
+  
 }) => {
 
   return (

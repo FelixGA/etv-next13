@@ -154,8 +154,8 @@ loadingWeight:
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 0
-  baseUnit: "-"
+  value: 1711
+  baseUnit: kg
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -205,8 +205,8 @@ rating:
   value: 3
 guarantee:
   key: Garantie Fahrzeug
-  value: 0
-  baseUnit: "-"
+  value: 2
+  baseUnit: Jahre
 availability:
   key: Verfügbarkeit
   value: keine Angabe

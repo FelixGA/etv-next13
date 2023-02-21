@@ -19,9 +19,10 @@ const Articles = ({
   /* GET THE STAR */
   return (
     <>
-      <div className="relative flex flex-col justify-center py-4 print:hidden bg-grey-lighter lg:flex-row ">
-        <div className="flex flex-col flex-wrap lg:w-[50%] w-full">
-          <h3 className="w-full px-4 mt-4 text-2xl font-bold lg:text-3xl text-black-darkest">
+      <div className="relative flex flex-col justify-center py-4 print:hidden bg-grey-lighter lg:flex-row" itemScope
+    itemType="https://schema.org/Article" itemProp="articleBody">
+        <div className="flex flex-col flex-wrap lg:w-[50%] w-full" itemProp="articleSection">
+          <h3 className="w-full px-4 mt-4 text-2xl font-bold lg:text-3xl text-black-darkest" itemProp="headline">
             Testbericht von {carItem.title}
           </h3>
           <div className="">
@@ -57,6 +58,7 @@ const Articles = ({
                           height={150}
                           layout="responsive"
                           objectFit="contain"
+                          itemProp="image"
                         />
                       </div>
                     )}

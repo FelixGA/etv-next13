@@ -1,7 +1,7 @@
 ---
 maxSpeed:
   key: km/h
-  value: 80
+  value: 120
   baseUnit: km/h
 loadingHeight:
   key: Ladehöhe

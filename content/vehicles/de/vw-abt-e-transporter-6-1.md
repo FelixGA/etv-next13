@@ -154,8 +154,8 @@ loadingWeight:
   baseUnit: kg
 curbweight:
   key: Leergewicht
-  value: 0
-  baseUnit: "-"
+  value: 2104
+  baseUnit: kg
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -176,8 +176,8 @@ chargingTimeLithium:
   baseUnit: h
 chargingTimeFast:
   key: Schnellladezeit
-  value: 0
-  baseUnit: "-"
+  value: 45
+  baseUnit: min
 batteryCapacityBlei:
   key: Kapazität SLA Akku
   value: "-"

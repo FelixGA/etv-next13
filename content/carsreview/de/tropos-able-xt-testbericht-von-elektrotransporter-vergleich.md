@@ -6,15 +6,18 @@ youtubeLink: https://www.youtube.com/watch?v=zY2hGyJ0yB0
 category: Koffer
 publishedAt: 03/17/2022
 description: >
-  Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e mit einer
-  Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in zwei
-  Akkuvarianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
+  Der Tropos Able XT war ein Leicht-Elektrotransporter der Klasse L7e mit einer
+  Nutzlast von bis zu 700 kg. Das Fahrzeug konnte in zwei Akku-Varianten mit 65
+  km/h bzw. 85 km/h Höchstgeschwindigkeit erworben werden. Das Fahrzeug wird
+  heute unter dem Hersteller-Namen Cenntro vertrieben.
 src: /images/tropos-able-bunt.jpg
 content:
-  - content: Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e mit
-      einer Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in
-      zwei Akkuvarianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben
-      werden.
+  - content: Der Tropos Able XT war ein Leicht-Elektrotransporter der Klasse L7e mit
+      einer Nutzlast von bis zu 700 kg. Das Fahrzeug konnte in zwei
+      Akku-Varianten mit 65 km/h bzw. 85 km/h Höchstgeschwindigkeit erworben
+      werden. Das Fahrzeug wird heute unter dem Hersteller-Namen
+      [Cenntro](https://www.elektrotransporter-vergleich.de/fahrzeuge/cenntro)
+      vertrieben.
     title: Einleitung
     stars: 0
   - content: >-

@@ -1,20 +1,20 @@
 ---
 title: Tropos
 leicht: true
-description: "Tropos Technologies, Inc.™ ist ein US-amerikanisches Unternehmen
+description: "Tropos Technologies, Inc.™ war ein US-amerikanisches Unternehmen
   mit Hauptsitz im Silicon Valley, das sich auf die Fertigung von elektrischen
   Niedergeschwindigkeits-Fahrzeugen spezialisiert hat. "
 src: /images/tropos-motors-logo.jpeg
 slug: tropos
-websiteLink: "https://troposmotors.com/ "
+websiteLink: https://www.cenntro-motors.eu/
 content: >-
-  Tropos Technologies, Inc.™ ist ein US-amerikanisches Unternehmen mit Hauptsitz
+  Tropos Technologies, Inc.™ war ein US-amerikanisches Unternehmen mit Hauptsitz
   im Silicon Valley, das sich auf die Fertigung von elektrischen
   Niedergeschwindigkeits-Fahrzeugen  und Lastwagen im Rahmen der
   ABLE-Produktlinie spezialisiert hat. Die ABLE-Serie ist laut Hersteller eine
   vollständige Reihe langlebiger und vielseitiger  elektrischer Nutzfahrzeuge,
   die für Unternehmen, Flotten, Ersthelfer, Landwirtschaft, Last-Mile-Lieferung
-  und Bauanwendungen entwickelt wurden. 
+  und Bauanwendungen entwickelt wurden. 
 
 
   <br/>
@@ -26,5 +26,5 @@ content: >-
   <br/>
 
 
-  Die Fahrzeuge werden auch unter dem Herstellernamen Sevic und Cenntro angeboten. Der Hauptsitz der Sevic Systems SE in Deutschland ist in Bochum.
+  Seit Anfang 2022 werden die Fahrzeuge vom Hersteller [Cenntro](https://www.elektrotransporter-vergleich.de/fahrzeuge/cenntro) mit Sitz in Herne angeboten.
 ---
