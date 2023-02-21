@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 80
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: "-"
 title: Mercedes-Benz eSprinter
 name: mercedes-benz-esprinter
 price: 54090
@@ -16,10 +24,6 @@ curbweight:
   key: Leergewicht
   value: 2499
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 80
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -82,18 +86,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: "-"
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 11,0
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: "0"
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -105,15 +97,6 @@ carSizes:
   valueheight: 2687
   valuewheelbase: 3924
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 0
-  width: Breite
-  valuewidth: 1787
-  valuelength: 3272
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "6088"
   key: Länge
@@ -126,6 +109,19 @@ carSizesHeight:
   key: Höhe
   value: "2687"
   baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "3924"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 0
+  width: Breite
+  valuewidth: 1787
+  valuelength: 3272
+  length: Länge
+  baseUnit: mm
 loadingVolumeLength:
   key: Länge
   value: "3272"
@@ -136,11 +132,15 @@ loadingVolumeWidth:
   baseUnit: mm
 loadingVolumeHeight:
   key: Höhe
-  value: "0"
-  baseUnit: "-"
-wheelbase:
-  key: Radstand
-  value: "3924"
+  value: "1899"
   baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 11,0
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 5,5
+  baseUnit: m²
 ---
 Der Mercedes-Benz eSprinter ist ein großer Elektrotransporter der Fahrzeugklasse N1, der als Kastenwagen mit Hochdach angeboten wird und rund eine Tonne Nutzlast aufnehmen kann.

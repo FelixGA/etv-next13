@@ -7,4 +7,10 @@ category: Kipper
 typeClass: N1
 rating:
   value: 2.4
+loadingVolumeTotal:
+  value: 0,00
+  baseUnit: m³
+loadingArea:
+  value: 3,23
+  baseUnit: m²
 ---

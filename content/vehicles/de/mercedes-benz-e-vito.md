@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 120
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: mm
 title: Mercedes-Benz eVito Kastenwagen
 name: mercedes-benz-e-vito
 price: 45990
@@ -19,10 +27,6 @@ curbweight:
   key: Leergewicht
   value: 2184
   baseUnit: keine Angabe
-maxSpeed:
-  key: km/h
-  value: 80
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -85,18 +89,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: keine Angabe
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 4,63
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: "0"
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -108,15 +100,6 @@ carSizes:
   valueheight: 1941
   valuewheelbase: 0
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 0
-  width: Breite
-  valuewidth: 0
-  valuelength: 2831
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "5140"
   key: Länge
@@ -128,6 +111,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1941"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "3200"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 0
+  width: Breite
+  valuewidth: 0
+  valuelength: 2831
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -141,10 +137,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "3200"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 4,63
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: "0"
+  baseUnit: m²
 ---
 
 Der Maxus EV 80 ist ein großer Elektrotransporter, der als Kastenwagen 910 Kilogramm Nutzlast aufnehmen kann und eine Höchstgeschwindigkeit von 100 km/h erreicht. Das Fahrzeug ist ebenso als Chassis-Version ohne Aufbau verfügbar.

@@ -1,12 +1,21 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 65
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: "-"
 title: Tropos Able XT1 Koffer
 name: tropos-able-xt1-koffer
 price: 27000
 relatedBlogs: der-aufbau-des-sevic-v500e-kann-schnell-gewechselt-werden
 relatedReviews: tropos-able-xt-testbericht-von-elektrotransporter-vergleich
-description: Der Tropos Able XT ist ein Leicht-Elektrotransporter der Klasse L7e
-  mit einer Nutzlast von bis zu 700 kg. Das Fahrzeug kann in zwei Akku-Varianten
-  mit 65 km/h bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
+description: Der Tropos Able XT war ein Leicht-Elektrotransporter der Klasse L7e
+  mit einer Nutzlast von bis zu 700 kg. Das Fahrzeug konnte in zwei
+  Akku-Varianten mit 65 km/h bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
+  Das Fahrzeug wird heute unter dem Hersteller-Namen Cenntro vertrieben.
 src: /images/tropos-able-koffer-seite.jpg
 category: Koffer
 typeClass: L7E
@@ -18,10 +27,6 @@ curbweight:
   key: Leergewicht
   value: 0
   baseUnit: "-"
-maxSpeed:
-  key: km/h
-  value: 65
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -84,18 +89,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 5
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: "-"
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 3,42
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 2,97
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +100,6 @@ carSizes:
   valueheight: 1900
   valuewheelbase: 0
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1153
-  width: Breite
-  valuewidth: 1350
-  valuelength: 2200
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3700"
   key: Länge
@@ -127,6 +111,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1900"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: "-"
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1153
+  width: Breite
+  valuewidth: 1350
+  valuelength: 2200
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,9 +137,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "1150"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "0"
-  baseUnit: "-"
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 3,42
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 2,97
+  baseUnit: m²
 ---
-Der Tropos Able XT ist ein Leichtelektrotransporter der Klasse L7e mit einer Nutzlast von bis zu 700 Kilogramm Nutzlast. Das Fahrzeug kann in zwei Akku-Varianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
+Der Tropos Able XT war ein Leicht-Elektrotransporter der Klasse L7e mit einer Nutzlast von bis zu 700 kg. Das Fahrzeug konnte in zwei Akku-Varianten mit 65 km/h bzw. 85 km/h Höchstgeschwindigkeit erworben werden. Das Fahrzeug wird heute unter dem Hersteller-Namen Cenntro vertrieben.

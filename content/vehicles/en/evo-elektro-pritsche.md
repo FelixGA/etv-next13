@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 0
+  baseUnit: "-"
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: "-"
 title: EVO Transporter
 name: evo-elektro-pritsche
 price: 30000
@@ -17,10 +25,6 @@ curbweight:
   key: Leergewicht
   value: 1040
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 0
-  baseUnit: "-"
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -83,18 +87,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: "-"
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 0,94
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 3,14
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -106,15 +98,6 @@ carSizes:
   valueheight: 1910
   valuewheelbase: 2760
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 300
-  width: Breite
-  valuewidth: 1400
-  valuelength: 2240
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "0"
   key: Länge
@@ -127,6 +110,19 @@ carSizesHeight:
   key: Höhe
   value: "0"
   baseUnit: "-"
+wheelbase:
+  key: Radstand
+  value: "2760"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 300
+  width: Breite
+  valuewidth: 1400
+  valuelength: 2240
+  length: Länge
+  baseUnit: mm
 loadingVolumeLength:
   key: Länge
   value: "0"
@@ -139,10 +135,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: "-"
-wheelbase:
-  key: Radstand
-  value: "2760"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 0,94
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 3,14
+  baseUnit: m²
 ---
 
 Der EVO ist ein Transporter der Klasse N1 und eignet sich speziell für den Einsatz in Städten, Parkanlagen und auf Friedhöfen.

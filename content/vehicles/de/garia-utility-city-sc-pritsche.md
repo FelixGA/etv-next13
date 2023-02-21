@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 45
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 633
+  baseUnit: mm
 title: Garia Utility City SC Pritsche
 name: garia-utility-city-sc-pritsche
 price: 29312
@@ -19,10 +27,6 @@ curbweight:
   key: Leergewicht
   value: 828
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 45
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 60
@@ -85,18 +89,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 633
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 0,38
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 1,53
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -108,15 +100,6 @@ carSizes:
   valueheight: 1865
   valuewheelbase: 2117
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 250
-  width: Breite
-  valuewidth: 1215
-  valuelength: 1258
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3225"
   key: Länge
@@ -128,6 +111,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1865"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2252"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 250
+  width: Breite
+  valuewidth: 1215
+  valuelength: 1258
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -141,9 +137,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "250"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2252"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 0,38
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 1,53
+  baseUnit: m²
 ---
 Der Garia Utility ist Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer Nutzlast von von knapp 650 Kilogramm in der Version City und einer Höchstgeschwindigkeit von 45 km/h.

@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 70
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 924
+  baseUnit: mm
 title: Evum A-Car Pritsche
 name: evum-a-car-pritsche
 price: 33080
@@ -28,10 +36,6 @@ curbweight:
   key: Leergewicht
   value: 1200
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 70
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -94,18 +98,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 924
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 1,01
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 2,86
-  baseUnit: m²
 carSizes:
   width: Breite
   length: Länge
@@ -117,15 +109,6 @@ carSizes:
   valueheight: 2000
   valuewheelbase: 2596
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 352
-  width: Breite
-  valuewidth: 1608
-  valuelength: 1778
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "4000"
   key: Länge
@@ -137,6 +120,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "2000"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2596"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 352
+  width: Breite
+  valuewidth: 1608
+  valuelength: 1778
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -150,10 +146,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "352"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2596"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 1,01
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 2,86
+  baseUnit: m²
 ---
 
 Das Evum A-Car ist ein Elektrotransporter mit Allradantrieb der Kategorie N1. Die Höchstgeschwindigkeit des Fahrzeugs liegt bei 70 km/h und die maximale Nutzlast bei rund einer Tonne.

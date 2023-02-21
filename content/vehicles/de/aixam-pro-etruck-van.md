@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 45
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 370
+  baseUnit: mm
 title: Aixam Pro E-Van
 name: aixam-pro-etruck-van
 price: 22480
@@ -22,10 +30,6 @@ curbweight:
   key: Leergewicht
   value: 440
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 45
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -88,18 +92,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 370
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 2,77
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 1,98
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -111,15 +103,6 @@ carSizes:
   valueheight: 1750
   valuewheelbase: 2252
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1400
-  width: Breite
-  valuewidth: 1465
-  valuelength: 1350
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3000"
   key: Länge
@@ -131,6 +114,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1750"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2252"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1400
+  width: Breite
+  valuewidth: 1465
+  valuelength: 1350
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -144,10 +140,14 @@ loadingVolumeHeight:
   key: Höhe
   value: "0"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2252"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 2,77
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 1,98
+  baseUnit: m²
 ---
 
 Der Axiam-Pro eTruck ist ein Elektrotransporter mit 80 Kilometer Reichweite und 45 km/h Höchstgeschwindigkeit.
