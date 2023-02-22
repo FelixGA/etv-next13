@@ -13,42 +13,47 @@ export default function comparePage(props) {
   /* .find(
     (item) => vehicle?.relatedReviews == item.slug
   ) */
+  const ohneTropos = props.vehicles.filter(ausgabe => !ausgabe.title.startsWith('Tropos'));
+  // console.log(ohneTropos);
+  // console.log(props.vehicles);
+
   const [getCarsReviews, setGetCarsReviews] = useState([]);
   const { state, dispatch } = useStore();
   useEffect(() => {
-    setSortedCars(props.vehicles);
+    // setSortedCars(props.vehicles);
+    setSortedCars(ohneTropos);
     setGetBrands(props.brands);
     setGetCarsReviews(props.carsreviews);
     /* PRICE SORTING */
-    const getCarslowestPrice = props.vehicles
+    const getCarslowestPrice = ohneTropos
       ?.sort((a, b) => parseFloat(a.price) * 1 - parseFloat(b.price) * 1)
       .map((item) => item);
 
-    const getCarshighestPrice = props.vehicles
+    const getCarshighestPrice = ohneTropos
       ?.sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
       .map((item) => item);
     //
     // alphabetical sorting
-    const getCarsAlphabetical = props.vehicles
+    const getCarsAlphabetical = ohneTropos
       ?.sort(function (a, b) {
         return a.name === b.name ? 0 : a.name < b.name ? -1 : 1;
       })
       .map((item) => item);
     // /* cᴀʀs ᴡᴇɪɢʜᴛ ғɪʟᴛᴇʀ */
-    const getCarslightest = props.vehicles
+    const getCarslightest = ohneTropos
       ?.sort((a, b) => b.loadingWeight.value - a.loadingWeight.value)
       .map((item) => item);
-    const getCarsBymaxSpeed = props.vehicles
+    const getCarsBymaxSpeed = ohneTropos
       ?.sort((a, b) => b.maxSpeed.value - a.maxSpeed.value)
       .map((item) => item);
     // /* ᴄᴀʀs ʀᴀɴɢᴇ ғɪʟᴛᴇʀ */
 
-    const getCarsByRange = props.vehicles
+    const getCarsByRange = ohneTropos
       ?.sort((a, b) => b.rangeLithium.value - a.rangeLithium.value)
       .map((item) => item);
 
     // /* ᴄᴀʀs ᴄʜᴀʀɢɪɴɢ ᴛɪᴍᴇ ғɪʟᴛᴇʀ */
-    const getCarsfastest = props.vehicles
+    const getCarsfastest = ohneTropos
       ?.sort(
         (a, b) => a.chargingTimeLithium.value - b.chargingTimeLithium.value
       )

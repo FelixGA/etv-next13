@@ -55,7 +55,7 @@ export default function Details(props) {
             getAllReviews={getAllReviews}
           />
           {/* technical details section */}
-          <TechnicalDetails carItem={carItem} />
+          <TechnicalDetails carItem={carItem}/>
           {/* description and articles section */}
         </div>
 

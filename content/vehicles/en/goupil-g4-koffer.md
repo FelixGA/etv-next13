@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 50
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 697
+  baseUnit: mm
 title: Goupil G4 Koffer
 name: goupil-g4-koffer
 relatedBlogs: beispiel  bitte nicht ändern
@@ -17,10 +25,6 @@ curbweight:
   key: Leergewicht
   value: 582
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 50
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 50
@@ -83,18 +87,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 5
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 697
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 2,71
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 2,27
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -106,15 +98,6 @@ carSizes:
   valueheight: 1893
   valuewheelbase: 2022
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1196
-  width: Breite
-  valuewidth: 1197
-  valuelength: 1893
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3582"
   key: Länge
@@ -126,6 +109,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1893"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2022"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1196
+  width: Breite
+  valuewidth: 1197
+  valuelength: 1893
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -139,9 +135,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "1196"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2022"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 2,71
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 2,27
+  baseUnit: m²
 ---
 Der Goupil G4 ist ein Elektro-Kleintransporter der Kategorie L7e mit Traktionsbatterie oder N1 mit einer Lithiumbatterie.

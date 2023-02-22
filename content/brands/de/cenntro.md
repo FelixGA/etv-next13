@@ -1,9 +1,10 @@
 ---
 title: Cenntro
+leicht: true
 description: Die Cenntro Automotive Europe ist ein deutsches Unternehmen mit Sitz in Herne.
 src: /images/cenntro-logo.png
 slug: cenntro
-websiteLink: "https://www.cenntro-motors.eu/modelle/metro.html "
+websiteLink: https://www.cenntro-motors.eu/
 content: >-
   ### Überblick 
 

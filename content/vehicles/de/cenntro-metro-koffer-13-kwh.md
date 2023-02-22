@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  baseUnit: km/h
+  value: 65
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: "-"
 title: Cenntro Metro Koffer (13 kWh)
 name: cenntro-metro-koffer-13-kwh
 price: 27000
@@ -7,7 +15,7 @@ relatedReviews: cenntro-metro-testbericht-von-elektrotransporter-vergleich
 description: Der Cenntro Metro ist ein Leichtelektrotransporter der Klasse L7e
   mit einer Nutzlast von bis zu 700 Kilogramm. Das Fahrzeug kann in zwei
   Akkuvarianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.
-src: /images/cenntro-metro-kofferaufbau.jpeg
+src: /images/cenntro-metro_elektrotransporter.jpeg
 category: Koffer
 typeClass: L7E
 loadingWeight:
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 0
   baseUnit: "-"
-maxSpeed:
-  key: km/h
-  baseUnit: km/h
-  value: 65
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -84,18 +88,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 5
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: "-"
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 4,57
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 3,14
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 1900
   valuewheelbase: 0
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1450
-  width: Breite
-  valuewidth: 1370
-  length: Länge
-  valuelength: 2300
-  baseUnit: mm
 carSizesLength:
   key: "Länge "
   value: "3700"
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1900"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "0"
+  baseUnit: "-"
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1450
+  width: Breite
+  valuewidth: 1370
+  length: Länge
+  valuelength: 2300
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,12 +136,16 @@ loadingVolumeHeight:
   key: Höhe
   value: "1450"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "0"
-  baseUnit: "-"
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 4,57
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 3,14
+  baseUnit: m²
 youtube:
-  id: https://www.youtube.com/watch?v=RvRSSNoHsMw&t=8s
+  id: RvRSSNoHsMw
   heading: Cenntro Metro Elektro-Nutzfahrzeuge - Promotionvideo
 ---
 Der Cenntro Metro ist ein Leichtelektrotransporter der Klasse L7e mit einer Nutzlast von bis zu 700 Kilogramm. Das Fahrzeug kann in zwei Akkuvarianten mit 65 bzw. 85 km/h Höchstgeschwindigkeit erworben werden.

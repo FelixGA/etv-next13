@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 123
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 0
+  baseUnit: "-"
 title: Nissan e-NV 200
 name: nissan-e-nv-200
 price: 28660
@@ -18,10 +26,6 @@ curbweight:
   key: Leergewicht
   value: 0
   baseUnit: "-"
-maxSpeed:
-  key: km/h
-  value: 123
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -84,18 +88,6 @@ batteryGuarantee:
   key: Batterie-Garantie
   value: 8
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 0
-  baseUnit: "-"
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 3,47
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 2,55
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -107,15 +99,6 @@ carSizes:
   valueheight: 2011
   valuewheelbase: 2725
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1360
-  width: Breite
-  valuewidth: 1500
-  valuelength: 1701
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "4560"
   key: Länge
@@ -127,6 +110,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "2011"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2725"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1360
+  width: Breite
+  valuewidth: 1500
+  valuelength: 1701
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -140,9 +136,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "1360"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2725"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 3,47
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 2,55
+  baseUnit: m²
 ---
 Der Nissan e-NV 200 ist ein Elektotransporter der Klasse N1der Platz für bis zu 7 Personen bietet und über eine maximalen Nutzlast von 667 Kilogramm verfügt.

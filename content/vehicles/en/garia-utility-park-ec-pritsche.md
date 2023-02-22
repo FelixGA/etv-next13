@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 30
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 788
+  baseUnit: mm
 title: Garia Utility Park EC Pritsche
 name: garia-utility-park-ec-pritsche
 price: 30000
@@ -17,10 +25,6 @@ curbweight:
   key: Leergewicht
   value: 0
   baseUnit: "-"
-maxSpeed:
-  key: km/h
-  value: 30
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 60
@@ -83,18 +87,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 0
   baseUnit: "-"
-loadingHeight:
-  key: Ladehöhe
-  value: 788
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 0,51
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 2,03
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -106,15 +98,6 @@ carSizes:
   valueheight: 1865
   valuewheelbase: 2731
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 250
-  width: Breite
-  valuewidth: 1215
-  valuelength: 1670
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3629"
   key: Länge
@@ -126,6 +109,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1865"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2731"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 250
+  width: Breite
+  valuewidth: 1215
+  valuelength: 1670
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -139,9 +135,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "250"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2731"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 0,51
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 2,03
+  baseUnit: m²
 ---
 Der Garia Utility ist Elektro-Kleintransporter der Fahrzeugklasse L7e mit einer Nutzlast von von knapp 750 Kilogramm in der Version Park und einer Höchstgeschwindigkeit von 30 km/h.

@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 145
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 623
+  baseUnit: mm
 title: VW ID. Buzz Cargo
 name: vw-id-buzz-cargo
 price: 45740
@@ -20,10 +28,6 @@ curbweight:
   key: Leergewicht
   value: 2353
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 145
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Blei
   value: 0
@@ -86,18 +90,6 @@ batteryGuarantee:
   key: Batterie-Garantie
   value: 8
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 623
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: "3,9 "
-  baseUnit: m2
-loadingArea:
-  key: Ladefläche
-  value: "0"
-  baseUnit: "-"
 carSizes:
   width: Breite
   length: Länge
@@ -109,15 +101,6 @@ carSizes:
   valueheight: 1938
   valuewheelbase: 2988
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1257
-  width: Breite
-  valuewidth: 1230
-  length: Länge
-  valuelength: 2208
-  baseUnit: mm
 carSizesLength:
   key: Länge
   value: "4712"
@@ -129,6 +112,19 @@ carSizesWidth:
 carSizesHeight:
   key: Breite
   value: "1938"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2988"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1257
+  width: Breite
+  valuewidth: 1230
+  length: Länge
+  valuelength: 2208
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -142,9 +138,13 @@ loadingVolumeHeight:
   key: "Höhe "
   value: "1257"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2988"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: "3,9 "
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: "0"
+  baseUnit: "-"
 ---
 Der VW ID. Buzz ist der erste vollelektrische Small-Van aus dem Hause Volkswagen. Das Fahrzeug ist als Kombiversion zur Personenbeförderung, aber auch als Cargo-Version erhältlich. Der ID. Buzz verfügt über eine maximale Zuladung von 647 Kilogramm und eine Höchstgeschwindigkeit von 145 km/h.

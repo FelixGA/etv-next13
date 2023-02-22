@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 100
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 560
+  baseUnit: mm
 title: Maxus EV 80
 name: maxus-ev-80
 price: 53400
@@ -19,10 +27,6 @@ curbweight:
   key: Leergewicht
   value: 2590
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 100
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 0
@@ -85,18 +89,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 5
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 560
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 11,6
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: "0"
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -108,15 +100,6 @@ carSizes:
   valueheight: 2552
   valuewheelbase: 3850
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 1925
-  width: Breite
-  valuewidth: 1800
-  valuelength: 3200
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "5700"
   key: Länge
@@ -128,6 +111,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "2552"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "3850"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 1925
+  width: Breite
+  valuewidth: 1800
+  valuelength: 3200
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -141,9 +137,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "1925"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "3850"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 11,6
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: "0"
+  baseUnit: m²
 ---
 Der Maxus EV 80 ist ein großer Elektrotransporter, der als Kastenwagen 910 Kilogramm Nutzlast aufnehmen kann und eine Höchstgeschwindigkeit von 100 km/h erreicht. Das Fahrzeug ist ebenso als Chassis-Version ohne Aufbau verfügbar.

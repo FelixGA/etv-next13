@@ -21,16 +21,16 @@ export default function Details(props) {
   }, [props]);
   return (
     <>
-      <div className="w-full">
+      <div className="w-full px-2">
         {/* <Head page={props.page} /> */}
-        <div className="2xl:px-48">
-          <h1 className="px-4 pt-8 pb-4 text-2xl leading-9 tracking-wider text-center text-black lg:text-left lg:text-4xl xl:pt-12 2xl:px-48">
+        <div className="2xl:px-40">
+          <h1 className="px-4 pt-8 pb-4 text-2xl leading-9 tracking-wider text-center text-black lg:text-left lg:text-4xl xl:pt-12 2xl:px-40">
             {getBrand.title} Elektro-Transporter - {sortedCars.length}{" "}
             Nutzfahrzeuge mit Elektro Antrieb im E-Transporter Vergleich
           </h1>
 
           {/* *** Flexbox Link/Brand */}
-          <div className="flex mx-4 my-6 2xl:mx-48 cursor-pointer">
+          <div className="flex mx-4 my-6 2xl:mx-40 cursor-pointer">
             {/* *** Link */}
             <div className="flex-auto w-3/4">
               <Link href={`${getBrand.websiteLink}`} passHref>
@@ -64,14 +64,14 @@ export default function Details(props) {
           </div>
 
           {/* Text */}
-          <div className="px-4 2xl:px-48">
+          <div className="px-4 2xl:px-40">
             <div className="py-4 text-xl ">
               {props.getContext ? <MDXRemote {...props.getContext} /> : null}
             </div>
           </div>
 
           {/* *** Liste */}
-          <div className="2xl:px-48">
+          <div className="2xl:px-40">
             <FahrzeugeResultList sortedCars={sortedCars} />
           </div>
         </div>

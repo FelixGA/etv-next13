@@ -1,4 +1,12 @@
 ---
+maxSpeed:
+  key: km/h
+  value: 50
+  baseUnit: km/h
+loadingHeight:
+  key: Ladehöhe
+  value: 697
+  baseUnit: mm
 title: Goupil G4 Pritsche
 name: goupil-g4-pritsche
 price: 23630
@@ -19,10 +27,6 @@ curbweight:
   key: Leergewicht
   value: 582
   baseUnit: kg
-maxSpeed:
-  key: km/h
-  value: 50
-  baseUnit: km/h
 range230V:
   key: Reichweite SLA Akku
   value: 50
@@ -85,18 +89,6 @@ batteryGuarantee:
   key: Garantie Akku
   value: 5
   baseUnit: Jahre
-loadingHeight:
-  key: Ladehöhe
-  value: 697
-  baseUnit: mm
-loadingVolumeTotal:
-  key: Ladevolumen
-  value: 0,61
-  baseUnit: m3
-loadingArea:
-  key: Ladefläche
-  value: 2,60
-  baseUnit: m2
 carSizes:
   width: Breite
   length: Länge
@@ -108,15 +100,6 @@ carSizes:
   valueheight: 1893
   valuewheelbase: 2022
   key: Fahrzeugmaße
-loadingVolume:
-  key: Laderaum-Maße
-  height: Höhe
-  valueheight: 235
-  width: Breite
-  valuewidth: 1215
-  valuelength: 2140
-  length: Länge
-  baseUnit: mm
 carSizesLength:
   value: "3582"
   key: Länge
@@ -128,6 +111,19 @@ carSizesWidth:
 carSizesHeight:
   key: Höhe
   value: "1893"
+  baseUnit: mm
+wheelbase:
+  key: Radstand
+  value: "2022"
+  baseUnit: mm
+loadingVolume:
+  key: Laderaum-Maße
+  height: Höhe
+  valueheight: 235
+  width: Breite
+  valuewidth: 1215
+  valuelength: 2140
+  length: Länge
   baseUnit: mm
 loadingVolumeLength:
   key: Länge
@@ -141,9 +137,13 @@ loadingVolumeHeight:
   key: Höhe
   value: "235"
   baseUnit: mm
-wheelbase:
-  key: Radstand
-  value: "2022"
-  baseUnit: mm
+loadingVolumeTotal:
+  key: Ladevolumen
+  value: 0,61
+  baseUnit: m³
+loadingArea:
+  key: Ladefläche
+  value: 2,60
+  baseUnit: m²
 ---
 Der Goupil G4 ist ein Elektro-Kleintransporter der Kategorie L7e mit Traktionsbatterie oder N1 mit einer Lithiumbatterie.
