@@ -105,12 +105,12 @@ const Footer = ({ blogs, brands, vehicles }) => {
                 <a className="text-white">{`Magazin`.toUpperCase()}</a>
               </Link>
             </h3>
-            <div className="pt-4">
+            <div className="pt-6">
               <ul className="flex flex-col text-[#b1a7a7] items-center sm:items-start pb-8">
                 {magazineList
                   ?.map((blogCateg, index) => (
                     <li
-                      className="flex items-center justify-between h-[43px] "
+                      className="flex items-center justify-between mb-5 "
                       key={index}
                     >
                       <Link href={`/magazin/${blogCateg.slug}`}>
@@ -131,7 +131,7 @@ const Footer = ({ blogs, brands, vehicles }) => {
             <h3 className="flex items-center justify-center text-xs font-bold tracking-wider text-white xl:w-full md:justify-start sm:items-end h-14 xl:text-base">
               {`Rechtliches & Kontakt`.toUpperCase()}
             </h3>
-            <div className="sm:pt-4">
+            <div className="sm:pt-6">
               <ListItems itemsList={rights} />
             </div>
           </div>

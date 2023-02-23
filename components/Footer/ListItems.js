@@ -5,13 +5,14 @@ const ListItems = (props) => {
   //   ...new Set(props.itemsList.map((blog) => blog.title.split(/[\s-]+/)[0])),
   // ];
   // console.log(itemsList);
+  // h-[43px] 
 
   return (
     <ul className="flex flex-col pb-4 text-[#b1a7a7] items-center sm:items-start  ">
       {props.itemsList
         ?.map((blog, index) => (
           <li
-            className="flex items-center justify-between h-[43px]"
+            className="flex items-center justify-between mb-5 "
             key={index}
           >
             <Link
