@@ -44,6 +44,9 @@ const Footer = ({ blogs, brands, vehicles }) => {
     },
   ];
 
+  const jetzt = new Date();
+  const jahr = jetzt.getFullYear();
+
   return (
     <>
       <footer className="px-2 shadow-2xl xl:px-4 bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-between ">
@@ -185,7 +188,7 @@ const Footer = ({ blogs, brands, vehicles }) => {
 "
       ></div>
       <div className="flex items-center justify-center h-16 text-xs tracking-wider text-white bg-blue-darker sm:text-lg sm:h-20 print:hidden">
-        &copy; 2022 Elektrotransporter-Vergleich.de
+        &copy; {jahr} Elektrotransporter-Vergleich.de
       </div>
     </>
   );
