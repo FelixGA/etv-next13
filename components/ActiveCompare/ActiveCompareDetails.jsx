@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import ButtonAnfragen from "../repeated/ButtonAnfragen";
 
 export default function ActiveCompareDetails({ keys, comparedCars }) {
+  console.log(keys, comparedCars);
   const [entries, setEntries] = useState([]);
 
   let testResultArr = comparedCars.map((test) => test.rating);
@@ -34,7 +35,7 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
 
         const entry = car[key];
 
-        carValues.push(`${entry.value} ${entry.baseUnit}`);
+        entry.baseUnit ? carValues.push(`${entry.value} ${entry.baseUnit}`) : carValues.push(`${entry.value}`);
       }
       entries.push(carValues);
     }
@@ -42,6 +43,8 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
     
     setEntries(entries);
   }, [keys, comparedCars]);
+
+  console.log("entries: ", entries);
 
   return (
     <>
@@ -58,7 +61,9 @@ export default function ActiveCompareDetails({ keys, comparedCars }) {
           </h3>
           {/* ADDS THE CLASS TYPE AS FIRST LINE */}
 
+          {/* {console.log("entry: ", entry)} */}
           {entry.map((value, index) => (
+            // console.log(index, value)
             <div
               key={index}
               className={`${

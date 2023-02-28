@@ -85,7 +85,10 @@ export default function ActiveCompareEntries({ keys, comparedCars }) {
               }`}
             >
               <p className="pl-4 text-sm text-blue-extra lg:text-lg lg:pl-10 2xl:pl-8">
-                {value || "-"}
+                {/* {value || "-"} */}
+                {value.includes("undefined") || value.includes("keine Angabe")
+                  ? "-"
+                  : value}
               </p>
             </div>
           ))}
