@@ -69,7 +69,7 @@ export default function ActiveCompareSizes({ keys, comparedCars }) {
                 </div>
               )}
               {index == 4 && (
-                <div className="col-span-full row-span-full">
+                <div className="col-span-full row-span-full" key={index}>
                   {colIndex == 0 ? (
                     <p className="pt-4 pl-4 text-base font-bold h-14 text-blue-extra lg:pl-8">
                       Fahrzeugmaße:
