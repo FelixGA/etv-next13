@@ -1,5 +1,5 @@
 ---
-title: "induktives Laden "
+title: "Induktives Laden "
 slug: "induktives-laden "
 youtubeLink: bitte auffuelen
 category: glossar
