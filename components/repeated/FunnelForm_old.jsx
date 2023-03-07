@@ -77,7 +77,7 @@ export default function Form(props) {
           }
         >
           {router.pathname !== "/kontakt" ? (
-            <div className="flex justify-center pt-6 pb-3">
+            <div className="flex justify-center pt-6 ">
               <p className="font-bold text-center sm:text-xl text-blue-lighter">
                 Jetzt kostenfreies Angebot erhalten!
               </p>
@@ -86,14 +86,12 @@ export default function Form(props) {
             ""
           )}
 
-        <div className="flex flex-col justify-center w-full  text-sm md:text-base md:flex-row">
-          <div>
-          {/* <div className="xs:w-1/2 "> */}
+          <div className="w-full">
             <TextInput
               style={`${errors.firstName ? " focus:border-red-500" : ""}`}
               placeholder={"z.B. Max Muster"}
               register={register}
-              label={"Vor- und Zuname:"}
+              label={"Name:"}
               id={"name"}
               type={"string"}
               pattern={fullNameRegex}
@@ -101,7 +99,7 @@ export default function Form(props) {
               required={true}
             />
           </div>
-          <div>
+          <div className="w-full">
             <TextInput
               placeholder={"ihr Firmenname"}
               register={register}
@@ -111,34 +109,8 @@ export default function Form(props) {
               registerData={"firma"}
             />
           </div>
-        </div>
-          
-        <div className="flex flex-col justify-center w-full text-sm md:text-base md:flex-row">
-          <div>
-            <TextInput
-              style={`${errors.emailInput ? " focus:border-red-500 " : ""}`}
-              placeholder={"z.B. max@muster.com"}
-              register={register}
-              label={"E-Mail:"}
-              id={"emailInput"}
-              type={"string"}
-              registerData={"emailInput"}
-              required={true}
-              pattern={emailRegex}
-            />
-          </div>
-          <div>
-            <TextInput
-              placeholder={"z.B. 030 - 123 45 67"}
-              register={register}
-              label={"Telefon:"}
-              id={"phone"}
-              type={"number"}
-              registerData={"phone"}
-            />
-          </div>
-          </div>
-          <div className="w-full text-sm md:text-base">
+          <div className="flex flex-col justify-center w-full xs:flex-row">
+            <div className="xs:w-1/2 ">
               <TextInput
                 style={"sm:mr-2"}
                 placeholder={"z.B. 10115"}
@@ -149,6 +121,42 @@ export default function Form(props) {
                 registerData={"zipcode"}
               />
             </div>
+            <div className="xs:w-1/2">
+              <TextInput
+                style={"xs:ml-2"}
+                extraStyle={"pl-2"}
+                placeholder={"z.B. Berlin"}
+                register={register}
+                label={"Ort:"}
+                id={"city"}
+                type={"string"}
+                registerData={"city"}
+              />
+            </div>
+          </div>
+          <div className="w-full">
+            <TextInput
+              style={`${errors.emailInput ? " focus:border-red-500 " : ""}`}
+              placeholder={"z.B. max@muster.com"}
+              register={register}
+              label={"Email:"}
+              id={"emailInput"}
+              type={"string"}
+              registerData={"emailInput"}
+              required={true}
+              pattern={emailRegex}
+            />
+          </div>
+          <div className="w-full">
+            <TextInput
+              placeholder={"z.B. 030 - 123 45 67"}
+              register={register}
+              label={"Telefon:"}
+              id={"phone"}
+              type={"number"}
+              registerData={"phone"}
+            />
+          </div>
           <div className="w-full">
             {router.pathname == "/kontakt" ? (
               <TextAreaContact
@@ -201,7 +209,7 @@ export default function Form(props) {
                 "Bitte stimmen Sie den Nutzungsbedingungen zu."}
             </p>
           </div>
-          <div className="flex-grow px-1 pb-3 pt-3 text-xs">
+          <div className="flex-grow px-1 pb-4">
             <Controller
               name="checkbox"
               control={control}
@@ -215,7 +223,7 @@ export default function Form(props) {
                 />
               )}
             />{" "}
-            <label htmlFor="confirm" className="text-xs">
+            <label htmlFor="confirm" className="text-sm">
               Ja, ich stimme der{" "}
               <span className="font-bold text-blue-dark">
                 <Link href={"/dataprotection"}>
@@ -231,7 +239,7 @@ export default function Form(props) {
               zu (Widerruf jederzeit möglich).
             </label>{" "}
           </div>
-          <div className="flex w-full px-1">
+          <div className="flex w-full px-1 pb-4">
             {router.pathname !== "/kontakt" ? (
               <button
                 onClick={() => {
@@ -245,7 +253,7 @@ export default function Form(props) {
                     : setSend(false);
                 }}
                 type="submit"
-                className="flex-grow px-2 py-2 text-white transition rounded-lg bg-blue-darker hover:bg-blue-light text-sm md:text-base"
+                className="flex-grow px-2 py-2 text-white transition rounded-lg bg-blue-darker hover:bg-blue-light"
               >
                 Unverbindlich und kostenlos anfragen
               </button>
@@ -272,36 +280,30 @@ export default function Form(props) {
 
           <div
             className={
-              "justify-around items-top relative flex"
+              router.pathname == "/kontakt"
+                ? "justify-center items-center relative flex"
+                : "hidden"
             }
           >
-            <div className="text-xs flex-1 pt-3 pb-3 pl-3">
-              <p className="font-semibold pb-1">Unser Service:</p>
-              <ul className="list-disc list-inside">
-                <li>100% kostenlos und unverbindlich</li>
-                <li>keine Auftragspflicht</li>
-                <li>schnell und zuverlässig</li>
-              </ul>
-            </div>
-            <div className="flex flex-1 flex-col items-center md:flex-row md:justify-around">
-            <div className="w-28 left-6">
+            {/* medal siegel image */}
+            <div className="w-14">
               <Image
-                src="/images/ssl-color.avif"
+                src="/images/siegel2.png"
                 width={166}
-                height={120}
+                height={166}
                 layout="responsive"
                 objectFit="contain"
               />
             </div>
-            <div className="w-28 left-6 p-0">
+            {/* medal dsvgo image */}
+            <div className="relative w-28 left-6">
               <Image
-                src="/images/efre-color.avif"
+                src="/images/siegel.png"
                 width={166}
-                height={120}
+                height={166}
                 layout="responsive"
                 objectFit="contain"
               />
-            </div>
             </div>
           </div>
         </form>
