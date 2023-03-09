@@ -33,7 +33,7 @@ const NewsLetter = ({ getMarkdownContext }) => {
   const onError = (errors, e) => console.log("errors", errors, e);
 
   return (
-    <div className="flex flex-col flex-wrap items-center justify-center px-10 pt-6 pb-10 bg-grey-lightest">
+    <div className="flex flex-col flex-wrap items-center justify-center content-center px-10 pt-6 pb-10 bg-grey-lightest">
       <div className="flex flex-col justify-center sm:px-4 py-4 xl:w-[1000px] custom-text text-grey-darker">
         <MDXRemote {...getMarkdownContext.newsletter} />
       </div>

@@ -150,10 +150,11 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
             </p>
           </div>
         </div>
-        {/* COMPARE TOOL */}
-        <>
-          <CompareTool getContent={getContent} />
-        </>
+        
+        <CompareTool getContent={getContent} />
+        
+        <CarBrandsLogos getBrands={getBrands} />
+
         {/* <div className="relative pt-5 pb-4 border rounded-md lg:flex lg:justify-between lg:items-center bg-yellow-light lg:h-28 border-blue-dark ">
           <div className="mx-2 comaprison-input-container lg:items-center lg:flex lg:flex-row lg:justify-evenly lg:flex-1 ">
             <div className="h-14 lg:w-68  w-full pt-2 shadow-angelos1 text-base rounded-sm bg-white lg:w-[14vw]">
@@ -253,7 +254,6 @@ const HeroSection = ({ getContent, getMarkdownContext, getBrands }) => {
           </div>
         </div> */}
 
-        <CarBrandsLogos getBrands={getBrands} />
       </div>
     </div>
   );
