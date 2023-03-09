@@ -13,7 +13,7 @@ export default function FunnelBoxTest({ currentFilter, redirecter }) {
     <div
       className={
         router.pathname == "/home"
-          ? "grid grid-cols-2 sm:grid-cols-4 bg-white gap-4 w-full scale-[85%]"
+          ? "grid grid-cols-2 sm:grid-cols-4  gap-4 w-full md:scale-[85%]"
           : "grid grid-cols-2 sm:grid-cols-4  gap-4 w-full scale-[85%]"
       }
     >

@@ -23,13 +23,12 @@ export default function Home(props) {
   return (
     <>
       <Head page={props.page} />
-      <div className="mt-8 lg:mt-0">
+      {/* <div className="mt-8 lg:mt-0">
         <CompareTool />
-      </div>
+      </div> */}
       <HeroSectionB getBrands={props.brands} />
-      <div className="mb-10">
-        <TopSlider getCars={props.vehicles} getContent={props.page} />
-      </div>
+      {/* <TopSlider getCars={props.vehicles} page={props.page} /> */}
+      <TopSlider vehicles={props.vehicles} getContent={props.page} />
       <BlogArticles getMarkdownContext={props.context} />
       <NewsLetter getMarkdownContext={props.context} />
     </>

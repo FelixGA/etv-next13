@@ -92,7 +92,8 @@ const HeroSectionB = ({ getBrands }) => {
 
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute hidden w-full lg:block h-[400px] forz2 border-black-darkest ">
+      <div className="absolute max-md:hidden w-full lg:flex h-[400px] forz border-black-darkest justify-end">
+      {/* <div className="absolute hidden w-full lg:block h-[400px] forz border-black-darkest "> */}
         <div className="w-[1000px]  opacity-20 ">
           <Image
             src="/images/main.jpeg"
@@ -100,11 +101,11 @@ const HeroSectionB = ({ getBrands }) => {
             height={400}
             alt="Kleintransporter"
             objectFit="contain"
-            className=""
+            layout="responsive"
           />
         </div>
       </div>
-      <div className="m-4 mt-0 hero-section-container lg:w-3/4 lg:m-auto">
+      <div className="ml-4 mr-4 mt-2 mb-2 hero-section-container lg:w-3/4 lg:m-auto">
         <div className="relative flex justify-center flex-1 main-heading-container lg:text-xl ">
           <div className="">
             <FunnelTest test="test" />
