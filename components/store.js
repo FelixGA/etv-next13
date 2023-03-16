@@ -1,8 +1,11 @@
 import { createContext, useReducer, useContext } from "react";
 
 const reducer = (state, action) => {
+  // console.log(state); // array with car properties 
+  // console.log(action); // array with property in caradvisorfunnel
+  // 
   switch (action.type) {
-    /* filter */
+    /* filter: customer choose this buttons*/
     case "price":
       return { ...state, prices: action.data };
     case "rangeLithium":
@@ -17,9 +20,8 @@ const reducer = (state, action) => {
       return { ...state, categorys: action.data };
     case "brand":
       return { ...state, brands: action.data };
-
+    
     /*  */
-
     case "truncate":
       return { ...state, truncates: action.data };
     /* sorting state */
@@ -45,7 +47,6 @@ const reducer = (state, action) => {
   }
 };
 
-
 const initialState = {
   mobileNavActive: false,
   prices: [],
@@ -67,7 +68,10 @@ const initialState = {
 
 const StoreContext = createContext(initialState);
 export function StoreProvider(props) {
+  // console.log(props.children); // all props: brands, vehicles, page, posts
+  // console.log(initialState); // leere Arrays
   const [state, dispatch] = useReducer(reducer, initialState);
+  // console.log(state);
 
   return (
     <StoreContext.Provider value={{ state, dispatch }}>

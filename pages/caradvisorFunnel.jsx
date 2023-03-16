@@ -1,22 +1,23 @@
 import Head from "../components/core/Head";
-
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import FunnelTest from "../components/Caradvisor/FunnelTest";
 import Image from "next/image";
 import data from "../data/stepsData";
 import { useStore } from "../components/store";
+
 export default function caradvisorFunnel(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getBrands, SetGetBrands] = useState(props.brands);
   const { state, dispatch } = useStore();
+  //  console.log("state von caradvisorfunnel: ", state.categorys[0])
 
   // console.log("state?.categorys", state?.categorys);
   // console.log("state?.rangeLithiums", state?.rangeLithiums);
   return (
     <div className=" bg-blue-extralight">
       <Head page={props.page} />
-
+      {/* FunnelTest sind die 4 Button*/}
       <FunnelTest getCars={getCars} getBrands={getBrands} />
       <div className="relative flex justify-between 2xl:h-36">
         {/* human image */}
@@ -47,6 +48,7 @@ export default function caradvisorFunnel(props) {
           </p>
         </div>
       </div>
+      {/*Description-Boxes: Wunschfahrzeug, Vorschläge, Angebot*/}
       <div className="flex flex-col w-full gap-8 px-4 py-8 bg-white xl:px-40 md:flex-row justify-evenly">
         {data.map((item) => (
           <div className="w-full px-4 py-4 mb-4 shadow-dropdown" key={item.id}>
