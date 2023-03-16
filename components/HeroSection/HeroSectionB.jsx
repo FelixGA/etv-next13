@@ -1,12 +1,9 @@
 import Image from "next/image";
 import { useStore } from "../../components/store";
-
 import CarBrandsLogos from "../repeated/CarBrandsLogos";
-
 import FunnelTest from "../Caradvisor/FunnelTest";
-
 //import filtersData from "../filtersData.json";
-//
+
 const HeroSectionB = ({ getBrands }) => {
   const { state, dispatch } = useStore();
   // console.log(getContent, "from HeroSection");
