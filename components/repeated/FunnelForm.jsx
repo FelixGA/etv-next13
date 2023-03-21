@@ -219,13 +219,13 @@ export default function Form(props) {
               Ja, ich stimme der{" "}
               <span className="font-bold text-blue-dark">
                 <Link href={"/dataprotection"}>
-                  <a>Datenschutzerklärung</a>
+                  <a target="blank">Datenschutzerklärung</a>
                 </Link>
               </span>{" "}
               und den{" "}
               <span className="font-bold text-blue-dark">
                 <Link href={"/termsofservice"}>
-                  <a>AGBs</a>
+                  <a target="blank">AGBs</a>
                 </Link>
               </span>{" "}
               zu (Widerruf jederzeit möglich).
