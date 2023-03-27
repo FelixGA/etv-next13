@@ -188,8 +188,30 @@ const ResultList = (props) => {
           : (shownCars.length > 0 && shownCars.length < 4) ? similarResults(getdisplayedCars)
           : getdisplayedCars
           )
+  return (
+    <div className="flex flex-col flex-1 lg:w-full lg:bg-white">
+      {
+        shownCars?.length === 0 ? showMoreMessage 
+          : (shownCars.length > 0 && shownCars.length < 4) ? similarResults(getdisplayedCars)
+          : getdisplayedCars
         }
     </div>
   );
 };
 export default ResultList;
+
+  // const getCatCars = props.sortedCars?.filter(item => item.category="Pritsche");
+  // console.log("getCatCars: ", getCatCars);
+
+//   const getAlternateCars = getCatCars?.map((carItem, index) => {
+//     return (
+//       <div className="w-full container-product md:pl-4" key={index}>
+//         {/* <div className="product-icon"></div> */}
+
+//         <CarCard
+//           carItem={carItem}
+//           getAllReviews={props.getCarsReviews}
+//         />
+//       </div>
+//     );
+//   });
