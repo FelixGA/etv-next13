@@ -193,3 +193,19 @@ const ResultList = (props) => {
   );
 };
 export default ResultList;
+
+  // const getCatCars = props.sortedCars?.filter(item => item.category="Pritsche");
+  // console.log("getCatCars: ", getCatCars);
+
+//   const getAlternateCars = getCatCars?.map((carItem, index) => {
+//     return (
+//       <div className="w-full container-product md:pl-4" key={index}>
+//         {/* <div className="product-icon"></div> */}
+
+//         <CarCard
+//           carItem={carItem}
+//           getAllReviews={props.getCarsReviews}
+//         />
+//       </div>
+//     );
+//   });
