@@ -44,6 +44,9 @@ const Footer = ({ blogs, brands, vehicles }) => {
     },
   ];
 
+  const jetzt = new Date();
+  const jahr = jetzt.getFullYear();
+
   return (
     <>
       <footer className="px-2 shadow-2xl xl:px-4 bg-blue-darker sm:flex sm:flex-col lg:flex-row-reverse lg:justify-between ">
@@ -105,12 +108,12 @@ const Footer = ({ blogs, brands, vehicles }) => {
                 <a className="text-white">{`Magazin`.toUpperCase()}</a>
               </Link>
             </h3>
-            <div className="pt-4">
+            <div className="pt-6">
               <ul className="flex flex-col text-[#b1a7a7] items-center sm:items-start pb-8">
                 {magazineList
                   ?.map((blogCateg, index) => (
                     <li
-                      className="flex items-center justify-between h-[43px] "
+                      className="flex items-center justify-between mb-5 "
                       key={index}
                     >
                       <Link href={`/magazin/${blogCateg.slug}`}>
@@ -131,7 +134,7 @@ const Footer = ({ blogs, brands, vehicles }) => {
             <h3 className="flex items-center justify-center text-xs font-bold tracking-wider text-white xl:w-full md:justify-start sm:items-end h-14 xl:text-base">
               {`Rechtliches & Kontakt`.toUpperCase()}
             </h3>
-            <div className="sm:pt-4">
+            <div className="sm:pt-6">
               <ListItems itemsList={rights} />
             </div>
           </div>
@@ -185,7 +188,7 @@ const Footer = ({ blogs, brands, vehicles }) => {
 "
       ></div>
       <div className="flex items-center justify-center h-16 text-xs tracking-wider text-white bg-blue-darker sm:text-lg sm:h-20 print:hidden">
-        &copy; 2022 Elektrotransporter-Vergleich.de
+        &copy; {jahr} Elektrotransporter-Vergleich.de
       </div>
     </>
   );

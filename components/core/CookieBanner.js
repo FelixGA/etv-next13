@@ -1,14 +1,40 @@
+import { useTransition, useEffect, useState } from "react";
 import Link from "next/link";
 import useIdb from "/hooks/useIdb";
 // import { enableTracking } from "@phntms/next-gtm";
 import Button1 from "/components/core/Button1";
+import { setCookie, hasCookie } from 'cookies-next';
 
 export default function CookieBanner(props) {
-  const [cookiesAccepted, setCookiesAccepted] = useIdb(
-    "cookiesAccepted",
-    null
-  );
-  console.log(cookiesAccepted);
+  // const [startTransition, isPending] = useTransition({ timeoutMs: 3000 });
+
+  const [consent, setConsent] = useState(true);
+  useEffect(() => {
+    setConsent(hasCookie('localConsent'));
+  }, []);
+
+  const acceptCookie = () => {
+    setConsent(true);
+    setCookie('localConsent', 'true', { maxAge: 60 * 60 * 24 * 365 });
+    gtag('consent', 'update', {
+      ad_storage: 'granted',
+      analytics_storage: 'granted',
+    });
+    console.log('accepting cookies');
+  };
+
+  const denyCookie = () => {
+    setConsent(true);
+    setCookie('localConsent', 'false', { maxAge: 60 * 60 * 24 * 365 });
+    gtag('consent', 'update', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+    });
+    console.log('denying cookies');
+  };
+  if (consent === true) {
+    return null;
+  }
 
   return (
     <div className="fixed bottom-0 flex flex-wrap lg:flex-nowrap bg-neutral-400 p-4 lg:px-16">
@@ -19,31 +45,27 @@ export default function CookieBanner(props) {
         <p className="text-white">
           ARI Motors braucht für einzelne Datennutzungen Deine Einwilligung, um
           Dein Nutzererlebnis zu verbessern. Mit Klick auf "Akzeptieren" gibst
-          Du diese Einwilligung. Um abzulehnen, klicke <span onClick={(e) => {
-            setCookiesAccepted(false);
-          }}>hier</span>. Unsere Datenschutzerklärung findest Du
+          Du diese Einwilligung. Unsere Datenschutzerklärung findest Du
           <Link href="/dataprotection">
             <a className="font-bold"> hier.</a>
           </Link>
         </p>
         <div className="flex gap-4 self-end">
 
-        {/* <Button1
-          className="self-end w-full lg:w-52 mt-2"
+        <a
+          className="self-end w-full font-bold hover:cursor-pointer lg:w-52 mr-4"
           name="decline"
           onClick={(e) => {
-            setCookiesAccepted(false);
+            denyCookie();
           }}
         >
           Ablehnen
-        </Button1> */}
+        </a>
         <Button1
           className="mt-2 bg-yellow-300 text-black"
           name="accept"
           onClick={(e) => {
-            setCookiesAccepted(true);
-            // enableTracking("GTM-TQRQV32", true);
-            window.location.reload(false)
+            acceptCookie();
           }}
         >
           Akzeptieren

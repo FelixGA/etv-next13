@@ -86,12 +86,13 @@ export default function Form(props) {
             ""
           )}
 
-          <div className="w-full">
+        <div className="flex flex-col justify-between w-full  text-sm md:text-base md:flex-row">
+          <div className="md:w-2/5">
             <TextInput
               style={`${errors.firstName ? " focus:border-red-500" : ""}`}
               placeholder={"z.B. Max Muster"}
               register={register}
-              label={"Name:"}
+              label={"Vor- und Zuname:"}
               id={"name"}
               type={"string"}
               pattern={fullNameRegex}
@@ -99,7 +100,7 @@ export default function Form(props) {
               required={true}
             />
           </div>
-          <div className="w-full">
+          <div className="md:w-2/5">
             <TextInput
               placeholder={"ihr Firmenname"}
               register={register}
@@ -109,32 +110,9 @@ export default function Form(props) {
               registerData={"firma"}
             />
           </div>
-          <div className="flex flex-col justify-center w-full xs:flex-row">
-            <div className="xs:w-1/2 ">
-              <TextInput
-                style={"sm:mr-2"}
-                placeholder={"z.B. 10115"}
-                register={register}
-                label={"Postleitzahl:"}
-                id={"zipcode"}
-                type={"string"}
-                registerData={"zipcode"}
-              />
-            </div>
-            <div className="xs:w-1/2">
-              <TextInput
-                style={"xs:ml-2"}
-                extraStyle={"pl-2"}
-                placeholder={"z.B. Berlin"}
-                register={register}
-                label={"Ort:"}
-                id={"city"}
-                type={"string"}
-                registerData={"city"}
-              />
-            </div>
-          </div>
-          <div className="w-full">
+        </div>
+          <div className="flex flex-col justify-between w-full text-sm md:text-base md:flex-row">
+          <div className="md:w-2/5">
             <TextInput
               style={`${errors.emailInput ? " focus:border-red-500 " : ""}`}
               placeholder={"z.B. max@muster.com"}
@@ -147,7 +125,7 @@ export default function Form(props) {
               pattern={emailRegex}
             />
           </div>
-          <div className="w-full">
+          <div className="md:w-2/5">
             <TextInput
               placeholder={"z.B. 030 - 123 45 67"}
               register={register}
@@ -156,6 +134,18 @@ export default function Form(props) {
               type={"number"}
               registerData={"phone"}
             />
+          </div>
+        </div>
+        <div className="md:w-2/5 text-sm md:text-base">
+              <TextInput
+                style={"sm:mr-2"}
+                placeholder={"z.B. 10115"}
+                register={register}
+                label={"Postleitzahl:"}
+                id={"zipcode"}
+                type={"string"}
+                registerData={"zipcode"}
+              />
           </div>
           <div className="w-full">
             {router.pathname == "/kontakt" ? (
@@ -209,7 +199,7 @@ export default function Form(props) {
                 "Bitte stimmen Sie den Nutzungsbedingungen zu."}
             </p>
           </div>
-          <div className="flex-grow px-1 pb-4">
+          <div className="flex-grow px-1 pb-3 pt-3">
             <Controller
               name="checkbox"
               control={control}
@@ -227,13 +217,13 @@ export default function Form(props) {
               Ja, ich stimme der{" "}
               <span className="font-bold text-blue-dark">
                 <Link href={"/dataprotection"}>
-                  <a>Datenschutzerklärung</a>
+                  <a target="blank">Datenschutzerklärung</a>
                 </Link>
               </span>{" "}
               und den{" "}
               <span className="font-bold text-blue-dark">
                 <Link href={"/termsofservice"}>
-                  <a>AGBs</a>
+                  <a target="blank">AGBs</a>
                 </Link>
               </span>{" "}
               zu (Widerruf jederzeit möglich).

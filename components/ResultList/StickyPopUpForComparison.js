@@ -16,10 +16,12 @@ const StickyPopUpForComparison = () => {
             className="hidden md:flex md:flex-row  w-44 lg:w-52 h-28 mx-2 "
             key={index}
           >
-            <CarCardforPopUp selectedCar={selectedCar} />
+            <CarCardforPopUp selectedCar={selectedCar}/>
+            {/* {console.log(selectedCar, "  ")}
+            {console.log(index)} */}
           </div>
-          <div className="flex  md:hidden ">
-            <CarCardForPopUpMobile selectedCar={selectedCar} />
+          <div className="flex md:hidden " >
+            <CarCardForPopUpMobile selectedCar={selectedCar}/>
           </div>
         </>
       );

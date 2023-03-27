@@ -4,20 +4,21 @@ const Basics = ({ basics, carItem }) => {
       <h3 className="pt-8 pb-4 pl-4 text-2xl font-bold leading-7 text-blue-extra print:text-base">
         Grundlagen
       </h3>
-      <div className="flex flex-col w-full text-blue-extra">
-        <div className="flex flex-row flex-1 bg-grey-lighter">
+      <div className="flex flex-col w-full text-blue-extra"> 
+        {/* <div className="flex flex-row flex-1 bg-grey-lighter">
           <p className="flex items-center w-1/2 py-1 pl-4 h-14 text-base ">
             Klasse:
           </p>
           <p className="flex items-center w-1/2 py-1 pl-4 lg:border-r-2 border-grey-light ">
             {carItem.typeClass}
           </p>
-        </div>
+        </div>  */}
+        {/* {console.log(carItem)} */}
         {basics?.map((item, index) => (
           <div
             key={index}
             className={
-              index % 2 !== 0 ? "flex flex-1 bg-grey-lighter " : "flex flex-1 "
+              index % 2 !== 0 ? "flex flex-1 " : "flex flex-1 bg-grey-lighter " 
             }
           >
             <p className="flex items-center w-1/2 py-1 pl-4 h-14 text-base ">
@@ -31,8 +32,8 @@ const Basics = ({ basics, carItem }) => {
         <div
           className={
             basics.length % 2 !== 0
-              ? "flex flex-1 bg-grey-lighter justify-center "
-              : "flex flex-1 "
+              ? "flex flex-1 "
+              : "flex flex-1 bg-grey-lighter justify-center "
           }
         >
           <p className="flex items-center w-1/2 py-1 pl-4 h-14 text-base 	">

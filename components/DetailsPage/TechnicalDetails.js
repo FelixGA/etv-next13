@@ -14,6 +14,7 @@ const TechnicalDetails = ({ carItem }) => {
   /* get two subsets of the car properties to map them */
   useEffect(() => {
     const basics = [
+      carItem.seats,
       carItem.range230V,
       carItem.rangeLithium,
       carItem.maxSpeed,
@@ -21,26 +22,11 @@ const TechnicalDetails = ({ carItem }) => {
       carItem.chargingTime230V,
       carItem.chargingTimeFast,
       carItem.power,
-      carItem.seats,
       carItem.loadingWeight,
       carItem.curbweight,
     ];
     SetBasics(basics);
-    const details = [
-      { key: "Garantie:", value: " " },
-      carItem.batteryGuarantee,
-      carItem.guarantee,
-      { key: "Akku:", value: " " },
-      carItem.batteryCapacityLithium,
-      carItem.batteryCapacityBlei,
-      carItem.batteryIncluded,
-      carItem.consumption,
-      { key: "Sonstiges:", value: " " },
-      carItem.availability,
-      carItem.subsidies,
-    ];
 
-    SetDetails(details);
     const vehichleDimentions = [
       /* carItem.carSizes, */
       { key: "Fahrzeugmaße" },
@@ -55,8 +41,23 @@ const TechnicalDetails = ({ carItem }) => {
       carItem.loadingVolumeTotal,
       carItem.loadingArea,
     ];
-
     SetVehichleDimentions(vehichleDimentions);
+
+    const details = [
+      { key: "Garantie:", value: " " },
+      carItem.batteryGuarantee,
+      carItem.guarantee,
+      { key: "Akku:", value: " " },
+      carItem.batteryCapacityLithium,
+      carItem.batteryCapacityBlei,
+      carItem.batteryIncluded,
+      carItem.consumption,
+      { key: "Sonstiges:", value: " " },
+      // carItem.availability,
+      carItem.subsidies,
+    ];
+    SetDetails(details);
+
   }, [carItem]);
 
   return (

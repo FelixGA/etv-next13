@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import ResultList from "../ResultList/ResultList";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useStore } from "../store";
 import SortDesktop from "../SortItems/SortDesktop";
