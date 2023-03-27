@@ -19,7 +19,7 @@ content:
 
       Designtechnisch ist der ID. Buzz angelehnt an den ikonischen VW Bulli, der auch unter dem Namen VW T1 bekannt ist. Mit dem ID. Buzz bringt Volkswagen den ersten vollelektrischen Small-Van in Serienfertigung auf den Markt. Der Elektrotransporter komplementiert damit die Personenwagen-Serie bestehend aus ID.3, ID.4 und ID.5. Der Transporter ist mit Außenmaßen von knapp 4,70 m Länge, 2,20 m Breite und 1,95  m Höhe relativ kompakt. Das Fahrzeug ist zum einen als Personenwagen mit 5 Sitzplätzen oder als Cargo-Version mit 3 Sitzplätzen und offenem Laderaum erhältlich. VW will in Zukunft jedoch auch weitere Versionen mit sechs und sieben Sitzplätzen sowie mit längerem Radstand anbieten. Bei der Cargo-Ausführung ist hinter den Sitzen eine feste Trennwand installiert. Diese kann gegen Aufpreis auch mit einer Fenster- und/oder einer Durchladeöffnung versehen werden.
     title: Konzept & Fahrzeugvarianten
-    image: /images/id-buzz-cargo.webp
+    image: /images/etv-id-buzz-test.jpg
   - stars: 2
     content: >-
       ### Laderaum & Flexibilität
@@ -55,9 +55,9 @@ content:
       ### Bedienung und Fahrbetrieb
 
 
-      Der vollelektrische Transporter beschleunigt zügig von 0-100 km/h in 10,2 Sekunden. Der Heckmotor bringt dank des tiefliegenden Schwerpunkts des Lithium-Akkus seine Leistung auch optimal auf die Straße. Der minimale Wendekreis des Fahrzeugs liegt bei knapp 11 Metern und so lässt sich der Van auch im urbanen Umfeld gut manövrieren. Im Innenraum des ID. Buzz Cargo lassen sich optional zahlreiche USB-C-Ports, die weitere Endgeräte mit Strom versorgen können, verbauen.
+      Der vollelektrische Transporter beschleunigt zügig von 0-100 km/h in 10,2 Sekunden. Der Heckmotor bringt dank des tiefliegenden Schwerpunkts des Lithium-Akkus seine Leistung auch optimal auf die Straße. Der minimale Wendekreis des Fahrzeugs liegt bei knapp 11 Metern und so lässt sich der Van auch im urbanen Umfeld gut manövrieren. Im Innenraum des ID. Buzz Cargo lassen sich optional zahlreiche USB-C-Ports, die weitere Endgeräte mit Strom versorgen können, verbauen. Auf dem Armaturenbrett befindet sich außerdem eine geräumige Ablagefläche für Dokumente oder Ähnliches. In Punkto Verkehrsübersicht büßt der ID. Buzz im Vergleich zu einem klassischen VW Van durch die vordere Säulenstruktur etwas ein.
     title: Bedienung und Fahrbetrieb
-    image: /images/id-buzz-cargo-heck.webp
+    image: /images/etv_vw_id_buzz.jpg
   - stars: 0
     content: >-
       ### Umwelt 

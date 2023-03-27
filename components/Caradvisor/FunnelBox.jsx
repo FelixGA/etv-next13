@@ -2,8 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useStore } from "../store";
 import { useRouter } from "next/router";
-
 import Router from "next/router";
+
+/* rendert Reihe von <div> basierend auf Prop "currentFilter" die jeweils eine Filteroption darstellen */
+/* wenn auf ein div (Filter) geklickt wird, aktualisiert es den Status mithilfe der dispatch Funktion aus useStore() und leitet Benutzer auf Seite /caradvisor */
+/* wenn es redirecter (Weiterleitung) ist, rendert Komponente nichts */
 export default function FunnelBox({ currentFilter, redirecter }) {
   const { state, dispatch } = useStore();
   const router = useRouter();
