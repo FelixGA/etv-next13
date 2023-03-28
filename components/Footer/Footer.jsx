@@ -159,25 +159,22 @@ const Footer = ({ blogs, brands, vehicles }) => {
           <div className="relative ">
             <div className="flex justify-start pt-2 pb-8 mr-2 sm:justify-center sm:mr-0">
               <div className="p-2 transition scale-90 cursor-pointer xl:scale-100 hover:scale-110">
-                <Link href="https://www.facebook.com" passHref={true}>
-                  <a aria-label="facebook" target="_blank">
+                <a href="https://www.facebook.com"
+                  aria-label="facebook" target="_blank">
                     <BsFacebook size={25} fill="#fff" />
-                  </a>
-                </Link>
+                </a>
               </div>
               <div className="p-2 transition scale-90 cursor-pointer hover:scale-110 xl:scale-100">
-                <Link href="https://www.youtube.com" passHref={true}>
-                  <a aria-label="youtube" target="_blank">
+                <a href="https://www.youtube.com"
+                   aria-label="youtube" target="_blank">
                     <BsYoutube size={30} fill="#fff" />
                   </a>
-                </Link>
               </div>
               <div className="p-2 transition scale-90 cursor-pointer hover:scale-110 xl:scale-100">
-                <Link href="https://www.linkedin.com" passHref={true}>
-                  <a aria-label="linkedin" target="_blank">
+                <a href="https://www.linkedin.com"
+                   aria-label="linkedin" target="_blank">
                     <BsLinkedin size={25} fill="#fff" />
-                  </a>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
