@@ -25,6 +25,7 @@ const ResultList = (props) => {
     )
       return;
    
+    // wendet die Filter an
     let filteredCars = props.sortedCars?.filter((car) => {
       let rangeval = car.rangeLithium.value;
       let chargingTimeval = car.chargingTimeLithium.value;
@@ -98,19 +99,8 @@ const ResultList = (props) => {
     state?.brands,
     props.sortedCars,
   ]);
-  /* Cars with all prices */
 
-  /* ɢᴇᴛ pop up for not meeting criteria */
-  const showMoreMessage = (
-    <div className="mx-auto">
-      <p className="px-4 pt-4 text-center md:text-xl text-black-darkest">
-        Ist ihr gesuchter Transporter nicht dabei?
-      </p>
-      <ButtonForAlleTransporter />
-    </div>
-  );
-
-  /* ɢᴇᴛ the cars upon filters */
+  /* rendert CarCards nach Filterung */
   const getdisplayedCars = shownCars?.map((carItem, index) => {
     return (
       <div className="w-full container-product md:pl-4" key={index}>
@@ -133,6 +123,8 @@ const ResultList = (props) => {
   /* get all cars from checked category for alternative results */
   const catCar = props.sortedCars.filter(car => car.category === aufbau);
   // console.log(catCar);
+
+  // rendert CarCards für gewählten Aufbau
   const getCategoryCars = catCar?.map((carItem, index) => {
     return (
       <div className="w-full container-product pt-4 md:pl-4" key={index}>
@@ -146,7 +138,22 @@ const ResultList = (props) => {
     );
   });
 
+  // rendert CarCards für alle Transporter
+  const getAllCars = props.sortedCars.map((carItem, index) => {
+    console.log(getAllCars);
+    return (
+      <div className="w-full container-product pt-4 md:pl-4" key={index}>
+        {/* <div className="product-icon"></div> */}
 
+        <CarCard
+          carItem={carItem}
+          getAllReviews={props.getCarsReviews}
+        />
+      </div>
+    );
+  });
+
+  // Suchergebnis und ähnliche Ergebnisse aus der Kategorie Aufbau
   const similarResults = (getdisplayedCars) => {
     return (
       <div>
@@ -158,6 +165,37 @@ const ResultList = (props) => {
     )
   } 
 
+  // Suchergebnis und weitere Ergebnisse (alle Transporter)
+  const similarResults2 = (getdisplayedCars) => {
+    return (
+      <div>
+    {getdisplayedCars}
+    <h2 className="pt-6 pb-6 pl-4 font-bold text-black">Weitere Suchergebnisse:</h2>
+    {getAllCars}
+    </div>
+    )
+  } 
+
+    /* wenn kein Suchergebnis =>  Message1 und alle Transporter */
+    const showMoreMessage = (getAllCars) => {
+      return (
+      <div className="mx-auto">
+        <p className="px-4 pt-4 text-center md:text-xl text-black-darkest">
+          Kein Ergebnis für ihre Suche. Schauen Sie sich weitere Ergebnisse an.
+        </p>
+        {getAllCars}
+      </div>
+    )};
+    // const showMoreMessage = (
+    //   <div className="mx-auto">
+    //     <p className="px-4 pt-4 text-center md:text-xl text-black-darkest">
+    //       Ist ihr gesuchter Transporter nicht dabei?
+    //     </p>
+    //     <ButtonForAlleTransporter />
+    //   </div>
+    // );
+
+  // keinSuchErgebnis bei gewähltem Aufbau? => Message2: und alle Ergebnisse aus Kategorie
   const showMoreMessage2 = (getCategoryCars) => {
     return (
     <div className="mx-auto">
@@ -173,7 +211,7 @@ const ResultList = (props) => {
   // wenn weniger als 4 Ergebnisse, dann darunter similarResults
   // wenn 0 Ergebnisse, 
     // wenn Aufbau gewählt, dann alle Transporter aus der Kategorie
-    // wenn kein Aufbau, dann Show More - Button
+    // wenn kein Aufbau, dann alle Transporter
   return (
     <div className="flex flex-col flex-1 lg:w-full lg:bg-white">
           {
@@ -184,8 +222,8 @@ const ResultList = (props) => {
           : getdisplayedCars
           ) 
           : (
-            shownCars?.length === 0 ? showMoreMessage 
-          : (shownCars.length > 0 && shownCars.length < 4) ? similarResults(getdisplayedCars)
+            shownCars?.length === 0 ? showMoreMessage(getAllCars)
+          : shownCars?.length < 4 ? similarResults2(getdisplayedCars)
           : getdisplayedCars
           )
         }
@@ -193,19 +231,3 @@ const ResultList = (props) => {
   );
 };
 export default ResultList;
-
-  // const getCatCars = props.sortedCars?.filter(item => item.category="Pritsche");
-  // console.log("getCatCars: ", getCatCars);
-
-//   const getAlternateCars = getCatCars?.map((carItem, index) => {
-//     return (
-//       <div className="w-full container-product md:pl-4" key={index}>
-//         {/* <div className="product-icon"></div> */}
-
-//         <CarCard
-//           carItem={carItem}
-//           getAllReviews={props.getCarsReviews}
-//         />
-//       </div>
-//     );
-//   });
