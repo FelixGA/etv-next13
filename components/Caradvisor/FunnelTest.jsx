@@ -1,3 +1,5 @@
+/* gehört zur Suche über Aufbautyp auf /home */
+
 import Image from "next/image";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";

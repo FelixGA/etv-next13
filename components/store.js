@@ -1,3 +1,7 @@
+/* Dieser Code definiert ein global state management system, das die React-Context-API und den useReducer-Hook verwendet. Der state wird in einem Object namens „initialState" gespeichert, das verschiedene Eigenschaften enthält, die Arrays von Daten enthalten, die sich auf verschiedene Aspekte der Anwendung beziehen.
+
+Die Reducer-Funktion ist eine reine Funktion, die den aktuellen state(Zustand) und eine Aktion aufnimmt und basierend auf dem Typ und den Daten der Aktion einen neuen state zurückgibt. Es verwendet eine switch-Anweisung, um zu bestimmen, welche Eigenschaft des state basierend auf dem Typ der Aktion aktualisiert werden soll. */
+
 import { createContext, useReducer, useContext } from "react";
 
 const reducer = (state, action) => {
@@ -66,7 +70,13 @@ const initialState = {
   activeSortValues: [{ sortCategory: "Alphabet", sortType: "alphabetical" }],
 };
 
+/* Der StoreContext wird mithilfe der createContext-Funktion erstellt, die ein Context-Objekt erstellt, das verwendet werden kann, um die state- und Dispatch-Funktionen an jede Komponente in der Anwendung zu übergeben. */
+
 const StoreContext = createContext(initialState);
+// console.log("StoreContext: ", StoreContext);
+
+/* Die StoreProvider-Komponente ist eine Wrapper-Komponente, die den StoreContext mithilfe der Context Provider-Komponente für ihre untergeordneten Elemente bereitstellt. Es akzeptiert props als Eingabe und rendert seine Kinder(children) als Ausgabe. */
+
 export function StoreProvider(props) {
   // console.log(props.children); // all props: brands, vehicles, page, posts
   // console.log(initialState); // leere Arrays
@@ -76,12 +86,15 @@ export function StoreProvider(props) {
   return (
     <StoreContext.Provider value={{ state, dispatch }}>
       {props.children}
+      {/* {console.log("props.children aus StoreContext.Provider: ", props.children)} */}
     </StoreContext.Provider>
   );
 }
 
+/* Der Hook useStore wird verwendet, um den StoreContext in anderen Komponenten zu verwenden. Es gibt ein Objekt mit dem aktuellen state und der Dispatch-Funktion zurück. Dadurch können Komponenten den globalen state aktualisieren, indem sie Aktionen senden, die den state über die Reducer-Funktion aktualisieren. */
+
 export function useStore() {
   const store = useContext(StoreContext);
-
+  // console.log("StoreContext 2: ", store);
   return store;
 }

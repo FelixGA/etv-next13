@@ -1,3 +1,5 @@
+/* gehört zur Suche über Aufbautyp auf index.js */
+
 import Image from "next/image";
 import { useStore } from "../store";
 import FunnelBox from "./FunnelBox";

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useStore } from "../../components/store";
-/* import image from "../public/images/VW-e-Crafter-Front-300x225.jpg"; */
 
 const ButtonForAlleTransporter = () => {
   const { state, dispatch } = useStore();

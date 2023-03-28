@@ -1,3 +1,5 @@
+/* gehört zum Transporter-Vergleich auf index.js */
+
 import Head from "../components/core/Head";
 import ActiveFilterBlock from "../components/FilterItems/ActiveFilterBlock";
 import ResultList from "../components/ResultList/ResultList";
@@ -7,6 +9,7 @@ import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import FiltersMobile from "../components/FilterItems/MobileFIlters/FiltersMobile";
 import FiltersDesktop from "../components/FilterItems/DesktopItems/FiltersDesktop";
+
 export default function comparePage(props) {
   const [sortedCars, setSortedCars] = useState([]);
   const [getBrands, setGetBrands] = useState([]);
