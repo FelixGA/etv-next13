@@ -1,3 +1,5 @@
+/* gehört zur Suche über Aufbautyp auf /home */
+
 import Head from "../components/core/Head";
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";

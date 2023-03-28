@@ -1,3 +1,5 @@
+/* gehört zum Transporter-Vergleich auf index.js */
+
 import Head from "../components/core/Head";
 import ActiveFilterBlock from "../components/FilterItems/ActiveFilterBlock";
 import ResultList from "../components/ResultList/ResultList";
