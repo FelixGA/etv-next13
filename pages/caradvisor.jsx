@@ -1,11 +1,13 @@
-import Head from "../components/core/Head";
+/* gehört zur Suche über Aufbautyp auf index.js */
 
+import Head from "../components/core/Head";
 import getContent from "/utils/getContent";
 import { useState, useEffect } from "react";
 import Funnel from "../components/Caradvisor/Funnel";
 import Image from "next/image";
 import data from "../data/stepsData";
 import { useStore } from "../components/store";
+
 export default function caradvisor(props) {
   const [getCars, SetGetCars] = useState(props.vehicles);
   const [getBrands, SetGetBrands] = useState(props.brands);
