@@ -1,6 +1,6 @@
 ---
 title: Ladezyklus
-slug: "ladezyklus "
+slug: "was-ist-ein-ladezyklus "
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 02/20/2023
