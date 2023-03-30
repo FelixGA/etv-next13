@@ -1,6 +1,6 @@
 ---
-title: Typ 2 Ladestecker
-slug: typ-2-ladestecker
+title: Was ist ein Typ 2 Ladestecker?
+slug: was-ist-ein-typ-2-ladestecker
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 02/16/2023
