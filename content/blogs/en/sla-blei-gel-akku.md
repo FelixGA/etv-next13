@@ -1,6 +1,6 @@
 ---
 title: SLA-Blei-Gel-Akku
-slug: sla-blei-gel-akku
+slug: was-ist-ein-sla-blei-gel-akku
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 02/17/2023

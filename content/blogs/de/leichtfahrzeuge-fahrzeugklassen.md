@@ -1,6 +1,6 @@
 ---
-title: Leichtfahrzeuge-Fahrzeugklassen
-slug: leichtfahrzeuge-fahrzeugklassen
+title: Was sind Leichtfahrzeuge und welche Klassen gibt es?
+slug: was-sind-leichtfahrzeuge-und-welche-klassen-gibt-es
 relatedCars: ari-458-koffer-elektrischer-kleintransporter
 youtubeLink: bitte auffuelen
 category: glossar

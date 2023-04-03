@@ -1,6 +1,6 @@
 ---
-title: "Induktives Laden "
-slug: "induktives-laden "
+title: Was ist Induktives Laden?
+slug: "was-ist-induktives-laden "
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 03/01/2023

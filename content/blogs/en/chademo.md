@@ -1,6 +1,6 @@
 ---
 title: CHAdeMO
-slug: chademo
+slug: was-bedeutet-chademo
 youtubeLink: ""
 category: glossar
 publishedAt: 02/16/2023
