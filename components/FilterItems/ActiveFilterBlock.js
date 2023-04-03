@@ -37,7 +37,6 @@ function ActiveFilterBlock({ getContent, shownCars }) {
               : shownCars == 1 ? "Der beste E-Transporter nach Ihrer Auswahl" 
               : "Die "  + shownCars + " besten E-Transporter nach Ihrer Auswahl"
             }
-            
           </h1>
             {/* <p> Hersteller: {state?.brands} </p> */}
         </div>
