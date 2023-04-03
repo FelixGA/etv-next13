@@ -1,6 +1,6 @@
 ---
-title: Verbrauch
-slug: verbrauch
+title: Was verbraucht ein Elektrofahrzeug?
+slug: was-verbraucht-ein-elektrofahrzeug
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 03/06/2023

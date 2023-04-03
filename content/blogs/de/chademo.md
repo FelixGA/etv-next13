@@ -1,6 +1,6 @@
 ---
-title: CHAdeMO
-slug: chademo
+title: Was bedeutet CHAdeMO?
+slug: was-bedeutet-chademo
 youtubeLink: ""
 category: glossar
 publishedAt: 02/16/2023

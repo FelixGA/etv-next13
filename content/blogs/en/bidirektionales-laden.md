@@ -1,6 +1,6 @@
 ---
 title: Bidirektionales Laden
-slug: bidirektionales-laden
+slug: was-ist-bidirektionales-laden
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 03/06/2023

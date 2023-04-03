@@ -1,6 +1,6 @@
 ---
 title: Rekuperation
-slug: rekuperation
+slug: was-ist-rekuperation
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 02/27/2023

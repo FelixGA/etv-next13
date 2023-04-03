@@ -1,6 +1,6 @@
 ---
 title: Lithium-Ionen-Akku
-slug: "lithium-ionen-akku "
+slug: was-ist-ein-lithium-ionen-akku
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 03/06/2023
