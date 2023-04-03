@@ -1,7 +1,7 @@
 import CarCard from "./CarCard.js";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";
-import ButtonForAlleTransporter from "../../components/Sliders/ButtonForAlleTransporter";
+// import ButtonForAlleTransporter from "../../components/Sliders/ButtonForAlleTransporter";
 
 const ResultList = (props) => {
   const { state, dispatch } = useStore();
@@ -9,7 +9,7 @@ const ResultList = (props) => {
   // shownCars enthält Array von Autoartikeln, die Filterkriterien erfüllen, initial: leer
   const [shownCars, setShownCars] = useState([]); 
   // console.log("shownCars", shownCars);
-
+ 
   /* useEffect - is a hook to apply the filters, 
   aktualisiert den state "shownCars" mit der gefilterten Liste */
   useEffect(() => {
@@ -100,6 +100,10 @@ const ResultList = (props) => {
     props.sortedCars,
   ]);
 
+  useEffect(() => {
+    props.shownCarsLength(shownCars.length);
+  }, [shownCars.length]);
+
   /* rendert CarCards nach Filterung */
   const getdisplayedCars = shownCars?.map((carItem, index) => {
     return (
@@ -113,6 +117,7 @@ const ResultList = (props) => {
       </div>
     );
   });
+  
 
   // not working: const cat1 = state.categorys[0].min (min is the value from the data object)
   const cat1 = state.categorys[0]; // data object with the choosed category
@@ -140,7 +145,7 @@ const ResultList = (props) => {
 
   // rendert CarCards für alle Transporter
   const getAllCars = props.sortedCars.map((carItem, index) => {
-    console.log(getAllCars);
+    // console.log(getAllCars);
     return (
       <div className="w-full container-product pt-4 md:pl-4" key={index}>
         {/* <div className="product-icon"></div> */}
@@ -179,7 +184,7 @@ const ResultList = (props) => {
     /* wenn kein Suchergebnis =>  Message1 und alle Transporter */
     const showMoreMessage = (getAllCars) => {
       return (
-      <div className="mx-auto">
+      <div>
         <p className="px-4 pt-4 text-center md:text-xl text-black-darkest">
           Kein Ergebnis für ihre Suche. Schauen Sie sich weitere Ergebnisse an.
         </p>
@@ -198,7 +203,7 @@ const ResultList = (props) => {
   // keinSuchErgebnis bei gewähltem Aufbau? => Message2: und alle Ergebnisse aus Kategorie
   const showMoreMessage2 = (getCategoryCars) => {
     return (
-    <div className="mx-auto">
+    <div>
       <p className="px-4 pt-4 text-center md:text-xl text-black-darkest">
         Kein Ergebnis für ihre Suche. Schauen Sie sich alle Ergebnisse aus der Kategorie {aufbau} an: 
       </p>
