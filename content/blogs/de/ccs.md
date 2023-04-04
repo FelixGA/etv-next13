@@ -1,6 +1,6 @@
 ---
-title: CCS (Combined Charging System)
-slug: ccs
+title: Was ist ein CCS (Combined Charging System)?
+slug: was-ist-ein-ccs
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 03/03/2023

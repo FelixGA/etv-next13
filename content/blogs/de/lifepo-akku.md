@@ -1,6 +1,6 @@
 ---
-title: LiFePo-Akku
-slug: lifepo-akku
+title: Was ist ein LiFePo4-Akku?
+slug: was-ist-ein-lifepo-akku
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 03/01/2023

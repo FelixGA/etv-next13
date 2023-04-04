@@ -1,6 +1,6 @@
 ---
 title: Kilowattstunden
-slug: kilowattstunden
+slug: was-sind-kilowattstunden
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 03/02/2023

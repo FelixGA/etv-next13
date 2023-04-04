@@ -1,6 +1,6 @@
 ---
-title: Wallbox
-slug: wallbox
+title: "Was ist eine Wallbox? "
+slug: was-ist-eine-wallbox
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 03/06/2023

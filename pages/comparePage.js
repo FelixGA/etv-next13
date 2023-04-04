@@ -13,12 +13,17 @@ import FiltersDesktop from "../components/FilterItems/DesktopItems/FiltersDeskto
 export default function comparePage(props) {
   const [sortedCars, setSortedCars] = useState([]);
   const [getBrands, setGetBrands] = useState([]);
+  const [shownCars, setShownCars] = useState([]);
   /* .find(
     (item) => vehicle?.relatedReviews == item.slug
   ) */
   const ohneTropos = props.vehicles.filter(ausgabe => !ausgabe.title.startsWith('Tropos'));
   // console.log(ohneTropos);
   // console.log(props.vehicles);
+
+  console.log(sortedCars);
+  // const displayCarsLength = getdisplayedCars.length;
+  // console.log(displayCarsLength);
 
   const [getCarsReviews, setGetCarsReviews] = useState([]);
   const { state, dispatch } = useStore();
@@ -101,12 +106,15 @@ export default function comparePage(props) {
         </div>
         <div className="heading+sorting+content mt-10 md:mt-20 ">
           <div className="">
-            <ActiveFilterBlock />
+            <ActiveFilterBlock 
+              shownCars={shownCars}
+            />
           </div>
           <div className="mb-10 xl:pr-2 2xl:pr-40">
             <ResultList
               sortedCars={sortedCars}
               getCarsReviews={getCarsReviews}
+              shownCarsLength={setShownCars}
             />
           </div>
         </div>

@@ -134,19 +134,19 @@ export default function Funnel({ getBrands }) {
         {
           value: 1,
           max: 10000,
-          name: "0 - 10000€",
+          name: "0 - 10.000€",
           categoryName: "price",
           image: price,
         },
         {
-          name: "10001 - 20000€",
+          name: "10.001 - 20.000€",
           value: 10001,
           max: 20000,
           categoryName: "price",
           image: price,
         },
         {
-          name: "20001 - 40000€",
+          name: "20.001 - 40.000€",
           value: 20001,
           max: 40000,
           categoryName: "price",

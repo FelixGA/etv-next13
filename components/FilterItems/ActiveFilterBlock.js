@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-import ResultList from "../ResultList/ResultList";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useStore } from "../store";
 import SortDesktop from "../SortItems/SortDesktop";
 import ActiveFilterEntry from "./ActiveFilterEntry";
 
-function ActiveFilterBlock({ getContent }) {
+function ActiveFilterBlock({ getContent, shownCars }) {
   const { state, dispatch } = useStore();
   const [clicked, setClicked] = useState(true);
   const [showAll, setShowAll] = useState(false);
@@ -33,9 +32,13 @@ function ActiveFilterBlock({ getContent }) {
                 : "pl-4 mt-6 pb-4 sm:pb-2 text-xl sm:text-2xl lg:text-3xl text-blue-extra py-4 sm:py-0"
             }
           >
-            Die besten E-Transporter nach Ihrer Auswahl
+            {
+              shownCars == 0 ? ""
+              : shownCars == 1 ? "Der beste E-Transporter nach Ihrer Auswahl" 
+              : "Die "  + shownCars + " besten E-Transporter nach Ihrer Auswahl"
+            }
           </h1>
-          {/*   <p> Hersteller: {state?.brands} </p> */}
+            {/* <p> Hersteller: {state?.brands} </p> */}
         </div>
       </div>
       {/* Sorting */}
