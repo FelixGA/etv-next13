@@ -1,8 +1,8 @@
-/* gehört zum Transporter-Vergleich auf index.js */
+/* gehört zum Transporter-Vergleich auf index.js und /home */
 
 import Head from "../components/core/Head";
-import ActiveFilterBlock from "../components/FilterItems/ActiveFilterBlock";
-import ResultList from "../components/ResultList/ResultList";
+import ActiveFilterBlock from "../components/FilterItems/ActiveFilterBlock"; // sende
+import ResultList from "../components/ResultList/ResultList"; // empfange
 import { useStore } from "../components/store";
 import StickyPopUpForComparison from "../components/ResultList/StickyPopUpForComparison";
 import getContent from "/utils/getContent";
@@ -12,8 +12,11 @@ import FiltersDesktop from "../components/FilterItems/DesktopItems/FiltersDeskto
 
 export default function comparePage(props) {
   const [sortedCars, setSortedCars] = useState([]);
+  // console.log("sortedCars", sortedCars); // Alle !!! 64 sortiert
   const [getBrands, setGetBrands] = useState([]);
-  const [shownCars, setShownCars] = useState([]);
+  // shownCarsLength als prop an ActiveFilterBlock
+  const [shownCarsLength, setShownCarsLength] = useState([]); 
+  // console.log(shownCarsLength); // Anzahl gewählter Transporter
   /* .find(
     (item) => vehicle?.relatedReviews == item.slug
   ) */
@@ -107,14 +110,18 @@ export default function comparePage(props) {
         <div className="heading+sorting+content mt-10 md:mt-20 ">
           <div className="">
             <ActiveFilterBlock 
-              shownCars={shownCars}
+              // setShownCarsLength hat Wert oben im useState an shownCarsLength übergegeben
+              // nun wird an den Filterblock geleitet
+              shownCarsLength={shownCarsLength}
             />
           </div>
           <div className="mb-10 xl:pr-2 2xl:pr-40">
             <ResultList
               sortedCars={sortedCars}
               getCarsReviews={getCarsReviews}
-              shownCarsLength={setShownCars}
+              // Length aus dem useEffect() in ResultList wird an setShownCarsLength gegeben
+              // useState() oben wird aktualisiert
+              getShownCarsLength={setShownCarsLength} 
             />
           </div>
         </div>
@@ -125,6 +132,7 @@ export default function comparePage(props) {
     </div>
   );
 }
+// erhalte aus /content den Inhalt der Markdown-Dateien
 export async function getStaticProps(context) {
   const pages = await getContent("pages", context.locale);
   let vehicles = await getContent("vehicles", context.locale);
