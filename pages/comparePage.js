@@ -24,6 +24,10 @@ export default function comparePage(props) {
   // console.log(ohneTropos);
   // console.log(props.vehicles);
 
+  console.log(sortedCars);
+  // const displayCarsLength = getdisplayedCars.length;
+  // console.log(displayCarsLength);
+
   const [getCarsReviews, setGetCarsReviews] = useState([]);
   const { state, dispatch } = useStore();
   useEffect(() => {
