@@ -1,6 +1,6 @@
 ---
-title: " Was bedeutet WLTP?"
-slug: " was-bedeutet-wltp"
+title: Was bedeutet WLTP?
+slug: was-bedeutet-wltp
 youtubeLink: bitte auffuelen
 category: glossar
 publishedAt: 03/30/2023
