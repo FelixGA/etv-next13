@@ -24,7 +24,7 @@ export default function comparePage(props) {
   // console.log(ohneTropos);
   // console.log(props.vehicles);
 
-  console.log(sortedCars);
+  // console.log(sortedCars);
   // const displayCarsLength = getdisplayedCars.length;
   // console.log(displayCarsLength);
 
@@ -119,7 +119,7 @@ export default function comparePage(props) {
             <ResultList
               sortedCars={sortedCars}
               getCarsReviews={getCarsReviews}
-              // Length aus dem useEffect() in ResultList wird an setShownCarsLength gegeben
+              // Length aus dem useEffect() in ResultList.js wird an setShownCarsLength gegeben
               // useState() oben wird aktualisiert
               getShownCarsLength={setShownCarsLength} 
             />
