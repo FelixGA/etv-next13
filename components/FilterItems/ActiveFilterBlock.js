@@ -1,10 +1,14 @@
+// Filterblock oben auf comparePage mit Heading darunter,
+// weiter darnter erscheint ResultList der gewählten Transporter
+
 import { useState, useEffect } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useStore } from "../store";
 import SortDesktop from "../SortItems/SortDesktop";
 import ActiveFilterEntry from "./ActiveFilterEntry";
 
-function ActiveFilterBlock({ getContent, shownCars }) {
+function ActiveFilterBlock({ getContent, shownCarsLength }) {
+  // console.log(shownCarsLength);
   const { state, dispatch } = useStore();
   const [clicked, setClicked] = useState(true);
   const [showAll, setShowAll] = useState(false);
@@ -33,10 +37,11 @@ function ActiveFilterBlock({ getContent, shownCars }) {
             }
           >
             {
-              shownCars == 0 ? ""
-              : shownCars == 1 ? "Der beste E-Transporter nach Ihrer Auswahl" 
-              : "Die "  + shownCars + " besten E-Transporter nach Ihrer Auswahl"
+              shownCarsLength == 0 ? ""
+              : shownCarsLength == 1 ? "Der beste E-Transporter nach Ihrer Auswahl" 
+              : "Die "  + shownCarsLength + " besten E-Transporter nach Ihrer Auswahl"
             }
+            
           </h1>
             {/* <p> Hersteller: {state?.brands} </p> */}
         </div>

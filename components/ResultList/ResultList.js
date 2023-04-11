@@ -1,3 +1,5 @@
+// gehört zu comparePage
+
 import CarCard from "./CarCard.js";
 import { useStore } from "../store";
 import { useState, useEffect } from "react";
@@ -87,8 +89,8 @@ const ResultList = (props) => {
         return false;
       return true;
     });
-
-    setShownCars(filteredCars);
+    // Übergabe der gefilterten Transporter an Array das angezeigt werden soll
+    setShownCars(filteredCars); 
   }, [
     state?.prices,
     state?.loadingWeights,
@@ -100,8 +102,10 @@ const ResultList = (props) => {
     props.sortedCars,
   ]);
 
+  // Auslesen wieviel Transporter im Array sind. Reagiert auf jede Eingabe des Nutzers
+  // prop getShownCarsLength wurde in comparePage gesetzt und erhält jetzt die Anzahl der Transporter
   useEffect(() => {
-    props.shownCarsLength(shownCars.length);
+    props.getShownCarsLength(shownCars.length);
   }, [shownCars.length]);
 
   /* rendert CarCards nach Filterung */

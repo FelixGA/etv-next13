@@ -255,7 +255,7 @@ collections:
           label: "Youtube Link",
           name: "youtubeLink",
           widget: "string",
-          default: "bitte auffuelen",
+          default: "bitte auffüllen",
           i18n: duplicate,
           required: false,
         }
