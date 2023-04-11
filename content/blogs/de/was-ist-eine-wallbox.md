@@ -1,9 +1,9 @@
 ---
-title: Wallbox
+title: Was ist eine Wallbox?
 slug: was-ist-eine-wallbox
-youtubeLink: bitte auffuelen
+youtubeLink: ""
 category: glossar
-publishedAt: 03/06/2023
+publishedAt: 04/07/2023
 src: /images/wallbox-elektrotransportervergleich.jpeg
 description: Eine Wallbox ist eine Art Ladestation für Elektrofahrzeuge, die an
   einer Hauswand oder einem Standfuß montiert wird. Im Vergleich zu öffentlichen

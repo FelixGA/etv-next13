@@ -1,17 +1,13 @@
 ---
-title: Ladezyklus
-slug: "was-ist-ein-ladezyklus "
-youtubeLink: bitte auffuelen
+title: Was ist ein Ladezyklus?
+slug: was-ist-ein-ladezyklus
+youtubeLink: ""
 category: glossar
-publishedAt: 02/20/2023
+publishedAt: 04/06/2023
 src: /images/ladezyklus-elektrotransportervergleich.jpg
 description: Der Begriff Ladezyklus oder auch Vollzyklus beschreibt die
   Energieversorgung des Akkus von der zulässigen Entladungsgrenze (0 %) bis zur
-  Vollladung (100 %). Nur bei voller Entladung liegt ein kompletter Ladezyklus
-  vor. Tankt das Elektrofahrzeug bei einem Stand von 50 Prozent neuen Strom, um
-  vollständig aufgeladen zu werden, entspricht das nur einem halben Ladezyklus.
-  Die Kapazität eines Akkus nimmt mit der steigenden Zahl der Ladezyklen
-  allmählich ab.
+  Vollladung (100 %).
 ---
 Der Begriff Ladezyklus oder auch Vollzyklus beschreibt die Energieversorgung des Akkus von der zulässigen Entladungsgrenze (0 %) bis zur Vollladung (100 %). Nur bei voller Entladung liegt ein kompletter Ladezyklus vor. Tankt das Elektrofahrzeug bei einem Stand von 50 Prozent neuen Strom, um vollständig aufgeladen zu werden, entspricht das nur einem halben Ladezyklus. Die Kapazität eines Akkus nimmt mit der steigenden Zahl der Ladezyklen allmählich ab. 
 

@@ -1,15 +1,13 @@
 ---
-title: Was ist ein LiFePo4-Akku?
+title: Was ist ein LiFePo4 Akku?
 slug: was-ist-ein-lifepo-akku
-youtubeLink: bitte auffuelen
+youtubeLink: ""
 category: glossar
-publishedAt: 03/01/2023
+publishedAt: 03/28/2023
 src: /images/lifepo-akku_elektrotransportervergleich.jpg
 description: LiFePO4-Akkus oder auch Lithium-Eisenphosphat-Akkumulatoren
   bezeichnen eine besondere Ausführung der Lithium-Ionen-Akkumulatoren, welche
-  sich immer häufiger auch in Elektrofahrzeugen finden lassen. Neben
-  Elektrofahrzeugen werden diese häufig auch in stationären Stromspeichern und
-  tragbaren elektronischen Geräten eingesetzt.
+  sich immer häufiger auch in Elektrofahrzeugen finden lassen.
 ---
 LiFePO4-Akkus oder auch Lithium-Eisenphosphat-Akkumulatoren bezeichnen eine besondere Ausführung der Lithium-Ionen-Akkumulatoren, welche sich immer häufiger auch in Elektrofahrzeugen finden lassen. Neben Elektrofahrzeugen werden diese häufig auch in stationären Stromspeichern und tragbaren elektronischen Geräten eingesetzt.  
 

@@ -1,13 +1,12 @@
 ---
-title: SLA-Blei-Gel-Akku
+title: Was ist ein SLA-Blei-Gel-Akku?
 slug: was-ist-ein-sla-blei-gel-akku
-youtubeLink: bitte auffuelen
+youtubeLink: bitte auffüllen
 category: glossar
-publishedAt: 02/17/2023
+publishedAt: 04/11/2023
 src: /images/sla-blei-gel-akku-elektrotransportervergleich.jpg
 description: Ein Blei-Gel-Akkumulator (kurz Blei-Gel-Akku) ist ein geschlossener
-  Akkumulator, mit Elektroden aus Blei und dem Elektrolyt als Gel. SLA steht für
-  "Sealed Lead-Acid" und heißt übersetzt versiegelter Blei-Säure-Akku.
+  Akkumulator, mit Elektroden aus Blei und dem Elektrolyt als Gel.
 ---
 Ein Blei-Gel-Akkumulator (kurz Blei-Gel-Akku) ist ein geschlossener Akkumulator, mit Elektroden aus Blei und dem Elektrolyt als Gel. SLA steht für "Sealed Lead-Acid" und heißt übersetzt versiegelter Blei-Säure-Akku. Durch diese Zusammensetzung ist der Batterietyp lageunabhängig und wartungsfrei. Die Blei-Gel Akkus sind eine kostengünstigere Alternative zu beispielsweise Lithium-Akkus. 
 

@@ -1,18 +1,14 @@
 ---
 title: Was sind Kilowattstunden?
 slug: was-sind-kilowattstunden
-youtubeLink: bitte auffuelen
+youtubeLink: ""
 category: glossar
-publishedAt: 03/02/2023
+publishedAt: 04/08/2023
 src: /images/kwh.jpg
 description: Kilowattstunden sind die Standard-Einheit, um den Energieverbrauch
   von Elektrofahrzeugen zu messen. Es gibt einen direkten Zusammenhang zwischen
   der Anzahl der Kilowattstunden, die ein Elektrofahrzeug verbraucht, und der
-  Strecke, die es zurücklegen kann. Der Verbrauch eines Elektrofahrzeugs wird in
-  Kilowattstunden (kWh) pro 100 Kilometer angegeben. Dieser hängt zudem genauso
-  wie bei einem klassischen Verbrennungsmotor von der Fahrweise, dem Terrain und
-  der Geschwindigkeit ab. Beim VW e-Crafter liegt der Verbrauch beispielsweise
-  laut ADAC bei 21,54 kWh pro 100 Kilometer (mit 975 kg Zuladung).
+  Strecke, die es zurücklegen kann.
 ---
 Kilowattstunden sind die Standard-Einheit, um den Energieverbrauch von Elektrofahrzeugen zu messen. Es gibt einen direkten Zusammenhang zwischen der Anzahl der Kilowattstunden, die ein Elektrofahrzeug verbraucht, und der Strecke, die es zurücklegen kann. Der Verbrauch eines Elektrofahrzeugs wird in Kilowattstunden (kWh) pro 100 Kilometer angegeben. Dieser hängt zudem genauso wie bei einem klassischen Verbrennungsmotor von der Fahrweise, dem Terrain und der Geschwindigkeit ab. Beim VW e-Crafter liegt der Verbrauch beispielsweise laut ADAC bei 21,54 kWh pro 100 Kilometer (mit 975 kg Zuladung). 
 
