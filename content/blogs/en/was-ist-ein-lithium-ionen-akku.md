@@ -1,5 +1,5 @@
 ---
-title: " Was ist ein Lithium-Ionen-Akku?"
+title: Was ist ein Lithium-Ionen-Akku?
 slug: was-ist-ein-lithium-ionen-akku
 youtubeLink: ""
 category: glossar
