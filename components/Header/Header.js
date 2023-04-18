@@ -72,7 +72,6 @@ const Header = () => {
         <div className="absolute right-0 w-full top-20 lg:hidden sm:w-96 ">
           <MobileNav />
         </div>
-
         {/* BUTTON */}
 
         <div
