@@ -1,9 +1,9 @@
 ---
-title: CHAdeMO
+title: "Was bedeutet CHAdeMO? "
 slug: was-bedeutet-chademo
 youtubeLink: ""
 category: glossar
-publishedAt: 02/16/2023
+publishedAt: 04/13/2023
 src: /images/chademo-elektrotransporter-vergleich.jpg
 description: CHAdeMO ist der Handelsname einer markenübergreifenden elektrischen
   Schnittstelle eines Batteriemanagementsystems für Elektrofahrzeuge. Beim

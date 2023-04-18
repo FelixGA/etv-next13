@@ -1,16 +1,13 @@
 ---
 title: Was ist Rekuperation?
 slug: was-ist-rekuperation
-youtubeLink: bitte auffuelen
+youtubeLink: ""
 category: glossar
-publishedAt: 02/27/2023
+publishedAt: 03/14/2023
 src: /images/rekuperation_elektrotransportervergleich.jpg
 description: Rekuperation ist ein technischer Begriff, welcher für Verfahren der
   Energierückgewinnung verwendet wird. Elektrofahrzeuge sind beispielsweise in
-  der Lage, den Motor auch als Generator zu nutzen.  Bei der Rekuperation wird
-  Bremsenergie zurückgewonnen, um diese danach zum Beispiel wieder für Vortrieb
-  zu nutzen. Sie ist demnach ein zentraler Bestandteil eines energieeffizienten
-  Antriebs von Elektrofahrzeugen.
+  der Lage, den Motor auch als Generator zu nutzen.
 ---
 Rekuperation ist ein technischer Begriff, welcher für Verfahren der Energierückgewinnung verwendet wird. Elektrofahrzeuge sind beispielsweise in der Lage, den Motor auch als Generator zu nutzen.  Bei der Rekuperation wird Bremsenergie zurückgewonnen, um diese danach zum Beispiel wieder für Vortrieb zu nutzen. Sie ist demnach ein zentraler Bestandteil eines energieeffizienten Antriebs von Elektrofahrzeugen. 
 
@@ -28,7 +25,7 @@ Rekuperation ist ein technischer Begriff, welcher für Verfahren der Energierüc
 
 <br />
 
-**Fahrverhalten:** Rekuperation hat auch einen direkten Einfluss auf das Fahrverhalten. Es ermöglicht eine sanftere und effizientere Beschleunigung und erfordert weniger aktives Bremsen.
+**Fahrverhalten:** Rekuperation hat auch einen direkten Einfluss auf das Fahrverhalten. Es ermöglicht eine sanftere und effizientere Beschleunigung und erfordert weniger 
 
 <br />
 

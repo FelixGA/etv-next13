@@ -1,14 +1,13 @@
 ---
 title: Was ist ein Lithium-Ionen-Akku?
 slug: was-ist-ein-lithium-ionen-akku
-youtubeLink: bitte auffuelen
+youtubeLink: ""
 category: glossar
-publishedAt: 03/06/2023
+publishedAt: 04/06/2023
 src: /images/lithium-ionen-akku_elektrotransportervergleich.jpg
 description: Unter einem Lithium-Ionen-Akku (kurz auch Li-Ionen-Akku) versteht
   man einen wiederaufladbaren Akkumulator, der auf der Basis des chemischen
-  Elements Lithium funktioniert. Die Akkus werden häufig in elektronischen
-  Geräten, Laptops und Elektrofahrzeugen eingesetzt.
+  Elements Lithium funktioniert.
 ---
 Unter einem Lithium-Ionen-Akku (kurz auch Li-Ionen-Akku) versteht man einen wiederaufladbaren Akkumulator, der auf der Basis des chemischen Elements Lithium funktioniert. Die Akkus werden häufig in elektronischen Geräten, Laptops und Elektrofahrzeugen eingesetzt.  
 

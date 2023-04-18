@@ -2,9 +2,9 @@
 title: Was sind Leichtfahrzeuge und welche Klassen gibt es?
 slug: was-sind-leichtfahrzeuge-und-welche-klassen-gibt-es
 relatedCars: ari-458-koffer-elektrischer-kleintransporter
-youtubeLink: bitte auffuelen
+youtubeLink: https://www.youtube.com/watch?v=mf25aNEI89g
 category: glossar
-publishedAt: 02/17/2023
+publishedAt: 04/10/2023
 src: /images/leichtfahrzeuge-elektrotransportervergleich.jpg
 description: Fahrzeuge werden in verschiedene Kategorien unterteilt, um
   Bestimmungen und Gesetze an die jeweiligen Fahrzeugtypen anzupassen. Die
@@ -20,7 +20,7 @@ L2e steht beispielsweise für dreirädrige Kleinkrafträder mit bis zu 45 km/h H
 
 <br />
 
-Bei der höchsten Leichtfahrzeugklasse: L7e handelt es sich um ein schweres vierrädriges Kraftfahrzeug mit einem Leergewicht  von bis zu 450 kg für die Personenbeförderung  bzw. bis 600 kg für die Güterbeförderung (ohne Akku). Die maximale Motorleistung liegt hier bei bis zu 15 kW.
+Bei der höchsten Leichtfahrzeugklasse L7e handelt es sich um ein schweres vierrädriges Kraftfahrzeug mit einem Leergewicht  von bis zu 450 kg für Personenbeförderung  bzw. bis 600 kg für Güterbeförderung (ohne Akku). Die maximale Motorleistung liegt hier bei bis zu 15 kW.
 
 <br />
 

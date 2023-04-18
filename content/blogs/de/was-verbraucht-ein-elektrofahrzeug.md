@@ -1,15 +1,13 @@
 ---
-title: Verbrauch
+title: Was verbraucht ein Elektrofahrzeug?
 slug: was-verbraucht-ein-elektrofahrzeug
-youtubeLink: bitte auffuelen
+youtubeLink: ""
 category: glossar
-publishedAt: 03/06/2023
+publishedAt: 04/06/2023
 src: /images/verbrauch_elektrotransportervergleich.jpg
 description: Der Verbrauch von Elektroautos wird in Kilowattstunden (kWh)
   gemessen und gibt an, wie viel elektrische Energie das Auto pro Stunde
-  verbraucht. Im Gegensatz zu Benzin- oder Dieselautos gibt es bei Elektroautos
-  keine direkte Messung des Kraftstoffverbrauchs, sondern nur die Angabe des
-  Energieverbrauchs.
+  verbraucht.
 ---
 Der Verbrauch von Elektroautos wird in Kilowattstunden (kWh) gemessen und gibt an, wie viel elektrische Energie das Auto pro Stunde verbraucht. Im Gegensatz zu Benzin- oder Dieselautos gibt es bei Elektroautos keine direkte Messung des Kraftstoffverbrauchs, sondern nur die Angabe des Energieverbrauchs.
 

@@ -1,15 +1,13 @@
 ---
-title: Was ist Induktives Laden?
-slug: "was-ist-induktives-laden "
-youtubeLink: bitte auffuelen
+title: Was ist induktives Laden?
+slug: was-ist-induktives-laden
+youtubeLink: ""
 category: glossar
-publishedAt: 03/01/2023
+publishedAt: 04/10/2023
 src: /images/induktives-laden-elektrotransportervergleich.png
 description: Induktives Laden von Elektrofahrzeugen ist eine Methode zur
   Stromversorgung, bei der keine direkte Verbindung zwischen Ladegerät und
-  Fahrzeug erforderlich ist. Es funktioniert durch Übertragung von elektrischer
-  Energie über ein Magnetfeld zwischen einer Sendeeinheit im Fahrzeugboden und
-  einer Empfangseinheit im Ladegerät.
+  Fahrzeug erforderlich ist.
 ---
 Induktives Laden von Elektrofahrzeugen ist eine Methode zur Stromversorgung, bei der keine direkte Verbindung zwischen Ladegerät und Fahrzeug erforderlich ist. Es funktioniert durch Übertragung von elektrischer Energie über ein Magnetfeld zwischen einer Sendeeinheit im Fahrzeugboden und einer Empfangseinheit im Ladegerät.
 

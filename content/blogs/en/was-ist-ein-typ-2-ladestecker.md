@@ -1,9 +1,9 @@
 ---
 title: Was ist ein Typ 2 Ladestecker?
 slug: was-ist-ein-typ-2-ladestecker
-youtubeLink: bitte auffuelen
+youtubeLink: ""
 category: glossar
-publishedAt: 02/16/2023
+publishedAt: 04/14/2023
 src: /images/typ-2-ladestecker-elektrotransporter-vergleich.jpeg
 description: Der Typ 2 Ladestecker ist ein standardisiertes Ladekabel, das für
   Elektrofahrzeuge (EV) verwendet wird. Bei diesem Ladestecker handelt es sich
