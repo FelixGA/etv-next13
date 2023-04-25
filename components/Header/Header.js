@@ -54,7 +54,7 @@ const Header = () => {
             <div className="flex flex-col ">
               <div className="relative flex items-center tracking-wide ">
                 <p className="relative pl-2 font-semibold text-white text-xxs sm:text-sm lg:text-lg sm:top-1 lg:top-0">
-                  WALLBOX
+                  ELEKTROTRANSPORTER
                 </p>
               </div>
               <div className="relative flex items-center tracking-wide">
@@ -72,7 +72,6 @@ const Header = () => {
         <div className="absolute right-0 w-full top-20 lg:hidden sm:w-96 ">
           <MobileNav />
         </div>
-
         {/* BUTTON */}
 
         <div
