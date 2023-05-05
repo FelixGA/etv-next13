@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: FelixGA/elektrotransporter-vergleich
+  repo: ETV-Team/et-vergleich-1
   branch: dev
   base_url: https://preview-elektrotransporter-vergleich.vercel.app
   auth_endpoint: api/auth
