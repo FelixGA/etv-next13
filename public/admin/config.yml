@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ETV-Team/et-vergleich-1
+  repo: ETV-Team/elektrotransporter-vergleich
   branch: dev
   base_url: https://preview-elektrotransporter-vergleich.vercel.app
   auth_endpoint: api/auth
