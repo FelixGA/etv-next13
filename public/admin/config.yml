@@ -1,8 +1,8 @@
 backend:
   name: github
   repo: ETV-Team/elektrotransporter-vergleich
-  branch: rickard
-  base_url: https://elektrotransporter-vergleich1-git-rickard-etv.vercel.app
+  branch: dev
+  base_url: preview-elektrotransporter-vergleich1.vercel.app
   auth_endpoint: api/auth
 
 media_folder: public/images
