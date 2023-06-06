@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: ETV-Team/elektrotransporter-vergleich
   branch: dev
   base_url: https://preview-elektrotransporter-vergleich1.vercel.app
