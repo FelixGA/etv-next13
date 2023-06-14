@@ -37,7 +37,7 @@ export default function CookieBanner(props) {
   }
 
   return (
-    <div className="fixed bottom-0 flex flex-wrap lg:flex-nowrap bg-neutral-400 p-4 lg:px-16">
+    <div className="fixed bottom-0 w-full justify-center flex flex-wrap lg:flex-nowrap bg-neutral-400 p-4 lg:px-16">
       <div className="flex flex-col justify-center">
         <p className="text-xl text-white font-black my-4">
           Einverständniserklärung
